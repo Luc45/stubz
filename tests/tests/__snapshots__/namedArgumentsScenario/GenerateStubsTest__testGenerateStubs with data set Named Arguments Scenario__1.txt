@@ -1,0 +1,35 @@
+<?php
+
+namespace NamedArgumentsScenario;
+
+/**
+ * Demonstrates named arguments introduced in PHP 8.
+ */
+class RectangleCalculator
+{
+    public function area(float $width, float $height): float
+    {
+        // stub
+    }
+
+    public function perimeter(float $width, float $height): float
+    {
+        // stub
+    }
+
+}
+
+namespace NamedArgumentsScenario;
+
+/**
+ * Class that uses named arguments to call methods in RectangleCalculator.
+ */
+class RectangleDemo
+{
+    public function demo(): array
+    {
+        // stub
+    }
+
+}
+

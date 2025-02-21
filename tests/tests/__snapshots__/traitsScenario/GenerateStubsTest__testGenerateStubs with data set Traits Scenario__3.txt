@@ -1,0 +1,16 @@
+<?php
+
+namespace TraitsExample;
+
+/**
+ * This class uses multiple traits.
+ */
+class RendererLogger
+{
+    public function doSomethingAndLog(): string
+    {
+        // stub
+    }
+
+}
+

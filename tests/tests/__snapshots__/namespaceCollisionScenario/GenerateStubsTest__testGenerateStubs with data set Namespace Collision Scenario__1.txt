@@ -1,0 +1,35 @@
+<?php
+
+namespace NamespaceCollisionOne;
+
+class Thing
+{
+    public function identify(): string
+    {
+        // stub
+    }
+
+}
+
+namespace NamespaceCollisionTwo;
+
+class Thing
+{
+    public function identify(): string
+    {
+        // stub
+    }
+
+}
+
+namespace NamespaceCollisionConsumer;
+
+class Consumer
+{
+    public function process(): array
+    {
+        // stub
+    }
+
+}
+

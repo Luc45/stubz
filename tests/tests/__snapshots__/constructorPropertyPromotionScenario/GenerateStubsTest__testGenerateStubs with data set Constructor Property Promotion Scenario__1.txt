@@ -1,0 +1,27 @@
+<?php
+
+namespace ConstructorPropertyPromotionScenario;
+
+/**
+ * Demonstrates constructor property promotion introduced in PHP 8.
+ */
+class Product
+{
+    public string $name;
+
+    public float $price;
+
+    private int $stock;
+
+    public function __construct(string $name, float $price, int $stock = 0)
+    {
+        // stub
+    }
+
+    public function getInfo(): string
+    {
+        // stub
+    }
+
+}
+

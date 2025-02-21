@@ -1,0 +1,38 @@
+<?php
+
+namespace AttributesScenario;
+
+/**
+ * A custom attribute that can be applied to classes or methods.
+ */
+class MyCustomAttribute
+{
+    private string $description;
+
+    public function __construct(string $description)
+    {
+        // stub
+    }
+
+    public function getDescription(): string
+    {
+        // stub
+    }
+
+}
+
+namespace AttributesScenario;
+
+/**
+ * A class marked with MyCustomAttribute.
+ */
+class DemoClass
+{
+    #[AttributesScenario\MyCustomAttribute('Demo method with attributes')]
+    public function doSomething(): string
+    {
+        // stub
+    }
+
+}
+

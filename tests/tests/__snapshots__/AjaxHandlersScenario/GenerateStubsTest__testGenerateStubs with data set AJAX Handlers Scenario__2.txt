@@ -1,0 +1,21 @@
+<?php
+
+namespace AjaxHandlersScenario\ajax;
+
+/**
+ * Handles AJAX requests for the plugin.
+ */
+class AjaxHandler
+{
+    public function register(): void
+    {
+        // stub
+    }
+
+    public function handleDoSomething(): void
+    {
+        // stub
+    }
+
+}
+

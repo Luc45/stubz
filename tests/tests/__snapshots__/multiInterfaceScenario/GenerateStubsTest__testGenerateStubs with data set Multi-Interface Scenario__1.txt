@@ -1,0 +1,59 @@
+<?php
+
+namespace MultiInterface;
+
+/**
+ * A simple interface with one method.
+ */
+interface OneInterface
+{
+    public function one(): void;
+
+}
+
+namespace MultiInterface;
+
+/**
+ * Another interface with a different method.
+ */
+interface TwoInterface
+{
+    public function two(): string;
+
+}
+
+namespace MultiInterface;
+
+/**
+ * CombinedInterface extends both OneInterface and TwoInterface.
+ */
+interface CombinedInterface
+{
+    public function combined(): bool;
+
+}
+
+namespace MultiInterface;
+
+/**
+ * A class implementing all methods from CombinedInterface (and thus from both OneInterface & TwoInterface).
+ */
+class CombinedImplementation implements \MultiInterface\CombinedInterface, \MultiInterface\OneInterface, \MultiInterface\TwoInterface
+{
+    public function one(): void
+    {
+        // stub
+    }
+
+    public function two(): string
+    {
+        // stub
+    }
+
+    public function combined(): bool
+    {
+        // stub
+    }
+
+}
+

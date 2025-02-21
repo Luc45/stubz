@@ -1,0 +1,21 @@
+<?php
+
+namespace MatchExpressionScenario;
+
+/**
+ * Demonstrates the match expression in PHP 8+.
+ */
+class MatchCalculator
+{
+    public function operation(string $operator, int $a, int $b): int
+    {
+        // stub
+    }
+
+    public function describe(int|string $value): string
+    {
+        // stub
+    }
+
+}
+

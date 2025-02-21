@@ -1,0 +1,16 @@
+<?php
+
+namespace AjaxHandlersScenario;
+
+/**
+ * Main plugin file that initializes all AJAX handlers.
+ */
+class AjaxMain
+{
+    public function init(): void
+    {
+        // stub
+    }
+
+}
+

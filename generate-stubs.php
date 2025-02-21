@@ -147,7 +147,12 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	} else {
 		// Aggregator approach
 		$singleLocators = [];
+        /** @var \SplFileInfo $file */
 		foreach ( $finder as $file ) {
+			if ( ! $file->isFile() || $file->getExtension() !== 'php' ) {
+				continue;
+			}
+
 			if ( $realPath = $file->getRealPath() ) {
 				$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
 			}
@@ -176,7 +181,12 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	];
 	$usedHashes = [];
 
+    /** @var \SplFileInfo $file */
 	foreach ( $finder as $file ) {
+		if ( ! $file->isFile() || $file->getExtension() !== 'php' ) {
+			continue;
+		}
+
 		$stats['filesTotal'] ++;
 		$realpath = $file->getRealPath();
 		if ( ! $realpath ) {

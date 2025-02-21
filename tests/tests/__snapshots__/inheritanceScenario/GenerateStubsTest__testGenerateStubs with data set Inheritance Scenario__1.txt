@@ -1,0 +1,44 @@
+<?php
+
+namespace InheritanceScenario;
+
+/**
+ * Base class with a simple method.
+ */
+class BaseClass
+{
+    public function sayHello(): string
+    {
+        // stub
+    }
+
+}
+
+namespace InheritanceScenario;
+
+/**
+ * MidClass inherits from BaseClass and extends the message.
+ */
+class MidClass extends \InheritanceScenario\BaseClass
+{
+    public function sayHello(): string
+    {
+        // stub
+    }
+
+}
+
+namespace InheritanceScenario;
+
+/**
+ * FinalClass extends MidClass, creating a 3-level inheritance chain.
+ */
+class FinalClass extends \InheritanceScenario\MidClass
+{
+    public function sayHello(): string
+    {
+        // stub
+    }
+
+}
+

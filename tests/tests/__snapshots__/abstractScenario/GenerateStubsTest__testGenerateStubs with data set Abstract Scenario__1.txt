@@ -1,0 +1,32 @@
+<?php
+
+namespace AbstractScenario;
+
+/**
+ * An abstract class with a required method and a helper method.
+ */
+abstract class AbstractEntity
+{
+    public abstract function getType(): string;
+
+    public function describe(): string
+    {
+        // stub
+    }
+
+}
+
+namespace AbstractScenario;
+
+/**
+ * A final class extending the abstract one.
+ */
+final class ConcreteEntity extends \AbstractScenario\AbstractEntity
+{
+    public function getType(): string
+    {
+        // stub
+    }
+
+}
+

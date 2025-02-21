@@ -1,0 +1,21 @@
+<?php
+
+namespace BlockEditorEnhancementsScenario\blocks;
+
+/**
+ * Registers and enqueues a custom block for the Block Editor.
+ */
+class MyCustomBlock
+{
+    public function init(): void
+    {
+        // stub
+    }
+
+    public function registerBlockAssets(): void
+    {
+        // stub
+    }
+
+}
+

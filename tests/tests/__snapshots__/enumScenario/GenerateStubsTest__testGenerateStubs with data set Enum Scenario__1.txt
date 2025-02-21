@@ -1,0 +1,28 @@
+<?php
+
+namespace EnumExample;
+
+enum UserStatus
+{
+}
+
+namespace EnumExample;
+
+class User
+{
+    public string $name;
+
+    public EnumExample\UserStatus $status;
+
+    public function __construct(string $name, EnumExample\UserStatus $status)
+    {
+        // stub
+    }
+
+    public function getStatusLabel(): string
+    {
+        // stub
+    }
+
+}
+

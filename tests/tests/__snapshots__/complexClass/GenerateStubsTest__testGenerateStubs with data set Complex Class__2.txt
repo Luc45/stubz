@@ -1,0 +1,21 @@
+<?php
+
+namespace MyProject;
+
+interface AnotherFileInterface
+{
+    public function doInterfaceThing();
+
+}
+
+namespace MyProject;
+
+class AnotherFile implements \MyProject\AnotherFileInterface
+{
+    public function doInterfaceThing()
+    {
+        // stub
+    }
+
+}
+

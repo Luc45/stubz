@@ -1,0 +1,25 @@
+<?php
+
+namespace ReadonlyPropertiesScenario;
+
+/**
+ * Demonstrates readonly properties introduced in PHP 8.1.
+ */
+class ImmutableUser
+{
+    public string $email;
+
+    public string $username;
+
+    public function __construct(string $email, string $username)
+    {
+        // stub
+    }
+
+    public function getDetails(): string
+    {
+        // stub
+    }
+
+}
+

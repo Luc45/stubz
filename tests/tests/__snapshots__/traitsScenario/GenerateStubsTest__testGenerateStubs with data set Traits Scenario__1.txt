@@ -1,0 +1,18 @@
+<?php
+
+namespace TraitsExample;
+
+trait HtmlRendererTrait
+{
+    public function renderBold(string $text): string
+    {
+        // stub
+    }
+
+    public function renderItalic(string $text): string
+    {
+        // stub
+    }
+
+}
+

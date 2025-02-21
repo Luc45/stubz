@@ -1,0 +1,16 @@
+<?php
+
+namespace TraitsExample;
+
+/**
+ * A simple trait that logs messages.
+ */
+trait LoggerTrait
+{
+    protected function logMessage(string $msg): void
+    {
+        // stub
+    }
+
+}
+

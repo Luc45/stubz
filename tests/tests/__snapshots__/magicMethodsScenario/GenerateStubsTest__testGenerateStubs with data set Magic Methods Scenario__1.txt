@@ -1,0 +1,38 @@
+<?php
+
+namespace MagicMethodsScenario;
+
+/**
+ * Demonstrates usage of magic methods like __get, __set, __isset, __unset, etc.
+ */
+class MagicBox
+{
+    private array $properties;
+
+    public function __get(string $name): mixed
+    {
+        // stub
+    }
+
+    public function __set(string $name, mixed $value): void
+    {
+        // stub
+    }
+
+    public function __isset(string $name): bool
+    {
+        // stub
+    }
+
+    public function __unset(string $name): void
+    {
+        // stub
+    }
+
+    public function __toString(): string
+    {
+        // stub
+    }
+
+}
+

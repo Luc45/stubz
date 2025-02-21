@@ -1,0 +1,40 @@
+<?php
+
+namespace ReflectionScenario;
+
+/**
+ * Demonstrates basic usage of PHP's Reflection API.
+ */
+class DemoClass
+{
+    public function helloWorld(): string
+    {
+        // stub
+    }
+
+    protected function hiddenMethod(): string
+    {
+        // stub
+    }
+
+    private function secretMethod(): string
+    {
+        // stub
+    }
+
+}
+
+namespace ReflectionScenario;
+
+/**
+ * A class that inspects DemoClass via reflection.
+ */
+class Inspector
+{
+    public function inspectMethods(): array
+    {
+        // stub
+    }
+
+}
+

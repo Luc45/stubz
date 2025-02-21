@@ -1,0 +1,29 @@
+<?php
+
+namespace WooCommerceIntegrationScenario\Includes;
+
+/**
+ * A class that integrates with WooCommerce to add a simple feature.
+ */
+class WooIntegrationPlugin
+{
+    public function setup(): void
+    {
+        // stub
+    }
+
+    public function maybeInit(): void
+    {
+        // stub
+    }
+
+    /**
+     * Example custom validation for WooCommerce "Add to cart".
+     */
+    public function customValidation(bool $is_valid, int $product_id): bool
+    {
+        // stub
+    }
+
+}
+
