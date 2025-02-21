@@ -118,7 +118,7 @@ function main( array $argv ): void {
 		$slug = basename( $sourceDir );
 	}
 
-    $finder->sortByName();
+	$finder->sortByName();
 
 	generateStubs( $finder, $sourceDir, $outputDir, $slug );
 }
@@ -306,23 +306,40 @@ function buildSymbolMaps( array $allClasses, array $allFunctions, array $allCons
 	$fileToFunctionsMap = [];
 	$fileToConstantsMap = [];
 
+	// Group classes by file
 	foreach ( $allClasses as $classReflection ) {
-		$fileName = $classReflection->getFileName();
-		if ( $fileName ) {
+		if ( $fileName = $classReflection->getFileName() ) {
 			$fileToClassesMap[ $fileName ][] = $classReflection;
 		}
 	}
+	// Sort classes in each file by start line
+	foreach ( $fileToClassesMap as $file => $classList ) {
+		usort( $classList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		$fileToClassesMap[ $file ] = $classList;
+	}
+
+	// Group functions by file
 	foreach ( $allFunctions as $functionReflection ) {
-		$fileName = $functionReflection->getFileName();
-		if ( $fileName ) {
+		if ( $fileName = $functionReflection->getFileName() ) {
 			$fileToFunctionsMap[ $fileName ][] = $functionReflection;
 		}
 	}
+	// Sort functions by start line
+	foreach ( $fileToFunctionsMap as $file => $funcList ) {
+		usort( $funcList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		$fileToFunctionsMap[ $file ] = $funcList;
+	}
+
+	// Group constants by file
 	foreach ( $allConstants as $constantReflection ) {
-		$fileName = $constantReflection->getFileName();
-		if ( $fileName ) {
+		if ( $fileName = $constantReflection->getFileName() ) {
 			$fileToConstantsMap[ $fileName ][] = $constantReflection;
 		}
+	}
+	// Sort constants by start line
+	foreach ( $fileToConstantsMap as $file => $constList ) {
+		usort( $constList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		$fileToConstantsMap[ $file ] = $constList;
 	}
 
 	return [ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ];
