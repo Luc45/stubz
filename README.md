@@ -33,7 +33,7 @@ PHP features such as **final** methods, **readonly** properties, **enums**, and 
 
 ## Requirements
 
-- **PHP 8.1** or later
+- **PHP 8.2** or later
 - Composer dependencies (`roave/better-reflection`, `symfony/finder`).
 
 ---
@@ -199,7 +199,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.4'
 
       - name: Cache stubcache
         uses: actions/cache@v2
