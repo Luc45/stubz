@@ -27,6 +27,7 @@ use Roave\BetterReflection\Reflector\DefaultReflector;
 use Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
@@ -139,15 +140,26 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		mkdir( $cacheDir, 0777, true );
 	}
 
-	$astLocator = ( new BetterReflection() )->astLocator();
+	$betterReflection = new BetterReflection();
+	$astLocator       = $betterReflection->astLocator();
+	$sourceStubber    = $betterReflection->sourceStubber();
+
+	$internalLocator = new PhpInternalSourceLocator( $astLocator, $sourceStubber );
+
 	if ( $sourceDir !== null ) {
-		// Directories approach
 		$directoriesLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
-		$reflector          = new DefaultReflector( $directoriesLocator );
+
+		$aggregateLocator = new AggregateSourceLocator( [
+			$internalLocator,
+			$directoriesLocator,
+		] );
+
+		$reflector = new DefaultReflector( $aggregateLocator );
 	} else {
-		// Aggregator approach
-		$singleLocators = [];
-        /** @var \SplFileInfo $file */
+		$singleLocators   = [];
+		$singleLocators[] = $internalLocator;
+
+		/** @var \SplFileInfo $file */
 		foreach ( $finder as $file ) {
 			if ( ! $file->isFile() || $file->getExtension() !== 'php' ) {
 				continue;
@@ -157,10 +169,11 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 				$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
 			}
 		}
+
 		$aggregateLocator = new AggregateSourceLocator( $singleLocators );
 		$reflector        = new DefaultReflector( $aggregateLocator );
 	}
-
+    
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
@@ -181,7 +194,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	];
 	$usedHashes = [];
 
-    /** @var \SplFileInfo $file */
+	/** @var \SplFileInfo $file */
 	foreach ( $finder as $file ) {
 		if ( ! $file->isFile() || $file->getExtension() !== 'php' ) {
 			continue;
@@ -365,7 +378,7 @@ function color( string $text, string $color = 'none' ): string {
 }
 
 /**
- * Generate class stub code (namespace, docblock, signature, properties, methods).
+ * Generate class stub code (namespace, docblock, signature, properties, methods, enum cases, etc.).
  */
 function generateClassStub( ReflectionClass $class ): string {
 	$buffer = '';
@@ -381,9 +394,15 @@ function generateClassStub( ReflectionClass $class ): string {
 		$buffer .= $docComment . "\n";
 	}
 
+	// **Add class-level attributes** before the class definition:
+	foreach ( $class->getAttributes() as $attr ) {
+		$buffer .= generateAttributeLine( $attr ) . "\n";
+	}
+
+	// Class definition line
 	$buffer .= getClassDeclaration( $class );
 
-	if ( ! $class->isInterface() && ! $class->isTrait() ) {
+	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
 		if ( $parent = safeGetParentClass( $class ) ) {
 			$buffer .= ' extends \\' . $parent->getName();
 		}
@@ -394,6 +413,36 @@ function generateClassStub( ReflectionClass $class ): string {
 	}
 	$buffer .= "\n{\n";
 
+	// **Enum Cases** (if it's an enum)
+	if ( $class->isEnum() ) {
+		// getCases() is available in Better Reflection 5+
+		$cases = [];
+		try {
+			if ( method_exists( $class, 'getCases' ) ) {
+				$cases = $class->getCases();
+			}
+		} catch ( IdentifierNotFound $e ) {
+			// skip
+		}
+		foreach ( $cases as $case ) {
+			$caseName = $case->getName();
+			// getValue() might be null for pure enums
+			try {
+				$value = $case->getValue();
+			} catch ( IdentifierNotFound $ignore ) {
+				$value = null;
+			}
+			if ( $value !== null ) {
+				$valueCode = var_export( $value, true );
+				$buffer    .= "    case {$caseName} = {$valueCode};\n\n";
+			} else {
+				// pure enum (no scalar value)
+				$buffer .= "    case {$caseName};\n\n";
+			}
+		}
+	}
+
+	// Constants
 	try {
 		foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
 			try {
@@ -407,18 +456,21 @@ function generateClassStub( ReflectionClass $class ): string {
 		// skip
 	}
 
+	// Properties
 	$properties = [];
 	try {
 		$properties = $class->getProperties();
 	} catch ( IdentifierNotFound $e ) {
 	}
 	foreach ( $properties as $property ) {
+		// Skip inherited
 		if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
 		}
 		$buffer .= generatePropertyStub( $property );
 	}
 
+	// Methods
 	$methods = [];
 	try {
 		$methods = $class->getMethods();
@@ -436,14 +488,16 @@ function generateClassStub( ReflectionClass $class ): string {
 	return $buffer;
 }
 
-/**
- * Generate function stub code.
- */
 function generateFunctionStub( ReflectionFunction $function ): string {
 	$buf = '';
 	if ( $docComment = $function->getDocComment() ) {
 		$buf .= $docComment . "\n";
 	}
+	// Add function-level attributes if you wish. For instance:
+	// foreach ($function->getAttributes() as $attr) {
+	//     $buf .= generateAttributeLine($attr) . "\n";
+	// }
+
 	$buf    .= 'function ' . $function->getName() . '(';
 	$params = [];
 	foreach ( $function->getParameters() as $param ) {
@@ -500,6 +554,7 @@ function getClassDeclaration( ReflectionClass $class ): string {
 	if ( $class->isEnum() ) {
 		return 'enum ' . $class->getShortName();
 	}
+	// We do keep final or abstract on classes
 	if ( $class->isAbstract() ) {
 		return 'abstract class ' . $class->getShortName();
 	}
@@ -511,40 +566,63 @@ function getClassDeclaration( ReflectionClass $class ): string {
 }
 
 /**
- * Generate property stub code.
+ * Generate property stub code, preserving readonly and property-level attributes.
  */
 function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProperty $property ): string {
 	$out = '';
+
+	// Property doc comment
 	if ( $docComment = $property->getDocComment() ) {
 		$lines = explode( "\n", $docComment );
 		foreach ( $lines as $line ) {
 			$out .= "    {$line}\n";
 		}
 	}
+
+	// **Property-level attributes** (rare, but possible)
+	foreach ( $property->getAttributes() as $attr ) {
+		$out .= '    ' . generateAttributeLine( $attr ) . "\n";
+	}
+
+	// Visibility
 	$visibility = $property->isPrivate()
 		? 'private'
 		: ( $property->isProtected() ? 'protected' : 'public' );
 	$static     = $property->isStatic() ? ' static' : '';
+
+	// **Preserve `readonly`** (PHP 8.1+). If older reflection, this might not exist.
+	$readonly = '';
+	if ( method_exists( $property, 'isReadOnly' ) && $property->isReadOnly() ) {
+		$readonly = 'readonly ';
+	}
+
 	$type       = $property->getType();
 	$typeString = $type ? (string) $type . ' ' : '';
-	$out        .= "    {$visibility}{$static} {$typeString}\${$property->getName()};\n\n";
+
+	$out .= "    {$visibility}{$static} {$readonly}{$typeString}\${$property->getName()};\n\n";
 
 	return $out;
 }
 
 /**
- * Generate method stub code.
+ * Generate method stub code, preserving final, attributes, etc.
  */
 function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod $method ): string {
 	$buf = '';
+
+	// Doc comment
 	if ( $docComment = $method->getDocComment() ) {
 		foreach ( explode( "\n", $docComment ) as $line ) {
 			$buf .= "    {$line}\n";
 		}
 	}
+
+	// Method-level attributes
 	foreach ( $method->getAttributes() as $attr ) {
 		$buf .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
+
+	// Visibility
 	if ( $method->isPrivate() ) {
 		$buf .= '    private ';
 	} elseif ( $method->isProtected() ) {
@@ -552,21 +630,37 @@ function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod
 	} else {
 		$buf .= '    public ';
 	}
+
+	// Static
 	if ( $method->isStatic() ) {
 		$buf .= 'static ';
 	}
+
+	// **Preserve final** if not abstract / not interface
+	if ( $method->isFinal() && ! $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
+		$buf .= 'final ';
+	}
+
+	// If the method is abstract, but not in an interface, preserve it
 	if ( $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
 		$buf .= 'abstract ';
 	}
-	$buf    .= 'function ' . $method->getName() . '(';
+
+	$buf .= 'function ' . $method->getName() . '(';
+
+	// Parameters
 	$params = [];
 	foreach ( $method->getParameters() as $param ) {
 		$params[] = generateParameterStub( $param );
 	}
 	$buf .= implode( ', ', $params ) . ')';
+
+	// Return type
 	if ( $returnType = $method->getReturnType() ) {
 		$buf .= ': ' . (string) $returnType;
 	}
+
+	// If it's an abstract method or interface method => no body
 	if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {
 		$buf .= ";\n\n";
 	} else {

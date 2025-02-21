@@ -18,7 +18,7 @@ final class ImmutableConfig
     /**
      * A final method cannot be overridden even if the class were extendable.
      */
-    public function getSetting(string $key): mixed
+    public final function getSetting(string $key): mixed
     {
         // stub
     }
@@ -32,7 +32,7 @@ namespace FinalScenario;
  */
 class PartialFinal
 {
-    public function nonOverrideableMethod(): string
+    public final function nonOverrideableMethod(): string
     {
         // stub
     }

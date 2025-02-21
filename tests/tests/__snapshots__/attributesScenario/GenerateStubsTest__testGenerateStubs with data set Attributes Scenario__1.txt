@@ -5,6 +5,7 @@ namespace AttributesScenario;
 /**
  * A custom attribute that can be applied to classes or methods.
  */
+#[Attribute(5)]
 class MyCustomAttribute
 {
     private string $description;
@@ -26,6 +27,7 @@ namespace AttributesScenario;
 /**
  * A class marked with MyCustomAttribute.
  */
+#[AttributesScenario\MyCustomAttribute('Demo class showing PHP 8 attributes')]
 class DemoClass
 {
     #[AttributesScenario\MyCustomAttribute('Demo method with attributes')]

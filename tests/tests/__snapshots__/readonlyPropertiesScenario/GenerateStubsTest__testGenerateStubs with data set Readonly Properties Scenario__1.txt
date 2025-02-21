@@ -7,9 +7,9 @@ namespace ReadonlyPropertiesScenario;
  */
 class ImmutableUser
 {
-    public string $email;
+    public readonly string $email;
 
-    public string $username;
+    public readonly string $username;
 
     public function __construct(string $email, string $username)
     {
