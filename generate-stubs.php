@@ -6,7 +6,14 @@
  * if they are not found within the scanned directory.
  * Also generates function & global constant stubs.
  *
- * Added minimal file-based caching using a top-level "slug" for multiple caches.
+ * Added minimal file-based caching with a top-level "slug" for multiple caches,
+ * plus a PARSER_VERSION to invalidate older caches and a cleanup step
+ * to remove stale .stubcache files.
+ *
+ * Now includes colored console output with stats on cache hits/misses/deleted items, etc.
+ * And a "Discovering files..." message at the start, with the count and elapsed time.
+ *
+ * IMPORTANT: We have NOT reordered reflection calls. We only flush output after printing.
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -20,32 +27,35 @@ use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
+define( 'PARSER_VERSION', 1 );
+
 function main( array $argv ): void {
 	if ( count( $argv ) < 3 ) {
-		echo "Usage: php generate-stubs.php <source-dir> <output-dir>\n";
+		echo color( "Usage: php generate-stubs.php <source-dir> <output-dir>\n", 'light_red' );
 		exit( 1 );
 	}
 
 	$sourceDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
 	$outputDir = rtrim( $argv[2], DIRECTORY_SEPARATOR );
 
-	// Kick off the generation
 	generateStubs( $sourceDir, $outputDir );
 }
 
+/**
+ * Generate stubs from $sourceDir into $outputDir, using file-based caching.
+ */
 function generateStubs( string $sourceDir, string $outputDir ): void {
-	/**
-	 * 1) Build a top-level "slug" from the source directory,
-	 *    so we can store multiple caches in .reflection-cache/<slug>/.
-	 */
-	$slug     = basename( $sourceDir ); // or customize
+	$slug     = basename( $sourceDir );
 	$cacheDir = __DIR__ . '/.reflection-cache/' . $slug;
 
 	if ( ! is_dir( $cacheDir ) ) {
 		mkdir( $cacheDir, 0777, true );
 	}
 
-	// 2) Reflect the entire directory (as before)
+	// Print "Discovering files..." then immediately flush
+	echo color( "Discovering files...", 'light_cyan' );
+	$finderStart = microtime( true );
+
 	$astLocator         = ( new BetterReflection() )->astLocator();
 	$directoriesLocator = new \Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
 	$reflector          = new DefaultReflector( $directoriesLocator );
@@ -55,7 +65,7 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
 
-	// 3) Group them by file
+	// Group them by file
 	$fileToClassesMap   = [];
 	$fileToFunctionsMap = [];
 	$fileToConstantsMap = [];
@@ -79,12 +89,31 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 		}
 	}
 
-	// 4) Go file-by-file via Symfony Finder
 	$finder = new Finder();
 	$finder->files()->in( $sourceDir )->name( '*.php' );
 
+	$fileCount  = $finder->count(); // get total # of matched .php files
+	$finderTime = microtime( true ) - $finderStart;
+
+	echo color(
+		" Found {$fileCount} files (" . round( $finderTime, 2 ) . "s)\n",
+		'light_cyan'
+	);
+
+	// Track usage stats
+	$stats      = [
+		'filesTotal'    => 0,
+		'filesWithSyms' => 0,
+		'cacheHits'     => 0,
+		'cacheMisses'   => 0,
+		'deleted'       => 0,
+	];
+	$usedHashes = [];
+
 	foreach ( $finder as $file ) {
 		/** @var SplFileInfo $file */
+		$stats['filesTotal'] ++;
+
 		$realpath = $file->getRealPath();
 		if ( ! $realpath ) {
 			continue;
@@ -99,58 +128,130 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 			// No classes/functions/constants => skip
 			continue;
 		}
+		$stats['filesWithSyms'] ++;
 
-		// 5) Compute a checksum and see if we have a cached stub
-		$fileHash    = md5_file( $realpath );
+		// Build a cache file name
+		$fileHash    = md5( PARSER_VERSION . '_' . md5_file( $realpath ) );
 		$cacheFile   = $cacheDir . '/' . $fileHash . '.stubcache';
 		$stubContent = '';
 
 		if ( file_exists( $cacheFile ) ) {
-			// Already cached => just load it
+			// Cache hit
+			$stats['cacheHits'] ++;
 			$stubContent = file_get_contents( $cacheFile );
 		} else {
-			// Build the stub content
+			// Cache miss => reflect & generate
+			$stats['cacheMisses'] ++;
 			$stubContent = "<?php\n\n";
 
-			// Classes
 			if ( isset( $fileToClassesMap[ $realpath ] ) ) {
 				foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
 					$stubContent .= generateClassStub( $reflectionClass );
 				}
 			}
-			// Functions
 			if ( isset( $fileToFunctionsMap[ $realpath ] ) ) {
 				foreach ( $fileToFunctionsMap[ $realpath ] as $reflectionFunction ) {
 					$stubContent .= generateFunctionStub( $reflectionFunction );
 				}
 			}
-			// Constants
 			if ( isset( $fileToConstantsMap[ $realpath ] ) ) {
 				foreach ( $fileToConstantsMap[ $realpath ] as $reflectionConstant ) {
 					$stubContent .= generateConstantStub( $reflectionConstant );
 				}
 			}
 
-			// Save to cache
 			file_put_contents( $cacheFile, $stubContent );
 		}
 
-		// 6) Write stub file to output
+		$usedHashes[] = $fileHash;
+
+		// Write stub file
 		$relativePath = str_replace( $sourceDir, '', $realpath );
 		$targetPath   = $outputDir . $relativePath;
-
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
 			mkdir( dirname( $targetPath ), 0777, true );
 		}
 		file_put_contents( $targetPath, $stubContent );
 	}
+
+	// Clean up old caches
+	$allCacheFiles = glob( $cacheDir . '/*.stubcache' );
+	if ( is_array( $allCacheFiles ) ) {
+		foreach ( $allCacheFiles as $cacheFilePath ) {
+			$filename = basename( $cacheFilePath, '.stubcache' );
+			if ( ! in_array( $filename, $usedHashes, true ) ) {
+				unlink( $cacheFilePath );
+				$stats['deleted'] ++;
+			}
+		}
+	}
+
+	// Print a summary
+	printStats( $stats );
 }
 
 /**
- * The rest is unchanged...
+ * Print a summary of the results, with ANSI colors for style.
  */
+function printStats( array $stats ): void {
+	echo "\n" . color( "=== Stub Generation Summary ===\n", 'light_cyan' );
+
+	echo color( "    PHP files found: ", 'cyan' ) . $stats['filesTotal'] . "\n";
+	echo color( "    With symbols:    ", 'cyan' ) . $stats['filesWithSyms'] . "\n";
+
+	$totalParsed = $stats['cacheHits'] + $stats['cacheMisses'];
+	if ( $totalParsed === 0 ) {
+		echo color( "    No files had to be parsed.\n", 'yellow' );
+	} else {
+		$hitPercent = ( $stats['cacheHits'] / $totalParsed ) * 100;
+		echo color( "    Cache hits:      ", 'green' ) . $stats['cacheHits']
+		     . " / {$totalParsed} ("
+		     . number_format( $hitPercent, 2 )
+		     . "%)\n";
+		echo color( "    Cache misses:    ", 'red' ) . $stats['cacheMisses'] . "\n";
+	}
+
+	echo color( "    Old cache deleted: ", 'cyan' ) . $stats['deleted'] . "\n";
+	echo color( "===============================\n\n", 'light_cyan' );
+}
+
+/**
+ * Simple color helper using ANSI escape codes.
+ */
+function color( string $text, string $color = 'none' ): string {
+	static $colors = [
+		'none'          => '0',
+		'black'         => '0;30',
+		'red'           => '0;31',
+		'green'         => '0;32',
+		'yellow'        => '0;33',
+		'blue'          => '0;34',
+		'magenta'       => '0;35',
+		'cyan'          => '0;36',
+		'white'         => '0;37',
+		'light_gray'    => '0;37',
+		'light_red'     => '1;31',
+		'light_green'   => '1;32',
+		'light_yellow'  => '1;33',
+		'light_blue'    => '1;34',
+		'light_magenta' => '1;35',
+		'light_cyan'    => '1;36',
+		'light_white'   => '1;37',
+	];
+
+	$code = $colors[ $color ] ?? $colors['none'];
+	if ( $code === '0' ) {
+		return $text; // no color
+	}
+
+	return "\033[{$code}m{$text}\033[0m";
+}
+
+/**
+ * The rest is unchanged below this point...
+ */
+
 function generateClassStub( ReflectionClass $class ): string {
-	// same as before...
 	$buffer = '';
 
 	// Namespace
@@ -177,7 +278,6 @@ function generateClassStub( ReflectionClass $class ): string {
 	}
 	$buffer .= "\n{\n";
 
-	// constants, properties, methods...
 	try {
 		foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
 			try {
