@@ -5,6 +5,8 @@
  * Stub generator for a directory using BetterReflection, skipping external parents/interfaces
  * if they are not found within the scanned directory.
  * Also generates function & global constant stubs.
+ *
+ * Added minimal file-based caching using a top-level "slug" for multiple caches.
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -13,12 +15,7 @@ use Roave\BetterReflection\BetterReflection;
 use Roave\BetterReflection\Reflector\DefaultReflector;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionFunction;
-use Roave\BetterReflection\Reflection\ReflectionParameter;
-use Roave\BetterReflection\Reflection\ReflectionProperty;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
-
-// for global constants
-use Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator;
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
@@ -37,104 +34,123 @@ function main( array $argv ): void {
 }
 
 function generateStubs( string $sourceDir, string $outputDir ): void {
-	// 1) Reflect the entire directory
+	/**
+	 * 1) Build a top-level "slug" from the source directory,
+	 *    so we can store multiple caches in .reflection-cache/<slug>/.
+	 */
+	$slug     = basename( $sourceDir ); // or customize
+	$cacheDir = __DIR__ . '/.reflection-cache/' . $slug;
+
+	if ( ! is_dir( $cacheDir ) ) {
+		mkdir( $cacheDir, 0777, true );
+	}
+
+	// 2) Reflect the entire directory (as before)
 	$astLocator         = ( new BetterReflection() )->astLocator();
-	$directoriesLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
+	$directoriesLocator = new \Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
 	$reflector          = new DefaultReflector( $directoriesLocator );
 
-	// --- Reflect classes, functions, constants ---
+	// Reflect classes, functions, constants
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
 
-	// 2) Group them by file
+	// 3) Group them by file
 	$fileToClassesMap   = [];
 	$fileToFunctionsMap = [];
 	$fileToConstantsMap = [];
 
 	foreach ( $allClasses as $classReflection ) {
 		$fileName = $classReflection->getFileName();
-		if ( $fileName === null ) {
-			continue;
+		if ( $fileName ) {
+			$fileToClassesMap[ $fileName ][] = $classReflection;
 		}
-		$fileToClassesMap[ $fileName ][] = $classReflection;
 	}
-
 	foreach ( $allFunctions as $functionReflection ) {
 		$fileName = $functionReflection->getFileName();
-		if ( $fileName === null ) {
-			continue;
+		if ( $fileName ) {
+			$fileToFunctionsMap[ $fileName ][] = $functionReflection;
 		}
-		$fileToFunctionsMap[ $fileName ][] = $functionReflection;
 	}
-
 	foreach ( $allConstants as $constantReflection ) {
 		$fileName = $constantReflection->getFileName();
-		if ( $fileName === null ) {
-			continue;
+		if ( $fileName ) {
+			$fileToConstantsMap[ $fileName ][] = $constantReflection;
 		}
-		$fileToConstantsMap[ $fileName ][] = $constantReflection;
 	}
 
-	// 3) Use Symfony Finder to go file-by-file
+	// 4) Go file-by-file via Symfony Finder
 	$finder = new Finder();
 	$finder->files()->in( $sourceDir )->name( '*.php' );
 
-	// 4) For each file, see if we have classes/functions/constants
 	foreach ( $finder as $file ) {
-		$realpath   = $file->getRealPath();
+		/** @var SplFileInfo $file */
+		$realpath = $file->getRealPath();
+		if ( ! $realpath ) {
+			continue;
+		}
+
 		$hasSymbols = (
 			isset( $fileToClassesMap[ $realpath ] ) ||
 			isset( $fileToFunctionsMap[ $realpath ] ) ||
 			isset( $fileToConstantsMap[ $realpath ] )
 		);
-
 		if ( ! $hasSymbols ) {
-			// Nothing to stub here
+			// No classes/functions/constants => skip
 			continue;
 		}
 
-		// 5) Generate the stub content
-		$stubContent = "<?php\n\n";
+		// 5) Compute a checksum and see if we have a cached stub
+		$fileHash    = md5_file( $realpath );
+		$cacheFile   = $cacheDir . '/' . $fileHash . '.stubcache';
+		$stubContent = '';
 
-		// a) Classes
-		if ( isset( $fileToClassesMap[ $realpath ] ) ) {
-			foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
-				$stubContent .= generateClassStub( $reflectionClass );
+		if ( file_exists( $cacheFile ) ) {
+			// Already cached => just load it
+			$stubContent = file_get_contents( $cacheFile );
+		} else {
+			// Build the stub content
+			$stubContent = "<?php\n\n";
+
+			// Classes
+			if ( isset( $fileToClassesMap[ $realpath ] ) ) {
+				foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
+					$stubContent .= generateClassStub( $reflectionClass );
+				}
 			}
+			// Functions
+			if ( isset( $fileToFunctionsMap[ $realpath ] ) ) {
+				foreach ( $fileToFunctionsMap[ $realpath ] as $reflectionFunction ) {
+					$stubContent .= generateFunctionStub( $reflectionFunction );
+				}
+			}
+			// Constants
+			if ( isset( $fileToConstantsMap[ $realpath ] ) ) {
+				foreach ( $fileToConstantsMap[ $realpath ] as $reflectionConstant ) {
+					$stubContent .= generateConstantStub( $reflectionConstant );
+				}
+			}
+
+			// Save to cache
+			file_put_contents( $cacheFile, $stubContent );
 		}
 
-		// b) Functions
-		if ( isset( $fileToFunctionsMap[ $realpath ] ) ) {
-			foreach ( $fileToFunctionsMap[ $realpath ] as $reflectionFunction ) {
-				$stubContent .= generateFunctionStub( $reflectionFunction );
-			}
-		}
-
-		// c) Global Constants
-		if ( isset( $fileToConstantsMap[ $realpath ] ) ) {
-			foreach ( $fileToConstantsMap[ $realpath ] as $reflectionConstant ) {
-				$stubContent .= generateConstantStub( $reflectionConstant );
-			}
-		}
-
-		// 6) Write the stub file
+		// 6) Write stub file to output
 		$relativePath = str_replace( $sourceDir, '', $realpath );
 		$targetPath   = $outputDir . $relativePath;
 
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
 			mkdir( dirname( $targetPath ), 0777, true );
 		}
-
 		file_put_contents( $targetPath, $stubContent );
 	}
 }
 
 /**
- * Build the stub for one class, interface, trait, or enum.
- * If external parents/interfaces can't be found, we skip them.
+ * The rest is unchanged...
  */
 function generateClassStub( ReflectionClass $class ): string {
+	// same as before...
 	$buffer = '';
 
 	// Namespace
@@ -143,59 +159,43 @@ function generateClassStub( ReflectionClass $class ): string {
 		$buffer .= "namespace {$namespace};\n\n";
 	}
 
-	// Class DocBlock
+	// DocBlock
 	if ( $docComment = $class->getDocComment() ) {
 		$buffer .= $docComment . "\n";
 	}
 
-	// E.g. "abstract class Foo" or "interface Foo", etc.
 	$buffer .= getClassDeclaration( $class );
 
-	// If it's not interface or trait, try extends/implements
 	if ( ! $class->isInterface() && ! $class->isTrait() ) {
-		// Try to reflect parent class. If missing externally, skip
 		if ( $parent = safeGetParentClass( $class ) ) {
 			$buffer .= ' extends \\' . $parent->getName();
 		}
-
-		// Try to reflect interface names. If missing externally, skip
 		$interfaces = safeGetInterfaceNames( $class );
-		if ( count( $interfaces ) > 0 ) {
+		if ( $interfaces ) {
 			$buffer .= ' implements ' . implode( ', ', array_map( fn( $i ) => '\\' . $i, $interfaces ) );
 		}
 	}
-
 	$buffer .= "\n{\n";
 
-	/**
-	 * Class-level constants:
-	 * Wrap in a try/catch so we skip them if we can't resolve the parent class or any references.
-	 */
+	// constants, properties, methods...
 	try {
 		foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
-			// getValue() can fail if it references an external class constant
 			try {
 				$value = var_export( $reflectionConstant->getValue(), true );
 			} catch ( IdentifierNotFound $e ) {
-				// Skip constants we can't resolve
 				continue;
 			}
 			$buffer .= "    const {$constName} = {$value};\n\n";
 		}
 	} catch ( IdentifierNotFound $e ) {
-		// Couldn’t reflect immediate constants => skip them altogether
+		// skip
 	}
 
-	/**
-	 * Local properties only; skip external parents.
-	 */
 	$properties = [];
 	try {
 		$properties = $class->getProperties();
 	} catch ( IdentifierNotFound $e ) {
-		// Couldn't reflect parent => skip all properties
 	}
-
 	foreach ( $properties as $property ) {
 		if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
@@ -203,16 +203,11 @@ function generateClassStub( ReflectionClass $class ): string {
 		$buffer .= generatePropertyStub( $property );
 	}
 
-	/**
-	 * Local methods only; skip external parents.
-	 */
 	$methods = [];
 	try {
 		$methods = $class->getMethods();
 	} catch ( IdentifierNotFound $e ) {
-		// Couldn't reflect parent => skip all methods
 	}
-
 	foreach ( $methods as $method ) {
 		if ( $method->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
@@ -225,76 +220,46 @@ function generateClassStub( ReflectionClass $class ): string {
 	return $buffer;
 }
 
-/**
- * Generate a stub for a single function.
- * (If you need doc comments, you can include them similarly to how we do for classes.)
- */
 function generateFunctionStub( ReflectionFunction $function ): string {
 	$buf = '';
-
-	// Optional doc comment
 	if ( $docComment = $function->getDocComment() ) {
 		$buf .= $docComment . "\n";
 	}
-
-	// function name (+ parameters)
-	// For minimal approach, we do something simple:
-	$buf         .= 'function ' . $function->getName() . '(';
-	$paramChunks = [];
+	$buf    .= 'function ' . $function->getName() . '(';
+	$params = [];
 	foreach ( $function->getParameters() as $param ) {
-		$paramChunks[] = generateParameterStub( $param );
+		$params[] = generateParameterStub( $param );
 	}
-	$buf .= implode( ', ', $paramChunks ) . ')';
-
-	// return type
+	$buf .= implode( ', ', $params ) . ')';
 	if ( $returnType = $function->getReturnType() ) {
 		$buf .= ': ' . (string) $returnType;
 	}
-
-	// function body
 	$buf .= "\n{\n    // stub\n}\n\n";
 
 	return $buf;
 }
 
-/**
- * Generate a stub for a single global constant.
- */
 function generateConstantStub( ReflectionConstant $constant ): string {
-	$buf = '';
-	// If the constant is namespaced, ReflectionConstant::getName() includes the namespace.
-	// For minimal approach, just use the fully-qualified name:
-	$constantName = $constant->getName();
-
+	$buf  = '';
+	$name = $constant->getName();
 	try {
 		$value = var_export( $constant->getValue(), true );
 	} catch ( IdentifierNotFound $e ) {
-		// If referencing an external constant or something, skip
 		return '';
 	}
-
-	$buf .= "const {$constantName} = {$value};\n\n";
+	$buf .= "const {$name} = {$value};\n\n";
 
 	return $buf;
 }
 
-/**
- * Provide a safe wrapper to getParentClass().
- * If the parent is in external code, we'll catch the exception and return null.
- */
 function safeGetParentClass( ReflectionClass $class ): ?ReflectionClass {
 	try {
 		return $class->getParentClass();
 	} catch ( IdentifierNotFound $e ) {
-		// skip external or unknown
 		return null;
 	}
 }
 
-/**
- * Provide a safe wrapper to getInterfaceNames().
- * If an interface is external, reflection could throw an exception.
- */
 function safeGetInterfaceNames( ReflectionClass $class ): array {
 	try {
 		return $class->getInterfaceNames();
@@ -303,9 +268,6 @@ function safeGetInterfaceNames( ReflectionClass $class ): array {
 	}
 }
 
-/**
- * Return a string like "interface Foo" or "abstract class Foo", etc.
- */
 function getClassDeclaration( ReflectionClass $class ): string {
 	if ( $class->isInterface() ) {
 		return 'interface ' . $class->getShortName();
@@ -326,54 +288,32 @@ function getClassDeclaration( ReflectionClass $class ): string {
 	return 'class ' . $class->getShortName();
 }
 
-/**
- * Generate a stub line for a single property.
- */
-function generatePropertyStub( ReflectionProperty $property ): string {
+function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProperty $property ): string {
 	$out = '';
-
-	// docblock
 	if ( $docComment = $property->getDocComment() ) {
 		$out .= "    {$docComment}\n";
 	}
-
-	// visibility
 	$visibility = $property->isPrivate()
 		? 'private'
 		: ( $property->isProtected() ? 'protected' : 'public' );
-
-	// static?
-	$static = $property->isStatic() ? ' static' : '';
-
-	// typed property?
+	$static     = $property->isStatic() ? ' static' : '';
 	$type       = $property->getType();
 	$typeString = $type ? (string) $type . ' ' : '';
-
-	$out .= "    {$visibility}{$static} {$typeString}\${$property->getName()};\n\n";
+	$out        .= "    {$visibility}{$static} {$typeString}\${$property->getName()};\n\n";
 
 	return $out;
 }
 
-/**
- * Generate a stub for a single method (including docblock, attributes, signature, and empty body if not abstract).
- */
 function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod $method ): string {
 	$buf = '';
-
-	// 1) Doc comment
 	if ( $docComment = $method->getDocComment() ) {
 		foreach ( explode( "\n", $docComment ) as $line ) {
 			$buf .= "    {$line}\n";
 		}
 	}
-
-	// 2) Attributes (PHP 8+)
-	//    Each attribute is placed on its own line before the signature.
 	foreach ( $method->getAttributes() as $attr ) {
 		$buf .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
-
-	// 3) Visibility
 	if ( $method->isPrivate() ) {
 		$buf .= '    private ';
 	} elseif ( $method->isProtected() ) {
@@ -381,31 +321,21 @@ function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod
 	} else {
 		$buf .= '    public ';
 	}
-
-	// 4) Static?
 	if ( $method->isStatic() ) {
 		$buf .= 'static ';
 	}
-
-	// 5) Abstract? (if not an interface)
 	if ( $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
 		$buf .= 'abstract ';
 	}
-
-	// 6) Method name + parameters
-	$buf         .= 'function ' . $method->getName() . '(';
-	$paramChunks = [];
+	$buf    .= 'function ' . $method->getName() . '(';
+	$params = [];
 	foreach ( $method->getParameters() as $param ) {
-		$paramChunks[] = generateParameterStub( $param );
+		$params[] = generateParameterStub( $param );
 	}
-	$buf .= implode( ', ', $paramChunks ) . ')';
-
-	// 7) Return type
+	$buf .= implode( ', ', $params ) . ')';
 	if ( $returnType = $method->getReturnType() ) {
 		$buf .= ': ' . (string) $returnType;
 	}
-
-	// 8) Abstract or interface -> no body
 	if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {
 		$buf .= ";\n\n";
 	} else {
@@ -415,39 +345,28 @@ function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod
 	return $buf;
 }
 
-// Minimal utility to convert a ReflectionAttribute to a string like #[Foo('arg')]
 function generateAttributeLine( \Roave\BetterReflection\Reflection\ReflectionAttribute $attr ): string {
-	// Convert arguments to a comma-separated list, e.g. (1, 'abc')
 	$args = [];
 	foreach ( $attr->getArguments() as $argValue ) {
 		$args[] = var_export( $argValue, true );
 	}
-	$argsString = count( $args ) ? '(' . implode( ', ', $args ) . ')' : '';
+	$argsString = $args ? '(' . implode( ', ', $args ) . ')' : '';
 
-	// Return "#[AttributeName(...)]" (we’ll prepend a `#` manually above)
-	return "[{$attr->getName()}{$argsString}]";
+	return "#[{$attr->getName()}{$argsString}]";
 }
 
-/**
- * Generate the parameter signature: type + byref + variadic + default value
- */
-function generateParameterStub( ReflectionParameter $param ): string {
+function generateParameterStub( \Roave\BetterReflection\Reflection\ReflectionParameter $param ): string {
 	$out = '';
-
 	if ( $type = $param->getType() ) {
 		$out .= (string) $type . ' ';
 	}
-
 	if ( $param->isPassedByReference() ) {
 		$out .= '&';
 	}
-
 	if ( $param->isVariadic() ) {
 		$out .= '...';
 	}
-
 	$out .= '$' . $param->getName();
-
 	if ( $param->isDefaultValueAvailable() ) {
 		$defaultVal = var_export( $param->getDefaultValue(), true );
 		$out        .= ' = ' . $defaultVal;
@@ -456,7 +375,7 @@ function generateParameterStub( ReflectionParameter $param ): string {
 	return $out;
 }
 
-// ---- Only run `main` if called directly from CLI
+// Only run main if called directly
 if ( PHP_SAPI === 'cli' && realpath( $argv[0] ) === __FILE__ ) {
 	main( $argv );
 }
