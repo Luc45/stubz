@@ -14,6 +14,10 @@
  * And a "Discovering files..." message at the start, with the count and elapsed time.
  *
  * IMPORTANT: We have NOT reordered reflection calls. We only flush output after printing.
+ *
+ * EXTRA:
+ * - STUB_CACHE_DIR env var to override the default ./reflection-cache path.
+ * - NO_STUB_CACHE=1 to disable reading/writing the cache entirely.
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -33,10 +37,8 @@ use Symfony\Component\Finder\SplFileInfo;
 define( 'PARSER_VERSION', 1 );
 
 function main( array $argv ): void {
-	// Shift off the script name.
 	array_shift( $argv );
 
-	// Simple help usage check.
 	if ( count( $argv ) === 0 ) {
 		echo color( "Usage:\n", 'light_red' );
 		echo color( "  1) php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
@@ -47,7 +49,7 @@ function main( array $argv ): void {
 	$excludes   = [];
 	$finderFile = null;
 
-	// Collect optional flags first.
+	// Parse optional flags.
 	$parsedFlags = true;
 	while ( $parsedFlags && count( $argv ) > 0 ) {
 		$peek = $argv[0];
@@ -73,10 +75,9 @@ function main( array $argv ): void {
 		}
 	}
 
-	// Decide which mode we're in:
-	// 1) Using a custom Finder
-	// 2) Using a source directory + excludes
+	// Decide which mode we're in.
 	if ( $finderFile ) {
+		// --finder mode
 		if ( count( $excludes ) > 0 ) {
 			echo color( "Error: You cannot use --exclude with --finder. Please remove --exclude.\n", 'light_red' );
 			exit( 1 );
@@ -87,17 +88,16 @@ function main( array $argv ): void {
 		}
 		$outputDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
 
-		// Load user's Finder from file.
+		// Load the custom Finder from file.
 		$finder = include $finderFile;
 		if ( ! $finder instanceof Finder ) {
 			echo color( "Error: The file '{$finderFile}' did not return a Symfony\\Component\\Finder\\Finder instance.\n", 'light_red' );
 			exit( 1 );
 		}
-
-		// We'll treat $sourceDir as null to indicate aggregator mode.
 		$sourceDir = null;
 		$slug      = basename( $finderFile, '.php' );
 	} else {
+		// Normal mode, must have <source-dir> and <output-dir>
 		if ( count( $argv ) < 2 ) {
 			echo color( "Usage: php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
 			exit( 1 );
@@ -105,13 +105,12 @@ function main( array $argv ): void {
 		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
 		$outputDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
 
-		// Build a Finder ourselves, applying excludes.
+		// Build a default Finder, applying excludes.
 		$finder = new Finder();
 		$finder->files()->in( $sourceDir )->name( '*.php' );
 		foreach ( $excludes as $exDir ) {
 			$finder->exclude( $exDir );
 		}
-
 		$slug = basename( $sourceDir );
 	}
 
@@ -119,22 +118,27 @@ function main( array $argv ): void {
 }
 
 /**
- * Generate stubs using a single logic, whether we have a custom Finder or a default one.
- * If $sourceDir is null, we assume we have a user-provided Finder and use an AggregateSourceLocator.
- * Otherwise, we use a DirectoriesSourceLocator for the given $sourceDir.
+ * Generate stubs using a single logic, with optional caching.
+ *
+ * - If $sourceDir is null, we use an AggregateSourceLocator with the provided Finder files.
+ * - If $sourceDir is non-null, we use a DirectoriesSourceLocator for reflection.
+ * - If NO_STUB_CACHE=1 is set, we skip reading/writing the cache entirely.
+ * - If STUB_CACHE_DIR is set, we store in that directory instead of the default.
  */
 function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
-	// Count .php files from the finder
 	$fileCount = $finder->count();
 	echo color( "Parsing {$fileCount} PHP files...", 'light_cyan' );
 	$finderStart = microtime( true );
 
-	$cacheDir = __DIR__ . '/.reflection-cache/' . $slug;
-	if ( ! is_dir( $cacheDir ) ) {
+	// ENV variables for controlling cache.
+	$disableCache = ( getenv( 'NO_STUB_CACHE' ) === '1' );
+	$cacheRoot    = getenv( 'STUB_CACHE_DIR' ) ?: ( __DIR__ . '/.reflection-cache' );
+	$cacheDir     = rtrim( $cacheRoot, DIRECTORY_SEPARATOR ) . '/' . $slug;
+
+	if ( ! $disableCache && ! is_dir( $cacheDir ) ) {
 		mkdir( $cacheDir, 0777, true );
 	}
 
-	// Build the correct SourceLocator & Reflector
 	$astLocator = ( new BetterReflection() )->astLocator();
 	if ( $sourceDir !== null ) {
 		// Directories approach
@@ -144,7 +148,6 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		// Aggregator approach
 		$singleLocators = [];
 		foreach ( $finder as $file ) {
-			/** @var SplFileInfo $file */
 			if ( $realPath = $file->getRealPath() ) {
 				$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
 			}
@@ -153,12 +156,10 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		$reflector        = new DefaultReflector( $aggregateLocator );
 	}
 
-	// Reflect classes, functions, constants
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
 
-	// Map real file paths to their classes, etc.
 	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] =
 		buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
 
@@ -192,17 +193,20 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		}
 		$stats['filesWithSyms'] ++;
 
-		// Build a cache file name
+		// Use caching
 		$fileHash  = md5( PARSER_VERSION . '_' . md5_file( $realpath ) );
 		$cacheFile = $cacheDir . '/' . $fileHash . '.stubcache';
 
-		if ( file_exists( $cacheFile ) ) {
+		if ( ! $disableCache && file_exists( $cacheFile ) ) {
+			// Cache hit
 			$stats['cacheHits'] ++;
 			$stubContent = file_get_contents( $cacheFile );
 		} else {
+			// Either caching is disabled, or the cache file doesn't exist => build fresh
 			$stats['cacheMisses'] ++;
 			$stubContent = "<?php\n\n";
 
+			// Build stubs for classes, functions, constants
 			if ( isset( $fileToClassesMap[ $realpath ] ) ) {
 				foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
 					$stubContent .= generateClassStub( $reflectionClass );
@@ -219,21 +223,26 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 				}
 			}
 
-			file_put_contents( $cacheFile, $stubContent );
+			// If caching is enabled, write the new cache file
+			if ( ! $disableCache ) {
+				file_put_contents( $cacheFile, $stubContent );
+			}
 		}
 
-		$usedHashes[] = $fileHash;
+        // If caching is enabled, mark this file's cache hash as "used"
+		if ( ! $disableCache ) {
+			$usedHashes[] = $fileHash;
+		}
 
 		// Write stub file
 		if ( $sourceDir !== null ) {
-			// Normal mode: relative to $sourceDir
 			$relativePath = str_replace( $sourceDir, '', $realpath );
 			$targetPath   = $outputDir . $relativePath;
 		} else {
-			// Finder mode: replicate directory structure from the finder file's directory
 			$relativePath = ltrim( str_replace( dirname( __FILE__ ), '', $realpath ), DIRECTORY_SEPARATOR );
 			$targetPath   = rtrim( $outputDir, DIRECTORY_SEPARATOR ) . DIRECTORY_SEPARATOR . $relativePath;
 		}
+
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
 			mkdir( dirname( $targetPath ), 0777, true );
 		}
@@ -242,14 +251,16 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 
 	echo color( " Done in " . round( microtime( true ) - $timeAfterBuiltASTTree, 2 ) . "s.\n", 'light_cyan' );
 
-	// Clean up old caches
-	$allCacheFiles = glob( $cacheDir . '/*.stubcache' );
-	if ( is_array( $allCacheFiles ) ) {
-		foreach ( $allCacheFiles as $cacheFilePath ) {
-			$filename = basename( $cacheFilePath, '.stubcache' );
-			if ( ! in_array( $filename, $usedHashes, true ) ) {
-				unlink( $cacheFilePath );
-				$stats['deleted'] ++;
+	// Clean up old caches only if caching is enabled
+	if ( ! $disableCache ) {
+		$allCacheFiles = glob( $cacheDir . '/*.stubcache' );
+		if ( is_array( $allCacheFiles ) ) {
+			foreach ( $allCacheFiles as $cacheFilePath ) {
+				$filename = basename( $cacheFilePath, '.stubcache' );
+				if ( ! in_array( $filename, $usedHashes, true ) ) {
+					unlink( $cacheFilePath );
+					$stats['deleted'] ++;
+				}
 			}
 		}
 	}
