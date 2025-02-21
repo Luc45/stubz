@@ -33,7 +33,7 @@ PHP features such as **final** methods, **readonly** properties, **enums**, and 
 
 ## Requirements
 
-- **PHP 8.0** or later (PHP 8.1+ recommended for best feature coverage).
+- **PHP 8.1** or later
 - Composer dependencies (`roave/better-reflection`, `symfony/finder`).
 
 ---
