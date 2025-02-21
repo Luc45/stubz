@@ -20,6 +20,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Roave\BetterReflection\BetterReflection;
 use Roave\BetterReflection\Reflector\DefaultReflector;
+use Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
@@ -30,77 +33,139 @@ use Symfony\Component\Finder\SplFileInfo;
 define( 'PARSER_VERSION', 1 );
 
 function main( array $argv ): void {
-	if ( count( $argv ) < 3 ) {
-		echo color( "Usage: php generate-stubs.php <source-dir> <output-dir>\n", 'light_red' );
+	// Shift off the script name.
+	array_shift( $argv );
+
+	// Simple help usage check.
+	if ( count( $argv ) === 0 ) {
+		echo color( "Usage:\n", 'light_red' );
+		echo color( "  1) php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
+		echo color( "  2) php generate-stubs.php --finder <finder-file.php> <output-dir>\n\n", 'light_red' );
 		exit( 1 );
 	}
 
-	$sourceDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
-	$outputDir = rtrim( $argv[2], DIRECTORY_SEPARATOR );
+	$excludes   = [];
+	$finderFile = null;
 
-	generateStubs( $sourceDir, $outputDir );
+	// Collect optional flags first.
+	$parsedFlags = true;
+	while ( $parsedFlags && count( $argv ) > 0 ) {
+		$peek = $argv[0];
+		switch ( $peek ) {
+			case '--exclude':
+				array_shift( $argv );
+				if ( ! isset( $argv[0] ) ) {
+					echo color( "Error: Missing <dir> after --exclude\n", 'light_red' );
+					exit( 1 );
+				}
+				$excludes[] = array_shift( $argv );
+				break;
+			case '--finder':
+				array_shift( $argv );
+				if ( ! isset( $argv[0] ) ) {
+					echo color( "Error: Missing <finder-file.php> after --finder\n", 'light_red' );
+					exit( 1 );
+				}
+				$finderFile = array_shift( $argv );
+				break;
+			default:
+				$parsedFlags = false;
+		}
+	}
+
+	// Decide which mode we're in:
+	// 1) Using a custom Finder
+	// 2) Using a source directory + excludes
+	if ( $finderFile ) {
+		if ( count( $excludes ) > 0 ) {
+			echo color( "Error: You cannot use --exclude with --finder. Please remove --exclude.\n", 'light_red' );
+			exit( 1 );
+		}
+		if ( count( $argv ) !== 1 ) {
+			echo color( "Error: When using --finder, the only additional argument is <output-dir>.\n", 'light_red' );
+			exit( 1 );
+		}
+		$outputDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
+
+		// Load user's Finder from file.
+		$finder = include $finderFile;
+		if ( ! $finder instanceof Finder ) {
+			echo color( "Error: The file '{$finderFile}' did not return a Symfony\\Component\\Finder\\Finder instance.\n", 'light_red' );
+			exit( 1 );
+		}
+
+		// We'll treat $sourceDir as null to indicate aggregator mode.
+		$sourceDir = null;
+		$slug      = basename( $finderFile, '.php' );
+	} else {
+		if ( count( $argv ) < 2 ) {
+			echo color( "Usage: php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
+			exit( 1 );
+		}
+		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
+		$outputDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
+
+		// Build a Finder ourselves, applying excludes.
+		$finder = new Finder();
+		$finder->files()->in( $sourceDir )->name( '*.php' );
+		foreach ( $excludes as $exDir ) {
+			$finder->exclude( $exDir );
+		}
+
+		$slug = basename( $sourceDir );
+	}
+
+	generateStubs( $finder, $sourceDir, $outputDir, $slug );
 }
 
 /**
- * Generate stubs from $sourceDir into $outputDir, using file-based caching.
+ * Generate stubs using a single logic, whether we have a custom Finder or a default one.
+ * If $sourceDir is null, we assume we have a user-provided Finder and use an AggregateSourceLocator.
+ * Otherwise, we use a DirectoriesSourceLocator for the given $sourceDir.
  */
-function generateStubs( string $sourceDir, string $outputDir ): void {
-	$slug     = basename( $sourceDir );
-	$cacheDir = __DIR__ . '/.reflection-cache/' . $slug;
+function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
+	// Count .php files from the finder
+	$fileCount = $finder->count();
+	echo color( "Parsing {$fileCount} PHP files...", 'light_cyan' );
+	$finderStart = microtime( true );
 
+	$cacheDir = __DIR__ . '/.reflection-cache/' . $slug;
 	if ( ! is_dir( $cacheDir ) ) {
 		mkdir( $cacheDir, 0777, true );
 	}
 
-	// Print "Discovering files..." then immediately flush
-	echo color( "Discovering files...", 'light_cyan' );
-	$finderStart = microtime( true );
-
-	$astLocator         = ( new BetterReflection() )->astLocator();
-	$directoriesLocator = new \Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
-	$reflector          = new DefaultReflector( $directoriesLocator );
+	// Build the correct SourceLocator & Reflector
+	$astLocator = ( new BetterReflection() )->astLocator();
+	if ( $sourceDir !== null ) {
+		// Directories approach
+		$directoriesLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
+		$reflector          = new DefaultReflector( $directoriesLocator );
+	} else {
+		// Aggregator approach
+		$singleLocators = [];
+		foreach ( $finder as $file ) {
+			/** @var SplFileInfo $file */
+			if ( $realPath = $file->getRealPath() ) {
+				$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
+			}
+		}
+		$aggregateLocator = new AggregateSourceLocator( $singleLocators );
+		$reflector        = new DefaultReflector( $aggregateLocator );
+	}
 
 	// Reflect classes, functions, constants
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
 
-	// Group them by file
-	$fileToClassesMap   = [];
-	$fileToFunctionsMap = [];
-	$fileToConstantsMap = [];
+	// Map real file paths to their classes, etc.
+	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] =
+		buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
 
-	foreach ( $allClasses as $classReflection ) {
-		$fileName = $classReflection->getFileName();
-		if ( $fileName ) {
-			$fileToClassesMap[ $fileName ][] = $classReflection;
-		}
-	}
-	foreach ( $allFunctions as $functionReflection ) {
-		$fileName = $functionReflection->getFileName();
-		if ( $fileName ) {
-			$fileToFunctionsMap[ $fileName ][] = $functionReflection;
-		}
-	}
-	foreach ( $allConstants as $constantReflection ) {
-		$fileName = $constantReflection->getFileName();
-		if ( $fileName ) {
-			$fileToConstantsMap[ $fileName ][] = $constantReflection;
-		}
-	}
+	$timeAfterBuiltASTTree = microtime( true );
+	echo color( " Done in " . round( $timeAfterBuiltASTTree - $finderStart, 2 ) . "s.\n", 'light_cyan' );
+	echo color( "Generating stubs...", 'light_cyan' );
 
-	$finder = new Finder();
-	$finder->files()->in( $sourceDir )->name( '*.php' );
-
-	$fileCount  = $finder->count(); // get total # of matched .php files
-	$finderTime = microtime( true ) - $finderStart;
-
-	echo color(
-		" Found {$fileCount} files (" . round( $finderTime, 2 ) . "s)\n",
-		'light_cyan'
-	);
-
-	// Track usage stats
 	$stats      = [
 		'filesTotal'    => 0,
 		'filesWithSyms' => 0,
@@ -111,9 +176,7 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 	$usedHashes = [];
 
 	foreach ( $finder as $file ) {
-		/** @var SplFileInfo $file */
 		$stats['filesTotal'] ++;
-
 		$realpath = $file->getRealPath();
 		if ( ! $realpath ) {
 			continue;
@@ -125,22 +188,18 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 			isset( $fileToConstantsMap[ $realpath ] )
 		);
 		if ( ! $hasSymbols ) {
-			// No classes/functions/constants => skip
 			continue;
 		}
 		$stats['filesWithSyms'] ++;
 
 		// Build a cache file name
-		$fileHash    = md5( PARSER_VERSION . '_' . md5_file( $realpath ) );
-		$cacheFile   = $cacheDir . '/' . $fileHash . '.stubcache';
-		$stubContent = '';
+		$fileHash  = md5( PARSER_VERSION . '_' . md5_file( $realpath ) );
+		$cacheFile = $cacheDir . '/' . $fileHash . '.stubcache';
 
 		if ( file_exists( $cacheFile ) ) {
-			// Cache hit
 			$stats['cacheHits'] ++;
 			$stubContent = file_get_contents( $cacheFile );
 		} else {
-			// Cache miss => reflect & generate
 			$stats['cacheMisses'] ++;
 			$stubContent = "<?php\n\n";
 
@@ -166,13 +225,22 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 		$usedHashes[] = $fileHash;
 
 		// Write stub file
-		$relativePath = str_replace( $sourceDir, '', $realpath );
-		$targetPath   = $outputDir . $relativePath;
+		if ( $sourceDir !== null ) {
+			// Normal mode: relative to $sourceDir
+			$relativePath = str_replace( $sourceDir, '', $realpath );
+			$targetPath   = $outputDir . $relativePath;
+		} else {
+			// Finder mode: replicate directory structure from the finder file's directory
+			$relativePath = ltrim( str_replace( dirname( __FILE__ ), '', $realpath ), DIRECTORY_SEPARATOR );
+			$targetPath   = rtrim( $outputDir, DIRECTORY_SEPARATOR ) . DIRECTORY_SEPARATOR . $relativePath;
+		}
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
 			mkdir( dirname( $targetPath ), 0777, true );
 		}
 		file_put_contents( $targetPath, $stubContent );
 	}
+
+	echo color( " Done in " . round( microtime( true ) - $timeAfterBuiltASTTree, 2 ) . "s.\n", 'light_cyan' );
 
 	// Clean up old caches
 	$allCacheFiles = glob( $cacheDir . '/*.stubcache' );
@@ -186,8 +254,37 @@ function generateStubs( string $sourceDir, string $outputDir ): void {
 		}
 	}
 
-	// Print a summary
 	printStats( $stats );
+}
+
+/**
+ * Helper to group classes/functions/constants by file path.
+ */
+function buildSymbolMaps( array $allClasses, array $allFunctions, array $allConstants ): array {
+	$fileToClassesMap   = [];
+	$fileToFunctionsMap = [];
+	$fileToConstantsMap = [];
+
+	foreach ( $allClasses as $classReflection ) {
+		$fileName = $classReflection->getFileName();
+		if ( $fileName ) {
+			$fileToClassesMap[ $fileName ][] = $classReflection;
+		}
+	}
+	foreach ( $allFunctions as $functionReflection ) {
+		$fileName = $functionReflection->getFileName();
+		if ( $fileName ) {
+			$fileToFunctionsMap[ $fileName ][] = $functionReflection;
+		}
+	}
+	foreach ( $allConstants as $constantReflection ) {
+		$fileName = $constantReflection->getFileName();
+		if ( $fileName ) {
+			$fileToConstantsMap[ $fileName ][] = $constantReflection;
+		}
+	}
+
+	return [ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ];
 }
 
 /**
@@ -204,10 +301,9 @@ function printStats( array $stats ): void {
 		echo color( "    No files had to be parsed.\n", 'yellow' );
 	} else {
 		$hitPercent = ( $stats['cacheHits'] / $totalParsed ) * 100;
-		echo color( "    Cache hits:      ", 'green' ) . $stats['cacheHits']
-		     . " / {$totalParsed} ("
-		     . number_format( $hitPercent, 2 )
-		     . "%)\n";
+		echo color( "    Cache hits:      ", 'green' )
+		     . $stats['cacheHits'] . " / {$totalParsed} ("
+		     . number_format( $hitPercent, 2 ) . "%)\n";
 		echo color( "    Cache misses:    ", 'red' ) . $stats['cacheMisses'] . "\n";
 	}
 
@@ -248,9 +344,8 @@ function color( string $text, string $color = 'none' ): string {
 }
 
 /**
- * The rest is unchanged below this point...
+ * Generate class stub code (namespace, docblock, signature, properties, methods).
  */
-
 function generateClassStub( ReflectionClass $class ): string {
 	$buffer = '';
 
@@ -320,6 +415,9 @@ function generateClassStub( ReflectionClass $class ): string {
 	return $buffer;
 }
 
+/**
+ * Generate function stub code.
+ */
 function generateFunctionStub( ReflectionFunction $function ): string {
 	$buf = '';
 	if ( $docComment = $function->getDocComment() ) {
@@ -339,6 +437,9 @@ function generateFunctionStub( ReflectionFunction $function ): string {
 	return $buf;
 }
 
+/**
+ * Generate constant stub code.
+ */
 function generateConstantStub( ReflectionConstant $constant ): string {
 	$buf  = '';
 	$name = $constant->getName();
@@ -388,10 +489,16 @@ function getClassDeclaration( ReflectionClass $class ): string {
 	return 'class ' . $class->getShortName();
 }
 
+/**
+ * Generate property stub code.
+ */
 function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProperty $property ): string {
 	$out = '';
 	if ( $docComment = $property->getDocComment() ) {
-		$out .= "    {$docComment}\n";
+		$lines = explode( "\n", $docComment );
+		foreach ( $lines as $line ) {
+			$out .= "    {$line}\n";
+		}
 	}
 	$visibility = $property->isPrivate()
 		? 'private'
@@ -404,6 +511,9 @@ function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProp
 	return $out;
 }
 
+/**
+ * Generate method stub code.
+ */
 function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod $method ): string {
 	$buf = '';
 	if ( $docComment = $method->getDocComment() ) {
@@ -455,6 +565,9 @@ function generateAttributeLine( \Roave\BetterReflection\Reflection\ReflectionAtt
 	return "#[{$attr->getName()}{$argsString}]";
 }
 
+/**
+ * Generate parameter stub (type, reference, variadic, default).
+ */
 function generateParameterStub( \Roave\BetterReflection\Reflection\ReflectionParameter $param ): string {
 	$out = '';
 	if ( $type = $param->getType() ) {
@@ -476,6 +589,6 @@ function generateParameterStub( \Roave\BetterReflection\Reflection\ReflectionPar
 }
 
 // Only run main if called directly
-if ( PHP_SAPI === 'cli' && realpath( $argv[0] ) === __FILE__ ) {
-	main( $argv );
+if ( PHP_SAPI === 'cli' && realpath( $_SERVER['argv'][0] ) === __FILE__ ) {
+	main( $_SERVER['argv'] );
 }
