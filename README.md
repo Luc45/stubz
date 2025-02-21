@@ -9,6 +9,7 @@ Stubz relies on [**Roave/BetterReflection**](https://github.com/Roave/BetterRefl
 ## Features
 
 - **Generates stubs** for classes, interfaces, traits, enums, functions, and constants.
+- **Handles complex and nested code.**
 - Handles **modern PHP features**:
     - Final & abstract classes and methods
     - Readonly properties (PHP 8.1+)
