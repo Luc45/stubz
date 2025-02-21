@@ -7,7 +7,6 @@ jobs:
   tests:
     runs-on: ubuntu-latest
 
-    # Test on multiple versions of PHP
     strategy:
       matrix:
         php-version: ['8.1', '8.2', '8.3', '8.4']
@@ -15,7 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install the specified PHP version
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -25,8 +23,12 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.composer/cache
-          key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock') }}
-          restore-keys: ${{ runner.os }}-php-${{ matrix.php-version }}-
+          key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock', '**/tests/composer.lock') }}
+          restore-keys: ${{ runner.os }}-php-${{ matrix.php.version }}-
+
+      - name: Install root dependencies
+        run: |
+          composer install --no-interaction --prefer-dist
 
       - name: Install test dependencies
         run: |
