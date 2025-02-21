@@ -175,7 +175,7 @@ If you add or change a scenario, you may need to **update snapshots**:
     - **Enum** classes may list internal `cases()` or `from()` methods automatically
     - Attributes with bitwise flags might appear as integers (e.g. `#[Attribute(5)]`)
     - **`declare(strict_types=1)`** is not preserved by default
-- By default, Stubz tries to reflect **built-in PHP classes** so references to `Attribute`, `UnitEnum`, etc. won’t trigger an error. If you don’t need them, you can modify the code to skip `PhpInternalSourceLocator`.
+- By default, Stubz tries to reflect **built-in PHP classes** so references to `Attribute`, `UnitEnum`, etc. won’t trigger an error.
 - The generated stubs are typically **sufficient for static analysis** (e.g., for [PHPStan](https://github.com/phpstan/phpstan) or [Psalm](https://psalm.dev/)). They’re not guaranteed to be byte-for-byte identical to the original code.
 
 ---

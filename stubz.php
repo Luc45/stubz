@@ -2,22 +2,22 @@
 <?php
 
 /**
- * Stub generator for a directory using BetterReflection, skipping external parents/interfaces
- * if they are not found within the scanned directory.
- * Also generates function & global constant stubs.
+ * This script examines a specified directory (or a custom Finder) to create PHP stub files
+ * for classes, interfaces, traits, enums, functions, and constants. It uses BetterReflection
+ * while ignoring certain external dependencies if they fall outside the targeted folders.
  *
- * Added minimal file-based caching with a top-level "slug" for multiple caches,
- * plus a PARSER_VERSION to invalidate older caches and a cleanup step
- * to remove stale .stubcache files.
+ * It also manages stubs for functions and global constants, while utilizing a basic caching
+ * system keyed by a "slug" to track multiple sets of generated stubs. The code includes a
+ * version constant (STUBZ_CACHEBURST) to invalidate any stale cached data, and a cleanup step
+ * to remove leftover .stubcache files.
  *
- * Now includes colored console output with stats on cache hits/misses/deleted items, etc.
- * And a "Discovering files..." message at the start, with the count and elapsed time.
+ * Progress information is displayed in color, including file parsing stats, the time needed
+ * for scanning, and whether caching was used. Reflection calls happen in a deliberate order,
+ * and we flush most output after the results are gathered.
  *
- * IMPORTANT: We have NOT reordered reflection calls. We only flush output after printing.
- *
- * EXTRA:
- * - STUB_CACHE_DIR env var to override the default ./reflection-cache path.
- * - NO_STUB_CACHE=1 to disable reading/writing the cache entirely.
+ * Additional environment variables:
+ * - STUB_CACHE_DIR: overrides the default .reflection-cache folder for storing cache files.
+ * - NO_STUB_CACHE=1: turns off both reading and writing the stub cache.
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -33,10 +33,13 @@ use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 use Symfony\Component\Finder\Finder;
-use Symfony\Component\Finder\SplFileInfo;
 
-define( 'PARSER_VERSION', 1 );
+define( 'STUBZ_CACHEBURST', 1 );
 
+/**
+ * Entry point: processes the command-line arguments and decides whether to use a Finder file
+ * or a direct path, including optional excludes. Then calls generateStubs.
+ */
 function main( array $argv ): void {
 	array_shift( $argv );
 
@@ -50,7 +53,7 @@ function main( array $argv ): void {
 	$excludes   = [];
 	$finderFile = null;
 
-	// Parse optional flags.
+	// Process flags from the arguments (e.g., --exclude or --finder).
 	$parsedFlags = true;
 	while ( $parsedFlags && count( $argv ) > 0 ) {
 		$peek = $argv[0];
@@ -76,9 +79,9 @@ function main( array $argv ): void {
 		}
 	}
 
-	// Decide which mode we're in.
+	// Choose the operating mode: a direct directory or a Finder-based approach.
 	if ( $finderFile ) {
-		// --finder mode
+		// If using a Finder, no excludes are allowed simultaneously.
 		if ( count( $excludes ) > 0 ) {
 			echo color( "Error: You cannot use --exclude with --finder. Please remove --exclude.\n", 'light_red' );
 			exit( 1 );
@@ -89,7 +92,7 @@ function main( array $argv ): void {
 		}
 		$outputDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
 
-		// Load the custom Finder from file.
+		// Load the Finder instance from the specified file.
 		$finder = include $finderFile;
 		if ( ! $finder instanceof Finder ) {
 			echo color( "Error: The file '{$finderFile}' did not return a Symfony\\Component\\Finder\\Finder instance.\n", 'light_red' );
@@ -98,7 +101,7 @@ function main( array $argv ): void {
 		$sourceDir = null;
 		$slug      = basename( $finderFile, '.php' );
 	} else {
-		// Normal mode, must have <source-dir> and <output-dir>
+		// Normal approach: must have source and output directories, with possible excludes.
 		if ( count( $argv ) < 2 ) {
 			echo color( "Usage: php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
 			exit( 1 );
@@ -106,7 +109,7 @@ function main( array $argv ): void {
 		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
 		$outputDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
 
-		// Build a default Finder, applying excludes.
+		// Create a Finder for .php files, skipping directories named in excludes.
 		$finder = new Finder();
 		$finder->files()->in( $sourceDir )->name( '*.php' );
 		foreach ( $excludes as $exDir ) {
@@ -119,19 +122,19 @@ function main( array $argv ): void {
 }
 
 /**
- * Generate stubs using a single logic, with optional caching.
+ * Examines the given finder or directory (plus optional caching) to produce stub files. If no
+ * sourceDir is provided, an AggregateSourceLocator is built from single-file locators. When
+ * sourceDir is present, a DirectoriesSourceLocator is used instead. Results can be cached to
+ * speed subsequent runs.
  *
- * - If $sourceDir is null, we use an AggregateSourceLocator with the provided Finder files.
- * - If $sourceDir is non-null, we use a DirectoriesSourceLocator for reflection.
- * - If NO_STUB_CACHE=1 is set, we skip reading/writing the cache entirely.
- * - If STUB_CACHE_DIR is set, we store in that directory instead of the default.
+ * Caching is optional. If NO_STUB_CACHE=1 is set, nothing is read or written to disk. If a
+ * STUB_CACHE_DIR is set, that folder is used for storing .stubcache files.
  */
 function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
 	$fileCount = $finder->count();
 	echo color( "Parsing {$fileCount} PHP files...", 'light_cyan' );
 	$finderStart = microtime( true );
 
-	// ENV variables for controlling cache.
 	$disableCache = ( getenv( 'NO_STUB_CACHE' ) === '1' );
 	$cacheRoot    = getenv( 'STUB_CACHE_DIR' ) ?: ( __DIR__ . '/.reflection-cache' );
 	$cacheDir     = rtrim( $cacheRoot, DIRECTORY_SEPARATOR ) . '/' . $slug;
@@ -144,11 +147,13 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$astLocator       = $betterReflection->astLocator();
 	$sourceStubber    = $betterReflection->sourceStubber();
 
+	// A locator that knows about internal classes like Attribute or Iterator.
 	$internalLocator = new PhpInternalSourceLocator( $astLocator, $sourceStubber );
 
 	if ( $sourceDir !== null ) {
 		$directoriesLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
 
+		// Combine internal stubs with local directories in an aggregate source.
 		$aggregateLocator = new AggregateSourceLocator( [
 			$internalLocator,
 			$directoriesLocator,
@@ -156,6 +161,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 
 		$reflector = new DefaultReflector( $aggregateLocator );
 	} else {
+		// For custom Finder-based runs, gather single-file locators plus the internal stubs.
 		$singleLocators   = [];
 		$singleLocators[] = $internalLocator;
 
@@ -173,7 +179,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		$aggregateLocator = new AggregateSourceLocator( $singleLocators );
 		$reflector        = new DefaultReflector( $aggregateLocator );
 	}
-    
+
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
@@ -206,6 +212,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 			continue;
 		}
 
+		// Check if the file has relevant classes, functions, or constants.
 		$hasSymbols = (
 			isset( $fileToClassesMap[ $realpath ] ) ||
 			isset( $fileToFunctionsMap[ $realpath ] ) ||
@@ -216,20 +223,18 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		}
 		$stats['filesWithSyms'] ++;
 
-		// Use caching
-		$fileHash  = md5( PARSER_VERSION . '_' . md5_file( $realpath ) );
+		// Use cached stubs if available (and caching is enabled).
+		$fileHash  = md5( STUBZ_CACHEBURST . '_' . md5_file( $realpath ) );
 		$cacheFile = $cacheDir . '/' . $fileHash . '.stubcache';
 
 		if ( ! $disableCache && file_exists( $cacheFile ) ) {
-			// Cache hit
 			$stats['cacheHits'] ++;
 			$stubContent = file_get_contents( $cacheFile );
 		} else {
-			// Either caching is disabled, or the cache file doesn't exist => build fresh
 			$stats['cacheMisses'] ++;
 			$stubContent = "<?php\n\n";
 
-			// Build stubs for classes, functions, constants
+			// Construct stubs for each class, function, and constant in the file.
 			if ( isset( $fileToClassesMap[ $realpath ] ) ) {
 				foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
 					$stubContent .= generateClassStub( $reflectionClass );
@@ -246,18 +251,17 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 				}
 			}
 
-			// If caching is enabled, write the new cache file
+			// Write the generated stub to cache if caching is active.
 			if ( ! $disableCache ) {
 				file_put_contents( $cacheFile, $stubContent );
 			}
 		}
 
-        // If caching is enabled, mark this file's cache hash as "used"
 		if ( ! $disableCache ) {
 			$usedHashes[] = $fileHash;
 		}
 
-		// Write stub file
+		// Decide where to place the generated stub file based on the mode.
 		if ( $sourceDir !== null ) {
 			$relativePath = str_replace( $sourceDir, '', $realpath );
 			$targetPath   = $outputDir . $relativePath;
@@ -274,7 +278,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 
 	echo color( " Done in " . round( microtime( true ) - $timeAfterBuiltASTTree, 2 ) . "s.\n", 'light_cyan' );
 
-	// Clean up old caches only if caching is enabled
+	// If caching is used, remove any .stubcache files that aren't referenced this run.
 	if ( ! $disableCache ) {
 		$allCacheFiles = glob( $cacheDir . '/*.stubcache' );
 		if ( is_array( $allCacheFiles ) ) {
@@ -292,7 +296,8 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 }
 
 /**
- * Helper to group classes/functions/constants by file path.
+ * Categorizes classes, functions, and constants by the file they originate from, so we can
+ * group symbols according to file paths and build stubs for each file accordingly.
  */
 function buildSymbolMaps( array $allClasses, array $allFunctions, array $allConstants ): array {
 	$fileToClassesMap   = [];
@@ -322,7 +327,8 @@ function buildSymbolMaps( array $allClasses, array $allFunctions, array $allCons
 }
 
 /**
- * Print a summary of the results, with ANSI colors for style.
+ * Shows a simple textual summary of how many files were processed, how many used cached data,
+ * and how many stale cache files got removed, using colored output.
  */
 function printStats( array $stats ): void {
 	echo "\n" . color( "=== Stub Generation Summary ===\n", 'light_cyan' );
@@ -346,7 +352,8 @@ function printStats( array $stats ): void {
 }
 
 /**
- * Simple color helper using ANSI escape codes.
+ * Applies ANSI escape codes to render text in color, if the terminal supports it. Defaults to
+ * no color if an invalid color is passed.
  */
 function color( string $text, string $color = 'none' ): string {
 	static $colors = [
@@ -371,35 +378,33 @@ function color( string $text, string $color = 'none' ): string {
 
 	$code = $colors[ $color ] ?? $colors['none'];
 	if ( $code === '0' ) {
-		return $text; // no color
+		return $text;
 	}
 
 	return "\033[{$code}m{$text}\033[0m";
 }
 
 /**
- * Generate class stub code (namespace, docblock, signature, properties, methods, enum cases, etc.).
+ * Builds stub text for a reflected class, interface, trait, or enum. It includes doc comments,
+ * attributes, possible inheritance details, constants, properties, and methods. Enum cases are
+ * also handled if relevant.
  */
 function generateClassStub( ReflectionClass $class ): string {
 	$buffer = '';
 
-	// Namespace
 	$namespace = $class->getNamespaceName();
 	if ( $namespace ) {
 		$buffer .= "namespace {$namespace};\n\n";
 	}
 
-	// DocBlock
 	if ( $docComment = $class->getDocComment() ) {
 		$buffer .= $docComment . "\n";
 	}
 
-	// **Add class-level attributes** before the class definition:
 	foreach ( $class->getAttributes() as $attr ) {
 		$buffer .= generateAttributeLine( $attr ) . "\n";
 	}
 
-	// Class definition line
 	$buffer .= getClassDeclaration( $class );
 
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
@@ -413,20 +418,17 @@ function generateClassStub( ReflectionClass $class ): string {
 	}
 	$buffer .= "\n{\n";
 
-	// **Enum Cases** (if it's an enum)
 	if ( $class->isEnum() ) {
-		// getCases() is available in Better Reflection 5+
 		$cases = [];
 		try {
 			if ( method_exists( $class, 'getCases' ) ) {
 				$cases = $class->getCases();
 			}
 		} catch ( IdentifierNotFound $e ) {
-			// skip
+			// do nothing
 		}
 		foreach ( $cases as $case ) {
 			$caseName = $case->getName();
-			// getValue() might be null for pure enums
 			try {
 				$value = $case->getValue();
 			} catch ( IdentifierNotFound $ignore ) {
@@ -436,13 +438,11 @@ function generateClassStub( ReflectionClass $class ): string {
 				$valueCode = var_export( $value, true );
 				$buffer    .= "    case {$caseName} = {$valueCode};\n\n";
 			} else {
-				// pure enum (no scalar value)
 				$buffer .= "    case {$caseName};\n\n";
 			}
 		}
 	}
 
-	// Constants
 	try {
 		foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
 			try {
@@ -453,24 +453,20 @@ function generateClassStub( ReflectionClass $class ): string {
 			$buffer .= "    const {$constName} = {$value};\n\n";
 		}
 	} catch ( IdentifierNotFound $e ) {
-		// skip
 	}
 
-	// Properties
 	$properties = [];
 	try {
 		$properties = $class->getProperties();
 	} catch ( IdentifierNotFound $e ) {
 	}
 	foreach ( $properties as $property ) {
-		// Skip inherited
 		if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
 		}
 		$buffer .= generatePropertyStub( $property );
 	}
 
-	// Methods
 	$methods = [];
 	try {
 		$methods = $class->getMethods();
@@ -488,15 +484,16 @@ function generateClassStub( ReflectionClass $class ): string {
 	return $buffer;
 }
 
+/**
+ * Builds a function stub from reflection data, including docblocks and typed parameters.
+ * Body is replaced with "// stub" to keep it minimal, but complete for analysis.
+ */
 function generateFunctionStub( ReflectionFunction $function ): string {
 	$buf = '';
 	if ( $docComment = $function->getDocComment() ) {
 		$buf .= $docComment . "\n";
 	}
-	// Add function-level attributes if you wish. For instance:
-	// foreach ($function->getAttributes() as $attr) {
-	//     $buf .= generateAttributeLine($attr) . "\n";
-	// }
+	// Function-level attributes could be inserted similarly to class-level ones.
 
 	$buf    .= 'function ' . $function->getName() . '(';
 	$params = [];
@@ -513,7 +510,8 @@ function generateFunctionStub( ReflectionFunction $function ): string {
 }
 
 /**
- * Generate constant stub code.
+ * Creates a stub for a global or namespaced constant identified by reflection. Excludes any
+ * that cannot be read properly.
  */
 function generateConstantStub( ReflectionConstant $constant ): string {
 	$buf  = '';
@@ -528,6 +526,10 @@ function generateConstantStub( ReflectionConstant $constant ): string {
 	return $buf;
 }
 
+/**
+ * Attempts to retrieve a class's parent via reflection. If reflection data isn't available,
+ * returns null instead of throwing.
+ */
 function safeGetParentClass( ReflectionClass $class ): ?ReflectionClass {
 	try {
 		return $class->getParentClass();
@@ -536,6 +538,10 @@ function safeGetParentClass( ReflectionClass $class ): ?ReflectionClass {
 	}
 }
 
+/**
+ * Safely retrieves all interface names a class implements, or returns an empty array if they
+ * can't be resolved.
+ */
 function safeGetInterfaceNames( ReflectionClass $class ): array {
 	try {
 		return $class->getInterfaceNames();
@@ -544,6 +550,10 @@ function safeGetInterfaceNames( ReflectionClass $class ): array {
 	}
 }
 
+/**
+ * Decides how to declare a class, interface, trait, or enum, including whether it should be
+ * labeled abstract or final.
+ */
 function getClassDeclaration( ReflectionClass $class ): string {
 	if ( $class->isInterface() ) {
 		return 'interface ' . $class->getShortName();
@@ -554,7 +564,6 @@ function getClassDeclaration( ReflectionClass $class ): string {
 	if ( $class->isEnum() ) {
 		return 'enum ' . $class->getShortName();
 	}
-	// We do keep final or abstract on classes
 	if ( $class->isAbstract() ) {
 		return 'abstract class ' . $class->getShortName();
 	}
@@ -566,12 +575,12 @@ function getClassDeclaration( ReflectionClass $class ): string {
 }
 
 /**
- * Generate property stub code, preserving readonly and property-level attributes.
+ * Returns a stub for a reflected property, including docblocks, attributes, visibility,
+ * static, readonly, and type information. Method checks if reflection knows about readonly.
  */
 function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProperty $property ): string {
 	$out = '';
 
-	// Property doc comment
 	if ( $docComment = $property->getDocComment() ) {
 		$lines = explode( "\n", $docComment );
 		foreach ( $lines as $line ) {
@@ -579,18 +588,15 @@ function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProp
 		}
 	}
 
-	// **Property-level attributes** (rare, but possible)
 	foreach ( $property->getAttributes() as $attr ) {
 		$out .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
-	// Visibility
 	$visibility = $property->isPrivate()
 		? 'private'
 		: ( $property->isProtected() ? 'protected' : 'public' );
 	$static     = $property->isStatic() ? ' static' : '';
 
-	// **Preserve `readonly`** (PHP 8.1+). If older reflection, this might not exist.
 	$readonly = '';
 	if ( method_exists( $property, 'isReadOnly' ) && $property->isReadOnly() ) {
 		$readonly = 'readonly ';
@@ -605,24 +611,22 @@ function generatePropertyStub( \Roave\BetterReflection\Reflection\ReflectionProp
 }
 
 /**
- * Generate method stub code, preserving final, attributes, etc.
+ * Creates a stub for a method, reflecting doc comments, attributes, final/abstract flags,
+ * visibility, parameters, and return types. The body is replaced with "// stub".
  */
 function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod $method ): string {
 	$buf = '';
 
-	// Doc comment
 	if ( $docComment = $method->getDocComment() ) {
 		foreach ( explode( "\n", $docComment ) as $line ) {
 			$buf .= "    {$line}\n";
 		}
 	}
 
-	// Method-level attributes
 	foreach ( $method->getAttributes() as $attr ) {
 		$buf .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
-	// Visibility
 	if ( $method->isPrivate() ) {
 		$buf .= '    private ';
 	} elseif ( $method->isProtected() ) {
@@ -631,36 +635,30 @@ function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod
 		$buf .= '    public ';
 	}
 
-	// Static
 	if ( $method->isStatic() ) {
 		$buf .= 'static ';
 	}
 
-	// **Preserve final** if not abstract / not interface
 	if ( $method->isFinal() && ! $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
 		$buf .= 'final ';
 	}
 
-	// If the method is abstract, but not in an interface, preserve it
 	if ( $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
 		$buf .= 'abstract ';
 	}
 
 	$buf .= 'function ' . $method->getName() . '(';
 
-	// Parameters
 	$params = [];
 	foreach ( $method->getParameters() as $param ) {
 		$params[] = generateParameterStub( $param );
 	}
 	$buf .= implode( ', ', $params ) . ')';
 
-	// Return type
 	if ( $returnType = $method->getReturnType() ) {
 		$buf .= ': ' . (string) $returnType;
 	}
 
-	// If it's an abstract method or interface method => no body
 	if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {
 		$buf .= ";\n\n";
 	} else {
@@ -670,6 +668,9 @@ function generateMethodStub( \Roave\BetterReflection\Reflection\ReflectionMethod
 	return $buf;
 }
 
+/**
+ * Renders an attribute line like #[SomeAttr(...)] using var_export() for attribute arguments.
+ */
 function generateAttributeLine( \Roave\BetterReflection\Reflection\ReflectionAttribute $attr ): string {
 	$args = [];
 	foreach ( $attr->getArguments() as $argValue ) {
@@ -681,7 +682,8 @@ function generateAttributeLine( \Roave\BetterReflection\Reflection\ReflectionAtt
 }
 
 /**
- * Generate parameter stub (type, reference, variadic, default).
+ * Builds a parameter stub with type, reference, variadic, and default value if available,
+ * e.g. "int $id = 123". Also used by function stubs and method stubs.
  */
 function generateParameterStub( \Roave\BetterReflection\Reflection\ReflectionParameter $param ): string {
 	$out = '';
@@ -703,7 +705,7 @@ function generateParameterStub( \Roave\BetterReflection\Reflection\ReflectionPar
 	return $out;
 }
 
-// Only run main if called directly
+// Execute main() if this file is invoked directly via CLI.
 if ( PHP_SAPI === 'cli' && realpath( $_SERVER['argv'][0] ) === __FILE__ ) {
 	main( $_SERVER['argv'] );
 }
