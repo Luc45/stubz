@@ -45,8 +45,8 @@ function main( array $argv ): void {
 
 	if ( count( $argv ) === 0 ) {
 		echo color( "Usage:\n", 'light_red' );
-		echo color( "  1) php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
-		echo color( "  2) php generate-stubs.php --finder <finder-file.php> <output-dir>\n\n", 'light_red' );
+		echo color( "  1) php stubz.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
+		echo color( "  2) php stubz.php --finder <finder-file.php> <output-dir>\n\n", 'light_red' );
 		exit( 1 );
 	}
 
@@ -103,7 +103,7 @@ function main( array $argv ): void {
 	} else {
 		// Normal approach: must have source and output directories, with possible excludes.
 		if ( count( $argv ) < 2 ) {
-			echo color( "Usage: php generate-stubs.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
+			echo color( "Usage: php stubz.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
 			exit( 1 );
 		}
 		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
