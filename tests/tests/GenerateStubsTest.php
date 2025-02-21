@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 /**
- * This test calls generate-stubs.php in both normal and finder modes,
+ * This test calls stubz.php in both normal and finder modes,
  * with each scenario living in `tests/scenarios/<scenarioKey>/`.
  */
 class GenerateStubsTest extends TestCase {
@@ -88,9 +88,9 @@ class GenerateStubsTest extends TestCase {
 		//    so we can override getSnapshotDirectory() below
 		$this->currentScenario = $scenarioKey;
 
-		// 2) Locate generate-stubs.php
-		$scriptPath = realpath( __DIR__ . '/../../generate-stubs.php' );
-		$this->assertNotFalse( $scriptPath, 'Could not locate generate-stubs.php!' );
+		// 2) Locate stubz.php
+		$scriptPath = realpath( __DIR__ . '/../../stubz.php' );
+		$this->assertNotFalse( $scriptPath, 'Could not locate stubz.php!' );
 
 		// 3) Build a unique output directory under /tmp
 		$outputDir = sys_get_temp_dir() . '/stubs_test_' . $scenarioKey . '_' . uniqid();
@@ -103,10 +103,10 @@ class GenerateStubsTest extends TestCase {
 		$finderFile = $config['finder'] ?? null;
 		$exclude    = $config['exclude'] ?? [];
 
-		// 5) Construct the CLI command for generate-stubs.php
+		// 5) Construct the CLI command for stubz.php
 		if ( $finderFile ) {
 			// Finder mode
-			// usage: php generate-stubs.php --finder <finder-file.php> <outputDir>
+			// usage: php stubz.php --finder <finder-file.php> <outputDir>
 			$finderPath = realpath( $sourceDir . '/' . $finderFile );
 			$this->assertNotFalse( $finderPath, "Finder file '$finderFile' not found in $sourceDir!" );
 
@@ -117,7 +117,7 @@ class GenerateStubsTest extends TestCase {
 				escapeshellarg( $outputDir )
 			);
 		} else {
-			// Normal mode: php generate-stubs.php [--exclude <dir>]... <sourceDir> <outputDir>
+			// Normal mode: php stubz.php [--exclude <dir>]... <sourceDir> <outputDir>
 			$excludeFlags = '';
 			foreach ( $exclude as $ex ) {
 				$excludeFlags .= ' --exclude ' . escapeshellarg( $ex );
@@ -140,7 +140,7 @@ class GenerateStubsTest extends TestCase {
 			0,
 			$exitCode,
 			sprintf(
-				"generate-stubs.php failed with exit code %d.\nCommand: %s\nOutput:\n%s",
+				"stubz.php failed with exit code %d.\nCommand: %s\nOutput:\n%s",
 				$exitCode,
 				$cmd,
 				implode( "\n", $outputLines )

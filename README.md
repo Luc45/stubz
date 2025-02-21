@@ -41,7 +41,7 @@ Stubz relies on [**Roave/BetterReflection**](https://github.com/Roave/BetterRefl
    composer require your-vendor/stubz --dev
    ```
 
-2. Ensure Stubz’s `generate-stubs.php` script is executable or call it via `vendor/bin` if provided.
+2. Ensure Stubz’s `stubz.php` script is executable or call it via `vendor/bin` if provided.
 
 ---
 
@@ -52,19 +52,19 @@ Stubz relies on [**Roave/BetterReflection**](https://github.com/Roave/BetterRefl
 Generate stubs from a source directory (`<sourceDir>`) into an output directory (`<outputDir>`):
 
 ```bash
-php generate-stubs.php [--exclude <dir>]... <sourceDir> <outputDir>
+php stubz.php [--exclude <dir>]... <sourceDir> <outputDir>
 ```
 
 - **Example**:
 
   ```bash
-  php generate-stubs.php src /tmp/stubs
+  php stubz.php src /tmp/stubs
   ```
 
 - **Excluding** directories or files by name:
 
   ```bash
-  php generate-stubs.php \
+  php stubz.php \
     --exclude vendor \
     --exclude tests \
     src \
@@ -78,7 +78,7 @@ php generate-stubs.php [--exclude <dir>]... <sourceDir> <outputDir>
 Instead of scanning a directory directly, you can **provide a custom Finder** script:
 
 ```bash
-php generate-stubs.php --finder <finder-file.php> <outputDir>
+php stubz.php --finder <finder-file.php> <outputDir>
 ```
 
 - `<finder-file.php>` must **return** a [`Symfony\Component\Finder\Finder`](https://symfony.com/doc/current/components/finder.html) instance.
@@ -101,7 +101,7 @@ return $finder;
 Then run:
 
 ```bash
-php generate-stubs.php --finder myFinder.php /tmp/stubs
+php stubz.php --finder myFinder.php /tmp/stubs
 ```
 
 Stubz will parse exactly what the Finder instance returns—no excludes are allowed in this mode.
@@ -129,19 +129,19 @@ When caching is enabled, Stubz will:
 1. **Simple**:
 
    ```bash
-   php generate-stubs.php src /tmp/stubs
+   php stubz.php src /tmp/stubs
    ```
 
 2. **Exclude**:
 
    ```bash
-   NO_STUB_CACHE=1 php generate-stubs.php --exclude vendor --exclude assets src /tmp/stubs
+   NO_STUB_CACHE=1 php stubz.php --exclude vendor --exclude assets src /tmp/stubs
    ```
 
 3. **Finder Mode**:
 
    ```bash
-   php generate-stubs.php --finder customFinder.php /tmp/stubs
+   php stubz.php --finder customFinder.php /tmp/stubs
    ```
 
 ---
