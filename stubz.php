@@ -118,6 +118,8 @@ function main( array $argv ): void {
 		$slug = basename( $sourceDir );
 	}
 
+    $finder->sortByName();
+
 	generateStubs( $finder, $sourceDir, $outputDir, $slug );
 }
 
