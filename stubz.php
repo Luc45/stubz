@@ -109,22 +109,19 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$cacheDir     = rtrim( $cacheRoot, DIRECTORY_SEPARATOR ) . '/' . $slug;
 
 	if ( ! $disableCache && ! is_dir( $cacheDir ) ) {
-		mkdir( $cacheDir, 0777, true );
+		mkdir( $cacheDir, 0755, true );
 	}
 
 	// ------------------------------------------
 	// 2) Build reflection
 	// ------------------------------------------
-	$br            = new BetterReflection();
-	$astLocator    = $br->astLocator();
-	$sourceStubber = $br->sourceStubber();
-
-	// The internal locator (for references to built-in classes etc.)
-	$internalLocator = new PhpInternalSourceLocator( $astLocator, $sourceStubber );
+	$br         = new BetterReflection();
+	$astLocator = $br->astLocator();
 
 	// Build the array of user-land locators: either a DirectoriesSourceLocator
 	// or a series of SingleFileSourceLocators, but all appended to $locators
-	$locators = [ $internalLocator ];
+	// The internal locator (for references to built-in classes etc.)
+	$locators = [ new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() ) ];
 
 	if ( $sourceDir ) {
 		// If we were given a directory, add a DirectoriesSourceLocator
@@ -142,9 +139,13 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	}
 
 	// Aggregate + memoize
-	$aggregate = new AggregateSourceLocator( $locators );
-	$memoized  = new MemoizingSourceLocator( $aggregate );
-	$reflector = new DefaultReflector( $memoized );
+	$reflector = new DefaultReflector(
+		new MemoizingSourceLocator(
+			new AggregateSourceLocator(
+				$locators
+			)
+		)
+	);
 
 	// ------------------------------------------
 	// 3) Gather all classes, functions, constants
@@ -154,8 +155,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$allConstants = array_filter( $reflector->reflectAllConstants(), fn( $c ) => $c->getFileName() !== null );
 
 	// Build file-to-symbol maps (classes, functions, consts)
-	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] =
-		buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
+	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] = buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
 
 	$timeAfterAST = microtime( true );
 	echo color( " Done in " . round( $timeAfterAST - $startTime, 2 ) . "s.\n", 'light_cyan' );
