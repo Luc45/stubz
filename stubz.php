@@ -21,17 +21,19 @@ define( 'STUBZ_CACHEBURST', 1 );
  * @param array<int,string> $argv
  */
 function main( array $argv ): void {
-	array_shift( $argv );
+	array_shift( $argv ); // drop the script name
 
 	if ( count( $argv ) === 0 ) {
 		echo color( "Usage:\n", 'light_red' );
-		echo color( "  1) php stubz.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
-		echo color( "  2) php stubz.php --finder <finder-file.php> <output-dir>\n\n", 'light_red' );
+		echo color( "  1) php stubz.php [--exclude <dir>]... [--scan <dir-or-file>]... [--ignore-missing] <source-dir> <output-dir>\n", 'light_red' );
+		echo color( "  2) php stubz.php --finder <finder-file.php> [--scan <dir-or-file>]... [--ignore-missing] <output-dir>\n\n", 'light_red' );
 		exit( 1 );
 	}
 
-	$excludes   = [];
-	$finderFile = null;
+	$excludes      = [];
+	$finderFile    = null;
+	$scanPaths     = [];
+	$ignoreMissing = false;
 
 	// Process CLI flags
 	$parsedFlags = true;
@@ -53,6 +55,18 @@ function main( array $argv ): void {
 					exit( 1 );
 				}
 				$finderFile = array_shift( $argv );
+				break;
+			case '--scan':
+				array_shift( $argv );
+				if ( ! isset( $argv[0] ) ) {
+					echo color( "Error: Missing <dir-or-file> after --scan\n", 'light_red' );
+					exit( 1 );
+				}
+				$scanPaths[] = array_shift( $argv );
+				break;
+			case '--ignore-missing':
+				array_shift( $argv );
+				$ignoreMissing = true;
 				break;
 			default:
 				$parsedFlags = false;
@@ -79,7 +93,7 @@ function main( array $argv ): void {
 		$slug      = basename( $finderFile, '.php' );
 	} else {
 		if ( count( $argv ) < 2 ) {
-			echo color( "Usage: php stubz.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
+			echo color( "Usage: php stubz.php [--exclude <dir>]... [--scan <dir-or-file>]... [--ignore-missing] <source-dir> <output-dir>\n", 'light_red' );
 			exit( 1 );
 		}
 		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
@@ -94,16 +108,31 @@ function main( array $argv ): void {
 	}
 
 	$finder->sortByName();
-	generateStubs( $finder, $sourceDir, $outputDir, $slug );
+	generateStubs( $finder, $sourceDir, $outputDir, $slug, $scanPaths, $ignoreMissing );
 }
 
 /**
  * Orchestrates reflection, caching, and writing stub files for each discovered symbol.
+ *
+ * @param Finder $finder
+ * @param string|null $sourceDir
+ * @param string $outputDir
+ * @param string $slug
+ * @param list<string> $scanPaths Additional paths for context (no stubs)
+ * @param bool $ignoreMissing
  */
-/**
- * Orchestrates reflection, caching, and writing stub files for each discovered symbol.
- */
-function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
+function generateStubs(
+	Finder $finder,
+	?string $sourceDir,
+	string $outputDir,
+	string $slug,
+	array $scanPaths,
+	bool $ignoreMissing
+): void {
+	// Let the stub-generator code see these flags/globals
+	$GLOBALS['IGNORE_MISSING'] = $ignoreMissing;
+	$GLOBALS['SCAN_PATHS']     = $scanPaths;
+
 	$fileCount = $finder->count();
 	echo color( "Parsing {$fileCount} PHP files...", 'light_cyan' );
 	$startTime = microtime( true );
@@ -125,48 +154,60 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$br         = new BetterReflection();
 	$astLocator = $br->astLocator();
 
-	// The internal locator (for references to built-in classes etc.)
 	$internalLocator = new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() );
 
-	// MOD: Instead of building a big array of SingleFileSourceLocators,
-	//      let's use a bulk locator. If $sourceDir is set, use DirectoriesSourceLocator.
-	//      Otherwise, use FileIteratorSourceLocator with the Finder.
+	// Build the user/source locator
 	if ( $sourceDir ) {
-		// If we were given a directory, add a DirectoriesSourceLocator
-		// (BetterReflection internally iterates the dir only once)
 		$userLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
 	} else {
-		// Otherwise, gather files from the Finder in a single locator
-		// This is more efficient than multiple SingleFileSourceLocators
 		$userLocator = new FileIteratorSourceLocator( $finder->getIterator(), $astLocator );
 	}
 
-	// Aggregate + memoize
-	// MOD: We only need 2 locators now: internal + user
-	$aggregateLocator = new AggregateSourceLocator( [
-		$internalLocator,
-		$userLocator,
-	] );
-	$memoizedLocator  = new MemoizingSourceLocator( $aggregateLocator );
-	$reflector        = new DefaultReflector( $memoizedLocator );
+	// Build an AggregateSourceLocator with:
+	// - internal (built-in)
+	// - any --scan paths
+	// - user's plugin code
+	$extraLocators = [];
+	foreach ( $scanPaths as $scanPath ) {
+		$realScan = realpath( $scanPath );
+		if ( ! $realScan ) {
+			continue;
+		}
+		if ( is_dir( $realScan ) ) {
+			$extraLocators[] = new DirectoriesSourceLocator( [ $realScan ], $astLocator );
+		} elseif ( is_file( $realScan ) ) {
+			$extraLocators[] = new SingleFileSourceLocator( $realScan, $astLocator );
+		}
+	}
+
+	$aggregateLocator = new AggregateSourceLocator( array_merge(
+		[ $internalLocator ],
+		$extraLocators,
+		[ $userLocator ]
+	) );
+
+	$memoizedLocator = new MemoizingSourceLocator( $aggregateLocator );
+	$reflector       = new DefaultReflector( $memoizedLocator );
 
 	// ------------------------------------------
 	// 3) Gather all classes, functions, constants
 	// ------------------------------------------
-	// By calling reflectAll... methods, we effectively parse all files once
 	$allClasses   = array_filter( $reflector->reflectAllClasses(), fn( $c ) => $c->getFileName() !== null );
 	$allFunctions = array_filter( $reflector->reflectAllFunctions(), fn( $f ) => $f->getFileName() !== null );
 	$allConstants = array_filter( $reflector->reflectAllConstants(), fn( $c ) => $c->getFileName() !== null );
 
-	// Build file-to-symbol maps (classes, functions, consts)
-	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] = buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
+	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] = buildSymbolMaps(
+		$allClasses,
+		$allFunctions,
+		$allConstants
+	);
 
 	$timeAfterAST = microtime( true );
 	echo color( " Done in " . round( $timeAfterAST - $startTime, 2 ) . "s.\n", 'light_cyan' );
 	echo color( "Generating stubs...", 'light_cyan' );
 
 	// ------------------------------------------
-	// 4) Iterate over each PHP file from Finder,
+	// 4) Iterate over each PHP file in Finder,
 	//    cache as needed, and write stub files
 	// ------------------------------------------
 	$stats      = [
@@ -188,7 +229,12 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 			continue;
 		}
 
-		// Does this file have classes/functions/constants?
+		// Skip if the file is in one of our --scan paths (context only)
+		if ( isInScanPaths( $realpath, $scanPaths ) ) {
+			continue;
+		}
+
+		// Does this file have any classes/functions/constants?
 		$hasSymbols = (
 			isset( $fileToClassesMap[ $realpath ] ) ||
 			isset( $fileToFunctionsMap[ $realpath ] ) ||
@@ -199,9 +245,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		}
 		$stats['filesWithSyms'] ++;
 
-		// ------------------------------------------
-		// Cache check
-		// ------------------------------------------
+		// Cache logic
 		$fileHash  = md5( STUBZ_CACHEBURST . '_' . md5_file( $realpath ) );
 		$cacheFile = "{$cacheDir}/{$fileHash}.stubcache";
 
@@ -225,9 +269,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 			$usedHashes[] = $fileHash;
 		}
 
-		// ------------------------------------------
 		// Compute target path
-		// ------------------------------------------
 		$basePath     = $sourceDir ?: dirname( __FILE__ );
 		$relativePath = ltrim( str_replace( $basePath, '', $realpath ), DIRECTORY_SEPARATOR );
 
@@ -235,7 +277,6 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		              . DIRECTORY_SEPARATOR
 		              . ltrim( $relativePath, DIRECTORY_SEPARATOR );
 
-		// Create dirs if needed and write out the stub content
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
 			mkdir( dirname( $targetPath ), 0777, true );
 		}
@@ -243,7 +284,7 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	}
 
 	// ------------------------------------------
-	// 5) Done generating; show time and do cleanup
+	// 5) Cleanup old cache + show stats
 	// ------------------------------------------
 	echo color( " Done in " . round( microtime( true ) - $timeAfterAST, 2 ) . "s.\n", 'light_cyan' );
 
@@ -263,12 +304,38 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	printStats( $stats );
 }
 
+/**
+ * Returns true if $realpath is inside (or exactly) one of the --scan paths.
+ *
+ * @param string $realpath
+ * @param list<string> $scanPaths
+ */
+function isInScanPaths( string $realpath, array $scanPaths ): bool {
+	foreach ( $scanPaths as $scanPath ) {
+		$scanReal = realpath( $scanPath );
+		if ( ! $scanReal ) {
+			continue;
+		}
+		if ( is_dir( $scanReal ) ) {
+			// directory check
+			$prefix = rtrim( $scanReal, DIRECTORY_SEPARATOR ) . DIRECTORY_SEPARATOR;
+			if ( str_starts_with( $realpath, $prefix ) ) {
+				return true;
+			}
+		} elseif ( is_file( $scanReal ) ) {
+			if ( $realpath === $scanReal ) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
 // Invoke main()
-// We capture $_SERVER['argv'] in a typed variable so PHPStan recognizes offset 0 is valid
 if ( PHP_SAPI === 'cli' ) {
 	/** @var array<int,string> $cliArgs */
 	$cliArgs = $_SERVER['argv'] ?? [];
-	// Check that index 0 exists and realpath() is valid
 	if ( isset( $cliArgs[0] ) && realpath( $cliArgs[0] ) === __FILE__ ) {
 		main( $cliArgs );
 	}

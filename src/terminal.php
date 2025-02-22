@@ -22,7 +22,6 @@ function printStats( array $stats ): void {
 	if ( $totalParsed === 0 ) {
 		echo color( "    No files had to be parsed.\n", 'yellow' );
 	} else {
-		// $stats['cacheHits'] and $stats['cacheMisses'] are ints, so $hitPercent is float
 		$hitPercent = ( $stats['cacheHits'] / $totalParsed ) * 100;
 		echo color( "    Cache hits:      ", 'green' )
 		     . $stats['cacheHits']
@@ -71,10 +70,9 @@ function color( string $text, string $color = 'none' ): string {
 
 	$code = $colors[ $color ] ?? $colors['none'];
 	if ( $code === '0' ) {
-		// '0' means reset/no color
+		// no color
 		return $text;
 	}
 
-	// $code is now definitely a string, so string interpolation is safe
 	return "\033[{$code}m{$text}\033[0m";
 }
