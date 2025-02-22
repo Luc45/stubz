@@ -12,6 +12,7 @@ use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\MemoizingSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\FileIteratorSourceLocator;
 use Symfony\Component\Finder\Finder;
 
 define( 'STUBZ_CACHEBURST', 1 );
@@ -99,6 +100,9 @@ function main( array $argv ): void {
 /**
  * Orchestrates reflection, caching, and writing stub files for each discovered symbol.
  */
+/**
+ * Orchestrates reflection, caching, and writing stub files for each discovered symbol.
+ */
 function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
 	$fileCount = $finder->count();
 	echo color( "Parsing {$fileCount} PHP files...", 'light_cyan' );
@@ -121,38 +125,35 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$br         = new BetterReflection();
 	$astLocator = $br->astLocator();
 
-	// Build the array of user-land locators: either a DirectoriesSourceLocator
-	// or a series of SingleFileSourceLocators, but all appended to $locators
 	// The internal locator (for references to built-in classes etc.)
-	$locators = [ new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() ) ];
+	$internalLocator = new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() );
 
+	// MOD: Instead of building a big array of SingleFileSourceLocators,
+	//      let's use a bulk locator. If $sourceDir is set, use DirectoriesSourceLocator.
+	//      Otherwise, use FileIteratorSourceLocator with the Finder.
 	if ( $sourceDir ) {
 		// If we were given a directory, add a DirectoriesSourceLocator
-		$locators[] = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
+		// (BetterReflection internally iterates the dir only once)
+		$userLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
 	} else {
-		// Otherwise, gather SingleFileSourceLocators from the Finder
-		foreach ( $finder as $file ) {
-			if ( $file->isFile() && $file->getExtension() === 'php' ) {
-				$realPath = $file->getRealPath();
-				if ( $realPath ) {
-					$locators[] = new SingleFileSourceLocator( $realPath, $astLocator );
-				}
-			}
-		}
+		// Otherwise, gather files from the Finder in a single locator
+		// This is more efficient than multiple SingleFileSourceLocators
+		$userLocator = new FileIteratorSourceLocator( $finder->getIterator(), $astLocator );
 	}
 
 	// Aggregate + memoize
-	$reflector = new DefaultReflector(
-		new MemoizingSourceLocator(
-			new AggregateSourceLocator(
-				$locators
-			)
-		)
-	);
+	// MOD: We only need 2 locators now: internal + user
+	$aggregateLocator = new AggregateSourceLocator( [
+		$internalLocator,
+		$userLocator,
+	] );
+	$memoizedLocator  = new MemoizingSourceLocator( $aggregateLocator );
+	$reflector        = new DefaultReflector( $memoizedLocator );
 
 	// ------------------------------------------
 	// 3) Gather all classes, functions, constants
 	// ------------------------------------------
+	// By calling reflectAll... methods, we effectively parse all files once
 	$allClasses   = array_filter( $reflector->reflectAllClasses(), fn( $c ) => $c->getFileName() !== null );
 	$allFunctions = array_filter( $reflector->reflectAllFunctions(), fn( $f ) => $f->getFileName() !== null );
 	$allConstants = array_filter( $reflector->reflectAllConstants(), fn( $c ) => $c->getFileName() !== null );
