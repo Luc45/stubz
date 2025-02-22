@@ -2,6 +2,7 @@
     "require-dev": {
         "php": "^8.2",
         "phpunit/phpunit": "^11.0",
-        "spatie/phpunit-snapshot-assertions": "^5.1"
+        "spatie/phpunit-snapshot-assertions": "^5.1",
+        "phpstan/phpstan": "^2.1"
     }
 }

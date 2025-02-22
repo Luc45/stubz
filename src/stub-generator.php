@@ -1,51 +1,79 @@
 <?php
 
-use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
-use Roave\BetterReflection\Reflection\ReflectionClass;
-use Roave\BetterReflection\Reflection\ReflectionFunction;
-use Roave\BetterReflection\Reflection\ReflectionConstant;
 use Roave\BetterReflection\Reflection\ReflectionAttribute;
+use Roave\BetterReflection\Reflection\ReflectionClass;
+use Roave\BetterReflection\Reflection\ReflectionConstant;
+use Roave\BetterReflection\Reflection\ReflectionFunction;
+use Roave\BetterReflection\Reflection\ReflectionMethod;
 use Roave\BetterReflection\Reflection\ReflectionParameter;
 use Roave\BetterReflection\Reflection\ReflectionProperty;
-use Roave\BetterReflection\Reflection\ReflectionMethod;
+
+// If you're using BetterReflection 6.0 or higher (with enums):
+use Roave\BetterReflection\Reflection\ReflectionEnum;
+use Roave\BetterReflection\Reflection\ReflectionEnumCase;
+use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 
 /**
  * Categorizes classes, functions, and constants by the file they originate from.
  *
- * Returns an array: [ $fileToClasses, $fileToFunctions, $fileToConstants ]
+ * @param ReflectionClass[] $allClasses
+ * @param ReflectionFunction[] $allFunctions
+ * @param ReflectionConstant[] $allConstants
+ *
+ * @return array{
+ *   0: array<string, list<ReflectionClass>>,
+ *   1: array<string, list<ReflectionFunction>>,
+ *   2: array<string, list<ReflectionConstant>>
+ * }
  */
-function buildSymbolMaps( array $allClasses, array $allFunctions, array $allConstants ): array {
-	$fileToClasses   = [];
+function buildSymbolMaps(
+	array $allClasses,
+	array $allFunctions,
+	array $allConstants
+): array {
+	/** @var array<string, list<ReflectionClass>> $fileToClasses */
+	$fileToClasses = [];
+	/** @var array<string, list<ReflectionFunction>> $fileToFunctions */
 	$fileToFunctions = [];
+	/** @var array<string, list<ReflectionConstant>> $fileToConstants */
 	$fileToConstants = [];
 
+	// --- Collect classes by file
 	foreach ( $allClasses as $classReflection ) {
-		if ( $file = $classReflection->getFileName() ) {
+		$file = $classReflection->getFileName(); // string|null
+		if ( $file !== null ) {
 			$fileToClasses[ $file ][] = $classReflection;
 		}
 	}
+	// Sort each file’s classes by start line
 	foreach ( $fileToClasses as $file => $classList ) {
-		usort( $classList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		usort( $classList, fn( ReflectionClass $a, ReflectionClass $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToClasses[ $file ] = $classList;
 	}
 
+	// --- Collect functions by file
 	foreach ( $allFunctions as $functionReflection ) {
-		if ( $file = $functionReflection->getFileName() ) {
+		$file = $functionReflection->getFileName();
+		if ( $file !== null ) {
 			$fileToFunctions[ $file ][] = $functionReflection;
 		}
 	}
+	// Sort each file’s function list
 	foreach ( $fileToFunctions as $file => $funcList ) {
-		usort( $funcList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		usort( $funcList, fn( ReflectionFunction $a, ReflectionFunction $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToFunctions[ $file ] = $funcList;
 	}
 
+	// --- Collect constants by file
 	foreach ( $allConstants as $constantReflection ) {
-		if ( $file = $constantReflection->getFileName() ) {
+		$file = $constantReflection->getFileName();
+		if ( $file !== null ) {
 			$fileToConstants[ $file ][] = $constantReflection;
 		}
 	}
+	// Sort each file’s constant list
 	foreach ( $fileToConstants as $file => $constList ) {
-		usort( $constList, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
+		usort( $constList, fn( ReflectionConstant $a, ReflectionConstant $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToConstants[ $file ] = $constList;
 	}
 
@@ -54,6 +82,10 @@ function buildSymbolMaps( array $allClasses, array $allFunctions, array $allCons
 
 /**
  * Generates the combined stub content for a file: all classes, functions, and constants it contains.
+ *
+ * @param array<string, list<ReflectionClass>> $fileToClassesMap
+ * @param array<string, list<ReflectionFunction>> $fileToFunctionsMap
+ * @param array<string, list<ReflectionConstant>> $fileToConstantsMap
  */
 function generateStubContent(
 	string $realpath,
@@ -63,18 +95,21 @@ function generateStubContent(
 ): string {
 	$stub = "<?php\n\n";
 
+	// Classes
 	if ( isset( $fileToClassesMap[ $realpath ] ) ) {
 		foreach ( $fileToClassesMap[ $realpath ] as $reflectionClass ) {
 			$stub .= generateClassStub( $reflectionClass );
 		}
 	}
 
+	// Functions
 	if ( isset( $fileToFunctionsMap[ $realpath ] ) ) {
 		foreach ( $fileToFunctionsMap[ $realpath ] as $reflectionFunction ) {
 			$stub .= generateFunctionStub( $reflectionFunction );
 		}
 	}
 
+	// Constants
 	if ( isset( $fileToConstantsMap[ $realpath ] ) ) {
 		foreach ( $fileToConstantsMap[ $realpath ] as $reflectionConstant ) {
 			$stub .= generateConstantStub( $reflectionConstant );
@@ -105,72 +140,86 @@ function generateClassStub( ReflectionClass $class ): string {
 
 	$buffer .= getClassDeclaration( $class );
 
+	// If it's a "normal class" (not interface/trait/enum), handle extends/interfaces
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-		if ( $parent = safeGetParentClass( $class ) ) {
+		if ( $parent = $class->getParentClass() ) {
 			$buffer .= ' extends \\' . $parent->getName();
 		}
-		$interfaces = safeGetInterfaceNames( $class );
-		if ( $interfaces ) {
-			$buffer .= ' implements ' . implode( ', ', array_map( fn( $i ) => '\\' . $i, $interfaces ) );
+		// $class->getInterfaces() returns an array of ReflectionClass objects
+		$interfaces = $class->getInterfaces();
+		if ( $interfaces !== [] ) {
+			// e.g. " implements \Foo, \Bar"
+			$impls  = array_map(
+				static fn( ReflectionClass $iface ): string => '\\' . $iface->getName(),
+				$interfaces
+			);
+			$buffer .= ' implements ' . implode( ', ', $impls );
 		}
 	}
 
 	$buffer .= "\n{\n";
 
+	// If it’s an enum, handle the cases
 	if ( $class->isEnum() ) {
-		try {
-			if ( method_exists( $class, 'getCases' ) ) {
-				foreach ( $class->getCases() as $case ) {
-					$caseName = $case->getName();
-					$value    = null;
-					try {
-						$value = $case->getValue();
-					} catch ( IdentifierNotFound $ignore ) {
-						// do nothing
-					}
-					if ( $value !== null ) {
-						$buffer .= "    case {$caseName} = " . var_export( $value, true ) . ";\n\n";
-					} else {
-						$buffer .= "    case {$caseName};\n\n";
-					}
+		// Roave\BetterReflection\Reflection\ReflectionEnum
+		// safe approach:
+		if ( $class instanceof ReflectionEnum ) {
+			// getCases() returns ReflectionEnumCase[]
+			foreach ( $class->getCases() as $case ) {
+				$caseName = $case->getName(); // string
+				// getValue() might throw IdentifierNotFound
+				try {
+					$value = $case->getValue();
+				} catch ( IdentifierNotFound ) {
+					$value = null;
+				}
+				if ( $value !== null ) {
+					$buffer .= "    case {$caseName} = " . var_export( $value, true ) . ";\n\n";
+				} else {
+					$buffer .= "    case {$caseName};\n\n";
 				}
 			}
-		} catch ( IdentifierNotFound $e ) {
-			// do nothing
 		}
 	}
 
+	// Class constants
 	try {
 		foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
 			try {
 				$val    = var_export( $reflectionConstant->getValue(), true );
 				$buffer .= "    const {$constName} = {$val};\n\n";
-			} catch ( IdentifierNotFound $ignore ) {
+			} catch ( IdentifierNotFound ) {
+				// do nothing
 			}
 		}
-	} catch ( IdentifierNotFound $ignore ) {
+	} catch ( IdentifierNotFound ) {
+		// do nothing
 	}
 
 	// Properties
 	try {
 		foreach ( $class->getProperties() as $property ) {
+			// Skip inherited props
 			if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
 				continue;
 			}
 			$buffer .= generatePropertyStub( $property );
 		}
-	} catch ( IdentifierNotFound $ignore ) {
+	} catch ( IdentifierNotFound ) {
+		// do nothing
 	}
 
 	// Methods
 	try {
 		foreach ( $class->getMethods() as $method ) {
+			// Skip inherited methods
 			if ( $method->getDeclaringClass()->getName() !== $class->getName() ) {
 				continue;
 			}
 			$buffer .= generateMethodStub( $method );
 		}
-	} catch ( IdentifierNotFound $ignore ) {
+	} catch ( IdentifierNotFound ) {
+		// do nothing
 	}
 
 	$buffer .= "}\n\n";
@@ -215,30 +264,8 @@ function generateConstantStub( ReflectionConstant $constant ): string {
 		$val = var_export( $constant->getValue(), true );
 
 		return "const {$constant->getName()} = {$val};\n\n";
-	} catch ( IdentifierNotFound $ignore ) {
+	} catch ( IdentifierNotFound ) {
 		return '';
-	}
-}
-
-/**
- * Safely retrieves the parent class or returns null if not resolvable.
- */
-function safeGetParentClass( ReflectionClass $class ): ?ReflectionClass {
-	try {
-		return $class->getParentClass();
-	} catch ( IdentifierNotFound $ignore ) {
-		return null;
-	}
-}
-
-/**
- * Safely retrieves all interface names a class implements, or an empty array if not resolvable.
- */
-function safeGetInterfaceNames( ReflectionClass $class ): array {
-	try {
-		return $class->getInterfaceNames();
-	} catch ( IdentifierNotFound $ignore ) {
-		return [];
 	}
 }
 
@@ -284,10 +311,9 @@ function generatePropertyStub( ReflectionProperty $property ): string {
 		: ( $property->isProtected() ? 'protected' : 'public' );
 	$static     = $property->isStatic() ? ' static' : '';
 
-	$readonly = '';
-	if ( method_exists( $property, 'isReadOnly' ) && $property->isReadOnly() ) {
-		$readonly = 'readonly ';
-	}
+	// ReflectionProperty from BetterReflection >=5.0 has isReadOnly()
+	// If you no longer support older versions, no need to check method_exists().
+	$readonly = $property->isReadOnly() ? 'readonly ' : '';
 
 	$typeStr = '';
 	$type    = $property->getType();
@@ -384,8 +410,11 @@ function generateParameterStub( ReflectionParameter $param ): string {
 		$out .= '...';
 	}
 	$out .= '$' . $param->getName();
+
 	if ( $param->isDefaultValueAvailable() ) {
-		$out .= ' = ' . var_export( $param->getDefaultValue(), true );
+		/** @var scalar|array<mixed>|null $defaultVal */
+		$defaultVal = $param->getDefaultValue();
+		$out        .= ' = ' . var_export( $defaultVal, true );
 	}
 
 	return $out;

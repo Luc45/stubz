@@ -3,6 +3,14 @@
 /**
  * Shows a simple textual summary of how many files were processed, how many used cached data,
  * and how many stale cache files got removed, using colored output.
+ *
+ * @param array{
+ *     filesTotal: int,
+ *     filesWithSyms: int,
+ *     cacheHits: int,
+ *     cacheMisses: int,
+ *     deleted: int
+ * } $stats
  */
 function printStats( array $stats ): void {
 	echo "\n" . color( "=== Stub Generation Summary ===\n", 'light_cyan' );
@@ -14,10 +22,13 @@ function printStats( array $stats ): void {
 	if ( $totalParsed === 0 ) {
 		echo color( "    No files had to be parsed.\n", 'yellow' );
 	} else {
+		// $stats['cacheHits'] and $stats['cacheMisses'] are ints, so $hitPercent is float
 		$hitPercent = ( $stats['cacheHits'] / $totalParsed ) * 100;
 		echo color( "    Cache hits:      ", 'green' )
-		     . $stats['cacheHits'] . " / {$totalParsed} ("
-		     . number_format( $hitPercent, 2 ) . "%)\n";
+		     . $stats['cacheHits']
+		     . " / {$totalParsed} ("
+		     . number_format( $hitPercent, 2 )
+		     . "%)\n";
 		echo color( "    Cache misses:    ", 'red' ) . $stats['cacheMisses'] . "\n";
 	}
 
@@ -28,8 +39,16 @@ function printStats( array $stats ): void {
 /**
  * Applies ANSI escape codes to render text in color, if the terminal supports it. Defaults to
  * no color if an invalid color is passed.
+ *
+ * @param string $text
+ * @param string $color
+ *
+ * @return string
  */
 function color( string $text, string $color = 'none' ): string {
+	/**
+	 * @var array<string, string> $colors
+	 */
 	static $colors = [
 		'none'          => '0',
 		'black'         => '0;30',
@@ -52,8 +71,10 @@ function color( string $text, string $color = 'none' ): string {
 
 	$code = $colors[ $color ] ?? $colors['none'];
 	if ( $code === '0' ) {
+		// '0' means reset/no color
 		return $text;
 	}
 
+	// $code is now definitely a string, so string interpolation is safe
 	return "\033[{$code}m{$text}\033[0m";
 }

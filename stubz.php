@@ -16,6 +16,9 @@ use Symfony\Component\Finder\Finder;
 
 define( 'STUBZ_CACHEBURST', 1 );
 
+/**
+ * @param array<int,string> $argv
+ */
 function main( array $argv ): void {
 	array_shift( $argv );
 
@@ -224,13 +227,9 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 		// ------------------------------------------
 		// Compute target path
 		// ------------------------------------------
-		// If we have a sourceDir, we remove that prefix from the realpath;
-		// otherwise, we remove the stubz script's dir. Then we unify how we
-		// build the final $targetPath:
 		$basePath     = $sourceDir ?: dirname( __FILE__ );
 		$relativePath = ltrim( str_replace( $basePath, '', $realpath ), DIRECTORY_SEPARATOR );
 
-		// Prepend the output directory:
 		$targetPath = rtrim( $outputDir, DIRECTORY_SEPARATOR )
 		              . DIRECTORY_SEPARATOR
 		              . ltrim( $relativePath, DIRECTORY_SEPARATOR );
@@ -264,6 +263,12 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 }
 
 // Invoke main()
-if ( PHP_SAPI === 'cli' && realpath( $_SERVER['argv'][0] ) === __FILE__ ) {
-	main( $_SERVER['argv'] );
+// We capture $_SERVER['argv'] in a typed variable so PHPStan recognizes offset 0 is valid
+if ( PHP_SAPI === 'cli' ) {
+	/** @var array<int,string> $cliArgs */
+	$cliArgs = $_SERVER['argv'] ?? [];
+	// Check that index 0 exists and realpath() is valid
+	if ( isset( $cliArgs[0] ) && realpath( $cliArgs[0] ) === __FILE__ ) {
+		main( $cliArgs );
+	}
 }
