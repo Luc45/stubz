@@ -28,6 +28,7 @@ use Roave\BetterReflection\SourceLocator\Type\DirectoriesSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\MemoizingSourceLocator;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
@@ -126,11 +127,15 @@ function main( array $argv ): void {
 /**
  * Examines the given finder or directory (plus optional caching) to produce stub files. If no
  * sourceDir is provided, an AggregateSourceLocator is built from single-file locators. When
- * sourceDir is present, a DirectoriesSourceLocator is used instead. Results can be cached to
- * speed subsequent runs.
+ * sourceDir is present, a DirectoriesSourceLocator is used. Results can be cached to speed
+ * subsequent runs.
  *
- * Caching is optional. If NO_STUB_CACHE=1 is set, nothing is read or written to disk. If a
- * STUB_CACHE_DIR is set, that folder is used for storing .stubcache files.
+ * We keep PhpInternalSourceLocator so references to internal symbols (like parent classes
+ * or interfaces from PHP extensions) can resolve. However, we skip generating actual stubs
+ * for internal symbols by checking `$reflection->getFileName()`.
+ *
+ * Caching is optional. If NO_STUB_CACHE=1 is set, nothing is read or written to disk.
+ * If STUB_CACHE_DIR is set, that folder is used for storing .stubcache files.
  */
 function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, string $slug ): void {
 	$fileCount = $finder->count();
@@ -153,38 +158,40 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 	$internalLocator = new PhpInternalSourceLocator( $astLocator, $sourceStubber );
 
 	if ( $sourceDir !== null ) {
+		// For direct directories
 		$directoriesLocator = new DirectoriesSourceLocator( [ $sourceDir ], $astLocator );
-
-		// Combine internal stubs with local directories in an aggregate source.
+		// Aggregate internal plus userland
 		$aggregateLocator = new AggregateSourceLocator( [
 			$internalLocator,
 			$directoriesLocator,
 		] );
-
-		$reflector = new DefaultReflector( $aggregateLocator );
 	} else {
-		// For custom Finder-based runs, gather single-file locators plus the internal stubs.
-		$singleLocators   = [];
-		$singleLocators[] = $internalLocator;
-
+		// For custom Finder-based runs, gather single-file locators plus the internal stubs
+		$singleLocators = [ $internalLocator ];
 		/** @var \SplFileInfo $file */
 		foreach ( $finder as $file ) {
-			if ( ! $file->isFile() || $file->getExtension() !== 'php' ) {
-				continue;
-			}
-
-			if ( $realPath = $file->getRealPath() ) {
-				$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
+			if ( $file->isFile() && $file->getExtension() === 'php' ) {
+				if ( $realPath = $file->getRealPath() ) {
+					$singleLocators[] = new SingleFileSourceLocator( $realPath, $astLocator );
+				}
 			}
 		}
-
 		$aggregateLocator = new AggregateSourceLocator( $singleLocators );
-		$reflector        = new DefaultReflector( $aggregateLocator );
 	}
 
+	// Wrap it in a MemoizingSourceLocator so we parse each file only once
+	$memoizedLocator = new MemoizingSourceLocator( $aggregateLocator );
+	$reflector       = new DefaultReflector( $memoizedLocator );
+
+	// Single pass for classes/functions/constants
 	$allClasses   = $reflector->reflectAllClasses();
 	$allFunctions = $reflector->reflectAllFunctions();
 	$allConstants = $reflector->reflectAllConstants();
+
+	// Filter out internal classes/functions/constants by checking getFileName()
+	$allClasses   = array_filter( $allClasses, static fn( ReflectionClass $c ) => $c->getFileName() !== null );
+	$allFunctions = array_filter( $allFunctions, static fn( ReflectionFunction $f ) => $f->getFileName() !== null );
+	$allConstants = array_filter( $allConstants, static fn( ReflectionConstant $co ) => $co->getFileName() !== null );
 
 	[ $fileToClassesMap, $fileToFunctionsMap, $fileToConstantsMap ] =
 		buildSymbolMaps( $allClasses, $allFunctions, $allConstants );
@@ -300,6 +307,9 @@ function generateStubs( Finder $finder, ?string $sourceDir, string $outputDir, s
 /**
  * Categorizes classes, functions, and constants by the file they originate from, so we can
  * group symbols according to file paths and build stubs for each file accordingly.
+ *
+ * Any reflection that has a null file name (meaning it's internal or from an extension)
+ * should have been filtered out earlier, so everything here is truly userland code.
  */
 function buildSymbolMaps( array $allClasses, array $allFunctions, array $allConstants ): array {
 	$fileToClassesMap   = [];
@@ -512,7 +522,10 @@ function generateFunctionStub( ReflectionFunction $function ): string {
 	if ( $docComment = $function->getDocComment() ) {
 		$buf .= $docComment . "\n";
 	}
-	// Function-level attributes could be inserted similarly to class-level ones.
+
+	foreach ( $function->getAttributes() as $attr ) {
+		$buf .= generateAttributeLine( $attr ) . "\n";
+	}
 
 	$buf    .= 'function ' . $function->getName() . '(';
 	$params = [];
