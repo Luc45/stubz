@@ -1,13 +1,14 @@
 <?php
 
+use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
 use Roave\BetterReflection\Reflection\ReflectionAttribute;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionConstant;
+use Roave\BetterReflection\Reflection\ReflectionEnum;
 use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Roave\BetterReflection\Reflection\ReflectionMethod;
 use Roave\BetterReflection\Reflection\ReflectionParameter;
 use Roave\BetterReflection\Reflection\ReflectionProperty;
-use Roave\BetterReflection\Reflection\ReflectionEnum;
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 
 /**
@@ -124,21 +125,19 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 
 	$decl = getClassDeclaration( $class );
 
-	// We do local catch-blocks to record missing references in $missingReferences
+	// We do local catch-blocks, but only a single catch(\Throwable $ex):
 	try {
 		$parent = $class->getParentClass();
-	} catch ( IdentifierNotFound $e ) { // @phpstan-ignore-line catch.neverThrown
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$parent                       = null;
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$parent = null;
 	}
 
 	try {
 		$interfaces = $class->getInterfaces();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$interfaces                   = [];
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$interfaces = [];
 	}
 
 	$buffer .= $decl;
@@ -162,10 +161,9 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 		foreach ( $class->getCases() as $case ) {
 			try {
 				$value = $case->getValue();
-			} catch ( IdentifierNotFound $e ) {
-				$symbol                       = $e->getIdentifier()->getName();
-				$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-				$value                        = null;
+			} catch ( \Throwable $ex ) {
+				handleBetterReflectionException( $ex, $missingReferences );
+				$value = null;
 			}
 			if ( $value !== null ) {
 				$buffer .= "    case {$case->getName()} = " . var_export( $value, true ) . ";\n\n";
@@ -175,22 +173,22 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 		}
 	}
 
+	// Class constants:
 	foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
 		try {
 			$val    = var_export( $reflectionConstant->getValue(), true );
 			$buffer .= "    const {$constName} = {$val};\n\n";
-		} catch ( IdentifierNotFound $e ) {
-			$symbol                       = $e->getIdentifier()->getName();
-			$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+		} catch ( \Throwable $ex ) {
+			handleBetterReflectionException( $ex, $missingReferences );
 		}
 	}
 
+	// Class properties:
 	try {
 		$props = $class->getProperties();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$props                        = [];
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$props = [];
 	}
 	foreach ( $props as $property ) {
 		if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
@@ -199,12 +197,12 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 		$buffer .= generatePropertyStub( $property, $missingReferences );
 	}
 
+	// Class methods:
 	try {
 		$methods = $class->getMethods();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$methods                      = [];
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$methods = [];
 	}
 	foreach ( $methods as $method ) {
 		if ( $method->getDeclaringClass()->getName() !== $class->getName() ) {
@@ -242,10 +240,9 @@ function generateFunctionStub( ReflectionFunction $function, array &$missingRefe
 
 	try {
 		$returnType = $function->getReturnType();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$returnType                   = null;
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$returnType = null;
 	}
 	if ( $returnType ) {
 		$buf .= ': ' . (string) $returnType;
@@ -266,9 +263,8 @@ function generateConstantStub( ReflectionConstant $constant, array &$missingRefe
 		$val = var_export( $constant->getValue(), true );
 
 		return "const {$constant->getName()} = {$val};\n\n";
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
 
 		return '';
 	}
@@ -318,10 +314,9 @@ function generatePropertyStub( ReflectionProperty $property, array &$missingRefe
 
 	try {
 		$type = $property->getType();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$type                         = null;
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$type = null;
 	}
 	$typeStr = $type ? ( (string) $type . ' ' ) : '';
 
@@ -374,10 +369,9 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 
 	try {
 		$returnType = $method->getReturnType();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol                       = $e->getIdentifier()->getName();
-		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-		$returnType                   = null;
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+		$returnType = null;
 	}
 	if ( $returnType ) {
 		$buf .= ': ' . (string) $returnType;
@@ -413,13 +407,8 @@ function generateAttributeLine( ReflectionAttribute $attr ): string {
 function generateParameterStub( ReflectionParameter $param, array &$missingReferences ): string {
 	try {
 		$type = $param->getType();
-	} catch ( IdentifierNotFound $e ) {
-		$symbol = $e->getIdentifier()->getName();
-		if ( ! isset( $missingReferences[ $symbol ] ) ) {
-			$missingReferences[ $symbol ] = 1;
-		} else {
-			$missingReferences[ $symbol ] ++;
-		}
+	} catch ( \Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
 		$type = null;
 	}
 
@@ -433,9 +422,44 @@ function generateParameterStub( ReflectionParameter $param, array &$missingRefer
 	$out .= '$' . $param->getName();
 
 	if ( $param->isDefaultValueAvailable() ) {
-		$defaultVal = $param->getDefaultValue();
-		$out        .= ' = ' . var_export( $defaultVal, true );
+		try {
+			$defaultVal = $param->getDefaultValue();
+			$out        .= ' = ' . var_export( $defaultVal, true );
+		} catch ( \Throwable $ex ) {
+			handleBetterReflectionException( $ex, $missingReferences );
+			// If we can't compile the default, we won't set it
+		}
 	}
 
 	return $out;
+}
+
+/**
+ * Given a thrown exception from BetterReflection, we try to figure out
+ * which symbol is missing, record it in $missingReferences, and move on.
+ *
+ * @param \Throwable $ex
+ * @param array<string,int> $missingReferences
+ */
+function handleBetterReflectionException( \Throwable $ex, array &$missingReferences ): void {
+	// If it’s an IdentifierNotFound, we have getIdentifier()->getName()
+	if ( $ex instanceof IdentifierNotFound ) {
+		$symbol                       = $ex->getIdentifier()->getName();
+		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+
+		return;
+	}
+
+	// If it’s an UnableToCompileNode, we can check ->constantName(), if any:
+	if ( $ex instanceof UnableToCompileNode ) {
+		$symbol = method_exists( $ex, 'constantName' ) && $ex->constantName()
+			? $ex->constantName()
+			: 'UnknownConstant';
+
+		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+
+		return;
+	}
+
+	$missingReferences[ $ex::class ] = ( $missingReferences[ $ex::class ] ?? 0 ) + 1;
 }
