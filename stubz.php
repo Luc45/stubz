@@ -3,6 +3,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/src/terminal.php';
+require_once __DIR__ . '/src/checksum.php';
 require_once __DIR__ . '/src/stub-generator.php';
 
 use Roave\BetterReflection\BetterReflection;
@@ -30,13 +31,15 @@ function main( array $argv ): void {
 
 	if ( count( $argv ) === 0 ) {
 		echo color( "Usage:\n", 'light_red' );
-		echo color( "  php stubz.php <source-dir> <output-dir>\n", 'light_red' );
+		echo color( "  php stubz.php [--exclude <dir>]... [--checksum] <source-dir> <output-dir>\n", 'light_red' );
 		echo color( "\nWe always ignore missing references.\n", 'light_red' );
+		echo color( "  --checksum      Print an MD5 checksum of all files (with excludes) and exit.\n", 'light_red' );
 		exit( 1 );
 	}
 
-	$excludes   = [];
-	$finderFile = null;
+	$excludes     = [];
+	$finderFile   = null;
+	$checksumMode = false;
 
 	// We hold missing references in a local array:
 	$missingReferences = [];
@@ -61,21 +64,26 @@ function main( array $argv ): void {
 				}
 				$finderFile = array_shift( $argv );
 				break;
+			case '--checksum':
+				array_shift( $argv );
+				$checksumMode = true;
+				break;
 			default:
 				$parsedFlags = false;
 		}
 	}
 
 	if ( $finderFile ) {
+		// If user gave --finder, parse as before
 		if ( count( $excludes ) > 0 ) {
 			echo color( "Error: You cannot use --exclude with --finder.\n", 'light_red' );
 			exit( 1 );
 		}
-		if ( count( $argv ) !== 1 ) {
+		if ( count( $argv ) !== 1 && ! $checksumMode ) {
 			echo color( "Error: With --finder, the only extra arg is <output-dir>.\n", 'light_red' );
 			exit( 1 );
 		}
-		$outputDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
+		$outputDir = rtrim( $argv[0] ?? '', DIRECTORY_SEPARATOR );
 		$finder    = include $finderFile;
 		if ( ! $finder instanceof Finder ) {
 			echo color( "Error: Finder file did not return a Finder instance.\n", 'light_red' );
@@ -84,12 +92,18 @@ function main( array $argv ): void {
 		$sourceDir = null;
 		$slug      = basename( $finderFile, '.php' );
 	} else {
-		if ( count( $argv ) < 2 ) {
+		// Otherwise, parse normal <source-dir> <output-dir>
+		if ( $checksumMode && count( $argv ) < 1 ) {
+			echo color( "Usage (checksum): php stubz.php [--exclude <dir>]... --checksum <source-dir>\n", 'light_red' );
+			exit( 1 );
+		}
+		if ( ! $checksumMode && count( $argv ) < 2 ) {
 			echo color( "Usage: php stubz.php [--exclude <dir>]... <source-dir> <output-dir>\n", 'light_red' );
 			exit( 1 );
 		}
+
 		$sourceDir = rtrim( $argv[0], DIRECTORY_SEPARATOR );
-		$outputDir = rtrim( $argv[1], DIRECTORY_SEPARATOR );
+		$outputDir = $checksumMode ? '' : rtrim( $argv[1] ?? '', DIRECTORY_SEPARATOR );
 
 		$finder = new Finder();
 		$finder->files()->in( $sourceDir )->name( '*.php' );
@@ -99,7 +113,17 @@ function main( array $argv ): void {
 		$slug = basename( $sourceDir );
 	}
 
+	// Sort the finder results consistently
 	$finder->sortByName();
+
+	if ( $checksumMode ) {
+		// If user wants checksum, we compute and then exit
+		$chksum = computeChecksum( $finder );
+		echo $chksum . "\n";
+		exit( 0 );
+	}
+
+	// Normal stub logic
 	generateStubs( $finder, $sourceDir, $outputDir, $slug, $missingReferences );
 
 	// Always show missing references at the end if any:
