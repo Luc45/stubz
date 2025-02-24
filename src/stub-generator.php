@@ -12,6 +12,35 @@ use Roave\BetterReflection\Reflection\ReflectionProperty;
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 
 /**
+ * // ADDED
+ * Logs timing data for each function to "stub-benchmark.log"
+ *
+ * @param string $functionName The name of the function we are timing
+ * @param float $startTime microtime(true) at start
+ * @param float $endTime microtime(true) at end
+ * @param array $context Additional info
+ */
+function logBenchmark( string $functionName, float $startTime, float $endTime, array $context = [] ): void {
+	static $fh = null;
+	if ( ! $fh ) {
+		$logPath = __DIR__ . '/stub-benchmark.log';
+		$fh      = fopen( $logPath, 'ab' );
+	}
+
+	$duration = round( $endTime - $startTime, 4 );
+	$time     = date( 'Y-m-d H:i:s' );
+	$details  = json_encode( $context, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
+
+	// If it took less than 1 second, ignore.
+	if ( $duration < 1 ) {
+		return;
+	}
+
+	fwrite( $fh, "[$time] $functionName took {$duration}s, context=$details\n" );
+	fflush( $fh );
+}
+
+/**
  * @param ReflectionClass[] $allClasses
  * @param ReflectionFunction[] $allFunctions
  * @param ReflectionConstant[] $allConstants
@@ -27,42 +56,115 @@ function buildSymbolMaps(
 	array $allFunctions,
 	array $allConstants
 ): array {
+	$__start = microtime( true ); // ADDED
+
 	$fileToClasses   = [];
 	$fileToFunctions = [];
 	$fileToConstants = [];
 
+	// --- ADDED instrumentation for class collection ---
+	$t1 = microtime( true );
 	foreach ( $allClasses as $classReflection ) {
 		$file = $classReflection->getFileName();
 		if ( $file !== null ) {
 			$fileToClasses[ $file ][] = $classReflection;
 		}
 	}
+	$t2 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - classCollection',
+		$t1,
+		$t2,
+		[ 'countAllClasses' => count( $allClasses ) ]
+	);
+
+	$t3 = microtime( true );
 	foreach ( $fileToClasses as $file => $classList ) {
 		usort( $classList, fn( ReflectionClass $a, ReflectionClass $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToClasses[ $file ] = $classList;
 	}
+	$t4 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - classSorting',
+		$t3,
+		$t4,
+		[ 'filesWithClasses' => count( $fileToClasses ) ]
+	);
 
+	// --- ADDED instrumentation for function collection ---
+	$t5 = microtime( true );
 	foreach ( $allFunctions as $functionReflection ) {
 		$file = $functionReflection->getFileName();
 		if ( $file !== null ) {
 			$fileToFunctions[ $file ][] = $functionReflection;
 		}
 	}
+	$t6 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - functionCollection',
+		$t5,
+		$t6,
+		[ 'countAllFunctions' => count( $allFunctions ) ]
+	);
+
+	$t7 = microtime( true );
 	foreach ( $fileToFunctions as $file => $funcList ) {
 		usort( $funcList, fn( ReflectionFunction $a, ReflectionFunction $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToFunctions[ $file ] = $funcList;
 	}
+	$t8 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - functionSorting',
+		$t7,
+		$t8,
+		[ 'filesWithFunctions' => count( $fileToFunctions ) ]
+	);
 
+	// --- ADDED instrumentation for constant collection ---
+	$t9 = microtime( true );
 	foreach ( $allConstants as $constantReflection ) {
 		$file = $constantReflection->getFileName();
 		if ( $file !== null ) {
 			$fileToConstants[ $file ][] = $constantReflection;
 		}
 	}
+	$t10 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - constantCollection',
+		$t9,
+		$t10,
+		[ 'countAllConstants' => count( $allConstants ) ]
+	);
+
+	$t11 = microtime( true );
 	foreach ( $fileToConstants as $file => $constList ) {
 		usort( $constList, fn( ReflectionConstant $a, ReflectionConstant $b ) => $a->getStartLine() <=> $b->getStartLine() );
 		$fileToConstants[ $file ] = $constList;
 	}
+	$t12 = microtime( true );
+	logBenchmark(
+		__FUNCTION__ . ' - constantSorting',
+		$t11,
+		$t12,
+		[ 'filesWithConstants' => count( $fileToConstants ) ]
+	);
+
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[
+			'totalFiles'     => count( array_unique( array_merge(
+				array_keys( $fileToClasses ),
+				array_keys( $fileToFunctions ),
+				array_keys( $fileToConstants )
+			) ) ),
+			'totalClasses'   => count( $allClasses ),
+			'totalFunctions' => count( $allFunctions ),
+			'totalConstants' => count( $allConstants ),
+		]
+	);
 
 	return [ $fileToClasses, $fileToFunctions, $fileToConstants ];
 }
@@ -81,6 +183,8 @@ function generateStubContent(
 	array $fileToConstantsMap,
 	array &$missingReferences
 ): string {
+	$__start = microtime( true ); // ADDED
+
 	$stub = "<?php\n\n";
 
 	if ( isset( $fileToClassesMap[ $realpath ] ) ) {
@@ -99,6 +203,19 @@ function generateStubContent(
 		}
 	}
 
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[
+			'realpath'     => $realpath,
+			'hasClasses'   => isset( $fileToClassesMap[ $realpath ] ) ? count( $fileToClassesMap[ $realpath ] ) : 0,
+			'hasFunctions' => isset( $fileToFunctionsMap[ $realpath ] ) ? count( $fileToFunctionsMap[ $realpath ] ) : 0,
+			'hasConstants' => isset( $fileToConstantsMap[ $realpath ] ) ? count( $fileToConstantsMap[ $realpath ] ) : 0,
+		]
+	);
+
 	return $stub;
 }
 
@@ -108,57 +225,122 @@ function generateStubContent(
  * @param array<string,int> $missingReferences
  */
 function generateClassStub( ReflectionClass $class, array &$missingReferences ): string {
+	$__start = microtime( true );
+
 	$buffer = '';
 
+	// Fine-grained timing around doc comment, attributes, etc.
+	$t1        = microtime( true );
 	$namespace = $class->getNamespaceName();
-	if ( $namespace ) {
-		$buffer .= "namespace {$namespace};\n\n";
-	}
+	$t2        = microtime( true );
+	logBenchmark( "ReflectionClass::getNamespaceName", $t1, $t2, [
+		'className' => $class->getName(),
+	] );
 
-	if ( $doc = $class->getDocComment() ) {
+	$t1  = microtime( true );
+	$doc = $class->getDocComment();
+	$t2  = microtime( true );
+	logBenchmark( "ReflectionClass::getDocComment", $t1, $t2, [
+		'className' => $class->getName(),
+		'docLength' => $doc ? strlen( $doc ) : 0,
+	] );
+
+	$t1         = microtime( true );
+	$attributes = $class->getAttributes();
+	$t2         = microtime( true );
+	logBenchmark( "ReflectionClass::getAttributes", $t1, $t2, [
+		'className' => $class->getName(),
+		'attrCount' => count( $attributes ),
+	] );
+
+	// Optional namespace line
+	$buffer .= $namespace ? "namespace {$namespace};\n\n" : '';
+
+	// Doc comment
+	if ( $doc ) {
 		$buffer .= $doc . "\n";
 	}
 
-	foreach ( $class->getAttributes() as $attr ) {
+	// Class-level attributes
+	$t1 = microtime( true );
+	foreach ( $attributes as $attr ) {
 		$buffer .= generateAttributeLine( $attr ) . "\n";
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getAttributes", $t1, $t2, [
+		'className' => $class->getName(),
+		'attrCount' => count( $attributes ),
+	] );
 
+	// Declaration (class / interface / trait / enum)
+	$t1 = microtime( true );
 	$decl = getClassDeclaration( $class );
+	$t2 = microtime( true );
+	logBenchmark( "getClassDeclaration", $t1, $t2, [
+		'className' => $class->getName(),
+	] );
 
-	// We do local catch-blocks, but only a single catch(\Throwable $ex):
+	// === Parent class name (string, not ReflectionClass) ===
+	$t1 = microtime( true );
 	try {
-		$parent = $class->getParentClass();
+		$parent = $class->getParentClassName(); // returns FQCN or null
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$parent = null;
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getParentClassName", $t1, $t2, [
+		'className' => $class->getName(),
+		'parent'    => $parent,
+	] );
 
+	// === Interface class names (array of strings) ===
+	$t1 = microtime( true );
 	try {
-		$interfaces = $class->getInterfaces();
+		$interfaces = $class->getInterfaceClassNames(); // array of ReflectionClass
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$interfaces = [];
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getInterfaceClassNames", $t1, $t2, [
+		'className'      => $class->getName(),
+		'interfaceCount' => count( $interfaces ),
+	] );
 
+	// Build the stub "class Foo extends ... implements ..."
+	$t1 = microtime( true );
 	$buffer .= $decl;
-
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-		if ( $parent ) {
-			$buffer .= ' extends \\' . $parent->getName();
+		if ( $parent !== null ) {
+			$buffer .= ' extends \\' . ltrim( $parent, '\\' );
 		}
 		if ( $interfaces !== [] ) {
 			$impls  = array_map(
-				static fn( ReflectionClass $iface ): string => '\\' . $iface->getName(),
+				static fn( string $ifc ) => '\\' . ltrim( $ifc, '\\' ),
 				$interfaces
 			);
 			$buffer .= ' implements ' . implode( ', ', $impls );
 		}
 	}
-
 	$buffer .= "\n{\n";
+	$t2 = microtime( true );
+	logBenchmark( "class declaration", $t1, $t2, [
+		'className' => $class->getName(),
+	] );
 
+	// === Enum cases
+	$t1 = microtime( true );
 	if ( $class->isEnum() && $class instanceof ReflectionEnum ) {
-		foreach ( $class->getCases() as $case ) {
+		$t1    = microtime( true );
+		$cases = $class->getCases();
+		$t2    = microtime( true );
+		logBenchmark( "ReflectionEnum::getCases", $t1, $t2, [
+			'className' => $class->getName(),
+			'caseCount' => count( $cases ),
+		] );
+
+		foreach ( $cases as $case ) {
 			try {
 				$value = $case->getValue();
 			} catch ( \Throwable $ex ) {
@@ -172,9 +354,22 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 			}
 		}
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionEnum::getCases", $t1, $t2, [
+		'className' => $class->getName(),
+	] );
 
-	// Class constants:
-	foreach ( $class->getImmediateConstants() as $constName => $reflectionConstant ) {
+	// === Immediate constants
+	$t1                 = microtime( true );
+	$immediateConstants = $class->getImmediateConstants();
+	$t2                 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateConstants", $t1, $t2, [
+		'className'     => $class->getName(),
+		'constantCount' => count( $immediateConstants ),
+	] );
+
+	$t1 = microtime( true );
+	foreach ( $immediateConstants as $constName => $reflectionConstant ) {
 		try {
 			$val    = var_export( $reflectionConstant->getValue(), true );
 			$buffer .= "    const {$constName} = {$val};\n\n";
@@ -182,36 +377,73 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 			handleBetterReflectionException( $ex, $missingReferences );
 		}
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateConstants", $t1, $t2, [
+		'className'     => $class->getName(),
+		'constantCount' => count( $immediateConstants ),
+	] );
 
-	// Class properties:
+	// === Properties
+	$t1 = microtime( true );
 	try {
-		$props = $class->getProperties();
+		$props = $class->getImmediateProperties();
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$props = [];
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateProperties", $t1, $t2, [
+		'className'     => $class->getName(),
+		'propertyCount' => count( $props ),
+	] );
+
+	$t1 = microtime( true );
 	foreach ( $props as $property ) {
 		if ( $property->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
 		}
 		$buffer .= generatePropertyStub( $property, $missingReferences );
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateProperties", $t1, $t2, [
+		'className'     => $class->getName(),
+		'propertyCount' => count( $props ),
+	] );
 
-	// Class methods:
+	// === Methods
+	$t1 = microtime( true );
 	try {
-		$methods = $class->getMethods();
+		$methods = $class->getImmediateMethods();
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$methods = [];
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateMethods", $t1, $t2, [
+		'className'   => $class->getName(),
+		'methodCount' => count( $methods ),
+	] );
+
+	$t1 = microtime( true );
 	foreach ( $methods as $method ) {
 		if ( $method->getDeclaringClass()->getName() !== $class->getName() ) {
 			continue;
 		}
 		$buffer .= generateMethodStub( $method, $missingReferences );
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionClass::getImmediateMethods", $t1, $t2, [
+		'className'   => $class->getName(),
+		'methodCount' => count( $methods ),
+	] );
 
 	$buffer .= "}\n\n";
+
+	// Overall timing
+	$__end = microtime( true );
+	logBenchmark( __FUNCTION__, $__start, $__end, [
+		'className' => $class->getName(),
+	] );
 
 	return $buffer;
 }
@@ -222,33 +454,74 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
  * @param array<string,int> $missingReferences
  */
 function generateFunctionStub( ReflectionFunction $function, array &$missingReferences ): string {
+	$__start = microtime( true ); // ADDED
+
+	$t1  = microtime( true );
+	$doc = $function->getDocComment();
+	$t2  = microtime( true );
+	logBenchmark( "ReflectionFunction::getDocComment", $t1, $t2, [
+		'functionName' => $function->getName(),
+		'docLength'    => $doc ? strlen( $doc ) : 0,
+	] );
+
+	$t1         = microtime( true );
+	$attributes = $function->getAttributes();
+	$t2         = microtime( true );
+	logBenchmark( "ReflectionFunction::getAttributes", $t1, $t2, [
+		'functionName' => $function->getName(),
+		'attrCount'    => count( $attributes ),
+	] );
+
 	$buf = '';
-	if ( $doc = $function->getDocComment() ) {
+	if ( $doc ) {
 		$buf .= $doc . "\n";
 	}
-
-	foreach ( $function->getAttributes() as $attr ) {
+	foreach ( $attributes as $attr ) {
 		$buf .= generateAttributeLine( $attr ) . "\n";
 	}
 
 	$buf    .= 'function ' . $function->getName() . '(';
 	$params = [];
-	foreach ( $function->getParameters() as $param ) {
+
+	$t1             = microtime( true );
+	$functionParams = $function->getParameters();
+	$t2             = microtime( true );
+	logBenchmark( "ReflectionFunction::getParameters", $t1, $t2, [
+		'functionName' => $function->getName(),
+		'paramCount'   => count( $functionParams ),
+	] );
+
+	foreach ( $functionParams as $param ) {
 		$params[] = generateParameterStub( $param, $missingReferences );
 	}
 	$buf .= implode( ', ', $params ) . ')';
 
+	$t1 = microtime( true );
 	try {
 		$returnType = $function->getReturnType();
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$returnType = null;
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionFunction::getReturnType", $t1, $t2, [
+		'functionName'  => $function->getName(),
+		'hasReturnType' => $returnType !== null,
+	] );
+
 	if ( $returnType ) {
 		$buf .= ': ' . (string) $returnType;
 	}
 
 	$buf .= "\n{\n    // stub\n}\n\n";
+
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[ 'functionName' => $function->getName() ]
+	);
 
 	return $buf;
 }
@@ -259,35 +532,53 @@ function generateFunctionStub( ReflectionFunction $function, array &$missingRefe
  * @param array<string,int> $missingReferences
  */
 function generateConstantStub( ReflectionConstant $constant, array &$missingReferences ): string {
-	try {
-		$val = var_export( $constant->getValue(), true );
+	$__start = microtime( true ); // ADDED
 
-		return "const {$constant->getName()} = {$val};\n\n";
+	try {
+		$val  = var_export( $constant->getValue(), true );
+		$stub = "const {$constant->getName()} = {$val};\n\n";
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
-
-		return '';
+		$stub = '';
 	}
+
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[ 'constantName' => $constant->getName() ]
+	);
+
+	return $stub;
 }
 
 function getClassDeclaration( ReflectionClass $class ): string {
+	$__start = microtime( true ); // ADDED
+
 	if ( $class->isInterface() ) {
-		return 'interface ' . $class->getShortName();
-	}
-	if ( $class->isTrait() ) {
-		return 'trait ' . $class->getShortName();
-	}
-	if ( $class->isEnum() ) {
-		return 'enum ' . $class->getShortName();
-	}
-	if ( $class->isAbstract() ) {
-		return 'abstract class ' . $class->getShortName();
-	}
-	if ( $class->isFinal() ) {
-		return 'final class ' . $class->getShortName();
+		$result = 'interface ' . $class->getShortName();
+	} elseif ( $class->isTrait() ) {
+		$result = 'trait ' . $class->getShortName();
+	} elseif ( $class->isEnum() ) {
+		$result = 'enum ' . $class->getShortName();
+	} elseif ( $class->isAbstract() ) {
+		$result = 'abstract class ' . $class->getShortName();
+	} elseif ( $class->isFinal() ) {
+		$result = 'final class ' . $class->getShortName();
+	} else {
+		$result = 'class ' . $class->getShortName();
 	}
 
-	return 'class ' . $class->getShortName();
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[ 'className' => $class->getName() ]
+	);
+
+	return $result;
 }
 
 /**
@@ -296,13 +587,33 @@ function getClassDeclaration( ReflectionClass $class ): string {
  * @param array<string,int> $missingReferences
  */
 function generatePropertyStub( ReflectionProperty $property, array &$missingReferences ): string {
+	$__start = microtime( true ); // ADDED
+
+	$t1  = microtime( true );
+	$doc = $property->getDocComment();
+	$t2  = microtime( true );
+	logBenchmark( "ReflectionProperty::getDocComment", $t1, $t2, [
+		'className'    => $property->getDeclaringClass()->getName(),
+		'propertyName' => $property->getName(),
+		'docLength'    => $doc ? strlen( $doc ) : 0,
+	] );
+
+	$t1    = microtime( true );
+	$attrs = $property->getAttributes();
+	$t2    = microtime( true );
+	logBenchmark( "ReflectionProperty::getAttributes", $t1, $t2, [
+		'className'    => $property->getDeclaringClass()->getName(),
+		'propertyName' => $property->getName(),
+		'attrCount'    => count( $attrs ),
+	] );
+
 	$out = '';
-	if ( $doc = $property->getDocComment() ) {
+	if ( $doc ) {
 		foreach ( explode( "\n", $doc ) as $line ) {
 			$out .= "    {$line}\n";
 		}
 	}
-	foreach ( $property->getAttributes() as $attr ) {
+	foreach ( $attrs as $attr ) {
 		$out .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
@@ -312,15 +623,34 @@ function generatePropertyStub( ReflectionProperty $property, array &$missingRefe
 	$static     = $property->isStatic() ? ' static' : '';
 	$readonly   = $property->isReadOnly() ? 'readonly ' : '';
 
+	$t1 = microtime( true );
 	try {
 		$type = $property->getType();
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$type = null;
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionProperty::getType", $t1, $t2, [
+		'className'    => $property->getDeclaringClass()->getName(),
+		'propertyName' => $property->getName(),
+		'hasType'      => $type !== null,
+	] );
+
 	$typeStr = $type ? ( (string) $type . ' ' ) : '';
 
 	$out .= "    {$visibility}{$static} {$readonly}{$typeStr}\${$property->getName()};\n\n";
+
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[
+			'className'    => $property->getDeclaringClass()->getName(),
+			'propertyName' => $property->getName()
+		]
+	);
 
 	return $out;
 }
@@ -331,14 +661,33 @@ function generatePropertyStub( ReflectionProperty $property, array &$missingRefe
  * @param array<string,int> $missingReferences
  */
 function generateMethodStub( ReflectionMethod $method, array &$missingReferences ): string {
-	$buf = '';
+	$__start = microtime( true ); // ADDED
 
-	if ( $doc = $method->getDocComment() ) {
+	$t1  = microtime( true );
+	$doc = $method->getDocComment();
+	$t2  = microtime( true );
+	logBenchmark( "ReflectionMethod::getDocComment", $t1, $t2, [
+		'className'  => $method->getDeclaringClass()->getName(),
+		'methodName' => $method->getName(),
+		'docLength'  => $doc ? strlen( $doc ) : 0,
+	] );
+
+	$t1    = microtime( true );
+	$attrs = $method->getAttributes();
+	$t2    = microtime( true );
+	logBenchmark( "ReflectionMethod::getAttributes", $t1, $t2, [
+		'className'  => $method->getDeclaringClass()->getName(),
+		'methodName' => $method->getName(),
+		'attrCount'  => count( $attrs ),
+	] );
+
+	$buf = '';
+	if ( $doc ) {
 		foreach ( explode( "\n", $doc ) as $line ) {
 			$buf .= "    {$line}\n";
 		}
 	}
-	foreach ( $method->getAttributes() as $attr ) {
+	foreach ( $attrs as $attr ) {
 		$buf .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
@@ -360,19 +709,37 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 		$buf .= 'abstract ';
 	}
 
-	$buf    .= 'function ' . $method->getName() . '(';
+	$buf .= 'function ' . $method->getName() . '(';
+
+	$t1           = microtime( true );
+	$methodParams = $method->getParameters();
+	$t2           = microtime( true );
+	logBenchmark( "ReflectionMethod::getParameters", $t1, $t2, [
+		'className'  => $method->getDeclaringClass()->getName(),
+		'methodName' => $method->getName(),
+		'paramCount' => count( $methodParams ),
+	] );
+
 	$params = [];
-	foreach ( $method->getParameters() as $param ) {
+	foreach ( $methodParams as $param ) {
 		$params[] = generateParameterStub( $param, $missingReferences );
 	}
 	$buf .= implode( ', ', $params ) . ')';
 
+	$t1 = microtime( true );
 	try {
 		$returnType = $method->getReturnType();
 	} catch ( \Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 		$returnType = null;
 	}
+	$t2 = microtime( true );
+	logBenchmark( "ReflectionMethod::getReturnType", $t1, $t2, [
+		'className'  => $method->getDeclaringClass()->getName(),
+		'methodName' => $method->getName(),
+		'hasType'    => $returnType !== null,
+	] );
+
 	if ( $returnType ) {
 		$buf .= ': ' . (string) $returnType;
 	}
@@ -383,6 +750,17 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 		$buf .= "\n    {\n        // stub\n    }\n\n";
 	}
 
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[
+			'className'  => $method->getDeclaringClass()->getName(),
+			'methodName' => $method->getName()
+		]
+	);
+
 	return $buf;
 }
 
@@ -390,13 +768,25 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
  * Generates an attribute line from a ReflectionAttribute.
  */
 function generateAttributeLine( ReflectionAttribute $attr ): string {
+	$__start = microtime( true ); // ADDED
+
 	$args = [];
 	foreach ( $attr->getArguments() as $argValue ) {
 		$args[] = var_export( $argValue, true );
 	}
 	$argsString = $args ? '(' . implode( ', ', $args ) . ')' : '';
 
-	return "#[{$attr->getName()}{$argsString}]";
+	$result = "#[{$attr->getName()}{$argsString}]";
+
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[ 'attributeName' => $attr->getName() ]
+	);
+
+	return $result;
 }
 
 /**
@@ -405,6 +795,8 @@ function generateAttributeLine( ReflectionAttribute $attr ): string {
  * @param array<string,int> $missingReferences
  */
 function generateParameterStub( ReflectionParameter $param, array &$missingReferences ): string {
+	$__start = microtime( true ); // ADDED
+
 	try {
 		$type = $param->getType();
 	} catch ( \Throwable $ex ) {
@@ -431,6 +823,17 @@ function generateParameterStub( ReflectionParameter $param, array &$missingRefer
 		}
 	}
 
+	$__end = microtime( true ); // ADDED
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[
+			'declaringFunction' => $param->getDeclaringFunction()->getName(),
+			'paramName'         => $param->getName()
+		]
+	);
+
 	return $out;
 }
 
@@ -442,15 +845,23 @@ function generateParameterStub( ReflectionParameter $param, array &$missingRefer
  * @param array<string,int> $missingReferences
  */
 function handleBetterReflectionException( \Throwable $ex, array &$missingReferences ): void {
-	// If it’s an IdentifierNotFound, we have getIdentifier()->getName()
+	$__start = microtime( true ); // ADDED
+
 	if ( $ex instanceof IdentifierNotFound ) {
 		$symbol                       = $ex->getIdentifier()->getName();
 		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 
+		$__end = microtime( true );
+		logBenchmark(
+			__FUNCTION__,
+			$__start,
+			$__end,
+			[ 'exceptionType' => get_class( $ex ), 'symbol' => $symbol ]
+		);
+
 		return;
 	}
 
-	// If it’s an UnableToCompileNode, we can check ->constantName(), if any:
 	if ( $ex instanceof UnableToCompileNode ) {
 		$symbol = method_exists( $ex, 'constantName' ) && $ex->constantName()
 			? $ex->constantName()
@@ -458,8 +869,24 @@ function handleBetterReflectionException( \Throwable $ex, array &$missingReferen
 
 		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 
+		$__end = microtime( true );
+		logBenchmark(
+			__FUNCTION__,
+			$__start,
+			$__end,
+			[ 'exceptionType' => get_class( $ex ), 'symbol' => $symbol ]
+		);
+
 		return;
 	}
 
 	$missingReferences[ $ex::class ] = ( $missingReferences[ $ex::class ] ?? 0 ) + 1;
+
+	$__end = microtime( true );
+	logBenchmark(
+		__FUNCTION__,
+		$__start,
+		$__end,
+		[ 'exceptionType' => get_class( $ex ) ]
+	);
 }
