@@ -14,21 +14,10 @@
  *  - Supports --exclude=... or --finder=..., but not both
  *  - Only prints missing references if --verbose is passed
  *
- * Usage:
- *   php flat-stubz.php <source-dir> <output-dir> [stub-b-dir] [--exclude=dir] [--finder=path] [--verbose]
- *
- * Examples:
- *   php flat-stubz.php src stubs
- *   php flat-stubz.php src stubs stubsB --exclude=vendor
- *   php flat-stubz.php src stubs stubsB --finder=my-finder.php --verbose
- *
- * In "my-finder.php", you must return a Symfony\Component\Finder\Finder instance:
- *   <?php
- *   use Symfony\Component\Finder\Finder;
- *   $finder = new Finder();
- *   $finder->files()->name('*.php')->in(__DIR__ . '/special');
- *   return $finder;
+ * Compatible with stricter PHPStan rules.
  */
+
+declare( strict_types=1 );
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -38,149 +27,95 @@ use Roave\BetterReflection\Reflector\DefaultReflector;
 use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
+
 use Roave\BetterReflection\Reflection\ReflectionAttribute;
-use Roave\BetterReflection\Reflection\ReflectionClass;
-use Roave\BetterReflection\Reflection\ReflectionConstant;
-use Roave\BetterReflection\Reflection\ReflectionEnum;
-use Roave\BetterReflection\Reflection\ReflectionFunction;
-use Roave\BetterReflection\Reflection\ReflectionMethod;
-use Roave\BetterReflection\Reflection\ReflectionParameter;
-use Roave\BetterReflection\Reflection\ReflectionProperty;
+use Roave\BetterReflection\Reflection\ReflectionClass as BRClass;
+use Roave\BetterReflection\Reflection\ReflectionConstant as BRConstant;
+use Roave\BetterReflection\Reflection\ReflectionEnum as BREnum;
+use Roave\BetterReflection\Reflection\ReflectionFunction as BRFunction;
+use Roave\BetterReflection\Reflection\ReflectionMethod as BRMethod;
+use Roave\BetterReflection\Reflection\ReflectionParameter as BRParameter;
+use Roave\BetterReflection\Reflection\ReflectionProperty as BRProperty;
+
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;
 use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
+
 use Throwable;
 
+/**
+ * Main entry point
+ *
+ * @param array<int, string> $argv
+ */
 function main( array $argv ): void {
-	// 1) Parse args
 	$options   = parseCommandLine( $argv );
-	$sourceDir = $options['sourceDir'];
-	$outputDir = $options['outputDir'];
-	$stubBDir  = $options['stubBDir'];
-	$exclude   = $options['exclude'];
-	$finderPhp = $options['finderPhp'];
-	$verbose   = $options['verbose'];
+	$sourceDir = $options['sourceDir']; // always string
+	$outputDir = $options['outputDir']; // always string
+	$stubBDir  = $options['stubBDir'];  // string|null
+	$exclude   = $options['exclude'];   // string|null
+	$finderPhp = $options['finderPhp']; // string|null
+	$verbose   = $options['verbose'];   // bool
 
-	// 2) Check pcntl availability
 	$parallelAllowed = function_exists( 'pcntl_fork' );
-	$childPids       = [];
 	if ( ! $parallelAllowed ) {
 		fwrite( STDERR, "WARNING: pcntl is not available; falling back to single-process mode.\n" );
 	}
 
-	// 3) Build Finder instance
-	if ( $finderPhp ) {
-		// We load the custom finder from that file
-		// The user is expected to "return $finder;" in that file.
-		$finder = require $finderPhp;
-		if ( ! $finder instanceof Finder ) {
-			fwrite( STDERR, "Error: The file '{$finderPhp}' did not return a Finder instance.\n" );
-			exit( 1 );
-		}
-	} else {
-		// Our default Finder
-		$finder = new Finder();
-		$finder->files()->name( '*.php' )->in( $sourceDir );
+	// Build or load Finder
+	$finder = makeFinder( $sourceDir, $exclude, $finderPhp );
 
-		// If exclude is set, exclude it
-		if ( $exclude ) {
-			$finder->exclude( $exclude );
-		}
-	}
-
-	// Convert Finder to array of file paths
+	// Convert Finder -> array of file paths
 	$allFiles = [];
 	foreach ( $finder as $file ) {
 		$rp = $file->getRealPath();
-		if ( $rp ) {
+		if ( $rp !== false ) {
 			$allFiles[] = $rp;
 		}
 	}
 	$totalFiles = count( $allFiles );
-
 	echo "Found {$totalFiles} PHP files in '{$sourceDir}'.\n";
-
 	if ( $totalFiles === 0 ) {
 		echo "No files found. Exiting.\n";
-		exit( 0 );
+
+		return;
 	}
 
-	// 4) If parallel is available, detect CPU cores & chunk
-	//    Else do single-chunk
-	if ( $parallelAllowed ) {
+	$missingReferences = []; // array<string,int>
+
+	// Parallel or single
+	if ( $parallelAllowed && $totalFiles > 1 ) {
 		$numCores = detectCpuCores();
 		echo "Using up to {$numCores} parallel processes.\n";
-		$chunks = array_chunk( $allFiles, (int) ceil( $totalFiles / $numCores ) );
-	} else {
-		// Single chunk
-		$chunks = [ $allFiles ];
-	}
 
-	// Prepare temp dir for child missing-ref data
-	$tmpDir = sys_get_temp_dir() . '/flat-stubz-' . uniqid();
-	mkdir( $tmpDir, 0777, true );
-
-	// We'll collect missing references from child processes (or this single process).
-	$missingReferences = [];
-
-	// 5) Fork children or do single-process
-	foreach ( $chunks as $chunkIndex => $chunkFiles ) {
-		if ( $parallelAllowed && count( $chunks ) > 1 ) {
-			// Fork
-			$pid = pcntl_fork();
-			if ( $pid === - 1 ) {
-				fwrite( STDERR, "Error: pcntl_fork() failed.\n" );
-				exit( 1 );
-			}
-			if ( $pid === 0 ) {
-				// CHILD
-				$childMissingRefs = [];
-				processFilesChunk( $chunkFiles, $sourceDir, $outputDir, $stubBDir, $childMissingRefs, $chunkIndex, count( $chunks ) );
-
-				$jsonPath = $tmpDir . "/missing-refs-{$chunkIndex}.json";
-				file_put_contents( $jsonPath, json_encode( $childMissingRefs ) );
-				exit( 0 ); // done
-			} else {
-				// PARENT
-				$childPids[] = $pid;
-			}
+		// Force a positive chunk size so array_chunk param #2 is valid
+		$chunkSize = (int) max( 1, ceil( $totalFiles / $numCores ) );
+		/** @var array<int,array<int,string>> $chunks */
+		$chunks = array_chunk( $allFiles, $chunkSize );
+		if ( count( $chunks ) > 1 ) {
+			runParallel( $chunks, $sourceDir, $outputDir, $stubBDir, $missingReferences );
 		} else {
-			// Single-process path
-			// We just process the chunk directly in this process
-			processFilesChunk( $chunkFiles, $sourceDir, $outputDir, $stubBDir, $missingReferences, $chunkIndex, 1 );
+			// If only one chunk, just do single
+			processFilesChunk( $chunks[0], $sourceDir, $outputDir, $stubBDir, $missingReferences, 0, 1 );
 		}
+	} else {
+		// Single process
+		processFilesChunk( $allFiles, $sourceDir, $outputDir, $stubBDir, $missingReferences, 0, 1 );
 	}
 
-	// If parallel, wait for children
-	if ( $parallelAllowed && count( $chunks ) > 1 ) {
-		foreach ( $childPids as $pid ) {
-			pcntl_waitpid( $pid, $status );
-		}
-		// Merge child missing references
-		foreach ( range( 0, count( $chunks ) - 1 ) as $i ) {
-			$fileJson = $tmpDir . "/missing-refs-{$i}.json";
-			if ( file_exists( $fileJson ) ) {
-				$childRefs = json_decode( file_get_contents( $fileJson ), true ) ?: [];
-				foreach ( $childRefs as $sym => $count ) {
-					if ( ! isset( $missingReferences[ $sym ] ) ) {
-						$missingReferences[ $sym ] = 0;
-					}
-					$missingReferences[ $sym ] += $count;
-				}
-			}
-		}
-	}
-
-	// 6) Print missing references only if --verbose
+	// Print missing refs only if verbose
 	if ( $verbose && ! empty( $missingReferences ) ) {
-		$count  = array_sum( $missingReferences );
+		$totalMissingCount = 0;
+		foreach ( $missingReferences as $val ) {
+			$totalMissingCount += $val;
+		}
 		$unique = count( $missingReferences );
-		echo "\nMissing references: {$count} total references to {$unique} unique symbols.\n";
-		foreach ( $missingReferences as $symbol => $times ) {
-			echo "  - {$symbol} ({$times} times)\n";
+
+		echo "\nMissing references: {$totalMissingCount} total references to {$unique} unique symbols.\n";
+		foreach ( $missingReferences as $sym => $count ) {
+			echo "  - {$sym} ({$count} times)\n";
 		}
 	}
 
-	// If pcntl wasn't available, print a final reminder
 	if ( ! $parallelAllowed ) {
 		fwrite( STDERR, "WARNING: pcntl was not available; used single-process mode.\n" );
 	}
@@ -189,8 +124,105 @@ function main( array $argv ): void {
 }
 
 /**
- * processFilesChunk
- * Called per child or in single-process to handle a subset of files.
+ * If multiple chunks, fork child processes. Merge child missing-refs data.
+ *
+ * @param array<int,array<int,string>> $chunks
+ * @param string $sourceDir
+ * @param string $outputDir
+ * @param string|null $stubBDir
+ * @param array<string,int> $missingReferences
+ */
+function runParallel(
+	array $chunks,
+	string $sourceDir,
+	string $outputDir,
+	?string $stubBDir,
+	array &$missingReferences
+): void {
+	$childPids = [];
+	$tmpDir    = sys_get_temp_dir() . '/flat-stubz-' . uniqid();
+	mkdir( $tmpDir, 0777, true );
+
+	foreach ( $chunks as $idx => $chunkFiles ) {
+		$pid = pcntl_fork();
+		if ( $pid === - 1 ) {
+			fwrite( STDERR, "Error: pcntl_fork() failed.\n" );
+			exit( 1 );
+		}
+		if ( $pid === 0 ) {
+			// Child
+			$childMissing = [];
+			processFilesChunk( $chunkFiles, $sourceDir, $outputDir, $stubBDir, $childMissing, $idx, count( $chunks ) );
+			file_put_contents( $tmpDir . "/refs-{$idx}.json", json_encode( $childMissing ) );
+			exit( 0 );
+		}
+		$childPids[] = $pid;
+	}
+
+	// Wait + merge
+	foreach ( $childPids as $cpid ) {
+		pcntl_waitpid( $cpid, $status );
+	}
+	// Merge
+	foreach ( range( 0, count( $chunks ) - 1 ) as $i ) {
+		$jsonPath = $tmpDir . "/refs-{$i}.json";
+		if ( ! is_file( $jsonPath ) ) {
+			continue;
+		}
+		$data = file_get_contents( $jsonPath );
+		if ( ! is_string( $data ) ) {
+			continue;
+		}
+		$arr = json_decode( $data, true );
+		if ( ! is_array( $arr ) ) {
+			continue;
+		}
+		foreach ( $arr as $sym => $count ) {
+			if ( ! isset( $missingReferences[ $sym ] ) ) {
+				$missingReferences[ $sym ] = 0;
+			}
+			$missingReferences[ $sym ] += (int) $count;
+		}
+	}
+}
+
+/**
+ * Create or load Finder instance
+ *
+ * @param string $sourceDir
+ * @param string|null $exclude
+ * @param string|null $finderPhp
+ *
+ * @return Finder
+ */
+function makeFinder( string $sourceDir, ?string $exclude, ?string $finderPhp ): Finder {
+	if ( $finderPhp !== null ) {
+		/** @psalm-suppress UnresolvableInclude */
+		$finder = require $finderPhp;
+		if ( ! $finder instanceof Finder ) {
+			fwrite( STDERR, "Error: The file '{$finderPhp}' did not return a Finder instance.\n" );
+			exit( 1 );
+		}
+
+		return $finder;
+	}
+
+	$finder = new Finder();
+	$finder->files()->name( '*.php' )->in( $sourceDir );
+
+	if ( $exclude !== null && $exclude !== '' ) {
+		$finder->exclude( $exclude );
+	}
+
+	return $finder;
+}
+
+/**
+ * @param array<int,string> $filePaths
+ * @param string $sourceDir
+ * @param string $outputDir
+ * @param string|null $stubBDir
+ * @param array<string,int> $missingReferences
  */
 function processFilesChunk(
 	array $filePaths,
@@ -201,9 +233,9 @@ function processFilesChunk(
 	int $chunkIndex,
 	int $totalChunks
 ): void {
-	$br              = new BetterReflection();
-	$astLocator      = $br->astLocator();
-	$internalLocator = new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() );
+	$br         = new BetterReflection();
+	$astLocator = $br->astLocator();
+	$internal   = new PhpInternalSourceLocator( $astLocator, $br->sourceStubber() );
 
 	$countFiles = count( $filePaths );
 	echo "[Chunk {$chunkIndex}] Handling {$countFiles} files...\n";
@@ -211,9 +243,14 @@ function processFilesChunk(
 	$i = 0;
 	foreach ( $filePaths as $realpath ) {
 		$i ++;
-		// SingleFileSourceLocator
+		if ( $realpath === '' ) {
+			// Shouldn't happen, but just in case
+			echo "[Chunk {$chunkIndex}] [{$i}/{$countFiles}] Skipped empty realpath?\n";
+			continue;
+		}
+
 		$fileLocator = new SingleFileSourceLocator( $realpath, $astLocator );
-		$aggregate   = new AggregateSourceLocator( [ $internalLocator, $fileLocator ] );
+		$aggregate   = new AggregateSourceLocator( [ $internal, $fileLocator ] );
 		$reflector   = new DefaultReflector( $aggregate );
 
 		$allClasses   = $reflector->reflectAllClasses();
@@ -231,8 +268,8 @@ function processFilesChunk(
 		foreach ( $allFunctions as $fn ) {
 			$stubBody .= generateFunctionStub( $fn, $missingReferences );
 		}
-		foreach ( $allConstants as $const ) {
-			$stubBody .= generateConstantStub( $const, $missingReferences );
+		foreach ( $allConstants as $cst ) {
+			$stubBody .= generateConstantStub( $cst, $missingReferences );
 		}
 
 		if ( trim( $stubBody ) === '' ) {
@@ -240,7 +277,7 @@ function processFilesChunk(
 			continue;
 		}
 
-		if ( $stubBDir ) {
+		if ( $stubBDir !== null && $stubBDir !== '' ) {
 			$stubBody = mergeStubBExtras( $stubBody, $realpath, $sourceDir, $stubBDir );
 		}
 
@@ -260,57 +297,50 @@ function processFilesChunk(
 }
 
 /**
- * parseCommandLine
- * Extracts:
- *   <sourceDir>, <outputDir>, [stubBDir],
- *   --exclude=..., --finder=..., --verbose
- * Ensures --exclude and --finder are not used together.
+ * @param array<int,string> $argv
+ *
+ * @return array{
+ *   sourceDir: string,
+ *   outputDir: string,
+ *   stubBDir: string|null,
+ *   exclude: string|null,
+ *   finderPhp: string|null,
+ *   verbose: bool
+ * }
  */
 function parseCommandLine( array $argv ): array {
 	if ( count( $argv ) < 3 ) {
 		fwrite( STDERR, "Usage: php flat-stubz.php <source-dir> <output-dir> [stub-b-dir] [--exclude=dir] [--finder=path] [--verbose]\n" );
 		exit( 1 );
 	}
-
 	$sourceDir = $argv[1];
 	$outputDir = $argv[2];
-	$stubBDir  = $argv[3] ?? null;
 
-	// We'll parse further flags from $argv[4..end]
+	$stubBDir  = null;
 	$exclude   = null;
 	$finderPhp = null;
 	$verbose   = false;
 
-	// If there's a third positional but it starts with --, maybe there's no stubBDir
-	if ( $stubBDir && str_starts_with( $stubBDir, '--' ) ) {
-		// shift it back
-		array_splice( $argv, 3, 0, [ null ] );
-		$stubBDir = null;
-	}
-
-	// Start from index=4 or 5, depending on if we have stubBDir
-	$startIndex = 4;
-	if ( $stubBDir !== null ) {
-		$startIndex = 4;
+	// 3rd arg might be stub-b-dir if not starting with --
+	if ( isset( $argv[3] ) && ! str_starts_with( $argv[3], '--' ) ) {
+		$stubBDir = $argv[3];
+		$startIdx = 4;
 	} else {
-		$startIndex = 3;
+		$startIdx = 3;
 	}
 
-	for ( $i = $startIndex; $i < count( $argv ); $i ++ ) {
+	for ( $i = $startIdx; $i < count( $argv ); $i ++ ) {
 		$arg = $argv[ $i ];
-		if ( ! is_string( $arg ) ) {
-			continue;
-		}
 		if ( str_starts_with( $arg, '--exclude=' ) ) {
-			$exclude = substr( $arg, strlen( '--exclude=' ) );
+			$exclude = substr( $arg, 10 );
 		} elseif ( str_starts_with( $arg, '--finder=' ) ) {
-			$finderPhp = substr( $arg, strlen( '--finder=' ) );
+			$finderPhp = substr( $arg, 9 );
 		} elseif ( $arg === '--verbose' ) {
 			$verbose = true;
 		}
 	}
 
-	if ( $exclude && $finderPhp ) {
+	if ( $exclude !== null && $finderPhp !== null ) {
 		fwrite( STDERR, "Error: Cannot use --exclude and --finder together.\n" );
 		exit( 1 );
 	}
@@ -326,15 +356,17 @@ function parseCommandLine( array $argv ): array {
 }
 
 /**
- * detectCpuCores
- * Tries nproc (Linux) or sysctl (macOS). Fallback=2 if unknown.
+ * Attempt to detect CPU cores, fallback=2 if unknown
  */
 function detectCpuCores(): int {
-	$nproc = @trim( (string) shell_exec( 'nproc 2>/dev/null' ) );
+	$nproc = @shell_exec( 'nproc 2>/dev/null' );
+	$nproc = is_string( $nproc ) ? trim( $nproc ) : '';
 	if ( $nproc !== '' && ctype_digit( $nproc ) ) {
 		return max( 1, (int) $nproc );
 	}
-	$sysctl = @trim( (string) shell_exec( 'sysctl -n hw.ncpu 2>/dev/null' ) );
+
+	$sysctl = @shell_exec( 'sysctl -n hw.ncpu 2>/dev/null' );
+	$sysctl = is_string( $sysctl ) ? trim( $sysctl ) : '';
 	if ( $sysctl !== '' && ctype_digit( $sysctl ) ) {
 		return max( 1, (int) $sysctl );
 	}
@@ -343,25 +375,27 @@ function detectCpuCores(): int {
 }
 
 /**
- * Merges "Stub B" extra private props/methods. Naive text-based approach.
+ * Merge stub B extras. Naive text approach.
  */
 function mergeStubBExtras( string $generatedBody, string $sourceFile, string $sourceDir, string $stubBDir ): string {
 	$relative  = ltrim( str_replace( $sourceDir, '', $sourceFile ), DIRECTORY_SEPARATOR );
 	$stubBFile = rtrim( $stubBDir, DIRECTORY_SEPARATOR ) . DIRECTORY_SEPARATOR . $relative;
-	if ( ! file_exists( $stubBFile ) ) {
+	if ( ! is_file( $stubBFile ) ) {
 		return $generatedBody;
 	}
 	$stubBContent = file_get_contents( $stubBFile );
-	if ( ! $stubBContent ) {
+	if ( ! is_string( $stubBContent ) || $stubBContent === '' ) {
 		return $generatedBody;
 	}
 
 	$injection = '';
 
-	// Example injection logic for private $api;
-	if ( preg_match( '/private\s+\$api;/', $stubBContent ) && ! preg_match( '/private\s+\$api;/', $generatedBody ) ) {
+	// Example injection for private $api
+	if ( preg_match( '/private\s+\$api;/', $stubBContent ) === 1
+	     && preg_match( '/private\s+\$api;/', $generatedBody ) === 0
+	) {
 		$matchesDoc = [];
-		if ( preg_match( '/(\/\*\*[\s\S]*?\*\/)\s+private\s+\$api;/', $stubBContent, $matchesDoc ) ) {
+		if ( preg_match( '/(\/\*\*[\s\S]*?\*\/)\s+private\s+\$api;/', $stubBContent, $matchesDoc ) === 1 ) {
 			$injection .= "    " . trim( $matchesDoc[1] ) . "\n";
 		}
 		$injection .= "    /**\n";
@@ -370,14 +404,12 @@ function mergeStubBExtras( string $generatedBody, string $sourceFile, string $so
 		$injection .= "    private \$api;\n\n";
 	}
 
-	// Example injection logic for protected static $_instance;
-	if ( preg_match( '/protected\s+static\s+\$_instance;/', $stubBContent )
-	     && ! preg_match( '/protected\s+static\s+\$_instance;/', $generatedBody )
+	if ( preg_match( '/protected\s+static\s+\$_instance;/', $stubBContent ) === 1
+	     && preg_match( '/protected\s+static\s+\$_instance;/', $generatedBody ) === 0
 	) {
 		$injection .= "    protected static \$_instance;\n\n";
 	}
 
-	// Example injection logic for specific private methods
 	$privateMethods = [
 		'init_hooks',
 		'define_tables',
@@ -385,17 +417,17 @@ function mergeStubBExtras( string $generatedBody, string $sourceFile, string $so
 		'load_webhooks',
 	];
 	foreach ( $privateMethods as $pm ) {
-		if ( preg_match( '/function\s+' . $pm . '\s*\(/', $stubBContent )
-		     && ! preg_match( '/function\s+' . $pm . '\s*\(/', $generatedBody )
+		if ( preg_match( '/function\s+' . $pm . '\s*\(/', $stubBContent ) === 1
+		     && preg_match( '/function\s+' . $pm . '\s*\(/', $generatedBody ) === 0
 		) {
 			$methodRegex = '/(\/\*\*[\s\S]*?\*\/)?\s+private\s+function\s+' . $pm . '\s*\([^)]*\)\s*\{[\s\S]*?\}/';
-			if ( preg_match( $methodRegex, $stubBContent, $m ) ) {
+			if ( preg_match( $methodRegex, $stubBContent, $m ) === 1 && isset( $m[0] ) ) {
 				$injection .= "\n    " . trim( $m[0] ) . "\n";
 			}
 		}
 	}
 
-	if ( ! $injection ) {
+	if ( $injection === '' ) {
 		return $generatedBody;
 	}
 
@@ -408,69 +440,75 @@ function mergeStubBExtras( string $generatedBody, string $sourceFile, string $so
 }
 
 /**
- * Logging for performance data.
+ * Log benchmarks if they take >= 1s
+ *
+ * @param array<string,mixed> $context
  */
 function logBenchmark( string $functionName, float $startTime, float $endTime, array $context = [] ): void {
 	static $fh = null;
-	if ( ! $fh ) {
-		$logPath = __DIR__ . '/stub-benchmark.log';
-		$fh      = fopen( $logPath, 'ab' );
+	if ( ! is_resource( $fh ) ) {
+		$fp = @fopen( __DIR__ . '/stub-benchmark.log', 'ab' );
+		if ( is_resource( $fp ) ) {
+			$fh = $fp;
+		} else {
+			return;
+		}
 	}
-	$duration = round( $endTime - $startTime, 4 );
-	if ( $duration < 1 ) {
-		return; // skip
+	$duration = $endTime - $startTime;
+	if ( $duration < 1.0 ) {
+		return;
 	}
 	$time    = date( 'Y-m-d H:i:s' );
-	$details = json_encode( $context, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE );
-	fwrite( $fh, "[{$time}] {$functionName} took {$duration}s, context={$details}\n" );
+	$details = json_encode( $context, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) ?: '';
+	fwrite( $fh, "[{$time}] {$functionName} took " . round( $duration, 4 ) . "s, context={$details}\n" );
 	fflush( $fh );
 }
 
 /**
- * Reflection => build class stub.
+ * Generate a class stub from reflection.
+ *
+ * @param BRClass $class
+ * @param array<string,int> $missingReferences
  */
-function generateClassStub( ReflectionClass $class, array &$missingReferences ): string {
+function generateClassStub( BRClass $class, array &$missingReferences ): string {
 	$__start = microtime( true );
 	$buf     = '';
 
 	$namespace = $class->getNamespaceName();
-	if ( $namespace ) {
+	if ( $namespace !== '' ) {
 		$buf .= "namespace {$namespace};\n\n";
 	}
 
 	$doc = $class->getDocComment();
-	if ( $doc ) {
+	if ( $doc !== null && $doc !== '' ) {
 		$buf .= $doc . "\n";
 	}
 
-	$attrs = $class->getAttributes();
-	foreach ( $attrs as $attr ) {
+	foreach ( $class->getAttributes() as $attr ) {
 		$buf .= generateAttributeLine( $attr ) . "\n";
 	}
 
-	$decl = getClassDeclaration( $class );
-	$buf  .= $decl;
+	// Build "class" / "interface" / "enum" / "abstract" / etc.
+	$buf .= getClassDeclaration( $class );
 
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-		// extends
 		try {
 			$parent = $class->getParentClassName();
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
-			$parent = null;
+			$parent = '';
 		}
-		if ( $parent !== null ) {
+		if ( $parent !== '' ) {
 			$buf .= ' extends \\' . ltrim( $parent, '\\' );
 		}
 
-		// implements
 		try {
-			$interfaces = $class->getInterfaceClassNames();
+			$interfaces = $class->getInterfaceNames();
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
 			$interfaces = [];
 		}
-		if ( ! empty( $interfaces ) ) {
+		if ( $interfaces !== [] ) {
 			$impls = array_map( fn( string $i ) => '\\' . ltrim( $i, '\\' ), $interfaces );
 			$buf   .= ' implements ' . implode( ', ', $impls );
 		}
@@ -478,13 +516,13 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 
 	$buf .= "\n{\n";
 
-	if ( $class->isEnum() && $class instanceof ReflectionEnum ) {
-		$cases = $class->getCases();
-		foreach ( $cases as $case ) {
+	if ( $class->isEnum() && $class instanceof BREnum ) {
+		// Cases
+		foreach ( $class->getCases() as $case ) {
 			try {
-				$value = $case->getValue();
-				if ( $value !== null ) {
-					$buf .= "    case {$case->getName()} = " . convertVarExportToWpStyle( $value ) . ";\n\n";
+				$val = $case->getValue();
+				if ( $val !== null ) {
+					$buf .= "    case {$case->getName()} = " . convertVarExportToWpStyle( $val ) . ";\n\n";
 				} else {
 					$buf .= "    case {$case->getName()};\n\n";
 				}
@@ -494,16 +532,17 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 		}
 	}
 
-	$constants = $class->getImmediateConstants();
-	foreach ( $constants as $constName => $reflConst ) {
+	// Class constants
+	foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
 		try {
-			$val = convertVarExportToWpStyle( $reflConst->getValue() );
-			$buf .= "    const {$constName} = {$val};\n\n";
+			$value = $refConst->getValue();
+			$buf   .= "    const {$constName} = " . convertVarExportToWpStyle( $value ) . ";\n\n";
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
 		}
 	}
 
+	// Props
 	try {
 		$props = $class->getImmediateProperties();
 	} catch ( Throwable $ex ) {
@@ -516,6 +555,7 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 		}
 	}
 
+	// Methods
 	try {
 		$methods = $class->getImmediateMethods();
 	} catch ( Throwable $ex ) {
@@ -538,24 +578,26 @@ function generateClassStub( ReflectionClass $class, array &$missingReferences ):
 }
 
 /**
- * Reflection => build function stub.
+ * Generate a function stub
+ *
+ * @param BRFunction $fn
+ * @param array<string,int> $missingReferences
  */
-function generateFunctionStub( ReflectionFunction $fn, array &$missingReferences ): string {
+function generateFunctionStub( BRFunction $fn, array &$missingReferences ): string {
 	$__start = microtime( true );
 	$buf     = '';
 
 	$ns = $fn->getNamespaceName();
-	if ( $ns ) {
+	if ( $ns !== '' ) {
 		$buf .= "namespace {$ns};\n\n";
 	}
 
 	$doc = $fn->getDocComment();
-	if ( $doc ) {
+	if ( $doc !== null && $doc !== '' ) {
 		$buf .= $doc . "\n";
 	}
 
-	$attrs = $fn->getAttributes();
-	foreach ( $attrs as $attr ) {
+	foreach ( $fn->getAttributes() as $attr ) {
 		$buf .= generateAttributeLine( $attr ) . "\n";
 	}
 
@@ -568,12 +610,11 @@ function generateFunctionStub( ReflectionFunction $fn, array &$missingReferences
 
 	try {
 		$ret = $fn->getReturnType();
+		if ( $ret !== null ) {
+			$buf .= ': ' . (string) $ret;
+		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
-		$ret = null;
-	}
-	if ( $ret ) {
-		$buf .= ': ' . (string) $ret;
 	}
 
 	$buf .= "\n{\n    // stub\n}\n\n";
@@ -586,45 +627,40 @@ function generateFunctionStub( ReflectionFunction $fn, array &$missingReferences
 }
 
 /**
- * Reflection => build constant stub (class constants => const, global => define).
+ * Generate a constant stub. For BetterReflection 5.x, everything is ReflectionConstant
+ * (global or in a class). We'll detect a class-constant if there's a "getDeclaringClass()".
+ *
+ * @param BRConstant $constant
+ * @param array<string,int> $missingReferences
  */
-function generateConstantStub( ReflectionConstant $constant, array &$missingReferences ): string {
+function generateConstantStub( BRConstant $constant, array &$missingReferences ): string {
 	$__start = microtime( true );
 	$buf     = '';
 
 	$ns = $constant->getNamespaceName();
-	if ( $ns ) {
+	if ( $ns !== '' ) {
 		$buf .= "namespace {$ns};\n\n";
 	}
 
-	try {
-		$declaringClass = $constant->getDeclaringClass();
-	} catch ( Throwable ) {
-		$declaringClass = null;
-	}
-
-	if ( $declaringClass ) {
+	// method_exists check: if getDeclaringClass() exists and returns a class => it's a class constant
+	if ( method_exists( $constant, 'getDeclaringClass' ) ) {
 		// Class constant
 		try {
-			$val = convertVarExportToWpStyle( $constant->getValue() );
-			$buf .= "const {$constant->getName()} = {$val};\n\n";
+			$value = $constant->getValue();
+			$name  = $constant->getName();
+			$val   = convertVarExportToWpStyle( $value );
+			$buf   .= "const {$name} = {$val};\n\n";
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
 		}
 	} else {
-		// Global constant => define
+		// Global constant
 		$name = $constant->getName();
 		try {
-			$value = $constant->getValue();
-		} catch ( Throwable $ex ) {
-			handleBetterReflectionException( $ex, $missingReferences );
-			$value = null;
-		}
-
-		try {
+			$value  = $constant->getValue();
 			$mapped = mapValueForDefine( $value, $name );
 			$buf    .= "\\define('{$name}', {$mapped});\n\n";
-		} catch ( \UnexpectedValueException $ex ) {
+		} catch ( Throwable $ex ) {
 			$buf .= "// Skipped constant '{$name}' of invalid type.\n\n";
 		}
 	}
@@ -637,74 +673,79 @@ function generateConstantStub( ReflectionConstant $constant, array &$missingRefe
 }
 
 /**
- * Figure out whether we have class, interface, trait, or enum, etc.
+ * Describe how the class is declared: interface, trait, enum, abstract, final, etc.
+ *
+ * @param BRClass $class
  */
-function getClassDeclaration( ReflectionClass $class ): string {
+function getClassDeclaration( BRClass $class ): string {
 	$__start = microtime( true );
+
+	$out = '';
 	if ( $class->isInterface() ) {
-		$result = 'interface ' . $class->getShortName();
+		$out = 'interface ' . $class->getShortName();
 	} elseif ( $class->isTrait() ) {
-		$result = 'trait ' . $class->getShortName();
+		$out = 'trait ' . $class->getShortName();
 	} elseif ( $class->isEnum() ) {
-		$result = 'enum ' . $class->getShortName();
+		$out = 'enum ' . $class->getShortName();
 	} elseif ( $class->isAbstract() ) {
-		$result = 'abstract class ' . $class->getShortName();
+		$out = 'abstract class ' . $class->getShortName();
 	} elseif ( $class->isFinal() ) {
-		$result = 'final class ' . $class->getShortName();
+		$out = 'final class ' . $class->getShortName();
 	} else {
-		$result = 'class ' . $class->getShortName();
+		$out = 'class ' . $class->getShortName();
 	}
+
 	logBenchmark( __FUNCTION__, $__start, microtime( true ), [
 		'className' => $class->getName(),
 	] );
 
-	return $result;
+	return $out;
 }
 
 /**
- * Reflection => build property stub.
+ * Generate a property stub
+ *
+ * @param BRProperty $prop
+ * @param array<string,int> $missingReferences
  */
-function generatePropertyStub( ReflectionProperty $prop, array &$missingReferences ): string {
+function generatePropertyStub( BRProperty $prop, array &$missingReferences ): string {
 	$__start = microtime( true );
 	$out     = '';
 
 	$doc = $prop->getDocComment();
-	if ( $doc ) {
+	if ( $doc !== null && $doc !== '' ) {
 		foreach ( explode( "\n", $doc ) as $line ) {
 			$out .= "    {$line}\n";
 		}
 	}
 
-	$attrs = $prop->getAttributes();
-	foreach ( $attrs as $attr ) {
+	foreach ( $prop->getAttributes() as $attr ) {
 		$out .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
+	$vis = 'public';
 	if ( $prop->isPrivate() ) {
 		$vis = 'private';
 	} elseif ( $prop->isProtected() ) {
 		$vis = 'protected';
-	} else {
-		$vis = 'public';
 	}
-
 	$static   = $prop->isStatic() ? ' static' : '';
 	$readonly = $prop->isReadOnly() ? 'readonly ' : '';
 
 	try {
-		$type = $prop->getType();
+		$typeObj = $prop->getType();
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
-		$type = null;
+		$typeObj = null;
 	}
-	$typeStr = $type ? ( (string) $type . ' ' ) : '';
+	$typeStr = ( $typeObj !== null ) ? ( (string) $typeObj . ' ' ) : '';
 
 	$out .= "    {$vis}{$static} {$readonly}{$typeStr}\${$prop->getName()}";
 
 	try {
 		if ( $prop->hasDefaultValue() ) {
-			$defaultValue = $prop->getDefaultValue();
-			$out          .= ' = ' . convertVarExportToWpStyle( $defaultValue );
+			$defVal = $prop->getDefaultValue();
+			$out    .= ' = ' . convertVarExportToWpStyle( $defVal );
 		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
@@ -721,21 +762,23 @@ function generatePropertyStub( ReflectionProperty $prop, array &$missingReferenc
 }
 
 /**
- * Reflection => build method stub.
+ * Generate a method stub
+ *
+ * @param BRMethod $method
+ * @param array<string,int> $missingReferences
  */
-function generateMethodStub( ReflectionMethod $method, array &$missingReferences ): string {
+function generateMethodStub( BRMethod $method, array &$missingReferences ): string {
 	$__start = microtime( true );
 	$buf     = '';
 
 	$doc = $method->getDocComment();
-	if ( $doc ) {
+	if ( $doc !== null && $doc !== '' ) {
 		foreach ( explode( "\n", $doc ) as $line ) {
 			$buf .= "    {$line}\n";
 		}
 	}
 
-	$attrs = $method->getAttributes();
-	foreach ( $attrs as $attr ) {
+	foreach ( $method->getAttributes() as $attr ) {
 		$buf .= '    ' . generateAttributeLine( $attr ) . "\n";
 	}
 
@@ -746,7 +789,6 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 	} else {
 		$buf .= '    public ';
 	}
-
 	if ( $method->isStatic() ) {
 		$buf .= 'static ';
 	}
@@ -757,21 +799,20 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 		$buf .= 'abstract ';
 	}
 
-	$buf       .= 'function ' . $method->getName() . '(';
-	$paramBits = [];
-	foreach ( $method->getParameters() as $param ) {
-		$paramBits[] = generateParameterStub( $param, $missingReferences );
+	$buf    .= 'function ' . $method->getName() . '(';
+	$params = [];
+	foreach ( $method->getParameters() as $pm ) {
+		$params[] = generateParameterStub( $pm, $missingReferences );
 	}
-	$buf .= implode( ', ', $paramBits ) . ')';
+	$buf .= implode( ', ', $params ) . ')';
 
 	try {
-		$retType = $method->getReturnType();
+		$ret = $method->getReturnType();
+		if ( $ret !== null ) {
+			$buf .= ': ' . (string) $ret;
+		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
-		$retType = null;
-	}
-	if ( $retType ) {
-		$buf .= ': ' . (string) $retType;
 	}
 
 	if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {
@@ -789,13 +830,16 @@ function generateMethodStub( ReflectionMethod $method, array &$missingReferences
 }
 
 /**
- * Reflection => build attribute line.
+ * Generate an attribute line
+ *
+ * @param ReflectionAttribute $attr
  */
 function generateAttributeLine( ReflectionAttribute $attr ): string {
 	$__start = microtime( true );
-	$args    = [];
-	foreach ( $attr->getArguments() as $argValue ) {
-		$args[] = var_export( $argValue, true );
+
+	$args = [];
+	foreach ( $attr->getArguments() as $argVal ) {
+		$args[] = var_export( $argVal, true );
 	}
 	$argsStr = $args ? '(' . implode( ', ', $args ) . ')' : '';
 	$line    = "#[{$attr->getName()}{$argsStr}]";
@@ -808,18 +852,22 @@ function generateAttributeLine( ReflectionAttribute $attr ): string {
 }
 
 /**
- * Reflection => build parameter stub.
+ * Generate a parameter stub
+ *
+ * @param BRParameter $param
+ * @param array<string,int> $missingReferences
  */
-function generateParameterStub( ReflectionParameter $param, array &$missingReferences ): string {
+function generateParameterStub( BRParameter $param, array &$missingReferences ): string {
 	$__start = microtime( true );
+
 	try {
-		$type = $param->getType();
+		$typeObj = $param->getType();
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
-		$type = null;
+		$typeObj = null;
 	}
+	$out = ( $typeObj !== null ) ? ( (string) $typeObj . ' ' ) : '';
 
-	$out = $type ? ( (string) $type . ' ' ) : '';
 	if ( $param->isPassedByReference() ) {
 		$out .= '&';
 	}
@@ -830,8 +878,8 @@ function generateParameterStub( ReflectionParameter $param, array &$missingRefer
 
 	if ( $param->isDefaultValueAvailable() ) {
 		try {
-			$defaultVal = $param->getDefaultValue();
-			$out        .= ' = ' . convertVarExportToWpStyle( $defaultVal );
+			$defVal = $param->getDefaultValue();
+			$out    .= ' = ' . convertVarExportToWpStyle( $defVal );
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
 		}
@@ -846,22 +894,30 @@ function generateParameterStub( ReflectionParameter $param, array &$missingRefer
 }
 
 /**
- * Convert var_export() output to typical WP style: "NULL" => "null", "array(...)" => "array()"
+ * Convert var_export output to WP style
+ *
+ * @param mixed $value
  */
-function convertVarExportToWpStyle( mixed $value ): string {
-	$export = var_export( $value, true );
-	$export = str_ireplace( 'NULL', 'null', $export );
-	$export = preg_replace( '/array\s*\(/', 'array(', $export );
-	$export = preg_replace( '/\)(\s*)$/', ')', $export );
+function convertVarExportToWpStyle( $value ): string {
+	$out = var_export( $value, true );
+	$out = str_ireplace( 'NULL', 'null', $out );
 
-	return $export;
+	// preg_replace can return string|null, so cast to string
+	$out = (string) preg_replace( '/array\s*\(/', 'array(', $out );
+	$out = (string) preg_replace( '/\)(\s*)$/', ')', $out );
+
+	return $out;
 }
 
 /**
- * Record missing references from reflection exceptions.
+ * Increment missingReferences for reflection exceptions
+ *
+ * @param Throwable $ex
+ * @param array<string,int> $missingReferences
  */
 function handleBetterReflectionException( Throwable $ex, array &$missingReferences ): void {
 	$__start = microtime( true );
+
 	if ( $ex instanceof IdentifierNotFound ) {
 		$symbol                       = $ex->getIdentifier()->getName();
 		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
@@ -873,9 +929,8 @@ function handleBetterReflectionException( Throwable $ex, array &$missingReferenc
 		return;
 	}
 	if ( $ex instanceof UnableToCompileNode ) {
-		$symbol                       = method_exists( $ex, 'constantName' ) && $ex->constantName()
-			? $ex->constantName()
-			: 'UnknownConstant';
+		$constantName                 = method_exists( $ex, 'constantName' ) ? $ex->constantName() : null;
+		$symbol                       = is_string( $constantName ) && $constantName !== '' ? $constantName : 'UnknownConstant';
 		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 		logBenchmark( __FUNCTION__, $__start, microtime( true ), [
 			'exceptionType' => get_class( $ex ),
@@ -884,20 +939,25 @@ function handleBetterReflectionException( Throwable $ex, array &$missingReferenc
 
 		return;
 	}
-	$missingReferences[ $ex::class ] = ( $missingReferences[ $ex::class ] ?? 0 ) + 1;
+
+	$cls                       = get_class( $ex );
+	$missingReferences[ $cls ] = ( $missingReferences[ $cls ] ?? 0 ) + 1;
 	logBenchmark( __FUNCTION__, $__start, microtime( true ), [
-		'exceptionType' => get_class( $ex ),
+		'exceptionType' => $cls,
 	] );
 }
 
 /**
- * For a global constant, we define('FOO', ...), but only with valid scalar/array.
- * If it's an object or resource, throw.
+ * Convert any global constant value to a valid define() expression
+ *
+ * @param mixed $value
+ * @param string $constantName
+ *
+ * @return string
  */
-function mapValueForDefine( mixed $value, string $constantName ): string {
-	$type = gettype( $value );
-
-	switch ( $type ) {
+function mapValueForDefine( $value, string $constantName ): string {
+	$t = gettype( $value );
+	switch ( $t ) {
 		case 'boolean':
 			return $value ? 'true' : 'false';
 		case 'integer':
@@ -905,25 +965,22 @@ function mapValueForDefine( mixed $value, string $constantName ): string {
 		case 'double':
 			return (string) $value;
 		case 'string':
-			// Keep empty or real string:
+			// either real string or empty
 			// return var_export($value, true);
 			return "''";
 		case 'NULL':
 			return 'null';
 		case 'array':
 			return 'array()';
-		case 'object':
-		case 'resource':
 		default:
+			// object, resource, unknown => throw
 			throw new \UnexpectedValueException(
-				"Cannot define constant '{$constantName}' with value of type {$type}."
+				"Cannot define constant '{$constantName}' with value of type {$t}."
 			);
 	}
 }
 
-/**
- * Actually run main() if invoked via CLI.
- */
+// If invoked via CLI
 if ( PHP_SAPI === 'cli' && isset( $argv[0] ) && realpath( $argv[0] ) === __FILE__ ) {
 	main( $argv );
 }
