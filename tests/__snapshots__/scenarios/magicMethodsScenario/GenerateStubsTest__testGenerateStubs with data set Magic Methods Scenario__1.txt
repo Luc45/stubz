@@ -7,7 +7,8 @@ namespace MagicMethodsScenario;
  */
 class MagicBox implements \Stringable
 {
-    private array $properties;
+    private array $properties = array (
+);
 
     public function __get(string $name): mixed
     {

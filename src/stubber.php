@@ -40,29 +40,27 @@ function generateClassStub( BRClass $class, array &$missingReferences ): string 
 		$buf .= generateAttributeLine( $attr ) . "\n";
 	}
 
-	// e.g. abstract class Foo, final class, enum, trait, interface
+	// Class declaration: interface/trait/enum/abstract/final/normal
 	$buf .= getClassDeclaration( $class );
 
-	// ------------------------------------------------------------------
-	//  2) Instead of relying on getParentClassName() and getInterfaceNames(),
-	//     we fetch the actual parent ReflectionClass (if any) and all interfaces
-	//     so we can skip "extends \SomeInterface" if reflection incorrectly
-	//     picks an interface as parent. This also ensures multi-interface lists
-	//     appear properly in "implements" rather than forcibly turning one
-	//     into extends.
-	// ------------------------------------------------------------------
+	// 2) Use getParentClass() and getInterfaces() to avoid "extends \"
+	//    or incorrectly treating an interface as a parent, etc.
 	$parentReflection = null;
 	try {
 		$possibleParent = $class->getParentClass();
-		if ( $possibleParent && ! $possibleParent->isInterface() && ! $possibleParent->isTrait() && ! $possibleParent->isEnum() ) {
-			// It's a real parent class
+		// Only set $parentReflection if it's a real parent class
+		if (
+			$possibleParent &&
+			! $possibleParent->isInterface() &&
+			! $possibleParent->isTrait() &&
+			! $possibleParent->isEnum()
+		) {
 			$parentReflection = $possibleParent;
 		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
 	}
 
-	// If it’s a normal class (not interface/trait/enum), handle extends/implements
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
 		// extends
 		if ( $parentReflection ) {
@@ -72,20 +70,16 @@ function generateClassStub( BRClass $class, array &$missingReferences ): string 
 			}
 		}
 
-		// implements
+		// implements (all interfaces)
 		$interfaces = [];
 		try {
-			// We'll fetch reflection objects, not just strings, so we can gather all
-			$ifaceRefs = $class->getInterfaces();
-			// Sort them by name so multi-interface scenario has a stable order
-			// (some tests might rely on a particular alphabetical or original order).
-			ksort( $ifaceRefs );
+			$ifaceRefs = $class->getInterfaces(); // name => ReflectionClass
+			ksort( $ifaceRefs ); // sort by interface name for stable output
 			foreach ( $ifaceRefs as $iRef ) {
 				$interfaces[] = '\\' . ltrim( $iRef->getName(), '\\' );
 			}
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
-			$interfaces = [];
 		}
 
 		if ( ! empty( $interfaces ) ) {
@@ -208,8 +202,7 @@ function generateFunctionStub( BRFunction $fn, array &$missingReferences ): stri
 }
 
 /**
- * Generate a constant stub (global constants).
- * Using "const FOO = ..." instead of define().
+ * Generate a constant stub (global constants) using "const FOO = ...;".
  *
  * @param BRConstant $constant
  * @param array<string,int> $missingReferences
@@ -307,37 +300,11 @@ function generatePropertyStub( BRProperty $prop, array &$missingReferences ): st
 
 	$out .= "    {$vis}{$static} {$readonly}{$typeStr}\${$prop->getName()}";
 
-	// ------------------------------------------------------------------
-	//  3) If reflection thinks there's a default for typed properties
-	//     that is actually the “auto default” (like = 0 for int), skip it.
-	//     We'll only set the default if we strongly suspect it was actually
-	//     declared in the code.
-	// ------------------------------------------------------------------
+	// Always set default if Reflection says hasDefaultValue() is true.
 	try {
 		if ( $prop->hasDefaultValue() ) {
 			$defVal = $prop->getDefaultValue();
-			// Detect "fake" typed default:
-			// e.g. typed property int $count => reflection sometimes says = 0
-			// or typed property array $stuff => reflection says = array().
-			// We'll guess it's a reflection fallback if property is typed AND
-			// the default is 0 or [] or '' but no explicit initializer was found.
-			$skipFake = false;
-
-			// If there's an actual node we could check if there's an AST default, but
-			// let's do a simple heuristic:
-			if ( $typeObj ) {
-				$typeLower = strtolower( (string) $typeObj );
-				if ( ( $typeLower === 'int' || $typeLower === 'float' ) && ( $defVal === 0 ) ) {
-					// Probably the auto default
-					$skipFake = true;
-				} elseif ( str_contains( $typeLower, 'array' ) && $defVal === [] ) {
-					$skipFake = true;
-				}
-			}
-
-			if ( ! $skipFake ) {
-				$out .= ' = ' . convertVarExportToWpStyle( $defVal );
-			}
+			$out    .= ' = ' . convertVarExportToWpStyle( $defVal );
 		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
@@ -487,16 +454,15 @@ function generateParameterStub( BRParameter $param, array &$missingReferences ):
 
 /**
  * Convert var_export output to WP style
- *
- * Removes forced array(...) logic but still lowercases NULL => null.
+ * - We keep 'array (\n' if var_export emits that.
+ * - We do lowercase 'null'.
  */
 function convertVarExportToWpStyle( $value ): string {
 	$out = var_export( $value, true );
 	$out = str_ireplace( 'NULL', 'null', $out );
 
-	// We do NOT do the preg_replace to unify "array(...)" now,
-	// because some snapshots want "array (\n" exactly as var_export prints it.
-	// We'll only remove trailing whitespace.
+	// If the snapshot wants array (\n, we won't remove that space
+	// We'll only remove trailing whitespace around the final parenthesis
 	$out = (string) preg_replace( '/\)(\s*)$/', ')', $out );
 
 	return $out;
@@ -548,8 +514,8 @@ function handleBetterReflectionException( Throwable $ex, array &$missingReferenc
 	}
 
 	if ( $ex instanceof UnableToCompileNode ) {
-		$constantName                 = method_exists( $ex, 'constantName' ) ? $ex->constantName() : null;
-		$symbol                       = ( is_string( $constantName ) && $constantName !== '' ) ? $constantName : 'UnknownConstant';
+		$cName                        = method_exists( $ex, 'constantName' ) ? $ex->constantName() : null;
+		$symbol                       = $cName && $cName !== '' ? $cName : 'UnknownConstant';
 		$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 		logBenchmark( __FUNCTION__, $__start, microtime( true ), [
 			'exceptionType' => get_class( $ex ),

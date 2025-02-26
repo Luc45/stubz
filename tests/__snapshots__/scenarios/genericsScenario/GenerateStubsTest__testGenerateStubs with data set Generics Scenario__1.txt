@@ -12,7 +12,8 @@ class Collection
     /**
      * @var array<int, T>
      */
-    private array $items;
+    private array $items = array (
+);
 
     /**
      * @param T $item
