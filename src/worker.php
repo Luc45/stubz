@@ -16,7 +16,7 @@ function runParallel(
 ): void {
 	$childPids = [];
 	$tmpDir    = sys_get_temp_dir() . '/flat-stubz-' . uniqid();
-	mkdir( $tmpDir, 0777, true );
+	mkdir( $tmpDir, 0755, true );
 
 	foreach ( $chunks as $idx => $chunkFiles ) {
 		$pid = pcntl_fork();
@@ -127,7 +127,7 @@ function processFilesChunk(
 		$targetPath   = $outputDir . DIRECTORY_SEPARATOR . $relativePath;
 
 		if ( ! is_dir( dirname( $targetPath ) ) ) {
-			mkdir( dirname( $targetPath ), 0777, true );
+			mkdir( dirname( $targetPath ), 0755, true );
 		}
 		file_put_contents( $targetPath, $stubContent );
 
