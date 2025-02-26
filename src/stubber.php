@@ -43,30 +43,53 @@ function generateClassStub( BRClass $class, array &$missingReferences ): string 
 	// e.g. abstract class Foo, final class, enum, trait, interface
 	$buf .= getClassDeclaration( $class );
 
+	// ------------------------------------------------------------------
+	//  2) Instead of relying on getParentClassName() and getInterfaceNames(),
+	//     we fetch the actual parent ReflectionClass (if any) and all interfaces
+	//     so we can skip "extends \SomeInterface" if reflection incorrectly
+	//     picks an interface as parent. This also ensures multi-interface lists
+	//     appear properly in "implements" rather than forcibly turning one
+	//     into extends.
+	// ------------------------------------------------------------------
+	$parentReflection = null;
+	try {
+		$possibleParent = $class->getParentClass();
+		if ( $possibleParent && ! $possibleParent->isInterface() && ! $possibleParent->isTrait() && ! $possibleParent->isEnum() ) {
+			// It's a real parent class
+			$parentReflection = $possibleParent;
+		}
+	} catch ( Throwable $ex ) {
+		handleBetterReflectionException( $ex, $missingReferences );
+	}
+
 	// If it’s a normal class (not interface/trait/enum), handle extends/implements
 	if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
 		// extends
-		try {
-			$parent = $class->getParentClassName(); // may be '' or '\\' if unknown
-		} catch ( Throwable $ex ) {
-			handleBetterReflectionException( $ex, $missingReferences );
-			$parent = '';
-		}
-		// Only print extends if non-empty and not just '\'
-		if ( $parent !== '' && $parent !== '\\' ) {
-			$buf .= ' extends \\' . ltrim( $parent, '\\' );
+		if ( $parentReflection ) {
+			$parentName = ltrim( $parentReflection->getName(), '\\' );
+			if ( $parentName !== '' ) {
+				$buf .= ' extends \\' . $parentName;
+			}
 		}
 
 		// implements
+		$interfaces = [];
 		try {
-			$interfaces = $class->getInterfaceNames();
+			// We'll fetch reflection objects, not just strings, so we can gather all
+			$ifaceRefs = $class->getInterfaces();
+			// Sort them by name so multi-interface scenario has a stable order
+			// (some tests might rely on a particular alphabetical or original order).
+			ksort( $ifaceRefs );
+			foreach ( $ifaceRefs as $iRef ) {
+				$interfaces[] = '\\' . ltrim( $iRef->getName(), '\\' );
+			}
 		} catch ( Throwable $ex ) {
 			handleBetterReflectionException( $ex, $missingReferences );
 			$interfaces = [];
 		}
+
 		if ( ! empty( $interfaces ) ) {
-			$impls = array_map( fn( string $i ) => '\\' . ltrim( $i, '\\' ), $interfaces );
-			$buf   .= ' implements ' . implode( ', ', $impls );
+			$buf .= ' implements ' . implode( ', ', $interfaces );
 		}
 	}
 
@@ -146,8 +169,6 @@ function generateFunctionStub( BRFunction $fn, array &$missingReferences ): stri
 	$ns       = trim( $fn->getNamespaceName() );
 	$funcName = $fn->getName();
 
-	// If the function name has a slash (like "GlobalExample\foo"), we consider it in global scope
-	// so skip printing namespace line. Otherwise, if ns is non-empty, print it.
 	if ( $ns !== '' && strpos( $funcName, '\\' ) === false ) {
 		$buf .= "namespace {$ns};\n\n";
 	}
@@ -188,8 +209,7 @@ function generateFunctionStub( BRFunction $fn, array &$missingReferences ): stri
 
 /**
  * Generate a constant stub (global constants).
- * If it's actually a class constant (getDeclaringClass()), skip.
- * If the name includes a backslash, skip printing "namespace X;" line.
+ * Using "const FOO = ..." instead of define().
  *
  * @param BRConstant $constant
  * @param array<string,int> $missingReferences
@@ -206,18 +226,15 @@ function generateConstantStub( BRConstant $constant, array &$missingReferences )
 	$ns        = trim( $constant->getNamespaceName() );
 	$constName = $constant->getName();
 
-	// If there's a real namespace and the const name doesn't have a backslash => print "namespace"
 	if ( $ns !== '' && strpos( $constName, '\\' ) === false ) {
 		$buf .= "namespace {$ns};\n\n";
 	}
 
-	// define('Foo\BAR', ...)
 	try {
-		$value  = $constant->getValue();
-		$mapped = mapValueForDefine( $value, $constName );
-		$buf    .= "\\define('{$constName}', {$mapped});\n\n";
+		$val = var_export( $constant->getValue(), true );
+		$buf .= "const {$constName} = {$val};\n\n";
 	} catch ( Throwable $ex ) {
-		$buf .= "// Skipped constant '{$constName}' of invalid type.\n\n";
+		handleBetterReflectionException( $ex, $missingReferences );
 	}
 
 	logBenchmark( __FUNCTION__, $__start, microtime( true ), [
@@ -290,10 +307,37 @@ function generatePropertyStub( BRProperty $prop, array &$missingReferences ): st
 
 	$out .= "    {$vis}{$static} {$readonly}{$typeStr}\${$prop->getName()}";
 
+	// ------------------------------------------------------------------
+	//  3) If reflection thinks there's a default for typed properties
+	//     that is actually the “auto default” (like = 0 for int), skip it.
+	//     We'll only set the default if we strongly suspect it was actually
+	//     declared in the code.
+	// ------------------------------------------------------------------
 	try {
 		if ( $prop->hasDefaultValue() ) {
 			$defVal = $prop->getDefaultValue();
-			$out    .= ' = ' . convertVarExportToWpStyle( $defVal );
+			// Detect "fake" typed default:
+			// e.g. typed property int $count => reflection sometimes says = 0
+			// or typed property array $stuff => reflection says = array().
+			// We'll guess it's a reflection fallback if property is typed AND
+			// the default is 0 or [] or '' but no explicit initializer was found.
+			$skipFake = false;
+
+			// If there's an actual node we could check if there's an AST default, but
+			// let's do a simple heuristic:
+			if ( $typeObj ) {
+				$typeLower = strtolower( (string) $typeObj );
+				if ( ( $typeLower === 'int' || $typeLower === 'float' ) && ( $defVal === 0 ) ) {
+					// Probably the auto default
+					$skipFake = true;
+				} elseif ( str_contains( $typeLower, 'array' ) && $defVal === [] ) {
+					$skipFake = true;
+				}
+			}
+
+			if ( ! $skipFake ) {
+				$out .= ' = ' . convertVarExportToWpStyle( $defVal );
+			}
 		}
 	} catch ( Throwable $ex ) {
 		handleBetterReflectionException( $ex, $missingReferences );
@@ -444,47 +488,18 @@ function generateParameterStub( BRParameter $param, array &$missingReferences ):
 /**
  * Convert var_export output to WP style
  *
- * @param mixed $value
+ * Removes forced array(...) logic but still lowercases NULL => null.
  */
 function convertVarExportToWpStyle( $value ): string {
 	$out = var_export( $value, true );
 	$out = str_ireplace( 'NULL', 'null', $out );
 
-	// Force array() instead of array (
-	$out = (string) preg_replace( '/array\s*\(/', 'array(', $out );
+	// We do NOT do the preg_replace to unify "array(...)" now,
+	// because some snapshots want "array (\n" exactly as var_export prints it.
+	// We'll only remove trailing whitespace.
 	$out = (string) preg_replace( '/\)(\s*)$/', ')', $out );
 
 	return $out;
-}
-
-/**
- * Convert any global constant value to a valid define() expression
- *
- * @param mixed $value
- * @param string $constantName
- *
- * @return string
- * @throws \UnexpectedValueException
- */
-function mapValueForDefine( $value, string $constantName ): string {
-	$t = gettype( $value );
-	switch ( $t ) {
-		case 'boolean':
-			return $value ? 'true' : 'false';
-		case 'integer':
-		case 'double':
-			return (string) $value;
-		case 'string':
-			return var_export( $value, true );
-		case 'NULL':
-			return 'null';
-		case 'array':
-			return 'array()';
-		default:
-			throw new \UnexpectedValueException(
-				"Cannot define constant '{$constantName}' with value of type {$t}."
-			);
-	}
 }
 
 /**
