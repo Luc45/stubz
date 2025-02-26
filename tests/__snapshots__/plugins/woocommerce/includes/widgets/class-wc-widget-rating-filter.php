@@ -1,0 +1,42 @@
+<?php
+
+namespace ;
+
+/**
+ * Widget rating filter class.
+ */
+class WC_Widget_Rating_Filter extends \WC_Widget
+{
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        // stub
+    }
+
+    /**
+     * Count products after other filters have occurred by adjusting the main query.
+     *
+     * @param  int $rating Rating.
+     * @return int
+     */
+    protected function get_filtered_product_count($rating)
+    {
+        // stub
+    }
+
+    /**
+     * Widget function.
+     *
+     * @see WP_Widget
+     * @param array $args     Arguments.
+     * @param array $instance Widget instance.
+     */
+    public function widget($args, $instance)
+    {
+        // stub
+    }
+
+}
+

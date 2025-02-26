@@ -1,0 +1,32 @@
+<?php
+
+namespace ;
+
+/**
+ * WC_Meta_Box_Coupon_Data Class.
+ */
+class WC_Meta_Box_Coupon_Data extends \
+{
+    /**
+     * Output the metabox.
+     *
+     * @param WP_Post $post
+     */
+    public static function output($post)
+    {
+        // stub
+    }
+
+    /**
+     * Save meta box data.
+     *
+     * @param int     $post_id
+     * @param WP_Post $post
+     */
+    public static function save($post_id, $post)
+    {
+        // stub
+    }
+
+}
+

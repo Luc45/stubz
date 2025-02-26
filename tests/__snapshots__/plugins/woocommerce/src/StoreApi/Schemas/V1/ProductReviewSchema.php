@@ -1,0 +1,59 @@
+<?php
+
+namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
+
+/**
+ * ProductReviewSchema class.
+ */
+class ProductReviewSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+{
+    const IDENTIFIER = 'product-review';
+
+    /**
+     * The schema item name.
+     *
+     * @var string
+     */
+    protected $title = 'product_review';
+
+    /**
+     * Image attachment schema instance.
+     *
+     * @var ImageAttachmentSchema
+     */
+    protected $image_attachment_schema = null;
+
+    /**
+     * Constructor.
+     *
+     * @param ExtendSchema     $extend Rest Extending instance.
+     * @param SchemaController $controller Schema Controller instance.
+     */
+    public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
+    {
+        // stub
+    }
+
+    /**
+     * Product review schema properties.
+     *
+     * @return array
+     */
+    public function get_properties()
+    {
+        // stub
+    }
+
+    /**
+     * Convert a WooCommerce product into an object suitable for the response.
+     *
+     * @param \WP_Comment $review Product review object.
+     * @return array
+     */
+    public function get_item_response($review)
+    {
+        // stub
+    }
+
+}
+

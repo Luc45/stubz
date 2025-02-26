@@ -1,0 +1,41 @@
+<?php
+
+namespace Automattic\WooCommerce\Admin\Features\ShippingPartnerSuggestions;
+
+/**
+ * Specs data source poller class for shipping partner suggestions.
+ */
+class ShippingPartnerSuggestionsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
+{
+    const ID = 'shipping_partner_suggestions';
+
+    const DATA_SOURCES = array(
+);
+
+    /**
+     * Class instance.
+     *
+     * @var ShippingPartnerSuggestionsDataSourcePoller instance
+     */
+    protected static $instance = null;
+
+    /**
+     * Get class instance.
+     */
+    public static function get_instance()
+    {
+        // stub
+    }
+
+    /**
+     * Get data sources.
+     *
+     * @return array
+     */
+    public static function get_data_sources()
+    {
+        // stub
+    }
+
+}
+

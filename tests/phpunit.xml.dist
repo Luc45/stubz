@@ -1,8 +1,20 @@
 <?xml version="1.0"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="./bootstrap.php" backupGlobals="false" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd">
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        bootstrap="./bootstrap.php"
+        backupGlobals="false"
+        colors="true"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.2/phpunit.xsd"
+>
     <testsuites>
         <testsuite name="Stubz">
             <directory suffix="Test.php">./tests/</directory>
         </testsuite>
     </testsuites>
+    <source>
+        <exclude>
+            <directory>./tests/__snapshots__</directory>
+            <directory>./tests/__plugin_snapshots__</directory>
+        </exclude>
+    </source>
 </phpunit>

@@ -1,0 +1,48 @@
+<?php
+
+namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
+
+/**
+ * Remote Payment Methods engine.
+ * This goes through the specs and gets eligible payment methods.
+ */
+class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
+{
+    /**
+     * Constructor.
+     */
+    public function __construct()
+    {
+        // stub
+    }
+
+    /**
+     * Go through the specs and run them.
+     *
+     * @param array $allowed_bundles Optional array of allowed bundles to be returned.
+     * @return array
+     */
+    public static function get_extensions($allowed_bundles = array(
+))
+    {
+        // stub
+    }
+
+    /**
+     * Delete the specs transient.
+     */
+    public static function delete_specs_transient()
+    {
+        // stub
+    }
+
+    /**
+     * Get specs or fetch remotely if they don't exist.
+     */
+    public static function get_specs()
+    {
+        // stub
+    }
+
+}
+

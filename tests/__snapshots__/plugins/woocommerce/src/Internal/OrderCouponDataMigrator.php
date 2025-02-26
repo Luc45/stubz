@@ -1,0 +1,139 @@
+<?php
+
+namespace Automattic\WooCommerce\Internal;
+
+/**
+ * This class is intended to be used with BatchProcessingController and converts verbose
+ * 'coupon_data' metadata entries in coupon line items (corresponding to coupons applied to orders)
+ * into simplified 'coupon_info' entries. See WC_Coupon::get_short_info.
+ *
+ * Additionally, this class manages the "Convert order coupon data" tool.
+ */
+class OrderCouponDataMigrator extends \
+{
+    /**
+     * Register hooks for the class.
+     */
+    public function register()
+    {
+        // stub
+    }
+
+    /**
+     * Get a user-friendly name for this processor.
+     *
+     * @return string Name of the processor.
+     */
+    public function get_name(): string
+    {
+        // stub
+    }
+
+    /**
+     * Get a user-friendly description for this processor.
+     *
+     * @return string Description of what this processor does.
+     */
+    public function get_description(): string
+    {
+        // stub
+    }
+
+    /**
+     * Get the total number of pending items that require processing.
+     *
+     * @return int Number of items pending processing.
+     */
+    public function get_total_pending_count(): int
+    {
+        // stub
+    }
+
+    /**
+     * Returns the next batch of items that need to be processed.
+     * A batch in this context is a list of 'meta_id' values from the wp_woocommerce_order_itemmeta table.
+     *
+     * @param int $size Maximum size of the batch to be returned.
+     *
+     * @return array Batch of items to process, containing $size or less items.
+     */
+    public function get_next_batch_to_process(int $size): array
+    {
+        // stub
+    }
+
+    /**
+     * Process data for the supplied batch. See the convert_item method.
+     *
+     * @throw \Exception Something went wrong while processing the batch.
+     *
+     * @param array $batch Batch to process, as returned by 'get_next_batch_to_process'.
+     */
+    public function process_batch(array $batch): void
+    {
+        // stub
+    }
+
+    /**
+     * Convert one verbose 'coupon_data' entry into a simplified 'coupon_info' entry.
+     *
+     * The existing database row is updated in place, both the 'meta_key' and the 'meta_value' columns.
+     *
+     * @param int    $meta_id Value of 'meta_id' of the row being converted.
+     * @param string $meta_value Value of 'meta_value' of the row being converted.
+     * @throws Exception Database error.
+     */
+    private function convert_item(int $meta_id, string $meta_value)
+    {
+        // stub
+    }
+
+    /**
+     * Default (preferred) batch size to pass to 'get_next_batch_to_process'.
+     *
+     * @return int Default batch size.
+     */
+    public function get_default_batch_size(): int
+    {
+        // stub
+    }
+
+    /**
+     * Add the tool to start or stop the background process that converts order coupon metadata entries.
+     *
+     * @param array $tools Old tools array.
+     * @return array Updated tools array.
+     *
+     * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
+     */
+    public function handle_woocommerce_debug_tools(array $tools): array
+    {
+        // stub
+    }
+
+    /**
+     * Start the background process for coupon data conversion.
+     *
+     * @return string Informative string to show after the tool is triggered in UI.
+     *
+     * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
+     */
+    public function enqueue(): string
+    {
+        // stub
+    }
+
+    /**
+     * Stop the background process for coupon data conversion.
+     *
+     * @return string Informative string to show after the tool is triggered in UI.
+     *
+     * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
+     */
+    public function dequeue(): string
+    {
+        // stub
+    }
+
+}
+

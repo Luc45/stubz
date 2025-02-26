@@ -1,0 +1,85 @@
+<?php
+
+namespace ;
+
+/**
+ * ActionScheduler DateTime class.
+ *
+ * This is a custom extension to DateTime that
+ */
+class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
+{
+    /**
+     * UTC offset.
+     *
+     * Only used when a timezone is not set. When a timezone string is
+     * used, this will be set to 0.
+     *
+     * @var int
+     */
+    protected $utcOffset = 0;
+
+    /**
+     * Get the unix timestamp of the current object.
+     *
+     * Missing in PHP 5.2 so just here so it can be supported consistently.
+     *
+     * @return int
+     */
+    #[ReturnTypeWillChange]
+    public function getTimestamp()
+    {
+        // stub
+    }
+
+    /**
+     * Set the UTC offset.
+     *
+     * This represents a fixed offset instead of a timezone setting.
+     *
+     * @param string|int $offset UTC offset value.
+     */
+    public function setUtcOffset($offset)
+    {
+        // stub
+    }
+
+    /**
+     * Returns the timezone offset.
+     *
+     * @return int
+     * @link http://php.net/manual/en/datetime.getoffset.php
+     */
+    #[ReturnTypeWillChange]
+    public function getOffset()
+    {
+        // stub
+    }
+
+    /**
+     * Set the TimeZone associated with the DateTime
+     *
+     * @param DateTimeZone $timezone Timezone object.
+     *
+     * @return static
+     * @link http://php.net/manual/en/datetime.settimezone.php
+     */
+    #[ReturnTypeWillChange]
+    public function setTimezone($timezone)
+    {
+        // stub
+    }
+
+    /**
+     * Get the timestamp with the WordPress timezone offset added or subtracted.
+     *
+     * @since  3.0.0
+     * @return int
+     */
+    public function getOffsetTimestamp()
+    {
+        // stub
+    }
+
+}
+

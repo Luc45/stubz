@@ -1,7 +1,6 @@
 parameters:
 	level: 10
 	paths:
-		- ../src
-		- ../stubz.php
+		- ../flat-stubz.php
 	scanDirectories:
 		- ../vendor

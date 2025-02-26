@@ -1,7 +1,5 @@
 <?php
 
-namespace Tests;
-
 use PHPUnit\Framework\TestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
@@ -11,6 +9,7 @@ use Spatie\Snapshots\MatchesSnapshots;
  */
 class GenerateStubsTest extends TestCase {
 	use MatchesSnapshots;
+	use TestHelpers;
 
 	/**
 	 * We'll store the current scenario name here,
@@ -172,28 +171,11 @@ class GenerateStubsTest extends TestCase {
 	protected function getSnapshotDirectory(): string {
 		$baseDir = dirname( ( new \ReflectionClass( $this ) )->getFileName() )
 		           . DIRECTORY_SEPARATOR
-		           . '__snapshots__';
+		           . './../__snapshots__/scenarios';
 
 		// 2) If we have a scenario name, add it as a subfolder; otherwise fallback
 		$scenarioSubdir = $this->currentScenario ?? 'unknown_scenario';
 
 		return $baseDir . DIRECTORY_SEPARATOR . $scenarioSubdir;
-	}
-
-	/**
-	 * Recursively find all .php files in the given directory.
-	 */
-	private function findPhpFiles( string $directory ): array {
-		$results = [];
-		$it      = new \RecursiveIteratorIterator(
-			new \RecursiveDirectoryIterator( $directory, \FilesystemIterator::SKIP_DOTS )
-		);
-		foreach ( $it as $file ) {
-			if ( $file->isFile() && $file->getExtension() === 'php' ) {
-				$results[] = $file->getRealPath();
-			}
-		}
-
-		return $results;
 	}
 }
