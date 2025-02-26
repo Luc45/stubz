@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor for sending when the provided plugins are activated.
  */
-class PluginsActivatedRuleProcessor extends \
+class PluginsActivatedRuleProcessor
 {
     /**
      * The plugins provider.

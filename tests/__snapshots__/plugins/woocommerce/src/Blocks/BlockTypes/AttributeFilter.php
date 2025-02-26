@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AttributeFilter class.
  */
-class AttributeFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class AttributeFilter
 {
     const FILTER_QUERY_VAR_PREFIX = 'filter_';
 
@@ -25,7 +25,7 @@ class AttributeFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

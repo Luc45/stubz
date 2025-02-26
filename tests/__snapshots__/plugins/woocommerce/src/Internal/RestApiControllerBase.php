@@ -67,7 +67,7 @@ namespace Automattic\WooCommerce\Internal;
  *
  * }
  */
-abstract class RestApiControllerBase extends \
+abstract class RestApiControllerBase
 {
     /**
      * The root namespace for the JSON REST API endpoints.

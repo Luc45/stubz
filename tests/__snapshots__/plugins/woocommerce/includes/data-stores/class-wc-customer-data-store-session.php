@@ -9,14 +9,14 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP
+class WC_Customer_Data_Store_Session
 {
     /**
      * Keys which are also stored in a session (so we can make sure they get updated...)
      *
      * @var array
      */
-    protected $session_keys = array(
+    protected $session_keys = array (
   0 => 'id',
   1 => 'date_modified',
   2 => 'billing_first_name',
@@ -106,7 +106,7 @@ class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP
      * @param WC_Customer $customer Customer object.
      * @param array       $args Array of args to pass to the delete method.
      */
-    public function delete(&$customer, $args = array(
+    public function delete(&$customer, $args = array (
 ))
     {
         // stub

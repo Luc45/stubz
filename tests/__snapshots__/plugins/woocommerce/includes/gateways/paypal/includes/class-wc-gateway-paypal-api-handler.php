@@ -7,7 +7,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class WC_Gateway_Paypal_API_Handler extends \
+class WC_Gateway_Paypal_API_Handler
 {
     /**
      * API Username

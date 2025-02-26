@@ -5,7 +5,7 @@ namespace ;
 /**
  * Template loader class.
  */
-class WC_Template_Loader extends \
+class WC_Template_Loader
 {
     /**
      * Store the shop page ID.

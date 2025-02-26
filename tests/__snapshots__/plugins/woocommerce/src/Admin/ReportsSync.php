@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * ReportsSync Class.
  */
-class ReportsSync extends \
+class ReportsSync
 {
     /**
      * Hook in sync methods.

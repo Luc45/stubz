@@ -5,9 +5,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
 /**
  * Settings class.
  */
-class Settings extends \
+class Settings
 {
-    const DEFAULTS = array(
+    const DEFAULTS = array (
   'logging_enabled' => true,
   'default_handler' => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\LogHandlerFileV2',
   'retention_period_days' => 30,

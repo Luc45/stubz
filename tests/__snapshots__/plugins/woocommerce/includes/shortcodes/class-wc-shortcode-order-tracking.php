@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shortcode order tracking class.
  */
-class WC_Shortcode_Order_Tracking extends \
+class WC_Shortcode_Order_Tracking
 {
     /**
      * Get the shortcode content.

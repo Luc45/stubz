@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Variations\Stats;
 /**
  * API\Reports\Variations\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore
+class DataStore
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -14,7 +14,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\Dat
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'items_sold' => 'intval',
   'net_revenue' => 'floatval',
   'orders_count' => 'intval',

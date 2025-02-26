@@ -5,49 +5,49 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 /**
  * Admin\API\Reports\SqlQuery: Common parent for manipulating SQL query clauses.
  */
-class SqlQuery extends \
+class SqlQuery
 {
     /**
      * List of SQL clauses.
      *
      * @var array
      */
-    private $sql_clauses = array(
+    private $sql_clauses = array (
   'select' => 
-  array(
+  array (
   ),
   'from' => 
-  array(
+  array (
   ),
   'left_join' => 
-  array(
+  array (
   ),
   'join' => 
-  array(
+  array (
   ),
   'right_join' => 
-  array(
+  array (
   ),
   'where' => 
-  array(
+  array (
   ),
   'where_time' => 
-  array(
+  array (
   ),
   'group_by' => 
-  array(
+  array (
   ),
   'having' => 
-  array(
+  array (
   ),
   'limit' => 
-  array(
+  array (
   ),
   'order_by' => 
-  array(
+  array (
   ),
   'union' => 
-  array(
+  array (
   ),
 );
 
@@ -56,14 +56,14 @@ class SqlQuery extends \
      *
      * @var array
      */
-    private $sql_filters = array(
+    private $sql_filters = array (
   'where' => 
-  array(
+  array (
     0 => 'where',
     1 => 'where_time',
   ),
   'join' => 
-  array(
+  array (
     0 => 'right_join',
     1 => 'join',
     2 => 'left_join',

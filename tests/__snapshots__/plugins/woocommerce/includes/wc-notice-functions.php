@@ -35,7 +35,7 @@ function wc_has_notice($message, $notice_type = 'success')
  * @param string $notice_type Optional. The name of the notice type - either error, success or notice.
  * @param array  $data        Optional notice data.
  */
-function wc_add_notice($message, $notice_type = 'success', $data = array(
+function wc_add_notice($message, $notice_type = 'success', $data = array (
 ))
 {
     // stub
@@ -84,7 +84,7 @@ function wc_print_notices($return = false)
  * @param array  $data        Optional notice data. @since 3.9.0.
  * @param bool   $return      true to return rather than echo. @since 7.7.0.
  */
-function wc_print_notice($message, $notice_type = 'success', $data = array(
+function wc_print_notice($message, $notice_type = 'success', $data = array (
 ), $return = false)
 {
     // stub

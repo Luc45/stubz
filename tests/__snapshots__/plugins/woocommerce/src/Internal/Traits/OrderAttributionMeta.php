@@ -17,7 +17,7 @@ trait OrderAttributionMeta
      *
      * @var string[]
      * */
-    private $default_fields = array(
+    private $default_fields = array (
   'source_type' => 'current.typ',
   'referrer' => 'current_add.rf',
   'utm_campaign' => 'current.cmp',
@@ -37,7 +37,7 @@ trait OrderAttributionMeta
 );
 
     /** @var array */
-    private $fields = array(
+    private $fields = array (
 );
 
     /**
@@ -45,7 +45,7 @@ trait OrderAttributionMeta
      *
      * @var array
      * */
-    private $field_names = array(
+    private $field_names = array (
 );
 
     /** @var string */
@@ -154,7 +154,7 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_unprefixed_field_values(array $raw_values = array(
+    private function get_unprefixed_field_values(array $raw_values = array (
 )): array
     {
         // stub
@@ -167,7 +167,7 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_source_values(array $raw_values = array(
+    private function get_source_values(array $raw_values = array (
 )): array
     {
         // stub

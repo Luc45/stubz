@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item coupon class.
  */
-class WC_Order_Item_Coupon extends \WC_Order_Item
+class WC_Order_Item_Coupon
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
@@ -13,7 +13,7 @@ class WC_Order_Item_Coupon extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'code' => '',
   'discount' => 0,
   'discount_tax' => 0,

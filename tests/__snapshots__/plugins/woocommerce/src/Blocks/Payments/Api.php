@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments;
  *
  * @since 2.6.0
  */
-class Api extends \
+class Api
 {
     /**
      * Reference to the PaymentMethodRegistry instance.

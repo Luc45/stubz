@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Marketing;
  *
  * @since x.x.x
  */
-class Price extends \
+class Price
 {
     /**
      * The price.

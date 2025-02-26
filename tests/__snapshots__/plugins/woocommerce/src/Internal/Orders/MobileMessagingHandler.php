@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Prepares formatted mobile deep link navigation link for order mails.
  */
-class MobileMessagingHandler extends \
+class MobileMessagingHandler
 {
     const OPEN_ORDER_INTERVAL_DAYS = 30;
 

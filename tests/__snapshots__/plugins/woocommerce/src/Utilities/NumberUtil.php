@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with numbers.
  */
-final class NumberUtil extends \
+final class NumberUtil
 {
     /**
      * Round a number using the built-in `round` function, but unless the value to round is numeric

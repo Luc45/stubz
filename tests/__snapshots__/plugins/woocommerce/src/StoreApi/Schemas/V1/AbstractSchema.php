@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  *
  * For REST Route Schemas
  */
-abstract class AbstractSchema extends \
+abstract class AbstractSchema
 {
     const EXTENDING_KEY = 'extensions';
 

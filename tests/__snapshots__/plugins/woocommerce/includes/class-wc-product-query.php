@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product query class.
  */
-class WC_Product_Query extends \WC_Object_Query
+class WC_Product_Query
 {
     /**
      * Valid query vars for products.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Handles Responses.
  */
-abstract class WC_Gateway_Paypal_Response extends \
+abstract class WC_Gateway_Paypal_Response
 {
     /**
      * Sandbox mode

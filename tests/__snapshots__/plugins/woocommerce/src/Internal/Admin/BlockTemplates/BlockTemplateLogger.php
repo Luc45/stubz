@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Logger for block template modifications.
  */
-class BlockTemplateLogger extends \
+class BlockTemplateLogger
 {
     const BLOCK_ADDED = 'block_added';
 
@@ -53,7 +53,7 @@ class BlockTemplateLogger extends \
      *
      * @var array
      */
-    private $all_template_events = array(
+    private $all_template_events = array (
 );
 
     /**
@@ -61,7 +61,7 @@ class BlockTemplateLogger extends \
      *
      * @var array
      */
-    private $templates = array(
+    private $templates = array (
 );
 
     /**
@@ -158,7 +158,7 @@ class BlockTemplateLogger extends \
      * @param BlockInterface $block           Block.
      * @param array          $additional_info Additional info.
      */
-    private function log(string $event_type, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, $additional_info = array(
+    private function log(string $event_type, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, $additional_info = array (
 ))
     {
         // stub
@@ -183,7 +183,7 @@ class BlockTemplateLogger extends \
      * @param BlockInterface         $block           Block.
      * @param array                  $additional_info Additional info.
      */
-    private function add_template_event(array $event_type_info, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface $template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface $container, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, array $additional_info = array(
+    private function add_template_event(array $event_type_info, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface $template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface $container, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, array $additional_info = array (
 ))
     {
         // stub
@@ -195,7 +195,7 @@ class BlockTemplateLogger extends \
      * @param string $message Message to log.
      * @param array  $info    Additional info to log.
      */
-    private function format_message(string $message, array $info = array(
+    private function format_message(string $message, array $info = array (
 )): string
     {
         // stub

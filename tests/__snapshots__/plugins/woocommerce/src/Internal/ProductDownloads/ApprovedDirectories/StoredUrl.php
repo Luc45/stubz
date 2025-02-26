@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
 /**
  * Representation of an approved directory URL, bundling the ID and URL in a single entity.
  */
-class StoredUrl extends \
+class StoredUrl
 {
     /**
      * The approved directory ID.

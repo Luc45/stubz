@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal;
  *
  * Additionally, this class manages the "Convert order coupon data" tool.
  */
-class OrderCouponDataMigrator extends \
+class OrderCouponDataMigrator
 {
     /**
      * Register hooks for the class.

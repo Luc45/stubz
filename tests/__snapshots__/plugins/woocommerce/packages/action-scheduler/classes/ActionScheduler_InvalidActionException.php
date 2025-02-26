@@ -30,7 +30,7 @@ class ActionScheduler_InvalidActionException extends \InvalidArgumentException
      * @param mixed  $args      Passed arguments.
      * @return static
      */
-    public static function from_decoding_args($action_id, $args = array(
+    public static function from_decoding_args($action_id, $args = array (
 ))
     {
         // stub

@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the suggestions controller classes in the Automattic\WooCommerce\Internal\Admin\Suggestions namespace.
  */
-class AdminSuggestionsServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class AdminSuggestionsServiceProvider
 {
     /**
      * List services provided by this class.
      *
      * @var string[]
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestions',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestionIncentives',
 );

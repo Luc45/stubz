@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget layered nav class.
  */
-class WC_Widget_Layered_Nav extends \WC_Widget
+class WC_Widget_Layered_Nav
 {
     /**
      * Constructor.

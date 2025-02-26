@@ -38,7 +38,7 @@ trait CouponsMovedTrait
      *
      * @return string
      */
-    protected static function get_coupon_url($args = array(
+    protected static function get_coupon_url($args = array (
 ))
     {
         // stub

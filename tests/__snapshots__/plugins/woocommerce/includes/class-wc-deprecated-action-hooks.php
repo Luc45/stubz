@@ -5,16 +5,16 @@ namespace ;
 /**
  * Handles deprecation notices and triggering of legacy action hooks.
  */
-class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
+class WC_Deprecated_Action_Hooks
 {
     /**
      * Array of deprecated hooks we need to handle. Format of 'new' => 'old'.
      *
      * @var array
      */
-    protected $deprecated_hooks = array(
+    protected $deprecated_hooks = array (
   'woocommerce_new_order_item' => 
-  array(
+  array (
     0 => 'woocommerce_order_add_shipping',
     1 => 'woocommerce_order_add_coupon',
     2 => 'woocommerce_order_add_tax',
@@ -24,7 +24,7 @@ class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
     6 => 'woocommerce_add_order_fee_meta',
   ),
   'woocommerce_update_order_item' => 
-  array(
+  array (
     0 => 'woocommerce_order_edit_product',
     1 => 'woocommerce_order_update_coupon',
     2 => 'woocommerce_order_update_shipping',
@@ -35,17 +35,17 @@ class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
   'woocommerce_new_product_variation' => 'woocommerce_create_product_variation',
   'woocommerce_order_details_after_order_table_items' => 'woocommerce_order_items_table',
   'woocommerce_settings_advanced_page_options' => 
-  array(
+  array (
     0 => 'woocommerce_settings_checkout_page_options',
     1 => 'woocommerce_settings_account_page_options',
   ),
   'woocommerce_settings_advanced_page_options_end' => 
-  array(
+  array (
     0 => 'woocommerce_settings_checkout_page_options_end',
     1 => 'woocommerce_settings_account_page_options_end',
   ),
   'woocommerce_settings_advanced_page_options_after' => 
-  array(
+  array (
     0 => 'woocommerce_settings_checkout_page_options_after',
     1 => 'woocommerce_settings_account_page_options_after',
   ),
@@ -56,7 +56,7 @@ class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
      *
      * @var array
      */
-    protected $deprecated_version = array(
+    protected $deprecated_version = array (
   'woocommerce_order_add_shipping' => '3.0.0',
   'woocommerce_order_add_coupon' => '3.0.0',
   'woocommerce_order_add_tax' => '3.0.0',

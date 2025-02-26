@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Shipping.
  */
-class WC_Settings_Shipping extends \WC_Settings_Page
+class WC_Settings_Shipping
 {
     /**
      * Setting page icon.

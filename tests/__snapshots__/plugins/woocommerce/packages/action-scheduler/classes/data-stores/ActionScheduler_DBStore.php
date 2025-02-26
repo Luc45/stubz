@@ -9,7 +9,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_DBStore extends \ActionScheduler_Store
+class ActionScheduler_DBStore
 {
     /**
      * Used to share information about the before_date property of claims internally.
@@ -40,7 +40,7 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      *
      * @var array
      */
-    protected $claim_filters = array(
+    protected $claim_filters = array (
   'group' => '',
   'hooks' => '',
   'exclude-groups' => '',
@@ -248,7 +248,7 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public function query_actions($query = array(
+    public function query_actions($query = array (
 ), $query_type = 'select')
     {
         // stub
@@ -361,7 +361,7 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      *
      * @return ActionScheduler_ActionClaim
      */
-    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(
+    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
 ), $group = '')
     {
         // stub
@@ -413,7 +413,7 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      * @throws \InvalidArgumentException Throws InvalidArgumentException if group doesn't exist.
      * @throws \RuntimeException Throws RuntimeException if unable to claim action.
      */
-    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array(
+    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array (
 ), $group = '')
     {
         // stub

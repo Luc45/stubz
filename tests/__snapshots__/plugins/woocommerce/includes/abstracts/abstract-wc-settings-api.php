@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_API class.
  */
-abstract class WC_Settings_API extends \
+abstract class WC_Settings_API
 {
     /**
      * The plugin ID. Used for option names.
@@ -26,7 +26,7 @@ abstract class WC_Settings_API extends \
      *
      * @var array of strings
      */
-    public $errors = array(
+    public $errors = array (
 );
 
     /**
@@ -34,7 +34,7 @@ abstract class WC_Settings_API extends \
      *
      * @var array
      */
-    public $settings = array(
+    public $settings = array (
 );
 
     /**
@@ -42,7 +42,7 @@ abstract class WC_Settings_API extends \
      *
      * @var array
      */
-    public $form_fields = array(
+    public $form_fields = array (
 );
 
     /**
@@ -50,7 +50,7 @@ abstract class WC_Settings_API extends \
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
 );
 
     /**
@@ -135,7 +135,7 @@ abstract class WC_Settings_API extends \
      * @param array  $post_data Posted data.
      * @return string
      */
-    public function get_field_value($key, $field, $post_data = array(
+    public function get_field_value($key, $field, $post_data = array (
 ))
     {
         // stub
@@ -146,7 +146,7 @@ abstract class WC_Settings_API extends \
      *
      * @param array $data Posted data.
      */
-    public function set_post_data($data = array(
+    public function set_post_data($data = array (
 ))
     {
         // stub
@@ -263,7 +263,7 @@ abstract class WC_Settings_API extends \
      * @since  1.0.0
      * @uses   method_exists()
      */
-    public function generate_settings_html($form_fields = array(
+    public function generate_settings_html($form_fields = array (
 ), $echo = true)
     {
         // stub
@@ -576,7 +576,7 @@ abstract class WC_Settings_API extends \
      * @deprecated 2.6.0 No longer used.
      * @param array $form_fields Array of fields.
      */
-    public function validate_settings_fields($form_fields = array(
+    public function validate_settings_fields($form_fields = array (
 ))
     {
         // stub

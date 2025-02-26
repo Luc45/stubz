@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the homescreen feature.
  */
-class Homescreen extends \
+class Homescreen
 {
     const MENU_SLUG = 'wc-admin';
 

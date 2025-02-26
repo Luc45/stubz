@@ -9,7 +9,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_DBLogger extends \ActionScheduler_Logger
+class ActionScheduler_DBLogger
 {
     /**
      * Add a record to an action log.

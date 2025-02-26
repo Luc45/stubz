@@ -15,7 +15,7 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @since 2.5.0
  */
-class Package extends \
+class Package
 {
     /**
      * For back compat this is provided. Ideally, you should register your

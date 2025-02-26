@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  * OrderController class.
  * Helper class which creates and syncs orders with the cart.
  */
-class OrderController extends \
+class OrderController
 {
     /**
      * Checkout fields controller.
@@ -192,7 +192,7 @@ class OrderController extends \
      * @param boolean $needs_shipping Current order needs shipping.
      * @param array   $chosen_shipping_methods Array of shipping methods.
      */
-    public function validate_selected_shipping_methods($needs_shipping, $chosen_shipping_methods = array(
+    public function validate_selected_shipping_methods($needs_shipping, $chosen_shipping_methods = array (
 ))
     {
         // stub

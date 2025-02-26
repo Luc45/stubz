@@ -5,7 +5,7 @@ namespace ;
 /**
  * Commands for Action Scheduler.
  */
-class ActionScheduler_WPCLI_Scheduler_command extends \WP_CLI_Command
+class ActionScheduler_WPCLI_Scheduler_command
 {
     /**
      * Force tables schema creation for Action Scheduler

@@ -13,7 +13,7 @@ namespace ;
  * @category	Abstract Class
  * @author	  WooThemes
  */
-abstract class WC_Abstract_Legacy_Order extends \WC_Data
+abstract class WC_Abstract_Legacy_Order
 {
     /**
      * Add coupon code to the order.
@@ -23,7 +23,7 @@ abstract class WC_Abstract_Legacy_Order extends \WC_Data
      * @return int order item ID
      * @throws WC_Data_Exception
      */
-    public function add_coupon($code = array(
+    public function add_coupon($code = array (
 ), $discount = 0, $discount_tax = 0)
     {
         // stub
@@ -405,7 +405,7 @@ abstract class WC_Abstract_Legacy_Order extends \WC_Data
      * @param array $args Items args.
      * @return string
      */
-    public function email_order_items_table($args = array(
+    public function email_order_items_table($args = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Webhook data store class.
  */
-class WC_Webhook_Data_Store extends \
+class WC_Webhook_Data_Store
 {
     /**
      * Create a new webhook in the database.

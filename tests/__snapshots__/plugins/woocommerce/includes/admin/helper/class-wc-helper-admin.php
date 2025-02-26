@@ -9,7 +9,7 @@ namespace ;
  * The Helper manages the connection between the store and
  * an account on WooCommerce.com.
  */
-class WC_Helper_Admin extends \
+class WC_Helper_Admin
 {
     /**
      * Loads the class, runs on init

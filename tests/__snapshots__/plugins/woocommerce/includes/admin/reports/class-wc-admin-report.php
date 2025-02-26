@@ -10,14 +10,14 @@ namespace ;
  * @package     WooCommerce\Admin\Reports
  * @version     2.1.0
  */
-class WC_Admin_Report extends \
+class WC_Admin_Report
 {
     /**
      * List of transients name that have been updated and need persisting.
      *
      * @var array
      */
-    protected static $transients_to_update = array(
+    protected static $transients_to_update = array (
 );
 
     /**
@@ -25,7 +25,7 @@ class WC_Admin_Report extends \
      *
      * @var array
      */
-    protected static $cached_results = array(
+    protected static $cached_results = array (
 );
 
     /**
@@ -84,7 +84,7 @@ class WC_Admin_Report extends \
      * @param  array $args arguments for the report.
      * @return mixed depending on query_type
      */
-    public function get_order_report_data($args = array(
+    public function get_order_report_data($args = array (
 ))
     {
         // stub

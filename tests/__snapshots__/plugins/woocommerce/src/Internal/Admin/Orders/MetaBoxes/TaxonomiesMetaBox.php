@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
 /**
  * TaxonomiesMetaBox class, renders taxonomy sidebar widget on order edit screen.
  */
-class TaxonomiesMetaBox extends \
+class TaxonomiesMetaBox
 {
     /**
      * Order Table data store class.

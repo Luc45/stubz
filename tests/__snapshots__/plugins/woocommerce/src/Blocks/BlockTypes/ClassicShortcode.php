@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class ClassicShortcode extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
+class ClassicShortcode
 {
     /**
      * Block name.
@@ -42,7 +42,7 @@ class ClassicShortcode extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstrac
      * @param array $attributes Block attributes. Default empty array.
      * @return string space-separated list of classes.
      */
-    protected function get_container_classes($attributes = array(
+    protected function get_container_classes($attributes = array (
 ))
     {
         // stub

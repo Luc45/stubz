@@ -8,9 +8,9 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  *
  * @internal
  */
-class OrdersTableFieldQuery extends \
+class OrdersTableFieldQuery
 {
-    const VALID_COMPARISON_OPERATORS = array(
+    const VALID_COMPARISON_OPERATORS = array (
   0 => '=',
   1 => '!=',
   2 => 'LIKE',
@@ -49,7 +49,7 @@ class OrdersTableFieldQuery extends \
      *
      * @var array
      */
-    private $queries = array(
+    private $queries = array (
 );
 
     /**
@@ -57,7 +57,7 @@ class OrdersTableFieldQuery extends \
      *
      * @var array
      */
-    private $join = array(
+    private $join = array (
 );
 
     /**
@@ -65,7 +65,7 @@ class OrdersTableFieldQuery extends \
      *
      * @var array
      */
-    private $where = array(
+    private $where = array (
 );
 
     /**
@@ -73,7 +73,7 @@ class OrdersTableFieldQuery extends \
      *
      * @var array
      */
-    private $table_aliases = array(
+    private $table_aliases = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace ;
 /**
  * This class adds actions to track usage of the Product Collection Block.
  */
-class WC_Product_Collection_Block_Tracking extends \
+class WC_Product_Collection_Block_Tracking
 {
     /**
      * Init Tracking.

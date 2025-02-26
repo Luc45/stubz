@@ -5,7 +5,7 @@ namespace ;
 /**
  * Abstract WP_Async_Request class.
  */
-abstract class WP_Async_Request extends \
+abstract class WP_Async_Request
 {
     /**
      * Prefix
@@ -43,7 +43,7 @@ abstract class WP_Async_Request extends \
      * @var array
      * @access protected
      */
-    protected $data = array(
+    protected $data = array (
 );
 
     /**

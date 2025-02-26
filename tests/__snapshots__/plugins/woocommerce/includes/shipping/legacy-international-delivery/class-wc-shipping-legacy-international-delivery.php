@@ -11,7 +11,7 @@ namespace ;
  * @version     2.4.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Legacy_International_Delivery extends \WC_Shipping_Legacy_Flat_Rate
+class WC_Shipping_Legacy_International_Delivery
 {
     /**
      * Constructor.

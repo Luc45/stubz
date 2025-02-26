@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class BatchFetcher extends \
+class BatchFetcher
 {
     /**
      * Store instance.

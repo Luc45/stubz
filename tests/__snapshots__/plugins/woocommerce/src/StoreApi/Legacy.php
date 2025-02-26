@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * Legacy class.
  */
-class Legacy extends \
+class Legacy
 {
     /**
      * Hook into WP lifecycle events.

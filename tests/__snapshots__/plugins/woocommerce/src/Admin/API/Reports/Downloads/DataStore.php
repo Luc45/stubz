@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads;
 /**
  * API\Reports\Downloads\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore
 {
     /**
      * Table used to get the data.
@@ -32,7 +32,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'id' => 'intval',
   'date' => 'strval',
   'date_gmt' => 'strval',

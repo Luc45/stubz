@@ -5,7 +5,7 @@ namespace ;
 /**
  * Log levels class.
  */
-abstract class WC_Log_Levels extends \
+abstract class WC_Log_Levels
 {
     const EMERGENCY = 'emergency';
 
@@ -28,7 +28,7 @@ abstract class WC_Log_Levels extends \
      *
      * @var array
      */
-    protected static $level_to_severity = array(
+    protected static $level_to_severity = array (
   'emergency' => 800,
   'alert' => 700,
   'critical' => 600,
@@ -46,7 +46,7 @@ abstract class WC_Log_Levels extends \
      *
      * @var array
      */
-    protected static $severity_to_level = array(
+    protected static $severity_to_level = array (
   800 => 'emergency',
   700 => 'alert',
   600 => 'critical',

@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Admin\Marketing;
  *
  * @since x.x.x
  */
-class MarketingChannels extends \
+class MarketingChannels
 {
     /**
      * The registered marketing channels.
      *
      * @var MarketingChannelInterface[]
      */
-    private $registered_channels = array(
+    private $registered_channels = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Gateway_Paypal Class.
  */
-class WC_Gateway_Paypal extends \WC_Payment_Gateway
+class WC_Gateway_Paypal
 {
     const ID = 'paypal';
 

@@ -7,14 +7,14 @@ namespace ;
  *
  * @version 3.0.0
  */
-class WC_Product_Variable_Data_Store_CPT extends \WC_Product_Data_Store_CPT
+class WC_Product_Variable_Data_Store_CPT
 {
     /**
      * Cached & hashed prices array for child variations.
      *
      * @var array
      */
-    protected $prices_array = array(
+    protected $prices_array = array (
 );
 
     /**

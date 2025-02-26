@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Caches;
 /**
  * A class to control the usage of the orders cache.
  */
-class OrderCacheController extends \
+class OrderCacheController
 {
     /**
      * The orders cache to use.

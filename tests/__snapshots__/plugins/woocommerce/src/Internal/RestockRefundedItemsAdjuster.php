@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal;
 /**
  * Class to adjust or initialize the restock refunded items.
  */
-class RestockRefundedItemsAdjuster extends \
+class RestockRefundedItemsAdjuster
 {
     /**
      * The order factory to use.

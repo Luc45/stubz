@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\PerformanceIndicators;
  * @internal
  * @extends GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller
 {
     /**
      * Route base.
@@ -22,7 +22,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $endpoints = array(
+    protected $endpoints = array (
 );
 
     /**
@@ -37,7 +37,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $allowed_stats = array(
+    protected $allowed_stats = array (
 );
 
     /**
@@ -45,7 +45,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $labels = array(
+    protected $labels = array (
 );
 
     /**
@@ -53,7 +53,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $urls = array(
+    protected $urls = array (
 );
 
     /**
@@ -61,7 +61,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $stats_data = array(
+    protected $stats_data = array (
 );
 
     /**

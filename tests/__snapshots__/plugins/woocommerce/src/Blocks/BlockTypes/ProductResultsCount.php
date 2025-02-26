@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductResultsCount class.
  */
-class ProductResultsCount extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductResultsCount
 {
     /**
      * Block name.

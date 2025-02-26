@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Install_JP_And_WCS_Plugins
  */
-class InstallJPAndWCSPlugins extends \
+class InstallJPAndWCSPlugins
 {
     const NOTE_NAME = 'wc-admin-install-jp-and-wcs-plugins';
 

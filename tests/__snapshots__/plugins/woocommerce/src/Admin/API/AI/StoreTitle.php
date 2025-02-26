@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-class StoreTitle extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
+class StoreTitle
 {
     const STORE_TITLE_OPTION_NAME = 'blogname';
 

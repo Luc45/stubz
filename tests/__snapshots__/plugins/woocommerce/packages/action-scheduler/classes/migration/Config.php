@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * A config builder for the ActionScheduler\Migration\Runner class
  */
-class Config extends \
+class Config
 {
     /**
      * Source store instance.

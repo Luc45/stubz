@@ -11,7 +11,7 @@ namespace ;
  *
  * Utility class for creating/updating custom tables
  */
-abstract class ActionScheduler_Abstract_Schema extends \
+abstract class ActionScheduler_Abstract_Schema
 {
     /**
      * Increment this value in derived class to trigger a schema update.
@@ -32,7 +32,7 @@ abstract class ActionScheduler_Abstract_Schema extends \
      *
      * @var array
      */
-    protected $tables = array(
+    protected $tables = array (
 );
 
     /**

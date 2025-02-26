@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
  * When {@see OrdersTableDataStore} is in use, this class takes care of redirecting admins from CPT-based URLs
  * to the new ones.
  */
-class PostsRedirectionController extends \
+class PostsRedirectionController
 {
     /**
      * Instance of the PageController class.

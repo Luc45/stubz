@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Class with methods for handling order taxes.
  */
-class TaxesController extends \
+class TaxesController
 {
     /**
      * Calculate line taxes via Ajax call.

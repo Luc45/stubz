@@ -5,7 +5,7 @@ namespace ;
 /**
  * Marketplace suggestions core behaviour.
  */
-class WC_Marketplace_Suggestions extends \
+class WC_Marketplace_Suggestions
 {
     /**
      * Initialise.

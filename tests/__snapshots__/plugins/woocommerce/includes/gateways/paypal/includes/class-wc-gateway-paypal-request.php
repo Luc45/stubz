@@ -5,14 +5,14 @@ namespace ;
 /**
  * Generates requests to send to PayPal.
  */
-class WC_Gateway_Paypal_Request extends \
+class WC_Gateway_Paypal_Request
 {
     /**
      * Stores line items to send to PayPal.
      *
      * @var array
      */
-    protected $line_items = array(
+    protected $line_items = array (
 );
 
     /**

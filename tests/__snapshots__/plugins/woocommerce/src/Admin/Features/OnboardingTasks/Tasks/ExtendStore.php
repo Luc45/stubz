@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * ExtendStore Task
  */
-class ExtendStore extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class ExtendStore
 {
     /**
      * ID.

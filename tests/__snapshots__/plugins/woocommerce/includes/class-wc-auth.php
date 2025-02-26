@@ -5,7 +5,7 @@ namespace ;
 /**
  * Auth class.
  */
-class WC_Auth extends \
+class WC_Auth
 {
     const VERSION = 1;
 

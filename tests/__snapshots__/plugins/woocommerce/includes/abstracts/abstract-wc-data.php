@@ -10,7 +10,7 @@ namespace ;
  * @version  2.6.0
  * @package  WooCommerce\Abstracts
  */
-abstract class WC_Data extends \ implements \Stringable
+abstract class WC_Data implements \Stringable
 {
     /**
      * ID for this object.
@@ -26,7 +26,7 @@ abstract class WC_Data extends \ implements \Stringable
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
 );
 
     /**
@@ -35,7 +35,7 @@ abstract class WC_Data extends \ implements \Stringable
      * @since 3.0.0
      * @var array
      */
-    protected $changes = array(
+    protected $changes = array (
 );
 
     /**
@@ -62,7 +62,7 @@ abstract class WC_Data extends \ implements \Stringable
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
 );
 
     /**
@@ -71,7 +71,7 @@ abstract class WC_Data extends \ implements \Stringable
      * @since 3.0.0
      * @var array
      */
-    protected $default_data = array(
+    protected $default_data = array (
 );
 
     /**
@@ -107,7 +107,7 @@ abstract class WC_Data extends \ implements \Stringable
      *
      * @var array
      */
-    protected $legacy_datastore_props = array(
+    protected $legacy_datastore_props = array (
 );
 
     /**
@@ -440,7 +440,7 @@ abstract class WC_Data extends \ implements \Stringable
      *
      * @param array $filtered_meta_data Filtered metadata fetched from DB.
      */
-    public function init_meta_data(array $filtered_meta_data = array(
+    public function init_meta_data(array $filtered_meta_data = array (
 ))
     {
         // stub
@@ -600,7 +600,7 @@ abstract class WC_Data extends \ implements \Stringable
      * @param int    $http_status_code HTTP status code.
      * @param array  $data             Extra error data.
      */
-    protected function error($code, $message, $http_status_code = 400, $data = array(
+    protected function error($code, $message, $http_status_code = 400, $data = array (
 ))
     {
         // stub

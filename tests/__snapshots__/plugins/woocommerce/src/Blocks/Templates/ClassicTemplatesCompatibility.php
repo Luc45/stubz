@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ClassicTemplatesCompatibility extends \
+class ClassicTemplatesCompatibility
 {
     /**
      * Instance of the asset data registry.

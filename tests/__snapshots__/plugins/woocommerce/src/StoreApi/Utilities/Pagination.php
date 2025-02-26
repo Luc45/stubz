@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 /**
  * Pagination class.
  */
-class Pagination extends \
+class Pagination
 {
     /**
      * Add pagination headers to a response object.

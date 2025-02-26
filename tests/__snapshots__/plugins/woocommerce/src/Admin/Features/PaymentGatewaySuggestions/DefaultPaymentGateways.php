@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
 /**
  * Default Payment Gateways
  */
-class DefaultPaymentGateways extends \
+class DefaultPaymentGateways
 {
     /**
      * This is the default priority for countries that are not in the $recommendation_priority_map.
@@ -14,7 +14,7 @@ class DefaultPaymentGateways extends \
      *
      * @var array
      */
-    private static $recommendation_priority = array(
+    private static $recommendation_priority = array (
   'woocommerce_payments' => 1,
   'woocommerce_payments:with-in-person-payments' => 1,
   'woocommerce_payments:without-in-person-payments' => 1,

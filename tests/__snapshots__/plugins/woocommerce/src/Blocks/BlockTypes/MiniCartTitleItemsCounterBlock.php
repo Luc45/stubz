@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * MiniCartTitleItemsCounterBlock class.
  */
-class MiniCartTitleItemsCounterBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
+class MiniCartTitleItemsCounterBlock
 {
     /**
      * Block name.

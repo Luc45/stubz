@@ -5,7 +5,7 @@ namespace ;
 /**
  * Rate limit class.
  */
-class WC_Rate_Limiter extends \
+class WC_Rate_Limiter
 {
     const CACHE_GROUP = 'wc_rate_limit';
 

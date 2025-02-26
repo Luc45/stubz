@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * Utility methods related to the REST API.
  */
-class RestApiUtil extends \
+class RestApiUtil
 {
     /**
      * Get data from a WooCommerce API endpoint.
@@ -17,7 +17,7 @@ class RestApiUtil extends \
      * @param array  $params Params to pass with request.
      * @return array|\WP_Error
      */
-    public function get_endpoint_data($endpoint, $params = array(
+    public function get_endpoint_data($endpoint, $params = array (
 ))
     {
         // stub

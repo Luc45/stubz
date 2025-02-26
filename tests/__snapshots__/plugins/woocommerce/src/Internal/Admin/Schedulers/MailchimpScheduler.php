@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Schedulers;
  *
  * @package Automattic\WooCommerce\Admin\Schedulers
  */
-class MailchimpScheduler extends \
+class MailchimpScheduler
 {
     const SUBSCRIBE_ENDPOINT = 'https://woocommerce.com/wp-json/wccom/v1/subscribe';
 

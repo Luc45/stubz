@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_Versions
  */
-class ActionScheduler_Versions extends \
+class ActionScheduler_Versions
 {
     /**
      * ActionScheduler_Versions instance.
@@ -19,7 +19,7 @@ class ActionScheduler_Versions extends \
      *
      * @var array<string, callable>
      */
-    private $versions = array(
+    private $versions = array (
 );
 
     /**

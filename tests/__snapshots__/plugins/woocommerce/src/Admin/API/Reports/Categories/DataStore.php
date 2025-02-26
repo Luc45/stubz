@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Categories;
 /**
  * API\Reports\Categories\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore
 {
     /**
      * Table used to get the data.
@@ -46,7 +46,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'category_id' => 'intval',
   'items_sold' => 'intval',
   'net_revenue' => 'floatval',

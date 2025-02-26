@@ -5,7 +5,7 @@ namespace ;
 /**
  * Regenerate Images Class
  */
-class WC_Regenerate_Images extends \
+class WC_Regenerate_Images
 {
     /**
      * Background process to regenerate all images

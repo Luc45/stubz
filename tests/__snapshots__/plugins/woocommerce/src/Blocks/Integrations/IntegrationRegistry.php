@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Integrations;
 /**
  * Class used for tracking registered integrations with various Block types.
  */
-class IntegrationRegistry extends \
+class IntegrationRegistry
 {
     /**
      * Integration identifier is used to construct hook names and is given when the integration registry is initialized.
@@ -19,7 +19,7 @@ class IntegrationRegistry extends \
      *
      * @var IntegrationInterface[]
      */
-    protected $registered_integrations = array(
+    protected $registered_integrations = array (
 );
 
     /**

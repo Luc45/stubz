@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_WCCOM_Site_Installation_Step_Unpack_Product class
  */
-class WC_WCCOM_Site_Installation_Step_Unpack_Product extends \
+class WC_WCCOM_Site_Installation_Step_Unpack_Product
 {
     /**
      * The current installation state.

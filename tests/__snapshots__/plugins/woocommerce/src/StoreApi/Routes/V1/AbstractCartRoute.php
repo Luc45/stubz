@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Abstract Cart Route
  */
-abstract class AbstractCartRoute extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+abstract class AbstractCartRoute
 {
     const SCHEMA_TYPE = 'cart';
 
@@ -206,7 +206,7 @@ abstract class AbstractCartRoute extends \Automattic\WooCommerce\StoreApi\Routes
      *
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array(
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
 ))
     {
         // stub

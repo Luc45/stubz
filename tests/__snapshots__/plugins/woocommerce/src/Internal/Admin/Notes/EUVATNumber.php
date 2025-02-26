@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * EU_VAT_Number
  */
-class EUVATNumber extends \
+class EUVATNumber
 {
     const NOTE_NAME = 'wc-admin-eu-vat-number';
 

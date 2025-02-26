@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Query Class.
  */
-class WC_Query extends \
+class WC_Query
 {
     /**
      * Query vars to add to wp.
      *
      * @var array
      */
-    public $query_vars = array(
+    public $query_vars = array (
 );
 
     /**
@@ -415,7 +415,7 @@ class WC_Query extends \
      * @param  bool  $main_query If is main query.
      * @return array
      */
-    public function get_meta_query($meta_query = array(
+    public function get_meta_query($meta_query = array (
 ), $main_query = false)
     {
         // stub
@@ -428,7 +428,7 @@ class WC_Query extends \
      * @param  bool  $main_query If is main query.
      * @return array
      */
-    public function get_tax_query($tax_query = array(
+    public function get_tax_query($tax_query = array (
 ), $main_query = false)
     {
         // stub

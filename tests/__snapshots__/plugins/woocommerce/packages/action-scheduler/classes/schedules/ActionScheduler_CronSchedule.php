@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_CronSchedule
  */
-class ActionScheduler_CronSchedule extends \ActionScheduler_Abstract_RecurringSchedule
+class ActionScheduler_CronSchedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.

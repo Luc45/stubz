@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Logic around updating Mailchimp during onboarding.
  */
-class OnboardingMailchimp extends \
+class OnboardingMailchimp
 {
     /**
      * Class instance.

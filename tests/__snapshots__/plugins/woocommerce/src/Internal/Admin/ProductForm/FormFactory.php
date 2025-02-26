@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductForm;
 /**
  * Factory that contains logic for the WooCommerce Product Form.
  */
-class FormFactory extends \
+class FormFactory
 {
     /**
      * Class instance.
@@ -19,7 +19,7 @@ class FormFactory extends \
      *
      * @var array
      */
-    protected static $form_fields = array(
+    protected static $form_fields = array (
 );
 
     /**
@@ -27,7 +27,7 @@ class FormFactory extends \
      *
      * @var array
      */
-    protected static $form_subsections = array(
+    protected static $form_subsections = array (
 );
 
     /**
@@ -35,7 +35,7 @@ class FormFactory extends \
      *
      * @var array
      */
-    protected static $form_sections = array(
+    protected static $form_sections = array (
 );
 
     /**
@@ -43,7 +43,7 @@ class FormFactory extends \
      *
      * @var array
      */
-    protected static $form_tabs = array(
+    protected static $form_tabs = array (
 );
 
     /**
@@ -90,7 +90,7 @@ class FormFactory extends \
      * @param array  $args Array containing the necessary arguments.
      * @return Subsection|WP_Error New subsection or WP_Error.
      */
-    public static function add_subsection($id, $plugin_id, $args = array(
+    public static function add_subsection($id, $plugin_id, $args = array (
 ))
     {
         // stub
@@ -128,7 +128,7 @@ class FormFactory extends \
      * @param array $sort_by key and order to sort by.
      * @return array list of registered fields.
      */
-    public static function get_fields($sort_by = array(
+    public static function get_fields($sort_by = array (
   'key' => 'order',
   'order' => 'asc',
 ))
@@ -142,7 +142,7 @@ class FormFactory extends \
      * @param array $sort_by key and order to sort by.
      * @return array list of registered cards.
      */
-    public static function get_subsections($sort_by = array(
+    public static function get_subsections($sort_by = array (
   'key' => 'order',
   'order' => 'asc',
 ))
@@ -156,7 +156,7 @@ class FormFactory extends \
      * @param array $sort_by key and order to sort by.
      * @return array list of registered sections.
      */
-    public static function get_sections($sort_by = array(
+    public static function get_sections($sort_by = array (
   'key' => 'order',
   'order' => 'asc',
 ))
@@ -170,7 +170,7 @@ class FormFactory extends \
      * @param array $sort_by key and order to sort by.
      * @return array list of registered tabs.
      */
-    public static function get_tabs($sort_by = array(
+    public static function get_tabs($sort_by = array (
   'key' => 'order',
   'order' => 'asc',
 ))
@@ -197,7 +197,7 @@ class FormFactory extends \
      * @param array        $sort_by key and order to sort by.
      * @return array       list of registered items.
      */
-    private static function get_items($type, $class_name, $sort_by = array(
+    private static function get_items($type, $class_name, $sort_by = array (
   'key' => 'order',
   'order' => 'asc',
 ))

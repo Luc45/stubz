@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Proxies;
  *
  * This class should be used instead of directly accessing the WordPress functions, to ease unit testing.
  */
-class ActionsProxy extends \
+class ActionsProxy
 {
     /**
      * Retrieve the number of times an action is fired.

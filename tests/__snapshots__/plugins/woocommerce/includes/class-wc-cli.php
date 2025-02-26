@@ -5,7 +5,7 @@ namespace ;
 /**
  * CLI class.
  */
-class WC_CLI extends \
+class WC_CLI
 {
     /**
      * Load required files and hooks to make the CLI work.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_CSV_Exporter Class.
  */
-abstract class WC_CSV_Exporter extends \
+abstract class WC_CSV_Exporter
 {
     /**
      * Type of export used in filter names.
@@ -40,7 +40,7 @@ abstract class WC_CSV_Exporter extends \
      *
      * @var array
      */
-    protected $row_data = array(
+    protected $row_data = array (
 );
 
     /**
@@ -55,7 +55,7 @@ abstract class WC_CSV_Exporter extends \
      *
      * @var array
      */
-    protected $column_names = array(
+    protected $column_names = array (
 );
 
     /**
@@ -63,7 +63,7 @@ abstract class WC_CSV_Exporter extends \
      *
      * @var array
      */
-    protected $columns_to_export = array(
+    protected $columns_to_export = array (
 );
 
     /**

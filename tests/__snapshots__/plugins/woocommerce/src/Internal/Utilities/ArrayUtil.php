@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * A class of utilities for dealing with arrays.
  */
-class ArrayUtil extends \
+class ArrayUtil
 {
     /**
      * Determines if the given array is a list.

@@ -8,14 +8,14 @@ namespace ;
  * @package     WooCommerce\Admin\Reports
  * @version     2.1.0
  */
-class WC_Report_Sales_By_Product extends \WC_Admin_Report
+class WC_Report_Sales_By_Product
 {
     /**
      * Chart colors.
      *
      * @var array
      */
-    public $chart_colours = array(
+    public $chart_colours = array (
 );
 
     /**
@@ -23,7 +23,7 @@ class WC_Report_Sales_By_Product extends \WC_Admin_Report
      *
      * @var array
      */
-    public $product_ids = array(
+    public $product_ids = array (
 );
 
     /**
@@ -31,7 +31,7 @@ class WC_Report_Sales_By_Product extends \WC_Admin_Report
      *
      * @var array
      */
-    public $product_ids_titles = array(
+    public $product_ids_titles = array (
 );
 
     /**

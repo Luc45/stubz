@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Logger class.
  */
-class WC_Logger extends \
+class WC_Logger
 {
     /**
      * Stores registered log handlers.
@@ -96,7 +96,7 @@ class WC_Logger extends \
      *
      * @return void
      */
-    public function log($level, $message, $context = array(
+    public function log($level, $message, $context = array (
 ))
     {
         // stub
@@ -112,7 +112,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function emergency($message, $context = array(
+    public function emergency($message, $context = array (
 ))
     {
         // stub
@@ -129,7 +129,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function alert($message, $context = array(
+    public function alert($message, $context = array (
 ))
     {
         // stub
@@ -146,7 +146,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function critical($message, $context = array(
+    public function critical($message, $context = array (
 ))
     {
         // stub
@@ -163,7 +163,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function error($message, $context = array(
+    public function error($message, $context = array (
 ))
     {
         // stub
@@ -182,7 +182,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function warning($message, $context = array(
+    public function warning($message, $context = array (
 ))
     {
         // stub
@@ -198,7 +198,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function notice($message, $context = array(
+    public function notice($message, $context = array (
 ))
     {
         // stub
@@ -215,7 +215,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function info($message, $context = array(
+    public function info($message, $context = array (
 ))
     {
         // stub
@@ -231,7 +231,7 @@ class WC_Logger extends \
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function debug($message, $context = array(
+    public function debug($message, $context = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product usagee
  */
-class WC_Product_Usage extends \
+class WC_Product_Usage
 {
     /**
      * Load Product Usage class.

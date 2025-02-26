@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CatalogSorting class.
  */
-class AddToCartWithOptionsQuantitySelector extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class AddToCartWithOptionsQuantitySelector
 {
     /**
      * Block name.

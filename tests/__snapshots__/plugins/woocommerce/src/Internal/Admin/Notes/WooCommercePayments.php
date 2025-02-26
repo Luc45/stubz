@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * WooCommerce_Payments
  */
-class WooCommercePayments extends \
+class WooCommercePayments
 {
     const NOTE_NAME = 'wc-admin-woocommerce-payments';
 

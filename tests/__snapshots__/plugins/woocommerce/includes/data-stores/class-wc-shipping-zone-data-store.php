@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Shipping_Zone_Data_Store extends \WC_Data_Store_WP
+class WC_Shipping_Zone_Data_Store
 {
     /**
      * Method to create a new shipping zone.
@@ -51,7 +51,7 @@ class WC_Shipping_Zone_Data_Store extends \WC_Data_Store_WP
      * @param  array            $args Array of args to pass to the delete method.
      * @return void
      */
-    public function delete(&$zone, $args = array(
+    public function delete(&$zone, $args = array (
 ))
     {
         // stub

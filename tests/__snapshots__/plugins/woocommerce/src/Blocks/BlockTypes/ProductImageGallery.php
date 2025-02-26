@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductImageGallery class.
  */
-class ProductImageGallery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductImageGallery
 {
     /**
      * Block name.

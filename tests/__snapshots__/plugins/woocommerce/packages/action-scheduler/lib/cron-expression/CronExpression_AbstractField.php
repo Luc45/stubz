@@ -7,7 +7,7 @@ namespace ;
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-abstract class CronExpression_AbstractField extends \
+abstract class CronExpression_AbstractField
 {
     /**
      * Check to see if a field is satisfied by a value

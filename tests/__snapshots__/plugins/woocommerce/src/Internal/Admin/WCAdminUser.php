@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * WCAdminUser Class.
  */
-class WCAdminUser extends \
+class WCAdminUser
 {
     /**
      * Class instance.

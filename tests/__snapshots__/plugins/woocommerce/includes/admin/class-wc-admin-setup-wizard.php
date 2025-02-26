@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Setup_Wizard class.
  */
-class WC_Admin_Setup_Wizard extends \
+class WC_Admin_Setup_Wizard
 {
     /**
      * Current step
@@ -19,7 +19,7 @@ class WC_Admin_Setup_Wizard extends \
      *
      * @var array
      */
-    private $steps = array(
+    private $steps = array (
 );
 
     /**
@@ -27,7 +27,7 @@ class WC_Admin_Setup_Wizard extends \
      *
      * @var array
      */
-    private $deferred_actions = array(
+    private $deferred_actions = array (
 );
 
     /**
@@ -35,7 +35,7 @@ class WC_Admin_Setup_Wizard extends \
      *
      * @var array
      */
-    private $tweets = array(
+    private $tweets = array (
   0 => 'Someone give me woo-t, I just set up a new store with #WordPress and @WooCommerce!',
   1 => 'Someone give me high five, I just set up a new store with #WordPress and @WooCommerce!',
 );

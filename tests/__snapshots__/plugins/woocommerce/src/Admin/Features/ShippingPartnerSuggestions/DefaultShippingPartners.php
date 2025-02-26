@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ShippingPartnerSuggestions;
 /**
  * Default Shipping Partners
  */
-class DefaultShippingPartners extends \
+class DefaultShippingPartners
 {
     /**
      * Get default specs.

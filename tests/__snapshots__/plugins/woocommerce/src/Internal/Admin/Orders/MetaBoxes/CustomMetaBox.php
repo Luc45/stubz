@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
 /**
  * Class CustomMetaBox.
  */
-class CustomMetaBox extends \
+class CustomMetaBox
 {
     /**
      * Update nonce shared among different meta rows.

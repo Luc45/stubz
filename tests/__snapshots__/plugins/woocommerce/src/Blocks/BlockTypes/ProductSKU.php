@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductSKU class.
  */
-class ProductSKU extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductSKU
 {
     /**
      * Block name.

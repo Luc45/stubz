@@ -7,7 +7,7 @@ namespace ;
  *
  * Handles the edit posts views and some functionality on the edit post screen for WC post types.
  */
-class WC_Admin_Post_Types extends \
+class WC_Admin_Post_Types
 {
     /**
      * Constructor.

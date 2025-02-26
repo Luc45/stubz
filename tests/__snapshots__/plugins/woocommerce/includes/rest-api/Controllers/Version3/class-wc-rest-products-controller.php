@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Products_V2_Controller
  */
-class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
+class WC_REST_Products_Controller
 {
     /**
      * Endpoint namespace.
@@ -31,7 +31,7 @@ class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
      *
      * @var array
      */
-    private $suggested_products_ids = array(
+    private $suggested_products_ids = array (
 );
 
     /**
@@ -39,7 +39,7 @@ class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
      *
      * @var array
      */
-    private $exclude_status = array(
+    private $exclude_status = array (
 );
 
     /**

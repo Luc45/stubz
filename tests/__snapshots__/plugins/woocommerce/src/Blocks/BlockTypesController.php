@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  * @since 5.0.0
  * @internal
  */
-final class BlockTypesController extends \
+final class BlockTypesController
 {
     /**
      * Instance of the asset API.

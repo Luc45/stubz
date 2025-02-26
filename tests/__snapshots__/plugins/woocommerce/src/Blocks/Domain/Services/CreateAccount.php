@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 /**
  * Service class implementing new create account emails used for order processing via the Block Based Checkout.
  */
-class CreateAccount extends \
+class CreateAccount
 {
     /**
      * Reference to the Package instance
@@ -41,7 +41,7 @@ class CreateAccount extends \
      * @param int   $customer_id       The ID of the new customer account.
      * @param array $new_customer_data Assoc array of data for the new account.
      */
-    public function customer_new_account($customer_id = 0, array $new_customer_data = array(
+    public function customer_new_account($customer_id = 0, array $new_customer_data = array (
 ))
     {
         // stub

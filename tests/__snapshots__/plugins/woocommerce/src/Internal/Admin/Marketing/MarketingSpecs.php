@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Marketing;
  * @internal
  * @since x.x.x
  */
-class MarketingSpecs extends \
+class MarketingSpecs
 {
     const KNOWLEDGE_BASE_TRANSIENT = 'wc_marketing_knowledge_base';
 

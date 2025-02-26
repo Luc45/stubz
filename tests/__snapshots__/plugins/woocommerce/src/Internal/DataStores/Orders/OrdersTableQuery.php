@@ -11,12 +11,12 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  * @property-read array $orders        Order objects, or order IDs.
  * @property-read array $posts         Alias of the $orders property.
  */
-class OrdersTableQuery extends \
+class OrdersTableQuery
 {
-    const SKIPPED_VALUES = array(
+    const SKIPPED_VALUES = array (
   0 => '',
   1 => 
-  array(
+  array (
   ),
   2 => null,
 );
@@ -30,7 +30,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $tables = array(
+    private $tables = array (
 );
 
     /**
@@ -38,7 +38,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $mappings = array(
+    private $mappings = array (
 );
 
     /**
@@ -46,7 +46,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $args = array(
+    private $args = array (
 );
 
     /**
@@ -54,7 +54,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $fields = array(
+    private $fields = array (
 );
 
     /**
@@ -62,7 +62,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $join = array(
+    private $join = array (
 );
 
     /**
@@ -70,7 +70,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $where = array(
+    private $where = array (
 );
 
     /**
@@ -78,7 +78,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $groupby = array(
+    private $groupby = array (
 );
 
     /**
@@ -86,7 +86,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $orderby = array(
+    private $orderby = array (
 );
 
     /**
@@ -94,7 +94,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $limits = array(
+    private $limits = array (
 );
 
     /**
@@ -102,7 +102,7 @@ class OrdersTableQuery extends \
      *
      * @var array
      */
-    private $orders = array(
+    private $orders = array (
 );
 
     /**
@@ -180,7 +180,7 @@ class OrdersTableQuery extends \
      *
      * @param array $args Array of query vars.
      */
-    public function __construct($args = array(
+    public function __construct($args = array (
 ))
     {
         // stub

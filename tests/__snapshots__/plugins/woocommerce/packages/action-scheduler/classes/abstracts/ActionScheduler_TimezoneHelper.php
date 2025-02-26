@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_TimezoneHelper
  */
-abstract class ActionScheduler_TimezoneHelper extends \
+abstract class ActionScheduler_TimezoneHelper
 {
     /**
      * DateTimeZone object.

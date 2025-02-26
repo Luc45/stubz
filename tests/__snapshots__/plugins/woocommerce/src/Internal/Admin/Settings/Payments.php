@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 /**
  * Payments settings service class.
  */
-class Payments extends \
+class Payments
 {
     const USER_PAYMENTS_NOX_PROFILE_KEY = 'woocommerce_payments_nox_profile';
 

@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @package Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders
  */
-class BatchProcessingServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
+class BatchProcessingServiceProvider
 {
     /**
      * Services provided by this provider.
      *
      * @var string[]
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\BatchProcessing\\BatchProcessingController',
   1 => 'Automattic\\WooCommerce\\Internal\\OrderCouponDataMigrator',
 );

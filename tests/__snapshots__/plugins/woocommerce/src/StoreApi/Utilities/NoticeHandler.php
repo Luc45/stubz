@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  * NoticeHandler class.
  * Helper class to handle notices.
  */
-class NoticeHandler extends \
+class NoticeHandler
 {
     /**
      * Convert queued error notices into an exception.

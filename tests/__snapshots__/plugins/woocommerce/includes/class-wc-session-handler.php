@@ -5,7 +5,7 @@ namespace ;
 /**
  * Session handler class.
  */
-class WC_Session_Handler extends \WC_Session
+class WC_Session_Handler
 {
     /**
      * Cookie name used for the session.

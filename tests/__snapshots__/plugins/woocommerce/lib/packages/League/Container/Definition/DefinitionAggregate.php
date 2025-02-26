@@ -2,12 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-class DefinitionAggregate extends \
+class DefinitionAggregate
 {
     /**
      * @var DefinitionInterface[]
      */
-    protected $definitions = array(
+    protected $definitions = array (
 );
 
     /**
@@ -15,7 +15,7 @@ class DefinitionAggregate extends \
      *
      * @param DefinitionInterface[] $definitions
      */
-    public function __construct(array $definitions = array(
+    public function __construct(array $definitions = array (
 ))
     {
         // stub

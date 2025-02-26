@@ -23,7 +23,7 @@ namespace ;
  * @version        1.0.0
  * @package        WooCommerce\Classes\Log_Handlers
  */
-class WC_Log_Handler_Email extends \WC_Log_Handler
+class WC_Log_Handler_Email
 {
     /**
      * Minimum log level this handler will process.
@@ -37,7 +37,7 @@ class WC_Log_Handler_Email extends \WC_Log_Handler
      *
      * @var array
      */
-    protected $recipients = array(
+    protected $recipients = array (
 );
 
     /**
@@ -45,7 +45,7 @@ class WC_Log_Handler_Email extends \WC_Log_Handler
      *
      * @var array
      */
-    protected $logs = array(
+    protected $logs = array (
 );
 
     /**

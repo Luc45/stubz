@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
 /**
  * Admin list table for orders as managed by the OrdersTableDataStore.
  */
-class ListTable extends \WP_List_Table
+class ListTable
 {
     /**
      * Order type.
@@ -19,7 +19,7 @@ class ListTable extends \WP_List_Table
      *
      * @var array
      */
-    private $request = array(
+    private $request = array (
 );
 
     /**
@@ -27,7 +27,7 @@ class ListTable extends \WP_List_Table
      *
      * @var array
      */
-    private $order_query_args = array(
+    private $order_query_args = array (
 );
 
     /**
@@ -86,7 +86,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function setup($args = array(
+    public function setup($args = array (
 )): void
     {
         // stub

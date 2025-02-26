@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * Class WCAdminHelper
  */
-class WCAdminHelper extends \
+class WCAdminHelper
 {
     const WC_ADMIN_TIMESTAMP_OPTION = 'woocommerce_admin_install_timestamp';
 

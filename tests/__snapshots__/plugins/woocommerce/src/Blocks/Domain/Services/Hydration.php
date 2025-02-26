@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 /**
  * Service class that handles hydration of API data for blocks.
  */
-class Hydration extends \
+class Hydration
 {
     /**
      * Instance of the asset data registry.
@@ -19,7 +19,7 @@ class Hydration extends \
      *
      * @var array
      */
-    protected $cached_store_notices = array(
+    protected $cached_store_notices = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Product_Usage_Rule_Set.
  */
-class WC_Product_Usage_Rule_Set extends \
+class WC_Product_Usage_Rule_Set
 {
     /**
      * Set of product feature restriction rules.

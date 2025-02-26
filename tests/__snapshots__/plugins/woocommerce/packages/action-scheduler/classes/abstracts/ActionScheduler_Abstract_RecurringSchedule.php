@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_Abstract_RecurringSchedule
  */
-abstract class ActionScheduler_Abstract_RecurringSchedule extends \ActionScheduler_Abstract_Schedule
+abstract class ActionScheduler_Abstract_RecurringSchedule
 {
     /**
      * The date & time the first instance of this schedule was setup to run (which may not be this instance).

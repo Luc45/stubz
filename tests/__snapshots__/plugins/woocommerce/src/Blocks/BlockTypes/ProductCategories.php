@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductCategories class.
  */
-class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
+class ProductCategories
 {
     /**
      * Block name.
@@ -19,7 +19,7 @@ class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      *
      * @var array
      */
-    protected $defaults = array(
+    protected $defaults = array (
   'hasCount' => true,
   'hasImage' => false,
   'hasEmpty' => false,
@@ -57,7 +57,7 @@ class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      * @param array $attributes Block attributes. Default empty array.
      * @return string space-separated list of classes.
      */
-    protected function get_container_classes($attributes = array(
+    protected function get_container_classes($attributes = array (
 ))
     {
         // stub

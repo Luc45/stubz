@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
  *
  * @since 8.5.0
  */
-class OrderAttributionBlocksController extends \
+class OrderAttributionBlocksController
 {
     /**
      * Instance of the features controller.

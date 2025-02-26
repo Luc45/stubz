@@ -7,7 +7,7 @@ namespace ;
  *
  * @since 3.9.0
  */
-class WC_Integration_MaxMind_Database_Service extends \
+class WC_Integration_MaxMind_Database_Service
 {
     const DATABASE = 'GeoLite2-Country';
 

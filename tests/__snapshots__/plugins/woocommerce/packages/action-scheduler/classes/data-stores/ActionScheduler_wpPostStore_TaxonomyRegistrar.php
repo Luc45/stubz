@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_wpPostStore_TaxonomyRegistrar extends \
+class ActionScheduler_wpPostStore_TaxonomyRegistrar
 {
     /**
      * Registrar.

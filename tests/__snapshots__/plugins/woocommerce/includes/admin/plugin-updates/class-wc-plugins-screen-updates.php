@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class WC_Plugins_Screen_Updates
  */
-class WC_Plugins_Screen_Updates extends \WC_Plugin_Updates
+class WC_Plugins_Screen_Updates
 {
     /**
      * The upgrade notice shown inline.

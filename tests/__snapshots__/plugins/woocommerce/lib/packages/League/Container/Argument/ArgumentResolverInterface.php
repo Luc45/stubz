@@ -21,7 +21,7 @@ interface ArgumentResolverInterface
      *
      * @return array
      */
-    public function reflectArguments(ReflectionFunctionAbstract $method, array $args = array(
+    public function reflectArguments(ReflectionFunctionAbstract $method, array $args = array (
 )): array;
 
 }

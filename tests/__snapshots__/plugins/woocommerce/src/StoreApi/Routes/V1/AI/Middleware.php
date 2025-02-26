@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1\AI;
  *
  * @internal
  */
-class Middleware extends \
+class Middleware
 {
     /**
      * Ensure that the user is allowed to make this request.

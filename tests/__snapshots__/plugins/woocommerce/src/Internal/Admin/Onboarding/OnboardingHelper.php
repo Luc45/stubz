@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Contains backend logic for the onboarding profile and checklist feature.
  */
-class OnboardingHelper extends \
+class OnboardingHelper
 {
     /**
      * Class instance.

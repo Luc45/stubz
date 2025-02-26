@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
  * Utility methods used for the Product Collection block.
  * {@internal This class and its methods are not intended for public use.}
  */
-class Utils extends \
+class Utils
 {
     /**
      * Prepare and execute a query for the Product Collection block.

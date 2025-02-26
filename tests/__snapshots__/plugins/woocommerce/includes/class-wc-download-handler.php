@@ -5,7 +5,7 @@ namespace ;
 /**
  * Download handler class.
  */
-class WC_Download_Handler extends \
+class WC_Download_Handler
 {
     const TRACK_DOWNLOAD_CALLBACK = 'track_partial_download';
 
@@ -169,7 +169,7 @@ class WC_Download_Handler extends \
      * @param string $filename       File name.
      * @param array  $download_range Array containing info about range download request (see {@see get_download_range} for structure).
      */
-    private static function download_headers($file_path, $filename, $download_range = array(
+    private static function download_headers($file_path, $filename, $download_range = array (
 ))
     {
         // stub
@@ -267,5 +267,5 @@ class WC_Download_Handler extends \
 
 }
 
-\define('WC_CHUNK_SIZE', 1048576);
+const WC_CHUNK_SIZE = 1048576;
 

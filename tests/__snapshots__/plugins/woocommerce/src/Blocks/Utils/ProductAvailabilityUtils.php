@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 /**
  * Utility functions for product availability.
  */
-class ProductAvailabilityUtils extends \
+class ProductAvailabilityUtils
 {
     /**
      * Get product availability information.

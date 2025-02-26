@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product category dropdown walker class.
  */
-class WC_Product_Cat_Dropdown_Walker extends \Walker
+class WC_Product_Cat_Dropdown_Walker
 {
     /**
      * What the class handles.
@@ -19,7 +19,7 @@ class WC_Product_Cat_Dropdown_Walker extends \Walker
      *
      * @var array
      */
-    public $db_fields = array(
+    public $db_fields = array (
   'parent' => 'parent',
   'id' => 'term_id',
   'slug' => 'slug',
@@ -37,7 +37,7 @@ class WC_Product_Cat_Dropdown_Walker extends \Walker
      * @param array  $args              Arguments.
      * @param int    $current_object_id Current object ID.
      */
-    public function start_el(&$output, $cat, $depth = 0, $args = array(
+    public function start_el(&$output, $cat, $depth = 0, $args = array (
 ), $current_object_id = 0)
     {
         // stub

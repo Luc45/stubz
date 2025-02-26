@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
+class WC_Product_Data_Store_CPT
 {
     /**
      * Data stored in meta keys, but not considered "meta".
@@ -15,7 +15,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_visibility',
   1 => '_sku',
   2 => '_global_unique_id',
@@ -69,7 +69,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      *
      * @var array
      */
-    protected $must_exist_meta_keys = array(
+    protected $must_exist_meta_keys = array (
   0 => '_tax_class',
 );
 
@@ -85,7 +85,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      *
      * @var array
      */
-    protected $updated_props = array(
+    protected $updated_props = array (
 );
 
     /**
@@ -149,7 +149,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      * @param WC_Product $product Product object.
      * @param array      $args Array of args to pass to the delete method.
      */
-    public function delete(&$product, $args = array(
+    public function delete(&$product, $args = array (
 ))
     {
         // stub
@@ -431,7 +431,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      * @param  array      $match_attributes Array of attributes we want to try to match.
      * @return int Matching variation ID or 0.
      */
-    public function find_matching_product_variation($product, $match_attributes = array(
+    public function find_matching_product_variation($product, $match_attributes = array (
 ))
     {
         // stub
@@ -448,8 +448,8 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      * @param  array      $metadata Key value pairs to set as meta data on created variations.
      * @return int        Number of created variations.
      */
-    public function create_all_product_variations($product, $limit = -1, $default_values = array(
-), $metadata = array(
+    public function create_all_product_variations($product, $limit = -1, $default_values = array (
+), $metadata = array (
 ))
     {
         // stub
@@ -599,7 +599,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
      * @return array|object
      * @see wc_get_products
      */
-    public function get_products($args = array(
+    public function get_products($args = array (
 ))
     {
         // stub

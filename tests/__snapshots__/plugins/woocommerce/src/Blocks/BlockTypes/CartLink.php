@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CartLink class.
  */
-class CartLink extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class CartLink
 {
     /**
      * Block name.

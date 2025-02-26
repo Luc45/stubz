@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_IntervalSchedule
  */
-class ActionScheduler_IntervalSchedule extends \ActionScheduler_Abstract_RecurringSchedule
+class ActionScheduler_IntervalSchedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.

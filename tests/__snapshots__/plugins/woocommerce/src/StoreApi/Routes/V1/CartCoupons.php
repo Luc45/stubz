@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * CartCoupons class.
  */
-class CartCoupons extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
+class CartCoupons
 {
     const IDENTIFIER = 'cart-coupons';
 

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\PluginsInstallLoggers;
 /**
  * A logger to log plugin installation progress in real time to an option.
  */
-class AsyncPluginsInstallLogger extends \
+class AsyncPluginsInstallLogger
 {
     /**
      * Variable to store logs.
@@ -102,7 +102,7 @@ class AsyncPluginsInstallLogger extends \
      * @param array $data return data from install_plugins().
      * @return void
      */
-    public function complete($data = array(
+    public function complete($data = array (
 ))
     {
         // stub

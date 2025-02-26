@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Variations;
  *
  * @deprecated 9.3.0 Variations\Query class is deprecated. Please use `GenericQuery`, \WC_Object_Query`, or use `DataStore` directly.
  */
-class Query extends \Automattic\WooCommerce\Admin\API\Reports\Query
+class Query
 {
     /**
      * Valid fields for Products report.

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  *
  * @internal
  */
-class ContentProcessor extends \
+class ContentProcessor
 {
     /**
      * Summarize the business description to ensure better results are returned by AI.

@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
  * Marketing Recommendations engine.
  * This goes through the specs and gets marketing recommendations.
  */
-class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
+class Init
 {
     const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
 
@@ -130,7 +130,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      * @param array &$visited Reference to an array keeping track of all seen objects to detect circular references.
      * @return array
      */
-    public static function object_to_array($obj, &$visited = array(
+    public static function object_to_array($obj, &$visited = array (
 ))
     {
         // stub

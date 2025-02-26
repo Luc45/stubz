@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Shop_Customizer class.
  */
-class WC_Shop_Customizer extends \
+class WC_Shop_Customizer
 {
     /**
      * Constructor.

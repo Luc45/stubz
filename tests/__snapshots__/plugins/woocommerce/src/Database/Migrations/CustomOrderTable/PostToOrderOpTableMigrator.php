@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  *
  * @package Automattic\WooCommerce\Database\Migrations\CustomOrderTable
  */
-class PostToOrderOpTableMigrator extends \Automattic\WooCommerce\Database\Migrations\MetaToCustomTableMigrator
+class PostToOrderOpTableMigrator
 {
     /**
      * Get schema config for wp_posts and wc_order_operational_detail table.

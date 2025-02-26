@@ -9,7 +9,7 @@ namespace ;
  *
  * Creates custom tables for storing scheduled actions
  */
-class ActionScheduler_StoreSchema extends \ActionScheduler_Abstract_Schema
+class ActionScheduler_StoreSchema
 {
     const ACTIONS_TABLE = 'actionscheduler_actions';
 

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductAverageRating class.
  */
-class ProductAverageRating extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductAverageRating
 {
     /**
      * Block name.

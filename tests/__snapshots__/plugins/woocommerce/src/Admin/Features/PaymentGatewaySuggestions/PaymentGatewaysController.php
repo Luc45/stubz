@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
 /**
  * PaymentGateway class
  */
-class PaymentGatewaysController extends \
+class PaymentGatewaysController
 {
     /**
      * Initialize payment gateway changes.

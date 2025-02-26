@@ -5,7 +5,7 @@ namespace ;
 /**
  * Register WP admin settings class.
  */
-class WC_Register_WP_Admin_Settings extends \
+class WC_Register_WP_Admin_Settings
 {
     /**
      * Contains the current class to pull settings from.

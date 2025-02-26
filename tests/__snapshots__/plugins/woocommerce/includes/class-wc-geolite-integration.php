@@ -7,7 +7,7 @@ namespace ;
  *
  * @deprecated 3.9.0
  */
-class WC_Geolite_Integration extends \
+class WC_Geolite_Integration
 {
     /**
      * MaxMind GeoLite2 database path.

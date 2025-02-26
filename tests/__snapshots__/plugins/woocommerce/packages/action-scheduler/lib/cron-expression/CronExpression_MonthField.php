@@ -7,7 +7,7 @@ namespace ;
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_MonthField extends \CronExpression_AbstractField
+class CronExpression_MonthField
 {
     /**
      * {@inheritdoc}

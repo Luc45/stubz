@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CheckoutShippingMethodsBlock class.
  */
-class CheckoutShippingMethodsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
+class CheckoutShippingMethodsBlock
 {
     /**
      * Block name.

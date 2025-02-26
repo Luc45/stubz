@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
+abstract class Abstract_WC_Order_Data_Store_CPT
 {
     /**
      * Internal meta type used to store order data.
@@ -22,7 +22,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_order_currency',
   1 => '_cart_discount',
   2 => '_cart_discount_tax',
@@ -40,7 +40,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
      *
      * @var string[]
      */
-    protected $internal_data_store_key_getters = array(
+    protected $internal_data_store_key_getters = array (
 );
 
     /**
@@ -117,7 +117,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
      *
      * @return void
      */
-    public function delete(&$order, $args = array(
+    public function delete(&$order, $args = array (
 ))
     {
         // stub

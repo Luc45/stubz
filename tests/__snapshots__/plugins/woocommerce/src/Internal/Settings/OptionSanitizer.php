@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Settings;
  *
  * @since 6.6.0
  */
-class OptionSanitizer extends \
+class OptionSanitizer
 {
     /**
      * OptionSanitizer constructor.

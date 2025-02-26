@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
  *
  * @deprecated 7.2.0
  */
-class TaskListSection extends \
+class TaskListSection
 {
     /**
      * Title.
@@ -42,7 +42,7 @@ class TaskListSection extends \
      *
      * @var array
      */
-    public $task_names = array(
+    public $task_names = array (
 );
 
     /**
@@ -58,7 +58,7 @@ class TaskListSection extends \
      * @param array         $data Task list data.
      * @param TaskList|null $task_list Parent task list.
      */
-    public function __construct($data = array(
+    public function __construct($data = array (
 ), $task_list = null)
     {
         // stub

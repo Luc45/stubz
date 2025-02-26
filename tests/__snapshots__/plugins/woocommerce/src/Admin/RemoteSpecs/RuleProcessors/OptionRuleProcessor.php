@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that performs a comparison operation against an option value.
  */
-class OptionRuleProcessor extends \
+class OptionRuleProcessor
 {
     /**
      * Performs a comparison operation against the option value.

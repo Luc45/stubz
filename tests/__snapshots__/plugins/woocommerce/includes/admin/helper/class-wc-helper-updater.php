@@ -8,7 +8,7 @@ namespace ;
  * Contains the logic to fetch available updates and hook into Core's update
  * routines to serve WooCommerce.com-provided packages.
  */
-class WC_Helper_Updater extends \
+class WC_Helper_Updater
 {
     /**
      * Loads the class, runs on init.

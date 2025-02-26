@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 /**
  * ArrayUtils class used for custom functions to operate on arrays
  */
-class ArrayUtils extends \
+class ArrayUtils
 {
     /**
      * Join a string with a natural language conjunction at the end.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features;
 /**
  * Shows print shipping label banner on edit order page.
  */
-class TransientNotices extends \
+class TransientNotices
 {
     const QUEUE_OPTION = 'woocommerce_admin_transient_notices_queue';
 

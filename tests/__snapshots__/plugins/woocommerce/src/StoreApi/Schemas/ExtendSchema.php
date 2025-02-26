@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas;
  * @see woocommerce_store_api_register_payment_requirements()
  * @see woocommerce_store_api_get_formatter()
  */
-final class ExtendSchema extends \
+final class ExtendSchema
 {
     /**
      * List of Store API schema that is allowed to be extended by extensions.
@@ -33,7 +33,7 @@ final class ExtendSchema extends \
      *
      * @var array
      */
-    private $extend_data = array(
+    private $extend_data = array (
 );
 
     /**
@@ -41,7 +41,7 @@ final class ExtendSchema extends \
      *
      * @var array
      */
-    private $callback_methods = array(
+    private $callback_methods = array (
 );
 
     /**
@@ -49,7 +49,7 @@ final class ExtendSchema extends \
      *
      * @var array
      */
-    private $payment_requirements = array(
+    private $payment_requirements = array (
 );
 
     /**
@@ -147,7 +147,7 @@ final class ExtendSchema extends \
      * @return object Returns an casted object with registered endpoint data.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_endpoint_data($endpoint, array $passed_args = array(
+    public function get_endpoint_data($endpoint, array $passed_args = array (
 ))
     {
         // stub
@@ -161,7 +161,7 @@ final class ExtendSchema extends \
      * @return object Returns an array with registered schema data.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_endpoint_schema($endpoint, array $passed_args = array(
+    public function get_endpoint_schema($endpoint, array $passed_args = array (
 ))
     {
         // stub
@@ -175,7 +175,7 @@ final class ExtendSchema extends \
      * @return array Returns a list of payment requirements.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_payment_requirements(array $requirements = array(
+    public function get_payment_requirements(array $requirements = array (
   0 => 'products',
 ))
     {

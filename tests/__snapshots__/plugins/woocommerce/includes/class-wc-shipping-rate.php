@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shipping rate class.
  */
-class WC_Shipping_Rate extends \
+class WC_Shipping_Rate
 {
     /**
      * Stores data for this rate.
@@ -14,14 +14,14 @@ class WC_Shipping_Rate extends \
      * @since 9.2.0 Added description and delivery_time.
      * @var   array
      */
-    protected $data = array(
+    protected $data = array (
   'id' => '',
   'method_id' => '',
   'instance_id' => 0,
   'label' => '',
   'cost' => 0,
   'taxes' => 
-  array(
+  array (
   ),
   'tax_status' => 'taxable',
   'description' => '',
@@ -34,7 +34,7 @@ class WC_Shipping_Rate extends \
      * @since 2.6.0
      * @var   array
      */
-    protected $meta_data = array(
+    protected $meta_data = array (
 );
 
     /**
@@ -50,7 +50,7 @@ class WC_Shipping_Rate extends \
      * @param string  $description   Shipping rate description.
      * @param string  $delivery_time Shipping rate delivery time.
      */
-    public function __construct($id = '', $label = '', $cost = 0, $taxes = array(
+    public function __construct($id = '', $label = '', $cost = 0, $taxes = array (
 ), $method_id = '', $instance_id = 0, $tax_status = 'taxable', $description = '', $delivery_time = '')
     {
         // stub

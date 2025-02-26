@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features;
 /**
  * Features Class.
  */
-class Features extends \
+class Features
 {
     /**
      * Class instance.
@@ -19,13 +19,13 @@ class Features extends \
      *
      * @var array
      */
-    protected static $optional_features = array(
+    protected static $optional_features = array (
   'analytics' => 
-  array(
+  array (
     'default' => 'yes',
   ),
   'remote-inbox-notifications' => 
-  array(
+  array (
     'default' => 'yes',
   ),
 );
@@ -35,7 +35,7 @@ class Features extends \
      *
      * @var array
      */
-    protected static $beta_features = array(
+    protected static $beta_features = array (
   0 => 'settings',
 );
 

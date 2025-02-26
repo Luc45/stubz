@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments\Integrations;
  *
  * @since 2.6.0
  */
-final class Cheque extends \Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType
+final class Cheque
 {
     /**
      * Payment method name defined by payment methods extending this class.

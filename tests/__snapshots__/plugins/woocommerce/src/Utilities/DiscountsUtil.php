@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * The DiscountsUtil class provides utilities to assist discounts calculation and validation.
  */
-class DiscountsUtil extends \
+class DiscountsUtil
 {
     /**
      * Checks if the given email address(es) matches the ones specified on the coupon.

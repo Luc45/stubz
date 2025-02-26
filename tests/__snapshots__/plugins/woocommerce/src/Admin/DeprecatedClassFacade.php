@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * A facade to allow deprecating an entire class.
  */
-class DeprecatedClassFacade extends \
+class DeprecatedClassFacade
 {
     /**
      * The instance that this facade covers over.
@@ -33,7 +33,7 @@ class DeprecatedClassFacade extends \
      *
      * @var array
      */
-    private static $logged_messages = array(
+    private static $logged_messages = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the Analytics feature.
  */
-class Analytics extends \
+class Analytics
 {
     const TOGGLE_OPTION_NAME = 'woocommerce_analytics_enabled';
 

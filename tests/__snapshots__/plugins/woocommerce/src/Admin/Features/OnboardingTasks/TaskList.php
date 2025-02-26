@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * Task List class.
  */
-class TaskList extends \
+class TaskList
 {
     const HIDDEN_OPTION = 'woocommerce_task_list_hidden_lists';
 
@@ -46,7 +46,7 @@ class TaskList extends \
      *
      * @var array
      */
-    public $tasks = array(
+    public $tasks = array (
 );
 
     /**
@@ -54,7 +54,7 @@ class TaskList extends \
      *
      * @var array
      */
-    public $sort_by = array(
+    public $sort_by = array (
 );
 
     /**
@@ -76,7 +76,7 @@ class TaskList extends \
      *
      * @var array
      */
-    public $options = array(
+    public $options = array (
 );
 
     /**
@@ -86,7 +86,7 @@ class TaskList extends \
      *
      * @var array
      */
-    private $sections = array(
+    private $sections = array (
 );
 
     /**
@@ -96,7 +96,7 @@ class TaskList extends \
      *
      * @var array
      */
-    public $task_class_id_map = array(
+    public $task_class_id_map = array (
 );
 
     /**
@@ -104,7 +104,7 @@ class TaskList extends \
      *
      * @param array $data Task list data.
      */
-    public function __construct($data = array(
+    public function __construct($data = array (
 ))
     {
         // stub
@@ -237,7 +237,7 @@ class TaskList extends \
      * @param array $sort_by list of columns with sort order.
      * @return TaskList returns $this, for chaining.
      */
-    public function sort_tasks($sort_by = array(
+    public function sort_tasks($sort_by = array (
 ))
     {
         // stub

@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  * ValidationUtils class.
  * Helper class which validates and update customer info.
  */
-class ValidationUtils extends \
+class ValidationUtils
 {
     /**
      * Get list of states for a country.

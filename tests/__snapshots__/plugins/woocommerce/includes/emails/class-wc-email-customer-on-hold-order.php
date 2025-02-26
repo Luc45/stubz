@@ -12,7 +12,7 @@ namespace ;
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Customer_On_Hold_Order extends \WC_Email
+class WC_Email_Customer_On_Hold_Order
 {
     /**
      * Constructor.

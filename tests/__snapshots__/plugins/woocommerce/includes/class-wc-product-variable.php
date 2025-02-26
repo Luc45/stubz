@@ -5,7 +5,7 @@ namespace ;
 /**
  * Variable product class.
  */
-class WC_Product_Variable extends \WC_Product
+class WC_Product_Variable
 {
     /**
      * Array of children variation IDs. Determined by children.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin class.
  */
-class WC_Admin extends \
+class WC_Admin
 {
     /**
      * Constructor.

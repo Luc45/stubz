@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Brands_Admin class.
  */
-class WC_Brands_Admin extends \
+class WC_Brands_Admin
 {
     /**
      * Settings array (Deprecated).
@@ -26,7 +26,7 @@ class WC_Brands_Admin extends \
      *
      * @var array
      */
-    public $fields = array(
+    public $fields = array (
 );
 
     /**

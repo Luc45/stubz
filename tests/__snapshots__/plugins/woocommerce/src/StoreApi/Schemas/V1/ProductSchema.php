@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * ProductSchema class.
  */
-class ProductSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ProductSchema
 {
     const IDENTIFIER = 'product';
 

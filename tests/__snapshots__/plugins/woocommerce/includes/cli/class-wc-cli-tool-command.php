@@ -11,7 +11,7 @@ namespace ;
  * @version 3.0.0
  * @package WooCommerce
  */
-class WC_CLI_Tool_Command extends \
+class WC_CLI_Tool_Command
 {
     /**
      * Registers just a 'list' and 'run' command to the WC CLI

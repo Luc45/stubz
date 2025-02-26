@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_Abstract_Schedule
  */
-abstract class ActionScheduler_Schedule_Deprecated extends \
+abstract class ActionScheduler_Schedule_Deprecated
 {
     /**
      * Get the date & time this schedule was created to run, or calculate when it should be run

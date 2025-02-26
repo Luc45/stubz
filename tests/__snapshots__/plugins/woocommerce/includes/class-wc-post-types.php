@@ -5,7 +5,7 @@ namespace ;
 /**
  * Post types Class.
  */
-class WC_Post_Types extends \
+class WC_Post_Types
 {
     /**
      * Hook in methods.

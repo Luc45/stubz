@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Launch_Checklist
  */
-class LaunchChecklist extends \
+class LaunchChecklist
 {
     const NOTE_NAME = 'wc-admin-launch-checklist';
 

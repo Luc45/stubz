@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Utility functions meant for helping in migration from posts tables to custom order tables.
  */
-class COTMigrationUtil extends \
+class COTMigrationUtil
 {
     /**
      * Custom order table controller.
@@ -115,7 +115,7 @@ class COTMigrationUtil extends \
      *
      * @return bool Whether the passed param is an order.
      */
-    public function is_order($order_id, array $types = array(
+    public function is_order($order_id, array $types = array (
   0 => 'shop_order',
 )): bool
     {

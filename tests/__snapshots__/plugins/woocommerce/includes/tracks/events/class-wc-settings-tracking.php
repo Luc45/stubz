@@ -5,14 +5,14 @@ namespace ;
 /**
  * This class adds actions to track usage of WooCommerce Settings.
  */
-class WC_Settings_Tracking extends \
+class WC_Settings_Tracking
 {
     /**
      * List of allowed WooCommerce settings to potentially track updates for.
      *
      * @var array
      */
-    protected $allowed_options = array(
+    protected $allowed_options = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $updated_options = array(
+    protected $updated_options = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $dropdown_menu_options = array(
+    protected $dropdown_menu_options = array (
 );
 
     /**
@@ -36,7 +36,7 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $modified_options = array(
+    protected $modified_options = array (
 );
 
     /**
@@ -44,7 +44,7 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $deleted_options = array(
+    protected $deleted_options = array (
 );
 
     /**
@@ -52,7 +52,7 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $added_options = array(
+    protected $added_options = array (
 );
 
     /**
@@ -60,12 +60,12 @@ class WC_Settings_Tracking extends \
      *
      * @var array
      */
-    protected $toggled_options = array(
+    protected $toggled_options = array (
   'enabled' => 
-  array(
+  array (
   ),
   'disabled' => 
-  array(
+  array (
   ),
 );
 

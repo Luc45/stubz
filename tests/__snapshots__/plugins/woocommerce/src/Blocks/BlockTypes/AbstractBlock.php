@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AbstractBlock class.
  */
-abstract class AbstractBlock extends \
+abstract class AbstractBlock
 {
     /**
      * Block namespace.
@@ -80,7 +80,7 @@ abstract class AbstractBlock extends \
      * @param WP_Block|null  $block      Block instance.
      * @return string Rendered block type output.
      */
-    public function render_callback($attributes = array(
+    public function render_callback($attributes = array (
 ), $content = '', $block = null)
     {
         // stub
@@ -295,7 +295,7 @@ abstract class AbstractBlock extends \
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub
@@ -317,7 +317,7 @@ abstract class AbstractBlock extends \
      *
      * @param array $attributes Any attributes that currently are available from the block.
      */
-    protected function enqueue_scripts(array $attributes = array(
+    protected function enqueue_scripts(array $attributes = array (
 ))
     {
         // stub

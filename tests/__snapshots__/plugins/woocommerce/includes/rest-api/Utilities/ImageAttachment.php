@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\RestApi\Utilities;
 /**
  * ImageAttachment class.
  */
-class ImageAttachment extends \
+class ImageAttachment
 {
     /**
      * Attachment ID.

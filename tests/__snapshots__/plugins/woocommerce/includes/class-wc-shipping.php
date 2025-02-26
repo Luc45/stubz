@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shipping class.
  */
-class WC_Shipping extends \
+class WC_Shipping
 {
     /**
      * True if shipping is enabled.
@@ -26,7 +26,7 @@ class WC_Shipping extends \
      *
      * @var array
      */
-    public $shipping_classes = array(
+    public $shipping_classes = array (
 );
 
     /**
@@ -34,7 +34,7 @@ class WC_Shipping extends \
      *
      * @var array
      */
-    public $packages = array(
+    public $packages = array (
 );
 
     /**
@@ -122,7 +122,7 @@ class WC_Shipping extends \
      * @param array $package Package information.
      * @return WC_Shipping_Method[]
      */
-    public function load_shipping_methods($package = array(
+    public function load_shipping_methods($package = array (
 ))
     {
         // stub
@@ -174,7 +174,7 @@ class WC_Shipping extends \
      * @param array $packages multi-dimensional array of cart items to calc shipping for.
      * @return array Array of calculated packages.
      */
-    public function calculate_shipping($packages = array(
+    public function calculate_shipping($packages = array (
 ))
     {
         // stub
@@ -203,7 +203,7 @@ class WC_Shipping extends \
      *
      * @return array|bool
      */
-    public function calculate_shipping_for_package($package = array(
+    public function calculate_shipping_for_package($package = array (
 ), $package_key = 0)
     {
         // stub

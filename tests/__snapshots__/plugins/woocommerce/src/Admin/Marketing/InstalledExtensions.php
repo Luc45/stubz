@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Marketing;
 /**
  * Installed Marketing Extensions class.
  */
-class InstalledExtensions extends \
+class InstalledExtensions
 {
     /**
      * Gets an array of plugin data for the "Installed marketing extensions" card.

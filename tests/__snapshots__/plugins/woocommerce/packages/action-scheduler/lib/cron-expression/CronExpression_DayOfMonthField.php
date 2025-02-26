@@ -20,7 +20,7 @@ namespace ;
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_DayOfMonthField extends \CronExpression_AbstractField
+class CronExpression_DayOfMonthField
 {
     /**
      * Get the nearest day of the week for a given day in a month

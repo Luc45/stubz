@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * AdditionalFields class.
  */
-class AdditionalFields extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class AdditionalFields
 {
     /**
      * Block name.
@@ -23,7 +23,7 @@ class AdditionalFields extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCo
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub

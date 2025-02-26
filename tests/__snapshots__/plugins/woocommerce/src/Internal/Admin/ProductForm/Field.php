@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductForm;
 /**
  * Field class.
  */
-class Field extends \Automattic\WooCommerce\Internal\Admin\ProductForm\Component
+class Field
 {
     /**
      * Constructor

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that negates the rules in the rule's operand.
  */
-class NotRuleProcessor extends \
+class NotRuleProcessor
 {
     /**
      * The rule evaluator to use.

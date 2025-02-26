@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_NullSchedule
  */
-class ActionScheduler_NullSchedule extends \ActionScheduler_SimpleSchedule
+class ActionScheduler_NullSchedule
 {
     /**
      * DateTime instance.

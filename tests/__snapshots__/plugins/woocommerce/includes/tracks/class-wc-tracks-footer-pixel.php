@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Tracks_Footer_Pixel class.
  */
-class WC_Tracks_Footer_Pixel extends \
+class WC_Tracks_Footer_Pixel
 {
     /**
      * Singleton instance.
@@ -19,7 +19,7 @@ class WC_Tracks_Footer_Pixel extends \
      *
      * @var array
      */
-    protected $events = array(
+    protected $events = array (
 );
 
     /**

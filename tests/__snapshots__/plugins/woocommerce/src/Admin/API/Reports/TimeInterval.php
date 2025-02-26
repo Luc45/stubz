@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 /**
  * Date & time interval and numeric range handling class for Reporting API.
  */
-class TimeInterval extends \
+class TimeInterval
 {
     /**
      * Format string for ISO DateTime formatter.

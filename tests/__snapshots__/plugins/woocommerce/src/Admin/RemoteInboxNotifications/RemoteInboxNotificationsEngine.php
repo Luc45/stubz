@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
  * This goes through the specs and runs (creates admin notes) for those
  * specs that are able to be triggered.
  */
-class RemoteInboxNotificationsEngine extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
+class RemoteInboxNotificationsEngine
 {
     const STORED_STATE_OPTION_NAME = 'wc_remote_inbox_notifications_stored_state';
 

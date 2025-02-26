@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks;
 /**
  * Contains all the option names used by the plugin.
  */
-class Options extends \
+class Options
 {
     const WC_BLOCK_VERSION = 'wc_blocks_version';
 

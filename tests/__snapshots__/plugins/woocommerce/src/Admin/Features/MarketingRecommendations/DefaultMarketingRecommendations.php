@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
 /**
  * Default Marketing Recommendations
  */
-class DefaultMarketingRecommendations extends \
+class DefaultMarketingRecommendations
 {
     /**
      * Get default specs.

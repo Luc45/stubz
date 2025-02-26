@@ -19,7 +19,7 @@ namespace ;
  * @codeCoverageIgnore
  * @since  2.0.0
  */
-abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
+abstract class ActionScheduler_Abstract_ListTable
 {
     /**
      * The table name
@@ -48,7 +48,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $search_by = array(
+    protected $search_by = array (
 );
 
     /**
@@ -58,7 +58,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $columns = array(
+    protected $columns = array (
 );
 
     /**
@@ -71,7 +71,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $row_actions = array(
+    protected $row_actions = array (
 );
 
     /**
@@ -87,7 +87,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $sort_by = array(
+    protected $sort_by = array (
 );
 
     /**
@@ -95,7 +95,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var string
      */
-    protected $filter_by = array(
+    protected $filter_by = array (
 );
 
     /**
@@ -103,7 +103,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $status_counts = array(
+    protected $status_counts = array (
 );
 
     /**
@@ -111,7 +111,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $admin_notices = array(
+    protected $admin_notices = array (
 );
 
     /**
@@ -134,7 +134,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var array
      */
-    protected $bulk_actions = array(
+    protected $bulk_actions = array (
 );
 
     /**

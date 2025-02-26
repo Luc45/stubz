@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin;
  *
  * @deprecated since 8.8.0
  */
-abstract class DataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
+abstract class DataSourcePoller
 {
     /**
      * Log a deprecation to the error log.
@@ -26,8 +26,8 @@ abstract class DataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpec
      * @param array  $data_sources urls for data sources.
      * @param array  $args Options for DataSourcePoller.
      */
-    public function __construct($id, $data_sources = array(
-), $args = array(
+    public function __construct($id, $data_sources = array (
+), $args = array (
 ))
     {
         // stub

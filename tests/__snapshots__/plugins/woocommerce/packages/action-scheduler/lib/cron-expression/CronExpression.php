@@ -15,7 +15,7 @@ namespace ;
  * @author Michael Dowling <mtdowling@gmail.com>
  * @link http://en.wikipedia.org/wiki/Cron
  */
-class CronExpression extends \ implements \Stringable
+class CronExpression implements \Stringable
 {
     const MINUTE = 0;
 
@@ -42,7 +42,7 @@ class CronExpression extends \ implements \Stringable
     /**
      * @var array Order in which to test of cron parts
      */
-    private static $order = array(
+    private static $order = array (
   0 => 5,
   1 => 3,
   2 => 2,

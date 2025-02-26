@@ -7,7 +7,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_WPCommentCleaner extends \
+class ActionScheduler_WPCommentCleaner
 {
     /**
      * Post migration hook used to cleanup the WP comment table.

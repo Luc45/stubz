@@ -5,7 +5,7 @@ namespace ;
 /**
  * Autoloader class.
  */
-class WC_Autoloader extends \
+class WC_Autoloader
 {
     /**
      * Path to the includes directory.

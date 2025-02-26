@@ -6,7 +6,7 @@ namespace ;
  * WC_Tracks_Event class.
  */
 #[AllowDynamicProperties]
-class WC_Tracks_Event extends \
+class WC_Tracks_Event
 {
     const EVENT_NAME_REGEX = '/^(([a-z0-9]+)_){1}([a-z0-9_]+)$/';
 

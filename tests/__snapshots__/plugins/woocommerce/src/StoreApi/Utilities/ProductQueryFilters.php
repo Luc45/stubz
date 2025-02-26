@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 /**
  * Product Query filters class.
  */
-class ProductQueryFilters extends \
+class ProductQueryFilters
 {
     /**
      * Get filtered min price for current products.
@@ -50,7 +50,7 @@ class ProductQueryFilters extends \
      * @param array            $attributes Attributes to count, either names or ids.
      * @return array termId=>count pairs.
      */
-    public function get_attribute_counts($request, $attributes = array(
+    public function get_attribute_counts($request, $attributes = array (
 ))
     {
         // stub

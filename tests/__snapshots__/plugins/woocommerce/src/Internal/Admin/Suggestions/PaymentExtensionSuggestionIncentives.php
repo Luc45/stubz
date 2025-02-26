@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions;
 /**
  * Partner payment extension incentives provider class.
  */
-class PaymentExtensionSuggestionIncentives extends \
+class PaymentExtensionSuggestionIncentives
 {
     /**
      * The map of suggestion IDs to their respective incentives provider classes.
@@ -19,7 +19,7 @@ class PaymentExtensionSuggestionIncentives extends \
      *
      * @var Incentive[]
      */
-    private array $instances = array(
+    private array $instances = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductTag class.
  */
-class ProductTag extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProductGrid
+class ProductTag
 {
     /**
      * Block name.
@@ -41,7 +41,7 @@ class ProductTag extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProdu
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

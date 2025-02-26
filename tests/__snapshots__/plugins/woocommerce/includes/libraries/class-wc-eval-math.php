@@ -7,7 +7,7 @@ namespace ;
  *
  * Based on EvalMath by Miles Kaufman Copyright (C) 2005 Miles Kaufmann http://www.twmagic.com/.
  */
-class WC_Eval_Math extends \
+class WC_Eval_Math
 {
     /**
      * Last error.
@@ -21,7 +21,7 @@ class WC_Eval_Math extends \
      *
      * @var array
      */
-    public static $v = array(
+    public static $v = array (
   'e' => 2.71,
   'pi' => 3.14,
 );
@@ -31,7 +31,7 @@ class WC_Eval_Math extends \
      *
      * @var array
      */
-    public static $f = array(
+    public static $f = array (
 );
 
     /**
@@ -39,7 +39,7 @@ class WC_Eval_Math extends \
      *
      * @var array
      */
-    public static $vb = array(
+    public static $vb = array (
   0 => 'e',
   1 => 'pi',
 );
@@ -49,7 +49,7 @@ class WC_Eval_Math extends \
      *
      * @var array
      */
-    public static $fb = array(
+    public static $fb = array (
 );
 
     /**
@@ -83,7 +83,7 @@ class WC_Eval_Math extends \
      *
      * @return mixed
      */
-    private static function pfx($tokens, $vars = array(
+    private static function pfx($tokens, $vars = array (
 ))
     {
         // stub
@@ -119,14 +119,14 @@ namespace ;
 /**
  * Class WC_Eval_Math_Stack.
  */
-class WC_Eval_Math_Stack extends \
+class WC_Eval_Math_Stack
 {
     /**
      * Stack array.
      *
      * @var array
      */
-    public $stack = array(
+    public $stack = array (
 );
 
     /**

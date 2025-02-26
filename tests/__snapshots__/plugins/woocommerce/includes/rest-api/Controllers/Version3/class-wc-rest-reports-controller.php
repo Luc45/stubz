@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Reports_V2_Controller
  */
-class WC_REST_Reports_Controller extends \WC_REST_Reports_V2_Controller
+class WC_REST_Reports_Controller
 {
     /**
      * Endpoint namespace.

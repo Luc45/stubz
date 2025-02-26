@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class ArrayValues extends \
+class ArrayValues
 {
     /**
      * Search array value by one of its key.
@@ -18,7 +18,7 @@ class ArrayValues extends \
      *
      * @return mixed
      */
-    public function transform($value, stdClass|null $arguments = null, $default_value = array(
+    public function transform($value, stdClass|null $arguments = null, $default_value = array (
 ))
     {
         // stub

@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class LogMigrator extends \
+class LogMigrator
 {
     /**
      * Source logger instance.

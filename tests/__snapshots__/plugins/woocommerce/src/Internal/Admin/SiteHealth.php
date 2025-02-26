@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * SiteHealth class.
  */
-class SiteHealth extends \
+class SiteHealth
 {
     /**
      * Class instance.

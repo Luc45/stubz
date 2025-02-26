@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Checkout class.
  */
-class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
+class Checkout
 {
     const IDENTIFIER = 'checkout';
 
@@ -124,7 +124,7 @@ class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRo
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array(
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
 ))
     {
         // stub
@@ -138,7 +138,7 @@ class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRo
      * @param array     $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array(
+    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array (
 ))
     {
         // stub

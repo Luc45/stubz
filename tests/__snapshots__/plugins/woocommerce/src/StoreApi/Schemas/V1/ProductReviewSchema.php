@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * ProductReviewSchema class.
  */
-class ProductReviewSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ProductReviewSchema
 {
     const IDENTIFIER = 'product-review';
 

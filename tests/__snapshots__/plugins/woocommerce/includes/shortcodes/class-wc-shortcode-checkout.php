@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shortcode checkout class.
  */
-class WC_Shortcode_Checkout extends \
+class WC_Shortcode_Checkout
 {
     /**
      * Get the shortcode content.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * AdditionalFieldsWrapper class.
  */
-class AdditionalFieldsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class AdditionalFieldsWrapper
 {
     /**
      * Block name.
@@ -22,7 +22,7 @@ class AdditionalFieldsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\
      * @param array        $attributes Block attributes.
      * @param string       $content Original block content.
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub
@@ -35,7 +35,7 @@ class AdditionalFieldsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

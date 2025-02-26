@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Payments Task
  */
-class Payments extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class Payments
 {
     /**
      * Used to cache is_complete() method result.

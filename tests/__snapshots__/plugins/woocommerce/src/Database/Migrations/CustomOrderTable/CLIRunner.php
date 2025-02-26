@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  *
  * Class CLIRunner
  */
-class CLIRunner extends \
+class CLIRunner
 {
     /**
      * CustomOrdersTableController instance.
@@ -87,8 +87,8 @@ class CLIRunner extends \
      *
      * @return int The number of orders to be migrated.*
      */
-    public function count_unmigrated($args = array(
-), $assoc_args = array(
+    public function count_unmigrated($args = array (
+), $assoc_args = array (
 )): int
     {
         // stub
@@ -112,8 +112,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function sync($args = array(
-), $assoc_args = array(
+    public function sync($args = array (
+), $assoc_args = array (
 ))
     {
         // stub
@@ -142,8 +142,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function migrate(array $args = array(
-), array $assoc_args = array(
+    public function migrate(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -195,8 +195,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function verify_cot_data($args = array(
-), $assoc_args = array(
+    public function verify_cot_data($args = array (
+), $assoc_args = array (
 ))
     {
         // stub
@@ -272,8 +272,8 @@ class CLIRunner extends \
      *
      * @return void
      */
-    public function enable(array $args = array(
-), array $assoc_args = array(
+    public function enable(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -341,8 +341,8 @@ class CLIRunner extends \
      * @param array $assoc_args Associative arguments (options) passed to the command.
      * @return void
      */
-    public function cleanup_post_data(array $args = array(
-), array $assoc_args = array(
+    public function cleanup_post_data(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -356,8 +356,8 @@ class CLIRunner extends \
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function status(array $args = array(
-), array $assoc_args = array(
+    public function status(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -395,8 +395,8 @@ class CLIRunner extends \
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function diff(array $args = array(
-), array $assoc_args = array(
+    public function diff(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -437,8 +437,8 @@ class CLIRunner extends \
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function backfill(array $args = array(
-), array $assoc_args = array(
+    public function backfill(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -458,8 +458,8 @@ class CLIRunner extends \
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function compatibility_info(array $args = array(
-), array $assoc_args = array(
+    public function compatibility_info(array $args = array (
+), array $assoc_args = array (
 )): void
     {
         // stub

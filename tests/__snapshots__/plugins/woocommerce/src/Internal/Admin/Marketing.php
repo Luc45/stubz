@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the Marketing feature.
  */
-class Marketing extends \
+class Marketing
 {
     const SUBMENU_NAME_KEY = 0;
 

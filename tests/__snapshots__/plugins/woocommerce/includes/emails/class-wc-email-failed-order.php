@@ -12,7 +12,7 @@ namespace ;
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Failed_Order extends \WC_Email
+class WC_Email_Failed_Order
 {
     /**
      * Constructor.

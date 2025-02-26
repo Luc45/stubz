@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Translations Class.
  */
-class Translations extends \
+class Translations
 {
     /**
      * Class instance.

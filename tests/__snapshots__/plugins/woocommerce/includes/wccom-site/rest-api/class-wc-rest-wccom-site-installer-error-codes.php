@@ -7,7 +7,7 @@ namespace ;
  *
  * Stores data for errors, returned by installer API.
  */
-class WC_REST_WCCOM_Site_Installer_Error_Codes extends \
+class WC_REST_WCCOM_Site_Installer_Error_Codes
 {
     const NOT_AUTHENTICATED = 'not_authenticated';
 
@@ -63,7 +63,7 @@ class WC_REST_WCCOM_Site_Installer_Error_Codes extends \
 
     const FAILED_TO_RESET_INSTALLATION_STATE = 'failed_to_reset_installation_state';
 
-    const ERROR_MESSAGES = array(
+    const ERROR_MESSAGES = array (
   'not_authenticated' => 'Authentication required',
   'no_access_token' => 'No access token provided',
   'no_signature' => 'No signature provided',
@@ -92,7 +92,7 @@ class WC_REST_WCCOM_Site_Installer_Error_Codes extends \
   'failed_to_reset_installation_state' => 'Failed to reset installation state',
 );
 
-    const HTTP_CODES = array(
+    const HTTP_CODES = array (
   'not_authenticated' => 401,
   'no_access_token' => 400,
   'no_signature' => 400,

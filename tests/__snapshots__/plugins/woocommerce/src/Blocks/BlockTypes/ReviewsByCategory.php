@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ReviewsByCategory class.
  */
-class ReviewsByCategory extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ReviewsByCategory
 {
     /**
      * Block name.
@@ -33,7 +33,7 @@ class ReviewsByCategory extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

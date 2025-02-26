@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API;
  *
  * @extends WC_REST_Data_Controller
  */
-class Experiments extends \WC_REST_Data_Controller
+class Experiments
 {
     /**
      * Endpoint namespace.

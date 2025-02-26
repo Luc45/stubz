@@ -5,9 +5,9 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * Task Lists class.
  */
-class TaskLists extends \
+class TaskLists
 {
-    const DEFAULT_TASKS = array(
+    const DEFAULT_TASKS = array (
   0 => 'StoreDetails',
   1 => 'Products',
   2 => 'WooCommercePayments',
@@ -33,7 +33,7 @@ class TaskLists extends \
      *
      * @var array
      */
-    protected static $lists = array(
+    protected static $lists = array (
 );
 
     /**

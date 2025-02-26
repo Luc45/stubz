@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Taxonomies class.
  */
-class WC_Admin_Taxonomies extends \
+class WC_Admin_Taxonomies
 {
     /**
      * Class instance.

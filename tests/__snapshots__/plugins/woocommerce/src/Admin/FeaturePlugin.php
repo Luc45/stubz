@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin;
  *
  * @deprecated since 6.4.0
  */
-class FeaturePlugin extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
+class FeaturePlugin
 {
     /**
      * The name of the non-deprecated class that this facade covers.

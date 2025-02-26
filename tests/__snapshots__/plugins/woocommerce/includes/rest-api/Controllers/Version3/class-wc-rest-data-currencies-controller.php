@@ -7,7 +7,7 @@ namespace ;
  *
  * @package WooCommerce\RestApi
  */
-class WC_REST_Data_Currencies_Controller extends \WC_REST_Data_Controller
+class WC_REST_Data_Currencies_Controller
 {
     /**
      * Endpoint namespace.

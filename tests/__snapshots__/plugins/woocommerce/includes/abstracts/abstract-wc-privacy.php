@@ -11,7 +11,7 @@ namespace ;
  * @version  3.4.0
  * @package  WooCommerce\Abstracts
  */
-abstract class WC_Abstract_Privacy extends \
+abstract class WC_Abstract_Privacy
 {
     /**
      * This is the name of this object type.
@@ -25,7 +25,7 @@ abstract class WC_Abstract_Privacy extends \
      *
      * @var array
      */
-    protected $exporters = array(
+    protected $exporters = array (
 );
 
     /**
@@ -33,7 +33,7 @@ abstract class WC_Abstract_Privacy extends \
      *
      * @var array
      */
-    protected $erasers = array(
+    protected $erasers = array (
 );
 
     /**
@@ -95,7 +95,7 @@ abstract class WC_Abstract_Privacy extends \
      * @param array $exporters List of exporter callbacks.
      * @return array
      */
-    public function register_exporters($exporters = array(
+    public function register_exporters($exporters = array (
 ))
     {
         // stub
@@ -107,7 +107,7 @@ abstract class WC_Abstract_Privacy extends \
      * @param array $erasers List of eraser callbacks.
      * @return array
      */
-    public function register_erasers($erasers = array(
+    public function register_erasers($erasers = array (
 ))
     {
         // stub

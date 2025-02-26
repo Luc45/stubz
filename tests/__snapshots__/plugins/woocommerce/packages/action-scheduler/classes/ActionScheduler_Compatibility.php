@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_Compatibility
  */
-class ActionScheduler_Compatibility extends \
+class ActionScheduler_Compatibility
 {
     /**
      * Converts a shorthand byte value to an integer byte value.

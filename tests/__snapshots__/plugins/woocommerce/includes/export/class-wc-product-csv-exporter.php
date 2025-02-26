@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Product_CSV_Exporter Class.
  */
-class WC_Product_CSV_Exporter extends \WC_CSV_Batch_Exporter
+class WC_Product_CSV_Exporter
 {
     /**
      * Type of export used in filter names.
@@ -26,7 +26,7 @@ class WC_Product_CSV_Exporter extends \WC_CSV_Batch_Exporter
      *
      * @var array
      */
-    protected $product_types_to_export = array(
+    protected $product_types_to_export = array (
 );
 
     /**
@@ -34,7 +34,7 @@ class WC_Product_CSV_Exporter extends \WC_CSV_Batch_Exporter
      *
      * @var string
      */
-    protected $product_category_to_export = array(
+    protected $product_category_to_export = array (
 );
 
     /**

@@ -14,7 +14,7 @@ namespace ;
  * @category    Class
  * @author      WooThemes
  */
-abstract class WC_Legacy_Coupon extends \WC_Data
+abstract class WC_Legacy_Coupon
 {
     /**
      * Magic __isset method for backwards compatibility. Legacy properties which could be accessed directly in the past.

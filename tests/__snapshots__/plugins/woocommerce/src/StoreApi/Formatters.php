@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\StoreApi;
  *
  * Allows formatter classes to be registered. Formatters are exposed to extensions via the ExtendSchema class.
  */
-class Formatters extends \
+class Formatters
 {
     /**
      * Holds an array of formatter class instances.
      *
      * @var array
      */
-    private $formatters = array(
+    private $formatters = array (
 );
 
     /**

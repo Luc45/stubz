@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1\AI;
  *
  * @internal
  */
-class ProductsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ProductsSchema
 {
     const IDENTIFIER = 'ai/products';
 

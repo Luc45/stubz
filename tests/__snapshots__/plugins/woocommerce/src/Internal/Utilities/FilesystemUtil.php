@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * FilesystemUtil class.
  */
-class FilesystemUtil extends \
+class FilesystemUtil
 {
     /**
      * Wrapper to retrieve the class instance contained in the $wp_filesystem global, after initializing if necessary.

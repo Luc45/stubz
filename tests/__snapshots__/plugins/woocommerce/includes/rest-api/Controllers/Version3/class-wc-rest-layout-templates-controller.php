@@ -5,7 +5,7 @@ namespace ;
 /**
  * REST API Layout Templates controller class.
  */
-class WC_REST_Layout_Templates_Controller extends \WC_REST_Controller
+class WC_REST_Layout_Templates_Controller
 {
     /**
      * Endpoint namespace.

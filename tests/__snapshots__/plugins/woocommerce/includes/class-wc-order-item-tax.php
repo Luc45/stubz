@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item tax.
  */
-class WC_Order_Item_Tax extends \WC_Order_Item
+class WC_Order_Item_Tax
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
@@ -13,7 +13,7 @@ class WC_Order_Item_Tax extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'rate_code' => '',
   'rate_id' => 0,
   'label' => '',

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_wcSystemStatus
  */
-class ActionScheduler_wcSystemStatus extends \
+class ActionScheduler_wcSystemStatus
 {
     /**
      * The active data stores

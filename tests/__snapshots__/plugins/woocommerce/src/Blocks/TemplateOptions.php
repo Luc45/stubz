@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @internal
  */
-class TemplateOptions extends \
+class TemplateOptions
 {
     /**
      * Initialization method.

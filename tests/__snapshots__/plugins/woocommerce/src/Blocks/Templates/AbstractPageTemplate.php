@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-abstract class AbstractPageTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
+abstract class AbstractPageTemplate
 {
     /**
      * Initialization method.

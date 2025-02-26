@@ -15,7 +15,7 @@ namespace Automattic\WooCommerce\Caching;
  * to the cache engine will be prefixed with the object type and a random string. The 'flush' operation
  * just forces the generation a new prefix and lets the old cached objects expire.
  */
-abstract class ObjectCache extends \
+abstract class ObjectCache
 {
     const DEFAULT_EXPIRATION = -1;
 

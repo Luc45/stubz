@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shipping zones class.
  */
-class WC_Shipping_Zones extends \
+class WC_Shipping_Zones
 {
     /**
      * Get shipping zones from the database.

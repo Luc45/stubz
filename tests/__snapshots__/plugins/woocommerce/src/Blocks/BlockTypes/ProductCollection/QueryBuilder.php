@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
  * QueryBuilder class.
  * Responsible for constructing and modifying product queries.
  */
-class QueryBuilder extends \
+class QueryBuilder
 {
     /**
      * All query args from WP_Query.
@@ -20,7 +20,7 @@ class QueryBuilder extends \
      *
      * @var array
      */
-    protected $custom_order_opts = array(
+    protected $custom_order_opts = array (
   0 => 'popularity',
   1 => 'rating',
   2 => 'post__in',
@@ -35,7 +35,7 @@ class QueryBuilder extends \
      *
      * @var array
      */
-    protected $attributes_filter_query_args = array(
+    protected $attributes_filter_query_args = array (
 );
 
     /**
@@ -43,7 +43,7 @@ class QueryBuilder extends \
      *
      * @var array
      */
-    protected $collection_handler_store = array(
+    protected $collection_handler_store = array (
 );
 
     /**
@@ -199,7 +199,7 @@ class QueryBuilder extends \
      *
      * @return array
      */
-    private function get_product_attributes_query($attributes = array(
+    private function get_product_attributes_query($attributes = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Overrides;
 /**
  * Admin\Overrides\ThemeUpgraderSkin Class.
  */
-class ThemeUpgraderSkin extends \Theme_Upgrader_Skin
+class ThemeUpgraderSkin
 {
     /**
      * Avoid undefined property error from \Theme_Upgrader::check_parent_theme_filter().

@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Handle retrieval of product forms.
  */
-class ProductFormsController extends \
+class ProductFormsController
 {
     /**
      * Product form templates.
      *
      * @var array
      */
-    private $product_form_templates = array(
+    private $product_form_templates = array (
   0 => 'simple',
 );
 

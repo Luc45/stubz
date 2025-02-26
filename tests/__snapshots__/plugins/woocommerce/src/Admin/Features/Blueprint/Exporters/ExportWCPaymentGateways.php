@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
 /**
  * ExportWCPaymentGateways class
  */
-class ExportWCPaymentGateways extends \
+class ExportWCPaymentGateways
 {
     /**
      * Payment gateway IDs to exclude from export
      *
      * @var array|string[] Payment gateway IDs to exclude from export
      */
-    protected array $exclude_ids = array(
+    protected array $exclude_ids = array (
   0 => 'pre_install_woocommerce_payments_promotion',
 );
 

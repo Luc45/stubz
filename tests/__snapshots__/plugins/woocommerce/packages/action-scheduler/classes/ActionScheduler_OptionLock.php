@@ -10,7 +10,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_OptionLock extends \ActionScheduler_Lock
+class ActionScheduler_OptionLock
 {
     /**
      * Set a lock using options for a given amount of time (60 seconds by default).

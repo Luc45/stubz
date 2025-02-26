@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
+abstract class ActionScheduler_Store
 {
     const STATUS_COMPLETE = 'complete';
 
@@ -66,7 +66,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return string|null ID of the next action matching the criteria or NULL if not found.
      */
-    public function find_action($hook, $params = array(
+    public function find_action($hook, $params = array (
 ))
     {
         // stub
@@ -98,7 +98,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public abstract function query_actions($query = array(
+    public abstract function query_actions($query = array (
 ), $query_type = 'select');
 
     /**
@@ -169,7 +169,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return ActionScheduler_ActionClaim
      */
-    public abstract function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(
+    public abstract function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
 ), $group = '');
 
     /**

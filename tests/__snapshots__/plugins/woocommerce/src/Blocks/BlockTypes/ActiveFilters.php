@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ActiveFilters class.
  */
-class ActiveFilters extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ActiveFilters
 {
     /**
      * Block name.

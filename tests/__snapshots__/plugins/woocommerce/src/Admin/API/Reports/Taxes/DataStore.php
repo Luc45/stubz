@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Taxes;
 /**
  * API\Reports\Taxes\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore
 {
     /**
      * Table used to get the data.
@@ -32,7 +32,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'tax_rate_id' => 'intval',
   'name' => 'strval',
   'tax_rate' => 'floatval',

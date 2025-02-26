@@ -24,7 +24,7 @@ namespace Automattic\WooCommerce;
  * see RuntimeContainer::should_use() for configuration instructions.
  * The League's container, the ExtendedContainer class and the related support code will be removed in WooCommerce 10.0.
  */
-final class Container extends \
+final class Container
 {
     /**
      * The underlying container.

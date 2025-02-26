@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Evaluate the given rules as an AND operation - return false early if a
  * rule evaluates to false.
  */
-class RuleEvaluator extends \
+class RuleEvaluator
 {
     /**
      * GetRuleProcessor to use.
@@ -37,7 +37,7 @@ class RuleEvaluator extends \
      *
      * @return bool The result of the operation.
      */
-    public function evaluate($rules, $stored_state = null, $logger_args = array(
+    public function evaluate($rules, $stored_state = null, $logger_args = array (
 ))
     {
         // stub

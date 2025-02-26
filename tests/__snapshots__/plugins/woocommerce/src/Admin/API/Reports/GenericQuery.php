@@ -21,7 +21,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @since 9.3.0
  */
-class GenericQuery extends \WC_Object_Query
+class GenericQuery
 {
     /**
      * Specific query name.

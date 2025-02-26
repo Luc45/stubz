@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  *
  * @internal
  */
-class AIPatterns extends \
+class AIPatterns
 {
     const PATTERNS_AI_DATA_POST_TYPE = 'patterns_ai_data';
 

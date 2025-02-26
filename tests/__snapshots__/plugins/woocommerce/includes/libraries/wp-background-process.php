@@ -5,7 +5,7 @@ namespace ;
 /**
  * Abstract WP_Background_Process class.
  */
-abstract class WP_Background_Process extends \WP_Async_Request
+abstract class WP_Background_Process
 {
     /**
      * Action

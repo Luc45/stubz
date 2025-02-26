@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  * - Providing entry points for creating and deleting the required database tables.
  * - Synchronizing changes between the custom orders tables and the posts table whenever changes in orders happen.
  */
-class DataSynchronizer extends \
+class DataSynchronizer
 {
     const ORDERS_DATA_SYNC_ENABLED_OPTION = 'woocommerce_custom_orders_table_data_sync_enabled';
 

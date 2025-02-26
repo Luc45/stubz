@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-class Patterns extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
+class Patterns
 {
     /**
      * Endpoint.

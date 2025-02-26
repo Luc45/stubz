@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Personalize_Store
  */
-class PersonalizeStore extends \
+class PersonalizeStore
 {
     const NOTE_NAME = 'wc-admin-personalize-store';
 

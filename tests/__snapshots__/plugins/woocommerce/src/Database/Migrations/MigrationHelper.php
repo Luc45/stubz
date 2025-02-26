@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Database\Migrations;
 /**
  * Helper class to assist with migration related operations.
  */
-class MigrationHelper extends \
+class MigrationHelper
 {
     /**
      * Placeholders that we will use in building $wpdb queries.
      *
      * @var string[]
      */
-    private static $wpdb_placeholder_for_type = array(
+    private static $wpdb_placeholder_for_type = array (
   'int' => '%d',
   'decimal' => '%f',
   'string' => '%s',

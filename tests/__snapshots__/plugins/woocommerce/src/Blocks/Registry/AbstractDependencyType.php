@@ -11,7 +11,7 @@ namespace Automattic\WooCommerce\Blocks\Registry;
  *
  * @since 2.5.0
  */
-abstract class AbstractDependencyType extends \
+abstract class AbstractDependencyType
 {
     /**
      * Holds a callable or value provided for this type.

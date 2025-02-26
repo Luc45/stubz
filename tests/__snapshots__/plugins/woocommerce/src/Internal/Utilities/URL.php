@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  * Provides an easy method of assessing URLs, including filepaths (which will be silently
  * converted to a file:// URL if provided).
  */
-class URL extends \ implements \Stringable
+class URL implements \Stringable
 {
     /**
      * Components of the URL being assessed.
@@ -16,7 +16,7 @@ class URL extends \ implements \Stringable
      *
      * @var string|null[]
      */
-    private $components = array(
+    private $components = array (
   'drive' => null,
   'fragment' => null,
   'host' => null,
@@ -61,7 +61,7 @@ class URL extends \ implements \Stringable
      *
      * @var array
      */
-    private $path_parts = array(
+    private $path_parts = array (
 );
 
     /**
@@ -154,7 +154,7 @@ class URL extends \ implements \Stringable
      *
      * @return string
      */
-    public function get_url(array $component_overrides = array(
+    public function get_url(array $component_overrides = array (
 )): string
     {
         // stub

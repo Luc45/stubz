@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  *
  * @deprecated 2.5.0
  */
-class BlocksWpQuery extends \WP_Query
+class BlocksWpQuery
 {
     /**
      * Constructor.

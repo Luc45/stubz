@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
  * by such meta keys could have expired and thus no longer exist. 'get_existing_receipt' will appropriately return null
  * if the meta entry exists but the file doesn't.
  */
-class ReceiptRenderingEngine extends \
+class ReceiptRenderingEngine
 {
     const FONT_SIZE = 12;
 
@@ -28,7 +28,7 @@ class ReceiptRenderingEngine extends \
 
     const FOOTER_FONT_SIZE = 10;
 
-    const KNOWN_CARD_TYPES = array(
+    const KNOWN_CARD_TYPES = array (
   0 => 'amex',
   1 => 'diners',
   2 => 'discover',

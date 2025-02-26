@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Internal\Email;
  *
  * @internal Just for internal use.
  */
-class EmailFont extends \
+class EmailFont
 {
     /**
      * Array of font families supported in email templates
      *
      * @var string[]
      */
-    public static $font = array(
+    public static $font = array (
   'Arial' => 'Arial, \'Helvetica Neue\', Helvetica, sans-serif',
   'Comic Sans MS' => '\'Comic Sans MS\', \'Marker Felt-Thin\', Arial, sans-serif',
   'Courier New' => '\'Courier New\', Courier, \'Lucida Sans Typewriter\', \'Lucida Typewriter\', monospace',

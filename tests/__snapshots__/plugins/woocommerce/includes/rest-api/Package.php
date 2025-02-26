@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\RestApi;
  *
  * @deprecated Use \Automattic\WooCommerce\RestApi\Server directly.
  */
-class Package extends \
+class Package
 {
     /**
      * Init the package - load the REST API Server class.

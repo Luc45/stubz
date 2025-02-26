@@ -11,7 +11,7 @@ namespace ;
  * @version 2.6.0
  * @package WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Free_Shipping extends \WC_Shipping_Method
+class WC_Shipping_Free_Shipping
 {
     /**
      * Min amount to be valid.
@@ -103,7 +103,7 @@ class WC_Shipping_Free_Shipping extends \WC_Shipping_Method
      *
      * @param array $package Shipping package.
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

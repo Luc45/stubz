@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container;
 
-class ReflectionContainer extends \
+class ReflectionContainer
 {
     /**
      * @var boolean
@@ -14,7 +14,7 @@ class ReflectionContainer extends \
      *
      * @var array
      */
-    protected $cache = array(
+    protected $cache = array (
 );
 
     /**
@@ -22,7 +22,7 @@ class ReflectionContainer extends \
      *
      * @throws ReflectionException
      */
-    public function get($id, array $args = array(
+    public function get($id, array $args = array (
 ))
     {
         // stub
@@ -46,7 +46,7 @@ class ReflectionContainer extends \
      *
      * @throws ReflectionException
      */
-    public function call(callable $callable, array $args = array(
+    public function call(callable $callable, array $args = array (
 ))
     {
         // stub

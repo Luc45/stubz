@@ -6,9 +6,9 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  * Utility methods used for serving block templates from WooCommerce Blocks.
  * {@internal This class and its methods should only be used within the BlockTemplateController.php and is not intended for public use.}
  */
-class BlockTemplateUtils extends \
+class BlockTemplateUtils
 {
-    const DIRECTORY_NAMES = array(
+    const DIRECTORY_NAMES = array (
   'DEPRECATED_TEMPLATES' => 'block-templates',
   'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
   'TEMPLATES' => 'templates',
@@ -373,7 +373,7 @@ class BlockTemplateUtils extends \
      *
      * @return int[]|\WP_Post[] An array of found templates.
      */
-    public static function get_block_templates_from_db($slugs = array(
+    public static function get_block_templates_from_db($slugs = array (
 ), $template_type = 'wp_template')
     {
         // stub

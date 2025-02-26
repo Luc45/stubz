@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class ActionMigrator extends \
+class ActionMigrator
 {
     /**
      * Source store instance.

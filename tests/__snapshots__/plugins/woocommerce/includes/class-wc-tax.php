@@ -7,7 +7,7 @@ namespace ;
  *
  * @class WC_Tax
  */
-class WC_Tax extends \
+class WC_Tax
 {
     /**
      * Precision.
@@ -117,7 +117,7 @@ class WC_Tax extends \
      * @param array $args Args that determine the rate to find.
      * @return array
      */
-    public static function find_rates($args = array(
+    public static function find_rates($args = array (
 ))
     {
         // stub
@@ -129,7 +129,7 @@ class WC_Tax extends \
      * @param array $args Args that determine the rate to find.
      * @return array
      */
-    public static function find_shipping_rates($args = array(
+    public static function find_shipping_rates($args = array (
 ))
     {
         // stub

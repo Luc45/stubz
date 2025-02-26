@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Reports Class.
  */
-class WC_Admin_Reports extends \
+class WC_Admin_Reports
 {
     /**
      * Register the proper hook handlers.

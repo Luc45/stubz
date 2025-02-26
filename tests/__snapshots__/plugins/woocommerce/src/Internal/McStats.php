@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal;
  * This class is a wrapper around the Jetpack MC Stats package.
  * See https://github.com/Automattic/jetpack-a8c-mc-stats/tree/trunk for more details.
  */
-class McStats extends \Automattic\Jetpack\A8c_Mc_Stats
+class McStats
 {
     /**
      * Return the stats from a group in an array ready to be added as parameters in a query string

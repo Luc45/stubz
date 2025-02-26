@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
 /**
  * PageController class.
  */
-class PageController extends \
+class PageController
 {
     /**
      * Instance of FileController.
@@ -164,7 +164,7 @@ class PageController extends \
      *
      * @return array
      */
-    public function get_query_params(array $param_keys = array(
+    public function get_query_params(array $param_keys = array (
 )): array
     {
         // stub

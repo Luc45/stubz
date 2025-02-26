@@ -96,7 +96,7 @@ interface DefinitionInterface
      *
      * @return self
      */
-    public function addMethodCall(string $method, array $args = array(
+    public function addMethodCall(string $method, array $args = array (
 )): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
 
     /**
@@ -106,7 +106,7 @@ interface DefinitionInterface
      *
      * @return self
      */
-    public function addMethodCalls(array $methods = array(
+    public function addMethodCalls(array $methods = array (
 )): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
 
     /**

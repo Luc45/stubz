@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class PrepareUrl extends \
+class PrepareUrl
 {
     /**
      * Prepares the site URL by removing the protocol and trailing slash.

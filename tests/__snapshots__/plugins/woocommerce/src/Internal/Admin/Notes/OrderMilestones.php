@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Order_Milestones
  */
-class OrderMilestones extends \
+class OrderMilestones
 {
     const NOTE_NAME = 'wc-admin-orders-milestone';
 
@@ -18,7 +18,7 @@ class OrderMilestones extends \
      *
      * @var array
      */
-    protected $allowed_statuses = array(
+    protected $allowed_statuses = array (
   0 => 'pending',
   1 => 'processing',
   2 => 'completed',
@@ -36,7 +36,7 @@ class OrderMilestones extends \
      *
      * @var array
      */
-    protected $milestones = array(
+    protected $milestones = array (
   0 => 1,
   1 => 10,
   2 => 100,

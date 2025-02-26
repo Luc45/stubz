@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Customize_Store_With_Blocks.
  */
-class CustomizeStoreWithBlocks extends \
+class CustomizeStoreWithBlocks
 {
     const NOTE_NAME = 'wc-admin-customize-store-with-blocks';
 

@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  *
  * @see ProductFormTemplateInterface
  */
-class ProductTemplate extends \
+class ProductTemplate
 {
     /**
      * The template id.

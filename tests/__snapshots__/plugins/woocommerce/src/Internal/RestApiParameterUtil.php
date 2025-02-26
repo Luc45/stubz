@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal;
  *
  * @package Automattic\WooCommerce\Internal
  */
-class RestApiParameterUtil extends \
+class RestApiParameterUtil
 {
     /**
      * Converts a create refund request from the public API format:

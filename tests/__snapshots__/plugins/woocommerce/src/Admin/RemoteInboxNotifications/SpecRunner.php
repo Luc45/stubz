@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
 /**
  * Runs a single spec.
  */
-class SpecRunner extends \
+class SpecRunner
 {
     /**
      * Run the spec.

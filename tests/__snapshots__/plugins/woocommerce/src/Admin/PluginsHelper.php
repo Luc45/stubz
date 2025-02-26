@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * Class PluginsHelper
  */
-class PluginsHelper extends \
+class PluginsHelper
 {
     const WOO_SUBSCRIPTION_PAGE_URL = 'https://woocommerce.com/my-account/my-subscriptions/';
 

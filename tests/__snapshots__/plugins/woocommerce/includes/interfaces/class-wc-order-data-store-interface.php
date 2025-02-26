@@ -58,7 +58,7 @@ interface WC_Order_Data_Store_Interface
      * @param array $args Arguments.
      * @return array of orders
      */
-    public function get_orders($args = array(
+    public function get_orders($args = array (
 ));
 
     /**

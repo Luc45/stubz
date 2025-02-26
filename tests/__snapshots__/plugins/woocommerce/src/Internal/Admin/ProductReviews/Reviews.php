@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
 /**
  * Handles backend logic for the Reviews component.
  */
-class Reviews extends \
+class Reviews
 {
     const MENU_SLUG = 'product-reviews';
 

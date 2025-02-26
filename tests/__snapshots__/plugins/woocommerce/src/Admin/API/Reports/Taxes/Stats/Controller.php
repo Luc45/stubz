@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats;
  * @internal
  * @extends GenericStatsController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsController
+class Controller
 {
     /**
      * Route base.
@@ -56,7 +56,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array(
+    protected function get_datastore_data($query_args = array (
 ))
     {
         // stub

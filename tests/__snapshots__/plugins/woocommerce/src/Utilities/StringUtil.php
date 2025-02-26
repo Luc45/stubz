@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with strings.
  */
-final class StringUtil extends \
+final class StringUtil
 {
     /**
      * Checks to see whether or not a string starts with another.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
 /**
  * Evaluates the extension and returns it.
  */
-class EvaluateExtension extends \
+class EvaluateExtension
 {
     /**
      * Evaluates the extension and returns it.
@@ -25,7 +25,7 @@ class EvaluateExtension extends \
      * @param array $allowed_bundles Optional array of allowed bundles to be returned.
      * @return array The bundles and errors.
      */
-    public static function evaluate_bundles($specs, $allowed_bundles = array(
+    public static function evaluate_bundles($specs, $allowed_bundles = array (
 ))
     {
         // stub

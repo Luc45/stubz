@@ -5,7 +5,7 @@ namespace ;
 /**
  * ActionScheduler_AsyncRequest_QueueRunner class.
  */
-class ActionScheduler_AsyncRequest_QueueRunner extends \WP_Async_Request
+class ActionScheduler_AsyncRequest_QueueRunner
 {
     /**
      * Data store for querying actions

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives;
 /**
  * Abstract class for payment extension suggestion incentive provider classes.
  */
-abstract class Incentive extends \
+abstract class Incentive
 {
     const PREFIX = 'woocommerce_admin_pes_incentive_';
 

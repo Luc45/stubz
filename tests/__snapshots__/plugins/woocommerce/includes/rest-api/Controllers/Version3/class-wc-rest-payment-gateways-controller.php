@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Payment_Gateways_V2_Controller
  */
-class WC_REST_Payment_Gateways_Controller extends \WC_REST_Payment_Gateways_V2_Controller
+class WC_REST_Payment_Gateways_Controller
 {
     /**
      * Endpoint namespace.

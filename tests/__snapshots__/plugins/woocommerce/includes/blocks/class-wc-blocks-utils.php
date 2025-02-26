@@ -5,7 +5,7 @@ namespace ;
 /**
  * Blocks Utility class.
  */
-class WC_Blocks_Utils extends \
+class WC_Blocks_Utils
 {
     /**
      * Get blocks from a woocommerce page.

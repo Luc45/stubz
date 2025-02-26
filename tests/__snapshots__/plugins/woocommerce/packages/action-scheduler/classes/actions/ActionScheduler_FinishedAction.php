@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_FinishedAction
  */
-class ActionScheduler_FinishedAction extends \ActionScheduler_Action
+class ActionScheduler_FinishedAction
 {
     /**
      * Execute action.

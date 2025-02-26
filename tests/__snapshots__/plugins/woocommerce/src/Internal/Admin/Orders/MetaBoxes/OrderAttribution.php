@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
  *
  * @since 8.5.0
  */
-class OrderAttribution extends \
+class OrderAttribution
 {
     /**
      * OrderAttribution constructor.

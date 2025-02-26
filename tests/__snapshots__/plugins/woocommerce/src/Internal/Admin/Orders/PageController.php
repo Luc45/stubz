@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
 /**
  * Controls the different pages/screens associated to the "Orders" menu page.
  */
-class PageController extends \
+class PageController
 {
     /**
      * The order type.

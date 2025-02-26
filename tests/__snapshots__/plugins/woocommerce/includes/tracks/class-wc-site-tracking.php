@@ -5,7 +5,7 @@ namespace ;
 /**
  * This class adds actions to track usage of WooCommerce.
  */
-class WC_Site_Tracking extends \
+class WC_Site_Tracking
 {
     /**
      * Check if tracking is enabled.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  *
  * An object representation of a single log file.
  */
-class File extends \
+class File
 {
     /**
      * The absolute path of the file.

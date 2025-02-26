@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 /**
  * Date & time interval and numeric range handling class for Reporting API.
  */
-class Segmenter extends \
+class Segmenter
 {
     /**
      * Array of all segment ids.
@@ -19,7 +19,7 @@ class Segmenter extends \
      *
      * @var array
      */
-    protected $segment_labels = array(
+    protected $segment_labels = array (
 );
 
     /**
@@ -34,7 +34,7 @@ class Segmenter extends \
      *
      * @var array
      */
-    protected $report_columns = array(
+    protected $report_columns = array (
 );
 
     /**

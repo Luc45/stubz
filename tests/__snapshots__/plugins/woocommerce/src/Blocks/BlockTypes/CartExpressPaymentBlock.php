@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CartExpressPaymentBlock class.
  */
-class CartExpressPaymentBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
+class CartExpressPaymentBlock
 {
     /**
      * Block name.

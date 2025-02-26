@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ImportExport;
  *
  * @since 9.3.0
  */
-class CSVUploadHelper extends \
+class CSVUploadHelper
 {
     /**
      * Name (inside the uploads folder) to use for the CSV import directory.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Products shortcode class.
  */
-class WC_Shortcode_Products extends \
+class WC_Shortcode_Products
 {
     /**
      * Shortcode type.
@@ -21,7 +21,7 @@ class WC_Shortcode_Products extends \
      * @since 3.2.0
      * @var   array
      */
-    protected $attributes = array(
+    protected $attributes = array (
 );
 
     /**
@@ -30,7 +30,7 @@ class WC_Shortcode_Products extends \
      * @since 3.2.0
      * @var   array
      */
-    protected $query_args = array(
+    protected $query_args = array (
 );
 
     /**
@@ -48,7 +48,7 @@ class WC_Shortcode_Products extends \
      * @param array  $attributes Shortcode attributes.
      * @param string $type       Shortcode type.
      */
-    public function __construct($attributes = array(
+    public function __construct($attributes = array (
 ), $type = 'products')
     {
         // stub

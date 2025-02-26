@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Product_CSV_Importer Class.
  */
-class WC_Product_CSV_Importer extends \WC_Product_Importer
+class WC_Product_CSV_Importer
 {
     /**
      * Tracks current row being parsed.
@@ -20,7 +20,7 @@ class WC_Product_CSV_Importer extends \WC_Product_Importer
      * @param string $file   File to read.
      * @param array  $params Arguments for the parser.
      */
-    public function __construct($file, $params = array(
+    public function __construct($file, $params = array (
 ))
     {
         // stub

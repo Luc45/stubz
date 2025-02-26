@@ -9,7 +9,7 @@ namespace ;
  *
  * @version 9.4.0
  */
-class WC_Brands_Block_Templates extends \
+class WC_Brands_Block_Templates
 {
     /**
      * Constructor.

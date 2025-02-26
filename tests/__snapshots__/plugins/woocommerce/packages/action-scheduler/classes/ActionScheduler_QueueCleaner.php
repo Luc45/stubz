@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_QueueCleaner
  */
-class ActionScheduler_QueueCleaner extends \
+class ActionScheduler_QueueCleaner
 {
     /**
      * The batch size.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Checkout class.
  */
-class WC_Checkout extends \
+class WC_Checkout
 {
     /**
      * The single instance of the class.
@@ -26,7 +26,7 @@ class WC_Checkout extends \
      *
      * @var array
      */
-    protected $legacy_posted_data = array(
+    protected $legacy_posted_data = array (
 );
 
     /**

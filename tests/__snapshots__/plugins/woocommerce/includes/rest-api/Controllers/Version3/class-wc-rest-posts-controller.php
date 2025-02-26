@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @version  2.6.0
  */
-abstract class WC_REST_Posts_Controller extends \WC_REST_Controller
+abstract class WC_REST_Posts_Controller
 {
     /**
      * Endpoint namespace.
@@ -202,7 +202,7 @@ abstract class WC_REST_Posts_Controller extends \WC_REST_Controller
      * @param WP_REST_Request $request Request object.
      * @return array          $query_args
      */
-    protected function prepare_items_query($prepared_args = array(
+    protected function prepare_items_query($prepared_args = array (
 ), $request = null)
     {
         // stub

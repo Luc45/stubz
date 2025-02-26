@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\WCPayPromotion;
  *
  * @extends \WC_Payment_Gateway
  */
-class WCPaymentGatewayPreInstallWCPayPromotion extends \WC_Payment_Gateway
+class WCPaymentGatewayPreInstallWCPayPromotion
 {
     const GATEWAY_ID = 'pre_install_woocommerce_payments_promotion';
 

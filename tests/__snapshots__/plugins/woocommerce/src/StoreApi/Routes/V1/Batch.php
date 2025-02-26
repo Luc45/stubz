@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Batch Route class.
  */
-class Batch extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+class Batch
 {
     const IDENTIFIER = 'batch';
 

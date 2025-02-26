@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Images;
  *
  * @internal
  */
-class Pexels extends \
+class Pexels
 {
     const EXTERNAL_MEDIA_PEXELS_ENDPOINT = '/wpcom/v2/external-media/list/pexels';
 

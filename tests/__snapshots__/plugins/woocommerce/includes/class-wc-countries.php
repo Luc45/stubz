@@ -5,14 +5,14 @@ namespace ;
 /**
  * The WooCommerce countries class stores country/state data.
  */
-class WC_Countries extends \
+class WC_Countries
 {
     /**
      * Locales list.
      *
      * @var array
      */
-    public $locale = array(
+    public $locale = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Countries extends \
      *
      * @var array
      */
-    public $address_formats = array(
+    public $address_formats = array (
 );
 
     /**
@@ -31,7 +31,7 @@ class WC_Countries extends \
      *
      * @var array
      */
-    private $geo_cache = array(
+    private $geo_cache = array (
 );
 
     /**
@@ -354,7 +354,7 @@ class WC_Countries extends \
      * @param  string $separator How to separate address lines. @since 3.5.0.
      * @return string
      */
-    public function get_formatted_address($args = array(
+    public function get_formatted_address($args = array (
 ), $separator = '<br/>')
     {
         // stub

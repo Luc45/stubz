@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item fee.
  */
-class WC_Order_Item_Fee extends \WC_Order_Item
+class WC_Order_Item_Fee
 {
     /**
      * Legacy fee data.
@@ -29,16 +29,16 @@ class WC_Order_Item_Fee extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'tax_class' => '',
   'tax_status' => 'taxable',
   'amount' => '',
   'total' => '',
   'total_tax' => '',
   'taxes' => 
-  array(
+  array (
     'total' => 
-    array(
+    array (
     ),
   ),
 );
@@ -62,7 +62,7 @@ class WC_Order_Item_Fee extends \WC_Order_Item
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array(
+    public function calculate_taxes($calculate_tax_for = array (
 ))
     {
         // stub

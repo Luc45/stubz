@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  * SanitizationUtils class.
  * Helper class which sanitizes customer info.
  */
-class SanitizationUtils extends \
+class SanitizationUtils
 {
     /**
      * Runs wp_kses on an array. This function runs wp_kses on strings in the array and recurses into arrays.

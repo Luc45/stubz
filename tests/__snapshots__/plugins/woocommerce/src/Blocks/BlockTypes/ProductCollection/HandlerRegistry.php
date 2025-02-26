@@ -6,14 +6,14 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
  * HandlerRegistry class.
  * Manages collection handlers.
  */
-class HandlerRegistry extends \
+class HandlerRegistry
 {
     /**
      * Associative array of collection handlers.
      *
      * @var array
      */
-    protected $collection_handler_store = array(
+    protected $collection_handler_store = array (
 );
 
     /**

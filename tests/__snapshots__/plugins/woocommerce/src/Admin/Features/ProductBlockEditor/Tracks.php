@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Add tracks for the product block editor.
  */
-class Tracks extends \
+class Tracks
 {
     /**
      * Initialize the tracks.

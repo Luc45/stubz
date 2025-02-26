@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Determines whether the Shipping Label Banner should be displayed
  */
-class ShippingLabelBannerDisplayRules extends \
+class ShippingLabelBannerDisplayRules
 {
     /**
      * Whether the site is connected to wordpress.com.
@@ -33,7 +33,7 @@ class ShippingLabelBannerDisplayRules extends \
      *
      * @var array
      */
-    private $supported_countries = array(
+    private $supported_countries = array (
   0 => 'US',
   1 => 'AS',
   2 => 'PR',
@@ -50,7 +50,7 @@ class ShippingLabelBannerDisplayRules extends \
      *
      * @var array
      */
-    private $supported_currencies = array(
+    private $supported_currencies = array (
   0 => 'USD',
 );
 

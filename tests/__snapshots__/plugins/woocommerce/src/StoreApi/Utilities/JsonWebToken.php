@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  *
  * Simple Json Web Token generator & verifier static utility class, currently supporting only HS256 signatures.
  */
-final class JsonWebToken extends \
+final class JsonWebToken
 {
     /**
      * JWT header type.

@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 
-class ClassName extends \
+class ClassName
 {
     /**
      * @var string

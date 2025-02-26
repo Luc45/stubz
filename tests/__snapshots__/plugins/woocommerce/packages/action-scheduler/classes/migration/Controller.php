@@ -13,7 +13,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class Controller extends \
+class Controller
 {
     /**
      * Instance.

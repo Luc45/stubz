@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Duplicate_Product Class.
  */
-class WC_Admin_Duplicate_Product extends \
+class WC_Admin_Duplicate_Product
 {
     /**
      * Constructor.

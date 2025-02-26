@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * Task class.
  */
-abstract class Task extends \
+abstract class Task
 {
     const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
 
@@ -421,7 +421,7 @@ abstract class Task extends \
      * @param array $sort_by list of columns with sort order.
      * @return int
      */
-    public static function sort($a, $b, $sort_by = array(
+    public static function sort($a, $b, $sort_by = array (
 ))
     {
         // stub

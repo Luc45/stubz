@@ -15,7 +15,7 @@ namespace ;
  * @version 3.0.0
  * @package WooCommerce
  */
-class WC_CLI_REST_Command extends \
+class WC_CLI_REST_Command
 {
     /**
      * Endpoints that have a parent ID.
@@ -23,7 +23,7 @@ class WC_CLI_REST_Command extends \
      *
      * @var array
      */
-    protected $routes_with_parent_id = array(
+    protected $routes_with_parent_id = array (
   0 => 'customer_download',
   1 => 'product_review',
   2 => 'order_note',
@@ -63,7 +63,7 @@ class WC_CLI_REST_Command extends \
      *
      * @var array
      */
-    private $supported_ids = array(
+    private $supported_ids = array (
 );
 
     /**
@@ -83,7 +83,7 @@ class WC_CLI_REST_Command extends \
      *
      * @param array $supported_ids List of supported IDs.
      */
-    public function set_supported_ids($supported_ids = array(
+    public function set_supported_ids($supported_ids = array (
 ))
     {
         // stub
@@ -206,7 +206,7 @@ class WC_CLI_REST_Command extends \
      * @param  array $args Positional arguments passed to the originating WP-CLI command.
      * @return string
      */
-    private function get_filled_route($args = array(
+    private function get_filled_route($args = array (
 ))
     {
         // stub

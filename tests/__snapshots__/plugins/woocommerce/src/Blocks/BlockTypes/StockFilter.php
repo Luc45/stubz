@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AttributeFilter class.
  */
-class StockFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class StockFilter
 {
     const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
 
@@ -23,7 +23,7 @@ class StockFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $stock_statuses = array(
+    protected function enqueue_data(array $stock_statuses = array (
 ))
     {
         // stub

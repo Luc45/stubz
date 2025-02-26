@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the activity panel feature.
  */
-class ActivityPanels extends \
+class ActivityPanels
 {
     /**
      * Class instance.

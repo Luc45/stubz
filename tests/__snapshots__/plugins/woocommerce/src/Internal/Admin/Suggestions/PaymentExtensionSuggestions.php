@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions;
 /**
  * Partner payment extensions provider class.
  */
-class PaymentExtensionSuggestions extends \
+class PaymentExtensionSuggestions
 {
     const AIRWALLEX = 'airwallex';
 
@@ -126,25 +126,25 @@ class PaymentExtensionSuggestions extends \
      *
      * @var array
      */
-    private array $country_extensions = array(
+    private array $country_extensions = array (
   'CA' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/ca/en/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/ca/en/legal/general/ua',
           ),
@@ -155,18 +155,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'affirm',
     5 => 'afterpay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/ca/business/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/ca/legal/',
           ),
@@ -175,13 +175,13 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'US' => 
-  array(
+  array (
     'woopayments' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'woopay_eligible',
         ),
       ),
@@ -197,7 +197,7 @@ class PaymentExtensionSuggestions extends \
     8 => 'klarna',
   ),
   'GB' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -205,18 +205,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'airwallex',
     5 => 'viva_wallet',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/gb/en/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/gb/en/legal/general/ua',
           ),
@@ -227,18 +227,18 @@ class PaymentExtensionSuggestions extends \
     7 => 'amazon_pay',
     8 => 'clearpay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/uk/business/payment-methods/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/uk/terms-and-conditions/',
           ),
@@ -247,33 +247,33 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'AL' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'AD' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'AT' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -283,18 +283,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/at/verkaeufer/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/at/agb/',
           ),
@@ -303,7 +303,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'BE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -313,18 +313,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/be/fr/entreprise/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/be/fr/conditions-generales/',
           ),
@@ -333,20 +333,20 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'BA' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'BG' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -355,7 +355,7 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'HR' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -364,7 +364,7 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'CY' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -374,7 +374,7 @@ class PaymentExtensionSuggestions extends \
     6 => 'amazon_pay',
   ),
   'CZ' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -382,18 +382,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'viva_wallet',
     5 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/cz/firmy/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/cz/obchodni-podminky/',
           ),
@@ -402,7 +402,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'DK' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -411,18 +411,18 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
     6 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/dk/erhverv/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/dk/vilkar/',
           ),
@@ -431,7 +431,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'EE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -439,7 +439,7 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
   ),
   'FI' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -447,18 +447,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'viva_wallet',
     5 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/fi/yritys/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/fi/ehdot/',
           ),
@@ -467,12 +467,12 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'FO' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'FR' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -480,18 +480,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'airwallex',
     5 => 'viva_wallet',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/fr/fr/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/fr/fr/legal/general/ua',
           ),
@@ -501,18 +501,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/fr/entreprise/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/fr/legal/',
           ),
@@ -521,26 +521,26 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'PF' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'GI' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -549,7 +549,7 @@ class PaymentExtensionSuggestions extends \
     1 => 'paypal_wallet',
   ),
   'DE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -559,18 +559,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/de/verkaeufer/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/de/agb/',
           ),
@@ -579,7 +579,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'GR' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -587,18 +587,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'viva_wallet',
     5 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/gr/business/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/gr/oroi-kai-proypotheseis/',
           ),
@@ -607,12 +607,12 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'GL' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'HU' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -621,18 +621,18 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
     6 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/hu/uzlet/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/hu/jogi-informaciok/',
           ),
@@ -641,30 +641,30 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'IS' => 
-  array(
+  array (
     'mollie' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'IE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -672,18 +672,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'airwallex',
     5 => 'viva_wallet',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/ie/en/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/ie/en/legal/general/ua',
           ),
@@ -693,18 +693,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/ie/business/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/ie/terms-and-conditions/',
           ),
@@ -713,7 +713,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'IT' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -723,18 +723,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/it/aziende/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/it/legal/',
           ),
@@ -743,7 +743,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'LV' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -751,13 +751,13 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
   ),
   'LI' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -767,7 +767,7 @@ class PaymentExtensionSuggestions extends \
     2 => 'paypal_wallet',
   ),
   'LT' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -776,7 +776,7 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'LU' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -786,7 +786,7 @@ class PaymentExtensionSuggestions extends \
     6 => 'amazon_pay',
   ),
   'MT' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -795,25 +795,25 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'MD' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'MC' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'NL' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -822,18 +822,18 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
     6 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/nl/zakelijk/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/nl/voorwaarden/',
           ),
@@ -842,25 +842,25 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'NO' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
     3 => 'mollie',
     4 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/no/bedrift/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/no/vilkar/',
           ),
@@ -869,7 +869,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'PL' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -878,18 +878,18 @@ class PaymentExtensionSuggestions extends \
     5 => 'viva_wallet',
     6 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/pl/biznes/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/pl/zasady-i-warunki/',
           ),
@@ -898,7 +898,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'PT' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -908,18 +908,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/pt/empresa/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/pt/termos-e-condicoes/',
           ),
@@ -928,7 +928,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'RO' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -936,18 +936,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'viva_wallet',
     5 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/ro/companii/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/ro/aspecte-juridice/',
           ),
@@ -956,43 +956,43 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'SM' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'RS' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'SK' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
     3 => 'mollie',
     4 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/sk/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/sk/zmluvne-podmienky/',
           ),
@@ -1001,7 +1001,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'SI' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1009,7 +1009,7 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
   ),
   'ES' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1017,18 +1017,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'airwallex',
     5 => 'viva_wallet',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/es/es/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/es/es/legal/general/ua',
           ),
@@ -1038,18 +1038,18 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_wallet',
     7 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/es/empresa/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/es/legal/',
           ),
@@ -1058,7 +1058,7 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'SE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1068,7 +1068,7 @@ class PaymentExtensionSuggestions extends \
     6 => 'amazon_pay',
   ),
   'CH' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1076,18 +1076,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
     5 => 'amazon_pay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/ch/fr/entreprise/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/ch/fr/conditions-generales-de-vente/',
           ),
@@ -1096,32 +1096,32 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'AG' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'AI' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'AR' => 
-  array(
+  array (
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.ar/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.ar/ayuda/terminos-y-politicas_194',
           ),
@@ -1133,82 +1133,82 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'AW' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'BS' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'BB' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'BZ' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'BM' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'BO' => 
-  array(
+  array (
     0 => 'heliopay',
   ),
   'BQ' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'BR' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
     0 => 'paypal_full_stack',
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.br/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.br/ajuda/termos-e-politicas_194',
           ),
         ),
       ),
       '_remove' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1217,32 +1217,32 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'VG' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'KY' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'CL' => 
-  array(
+  array (
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.cl/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.cl/ayuda/terminos-y-politicas_194',
           ),
@@ -1254,20 +1254,20 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'CO' => 
-  array(
+  array (
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.co/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.co/ayuda/terminos-y-politicas_194',
           ),
@@ -1279,152 +1279,152 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'CR' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'CW' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'DM' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'DO' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'EC' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
     2 => 'heliopay',
   ),
   'SV' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'FK' => 
-  array(
+  array (
     0 => 'heliopay',
   ),
   'GF' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
     2 => 'heliopay',
   ),
   'GD' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'GP' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
     2 => 'heliopay',
   ),
   'GT' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'GY' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'HN' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'JM' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'MQ' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
     2 => 'heliopay',
   ),
   'MX' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
     0 => 'paypal_full_stack',
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.mx/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.mx/ayuda/terminos-y-politicas_194',
           ),
         ),
       ),
       '_remove' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
     1 => 'paypal_wallet',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/mx/negocios/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/mx/terminos-y-condiciones/',
           ),
@@ -1434,38 +1434,38 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'NI' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'PA' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'PY' => 
-  array(
+  array (
     0 => 'heliopay',
   ),
   'PE' => 
-  array(
+  array (
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.pe/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.pe/ayuda/terminos-y-politicas_194',
           ),
@@ -1477,63 +1477,63 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'KN' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'LC' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'SX' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'VC' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'SR' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'TT' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'TC' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'paypal_full_stack',
     2 => 'paypal_wallet',
     3 => 'heliopay',
   ),
   'UY' => 
-  array(
+  array (
     'mercado_pago' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.mercadopago.com.uy/costs-section',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.mercadopago.com.uy/ayuda/terminos-y-politicas_194',
           ),
@@ -1545,36 +1545,36 @@ class PaymentExtensionSuggestions extends \
     2 => 'heliopay',
   ),
   'VI' => 
-  array(
+  array (
     0 => 'tilopay',
     1 => 'heliopay',
   ),
   'VE' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
     2 => 'heliopay',
   ),
   'AU' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
     3 => 'airwallex',
     4 => 'antom',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/au/en/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/au/en/legal/general/ua',
           ),
@@ -1584,18 +1584,18 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
     6 => 'afterpay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/au/business/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/au/legal/',
           ),
@@ -1604,27 +1604,27 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'BD' => 
-  array(
+  array (
     'payoneer' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'CN' => 
-  array(
+  array (
     'paypal_full_stack' => 
-    array(
+    array (
       '_type' => 'psp',
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1634,15 +1634,15 @@ class PaymentExtensionSuggestions extends \
     2 => 'payoneer',
   ),
   'FJ' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'GU' => 
-  array(
+  array (
   ),
   'HK' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1652,13 +1652,13 @@ class PaymentExtensionSuggestions extends \
     6 => 'paypal_full_stack',
   ),
   'IN' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1670,13 +1670,13 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
   ),
   'ID' => 
-  array(
+  array (
     'antom' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1686,24 +1686,24 @@ class PaymentExtensionSuggestions extends \
     2 => 'paypal_wallet',
   ),
   'JP' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
     3 => 'antom',
     'square_in_person' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://squareup.com/jp/ja/pricing',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://squareup.com/jp/ja/legal/general/ua',
           ),
@@ -1714,13 +1714,13 @@ class PaymentExtensionSuggestions extends \
     5 => 'amazon_pay',
   ),
   'MY' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1731,12 +1731,12 @@ class PaymentExtensionSuggestions extends \
     3 => 'paypal_wallet',
   ),
   'NC' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'NZ' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1744,18 +1744,18 @@ class PaymentExtensionSuggestions extends \
     4 => 'paypal_wallet',
     5 => 'afterpay',
     'klarna' => 
-    array(
+    array (
       '_merge_on_type' => 
-      array(
+      array (
         'links' => 
-        array(
+        array (
           0 => 
-          array(
+          array (
             '_type' => 'pricing',
             'url' => 'https://www.klarna.com/nz/business/',
           ),
           1 => 
-          array(
+          array (
             '_type' => 'terms',
             'url' => 'https://www.klarna.com/nz/legal/',
           ),
@@ -1764,18 +1764,18 @@ class PaymentExtensionSuggestions extends \
     ),
   ),
   'PW' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'PH' => 
-  array(
+  array (
     'antom' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1785,7 +1785,7 @@ class PaymentExtensionSuggestions extends \
     2 => 'paypal_wallet',
   ),
   'SG' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -1794,44 +1794,44 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'LK' => 
-  array(
+  array (
     'payoneer' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'KR' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'TW' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'TH' => 
-  array(
+  array (
     'stripe' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1842,13 +1842,13 @@ class PaymentExtensionSuggestions extends \
     3 => 'paypal_wallet',
   ),
   'VN' => 
-  array(
+  array (
     'antom' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1858,56 +1858,56 @@ class PaymentExtensionSuggestions extends \
     2 => 'paypal_wallet',
   ),
   'DZ' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'AO' => 
-  array(
+  array (
   ),
   'BJ' => 
-  array(
+  array (
   ),
   'BW' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'BF' => 
-  array(
+  array (
   ),
   'BI' => 
-  array(
+  array (
   ),
   'CM' => 
-  array(
+  array (
   ),
   'CV' => 
-  array(
+  array (
   ),
   'CF' => 
-  array(
+  array (
   ),
   'TD' => 
-  array(
+  array (
   ),
   'KM' => 
-  array(
+  array (
   ),
   'CG' => 
-  array(
+  array (
   ),
   'CI' => 
-  array(
+  array (
   ),
   'EG' => 
-  array(
+  array (
     'paymob' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -1916,93 +1916,93 @@ class PaymentExtensionSuggestions extends \
     1 => 'paypal_wallet',
   ),
   'CD' => 
-  array(
+  array (
   ),
   'DJ' => 
-  array(
+  array (
   ),
   'GQ' => 
-  array(
+  array (
   ),
   'ER' => 
-  array(
+  array (
   ),
   'SZ' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'ET' => 
-  array(
+  array (
   ),
   'GA' => 
-  array(
+  array (
   ),
   'GH' => 
-  array(
+  array (
     'paystack' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'GM' => 
-  array(
+  array (
   ),
   'GN' => 
-  array(
+  array (
   ),
   'GW' => 
-  array(
+  array (
   ),
   'KE' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'LS' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'LR' => 
-  array(
+  array (
   ),
   'LY' => 
-  array(
+  array (
   ),
   'MG' => 
-  array(
+  array (
   ),
   'MW' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'ML' => 
-  array(
+  array (
   ),
   'MR' => 
-  array(
+  array (
   ),
   'MU' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'MA' => 
-  array(
+  array (
     'payoneer' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -2011,64 +2011,64 @@ class PaymentExtensionSuggestions extends \
     1 => 'paypal_wallet',
   ),
   'MZ' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'NA' => 
-  array(
+  array (
   ),
   'NE' => 
-  array(
+  array (
   ),
   'NG' => 
-  array(
+  array (
     'paystack' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'RE' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'RW' => 
-  array(
+  array (
   ),
   'ST' => 
-  array(
+  array (
   ),
   'SN' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'SC' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'SL' => 
-  array(
+  array (
   ),
   'SO' => 
-  array(
+  array (
   ),
   'ZA' => 
-  array(
+  array (
     'payfast' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -2078,100 +2078,100 @@ class PaymentExtensionSuggestions extends \
     2 => 'paypal_wallet',
   ),
   'SS' => 
-  array(
+  array (
   ),
   'TZ' => 
-  array(
+  array (
   ),
   'TG' => 
-  array(
+  array (
   ),
   'TN' => 
-  array(
+  array (
   ),
   'UG' => 
-  array(
+  array (
   ),
   'EH' => 
-  array(
+  array (
   ),
   'ZM' => 
-  array(
+  array (
   ),
   'ZW' => 
-  array(
+  array (
   ),
   'AF' => 
-  array(
+  array (
   ),
   'BH' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'GE' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'IQ' => 
-  array(
+  array (
   ),
   'IL' => 
-  array(
+  array (
     'airwallex' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'JO' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'KZ' => 
-  array(
+  array (
     'paypal_wallet' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
     ),
   ),
   'KW' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'LB' => 
-  array(
+  array (
   ),
   'OM' => 
-  array(
+  array (
     'paymob' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -2180,13 +2180,13 @@ class PaymentExtensionSuggestions extends \
     1 => 'paypal_wallet',
   ),
   'PK' => 
-  array(
+  array (
     'payoneer' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -2194,18 +2194,18 @@ class PaymentExtensionSuggestions extends \
     0 => 'paymob',
   ),
   'QA' => 
-  array(
+  array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'SA' => 
-  array(
+  array (
     'paymob' => 
-    array(
+    array (
       '_append' => 
-      array(
+      array (
         'tags' => 
-        array(
+        array (
           0 => 'preferred',
         ),
       ),
@@ -2214,7 +2214,7 @@ class PaymentExtensionSuggestions extends \
     1 => 'paypal_wallet',
   ),
   'AE' => 
-  array(
+  array (
     0 => 'woopayments',
     1 => 'paypal_full_stack',
     2 => 'stripe',
@@ -2223,7 +2223,7 @@ class PaymentExtensionSuggestions extends \
     5 => 'paypal_wallet',
   ),
   'YE' => 
-  array(
+  array (
   ),
 );
 

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Loads assets related to the product block editor.
  */
-class Init extends \
+class Init
 {
     const EDITOR_CONTEXT_NAME = 'woocommerce/edit-product';
 
@@ -21,7 +21,7 @@ class Init extends \
      *
      * @var array
      */
-    private $product_templates = array(
+    private $product_templates = array (
 );
 
     /**

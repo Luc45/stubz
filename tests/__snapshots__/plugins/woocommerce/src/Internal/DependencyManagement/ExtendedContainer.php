@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  *
  * NOTE: This class will be removed in WooCommerce 10.0.
  */
-class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\Container
+class ExtendedContainer
 {
     /**
      * The root namespace of all WooCommerce classes in the `src` directory.
@@ -22,7 +22,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      *
      * @var array
      */
-    private $original_concretes = array(
+    private $original_concretes = array (
 );
 
     /**
@@ -37,7 +37,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      *
      * @var string[]
      */
-    private $registration_whitelist = array(
+    private $registration_whitelist = array (
   0 => 'Automattic\\WooCommerce\\Container',
 );
 
@@ -46,7 +46,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      *
      * @var array
      */
-    private array $known_tags = array(
+    private array $known_tags = array (
 );
 
     /**

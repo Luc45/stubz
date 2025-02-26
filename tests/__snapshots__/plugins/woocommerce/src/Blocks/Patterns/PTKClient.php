@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  *
  * @internal
  */
-class PTKClient extends \
+class PTKClient
 {
     const PATTERNS_TOOLKIT_URL = 'https://public-api.wordpress.com/rest/v1/ptk/patterns/';
 
@@ -17,7 +17,7 @@ class PTKClient extends \
      * @param array $options Options for fetching patterns.
      * @return array|WP_Error
      */
-    public function fetch_patterns(array $options = array(
+    public function fetch_patterns(array $options = array (
 ))
     {
         // stub

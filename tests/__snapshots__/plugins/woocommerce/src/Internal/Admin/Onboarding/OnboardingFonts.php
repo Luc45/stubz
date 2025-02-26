@@ -7,158 +7,158 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
  *
  * @internal
  */
-class OnboardingFonts extends \
+class OnboardingFonts
 {
     const SOURCE_LOGGER = 'font_loader';
 
-    const FONT_FAMILIES_TO_INSTALL = array(
+    const FONT_FAMILIES_TO_INSTALL = array (
   'inter' => 
-  array(
+  array (
     'fontFamily' => 'Inter',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
       1 => '500',
       2 => '600',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'bodoni-moda' => 
-  array(
+  array (
     'fontFamily' => 'Bodoni Moda',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'overpass' => 
-  array(
+  array (
     'fontFamily' => 'Overpass',
     'fontWeights' => 
-    array(
+    array (
       0 => '300',
       1 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'albert-sans' => 
-  array(
+  array (
     'fontFamily' => 'Albert Sans',
     'fontWeights' => 
-    array(
+    array (
       0 => '700',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'lora' => 
-  array(
+  array (
     'fontFamily' => 'Lora',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'montserrat' => 
-  array(
+  array (
     'fontFamily' => 'Montserrat',
     'fontWeights' => 
-    array(
+    array (
       0 => '500',
       1 => '700',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'arvo' => 
-  array(
+  array (
     'fontFamily' => 'Arvo',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'rubik' => 
-  array(
+  array (
     'fontFamily' => 'Rubik',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
       1 => '800',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'newsreader' => 
-  array(
+  array (
     'fontFamily' => 'Newsreader',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'cormorant' => 
-  array(
+  array (
     'fontFamily' => 'Cormorant',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
       1 => '500',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'work-sans' => 
-  array(
+  array (
     'fontFamily' => 'Work Sans',
     'fontWeights' => 
-    array(
+    array (
       0 => '400',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),
   'raleway' => 
-  array(
+  array (
     'fontFamily' => 'Raleway',
     'fontWeights' => 
-    array(
+    array (
       0 => '700',
     ),
     'fontStyles' => 
-    array(
+    array (
       0 => 'normal',
     ),
   ),

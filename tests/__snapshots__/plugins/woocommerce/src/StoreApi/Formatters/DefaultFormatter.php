@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Formatters;
 /**
  * Default Formatter.
  */
-class DefaultFormatter extends \
+class DefaultFormatter
 {
     /**
      * Format a given value and return the result.
@@ -14,7 +14,7 @@ class DefaultFormatter extends \
      * @param array $options Options that influence the formatting.
      * @return mixed
      */
-    public function format($value, array $options = array(
+    public function format($value, array $options = array (
 ))
     {
         // stub

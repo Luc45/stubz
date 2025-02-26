@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  *
  * @package Automattic\WooCommerce\Database\Migrations\CustomOrderTable
  */
-class PostsToOrdersMigrationController extends \
+class PostsToOrdersMigrationController
 {
     const LOGS_SOURCE_NAME = 'posts-to-orders-migration';
 

@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @since x.x.x
  */
-class MarketingServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class MarketingServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.
      *
      * @var array
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Marketing\\MarketingSpecs',
   1 => 'Automattic\\WooCommerce\\Admin\\Marketing\\MarketingChannels',
 );
@@ -29,5 +29,5 @@ class MarketingServiceProvider extends \Automattic\WooCommerce\Internal\Dependen
 
 }
 
-\define('WC_MCM_EXISTS', true);
+const WC_MCM_EXISTS = true;
 

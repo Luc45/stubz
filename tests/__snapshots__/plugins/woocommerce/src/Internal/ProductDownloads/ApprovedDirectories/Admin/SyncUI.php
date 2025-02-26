@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\A
  * Adds tools to the Status > Tools page that can be used to (re-)initiate or stop a synchronization process
  * for Approved Download Directories.
  */
-class SyncUI extends \
+class SyncUI
 {
     /**
      * The active register of approved directories.

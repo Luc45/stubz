@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * ReportCSVExporter Class.
  */
-class ReportCSVExporter extends \WC_CSV_Batch_Exporter
+class ReportCSVExporter
 {
     /**
      * Type of report being exported.
@@ -34,7 +34,7 @@ class ReportCSVExporter extends \WC_CSV_Batch_Exporter
      * @param string $type Report type. E.g. 'customers'.
      * @param array  $args Report parameters.
      */
-    public function __construct($type = false, $args = array(
+    public function __construct($type = false, $args = array (
 ))
     {
         // stub

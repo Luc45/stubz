@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * ShippingAddress class.
  */
-class ShippingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class ShippingAddress
 {
     /**
      * Block name.
@@ -23,7 +23,7 @@ class ShippingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCon
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub
@@ -36,7 +36,7 @@ class ShippingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCon
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Data_Store_WP class.
  */
-class WC_Data_Store_WP extends \
+class WC_Data_Store_WP
 {
     /**
      * Meta type. This should match up with
@@ -32,7 +32,7 @@ class WC_Data_Store_WP extends \
      *
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
 );
 
     /**
@@ -42,7 +42,7 @@ class WC_Data_Store_WP extends \
      *
      * @var array
      */
-    protected $must_exist_meta_keys = array(
+    protected $must_exist_meta_keys = array (
 );
 
     /**
@@ -217,7 +217,7 @@ class WC_Data_Store_WP extends \
      * @param array  $wp_query_args WP_Query args.
      * @return array Modified $wp_query_args
      */
-    public function parse_date_for_wp_query($query_var, $key, $wp_query_args = array(
+    public function parse_date_for_wp_query($query_var, $key, $wp_query_args = array (
 ))
     {
         // stub

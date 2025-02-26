@@ -12,7 +12,7 @@ namespace ;
  * @version     2.1.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Payment_Gateway extends \WC_Settings_API
+abstract class WC_Payment_Gateway
 {
     /**
      * Set if the place order button should be renamed on selection.
@@ -96,7 +96,7 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var array
      */
-    public $supports = array(
+    public $supports = array (
   0 => 'products',
 );
 
@@ -134,7 +134,7 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var array
      */
-    protected $tokens = array(
+    protected $tokens = array (
 );
 
     /**
@@ -394,8 +394,8 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      * @param  array $args Arguments.
      * @param  array $fields Fields.
      */
-    public function credit_card_form($args = array(
-), $fields = array(
+    public function credit_card_form($args = array (
+), $fields = array (
 ))
     {
         // stub

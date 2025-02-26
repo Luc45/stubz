@@ -9,7 +9,7 @@ namespace ;
  * @extends  WP_REST_Controller
  * @version  2.6.0
  */
-abstract class WC_REST_Controller extends \WP_REST_Controller
+abstract class WC_REST_Controller
 {
     /**
      * Endpoint namespace.

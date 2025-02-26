@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs;
  * This handles polling specs from JSON endpoints, and
  * stores the specs in to the database as an option.
  */
-abstract class DataSourcePoller extends \
+abstract class DataSourcePoller
 {
     const FILTER_NAME = 'data_source_poller_data_sources';
 
@@ -18,7 +18,7 @@ abstract class DataSourcePoller extends \
      *
      * @var string
      */
-    protected $id = array(
+    protected $id = array (
 );
 
     /**
@@ -26,7 +26,7 @@ abstract class DataSourcePoller extends \
      *
      * @var array
      */
-    protected $data_sources = array(
+    protected $data_sources = array (
 );
 
     /**
@@ -34,7 +34,7 @@ abstract class DataSourcePoller extends \
      *
      * @var array
      */
-    protected $args = array(
+    protected $args = array (
 );
 
     /**
@@ -56,8 +56,8 @@ abstract class DataSourcePoller extends \
      * @param array  $data_sources urls for data sources.
      * @param array  $args Options for DataSourcePoller.
      */
-    public function __construct($id, $data_sources = array(
-), $args = array(
+    public function __construct($id, $data_sources = array (
+), $args = array (
 ))
     {
         // stub

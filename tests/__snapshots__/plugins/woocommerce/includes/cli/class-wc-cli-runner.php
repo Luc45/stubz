@@ -14,7 +14,7 @@ namespace ;
  * @version 3.0.0
  * @package WooCommerce
  */
-class WC_CLI_Runner extends \
+class WC_CLI_Runner
 {
     /**
      * Endpoints to disable (meaning they will not be available as CLI commands).
@@ -23,7 +23,7 @@ class WC_CLI_Runner extends \
      *
      * @var array
      */
-    private static $disabled_endpoints = array(
+    private static $disabled_endpoints = array (
   0 => 'settings',
   1 => 'settings/(?P<group_id>[\\w-]+)',
   2 => 'settings/(?P<group_id>[\\w-]+)/batch',
@@ -61,7 +61,7 @@ class WC_CLI_Runner extends \
      * @param array               $route_data Command data.
      * @param array               $command_args WP-CLI command arguments.
      */
-    private static function register_route_commands($rest_command, $route, $route_data, $command_args = array(
+    private static function register_route_commands($rest_command, $route, $route_data, $command_args = array (
 ))
     {
         // stub

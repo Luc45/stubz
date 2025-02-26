@@ -7,7 +7,7 @@ namespace ;
  *
  * @since 3.2.0
  */
-final class WC_Cart_Totals extends \
+final class WC_Cart_Totals
 {
     /**
      * Reference to cart object.
@@ -31,7 +31,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $items = array(
+    protected $items = array (
 );
 
     /**
@@ -40,7 +40,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $fees = array(
+    protected $fees = array (
 );
 
     /**
@@ -49,7 +49,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $shipping = array(
+    protected $shipping = array (
 );
 
     /**
@@ -58,7 +58,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $coupons = array(
+    protected $coupons = array (
 );
 
     /**
@@ -67,7 +67,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $coupon_discount_totals = array(
+    protected $coupon_discount_totals = array (
 );
 
     /**
@@ -76,7 +76,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $coupon_discount_tax_totals = array(
+    protected $coupon_discount_tax_totals = array (
 );
 
     /**
@@ -92,7 +92,7 @@ final class WC_Cart_Totals extends \
      * @since 3.2.0
      * @var array
      */
-    protected $totals = array(
+    protected $totals = array (
   'fees_total' => 0,
   'fees_total_tax' => 0,
   'items_subtotal' => 0,
@@ -365,7 +365,7 @@ final class WC_Cart_Totals extends \
      * @param  array|string $types    Types to merge and return. Defaults to all.
      * @return array
      */
-    protected function get_merged_taxes($in_cents = false, $types = array(
+    protected function get_merged_taxes($in_cents = false, $types = array (
   0 => 'items',
   1 => 'fees',
   2 => 'shipping',

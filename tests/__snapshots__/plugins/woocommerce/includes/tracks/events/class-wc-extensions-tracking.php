@@ -5,7 +5,7 @@ namespace ;
 /**
  * This class adds actions to track usage of the WooCommerce Extensions page.
  */
-class WC_Extensions_Tracking extends \
+class WC_Extensions_Tracking
 {
     /**
      * Init tracking.

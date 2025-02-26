@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with internationalization.
  */
-final class I18nUtil extends \
+final class I18nUtil
 {
     /**
      * A cache for the i18n units data.

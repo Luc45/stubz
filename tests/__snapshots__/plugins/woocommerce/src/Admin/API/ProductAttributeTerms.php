@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Product_Attribute_Terms_Controller
  */
-class ProductAttributeTerms extends \WC_REST_Product_Attribute_Terms_Controller
+class ProductAttributeTerms
 {
     /**
      * Endpoint namespace.

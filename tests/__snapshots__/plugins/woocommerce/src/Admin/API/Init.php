@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  */
 #[AllowDynamicProperties]
-class Init extends \
+class Init
 {
     /**
      * The single instance of the class.

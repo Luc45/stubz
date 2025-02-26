@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_API_Keys.
  */
-class WC_Admin_API_Keys extends \
+class WC_Admin_API_Keys
 {
     /**
      * Initialize the API Keys admin actions.

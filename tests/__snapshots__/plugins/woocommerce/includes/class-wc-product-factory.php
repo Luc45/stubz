@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product factory class.
  */
-class WC_Product_Factory extends \
+class WC_Product_Factory
 {
     /**
      * Get a product.
@@ -14,7 +14,7 @@ class WC_Product_Factory extends \
      * @param array $deprecated Previously used to pass arguments to the factory, e.g. to force a type.
      * @return WC_Product|bool Product object or false if the product cannot be loaded.
      */
-    public function get_product($product_id = false, $deprecated = array(
+    public function get_product($product_id = false, $deprecated = array (
 ))
     {
         // stub

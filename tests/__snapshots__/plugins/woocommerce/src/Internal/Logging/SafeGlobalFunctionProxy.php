@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Internal\Logging;
  * @since 9.4.0
  * @package Automattic\WooCommerce\Internal\Logging
  */
-class SafeGlobalFunctionProxy extends \
+class SafeGlobalFunctionProxy
 {
     /**
      * Load missing function if we know where to find it.
@@ -49,7 +49,7 @@ class SafeGlobalFunctionProxy extends \
      * @param string $error_message The error message.
      * @param array  $context       Additional context for the error.
      */
-    protected static function log_wrapper_error($function_name, $error_message, $context = array(
+    protected static function log_wrapper_error($function_name, $error_message, $context = array (
 ))
     {
         // stub

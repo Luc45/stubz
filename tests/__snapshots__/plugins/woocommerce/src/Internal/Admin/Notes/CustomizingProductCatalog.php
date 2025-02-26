@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  *
  * @package Automattic\WooCommerce\Admin\Notes
  */
-class CustomizingProductCatalog extends \
+class CustomizingProductCatalog
 {
     const NOTE_NAME = 'wc-admin-customizing-product-catalog';
 

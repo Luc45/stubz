@@ -5,9 +5,9 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 /**
  * StyleAttributesUtils class used for getting class and style from attributes.
  */
-class StyleAttributesUtils extends \
+class StyleAttributesUtils
 {
-    const EMPTY_STYLE = array(
+    const EMPTY_STYLE = array (
   'class' => '',
   'style' => '',
   'value' => '',
@@ -146,7 +146,7 @@ class StyleAttributesUtils extends \
      *
      * @return string Space-separated classes.
      */
-    public static function get_classes_by_attributes($attributes, $properties = array(
+    public static function get_classes_by_attributes($attributes, $properties = array (
 ))
     {
         // stub
@@ -284,7 +284,7 @@ class StyleAttributesUtils extends \
      *
      * @return string Space-separated style rules.
      */
-    public static function get_styles_by_attributes($attributes, $properties = array(
+    public static function get_styles_by_attributes($attributes, $properties = array (
 ))
     {
         // stub
@@ -356,8 +356,8 @@ class StyleAttributesUtils extends \
      * @param array $exclude Properties to exclude.
      * @return array
      */
-    public static function get_classes_and_styles_by_attributes($attributes, $properties = array(
-), $exclude = array(
+    public static function get_classes_and_styles_by_attributes($attributes, $properties = array (
+), $exclude = array (
 ))
     {
         // stub

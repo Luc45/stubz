@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductNew class.
  */
-class ProductNew extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProductGrid
+class ProductNew
 {
     /**
      * Block name.

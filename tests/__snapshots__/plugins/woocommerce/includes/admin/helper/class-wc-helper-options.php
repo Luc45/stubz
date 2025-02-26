@@ -7,7 +7,7 @@ namespace ;
  *
  * An interface to the woocommerce_helper_data entry in the wp_options table.
  */
-class WC_Helper_Options extends \
+class WC_Helper_Options
 {
     /**
      * The option name used to store the helper data.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Validation class.
  */
-class WC_Validation extends \
+class WC_Validation
 {
     /**
      * Validates an email using WordPress native is_email function.

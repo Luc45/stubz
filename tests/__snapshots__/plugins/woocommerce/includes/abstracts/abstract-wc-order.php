@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Abstract_Order class.
  */
-abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
+abstract class WC_Abstract_Order
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
@@ -16,7 +16,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'parent_id' => 0,
   'status' => '',
   'currency' => '',
@@ -41,7 +41,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array(
+    protected $legacy_datastore_props = array (
   0 => '_recorded_coupon_usage_counts',
 );
 
@@ -51,7 +51,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @since 3.0.0
      * @var array
      */
-    protected $items = array(
+    protected $items = array (
 );
 
     /**
@@ -60,7 +60,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @since 3.0.0
      * @var array
      */
-    protected $items_to_delete = array(
+    protected $items_to_delete = array (
 );
 
     /**
@@ -91,7 +91,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @var array
      */
-    protected array $item_types_to_group = array(
+    protected array $item_types_to_group = array (
   'line_item' => 'line_items',
   'tax' => 'tax_lines',
   'shipping' => 'shipping_lines',
@@ -933,7 +933,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @param  array      $args Args for the added product.
      * @return int
      */
-    public function add_product($product, $qty = 1, $args = array(
+    public function add_product($product, $qty = 1, $args = array (
 ))
     {
         // stub
@@ -991,7 +991,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @param array $args array Override the location.
      * @return array
      */
-    protected function get_tax_location($args = array(
+    protected function get_tax_location($args = array (
 ))
     {
         // stub
@@ -1004,7 +1004,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @param array $args array Override the location.
      * @return array
      */
-    public function get_taxable_location($args = array(
+    public function get_taxable_location($args = array (
 ))
     {
         // stub
@@ -1019,7 +1019,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @return mixed|void Tax rates.
      */
-    protected function get_tax_rates($tax_class, $location_args = array(
+    protected function get_tax_rates($tax_class, $location_args = array (
 ), $customer = null)
     {
         // stub
@@ -1035,7 +1035,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @param array $args Added in 3.0.0 to pass things like location.
      */
-    public function calculate_taxes($args = array(
+    public function calculate_taxes($args = array (
 ))
     {
         // stub

@@ -8,7 +8,7 @@ namespace ;
  * @since 5.5.0
  * @package WooCommerce
  */
-class WC_CLI_Tracker_Command extends \
+class WC_CLI_Tracker_Command
 {
     /**
      * Registers a command for showing WooCommerce Tracker snapshot data.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\AI;
  *
  * @internal
  */
-class Configuration extends \
+class Configuration
 {
     /**
      * The name of the option that stores the site owner's consent to connect to the AI API.

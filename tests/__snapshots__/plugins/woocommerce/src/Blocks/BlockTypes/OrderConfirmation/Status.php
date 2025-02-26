@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * Status class.
  */
-class Status extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class Status
 {
     /**
      * Block name.
@@ -38,7 +38,7 @@ class Status extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub

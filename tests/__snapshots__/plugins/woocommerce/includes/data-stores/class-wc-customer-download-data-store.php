@@ -7,9 +7,9 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Customer_Download_Data_Store extends \
+class WC_Customer_Download_Data_Store
 {
-    const DOWNLOAD_PERMISSION_DB_FIELDS = array(
+    const DOWNLOAD_PERMISSION_DB_FIELDS = array (
   0 => 'download_id',
   1 => 'product_id',
   2 => 'user_id',
@@ -95,7 +95,7 @@ class WC_Customer_Download_Data_Store extends \
      * @param WC_Customer_Download $download WC_Customer_Download object.
      * @param array                $args Array of args to pass to the delete method.
      */
-    public function delete(&$download, $args = array(
+    public function delete(&$download, $args = array (
 ))
     {
         // stub
@@ -185,7 +185,7 @@ class WC_Customer_Download_Data_Store extends \
      * @param  array $args Arguments to filter downloads. $args['return'] accepts the following values: 'objects' (default), 'ids' or a comma separated list of fields (for example: 'order_id,user_id,user_email').
      * @return array Can be an array of permission_ids, an array of WC_Customer_Download objects or an array of arrays containing specified fields depending on the value of $args['return'].
      */
-    public function get_downloads($args = array(
+    public function get_downloads($args = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 /**
  * Payment Providers class.
  */
-class PaymentProviders extends \
+class PaymentProviders
 {
     const TYPE_GATEWAY = 'gateway';
 
@@ -49,7 +49,7 @@ class PaymentProviders extends \
      *
      * @var PaymentGateway[]
      */
-    private array $instances = array(
+    private array $instances = array (
 );
 
     /**

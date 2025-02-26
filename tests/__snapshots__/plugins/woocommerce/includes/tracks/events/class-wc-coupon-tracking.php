@@ -5,7 +5,7 @@ namespace ;
 /**
  * This class adds actions to track usage of a WooCommerce Coupon.
  */
-class WC_Coupon_Tracking extends \
+class WC_Coupon_Tracking
 {
     /**
      * Init tracking.

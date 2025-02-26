@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Accounts.
  */
-class WC_Settings_Accounts extends \WC_Settings_Page
+class WC_Settings_Accounts
 {
     /**
      * Setting page icon.

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Importers
  */
-class ImportSetWCShipping extends \
+class ImportSetWCShipping
 {
     /**
      * Process the import of WooCommerce shipping settings.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 /**
  * Helper class for filtering products using the product attributes lookup table.
  */
-class Filterer extends \
+class Filterer
 {
     /**
      * The product attributes lookup data store to use.

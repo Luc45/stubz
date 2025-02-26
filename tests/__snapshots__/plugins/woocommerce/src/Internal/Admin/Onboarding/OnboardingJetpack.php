@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Contains logic around Jetpack setup during onboarding.
  */
-class OnboardingJetpack extends \
+class OnboardingJetpack
 {
     /**
      * Class instance.

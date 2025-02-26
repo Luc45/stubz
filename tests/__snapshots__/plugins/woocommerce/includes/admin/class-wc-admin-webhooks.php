@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Webhooks.
  */
-class WC_Admin_Webhooks extends \
+class WC_Admin_Webhooks
 {
     /**
      * Initialize the webhooks admin actions.

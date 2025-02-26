@@ -10,7 +10,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_AdminView_Deprecated extends \
+class ActionScheduler_AdminView_Deprecated
 {
     /**
      * Adjust parameters for custom post type.

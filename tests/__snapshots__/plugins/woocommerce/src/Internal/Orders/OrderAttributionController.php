@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
  *
  * @since 8.5.0
  */
-class OrderAttributionController extends \
+class OrderAttributionController
 {
     /**
      * The WPConsentAPI integration instance.

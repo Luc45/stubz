@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order factory class
  */
-class WC_Order_Factory extends \
+class WC_Order_Factory
 {
     /**
      * Get order.
@@ -27,7 +27,7 @@ class WC_Order_Factory extends \
      *
      * @throws \Exception When an invalid order is found.
      */
-    public static function get_orders($order_ids = array(
+    public static function get_orders($order_ids = array (
 ), $skip_invalid = false)
     {
         // stub

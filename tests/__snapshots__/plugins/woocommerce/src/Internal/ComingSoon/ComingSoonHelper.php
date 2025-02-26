@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ComingSoon;
 /**
  * Provides helper methods for coming soon functionality.
  */
-class ComingSoonHelper extends \
+class ComingSoonHelper
 {
     /**
      * Returns true when the entire site is live.

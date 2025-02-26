@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductImage;
 /**
  * Class for the product image matching by SKU.
  */
-class MatchImageBySKU extends \
+class MatchImageBySKU
 {
     /**
      * The name of the setting for this feature.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_WCCOM_Site_Installation_Step_Get_Product_Info class
  */
-class WC_WCCOM_Site_Installation_Step_Get_Product_Info extends \
+class WC_WCCOM_Site_Installation_Step_Get_Product_Info
 {
     /**
      * The current installation state.

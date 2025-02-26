@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\InteractivityComponents;
  *
  * @package Automattic\WooCommerce\Blocks\InteractivityComponents
  */
-class CheckboxList extends \
+class CheckboxList
 {
     /**
      * Render the checkbox list.

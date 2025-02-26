@@ -10,7 +10,7 @@ namespace ;
  * @category Class
  * @author   WooThemes
  */
-abstract class WC_Legacy_Customer extends \WC_Data
+abstract class WC_Legacy_Customer
 {
     /**
      * __isset legacy.

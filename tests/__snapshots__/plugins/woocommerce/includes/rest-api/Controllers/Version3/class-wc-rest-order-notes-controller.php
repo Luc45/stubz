@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Order_Notes_V2_Controller
  */
-class WC_REST_Order_Notes_Controller extends \WC_REST_Order_Notes_V2_Controller
+class WC_REST_Order_Notes_Controller
 {
     /**
      * Endpoint namespace.

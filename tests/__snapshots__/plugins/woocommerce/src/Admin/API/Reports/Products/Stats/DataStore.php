@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products\Stats;
 /**
  * API\Reports\Products\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataStore
+class DataStore
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -14,7 +14,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataS
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'date_start' => 'strval',
   'date_end' => 'strval',
   'product_id' => 'intval',

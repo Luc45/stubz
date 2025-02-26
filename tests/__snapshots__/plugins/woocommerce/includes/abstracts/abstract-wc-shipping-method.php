@@ -11,7 +11,7 @@ namespace ;
  * @version     3.0.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Shipping_Method extends \WC_Settings_API
+abstract class WC_Shipping_Method
 {
     /**
      * Features this method supports. Possible features used by core:
@@ -22,7 +22,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var array
      */
-    public $supports = array(
+    public $supports = array (
   0 => 'settings',
 );
 
@@ -66,7 +66,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var array
      */
-    public $rates = array(
+    public $rates = array (
 );
 
     /**
@@ -102,7 +102,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var array
      */
-    public $instance_form_fields = array(
+    public $instance_form_fields = array (
 );
 
     /**
@@ -110,7 +110,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var array
      */
-    public $instance_settings = array(
+    public $instance_settings = array (
 );
 
     /**
@@ -129,7 +129,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      * @deprecated 2.6.0
      * @var array
      */
-    public $countries = array(
+    public $countries = array (
 );
 
     /**
@@ -182,7 +182,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @param array $package Package array.
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub
@@ -282,7 +282,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @param array $args Arguments (default: array()).
      */
-    public function add_rate($args = array(
+    public function add_rate($args = array (
 ))
     {
         // stub

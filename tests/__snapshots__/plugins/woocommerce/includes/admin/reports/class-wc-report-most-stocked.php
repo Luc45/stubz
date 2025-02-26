@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Report_Most_Stocked.
  */
-class WC_Report_Most_Stocked extends \WC_Report_Stock
+class WC_Report_Most_Stocked
 {
     /**
      * Get Products matching stock criteria.

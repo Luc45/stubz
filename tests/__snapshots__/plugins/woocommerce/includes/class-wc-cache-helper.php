@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Cache_Helper.
  */
-class WC_Cache_Helper extends \
+class WC_Cache_Helper
 {
     /**
      * Transients to delete on shutdown.
      *
      * @var array Array of transient keys.
      */
-    private static $delete_transients = array(
+    private static $delete_transients = array (
 );
 
     /**

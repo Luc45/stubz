@@ -9,14 +9,14 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Steps;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Steps
  */
-class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
+class SetWCPaymentGateways
 {
     /**
      * Payment gateways.
      *
      * @var array $payment_gateways Array of payment gateways.
      */
-    protected array $payment_gateways = array(
+    protected array $payment_gateways = array (
 );
 
     /**
@@ -24,7 +24,7 @@ class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
      *
      * @param array $payment_gateways Optional array of payment gateways.
      */
-    public function __construct(array $payment_gateways = array(
+    public function __construct(array $payment_gateways = array (
 ))
     {
         // stub

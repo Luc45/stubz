@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Product_Importer Class.
  */
-abstract class WC_Product_Importer extends \
+abstract class WC_Product_Importer
 {
     /**
      * CSV file.
@@ -26,7 +26,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $params = array(
+    protected $params = array (
 );
 
     /**
@@ -34,7 +34,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $raw_keys = array(
+    protected $raw_keys = array (
 );
 
     /**
@@ -42,7 +42,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $mapped_keys = array(
+    protected $mapped_keys = array (
 );
 
     /**
@@ -50,7 +50,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $raw_data = array(
+    protected $raw_data = array (
 );
 
     /**
@@ -58,7 +58,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $file_positions = array(
+    protected $file_positions = array (
 );
 
     /**
@@ -66,7 +66,7 @@ abstract class WC_Product_Importer extends \
      *
      * @var array
      */
-    protected $parsed_data = array(
+    protected $parsed_data = array (
 );
 
     /**

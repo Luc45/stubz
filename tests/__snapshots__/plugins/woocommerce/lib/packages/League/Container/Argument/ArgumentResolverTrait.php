@@ -15,7 +15,7 @@ trait ArgumentResolverTrait
     /**
      * {@inheritdoc}
      */
-    public function reflectArguments(ReflectionFunctionAbstract $method, array $args = array(
+    public function reflectArguments(ReflectionFunctionAbstract $method, array $args = array (
 )): array
     {
         // stub

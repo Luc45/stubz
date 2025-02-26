@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AbstractProductGrid class.
  */
-abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
+abstract class AbstractProductGrid
 {
     /**
      * Attributes.
      *
      * @var array
      */
-    protected $attributes = array(
+    protected $attributes = array (
 );
 
     /**
@@ -27,7 +27,7 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      *
      * @var array
      */
-    protected $query_args = array(
+    protected $query_args = array (
 );
 
     /**
@@ -35,7 +35,7 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      *
      * @var array
      */
-    protected $meta_query = array(
+    protected $meta_query = array (
 );
 
     /**
@@ -56,7 +56,7 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      * @param WP_Block|null $block      Block instance.
      * @return string Rendered block type output.
      */
-    protected function render($attributes = array(
+    protected function render($attributes = array (
 ), $content = '', $block = null)
     {
         // stub
@@ -303,7 +303,7 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

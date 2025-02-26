@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
  *
  * This exception is thrown when more than one of a product that can only be purchased individually is in a cart.
  */
-class StockAvailabilityException extends \Exception implements \Throwable, \Stringable
+class StockAvailabilityException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.
@@ -28,7 +28,7 @@ class StockAvailabilityException extends \Exception implements \Throwable, \Stri
      *
      * @var array
      */
-    public $additional_data = array(
+    public $additional_data = array (
 );
 
     /**
@@ -38,7 +38,7 @@ class StockAvailabilityException extends \Exception implements \Throwable, \Stri
      * @param string $product_name     The name of the product that can only be purchased individually.
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      */
-    public function __construct($error_code, $product_name, $additional_data = array(
+    public function __construct($error_code, $product_name, $additional_data = array (
 ))
     {
         // stub

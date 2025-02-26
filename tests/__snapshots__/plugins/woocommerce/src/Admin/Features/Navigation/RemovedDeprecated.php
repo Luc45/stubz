@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\Navigation;
 /**
  * Handle calls to deprecated methods.
  */
-class RemovedDeprecated extends \
+class RemovedDeprecated
 {
     /**
      * Handle deprecated method calls.

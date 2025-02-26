@@ -5,14 +5,14 @@ namespace ;
 /**
  * Product external class.
  */
-class WC_Product_External extends \WC_Product
+class WC_Product_External
 {
     /**
      * Stores product data.
      *
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'product_url' => '',
   'button_text' => '',
 );

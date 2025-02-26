@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductButton class.
  */
-class ProductButton extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductButton
 {
     /**
      * Block name.

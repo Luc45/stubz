@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class TransformerService extends \
+class TransformerService
 {
     /**
      * Create a transformer object by name.

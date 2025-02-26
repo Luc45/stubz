@@ -376,7 +376,7 @@ function wc_get_price_decimals()
  * }
  * @return string
  */
-function wc_price($price, $args = array(
+function wc_price($price, $args = array (
 ))
 {
     // stub

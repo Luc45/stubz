@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  * Utility methods used for the Product Gallery block.
  * {@internal This class and its methods are not intended for public use.}
  */
-class ProductGalleryUtils extends \
+class ProductGalleryUtils
 {
     const CROP_IMAGE_SIZE_NAME = '_woo_blocks_product_gallery_crop_full';
 
@@ -24,7 +24,7 @@ class ProductGalleryUtils extends \
      * @param bool   $crop_images Whether to crop images.
      * @return array
      */
-    public static function get_product_gallery_images($post_id, $size = 'full', $attributes = array(
+    public static function get_product_gallery_images($post_id, $size = 'full', $attributes = array (
 ), $wrapper_class = '', $crop_images = false)
     {
         // stub

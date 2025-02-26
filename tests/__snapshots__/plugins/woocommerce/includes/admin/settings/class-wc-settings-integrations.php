@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Integrations.
  */
-class WC_Settings_Integrations extends \WC_Settings_Page
+class WC_Settings_Integrations
 {
     /**
      * Setting page icon.

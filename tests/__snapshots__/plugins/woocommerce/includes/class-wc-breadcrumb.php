@@ -5,14 +5,14 @@ namespace ;
 /**
  * Breadcrumb class.
  */
-class WC_Breadcrumb extends \
+class WC_Breadcrumb
 {
     /**
      * Breadcrumb trail.
      *
      * @var array
      */
-    protected $crumbs = array(
+    protected $crumbs = array (
 );
 
     /**

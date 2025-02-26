@@ -8,9 +8,9 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  *
  * Parts of the implementation have been adapted from {@link https://core.trac.wordpress.org/browser/tags/6.0.1/src/wp-includes/class-wp-meta-query.php}.
  */
-class OrdersTableMetaQuery extends \
+class OrdersTableMetaQuery
 {
-    const NON_NUMERIC_OPERATORS = array(
+    const NON_NUMERIC_OPERATORS = array (
   0 => '=',
   1 => '!=',
   2 => 'LIKE',
@@ -24,7 +24,7 @@ class OrdersTableMetaQuery extends \
   10 => 'NOT REGEXP',
 );
 
-    const NUMERIC_OPERATORS = array(
+    const NUMERIC_OPERATORS = array (
   0 => '>',
   1 => '>=',
   2 => '<',
@@ -54,7 +54,7 @@ class OrdersTableMetaQuery extends \
      *
      * @var array
      */
-    private $queries = array(
+    private $queries = array (
 );
 
     /**
@@ -62,7 +62,7 @@ class OrdersTableMetaQuery extends \
      *
      * @var array
      */
-    private $flattened_clauses = array(
+    private $flattened_clauses = array (
 );
 
     /**
@@ -70,7 +70,7 @@ class OrdersTableMetaQuery extends \
      *
      * @var array
      */
-    private $join = array(
+    private $join = array (
 );
 
     /**
@@ -78,7 +78,7 @@ class OrdersTableMetaQuery extends \
      *
      * @var array
      */
-    private $where = array(
+    private $where = array (
 );
 
     /**
@@ -86,7 +86,7 @@ class OrdersTableMetaQuery extends \
      *
      * @var array
      */
-    private $table_aliases = array(
+    private $table_aliases = array (
 );
 
     /**

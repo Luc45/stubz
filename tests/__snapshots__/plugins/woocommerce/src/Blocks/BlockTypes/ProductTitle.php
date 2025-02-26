@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductTitle class.
  */
-class ProductTitle extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductTitle
 {
     /**
      * Block name.

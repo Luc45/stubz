@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Report_Out_Of_Stock class.
  */
-class WC_Report_Out_Of_Stock extends \WC_Report_Stock
+class WC_Report_Out_Of_Stock
 {
     /**
      * No items found text.

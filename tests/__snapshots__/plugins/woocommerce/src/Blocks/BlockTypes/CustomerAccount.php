@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CustomerAccount class.
  */
-class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class CustomerAccount
 {
     const TEXT_ONLY = 'text_only';
 
@@ -27,9 +27,9 @@ class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      *
      * @var array
      */
-    protected $hooked_block_placements = array(
+    protected $hooked_block_placements = array (
   0 => 
-  array(
+  array (
     'position' => 'after',
     'anchor' => 'core/navigation',
     'area' => 'header',

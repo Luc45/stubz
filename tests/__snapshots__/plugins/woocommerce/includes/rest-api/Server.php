@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\RestApi;
 /**
  * Class responsible for loading the REST API and all REST API namespaces.
  */
-class Server extends \
+class Server
 {
     /**
      * REST API namespaces and endpoints.
      *
      * @var array
      */
-    protected $controllers = array(
+    protected $controllers = array (
 );
 
     /**

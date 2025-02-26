@@ -5,7 +5,7 @@ namespace ;
 /**
  * Customer download log class.
  */
-class WC_Customer_Download_Log extends \WC_Data
+class WC_Customer_Download_Log
 {
     /**
      * This is the name of this object type.
@@ -19,7 +19,7 @@ class WC_Customer_Download_Log extends \WC_Data
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'timestamp' => null,
   'permission_id' => 0,
   'user_id' => null,

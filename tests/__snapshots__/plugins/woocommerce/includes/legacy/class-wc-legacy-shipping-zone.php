@@ -10,7 +10,7 @@ namespace ;
  * @category Class
  * @author   WooThemes
  */
-abstract class WC_Legacy_Shipping_Zone extends \WC_Data
+abstract class WC_Legacy_Shipping_Zone
 {
     /**
      * Get zone ID

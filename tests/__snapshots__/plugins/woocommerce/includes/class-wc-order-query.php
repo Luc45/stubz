@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order query class.
  */
-class WC_Order_Query extends \WC_Object_Query
+class WC_Order_Query
 {
     /**
      * Valid query vars for orders.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Shipping Task
  */
-class Shipping extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class Shipping
 {
     const ZONE_COUNT_TRANSIENT_NAME = 'woocommerce_shipping_task_zone_count_transient';
 

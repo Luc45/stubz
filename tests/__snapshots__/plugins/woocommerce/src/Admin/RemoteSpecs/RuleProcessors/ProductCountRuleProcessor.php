@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that performs a comparison operation against the number of
  * products.
  */
-class ProductCountRuleProcessor extends \
+class ProductCountRuleProcessor
 {
     /**
      * The product query.

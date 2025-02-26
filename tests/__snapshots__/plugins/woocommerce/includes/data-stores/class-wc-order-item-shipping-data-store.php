@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Order_Item_Shipping_Data_Store class.
  */
-class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
+class WC_Order_Item_Shipping_Data_Store
 {
     /**
      * Data stored in meta keys.
@@ -13,7 +13,7 @@ class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Dat
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => 'method_id',
   1 => 'instance_id',
   2 => 'cost',

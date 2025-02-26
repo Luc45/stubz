@@ -9,14 +9,14 @@ namespace Automattic\WooCommerce\Blocks\Registry;
  *
  * @since 2.5.0
  */
-class Container extends \
+class Container
 {
     /**
      * A map of Dependency Type objects used to resolve dependencies.
      *
      * @var AbstractDependencyType[]
      */
-    private $registry = array(
+    private $registry = array (
 );
 
     /**

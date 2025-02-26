@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * SchemaController class.
  */
-class SchemaController extends \
+class SchemaController
 {
     /**
      * Stores schema class instances.
      *
      * @var Schemas\V1\AbstractSchema[]
      */
-    protected $schemas = array(
+    protected $schemas = array (
 );
 
     /**

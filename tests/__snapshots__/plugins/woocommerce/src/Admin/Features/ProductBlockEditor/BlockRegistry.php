@@ -5,13 +5,13 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Product block registration and style registration functionality.
  */
-class BlockRegistry extends \
+class BlockRegistry
 {
     const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
 
     const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
 
-    const GENERIC_BLOCKS = array(
+    const GENERIC_BLOCKS = array (
   0 => 'woocommerce/conditional',
   1 => 'woocommerce/product-checkbox-field',
   2 => 'woocommerce/product-collapsible',
@@ -33,7 +33,7 @@ class BlockRegistry extends \
   18 => 'woocommerce/product-notice-field',
 );
 
-    const PRODUCT_FIELDS_BLOCKS = array(
+    const PRODUCT_FIELDS_BLOCKS = array (
   0 => 'woocommerce/product-catalog-visibility-field',
   1 => 'woocommerce/product-custom-fields',
   2 => 'woocommerce/product-custom-fields-toggle-field',

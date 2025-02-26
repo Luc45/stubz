@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 /**
  * RateLimits class.
  */
-class RateLimits extends \WC_Rate_Limiter
+class RateLimits
 {
     const CACHE_GROUP = 'store_api_rate_limit';
 

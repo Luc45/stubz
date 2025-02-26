@@ -7,7 +7,7 @@ namespace ;
  *
  * Provides a communication interface with the WooCommerce.com Helper API.
  */
-class WC_Helper_API extends \
+class WC_Helper_API
 {
     /**
      * Base path for API routes.
@@ -36,7 +36,7 @@ class WC_Helper_API extends \
      *
      * @return array|WP_Error The response from wp_safe_remote_request()
      */
-    public static function request($endpoint, $args = array(
+    public static function request($endpoint, $args = array (
 ))
     {
         // stub
@@ -87,7 +87,7 @@ class WC_Helper_API extends \
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function get($endpoint, $args = array(
+    public static function get($endpoint, $args = array (
 ))
     {
         // stub
@@ -101,7 +101,7 @@ class WC_Helper_API extends \
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function post($endpoint, $args = array(
+    public static function post($endpoint, $args = array (
 ))
     {
         // stub
@@ -115,7 +115,7 @@ class WC_Helper_API extends \
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function put($endpoint, $args = array(
+    public static function put($endpoint, $args = array (
 ))
     {
         // stub

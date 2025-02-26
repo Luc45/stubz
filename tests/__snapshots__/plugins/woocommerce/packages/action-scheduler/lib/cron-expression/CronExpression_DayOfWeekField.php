@@ -17,7 +17,7 @@ namespace ;
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_DayOfWeekField extends \CronExpression_AbstractField
+class CronExpression_DayOfWeekField
 {
     /**
      * {@inheritdoc}

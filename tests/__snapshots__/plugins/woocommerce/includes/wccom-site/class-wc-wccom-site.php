@@ -7,7 +7,7 @@ namespace ;
  *
  * Main class for WooCommerce.com connected site.
  */
-class WC_WCCOM_Site extends \
+class WC_WCCOM_Site
 {
     const AUTH_ERROR_FILTER_NAME = 'wccom_auth_error';
 

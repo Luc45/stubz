@@ -7,7 +7,7 @@ namespace ;
  *
  * This class can only be called from within a WP CLI instance.
  */
-class ActionScheduler_WPCLI_QueueRunner extends \ActionScheduler_Abstract_QueueRunner
+class ActionScheduler_WPCLI_QueueRunner
 {
     /**
      * Claimed actions.
@@ -55,7 +55,7 @@ class ActionScheduler_WPCLI_QueueRunner extends \ActionScheduler_Abstract_QueueR
      * @return int The number of actions that will be run.
      * @throws \WP_CLI\ExitException When there are too many concurrent batches.
      */
-    public function setup($batch_size, $hooks = array(
+    public function setup($batch_size, $hooks = array (
 ), $group = '', $force = false)
     {
         // stub

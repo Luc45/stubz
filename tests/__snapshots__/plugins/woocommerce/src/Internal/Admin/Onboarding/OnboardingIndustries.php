@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Logic around onboarding industries.
  */
-class OnboardingIndustries extends \
+class OnboardingIndustries
 {
     /**
      * Init.

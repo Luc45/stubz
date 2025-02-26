@@ -5,7 +5,7 @@ namespace ;
 /**
  * WooCommerce Tracker Class
  */
-class WC_Tracker extends \
+class WC_Tracker
 {
     /**
      * URL to the WooThemes Tracker API endpoint.

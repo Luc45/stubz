@@ -12,7 +12,7 @@ namespace ;
  * @since       2.6.0
  * @package     WooCommerce\PaymentTokens
  */
-class WC_Payment_Token_CC extends \WC_Payment_Token
+class WC_Payment_Token_CC
 {
     /**
      * Token Type String.
@@ -26,7 +26,7 @@ class WC_Payment_Token_CC extends \WC_Payment_Token
      *
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'last4' => '',
   'expiry_year' => '',
   'expiry_month' => '',

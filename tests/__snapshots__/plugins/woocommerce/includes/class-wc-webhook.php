@@ -5,7 +5,7 @@ namespace ;
 /**
  * Webhook class.
  */
-class WC_Webhook extends \WC_Legacy_Webhook
+class WC_Webhook
 {
     /**
      * Store which object IDs this webhook has processed (ie scheduled to be delivered)
@@ -13,7 +13,7 @@ class WC_Webhook extends \WC_Legacy_Webhook
      *
      * @var array
      */
-    protected $processed = array(
+    protected $processed = array (
 );
 
     /**
@@ -21,7 +21,7 @@ class WC_Webhook extends \WC_Legacy_Webhook
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'date_created' => null,
   'date_modified' => null,
   'status' => 'disabled',

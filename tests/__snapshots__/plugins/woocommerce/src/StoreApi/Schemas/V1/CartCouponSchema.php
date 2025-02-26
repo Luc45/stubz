@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * CartCouponSchema class.
  */
-class CartCouponSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class CartCouponSchema
 {
     const IDENTIFIER = 'cart-coupon';
 

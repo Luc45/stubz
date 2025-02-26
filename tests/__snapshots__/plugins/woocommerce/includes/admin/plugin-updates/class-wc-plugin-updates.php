@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Plugin_Updates Class.
  */
-class WC_Plugin_Updates extends \
+class WC_Plugin_Updates
 {
     const VERSION_REQUIRED_HEADER = 'WC requires at least';
 
@@ -23,7 +23,7 @@ class WC_Plugin_Updates extends \
      *
      * @var array
      */
-    protected $major_untested_plugins = array(
+    protected $major_untested_plugins = array (
 );
 
     /**

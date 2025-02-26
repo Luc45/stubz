@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the Coupons feature.
  */
-class Coupons extends \
+class Coupons
 {
     /**
      * Class instance.

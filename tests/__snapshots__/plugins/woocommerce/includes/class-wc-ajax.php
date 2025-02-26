@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Ajax class.
  */
-class WC_AJAX extends \
+class WC_AJAX
 {
     /**
      * Hook in ajax handlers.

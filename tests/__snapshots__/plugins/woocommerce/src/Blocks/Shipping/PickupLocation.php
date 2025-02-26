@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Blocks\Shipping;
 /**
  * Local Pickup Shipping Method.
  */
-class PickupLocation extends \WC_Shipping_Method
+class PickupLocation
 {
     /**
      * Pickup locations.
      *
      * @var array
      */
-    protected $pickup_locations = array(
+    protected $pickup_locations = array (
 );
 
     /**
@@ -54,7 +54,7 @@ class PickupLocation extends \WC_Shipping_Method
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

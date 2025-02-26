@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  * @internal
  * @extends GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller
 {
     /**
      * Get all reports.

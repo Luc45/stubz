@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Appearance Task
  */
-class Appearance extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class Appearance
 {
     /**
      * Constructor.

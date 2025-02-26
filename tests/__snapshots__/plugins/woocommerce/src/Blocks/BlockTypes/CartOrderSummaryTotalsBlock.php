@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CartOrderSummaryTotalsBlock class.
  */
-class CartOrderSummaryTotalsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
+class CartOrderSummaryTotalsBlock
 {
     /**
      * Block name.

@@ -11,7 +11,7 @@ namespace ;
  * @version     2.6.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Local_Pickup extends \WC_Shipping_Method
+class WC_Shipping_Local_Pickup
 {
     /**
      * Shipping method cost.
@@ -43,7 +43,7 @@ class WC_Shipping_Local_Pickup extends \WC_Shipping_Method
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

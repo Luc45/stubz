@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that passes.
  */
-class PassRuleProcessor extends \
+class PassRuleProcessor
 {
     /**
      * Passes the rule.

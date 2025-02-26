@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the non-static utils classes in the Automattic\WooCommerce\src namespace.
  */
-class UtilsClassesServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
+class UtilsClassesServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.
      *
      * @var array
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Utilities\\DatabaseUtil',
   1 => 'Automattic\\WooCommerce\\Internal\\Utilities\\HtmlSanitizer',
   2 => 'Automattic\\WooCommerce\\Utilities\\OrderUtil',

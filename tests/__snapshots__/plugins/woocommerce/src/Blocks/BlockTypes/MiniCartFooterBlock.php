@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * MiniCartFooterBlock class.
  */
-class MiniCartFooterBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
+class MiniCartFooterBlock
 {
     /**
      * Block name.

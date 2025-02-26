@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Overrides;
 /**
  * Admin\Overrides\ThemeUpgrader Class.
  */
-class ThemeUpgrader extends \Theme_Upgrader
+class ThemeUpgrader
 {
     /**
      * Install a theme package.
@@ -20,7 +20,7 @@ class ThemeUpgrader extends \Theme_Upgrader
      *
      * @return bool|WP_Error True if the installation was successful, false or a WP_Error object otherwise.
      */
-    public function install($package, $args = array(
+    public function install($package, $args = array (
 ))
     {
         // stub

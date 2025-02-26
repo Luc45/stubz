@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product usage notice class.
  */
-class WC_Product_Usage_Notice extends \
+class WC_Product_Usage_Notice
 {
     const DISMISSED_COUNT_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_count_';
 
@@ -20,7 +20,7 @@ class WC_Product_Usage_Notice extends \
      *
      * @var array
      */
-    private static $product_usage_notice_rules = array(
+    private static $product_usage_notice_rules = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Product_Usage_Notice extends \
      *
      * @var array
      */
-    private static $current_notice_rule = array(
+    private static $current_notice_rule = array (
 );
 
     /**

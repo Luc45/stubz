@@ -8,7 +8,7 @@ namespace ;
  * @package     WooCommerce\Admin\Importers
  * @version     3.1.0
  */
-class WC_Product_CSV_Importer_Controller extends \
+class WC_Product_CSV_Importer_Controller
 {
     /**
      * The path to the current file.
@@ -29,7 +29,7 @@ class WC_Product_CSV_Importer_Controller extends \
      *
      * @var array
      */
-    protected $steps = array(
+    protected $steps = array (
 );
 
     /**
@@ -37,7 +37,7 @@ class WC_Product_CSV_Importer_Controller extends \
      *
      * @var array
      */
-    protected $errors = array(
+    protected $errors = array (
 );
 
     /**
@@ -75,7 +75,7 @@ class WC_Product_CSV_Importer_Controller extends \
      * @param  array  $args Importer arguments.
      * @return WC_Product_CSV_Importer
      */
-    public static function get_importer($file, $args = array(
+    public static function get_importer($file, $args = array (
 ))
     {
         // stub
@@ -180,7 +180,7 @@ class WC_Product_CSV_Importer_Controller extends \
      * @param string $message Error message.
      * @param array  $actions List of actions with 'url' and 'label'.
      */
-    protected function add_error($message, $actions = array(
+    protected function add_error($message, $actions = array (
 ))
     {
         // stub

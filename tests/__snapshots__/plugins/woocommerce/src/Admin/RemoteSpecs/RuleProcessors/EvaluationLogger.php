@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors
  */
-class EvaluationLogger extends \
+class EvaluationLogger
 {
     /**
      * Slug of the spec.
@@ -21,7 +21,7 @@ class EvaluationLogger extends \
      *
      * @var array
      */
-    private $results = array(
+    private $results = array (
 );
 
     /**

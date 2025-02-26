@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @extends WC_REST_Controller
  * @since x.x.x
  */
-class MarketingCampaignTypes extends \WC_REST_Controller
+class MarketingCampaignTypes
 {
     /**
      * Endpoint namespace.

@@ -15,7 +15,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  *
  * See: https://developer.woocommerce.com/2023/10/03/the-legacy-rest-api-will-move-to-a-dedicated-extension-in-woocommerce-9-0/
  */
-class LegacyRestApiStub extends \
+class LegacyRestApiStub
 {
     /**
      * The instance of RestApiUtil to use.
@@ -101,7 +101,7 @@ class LegacyRestApiStub extends \
      * @param array  $params Params to pass with request.
      * @return array|\WP_Error
      */
-    public function get_endpoint_data($endpoint, $params = array(
+    public function get_endpoint_data($endpoint, $params = array (
 ))
     {
         // stub

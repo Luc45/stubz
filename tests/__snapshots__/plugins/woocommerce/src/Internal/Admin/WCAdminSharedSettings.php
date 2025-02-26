@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * \Automattic\WooCommerce\Internal\Admin\WCAdminSharedSettings class.
  */
-class WCAdminSharedSettings extends \
+class WCAdminSharedSettings
 {
     /**
      * Settings prefix used for the window.wcSettings object.

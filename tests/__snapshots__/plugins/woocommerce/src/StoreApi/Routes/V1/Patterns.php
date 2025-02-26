@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Patterns class.
  */
-class Patterns extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+class Patterns
 {
     const IDENTIFIER = 'patterns';
 

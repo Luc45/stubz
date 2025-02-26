@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Helper functions for working with blocks.
  */
-class BlocksUtil extends \
+class BlocksUtil
 {
     /**
      * Return blocks with their inner blocks flattened.

@@ -13,7 +13,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_DataController extends \
+class ActionScheduler_DataController
 {
     const DATASTORE_CLASS = 'ActionScheduler_DBStore';
 

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API;
  *
  * @internal
  */
-class LaunchYourStore extends \
+class LaunchYourStore
 {
     /**
      * Endpoint namespace.

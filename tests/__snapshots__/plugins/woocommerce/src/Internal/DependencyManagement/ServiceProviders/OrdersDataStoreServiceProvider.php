@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the classes in the Internal\DataStores\Orders namespace.
  */
-class OrdersDataStoreServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class OrdersDataStoreServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.
      *
      * @var array
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\DataSynchronizer',
   1 => 'Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\CustomOrdersTableController',
   2 => 'Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\OrdersTableDataStore',

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Initializes backend logic for the onboarding process.
  */
-class Onboarding extends \
+class Onboarding
 {
     /**
      * Initialize onboarding functionality.

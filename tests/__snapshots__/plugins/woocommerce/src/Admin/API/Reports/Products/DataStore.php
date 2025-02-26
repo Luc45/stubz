@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products;
 /**
  * API\Reports\Products\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore
 {
     /**
      * Table used to get the data.
@@ -32,7 +32,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'date_start' => 'strval',
   'date_end' => 'strval',
   'product_id' => 'intval',
@@ -56,7 +56,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $extended_attributes = array(
+    protected $extended_attributes = array (
   0 => 'name',
   1 => 'price',
   2 => 'image',

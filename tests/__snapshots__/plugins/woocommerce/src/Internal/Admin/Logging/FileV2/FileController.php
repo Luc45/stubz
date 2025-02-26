@@ -5,11 +5,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 /**
  * FileController class.
  */
-class FileController extends \
+class FileController
 {
     const MAX_FILE_ROTATIONS = 10;
 
-    const DEFAULTS_GET_FILES = array(
+    const DEFAULTS_GET_FILES = array (
   'date_end' => 0,
   'date_filter' => '',
   'date_start' => 0,
@@ -20,7 +20,7 @@ class FileController extends \
   'source' => '',
 );
 
-    const DEFAULTS_SEARCH_WITHIN_FILES = array(
+    const DEFAULTS_SEARCH_WITHIN_FILES = array (
   'offset' => 0,
   'per_page' => 50,
 );
@@ -101,7 +101,7 @@ class FileController extends \
      *
      * @return File[]|int|WP_Error
      */
-    public function get_files(array $args = array(
+    public function get_files(array $args = array (
 ), bool $count_only = false)
     {
         // stub
@@ -213,8 +213,8 @@ class FileController extends \
      * @return array|int|WP_Error When matches are found, each array item is an associative array that includes the
      *                            file ID, line number, and the matched string with HTML markup around the matched parts.
      */
-    public function search_within_files(string $search, array $args = array(
-), array $file_args = array(
+    public function search_within_files(string $search, array $args = array (
+), array $file_args = array (
 ), bool $count_only = false)
     {
         // stub

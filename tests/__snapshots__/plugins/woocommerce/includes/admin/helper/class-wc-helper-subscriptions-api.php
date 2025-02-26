@@ -8,7 +8,7 @@ namespace ;
  * The main entry-point for all things related to the Marketplace Subscriptions API.
  * The Subscriptions API manages WooCommerce.com Subscriptions.
  */
-class WC_Helper_Subscriptions_API extends \
+class WC_Helper_Subscriptions_API
 {
     /**
      * Loads the class, runs on init

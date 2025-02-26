@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\WCCom;
  *
  * Helpers for managing connection to WooCommerce.com.
  */
-final class ConnectionHelper extends \
+final class ConnectionHelper
 {
     /**
      * Check if WooCommerce.com account is connected.

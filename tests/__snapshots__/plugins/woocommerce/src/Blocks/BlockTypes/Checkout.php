@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class Checkout extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class Checkout
 {
     /**
      * Block name.
@@ -158,7 +158,7 @@ class Checkout extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

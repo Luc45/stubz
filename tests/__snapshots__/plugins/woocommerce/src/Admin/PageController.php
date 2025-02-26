@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * PageController
  */
-class PageController extends \
+class PageController
 {
     const APP_ENTRY_POINT = 'wc-admin';
 
@@ -31,7 +31,7 @@ class PageController extends \
      *
      * @var array
      */
-    private $pages = array(
+    private $pages = array (
 );
 
     /**

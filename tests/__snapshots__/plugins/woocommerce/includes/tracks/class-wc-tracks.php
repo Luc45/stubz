@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Tracks class.
  */
-class WC_Tracks extends \
+class WC_Tracks
 {
     const PREFIX = 'wcadmin_';
 
@@ -59,7 +59,7 @@ class WC_Tracks extends \
      * @param array  $event_properties Custom properties to send with the event.
      * @return bool|WP_Error True for success or WP_Error if the event pixel could not be fired.
      */
-    public static function record_event($event_name, $event_properties = array(
+    public static function record_event($event_name, $event_properties = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_LogEntry
  */
-class ActionScheduler_LogEntry extends \
+class ActionScheduler_LogEntry
 {
     /**
      * Action's ID for log entry.

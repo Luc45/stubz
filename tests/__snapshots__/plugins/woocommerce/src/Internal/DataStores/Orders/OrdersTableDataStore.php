@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * This class is the standard data store to be used when the custom orders table is in use.
  */
-class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
+class OrdersTableDataStore
 {
     /**
      * Order IDs for which we are checking sync on read in the current request. In WooCommerce, using wc_get_order is a very common pattern, to avoid performance issues, we only sync on read once per request per order. This works because we consider out of sync orders to be an anomaly, so we don't recommend running HPOS with incompatible plugins.
      *
      * @var array
      */
-    private static $reading_order_ids = array(
+    private static $reading_order_ids = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var array
      */
-    private static $backfilling_order_ids = array(
+    private static $backfilling_order_ids = array (
 );
 
     /**
@@ -29,7 +29,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      * @since 7.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_customer_user',
   1 => '_order_key',
   2 => '_order_currency',
@@ -137,89 +137,89 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var \string[][]
      */
-    protected $order_column_mapping = array(
+    protected $order_column_mapping = array (
   'id' => 
-  array(
+  array (
     'type' => 'int',
     'name' => 'id',
   ),
   'status' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'status',
   ),
   'type' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'type',
   ),
   'currency' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'currency',
   ),
   'tax_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'cart_tax',
   ),
   'total_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'total',
   ),
   'customer_id' => 
-  array(
+  array (
     'type' => 'int',
     'name' => 'customer_id',
   ),
   'billing_email' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_email',
   ),
   'date_created_gmt' => 
-  array(
+  array (
     'type' => 'date',
     'name' => 'date_created',
   ),
   'date_updated_gmt' => 
-  array(
+  array (
     'type' => 'date',
     'name' => 'date_modified',
   ),
   'parent_order_id' => 
-  array(
+  array (
     'type' => 'int',
     'name' => 'parent_id',
   ),
   'payment_method' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'payment_method',
   ),
   'payment_method_title' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'payment_method_title',
   ),
   'ip_address' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'customer_ip_address',
   ),
   'transaction_id' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'transaction_id',
   ),
   'user_agent' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'customer_user_agent',
   ),
   'customer_note' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'customer_note',
   ),
@@ -230,71 +230,71 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var \string[][]
      */
-    protected $billing_address_column_mapping = array(
+    protected $billing_address_column_mapping = array (
   'id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'order_id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'address_type' => 
-  array(
+  array (
     'type' => 'string',
   ),
   'first_name' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_first_name',
   ),
   'last_name' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_last_name',
   ),
   'company' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_company',
   ),
   'address_1' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_address_1',
   ),
   'address_2' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_address_2',
   ),
   'city' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_city',
   ),
   'state' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_state',
   ),
   'postcode' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_postcode',
   ),
   'country' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_country',
   ),
   'email' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_email',
   ),
   'phone' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'billing_phone',
   ),
@@ -305,70 +305,70 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var \string[][]
      */
-    protected $shipping_address_column_mapping = array(
+    protected $shipping_address_column_mapping = array (
   'id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'order_id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'address_type' => 
-  array(
+  array (
     'type' => 'string',
   ),
   'first_name' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_first_name',
   ),
   'last_name' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_last_name',
   ),
   'company' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_company',
   ),
   'address_1' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_address_1',
   ),
   'address_2' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_address_2',
   ),
   'city' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_city',
   ),
   'state' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_state',
   ),
   'postcode' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_postcode',
   ),
   'country' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_country',
   ),
   'email' => 
-  array(
+  array (
     'type' => 'string',
   ),
   'phone' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'shipping_phone',
   ),
@@ -379,92 +379,92 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var \string[][]
      */
-    protected $operational_data_column_mapping = array(
+    protected $operational_data_column_mapping = array (
   'id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'order_id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'created_via' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'created_via',
   ),
   'woocommerce_version' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'version',
   ),
   'prices_include_tax' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'prices_include_tax',
   ),
   'coupon_usages_are_counted' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'recorded_coupon_usage_counts',
   ),
   'download_permission_granted' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'download_permissions_granted',
   ),
   'cart_hash' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'cart_hash',
   ),
   'new_order_email_sent' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'new_order_email_sent',
   ),
   'order_key' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'order_key',
   ),
   'order_stock_reduced' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'order_stock_reduced',
   ),
   'date_paid_gmt' => 
-  array(
+  array (
     'type' => 'date',
     'name' => 'date_paid',
   ),
   'date_completed_gmt' => 
-  array(
+  array (
     'type' => 'date',
     'name' => 'date_completed',
   ),
   'shipping_tax_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'shipping_tax',
   ),
   'shipping_total_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'shipping_total',
   ),
   'discount_tax_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'discount_tax',
   ),
   'discount_total_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'discount_total',
   ),
   'recorded_sales' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'recorded_sales',
   ),
@@ -933,7 +933,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      * @param  array $args List of args passed to wc_get_orders().
      * @return array|object
      */
-    public function get_orders($args = array(
+    public function get_orders($args = array (
 ))
     {
         // stub
@@ -1468,7 +1468,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @return void
      */
-    public function delete(&$order, $args = array(
+    public function delete(&$order, $args = array (
 ))
     {
         // stub

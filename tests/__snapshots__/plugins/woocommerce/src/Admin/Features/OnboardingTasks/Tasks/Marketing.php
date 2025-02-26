@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Marketing Task
  */
-class Marketing extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class Marketing
 {
     /**
      * Used to cache is_complete() method result.

@@ -7,7 +7,7 @@ namespace ;
  *
  * The main entry-point for all things related to the Helper.
  */
-class WC_Helper extends \
+class WC_Helper
 {
     /**
      * A log object returned by wc_get_logger().
@@ -152,7 +152,7 @@ class WC_Helper extends \
      * @param array $args Query args.
      * @return string
      */
-    private static function get_helper_redirect_url($args = array(
+    private static function get_helper_redirect_url($args = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor for sending when WooCommerce Admin has been updated.
  */
-class WooCommerceAdminUpdatedRuleProcessor extends \
+class WooCommerceAdminUpdatedRuleProcessor
 {
     /**
      * Process the rule.

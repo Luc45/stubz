@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Utilities;
  * Class with methods that allow to retrieve information about the existing WooCommerce features,
  * also has methods for WooCommerce plugins to declare (in)compatibility with the features.
  */
-class FeaturesUtil extends \
+class FeaturesUtil
 {
     /**
      * Get all the existing WooCommerce features.

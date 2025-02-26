@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @internal
  */
-class Installer extends \
+class Installer
 {
     /**
      * Initialize class features.

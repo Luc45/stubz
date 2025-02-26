@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Admin_Exporters Class.
  */
-class WC_Admin_Exporters extends \
+class WC_Admin_Exporters
 {
     /**
      * Array of exporter IDs.
      *
      * @var string[]
      */
-    protected $exporters = array(
+    protected $exporters = array (
 );
 
     /**

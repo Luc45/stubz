@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Products.
  */
-class WC_Settings_Products extends \WC_Settings_Page
+class WC_Settings_Products
 {
     /**
      * Setting page icon.

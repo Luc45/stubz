@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Enums;
 /**
  * Enum class for all the product types.
  */
-final class ProductType extends \
+final class ProductType
 {
     const SIMPLE = 'simple';
 

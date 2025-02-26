@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the PayPal payment gateway provider.
  */
-class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
+class PayPal
 {
     /**
      * Try to determine if the payment gateway is in test mode.

@@ -2,7 +2,7 @@
 
 namespace ;
 
-class WC_Admin_Log_Table_List extends \WP_List_Table
+class WC_Admin_Log_Table_List
 {
     const PER_PAGE_USER_OPTION_KEY = 'woocommerce_status_log_items_per_page';
 

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductQuery class.
  */
-class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ProductQuery
 {
     /**
      * Block name.
@@ -26,7 +26,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @var array
      */
-    protected $custom_order_opts = array(
+    protected $custom_order_opts = array (
   0 => 'popularity',
   1 => 'rating',
 );
@@ -36,7 +36,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @var array
      */
-    protected $attributes_filter_query_args = array(
+    protected $attributes_filter_query_args = array (
 );
 
     /** This is a feature flag to enable the custom inherit Global Query implementation.
@@ -85,7 +85,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub
@@ -228,7 +228,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @return array
      */
-    private function get_product_attributes_query($attributes = array(
+    private function get_product_attributes_query($attributes = array (
 ))
     {
         // stub

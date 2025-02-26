@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * WCAdminActiveForProvider class
  */
-class WCAdminActiveForProvider extends \
+class WCAdminActiveForProvider
 {
     /**
      * Get the number of seconds that the store has been active.

@@ -11,7 +11,7 @@ namespace ;
  * @version     2.4.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
+class WC_Shipping_Legacy_Flat_Rate
 {
     /**
      * Cost passed to [fee] shortcode.
@@ -92,7 +92,7 @@ class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
      * @param  array  $args Arguments.
      * @return string
      */
-    protected function evaluate_cost($sum, $args = array(
+    protected function evaluate_cost($sum, $args = array (
 ))
     {
         // stub
@@ -114,7 +114,7 @@ class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
      *
      * @param array $package (default: array()).
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

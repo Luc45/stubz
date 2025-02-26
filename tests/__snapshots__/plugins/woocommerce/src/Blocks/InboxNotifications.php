@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  * @package Automattic\WooCommerce\Blocks
  * @since x.x.x
  */
-class InboxNotifications extends \
+class InboxNotifications
 {
     const SURFACE_CART_CHECKOUT_NOTE_NAME = 'surface_cart_checkout';
 

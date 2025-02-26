@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * AbstractOrderConfirmationBlock class.
  */
-abstract class AbstractOrderConfirmationBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+abstract class AbstractOrderConfirmationBlock
 {
     /**
      * Get the content from a hook and return it.
@@ -43,7 +43,7 @@ abstract class AbstractOrderConfirmationBlock extends \Automattic\WooCommerce\Bl
      * @param string       $content Original block content.
      * @return string
      */
-    protected abstract function render_content($order, $permission = false, $attributes = array(
+    protected abstract function render_content($order, $permission = false, $attributes = array (
 ), $content = '');
 
     /**

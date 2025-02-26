@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\Settings;
 /**
  * Transforms WooCommerce settings data into a structured format with logical groupings.
  */
-class Transformer extends \
+class Transformer
 {
     /**
      * Current group being processed.

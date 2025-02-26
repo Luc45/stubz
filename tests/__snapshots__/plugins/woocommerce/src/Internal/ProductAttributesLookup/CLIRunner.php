@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 /**
  * Command line tools to handle the regeneration of the product aatributes lookup table.
  */
-class CLIRunner extends \
+class CLIRunner
 {
     /**
      * The instance of DataRegenerator to use.
@@ -39,8 +39,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function enable(array $args = array(
-), array $assoc_args = array(
+    public function enable(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -63,8 +63,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function disable(array $args = array(
-), array $assoc_args = array(
+    public function disable(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -99,8 +99,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function regenerate_for_product(array $args = array(
-), array $assoc_args = array(
+    public function regenerate_for_product(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -112,8 +112,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    private function regenerate_for_product_core(array $args = array(
-), array $assoc_args = array(
+    private function regenerate_for_product_core(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -135,8 +135,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function info(array $args = array(
-), array $assoc_args = array(
+    public function info(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -166,8 +166,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function abort_regeneration(array $args = array(
-), array $assoc_args = array(
+    public function abort_regeneration(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -190,8 +190,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function resume_regeneration(array $args = array(
-), array $assoc_args = array(
+    public function resume_regeneration(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -214,8 +214,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function cleanup_regeneration_progress(array $args = array(
-), array $assoc_args = array(
+    public function cleanup_regeneration_progress(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -247,8 +247,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function initiate_regeneration(array $args = array(
-), array $assoc_args = array(
+    public function initiate_regeneration(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -292,8 +292,8 @@ class CLIRunner extends \
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function regenerate(array $args = array(
-), array $assoc_args = array(
+    public function regenerate(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub
@@ -306,8 +306,8 @@ class CLIRunner extends \
      * @param array $assoc_args Associative arguments (options) passed to the command.
      * @throws \Exception Invalid batch size argument.
      */
-    private function regenerate_core(array $args = array(
-), array $assoc_args = array(
+    private function regenerate_core(array $args = array (
+), array $assoc_args = array (
 ))
     {
         // stub

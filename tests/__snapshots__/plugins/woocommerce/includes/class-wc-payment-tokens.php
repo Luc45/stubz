@@ -5,7 +5,7 @@ namespace ;
 /**
  * Payment tokens class.
  */
-class WC_Payment_Tokens extends \
+class WC_Payment_Tokens
 {
     /**
      * Gets valid tokens from the database based on user defined criteria.

@@ -5,14 +5,14 @@ namespace ;
 /**
  * Emails class.
  */
-class WC_Emails extends \
+class WC_Emails
 {
     /**
      * Array of email notification classes
      *
      * @var WC_Email[]
      */
-    public $emails = array(
+    public $emails = array (
 );
 
     /**
@@ -90,7 +90,7 @@ class WC_Emails extends \
      * @param string $filter Filter name.
      * @param array  $args Email args (default: []).
      */
-    public static function send_queued_transactional_email($filter = '', $args = array(
+    public static function send_queued_transactional_email($filter = '', $args = array (
 ))
     {
         // stub
@@ -103,7 +103,7 @@ class WC_Emails extends \
      *
      * @param array $args Email args (default: []).
      */
-    public static function send_transactional_email($args = array(
+    public static function send_transactional_email($args = array (
 ))
     {
         // stub
@@ -245,7 +245,7 @@ class WC_Emails extends \
      * @param array $new_customer_data  New customer data.
      * @param bool  $password_generated If password is generated.
      */
-    public function customer_new_account($customer_id, $new_customer_data = array(
+    public function customer_new_account($customer_id, $new_customer_data = array (
 ), $password_generated = false)
     {
         // stub

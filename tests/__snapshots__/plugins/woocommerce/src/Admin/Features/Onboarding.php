@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features;
  *
  * @deprecated since 6.3.0, use WooCommerce\Internal\Admin\Onboarding.
  */
-class Onboarding extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
+class Onboarding
 {
     /**
      * The name of the non-deprecated class that this facade covers.

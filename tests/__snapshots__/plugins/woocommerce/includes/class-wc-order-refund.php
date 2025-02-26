@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order refund class.
  */
-class WC_Order_Refund extends \WC_Abstract_Order
+class WC_Order_Refund
 {
     /**
      * Which data store to load.
@@ -26,7 +26,7 @@ class WC_Order_Refund extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'amount' => '',
   'reason' => '',
   'refunded_by' => 0,
@@ -41,7 +41,7 @@ class WC_Order_Refund extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array(
+    protected $legacy_datastore_props = array (
   0 => '_refund_amount',
   1 => '_refund_reason',
   2 => '_refunded_by',

@@ -5,30 +5,30 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Utility for re-using WP Kses-based sanitization rules.
  */
-class HtmlSanitizer extends \
+class HtmlSanitizer
 {
-    const LOW_HTML_BALANCED_TAGS_NO_LINKS = array(
+    const LOW_HTML_BALANCED_TAGS_NO_LINKS = array (
   'pre_processors' => 
-  array(
+  array (
     0 => 'stripslashes',
     1 => 'force_balance_tags',
   ),
   'wp_kses_rules' => 
-  array(
+  array (
     'br' => true,
     'img' => 
-    array(
+    array (
       'alt' => true,
       'class' => true,
       'src' => true,
       'title' => true,
     ),
     'p' => 
-    array(
+    array (
       'class' => true,
     ),
     'span' => 
-    array(
+    array (
       'class' => true,
       'title' => true,
     ),
@@ -64,28 +64,28 @@ class HtmlSanitizer extends \
      *
      * @return string
      */
-    public function sanitize(string $html, array $sanitizer_rules = array(
+    public function sanitize(string $html, array $sanitizer_rules = array (
   'pre_processors' => 
-  array(
+  array (
     0 => 'stripslashes',
     1 => 'force_balance_tags',
   ),
   'wp_kses_rules' => 
-  array(
+  array (
     'br' => true,
     'img' => 
-    array(
+    array (
       'alt' => true,
       'class' => true,
       'src' => true,
       'title' => true,
     ),
     'p' => 
-    array(
+    array (
       'class' => true,
     ),
     'span' => 
-    array(
+    array (
       'class' => true,
       'title' => true,
     ),

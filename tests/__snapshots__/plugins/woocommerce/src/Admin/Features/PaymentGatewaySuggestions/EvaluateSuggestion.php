@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
 /**
  * Evaluates the spec and returns the evaluated suggestion.
  */
-class EvaluateSuggestion extends \
+class EvaluateSuggestion
 {
     /**
      * Stores memoized results of evaluate_specs.
      *
      * @var array
      */
-    protected static $memo = array(
+    protected static $memo = array (
 );
 
     /**
@@ -23,7 +23,7 @@ class EvaluateSuggestion extends \
      *
      * @return object The evaluated suggestion.
      */
-    public static function evaluate($spec, $logger_args = array(
+    public static function evaluate($spec, $logger_args = array (
 ))
     {
         // stub
@@ -37,7 +37,7 @@ class EvaluateSuggestion extends \
      *
      * @return array The visible suggestions and errors.
      */
-    public static function evaluate_specs($specs, $logger_args = array(
+    public static function evaluate_specs($specs, $logger_args = array (
 ))
     {
         // stub

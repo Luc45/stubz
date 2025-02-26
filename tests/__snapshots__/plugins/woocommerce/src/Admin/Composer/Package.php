@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Composer;
 /**
  * Main package class.
  */
-class Package extends \
+class Package
 {
     const VERSION = '3.3.0';
 
@@ -83,5 +83,5 @@ class Package extends \
 
 }
 
-\define('WC_ADMIN_PACKAGE_EXISTS', true);
+const WC_ADMIN_PACKAGE_EXISTS = true;
 

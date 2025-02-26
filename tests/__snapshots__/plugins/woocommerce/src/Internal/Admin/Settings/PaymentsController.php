@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
  *
  * Use this class for hooks and actions related to the Payments settings page.
  */
-class PaymentsController extends \
+class PaymentsController
 {
     /**
      * The payment service.
@@ -85,7 +85,7 @@ class PaymentsController extends \
      *
      * @return array The updated list of allowed promo note IDs.
      */
-    public function add_allowed_promo_notes(array $promo_notes = array(
+    public function add_allowed_promo_notes(array $promo_notes = array (
 )): array
     {
         // stub

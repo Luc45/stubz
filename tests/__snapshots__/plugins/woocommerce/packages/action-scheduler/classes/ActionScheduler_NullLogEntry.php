@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_NullLogEntry
  */
-class ActionScheduler_NullLogEntry extends \ActionScheduler_LogEntry
+class ActionScheduler_NullLogEntry
 {
     /**
      * Construct.

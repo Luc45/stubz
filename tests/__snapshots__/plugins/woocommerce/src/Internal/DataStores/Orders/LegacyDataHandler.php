@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * This class provides functionality to clean up post data from the posts table when HPOS is authoritative.
  */
-class LegacyDataHandler extends \
+class LegacyDataHandler
 {
     /**
      * Instance of the HPOS datastore.
@@ -48,7 +48,7 @@ class LegacyDataHandler extends \
      * @param array $order_ids If provided, total is computed only among IDs in this array, which can be either individual IDs or ranges like "100-200".
      * @return int Number of orders.
      */
-    public function count_orders_for_cleanup($order_ids = array(
+    public function count_orders_for_cleanup($order_ids = array (
 )): int
     {
         // stub
@@ -61,7 +61,7 @@ class LegacyDataHandler extends \
      * @param int   $limit     Limit the number of results.
      * @return array[int] Order IDs.
      */
-    public function get_orders_for_cleanup($order_ids = array(
+    public function get_orders_for_cleanup($order_ids = array (
 ), int $limit = 0): array
     {
         // stub
@@ -75,7 +75,7 @@ class LegacyDataHandler extends \
      * @param integer $limit     If provided, the query will be limited to this number of results. Does not apply when $result is 'count'.
      * @return string SQL query.
      */
-    private function build_sql_query_for_cleanup(array $order_ids = array(
+    private function build_sql_query_for_cleanup(array $order_ids = array (
 ), string $result = 'ids', int $limit = 0): string
     {
         // stub
@@ -147,7 +147,7 @@ class LegacyDataHandler extends \
      * @return void
      * @throws \Exception When an error occurs.
      */
-    public function backfill_order_to_datastore(int $order_id, string $source_data_store, string $destination_data_store, array $fields = array(
+    public function backfill_order_to_datastore(int $order_id, string $source_data_store, string $destination_data_store, array $fields = array (
 ))
     {
         // stub

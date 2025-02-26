@@ -11,14 +11,14 @@ namespace Automattic\WooCommerce\Blocks\Assets;
  *
  * @since 2.5.0
  */
-class AssetDataRegistry extends \
+class AssetDataRegistry
 {
     /**
      * Contains registered data.
      *
      * @var array
      */
-    private $data = array(
+    private $data = array (
 );
 
     /**
@@ -26,7 +26,7 @@ class AssetDataRegistry extends \
      *
      * @var array
      */
-    private $preloaded_api_requests = array(
+    private $preloaded_api_requests = array (
 );
 
     /**
@@ -35,7 +35,7 @@ class AssetDataRegistry extends \
      *
      * @var array
      */
-    private $lazy_data = array(
+    private $lazy_data = array (
 );
 
     /**

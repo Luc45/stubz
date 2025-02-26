@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\LayoutTemplates;
 /**
  * Layout template registry.
  */
-final class LayoutTemplateRegistry extends \
+final class LayoutTemplateRegistry
 {
     /**
      * Class instance.
@@ -19,7 +19,7 @@ final class LayoutTemplateRegistry extends \
      *
      * @var array
      */
-    protected $layout_templates_info = array(
+    protected $layout_templates_info = array (
 );
 
     /**
@@ -27,7 +27,7 @@ final class LayoutTemplateRegistry extends \
      *
      * @var array
      */
-    protected $layout_template_instances = array(
+    protected $layout_template_instances = array (
 );
 
     /**
@@ -78,7 +78,7 @@ final class LayoutTemplateRegistry extends \
      *
      * @param array $query_params Query params.
      */
-    public function instantiate_layout_templates(array $query_params = array(
+    public function instantiate_layout_templates(array $query_params = array (
 )): array
     {
         // stub
@@ -99,7 +99,7 @@ final class LayoutTemplateRegistry extends \
      *
      * @param array $query_params Query params.
      */
-    private function get_matching_layout_templates_info(array $query_params = array(
+    private function get_matching_layout_templates_info(array $query_params = array (
 )): array
     {
         // stub

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DataStores;
  *
  * @see WC_Data_Store_WP For an implementation using WP's metadata functions and tables.
  */
-abstract class CustomMetaDataStore extends \
+abstract class CustomMetaDataStore
 {
     /**
      * Returns the name of the table used for storage.

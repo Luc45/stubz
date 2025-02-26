@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class ArrayFlatten extends \
+class ArrayFlatten
 {
     /**
      * Search a given value in the array.
@@ -18,7 +18,7 @@ class ArrayFlatten extends \
      *
      * @return mixed|null
      */
-    public function transform($value, stdClass|null $arguments = null, $default_value = array(
+    public function transform($value, stdClass|null $arguments = null, $default_value = array (
 ))
     {
         // stub

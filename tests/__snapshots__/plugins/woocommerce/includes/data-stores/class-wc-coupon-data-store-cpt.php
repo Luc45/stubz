@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
+class WC_Coupon_Data_Store_CPT
 {
     /**
      * Internal meta type used to store coupon data.
@@ -23,7 +23,7 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => 'discount_type',
   1 => 'coupon_amount',
   2 => 'expiry_date',
@@ -53,7 +53,7 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
      * @since 4.1.0
      * @var array
      */
-    protected $updated_props = array(
+    protected $updated_props = array (
 );
 
     /**
@@ -116,7 +116,7 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
      * @param WC_Coupon $coupon Coupon object.
      * @param array     $args Array of args to pass to the delete method.
      */
-    public function delete(&$coupon, $args = array(
+    public function delete(&$coupon, $args = array (
 ))
     {
         // stub

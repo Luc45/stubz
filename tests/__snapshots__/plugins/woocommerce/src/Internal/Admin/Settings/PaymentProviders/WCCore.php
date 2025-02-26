@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the payment gateways built into the WC core.
  */
-class WCCore extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
+class WCCore
 {
     /**
      * Get the provider icon URL of the payment gateway.

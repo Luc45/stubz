@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Privacy Class.
  */
-class WC_Privacy extends \WC_Abstract_Privacy
+class WC_Privacy
 {
     /**
      * Background process to clean up orders.

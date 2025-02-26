@@ -9,7 +9,7 @@ namespace ;
  * @version  2.5.0
  * @extends  WP_Widget
  */
-abstract class WC_Widget extends \WP_Widget
+abstract class WC_Widget
 {
     /**
      * CSS class.

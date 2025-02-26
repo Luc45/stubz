@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget products.
  */
-class WC_Widget_Products extends \WC_Widget
+class WC_Widget_Products
 {
     /**
      * Constructor.

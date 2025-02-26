@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor for publishing based on the number of orders.
  */
-class OrderCountRuleProcessor extends \
+class OrderCountRuleProcessor
 {
     /**
      * The orders provider.

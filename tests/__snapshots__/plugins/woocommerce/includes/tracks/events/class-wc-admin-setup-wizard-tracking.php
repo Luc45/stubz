@@ -5,14 +5,14 @@ namespace ;
 /**
  * This class adds actions to track usage of the WooCommerce Onboarding Wizard.
  */
-class WC_Admin_Setup_Wizard_Tracking extends \
+class WC_Admin_Setup_Wizard_Tracking
 {
     /**
      * Steps for the setup wizard
      *
      * @var array
      */
-    private $steps = array(
+    private $steps = array (
 );
 
     /**

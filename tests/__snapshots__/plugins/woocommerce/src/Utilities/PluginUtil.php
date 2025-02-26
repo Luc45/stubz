@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with plugins.
  */
-class PluginUtil extends \
+class PluginUtil
 {
     /**
      * The LegacyProxy instance to use.

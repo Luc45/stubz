@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Privacy_Erasers Class.
  */
-class WC_Privacy_Erasers extends \
+class WC_Privacy_Erasers
 {
     /**
      * Finds and erases customer data by email address.

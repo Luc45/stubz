@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  *
  * @package Automattic\WooCommerce\Admin\Features
  */
-class WcPayWelcomePage extends \
+class WcPayWelcomePage
 {
     const INCENTIVE_TYPE = 'welcome_page';
 
@@ -85,7 +85,7 @@ class WcPayWelcomePage extends \
      *
      * @return array
      */
-    public function allowed_promo_notes(array $promo_notes = array(
+    public function allowed_promo_notes(array $promo_notes = array (
 )): array
     {
         // stub

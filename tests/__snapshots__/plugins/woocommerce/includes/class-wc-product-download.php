@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product download class.
  */
-class WC_Product_Download extends \ implements \ArrayAccess
+class WC_Product_Download implements \ArrayAccess
 {
     /**
      * Data array.
@@ -13,7 +13,7 @@ class WC_Product_Download extends \ implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'id' => '',
   'name' => '',
   'file' => '',

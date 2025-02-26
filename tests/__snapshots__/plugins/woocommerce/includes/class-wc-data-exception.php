@@ -5,7 +5,7 @@ namespace ;
 /**
  * Data exception class.
  */
-class WC_Data_Exception extends \Exception implements \Throwable, \Stringable
+class WC_Data_Exception extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.
@@ -29,7 +29,7 @@ class WC_Data_Exception extends \Exception implements \Throwable, \Stringable
      * @param int    $http_status_code Proper HTTP status code to respond with, e.g. 400.
      * @param array  $data             Extra error data.
      */
-    public function __construct($code, $message, $http_status_code = 400, $data = array(
+    public function __construct($code, $message, $http_status_code = 400, $data = array (
 ))
     {
         // stub

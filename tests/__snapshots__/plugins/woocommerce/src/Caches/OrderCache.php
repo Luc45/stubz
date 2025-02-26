@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Caches;
 /**
  * A class to cache order objects.
  */
-class OrderCache extends \Automattic\WooCommerce\Caching\ObjectCache
+class OrderCache
 {
     /**
      * Get the cache key and prefix to use for Orders.

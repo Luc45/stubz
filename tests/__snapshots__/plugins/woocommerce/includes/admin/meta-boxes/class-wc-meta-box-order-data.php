@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Meta_Box_Order_Data Class.
  */
-class WC_Meta_Box_Order_Data extends \
+class WC_Meta_Box_Order_Data
 {
     /**
      * Billing fields.
      *
      * @var array
      */
-    protected static $billing_fields = array(
+    protected static $billing_fields = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Meta_Box_Order_Data extends \
      *
      * @var array
      */
-    protected static $shipping_fields = array(
+    protected static $shipping_fields = array (
 );
 
     /**

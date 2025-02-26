@@ -13,7 +13,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
  *         array( wc_get_container()->get( COTRedirectionController::class ), 'handle_hpos_admin_requests' )
  *     );
  */
-class COTRedirectionController extends \
+class COTRedirectionController
 {
     /**
      * Add hooks needed to perform our magic.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Profile Class.
  */
-class WC_Admin_Profile extends \
+class WC_Admin_Profile
 {
     /**
      * Hook in tabs.

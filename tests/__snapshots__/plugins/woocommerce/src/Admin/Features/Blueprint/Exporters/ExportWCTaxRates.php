@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Exporters
  */
-class ExportWCTaxRates extends \
+class ExportWCTaxRates
 {
     /**
      * Export WooCommerce tax rates.

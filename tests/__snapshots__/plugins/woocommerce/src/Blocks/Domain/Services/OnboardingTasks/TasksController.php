@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services\OnboardingTasks;
 /**
  * Onboarding Tasks Controller
  */
-class TasksController extends \
+class TasksController
 {
     /**
      * Init tasks.

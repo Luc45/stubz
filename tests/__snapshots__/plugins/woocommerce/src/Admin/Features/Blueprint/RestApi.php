@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint
  */
-class RestApi extends \
+class RestApi
 {
     /**
      * Endpoint namespace.

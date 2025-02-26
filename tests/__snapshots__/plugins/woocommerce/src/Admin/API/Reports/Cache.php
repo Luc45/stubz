@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 /**
  * REST API Reports Cache class.
  */
-class Cache extends \
+class Cache
 {
     const VERSION_OPTION = 'woocommerce_reports';
 

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Comments class.
  */
-class WC_Comments extends \
+class WC_Comments
 {
     /**
      * Hook in methods.

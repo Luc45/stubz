@@ -8,12 +8,12 @@ namespace ;
  * @author Michael Dowling <mtdowling@gmail.com>
  * @link http://en.wikipedia.org/wiki/Cron
  */
-class CronExpression_FieldFactory extends \
+class CronExpression_FieldFactory
 {
     /**
      * @var array Cache of instantiated fields
      */
-    private $fields = array(
+    private $fields = array (
 );
 
     /**

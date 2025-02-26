@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Geolocation Class.
  */
-class WC_Geolocation extends \
+class WC_Geolocation
 {
     const GEOLITE_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz';
 
@@ -18,7 +18,7 @@ class WC_Geolocation extends \
      *
      * @var array
      */
-    private static $ip_lookup_apis = array(
+    private static $ip_lookup_apis = array (
   'ipify' => 'http://api.ipify.org/',
   'ipecho' => 'http://ipecho.net/plain',
   'ident' => 'http://ident.me',
@@ -30,7 +30,7 @@ class WC_Geolocation extends \
      *
      * @var array
      */
-    private static $geoip_apis = array(
+    private static $geoip_apis = array (
   'ipinfo.io' => 'https://ipinfo.io/%s/json',
   'ip-api.com' => 'http://ip-api.com/json/%s',
 );

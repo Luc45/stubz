@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class WC_Updates_Screen_Updates
  */
-class WC_Updates_Screen_Updates extends \WC_Plugin_Updates
+class WC_Updates_Screen_Updates
 {
     /**
      * Constructor.

@@ -7,7 +7,7 @@ namespace ;
  *
  * Contains the logic to manage the Woo Update Manager plugin.
  */
-class WC_Woo_Update_Manager_Plugin extends \
+class WC_Woo_Update_Manager_Plugin
 {
     const WOO_UPDATE_MANAGER_PLUGIN_MAIN_FILE = 'woo-update-manager/woo-update-manager.php';
 

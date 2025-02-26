@@ -10,7 +10,7 @@ namespace ;
  * @version 3.0.0
  * @package WooCommerce\Abstracts
  */
-class WC_Product extends \WC_Abstract_Legacy_Product
+class WC_Product
 {
     /**
      * This is the name of this object type.
@@ -38,7 +38,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'name' => '',
   'slug' => '',
   'date_created' => null,
@@ -69,42 +69,42 @@ class WC_Product extends \WC_Abstract_Legacy_Product
   'width' => '',
   'height' => '',
   'upsell_ids' => 
-  array(
+  array (
   ),
   'cross_sell_ids' => 
-  array(
+  array (
   ),
   'parent_id' => 0,
   'reviews_allowed' => true,
   'purchase_note' => '',
   'attributes' => 
-  array(
+  array (
   ),
   'default_attributes' => 
-  array(
+  array (
   ),
   'menu_order' => 0,
   'post_password' => '',
   'virtual' => false,
   'downloadable' => false,
   'category_ids' => 
-  array(
+  array (
   ),
   'tag_ids' => 
-  array(
+  array (
   ),
   'shipping_class_id' => 0,
   'downloads' => 
-  array(
+  array (
   ),
   'image_id' => '',
   'gallery_image_ids' => 
-  array(
+  array (
   ),
   'download_limit' => -1,
   'download_expiry' => -1,
   'rating_counts' => 
-  array(
+  array (
   ),
   'average_rating' => 0,
   'review_count' => 0,
@@ -116,7 +116,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @var array
      */
-    protected $supports = array(
+    protected $supports = array (
 );
 
     /**
@@ -1849,7 +1849,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      * @param  bool   $placeholder True to return $placeholder if no image is found, or false to return an empty string.
      * @return string
      */
-    public function get_image($size = 'woocommerce_thumbnail', $attr = array(
+    public function get_image($size = 'woocommerce_thumbnail', $attr = array (
 ), $placeholder = true)
     {
         // stub

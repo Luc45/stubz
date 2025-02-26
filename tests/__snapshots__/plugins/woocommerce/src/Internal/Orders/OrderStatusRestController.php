@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Controller for the REST endpoint to add order statuses to the WooCommerce REST API.
  */
-class OrderStatusRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
+class OrderStatusRestController
 {
     /**
      * Endpoint namespace.

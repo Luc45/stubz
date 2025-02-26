@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\Settings;
 /**
  * Contains backend logic for the Settings feature.
  */
-class Init extends \
+class Init
 {
     /**
      * Class instance.

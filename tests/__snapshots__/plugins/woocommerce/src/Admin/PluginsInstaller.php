@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * Class PluginsInstaller
  */
-class PluginsInstaller extends \
+class PluginsInstaller
 {
     /**
      * Constructor

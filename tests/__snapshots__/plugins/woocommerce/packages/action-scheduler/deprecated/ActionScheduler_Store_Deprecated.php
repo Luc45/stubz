@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-abstract class ActionScheduler_Store_Deprecated extends \
+abstract class ActionScheduler_Store_Deprecated
 {
     /**
      * Mark an action that failed to fetch correctly as failed.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * Class with date and time utilities.
  */
-class TimeUtil extends \
+class TimeUtil
 {
     /**
      * Instance of a DateTimeZone object representing UTC.

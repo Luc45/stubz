@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Products_Controller
  */
-final class ProductsLowInStock extends \WC_REST_Products_Controller
+final class ProductsLowInStock
 {
     /**
      * Endpoint namespace.
@@ -56,7 +56,7 @@ final class ProductsLowInStock extends \WC_REST_Products_Controller
      *
      * @return mixed
      */
-    protected function set_last_order_date($results = array(
+    protected function set_last_order_date($results = array (
 ))
     {
         // stub
@@ -111,7 +111,7 @@ final class ProductsLowInStock extends \WC_REST_Products_Controller
      *
      * @return string
      */
-    private function get_base_query($replacements = array(
+    private function get_base_query($replacements = array (
 ))
     {
         // stub

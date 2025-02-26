@@ -5,7 +5,7 @@ namespace ;
 /**
  * WooCommerce Shortcodes class.
  */
-class WC_Shortcodes extends \
+class WC_Shortcodes
 {
     /**
      * Init shortcodes.
@@ -24,8 +24,8 @@ class WC_Shortcodes extends \
      *
      * @return string
      */
-    public static function shortcode_wrapper($function, $atts = array(
-), $wrapper = array(
+    public static function shortcode_wrapper($function, $atts = array (
+), $wrapper = array (
   'class' => 'woocommerce',
   'before' => null,
   'after' => null,

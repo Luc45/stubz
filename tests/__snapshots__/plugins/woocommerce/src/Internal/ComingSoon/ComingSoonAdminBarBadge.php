@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ComingSoon;
 /**
  * Adds hooks to add a badge to the WordPress admin bar showing site visibility.
  */
-class ComingSoonAdminBarBadge extends \
+class ComingSoonAdminBarBadge
 {
     /**
      * Sets up the hooks.

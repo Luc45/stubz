@@ -2,18 +2,18 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 
-class ServiceProviderAggregate extends \
+class ServiceProviderAggregate
 {
     /**
      * @var ServiceProviderInterface[]
      */
-    protected $providers = array(
+    protected $providers = array (
 );
 
     /**
      * @var array
      */
-    protected $registered = array(
+    protected $registered = array (
 );
 
     /**

@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
+class WC_Order_Data_Store_CPT
 {
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
@@ -15,7 +15,7 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_customer_user',
   1 => '_order_key',
   2 => '_order_currency',
@@ -75,7 +75,7 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @var string[]
      */
-    protected $internal_data_store_key_getters = array(
+    protected $internal_data_store_key_getters = array (
   '_download_permissions_granted' => 'download_permissions_granted',
   '_recorded_sales' => 'recorded_sales',
   '_recorded_coupon_usage_counts' => 'recorded_coupon_usage_counts',
@@ -214,7 +214,7 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
      *
      * @return array|object
      */
-    public function get_orders($args = array(
+    public function get_orders($args = array (
 ))
     {
         // stub

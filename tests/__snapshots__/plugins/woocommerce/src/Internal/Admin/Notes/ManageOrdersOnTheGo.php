@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Manage_Orders_On_The_Go
  */
-class ManageOrdersOnTheGo extends \
+class ManageOrdersOnTheGo
 {
     const NOTE_NAME = 'wc-admin-manage-orders-on-the-go';
 

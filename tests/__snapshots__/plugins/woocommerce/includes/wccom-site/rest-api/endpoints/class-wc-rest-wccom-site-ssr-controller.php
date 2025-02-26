@@ -7,7 +7,7 @@ namespace ;
  *
  * @extends WC_REST_WCCOM_Site_Controller
  */
-class WC_REST_WCCOM_Site_SSR_Controller extends \WC_REST_WCCOM_Site_Controller
+class WC_REST_WCCOM_Site_SSR_Controller
 {
     /**
      * Route base.

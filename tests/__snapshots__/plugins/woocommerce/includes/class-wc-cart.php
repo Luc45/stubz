@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Cart class.
  */
-class WC_Cart extends \WC_Legacy_Cart
+class WC_Cart
 {
     /**
      * Contains an array of cart items.
      *
      * @var array
      */
-    public $cart_contents = array(
+    public $cart_contents = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    public $removed_cart_contents = array(
+    public $removed_cart_contents = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    public $applied_coupons = array(
+    public $applied_coupons = array (
 );
 
     /**
@@ -43,25 +43,25 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    protected $default_totals = array(
+    protected $default_totals = array (
   'subtotal' => 0,
   'subtotal_tax' => 0,
   'shipping_total' => 0,
   'shipping_tax' => 0,
   'shipping_taxes' => 
-  array(
+  array (
   ),
   'discount_total' => 0,
   'discount_tax' => 0,
   'cart_contents_total' => 0,
   'cart_contents_tax' => 0,
   'cart_contents_taxes' => 
-  array(
+  array (
   ),
   'fee_total' => 0,
   'fee_tax' => 0,
   'fee_taxes' => 
-  array(
+  array (
   ),
   'total' => 0,
   'total_tax' => 0,
@@ -72,7 +72,7 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    protected $totals = array(
+    protected $totals = array (
 );
 
     /**
@@ -374,7 +374,7 @@ class WC_Cart extends \WC_Legacy_Cart
      * @since 3.2.0
      * @param array $value Item array.
      */
-    public function set_removed_cart_contents($value = array(
+    public function set_removed_cart_contents($value = array (
 ))
     {
         // stub
@@ -385,7 +385,7 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @param array $value List of applied coupon codes.
      */
-    public function set_applied_coupons($value = array(
+    public function set_applied_coupons($value = array (
 ))
     {
         // stub
@@ -397,7 +397,7 @@ class WC_Cart extends \WC_Legacy_Cart
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_coupon_discount_totals($value = array(
+    public function set_coupon_discount_totals($value = array (
 ))
     {
         // stub
@@ -409,7 +409,7 @@ class WC_Cart extends \WC_Legacy_Cart
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_coupon_discount_tax_totals($value = array(
+    public function set_coupon_discount_tax_totals($value = array (
 ))
     {
         // stub
@@ -421,7 +421,7 @@ class WC_Cart extends \WC_Legacy_Cart
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_totals($value = array(
+    public function set_totals($value = array (
 ))
     {
         // stub
@@ -827,8 +827,8 @@ class WC_Cart extends \WC_Legacy_Cart
      * @param array $cart_item_data other cart item data passed which affects this items uniqueness in the cart.
      * @return string cart item key
      */
-    public function generate_cart_id($product_id, $variation_id = 0, $variation = array(
-), $cart_item_data = array(
+    public function generate_cart_id($product_id, $variation_id = 0, $variation = array (
+), $cart_item_data = array (
 ))
     {
         // stub
@@ -845,8 +845,8 @@ class WC_Cart extends \WC_Legacy_Cart
      * @param array $cart_item_data extra cart item data we want to pass into the item.
      * @return string|bool $cart_item_key
      */
-    public function add_to_cart($product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(
-), $cart_item_data = array(
+    public function add_to_cart($product_id = 0, $quantity = 1, $variation_id = 0, $variation = array (
+), $cart_item_data = array (
 ))
     {
         // stub
@@ -944,7 +944,7 @@ class WC_Cart extends \WC_Legacy_Cart
      * @param array $calculated_shipping_packages Array of packages.
      * @return array
      */
-    protected function get_chosen_shipping_methods($calculated_shipping_packages = array(
+    protected function get_chosen_shipping_methods($calculated_shipping_packages = array (
 ))
     {
         // stub

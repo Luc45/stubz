@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Payments;
 /**
  * PaymentContext class.
  */
-class PaymentContext extends \
+class PaymentContext
 {
     /**
      * Payment method ID.
@@ -26,7 +26,7 @@ class PaymentContext extends \
      *
      * @var array Key value pairs.
      */
-    protected $payment_data = array(
+    protected $payment_data = array (
 );
 
     /**
@@ -74,7 +74,7 @@ class PaymentContext extends \
      *
      * @param array $payment_data Array of key value pairs of data.
      */
-    public function set_payment_data($payment_data = array(
+    public function set_payment_data($payment_data = array (
 ))
     {
         // stub

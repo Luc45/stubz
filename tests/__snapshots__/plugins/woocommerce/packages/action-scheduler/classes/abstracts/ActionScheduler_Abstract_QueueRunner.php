@@ -5,7 +5,7 @@ namespace ;
 /**
  * Abstract class with common Queue Cleaner functionality.
  */
-abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abstract_QueueRunner_Deprecated
+abstract class ActionScheduler_Abstract_QueueRunner
 {
     /**
      * ActionScheduler_QueueCleaner instance.

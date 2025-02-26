@@ -7,7 +7,7 @@ namespace ;
  *
  * These are regular WooCommerce orders, which extend the abstract order class.
  */
-class WC_Order extends \WC_Abstract_Order
+class WC_Order
 {
     /**
      * Stores data about status changes so relevant hooks can be fired.
@@ -22,7 +22,7 @@ class WC_Order extends \WC_Abstract_Order
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'parent_id' => 0,
   'status' => '',
   'currency' => '',
@@ -40,7 +40,7 @@ class WC_Order extends \WC_Abstract_Order
   'customer_id' => 0,
   'order_key' => '',
   'billing' => 
-  array(
+  array (
     'first_name' => '',
     'last_name' => '',
     'company' => '',
@@ -54,7 +54,7 @@ class WC_Order extends \WC_Abstract_Order
     'phone' => '',
   ),
   'shipping' => 
-  array(
+  array (
     'first_name' => '',
     'last_name' => '',
     'company' => '',
@@ -91,7 +91,7 @@ class WC_Order extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array(
+    protected $legacy_datastore_props = array (
   0 => '_recorded_sales',
   1 => '_recorded_coupon_usage_counts',
   2 => '_download_permissions_granted',

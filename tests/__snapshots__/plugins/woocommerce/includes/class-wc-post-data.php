@@ -5,7 +5,7 @@ namespace ;
 /**
  * Post data class.
  */
-class WC_Post_Data extends \
+class WC_Post_Data
 {
     /**
      * Editing term.

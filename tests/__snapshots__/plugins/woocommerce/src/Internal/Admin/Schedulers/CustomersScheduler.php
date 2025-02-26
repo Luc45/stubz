@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Schedulers;
 /**
  * CustomersScheduler Class.
  */
-class CustomersScheduler extends \Automattic\WooCommerce\Internal\Admin\Schedulers\ImportScheduler
+class CustomersScheduler
 {
     /**
      * Slug to identify the scheduler.

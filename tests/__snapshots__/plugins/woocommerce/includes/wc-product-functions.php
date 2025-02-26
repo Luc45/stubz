@@ -30,7 +30,7 @@ function wc_get_products($args)
  * @param array $deprecated Previously used to pass arguments to the factory, e.g. to force a type.
  * @return WC_Product|null|false
  */
-function wc_get_product($the_product = false, $deprecated = array(
+function wc_get_product($the_product = false, $deprecated = array (
 ))
 {
     // stub
@@ -393,7 +393,7 @@ function wc_get_product_backorder_options()
  * @param  array $exclude_ids Exclude IDs from the results.
  * @return array
  */
-function wc_get_related_products($product_id, $limit = 5, $exclude_ids = array(
+function wc_get_related_products($product_id, $limit = 5, $exclude_ids = array (
 ))
 {
     // stub
@@ -420,7 +420,7 @@ function wc_get_product_term_ids($product_id, $taxonomy)
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float|string Price with tax included, or an empty string if price calculation failed.
  */
-function wc_get_price_including_tax($product, $args = array(
+function wc_get_price_including_tax($product, $args = array (
 ))
 {
     // stub
@@ -434,7 +434,7 @@ function wc_get_price_including_tax($product, $args = array(
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float|string Price with tax excluded, or an empty string if price calculation failed.
  */
-function wc_get_price_excluding_tax($product, $args = array(
+function wc_get_price_excluding_tax($product, $args = array (
 ))
 {
     // stub
@@ -453,7 +453,7 @@ function wc_get_price_excluding_tax($product, $args = array(
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float
  */
-function wc_get_price_to_display($product, $args = array(
+function wc_get_price_to_display($product, $args = array (
 ))
 {
     // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * ProductReviews class.
  */
-class ProductReviews extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+class ProductReviews
 {
     const IDENTIFIER = 'product-reviews';
 

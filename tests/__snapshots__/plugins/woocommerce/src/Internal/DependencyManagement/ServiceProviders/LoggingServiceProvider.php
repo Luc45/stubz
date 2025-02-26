@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * LoggingServiceProvider class.
  */
-class LoggingServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class LoggingServiceProvider
 {
     /**
      * List services provided by this class.
      *
      * @var string[]
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\FileV2\\FileController',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\PageController',
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\Settings',

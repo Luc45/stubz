@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Shipping_Zone class.
  */
-class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
+class WC_Shipping_Zone
 {
     /**
      * Zone ID
@@ -26,11 +26,11 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'zone_name' => '',
   'zone_order' => 0,
   'zone_locations' => 
-  array(
+  array (
   ),
 );
 
@@ -223,7 +223,7 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      *
      * @param array|string $types of location to clear.
      */
-    public function clear_locations($types = array(
+    public function clear_locations($types = array (
   0 => 'postcode',
   1 => 'state',
   2 => 'country',
@@ -238,7 +238,7 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      *
      * @param array $locations Array of locations.
      */
-    public function set_locations($locations = array(
+    public function set_locations($locations = array (
 ))
     {
         // stub

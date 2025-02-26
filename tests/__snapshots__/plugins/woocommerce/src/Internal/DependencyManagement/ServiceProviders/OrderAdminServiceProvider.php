@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * OrderAdminServiceProvider class.
  */
-class OrderAdminServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class OrderAdminServiceProvider
 {
     /**
      * List services provided by this class.
      *
      * @var string[]
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\COTRedirectionController',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\PageController',
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\Edit',

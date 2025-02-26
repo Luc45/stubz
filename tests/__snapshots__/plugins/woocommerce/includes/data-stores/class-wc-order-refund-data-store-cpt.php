@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
+class WC_Order_Refund_Data_Store_CPT
 {
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
@@ -15,7 +15,7 @@ class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_order_currency',
   1 => '_cart_discount',
   2 => '_refund_amount',
@@ -38,7 +38,7 @@ class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
      * @param WC_Order $order Order object.
      * @param array    $args Array of args to pass to the delete method.
      */
-    public function delete(&$order, $args = array(
+    public function delete(&$order, $args = array (
 ))
     {
         // stub

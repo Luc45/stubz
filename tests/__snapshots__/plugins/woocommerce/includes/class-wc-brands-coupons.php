@@ -9,7 +9,7 @@ namespace ;
  *
  * @version 9.4.0
  */
-class WC_Brands_Coupons extends \
+class WC_Brands_Coupons
 {
     const E_WC_COUPON_EXCLUDED_BRANDS = 301;
 

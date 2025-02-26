@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Loader Class.
  */
-class Loader extends \
+class Loader
 {
     /**
      * Class instance.
@@ -19,7 +19,7 @@ class Loader extends \
      *
      * @var array
      */
-    protected static $classes = array(
+    protected static $classes = array (
 );
 
     /**
@@ -34,12 +34,12 @@ class Loader extends \
      *
      * @var array
      */
-    protected $preloaded_dependencies = array(
+    protected $preloaded_dependencies = array (
   'script' => 
-  array(
+  array (
   ),
   'style' => 
-  array(
+  array (
   ),
 );
 

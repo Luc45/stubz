@@ -7,7 +7,7 @@ namespace ;
  *
  * @deprecated 3.4.0
  */
-class WC_Geo_IP extends \
+class WC_Geo_IP
 {
     const GEOIP_COUNTRY_BEGIN = 16776960;
 
@@ -131,7 +131,7 @@ class WC_Geo_IP extends \
      *
      * @var array
      */
-    public $GEOIP_COUNTRY_CODES = array(
+    public $GEOIP_COUNTRY_CODES = array (
   0 => '',
   1 => 'AP',
   2 => 'EU',
@@ -395,7 +395,7 @@ class WC_Geo_IP extends \
      *
      * @var array
      */
-    public $GEOIP_COUNTRY_CODES3 = array(
+    public $GEOIP_COUNTRY_CODES3 = array (
   0 => '',
   1 => 'AP',
   2 => 'EU',
@@ -659,7 +659,7 @@ class WC_Geo_IP extends \
      *
      * @var array
      */
-    public $GEOIP_COUNTRY_NAMES = array(
+    public $GEOIP_COUNTRY_NAMES = array (
   0 => '',
   1 => 'Asia/Pacific Region',
   2 => 'Europe',
@@ -923,7 +923,7 @@ class WC_Geo_IP extends \
      *
      * @var array
      */
-    public $GEOIP_CONTINENT_CODES = array(
+    public $GEOIP_CONTINENT_CODES = array (
   0 => '--',
   1 => 'AS',
   2 => 'EU',
@@ -1348,7 +1348,7 @@ namespace ;
 /**
  * Geo IP Record class.
  */
-class WC_Geo_IP_Record extends \
+class WC_Geo_IP_Record
 {
     /**
      * Country code.

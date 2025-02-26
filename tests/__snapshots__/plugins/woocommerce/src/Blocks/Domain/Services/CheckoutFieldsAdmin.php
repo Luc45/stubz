@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 /**
  * Service class managing checkout fields and its related extensibility points in the admin area.
  */
-class CheckoutFieldsAdmin extends \
+class CheckoutFieldsAdmin
 {
     /**
      * Checkout field controller.

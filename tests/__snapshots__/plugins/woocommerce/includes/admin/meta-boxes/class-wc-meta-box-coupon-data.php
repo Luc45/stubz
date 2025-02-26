@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Meta_Box_Coupon_Data Class.
  */
-class WC_Meta_Box_Coupon_Data extends \
+class WC_Meta_Box_Coupon_Data
 {
     /**
      * Output the metabox.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class MiniCartContents extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class MiniCartContents
 {
     /**
      * Block name.

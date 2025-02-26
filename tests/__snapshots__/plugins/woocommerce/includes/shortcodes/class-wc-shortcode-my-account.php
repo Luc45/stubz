@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shortcode my account class.
  */
-class WC_Shortcode_My_Account extends \
+class WC_Shortcode_My_Account
 {
     /**
      * Get the shortcode content.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
  *
  * This first version only supports sending the order details to the customer (`send_order_details`).
  */
-class OrderActionsRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
+class OrderActionsRestController
 {
     /**
      * Get the WooCommerce REST API namespace for the class.

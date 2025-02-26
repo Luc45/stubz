@@ -19,7 +19,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function add($hook, $args = array(
+    public function add($hook, $args = array (
 ), $group = '');
 
     /**
@@ -31,7 +31,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_single($timestamp, $hook, $args = array(
+    public function schedule_single($timestamp, $hook, $args = array (
 ), $group = '');
 
     /**
@@ -44,7 +44,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_recurring($timestamp, $interval_in_seconds, $hook, $args = array(
+    public function schedule_recurring($timestamp, $interval_in_seconds, $hook, $args = array (
 ), $group = '');
 
     /**
@@ -67,7 +67,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_cron($timestamp, $cron_schedule, $hook, $args = array(
+    public function schedule_cron($timestamp, $cron_schedule, $hook, $args = array (
 ), $group = '');
 
     /**
@@ -79,7 +79,7 @@ interface WC_Queue_Interface
      * @param array  $args Args that would have been passed to the job.
      * @param string $group The group the job is assigned to (if any).
      */
-    public function cancel($hook, $args = array(
+    public function cancel($hook, $args = array (
 ), $group = '');
 
     /**
@@ -89,7 +89,7 @@ interface WC_Queue_Interface
      * @param array  $args Args that would have been passed to the job.
      * @param string $group The group the job is assigned to (if any).
      */
-    public function cancel_all($hook, $args = array(
+    public function cancel_all($hook, $args = array (
 ), $group = '');
 
     /**
@@ -123,7 +123,7 @@ interface WC_Queue_Interface
      * @param string $return_format OBJECT, ARRAY_A, or ids.
      * @return array
      */
-    public function search($args = array(
+    public function search($args = array (
 ), $return_format);
 
 }

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Gateway_Paypal_IPN_Handler class.
  */
-class WC_Gateway_Paypal_IPN_Handler extends \WC_Gateway_Paypal_Response
+class WC_Gateway_Paypal_IPN_Handler
 {
     /**
      * Receiver email address to validate.

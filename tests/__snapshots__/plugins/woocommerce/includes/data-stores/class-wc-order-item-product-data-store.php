@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Product_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
+class WC_Order_Item_Product_Data_Store
 {
     /**
      * Data stored in meta keys.
@@ -15,7 +15,7 @@ class WC_Order_Item_Product_Data_Store extends \Abstract_WC_Order_Item_Type_Data
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_product_id',
   1 => '_variation_id',
   2 => '_qty',

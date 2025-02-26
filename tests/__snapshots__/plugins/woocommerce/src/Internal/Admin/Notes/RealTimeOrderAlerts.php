@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Real_Time_Order_Alerts
  */
-class RealTimeOrderAlerts extends \
+class RealTimeOrderAlerts
 {
     const NOTE_NAME = 'wc-admin-real-time-order-alerts';
 

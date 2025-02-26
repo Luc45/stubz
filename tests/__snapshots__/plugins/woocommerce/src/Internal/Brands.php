@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal;
 /**
  * Class to initiate Brands functionality in core.
  */
-class Brands extends \
+class Brands
 {
     /**
      * Class initialization

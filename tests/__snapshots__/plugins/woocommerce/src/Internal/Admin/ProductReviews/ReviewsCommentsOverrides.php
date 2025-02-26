@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
 /**
  * Tweaks the WordPress comments page to exclude reviews.
  */
-class ReviewsCommentsOverrides extends \
+class ReviewsCommentsOverrides
 {
     const REVIEWS_MOVED_NOTICE_ID = 'product_reviews_moved';
 

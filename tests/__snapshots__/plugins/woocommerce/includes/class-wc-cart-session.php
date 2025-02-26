@@ -7,7 +7,7 @@ namespace ;
  *
  * @since 3.2.0
  */
-final class WC_Cart_Session extends \
+final class WC_Cart_Session
 {
     /**
      * Reference to cart object.

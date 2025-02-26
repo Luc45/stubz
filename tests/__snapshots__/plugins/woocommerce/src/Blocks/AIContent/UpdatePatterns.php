@@ -7,9 +7,9 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  *
  * @internal
  */
-class UpdatePatterns extends \
+class UpdatePatterns
 {
-    const WC_PATTERNS_IN_THE_ASSEMBLER = array(
+    const WC_PATTERNS_IN_THE_ASSEMBLER = array (
   0 => 'woocommerce-blocks/featured-category-triple',
   1 => 'woocommerce-blocks/hero-product-3-split',
   2 => 'woocommerce-blocks/hero-product-chessboard',

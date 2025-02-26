@@ -5,14 +5,14 @@ namespace ;
 /**
  * Payment gateways class.
  */
-class WC_Payment_Gateways extends \
+class WC_Payment_Gateways
 {
     /**
      * Payment gateway classes.
      *
      * @var array
      */
-    public $payment_gateways = array(
+    public $payment_gateways = array (
 );
 
     /**

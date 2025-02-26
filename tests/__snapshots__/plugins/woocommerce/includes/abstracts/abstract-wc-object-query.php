@@ -10,14 +10,14 @@ namespace ;
  * @version  3.1.0
  * @package  WooCommerce\Abstracts
  */
-abstract class WC_Object_Query extends \
+abstract class WC_Object_Query
 {
     /**
      * Stores query data.
      *
      * @var array
      */
-    protected $query_vars = array(
+    protected $query_vars = array (
 );
 
     /**
@@ -25,7 +25,7 @@ abstract class WC_Object_Query extends \
      *
      * @param array $args Criteria to query on in a format similar to WP_Query.
      */
-    public function __construct($args = array(
+    public function __construct($args = array (
 ))
     {
         // stub

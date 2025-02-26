@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
+abstract class Abstract_WC_Order_Item_Type_Data_Store
 {
     /**
      * Meta type. This should match up with
@@ -78,7 +78,7 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
      * @param array         $args Array of args to pass to the delete method.
      * @since 3.0.0
      */
-    public function delete(&$item, $args = array(
+    public function delete(&$item, $args = array (
 ))
     {
         // stub

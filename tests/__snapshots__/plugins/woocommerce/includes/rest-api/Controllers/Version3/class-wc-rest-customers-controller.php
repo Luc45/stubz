@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Customers_V2_Controller
  */
-class WC_REST_Customers_Controller extends \WC_REST_Customers_V2_Controller
+class WC_REST_Customers_Controller
 {
     /**
      * Endpoint namespace.

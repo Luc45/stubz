@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Provider for order-related queries and operations.
  */
-class OrdersProvider extends \
+class OrdersProvider
 {
     /**
      * Allowed order statuses for calculating milestones.
      *
      * @var array
      */
-    protected $allowed_statuses = array(
+    protected $allowed_statuses = array (
   0 => 'pending',
   1 => 'processing',
   2 => 'completed',

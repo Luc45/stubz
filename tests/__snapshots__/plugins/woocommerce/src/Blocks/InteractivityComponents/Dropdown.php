@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\InteractivityComponents;
  *
  * @package Automattic\WooCommerce\Blocks\InteractivityComponents
  */
-class Dropdown extends \
+class Dropdown
 {
     /**
      * Render the dropdown.

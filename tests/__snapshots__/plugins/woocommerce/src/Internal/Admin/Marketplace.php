@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains backend logic for the Marketplace feature.
  */
-class Marketplace extends \
+class Marketplace
 {
     const MARKETPLACE_TAB_SLUG = 'woo';
 

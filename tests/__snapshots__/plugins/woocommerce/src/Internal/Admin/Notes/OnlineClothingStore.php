@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Online_Clothing_Store.
  */
-class OnlineClothingStore extends \
+class OnlineClothingStore
 {
     const NOTE_NAME = 'wc-admin-online-clothing-store';
 

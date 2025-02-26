@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Pointers Class.
  */
-class WC_Admin_Pointers extends \
+class WC_Admin_Pointers
 {
     /**
      * Constructor.

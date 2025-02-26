@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\A
 /**
  * Manages user interactions for product download URL safety.
  */
-class UI extends \
+class UI
 {
     /**
      * The active register of approved directories.

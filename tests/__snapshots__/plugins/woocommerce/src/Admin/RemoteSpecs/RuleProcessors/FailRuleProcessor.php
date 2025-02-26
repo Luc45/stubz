@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that fails.
  */
-class FailRuleProcessor extends \
+class FailRuleProcessor
 {
     /**
      * Fails the rule.

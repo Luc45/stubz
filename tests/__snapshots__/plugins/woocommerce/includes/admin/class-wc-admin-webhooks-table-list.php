@@ -5,7 +5,7 @@ namespace ;
 /**
  * Webhooks table list class.
  */
-class WC_Admin_Webhooks_Table_List extends \WP_List_Table
+class WC_Admin_Webhooks_Table_List
 {
     /**
      * Initialize the webhook table list.

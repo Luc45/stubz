@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget top rated products class.
  */
-class WC_Widget_Top_Rated_Products extends \WC_Widget
+class WC_Widget_Top_Rated_Products
 {
     /**
      * Constructor.

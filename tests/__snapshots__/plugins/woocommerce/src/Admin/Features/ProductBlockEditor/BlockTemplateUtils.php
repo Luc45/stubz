@@ -5,11 +5,11 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Utils for block templates.
  */
-class BlockTemplateUtils extends \
+class BlockTemplateUtils
 {
     const TEMPLATES_ROOT_DIR = 'templates';
 
-    const DIRECTORY_NAMES = array(
+    const DIRECTORY_NAMES = array (
   'TEMPLATES' => 'product-form',
   'TEMPLATE_PARTS' => 'product-form/parts',
 );

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Customers\Stats;
 /**
  * API\Reports\Customers\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore
+class DataStore
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -14,7 +14,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Data
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'customers_count' => 'intval',
   'avg_orders_count' => 'floatval',
   'avg_total_spend' => 'floatval',

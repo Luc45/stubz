@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
+class ActionScheduler_ListTable
 {
     /**
      * The package name.
@@ -21,7 +21,7 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      *
      * @var array
      */
-    protected $columns = array(
+    protected $columns = array (
 );
 
     /**
@@ -29,7 +29,7 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      *
      * @var array
      */
-    protected $row_actions = array(
+    protected $row_actions = array (
 );
 
     /**
@@ -61,7 +61,7 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      *
      * @var array
      */
-    protected $bulk_actions = array(
+    protected $bulk_actions = array (
 );
 
     /**

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal\Features;
  *
  * Features should not be enabled, or disabled, before init.
  */
-class FeaturesController extends \
+class FeaturesController
 {
     const FEATURE_ENABLED_CHANGED_ACTION = 'woocommerce_feature_enabled_changed';
 
@@ -20,7 +20,7 @@ class FeaturesController extends \
      *
      * @var array[]
      */
-    private $features = array(
+    private $features = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class FeaturesController extends \
      *
      * @var array
      */
-    private $compatibility_info_by_plugin = array(
+    private $compatibility_info_by_plugin = array (
 );
 
     /**
@@ -36,7 +36,7 @@ class FeaturesController extends \
      *
      * @var array
      */
-    private $compatibility_info_by_feature = array(
+    private $compatibility_info_by_feature = array (
 );
 
     /**
@@ -121,7 +121,7 @@ class FeaturesController extends \
      *
      * @return void
      */
-    public function add_feature_definition($slug, $name, array $args = array(
+    public function add_feature_definition($slug, $name, array $args = array (
 ))
     {
         // stub

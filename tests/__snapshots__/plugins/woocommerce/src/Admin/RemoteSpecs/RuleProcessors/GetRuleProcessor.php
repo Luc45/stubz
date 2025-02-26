@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Class encapsulating getting the processor for a given rule type.
  */
-class GetRuleProcessor extends \
+class GetRuleProcessor
 {
     /**
      * Get the processor for the specified rule type.

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\StoreApi\Formatters;
  *
  * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
  */
-class HtmlFormatter extends \
+class HtmlFormatter
 {
     /**
      * Format a given value and return the result.
@@ -21,7 +21,7 @@ class HtmlFormatter extends \
      * @param array        $options Options that influence the formatting.
      * @return string
      */
-    public function format($value, array $options = array(
+    public function format($value, array $options = array (
 ))
     {
         // stub

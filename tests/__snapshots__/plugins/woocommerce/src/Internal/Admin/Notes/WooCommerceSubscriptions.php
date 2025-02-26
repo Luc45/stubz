@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * WooCommerce_Subscriptions.
  */
-class WooCommerceSubscriptions extends \
+class WooCommerceSubscriptions
 {
     const NOTE_NAME = 'wc-admin-woocommerce-subscriptions';
 

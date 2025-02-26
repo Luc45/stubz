@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Utilities to help ensure type safety.
  */
-class Types extends \
+class Types
 {
     /**
      * Checks if $thing is an instance of $desired_type.

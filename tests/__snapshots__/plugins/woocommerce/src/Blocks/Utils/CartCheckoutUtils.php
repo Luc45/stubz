@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 /**
  * Class containing utility methods for dealing with the Cart and Checkout blocks.
  */
-class CartCheckoutUtils extends \
+class CartCheckoutUtils
 {
     /**
      * Returns true if:

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Upload_Downloadable_Product Class.
  */
-class WC_Admin_Upload_Downloadable_Product extends \
+class WC_Admin_Upload_Downloadable_Product
 {
     /**
      * Add hooks.

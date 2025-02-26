@@ -7,14 +7,14 @@ namespace ;
  *
  * @since 3.2.0
  */
-final class WC_Cart_Fees extends \
+final class WC_Cart_Fees
 {
     /**
      * An array of fee objects.
      *
      * @var object[]
      */
-    private $fees = array(
+    private $fees = array (
 );
 
     /**
@@ -22,7 +22,7 @@ final class WC_Cart_Fees extends \
      *
      * @var array
      */
-    private $default_fee_props = array(
+    private $default_fee_props = array (
   'id' => '',
   'name' => '',
   'tax_class' => '',
@@ -58,7 +58,7 @@ final class WC_Cart_Fees extends \
      * @param array $args Array of fee properties.
      * @return object Either a fee object if added, or a WP_Error if it failed.
      */
-    public function add_fee($args = array(
+    public function add_fee($args = array (
 ))
     {
         // stub
@@ -79,7 +79,7 @@ final class WC_Cart_Fees extends \
      *
      * @param object[] $raw_fees Array of fees.
      */
-    public function set_fees($raw_fees = array(
+    public function set_fees($raw_fees = array (
 ))
     {
         // stub

@@ -12,7 +12,7 @@ namespace ;
  * @version  2.6.0
  * @package  WooCommerce\Abstracts
  */
-abstract class WC_Integration extends \WC_Settings_API
+abstract class WC_Integration
 {
     /**
      * Yes or no based on whether the integration is enabled.

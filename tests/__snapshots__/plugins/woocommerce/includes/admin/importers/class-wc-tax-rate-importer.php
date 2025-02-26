@@ -8,7 +8,7 @@ namespace ;
  * @package     WooCommerce\Admin\Importers
  * @version     2.3.0
  */
-class WC_Tax_Rate_Importer extends \WP_Importer
+class WC_Tax_Rate_Importer
 {
     /**
      * The current file id.

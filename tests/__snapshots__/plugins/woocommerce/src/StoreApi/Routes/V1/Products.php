@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Products class.
  */
-class Products extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+class Products
 {
     const IDENTIFIER = 'products';
 

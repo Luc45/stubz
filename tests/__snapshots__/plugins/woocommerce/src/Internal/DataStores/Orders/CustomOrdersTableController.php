@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  *
  * ...and in general, any functionality that doesn't imply database access.
  */
-class CustomOrdersTableController extends \
+class CustomOrdersTableController
 {
     const SYNC_QUERY_ARG = 'wc_hpos_sync_now';
 

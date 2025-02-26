@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats;
 /**
  * Date & time interval and numeric range handling class for Reporting API.
  */
-class Segmenter extends \Automattic\WooCommerce\Admin\API\Reports\Segmenter
+class Segmenter
 {
     /**
      * Returns column => query mapping to be used for product-related product-level segmenting query
@@ -42,7 +42,7 @@ class Segmenter extends \Automattic\WooCommerce\Admin\API\Reports\Segmenter
      *
      * @return array Column => SELECT query mapping.
      */
-    protected function segment_selections_orders($coupons_lookup_table, $overrides = array(
+    protected function segment_selections_orders($coupons_lookup_table, $overrides = array (
 ))
     {
         // stub

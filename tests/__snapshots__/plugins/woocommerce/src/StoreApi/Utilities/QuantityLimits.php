@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  *
  * Returns limits for products and cart items when using the StoreAPI and supporting classes.
  */
-final class QuantityLimits extends \
+final class QuantityLimits
 {
     /**
      * Get quantity limits (min, max, step/multiple) for a product or cart item.

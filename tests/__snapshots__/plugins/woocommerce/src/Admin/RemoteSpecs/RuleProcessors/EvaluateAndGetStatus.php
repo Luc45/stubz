@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Evaluates the spec and returns a status.
  */
-class EvaluateAndGetStatus extends \
+class EvaluateAndGetStatus
 {
     /**
      * Evaluates the spec and returns a status.

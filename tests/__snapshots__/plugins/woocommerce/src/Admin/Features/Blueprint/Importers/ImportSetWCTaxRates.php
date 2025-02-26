@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Importers
  */
-class ImportSetWCTaxRates extends \
+class ImportSetWCTaxRates
 {
     /**
      * The result of the step processing.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item product class.
  */
-class WC_Order_Item_Product extends \WC_Order_Item
+class WC_Order_Item_Product
 {
     /**
      * Legacy values.
@@ -29,7 +29,7 @@ class WC_Order_Item_Product extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'product_id' => 0,
   'variation_id' => 0,
   'quantity' => 1,
@@ -39,12 +39,12 @@ class WC_Order_Item_Product extends \WC_Order_Item
   'total' => 0,
   'total_tax' => 0,
   'taxes' => 
-  array(
+  array (
     'subtotal' => 
-    array(
+    array (
     ),
     'total' => 
-    array(
+    array (
     ),
   ),
 );
@@ -144,7 +144,7 @@ class WC_Order_Item_Product extends \WC_Order_Item
      *
      * @param array $data Key/Value pairs.
      */
-    public function set_variation($data = array(
+    public function set_variation($data = array (
 ))
     {
         // stub

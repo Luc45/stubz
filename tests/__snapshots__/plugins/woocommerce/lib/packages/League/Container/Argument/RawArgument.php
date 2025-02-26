@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 
-class RawArgument extends \
+class RawArgument
 {
     /**
      * @var mixed

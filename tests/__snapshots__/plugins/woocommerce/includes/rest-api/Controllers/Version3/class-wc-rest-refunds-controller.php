@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Order_Refunds_Controller
  */
-class WC_REST_Refunds_Controller extends \WC_REST_Order_Refunds_Controller
+class WC_REST_Refunds_Controller
 {
     /**
      * Endpoint namespace.

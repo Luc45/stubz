@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @since 8.5.0
  */
-abstract class AbstractInterfaceServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+abstract class AbstractInterfaceServiceProvider
 {
     /**
      * Determine whether this service provides the given alias.

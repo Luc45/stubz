@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  *
  * @internal
  */
-class PatternsDictionary extends \
+class PatternsDictionary
 {
     /**
      * Returns the patterns' dictionary.

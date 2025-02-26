@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
  * Remote Payment Methods engine.
  * This goes through the specs and gets eligible payment gateways.
  */
-class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
+class Init
 {
     const RECOMMENDED_PAYMENT_PLUGINS_DISMISS_OPTION = 'woocommerce_setting_payments_recommendations_hidden';
 

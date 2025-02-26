@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal;
 /**
  * Class to adjust download permissions on product save.
  */
-class DownloadPermissionsAdjuster extends \
+class DownloadPermissionsAdjuster
 {
     /**
      * The downloads data store to use.

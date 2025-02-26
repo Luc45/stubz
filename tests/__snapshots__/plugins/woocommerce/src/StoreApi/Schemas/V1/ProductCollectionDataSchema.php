@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * ProductCollectionDataSchema class.
  */
-class ProductCollectionDataSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ProductCollectionDataSchema
 {
     const IDENTIFIER = 'product-collection-data';
 

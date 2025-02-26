@@ -187,7 +187,7 @@ trait SchedulerTraits
      * @param string $action_name Action name.
      * @param array  $args Array of arguments to pass to action.
      */
-    public static function schedule_action($action_name, $args = array(
+    public static function schedule_action($action_name, $args = array (
 ))
     {
         // stub
@@ -203,7 +203,7 @@ trait SchedulerTraits
      * @param array  $action_args Action arguments.
      * @return void
      */
-    public static function queue_batches($range_start, $range_end, $single_batch_action, $action_args = array(
+    public static function queue_batches($range_start, $range_end, $single_batch_action, $action_args = array (
 ))
     {
         // stub

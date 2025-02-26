@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\StoreApi\Payments;
 /**
  * PaymentResult class.
  */
-class PaymentResult extends \
+class PaymentResult
 {
     /**
      * List of valid payment statuses.
      *
      * @var array
      */
-    protected $valid_statuses = array(
+    protected $valid_statuses = array (
   0 => 'success',
   1 => 'failure',
   2 => 'pending',
@@ -31,7 +31,7 @@ class PaymentResult extends \
      *
      * @var string
      */
-    protected $payment_details = array(
+    protected $payment_details = array (
 );
 
     /**
@@ -78,7 +78,7 @@ class PaymentResult extends \
      *
      * @param array $payment_details Array of key value pairs of data.
      */
-    public function set_payment_details($payment_details = array(
+    public function set_payment_details($payment_details = array (
 ))
     {
         // stub
@@ -89,7 +89,7 @@ class PaymentResult extends \
      *
      * @param array $redirect_url URL to redirect the customer to after checkout.
      */
-    public function set_redirect_url($redirect_url = array(
+    public function set_redirect_url($redirect_url = array (
 ))
     {
         // stub

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
  *
  * @internal This exception is thrown if the cart is in an erroneous state.
  */
-class InvalidCartException extends \Exception implements \Throwable, \Stringable
+class InvalidCartException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.
@@ -21,7 +21,7 @@ class InvalidCartException extends \Exception implements \Throwable, \Stringable
      *
      * @var array
      */
-    public $additional_data = array(
+    public $additional_data = array (
 );
 
     /**
@@ -38,7 +38,7 @@ class InvalidCartException extends \Exception implements \Throwable, \Stringable
      * @param WP_Error $error           The WP_Error object containing all errors relating to stock availability.
      * @param array    $additional_data Extra data (key value pairs) to expose in the error response.
      */
-    public function __construct($error_code, WP_Error $error, $additional_data = array(
+    public function __construct($error_code, WP_Error $error, $additional_data = array (
 ))
     {
         // stub

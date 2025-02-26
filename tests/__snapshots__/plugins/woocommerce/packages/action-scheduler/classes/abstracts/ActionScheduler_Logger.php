@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-abstract class ActionScheduler_Logger extends \
+abstract class ActionScheduler_Logger
 {
     /**
      * Instance.

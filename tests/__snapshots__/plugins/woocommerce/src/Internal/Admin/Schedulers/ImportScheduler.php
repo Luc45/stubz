@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Schedulers;
 /**
  * ImportScheduler class.
  */
-abstract class ImportScheduler extends \
+abstract class ImportScheduler
 {
     const IMPORT_STATS_OPTION = 'woocommerce_admin_import_stats';
 

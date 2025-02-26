@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Twenty_Fifteen class.
  */
-class WC_Twenty_Fifteen extends \
+class WC_Twenty_Fifteen
 {
     /**
      * Theme init.

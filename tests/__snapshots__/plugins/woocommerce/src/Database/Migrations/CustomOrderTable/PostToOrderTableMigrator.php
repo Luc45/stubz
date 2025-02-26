@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  * to the custom order table (and only that table - PostsToOrdersMigrationController
  * is used for fully migrating orders).
  */
-class PostToOrderTableMigrator extends \Automattic\WooCommerce\Database\Migrations\MetaToCustomTableMigrator
+class PostToOrderTableMigrator
 {
     /**
      * Get schema config for wp_posts and wc_order table.

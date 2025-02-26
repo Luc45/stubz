@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Data_Store extends \
+class WC_Order_Item_Data_Store
 {
     /**
      * Add an order item to an order.

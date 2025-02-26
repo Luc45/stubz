@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget rating filter class.
  */
-class WC_Widget_Rating_Filter extends \WC_Widget
+class WC_Widget_Rating_Filter
 {
     /**
      * Constructor.

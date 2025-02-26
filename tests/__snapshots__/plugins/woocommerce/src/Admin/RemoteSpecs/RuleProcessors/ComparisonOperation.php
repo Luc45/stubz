@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Compare two operands using the specified operation.
  */
-class ComparisonOperation extends \
+class ComparisonOperation
 {
     /**
      * Compare two operands using the specified operation.

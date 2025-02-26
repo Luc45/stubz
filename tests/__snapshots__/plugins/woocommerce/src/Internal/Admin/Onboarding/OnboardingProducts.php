@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Class for handling product types and data around product types.
  */
-class OnboardingProducts extends \
+class OnboardingProducts
 {
     const PRODUCT_DATA_TRANSIENT = 'wc_onboarding_product_data';
 

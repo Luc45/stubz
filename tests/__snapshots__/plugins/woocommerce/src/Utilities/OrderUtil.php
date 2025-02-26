@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with orders.
  */
-final class OrderUtil extends \
+final class OrderUtil
 {
     /**
      * Helper function to get screen name of orders page in wp-admin.
@@ -105,7 +105,7 @@ final class OrderUtil extends \
      *
      * @return bool Whether the passed param is an order.
      */
-    public static function is_order($order_id, $types = array(
+    public static function is_order($order_id, $types = array (
   0 => 'shop_order',
 ))
     {

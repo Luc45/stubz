@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives;
 /**
  * WooPayments incentives provider class.
  */
-class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives\Incentive
+class WooPayments
 {
     /**
      * The transient name for incentives cache.

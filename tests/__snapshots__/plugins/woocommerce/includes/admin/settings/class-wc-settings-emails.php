@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Emails.
  */
-class WC_Settings_Emails extends \WC_Settings_Page
+class WC_Settings_Emails
 {
     /**
      * Setting page icon.

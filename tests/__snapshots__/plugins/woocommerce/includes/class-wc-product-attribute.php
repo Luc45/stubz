@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product attribute class.
  */
-class WC_Product_Attribute extends \ implements \ArrayAccess
+class WC_Product_Attribute implements \ArrayAccess
 {
     /**
      * Data array.
@@ -13,11 +13,11 @@ class WC_Product_Attribute extends \ implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'id' => 0,
   'name' => '',
   'options' => 
-  array(
+  array (
   ),
   'position' => 0,
   'visible' => false,

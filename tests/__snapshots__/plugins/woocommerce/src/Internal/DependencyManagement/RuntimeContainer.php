@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  * and are considered as implicitly registered as single-instance classes
  * (so each class will be instantiated only once and the instance will be cached).
  */
-class RuntimeContainer extends \
+class RuntimeContainer
 {
     const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
 

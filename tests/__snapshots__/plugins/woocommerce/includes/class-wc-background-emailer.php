@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Background_Emailer Class.
  */
-class WC_Background_Emailer extends \WC_Background_Process
+class WC_Background_Emailer
 {
     /**
      * Initiate new background process.

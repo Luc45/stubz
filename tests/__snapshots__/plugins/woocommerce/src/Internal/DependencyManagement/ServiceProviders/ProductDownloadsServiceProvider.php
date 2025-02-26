@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the Product Downloads-related services.
  */
-class ProductDownloadsServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class ProductDownloadsServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.
      *
      * @var array
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Register',
   1 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Synchronize',
   2 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\SyncUI',

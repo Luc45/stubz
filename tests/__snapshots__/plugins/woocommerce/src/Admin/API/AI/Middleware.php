@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-class Middleware extends \
+class Middleware
 {
     /**
      * Ensure that the user is allowed to make this request.

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\API;
  *
  * @extends WC_REST_Data_Controller
  */
-class Options extends \WC_REST_Data_Controller
+class Options
 {
     /**
      * Endpoint namespace.

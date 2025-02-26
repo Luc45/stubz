@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * FeaturedItem class.
  */
-abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
+abstract class FeaturedItem
 {
     /**
      * Block name.
@@ -19,7 +19,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      *
      * @var array
      */
-    protected $defaults = array(
+    protected $defaults = array (
   'align' => 'none',
 );
 
@@ -28,7 +28,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      *
      * @var array
      */
-    protected $global_style_wrapper = array(
+    protected $global_style_wrapper = array (
   0 => 'background_color',
   1 => 'border_color',
   2 => 'border_radius',
@@ -192,7 +192,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

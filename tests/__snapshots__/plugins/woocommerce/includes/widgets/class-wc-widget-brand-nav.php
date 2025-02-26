@@ -11,7 +11,7 @@ namespace ;
  * @version 9.4.0
  * @extends WP_Widget
  */
-class WC_Widget_Brand_Nav extends \WC_Widget
+class WC_Widget_Brand_Nav
 {
     /**
      * Constructor

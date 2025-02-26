@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Survey Class.
  */
-class Survey extends \
+class Survey
 {
     const SURVEY_URL = 'https://automattic.survey.fm';
 
@@ -16,7 +16,7 @@ class Survey extends \
      * @param  array  $query Query arguments as key value pairs.
      * @return string Full URL to survey.
      */
-    public static function get_url($path, $query = array(
+    public static function get_url($path, $query = array (
 ))
     {
         // stub

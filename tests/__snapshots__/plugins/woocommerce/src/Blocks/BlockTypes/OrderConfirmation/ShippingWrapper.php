@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * ShippingWrapper class.
  */
-class ShippingWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class ShippingWrapper
 {
     /**
      * Block name.
@@ -22,7 +22,7 @@ class ShippingWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCon
      * @param array        $attributes Block attributes.
      * @param string       $content Original block content.
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * WCAdminAssets Class.
  */
-class WCAdminAssets extends \
+class WCAdminAssets
 {
     /**
      * Class instance.
@@ -109,7 +109,7 @@ class WCAdminAssets extends \
      * @param string        $type Dependency type - 'script' or 'style'.
      * @param array         $allowlist Optional. List of allowed dependency handles.
      */
-    private function maybe_output_preload_link_tag($dependency, $type, $allowlist = array(
+    private function maybe_output_preload_link_tag($dependency, $type, $allowlist = array (
 ))
     {
         // stub
@@ -124,7 +124,7 @@ class WCAdminAssets extends \
      * @param string $type Dependency type - 'script' or 'style'.
      * @param array  $allowlist Optional. List of allowed dependency handles.
      */
-    private function output_header_preload_tags_for_type($type, $allowlist = array(
+    private function output_header_preload_tags_for_type($type, $allowlist = array (
 ))
     {
         // stub
@@ -172,7 +172,7 @@ class WCAdminAssets extends \
      * @param bool   $need_translation Whether the script need translations.
      * @param array  $dependencies Array of any extra dependencies. Note wc-admin and any application JS dependencies are automatically added by Dependency Extraction Webpack Plugin. Use this parameter to designate any extra dependencies.
      */
-    public static function register_script($script_path_name, $script_name, $need_translation = false, $dependencies = array(
+    public static function register_script($script_path_name, $script_name, $need_translation = false, $dependencies = array (
 ))
     {
         // stub
@@ -185,7 +185,7 @@ class WCAdminAssets extends \
      * @param string $style_name Filename of the style to load.
      * @param array  $dependencies Array of any extra dependencies.
      */
-    public static function register_style($style_path_name, $style_name, $dependencies = array(
+    public static function register_style($style_path_name, $style_name, $dependencies = array (
 ))
     {
         // stub

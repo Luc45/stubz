@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Shipping;
  *
  * @internal
  */
-class ShippingController extends \
+class ShippingController
 {
     /**
      * Instance of the asset API.

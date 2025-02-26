@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 /**
  * Data store class for the product attributes lookup table.
  */
-class LookupDataStore extends \
+class LookupDataStore
 {
     const ACTION_NONE = 0;
 

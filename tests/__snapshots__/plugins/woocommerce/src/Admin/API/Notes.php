@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_CRUD_Controller
  */
-class Notes extends \WC_REST_CRUD_Controller
+class Notes
 {
     /**
      * Endpoint namespace.

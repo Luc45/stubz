@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor for sending before a specified date/time.
  */
-class PublishBeforeTimeRuleProcessor extends \
+class PublishBeforeTimeRuleProcessor
 {
     /**
      * The DateTime provider.

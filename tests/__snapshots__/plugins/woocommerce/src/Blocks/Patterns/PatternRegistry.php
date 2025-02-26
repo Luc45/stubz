@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  *
  * @internal
  */
-class PatternRegistry extends \
+class PatternRegistry
 {
     const SLUG_REGEX = '/^[A-z0-9\\/_-]+$/';
 

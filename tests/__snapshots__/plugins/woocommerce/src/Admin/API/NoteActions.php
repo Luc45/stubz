@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_CRUD_Controller
  */
-class NoteActions extends \Automattic\WooCommerce\Admin\API\Notes
+class NoteActions
 {
     /**
      * Register the routes for admin notes.

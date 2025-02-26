@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  *
  * @internal
  */
-class PatternsHelper extends \
+class PatternsHelper
 {
     /**
      * Fetches the AI-selected image for the pattern or returns the default image.

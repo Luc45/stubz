@@ -12,7 +12,7 @@ namespace ;
  * @package WooCommerce\Widgets
  * @version 9.4.0
  */
-class WC_Widget_Brand_Thumbnails extends \WP_Widget
+class WC_Widget_Brand_Thumbnails
 {
     /**
      * Widget CSS class.

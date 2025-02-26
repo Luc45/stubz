@@ -64,7 +64,7 @@ function wc_get_object_terms($object_id, $taxonomy, $field = null, $index_key = 
  * @param  array  $args       Query arguments.
  * @return array
  */
-function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array(
+function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array (
 ))
 {
     // stub
@@ -78,7 +78,7 @@ function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array(
  * @param  array  $args       Query arguments.
  * @return array
  */
-function wc_get_product_terms($product_id, $taxonomy, $args = array(
+function wc_get_product_terms($product_id, $taxonomy, $args = array (
 ))
 {
     // stub
@@ -113,7 +113,7 @@ function _wc_get_product_terms_parent_usort_callback($a, $b)
  *
  * @param array $args Args to control display of dropdown.
  */
-function wc_product_dropdown_categories($args = array(
+function wc_product_dropdown_categories($args = array (
 ))
 {
     // stub

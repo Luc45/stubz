@@ -20,7 +20,7 @@ function wc_admin_number_format($number)
  *
  * @return string       Fully qualified URL pointing to the desired path.
  */
-function wc_admin_url($path = null, $query = array(
+function wc_admin_url($path = null, $query = array (
 ))
 {
     // stub
@@ -33,7 +33,7 @@ function wc_admin_url($path = null, $query = array(
  * @param string $event_name Event name for tracks.
  * @param array  $properties Properties to pass along with event.
  */
-function wc_admin_record_tracks_event($event_name, $properties = array(
+function wc_admin_record_tracks_event($event_name, $properties = array (
 ))
 {
     // stub

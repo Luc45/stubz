@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
 /**
  * Class Edit.
  */
-class Edit extends \
+class Edit
 {
     /**
      * Screen ID for the edit order screen.

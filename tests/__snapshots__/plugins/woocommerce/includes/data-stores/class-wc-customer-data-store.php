@@ -7,7 +7,7 @@ namespace ;
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store extends \WC_Data_Store_WP
+class WC_Customer_Data_Store
 {
     /**
      * Data stored in meta keys, but not considered "meta".
@@ -15,7 +15,7 @@ class WC_Customer_Data_Store extends \WC_Data_Store_WP
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => 'locale',
   1 => 'billing_postcode',
   2 => 'billing_city',
@@ -124,7 +124,7 @@ class WC_Customer_Data_Store extends \WC_Data_Store_WP
      * @param WC_Customer $customer Customer object.
      * @param array       $args Array of args to pass to the delete method.
      */
-    public function delete(&$customer, $args = array(
+    public function delete(&$customer, $args = array (
 ))
     {
         // stub

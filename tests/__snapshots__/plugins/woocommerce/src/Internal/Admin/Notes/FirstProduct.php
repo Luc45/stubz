@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * First_Product.
  */
-class FirstProduct extends \
+class FirstProduct
 {
     const NOTE_NAME = 'wc-admin-first-product';
 

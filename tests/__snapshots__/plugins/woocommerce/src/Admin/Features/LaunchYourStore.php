@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features;
 /**
  * Takes care of Launch Your Store related actions.
  */
-class LaunchYourStore extends \
+class LaunchYourStore
 {
     const BANNER_DISMISS_USER_META_KEY = 'coming_soon_banner_dismissed';
 

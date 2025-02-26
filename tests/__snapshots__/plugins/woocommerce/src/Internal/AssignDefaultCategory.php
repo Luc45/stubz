@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal;
 /**
  * Class to assign default category to products.
  */
-class AssignDefaultCategory extends \
+class AssignDefaultCategory
 {
     /**
      * Class initialization, to be executed when the class is resolved by the container.

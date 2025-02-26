@@ -8,7 +8,7 @@ namespace ;
  * @since       2.6.0
  * @package     WooCommerce\Classes
  */
-class WC_Payment_Gateway_ECheck extends \WC_Payment_Gateway
+class WC_Payment_Gateway_ECheck
 {
     /**
      * Builds our payment fields area - including tokenization fields for logged

@@ -7,7 +7,7 @@ namespace ;
  *
  * Class ActionScheduler_Lock
  */
-abstract class ActionScheduler_Lock extends \
+abstract class ActionScheduler_Lock
 {
     /**
      * Instance.

@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Block template class.
  */
-abstract class AbstractBlockTemplate extends \
+abstract class AbstractBlockTemplate
 {
     /**
      * The block cache.
      *
      * @var BlockInterface[]
      */
-    private $block_cache = array(
+    private $block_cache = array (
 );
 
     /**

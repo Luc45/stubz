@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Products_Controller
  */
-class Products extends \WC_REST_Products_Controller
+class Products
 {
     /**
      * Endpoint namespace.
@@ -22,7 +22,7 @@ class Products extends \WC_REST_Products_Controller
      *
      * @var array
      */
-    protected $last_order_dates = array(
+    protected $last_order_dates = array (
 );
 
     /**

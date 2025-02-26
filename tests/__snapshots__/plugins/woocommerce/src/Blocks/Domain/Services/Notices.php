@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  *
  * @internal
  */
-class Notices extends \
+class Notices
 {
     /**
      * Holds the Package instance
@@ -21,7 +21,7 @@ class Notices extends \
      *
      * @var array
      */
-    private $notice_templates = array(
+    private $notice_templates = array (
   0 => 'notices/error.php',
   1 => 'notices/notice.php',
   2 => 'notices/success.php',

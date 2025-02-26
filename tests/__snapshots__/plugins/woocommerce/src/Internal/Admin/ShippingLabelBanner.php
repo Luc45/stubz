@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Shows print shipping label banner on edit order page.
  */
-class ShippingLabelBanner extends \
+class ShippingLabelBanner
 {
     const MIN_COMPATIBLE_WCST_VERSION = '2.7.0';
 

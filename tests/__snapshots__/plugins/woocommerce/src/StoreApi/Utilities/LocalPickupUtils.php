@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  * Util class for local pickup related functionality, this contains methods that need to be accessed from places besides
  * the ShippingController, i.e. the OrderController.
  */
-class LocalPickupUtils extends \
+class LocalPickupUtils
 {
     /**
      * Gets the local pickup location settings.

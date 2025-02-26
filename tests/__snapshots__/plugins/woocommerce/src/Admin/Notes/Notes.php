@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
 /**
  * Admin Notes class.
  */
-class Notes extends \
+class Notes
 {
     const UNSNOOZE_HOOK = 'wc_admin_unsnooze_admin_notes';
 
@@ -24,7 +24,7 @@ class Notes extends \
      * @param array  $args Arguments to pass to the query( e.g. per_page and page).
      * @return array Array of arrays.
      */
-    public static function get_notes($context = 'edit', $args = array(
+    public static function get_notes($context = 'edit', $args = array (
 ))
     {
         // stub
@@ -62,8 +62,8 @@ class Notes extends \
      * @param string $status Comma separated list of statuses.
      * @return int
      */
-    public static function get_notes_count($type = array(
-), $status = array(
+    public static function get_notes_count($type = array (
+), $status = array (
 ))
     {
         // stub
@@ -106,7 +106,7 @@ class Notes extends \
      * @param array $args Arguments to pass to the query (ex: status).
      * @return array Array of notes.
      */
-    public static function delete_all_notes($args = array(
+    public static function delete_all_notes($args = array (
 ))
     {
         // stub

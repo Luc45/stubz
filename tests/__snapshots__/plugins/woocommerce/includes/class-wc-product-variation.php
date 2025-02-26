@@ -5,7 +5,7 @@ namespace ;
 /**
  * Product variation class.
  */
-class WC_Product_Variation extends \WC_Product_Simple
+class WC_Product_Variation
 {
     /**
      * Post type.
@@ -19,7 +19,7 @@ class WC_Product_Variation extends \WC_Product_Simple
      *
      * @var array
      */
-    protected $parent_data = array(
+    protected $parent_data = array (
   'title' => '',
   'sku' => '',
   'manage_stock' => '',

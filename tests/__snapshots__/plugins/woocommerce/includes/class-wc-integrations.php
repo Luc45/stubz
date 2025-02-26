@@ -5,14 +5,14 @@ namespace ;
 /**
  * Integrations class.
  */
-class WC_Integrations extends \
+class WC_Integrations
 {
     /**
      * Array of integrations.
      *
      * @var array
      */
-    public $integrations = array(
+    public $integrations = array (
 );
 
     /**

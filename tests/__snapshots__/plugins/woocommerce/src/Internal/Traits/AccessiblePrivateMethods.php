@@ -46,7 +46,7 @@ trait AccessiblePrivateMethods
      *
      * @var array
      */
-    private $_accessible_private_methods = array(
+    private $_accessible_private_methods = array (
 );
 
     /**
@@ -54,7 +54,7 @@ trait AccessiblePrivateMethods
      *
      * @var array
      */
-    private static $_accessible_static_private_methods = array(
+    private static $_accessible_static_private_methods = array (
 );
 
     /**

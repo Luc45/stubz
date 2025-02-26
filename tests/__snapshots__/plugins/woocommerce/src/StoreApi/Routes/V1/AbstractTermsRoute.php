@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * AbstractTermsRoute class.
  */
-abstract class AbstractTermsRoute extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
+abstract class AbstractTermsRoute
 {
     const SCHEMA_TYPE = 'term';
 

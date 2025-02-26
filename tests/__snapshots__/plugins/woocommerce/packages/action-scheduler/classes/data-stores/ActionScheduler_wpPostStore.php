@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_wpPostStore
  */
-class ActionScheduler_wpPostStore extends \ActionScheduler_Store
+class ActionScheduler_wpPostStore
 {
     const POST_TYPE = 'scheduled-action';
 
@@ -236,7 +236,7 @@ class ActionScheduler_wpPostStore extends \ActionScheduler_Store
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public function query_actions($query = array(
+    public function query_actions($query = array (
 ), $query_type = 'select')
     {
         // stub
@@ -312,7 +312,7 @@ class ActionScheduler_wpPostStore extends \ActionScheduler_Store
      * @throws RuntimeException When there is an error staking a claim.
      * @throws InvalidArgumentException When the given group is not valid.
      */
-    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(
+    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
 ), $group = '')
     {
         // stub
@@ -350,7 +350,7 @@ class ActionScheduler_wpPostStore extends \ActionScheduler_Store
      * @return int The number of actions that were claimed.
      * @throws RuntimeException  When there is a database error.
      */
-    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array(
+    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array (
 ), $group = '')
     {
         // stub

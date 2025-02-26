@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Session
  */
-abstract class WC_Session extends \
+abstract class WC_Session
 {
     /**
      * Customer ID.
@@ -19,7 +19,7 @@ abstract class WC_Session extends \
      *
      * @var array $_data Data array.
      */
-    protected $_data = array(
+    protected $_data = array (
 );
 
     /**

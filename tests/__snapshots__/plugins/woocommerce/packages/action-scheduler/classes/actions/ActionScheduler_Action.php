@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_Action
  */
-class ActionScheduler_Action extends \
+class ActionScheduler_Action
 {
     /**
      * Action's hook.
@@ -19,7 +19,7 @@ class ActionScheduler_Action extends \
      *
      * @var array<string, mixed>
      */
-    protected $args = array(
+    protected $args = array (
 );
 
     /**
@@ -57,7 +57,7 @@ class ActionScheduler_Action extends \
      * @param null|ActionScheduler_Schedule $schedule Action's schedule.
      * @param string                        $group Action's group.
      */
-    public function __construct($hook, array $args = array(
+    public function __construct($hook, array $args = array (
 ), ActionScheduler_Schedule|null $schedule = null, $group = '')
     {
         // stub

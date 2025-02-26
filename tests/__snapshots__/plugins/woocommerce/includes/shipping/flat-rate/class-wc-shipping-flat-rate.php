@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Shipping_Flat_Rate class.
  */
-class WC_Shipping_Flat_Rate extends \WC_Shipping_Method
+class WC_Shipping_Flat_Rate
 {
     /**
      * Cost passed to [fee] shortcode.
@@ -53,7 +53,7 @@ class WC_Shipping_Flat_Rate extends \WC_Shipping_Method
      * @param  array  $args Args, must contain `cost` and `qty` keys. Having `array()` as default is for back compat reasons.
      * @return string
      */
-    protected function evaluate_cost($sum, $args = array(
+    protected function evaluate_cost($sum, $args = array (
 ))
     {
         // stub
@@ -75,7 +75,7 @@ class WC_Shipping_Flat_Rate extends \WC_Shipping_Method
      *
      * @param array $package Package of items from cart.
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

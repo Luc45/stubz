@@ -5,14 +5,14 @@ namespace ;
 /**
  * Frontend scripts class.
  */
-class WC_Frontend_Scripts extends \
+class WC_Frontend_Scripts
 {
     /**
      * Contains an array of script handles registered by WC.
      *
      * @var array
      */
-    private static $scripts = array(
+    private static $scripts = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Frontend_Scripts extends \
      *
      * @var array
      */
-    private static $styles = array(
+    private static $styles = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Frontend_Scripts extends \
      *
      * @var array
      */
-    private static $wp_localize_scripts = array(
+    private static $wp_localize_scripts = array (
 );
 
     /**
@@ -70,9 +70,9 @@ class WC_Frontend_Scripts extends \
      * @param  string   $version   String specifying script version number, if it has one, which is added to the URL as a query string for cache busting purposes. If version is set to false, a version number is automatically added equal to current installed WordPress version. If set to null, no version is added.
      * @param  boolean  $in_footer Whether to enqueue the script before </body> instead of in the <head>. Default 'false'.
      */
-    private static function register_script($handle, $path, $deps = array(
+    private static function register_script($handle, $path, $deps = array (
   0 => 'jquery',
-), $version, $in_footer = array(
+), $version, $in_footer = array (
   'strategy' => 'defer',
 ))
     {
@@ -89,9 +89,9 @@ class WC_Frontend_Scripts extends \
      * @param  string   $version   String specifying script version number, if it has one, which is added to the URL as a query string for cache busting purposes. If version is set to false, a version number is automatically added equal to current installed WordPress version. If set to null, no version is added.
      * @param  boolean  $in_footer Whether to enqueue the script before </body> instead of in the <head>. Default 'false'.
      */
-    private static function enqueue_script($handle, $path = '', $deps = array(
+    private static function enqueue_script($handle, $path = '', $deps = array (
   0 => 'jquery',
-), $version, $in_footer = array(
+), $version, $in_footer = array (
   'strategy' => 'defer',
 ))
     {
@@ -109,7 +109,7 @@ class WC_Frontend_Scripts extends \
      * @param  string   $media   The media for which this stylesheet has been defined. Accepts media types like 'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param  boolean  $has_rtl If has RTL version to load too.
      */
-    private static function register_style($handle, $path, $deps = array(
+    private static function register_style($handle, $path, $deps = array (
 ), $version, $media = 'all', $has_rtl = false)
     {
         // stub
@@ -126,7 +126,7 @@ class WC_Frontend_Scripts extends \
      * @param  string   $media   The media for which this stylesheet has been defined. Accepts media types like 'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param  boolean  $has_rtl If has RTL version to load too.
      */
-    private static function enqueue_style($handle, $path = '', $deps = array(
+    private static function enqueue_style($handle, $path = '', $deps = array (
 ), $version, $media = 'all', $has_rtl = false)
     {
         // stub

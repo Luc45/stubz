@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with logging.
  */
-final class LoggingUtil extends \
+final class LoggingUtil
 {
     /**
      * Get the canonical URL for the Logs tab of the Status admin page.

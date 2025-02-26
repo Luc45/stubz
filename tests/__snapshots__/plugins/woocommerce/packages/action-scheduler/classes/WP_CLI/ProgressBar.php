@@ -11,7 +11,7 @@ namespace Action_Scheduler\WP_CLI;
  *
  * @codeCoverageIgnore
  */
-class ProgressBar extends \
+class ProgressBar
 {
     /**
      * Current number of ticks.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * Contains the logic for completing onboarding tasks.
  */
-class Init extends \
+class Init
 {
     /**
      * Class instance.

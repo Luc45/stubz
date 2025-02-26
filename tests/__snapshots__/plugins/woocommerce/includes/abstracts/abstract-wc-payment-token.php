@@ -13,14 +13,14 @@ namespace ;
  * @since       2.6.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Payment_Token extends \WC_Legacy_Payment_Token
+abstract class WC_Payment_Token
 {
     /**
      * Token Data (stored in the payment_tokens table).
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'gateway_id' => '',
   'token' => '',
   'is_default' => false,

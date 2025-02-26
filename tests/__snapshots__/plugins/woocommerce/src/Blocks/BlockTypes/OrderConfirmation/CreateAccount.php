@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * CreateAccount class.
  */
-class CreateAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
+class CreateAccount
 {
     /**
      * Block name.
@@ -74,7 +74,7 @@ class CreateAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfi
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array(
+    protected function render_content($order, $permission = false, $attributes = array (
 ), $content = '')
     {
         // stub
@@ -97,7 +97,7 @@ class CreateAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfi
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

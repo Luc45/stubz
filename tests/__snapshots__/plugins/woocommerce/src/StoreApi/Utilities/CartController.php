@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  *
  * Helper class to bridge the gap between the cart API and Woo core.
  */
-class CartController extends \
+class CartController
 {
     /**
      * Makes the cart and sessions available to a route by loading them from core.

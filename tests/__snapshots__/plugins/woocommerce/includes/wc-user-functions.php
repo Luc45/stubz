@@ -25,7 +25,7 @@ function wc_disable_admin_bar($show_admin_bar)
  * @param  array  $args     List of arguments to pass to `wp_insert_user()`.
  * @return int|WP_Error Returns WP_Error on failure, Int (user ID) on success.
  */
-function wc_create_new_customer($email, $username = '', $password = '', $args = array(
+function wc_create_new_customer($email, $username = '', $password = '', $args = array (
 ))
 {
     // stub
@@ -40,7 +40,7 @@ function wc_create_new_customer($email, $username = '', $password = '', $args = 
  * @param string $suffix Append string to username to make it unique.
  * @return string Generated username.
  */
-function wc_create_new_customer_username($email, $new_user_args = array(
+function wc_create_new_customer_username($email, $new_user_args = array (
 ), $suffix = '')
 {
     // stub

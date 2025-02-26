@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Class with methods for handling order In-Person Payments.
  */
-class IppFunctions extends \
+class IppFunctions
 {
     /**
      * Returns if order is eligible to accept In-Person Payments.

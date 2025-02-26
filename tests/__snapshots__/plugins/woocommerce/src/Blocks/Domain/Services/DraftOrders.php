@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  *
  * @internal
  */
-class DraftOrders extends \
+class DraftOrders
 {
     const DB_STATUS = 'wc-checkout-draft';
 

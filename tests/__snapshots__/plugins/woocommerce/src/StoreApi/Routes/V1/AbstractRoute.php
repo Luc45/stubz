@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * AbstractRoute class.
  */
-abstract class AbstractRoute extends \
+abstract class AbstractRoute
 {
     const SCHEMA_TYPE = '';
 
@@ -171,7 +171,7 @@ abstract class AbstractRoute extends \
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array(
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
 ))
     {
         // stub
@@ -187,7 +187,7 @@ abstract class AbstractRoute extends \
      * @param array    $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return WP_Error WP Error object.
      */
-    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array(
+    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array (
 ))
     {
         // stub
@@ -213,7 +213,7 @@ abstract class AbstractRoute extends \
      * @param array $args Optional. Additional arguments for context parameter. Default empty array.
      * @return array Context parameter details.
      */
-    protected function get_context_param($args = array(
+    protected function get_context_param($args = array (
 ))
     {
         // stub

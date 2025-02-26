@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_WCCOM_Site_Installation_State class
  */
-class WC_WCCOM_Site_Installation_State extends \
+class WC_WCCOM_Site_Installation_State
 {
     const STEP_STATUS_IN_PROGRESS = 'in-progress';
 

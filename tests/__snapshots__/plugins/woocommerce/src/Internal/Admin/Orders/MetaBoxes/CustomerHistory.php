@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
  *
  * @since 8.5.0
  */
-class CustomerHistory extends \
+class CustomerHistory
 {
     /**
      * Output the customer history template for the order.

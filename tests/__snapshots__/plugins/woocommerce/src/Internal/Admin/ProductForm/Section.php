@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductForm;
 /**
  * Section class.
  */
-class Section extends \Automattic\WooCommerce\Internal\Admin\ProductForm\Component
+class Section
 {
     /**
      * Constructor

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item class.
  */
-class WC_Order_Item extends \WC_Data
+class WC_Order_Item
 {
     /**
      * Legacy cart item values.
@@ -29,7 +29,7 @@ class WC_Order_Item extends \WC_Data
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'order_id' => 0,
   'name' => '',
 );
@@ -199,7 +199,7 @@ class WC_Order_Item extends \WC_Data
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array(
+    public function calculate_taxes($calculate_tax_for = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
 /**
  * LogHandlerFileV2 class.
  */
-class LogHandlerFileV2 extends \WC_Log_Handler
+class LogHandlerFileV2
 {
     /**
      * Instance of the FileController class.

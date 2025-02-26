@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget recent reviews class.
  */
-class WC_Widget_Recent_Reviews extends \WC_Widget
+class WC_Widget_Recent_Reviews
 {
     /**
      * Constructor.

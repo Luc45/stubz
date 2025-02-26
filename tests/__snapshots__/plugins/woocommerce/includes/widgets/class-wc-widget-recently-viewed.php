@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget recently viewed.
  */
-class WC_Widget_Recently_Viewed extends \WC_Widget
+class WC_Widget_Recently_Viewed
 {
     /**
      * Constructor.

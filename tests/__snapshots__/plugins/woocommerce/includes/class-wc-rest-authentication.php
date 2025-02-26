@@ -5,7 +5,7 @@ namespace ;
 /**
  * REST API authentication class.
  */
-class WC_REST_Authentication extends \
+class WC_REST_Authentication
 {
     /**
      * Authentication error.
@@ -215,7 +215,7 @@ class WC_REST_Authentication extends \
      * @param  string $key          Optional Array key to append.
      * @return string               Array of urlencoded strings.
      */
-    private function join_with_equals_sign($params, $query_params = array(
+    private function join_with_equals_sign($params, $query_params = array (
 ), $key = '')
     {
         // stub

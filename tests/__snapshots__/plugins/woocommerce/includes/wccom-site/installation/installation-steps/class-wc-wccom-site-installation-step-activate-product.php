@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_WCCOM_Site_Installation_Step_Activate_Product Class
  */
-class WC_WCCOM_Site_Installation_Step_Activate_Product extends \
+class WC_WCCOM_Site_Installation_Step_Activate_Product
 {
     /**
      * The current installation state.

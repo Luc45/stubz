@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Form_Handler class.
  */
-class WC_Form_Handler extends \
+class WC_Form_Handler
 {
     /**
      * Hook in methods.

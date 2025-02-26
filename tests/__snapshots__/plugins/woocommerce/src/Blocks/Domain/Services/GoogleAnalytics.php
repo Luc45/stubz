@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 /**
  * Service class to integrate Blocks with the Google Analytics extension,
  */
-class GoogleAnalytics extends \
+class GoogleAnalytics
 {
     /**
      * Instance of the asset API.

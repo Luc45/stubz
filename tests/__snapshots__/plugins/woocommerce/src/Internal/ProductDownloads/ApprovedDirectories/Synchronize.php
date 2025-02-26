@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  * Ensures that any downloadable files have a corresponding entry in the Approved Product
  * Download Directories list.
  */
-class Synchronize extends \
+class Synchronize
 {
     const SYNC_TASK = 'woocommerce_download_dir_sync';
 

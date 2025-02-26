@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Notices Class.
  */
-class WC_Admin_Notices extends \
+class WC_Admin_Notices
 {
     /**
      * Local notices cache.
@@ -15,7 +15,7 @@ class WC_Admin_Notices extends \
      *
      * @var array
      */
-    private static $notices = array(
+    private static $notices = array (
 );
 
     /**
@@ -23,7 +23,7 @@ class WC_Admin_Notices extends \
      *
      * @var array
      */
-    private static $core_notices = array(
+    private static $core_notices = array (
   'update' => 'update_notice',
   'template_files' => 'template_file_check_notice',
   'legacy_shipping' => 'legacy_shipping_notice',

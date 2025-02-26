@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_ActionFactory
  */
-class ActionScheduler_ActionFactory extends \
+class ActionScheduler_ActionFactory
 {
     /**
      * Return stored actions for given params.
@@ -20,7 +20,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return ActionScheduler_Action An instance of the stored action.
      */
-    public function get_stored_action($status, $hook, array $args = array(
+    public function get_stored_action($status, $hook, array $args = array (
 ), ActionScheduler_Schedule|null $schedule = null, $group = '')
     {
         // stub
@@ -39,7 +39,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function async($hook, $args = array(
+    public function async($hook, $args = array (
 ), $group = '')
     {
         // stub
@@ -55,7 +55,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function async_unique($hook, $args = array(
+    public function async_unique($hook, $args = array (
 ), $group = '', $unique = true)
     {
         // stub
@@ -71,7 +71,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function single($hook, $args = array(
+    public function single($hook, $args = array (
 ), $when = null, $group = '')
     {
         // stub
@@ -88,7 +88,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function single_unique($hook, $args = array(
+    public function single_unique($hook, $args = array (
 ), $when = null, $group = '', $unique = true)
     {
         // stub
@@ -105,7 +105,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function recurring($hook, $args = array(
+    public function recurring($hook, $args = array (
 ), $first = null, $interval = null, $group = '')
     {
         // stub
@@ -123,7 +123,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function recurring_unique($hook, $args = array(
+    public function recurring_unique($hook, $args = array (
 ), $first = null, $interval = null, $group = '', $unique = true)
     {
         // stub
@@ -142,7 +142,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      */
-    public function cron($hook, $args = array(
+    public function cron($hook, $args = array (
 ), $base_timestamp = null, $schedule = null, $group = '')
     {
         // stub
@@ -162,7 +162,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The ID of the stored action.
      **/
-    public function cron_unique($hook, $args = array(
+    public function cron_unique($hook, $args = array (
 ), $base_timestamp = null, $schedule = null, $group = '', $unique = true)
     {
         // stub
@@ -222,7 +222,7 @@ class ActionScheduler_ActionFactory extends \
      *
      * @return int The action ID. Zero if there was an error scheduling the action.
      */
-    public function create(array $options = array(
+    public function create(array $options = array (
 ))
     {
         // stub

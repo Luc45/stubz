@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Edit_Products_On_The_Move
  */
-class EditProductsOnTheMove extends \
+class EditProductsOnTheMove
 {
     const NOTE_NAME = 'wc-admin-edit-products-on-the-move';
 

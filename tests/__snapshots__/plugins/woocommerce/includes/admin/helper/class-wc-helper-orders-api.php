@@ -7,7 +7,7 @@ namespace ;
  *
  * Pings WooCommerce.com to create an order and pull in the necessary data to start the installation process.
  */
-class WC_Helper_Orders_API extends \
+class WC_Helper_Orders_API
 {
     /**
      * Loads the class, runs on init

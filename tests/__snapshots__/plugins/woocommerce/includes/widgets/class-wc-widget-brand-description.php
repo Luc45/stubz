@@ -12,7 +12,7 @@ namespace ;
  * @package WooCommerce\Widgets
  * @version 9.4.0
  */
-class WC_Widget_Brand_Description extends \WP_Widget
+class WC_Widget_Brand_Description
 {
     /**
      * Widget class.

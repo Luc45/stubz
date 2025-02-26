@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Exporters
  */
-class ExportWCShipping extends \
+class ExportWCShipping
 {
     /**
      * Export WooCommerce shipping settings.

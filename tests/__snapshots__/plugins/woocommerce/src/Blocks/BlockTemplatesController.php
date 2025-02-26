@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @internal
  */
-class BlockTemplatesController extends \
+class BlockTemplatesController
 {
     const TEMPLATES_ROOT_DIR = 'templates';
 
@@ -149,7 +149,7 @@ class BlockTemplatesController extends \
      *
      * @return int[]|\WP_Post[] An array of found templates.
      */
-    public function get_block_templates_from_db($slugs = array(
+    public function get_block_templates_from_db($slugs = array (
 ), $template_type = 'wp_template')
     {
         // stub
@@ -178,7 +178,7 @@ class BlockTemplatesController extends \
      *
      * @return array WP_Block_Template[] An array of block template objects.
      */
-    public function get_block_templates($slugs = array(
+    public function get_block_templates($slugs = array (
 ), $template_type = 'wp_template')
     {
         // stub

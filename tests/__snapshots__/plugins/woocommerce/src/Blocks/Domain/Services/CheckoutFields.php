@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 /**
  * Service class managing checkout fields and its related extensibility points.
  */
-class CheckoutFields extends \
+class CheckoutFields
 {
     const BILLING_FIELDS_PREFIX = '_wc_billing/';
 
@@ -20,7 +20,7 @@ class CheckoutFields extends \
      *
      * @var array
      */
-    private $additional_fields = array(
+    private $additional_fields = array (
 );
 
     /**
@@ -35,7 +35,7 @@ class CheckoutFields extends \
      *
      * @var array
      */
-    private $supported_field_types = array(
+    private $supported_field_types = array (
   0 => 'text',
   1 => 'select',
   2 => 'checkbox',
@@ -46,7 +46,7 @@ class CheckoutFields extends \
      *
      * @var array
      */
-    protected $groups = array(
+    protected $groups = array (
   0 => 'billing',
   1 => 'shipping',
   2 => 'other',

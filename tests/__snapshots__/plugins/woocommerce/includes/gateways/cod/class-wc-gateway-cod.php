@@ -12,7 +12,7 @@ namespace ;
  * @version     2.1.0
  * @package     WooCommerce\Classes\Payment
  */
-class WC_Gateway_COD extends \WC_Payment_Gateway
+class WC_Gateway_COD
 {
     const ID = 'cod';
 

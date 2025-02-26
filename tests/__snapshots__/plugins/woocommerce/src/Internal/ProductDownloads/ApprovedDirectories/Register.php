@@ -6,9 +6,9 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  * Maintains and manages the list of approved directories, within which product downloads can
  * be stored.
  */
-class Register extends \
+class Register
 {
-    const MODES = array(
+    const MODES = array (
   0 => 'disabled',
   1 => 'enabled',
 );

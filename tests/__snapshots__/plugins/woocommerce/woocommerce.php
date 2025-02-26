@@ -23,5 +23,5 @@ function wc_get_container()
     // stub
 }
 
-\define('WC_PLUGIN_FILE', '/home/lucas/automattic/stubz/tests/plugins/woocommerce/woocommerce.php');
+const WC_PLUGIN_FILE = '/home/lucas/automattic/stubz/tests/plugins/woocommerce/woocommerce.php';
 

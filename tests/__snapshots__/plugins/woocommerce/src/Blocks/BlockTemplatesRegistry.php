@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @internal
  */
-class BlockTemplatesRegistry extends \
+class BlockTemplatesRegistry
 {
     /**
      * The array of registered templates.
      *
      * @var AbstractTemplate[]|AbstractTemplatePart[]
      */
-    private $templates = array(
+    private $templates = array (
 );
 
     /**

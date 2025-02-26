@@ -68,7 +68,7 @@ function wc_setup_product_data($post)
  * @since 3.3.0
  * @param array $args Args to pass into the global.
  */
-function wc_setup_loop($args = array(
+function wc_setup_loop($args = array (
 ))
 {
     // stub
@@ -317,7 +317,7 @@ function wc_product_class($class = '', $product_id = null)
  * @param bool         $return Whether to return.
  * @return string
  */
-function wc_query_string_form_fields($values = null, $exclude = array(
+function wc_query_string_form_fields($values = null, $exclude = array (
 ), $current_key = '', $return = false)
 {
     // stub
@@ -602,7 +602,7 @@ function woocommerce_product_archive_description()
  *
  * @param array $args Arguments.
  */
-function woocommerce_template_loop_add_to_cart($args = array(
+function woocommerce_template_loop_add_to_cart($args = array (
 ))
 {
     // stub
@@ -648,7 +648,7 @@ function woocommerce_show_product_loop_sale_flash()
  * @param  bool   $placeholder True to return $placeholder if no image is found, or false to return an empty string.
  * @return string
  */
-function woocommerce_get_product_thumbnail($size = 'woocommerce_thumbnail', $attr = array(
+function woocommerce_get_product_thumbnail($size = 'woocommerce_thumbnail', $attr = array (
 ), $placeholder = true)
 {
     // stub
@@ -839,7 +839,7 @@ function woocommerce_external_add_to_cart()
  *
  * @return string
  */
-function woocommerce_quantity_input($args = array(
+function woocommerce_quantity_input($args = array (
 ), $product = null, $echo = true)
 {
     // stub
@@ -867,7 +867,7 @@ function woocommerce_product_additional_information_tab()
  * @param array $tabs Array of tabs.
  * @return array
  */
-function woocommerce_default_product_tabs($tabs = array(
+function woocommerce_default_product_tabs($tabs = array (
 ))
 {
     // stub
@@ -879,7 +879,7 @@ function woocommerce_default_product_tabs($tabs = array(
  * @param array $tabs Array of tabs.
  * @return array
  */
-function woocommerce_sort_product_tabs($tabs = array(
+function woocommerce_sort_product_tabs($tabs = array (
 ))
 {
     // stub
@@ -961,7 +961,7 @@ function woocommerce_output_related_products()
  *
  * @param array $args Provided arguments.
  */
-function woocommerce_related_products($args = array(
+function woocommerce_related_products($args = array (
 ))
 {
     // stub
@@ -1050,7 +1050,7 @@ function woocommerce_widget_shopping_cart_subtotal()
  *
  * @param array $args Arguments.
  */
-function woocommerce_mini_cart($args = array(
+function woocommerce_mini_cart($args = array (
 ))
 {
     // stub
@@ -1061,7 +1061,7 @@ function woocommerce_mini_cart($args = array(
  *
  * @param array $args Arguments.
  */
-function woocommerce_login_form($args = array(
+function woocommerce_login_form($args = array (
 ))
 {
     // stub
@@ -1080,7 +1080,7 @@ function woocommerce_checkout_login_form()
  *
  * @param array $args Arguments.
  */
-function woocommerce_breadcrumb($args = array(
+function woocommerce_breadcrumb($args = array (
 ))
 {
     // stub
@@ -1160,7 +1160,7 @@ function woocommerce_maybe_show_product_subcategories($loop_html = '')
  * @param array $args Arguments.
  * @return null|boolean
  */
-function woocommerce_product_subcategories($args = array(
+function woocommerce_product_subcategories($args = array (
 ))
 {
     // stub
@@ -1176,7 +1176,7 @@ function woocommerce_product_subcategories($args = array(
  * @param array $args Arguments.
  * @return boolean
  */
-function woocommerce_output_product_categories($args = array(
+function woocommerce_output_product_categories($args = array (
 ))
 {
     // stub
@@ -1302,7 +1302,7 @@ function woocommerce_single_variation_add_to_cart_button()
  * @param array $args Arguments.
  * @since 2.4.0
  */
-function wc_dropdown_variation_attribute_options($args = array(
+function wc_dropdown_variation_attribute_options($args = array (
 ))
 {
     // stub
@@ -1403,7 +1403,7 @@ function wc_no_products_found()
  * @since 3.0.0
  * @return string
  */
-function wc_get_email_order_items($order, $args = array(
+function wc_get_email_order_items($order, $args = array (
 ))
 {
     // stub
@@ -1417,7 +1417,7 @@ function wc_get_email_order_items($order, $args = array(
  * @param  array         $args Arguments.
  * @return string|void
  */
-function wc_display_item_meta($item, $args = array(
+function wc_display_item_meta($item, $args = array (
 ))
 {
     // stub
@@ -1431,7 +1431,7 @@ function wc_display_item_meta($item, $args = array(
  * @param  array         $args Arguments.
  * @return string|void
  */
-function wc_display_item_downloads($item, $args = array(
+function wc_display_item_downloads($item, $args = array (
 ))
 {
     // stub

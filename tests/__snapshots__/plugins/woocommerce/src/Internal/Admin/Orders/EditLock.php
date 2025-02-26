@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
  *
  * @since 7.8.0
  */
-class EditLock extends \
+class EditLock
 {
     const META_KEY_NAME = '_edit_lock';
 

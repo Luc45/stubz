@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  * @deprecated 5.0.0 This class will be removed in a future release. This has been replaced by BlockTypesController.
  * @internal
  */
-class Library extends \
+class Library
 {
     /**
      * Initialize block library features.

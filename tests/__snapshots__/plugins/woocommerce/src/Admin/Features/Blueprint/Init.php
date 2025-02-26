@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint;
  *
  * This class initializes the Blueprint feature for WooCommerce.
  */
-class Init extends \
+class Init
 {
     /**
      * Array of initialized exporters.
      *
      * @var StepExporter[]
      */
-    private array $initialized_exporters = array(
+    private array $initialized_exporters = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * TermSchema class.
  */
-class TermSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class TermSchema
 {
     const IDENTIFIER = 'term';
 

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Marketplace_Promotions class.
  */
-class WC_Admin_Marketplace_Promotions extends \
+class WC_Admin_Marketplace_Promotions
 {
     const CRON_NAME = 'woocommerce_marketplace_cron_fetch_promotions';
 
@@ -102,7 +102,7 @@ class WC_Admin_Marketplace_Promotions extends \
      *
      * @return array
      */
-    private static function get_promotions_of_format($promotions = array(
+    private static function get_promotions_of_format($promotions = array (
 ), $format = ''): array
     {
         // stub
@@ -116,7 +116,7 @@ class WC_Admin_Marketplace_Promotions extends \
      *
      * @return array
      */
-    private static function filter_out_inactive_promotions($promotions = array(
+    private static function filter_out_inactive_promotions($promotions = array (
 ))
     {
         // stub
@@ -131,7 +131,7 @@ class WC_Admin_Marketplace_Promotions extends \
      *
      * @return array
      * */
-    private static function merge_promos(array|null $promotions = array(
+    private static function merge_promos(array|null $promotions = array (
 )): array
     {
         // stub
@@ -148,7 +148,7 @@ class WC_Admin_Marketplace_Promotions extends \
      *
      * @return array
      */
-    public static function filter_marketplace_menu_items($menu_items, $promotion = array(
+    public static function filter_marketplace_menu_items($menu_items, $promotion = array (
 )): array
     {
         // stub

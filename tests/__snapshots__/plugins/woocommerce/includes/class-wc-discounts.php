@@ -5,7 +5,7 @@ namespace ;
 /**
  * Discounts class.
  */
-class WC_Discounts extends \
+class WC_Discounts
 {
     /**
      * Reference to cart or order object.
@@ -20,7 +20,7 @@ class WC_Discounts extends \
      *
      * @var array
      */
-    protected $items = array(
+    protected $items = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Discounts extends \
      *
      * @var array[] Code => Item Key => Value
      */
-    protected $discounts = array(
+    protected $discounts = array (
 );
 
     /**

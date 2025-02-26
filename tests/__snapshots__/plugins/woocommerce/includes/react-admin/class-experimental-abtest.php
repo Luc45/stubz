@@ -24,14 +24,14 @@ namespace WooCommerce\Admin;
  *
  * @internal This class is experimental and should not be used externally due to planned breaking changes.
  */
-final class Experimental_Abtest extends \
+final class Experimental_Abtest
 {
     /**
      * A variable to hold the tests we fetched, and their variations for the current user.
      *
      * @var array
      */
-    private $tests = array(
+    private $tests = array (
 );
 
     /**

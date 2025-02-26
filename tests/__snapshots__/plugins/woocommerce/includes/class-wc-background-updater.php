@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Background_Updater Class.
  */
-class WC_Background_Updater extends \WC_Background_Process
+class WC_Background_Updater
 {
     /**
      * Initiate new background process.

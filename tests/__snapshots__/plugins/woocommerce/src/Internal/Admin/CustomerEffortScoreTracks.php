@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Triggers customer effort score on several different actions.
  */
-class CustomerEffortScoreTracks extends \
+class CustomerEffortScoreTracks
 {
     const CES_TRACKS_QUEUE_OPTION_NAME = 'woocommerce_ces_tracks_queue';
 

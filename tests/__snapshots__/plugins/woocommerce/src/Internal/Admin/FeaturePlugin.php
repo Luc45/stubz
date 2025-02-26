@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  * @internal This file will not be bundled with woo core, only the feature plugin.
  * @internal Note this is not called WC_Admin due to a class already existing in core with that name.
  */
-class FeaturePlugin extends \
+class FeaturePlugin
 {
     /**
      * The single instance of the class.
@@ -118,5 +118,5 @@ class FeaturePlugin extends \
 
 }
 
-\define('WC_ADMIN_VERSION_NUMBER', '3.3.0');
+const WC_ADMIN_VERSION_NUMBER = '3.3.0';
 

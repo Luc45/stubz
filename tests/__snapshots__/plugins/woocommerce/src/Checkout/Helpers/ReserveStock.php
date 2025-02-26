@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Checkout\Helpers;
 /**
  * Stock Reservation class.
  */
-final class ReserveStock extends \
+final class ReserveStock
 {
     /**
      * Is stock reservation enabled?

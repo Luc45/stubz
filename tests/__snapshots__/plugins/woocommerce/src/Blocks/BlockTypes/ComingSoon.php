@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ComingSoon class.
  */
-class ComingSoon extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class ComingSoon
 {
     /**
      * Block name.

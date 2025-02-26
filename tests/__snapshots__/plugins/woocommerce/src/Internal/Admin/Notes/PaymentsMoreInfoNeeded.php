@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * PaymentsMoreInfoNeeded
  */
-class PaymentsMoreInfoNeeded extends \
+class PaymentsMoreInfoNeeded
 {
     const NOTE_NAME = 'wc-admin-payments-more-info-needed';
 

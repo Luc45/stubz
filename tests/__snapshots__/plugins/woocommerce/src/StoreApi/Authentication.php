@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * Authentication class.
  */
-class Authentication extends \
+class Authentication
 {
     /**
      * Hook into WP lifecycle events. This is hooked by the StoreAPI class on `rest_api_init`.

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Importers
  */
-class ImportSetWCPaymentGateways extends \
+class ImportSetWCPaymentGateways
 {
     /**
      * Process the import of WooCommerce payment gateways settings.

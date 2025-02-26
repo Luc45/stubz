@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  * Merchant email notifications.
  * This gets all non-sent notes type `email` and sends them.
  */
-class MerchantEmailNotifications extends \
+class MerchantEmailNotifications
 {
     /**
      * Initialize the merchant email notifications.

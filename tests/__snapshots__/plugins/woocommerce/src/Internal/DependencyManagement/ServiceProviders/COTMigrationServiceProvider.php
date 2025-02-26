@@ -7,14 +7,14 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @package Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders
  */
-class COTMigrationServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
+class COTMigrationServiceProvider
 {
     /**
      * Services provided by this provider.
      *
      * @var string[]
      */
-    protected $provides = array(
+    protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\PostsToOrdersMigrationController',
   1 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\CLIRunner',
 );

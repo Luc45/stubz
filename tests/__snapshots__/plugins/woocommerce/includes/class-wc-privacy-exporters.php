@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Privacy_Exporters Class.
  */
-class WC_Privacy_Exporters extends \
+class WC_Privacy_Exporters
 {
     /**
      * Finds and exports customer data by email address.

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget cart class.
  */
-class WC_Widget_Cart extends \WC_Widget
+class WC_Widget_Cart
 {
     /**
      * Constructor.

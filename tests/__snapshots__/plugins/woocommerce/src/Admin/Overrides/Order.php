@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Overrides;
 /**
  * WC_Order subclass.
  */
-class Order extends \WC_Order
+class Order
 {
     /**
      * Holds refund amounts and quantities for the order.

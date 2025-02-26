@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Tracks_Client class.
  */
-class WC_Tracks_Client extends \
+class WC_Tracks_Client
 {
     const PIXEL = 'https://pixel.wp.com/t.gif';
 

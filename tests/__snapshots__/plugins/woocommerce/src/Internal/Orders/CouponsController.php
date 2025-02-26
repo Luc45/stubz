@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Class with methods for handling order coupons.
  */
-class CouponsController extends \
+class CouponsController
 {
     /**
      * Add order discount via Ajax.

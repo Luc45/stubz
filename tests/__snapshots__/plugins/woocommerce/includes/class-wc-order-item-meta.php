@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item meta class.
  */
-class WC_Order_Item_Meta extends \
+class WC_Order_Item_Meta
 {
     /**
      * For handling backwards compatibility.
@@ -41,7 +41,7 @@ class WC_Order_Item_Meta extends \
      * @param array       $item defaults to array().
      * @param \WC_Product $product defaults to null.
      */
-    public function __construct($item = array(
+    public function __construct($item = array (
 ), $product = null)
     {
         // stub

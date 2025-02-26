@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 /**
  * SearchListTable class.
  */
-class SearchListTable extends \WP_List_Table
+class SearchListTable
 {
     const PER_PAGE_USER_OPTION_KEY = 'woocommerce_logging_search_results_per_page';
 

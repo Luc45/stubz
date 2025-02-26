@@ -11,7 +11,7 @@ namespace ;
  * @version     2.3.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Legacy_Local_Delivery extends \WC_Shipping_Local_Pickup
+class WC_Shipping_Legacy_Local_Delivery
 {
     /**
      * Shipping method fee type.
@@ -69,7 +69,7 @@ class WC_Shipping_Legacy_Local_Delivery extends \WC_Shipping_Local_Pickup
      *
      * @param array $package (default: array()).
      */
-    public function calculate_shipping($package = array(
+    public function calculate_shipping($package = array (
 ))
     {
         // stub

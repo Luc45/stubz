@@ -5,7 +5,7 @@ namespace ;
 /**
  * Customer download class.
  */
-class WC_Customer_Download extends \WC_Data
+class WC_Customer_Download
 {
     /**
      * This is the name of this object type.
@@ -20,7 +20,7 @@ class WC_Customer_Download extends \WC_Data
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'download_id' => '',
   'product_id' => 0,
   'user_id' => 0,

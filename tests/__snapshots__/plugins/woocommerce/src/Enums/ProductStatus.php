@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Enums;
 /**
  * Enum class for all the product statuses.
  */
-final class ProductStatus extends \
+final class ProductStatus
 {
     const AUTO_DRAFT = 'auto-draft';
 

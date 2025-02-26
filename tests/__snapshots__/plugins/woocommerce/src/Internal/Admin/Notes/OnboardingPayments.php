@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Onboarding_Payments.
  */
-class OnboardingPayments extends \
+class OnboardingPayments
 {
     const NOTE_NAME = 'wc-admin-onboarding-payments-reminder';
 

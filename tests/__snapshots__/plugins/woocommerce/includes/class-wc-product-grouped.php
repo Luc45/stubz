@@ -5,16 +5,16 @@ namespace ;
 /**
  * Product grouped class.
  */
-class WC_Product_Grouped extends \WC_Product
+class WC_Product_Grouped
 {
     /**
      * Stores product data.
      *
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'children' => 
-  array(
+  array (
   ),
 );
 

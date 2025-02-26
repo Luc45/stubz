@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class Scheduler extends \
+class Scheduler
 {
     const HOOK = 'action_scheduler/migration_hook';
 

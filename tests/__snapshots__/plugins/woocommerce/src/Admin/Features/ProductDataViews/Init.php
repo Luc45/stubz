@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductDataViews;
 /**
  * Loads assets related to the product block editor.
  */
-class Init extends \
+class Init
 {
     /**
      * Constructor

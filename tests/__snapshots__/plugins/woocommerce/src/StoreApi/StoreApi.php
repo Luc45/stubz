@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * StoreApi Main Class.
  */
-final class StoreApi extends \
+final class StoreApi
 {
     /**
      * Init and hook in Store API functionality.

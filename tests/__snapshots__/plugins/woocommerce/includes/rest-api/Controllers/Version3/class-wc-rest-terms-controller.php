@@ -5,7 +5,7 @@ namespace ;
 /**
  * Terms controller class.
  */
-abstract class WC_REST_Terms_Controller extends \WC_REST_Controller
+abstract class WC_REST_Terms_Controller
 {
     /**
      * Route base.
@@ -26,7 +26,7 @@ abstract class WC_REST_Terms_Controller extends \WC_REST_Controller
      *
      * @var array
      */
-    protected $taxonomies_by_id = array(
+    protected $taxonomies_by_id = array (
 );
 
     /**

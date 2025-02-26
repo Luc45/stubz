@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class MiniCart
 {
     /**
      * Block name.
@@ -28,7 +28,7 @@ class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      *
      * @var string[]
      */
-    protected $scripts_to_lazy_load = array(
+    protected $scripts_to_lazy_load = array (
 );
 
     /**
@@ -50,9 +50,9 @@ class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      *
      * @var array
      */
-    protected $hooked_block_placements = array(
+    protected $hooked_block_placements = array (
   0 => 
-  array(
+  array (
     'position' => 'after',
     'anchor' => 'core/navigation',
     'area' => 'header',
@@ -139,7 +139,7 @@ class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array(
+    protected function enqueue_data(array $attributes = array (
 ))
     {
         // stub

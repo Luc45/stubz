@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_wpCommentLogger
  */
-class ActionScheduler_wpCommentLogger extends \ActionScheduler_Logger
+class ActionScheduler_wpCommentLogger
 {
     const AGENT = 'ActionScheduler';
 

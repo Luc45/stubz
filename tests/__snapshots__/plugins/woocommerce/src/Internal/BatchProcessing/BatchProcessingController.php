@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\BatchProcessing;
  *
  * @package Automattic\WooCommerce\Internal\BatchProcessing.
  */
-class BatchProcessingController extends \
+class BatchProcessingController
 {
     const WATCHDOG_ACTION_NAME = 'wc_schedule_pending_batch_processes';
 

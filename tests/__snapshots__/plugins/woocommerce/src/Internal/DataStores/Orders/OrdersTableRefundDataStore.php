@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * Class OrdersTableRefundDataStore.
  */
-class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore
+class OrdersTableRefundDataStore
 {
     /**
      * Data stored in meta keys, but not considered "meta" for refund.
      *
      * @var string[]
      */
-    protected $internal_meta_keys = array(
+    protected $internal_meta_keys = array (
   0 => '_refund_amount',
   1 => '_refund_reason',
   2 => '_refunded_by',
@@ -24,47 +24,47 @@ class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataSt
      *
      * @var \string[][]
      */
-    protected $operational_data_column_mapping = array(
+    protected $operational_data_column_mapping = array (
   'id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'order_id' => 
-  array(
+  array (
     'type' => 'int',
   ),
   'woocommerce_version' => 
-  array(
+  array (
     'type' => 'string',
     'name' => 'version',
   ),
   'prices_include_tax' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'prices_include_tax',
   ),
   'coupon_usages_are_counted' => 
-  array(
+  array (
     'type' => 'bool',
     'name' => 'recorded_coupon_usage_counts',
   ),
   'shipping_tax_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'shipping_tax',
   ),
   'shipping_total_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'shipping_total',
   ),
   'discount_tax_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'discount_tax',
   ),
   'discount_total_amount' => 
-  array(
+  array (
     'type' => 'decimal',
     'name' => 'discount_total',
   ),
@@ -78,7 +78,7 @@ class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataSt
      *
      * @return void
      */
-    public function delete(&$refund, $args = array(
+    public function delete(&$refund, $args = array (
 ))
     {
         // stub

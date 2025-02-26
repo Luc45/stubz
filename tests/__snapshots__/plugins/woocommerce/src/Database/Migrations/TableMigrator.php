@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations;
  *
  * @package Automattic\WooCommerce\Database\Migrations
  */
-abstract class TableMigrator extends \
+abstract class TableMigrator
 {
     /**
      * An array of cumulated error messages.

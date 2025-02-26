@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ComingSoon;
 /**
  * Adds hooks to invalidate caches when the coming soon settings are changed.
  */
-class ComingSoonCacheInvalidator extends \
+class ComingSoonCacheInvalidator
 {
     /**
      * Sets up the hooks.

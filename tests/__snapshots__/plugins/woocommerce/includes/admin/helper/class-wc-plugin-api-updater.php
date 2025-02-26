@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class WC_Plugin_Api_Updater
  */
-class WC_Plugin_Api_Updater extends \
+class WC_Plugin_Api_Updater
 {
     /**
      * Loads the class, runs on init.

@@ -10,14 +10,14 @@ namespace ;
  *
  * @access private
  */
-class WC_Interactivity_Initial_State extends \
+class WC_Interactivity_Initial_State
 {
     /**
      * Map of initial state by namespace.
      *
      * @var array
      */
-    private static $initial_state = array(
+    private static $initial_state = array (
 );
 
     /**

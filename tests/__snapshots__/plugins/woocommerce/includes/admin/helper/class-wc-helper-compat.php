@@ -7,7 +7,7 @@ namespace ;
  *
  * Some level of compatibility with the legacy WooCommerce Helper plugin.
  */
-class WC_Helper_Compat extends \
+class WC_Helper_Compat
 {
     /**
      * Loads the class, runs on init.

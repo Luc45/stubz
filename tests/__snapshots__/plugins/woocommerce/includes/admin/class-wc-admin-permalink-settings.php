@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Admin_Permalink_Settings Class.
  */
-class WC_Admin_Permalink_Settings extends \
+class WC_Admin_Permalink_Settings
 {
     /**
      * Permalink settings.
      *
      * @var array
      */
-    private $permalinks = array(
+    private $permalinks = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\A
 /**
  * Admin list table used to render our current list of approved directories.
  */
-class Table extends \WP_List_Table
+class Table
 {
     /**
      * Initialize the webhook table list.

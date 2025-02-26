@@ -44,7 +44,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @extends WC_REST_Reports_Controller
  */
-abstract class GenericController extends \WC_REST_Reports_Controller
+abstract class GenericController
 {
     /**
      * Endpoint namespace.
@@ -75,7 +75,7 @@ abstract class GenericController extends \WC_REST_Reports_Controller
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array(
+    protected function get_datastore_data($query_args = array (
 ))
     {
         // stub

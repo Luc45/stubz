@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
 /**
  * RouteException class.
  */
-class RouteException extends \Exception implements \Throwable, \Stringable
+class RouteException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.
@@ -19,7 +19,7 @@ class RouteException extends \Exception implements \Throwable, \Stringable
      *
      * @var array
      */
-    public $additional_data = array(
+    public $additional_data = array (
 );
 
     /**
@@ -30,7 +30,7 @@ class RouteException extends \Exception implements \Throwable, \Stringable
      * @param int    $http_status_code Proper HTTP status code to respond with, e.g. 400.
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      */
-    public function __construct($error_code, $message, $http_status_code = 400, $additional_data = array(
+    public function __construct($error_code, $message, $http_status_code = 400, $additional_data = array (
 ))
     {
         // stub

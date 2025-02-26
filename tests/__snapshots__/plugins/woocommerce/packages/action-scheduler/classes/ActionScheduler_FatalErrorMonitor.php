@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_FatalErrorMonitor
  */
-class ActionScheduler_FatalErrorMonitor extends \
+class ActionScheduler_FatalErrorMonitor
 {
     /**
      * ActionScheduler_ActionClaim instance.

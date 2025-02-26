@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Customer_Download_Log_Data_Store class.
  */
-class WC_Customer_Download_Log_Data_Store extends \
+class WC_Customer_Download_Log_Data_Store
 {
     const WC_DOWNLOAD_LOG_TABLE = 'wc_download_log';
 
@@ -67,7 +67,7 @@ class WC_Customer_Download_Log_Data_Store extends \
      * @param  array $args Arguments to define download logs to retrieve. If $args['return'] is 'count' then the count of existing logs will be returned.
      * @return array|int
      */
-    public function get_download_logs($args = array(
+    public function get_download_logs($args = array (
 ))
     {
         // stub

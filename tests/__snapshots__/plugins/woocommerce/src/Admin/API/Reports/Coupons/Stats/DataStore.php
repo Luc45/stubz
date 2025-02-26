@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats;
 /**
  * API\Reports\Coupons\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore
+class DataStore
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -14,7 +14,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'date_start' => 'strval',
   'date_end' => 'strval',
   'date_start_gmt' => 'strval',

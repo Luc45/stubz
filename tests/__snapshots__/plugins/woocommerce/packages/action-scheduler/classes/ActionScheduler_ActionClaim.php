@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_ActionClaim
  */
-class ActionScheduler_ActionClaim extends \
+class ActionScheduler_ActionClaim
 {
     /**
      * Claim ID.
@@ -19,7 +19,7 @@ class ActionScheduler_ActionClaim extends \
      *
      * @var int[]
      */
-    private $action_ids = array(
+    private $action_ids = array (
 );
 
     /**

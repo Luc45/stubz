@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CatalogSorting class.
  */
-class Breadcrumbs extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class Breadcrumbs
 {
     /**
      * Block name.

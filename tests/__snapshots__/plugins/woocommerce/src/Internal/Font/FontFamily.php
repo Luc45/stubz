@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Font;
  *
  * @internal Just for internal use.
  */
-class FontFamily extends \
+class FontFamily
 {
     const POST_TYPE = 'wp_font_family';
 

@@ -6,38 +6,38 @@ namespace ;
  * Legacy cart class.
  */
 #[AllowDynamicProperties]
-abstract class WC_Legacy_Cart extends \
+abstract class WC_Legacy_Cart
 {
     /**
      * Array of defaults. Not used since 3.2.
      *
      * @deprecated 3.2.0
      */
-    public $cart_session_data = array(
+    public $cart_session_data = array (
   'cart_contents_total' => 0,
   'total' => 0,
   'subtotal' => 0,
   'subtotal_ex_tax' => 0,
   'tax_total' => 0,
   'taxes' => 
-  array(
+  array (
   ),
   'shipping_taxes' => 
-  array(
+  array (
   ),
   'discount_cart' => 0,
   'discount_cart_tax' => 0,
   'shipping_total' => 0,
   'shipping_tax_total' => 0,
   'coupon_discount_amounts' => 
-  array(
+  array (
   ),
   'coupon_discount_tax_amounts' => 
-  array(
+  array (
   ),
   'fee_total' => 0,
   'fees' => 
-  array(
+  array (
   ),
 );
 
@@ -47,7 +47,7 @@ abstract class WC_Legacy_Cart extends \
      * @deprecated 3.2.0
      * @var array
      */
-    public $coupon_applied_count = array(
+    public $coupon_applied_count = array (
 );
 
     /**

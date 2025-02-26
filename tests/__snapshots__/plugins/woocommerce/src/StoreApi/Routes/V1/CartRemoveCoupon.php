@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * CartRemoveCoupon class.
  */
-class CartRemoveCoupon extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
+class CartRemoveCoupon
 {
     const IDENTIFIER = 'cart-remove-coupon';
 

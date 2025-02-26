@@ -5,9 +5,9 @@ namespace Automattic\WooCommerce\Internal\Orders;
 /**
  * Class PaymentInfo.
  */
-class PaymentInfo extends \
+class PaymentInfo
 {
-    const KNOWN_CARD_BRANDS = array(
+    const KNOWN_CARD_BRANDS = array (
   0 => 'amex',
   1 => 'diners',
   2 => 'discover',

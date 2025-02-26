@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_NullAction
  */
-class ActionScheduler_NullAction extends \ActionScheduler_Action
+class ActionScheduler_NullAction
 {
     /**
      * Construct.
@@ -14,7 +14,7 @@ class ActionScheduler_NullAction extends \ActionScheduler_Action
      * @param mixed[]                       $args Action arguments.
      * @param null|ActionScheduler_Schedule $schedule Action schedule.
      */
-    public function __construct($hook = '', array $args = array(
+    public function __construct($hook = '', array $args = array (
 ), ActionScheduler_Schedule|null $schedule = null)
     {
         // stub

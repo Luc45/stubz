@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  * @deprecated 5.0.0 This class will be removed in a future release. This has been replaced by AssetsController.
  * @internal
  */
-class Assets extends \
+class Assets
 {
     /**
      * Initialize class features on init.
@@ -50,7 +50,7 @@ class Assets extends \
      * @param array $classes Array of CSS classnames.
      * @return array Modified array of CSS classnames.
      */
-    public static function add_theme_body_class($classes = array(
+    public static function add_theme_body_class($classes = array (
 ))
     {
         // stub
@@ -90,7 +90,7 @@ class Assets extends \
      * @param string $handle       Optional. Provided if the handle should be different than the script name. `wc-` prefix automatically added.
      * @param array  $dependencies Optional. An array of registered script handles this script depends on. Default empty array.
      */
-    public static function register_block_script($script_name, $handle = '', $dependencies = array(
+    public static function register_block_script($script_name, $handle = '', $dependencies = array (
 ))
     {
         // stub

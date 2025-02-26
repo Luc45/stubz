@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_wpPostStore_PostStatusRegistrar extends \
+class ActionScheduler_wpPostStore_PostStatusRegistrar
 {
     /**
      * Registrar.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * DeprecatedOptions class.
  */
-class DeprecatedOptions extends \
+class DeprecatedOptions
 {
     /**
      * Initialize.

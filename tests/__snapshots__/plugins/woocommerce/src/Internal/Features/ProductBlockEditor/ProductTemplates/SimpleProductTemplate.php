@@ -5,9 +5,9 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Simple Product Template.
  */
-class SimpleProductTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate
+class SimpleProductTemplate
 {
-    const GROUP_IDS = array(
+    const GROUP_IDS = array (
   'GENERAL' => 'general',
   'ORGANIZATION' => 'organization',
   'INVENTORY' => 'inventory',

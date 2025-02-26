@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * RoutesController class.
  */
-class RoutesController extends \
+class RoutesController
 {
     /**
      * Stores schema_controller.
@@ -19,7 +19,7 @@ class RoutesController extends \
      *
      * @var array
      */
-    protected $routes = array(
+    protected $routes = array (
 );
 
     /**

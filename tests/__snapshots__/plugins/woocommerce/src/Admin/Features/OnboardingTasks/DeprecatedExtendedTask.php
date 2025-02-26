@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 /**
  * DeprecatedExtendedTask class.
  */
-class DeprecatedExtendedTask extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class DeprecatedExtendedTask
 {
     /**
      * ID.

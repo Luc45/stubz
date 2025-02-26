@@ -11,7 +11,7 @@ namespace ;
  * @category Class
  * @author   WooThemes
  */
-class WC_HTTPS extends \
+class WC_HTTPS
 {
     /**
      * Hook in our HTTPS functions if we're on the frontend. This will ensure any links output to a page (when viewing via HTTPS) are also served over HTTPS.

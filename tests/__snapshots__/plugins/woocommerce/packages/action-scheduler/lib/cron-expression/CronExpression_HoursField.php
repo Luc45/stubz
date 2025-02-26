@@ -7,7 +7,7 @@ namespace ;
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_HoursField extends \CronExpression_AbstractField
+class CronExpression_HoursField
 {
     /**
      * {@inheritdoc}

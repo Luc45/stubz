@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Events Class.
  */
-class Events extends \
+class Events
 {
     /**
      * The single instance of the class.
@@ -19,7 +19,7 @@ class Events extends \
      *
      * @var array
      */
-    private static $note_classes_to_added_or_updated = array(
+    private static $note_classes_to_added_or_updated = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\AddFirstProduct',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\ChoosingTheme',
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\CustomizeStoreWithBlocks',
@@ -51,7 +51,7 @@ class Events extends \
      *
      * @var array
      */
-    private static $other_note_classes = array(
+    private static $other_note_classes = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\InstallJPAndWCSPlugins',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\OrderMilestones',
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\SellingOnlineCourses',

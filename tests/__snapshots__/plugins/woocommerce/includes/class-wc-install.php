@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Install Class.
  */
-class WC_Install extends \
+class WC_Install
 {
     const NEWLY_INSTALLED_OPTION = 'woocommerce_newly_installed';
 
@@ -25,9 +25,9 @@ class WC_Install extends \
      *
      * @var array
      */
-    private static $db_updates = array(
+    private static $db_updates = array (
   '2.0.0' => 
-  array(
+  array (
     0 => 'wc_update_200_file_paths',
     1 => 'wc_update_200_permalinks',
     2 => 'wc_update_200_subcat_display',
@@ -37,18 +37,18 @@ class WC_Install extends \
     6 => 'wc_update_200_db_version',
   ),
   '2.0.9' => 
-  array(
+  array (
     0 => 'wc_update_209_brazillian_state',
     1 => 'wc_update_209_db_version',
   ),
   '2.1.0' => 
-  array(
+  array (
     0 => 'wc_update_210_remove_pages',
     1 => 'wc_update_210_file_paths',
     2 => 'wc_update_210_db_version',
   ),
   '2.2.0' => 
-  array(
+  array (
     0 => 'wc_update_220_shipping',
     1 => 'wc_update_220_order_status',
     2 => 'wc_update_220_variations',
@@ -56,12 +56,12 @@ class WC_Install extends \
     4 => 'wc_update_220_db_version',
   ),
   '2.3.0' => 
-  array(
+  array (
     0 => 'wc_update_230_options',
     1 => 'wc_update_230_db_version',
   ),
   '2.4.0' => 
-  array(
+  array (
     0 => 'wc_update_240_options',
     1 => 'wc_update_240_shipping_methods',
     2 => 'wc_update_240_api_keys',
@@ -69,17 +69,17 @@ class WC_Install extends \
     4 => 'wc_update_240_db_version',
   ),
   '2.4.1' => 
-  array(
+  array (
     0 => 'wc_update_241_variations',
     1 => 'wc_update_241_db_version',
   ),
   '2.5.0' => 
-  array(
+  array (
     0 => 'wc_update_250_currency',
     1 => 'wc_update_250_db_version',
   ),
   '2.6.0' => 
-  array(
+  array (
     0 => 'wc_update_260_options',
     1 => 'wc_update_260_termmeta',
     2 => 'wc_update_260_zones',
@@ -88,30 +88,30 @@ class WC_Install extends \
     5 => 'wc_update_260_db_version',
   ),
   '3.0.0' => 
-  array(
+  array (
     0 => 'wc_update_300_grouped_products',
     1 => 'wc_update_300_settings',
     2 => 'wc_update_300_product_visibility',
     3 => 'wc_update_300_db_version',
   ),
   '3.1.0' => 
-  array(
+  array (
     0 => 'wc_update_310_downloadable_products',
     1 => 'wc_update_310_old_comments',
     2 => 'wc_update_310_db_version',
   ),
   '3.1.2' => 
-  array(
+  array (
     0 => 'wc_update_312_shop_manager_capabilities',
     1 => 'wc_update_312_db_version',
   ),
   '3.2.0' => 
-  array(
+  array (
     0 => 'wc_update_320_mexican_states',
     1 => 'wc_update_320_db_version',
   ),
   '3.3.0' => 
-  array(
+  array (
     0 => 'wc_update_330_image_options',
     1 => 'wc_update_330_webhooks',
     2 => 'wc_update_330_product_stock_status',
@@ -121,57 +121,57 @@ class WC_Install extends \
     6 => 'wc_update_330_db_version',
   ),
   '3.4.0' => 
-  array(
+  array (
     0 => 'wc_update_340_states',
     1 => 'wc_update_340_state',
     2 => 'wc_update_340_last_active',
     3 => 'wc_update_340_db_version',
   ),
   '3.4.3' => 
-  array(
+  array (
     0 => 'wc_update_343_cleanup_foreign_keys',
     1 => 'wc_update_343_db_version',
   ),
   '3.4.4' => 
-  array(
+  array (
     0 => 'wc_update_344_recreate_roles',
     1 => 'wc_update_344_db_version',
   ),
   '3.5.0' => 
-  array(
+  array (
     0 => 'wc_update_350_reviews_comment_type',
     1 => 'wc_update_350_db_version',
   ),
   '3.5.2' => 
-  array(
+  array (
     0 => 'wc_update_352_drop_download_log_fk',
   ),
   '3.5.4' => 
-  array(
+  array (
     0 => 'wc_update_354_modify_shop_manager_caps',
     1 => 'wc_update_354_db_version',
   ),
   '3.6.0' => 
-  array(
+  array (
     0 => 'wc_update_360_product_lookup_tables',
     1 => 'wc_update_360_term_meta',
     2 => 'wc_update_360_downloadable_product_permissions_index',
     3 => 'wc_update_360_db_version',
   ),
   '3.7.0' => 
-  array(
+  array (
     0 => 'wc_update_370_tax_rate_classes',
     1 => 'wc_update_370_mro_std_currency',
     2 => 'wc_update_370_db_version',
   ),
   '3.9.0' => 
-  array(
+  array (
     0 => 'wc_update_390_move_maxmind_database',
     1 => 'wc_update_390_change_geolocation_database_update_cron',
     2 => 'wc_update_390_db_version',
   ),
   '4.0.0' => 
-  array(
+  array (
     0 => 'wc_update_product_lookup_tables',
     1 => 'wc_update_400_increase_size_of_column',
     2 => 'wc_update_400_reset_action_scheduler_migration_status',
@@ -181,31 +181,31 @@ class WC_Install extends \
     6 => 'wc_update_400_db_version',
   ),
   '4.4.0' => 
-  array(
+  array (
     0 => 'wc_update_440_insert_attribute_terms_for_variable_products',
     1 => 'wc_admin_update_110_remove_facebook_note',
     2 => 'wc_admin_update_130_remove_dismiss_action_from_tracking_opt_in_note',
     3 => 'wc_update_440_db_version',
   ),
   '4.5.0' => 
-  array(
+  array (
     0 => 'wc_update_450_sanitize_coupons_code',
     1 => 'wc_update_450_db_version',
   ),
   '5.0.0' => 
-  array(
+  array (
     0 => 'wc_update_500_fix_product_review_count',
     1 => 'wc_admin_update_160_remove_facebook_note',
     2 => 'wc_admin_update_170_homescreen_layout',
     3 => 'wc_update_500_db_version',
   ),
   '5.6.0' => 
-  array(
+  array (
     0 => 'wc_update_560_create_refund_returns_page',
     1 => 'wc_update_560_db_version',
   ),
   '6.0.0' => 
-  array(
+  array (
     0 => 'wc_update_600_migrate_rate_limit_options',
     1 => 'wc_admin_update_270_delete_report_downloads',
     2 => 'wc_admin_update_271_update_task_list_options',
@@ -215,100 +215,100 @@ class WC_Install extends \
     6 => 'wc_update_600_db_version',
   ),
   '6.3.0' => 
-  array(
+  array (
     0 => 'wc_update_630_create_product_attributes_lookup_table',
     1 => 'wc_admin_update_300_update_is_read_from_last_read',
     2 => 'wc_update_630_db_version',
   ),
   '6.4.0' => 
-  array(
+  array (
     0 => 'wc_update_640_add_primary_key_to_product_attributes_lookup_table',
     1 => 'wc_admin_update_340_remove_is_primary_from_note_action',
     2 => 'wc_update_640_db_version',
   ),
   '6.5.0' => 
-  array(
+  array (
     0 => 'wc_update_650_approved_download_directories',
   ),
   '6.5.1' => 
-  array(
+  array (
     0 => 'wc_update_651_approved_download_directories',
   ),
   '6.7.0' => 
-  array(
+  array (
     0 => 'wc_update_670_purge_comments_count_cache',
     1 => 'wc_update_670_delete_deprecated_remote_inbox_notifications_option',
   ),
   '7.0.0' => 
-  array(
+  array (
     0 => 'wc_update_700_remove_download_log_fk',
     1 => 'wc_update_700_remove_recommended_marketing_plugins_transient',
   ),
   '7.2.1' => 
-  array(
+  array (
     0 => 'wc_update_721_adjust_new_zealand_states',
     1 => 'wc_update_721_adjust_ukraine_states',
   ),
   '7.2.2' => 
-  array(
+  array (
     0 => 'wc_update_722_adjust_new_zealand_states',
     1 => 'wc_update_722_adjust_ukraine_states',
   ),
   '7.5.0' => 
-  array(
+  array (
     0 => 'wc_update_750_add_columns_to_order_stats_table',
     1 => 'wc_update_750_disable_new_product_management_experience',
   ),
   '7.7.0' => 
-  array(
+  array (
     0 => 'wc_update_770_remove_multichannel_marketing_feature_options',
   ),
   '8.1.0' => 
-  array(
+  array (
     0 => 'wc_update_810_migrate_transactional_metadata_for_hpos',
   ),
   '8.6.0' => 
-  array(
+  array (
     0 => 'wc_update_860_remove_recommended_marketing_plugins_transient',
   ),
   '8.7.0' => 
-  array(
+  array (
     0 => 'wc_update_870_prevent_listing_of_transient_files_directory',
   ),
   '8.9.0' => 
-  array(
+  array (
     0 => 'wc_update_890_update_connect_to_woocommerce_note',
     1 => 'wc_update_890_update_paypal_standard_load_eligibility',
   ),
   '8.9.1' => 
-  array(
+  array (
     0 => 'wc_update_891_create_plugin_autoinstall_history_option',
   ),
   '9.1.0' => 
-  array(
+  array (
     0 => 'wc_update_910_add_launch_your_store_tour_option',
     1 => 'wc_update_910_remove_obsolete_user_meta',
   ),
   '9.2.0' => 
-  array(
+  array (
     0 => 'wc_update_920_add_wc_hooked_blocks_version_option',
   ),
   '9.3.0' => 
-  array(
+  array (
     0 => 'wc_update_930_add_woocommerce_coming_soon_option',
     1 => 'wc_update_930_migrate_user_meta_for_launch_your_store_tour',
   ),
   '9.4.0' => 
-  array(
+  array (
     0 => 'wc_update_940_add_phone_to_order_address_fts_index',
     1 => 'wc_update_940_remove_help_panel_highlight_shown',
   ),
   '9.5.0' => 
-  array(
+  array (
     0 => 'wc_update_950_tracking_option_autoload',
   ),
   '9.6.1' => 
-  array(
+  array (
     0 => 'wc_update_961_migrate_default_email_base_color',
   ),
 );

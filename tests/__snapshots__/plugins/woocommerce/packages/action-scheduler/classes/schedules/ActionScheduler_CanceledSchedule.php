@@ -5,7 +5,7 @@ namespace ;
 /**
  * Class ActionScheduler_SimpleSchedule
  */
-class ActionScheduler_CanceledSchedule extends \ActionScheduler_SimpleSchedule
+class ActionScheduler_CanceledSchedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.

@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * @internal
  */
-class PseudoWCPaymentGateway extends \WC_Payment_Gateway
+class PseudoWCPaymentGateway
 {
     /**
      * Gateway ID.
@@ -70,7 +70,7 @@ class PseudoWCPaymentGateway extends \WC_Payment_Gateway
      *
      * @var array
      */
-    public array $recommended_payment_methods = array(
+    public array $recommended_payment_methods = array (
 );
 
     /**
@@ -128,7 +128,7 @@ class PseudoWCPaymentGateway extends \WC_Payment_Gateway
      * @param string $id    The gateway ID.
      * @param array  $props Optional. The gateway properties to apply.
      */
-    public function __construct(string $id, array $props = array(
+    public function __construct(string $id, array $props = array (
 ))
     {
         // stub

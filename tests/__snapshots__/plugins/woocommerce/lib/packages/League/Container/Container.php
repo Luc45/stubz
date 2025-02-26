@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container;
 
-class Container extends \
+class Container
 {
     /**
      * @var boolean
@@ -27,7 +27,7 @@ class Container extends \
     /**
      * @var ContainerInterface[]
      */
-    protected $delegates = array(
+    protected $delegates = array (
 );
 
     /**

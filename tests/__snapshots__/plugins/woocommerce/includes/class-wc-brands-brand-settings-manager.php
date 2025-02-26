@@ -11,14 +11,14 @@ namespace ;
  *
  * @version 9.4.0
  */
-class WC_Brands_Brand_Settings_Manager extends \
+class WC_Brands_Brand_Settings_Manager
 {
     /**
      * Brand settings for a coupon.
      *
      * @var array
      */
-    private static $brand_settings = array(
+    private static $brand_settings = array (
 );
 
     /**

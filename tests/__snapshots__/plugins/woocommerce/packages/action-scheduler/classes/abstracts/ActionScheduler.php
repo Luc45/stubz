@@ -7,7 +7,7 @@ namespace ;
  *
  * @codeCoverageIgnore
  */
-abstract class ActionScheduler extends \
+abstract class ActionScheduler
 {
     /**
      * Plugin file path.

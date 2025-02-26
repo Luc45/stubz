@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * SystemStatusReport class.
  */
-class SystemStatusReport extends \
+class SystemStatusReport
 {
     /**
      * Class instance.

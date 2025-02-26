@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Domain;
  *
  * @since 2.5.0
  */
-class Package extends \
+class Package
 {
     /**
      * Holds the current version of the blocks plugin.

@@ -25,7 +25,7 @@ namespace Automattic\WooCommerce\Internal\TransientFiles;
  * available in the WooCommerce tools page. The action runs once per day but this can be customized
  * via a dedicated hook.
  */
-class TransientFilesEngine extends \
+class TransientFilesEngine
 {
     const CLEANUP_ACTION_NAME = 'woocommerce_expired_transient_files_cleanup';
 

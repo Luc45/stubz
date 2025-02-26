@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  *
  * @package Automattic\WooCommerce\Database\Migrations\CustomOrderTable
  */
-class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\Migrations\MetaToCustomTableMigrator
+class PostToOrderAddressTableMigrator
 {
     /**
      * Type of addresses being migrated; 'billing' or 'shipping'.

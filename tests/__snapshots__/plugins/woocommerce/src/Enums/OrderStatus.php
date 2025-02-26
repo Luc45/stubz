@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Enums;
  * For a full documentation on the public order statuses, please refer to the following link:
  * https://woocommerce.com/document/managing-orders/order-statuses/
  */
-final class OrderStatus extends \
+final class OrderStatus
 {
     const PENDING = 'pending';
 

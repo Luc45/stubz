@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * MagentoMigration
  */
-class MagentoMigration extends \
+class MagentoMigration
 {
     const NOTE_NAME = 'wc-admin-magento-migration';
 

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Status Class.
  */
-class WC_Admin_Status extends \
+class WC_Admin_Status
 {
     /**
      * An instance of the DB log handler list table.

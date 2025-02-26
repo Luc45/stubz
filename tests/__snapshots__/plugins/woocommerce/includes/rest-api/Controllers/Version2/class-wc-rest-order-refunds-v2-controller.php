@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Orders_V2_Controller
  */
-class WC_REST_Order_Refunds_V2_Controller extends \WC_REST_Orders_V2_Controller
+class WC_REST_Order_Refunds_V2_Controller
 {
     /**
      * Endpoint namespace.
@@ -36,7 +36,7 @@ class WC_REST_Order_Refunds_V2_Controller extends \WC_REST_Orders_V2_Controller
      *
      * @var array
      */
-    protected $request = array(
+    protected $request = array (
 );
 
     /**

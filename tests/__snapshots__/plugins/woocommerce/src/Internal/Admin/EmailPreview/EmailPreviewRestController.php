@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\EmailPreview;
 /**
  * Controller for the REST endpoint to send an email preview.
  */
-class EmailPreviewRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
+class EmailPreviewRestController
 {
     const NONCE_KEY = 'email-preview-nonce';
 

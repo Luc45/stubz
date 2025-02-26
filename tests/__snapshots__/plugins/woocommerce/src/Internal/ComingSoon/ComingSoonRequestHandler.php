@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\ComingSoon;
  * Handles the template_include hook to determine whether the current page needs
  * to be replaced with a coming soon screen.
  */
-class ComingSoonRequestHandler extends \
+class ComingSoonRequestHandler
 {
     /**
      * Coming soon helper.

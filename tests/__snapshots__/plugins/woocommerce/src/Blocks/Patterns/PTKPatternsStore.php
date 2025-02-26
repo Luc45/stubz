@@ -7,11 +7,11 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  *
  * @internal
  */
-class PTKPatternsStore extends \
+class PTKPatternsStore
 {
     const TRANSIENT_NAME = 'ptk_patterns';
 
-    const CATEGORY_MAPPING = array(
+    const CATEGORY_MAPPING = array (
   'testimonials' => 'reviews',
 );
 

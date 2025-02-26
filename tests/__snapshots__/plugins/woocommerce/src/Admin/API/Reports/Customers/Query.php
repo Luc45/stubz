@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Customers;
 /**
  * API\Reports\Customers\Query
  */
-class Query extends \Automattic\WooCommerce\Admin\API\Reports\GenericQuery
+class Query
 {
     /**
      * Specific query name.

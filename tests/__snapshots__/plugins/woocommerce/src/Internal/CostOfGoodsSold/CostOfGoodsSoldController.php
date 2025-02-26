@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\CostOfGoodsSold;
 /**
  * Main controller for the Cost of Goods Sold feature.
  */
-class CostOfGoodsSoldController extends \
+class CostOfGoodsSoldController
 {
     /**
      * The instance of FeaturesController to use.

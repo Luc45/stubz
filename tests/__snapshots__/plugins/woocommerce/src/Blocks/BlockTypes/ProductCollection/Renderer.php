@@ -6,14 +6,14 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
  * Renderer class.
  * Handles rendering of the block and adds interactivity.
  */
-class Renderer extends \
+class Renderer
 {
     /**
      * The render state of the product collection block.
      *
      * @var array
      */
-    private $render_state = array(
+    private $render_state = array (
   'has_results' => false,
   'has_no_results_block' => false,
 );

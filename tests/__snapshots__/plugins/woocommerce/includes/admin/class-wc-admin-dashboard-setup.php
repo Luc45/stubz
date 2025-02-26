@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Dashboard_Setup Class.
  */
-class WC_Admin_Dashboard_Setup extends \
+class WC_Admin_Dashboard_Setup
 {
     /**
      * Check for task list initialization.

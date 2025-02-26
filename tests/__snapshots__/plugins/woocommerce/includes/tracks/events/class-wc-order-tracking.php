@@ -5,7 +5,7 @@ namespace ;
 /**
  * This class adds actions to track usage of a WooCommerce Order.
  */
-class WC_Order_Tracking extends \
+class WC_Order_Tracking
 {
     /**
      * Init tracking.

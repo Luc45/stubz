@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 /**
  * Payments settings utilities class.
  */
-class Utils extends \
+class Utils
 {
     /**
      * Apply order mappings to a base order map.

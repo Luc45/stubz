@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Meta_Box_Product_Images Class.
  */
-class WC_Meta_Box_Product_Images extends \
+class WC_Meta_Box_Product_Images
 {
     /**
      * Output the metabox.

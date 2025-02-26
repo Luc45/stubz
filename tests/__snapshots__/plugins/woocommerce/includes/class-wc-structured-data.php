@@ -5,14 +5,14 @@ namespace ;
 /**
  * Structured data class.
  */
-class WC_Structured_Data extends \
+class WC_Structured_Data
 {
     /**
      * Stores the structured data.
      *
      * @var array $_data Array of structured data.
      */
-    private $_data = array(
+    private $_data = array (
 );
 
     /**

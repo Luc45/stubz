@@ -9,14 +9,14 @@ namespace ;
  * @version        1.0.0
  * @package        WooCommerce\Classes\Log_Handlers
  */
-class WC_Log_Handler_File extends \WC_Log_Handler
+class WC_Log_Handler_File
 {
     /**
      * Stores open file handles.
      *
      * @var array
      */
-    protected $handles = array(
+    protected $handles = array (
 );
 
     /**
@@ -34,7 +34,7 @@ class WC_Log_Handler_File extends \WC_Log_Handler
      *
      * @var array
      */
-    protected $cached_logs = array(
+    protected $cached_logs = array (
 );
 
     /**

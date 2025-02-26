@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products;
  * @internal
  * @extends GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller
 {
     /**
      * Route base.
@@ -22,7 +22,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $param_mapping = array(
+    protected $param_mapping = array (
   'categories' => 'category_includes',
   'products' => 'product_includes',
   'variations' => 'variation_includes',
@@ -36,7 +36,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array(
+    protected function get_datastore_data($query_args = array (
 ))
     {
         // stub

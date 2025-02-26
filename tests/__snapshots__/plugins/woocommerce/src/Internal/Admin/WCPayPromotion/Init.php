@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\WCPayPromotion;
 /**
  * WooPayments Promotion engine.
  */
-class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
+class Init
 {
     /**
      * Constructor.

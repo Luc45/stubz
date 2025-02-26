@@ -2,12 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 
-abstract class AbstractServiceProvider extends \
+abstract class AbstractServiceProvider
 {
     /**
      * @var array
      */
-    protected $provides = array(
+    protected $provides = array (
 );
 
     /**

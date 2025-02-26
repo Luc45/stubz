@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\WCPayPromotion;
 /**
  * Default Promotions
  */
-class DefaultPromotions extends \
+class DefaultPromotions
 {
     /**
      * Get the specs.

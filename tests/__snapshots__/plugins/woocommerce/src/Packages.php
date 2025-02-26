@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce;
  *
  * @since 3.7.0
  */
-class Packages extends \
+class Packages
 {
     /**
      * Array of package names and their main package classes. Once a package has been merged into WooCommerce
@@ -15,7 +15,7 @@ class Packages extends \
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $packages = array(
+    protected static $packages = array (
 );
 
     /**
@@ -33,7 +33,7 @@ class Packages extends \
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $base_packages = array(
+    protected static $base_packages = array (
   'woocommerce-admin' => '\\Automattic\\WooCommerce\\Admin\\Composer\\Package',
   'woocommerce-gutenberg-products-block' => '\\Automattic\\WooCommerce\\Blocks\\Package',
 );
@@ -44,7 +44,7 @@ class Packages extends \
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $merged_packages = array(
+    protected static $merged_packages = array (
   'woocommerce-brands' => '\\Automattic\\WooCommerce\\Internal\\Brands',
 );
 

@@ -5,14 +5,14 @@ namespace ;
 /**
  * Customer class.
  */
-class WC_Customer extends \WC_Legacy_Customer
+class WC_Customer
 {
     /**
      * Stores customer data.
      *
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'date_created' => null,
   'date_modified' => null,
   'email' => '',
@@ -22,7 +22,7 @@ class WC_Customer extends \WC_Legacy_Customer
   'role' => 'customer',
   'username' => '',
   'billing' => 
-  array(
+  array (
     'first_name' => '',
     'last_name' => '',
     'company' => '',
@@ -36,7 +36,7 @@ class WC_Customer extends \WC_Legacy_Customer
     'phone' => '',
   ),
   'shipping' => 
-  array(
+  array (
     'first_name' => '',
     'last_name' => '',
     'company' => '',

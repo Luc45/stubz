@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Overrides;
 /**
  * WC_Order_Refund subclass.
  */
-class OrderRefund extends \WC_Order_Refund
+class OrderRefund
 {
     /**
      * Caches the customer ID.

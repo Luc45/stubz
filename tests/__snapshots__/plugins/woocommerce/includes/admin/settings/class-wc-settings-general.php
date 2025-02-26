@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Settings_General.
  */
-class WC_Settings_General extends \WC_Settings_Page
+class WC_Settings_General
 {
     /**
      * Setting page icon.

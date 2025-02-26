@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class SingleProductTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
+class SingleProductTemplate
 {
     const SLUG = 'single-product';
 

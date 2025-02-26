@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
  * Controller for the REST endpoints associated to the receipt rendering engine.
  * The endpoints require the read_shop_order capability for the order at hand.
  */
-class ReceiptRenderingRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
+class ReceiptRenderingRestController
 {
     /**
      * Get the WooCommerce REST API namespace for the class.

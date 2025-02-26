@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that performs a comparison operation against a value in the
  * stored state object.
  */
-class StoredStateRuleProcessor extends \
+class StoredStateRuleProcessor
 {
     /**
      * Performs a comparison operation against a value in the stored state object.

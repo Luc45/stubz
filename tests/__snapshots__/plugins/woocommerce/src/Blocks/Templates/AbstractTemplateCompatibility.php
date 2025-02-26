@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-abstract class AbstractTemplateCompatibility extends \
+abstract class AbstractTemplateCompatibility
 {
     /**
      * The data of supported hooks, containing the hook name, the block name,

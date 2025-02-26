@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Assets;
  *
  * @since 2.5.0
  */
-class Api extends \
+class Api
 {
     /**
      * Stores the prefixed WC version. Used because the WC Blocks version has not been updated since the monorepo merge.
@@ -23,7 +23,7 @@ class Api extends \
      *
      * @var array
      */
-    private $inline_scripts = array(
+    private $inline_scripts = array (
 );
 
     /**
@@ -154,7 +154,7 @@ class Api extends \
      *
      * @return array src, version and dependencies of the script.
      */
-    public function get_script_data($relative_src, $dependencies = array(
+    public function get_script_data($relative_src, $dependencies = array (
 ))
     {
         // stub
@@ -177,7 +177,7 @@ class Api extends \
      * @param array  $dependencies  Optional. An array of registered script handles this script depends on. Default empty array.
      * @param bool   $has_i18n      Optional. Whether to add a script translation call to this file. Default: true.
      */
-    public function register_script($handle, $relative_src, $dependencies = array(
+    public function register_script($handle, $relative_src, $dependencies = array (
 ), $has_i18n = true)
     {
         // stub
@@ -196,7 +196,7 @@ class Api extends \
      *                              'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param boolean $rtl   Optional. Whether or not to register RTL styles.
      */
-    public function register_style($handle, $relative_src, $deps = array(
+    public function register_style($handle, $relative_src, $deps = array (
 ), $media = 'all', $rtl = false)
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Block configuration used to specify blocks in BlockTemplate.
  */
-class AbstractBlock extends \
+class AbstractBlock
 {
     /**
      * The block name.
@@ -33,7 +33,7 @@ class AbstractBlock extends \
      *
      * @var array
      */
-    private $attributes = array(
+    private $attributes = array (
 );
 
     /**
@@ -41,7 +41,7 @@ class AbstractBlock extends \
      *
      * @var array
      */
-    private $hide_conditions = array(
+    private $hide_conditions = array (
 );
 
     /**
@@ -56,7 +56,7 @@ class AbstractBlock extends \
      *
      * @var array
      */
-    private $disable_conditions = array(
+    private $disable_conditions = array (
 );
 
     /**

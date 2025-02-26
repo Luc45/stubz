@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Utilities;
 /**
  * A class of utilities for dealing with arrays.
  */
-class ArrayUtil extends \
+class ArrayUtil
 {
     const SELECT_BY_AUTO = 0;
 

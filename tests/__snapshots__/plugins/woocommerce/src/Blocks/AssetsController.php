@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks;
  * @since 5.0.0
  * @internal
  */
-final class AssetsController extends \
+final class AssetsController
 {
     /**
      * Asset API interface for various asset registration.
@@ -183,7 +183,7 @@ final class AssetsController extends \
      *                        'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param boolean $rtl   Optional. Whether or not to register RTL styles.
      */
-    protected function register_style($handle, $src, $deps = array(
+    protected function register_style($handle, $src, $deps = array (
 ), $media = 'all', $rtl = false)
     {
         // stub

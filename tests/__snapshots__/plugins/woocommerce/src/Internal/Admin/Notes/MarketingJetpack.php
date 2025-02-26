@@ -9,11 +9,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  *
  * @see  https://developer.woocommerce.com/2020/10/16/using-the-admin-notes-inbox-in-woocommerce/
  */
-class MarketingJetpack extends \
+class MarketingJetpack
 {
     const NOTE_NAME = 'wc-admin-marketing-jetpack-backup';
 
-    const BACKUP_IDS = array(
+    const BACKUP_IDS = array (
   0 => 2010,
   1 => 2011,
   2 => 2012,

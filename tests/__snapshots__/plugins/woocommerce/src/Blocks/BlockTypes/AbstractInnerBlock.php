@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AbstractInnerBlock class.
  */
-abstract class AbstractInnerBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+abstract class AbstractInnerBlock
 {
     /**
      * Is this inner block lazy loaded? this helps us know if we should load its frontend script ot not.

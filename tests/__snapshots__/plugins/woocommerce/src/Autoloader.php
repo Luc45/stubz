@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce;
  *
  * @since 3.7.0
  */
-class Autoloader extends \
+class Autoloader
 {
     /**
      * Static-only class.

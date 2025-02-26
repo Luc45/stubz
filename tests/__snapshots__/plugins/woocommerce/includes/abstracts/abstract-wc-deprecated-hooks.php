@@ -7,14 +7,14 @@ namespace ;
  *
  * Based on the WCS_Hook_Deprecator class by Prospress.
  */
-abstract class WC_Deprecated_Hooks extends \
+abstract class WC_Deprecated_Hooks
 {
     /**
      * Array of deprecated hooks we need to handle.
      *
      * @var array
      */
-    protected $deprecated_hooks = array(
+    protected $deprecated_hooks = array (
 );
 
     /**
@@ -22,7 +22,7 @@ abstract class WC_Deprecated_Hooks extends \
      *
      * @var array
      */
-    protected $deprecated_version = array(
+    protected $deprecated_version = array (
 );
 
     /**

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Tracking_Opt_In
  */
-class TrackingOptIn extends \
+class TrackingOptIn
 {
     const NOTE_NAME = 'wc-admin-usage-tracking-opt-in';
 

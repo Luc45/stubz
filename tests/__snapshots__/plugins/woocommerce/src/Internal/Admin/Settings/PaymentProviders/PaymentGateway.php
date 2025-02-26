@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * Extend this class for introducing gateway-specific behavior.
  */
-class PaymentGateway extends \
+class PaymentGateway
 {
     /**
      * Extract the payment gateway provider details from the object.

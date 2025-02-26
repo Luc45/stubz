@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Tax.
  */
-class WC_Settings_Tax extends \WC_Settings_Page
+class WC_Settings_Tax
 {
     /**
      * Setting page icon.

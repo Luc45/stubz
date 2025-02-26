@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Helper functions for working with users.
  */
-class Users extends \
+class Users
 {
     /**
      * Indicates if the user qualifies as site administrator.

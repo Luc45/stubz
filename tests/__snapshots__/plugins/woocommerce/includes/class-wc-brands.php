@@ -9,7 +9,7 @@ namespace ;
  *
  * @version 9.5.0
  */
-class WC_Brands extends \
+class WC_Brands
 {
     /**
      * Template URL -- filterable.

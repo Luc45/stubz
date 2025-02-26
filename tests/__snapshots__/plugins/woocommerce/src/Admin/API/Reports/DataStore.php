@@ -51,7 +51,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  * Note that this class is NOT {@link https://developer.woocommerce.com/docs/how-to-manage-woocommerce-data-stores/ a CRUD data store}.
  * It does not implement the {@see WC_Object_Data_Store_Interface WC_Object_Data_Store_Interface} nor extend WC_Data & WC_Data_Store_WP classes.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
+class DataStore
 {
     /**
      * Cache group for the reports.
@@ -93,7 +93,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
 );
 
     /**
@@ -101,7 +101,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      *
      * @var array
      */
-    protected $report_columns = array(
+    protected $report_columns = array (
 );
 
     /**
@@ -123,7 +123,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      *
      * @var array
      */
-    private $limit_parameters = array(
+    private $limit_parameters = array (
 );
 
     /**
@@ -175,7 +175,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      *
      * @var array
      */
-    protected $debug_cache_data = array(
+    protected $debug_cache_data = array (
 );
 
     /**
@@ -539,7 +539,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      * @param array $query_args Parameters supplied by the user.
      * @return array
      */
-    protected function get_limit_params($query_args = array(
+    protected function get_limit_params($query_args = array (
 ))
     {
         // stub
@@ -553,7 +553,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      * @param array $other_values Other values that must be contained in the virtual table.
      * @return array
      */
-    protected function get_ids_table($ids, $id_field, $other_values = array(
+    protected function get_ids_table($ids, $id_field, $other_values = array (
 ))
     {
         // stub
@@ -578,7 +578,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      * @param array $outer_selections       Array of fields that are not selected in the inner query.
      * @return string
      */
-    protected function format_join_selections($fields, $default_results_fields, $outer_selections = array(
+    protected function format_join_selections($fields, $default_results_fields, $outer_selections = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 /**
  * Utils class
  */
-class Utils extends \
+class Utils
 {
     /**
      * Compare the current WordPress version with a given version. It's a wrapper around `version-compare`

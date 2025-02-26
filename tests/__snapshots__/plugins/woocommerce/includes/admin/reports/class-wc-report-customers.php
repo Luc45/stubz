@@ -8,14 +8,14 @@ namespace ;
  * @package     WooCommerce\Admin\Reports
  * @version     2.1.0
  */
-class WC_Report_Customers extends \WC_Admin_Report
+class WC_Report_Customers
 {
     /**
      * Chart colors.
      *
      * @var array
      */
-    public $chart_colours = array(
+    public $chart_colours = array (
 );
 
     /**
@@ -23,7 +23,7 @@ class WC_Report_Customers extends \WC_Admin_Report
      *
      * @var array
      */
-    public $customers = array(
+    public $customers = array (
 );
 
     /**

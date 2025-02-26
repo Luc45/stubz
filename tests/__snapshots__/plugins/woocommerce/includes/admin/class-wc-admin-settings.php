@@ -5,14 +5,14 @@ namespace ;
 /**
  * WC_Admin_Settings Class.
  */
-class WC_Admin_Settings extends \
+class WC_Admin_Settings
 {
     /**
      * Setting pages.
      *
      * @var array
      */
-    private static $settings = array(
+    private static $settings = array (
 );
 
     /**
@@ -20,7 +20,7 @@ class WC_Admin_Settings extends \
      *
      * @var array
      */
-    private static $errors = array(
+    private static $errors = array (
 );
 
     /**
@@ -28,7 +28,7 @@ class WC_Admin_Settings extends \
      *
      * @var array
      */
-    private static $messages = array(
+    private static $messages = array (
 );
 
     /**

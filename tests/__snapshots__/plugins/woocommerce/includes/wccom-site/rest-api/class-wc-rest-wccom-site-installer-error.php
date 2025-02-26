@@ -5,7 +5,7 @@ namespace ;
 /**
  * WCCOM Site Installer Error Class
  */
-class WC_REST_WCCOM_Site_Installer_Error extends \Exception implements \Throwable, \Stringable
+class WC_REST_WCCOM_Site_Installer_Error extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Constructor for the Installer Error class.

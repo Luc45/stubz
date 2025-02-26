@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks;
 /**
  * Process the query data for filtering purposes.
  */
-final class QueryFilters extends \
+final class QueryFilters
 {
     /**
      * Initialization method.

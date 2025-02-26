@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Customizer_Control_Cropping class.
  */
-class WC_Customizer_Control_Cropping extends \WP_Customize_Control
+class WC_Customizer_Control_Cropping
 {
     /**
      * Declare the control type.

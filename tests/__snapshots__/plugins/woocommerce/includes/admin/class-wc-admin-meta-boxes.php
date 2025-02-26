@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Meta_Boxes.
  */
-class WC_Admin_Meta_Boxes extends \
+class WC_Admin_Meta_Boxes
 {
     const ERROR_STORE = 'woocommerce_meta_box_errors';
 
@@ -21,7 +21,7 @@ class WC_Admin_Meta_Boxes extends \
      *
      * @var array
      */
-    public static $meta_box_errors = array(
+    public static $meta_box_errors = array (
 );
 
     /**

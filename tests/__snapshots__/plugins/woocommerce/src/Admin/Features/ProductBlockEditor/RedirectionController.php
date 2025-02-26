@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 /**
  * Handle redirecting to the old or new editor based on features and support.
  */
-class RedirectionController extends \
+class RedirectionController
 {
     /**
      * Registered product templates.
      *
      * @var array
      */
-    private $product_templates = array(
+    private $product_templates = array (
 );
 
     /**

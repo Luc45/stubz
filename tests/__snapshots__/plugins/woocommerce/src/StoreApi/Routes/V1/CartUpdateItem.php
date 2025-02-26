@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * CartUpdateItem class.
  */
-class CartUpdateItem extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
+class CartUpdateItem
 {
     const IDENTIFIER = 'cart-update-item';
 

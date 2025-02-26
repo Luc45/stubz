@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 /**
  * Utility methods used for the Mini Cart block.
  */
-class MiniCartUtils extends \
+class MiniCartUtils
 {
     /**
      * Migrate attributes to color panel component format.

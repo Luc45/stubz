@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Unsecured_Report_Files
  */
-class UnsecuredReportFiles extends \
+class UnsecuredReportFiles
 {
     const NOTE_NAME = 'wc-admin-remove-unsecured-report-files';
 

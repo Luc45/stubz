@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @deprecated 9.3.0 Query class is deprecated. Please use `GenericQuery`, \WC_Object_Query`, or use `DataStore` directly.
  */
-abstract class Query extends \WC_Object_Query
+abstract class Query
 {
     /**
      * Create a new query.
@@ -16,7 +16,7 @@ abstract class Query extends \WC_Object_Query
      *
      * @param array $args Criteria to query on in a format similar to WP_Query.
      */
-    public function __construct($args = array(
+    public function __construct($args = array (
 ))
     {
         // stub

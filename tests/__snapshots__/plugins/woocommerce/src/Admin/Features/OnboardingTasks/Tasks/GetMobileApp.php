@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Get Mobile App Task
  */
-class GetMobileApp extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
+class GetMobileApp
 {
     /**
      * ID.

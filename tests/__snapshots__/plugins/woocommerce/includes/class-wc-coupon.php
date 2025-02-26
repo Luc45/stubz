@@ -5,7 +5,7 @@ namespace ;
 /**
  * Coupon class.
  */
-class WC_Coupon extends \WC_Legacy_Coupon
+class WC_Coupon
 {
     const E_WC_COUPON_INVALID_FILTERED = 100;
 
@@ -51,7 +51,7 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @since 3.0.0
      * @var array
      */
-    protected $data = array(
+    protected $data = array (
   'code' => '',
   'amount' => 0,
   'status' => null,
@@ -63,29 +63,29 @@ class WC_Coupon extends \WC_Legacy_Coupon
   'usage_count' => 0,
   'individual_use' => false,
   'product_ids' => 
-  array(
+  array (
   ),
   'excluded_product_ids' => 
-  array(
+  array (
   ),
   'usage_limit' => 0,
   'usage_limit_per_user' => 0,
   'limit_usage_to_x_items' => null,
   'free_shipping' => false,
   'product_categories' => 
-  array(
+  array (
   ),
   'excluded_product_categories' => 
-  array(
+  array (
   ),
   'exclude_sale_items' => false,
   'minimum_amount' => '',
   'maximum_amount' => '',
   'email_restrictions' => 
-  array(
+  array (
   ),
   'used_by' => 
-  array(
+  array (
   ),
   'virtual' => false,
 );
@@ -698,7 +698,7 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @since 3.0.0
      * @param array $emails List of emails.
      */
-    public function set_email_restrictions($emails = array(
+    public function set_email_restrictions($emails = array (
 ))
     {
         // stub
@@ -808,7 +808,7 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @param array      $values  Values.
      * @return bool
      */
-    public function is_valid_for_product($product, $values = array(
+    public function is_valid_for_product($product, $values = array (
 ))
     {
         // stub

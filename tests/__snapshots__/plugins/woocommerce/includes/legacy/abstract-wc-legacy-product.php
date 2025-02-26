@@ -14,7 +14,7 @@ namespace ;
  * @category Abstract Class
  * @author   WooThemes
  */
-abstract class WC_Abstract_Legacy_Product extends \WC_Data
+abstract class WC_Abstract_Legacy_Product
 {
     /**
      * Magic __isset method for backwards compatibility. Legacy properties which could be accessed directly in the past.
@@ -425,7 +425,7 @@ abstract class WC_Abstract_Legacy_Product extends \WC_Data
      *
      * @param array $match_attributes
      */
-    public function get_matching_variation($match_attributes = array(
+    public function get_matching_variation($match_attributes = array (
 ))
     {
         // stub

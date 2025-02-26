@@ -5,7 +5,7 @@ namespace ;
 /**
  * Data store class.
  */
-class WC_Data_Store extends \
+class WC_Data_Store
 {
     /**
      * Contains an instance of the data store class that we are working with.
@@ -25,7 +25,7 @@ class WC_Data_Store extends \
      *
      * @var array
      */
-    private $stores = array(
+    private $stores = array (
   'coupon' => 'WC_Coupon_Data_Store_CPT',
   'customer' => 'WC_Customer_Data_Store',
   'customer-download' => 'WC_Customer_Download_Data_Store',
@@ -136,7 +136,7 @@ class WC_Data_Store extends \
      * @since 6.9.0
      * @param array[WC_Data] $objects Array of object instances to read.
      */
-    public function read_multiple(&$objects = array(
+    public function read_multiple(&$objects = array (
 ))
     {
         // stub
@@ -171,7 +171,7 @@ class WC_Data_Store extends \
      * @param WC_Data $data WooCommerce data instance.
      * @param array   $args Array of args to pass to the delete method.
      */
-    public function delete(&$data, $args = array(
+    public function delete(&$data, $args = array (
 ))
     {
         // stub

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-abstract class AbstractTemplate extends \
+abstract class AbstractTemplate
 {
     const SLUG = '';
 

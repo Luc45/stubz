@@ -5,7 +5,7 @@ namespace ;
 /**
  * Simple product class.
  */
-class WC_Product_Simple extends \WC_Product
+class WC_Product_Simple
 {
     /**
      * Initialize simple product.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Woo_Subscriptions_Notes
  */
-class WooSubscriptionsNotes extends \
+class WooSubscriptionsNotes
 {
     const LAST_REFRESH_OPTION_KEY = 'woocommerce_admin-wc-helper-last-refresh';
 
@@ -17,7 +17,7 @@ class WooSubscriptionsNotes extends \
 
     const NOTIFY_WHEN_DAYS_LEFT = 60;
 
-    const BUMP_THRESHOLDS = array(
+    const BUMP_THRESHOLDS = array (
   0 => 60,
   1 => 45,
   2 => 20,

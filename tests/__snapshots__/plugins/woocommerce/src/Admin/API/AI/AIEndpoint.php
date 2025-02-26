@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-abstract class AIEndpoint extends \
+abstract class AIEndpoint
 {
     /**
      * Endpoint namespace.

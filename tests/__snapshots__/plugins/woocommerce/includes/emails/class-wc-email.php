@@ -12,7 +12,7 @@ namespace ;
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Settings_API
  */
-class WC_Email extends \WC_Settings_API
+class WC_Email
 {
     /**
      * Email method ID.
@@ -140,7 +140,7 @@ class WC_Email extends \WC_Settings_API
      *  @var array $plain_search
      *  @see $plain_replace
      */
-    public $plain_search = array(
+    public $plain_search = array (
   0 => '//',
   1 => '/&(nbsp|#0*160);/i',
   2 => '/&(quot|rdquo|ldquo|#0*8220|#0*8221|#0*147|#0*148);/i',
@@ -168,7 +168,7 @@ class WC_Email extends \WC_Settings_API
      *  @var array $plain_replace
      *  @see $plain_search
      */
-    public $plain_replace = array(
+    public $plain_replace = array (
   0 => '',
   1 => ' ',
   2 => '"',
@@ -195,7 +195,7 @@ class WC_Email extends \WC_Settings_API
      *
      * @var array
      */
-    public $placeholders = array(
+    public $placeholders = array (
 );
 
     /**
@@ -204,7 +204,7 @@ class WC_Email extends \WC_Settings_API
      * @deprecated 3.2.0 in favour of placeholders
      * @var array
      */
-    public $find = array(
+    public $find = array (
 );
 
     /**
@@ -213,7 +213,7 @@ class WC_Email extends \WC_Settings_API
      * @deprecated 3.2.0 in favour of placeholders
      * @var array
      */
-    public $replace = array(
+    public $replace = array (
 );
 
     /**

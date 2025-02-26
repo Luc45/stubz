@@ -5,7 +5,7 @@ namespace ;
 /**
  * Abstract class with common Queue Cleaner functionality.
  */
-abstract class ActionScheduler_Abstract_QueueRunner_Deprecated extends \
+abstract class ActionScheduler_Abstract_QueueRunner_Deprecated
 {
     /**
      * Get the maximum number of seconds a batch can run for.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * New_Sales_Record
  */
-class NewSalesRecord extends \
+class NewSalesRecord
 {
     const NOTE_NAME = 'wc-admin-new-sales-record';
 

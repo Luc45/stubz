@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Giving_Feedback_Notes
  */
-class ChoosingTheme extends \
+class ChoosingTheme
 {
     const NOTE_NAME = 'wc-admin-choosing-a-theme';
 

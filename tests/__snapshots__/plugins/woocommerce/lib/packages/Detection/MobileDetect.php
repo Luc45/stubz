@@ -192,7 +192,7 @@ namespace Automattic\WooCommerce\Vendor\Detection;
  * @method bool isConsole()
  * @method bool isWatch()
  */
-class MobileDetect extends \
+class MobileDetect
 {
     const VER = '([\\w._\\+]+)';
 
@@ -206,7 +206,7 @@ class MobileDetect extends \
      * A cache for resolved matches
      * @var array
      */
-    protected array $cache = array(
+    protected array $cache = array (
 );
 
     /**
@@ -219,14 +219,14 @@ class MobileDetect extends \
      * HTTP headers in the PHP-flavor. So HTTP_USER_AGENT and SERVER_SOFTWARE.
      * @var array
      */
-    protected array $httpHeaders = array(
+    protected array $httpHeaders = array (
 );
 
     /**
      * CloudFront headers. E.g. CloudFront-Is-Desktop-Viewer, CloudFront-Is-Mobile-Viewer & CloudFront-Is-Tablet-Viewer.
      * @var array
      */
-    protected array $cloudfrontHeaders = array(
+    protected array $cloudfrontHeaders = array (
 );
 
     /**
@@ -250,11 +250,11 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $mobileHeaders = array(
+    protected static array $mobileHeaders = array (
   'HTTP_ACCEPT' => 
-  array(
+  array (
     'matches' => 
-    array(
+    array (
       0 => 'application/x-obml2d',
       1 => 'application/vnd.rim.html',
       2 => 'text/vnd.wap.wml',
@@ -274,9 +274,9 @@ class MobileDetect extends \
   'HTTP_X_MOBILE_GATEWAY' => null,
   'HTTP_X_ATT_DEVICEID' => null,
   'HTTP_UA_CPU' => 
-  array(
+  array (
     'matches' => 
-    array(
+    array (
       0 => 'ARM',
     ),
   ),
@@ -287,7 +287,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $phoneDevices = array(
+    protected static array $phoneDevices = array (
   'iPhone' => '\\biPhone\\b|\\biPod\\b',
   'BlackBerry' => 'BlackBerry|\\bBB10\\b|rim[0-9]+|\\b(BBA100|BBB100|BBD100|BBE100|BBF100|STH100)\\b-[0-9]+',
   'Pixel' => '; \\bPixel\\b',
@@ -323,7 +323,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $tabletDevices = array(
+    protected static array $tabletDevices = array (
   'iPad' => 'iPad|iPad.*Mobile',
   'NexusTablet' => 'Android.*Nexus[\\s]+(7|9|10)',
   'GoogleTablet' => 'Android.*Pixel C',
@@ -450,7 +450,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $operatingSystems = array(
+    protected static array $operatingSystems = array (
   'AndroidOS' => 'Android',
   'BlackBerryOS' => 'blackberry|\\bBB10\\b|rim tablet os',
   'PalmOS' => 'PalmOS|avantgo|blazer|elaine|hiptop|palm|plucker|xiino',
@@ -478,7 +478,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $browsers = array(
+    protected static array $browsers = array (
   'Chrome' => '\\bCrMo\\b|CriOS.*Mobile|Android.*Chrome/[.0-9]* Mobile',
   'Dolfin' => '\\bDolfin\\b',
   'Opera' => 'Opera.*Mini|Opera.*Mobi|Android.*Opera|Mobile.*OPR/[0-9.]+$|Coast/[0-9.]+',
@@ -508,7 +508,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $uaHttpHeaders = array(
+    protected static array $uaHttpHeaders = array (
   0 => 'HTTP_USER_AGENT',
   1 => 'HTTP_X_OPERAMINI_PHONE_UA',
   2 => 'HTTP_X_DEVICE_USER_AGENT',
@@ -525,7 +525,7 @@ class MobileDetect extends \
      *
      * @var array
      */
-    protected static array $properties = array(
+    protected static array $properties = array (
   'Mobile' => 'Mobile/[VER]',
   'Build' => 'Build/[VER]',
   'Version' => 'Version/[VER]',
@@ -535,25 +535,25 @@ class MobileDetect extends \
   'iPod' => 'iPod.*CPU[a-z ]+[VER]',
   'Kindle' => 'Kindle/[VER]',
   'Chrome' => 
-  array(
+  array (
     0 => 'Chrome/[VER]',
     1 => 'CriOS/[VER]',
     2 => 'CrMo/[VER]',
   ),
   'Coast' => 
-  array(
+  array (
     0 => 'Coast/[VER]',
   ),
   'Dolfin' => 'Dolfin/[VER]',
   'Firefox' => 
-  array(
+  array (
     0 => 'Firefox/[VER]',
     1 => 'FxiOS/[VER]',
   ),
   'Fennec' => 'Fennec/[VER]',
   'Edge' => 'Edge/[VER]',
   'IE' => 
-  array(
+  array (
     0 => 'IEMobile/[VER];',
     1 => 'IEMobile [VER]',
     2 => 'MSIE [VER];',
@@ -562,7 +562,7 @@ class MobileDetect extends \
   'NetFront' => 'NetFront/[VER]',
   'NokiaBrowser' => 'NokiaBrowser/[VER]',
   'Opera' => 
-  array(
+  array (
     0 => ' OPR/[VER]',
     1 => 'Opera Mini/[VER]',
     2 => 'Version/[VER]',
@@ -570,7 +570,7 @@ class MobileDetect extends \
   'Opera Mini' => 'Opera Mini/[VER]',
   'Opera Mobi' => 'Version/[VER]',
   'UCBrowser' => 
-  array(
+  array (
     0 => 'UCWEB[VER]',
     1 => 'UC.*Browser/[VER]',
   ),
@@ -581,7 +581,7 @@ class MobileDetect extends \
   'SamsungBrowser' => 'SamsungBrowser/[VER]',
   'Iron' => 'Iron/[VER]',
   'Safari' => 
-  array(
+  array (
     0 => 'Version/[VER]',
     1 => 'Safari/[VER]',
   ),
@@ -598,7 +598,7 @@ class MobileDetect extends \
   'Android' => 'Android [VER]',
   'Sailfish' => 'Sailfish [VER]',
   'BlackBerry' => 
-  array(
+  array (
     0 => 'BlackBerry[\\w]+/[VER]',
     1 => 'BlackBerry.*Version/[VER]',
     2 => 'Version/[VER]',
@@ -606,7 +606,7 @@ class MobileDetect extends \
   'BREW' => 'BREW [VER]',
   'Java' => 'Java/[VER]',
   'Windows Phone OS' => 
-  array(
+  array (
     0 => 'Windows Phone OS [VER]',
     1 => 'Windows Phone [VER]',
   ),
@@ -614,12 +614,12 @@ class MobileDetect extends \
   'Windows CE' => 'Windows CE/[VER]',
   'Windows NT' => 'Windows NT [VER]',
   'Symbian' => 
-  array(
+  array (
     0 => 'SymbianOS/[VER]',
     1 => 'Symbian/[VER]',
   ),
   'webOS' => 
-  array(
+  array (
     0 => 'webOS/[VER]',
     1 => 'hpwOS/[VER];',
   ),

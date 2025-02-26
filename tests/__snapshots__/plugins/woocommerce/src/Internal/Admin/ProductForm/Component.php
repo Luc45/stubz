@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductForm;
 /**
  * Component class.
  */
-abstract class Component extends \
+abstract class Component
 {
     /**
      * Component additional arguments.
@@ -19,7 +19,7 @@ abstract class Component extends \
      *
      * @var array
      */
-    protected $required_arguments = array(
+    protected $required_arguments = array (
 );
 
     /**
@@ -73,7 +73,7 @@ abstract class Component extends \
      * @param array     $sort_by key and order to sort by.
      * @return int
      */
-    public static function sort($a, $b, $sort_by = array(
+    public static function sort($a, $b, $sort_by = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * Shortcode cart class.
  */
-class WC_Shortcode_Cart extends \
+class WC_Shortcode_Cart
 {
     /**
      * Calculate shipping for the cart.

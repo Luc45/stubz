@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Contains logic in regards to WooCommerce Admin Settings.
  */
-class Settings extends \
+class Settings
 {
     /**
      * Class instance.

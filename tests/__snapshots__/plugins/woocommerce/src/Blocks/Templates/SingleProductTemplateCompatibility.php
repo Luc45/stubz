@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class SingleProductTemplateCompatibility extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplateCompatibility
+class SingleProductTemplateCompatibility
 {
     const IS_FIRST_BLOCK = '__wooCommerceIsFirstBlock';
 

@@ -10,7 +10,7 @@
  *
  * @return string The job ID
  */
-function wc_schedule_single_action($timestamp, $hook, $args = array(
+function wc_schedule_single_action($timestamp, $hook, $args = array (
 ), $group = '')
 {
     // stub
@@ -29,7 +29,7 @@ function wc_schedule_single_action($timestamp, $hook, $args = array(
  *
  * @return string The job ID
  */
-function wc_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $args = array(
+function wc_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $args = array (
 ), $group = '')
 {
     // stub
@@ -58,7 +58,7 @@ function wc_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $
  *
  * @return string The job ID
  */
-function wc_schedule_cron_action($timestamp, $schedule, $hook, $args = array(
+function wc_schedule_cron_action($timestamp, $schedule, $hook, $args = array (
 ), $group = '')
 {
     // stub
@@ -73,7 +73,7 @@ function wc_schedule_cron_action($timestamp, $schedule, $hook, $args = array(
  *
  * @deprecated 2.1.0
  */
-function wc_unschedule_action($hook, $args = array(
+function wc_unschedule_action($hook, $args = array (
 ), $group = '')
 {
     // stub
@@ -118,7 +118,7 @@ function wc_next_scheduled_action($hook, $args = null, $group = '')
  *
  * @return array
  */
-function wc_get_scheduled_actions($args = array(
+function wc_get_scheduled_actions($args = array (
 ), $return_format)
 {
     // stub

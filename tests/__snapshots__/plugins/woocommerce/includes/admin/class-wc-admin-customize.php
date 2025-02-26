@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Customize Class.
  */
-class WC_Admin_Customize extends \
+class WC_Admin_Customize
 {
     /**
      * Initialize customize actions.
@@ -38,7 +38,7 @@ class WC_Admin_Customize extends \
      * @param  integer $page   Page number.
      * @return array
      */
-    public function register_customize_nav_menu_items($items = array(
+    public function register_customize_nav_menu_items($items = array (
 ), $type = '', $object = '', $page = 0)
     {
         // stub

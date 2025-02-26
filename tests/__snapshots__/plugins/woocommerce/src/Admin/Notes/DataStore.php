@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
 /**
  * WC Admin Note Data Store (Custom Tables)
  */
-class DataStore extends \WC_Data_Store_WP
+class DataStore
 {
     const WC_ADMIN_NOTE_OPER_GLOBAL = 'global';
 
@@ -46,7 +46,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param Note  $note Admin note.
      * @param array $args Array of args to pass to the delete method (not used).
      */
-    public function delete(&$note, $args = array(
+    public function delete(&$note, $args = array (
 ))
     {
         // stub
@@ -82,7 +82,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param string $context Optional argument that the woocommerce_note_where_clauses filter can use to determine whether to apply extra conditions. Extensions should define their own contexts and use them to avoid adding to notes where clauses when not needed.
      * @return array An array of objects containing a note id.
      */
-    public function get_notes($args = array(
+    public function get_notes($args = array (
 ), $context)
     {
         // stub
@@ -95,7 +95,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param array $args Query arguments.
      * @return array An array of database records.
      */
-    public function lookup_notes($args = array(
+    public function lookup_notes($args = array (
 ))
     {
         // stub
@@ -109,8 +109,8 @@ class DataStore extends \WC_Data_Store_WP
      * @param string $context Optional argument that the woocommerce_note_where_clauses filter can use to determine whether to apply extra conditions. Extensions should define their own contexts and use them to avoid adding to notes where clauses when not needed.
      * @return string Count of objects with given type, status and context.
      */
-    public function get_notes_count($type = array(
-), $status = array(
+    public function get_notes_count($type = array (
+), $status = array (
 ), $context)
     {
         // stub
@@ -124,7 +124,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param array|null $allowed_types optional allowed_types if only a specific set is allowed.
      * @return array the escaped array of argument values.
      */
-    private function get_escaped_arguments_array_by_key($args = array(
+    private function get_escaped_arguments_array_by_key($args = array (
 ), $key = '', $allowed_types = null)
     {
         // stub
@@ -139,7 +139,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param string $context Optional argument that the woocommerce_note_where_clauses filter can use to determine whether to apply extra conditions. Extensions should define their own contexts and use them to avoid adding to notes where clauses when not needed.
      * @return string Where clauses for the query.
      */
-    public function get_notes_where_clauses($args = array(
+    public function get_notes_where_clauses($args = array (
 ), $context)
     {
         // stub
@@ -152,7 +152,7 @@ class DataStore extends \WC_Data_Store_WP
      * @param array $args Array of arguments for query conditionals.
      * @return string Where clauses.
      */
-    protected function args_to_where_clauses($args = array(
+    protected function args_to_where_clauses($args = array (
 ))
     {
         // stub

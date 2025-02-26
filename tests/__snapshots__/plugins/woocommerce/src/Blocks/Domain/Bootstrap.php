@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Domain;
  *
  * @since 2.5.0
  */
-class Bootstrap extends \
+class Bootstrap
 {
     /**
      * Holds the Dependency Injection Container

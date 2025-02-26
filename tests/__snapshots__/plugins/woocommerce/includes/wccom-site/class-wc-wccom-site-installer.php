@@ -7,7 +7,7 @@ namespace ;
  *
  * Contains functionalities to install products via WooCommerce.com helper connection.
  */
-class WC_WCCOM_Site_Installer extends \
+class WC_WCCOM_Site_Installer
 {
     /**
      * An instance of the WP_Upgrader class to be used for installation.

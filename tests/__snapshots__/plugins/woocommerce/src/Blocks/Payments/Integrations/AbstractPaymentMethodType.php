@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments\Integrations;
  *
  * @since 2.6.0
  */
-abstract class AbstractPaymentMethodType extends \
+abstract class AbstractPaymentMethodType
 {
     /**
      * Payment method name defined by payment methods extending this class.
@@ -21,7 +21,7 @@ abstract class AbstractPaymentMethodType extends \
      *
      * @var array
      */
-    protected $settings = array(
+    protected $settings = array (
 );
 
     /**

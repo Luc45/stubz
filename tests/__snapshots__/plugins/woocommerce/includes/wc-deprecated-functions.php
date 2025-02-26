@@ -50,7 +50,7 @@ function wc_deprecated_hook($hook, $version, $replacement = null, $message = nul
  * @param string    $function The function which threw exception.
  * @param array     $args The args passed to the function.
  */
-function wc_caught_exception($exception_object, $function = '', $args = array(
+function wc_caught_exception($exception_object, $function = '', $args = array (
 ))
 {
     // stub
@@ -177,7 +177,7 @@ function woocommerce_legacy_paypal_ipn()
 /**
  * @deprecated 3.0
  */
-function get_product($the_product = false, $args = array(
+function get_product($the_product = false, $args = array (
 ))
 {
     // stub
@@ -282,7 +282,7 @@ function woocommerce_get_template_part($slug, $name = '')
 /**
  * @deprecated 3.0
  */
-function woocommerce_get_template($template_name, $args = array(
+function woocommerce_get_template($template_name, $args = array (
 ), $template_path = '', $default_path = '')
 {
     // stub
@@ -436,7 +436,7 @@ function woocommerce_array_overlay($a1, $a2)
 /**
  * @deprecated 3.0
  */
-function woocommerce_price($price, $args = array(
+function woocommerce_price($price, $args = array (
 ))
 {
     // stub
@@ -661,7 +661,7 @@ function woocommerce_list_pages($pages)
 /**
  * @deprecated 3.0
  */
-function woocommerce_product_dropdown_categories($args = array(
+function woocommerce_product_dropdown_categories($args = array (
 ), $deprecated_hierarchical = 1, $deprecated_show_uncategorized = 1, $deprecated_orderby = '')
 {
     // stub
@@ -1005,7 +1005,7 @@ function get_woocommerce_term_meta($term_id, $key, $single = true)
  * @param array $handlers Handlers.
  * @return array
  */
-function wc_register_default_log_handler($handlers = array(
+function wc_register_default_log_handler($handlers = array (
 ))
 {
     // stub

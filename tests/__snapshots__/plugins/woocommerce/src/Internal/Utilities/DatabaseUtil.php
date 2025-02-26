@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * A class of utilities for dealing with the database.
  */
-class DatabaseUtil extends \
+class DatabaseUtil
 {
     /**
      * Wrapper for the WordPress dbDelta function, allows to execute a series of SQL queries.

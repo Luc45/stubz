@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Assets Class.
  */
-class WC_Admin_Assets extends \
+class WC_Admin_Assets
 {
     /**
      * Hook in tabs.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * PaymentsRemindMeLater
  */
-class PaymentsRemindMeLater extends \
+class PaymentsRemindMeLater
 {
     const NOTE_NAME = 'wc-admin-payments-remind-me-later';
 

@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class DryRun_ActionMigrator extends \Action_Scheduler\Migration\ActionMigrator
+class DryRun_ActionMigrator
 {
     /**
      * Simulate migrating an action.

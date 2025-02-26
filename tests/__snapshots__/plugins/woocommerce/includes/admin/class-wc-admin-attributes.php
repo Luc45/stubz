@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Attributes Class.
  */
-class WC_Admin_Attributes extends \
+class WC_Admin_Attributes
 {
     /**
      * Edited attribute ID.

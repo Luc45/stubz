@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * ErrorSchema class.
  */
-class ErrorSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ErrorSchema
 {
     const IDENTIFIER = 'error';
 

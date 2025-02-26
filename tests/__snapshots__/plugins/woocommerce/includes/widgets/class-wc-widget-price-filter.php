@@ -5,7 +5,7 @@ namespace ;
 /**
  * Widget price filter class.
  */
-class WC_Widget_Price_Filter extends \WC_Widget
+class WC_Widget_Price_Filter
 {
     /**
      * Constructor.

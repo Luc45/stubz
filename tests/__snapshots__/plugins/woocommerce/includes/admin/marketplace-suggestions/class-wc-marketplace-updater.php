@@ -5,7 +5,7 @@ namespace ;
 /**
  * Marketplace Suggestions Updater
  */
-class WC_Marketplace_Updater extends \
+class WC_Marketplace_Updater
 {
     /**
      * Setup.

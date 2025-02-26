@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 /**
  * FileExport class.
  */
-class FileExporter extends \
+class FileExporter
 {
     /**
      * The absolute path of the file.

@@ -7,7 +7,7 @@ namespace ;
  *
  * @extends WC_Widget
  */
-class WC_Widget_Product_Categories extends \WC_Widget
+class WC_Widget_Product_Categories
 {
     /**
      * Category ancestors.

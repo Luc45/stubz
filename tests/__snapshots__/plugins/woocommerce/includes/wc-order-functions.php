@@ -157,7 +157,7 @@ function wc_get_order_type($type)
  * @param  array  $args An array of arguments.
  * @return bool Success or failure
  */
-function wc_register_order_type($type, $args = array(
+function wc_register_order_type($type, $args = array (
 ))
 {
     // stub
@@ -241,7 +241,7 @@ function wc_ship_to_billing_address_only()
  * @param array $args New refund arguments.
  * @return WC_Order_Refund|WP_Error
  */
-function wc_create_refund($args = array(
+function wc_create_refund($args = array (
 ))
 {
     // stub

@@ -5,7 +5,7 @@ namespace ;
 /**
  * API Keys table list class.
  */
-class WC_Admin_API_Keys_Table_List extends \WP_List_Table
+class WC_Admin_API_Keys_Table_List
 {
     /**
      * Initialize the API key table list.

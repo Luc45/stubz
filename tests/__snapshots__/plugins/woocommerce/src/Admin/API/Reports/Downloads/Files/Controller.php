@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads\Files;
  * @internal
  * @extends WC_REST_Reports_Controller
  */
-class Controller extends \WC_REST_Reports_Controller
+class Controller
 {
     /**
      * Endpoint namespace.

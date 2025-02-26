@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class PageContentWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class PageContentWrapper
 {
     /**
      * Block name.

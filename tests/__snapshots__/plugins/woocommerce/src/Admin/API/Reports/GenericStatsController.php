@@ -45,7 +45,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @extends GenericController
  */
-abstract class GenericStatsController extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+abstract class GenericStatsController
 {
     /**
      * Get the query params definition for collections.

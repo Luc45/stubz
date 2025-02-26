@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services\Email;
  *
  * @extends     \WC_Email
  */
-class CustomerNewAccount extends \WC_Email
+class CustomerNewAccount
 {
     /**
      * User login name.

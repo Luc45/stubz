@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders\Stats;
 /**
  * API\Reports\Orders\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore
 {
     const CRON_EVENT = 'wc_order_stats_update';
 
@@ -34,7 +34,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      *
      * @var array
      */
-    protected $column_types = array(
+    protected $column_types = array (
   'orders_count' => 'intval',
   'num_items_sold' => 'intval',
   'gross_sales' => 'floatval',

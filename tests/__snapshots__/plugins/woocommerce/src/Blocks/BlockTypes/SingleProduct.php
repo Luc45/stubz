@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * SingleProduct class.
  */
-class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
+class SingleProduct
 {
     /**
      * Block name.
@@ -28,7 +28,7 @@ class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      *
      * @var array
      */
-    protected $single_product_inner_blocks_names = array(
+    protected $single_product_inner_blocks_names = array (
 );
 
     /**
@@ -86,7 +86,7 @@ class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      *
      * @return array Array containing all the inner block names of a Single Product block.
      */
-    protected function extract_single_product_inner_block_names($block, &$result = array(
+    protected function extract_single_product_inner_block_names($block, &$result = array (
 ))
     {
         // stub

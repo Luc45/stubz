@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * Selling_Online_Courses
  */
-class SellingOnlineCourses extends \
+class SellingOnlineCourses
 {
     const NOTE_NAME = 'wc-admin-selling-online-courses';
 

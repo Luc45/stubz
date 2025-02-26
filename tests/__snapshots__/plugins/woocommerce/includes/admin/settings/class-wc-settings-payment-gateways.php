@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Payment_Gateways.
  */
-class WC_Settings_Payment_Gateways extends \WC_Settings_Page
+class WC_Settings_Payment_Gateways
 {
     /**
      * Setting page icon.

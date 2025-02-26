@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
 /**
  * Default Free Extensions
  */
-class DefaultFreeExtensions extends \
+class DefaultFreeExtensions
 {
     /**
      * Get Woo logo path.

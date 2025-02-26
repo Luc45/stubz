@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Exporters
  */
-class ExportWCSettings extends \
+class ExportWCSettings
 {
     /**
      * Array of WC_Settings_Page objects.
@@ -23,7 +23,7 @@ class ExportWCSettings extends \
      *
      * @var array
      */
-    private array $exclude_pages = array(
+    private array $exclude_pages = array (
   0 => 'integration',
   1 => 'site-visibility',
 );
@@ -33,7 +33,7 @@ class ExportWCSettings extends \
      *
      * @param array $setting_pages Optional array of setting pages.
      */
-    public function __construct(array $setting_pages = array(
+    public function __construct(array $setting_pages = array (
 ))
     {
         // stub

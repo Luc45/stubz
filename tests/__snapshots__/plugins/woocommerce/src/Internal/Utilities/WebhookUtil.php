@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Class with utility methods for dealing with webhooks.
  */
-class WebhookUtil extends \
+class WebhookUtil
 {
     /**
      * Creates a new instance of the class.

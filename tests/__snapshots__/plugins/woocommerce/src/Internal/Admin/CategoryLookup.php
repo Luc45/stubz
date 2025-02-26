@@ -5,14 +5,14 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * \Automattic\WooCommerce\Internal\Admin\CategoryLookup class.
  */
-class CategoryLookup extends \
+class CategoryLookup
 {
     /**
      * Stores changes to categories we need to sync.
      *
      * @var array
      */
-    protected $edited_product_cats = array(
+    protected $edited_product_cats = array (
 );
 
     /**
@@ -129,7 +129,7 @@ class CategoryLookup extends \
      * @param  array $terms   Terms to insert.
      * @param  array $parents Parent IDs the terms belong to.
      */
-    protected function get_term_insert_values(&$inserts, $terms, $parents = array(
+    protected function get_term_insert_values(&$inserts, $terms, $parents = array (
 ))
     {
         // stub

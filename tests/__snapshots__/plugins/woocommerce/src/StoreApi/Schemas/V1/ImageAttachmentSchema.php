@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * ImageAttachmentSchema class.
  */
-class ImageAttachmentSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
+class ImageAttachmentSchema
 {
     const IDENTIFIER = 'image';
 

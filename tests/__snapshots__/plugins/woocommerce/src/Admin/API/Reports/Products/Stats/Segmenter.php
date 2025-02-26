@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products\Stats;
 /**
  * Date & time interval and numeric range handling class for Reporting API.
  */
-class Segmenter extends \Automattic\WooCommerce\Admin\API\Reports\Segmenter
+class Segmenter
 {
     /**
      * Returns column => query mapping to be used for product-related product-level segmenting query

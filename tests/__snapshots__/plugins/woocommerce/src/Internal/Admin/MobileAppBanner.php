@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 /**
  * Determine if the mobile app banner shows on Android devices
  */
-class MobileAppBanner extends \
+class MobileAppBanner
 {
     /**
      * Class instance.

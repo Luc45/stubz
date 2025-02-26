@@ -13,7 +13,7 @@ namespace Automattic\WooCommerce\Internal\Logging;
  * @since 9.2.0
  * @package WooCommerce\Classes
  */
-class RemoteLogger extends \WC_Log_Handler
+class RemoteLogger
 {
     const LOG_ENDPOINT = 'https://public-api.wordpress.com/rest/v1.1/logstash';
 
@@ -53,7 +53,7 @@ class RemoteLogger extends \WC_Log_Handler
      *
      * @return array Formatted log data ready to be sent to the remote logging service.
      */
-    public function get_formatted_log($level, $message, $context = array(
+    public function get_formatted_log($level, $message, $context = array (
 ))
     {
         // stub

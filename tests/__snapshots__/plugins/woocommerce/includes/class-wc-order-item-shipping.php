@@ -5,7 +5,7 @@ namespace ;
 /**
  * Order item shipping class.
  */
-class WC_Order_Item_Shipping extends \WC_Order_Item
+class WC_Order_Item_Shipping
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
@@ -13,16 +13,16 @@ class WC_Order_Item_Shipping extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array(
+    protected $extra_data = array (
   'method_title' => '',
   'method_id' => '',
   'instance_id' => '',
   'total' => 0,
   'total_tax' => 0,
   'taxes' => 
-  array(
+  array (
     'total' => 
-    array(
+    array (
     ),
   ),
   'tax_status' => 'taxable',
@@ -35,7 +35,7 @@ class WC_Order_Item_Shipping extends \WC_Order_Item
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array(
+    public function calculate_taxes($calculate_tax_for = array (
 ))
     {
         // stub

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that compares against the status of another note.
  */
-class NoteStatusRuleProcessor extends \
+class NoteStatusRuleProcessor
 {
     /**
      * Compare against the status of another note.

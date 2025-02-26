@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_List_Table_Products Class.
  */
-class WC_Admin_List_Table_Products extends \WC_Admin_List_Table
+class WC_Admin_List_Table_Products
 {
     /**
      * Post type.
@@ -260,7 +260,7 @@ class WC_Admin_List_Table_Products extends \WC_Admin_List_Table
      * @param array $posts Posts array, keeping this for backwards compatibility defaulting to empty array.
      * @return array
      */
-    public function remove_ordering_args($posts = array(
+    public function remove_ordering_args($posts = array (
 ))
     {
         // stub

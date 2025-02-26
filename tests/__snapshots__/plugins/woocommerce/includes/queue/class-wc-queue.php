@@ -9,7 +9,7 @@ namespace ;
  *
  * @version 3.5.0
  */
-class WC_Queue extends \
+class WC_Queue
 {
     /**
      * The single instance of the queue.

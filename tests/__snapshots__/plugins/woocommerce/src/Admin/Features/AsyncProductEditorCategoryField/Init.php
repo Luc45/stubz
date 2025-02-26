@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\AsyncProductEditorCategoryField;
 /**
  * Loads assets related to the async category field for the product editor.
  */
-class Init extends \
+class Init
 {
     const FEATURE_ID = 'async-product-editor-category-field';
 

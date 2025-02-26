@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Admin_Addons Class.
  */
-class WC_Admin_Addons extends \
+class WC_Admin_Addons
 {
     /**
      * Fetch featured products from WCCOM's the Featured 3.0 Endpoint and cache the data for a day.
@@ -172,7 +172,7 @@ class WC_Admin_Addons extends \
      *
      * @return array|WP_Error
      */
-    public static function fetch($url, $options = array(
+    public static function fetch($url, $options = array (
 ))
     {
         // stub

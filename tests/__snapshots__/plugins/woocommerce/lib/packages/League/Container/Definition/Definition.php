@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-class Definition extends \
+class Definition
 {
     /**
      * @var string
@@ -22,19 +22,19 @@ class Definition extends \
     /**
      * @var array
      */
-    protected $tags = array(
+    protected $tags = array (
 );
 
     /**
      * @var array
      */
-    protected $arguments = array(
+    protected $arguments = array (
 );
 
     /**
      * @var array
      */
-    protected $methods = array(
+    protected $methods = array (
 );
 
     /**
@@ -136,7 +136,7 @@ class Definition extends \
     /**
      * {@inheritdoc}
      */
-    public function addMethodCall(string $method, array $args = array(
+    public function addMethodCall(string $method, array $args = array (
 )): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
         // stub
@@ -145,7 +145,7 @@ class Definition extends \
     /**
      * {@inheritdoc}
      */
-    public function addMethodCalls(array $methods = array(
+    public function addMethodCalls(array $methods = array (
 )): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
         // stub

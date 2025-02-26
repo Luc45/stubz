@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 /**
  * Controller for the REST endpoints to service the Payments settings page.
  */
-class PaymentsRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
+class PaymentsRestController
 {
     /**
      * The root namespace for the JSON REST API endpoints.

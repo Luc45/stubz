@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Meta_Box_Order_Actions Class.
  */
-class WC_Meta_Box_Order_Actions extends \
+class WC_Meta_Box_Order_Actions
 {
     /**
      * Output the metabox.

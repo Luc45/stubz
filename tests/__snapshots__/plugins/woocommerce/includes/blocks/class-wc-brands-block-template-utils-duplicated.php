@@ -10,9 +10,9 @@ namespace ;
  *
  * @version 9.4.0
  */
-class BlockTemplateUtilsDuplicated extends \
+class BlockTemplateUtilsDuplicated
 {
-    const DIRECTORY_NAMES = array(
+    const DIRECTORY_NAMES = array (
   'DEPRECATED_TEMPLATES' => 'block-templates',
   'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
   'TEMPLATES' => 'templates',

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Integrations;
  *
  * @since 8.5.0
  */
-class WPConsentAPI extends \
+class WPConsentAPI
 {
     /**
      * Identifier of the consent category used for order attribution.

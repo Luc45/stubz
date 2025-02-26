@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  *
  * Helper class to handle product queries for the API.
  */
-class ProductQuery extends \
+class ProductQuery
 {
     /**
      * Prepare query args to pass to WP_Query for a REST API request.

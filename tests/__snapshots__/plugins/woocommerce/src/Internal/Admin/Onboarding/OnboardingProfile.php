@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 /**
  * Contains backend logic for the onboarding profile and checklist feature.
  */
-class OnboardingProfile extends \
+class OnboardingProfile
 {
     const DATA_OPTION = 'woocommerce_onboarding_profile';
 

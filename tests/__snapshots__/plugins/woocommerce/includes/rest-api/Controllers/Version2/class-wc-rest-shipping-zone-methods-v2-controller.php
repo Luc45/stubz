@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Shipping_Zones_Controller_Base
  */
-class WC_REST_Shipping_Zone_Methods_V2_Controller extends \WC_REST_Shipping_Zones_Controller_Base
+class WC_REST_Shipping_Zone_Methods_V2_Controller
 {
     /**
      * Register the routes for Shipping Zone Methods.

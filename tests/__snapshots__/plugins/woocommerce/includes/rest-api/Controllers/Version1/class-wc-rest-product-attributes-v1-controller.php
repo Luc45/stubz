@@ -8,7 +8,7 @@ namespace ;
  * @package WooCommerce\RestApi
  * @extends WC_REST_Controller
  */
-class WC_REST_Product_Attributes_V1_Controller extends \WC_REST_Controller
+class WC_REST_Product_Attributes_V1_Controller
 {
     /**
      * Endpoint namespace.
@@ -36,7 +36,7 @@ class WC_REST_Product_Attributes_V1_Controller extends \WC_REST_Controller
      *
      * @var array
      */
-    protected $taxonomies_by_id = array(
+    protected $taxonomies_by_id = array (
 );
 
     /**

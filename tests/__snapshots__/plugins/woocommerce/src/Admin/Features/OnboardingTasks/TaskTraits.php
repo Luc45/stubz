@@ -14,7 +14,7 @@ trait TaskTraits
      * @param array  $args Array of tracks arguments.
      * @return string Prefixed event name.
      */
-    public function record_tracks_event($event_name, $args = array(
+    public function record_tracks_event($event_name, $args = array (
 ))
     {
         // stub

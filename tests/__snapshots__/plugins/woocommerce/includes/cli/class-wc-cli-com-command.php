@@ -8,7 +8,7 @@ namespace ;
  * @version 6.8
  * @package WooCommerce
  */
-class WC_CLI_COM_Command extends \
+class WC_CLI_COM_Command
 {
     const APPLICATION_PASSWORD_SECTION_URL = 'https://woocommerce.com/my-account/#application-passwords';
 

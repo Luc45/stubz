@@ -11,7 +11,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class Runner extends \
+class Runner
 {
     /**
      * Source store instance.

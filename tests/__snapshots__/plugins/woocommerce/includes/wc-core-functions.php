@@ -20,7 +20,7 @@ function wc_maybe_define_constant($name, $value)
  * @param  array $args Order arguments.
  * @return WC_Order|WP_Error
  */
-function wc_create_order($args = array(
+function wc_create_order($args = array (
 ))
 {
     // stub
@@ -94,7 +94,7 @@ function wc_get_template_part($slug, $name = '')
  * @param string $template_path Template path. (default: '').
  * @param string $default_path  Default path. (default: '').
  */
-function wc_get_template($template_name, $args = array(
+function wc_get_template($template_name, $args = array (
 ), $template_path = '', $default_path = '')
 {
     // stub
@@ -112,7 +112,7 @@ function wc_get_template($template_name, $args = array(
  *
  * @return string
  */
-function wc_get_template_html($template_name, $args = array(
+function wc_get_template_html($template_name, $args = array (
 ), $template_path = '', $default_path = '')
 {
     // stub
@@ -398,7 +398,7 @@ function wc_get_base_location()
  * @param array $fallback Fallback location.
  * @return array
  */
-function wc_get_customer_geolocation($fallback = array(
+function wc_get_customer_geolocation($fallback = array (
   'country' => '',
   'state' => '',
 ))

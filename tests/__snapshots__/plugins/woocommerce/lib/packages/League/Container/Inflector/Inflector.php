@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Inflector;
 
-class Inflector extends \
+class Inflector
 {
     /**
      * @var string
@@ -17,13 +17,13 @@ class Inflector extends \
     /**
      * @var array
      */
-    protected $methods = array(
+    protected $methods = array (
 );
 
     /**
      * @var array
      */
-    protected $properties = array(
+    protected $properties = array (
 );
 
     /**

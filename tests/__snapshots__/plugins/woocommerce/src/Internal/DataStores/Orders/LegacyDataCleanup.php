@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * This class handles the background process in charge of cleaning up legacy data for orders when HPOS is authoritative.
  */
-class LegacyDataCleanup extends \
+class LegacyDataCleanup
 {
     const OPTION_NAME = 'woocommerce_hpos_legacy_data_cleanup_in_progress';
 

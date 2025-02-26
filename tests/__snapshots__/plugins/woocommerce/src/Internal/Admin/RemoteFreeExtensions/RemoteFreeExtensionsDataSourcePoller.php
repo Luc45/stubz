@@ -5,11 +5,11 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
 /**
  * Specs data source poller class for remote free extensions.
  */
-class RemoteFreeExtensionsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
+class RemoteFreeExtensionsDataSourcePoller
 {
     const ID = 'remote_free_extensions';
 
-    const DATA_SOURCES = array(
+    const DATA_SOURCES = array (
 );
 
     /**

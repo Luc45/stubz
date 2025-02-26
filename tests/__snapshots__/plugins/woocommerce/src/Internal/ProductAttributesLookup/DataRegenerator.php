@@ -20,7 +20,7 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
  * This class also adds two entries to the Status - Tools menu: one for manually regenerating the table contents,
  * and another one for enabling or disabling the actual lookup table usage.
  */
-class DataRegenerator extends \
+class DataRegenerator
 {
     const PRODUCTS_PER_GENERATION_STEP = 100;
 

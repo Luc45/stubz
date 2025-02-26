@@ -9,7 +9,7 @@ namespace ;
  *
  * @since 3.0.0
  */
-class ActionScheduler_HybridStore extends \ActionScheduler_Store
+class ActionScheduler_HybridStore
 {
     const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
 
@@ -111,7 +111,7 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      *
      * @return string
      */
-    public function find_action($hook, $params = array(
+    public function find_action($hook, $params = array (
 ))
     {
         // stub
@@ -127,7 +127,7 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      *
      * @return int[]
      */
-    public function query_actions($query = array(
+    public function query_actions($query = array (
 ), $query_type = 'select')
     {
         // stub
@@ -155,7 +155,7 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      *
      * @return ActionScheduler_ActionClaim
      */
-    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(
+    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
 ), $group = '')
     {
         // stub

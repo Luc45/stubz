@@ -7,7 +7,7 @@ namespace ;
  *
  * @class WooCommerce
  */
-final class WooCommerce extends \
+final class WooCommerce
 {
     /**
      * WooCommerce version.
@@ -110,7 +110,7 @@ final class WooCommerce extends \
      *
      * @var array of WC_Deprecated_Hooks
      */
-    public $deprecated_hook_handlers = array(
+    public $deprecated_hook_handlers = array (
 );
 
     /**

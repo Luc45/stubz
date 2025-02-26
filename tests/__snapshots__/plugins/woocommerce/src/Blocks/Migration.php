@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks;
  *
  * @since 2.5.0
  */
-class Migration extends \
+class Migration
 {
     /**
      * DB updates and callbacks that need to be run per version.
@@ -17,13 +17,13 @@ class Migration extends \
      *
      * @var array
      */
-    private $db_upgrades = array(
+    private $db_upgrades = array (
   '10.3.0' => 
-  array(
+  array (
     0 => 'wc_blocks_update_1030_blockified_product_grid_block',
   ),
   '11.2.0' => 
-  array(
+  array (
     0 => 'wc_blocks_update_1120_rename_checkout_template',
     1 => 'wc_blocks_update_1120_rename_cart_template',
   ),
@@ -65,7 +65,7 @@ class Migration extends \
 
 }
 
-\define('WP_POST_REVISIONS', false);
+const WP_POST_REVISIONS = false;
 
-\define('WP_POST_REVISIONS', false);
+const WP_POST_REVISIONS = false;
 

@@ -5,7 +5,7 @@ namespace ;
 /**
  * WC_Settings_Page.
  */
-abstract class WC_Settings_Page extends \
+abstract class WC_Settings_Page
 {
     const TYPE_TITLE = 'title';
 
@@ -82,7 +82,7 @@ abstract class WC_Settings_Page extends \
      *
      * @var string[]
      */
-    protected $types = array(
+    protected $types = array (
   0 => 'title',
   1 => 'info',
   2 => 'sectionend',

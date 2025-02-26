@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Marketing;
  *
  * @since x.x.x
  */
-class MarketingCampaignType extends \
+class MarketingCampaignType
 {
     /**
      * The unique identifier.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats;
  *
  * @deprecated 9.3.0 Downloads\Stats\Query class is deprecated. Please use `GenericQuery`, \WC_Object_Query`, or use `DataStore` directly.
  */
-class Query extends \Automattic\WooCommerce\Admin\API\Reports\Query
+class Query
 {
     /**
      * Valid fields for Orders report.

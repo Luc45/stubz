@@ -8,7 +8,7 @@ namespace ;
  * @version        1.0.0
  * @package        WooCommerce\Abstracts
  */
-abstract class WC_Log_Handler extends \
+abstract class WC_Log_Handler
 {
     /**
      * Formats a timestamp for use in log messages.

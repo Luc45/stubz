@@ -8,7 +8,7 @@ namespace ;
  * @version 3.0.0
  * @package WooCommerce
  */
-class WC_CLI_Update_Command extends \
+class WC_CLI_Update_Command
 {
     /**
      * Registers the update command.

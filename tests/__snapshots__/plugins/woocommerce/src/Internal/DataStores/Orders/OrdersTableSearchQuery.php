@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  *
  * @internal
  */
-class OrdersTableSearchQuery extends \
+class OrdersTableSearchQuery
 {
     /**
      * Holds the Orders Table Query object.

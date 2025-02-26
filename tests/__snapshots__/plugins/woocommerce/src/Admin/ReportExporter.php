@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * ReportExporter Class.
  */
-class ReportExporter extends \
+class ReportExporter
 {
     const EXPORT_STATUS_OPTION = 'woocommerce_admin_report_export_status';
 
@@ -56,7 +56,7 @@ class ReportExporter extends \
      * @param bool   $send_email Optional. Send an email when the export is complete.
      * @return int Number of items to export.
      */
-    public static function queue_report_export($export_id, $report_type, $report_args = array(
+    public static function queue_report_export($export_id, $report_type, $report_args = array (
 ), $send_email = false)
     {
         // stub
