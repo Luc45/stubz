@@ -59,7 +59,6 @@ function parseCommandLine(array $argv): array {
 
     $sourceDir = null; // might be null if using --finder
     $outputDir = null;
-    $stubBDir  = null;
     $excludes  = [];
     $finderPhp = null;
     $verbose   = false;
@@ -111,11 +110,9 @@ function parseCommandLine(array $argv): array {
 
         // Non-option argument => either sourceDir/outputDir (normal) or outputDir (finder)
         if ($hasFinder) {
-            // If using --finder, first non-option is <outputDir>, second is optional stubBDir
+            // If using --finder, first non-option is <outputDir>
             if ($outputDir === null) {
                 $outputDir = $arg;
-            } elseif ($stubBDir === null && !str_starts_with($arg, '--')) {
-                $stubBDir = $arg;
             } else {
                 fwrite(STDERR, "Warning: Unrecognized argument: {$arg}\n");
             }
@@ -125,8 +122,6 @@ function parseCommandLine(array $argv): array {
                 $sourceDir = $arg;
             } elseif ($outputDir === null) {
                 $outputDir = $arg;
-            } elseif ($stubBDir === null && !str_starts_with($arg, '--')) {
-                $stubBDir = $arg;
             } else {
                 fwrite(STDERR, "Warning: Unrecognized argument: {$arg}\n");
             }
@@ -158,7 +153,6 @@ function parseCommandLine(array $argv): array {
     return [
         'sourceDir' => $sourceDir,
         'outputDir' => $outputDir,
-        'stubBDir'  => $stubBDir,
         'excludes'  => $excludes,
         'finderPhp' => $finderPhp,
         'verbose'   => $verbose,
@@ -174,7 +168,6 @@ function main(array $argv): void {
     $options    = parseCommandLine($argv);
     $sourceDir  = $options['sourceDir'];  // may be null if --finder used
     $outputDir  = $options['outputDir'];
-    $stubBDir   = $options['stubBDir'];
     $excludes   = $options['excludes'];
     $finderPhp  = $options['finderPhp'];
     $verbose    = $options['verbose'];
@@ -219,14 +212,14 @@ function main(array $argv): void {
         /** @var array<int,array<int,string>> $chunks */
         $chunks = array_chunk($allFiles, $chunkSize);
         if (count($chunks) > 1) {
-            runParallel($chunks, $finalSourceDir, $outputDir, $stubBDir, $missingReferences);
+            runParallel($chunks, $finalSourceDir, $outputDir, $missingReferences);
         } else {
             // Only one chunk => do single
-            processFilesChunk($chunks[0], $finalSourceDir, $outputDir, $stubBDir, $missingReferences, 0, 1);
+            processFilesChunk($chunks[0], $finalSourceDir, $outputDir, $missingReferences, 0, 1);
         }
     } else {
         // Single process
-        processFilesChunk($allFiles, $finalSourceDir, $outputDir, $stubBDir, $missingReferences, 0, 1);
+        processFilesChunk($allFiles, $finalSourceDir, $outputDir, $missingReferences, 0, 1);
     }
 
     // Print missing refs if verbose

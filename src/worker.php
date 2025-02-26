@@ -6,14 +6,12 @@
  * @param array<int,array<int,string>> $chunks
  * @param string $sourceDir
  * @param string $outputDir
- * @param string|null $stubBDir
  * @param array<string,int> $missingReferences
  */
 function runParallel(
 	array $chunks,
 	string $sourceDir,
 	string $outputDir,
-	?string $stubBDir,
 	array &$missingReferences
 ): void {
 	$childPids = [];
@@ -29,7 +27,7 @@ function runParallel(
 		if ( $pid === 0 ) {
 			// Child
 			$childMissing = [];
-			processFilesChunk( $chunkFiles, $sourceDir, $outputDir, $stubBDir, $childMissing, $idx, count( $chunks ) );
+			processFilesChunk( $chunkFiles, $sourceDir, $outputDir, $childMissing, $idx, count( $chunks ) );
 			file_put_contents( $tmpDir . "/refs-{$idx}.json", json_encode( $childMissing ) );
 			exit( 0 );
 		}
@@ -69,7 +67,6 @@ function runParallel(
  * @param array<int,string> $filePaths
  * @param string $sourceDir
  * @param string $outputDir
- * @param string|null $stubBDir
  * @param array<string,int> $missingReferences
  * @param int $chunkIndex
  * @param int $totalChunks
@@ -78,7 +75,6 @@ function processFilesChunk(
 	array $filePaths,
 	string $sourceDir,
 	string $outputDir,
-	?string $stubBDir,
 	array &$missingReferences,
 	int $chunkIndex,
 	int $totalChunks
@@ -126,10 +122,6 @@ function processFilesChunk(
 			continue;
 		}
 
-		if ( $stubBDir !== null && $stubBDir !== '' ) {
-			$stubBody = mergeStubBExtras( $stubBody, $realpath, $sourceDir, $stubBDir );
-		}
-
 		$stubContent  = "<?php\n\n" . $stubBody;
 		$relativePath = ltrim( str_replace( $sourceDir, '', $realpath ), DIRECTORY_SEPARATOR );
 		$targetPath   = $outputDir . DIRECTORY_SEPARATOR . $relativePath;
@@ -162,76 +154,4 @@ function detectCpuCores(): int {
 	}
 
 	return 2;
-}
-
-/**
- * Merge stub B extras. Naive text approach.
- */
-function mergeStubBExtras( string $generatedBody, string $sourceFile, string $sourceDir, string $stubBDir ): string {
-	$relative  = ltrim( str_replace( $sourceDir, '', $sourceFile ), DIRECTORY_SEPARATOR );
-	$stubBFile = rtrim( $stubBDir, DIRECTORY_SEPARATOR ) . DIRECTORY_SEPARATOR . $relative;
-	if ( ! is_file( $stubBFile ) ) {
-		return $generatedBody;
-	}
-	$stubBContent = file_get_contents( $stubBFile );
-	if ( ! is_string( $stubBContent ) || $stubBContent === '' ) {
-		return $generatedBody;
-	}
-
-	$injection = '';
-
-	// Example injection for a private $api property
-	if (
-		preg_match( '/private\s+\$api;/', $stubBContent ) === 1
-		&& preg_match( '/private\s+\$api;/', $generatedBody ) === 0
-	) {
-		// copy doc if present
-		$matchesDoc = [];
-		if ( preg_match( '/(\/\*\*[\s\S]*?\*\/)\s+private\s+\$api;/', $stubBContent, $matchesDoc ) === 1 ) {
-			$injection .= "    " . trim( $matchesDoc[1] ) . "\n";
-		}
-		$injection .= "    /**\n";
-		$injection .= "     * @deprecated This property is kept for backward compatibility.\n";
-		$injection .= "     */\n";
-		$injection .= "    private \$api;\n\n";
-	}
-
-	// Another example for protected static $_instance
-	if (
-		preg_match( '/protected\s+static\s+\$_instance;/', $stubBContent ) === 1
-		&& preg_match( '/protected\s+static\s+\$_instance;/', $generatedBody ) === 0
-	) {
-		$injection .= "    protected static \$_instance;\n\n";
-	}
-
-	// Some example of private methods:
-	$privateMethods = [
-		'init_hooks',
-		'define_tables',
-		'is_request',
-		'load_webhooks',
-	];
-	foreach ( $privateMethods as $pm ) {
-		if (
-			preg_match( '/function\s+' . $pm . '\s*\(/', $stubBContent ) === 1
-			&& preg_match( '/function\s+' . $pm . '\s*\(/', $generatedBody ) === 0
-		) {
-			$methodRegex = '/(\/\*\*[\s\S]*?\*\/)?\s+private\s+function\s+' . $pm . '\s*\([^)]*\)\s*\{[\s\S]*?\}/';
-			if ( preg_match( $methodRegex, $stubBContent, $m ) === 1 && isset( $m[0] ) ) {
-				$injection .= "\n    " . trim( $m[0] ) . "\n";
-			}
-		}
-	}
-
-	if ( $injection === '' ) {
-		return $generatedBody;
-	}
-
-	// Insert just after the opening brace if possible
-	$pos = strpos( $generatedBody, "\n{\n" );
-	if ( $pos === false ) {
-		return $generatedBody . "\n" . $injection;
-	}
-
-	return substr( $generatedBody, 0, $pos + 3 ) . $injection . substr( $generatedBody, $pos + 3 );
 }
