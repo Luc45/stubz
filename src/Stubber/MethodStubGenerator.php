@@ -11,14 +11,14 @@ class MethodStubGenerator {
 	/**
 	 * Generate a method stub.
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generateMethodStub( BRMethod $method, array &$missingReferences ): string {
-		$startTime = microtime( true );
+		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
 		$doc = $method->getDocComment();
-		if ( $doc !== null && $doc !== '' ) {
+		if ( $doc !== null ) {
 			foreach ( explode( "\n", $doc ) as $line ) {
 				$buf .= "    {$line}\n";
 			}
@@ -66,11 +66,6 @@ class MethodStubGenerator {
 		} else {
 			$buf .= "\n    {\n        // stub\n    }\n\n";
 		}
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'className'  => $method->getDeclaringClass()->getName(),
-			'methodName' => $method->getName(),
-		] );
 
 		return $buf;
 	}

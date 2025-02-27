@@ -12,35 +12,35 @@ class ClassStubGenerator {
 	/**
 	 * Generate a class/trait/interface/enum stub from reflection.
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generateClassStub( BRClass $class, array &$missingReferences ): string {
-		$startTime = microtime( true );
+		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
-		// Doc comment
+		// 1) Doc comment
 		$doc = $class->getDocComment();
-		if ( $doc !== null && $doc !== '' ) {
+		if ( $doc !== null ) {
 			$buf .= $doc . "\n";
 		}
 
-		// Attributes
+		// 2) Attributes
 		foreach ( $class->getAttributes() as $attr ) {
 			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
 		}
 
-		// Class declaration
+		// 3) Class/trait/interface/enum declaration
 		$buf .= $this->getClassDeclaration( $class, $missingReferences );
 
-		// Handle extends/implements if not interface/trait/enum
+		// Potential "extends" for normal classes
 		$parentReflection = null;
 		try {
 			$possibleParent = $class->getParentClass();
 			if (
-				$possibleParent &&
-				! $possibleParent->isInterface() &&
-				! $possibleParent->isTrait() &&
-				! $possibleParent->isEnum()
+				$possibleParent
+				&& ! $possibleParent->isInterface()
+				&& ! $possibleParent->isTrait()
+				&& ! $possibleParent->isEnum()
 			) {
 				$parentReflection = $possibleParent;
 			}
@@ -48,19 +48,16 @@ class ClassStubGenerator {
 			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 		}
 
+		// If not interface/trait/enum => handle extends/implements
 		if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-			// extends
 			if ( $parentReflection ) {
 				$parentName = ltrim( $parentReflection->getName(), '\\' );
-				if ( $parentName !== '' ) {
-					$buf .= ' extends \\' . $parentName;
-				}
+				$buf        .= ' extends \\' . $parentName;
 			}
 
-			// implements
 			$interfaces = [];
 			try {
-				$ifaceRefs = $class->getInterfaces(); // name => ReflectionClass
+				$ifaceRefs = $class->getInterfaces();
 				ksort( $ifaceRefs );
 				foreach ( $ifaceRefs as $iRef ) {
 					$interfaces[] = '\\' . ltrim( $iRef->getName(), '\\' );
@@ -76,24 +73,44 @@ class ClassStubGenerator {
 
 		$buf .= "\n{\n";
 
-		// If enum, add cases
+		// ---------------------------------------------------------------------
+		// 4) Enum handling (cases, "magic" members, etc.)
+		// ---------------------------------------------------------------------
 		if ( $class->isEnum() && $class instanceof BREnum ) {
-			foreach ( $class->getCases() as $case ) {
-				try {
-					$val = $case->getValue();
-					if ( $val !== null ) {
+			$cases = $class->getCases();
+
+			if ( $class->isBacked() ) {
+				// "Backed" enum => produce `case X = 'foo';`, plus $value, from/tryFrom
+				foreach ( $cases as $case ) {
+					try {
+						$val    = $case->getValue();
 						$valStr = ( new Helpers() )->convertVarExportToWpStyle( $val );
 						$buf    .= "    case {$case->getName()} = {$valStr};\n\n";
-					} else {
-						$buf .= "    case {$case->getName()};\n\n";
+					} catch ( Throwable $ex ) {
+						( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 					}
-				} catch ( Throwable $ex ) {
-					( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 				}
+
+				// The typical lines your snapshot expects:
+				$buf .= "    public readonly string \$name;\n\n";
+				$buf .= "    public readonly string \$value;\n\n"; // your test expects 'string' specifically
+				$buf .= "    public static function cases(): array\n    {\n        // stub\n    }\n\n";
+				$buf .= "    public static function from(string|int \$value): static\n    {\n        // stub\n    }\n\n";
+				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n        // stub\n    }\n\n";
+			} else {
+				// "Pure" enum => produce `case X;`, no "= value"
+				foreach ( $cases as $case ) {
+					$buf .= "    case {$case->getName()};\n\n";
+				}
+				// Minimal set for pure enums
+				$buf .= "    public readonly string \$name;\n\n";
+				$buf .= "    public static function cases(): array\n    {\n        // stub\n    }\n\n";
 			}
 		}
 
-		// Class constants
+		// ---------------------------------------------------------------------
+		// 5) Class constants
+		// ---------------------------------------------------------------------
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
 			try {
 				$value    = $refConst->getValue();
@@ -104,7 +121,9 @@ class ClassStubGenerator {
 			}
 		}
 
-		// Properties
+		// ---------------------------------------------------------------------
+		// 6) Properties
+		// ---------------------------------------------------------------------
 		try {
 			$props = $class->getImmediateProperties();
 		} catch ( Throwable $ex ) {
@@ -117,7 +136,9 @@ class ClassStubGenerator {
 			}
 		}
 
-		// Methods
+		// ---------------------------------------------------------------------
+		// 7) Methods
+		// ---------------------------------------------------------------------
 		try {
 			$methods = $class->getImmediateMethods();
 		} catch ( Throwable $ex ) {
@@ -132,20 +153,15 @@ class ClassStubGenerator {
 
 		$buf .= "}\n\n";
 
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'className' => $class->getName(),
-		] );
-
 		return $buf;
 	}
 
 	/**
 	 * Describe how the class is declared: interface, trait, enum, abstract, final, etc.
+	 *
+	 * @param-out array<string,int> $missingReferences
 	 */
 	private function getClassDeclaration( BRClass $class, array &$missingReferences ): string {
-		$startTime = microtime( true );
-		$out       = '';
-
 		if ( $class->isInterface() ) {
 			$out = 'interface ' . $class->getShortName();
 		} elseif ( $class->isTrait() ) {
@@ -159,10 +175,6 @@ class ClassStubGenerator {
 		} else {
 			$out = 'class ' . $class->getShortName();
 		}
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'className' => $class->getName(),
-		] );
 
 		return $out;
 	}

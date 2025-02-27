@@ -12,13 +12,12 @@ use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
  * Shared helper methods: logging, var_export styles, exception handling, etc.
  */
 class Helpers {
-	/** @var resource|null */
-	private static $benchmarkHandle = null;
-
 	/**
 	 * Convert var_export output to WP style
 	 * - Lowercase 'NULL' => 'null'
 	 * - Keep array (\n ) formatting
+	 *
+	 * @param mixed $value
 	 */
 	public function convertVarExportToWpStyle( $value ): string {
 		$out = var_export( $value, true );
@@ -31,73 +30,29 @@ class Helpers {
 	}
 
 	/**
-	 * Log benchmarks if they take >= 1s
-	 *
-	 * @param array<string,mixed> $context
-	 */
-	public function logBenchmark(
-		string $functionName,
-		float $startTime,
-		float $endTime,
-		array $context = []
-	): void {
-		$duration = $endTime - $startTime;
-		if ( $duration < 1.0 ) {
-			return;
-		}
-		if ( ! is_resource( self::$benchmarkHandle ) ) {
-			$fp = @fopen( __DIR__ . '/../../../stub-benchmark.log', 'ab' );
-			if ( is_resource( $fp ) ) {
-				self::$benchmarkHandle = $fp;
-			} else {
-				return;
-			}
-		}
-		$time    = date( 'Y-m-d H:i:s' );
-		$details = json_encode( $context, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) ?: '';
-		fwrite(
-			self::$benchmarkHandle,
-			"[{$time}] {$functionName} took " . round( $duration, 4 ) . "s, context={$details}\n"
-		);
-		fflush( self::$benchmarkHandle );
-	}
-
-	/**
 	 * Handle reflection exceptions and increment missingReferences
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function handleBetterReflectionException( Throwable $ex, array &$missingReferences ): void {
-		$startTime = microtime( true );
-
+		/** @var array<string,int> $missingReferences */
 		if ( $ex instanceof IdentifierNotFound ) {
-			$symbol                       = $ex->getIdentifier()->getName();
-			$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-			$this->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-				'exceptionType' => get_class( $ex ),
-				'symbol'        => $symbol,
-			] );
+			$symbol = $ex->getIdentifier()->getName();
+			// Force-cast to int so PHPStan knows the result is int
+			$missingReferences[ $symbol ] = (int) ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 
 			return;
 		}
 
 		if ( $ex instanceof UnableToCompileNode ) {
-			$cName                        = method_exists( $ex, 'constantName' ) ? $ex->constantName() : null;
-			$symbol                       = $cName && $cName !== '' ? $cName : 'UnknownConstant';
-			$missingReferences[ $symbol ] = ( $missingReferences[ $symbol ] ?? 0 ) + 1;
-			$this->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-				'exceptionType' => get_class( $ex ),
-				'symbol'        => $symbol,
-			] );
+			// No more method_exists check: always assume constantName() is available
+			$symbol                       = $ex->constantName();
+			$missingReferences[ $symbol ] = (int) ( $missingReferences[ $symbol ] ?? 0 ) + 1;
 
 			return;
 		}
 
 		$cls                       = get_class( $ex );
-		$missingReferences[ $cls ] = ( $missingReferences[ $cls ] ?? 0 ) + 1;
-
-		$this->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'exceptionType' => $cls,
-		] );
+		$missingReferences[ $cls ] = (int) ( $missingReferences[ $cls ] ?? 0 ) + 1;
 	}
 }

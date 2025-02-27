@@ -10,7 +10,7 @@ use Symfony\Component\Finder\Finder;
  * Returns a closure that, when invoked, yields a Finder.
  */
 return static function ( string $sourceDir, array $excludes, ?string $finderPhp ): Finder {
-	if ( $finderPhp !== null ) {
+	if ( ! empty( $finderPhp ) ) {
 		/** @psalm-suppress UnresolvableInclude */
 		$finder = require $finderPhp;
 		if ( ! $finder instanceof Finder ) {

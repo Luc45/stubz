@@ -11,14 +11,14 @@ class PropertyStubGenerator {
 	/**
 	 * Generate a property stub.
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generatePropertyStub( BRProperty $prop, array &$missingReferences ): string {
-		$startTime = microtime( true );
-		$out       = '';
+		/** @var array<string,int> $missingReferences */
+		$out = '';
 
 		$doc = $prop->getDocComment();
-		if ( $doc !== null && $doc !== '' ) {
+		if ( $doc !== null ) {
 			foreach ( explode( "\n", $doc ) as $line ) {
 				$out .= "    {$line}\n";
 			}
@@ -56,11 +56,6 @@ class PropertyStubGenerator {
 		}
 
 		$out .= ";\n\n";
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'className'    => $prop->getDeclaringClass()->getName(),
-			'propertyName' => $prop->getName(),
-		] );
 
 		return $out;
 	}

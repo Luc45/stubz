@@ -2,8 +2,6 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-putenv( 'NO_STUB_CACHE=1' );
-
 trait TestHelpers {
 	/**
 	 * Recursively find all .php files in the given directory.

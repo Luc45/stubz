@@ -12,10 +12,10 @@ use Throwable;
  */
 class ConstantStubGenerator {
 	/**
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generateConstantStub( BRConstant $constant, array &$missingReferences ): string {
-		$startTime = microtime( true );
+		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
 		// If it's a class constant, skip
@@ -31,10 +31,6 @@ class ConstantStubGenerator {
 		} catch ( Throwable $ex ) {
 			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 		}
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'constantName' => $constant->getName(),
-		] );
 
 		return $buf;
 	}

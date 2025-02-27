@@ -11,30 +11,28 @@ class FunctionStubGenerator {
 	/**
 	 * Generate a function stub.
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generateFunctionStub( BRFunction $fn, array &$missingReferences ): string {
-		$startTime = microtime( true );
+		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
 		$funcName = $fn->getName();
 
-		// Doc comment
 		$doc = $fn->getDocComment();
-		if ( $doc !== null && $doc !== '' ) {
+		if ( $doc !== null ) {
 			$buf .= $doc . "\n";
 		}
 
-		// Attributes
 		foreach ( $fn->getAttributes() as $attr ) {
 			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
 		}
 
 		$buf .= 'function ' . $funcName . '(';
 
-		// Parameters
 		$params = [];
 		foreach ( $fn->getParameters() as $param ) {
+			// Pass typed $missingReferences:
 			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $param, $missingReferences );
 		}
 		$buf .= implode( ', ', $params ) . ')';
@@ -50,11 +48,6 @@ class FunctionStubGenerator {
 		}
 
 		$buf .= "\n{\n    // stub\n}\n\n";
-
-		// Optional: log benchmarks
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'functionName' => $fn->getName(),
-		] );
 
 		return $buf;
 	}

@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+declare( strict_types=1 );
+
 /**
  * stubz.php
  *
@@ -11,73 +13,79 @@
  * - And supports command-line options for excludes, verbose mode, etc.
  */
 
-declare( strict_types=1 );
-
 // Include Composer's autoload
 require_once __DIR__ . '/vendor/autoload.php';
 
+/**
+ * Main CLI logic in an immediately-invoked function.
+ *
+ * @param array<int,string> $argv
+ */
 ( static function ( array $argv ): void {
 
 	/**
-	 * Local closure to parse the command line, allowing:
-	 * --exclude[=DIR]   (can be repeated)
-	 * --finder[=PATH]   (custom Finder, cannot combine with --exclude)
-	 * --parallel[=INT]  (number of parallel processes to use)
-	 * --verbose         (print missing references at the end)
+	 * Parse the command line, returning a typed array of options.
 	 *
-	 * Usage:
-	 *   Normal mode:   php stubz.php [options] <source-dir> <output-dir>
-	 *   Finder mode:   php stubz.php --finder=path/to/customFinder.php <output-dir>
+	 * @return array{
+	 *     sourceDir: string,
+	 *     outputDir: string,
+	 *     excludes: string[],
+	 *     finderPhp: string,
+	 *     parallel: string,
+	 *     verbose: bool
+	 * }
 	 */
 	$parseCommandLine = static function ( array $argv ): array {
-		// Detect if --finder is present
+		// If one of the arguments starts with "--finder", that implies Finder mode
 		$hasFinder = false;
-		foreach ( $argv as $testArg ) {
-			if ( str_starts_with( $testArg, '--finder' ) ) {
+		foreach ( $argv as $cliArg ) {
+			// Already typed as string from the docblock
+			if ( str_starts_with( $cliArg, '--finder' ) ) {
 				$hasFinder = true;
 				break;
 			}
 		}
 
-		// If using --finder, we need 1 non-option arg (outputDir).
-		// Otherwise, we need 2 (sourceDir, outputDir).
 		$minNonOptions = $hasFinder ? 1 : 2;
-
 		if ( count( $argv ) < ( $minNonOptions + 1 ) ) {
 			fwrite( STDERR, "Usage:\n" );
-			fwrite( STDERR, "  Normal mode: php stubz.php [options] <source-dir> <output-dir>\n" );
+			fwrite( STDERR, "  Normal mode:  php stubz.php [options] <source-dir> <output-dir>\n" );
 			fwrite( STDERR, "    (Requires at least 2 non-option args)\n\n" );
-			fwrite( STDERR, "  Finder mode: php stubz.php --finder=path/to/finder.php <output-dir>\n" );
+			fwrite( STDERR, "  Finder mode:  php stubz.php --finder=path/to/finder.php <output-dir>\n" );
 			fwrite( STDERR, "    (Requires at least 1 non-option arg)\n\n" );
 			fwrite( STDERR, "Options:\n" );
-			fwrite( STDERR, "  --exclude[=DIR]   Exclude one or more directories (repeatable) [* Not with --finder]\n" );
-			fwrite( STDERR, "  --finder[=PATH]   Use a custom Finder definition (cannot combine with --exclude)\n" );
-			fwrite( STDERR, "  --parallel[=INT]  How many parallel processes to use (default=auto)\n" );
+			fwrite( STDERR, "  --exclude[=DIR]   Exclude dir(s), repeatable [not with --finder]\n" );
+			fwrite( STDERR, "  --finder=PATH     Use a custom Finder definition [cannot combine with --exclude]\n" );
+			fwrite( STDERR, "  --parallel=INT    Number of parallel processes (default=auto)\n" );
 			fwrite( STDERR, "  --verbose         Print verbose output\n" );
 			exit( 1 );
 		}
 
-		$sourceDir = null;  // might be null if using --finder
-		$outputDir = null;
-		$parallel  = null;
+		// Initialize typed local variables
+		$sourceDir = '';
+		$outputDir = '';
+		/** @var string[] $excludes */
 		$excludes  = [];
-		$finderPhp = null;
+		$finderPhp = '';
+		$parallel  = '';
 		$verbose   = false;
 
 		$i = 1;
 		while ( $i < count( $argv ) ) {
-			$arg = $argv[ $i ];
+			$arg = $argv[ $i ]; // typed as string
 
-			// Handle --exclude
+			// Match various options with a simple regex or direct compare:
+
+			// --exclude
 			if ( preg_match( '/^--exclude(=.+)?$/', $arg, $m ) ) {
-				if ( isset( $m[1] ) && $m[1] !== '' ) {
+				if ( isset( $m[1] ) ) {
 					// e.g. --exclude=someDir
 					$excludes[] = ltrim( $m[1], '=' );
 					$i ++;
 					continue;
 				}
 				// e.g. --exclude someDir
-				if ( isset( $argv[ $i + 1 ] ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
+				if ( ( $i + 1 ) < count( $argv ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
 					$excludes[] = $argv[ $i + 1 ];
 					$i          += 2;
 					continue;
@@ -87,16 +95,16 @@ require_once __DIR__ . '/vendor/autoload.php';
 				continue;
 			}
 
-			// Handle --finder
+			// --finder
 			if ( preg_match( '/^--finder(=.+)?$/', $arg, $m ) ) {
-				if ( isset( $m[1] ) && $m[1] !== '' ) {
-					// e.g. --finder=path/to/Finder.php
+				if ( isset( $m[1] ) ) {
+					// e.g. --finder=somePath.php
 					$finderPhp = ltrim( $m[1], '=' );
 					$i ++;
 					continue;
 				}
-				// e.g. --finder path/to/Finder.php
-				if ( isset( $argv[ $i + 1 ] ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
+				// e.g. --finder somePath.php
+				if ( ( $i + 1 ) < count( $argv ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
 					$finderPhp = $argv[ $i + 1 ];
 					$i         += 2;
 					continue;
@@ -106,16 +114,16 @@ require_once __DIR__ . '/vendor/autoload.php';
 				continue;
 			}
 
-			// Handle --parallel
+			// --parallel
 			if ( preg_match( '/^--parallel(=.+)?$/', $arg, $m ) ) {
-				if ( isset( $m[1] ) && $m[1] !== '' ) {
+				if ( isset( $m[1] ) ) {
 					// e.g. --parallel=4
 					$parallel = ltrim( $m[1], '=' );
 					$i ++;
 					continue;
 				}
 				// e.g. --parallel 4
-				if ( isset( $argv[ $i + 1 ] ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
+				if ( ( $i + 1 ) < count( $argv ) && ! str_starts_with( $argv[ $i + 1 ], '--' ) ) {
 					$parallel = $argv[ $i + 1 ];
 					$i        += 2;
 					continue;
@@ -125,7 +133,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 				continue;
 			}
 
-			// Handle --verbose
+			// --verbose
 			if ( $arg === '--verbose' ) {
 				$verbose = true;
 				$i ++;
@@ -134,17 +142,17 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 			// Non-option argument => either sourceDir/outputDir (normal) or outputDir (finder)
 			if ( $hasFinder ) {
-				// If using --finder, first non-option is outputDir
-				if ( $outputDir === null ) {
+				// If using --finder, we only want one non-option arg: $outputDir
+				if ( $outputDir === '' ) {
 					$outputDir = $arg;
 				} else {
 					fwrite( STDERR, "Warning: Unrecognized argument: {$arg}\n" );
 				}
 			} else {
-				// Normal mode => need sourceDir and outputDir
-				if ( $sourceDir === null ) {
+				// Normal mode => 2 required: $sourceDir and $outputDir
+				if ( $sourceDir === '' ) {
 					$sourceDir = $arg;
-				} elseif ( $outputDir === null ) {
+				} elseif ( $outputDir === '' ) {
 					$outputDir = $arg;
 				} else {
 					fwrite( STDERR, "Warning: Unrecognized argument: {$arg}\n" );
@@ -153,22 +161,16 @@ require_once __DIR__ . '/vendor/autoload.php';
 			$i ++;
 		}
 
-		// Validate final arguments
-		if ( $hasFinder ) {
-			if ( ! $outputDir ) {
-				fwrite( STDERR, "Error: Missing required <output-dir> when using --finder.\n" );
-				exit( 1 );
-			}
-		} else {
-			// Normal mode => must have <sourceDir> & <outputDir>
-			if ( ! $sourceDir || ! $outputDir ) {
-				fwrite( STDERR, "Error: Missing <source-dir> or <output-dir>.\n" );
-				exit( 1 );
-			}
+		// Validate results
+		if ( $hasFinder && $outputDir === '' ) {
+			fwrite( STDERR, "Error: Missing required <output-dir> when using --finder.\n" );
+			exit( 1 );
 		}
-
-		// Disallow combining exclude and finder
-		if ( ! empty( $excludes ) && $finderPhp !== null ) {
+		if ( ! $hasFinder && ( $sourceDir === '' || $outputDir === '' ) ) {
+			fwrite( STDERR, "Error: Missing <source-dir> or <output-dir>.\n" );
+			exit( 1 );
+		}
+		if ( ! empty( $excludes ) && $finderPhp !== '' ) {
 			fwrite( STDERR, "Error: Cannot use --exclude and --finder together.\n" );
 			exit( 1 );
 		}
@@ -183,9 +185,19 @@ require_once __DIR__ . '/vendor/autoload.php';
 		];
 	};
 
-	// Main logic after parsing
+	/**
+	 * Run the main logic, either single-process or parallel, based on options.
+	 *
+	 * @param array{
+	 *     sourceDir:string,
+	 *     outputDir:string,
+	 *     excludes:array<int,string>,
+	 *     finderPhp:string,
+	 *     parallel:string,
+	 *     verbose:bool
+	 * } $options
+	 */
 	$run = static function ( array $options ): void {
-		// Extract options
 		$sourceDir = $options['sourceDir'];
 		$outputDir = $options['outputDir'];
 		$excludes  = $options['excludes'];
@@ -193,18 +205,25 @@ require_once __DIR__ . '/vendor/autoload.php';
 		$parallel  = $options['parallel'];
 		$verbose   = $options['verbose'];
 
-		// Decide if we can run parallel
+		// Check if parallel is possible
 		$parallelAllowed = function_exists( 'pcntl_fork' );
 
 		// Build or load a Finder
 		$makeFinder = require __DIR__ . '/src/finder.php';
-		$finder     = $makeFinder( $sourceDir ?? '', $excludes, $finderPhp );
+		/** @var \Symfony\Component\Finder\Finder $finder */
+		$finder = $makeFinder( $sourceDir, $excludes, $finderPhp );
+
+		echo "DEBUG: Listing .php files for scenario:\n";
+		foreach ($finder as $f) {
+			echo "  " . $f->getRealPath() . "\n";
+		}
+
 
 		// Convert Finder -> array of file paths
 		$allFiles = [];
 		foreach ( $finder as $file ) {
-			$rp = $file->getRealPath();
-			if ( $rp !== false ) {
+			$rp = $file->getRealPath(); // string|false
+			if ( is_string( $rp ) ) {
 				$allFiles[] = $rp;
 			}
 		}
@@ -216,65 +235,63 @@ require_once __DIR__ . '/vendor/autoload.php';
 			return;
 		}
 
-		// Track missing references
+		/** @var array<string,int> $missingReferences */
 		$missingReferences = [];
 
-		// The Worker class orchestrates chunking/forking
+		// Worker usage
 		$worker       = new \Stubz\Worker();
 		$minChunkSize = $worker->getMinimumChunkSize();
 
-		// Decide how to run (parallel or single)
-		// We only try parallel if we have enough files to form at least one chunk with >= minChunkSize
+		// Decide if we do parallel or single-process
 		if ( $parallelAllowed && $totalFiles >= $minChunkSize ) {
-			// Determine how many processes we might spawn
-			$numCores = $parallel ?? $worker->detectCpuCores();
+			// parse $parallel as int if provided
+			$numCores = ( $parallel !== '' )
+				? (int) $parallel
+				: $worker->detectCpuCores();
 
-			// Compute a raw chunk size based on #files / #cores
 			$rawChunkSize = (int) ceil( $totalFiles / $numCores );
-			// Ensure chunk size is at least the minimum
-			$chunkSize = max( $rawChunkSize, $minChunkSize );
+			$chunkSize    = max( $rawChunkSize, $minChunkSize );
+			$chunks       = array_chunk( $allFiles, $chunkSize );
 
-			// Split into chunks
-			$chunks = array_chunk( $allFiles, $chunkSize );
-
-			// If the last chunk is smaller than the min size, merge it with the previous chunk
+			// Merge last chunk if too small
 			if ( count( $chunks ) > 1 && count( end( $chunks ) ) < $minChunkSize ) {
 				$last                           = array_pop( $chunks );
 				$chunks[ count( $chunks ) - 1 ] = array_merge( $chunks[ count( $chunks ) - 1 ], $last );
 			}
 
-			// If, after chunking, we only have one chunk, just do single-process
 			if ( count( $chunks ) > 1 ) {
-				$worker->runParallel( $chunks, $sourceDir ?? '', $outputDir, $missingReferences, $verbose );
+				// Actually run parallel
+				$worker->runParallel( $chunks, $sourceDir, $outputDir, $missingReferences, $verbose );
 			} else {
+				// Only 1 chunk => single-process
 				$worker->processFilesChunk(
 					$chunks[0],
-					$sourceDir ?? '',
+					$sourceDir,
 					$outputDir,
 					$missingReferences,
 					0,
 					1,
-                    $verbose
+					$verbose
 				);
 			}
 		} else {
-			// Single process
+			// Single-process
 			$worker->processFilesChunk(
 				$allFiles,
-				$sourceDir ?? '',
+				$sourceDir,
 				$outputDir,
 				$missingReferences,
 				0,
 				1,
-                $verbose
+				$verbose
 			);
 		}
 
-		// Print missing references if verbose
+		// If verbose, print missing references
 		if ( $verbose && ! empty( $missingReferences ) ) {
 			$totalMissingCount = array_sum( $missingReferences );
-			$unique            = count( $missingReferences );
-			echo "\nMissing references: {$totalMissingCount} total, across {$unique} unique symbols.\n";
+			$uniqueCount       = count( $missingReferences );
+			echo "\nMissing references: {$totalMissingCount} total, across {$uniqueCount} unique symbols.\n";
 			foreach ( $missingReferences as $sym => $count ) {
 				echo "  - {$sym} ({$count} times)\n";
 			}
@@ -283,8 +300,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 		echo "Done.\n";
 	};
 
-	// Parse + execute
+	// 1) Parse CLI
 	$options = $parseCommandLine( $argv );
+	// 2) Execute main logic
 	$run( $options );
 
 } )( $argv );

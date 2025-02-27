@@ -19,7 +19,7 @@ class Worker {
 	 * otherwise fall back to single-process mode.
 	 *
 	 * @param array<int,array<int,string>> $chunks
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function runParallel(
 		array $chunks,
@@ -28,7 +28,8 @@ class Worker {
 		array &$missingReferences,
 		bool $verbose
 	): void {
-		// Check required extensions
+		/** @var array<string,int> $missingReferences */
+
 		$parallelSupported = true;
 		if ( ! function_exists( 'pcntl_fork' ) ) {
 			if ( $verbose ) {
@@ -43,24 +44,26 @@ class Worker {
 			$parallelSupported = false;
 		}
 
-		// If parallel not supported => single-process
 		if ( ! $parallelSupported ) {
+			// Single-process fallback
 			$allFiles = [];
-			foreach ( $chunks as $chunk ) {
-				$allFiles = array_merge( $allFiles, $chunk );
+			foreach ( $chunks as $ch ) {
+				$allFiles = array_merge( $allFiles, $ch );
 			}
 			$this->processFilesChunk( $allFiles, $sourceDir, $outputDir, $missingReferences, 0, 1, $verbose );
 
 			return;
 		}
 
-		// Actually run in parallel
-		$numChunks  = count( $chunks );
-		$numCores   = $this->detectCpuCores();
-		$totalFiles = array_sum( array_map( 'count', $chunks ) );
+		$numChunks = count( $chunks );
+		$numCores  = $this->detectCpuCores();
+		// Sum the number of files across chunks:
+		$totalFiles = 0;
+		foreach ( $chunks as $ch ) {
+			$totalFiles += count( $ch );
+		}
 
 		if ( $verbose ) {
-			// In verbose mode, print some stats
 			$filesPerProcess = (int) ceil( $totalFiles / $numChunks );
 			echo "Running in parallel with {$numCores} CPU cores, "
 			     . "{$totalFiles} total files, {$numChunks} chunks, ~{$filesPerProcess} files/chunk.\n";
@@ -70,7 +73,6 @@ class Worker {
 		$tmpDir    = sys_get_temp_dir() . '/flat-stubz-' . uniqid();
 		mkdir( $tmpDir, 0755, true );
 
-		// Fork a child for each chunk
 		foreach ( $chunks as $idx => $chunkFiles ) {
 			$pid = pcntl_fork();
 			if ( $pid === - 1 ) {
@@ -78,7 +80,8 @@ class Worker {
 				exit( 1 );
 			}
 			if ( $pid === 0 ) {
-				// Child process: do the stub generation
+				// CHILD:
+				/** @var array<string,int> $childMissing */
 				$childMissing = [];
 				$exitCode     = $this->processFilesChunk(
 					$chunkFiles,
@@ -90,16 +93,18 @@ class Worker {
 					$verbose
 				);
 
-				// Write missing refs to a JSON file so parent can merge them
 				file_put_contents( $tmpDir . "/refs-{$idx}.json", json_encode( $childMissing ) );
 				exit( $exitCode );
 			}
+			// PARENT:
 			$childPids[] = $pid;
 		}
 
-		// Parent: wait for children and handle chunk-level progress if not verbose
+		// PARENT waits:
 		$chunksDone = 0;
 		foreach ( $childPids as $cpid ) {
+			// Initialize $status as int, so pcntl_wifexited sees an int
+			$status = 0;
 			pcntl_waitpid( $cpid, $status );
 
 			if ( ! pcntl_wifexited( $status ) ) {
@@ -114,15 +119,14 @@ class Worker {
 				exit( 1 );
 			}
 
-			// Update chunk-level progress if not verbose
 			if ( ! $verbose ) {
 				$chunksDone ++;
 				$this->printChunkProgressBar( $chunksDone, $numChunks );
 			}
 		}
 
-		// If all children succeeded, merge their missingReferences
-		foreach ( range( 0, $numChunks - 1 ) as $i ) {
+		// Merge missing refs
+		for ( $i = 0; $i < $numChunks; $i ++ ) {
 			$jsonPath = $tmpDir . "/refs-{$i}.json";
 			if ( ! is_file( $jsonPath ) ) {
 				continue;
@@ -135,16 +139,13 @@ class Worker {
 			if ( ! is_array( $arr ) ) {
 				continue;
 			}
+			// We know $missingReferences is array<string,int>, so cast each new count to int:
 			foreach ( $arr as $sym => $count ) {
-				if ( ! isset( $missingReferences[ $sym ] ) ) {
-					$missingReferences[ $sym ] = 0;
-				}
-				$missingReferences[ $sym ] += (int) $count;
+				$missingReferences[ $sym ] = (int) ( $missingReferences[ $sym ] ?? 0 ) + (int) $count;
 			}
 		}
 
 		if ( ! $verbose ) {
-			// End the progress bar line
 			echo "\n";
 		}
 	}
@@ -152,10 +153,8 @@ class Worker {
 	/**
 	 * Process a chunk of file paths. Reflect and generate stubs.
 	 *
-	 * Returns 0 on success or a non-zero integer on error.
-	 *
 	 * @param array<int,string> $filePaths
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function processFilesChunk(
 		array $filePaths,
@@ -166,42 +165,34 @@ class Worker {
 		int $totalChunks,
 		bool $verbose
 	): int {
-		// We'll load the single-file stubber closure
-		$fileStubber = require __DIR__ . '/file-stubber.php'; // adjust path if needed
-
-		// If verbose, we do the original line-by-line logs
-		if ( $verbose ) {
-			echo "[Chunk {$chunkIndex}] Handling " . count( $filePaths ) . " files...\n";
-		}
+		/** @var array<string,int> $missingReferences */
+		/** @var callable(string,array<string,int>):string $fileStubber */
+		$fileStubber = require __DIR__ . '/file-stubber.php';
 
 		$total = count( $filePaths );
+		if ( $verbose ) {
+			echo "[Chunk {$chunkIndex}] Handling {$total} files...\n";
+		}
 
-		// We'll track how many we've processed to show a local progress bar (single-process mode)
-		// or file logs (verbose mode).
 		$i = 0;
 		foreach ( $filePaths as $realpath ) {
 			$i ++;
 
 			if ( $verbose ) {
-				// Detailed line-by-line
 				if ( $realpath === '' ) {
 					echo "[Chunk {$chunkIndex}] [{$i}/{$total}] Skipped empty realpath?\n";
 					continue;
 				}
 			} else {
-				// Non-verbose single-process: show progress if we're *not* in parallel,
-				// or if we are in parallel (child) and still want a local file-based bar.
-				// But typically, for parallel child we do no output to avoid interleaving.
+				// If single-process (or if you want chunk-level progress in the child),
+				// show file-based progress
 				if ( $totalChunks === 1 ) {
-					// Single-process run => show a file-level progress bar
 					$this->printFileProgressBar( $i, $total );
 				}
 			}
 
-			// Generate stubs
 			try {
 				$stubBody = $fileStubber( $realpath, $missingReferences );
-
 				if ( trim( $stubBody ) === '' ) {
 					if ( $verbose && $realpath !== '' ) {
 						echo "[Chunk {$chunkIndex}] [{$i}/{$total}] Skipped empty: "
@@ -210,7 +201,6 @@ class Worker {
 					continue;
 				}
 
-				// Write to output
 				$relativePath = ltrim( str_replace( $sourceDir, '', $realpath ), DIRECTORY_SEPARATOR );
 				$targetPath   = $outputDir . DIRECTORY_SEPARATOR . $relativePath;
 
@@ -224,24 +214,23 @@ class Worker {
 					     . str_replace( $sourceDir, '', $realpath ) . "\n";
 				}
 			} catch ( \Throwable $ex ) {
-				fwrite( STDERR, "[Chunk {$chunkIndex}] Error processing file {$realpath}: {$ex->getMessage()}\n" .
-					"Trace:\n{$ex->getTraceAsString()}\n" );
+				fwrite( STDERR, "[Chunk {$chunkIndex}] Error processing file {$realpath}: {$ex->getMessage()}\n"
+				                . "Trace:\n{$ex->getTraceAsString()}\n"
+				);
 
-				return 1; // Non-zero => error
+				return 1;
 			}
 		}
 
 		if ( $verbose ) {
 			echo "[Chunk {$chunkIndex}] Done.\n";
 		} else {
-			// If single-process and we've been printing a progress bar,
-			// end the line after the loop
 			if ( $totalChunks === 1 ) {
 				echo "\n";
 			}
 		}
 
-		return 0; // success
+		return 0;
 	}
 
 	/**
@@ -250,22 +239,24 @@ class Worker {
 	public function detectCpuCores(): int {
 		try {
 			$count = ( new CpuCoreCounter() )->getCount();
-			if ( $count > 0 ) {
-				return $count;
-			}
+
+			return $count; // If phpstan complains int<1,max> always > 0, it’s safe just to return it
 		} catch ( \Exception $e ) {
 			fwrite( STDERR, "Warning: Failed to detect CPU cores: {$e->getMessage()}\n" );
 		}
 
-		return 2; // fallback
+		return 2;
 	}
 
 	/**
-	 * Kill remaining children if one fails (posix_kill only if available).
+	 * Kill remaining children if one fails.
 	 *
 	 * @param array<int,int> $childPids
 	 */
 	private function killRemainingChildren( array $childPids, int $failedPid ): void {
+		if ( ! function_exists( 'posix_kill' ) ) {
+			return;
+		}
 		foreach ( $childPids as $otherPid ) {
 			if ( $otherPid !== $failedPid ) {
 				@posix_kill( $otherPid, SIGTERM );
@@ -275,21 +266,15 @@ class Worker {
 
 	/**
 	 * Print a "chunk-level" progress bar (for parallel usage in the parent).
-	 * Called each time a child chunk completes.
 	 */
 	private function printChunkProgressBar( int $chunksDone, int $totalChunks ): void {
-		// E.g., just do a simple bar with 1 '=' per chunk
-		// For example, a 50 char bar max:
 		$barSize   = 50;
 		$completed = (int) round( $barSize * ( $chunksDone / $totalChunks ) );
 		$bar       = str_repeat( '=', $completed ) . str_repeat( ' ', $barSize - $completed );
 
-		// Move cursor to the start of the line (\r) and overwrite
 		printf( "\rChunks progress: [%s] %d/%d", $bar, $chunksDone, $totalChunks );
 
-		// If done, we won't add a newline yet, because we do so after the loop
 		if ( $chunksDone === $totalChunks ) {
-			// Force a flush
 			fflush( STDOUT );
 		}
 	}
@@ -302,11 +287,8 @@ class Worker {
 		$completed = (int) round( $barSize * ( $filesDone / $totalFiles ) );
 		$bar       = str_repeat( '=', $completed ) . str_repeat( ' ', $barSize - $completed );
 
-		// Overwrite same line
 		printf( "\rProcessing files: [%s] %d/%d", $bar, $filesDone, $totalFiles );
-
 		if ( $filesDone === $totalFiles ) {
-			// On final iteration, break line
 			echo "\n";
 		}
 	}

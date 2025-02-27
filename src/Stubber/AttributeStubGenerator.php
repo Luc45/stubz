@@ -10,13 +10,13 @@ class AttributeStubGenerator {
 	/**
 	 * Generate an attribute line: #[Attr(...)]
 	 *
-	 * @param array<string,int> $missingReferences
+	 * @param-out array<string,int> $missingReferences
 	 */
 	public function generateAttributeLine(
 		ReflectionAttribute $attr,
 		array &$missingReferences
 	): string {
-		$startTime = microtime( true );
+		/** @var array<string,int> $missingReferences */
 
 		$args = [];
 		foreach ( $attr->getArguments() as $argVal ) {
@@ -24,10 +24,6 @@ class AttributeStubGenerator {
 		}
 		$argsStr = $args ? '(' . implode( ', ', $args ) . ')' : '';
 		$line    = "#[{$attr->getName()}{$argsStr}]";
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'attributeName' => $attr->getName(),
-		] );
 
 		return $line;
 	}

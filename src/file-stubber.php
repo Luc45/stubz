@@ -2,6 +2,11 @@
 
 declare( strict_types=1 );
 
+use Roave\BetterReflection\BetterReflection;
+use Roave\BetterReflection\Reflector\DefaultReflector;
+use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
+use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
 use Stubz\Stubber\ClassStubGenerator;
 use Stubz\Stubber\FunctionStubGenerator;
 use Stubz\Stubber\ConstantStubGenerator;
@@ -10,40 +15,54 @@ use Stubz\Stubber\NamespaceStubGenerator;
 /**
  * This file returns a closure that, given a single file path + reference array,
  * returns the stub content for that file’s classes, functions, and constants.
+ *
+ * @param non-empty-string $filePath
+ * @param-out array<string,int> $missingReferences
  */
 return static function ( string $filePath, array &$missingReferences ): string {
-	// 1) Set up reflection
-	$br         = new \Roave\BetterReflection\BetterReflection();
-	$astLocator = $br->astLocator();
-	$internal   = new \Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator(
-		$astLocator,
-		$br->sourceStubber()
-	);
-	$fileLoc    = new \Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator(
-		$filePath,
-		$astLocator
-	);
-	$aggregate  = new \Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator( [
-		$internal,
-		$fileLoc
-	] );
+	// If your PHPDoc says $filePath is non-empty-string, checking for '' is redundant
+	if ( $filePath === '' ) {
+		throw new \InvalidArgumentException( 'Argument #1 ($filePath) must be a non-empty string.' );
+	}
 
-	$reflector = new \Roave\BetterReflection\Reflector\DefaultReflector( $aggregate );
+	$br             = new BetterReflection();
+	$source_locator = new AggregateSourceLocator( [
+		new SingleFileSourceLocator( $filePath, $br->astLocator() ),
+		new PhpInternalSourceLocator( $br->astLocator(), $br->sourceStubber() ),
+	] );
+	$reflector      = new DefaultReflector( $source_locator );
 
 	// 2) Fetch classes, functions, constants
-	$allClasses   = $reflector->reflectAllClasses();
-	$allFunctions = $reflector->reflectAllFunctions();
-	$allConstants = $reflector->reflectAllConstants();
+	try {
+		$allClasses = $reflector->reflectAllClasses();
+	} catch ( Throwable $ex ) {
+		echo "DEBUG: parse failure: " . $ex->getMessage() . "\n";
+		throw $ex;
+	}
 
-	// Sort them if you want consistent ordering
+	try {
+		$allFunctions = $reflector->reflectAllFunctions();
+	} catch ( Throwable $ex ) {
+		echo "DEBUG: parse failure: " . $ex->getMessage() . "\n";
+		throw $ex;
+	}
+
+	try {
+		$allConstants = $reflector->reflectAllConstants();
+	} catch ( Throwable $ex ) {
+		echo "DEBUG: parse failure: " . $ex->getMessage() . "\n";
+		throw $ex;
+	}
+
+	// Sort them by start line for consistent ordering
 	usort( $allClasses, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
 	usort( $allFunctions, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
 	usort( $allConstants, fn( $a, $b ) => $a->getStartLine() <=> $b->getStartLine() );
 
-	// 3) Use the stub generators
-	$classGen = new ClassStubGenerator();
-	$funcGen  = new FunctionStubGenerator();
-	$constGen = new ConstantStubGenerator();
+	// 3) Stub generators
+	$classGen         = new ClassStubGenerator();
+	$funcGen          = new FunctionStubGenerator();
+	$constGen         = new ConstantStubGenerator();
 	$namespaceStubGen = new NamespaceStubGenerator();
 
 	// 4) Generate stubs for each symbol
@@ -60,12 +79,12 @@ return static function ( string $filePath, array &$missingReferences ): string {
 		$namespaceStubGen->addStub( $stub );
 	}
 
-	// 5) If there are no stubs at all, return empty
+	// 5) If no stubs found, return empty
 	if ( empty( $allClasses ) && empty( $allFunctions ) && empty( $allConstants ) ) {
 		return '';
 	}
 
-	// 6) Detect the file's single namespace (if any) from the first symbol found
+	// 6) Detect the single namespace
 	$detectedNamespace = '';
 	if ( ! empty( $allClasses ) ) {
 		$detectedNamespace = $allClasses[0]->getNamespaceName() ?? '';
@@ -77,7 +96,7 @@ return static function ( string $filePath, array &$missingReferences ): string {
 
 	$detectedNamespace = trim( $detectedNamespace );
 
-	// 7) Build final stub using that single namespace (or none if empty)
+	// 7) Build the final stub
 	$stubBody = $namespaceStubGen->generateFinalStub( $detectedNamespace );
 
 	return $stubBody;

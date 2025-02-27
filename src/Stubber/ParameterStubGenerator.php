@@ -14,8 +14,6 @@ class ParameterStubGenerator {
 	 * @param array<string,int> $missingReferences
 	 */
 	public function generateParameterStub( BRParameter $param, array &$missingReferences ): string {
-		$startTime = microtime( true );
-
 		try {
 			$typeObj = $param->getType();
 		} catch ( Throwable $ex ) {
@@ -41,11 +39,6 @@ class ParameterStubGenerator {
 				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 			}
 		}
-
-		( new Helpers() )->logBenchmark( __METHOD__, $startTime, microtime( true ), [
-			'declaringFunction' => $param->getDeclaringFunction()->getName(),
-			'paramName'         => $param->getName(),
-		] );
 
 		return $out;
 	}
