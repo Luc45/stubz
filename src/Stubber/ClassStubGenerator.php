@@ -11,11 +11,8 @@ use Throwable;
 class ClassStubGenerator {
 	/**
 	 * Generate a class/trait/interface/enum stub from reflection.
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
-	public function generateClassStub( BRClass $class, array &$missingReferences ): string {
-		/** @var array<string,int> $missingReferences */
+	public function generateClassStub( BRClass $class ): string {
 		$buf       = '';
 
 		// 1) Doc comment
@@ -26,11 +23,11 @@ class ClassStubGenerator {
 
 		// 2) Attributes
 		foreach ( $class->getAttributes() as $attr ) {
-			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
+			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
 		// 3) Class/trait/interface/enum declaration
-		$buf .= $this->getClassDeclaration( $class, $missingReferences );
+		$buf .= $this->getClassDeclaration( $class );
 
 		// Potential "extends" for normal classes
 		$parentReflection = null;
@@ -45,7 +42,7 @@ class ClassStubGenerator {
 				$parentReflection = $possibleParent;
 			}
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 		}
 
 		// If not interface/trait/enum => handle extends/implements
@@ -63,7 +60,7 @@ class ClassStubGenerator {
 					$interfaces[] = '\\' . ltrim( $iRef->getName(), '\\' );
 				}
 			} catch ( Throwable $ex ) {
-				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+				Helpers::handleBetterReflectionException( $ex );
 			}
 
 			if ( ! empty( $interfaces ) ) {
@@ -86,7 +83,7 @@ class ClassStubGenerator {
 						$val = Helpers::toPhpLiteral( $case->getValue() );
 						$buf .= "    case {$case->getName()} = {$val};\n\n";
 					} catch ( Throwable $ex ) {
-						( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+						Helpers::handleBetterReflectionException( $ex );
 					}
 				}
 
@@ -115,7 +112,7 @@ class ClassStubGenerator {
 				$val = Helpers::toPhpLiteral( $refConst->getValue() );
 				$buf .= "    const {$constName} = {$val};\n\n";
 			} catch ( Throwable $ex ) {
-				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+				Helpers::handleBetterReflectionException( $ex );
 			}
 		}
 
@@ -125,12 +122,12 @@ class ClassStubGenerator {
 		try {
 			$props = $class->getImmediateProperties();
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 			$props = [];
 		}
 		foreach ( $props as $prop ) {
 			if ( $prop->getDeclaringClass()->getName() === $class->getName() ) {
-				$buf .= ( new PropertyStubGenerator() )->generatePropertyStub( $prop, $missingReferences );
+				$buf .= ( new PropertyStubGenerator() )->generatePropertyStub( $prop );
 			}
 		}
 
@@ -140,12 +137,12 @@ class ClassStubGenerator {
 		try {
 			$methods = $class->getImmediateMethods();
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 			$methods = [];
 		}
 		foreach ( $methods as $method ) {
 			if ( $method->getDeclaringClass()->getName() === $class->getName() ) {
-				$buf .= ( new MethodStubGenerator() )->generateMethodStub( $method, $missingReferences );
+				$buf .= ( new MethodStubGenerator() )->generateMethodStub( $method );
 			}
 		}
 
@@ -156,10 +153,8 @@ class ClassStubGenerator {
 
 	/**
 	 * Describe how the class is declared: interface, trait, enum, abstract, final, etc.
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
-	private function getClassDeclaration( BRClass $class, array &$missingReferences ): string {
+	private function getClassDeclaration( BRClass $class ): string {
 		if ( $class->isInterface() ) {
 			$out = 'interface ' . $class->getShortName();
 		} elseif ( $class->isTrait() ) {

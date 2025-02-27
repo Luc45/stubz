@@ -10,14 +10,12 @@ use Throwable;
 class ParameterStubGenerator {
 	/**
 	 * Generate a parameter stub.
-	 *
-	 * @param array<string,int> $missingReferences
 	 */
-	public function generateParameterStub( BRParameter $param, array &$missingReferences ): string {
+	public function generateParameterStub( BRParameter $param ): string {
 		try {
 			$typeObj = $param->getType();
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 			$typeObj = null;
 		}
 		$out = $typeObj ? ( (string) $typeObj . ' ' ) : '';
@@ -34,7 +32,7 @@ class ParameterStubGenerator {
 			try {
 				$out    .= ' = ' . Helpers::toPhpLiteral( $param->getDefaultValue() );
 			} catch ( Throwable $ex ) {
-				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+				Helpers::handleBetterReflectionException( $ex );
 			}
 		}
 

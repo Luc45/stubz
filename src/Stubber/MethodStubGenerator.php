@@ -10,11 +10,8 @@ use Throwable;
 class MethodStubGenerator {
 	/**
 	 * Generate a method stub.
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
-	public function generateMethodStub( BRMethod $method, array &$missingReferences ): string {
-		/** @var array<string,int> $missingReferences */
+	public function generateMethodStub( BRMethod $method ): string {
 		$buf       = '';
 
 		$doc = $method->getDocComment();
@@ -25,7 +22,7 @@ class MethodStubGenerator {
 		}
 
 		foreach ( $method->getAttributes() as $attr ) {
-			$buf .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
+			$buf .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
 		if ( $method->isPrivate() ) {
@@ -48,7 +45,7 @@ class MethodStubGenerator {
 		$buf    .= 'function ' . $method->getName() . '(';
 		$params = [];
 		foreach ( $method->getParameters() as $pm ) {
-			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $pm, $missingReferences );
+			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $pm );
 		}
 		$buf .= implode( ', ', $params ) . ')';
 
@@ -58,7 +55,7 @@ class MethodStubGenerator {
 				$buf .= ': ' . (string) $ret;
 			}
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 		}
 
 		if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {

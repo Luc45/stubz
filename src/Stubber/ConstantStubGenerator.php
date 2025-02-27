@@ -11,11 +11,7 @@ use Throwable;
  * Generate a global constant stub ("const FOO = ...;").
  */
 class ConstantStubGenerator {
-	/**
-	 * @param-out array<string,int> $missingReferences
-	 */
-	public function generateConstantStub( BRConstant $constant, array &$missingReferences ): string {
-		/** @var array<string,int> $missingReferences */
+	public function generateConstantStub( BRConstant $constant ): string {
 		$buf       = '';
 
 		// If it's a class constant, skip
@@ -29,7 +25,7 @@ class ConstantStubGenerator {
 			$val = var_export( $constant->getValue(), true );
 			$buf .= "const {$constName} = {$val};\n\n";
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 		}
 
 		return $buf;

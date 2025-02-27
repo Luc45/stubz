@@ -21,29 +21,42 @@ class Helpers {
 	}
 
 	/**
+	 * Public static array for collecting missing references
+	 * across the entire run (if needed).
+	 *
+	 * @var array<string,int>
+	 */
+	public static array $missingReferences = [];
+
+	/**
+	 * Standard way to record a missing reference. If the symbol
+	 * is missing multiple times, we just increment the count.
+	 */
+	public static function trackMissingReference( string $symbol, int $count = 1 ): void {
+		self::$missingReferences[ $symbol ] = ( self::$missingReferences[ $symbol ] ?? 0 ) + $count;
+	}
+
+	/**
 	 * Handle reflection exceptions and increment missingReferences
 	 *
 	 * @param-out array<string,int> $missingReferences
 	 */
-	public function handleBetterReflectionException( Throwable $ex, array &$missingReferences ): void {
-		/** @var array<string,int> $missingReferences */
+	public static function handleBetterReflectionException( Throwable $ex ): void {
 		if ( $ex instanceof IdentifierNotFound ) {
 			$symbol = $ex->getIdentifier()->getName();
-			// Force-cast to int so PHPStan knows the result is int
-			$missingReferences[ $symbol ] = (int) ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+			self::trackMissingReference( $symbol );
 
 			return;
 		}
 
 		if ( $ex instanceof UnableToCompileNode ) {
-			// No more method_exists check: always assume constantName() is available
-			$symbol                       = $ex->constantName();
-			$missingReferences[ $symbol ] = (int) ( $missingReferences[ $symbol ] ?? 0 ) + 1;
+			$symbol = $ex->constantName();
+			self::trackMissingReference( $symbol );
 
 			return;
 		}
 
-		$cls                       = get_class( $ex );
-		$missingReferences[ $cls ] = (int) ( $missingReferences[ $cls ] ?? 0 ) + 1;
+		$cls = get_class( $ex );
+		self::trackMissingReference( $cls );
 	}
 }

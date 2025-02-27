@@ -17,9 +17,8 @@ use Stubz\Stubber\NamespaceStubGenerator;
  * returns the stub content for that file’s classes, functions, and constants.
  *
  * @param non-empty-string $filePath
- * @param-out array<string,int> $missingReferences
  */
-return static function ( string $filePath, array &$missingReferences ): string {
+return static function ( string $filePath ): string {
 	// If your PHPDoc says $filePath is non-empty-string, checking for '' is redundant
 	if ( $filePath === '' ) {
 		throw new \InvalidArgumentException( 'Argument #1 ($filePath) must be a non-empty string.' );
@@ -67,15 +66,15 @@ return static function ( string $filePath, array &$missingReferences ): string {
 
 	// 4) Generate stubs for each symbol
 	foreach ( $allClasses as $classRef ) {
-		$stub = $classGen->generateClassStub( $classRef, $missingReferences );
+		$stub = $classGen->generateClassStub( $classRef );
 		$namespaceStubGen->addStub( $stub );
 	}
 	foreach ( $allFunctions as $fnRef ) {
-		$stub = $funcGen->generateFunctionStub( $fnRef, $missingReferences );
+		$stub = $funcGen->generateFunctionStub( $fnRef );
 		$namespaceStubGen->addStub( $stub );
 	}
 	foreach ( $allConstants as $cstRef ) {
-		$stub = $constGen->generateConstantStub( $cstRef, $missingReferences );
+		$stub = $constGen->generateConstantStub( $cstRef );
 		$namespaceStubGen->addStub( $stub );
 	}
 

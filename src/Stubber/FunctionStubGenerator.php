@@ -10,10 +10,8 @@ use Throwable;
 class FunctionStubGenerator {
 	/**
 	 * Generate a function stub.
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
-	public function generateFunctionStub( BRFunction $fn, array &$missingReferences ): string {
+	public function generateFunctionStub( BRFunction $fn ): string {
 		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
@@ -25,15 +23,14 @@ class FunctionStubGenerator {
 		}
 
 		foreach ( $fn->getAttributes() as $attr ) {
-			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
+			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
 		$buf .= 'function ' . $funcName . '(';
 
 		$params = [];
 		foreach ( $fn->getParameters() as $param ) {
-			// Pass typed $missingReferences:
-			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $param, $missingReferences );
+			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $param );
 		}
 		$buf .= implode( ', ', $params ) . ')';
 
@@ -44,7 +41,7 @@ class FunctionStubGenerator {
 				$buf .= ': ' . (string) $ret;
 			}
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 		}
 
 		$buf .= "\n{\n    // stub\n}\n\n";

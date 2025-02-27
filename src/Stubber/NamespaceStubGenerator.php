@@ -24,9 +24,7 @@ class NamespaceStubGenerator {
 			return '';
 		}
 
-		// If the original was global => no "namespace" line
 		if ( $namespace === '' ) {
-			// Return a single stub containing the code in global ns
 			return "<?php\n\n" . $buffer . "\n";
 		}
 

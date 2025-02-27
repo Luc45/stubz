@@ -10,11 +10,8 @@ use Throwable;
 class PropertyStubGenerator {
 	/**
 	 * Generate a property stub.
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
-	public function generatePropertyStub( BRProperty $prop, array &$missingReferences ): string {
-		/** @var array<string,int> $missingReferences */
+	public function generatePropertyStub( BRProperty $prop ): string {
 		$out = '';
 
 		$doc = $prop->getDocComment();
@@ -25,7 +22,7 @@ class PropertyStubGenerator {
 		}
 
 		foreach ( $prop->getAttributes() as $attr ) {
-			$out .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr, $missingReferences ) . "\n";
+			$out .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
 		$vis      = $prop->isPrivate()
@@ -37,7 +34,7 @@ class PropertyStubGenerator {
 		try {
 			$typeObj = $prop->getType();
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 			$typeObj = null;
 		}
 		$typeStr = $typeObj ? ( (string) $typeObj . ' ' ) : '';
@@ -50,7 +47,7 @@ class PropertyStubGenerator {
 				$out .= ' = ' . Helpers::toPhpLiteral( $prop->getDefaultValue() );
 			}
 		} catch ( Throwable $ex ) {
-			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
+			Helpers::handleBetterReflectionException( $ex );
 		}
 
 		$out .= ";\n\n";

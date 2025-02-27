@@ -14,6 +14,8 @@ declare( strict_types=1 );
  */
 
 // Include Composer's autoload
+use Stubz\Stubber\Helpers;
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 /**
@@ -214,7 +216,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 		$finder = $makeFinder( $sourceDir, $excludes, $finderPhp );
 
 		echo "DEBUG: Listing .php files for scenario:\n";
-		foreach ($finder as $f) {
+		foreach ( $finder as $f ) {
 			echo "  " . $f->getRealPath() . "\n";
 		}
 
@@ -235,9 +237,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 			return;
 		}
 
-		/** @var array<string,int> $missingReferences */
-		$missingReferences = [];
-
 		// Worker usage
 		$worker       = new \Stubz\Worker();
 		$minChunkSize = $worker->getMinimumChunkSize();
@@ -245,9 +244,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 		// Decide if we do parallel or single-process
 		if ( $parallelAllowed && $totalFiles >= $minChunkSize ) {
 			// parse $parallel as int if provided
-			$numCores = ( $parallel !== '' )
-				? (int) $parallel
-				: $worker->detectCpuCores();
+			$numCores = ( $parallel !== '' ) ? (int) $parallel : $worker->detectCpuCores();
 
 			$rawChunkSize = (int) ceil( $totalFiles / $numCores );
 			$chunkSize    = max( $rawChunkSize, $minChunkSize );
@@ -261,14 +258,13 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 			if ( count( $chunks ) > 1 ) {
 				// Actually run parallel
-				$worker->runParallel( $chunks, $sourceDir, $outputDir, $missingReferences, $verbose );
+				$worker->runParallel( $chunks, $sourceDir, $outputDir, $verbose );
 			} else {
 				// Only 1 chunk => single-process
 				$worker->processFilesChunk(
 					$chunks[0],
 					$sourceDir,
 					$outputDir,
-					$missingReferences,
 					0,
 					1,
 					$verbose
@@ -280,7 +276,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 				$allFiles,
 				$sourceDir,
 				$outputDir,
-				$missingReferences,
 				0,
 				1,
 				$verbose
@@ -288,11 +283,11 @@ require_once __DIR__ . '/vendor/autoload.php';
 		}
 
 		// If verbose, print missing references
-		if ( $verbose && ! empty( $missingReferences ) ) {
-			$totalMissingCount = array_sum( $missingReferences );
-			$uniqueCount       = count( $missingReferences );
+		if ( $verbose && ! empty( Helpers::$missingReferences ) ) {
+			$totalMissingCount = array_sum( Helpers::$missingReferences );
+			$uniqueCount       = count( Helpers::$missingReferences );
 			echo "\nMissing references: {$totalMissingCount} total, across {$uniqueCount} unique symbols.\n";
-			foreach ( $missingReferences as $sym => $count ) {
+			foreach ( Helpers::$missingReferences as $sym => $count ) {
 				echo "  - {$sym} ({$count} times)\n";
 			}
 		}

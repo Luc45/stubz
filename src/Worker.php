@@ -19,17 +19,13 @@ class Worker {
 	 * otherwise fall back to single-process mode.
 	 *
 	 * @param array<int,array<int,string>> $chunks
-	 * @param-out array<string,int> $missingReferences
 	 */
 	public function runParallel(
 		array $chunks,
 		string $sourceDir,
 		string $outputDir,
-		array &$missingReferences,
 		bool $verbose
 	): void {
-		/** @var array<string,int> $missingReferences */
-
 		$parallelSupported = true;
 		if ( ! function_exists( 'pcntl_fork' ) ) {
 			if ( $verbose ) {
@@ -50,7 +46,7 @@ class Worker {
 			foreach ( $chunks as $ch ) {
 				$allFiles = array_merge( $allFiles, $ch );
 			}
-			$this->processFilesChunk( $allFiles, $sourceDir, $outputDir, $missingReferences, 0, 1, $verbose );
+			$this->processFilesChunk( $allFiles, $sourceDir, $outputDir, 0, 1, $verbose );
 
 			return;
 		}
@@ -139,10 +135,6 @@ class Worker {
 			if ( ! is_array( $arr ) ) {
 				continue;
 			}
-			// We know $missingReferences is array<string,int>, so cast each new count to int:
-			foreach ( $arr as $sym => $count ) {
-				$missingReferences[ $sym ] = (int) ( $missingReferences[ $sym ] ?? 0 ) + (int) $count;
-			}
 		}
 
 		if ( ! $verbose ) {
@@ -154,18 +146,15 @@ class Worker {
 	 * Process a chunk of file paths. Reflect and generate stubs.
 	 *
 	 * @param array<int,string> $filePaths
-	 * @param-out array<string,int> $missingReferences
 	 */
 	public function processFilesChunk(
 		array $filePaths,
 		string $sourceDir,
 		string $outputDir,
-		array &$missingReferences,
 		int $chunkIndex,
 		int $totalChunks,
 		bool $verbose
 	): int {
-		/** @var array<string,int> $missingReferences */
 		/** @var callable(string,array<string,int>):string $fileStubber */
 		$fileStubber = require __DIR__ . '/file-stubber.php';
 
@@ -192,7 +181,7 @@ class Worker {
 			}
 
 			try {
-				$stubBody = $fileStubber( $realpath, $missingReferences );
+				$stubBody = $fileStubber( $realpath );
 				if ( trim( $stubBody ) === '' ) {
 					if ( $verbose && $realpath !== '' ) {
 						echo "[Chunk {$chunkIndex}] [{$i}/{$total}] Skipped empty: "
