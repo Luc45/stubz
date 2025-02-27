@@ -83,9 +83,8 @@ class ClassStubGenerator {
 				// "Backed" enum => produce `case X = 'foo';`, plus $value, from/tryFrom
 				foreach ( $cases as $case ) {
 					try {
-						$val    = $case->getValue();
-						$valStr = ( new Helpers() )->convertVarExportToWpStyle( $val );
-						$buf    .= "    case {$case->getName()} = {$valStr};\n\n";
+						$val = Helpers::toPhpLiteral( $case->getValue() );
+						$buf .= "    case {$case->getName()} = {$val};\n\n";
 					} catch ( Throwable $ex ) {
 						( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 					}
@@ -113,9 +112,8 @@ class ClassStubGenerator {
 		// ---------------------------------------------------------------------
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
 			try {
-				$value    = $refConst->getValue();
-				$valueStr = ( new Helpers() )->convertVarExportToWpStyle( $value );
-				$buf      .= "    const {$constName} = {$valueStr};\n\n";
+				$val = Helpers::toPhpLiteral( $refConst->getValue() );
+				$buf .= "    const {$constName} = {$val};\n\n";
 			} catch ( Throwable $ex ) {
 				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 			}

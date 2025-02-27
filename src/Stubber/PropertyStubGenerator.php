@@ -47,9 +47,7 @@ class PropertyStubGenerator {
 		// Default value if any
 		try {
 			if ( $prop->hasDefaultValue() ) {
-				$defVal = $prop->getDefaultValue();
-				$valStr = ( new Helpers() )->convertVarExportToWpStyle( $defVal );
-				$out    .= ' = ' . $valStr;
+				$out .= ' = ' . Helpers::toPhpLiteral( $prop->getDefaultValue() );
 			}
 		} catch ( Throwable $ex ) {
 			( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );

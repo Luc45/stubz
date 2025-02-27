@@ -32,9 +32,7 @@ class ParameterStubGenerator {
 
 		if ( $param->isDefaultValueAvailable() ) {
 			try {
-				$defVal = $param->getDefaultValue();
-				$valStr = ( new Helpers() )->convertVarExportToWpStyle( $defVal );
-				$out    .= ' = ' . $valStr;
+				$out    .= ' = ' . Helpers::toPhpLiteral( $param->getDefaultValue() );
 			} catch ( Throwable $ex ) {
 				( new Helpers() )->handleBetterReflectionException( $ex, $missingReferences );
 			}

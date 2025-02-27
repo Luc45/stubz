@@ -12,21 +12,12 @@ use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
  * Shared helper methods: logging, var_export styles, exception handling, etc.
  */
 class Helpers {
-	/**
-	 * Convert var_export output to WP style
-	 * - Lowercase 'NULL' => 'null'
-	 * - Keep array (\n ) formatting
-	 *
-	 * @param mixed $value
-	 */
-	public function convertVarExportToWpStyle( $value ): string {
-		$out = var_export( $value, true );
-		$out = str_ireplace( 'NULL', 'null', $out );
+	public static function toPhpLiteral( $value ): string {
+		$value = var_export( $value, true );
 
-		// Remove trailing whitespace before closing parenthesis
-		$out = (string) preg_replace( '/\)(\s*)$/', ')', $out );
+		$value = str_replace( 'NULL', 'null', $value );
 
-		return $out;
+		return $value;
 	}
 
 	/**
