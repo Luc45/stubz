@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Session handler class.
  */
@@ -296,4 +294,3 @@ class WC_Session_Handler
     }
 
 }
-

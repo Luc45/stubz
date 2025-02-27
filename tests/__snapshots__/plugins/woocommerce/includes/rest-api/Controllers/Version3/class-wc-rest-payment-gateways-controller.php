@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Payment gateways controller class.
  *
@@ -52,4 +50,3 @@ class WC_REST_Payment_Gateways_Controller
     }
 
 }
-

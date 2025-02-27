@@ -12,4 +12,3 @@ interface ClassNameInterface
     public function getClassName(): string;
 
 }
-

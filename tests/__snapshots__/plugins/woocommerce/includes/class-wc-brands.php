@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Brands class.
  *
@@ -450,4 +448,3 @@ class WC_Brands
     }
 
 }
-

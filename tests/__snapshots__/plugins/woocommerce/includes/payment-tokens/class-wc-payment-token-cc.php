@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Credit Card Payment Token.
  *
@@ -165,4 +163,3 @@ class WC_Payment_Token_CC
     }
 
 }
-

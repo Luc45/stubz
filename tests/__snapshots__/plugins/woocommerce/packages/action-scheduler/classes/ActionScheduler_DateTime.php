@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * ActionScheduler DateTime class.
  *
@@ -82,4 +80,3 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
     }
 
 }
-

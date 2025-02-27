@@ -37,4 +37,3 @@ function wc_importer_shopify_expand_data($data)
 {
     // stub
 }
-

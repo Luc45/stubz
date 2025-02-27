@@ -25,4 +25,3 @@ interface ExportableInterface
     public function prepare_item_for_export($item);
 
 }
-

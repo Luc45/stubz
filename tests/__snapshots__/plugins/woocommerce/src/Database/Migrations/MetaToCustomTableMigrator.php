@@ -471,4 +471,3 @@ abstract class MetaToCustomTableMigrator
     }
 
 }
-

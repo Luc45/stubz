@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Notices Class.
  */
@@ -447,4 +445,3 @@ class WC_Admin_Notices
     }
 
 }
-

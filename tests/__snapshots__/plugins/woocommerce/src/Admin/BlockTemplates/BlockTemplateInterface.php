@@ -43,4 +43,3 @@ interface BlockTemplateInterface
     public function to_json(): array;
 
 }
-

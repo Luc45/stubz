@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce eCheck Payment Token.
  *
@@ -90,4 +88,3 @@ class WC_Payment_Token_ECheck
     }
 
 }
-

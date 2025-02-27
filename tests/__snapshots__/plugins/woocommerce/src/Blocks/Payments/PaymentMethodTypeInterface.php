@@ -43,4 +43,3 @@ interface PaymentMethodTypeInterface
     public function get_supported_features();
 
 }
-

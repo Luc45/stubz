@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract WC Object Query Class
  *
@@ -75,4 +73,3 @@ abstract class WC_Object_Query
     }
 
 }
-

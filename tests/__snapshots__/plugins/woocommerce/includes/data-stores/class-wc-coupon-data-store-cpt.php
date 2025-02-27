@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Coupon Data Store: Custom Post Type.
  *
@@ -337,4 +335,3 @@ class WC_Coupon_Data_Store_CPT
     }
 
 }
-

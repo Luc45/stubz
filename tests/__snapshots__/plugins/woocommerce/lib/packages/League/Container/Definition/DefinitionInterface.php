@@ -119,4 +119,3 @@ interface DefinitionInterface
     public function resolve(bool $new = false);
 
 }
-

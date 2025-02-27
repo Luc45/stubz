@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_DBStore
  *
@@ -527,4 +525,3 @@ class ActionScheduler_DBStore
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Allows updates via CLI.
  *
@@ -27,4 +25,3 @@ class WC_CLI_Update_Command
     }
 
 }
-

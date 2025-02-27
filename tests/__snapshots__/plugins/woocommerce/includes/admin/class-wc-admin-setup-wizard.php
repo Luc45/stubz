@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Setup_Wizard class.
  */
@@ -754,4 +752,3 @@ class WC_Admin_Setup_Wizard
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Background_Updater Class.
  */
@@ -92,4 +90,3 @@ class WC_Background_Updater
     }
 
 }
-

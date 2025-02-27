@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_WCCOM_Site Class
  *
@@ -97,4 +95,3 @@ class WC_WCCOM_Site
     }
 
 }
-

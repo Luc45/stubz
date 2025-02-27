@@ -15,4 +15,3 @@ class CheckoutOrderSummarySubtotalBlock
     protected $block_name = 'checkout-order-summary-subtotal-block';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shortcode my account class.
  */
@@ -144,4 +142,3 @@ class WC_Shortcode_My_Account
     }
 
 }
-

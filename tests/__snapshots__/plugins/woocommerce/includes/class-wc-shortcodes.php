@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Shortcodes class.
  */
@@ -255,4 +253,3 @@ class WC_Shortcodes
     }
 
 }
-

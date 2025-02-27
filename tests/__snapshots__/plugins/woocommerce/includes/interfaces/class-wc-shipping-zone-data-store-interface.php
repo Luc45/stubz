@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Shipping Zone Data Store Interface.
  *
@@ -77,4 +75,3 @@ interface WC_Shipping_Zone_Data_Store_Interface
     public function get_zone_id_by_instance_id($id);
 
 }
-

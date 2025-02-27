@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Custom Fields controller class.
  *
@@ -72,4 +70,3 @@ class WC_REST_Product_Custom_Fields_Controller
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product grouped class.
  */
@@ -116,4 +114,3 @@ class WC_Product_Grouped
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Post_Types Class.
  *
@@ -285,4 +283,3 @@ class WC_Admin_Post_Types
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Telemetry controller class.
  *
@@ -75,4 +73,3 @@ class WC_REST_Telemetry_Controller
     }
 
 }
-

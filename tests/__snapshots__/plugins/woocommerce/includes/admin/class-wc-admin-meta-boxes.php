@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Meta_Boxes.
  */
@@ -129,4 +127,3 @@ class WC_Admin_Meta_Boxes
     }
 
 }
-

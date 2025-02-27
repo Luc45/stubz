@@ -18,4 +18,3 @@ interface DataStoreInterface
     public function get_data($args);
 
 }
-

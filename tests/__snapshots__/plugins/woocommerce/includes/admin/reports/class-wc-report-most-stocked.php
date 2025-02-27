@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Most_Stocked.
  */
@@ -19,4 +17,3 @@ class WC_Report_Most_Stocked
     }
 
 }
-

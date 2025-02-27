@@ -62,4 +62,3 @@ class Migration_Command
     }
 
 }
-

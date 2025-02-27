@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Variable product class.
  */
@@ -448,4 +446,3 @@ class WC_Product_Variable
     }
 
 }
-

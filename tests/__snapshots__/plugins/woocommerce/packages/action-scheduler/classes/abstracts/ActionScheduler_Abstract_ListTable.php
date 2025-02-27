@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Action Scheduler Abstract List Table class
  *
@@ -500,4 +498,3 @@ abstract class ActionScheduler_Abstract_ListTable
     }
 
 }
-

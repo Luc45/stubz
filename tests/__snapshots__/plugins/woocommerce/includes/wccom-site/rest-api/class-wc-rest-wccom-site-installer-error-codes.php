@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WCCOM Site Installer Error Codes Class
  *
@@ -109,4 +107,3 @@ class WC_REST_WCCOM_Site_Installer_Error_Codes
 );
 
 }
-

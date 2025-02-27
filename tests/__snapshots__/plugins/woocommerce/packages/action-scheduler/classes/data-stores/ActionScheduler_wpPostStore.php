@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_wpPostStore
  */
@@ -525,4 +523,3 @@ class ActionScheduler_wpPostStore
     }
 
 }
-

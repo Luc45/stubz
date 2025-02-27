@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Payment Gateway class.
  *
@@ -466,4 +464,3 @@ abstract class WC_Payment_Gateway
     }
 
 }
-

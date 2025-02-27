@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Variation Product Data Store: Stored in CPT.
  *
@@ -177,4 +175,3 @@ class WC_Product_Variation_Data_Store_CPT
     }
 
 }
-

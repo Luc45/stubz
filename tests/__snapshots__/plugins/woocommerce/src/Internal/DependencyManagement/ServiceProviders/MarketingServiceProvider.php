@@ -30,4 +30,3 @@ class MarketingServiceProvider
 }
 
 const WC_MCM_EXISTS = true;
-

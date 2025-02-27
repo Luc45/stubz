@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Page.
  */
@@ -375,4 +373,3 @@ abstract class WC_Settings_Page
     }
 
 }
-

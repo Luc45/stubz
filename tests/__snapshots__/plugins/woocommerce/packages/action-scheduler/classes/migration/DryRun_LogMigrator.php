@@ -23,4 +23,3 @@ class DryRun_LogMigrator
     }
 
 }
-

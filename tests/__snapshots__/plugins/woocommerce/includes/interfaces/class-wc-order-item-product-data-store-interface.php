@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Data Store Interface
  *
@@ -21,4 +19,3 @@ interface WC_Order_Item_Product_Data_Store_Interface
     public function get_download_ids($item, $order);
 
 }
-

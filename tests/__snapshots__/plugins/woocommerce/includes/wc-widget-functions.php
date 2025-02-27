@@ -9,4 +9,3 @@ function wc_register_widgets()
 {
     // stub
 }
-

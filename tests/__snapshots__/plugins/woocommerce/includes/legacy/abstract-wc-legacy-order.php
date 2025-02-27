@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Abstract Order
  *
@@ -421,4 +419,3 @@ abstract class WC_Abstract_Legacy_Order
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product categories widget class.
  *
@@ -44,4 +42,3 @@ class WC_Widget_Product_Categories
     }
 
 }
-

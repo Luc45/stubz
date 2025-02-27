@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Query Class.
  */
@@ -583,4 +581,3 @@ class WC_Query
     }
 
 }
-

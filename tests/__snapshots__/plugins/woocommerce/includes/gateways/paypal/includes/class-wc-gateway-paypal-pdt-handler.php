@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handle PDT Responses from PayPal.
  */
@@ -76,4 +74,3 @@ class WC_Gateway_Paypal_PDT_Handler
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * API Keys table list class.
  */
@@ -129,4 +127,3 @@ class WC_Admin_API_Keys_Table_List
     }
 
 }
-

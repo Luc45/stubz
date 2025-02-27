@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer download class.
  */
@@ -336,4 +334,3 @@ class WC_Customer_Download
     }
 
 }
-

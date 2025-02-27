@@ -15,4 +15,3 @@ class CheckoutOrderSummaryDiscountBlock
     protected $block_name = 'checkout-order-summary-discount-block';
 
 }
-

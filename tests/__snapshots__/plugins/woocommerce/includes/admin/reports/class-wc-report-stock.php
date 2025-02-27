@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Stock.
  *
@@ -83,4 +81,3 @@ class WC_Report_Stock
     }
 
 }
-

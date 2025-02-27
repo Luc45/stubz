@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Shipping Zone Data Store.
  *
@@ -180,4 +178,3 @@ class WC_Shipping_Zone_Data_Store
     }
 
 }
-

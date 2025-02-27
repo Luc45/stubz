@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Tax Rates importer - import tax rates and local tax rates into WooCommerce.
  *
@@ -168,4 +166,3 @@ class WC_Tax_Rate_Importer
     }
 
 }
-

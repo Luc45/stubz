@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Orders controller class.
  *
@@ -146,4 +144,3 @@ class WC_REST_Orders_Controller
     }
 
 }
-

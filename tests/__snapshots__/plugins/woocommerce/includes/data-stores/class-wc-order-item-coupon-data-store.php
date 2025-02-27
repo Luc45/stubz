@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Coupon Data Store
  *
@@ -44,4 +42,3 @@ class WC_Order_Item_Coupon_Data_Store
     }
 
 }
-

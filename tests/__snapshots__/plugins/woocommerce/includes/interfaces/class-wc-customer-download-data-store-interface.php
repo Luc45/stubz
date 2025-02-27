@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Customer Download Data Store Interface.
  *
@@ -66,4 +64,3 @@ interface WC_Customer_Download_Data_Store_Interface
     public function update_user_by_order_id($order_id, $customer_id, $email);
 
 }
-

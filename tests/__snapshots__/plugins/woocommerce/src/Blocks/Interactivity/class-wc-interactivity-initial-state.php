@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Manages the initial state of the Interactivity API store in the server and
  * its serialization so it can be restored in the browser upon hydration.
@@ -62,4 +60,3 @@ class WC_Interactivity_Initial_State
     }
 
 }
-

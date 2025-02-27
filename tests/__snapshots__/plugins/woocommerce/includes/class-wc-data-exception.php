@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Data exception class.
  */
@@ -56,4 +54,3 @@ class WC_Data_Exception extends \Exception implements \Stringable, \Throwable
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Data Currencies controller class.
  *
@@ -110,4 +108,3 @@ class WC_REST_Data_Currencies_Controller
     }
 
 }
-

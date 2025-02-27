@@ -32,4 +32,3 @@ trait ArgumentResolverTrait
     public abstract function getLeagueContainer(): Automattic\WooCommerce\Vendor\League\Container\Container;
 
 }
-

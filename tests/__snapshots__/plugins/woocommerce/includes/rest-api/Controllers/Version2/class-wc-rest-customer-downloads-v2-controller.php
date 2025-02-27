@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Customers controller class.
  *
@@ -40,4 +38,3 @@ class WC_REST_Customer_Downloads_V2_Controller
     }
 
 }
-

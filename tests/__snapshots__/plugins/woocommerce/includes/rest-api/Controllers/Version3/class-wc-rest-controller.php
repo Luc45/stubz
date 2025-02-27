@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract Rest Controller Class
  *
@@ -260,4 +258,3 @@ abstract class WC_REST_Controller
     }
 
 }
-

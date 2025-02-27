@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order factory class
  */
@@ -91,4 +89,3 @@ class WC_Order_Factory
     }
 
 }
-

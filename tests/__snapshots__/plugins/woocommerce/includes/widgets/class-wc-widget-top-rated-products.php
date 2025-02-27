@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget top rated products class.
  */
@@ -28,4 +26,3 @@ class WC_Widget_Top_Rated_Products
     }
 
 }
-

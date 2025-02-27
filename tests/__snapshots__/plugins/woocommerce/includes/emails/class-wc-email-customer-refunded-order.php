@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer Refunded Order Email.
  *
@@ -165,4 +163,3 @@ class WC_Email_Customer_Refunded_Order
     }
 
 }
-

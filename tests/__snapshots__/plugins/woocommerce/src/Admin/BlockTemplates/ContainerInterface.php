@@ -39,4 +39,3 @@ interface ContainerInterface
     public function remove_blocks();
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_HybridStore
  *
@@ -325,4 +323,3 @@ class ActionScheduler_HybridStore
     }
 
 }
-

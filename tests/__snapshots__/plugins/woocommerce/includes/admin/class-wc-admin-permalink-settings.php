@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Permalink_Settings Class.
  */
@@ -72,4 +70,3 @@ class WC_Admin_Permalink_Settings
     }
 
 }
-

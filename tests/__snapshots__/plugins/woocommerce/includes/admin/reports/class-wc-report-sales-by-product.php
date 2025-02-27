@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Sales_By_Product
  *
@@ -103,4 +101,3 @@ class WC_Report_Sales_By_Product
     }
 
 }
-

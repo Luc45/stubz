@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order query class.
  */
@@ -30,4 +28,3 @@ class WC_Order_Query
     }
 
 }
-

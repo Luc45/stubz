@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Setting Options controller class.
  *
@@ -245,4 +243,3 @@ class WC_REST_Setting_Options_V2_Controller
     }
 
 }
-

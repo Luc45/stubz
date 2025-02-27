@@ -88,4 +88,3 @@ interface MarketingChannelInterface
     public function get_campaigns(): array;
 
 }
-

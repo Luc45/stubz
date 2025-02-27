@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Shipping Method Class.
  *
@@ -424,4 +422,3 @@ abstract class WC_Shipping_Method
     }
 
 }
-

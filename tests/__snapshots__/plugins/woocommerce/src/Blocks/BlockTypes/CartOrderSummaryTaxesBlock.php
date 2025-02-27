@@ -15,4 +15,3 @@ class CartOrderSummaryTaxesBlock
     protected $block_name = 'cart-order-summary-taxes-block';
 
 }
-

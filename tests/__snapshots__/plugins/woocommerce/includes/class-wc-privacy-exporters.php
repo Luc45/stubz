@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Privacy_Exporters Class.
  */
@@ -99,4 +97,3 @@ class WC_Privacy_Exporters
     }
 
 }
-

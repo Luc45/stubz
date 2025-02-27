@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 interface WC_WCCOM_Site_Installation_Step
 {
     /**
@@ -17,4 +15,3 @@ interface WC_WCCOM_Site_Installation_Step
     public function run();
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer Reset Password.
  *
@@ -115,4 +113,3 @@ class WC_Email_Customer_Reset_Password
     }
 
 }
-

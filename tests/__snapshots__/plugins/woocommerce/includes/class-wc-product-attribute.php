@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product attribute class.
  */
@@ -252,4 +250,3 @@ class WC_Product_Attribute implements \ArrayAccess
     }
 
 }
-

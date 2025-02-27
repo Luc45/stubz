@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Subscriptions_API
  *
@@ -98,4 +96,3 @@ class WC_Helper_Subscriptions_API
     }
 
 }
-

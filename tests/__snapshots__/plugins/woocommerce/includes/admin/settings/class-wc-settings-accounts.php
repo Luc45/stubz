@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Accounts.
  */
@@ -41,4 +39,3 @@ class WC_Settings_Accounts
     }
 
 }
-

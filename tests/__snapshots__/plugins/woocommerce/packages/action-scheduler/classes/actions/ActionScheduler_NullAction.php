@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_NullAction
  */
@@ -29,4 +27,3 @@ class ActionScheduler_NullAction
     }
 
 }
-

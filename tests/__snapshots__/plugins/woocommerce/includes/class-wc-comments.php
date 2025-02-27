@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Comments class.
  */
@@ -294,4 +292,3 @@ class WC_Comments
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * CRON field interface
  *
@@ -40,4 +38,3 @@ interface CronExpression_FieldInterface
     public function validate($value);
 
 }
-

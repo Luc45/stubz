@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Schedule
  */
@@ -24,4 +22,3 @@ interface ActionScheduler_Schedule
     public function is_recurring();
 
 }
-

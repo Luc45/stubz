@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Cheque Payment Gateway.
  *
@@ -72,4 +70,3 @@ class WC_Gateway_Cheque
     }
 
 }
-

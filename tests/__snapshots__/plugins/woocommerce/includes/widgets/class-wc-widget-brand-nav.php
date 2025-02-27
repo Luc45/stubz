@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Layered Navigation Widget for brands WC 2.6 version
  *
@@ -165,4 +163,3 @@ class WC_Widget_Brand_Nav
     }
 
 }
-

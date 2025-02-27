@@ -229,4 +229,3 @@ function wc_get_cart_item_data_hash($product)
 {
     // stub
 }
-

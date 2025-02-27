@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shipping methods controller class.
  *
@@ -18,4 +16,3 @@ class WC_REST_Shipping_Methods_Controller
     protected $namespace = 'wc/v3';
 
 }
-

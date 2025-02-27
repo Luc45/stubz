@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Assets Class.
  */
@@ -65,4 +63,3 @@ class WC_Admin_Assets
     }
 
 }
-

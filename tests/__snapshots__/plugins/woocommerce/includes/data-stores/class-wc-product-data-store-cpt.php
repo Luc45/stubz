@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Product Data Store: Stored in CPT.
  *
@@ -721,4 +719,3 @@ class WC_Product_Data_Store_CPT
     }
 
 }
-

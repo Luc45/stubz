@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Dashboard Class.
  */
@@ -132,4 +130,3 @@ class WC_Admin_Dashboard
     }
 
 }
-

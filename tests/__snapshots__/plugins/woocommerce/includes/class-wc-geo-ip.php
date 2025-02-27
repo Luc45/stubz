@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Geo_IP Class.
  *
@@ -1343,8 +1341,6 @@ class WC_Geo_IP
 
 }
 
-namespace ;
-
 /**
  * Geo IP Record class.
  */
@@ -1438,4 +1434,3 @@ class WC_Geo_IP_Record
     public $continent_code = null;
 
 }
-

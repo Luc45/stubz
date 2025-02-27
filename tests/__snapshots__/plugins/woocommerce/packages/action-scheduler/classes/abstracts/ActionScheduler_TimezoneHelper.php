@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_TimezoneHelper
  */
@@ -70,4 +68,3 @@ abstract class ActionScheduler_TimezoneHelper
     }
 
 }
-

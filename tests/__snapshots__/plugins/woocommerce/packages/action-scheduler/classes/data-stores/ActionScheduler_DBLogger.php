@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_DBLogger
  *
@@ -92,4 +90,3 @@ class ActionScheduler_DBLogger
     }
 
 }
-

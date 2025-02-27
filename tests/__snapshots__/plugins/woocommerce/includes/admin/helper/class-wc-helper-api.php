@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_API Class
  *
@@ -135,4 +133,3 @@ class WC_Helper_API
     }
 
 }
-

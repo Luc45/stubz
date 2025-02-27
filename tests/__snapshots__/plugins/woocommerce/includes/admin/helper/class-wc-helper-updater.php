@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Updater Class
  *
@@ -260,4 +258,3 @@ class WC_Helper_Updater
     }
 
 }
-

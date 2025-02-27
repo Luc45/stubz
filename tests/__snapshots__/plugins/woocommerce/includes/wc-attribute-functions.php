@@ -321,4 +321,3 @@ function wc_attribute_taxonomy_slug($attribute_name)
 {
     // stub
 }
-

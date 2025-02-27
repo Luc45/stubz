@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Session
  */
@@ -124,4 +122,3 @@ abstract class WC_Session
     }
 
 }
-

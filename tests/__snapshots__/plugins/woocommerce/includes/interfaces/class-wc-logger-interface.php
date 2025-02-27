@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Logger Interface
  *
@@ -139,4 +137,3 @@ interface WC_Logger_Interface
 ));
 
 }
-

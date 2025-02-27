@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract WC Log Handler Class
  *
@@ -47,4 +45,3 @@ abstract class WC_Log_Handler
     }
 
 }
-

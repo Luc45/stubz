@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Provide a way to set simple transient locks to block behaviour
  * for up-to a given duration.
@@ -93,4 +91,3 @@ class ActionScheduler_OptionLock
     }
 
 }
-

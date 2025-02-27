@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Action Queue
  *
@@ -159,4 +157,3 @@ class WC_Action_Queue
     }
 
 }
-

@@ -15,4 +15,3 @@ class CheckoutTermsBlock
     protected $block_name = 'checkout-terms-block';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Attributes controller class.
  *
@@ -18,4 +16,3 @@ class WC_REST_Product_Attributes_V2_Controller
     protected $namespace = 'wc/v2';
 
 }
-

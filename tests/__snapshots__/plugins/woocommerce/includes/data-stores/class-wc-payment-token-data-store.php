@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Payment Token Data Store: Custom Table.
  *
@@ -183,4 +181,3 @@ class WC_Payment_Token_Data_Store
     }
 
 }
-

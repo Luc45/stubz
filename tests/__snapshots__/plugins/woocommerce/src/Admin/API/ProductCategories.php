@@ -18,4 +18,3 @@ class ProductCategories
     protected $namespace = 'wc-analytics';
 
 }
-

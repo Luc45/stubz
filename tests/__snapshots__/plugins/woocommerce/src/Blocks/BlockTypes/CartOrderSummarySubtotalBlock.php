@@ -15,4 +15,3 @@ class CartOrderSummarySubtotalBlock
     protected $block_name = 'cart-order-summary-subtotal-block';
 
 }
-

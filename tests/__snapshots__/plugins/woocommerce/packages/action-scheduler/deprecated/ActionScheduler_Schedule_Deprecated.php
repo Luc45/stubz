@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Abstract_Schedule
  */
@@ -21,4 +19,3 @@ abstract class ActionScheduler_Schedule_Deprecated
     }
 
 }
-

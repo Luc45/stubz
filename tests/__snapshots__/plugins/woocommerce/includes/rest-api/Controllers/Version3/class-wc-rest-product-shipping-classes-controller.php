@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Shipping Classes controller class.
  *
@@ -37,4 +35,3 @@ class WC_REST_Product_Shipping_Classes_Controller
     }
 
 }
-

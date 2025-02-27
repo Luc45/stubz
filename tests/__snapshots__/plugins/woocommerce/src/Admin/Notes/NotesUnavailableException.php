@@ -8,4 +8,3 @@ namespace Automattic\WooCommerce\Admin\Notes;
 class NotesUnavailableException
 {
 }
-

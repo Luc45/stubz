@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract CRON expression field
  *
@@ -73,4 +71,3 @@ abstract class CronExpression_AbstractField
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Tags controller class.
  *
@@ -54,4 +52,3 @@ class WC_REST_Product_Tags_V1_Controller
     }
 
 }
-

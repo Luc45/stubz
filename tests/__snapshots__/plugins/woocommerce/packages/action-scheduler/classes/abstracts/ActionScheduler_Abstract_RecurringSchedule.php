@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Abstract_RecurringSchedule
  */
@@ -104,4 +102,3 @@ abstract class ActionScheduler_Abstract_RecurringSchedule
     }
 
 }
-

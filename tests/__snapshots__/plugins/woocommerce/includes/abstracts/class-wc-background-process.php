@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Background_Process class.
  */
@@ -90,4 +88,3 @@ abstract class WC_Background_Process
     }
 
 }
-

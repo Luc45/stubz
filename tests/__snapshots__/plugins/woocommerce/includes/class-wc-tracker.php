@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Tracker Class
  */
@@ -442,4 +440,3 @@ class WC_Tracker
     }
 
 }
-

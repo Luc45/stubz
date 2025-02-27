@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Performs tax calculations and loads tax rates
  *
@@ -597,4 +595,3 @@ class WC_Tax
     }
 
 }
-

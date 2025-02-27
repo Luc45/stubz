@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Duplicate_Product Class.
  */
@@ -81,4 +79,3 @@ class WC_Admin_Duplicate_Product
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Exporters Class.
  */
@@ -93,4 +91,3 @@ class WC_Admin_Exporters
     }
 
 }
-

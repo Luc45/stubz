@@ -15,4 +15,3 @@ class CheckoutPickupOptionsBlock
     protected $block_name = 'checkout-pickup-options-block';
 
 }
-

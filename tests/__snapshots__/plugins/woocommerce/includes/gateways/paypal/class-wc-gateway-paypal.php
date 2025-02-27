@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Gateway_Paypal Class.
  */
@@ -276,4 +274,3 @@ class WC_Gateway_Paypal
     }
 
 }
-

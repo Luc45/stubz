@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Low stock report class.
  */
@@ -27,4 +25,3 @@ class WC_Report_Low_In_Stock
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * The WooCommerce countries class stores country/state data.
  */
@@ -416,4 +414,3 @@ class WC_Countries
     }
 
 }
-

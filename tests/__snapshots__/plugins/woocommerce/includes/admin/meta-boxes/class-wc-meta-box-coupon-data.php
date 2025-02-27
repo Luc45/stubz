@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Meta_Box_Coupon_Data Class.
  */
@@ -29,4 +27,3 @@ class WC_Meta_Box_Coupon_Data
     }
 
 }
-

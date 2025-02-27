@@ -117,4 +117,3 @@ function wc_get_order_id_by_order_item_id($item_id)
 {
     // stub
 }
-

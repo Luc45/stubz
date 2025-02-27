@@ -15,4 +15,3 @@ class CartItemsBlock
     protected $block_name = 'cart-items-block';
 
 }
-

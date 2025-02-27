@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Logger
  *
@@ -215,4 +213,3 @@ abstract class ActionScheduler_Logger
     }
 
 }
-

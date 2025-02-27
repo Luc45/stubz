@@ -136,4 +136,3 @@ function wc_get_notice_data_attr($notice)
 {
     // stub
 }
-

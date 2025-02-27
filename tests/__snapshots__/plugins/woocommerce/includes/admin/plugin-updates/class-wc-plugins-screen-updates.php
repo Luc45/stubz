@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class WC_Plugins_Screen_Updates
  */
@@ -65,4 +63,3 @@ class WC_Plugins_Screen_Updates
     }
 
 }
-

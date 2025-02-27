@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Cart class.
  */
@@ -1328,4 +1326,3 @@ class WC_Cart
     }
 
 }
-

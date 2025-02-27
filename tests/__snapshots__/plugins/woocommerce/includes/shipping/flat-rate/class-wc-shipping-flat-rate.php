@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Shipping_Flat_Rate class.
  */
@@ -117,4 +115,3 @@ class WC_Shipping_Flat_Rate
     }
 
 }
-

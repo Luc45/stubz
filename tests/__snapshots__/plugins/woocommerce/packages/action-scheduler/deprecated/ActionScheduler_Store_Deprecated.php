@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Store_Deprecated
  *
@@ -53,4 +51,3 @@ abstract class ActionScheduler_Store_Deprecated
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer New Account.
  *
@@ -136,4 +134,3 @@ class WC_Email_Customer_New_Account
     }
 
 }
-

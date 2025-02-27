@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_WPCommentCleaner
  *
@@ -86,4 +84,3 @@ class ActionScheduler_WPCommentCleaner
     }
 
 }
-

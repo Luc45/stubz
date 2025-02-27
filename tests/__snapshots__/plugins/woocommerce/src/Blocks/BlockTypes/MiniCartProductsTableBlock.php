@@ -15,4 +15,3 @@ class MiniCartProductsTableBlock
     protected $block_name = 'mini-cart-products-table-block';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product importer controller - handles file upload and forms in admin.
  *
@@ -331,4 +329,3 @@ class WC_Product_CSV_Importer_Controller
     }
 
 }
-

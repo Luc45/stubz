@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Commands for Action Scheduler.
  */
@@ -120,4 +118,3 @@ class ActionScheduler_WPCLI_Scheduler_command
     }
 
 }
-

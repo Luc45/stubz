@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Coupons controller class.
  *
@@ -147,4 +145,3 @@ class WC_REST_Coupons_V1_Controller
     }
 
 }
-

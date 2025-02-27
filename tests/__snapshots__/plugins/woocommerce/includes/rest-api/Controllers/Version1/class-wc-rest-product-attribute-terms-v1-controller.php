@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Attribute Terms controller class.
  *
@@ -67,4 +65,3 @@ class WC_REST_Product_Attribute_Terms_V1_Controller
     }
 
 }
-

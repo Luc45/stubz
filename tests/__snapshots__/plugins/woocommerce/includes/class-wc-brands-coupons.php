@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Brands_Coupons class.
  *
@@ -107,4 +105,3 @@ class WC_Brands_Coupons
     }
 
 }
-

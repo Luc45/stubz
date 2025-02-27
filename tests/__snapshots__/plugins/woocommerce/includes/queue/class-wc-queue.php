@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Queue
  *
@@ -59,4 +57,3 @@ class WC_Queue
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract class with common Queue Cleaner functionality.
  */
@@ -19,4 +17,3 @@ abstract class ActionScheduler_Abstract_QueueRunner_Deprecated
     }
 
 }
-

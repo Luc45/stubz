@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shortcode checkout class.
  */
@@ -72,4 +70,3 @@ class WC_Shortcode_Checkout
     }
 
 }
-

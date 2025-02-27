@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer On-hold Order Email.
  *
@@ -87,4 +85,3 @@ class WC_Email_Customer_On_Hold_Order
     }
 
 }
-

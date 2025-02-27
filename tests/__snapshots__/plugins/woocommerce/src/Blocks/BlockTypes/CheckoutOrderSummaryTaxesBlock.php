@@ -15,4 +15,3 @@ class CheckoutOrderSummaryTaxesBlock
     protected $block_name = 'checkout-order-summary-taxes-block';
 
 }
-

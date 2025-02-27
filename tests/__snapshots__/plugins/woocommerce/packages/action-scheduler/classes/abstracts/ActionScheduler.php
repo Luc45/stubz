@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler
  *
@@ -223,4 +221,3 @@ abstract class ActionScheduler
     }
 
 }
-

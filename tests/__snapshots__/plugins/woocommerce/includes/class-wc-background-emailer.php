@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Background_Emailer Class.
  */
@@ -79,4 +77,3 @@ class WC_Background_Emailer
     }
 
 }
-

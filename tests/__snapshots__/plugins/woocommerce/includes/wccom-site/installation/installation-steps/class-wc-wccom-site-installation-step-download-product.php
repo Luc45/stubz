@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_WCCOM_Site_Installation_Step_Download_Product class
  */
@@ -35,4 +33,3 @@ class WC_WCCOM_Site_Installation_Step_Download_Product
     }
 
 }
-

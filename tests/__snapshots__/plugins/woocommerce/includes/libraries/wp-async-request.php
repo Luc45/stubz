@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract WP_Async_Request class.
  */
@@ -125,4 +123,3 @@ abstract class WP_Async_Request
     protected abstract function handle();
 
 }
-

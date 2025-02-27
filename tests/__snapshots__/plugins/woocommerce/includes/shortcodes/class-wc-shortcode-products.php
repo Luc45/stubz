@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Products shortcode class.
  */
@@ -346,4 +344,3 @@ class WC_Shortcode_Products
     }
 
 }
-

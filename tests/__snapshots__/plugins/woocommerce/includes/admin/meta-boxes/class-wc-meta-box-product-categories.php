@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Meta_Box_Product_Categories Class.
  */
@@ -30,4 +28,3 @@ class WC_Meta_Box_Product_Categories
     }
 
 }
-

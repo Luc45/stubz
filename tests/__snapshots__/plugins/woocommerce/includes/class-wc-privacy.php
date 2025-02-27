@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Privacy Class.
  */
@@ -161,4 +159,3 @@ class WC_Privacy
     }
 
 }
-

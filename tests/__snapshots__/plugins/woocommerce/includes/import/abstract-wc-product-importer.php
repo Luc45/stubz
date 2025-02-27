@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Product_Importer Class.
  */
@@ -332,4 +330,3 @@ abstract class WC_Product_Importer
     }
 
 }
-

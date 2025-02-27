@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Blocks Utility class.
  */
@@ -44,4 +42,3 @@ class WC_Blocks_Utils
     }
 
 }
-

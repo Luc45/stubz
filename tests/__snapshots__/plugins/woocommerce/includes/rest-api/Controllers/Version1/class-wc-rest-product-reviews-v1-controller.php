@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Product Reviews Controller Class.
  *
@@ -214,4 +212,3 @@ class WC_REST_Product_Reviews_V1_Controller
     }
 
 }
-

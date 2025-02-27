@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_REST_CRUD_Controller class.
  *
@@ -232,4 +230,3 @@ abstract class WC_REST_CRUD_Controller
     }
 
 }
-

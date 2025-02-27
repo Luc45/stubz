@@ -57,4 +57,3 @@ class RouteException extends \Exception implements \Stringable, \Throwable
     }
 
 }
-

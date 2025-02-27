@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Webhooks.
  */
@@ -148,4 +146,3 @@ class WC_Admin_Webhooks
     }
 
 }
-

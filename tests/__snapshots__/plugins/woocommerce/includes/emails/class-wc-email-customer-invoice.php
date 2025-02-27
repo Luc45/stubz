@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order details email.
  *
@@ -119,4 +117,3 @@ class WC_Email_Customer_Invoice
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Tax.
  */
@@ -128,4 +126,3 @@ class WC_Settings_Tax
     }
 
 }
-

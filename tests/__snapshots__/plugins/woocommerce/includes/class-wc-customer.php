@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer class.
  */
@@ -1065,4 +1063,3 @@ class WC_Customer
     }
 
 }
-

@@ -34,4 +34,3 @@ function wc_importer_default_special_english_mappings($mappings)
 {
     // stub
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Failed Order Email.
  *
@@ -95,4 +93,3 @@ class WC_Email_Failed_Order
     }
 
 }
-

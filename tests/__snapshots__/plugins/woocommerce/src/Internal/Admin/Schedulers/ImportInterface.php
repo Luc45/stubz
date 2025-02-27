@@ -24,4 +24,3 @@ interface ImportInterface
     public static function get_total_imported();
 
 }
-

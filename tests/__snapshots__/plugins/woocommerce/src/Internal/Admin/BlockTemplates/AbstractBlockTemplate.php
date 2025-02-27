@@ -121,4 +121,3 @@ abstract class AbstractBlockTemplate
     }
 
 }
-

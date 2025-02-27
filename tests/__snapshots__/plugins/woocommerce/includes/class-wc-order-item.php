@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item class.
  */
@@ -345,4 +343,3 @@ class WC_Order_Item
     }
 
 }
-

@@ -53,4 +53,3 @@ abstract class AbstractDependencyType
     public abstract function get(Automattic\WooCommerce\Blocks\Registry\Container $container);
 
 }
-

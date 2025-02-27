@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Tracks_Client class.
  */
@@ -99,4 +97,3 @@ class WC_Tracks_Client
     }
 
 }
-

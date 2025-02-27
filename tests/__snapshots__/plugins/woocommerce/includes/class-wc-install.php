@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Install Class.
  */
@@ -965,4 +963,3 @@ class WC_Install
     }
 
 }
-

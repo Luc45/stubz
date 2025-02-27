@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget recent reviews class.
  */
@@ -28,4 +26,3 @@ class WC_Widget_Recent_Reviews
     }
 
 }
-

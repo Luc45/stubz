@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_API class.
  */
@@ -595,4 +593,3 @@ abstract class WC_Settings_API
     }
 
 }
-

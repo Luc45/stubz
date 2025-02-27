@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Local Delivery Shipping Method.
  *
@@ -84,4 +82,3 @@ class WC_Shipping_Legacy_Local_Delivery
     }
 
 }
-

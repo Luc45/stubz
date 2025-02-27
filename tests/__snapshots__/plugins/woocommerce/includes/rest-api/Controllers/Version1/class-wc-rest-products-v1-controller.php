@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Products controller class.
  *
@@ -444,4 +442,3 @@ class WC_REST_Products_V1_Controller
     }
 
 }
-

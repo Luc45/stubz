@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Product Data Store
  *
@@ -64,4 +62,3 @@ class WC_Order_Item_Product_Data_Store
     }
 
 }
-

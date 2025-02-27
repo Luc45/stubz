@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Data Store: Misc Order Item Data functions.
  *
@@ -141,4 +139,3 @@ class WC_Order_Item_Data_Store
     }
 
 }
-

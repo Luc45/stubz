@@ -15,4 +15,3 @@ class CheckoutOrderSummaryShippingBlock
     protected $block_name = 'checkout-order-summary-shipping-block';
 
 }
-

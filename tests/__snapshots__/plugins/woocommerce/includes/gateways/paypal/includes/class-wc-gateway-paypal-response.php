@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles Responses.
  */
@@ -49,4 +47,3 @@ abstract class WC_Gateway_Paypal_Response
     }
 
 }
-

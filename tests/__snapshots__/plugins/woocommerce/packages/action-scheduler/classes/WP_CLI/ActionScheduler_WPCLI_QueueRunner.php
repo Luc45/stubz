@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WP CLI Queue runner.
  *
@@ -142,4 +140,3 @@ class ActionScheduler_WPCLI_QueueRunner
     }
 
 }
-

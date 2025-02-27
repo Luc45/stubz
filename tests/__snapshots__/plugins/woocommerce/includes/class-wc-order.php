@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order Class.
  *
@@ -1709,4 +1707,3 @@ class WC_Order
     }
 
 }
-

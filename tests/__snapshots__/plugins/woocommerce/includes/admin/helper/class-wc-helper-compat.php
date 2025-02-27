@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Compat Class
  *
@@ -74,4 +72,3 @@ class WC_Helper_Compat
     }
 
 }
-

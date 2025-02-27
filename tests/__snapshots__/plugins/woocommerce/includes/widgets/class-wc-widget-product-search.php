@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget product search class.
  */
@@ -29,4 +27,3 @@ class WC_Widget_Product_Search
     }
 
 }
-

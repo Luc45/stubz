@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Log Handler Interface
  *
@@ -24,4 +22,3 @@ interface WC_Log_Handler_Interface
     public function handle($timestamp, $level, $message, $context);
 
 }
-

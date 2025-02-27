@@ -15,4 +15,3 @@ class MiniCartCartButtonBlock
     protected $block_name = 'mini-cart-cart-button-block';
 
 }
-

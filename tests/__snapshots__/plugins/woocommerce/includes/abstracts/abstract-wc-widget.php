@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Widget
  *
@@ -167,4 +165,3 @@ abstract class WC_Widget
     }
 
 }
-

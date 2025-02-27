@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item coupon class.
  */
@@ -153,4 +151,3 @@ class WC_Order_Item_Coupon
     }
 
 }
-

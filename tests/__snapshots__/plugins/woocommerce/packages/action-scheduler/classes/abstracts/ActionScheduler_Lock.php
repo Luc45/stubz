@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract class for setting a basic lock to throttle some action.
  *
@@ -74,4 +72,3 @@ abstract class ActionScheduler_Lock
     }
 
 }
-

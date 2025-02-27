@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Refund Data Store: Stored in CPT.
  *
@@ -79,4 +77,3 @@ class WC_Order_Refund_Data_Store_CPT
     }
 
 }
-

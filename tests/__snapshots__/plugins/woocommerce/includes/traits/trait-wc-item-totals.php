@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Trait WC_Item_Totals.
  *
@@ -72,4 +70,3 @@ trait WC_Item_Totals
     }
 
 }
-

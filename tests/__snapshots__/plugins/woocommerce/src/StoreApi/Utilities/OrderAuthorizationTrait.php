@@ -35,4 +35,3 @@ trait OrderAuthorizationTrait
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Queue Interface
  *
@@ -127,4 +125,3 @@ interface WC_Queue_Interface
 ), $return_format);
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_WCCOM_Site_Installation_State_Storage class
  */
@@ -52,4 +50,3 @@ class WC_WCCOM_Site_Installation_State_Storage
     }
 
 }
-

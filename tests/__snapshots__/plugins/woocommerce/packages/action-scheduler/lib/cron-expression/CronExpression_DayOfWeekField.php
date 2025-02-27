@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Day of week field.  Allows: * / , - ? L #
  *
@@ -44,4 +42,3 @@ class CronExpression_DayOfWeekField
     }
 
 }
-

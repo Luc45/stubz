@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Frontend scripts class.
  */
@@ -187,4 +185,3 @@ class WC_Frontend_Scripts
     }
 
 }
-

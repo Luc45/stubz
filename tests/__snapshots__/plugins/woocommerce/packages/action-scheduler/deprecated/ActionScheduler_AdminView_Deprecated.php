@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_AdminView_Deprecated
  *
@@ -158,4 +156,3 @@ class ActionScheduler_AdminView_Deprecated
     }
 
 }
-

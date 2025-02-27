@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Flat Rate Shipping Method.
  *
@@ -188,4 +186,3 @@ class WC_Shipping_Legacy_Flat_Rate
     }
 
 }
-

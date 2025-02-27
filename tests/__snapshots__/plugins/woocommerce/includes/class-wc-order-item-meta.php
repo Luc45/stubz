@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item meta class.
  */
@@ -95,4 +93,3 @@ class WC_Order_Item_Meta
     }
 
 }
-

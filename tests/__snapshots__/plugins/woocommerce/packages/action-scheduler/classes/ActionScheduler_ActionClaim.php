@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_ActionClaim
  */
@@ -50,4 +48,3 @@ class ActionScheduler_ActionClaim
     }
 
 }
-

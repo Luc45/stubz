@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Brands_Admin class.
  */
@@ -317,4 +315,3 @@ class WC_Brands_Admin
     }
 
 }
-

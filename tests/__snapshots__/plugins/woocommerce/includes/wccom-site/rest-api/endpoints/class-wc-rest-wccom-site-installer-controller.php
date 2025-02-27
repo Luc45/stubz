@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API WCCOM Site Installer Controller Class.
  *
@@ -97,4 +95,3 @@ class WC_REST_WCCOM_Site_Installer_Controller
     }
 
 }
-

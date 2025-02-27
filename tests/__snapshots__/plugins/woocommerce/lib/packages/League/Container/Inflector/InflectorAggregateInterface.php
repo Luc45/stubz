@@ -23,4 +23,3 @@ interface InflectorAggregateInterface
     public function inflect($object);
 
 }
-

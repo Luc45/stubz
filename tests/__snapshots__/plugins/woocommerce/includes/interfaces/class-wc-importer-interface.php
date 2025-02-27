@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Importer_Interface class.
  */
@@ -67,4 +65,3 @@ interface WC_Importer_Interface
     public function get_percent_complete();
 
 }
-

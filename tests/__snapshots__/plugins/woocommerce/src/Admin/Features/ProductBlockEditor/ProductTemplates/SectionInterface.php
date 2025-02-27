@@ -32,4 +32,3 @@ interface SectionInterface
     public function add_section(array $block_config): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface;
 
 }
-

@@ -15,4 +15,3 @@ class MiniCartTitleItemsCounterBlock
     protected $block_name = 'mini-cart-title-items-counter-block';
 
 }
-

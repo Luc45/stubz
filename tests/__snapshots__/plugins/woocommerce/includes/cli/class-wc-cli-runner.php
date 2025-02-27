@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC API to WC CLI Bridge.
  *
@@ -68,4 +66,3 @@ class WC_CLI_Runner
     }
 
 }
-

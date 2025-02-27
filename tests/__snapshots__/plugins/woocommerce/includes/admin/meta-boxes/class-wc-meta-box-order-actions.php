@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Meta_Box_Order_Actions Class.
  */
@@ -68,4 +66,3 @@ class WC_Meta_Box_Order_Actions
     }
 
 }
-

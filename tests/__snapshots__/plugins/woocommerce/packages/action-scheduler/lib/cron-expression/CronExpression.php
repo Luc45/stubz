@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * CRON expression parser that can determine whether or not a CRON expression is
  * due to run, the next run date and previous run date of a CRON expression.
@@ -221,4 +219,3 @@ class CronExpression implements \Stringable
     }
 
 }
-

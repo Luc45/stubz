@@ -915,4 +915,3 @@ function wc_sanitize_endpoint_slug($raw_value)
 {
     // stub
 }
-

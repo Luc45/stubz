@@ -15,4 +15,3 @@ class CartOrderSummaryShippingBlock
     protected $block_name = 'cart-order-summary-shipping-block';
 
 }
-

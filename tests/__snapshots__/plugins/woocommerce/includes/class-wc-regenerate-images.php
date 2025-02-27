@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Regenerate Images Class
  */
@@ -189,4 +187,3 @@ class WC_Regenerate_Images
     }
 
 }
-

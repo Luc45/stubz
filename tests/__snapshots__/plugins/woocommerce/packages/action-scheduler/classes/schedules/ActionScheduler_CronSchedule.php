@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_CronSchedule
  */
@@ -85,4 +83,3 @@ class ActionScheduler_CronSchedule
     }
 
 }
-

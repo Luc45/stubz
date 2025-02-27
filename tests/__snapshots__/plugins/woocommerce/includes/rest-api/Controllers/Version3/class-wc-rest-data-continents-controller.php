@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Data continents controller class.
  *
@@ -107,4 +105,3 @@ class WC_REST_Data_Continents_Controller
     }
 
 }
-

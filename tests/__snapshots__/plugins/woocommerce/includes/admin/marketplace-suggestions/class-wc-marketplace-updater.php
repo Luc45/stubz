@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Marketplace Suggestions Updater
  */
@@ -41,4 +39,3 @@ class WC_Marketplace_Updater
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Shipping.
  */
@@ -160,4 +158,3 @@ class WC_Settings_Shipping
     }
 
 }
-

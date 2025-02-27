@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Paymenga gateways controller class.
  *
@@ -166,4 +164,3 @@ class WC_REST_Payment_Gateways_V2_Controller
     }
 
 }
-

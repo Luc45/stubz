@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Plugin Class
  *
@@ -96,4 +94,3 @@ class WC_Woo_Update_Manager_Plugin
     }
 
 }
-

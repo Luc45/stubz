@@ -15,4 +15,3 @@ class CheckoutOrderSummaryFeeBlock
     protected $block_name = 'checkout-order-summary-fee-block';
 
 }
-

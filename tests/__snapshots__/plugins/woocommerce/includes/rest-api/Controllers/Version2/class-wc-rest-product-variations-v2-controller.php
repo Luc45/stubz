@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API variations controller class.
  *
@@ -192,4 +190,3 @@ class WC_REST_Product_Variations_V2_Controller
     }
 
 }
-

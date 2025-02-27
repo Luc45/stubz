@@ -60,4 +60,3 @@ interface CacheEngine
     public function delete_cache_group(string $group = ''): bool;
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Product_Usage_Rule_Set.
  */
@@ -36,4 +34,3 @@ class WC_Product_Usage_Rule_Set
     }
 
 }
-

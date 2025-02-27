@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Utils for compatibility with WooCommerce Full Site Editor Blocks
  *
@@ -107,4 +105,3 @@ class WC_Brands_Block_Templates
     }
 
 }
-

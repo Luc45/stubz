@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * CLI class.
  */
@@ -40,4 +38,3 @@ class WC_CLI
     }
 
 }
-

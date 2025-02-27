@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Minutes field.  Allows: * , / -
  *
@@ -34,4 +32,3 @@ class CronExpression_MinutesField
     }
 
 }
-

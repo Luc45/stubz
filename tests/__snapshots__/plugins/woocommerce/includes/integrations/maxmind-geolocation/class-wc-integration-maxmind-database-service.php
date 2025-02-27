@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * The service class responsible for interacting with MaxMind databases.
  *
@@ -63,4 +61,3 @@ class WC_Integration_MaxMind_Database_Service
     }
 
 }
-

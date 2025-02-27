@@ -15,4 +15,3 @@ class CheckoutBillingAddressBlock
     protected $block_name = 'checkout-billing-address-block';
 
 }
-

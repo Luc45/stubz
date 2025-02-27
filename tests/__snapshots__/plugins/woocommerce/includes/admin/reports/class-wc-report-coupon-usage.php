@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Coupon_Usage
  *
@@ -87,4 +85,3 @@ class WC_Report_Coupon_Usage
     }
 
 }
-

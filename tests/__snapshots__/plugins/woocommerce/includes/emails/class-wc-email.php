@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Email Class
  *
@@ -696,4 +694,3 @@ class WC_Email
     }
 
 }
-

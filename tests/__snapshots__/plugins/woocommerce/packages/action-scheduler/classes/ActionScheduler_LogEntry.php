@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_LogEntry
  */
@@ -68,4 +66,3 @@ class ActionScheduler_LogEntry
     }
 
 }
-

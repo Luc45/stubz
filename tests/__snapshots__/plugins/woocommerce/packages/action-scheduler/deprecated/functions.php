@@ -123,4 +123,3 @@ function wc_get_scheduled_actions($args = array (
 {
     // stub
 }
-

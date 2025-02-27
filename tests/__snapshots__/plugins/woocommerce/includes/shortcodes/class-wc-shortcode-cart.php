@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shortcode cart class.
  */
@@ -28,4 +26,3 @@ class WC_Shortcode_Cart
     }
 
 }
-

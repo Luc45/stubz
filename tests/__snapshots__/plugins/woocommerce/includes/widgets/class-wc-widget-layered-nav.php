@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget layered nav class.
  */
@@ -201,4 +199,3 @@ class WC_Widget_Layered_Nav
     }
 
 }
-

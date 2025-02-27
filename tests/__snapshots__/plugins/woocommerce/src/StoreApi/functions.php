@@ -51,4 +51,3 @@ function woocommerce_store_api_get_formatter($name)
 {
     // stub
 }
-

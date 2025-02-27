@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_DBStoreMigrator
  *
@@ -31,4 +29,3 @@ class ActionScheduler_DBStoreMigrator
     }
 
 }
-

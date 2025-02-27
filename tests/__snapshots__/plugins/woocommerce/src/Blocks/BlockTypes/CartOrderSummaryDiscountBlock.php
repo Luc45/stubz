@@ -15,4 +15,3 @@ class CartOrderSummaryDiscountBlock
     protected $block_name = 'cart-order-summary-discount-block';
 
 }
-

@@ -15,4 +15,3 @@ class MiniCartFooterBlock
     protected $block_name = 'mini-cart-footer-block';
 
 }
-

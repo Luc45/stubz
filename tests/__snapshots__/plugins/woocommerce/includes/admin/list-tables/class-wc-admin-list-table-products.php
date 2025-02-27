@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_List_Table_Products Class.
  */
@@ -380,4 +378,3 @@ class WC_Admin_List_Table_Products
     }
 
 }
-

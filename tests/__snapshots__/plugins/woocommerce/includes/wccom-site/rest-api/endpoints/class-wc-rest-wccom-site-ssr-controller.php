@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API WCCOM System Status Report Controller Class.
  *
@@ -51,4 +49,3 @@ class WC_REST_WCCOM_Site_SSR_Controller
     }
 
 }
-

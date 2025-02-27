@@ -8,4 +8,3 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 class ParameterException
 {
 }
-

@@ -34,4 +34,3 @@ function __internal_woocommerce_blocks_deregister_checkout_field($field_id)
 {
     // stub
 }
-

@@ -11,4 +11,3 @@ function wc_importer_generic_mappings($mappings)
 {
     // stub
 }
-

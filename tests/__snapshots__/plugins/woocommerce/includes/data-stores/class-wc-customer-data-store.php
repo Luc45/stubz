@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Customer Data Store.
  *
@@ -214,4 +212,3 @@ class WC_Customer_Data_Store
     }
 
 }
-

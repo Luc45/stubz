@@ -1037,4 +1037,3 @@ function wc_get_log_file_name($handle)
 {
     // stub
 }
-

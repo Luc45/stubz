@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract WC Data Class
  *
@@ -607,4 +605,3 @@ abstract class WC_Data implements \Stringable
     }
 
 }
-

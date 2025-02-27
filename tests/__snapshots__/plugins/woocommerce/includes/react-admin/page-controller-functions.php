@@ -54,4 +54,3 @@ function wc_admin_get_breadcrumbs()
 {
     // stub
 }
-

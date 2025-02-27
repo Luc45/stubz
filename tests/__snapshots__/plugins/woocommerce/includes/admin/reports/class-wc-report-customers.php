@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Customers
  *
@@ -79,4 +77,3 @@ class WC_Report_Customers
     }
 
 }
-

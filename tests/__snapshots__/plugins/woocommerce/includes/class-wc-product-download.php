@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product download class.
  */
@@ -286,4 +284,3 @@ class WC_Product_Download implements \ArrayAccess
     }
 
 }
-

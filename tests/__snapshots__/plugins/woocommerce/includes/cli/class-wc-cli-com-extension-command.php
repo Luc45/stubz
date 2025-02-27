@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Allows to interact with extensions from WCCOM marketplace via CLI.
  *
@@ -70,4 +68,3 @@ class WC_CLI_COM_Extension_Command
     }
 
 }
-

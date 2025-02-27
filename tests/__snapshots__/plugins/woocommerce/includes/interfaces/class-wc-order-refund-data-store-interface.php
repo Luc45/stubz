@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Refund Data Store Interface
  *
@@ -12,4 +10,3 @@ namespace ;
 interface WC_Order_Refund_Data_Store_Interface
 {
 }
-

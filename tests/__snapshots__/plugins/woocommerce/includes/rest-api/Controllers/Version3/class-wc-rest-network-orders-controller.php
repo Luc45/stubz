@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Network Orders controller class.
  *
@@ -18,4 +16,3 @@ class WC_REST_Network_Orders_Controller
     protected $namespace = 'wc/v3';
 
 }
-

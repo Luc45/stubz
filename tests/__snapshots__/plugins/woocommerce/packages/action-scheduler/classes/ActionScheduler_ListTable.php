@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Implements the admin view of the actions.
  *
@@ -305,4 +303,3 @@ class ActionScheduler_ListTable
     }
 
 }
-

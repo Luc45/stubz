@@ -15,4 +15,3 @@ class CheckoutOrderNoteBlock
     protected $block_name = 'checkout-order-note-block';
 
 }
-

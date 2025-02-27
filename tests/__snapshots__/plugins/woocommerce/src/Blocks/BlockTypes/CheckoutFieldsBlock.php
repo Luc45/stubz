@@ -15,4 +15,3 @@ class CheckoutFieldsBlock
     protected $block_name = 'checkout-fields-block';
 
 }
-

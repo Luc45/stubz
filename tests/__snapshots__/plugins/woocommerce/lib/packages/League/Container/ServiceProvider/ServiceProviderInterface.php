@@ -43,4 +43,3 @@ interface ServiceProviderInterface
     public function getIdentifier(): string;
 
 }
-

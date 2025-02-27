@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Day of month field.  Allows: * , / - ? L W
  *
@@ -61,4 +59,3 @@ class CronExpression_DayOfMonthField
     }
 
 }
-

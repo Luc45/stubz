@@ -13,4 +13,3 @@ interface BootableServiceProviderInterface
     public function boot();
 
 }
-

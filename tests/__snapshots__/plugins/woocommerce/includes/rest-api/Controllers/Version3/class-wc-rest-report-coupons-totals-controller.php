@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Reports Coupons Totals controller class.
  *
@@ -58,4 +56,3 @@ class WC_REST_Report_Coupons_Totals_Controller
     }
 
 }
-

@@ -38,4 +38,3 @@ function wc_admin_record_tracks_event($event_name, $properties = array (
 {
     // stub
 }
-

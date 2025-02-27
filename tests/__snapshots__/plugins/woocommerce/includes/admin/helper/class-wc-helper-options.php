@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Options Class
  *
@@ -48,4 +46,3 @@ class WC_Helper_Options
     }
 
 }
-

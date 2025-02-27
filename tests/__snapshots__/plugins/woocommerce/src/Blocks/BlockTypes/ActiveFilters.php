@@ -15,4 +15,3 @@ class ActiveFilters
     protected $block_name = 'active-filters';
 
 }
-

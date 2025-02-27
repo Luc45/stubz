@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Reports Orders Totals controller class.
  *
@@ -58,4 +56,3 @@ class WC_REST_Report_Orders_Totals_Controller
     }
 
 }
-

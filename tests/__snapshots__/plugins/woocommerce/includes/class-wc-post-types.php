@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Post types Class.
  */
@@ -101,4 +99,3 @@ class WC_Post_Types
     }
 
 }
-

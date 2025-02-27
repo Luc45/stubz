@@ -388,4 +388,3 @@ function wc_translate_user_roles($translation, $text, $context, $domain)
 {
     // stub
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Shipping Zone Methods class.
  *
@@ -28,4 +26,3 @@ class WC_REST_Shipping_Zone_Methods_Controller
     }
 
 }
-

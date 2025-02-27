@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Terms controller class.
  */
@@ -247,4 +245,3 @@ abstract class WC_REST_Terms_Controller
     }
 
 }
-

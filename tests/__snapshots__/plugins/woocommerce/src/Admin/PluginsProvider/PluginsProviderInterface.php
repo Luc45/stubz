@@ -35,4 +35,3 @@ interface PluginsProviderInterface
     public function get_plugin_path_from_slug($slug);
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget recently viewed.
  */
@@ -28,4 +26,3 @@ class WC_Widget_Recently_Viewed
     }
 
 }
-

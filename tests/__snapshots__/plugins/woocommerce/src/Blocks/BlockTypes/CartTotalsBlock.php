@@ -15,4 +15,3 @@ class CartTotalsBlock
     protected $block_name = 'cart-totals-block';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Abstract_Order class.
  */
@@ -1409,4 +1407,3 @@ abstract class WC_Abstract_Order
     }
 
 }
-

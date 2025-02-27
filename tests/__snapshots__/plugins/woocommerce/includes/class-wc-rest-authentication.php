@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API authentication class.
  */
@@ -326,4 +324,3 @@ class WC_REST_Authentication
     }
 
 }
-

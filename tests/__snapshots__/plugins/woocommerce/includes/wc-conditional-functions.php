@@ -395,4 +395,3 @@ function wc_block_theme_has_styles_for_element($element)
 {
     // stub
 }
-

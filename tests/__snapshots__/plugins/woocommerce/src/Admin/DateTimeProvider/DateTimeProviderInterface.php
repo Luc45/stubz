@@ -15,4 +15,3 @@ interface DateTimeProviderInterface
     public function get_now();
 
 }
-

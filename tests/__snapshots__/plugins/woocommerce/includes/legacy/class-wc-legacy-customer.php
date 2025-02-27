@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Customer.
  *
@@ -248,4 +246,3 @@ abstract class WC_Legacy_Customer
     }
 
 }
-

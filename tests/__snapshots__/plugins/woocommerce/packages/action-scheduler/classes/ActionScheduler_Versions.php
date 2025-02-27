@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Versions
  */
@@ -79,4 +77,3 @@ class ActionScheduler_Versions
     }
 
 }
-

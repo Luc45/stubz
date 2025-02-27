@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item fee.
  */
@@ -255,4 +253,3 @@ class WC_Order_Item_Fee
     }
 
 }
-

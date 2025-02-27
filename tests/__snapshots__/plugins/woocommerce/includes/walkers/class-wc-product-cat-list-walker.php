@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product cat list walker class.
  */
@@ -118,4 +116,3 @@ class WC_Product_Cat_List_Walker
     }
 
 }
-

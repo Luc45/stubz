@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Validation class.
  */
@@ -76,4 +74,3 @@ class WC_Validation
     }
 
 }
-

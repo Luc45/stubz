@@ -982,4 +982,3 @@ class MobileDetect
     }
 
 }
-

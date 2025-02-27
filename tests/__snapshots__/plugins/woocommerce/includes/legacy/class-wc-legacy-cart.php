@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy cart class.
  */
@@ -285,4 +283,3 @@ abstract class WC_Legacy_Cart
     }
 
 }
-

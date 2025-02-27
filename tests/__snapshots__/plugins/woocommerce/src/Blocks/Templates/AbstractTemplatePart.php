@@ -19,4 +19,3 @@ abstract class AbstractTemplatePart
     public $template_area = null;
 
 }
-

@@ -1146,4 +1146,3 @@ function wc_update_961_migrate_default_email_base_color()
 {
     // stub
 }
-

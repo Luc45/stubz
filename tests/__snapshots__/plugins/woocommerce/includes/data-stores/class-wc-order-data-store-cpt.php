@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Data Store: Stored in CPT.
  *
@@ -562,4 +560,3 @@ class WC_Order_Data_Store_CPT
     }
 
 }
-

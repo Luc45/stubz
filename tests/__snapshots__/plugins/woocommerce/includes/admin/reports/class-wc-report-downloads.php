@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Downloads.
  */
@@ -99,4 +97,3 @@ class WC_Report_Downloads
     }
 
 }
-

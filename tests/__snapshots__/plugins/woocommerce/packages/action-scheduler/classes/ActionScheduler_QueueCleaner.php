@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_QueueCleaner
  */
@@ -131,4 +129,3 @@ class ActionScheduler_QueueCleaner
     }
 
 }
-

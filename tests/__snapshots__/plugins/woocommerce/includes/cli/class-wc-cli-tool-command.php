@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Hooks up our system status tools to the CLI.
  *
@@ -24,4 +22,3 @@ class WC_CLI_Tool_Command
     }
 
 }
-

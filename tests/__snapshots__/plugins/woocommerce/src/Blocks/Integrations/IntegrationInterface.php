@@ -43,4 +43,3 @@ interface IntegrationInterface
     public function get_script_data();
 
 }
-

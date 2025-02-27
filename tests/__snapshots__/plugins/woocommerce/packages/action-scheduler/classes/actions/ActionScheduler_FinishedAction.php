@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_FinishedAction
  */
@@ -24,4 +22,3 @@ class ActionScheduler_FinishedAction
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Twenty_Twelve class.
  */
@@ -42,4 +40,3 @@ class WC_Twenty_Twelve
     }
 
 }
-

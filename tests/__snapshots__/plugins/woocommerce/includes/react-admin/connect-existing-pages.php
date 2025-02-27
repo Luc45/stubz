@@ -32,4 +32,3 @@ function wc_admin_connect_core_pages($is_connected, $current_page)
 {
     // stub
 }
-

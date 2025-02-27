@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Payment Token Data Store Interface
  *
@@ -67,4 +65,3 @@ interface WC_Payment_Token_Data_Store_Interface
     public function set_default_status($token_id, $status = true);
 
 }
-

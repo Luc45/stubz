@@ -1745,4 +1745,3 @@ function wc_add_aria_label_to_pagination_numbers($html, $args)
 {
     // stub
 }
-

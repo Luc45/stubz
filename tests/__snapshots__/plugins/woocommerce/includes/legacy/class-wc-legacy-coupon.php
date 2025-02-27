@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Coupon.
  *
@@ -97,4 +95,3 @@ abstract class WC_Legacy_Coupon
     }
 
 }
-

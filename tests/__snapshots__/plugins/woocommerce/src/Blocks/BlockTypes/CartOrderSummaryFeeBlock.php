@@ -15,4 +15,3 @@ class CartOrderSummaryFeeBlock
     protected $block_name = 'cart-order-summary-fee-block';
 
 }
-

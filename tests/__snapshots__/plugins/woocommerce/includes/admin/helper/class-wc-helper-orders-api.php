@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Helper_Orders_API
  *
@@ -52,4 +50,3 @@ class WC_Helper_Orders_API
     }
 
 }
-

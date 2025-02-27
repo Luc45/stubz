@@ -132,4 +132,3 @@ abstract class TableMigrator
     }
 
 }
-

@@ -87,4 +87,3 @@ trait CouponsMovedTrait
     }
 
 }
-

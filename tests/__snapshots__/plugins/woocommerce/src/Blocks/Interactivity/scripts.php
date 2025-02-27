@@ -18,4 +18,3 @@ function woocommerce_interactivity_register_runtime()
 {
     // stub
 }
-

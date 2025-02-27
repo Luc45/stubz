@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Product Variable Data Store Interface
  *
@@ -75,4 +73,3 @@ interface WC_Product_Variable_Data_Store_Interface
     public function untrash_variations($product_id);
 
 }
-

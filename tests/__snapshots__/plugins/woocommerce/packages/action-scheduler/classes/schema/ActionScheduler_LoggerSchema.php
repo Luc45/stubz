@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_LoggerSchema
  *
@@ -66,4 +64,3 @@ class ActionScheduler_LoggerSchema
     }
 
 }
-

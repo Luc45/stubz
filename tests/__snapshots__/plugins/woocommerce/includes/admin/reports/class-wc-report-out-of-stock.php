@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Out_Of_Stock class.
  */
@@ -27,4 +25,3 @@ class WC_Report_Out_Of_Stock
     }
 
 }
-

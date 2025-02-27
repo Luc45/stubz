@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Cart_Session class.
  *
@@ -171,4 +169,3 @@ final class WC_Cart_Session
     }
 
 }
-

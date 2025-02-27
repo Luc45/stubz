@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Customer Download Data Store.
  *
@@ -229,4 +227,3 @@ class WC_Customer_Download_Data_Store
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Meta_Box_Product_Short_Description Class.
  */
@@ -18,4 +16,3 @@ class WC_Meta_Box_Product_Short_Description
     }
 
 }
-

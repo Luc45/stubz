@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Main Command for WooCommerce CLI.
  *
@@ -238,4 +236,3 @@ class WC_CLI_REST_Command
     }
 
 }
-

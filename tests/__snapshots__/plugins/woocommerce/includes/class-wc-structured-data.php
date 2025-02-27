@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Structured data class.
  */
@@ -182,4 +180,3 @@ class WC_Structured_Data
     }
 
 }
-

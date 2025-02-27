@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_StoreSchema
  *
@@ -72,4 +70,3 @@ class ActionScheduler_StoreSchema
     }
 
 }
-

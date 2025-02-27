@@ -171,4 +171,3 @@ function wc_rest_should_load_namespace(string $ns, string $rest_route = ''): boo
 {
     // stub
 }
-

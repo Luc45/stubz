@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Geolocation Class.
  */
@@ -171,4 +169,3 @@ class WC_Geolocation
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Datetime class.
  */
@@ -105,4 +103,3 @@ class WC_DateTime extends \DateTime implements \DateTimeInterface, \Stringable
     }
 
 }
-

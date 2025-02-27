@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_DataController
  *
@@ -164,4 +162,3 @@ class ActionScheduler_DataController
     }
 
 }
-

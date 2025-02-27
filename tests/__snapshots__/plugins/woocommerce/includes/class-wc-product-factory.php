@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product factory class.
  */
@@ -69,4 +67,3 @@ class WC_Product_Factory
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Report_Taxes_By_Code
  *
@@ -45,4 +43,3 @@ class WC_Report_Taxes_By_Code
     }
 
 }
-

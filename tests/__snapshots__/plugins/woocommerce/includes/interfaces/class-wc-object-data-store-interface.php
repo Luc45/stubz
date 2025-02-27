@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Data Store Interface
  *
@@ -75,4 +73,3 @@ interface WC_Object_Data_Store_Interface
     public function update_meta(&$data, $meta);
 
 }
-

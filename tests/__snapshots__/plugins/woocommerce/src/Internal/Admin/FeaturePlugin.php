@@ -119,4 +119,3 @@ class FeaturePlugin
 }
 
 const WC_ADMIN_VERSION_NUMBER = '3.3.0';
-

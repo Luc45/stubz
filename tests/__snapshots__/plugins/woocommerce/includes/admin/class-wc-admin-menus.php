@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Menus Class.
  */
@@ -265,4 +263,3 @@ class WC_Admin_Menus
     }
 
 }
-

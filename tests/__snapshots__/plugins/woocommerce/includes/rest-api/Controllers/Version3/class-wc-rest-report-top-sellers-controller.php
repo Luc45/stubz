@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Report Top Sellers controller class.
  *
@@ -18,4 +16,3 @@ class WC_REST_Report_Top_Sellers_Controller
     protected $namespace = 'wc/v3';
 
 }
-

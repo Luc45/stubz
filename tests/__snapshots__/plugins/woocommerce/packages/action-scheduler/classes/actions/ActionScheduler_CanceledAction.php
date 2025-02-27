@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_CanceledAction
  *
@@ -25,4 +23,3 @@ class ActionScheduler_CanceledAction
     }
 
 }
-

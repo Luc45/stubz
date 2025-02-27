@@ -25,4 +25,3 @@ class Controller
     protected $rest_base = 'reports/downloads/files';
 
 }
-

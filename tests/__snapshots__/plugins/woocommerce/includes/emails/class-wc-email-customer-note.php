@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer Note Order Email.
  *
@@ -93,4 +91,3 @@ class WC_Email_Customer_Note
     }
 
 }
-

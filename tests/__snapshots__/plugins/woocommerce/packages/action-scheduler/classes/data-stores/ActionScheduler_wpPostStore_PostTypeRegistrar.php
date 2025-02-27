@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_wpPostStore_PostTypeRegistrar
  *
@@ -28,4 +26,3 @@ class ActionScheduler_wpPostStore_PostTypeRegistrar
     }
 
 }
-

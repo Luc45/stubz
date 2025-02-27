@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Integrations class.
  */
@@ -46,4 +44,3 @@ class WC_Integrations
     }
 
 }
-

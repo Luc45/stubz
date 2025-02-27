@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Customizer_Control_Cropping class.
  */
@@ -23,4 +21,3 @@ class WC_Customizer_Control_Cropping
     }
 
 }
-

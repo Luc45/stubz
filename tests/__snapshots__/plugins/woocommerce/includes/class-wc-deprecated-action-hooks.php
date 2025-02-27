@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles deprecation notices and triggering of legacy action hooks.
  */
@@ -117,4 +115,3 @@ class WC_Deprecated_Action_Hooks
     }
 
 }
-

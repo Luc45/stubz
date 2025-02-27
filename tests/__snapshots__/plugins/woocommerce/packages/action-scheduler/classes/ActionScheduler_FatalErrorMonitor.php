@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_FatalErrorMonitor
  */
@@ -83,4 +81,3 @@ class ActionScheduler_FatalErrorMonitor
     }
 
 }
-

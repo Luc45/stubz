@@ -15,4 +15,3 @@ class CartAcceptedPaymentMethodsBlock
     protected $block_name = 'cart-accepted-payment-methods-block';
 
 }
-

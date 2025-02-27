@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Discounts class.
  */
@@ -532,4 +530,3 @@ class WC_Discounts
     }
 
 }
-

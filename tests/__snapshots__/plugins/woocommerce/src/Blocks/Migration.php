@@ -68,4 +68,3 @@ class Migration
 const WP_POST_REVISIONS = false;
 
 const WP_POST_REVISIONS = false;
-

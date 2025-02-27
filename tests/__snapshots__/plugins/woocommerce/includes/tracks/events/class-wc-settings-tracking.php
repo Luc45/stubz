@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * This class adds actions to track usage of WooCommerce Settings.
  */
@@ -142,4 +140,3 @@ class WC_Settings_Tracking
     }
 
 }
-

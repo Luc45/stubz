@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Taxonomies class.
  */
@@ -181,4 +179,3 @@ class WC_Admin_Taxonomies
     }
 
 }
-

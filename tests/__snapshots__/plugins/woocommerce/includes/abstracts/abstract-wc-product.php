@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract Product Class
  *
@@ -2059,4 +2057,3 @@ class WC_Product
     }
 
 }
-

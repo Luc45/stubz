@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Plugin_Updates Class.
  */
@@ -92,4 +90,3 @@ class WC_Plugin_Updates
     }
 
 }
-

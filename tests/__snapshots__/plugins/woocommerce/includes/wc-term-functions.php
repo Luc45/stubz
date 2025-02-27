@@ -273,4 +273,3 @@ function _wc_recount_terms_by_product($product_id = '')
 {
     // stub
 }
-

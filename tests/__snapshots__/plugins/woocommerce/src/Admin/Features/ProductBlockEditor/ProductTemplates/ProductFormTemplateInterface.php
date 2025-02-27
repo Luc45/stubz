@@ -48,4 +48,3 @@ interface ProductFormTemplateInterface
     public function get_block_by_id(string $block_id): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface|null;
 
 }
-

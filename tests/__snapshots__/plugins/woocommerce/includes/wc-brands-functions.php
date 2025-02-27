@@ -77,4 +77,3 @@ function get_brands($post_id = 0, $sep = ', ', $before = '', $after = '')
 {
     // stub
 }
-

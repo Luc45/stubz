@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Customize Class.
  */
@@ -45,4 +43,3 @@ class WC_Admin_Customize
     }
 
 }
-

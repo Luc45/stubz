@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract Integration Class
  *
@@ -72,4 +70,3 @@ abstract class WC_Integration
     }
 
 }
-

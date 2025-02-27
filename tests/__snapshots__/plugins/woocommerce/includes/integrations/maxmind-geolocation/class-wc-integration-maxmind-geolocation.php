@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Integration MaxMind Geolocation
  *
@@ -123,4 +121,3 @@ class WC_Integration_MaxMind_Geolocation
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Credit Card Payment Gateway
  *
@@ -46,4 +44,3 @@ class WC_Payment_Gateway_CC
     }
 
 }
-

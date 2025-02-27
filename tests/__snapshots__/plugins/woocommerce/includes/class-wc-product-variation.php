@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product variation class.
  */
@@ -471,4 +469,3 @@ class WC_Product_Variation
     }
 
 }
-

@@ -34,4 +34,3 @@ interface TransformerInterface
     public function validate(stdClass|null $arguments = null);
 
 }
-

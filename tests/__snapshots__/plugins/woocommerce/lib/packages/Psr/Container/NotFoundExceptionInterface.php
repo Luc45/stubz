@@ -8,4 +8,3 @@ namespace Automattic\WooCommerce\Vendor\Psr\Container;
 interface NotFoundExceptionInterface
 {
 }
-

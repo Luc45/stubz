@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Webhook data store interface.
  */
@@ -27,4 +25,3 @@ interface WC_Webhook_Data_Store_Interface
     public function get_webhooks_ids($status = '');
 
 }
-

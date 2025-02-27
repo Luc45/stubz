@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Webhook class.
  */
@@ -54,4 +52,3 @@ abstract class WC_Legacy_Webhook
     }
 
 }
-

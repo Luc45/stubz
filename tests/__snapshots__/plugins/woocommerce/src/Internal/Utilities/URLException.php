@@ -8,4 +8,3 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 class URLException extends \Exception implements \Stringable, \Throwable
 {
 }
-

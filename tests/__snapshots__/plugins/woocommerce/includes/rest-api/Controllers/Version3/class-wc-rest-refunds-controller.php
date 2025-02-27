@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Order Refunds controller class.
  *
@@ -102,4 +100,3 @@ class WC_REST_Refunds_Controller
     }
 
 }
-

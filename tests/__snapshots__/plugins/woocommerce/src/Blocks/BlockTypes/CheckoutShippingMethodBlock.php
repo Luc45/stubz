@@ -15,4 +15,3 @@ class CheckoutShippingMethodBlock
     protected $block_name = 'checkout-shipping-method-block';
 
 }
-

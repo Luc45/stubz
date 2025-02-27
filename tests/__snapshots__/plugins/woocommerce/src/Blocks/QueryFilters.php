@@ -209,4 +209,3 @@ final class QueryFilters
     }
 
 }
-

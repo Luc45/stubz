@@ -15,4 +15,3 @@ class CartOrderSummaryHeadingBlock
     protected $block_name = 'cart-order-summary-heading-block';
 
 }
-

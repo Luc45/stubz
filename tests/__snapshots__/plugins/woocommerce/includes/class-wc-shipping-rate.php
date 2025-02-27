@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shipping rate class.
  */
@@ -323,4 +321,3 @@ class WC_Shipping_Rate
     }
 
 }
-

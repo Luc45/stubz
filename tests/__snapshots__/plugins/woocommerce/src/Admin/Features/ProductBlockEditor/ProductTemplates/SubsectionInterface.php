@@ -15,4 +15,3 @@ interface SubsectionInterface
     public function add_block(array $block_config): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface;
 
 }
-

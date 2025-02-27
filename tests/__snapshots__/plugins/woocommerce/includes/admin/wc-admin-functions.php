@@ -146,4 +146,3 @@ function wc_get_default_product_type_options()
 {
     // stub
 }
-

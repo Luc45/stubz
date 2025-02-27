@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Privacy_Erasers Class.
  */
@@ -74,4 +72,3 @@ class WC_Privacy_Erasers
     }
 
 }
-

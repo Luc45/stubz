@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class WC_Plugin_Api_Updater
  */
@@ -54,4 +52,3 @@ class WC_Plugin_Api_Updater
     }
 
 }
-

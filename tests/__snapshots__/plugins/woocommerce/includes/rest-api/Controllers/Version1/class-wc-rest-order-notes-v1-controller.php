@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Order Notes controller class.
  *
@@ -174,4 +172,3 @@ class WC_REST_Order_Notes_V1_Controller
     }
 
 }
-

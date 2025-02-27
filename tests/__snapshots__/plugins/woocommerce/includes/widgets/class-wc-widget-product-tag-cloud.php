@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget product tag cloud
  */
@@ -77,4 +75,3 @@ class WC_Widget_Product_Tag_Cloud
     }
 
 }
-

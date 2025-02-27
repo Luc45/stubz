@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Brand Description Widget
  *
@@ -86,4 +84,3 @@ class WC_Widget_Brand_Description
     }
 
 }
-

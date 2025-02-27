@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Ajax class.
  */
@@ -1046,4 +1044,3 @@ class WC_AJAX
     }
 
 }
-

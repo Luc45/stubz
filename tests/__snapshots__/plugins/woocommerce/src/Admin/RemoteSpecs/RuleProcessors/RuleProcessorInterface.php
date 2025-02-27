@@ -27,4 +27,3 @@ interface RuleProcessorInterface
     public function validate($rule);
 
 }
-

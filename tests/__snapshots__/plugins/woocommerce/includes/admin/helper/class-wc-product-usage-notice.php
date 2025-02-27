@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product usage notice class.
  */
@@ -165,4 +163,3 @@ class WC_Product_Usage_Notice
     }
 
 }
-

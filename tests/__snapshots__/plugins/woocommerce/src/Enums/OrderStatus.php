@@ -33,4 +33,3 @@ final class OrderStatus
     const DRAFT = 'draft';
 
 }
-

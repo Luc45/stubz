@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Cash on Delivery Gateway.
  *
@@ -150,4 +148,3 @@ class WC_Gateway_COD
     }
 
 }
-

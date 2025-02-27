@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Checkout class.
  */
@@ -398,4 +396,3 @@ class WC_Checkout
     }
 
 }
-

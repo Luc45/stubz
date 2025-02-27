@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API WC_REST_WCCOM_Site_Connection_Controller Class.
  *
@@ -51,4 +49,3 @@ class WC_REST_WCCOM_Site_Connection_Controller
     }
 
 }
-

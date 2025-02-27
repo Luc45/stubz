@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Product Data Store Interface
  *
@@ -136,4 +134,3 @@ interface WC_Product_Data_Store_Interface
     public function get_product_type($product_id);
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Allows access to tracker snapshot for transparency and debugging.
  *
@@ -42,4 +40,3 @@ class WC_CLI_Tracker_Command
     }
 
 }
-

@@ -13,4 +13,3 @@ class ApprovedDirectoriesException extends \Exception implements \Stringable, \T
     const DB_ERROR = 2;
 
 }
-

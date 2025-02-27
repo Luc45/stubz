@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * International Delivery - Based on the Flat Rate Shipping Method.
  *
@@ -52,4 +50,3 @@ class WC_Shipping_Legacy_International_Delivery
     }
 
 }
-

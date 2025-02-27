@@ -15,4 +15,3 @@ class CartCrossSellsBlock
     protected $block_name = 'cart-cross-sells-block';
 
 }
-

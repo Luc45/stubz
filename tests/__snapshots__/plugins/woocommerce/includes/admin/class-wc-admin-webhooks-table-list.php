@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Webhooks table list class.
  */
@@ -182,4 +180,3 @@ class WC_Admin_Webhooks_Table_List
     }
 
 }
-

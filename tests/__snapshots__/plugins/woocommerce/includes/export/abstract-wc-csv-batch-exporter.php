@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_CSV_Exporter Class.
  */
@@ -140,4 +138,3 @@ abstract class WC_CSV_Batch_Exporter
     }
 
 }
-

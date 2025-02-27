@@ -18,4 +18,3 @@ final class ProductType
     const VARIATION = 'variation';
 
 }
-

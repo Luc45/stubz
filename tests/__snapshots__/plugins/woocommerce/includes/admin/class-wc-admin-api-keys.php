@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_API_Keys.
  */
@@ -126,4 +124,3 @@ class WC_Admin_API_Keys
     }
 
 }
-

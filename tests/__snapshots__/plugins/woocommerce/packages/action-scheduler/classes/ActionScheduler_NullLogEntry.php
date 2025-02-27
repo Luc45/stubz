@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_NullLogEntry
  */
@@ -19,4 +17,3 @@ class ActionScheduler_NullLogEntry
     }
 
 }
-

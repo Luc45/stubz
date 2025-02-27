@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Advanced.
  */
@@ -26,4 +24,3 @@ class WC_Settings_Site_Visibility
     }
 
 }
-

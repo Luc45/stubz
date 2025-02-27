@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Log levels class.
  */
@@ -133,4 +131,3 @@ abstract class WC_Log_Levels
     }
 
 }
-

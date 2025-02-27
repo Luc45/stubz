@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product category dropdown walker class.
  */
@@ -69,4 +67,3 @@ class WC_Product_Cat_Dropdown_Walker
     }
 
 }
-

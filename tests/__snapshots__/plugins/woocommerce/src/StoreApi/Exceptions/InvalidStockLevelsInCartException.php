@@ -75,4 +75,3 @@ class InvalidStockLevelsInCartException extends \Exception implements \Stringabl
     }
 
 }
-

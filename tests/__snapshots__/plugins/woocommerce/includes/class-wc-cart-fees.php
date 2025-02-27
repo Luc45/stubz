@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Cart_Fees class.
  *
@@ -119,4 +117,3 @@ final class WC_Cart_Fees
     }
 
 }
-

@@ -15,4 +15,3 @@ class CheckoutOrderSummaryCouponFormBlock
     protected $block_name = 'checkout-order-summary-coupon-form-block';
 
 }
-

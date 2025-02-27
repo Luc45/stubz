@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Shortcode order tracking class.
  */
@@ -29,4 +27,3 @@ class WC_Shortcode_Order_Tracking
     }
 
 }
-

@@ -33,4 +33,3 @@ abstract class AbstractTemplate
     public abstract function get_template_description();
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles deprecation notices and triggering of legacy filter hooks
  */
@@ -139,4 +137,3 @@ class WC_Deprecated_Filter_Hooks
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * CRON field factory implementing a flyweight factory
  *
@@ -30,4 +28,3 @@ class CronExpression_FieldFactory
     }
 
 }
-

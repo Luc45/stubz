@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_wpCommentLogger
  */
@@ -177,4 +175,3 @@ class ActionScheduler_wpCommentLogger
     }
 
 }
-

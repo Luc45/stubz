@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Tracks_Event class.
  */
@@ -94,4 +92,3 @@ class WC_Tracks_Event
     }
 
 }
-

@@ -15,4 +15,3 @@ class CheckoutShippingAddressBlock
     protected $block_name = 'checkout-shipping-address-block';
 
 }
-

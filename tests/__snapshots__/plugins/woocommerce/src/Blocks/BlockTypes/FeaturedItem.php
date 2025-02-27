@@ -199,4 +199,3 @@ abstract class FeaturedItem
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Generates requests to send to PayPal.
  */
@@ -289,4 +287,3 @@ class WC_Gateway_Paypal_Request
     }
 
 }
-

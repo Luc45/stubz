@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * This class adds actions to track usage of WooCommerce Imports.
  */
@@ -46,4 +44,3 @@ class WC_Importer_Tracking
     }
 
 }
-

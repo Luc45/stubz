@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Form_Handler class.
  */
@@ -194,4 +192,3 @@ class WC_Form_Handler
     }
 
 }
-

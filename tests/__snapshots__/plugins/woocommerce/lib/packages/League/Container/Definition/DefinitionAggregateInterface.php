@@ -63,4 +63,3 @@ interface DefinitionAggregateInterface
     public function resolveTagged(string $tag, bool $new = false);
 
 }
-

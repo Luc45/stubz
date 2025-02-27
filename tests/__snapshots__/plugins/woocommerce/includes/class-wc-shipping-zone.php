@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Shipping_Zone class.
  */
@@ -267,4 +265,3 @@ class WC_Shipping_Zone
     }
 
 }
-

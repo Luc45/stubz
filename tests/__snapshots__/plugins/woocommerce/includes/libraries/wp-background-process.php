@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract WP_Background_Process class.
  */
@@ -313,4 +311,3 @@ abstract class WP_Background_Process
     protected abstract function task($item);
 
 }
-

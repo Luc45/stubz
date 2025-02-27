@@ -12,4 +12,3 @@ interface RawArgumentInterface
     public function getValue();
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Year field.  Allows: * , / -
  *
@@ -34,4 +32,3 @@ class CronExpression_YearField
     }
 
 }
-

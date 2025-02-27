@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * InvalidAction Exception.
  *
@@ -37,4 +35,3 @@ class ActionScheduler_InvalidActionException extends \InvalidArgumentException
     }
 
 }
-

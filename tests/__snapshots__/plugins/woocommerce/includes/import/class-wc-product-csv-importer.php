@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Product_CSV_Importer Class.
  */
@@ -419,4 +417,3 @@ class WC_Product_CSV_Importer
     }
 
 }
-

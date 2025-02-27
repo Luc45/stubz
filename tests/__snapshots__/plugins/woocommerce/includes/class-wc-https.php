@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_HTTPS class.
  *
@@ -77,4 +75,3 @@ class WC_HTTPS
     }
 
 }
-

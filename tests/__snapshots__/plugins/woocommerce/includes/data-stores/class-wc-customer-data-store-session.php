@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Customer Data Store which stores the data in session.
  *
@@ -149,4 +147,3 @@ class WC_Customer_Data_Store_Session
     }
 
 }
-

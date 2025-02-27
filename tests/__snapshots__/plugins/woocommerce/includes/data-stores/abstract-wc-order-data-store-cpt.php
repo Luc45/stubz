@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract Order Data Store: Stored in CPT.
  *
@@ -326,4 +324,3 @@ abstract class Abstract_WC_Order_Data_Store_CPT
     }
 
 }
-

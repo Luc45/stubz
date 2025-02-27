@@ -137,4 +137,3 @@ interface BlockInterface
     public function get_formatted_template(): array;
 
 }
-

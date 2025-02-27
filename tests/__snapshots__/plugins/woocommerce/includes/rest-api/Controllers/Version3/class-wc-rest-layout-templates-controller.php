@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Layout Templates controller class.
  */
@@ -80,4 +78,3 @@ class WC_REST_Layout_Templates_Controller
     }
 
 }
-

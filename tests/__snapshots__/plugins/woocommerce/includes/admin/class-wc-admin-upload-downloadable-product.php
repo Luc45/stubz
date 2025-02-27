@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Upload_Downloadable_Product Class.
  */
@@ -63,4 +61,3 @@ class WC_Admin_Upload_Downloadable_Product
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Integrations.
  */
@@ -63,4 +61,3 @@ class WC_Settings_Integrations
     }
 
 }
-

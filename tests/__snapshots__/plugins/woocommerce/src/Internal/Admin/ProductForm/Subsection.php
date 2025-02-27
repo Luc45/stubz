@@ -8,4 +8,3 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductForm;
 class Subsection
 {
 }
-

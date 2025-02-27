@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_WCCOM_Site_Installer Class
  *
@@ -51,4 +49,3 @@ class WC_WCCOM_Site_Installer
     }
 
 }
-

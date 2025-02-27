@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Webhook data store class.
  */
@@ -146,4 +144,3 @@ class WC_Webhook_Data_Store
     }
 
 }
-

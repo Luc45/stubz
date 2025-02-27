@@ -15,4 +15,3 @@ class CheckoutAdditionalInformationBlock
     protected $block_name = 'checkout-additional-information-block';
 
 }
-

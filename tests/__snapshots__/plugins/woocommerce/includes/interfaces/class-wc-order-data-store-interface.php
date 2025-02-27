@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Data Store Interface
  *
@@ -134,4 +132,3 @@ interface WC_Order_Data_Store_Interface
     public function get_order_type($order_id);
 
 }
-

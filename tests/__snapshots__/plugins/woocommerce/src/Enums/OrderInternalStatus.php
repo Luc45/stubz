@@ -23,4 +23,3 @@ final class OrderInternalStatus
     const FAILED = 'wc-failed';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Rate limit class.
  */
@@ -95,4 +93,3 @@ class WC_Rate_Limiter
     }
 
 }
-

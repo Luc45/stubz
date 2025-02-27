@@ -79,4 +79,3 @@ interface BatchProcessorInterface
     public function get_default_batch_size(): int;
 
 }
-

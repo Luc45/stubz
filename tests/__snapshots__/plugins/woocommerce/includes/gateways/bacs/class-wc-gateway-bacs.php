@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Bank Transfer Payment Gateway.
  *
@@ -125,4 +123,3 @@ class WC_Gateway_BACS
     }
 
 }
-

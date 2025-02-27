@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Free Shipping Method.
  *
@@ -93,4 +91,3 @@ class WC_Shipping_Legacy_Free_Shipping
     }
 
 }
-

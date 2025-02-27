@@ -15,4 +15,3 @@ class CheckoutContactInformationBlock
     protected $block_name = 'checkout-contact-information-block';
 
 }
-

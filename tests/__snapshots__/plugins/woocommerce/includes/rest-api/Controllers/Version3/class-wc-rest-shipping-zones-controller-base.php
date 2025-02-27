@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Shipping Zones base class.
  *
@@ -80,4 +78,3 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
     }
 
 }
-

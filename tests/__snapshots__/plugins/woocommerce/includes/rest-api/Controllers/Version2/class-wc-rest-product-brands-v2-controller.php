@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Brands controller class.
  *
@@ -25,4 +23,3 @@ class WC_REST_Product_Brands_V2_Controller
     protected $taxonomy = 'product_brand';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Marketplace_Promotions class.
  */
@@ -201,4 +199,3 @@ class WC_Admin_Marketplace_Promotions
     }
 
 }
-

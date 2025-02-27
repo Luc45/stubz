@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Shop_Customizer class.
  */
@@ -162,4 +160,3 @@ class WC_Shop_Customizer
     }
 
 }
-

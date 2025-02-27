@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Abstract class that is intended to be extended by
  * specific privacy class. It handles the display
@@ -142,4 +140,3 @@ abstract class WC_Abstract_Privacy
     }
 
 }
-

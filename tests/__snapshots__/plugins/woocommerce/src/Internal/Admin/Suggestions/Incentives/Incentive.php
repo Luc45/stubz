@@ -200,4 +200,3 @@ abstract class Incentive
     protected abstract function get_incentives(string $country_code): array;
 
 }
-

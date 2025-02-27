@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Breadcrumb class.
  */
@@ -213,4 +211,3 @@ class WC_Breadcrumb
     }
 
 }
-

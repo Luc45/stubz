@@ -22,4 +22,3 @@ final class ProductStatus
     const FUTURE = 'future';
 
 }
-

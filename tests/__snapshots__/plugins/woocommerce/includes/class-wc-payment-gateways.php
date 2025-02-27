@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Payment gateways class.
  */
@@ -196,4 +194,3 @@ class WC_Payment_Gateways
     }
 
 }
-

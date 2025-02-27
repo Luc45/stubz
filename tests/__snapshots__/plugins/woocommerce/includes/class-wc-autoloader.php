@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Autoloader class.
  */
@@ -55,4 +53,3 @@ class WC_Autoloader
     }
 
 }
-

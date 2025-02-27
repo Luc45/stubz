@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * ActionScheduler Exception Interface.
  *
@@ -13,4 +11,3 @@ namespace ;
 interface ActionScheduler_Exception
 {
 }
-

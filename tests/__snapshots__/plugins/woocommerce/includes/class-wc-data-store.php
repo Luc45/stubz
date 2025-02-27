@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Data store class.
  */
@@ -205,4 +203,3 @@ class WC_Data_Store
     }
 
 }
-

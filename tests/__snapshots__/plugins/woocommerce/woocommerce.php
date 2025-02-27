@@ -24,4 +24,3 @@ function wc_get_container()
 }
 
 const WC_PLUGIN_FILE = '/home/lucas/automattic/stubz/tests/plugins/woocommerce/woocommerce.php';
-

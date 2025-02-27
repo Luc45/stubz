@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles log entries by writing to database.
  *
@@ -106,4 +104,3 @@ class WC_Log_Handler_DB
     }
 
 }
-

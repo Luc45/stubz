@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Coupon class.
  */
@@ -904,4 +902,3 @@ class WC_Coupon
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Data controller class.
  *
@@ -103,4 +101,3 @@ class WC_REST_Data_Controller
     }
 
 }
-

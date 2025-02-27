@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Twenty_Sixteen class.
  */
@@ -32,4 +30,3 @@ class WC_Twenty_Sixteen
     }
 
 }
-

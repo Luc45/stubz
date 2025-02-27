@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Reports controller class.
  *
@@ -18,4 +16,3 @@ class WC_REST_Reports_V2_Controller
     protected $namespace = 'wc/v2';
 
 }
-

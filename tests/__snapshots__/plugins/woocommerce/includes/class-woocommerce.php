@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Main WooCommerce Class.
  *
@@ -760,4 +758,3 @@ final class WooCommerce
     }
 
 }
-

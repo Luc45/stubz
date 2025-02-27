@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product query class.
  */
@@ -28,4 +26,3 @@ class WC_Product_Query
     }
 
 }
-

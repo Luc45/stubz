@@ -37,4 +37,3 @@ interface ContainerAwareInterface
     public function getLeagueContainer(): Automattic\WooCommerce\Vendor\League\Container\Container;
 
 }
-

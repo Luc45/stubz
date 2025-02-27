@@ -201,4 +201,3 @@ trait OrderAttributionMeta
     }
 
 }
-

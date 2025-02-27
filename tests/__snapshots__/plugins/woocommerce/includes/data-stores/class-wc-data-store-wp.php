@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Data_Store_WP class.
  */
@@ -326,4 +324,3 @@ class WC_Data_Store_WP
     }
 
 }
-

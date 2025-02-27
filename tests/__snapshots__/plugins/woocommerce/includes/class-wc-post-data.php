@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Post data class.
  */
@@ -333,4 +331,3 @@ class WC_Post_Data
     }
 
 }
-

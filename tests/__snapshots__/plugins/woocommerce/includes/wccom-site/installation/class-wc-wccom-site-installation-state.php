@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_WCCOM_Site_Installation_State class
  */
@@ -375,4 +373,3 @@ class WC_WCCOM_Site_Installation_State
     }
 
 }
-

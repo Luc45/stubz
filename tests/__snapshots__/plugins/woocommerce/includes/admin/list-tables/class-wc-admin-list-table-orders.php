@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_List_Table_Orders Class.
  */
@@ -304,4 +302,3 @@ class WC_Admin_List_Table_Orders
     }
 
 }
-

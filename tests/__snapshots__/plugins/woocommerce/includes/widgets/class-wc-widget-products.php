@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget products.
  */
@@ -42,4 +40,3 @@ class WC_Widget_Products
     }
 
 }
-

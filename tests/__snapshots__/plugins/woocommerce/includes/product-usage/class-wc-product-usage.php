@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product usagee
  */
@@ -51,4 +49,3 @@ class WC_Product_Usage
     }
 
 }
-

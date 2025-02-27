@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Privacy_Background_Process class.
  */
@@ -27,4 +25,3 @@ class WC_Privacy_Background_Process
     }
 
 }
-

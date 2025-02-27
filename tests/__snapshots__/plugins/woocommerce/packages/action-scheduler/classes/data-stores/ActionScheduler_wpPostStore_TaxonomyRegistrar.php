@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_wpPostStore_TaxonomyRegistrar
  *
@@ -26,4 +24,3 @@ class ActionScheduler_wpPostStore_TaxonomyRegistrar
     }
 
 }
-

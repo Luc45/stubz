@@ -472,4 +472,3 @@ class CartController
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_AdminView
  *
@@ -137,4 +135,3 @@ class ActionScheduler_AdminView
     }
 
 }
-

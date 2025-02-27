@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Local Pickup Shipping Method.
  *
@@ -120,4 +118,3 @@ class WC_Shipping_Legacy_Local_Pickup
     }
 
 }
-

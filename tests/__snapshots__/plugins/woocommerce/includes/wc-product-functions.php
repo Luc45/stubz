@@ -707,4 +707,3 @@ function wc_product_attach_featured_image($attachment_id, $product = null, $save
 {
     // stub
 }
-

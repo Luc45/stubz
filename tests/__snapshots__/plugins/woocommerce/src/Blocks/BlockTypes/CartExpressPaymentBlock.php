@@ -29,4 +29,3 @@ class CartExpressPaymentBlock
     protected $current_styles = null;
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Tracks_Footer_Pixel class.
  */
@@ -96,4 +94,3 @@ class WC_Tracks_Footer_Pixel
     }
 
 }
-

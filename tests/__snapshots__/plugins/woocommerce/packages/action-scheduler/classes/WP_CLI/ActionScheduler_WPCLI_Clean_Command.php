@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Commands for Action Scheduler.
  */
@@ -69,4 +67,3 @@ class ActionScheduler_WPCLI_Clean_Command
     }
 
 }
-

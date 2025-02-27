@@ -15,4 +15,3 @@ class CartOrderSummaryCouponFormBlock
     protected $block_name = 'cart-order-summary-coupon-form-block';
 
 }
-

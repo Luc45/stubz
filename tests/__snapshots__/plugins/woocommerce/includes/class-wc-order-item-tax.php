@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item tax.
  */
@@ -259,4 +257,3 @@ class WC_Order_Item_Tax
     }
 
 }
-

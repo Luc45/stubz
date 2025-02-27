@@ -80,4 +80,3 @@ function wc_get_coupon_id_by_code($code, $exclude = 0)
 {
     // stub
 }
-

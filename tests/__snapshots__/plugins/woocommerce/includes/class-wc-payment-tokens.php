@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Payment tokens class.
  */
@@ -125,4 +123,3 @@ class WC_Payment_Tokens
     }
 
 }
-

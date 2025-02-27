@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class for eCheck Payment Gateway
  *
@@ -32,4 +30,3 @@ class WC_Payment_Gateway_ECheck
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Logger class.
  */
@@ -259,4 +257,3 @@ class WC_Logger
     }
 
 }
-

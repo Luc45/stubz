@@ -7,4 +7,3 @@ function woocommerce_legacy_reports_init()
 {
     // stub
 }
-

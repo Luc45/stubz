@@ -15,4 +15,3 @@ class CheckoutOrderSummaryCartItemsBlock
     protected $block_name = 'checkout-order-summary-cart-items-block';
 
 }
-

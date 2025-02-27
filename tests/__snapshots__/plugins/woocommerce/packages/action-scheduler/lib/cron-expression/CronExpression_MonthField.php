@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Month field.  Allows: * , / -
  *
@@ -34,4 +32,3 @@ class CronExpression_MonthField
     }
 
 }
-

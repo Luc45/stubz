@@ -15,4 +15,3 @@ class CheckoutPaymentBlock
     protected $block_name = 'checkout-payment-block';
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * ActionScheduler_AsyncRequest_QueueRunner class.
  */
@@ -76,4 +74,3 @@ class ActionScheduler_AsyncRequest_QueueRunner
     }
 
 }
-

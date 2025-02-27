@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WooCommerce Payment Token.
  *
@@ -194,4 +192,3 @@ abstract class WC_Payment_Token
     }
 
 }
-

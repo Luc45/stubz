@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Data Store Interface
  *
@@ -20,4 +18,3 @@ interface WC_Order_Item_Type_Data_Store_Interface
     public function save_item_data(&$item);
 
 }
-

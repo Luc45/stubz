@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Shipping Zone.
  *
@@ -52,4 +50,3 @@ abstract class WC_Legacy_Shipping_Zone
     }
 
 }
-

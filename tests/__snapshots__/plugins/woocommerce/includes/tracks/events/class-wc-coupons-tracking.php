@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * This class adds actions to track usage of WooCommerce Orders.
  */
@@ -32,4 +30,3 @@ class WC_Coupons_Tracking
     }
 
 }
-

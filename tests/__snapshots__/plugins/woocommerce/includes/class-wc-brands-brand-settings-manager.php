@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Brand settings manager.
  *
@@ -43,4 +41,3 @@ class WC_Brands_Brand_Settings_Manager
     }
 
 }
-

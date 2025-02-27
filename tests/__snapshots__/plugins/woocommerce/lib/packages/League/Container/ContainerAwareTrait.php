@@ -59,4 +59,3 @@ trait ContainerAwareTrait
     }
 
 }
-

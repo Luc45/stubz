@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class WC_Eval_Math. Supports basic math only (removed eval function).
  *
@@ -114,8 +112,6 @@ class WC_Eval_Math
 
 }
 
-namespace ;
-
 /**
  * Class WC_Eval_Math_Stack.
  */
@@ -169,4 +165,3 @@ class WC_Eval_Math_Stack
     }
 
 }
-

@@ -15,4 +15,3 @@ class MiniCartTitleBlock
     protected $block_name = 'mini-cart-title-block';
 
 }
-

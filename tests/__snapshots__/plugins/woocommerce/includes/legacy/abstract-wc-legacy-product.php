@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Abstract Product
  *
@@ -495,4 +493,3 @@ abstract class WC_Abstract_Legacy_Product
     }
 
 }
-

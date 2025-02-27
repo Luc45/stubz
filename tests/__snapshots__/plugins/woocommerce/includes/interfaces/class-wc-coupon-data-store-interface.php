@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Coupon Data Store Interface
  *
@@ -54,4 +52,3 @@ interface WC_Coupon_Data_Store_Interface
     public function get_ids_by_code($code);
 
 }
-

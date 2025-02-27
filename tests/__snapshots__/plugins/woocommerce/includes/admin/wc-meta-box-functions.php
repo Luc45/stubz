@@ -75,4 +75,3 @@ function woocommerce_wp_note($field)
 {
     // stub
 }
-

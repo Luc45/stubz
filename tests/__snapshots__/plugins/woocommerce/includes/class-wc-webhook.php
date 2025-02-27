@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Webhook class.
  */
@@ -643,4 +641,3 @@ class WC_Webhook
     }
 
 }
-

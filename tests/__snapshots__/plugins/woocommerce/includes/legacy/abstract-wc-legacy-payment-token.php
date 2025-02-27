@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Legacy Payment Tokens.
  * Payment Tokens were introduced in 2.6.0 with create and update as methods.
@@ -56,4 +54,3 @@ abstract class WC_Legacy_Payment_Token
     }
 
 }
-

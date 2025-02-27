@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Class ActionScheduler_Compatibility
  */
@@ -50,4 +48,3 @@ class ActionScheduler_Compatibility
     }
 
 }
-

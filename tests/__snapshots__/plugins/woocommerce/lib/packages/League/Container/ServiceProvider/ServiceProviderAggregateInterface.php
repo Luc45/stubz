@@ -32,4 +32,3 @@ interface ServiceProviderAggregateInterface
     public function register(string $service);
 
 }
-

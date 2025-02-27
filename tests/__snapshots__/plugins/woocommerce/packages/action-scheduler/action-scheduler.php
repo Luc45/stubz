@@ -15,4 +15,3 @@ function action_scheduler_initialize_3_dot_9_dot_0()
 {
     // stub
 }
-

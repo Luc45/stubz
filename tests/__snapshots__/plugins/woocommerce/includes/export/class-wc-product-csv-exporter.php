@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Product_CSV_Exporter Class.
  */
@@ -414,4 +412,3 @@ class WC_Product_CSV_Exporter
     }
 
 }
-

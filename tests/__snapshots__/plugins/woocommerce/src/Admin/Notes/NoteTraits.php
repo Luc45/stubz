@@ -145,4 +145,3 @@ trait NoteTraits
     }
 
 }
-

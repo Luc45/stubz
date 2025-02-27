@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Customer Data Store Interface
  *
@@ -36,4 +34,3 @@ interface WC_Customer_Data_Store_Interface
     public function get_total_spent(&$customer);
 
 }
-

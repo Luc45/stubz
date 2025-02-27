@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Fee Data Store
  *
@@ -50,4 +48,3 @@ class WC_Order_Item_Fee_Data_Store
     }
 
 }
-

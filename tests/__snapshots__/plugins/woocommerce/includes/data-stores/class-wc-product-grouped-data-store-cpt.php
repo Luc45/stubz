@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Grouped Product Data Store: Stored in CPT.
  *
@@ -54,4 +52,3 @@ class WC_Product_Grouped_Data_Store_CPT
     }
 
 }
-

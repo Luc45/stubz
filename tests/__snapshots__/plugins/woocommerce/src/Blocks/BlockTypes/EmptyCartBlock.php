@@ -15,4 +15,3 @@ class EmptyCartBlock
     protected $block_name = 'empty-cart-block';
 
 }
-

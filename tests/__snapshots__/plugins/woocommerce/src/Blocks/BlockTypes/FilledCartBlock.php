@@ -15,4 +15,3 @@ class FilledCartBlock
     protected $block_name = 'filled-cart-block';
 
 }
-

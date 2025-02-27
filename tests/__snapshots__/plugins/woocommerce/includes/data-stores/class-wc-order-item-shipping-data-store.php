@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Order_Item_Shipping_Data_Store class.
  */
@@ -46,4 +44,3 @@ class WC_Order_Item_Shipping_Data_Store
     }
 
 }
-

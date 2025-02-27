@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Geolite integration class.
  *
@@ -62,4 +60,3 @@ class WC_Geolite_Integration
     }
 
 }
-

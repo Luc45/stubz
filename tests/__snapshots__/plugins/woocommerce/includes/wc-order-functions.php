@@ -437,4 +437,3 @@ function wc_delete_order_note($note_id)
 {
     // stub
 }
-

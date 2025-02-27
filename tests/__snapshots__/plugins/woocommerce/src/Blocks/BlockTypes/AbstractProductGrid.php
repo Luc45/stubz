@@ -320,4 +320,3 @@ abstract class AbstractProductGrid
     }
 
 }
-

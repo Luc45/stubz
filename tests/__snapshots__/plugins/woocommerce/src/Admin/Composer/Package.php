@@ -84,4 +84,3 @@ class Package
 }
 
 const WC_ADMIN_PACKAGE_EXISTS = true;
-

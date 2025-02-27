@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Report Sales controller class.
  *
@@ -104,4 +102,3 @@ class WC_REST_Report_Sales_V1_Controller
     }
 
 }
-

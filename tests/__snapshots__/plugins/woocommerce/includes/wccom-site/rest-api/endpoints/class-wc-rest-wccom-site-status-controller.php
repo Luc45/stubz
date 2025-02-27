@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API WCCOM Site Status Controller Class.
  *
@@ -51,4 +49,3 @@ class WC_REST_WCCOM_Site_Status_Controller
     }
 
 }
-

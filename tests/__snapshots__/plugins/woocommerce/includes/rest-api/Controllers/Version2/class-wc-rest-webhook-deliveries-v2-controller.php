@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API Webhook Deliveries controller class.
  *
@@ -41,4 +39,3 @@ class WC_REST_Webhook_Deliveries_V2_Controller
     }
 
 }
-

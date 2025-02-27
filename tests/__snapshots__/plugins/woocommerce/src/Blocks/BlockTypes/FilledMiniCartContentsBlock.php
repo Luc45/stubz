@@ -15,4 +15,3 @@ class FilledMiniCartContentsBlock
     protected $block_name = 'filled-mini-cart-contents-block';
 
 }
-

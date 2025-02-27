@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Template loader class.
  */
@@ -301,4 +299,3 @@ class WC_Template_Loader
     }
 
 }
-

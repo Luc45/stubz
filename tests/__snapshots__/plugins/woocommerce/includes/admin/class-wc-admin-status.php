@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Status Class.
  */
@@ -187,4 +185,3 @@ class WC_Admin_Status
     }
 
 }
-

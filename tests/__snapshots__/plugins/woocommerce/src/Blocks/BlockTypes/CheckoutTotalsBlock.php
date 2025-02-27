@@ -15,4 +15,3 @@ class CheckoutTotalsBlock
     protected $block_name = 'checkout-totals-block';
 
 }
-

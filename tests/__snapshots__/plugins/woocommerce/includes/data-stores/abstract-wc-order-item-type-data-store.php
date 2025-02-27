@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Data Store
  *
@@ -130,4 +128,3 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Widget price filter class.
  */
@@ -39,4 +37,3 @@ class WC_Widget_Price_Filter
     }
 
 }
-

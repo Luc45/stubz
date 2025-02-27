@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Customer download log class.
  */
@@ -121,4 +119,3 @@ class WC_Customer_Download_Log
     }
 
 }
-

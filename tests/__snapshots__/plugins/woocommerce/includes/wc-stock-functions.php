@@ -165,4 +165,3 @@ function wc_get_low_stock_amount(WC_Product $product)
 {
     // stub
 }
-

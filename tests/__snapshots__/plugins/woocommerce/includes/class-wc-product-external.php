@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Product external class.
  */
@@ -161,4 +159,3 @@ class WC_Product_External
     }
 
 }
-

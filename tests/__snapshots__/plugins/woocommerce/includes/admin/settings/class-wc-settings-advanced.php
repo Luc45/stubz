@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Advanced.
  */
@@ -112,8 +110,6 @@ class WC_Settings_Advanced
 
 }
 
-namespace ;
-
 /**
  * WC_Settings_Rest_API class.
  *
@@ -122,4 +118,3 @@ namespace ;
 class WC_Settings_Rest_API extends \WC_Settings_Advanced
 {
 }
-

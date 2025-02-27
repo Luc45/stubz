@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Settings_Products.
  */
@@ -71,4 +69,3 @@ class WC_Settings_Products
     }
 
 }
-

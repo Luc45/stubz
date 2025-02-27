@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Deprecated_Hooks class maps old actions and filters to new ones. This is the base class for handling those deprecated hooks.
  *
@@ -102,4 +100,3 @@ abstract class WC_Deprecated_Hooks
     protected abstract function trigger_hook($old_hook, $new_callback_args);
 
 }
-

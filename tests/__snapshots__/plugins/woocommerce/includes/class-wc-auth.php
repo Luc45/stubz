@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Auth class.
  */
@@ -167,4 +165,3 @@ class WC_Auth
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Cancelled Order Email.
  *
@@ -95,4 +93,3 @@ class WC_Email_Cancelled_Order
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Notes_Run_Db_Update.
  */
@@ -108,4 +106,3 @@ class WC_Notes_Run_Db_Update
     }
 
 }
-

@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * REST API WCCOM Site Base REST API Controller Astract Class.
  *
@@ -51,4 +49,3 @@ abstract class WC_REST_WCCOM_Site_Controller
     }
 
 }
-

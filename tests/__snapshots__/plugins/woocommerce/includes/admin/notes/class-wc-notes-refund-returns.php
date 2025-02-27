@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Notes_Refund_Returns.
  */
@@ -50,4 +48,3 @@ class WC_Notes_Refund_Returns
     }
 
 }
-

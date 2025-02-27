@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order item product class.
  */
@@ -379,4 +377,3 @@ class WC_Order_Item_Product
     }
 
 }
-

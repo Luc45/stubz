@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Brand Thumbnails Widget
  *
@@ -86,4 +84,3 @@ class WC_Widget_Brand_Thumbnails
     }
 
 }
-

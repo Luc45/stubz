@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Download handler class.
  */
@@ -268,4 +266,3 @@ class WC_Download_Handler
 }
 
 const WC_CHUNK_SIZE = 1048576;
-

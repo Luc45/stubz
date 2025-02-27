@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles Refunds and other API requests such as capture.
  *
@@ -90,8 +88,6 @@ class WC_Gateway_Paypal_API_Handler
 
 }
 
-namespace ;
-
 /**
  * Here for backwards compatibility.
  *
@@ -128,4 +124,3 @@ class WC_Gateway_Paypal_Refund extends \WC_Gateway_Paypal_API_Handler
     }
 
 }
-

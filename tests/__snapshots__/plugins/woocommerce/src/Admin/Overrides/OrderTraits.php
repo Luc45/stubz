@@ -50,4 +50,3 @@ trait OrderTraits
     }
 
 }
-

@@ -51,4 +51,3 @@ trait SingletonTrait
     }
 
 }
-

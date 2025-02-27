@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Handles log entries by sending an email.
  *
@@ -165,4 +163,3 @@ class WC_Log_Handler_Email
     }
 
 }
-

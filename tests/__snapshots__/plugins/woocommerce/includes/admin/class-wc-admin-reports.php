@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_Admin_Reports Class.
  */
@@ -64,4 +62,3 @@ class WC_Admin_Reports
     }
 
 }
-

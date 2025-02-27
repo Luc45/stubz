@@ -110,4 +110,3 @@ function wc_get_webhook_rest_api_versions()
 {
     // stub
 }
-

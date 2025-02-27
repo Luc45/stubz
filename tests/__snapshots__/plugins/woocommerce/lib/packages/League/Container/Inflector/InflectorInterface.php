@@ -59,4 +59,3 @@ interface InflectorInterface
     public function inflect($object);
 
 }
-

@@ -10,4 +10,3 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
 class PartialOutOfStockException
 {
 }
-

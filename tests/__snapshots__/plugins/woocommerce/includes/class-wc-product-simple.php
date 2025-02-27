@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Simple product class.
  */
@@ -69,4 +67,3 @@ class WC_Product_Simple
     }
 
 }
-

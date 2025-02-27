@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Order refund class.
  */
@@ -225,4 +223,3 @@ class WC_Order_Refund
     }
 
 }
-

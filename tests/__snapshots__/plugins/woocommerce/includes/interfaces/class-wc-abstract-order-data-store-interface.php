@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Data Store Interface
  *
@@ -45,4 +43,3 @@ interface WC_Abstract_Order_Data_Store_Interface
     public function update_payment_token_ids($order, $token_ids);
 
 }
-

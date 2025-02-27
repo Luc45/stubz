@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * Meta data class.
  */
@@ -109,4 +107,3 @@ class WC_Meta_Data implements \JsonSerializable
     }
 
 }
-

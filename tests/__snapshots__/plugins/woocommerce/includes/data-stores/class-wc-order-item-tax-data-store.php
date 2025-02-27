@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC Order Item Tax Data Store
  *
@@ -49,4 +47,3 @@ class WC_Order_Item_Tax_Data_Store
     }
 
 }
-

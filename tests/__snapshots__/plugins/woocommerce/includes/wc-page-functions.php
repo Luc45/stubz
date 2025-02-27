@@ -116,4 +116,3 @@ function wc_list_pages($pages)
 {
     // stub
 }
-

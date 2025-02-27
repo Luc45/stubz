@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * New Order Email.
  *
@@ -105,4 +103,3 @@ class WC_Email_New_Order
     }
 
 }
-

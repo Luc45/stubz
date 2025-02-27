@@ -1,7 +1,5 @@
 <?php
 
-namespace ;
-
 /**
  * WC_REST_Posts_Controller
  *
@@ -241,4 +239,3 @@ abstract class WC_REST_Posts_Controller
     }
 
 }
-
