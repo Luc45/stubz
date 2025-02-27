@@ -11,8 +11,6 @@ interface Identifiable
 
 }
 
-namespace IntersectionTypesScenario;
-
 /**
  * Interface that requires a getName() method returning a string.
  */
@@ -21,8 +19,6 @@ interface Nameable
     public function getName(): string;
 
 }
-
-namespace IntersectionTypesScenario;
 
 /**
  * A class implementing both Identifiable and Nameable.
@@ -57,4 +53,3 @@ function IntersectionTypesScenario\describeEntity(IntersectionTypesScenario\Iden
 {
     // stub
 }
-

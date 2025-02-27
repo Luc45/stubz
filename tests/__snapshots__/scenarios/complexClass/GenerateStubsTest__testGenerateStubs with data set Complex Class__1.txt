@@ -1,21 +1,12 @@
 <?php
 
-namespace MyProject;
+namespace MyProject\Nested;
 
-interface AnotherFileInterface
+class SomeNestedFile
 {
-    public function doInterfaceThing();
-
-}
-
-namespace MyProject;
-
-class AnotherFile implements \MyProject\AnotherFileInterface
-{
-    public function doInterfaceThing()
+    public static function nestedFunction()
     {
         // stub
     }
 
 }
-

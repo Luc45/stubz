@@ -22,8 +22,6 @@ class MyCustomAttribute
 
 }
 
-namespace AttributesScenario;
-
 /**
  * A class marked with MyCustomAttribute.
  */
@@ -37,4 +35,3 @@ class DemoClass
     }
 
 }
-

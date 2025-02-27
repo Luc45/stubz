@@ -11,8 +11,6 @@ interface OneInterface
 
 }
 
-namespace MultiInterface;
-
 /**
  * Another interface with a different method.
  */
@@ -22,8 +20,6 @@ interface TwoInterface
 
 }
 
-namespace MultiInterface;
-
 /**
  * CombinedInterface extends both OneInterface and TwoInterface.
  */
@@ -32,8 +28,6 @@ interface CombinedInterface
     public function combined(): bool;
 
 }
-
-namespace MultiInterface;
 
 /**
  * A class implementing all methods from CombinedInterface (and thus from both OneInterface & TwoInterface).
@@ -56,4 +50,3 @@ class CombinedImplementation implements \MultiInterface\CombinedInterface, \Mult
     }
 
 }
-

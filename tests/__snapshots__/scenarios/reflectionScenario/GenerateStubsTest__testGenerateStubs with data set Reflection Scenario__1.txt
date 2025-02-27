@@ -24,8 +24,6 @@ class DemoClass
 
 }
 
-namespace ReflectionScenario;
-
 /**
  * A class that inspects DemoClass via reflection.
  */
@@ -37,4 +35,3 @@ class Inspector
     }
 
 }
-

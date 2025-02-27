@@ -36,8 +36,6 @@ enum UserStatus
 
 }
 
-namespace EnumExample;
-
 class User
 {
     public string $name;
@@ -55,4 +53,3 @@ class User
     }
 
 }
-

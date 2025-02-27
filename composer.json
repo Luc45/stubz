@@ -9,10 +9,20 @@
             "email": "lucasfbustamante@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Stubz\\": "src/"
+        }
+    },
     "require": {
         "php": "^8.2",
         "roave/better-reflection": "^6.0",
-        "symfony/finder": "^6.0"
+        "symfony/finder": "^6.0",
+        "fidry/cpu-core-counter": "^1.2"
+    },
+    "suggest": {
+        "ext-pcntl": "For running in parallel.",
+        "ext-posix": "For running in parallel."
     },
     "bin": [
         "stubz.php"

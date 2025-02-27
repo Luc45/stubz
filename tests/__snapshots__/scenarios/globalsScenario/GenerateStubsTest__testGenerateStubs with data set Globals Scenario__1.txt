@@ -1,5 +1,7 @@
 <?php
 
+namespace GlobalExample;
+
 function GlobalExample\my_global_helper(string $input): string
 {
     // stub
@@ -14,4 +16,3 @@ function GlobalExample\my_namespaced_helper(): string
 }
 
 const GlobalExample\MY_GLOBAL_VERSION = '1.2.3';
-

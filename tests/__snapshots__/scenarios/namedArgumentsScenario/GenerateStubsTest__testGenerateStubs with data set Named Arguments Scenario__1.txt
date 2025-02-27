@@ -19,8 +19,6 @@ class RectangleCalculator
 
 }
 
-namespace NamedArgumentsScenario;
-
 /**
  * Class that uses named arguments to call methods in RectangleCalculator.
  */
@@ -32,4 +30,3 @@ class RectangleDemo
     }
 
 }
-

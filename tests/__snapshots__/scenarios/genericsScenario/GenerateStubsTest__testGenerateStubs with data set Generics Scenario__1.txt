@@ -41,8 +41,6 @@ class Collection
 
 }
 
-namespace GenericsScenario;
-
 /**
  * A sample user class (could be the generic type T).
  */
@@ -61,4 +59,3 @@ class User
     }
 
 }
-

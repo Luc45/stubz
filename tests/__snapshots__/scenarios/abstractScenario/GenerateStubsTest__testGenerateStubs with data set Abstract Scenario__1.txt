@@ -16,8 +16,6 @@ abstract class AbstractEntity
 
 }
 
-namespace AbstractScenario;
-
 /**
  * A final class extending the abstract one.
  */
@@ -29,4 +27,3 @@ final class ConcreteEntity extends \AbstractScenario\AbstractEntity
     }
 
 }
-

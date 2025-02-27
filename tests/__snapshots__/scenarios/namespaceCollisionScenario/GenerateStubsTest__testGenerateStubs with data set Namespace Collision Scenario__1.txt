@@ -11,8 +11,6 @@ class Thing
 
 }
 
-namespace NamespaceCollisionTwo;
-
 class Thing
 {
     public function identify(): string
@@ -22,8 +20,6 @@ class Thing
 
 }
 
-namespace NamespaceCollisionConsumer;
-
 class Consumer
 {
     public function process(): array
@@ -32,4 +28,3 @@ class Consumer
     }
 
 }
-

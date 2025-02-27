@@ -26,8 +26,6 @@ final class ImmutableConfig
 
 }
 
-namespace FinalScenario;
-
 /**
  * A non-final class but with a final method.
  */
@@ -44,4 +42,3 @@ class PartialFinal
     }
 
 }
-
