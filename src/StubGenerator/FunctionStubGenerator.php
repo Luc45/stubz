@@ -12,7 +12,6 @@ class FunctionStubGenerator {
 	 * Generate a function stub.
 	 */
 	public function generateFunctionStub( ReflectionFunction $fn ): string {
-		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 
 		$funcName = $fn->getName();

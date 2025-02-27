@@ -53,7 +53,7 @@ class Stubz {
 
 		// 3. Split into chunks.
 		if ( $numCores > 1 ) {
-			$chunkSize = (int) max( ceil( $totalFiles / $numCores ), $worker->getMinimumChunkSize() );
+			$chunkSize = max( 1, (int) max( ceil( $totalFiles / $numCores ), $worker->getMinimumChunkSize() ) );
 			$chunks    = array_chunk( $filePaths, $chunkSize );
 		} else {
 			$chunks = [ $filePaths ];

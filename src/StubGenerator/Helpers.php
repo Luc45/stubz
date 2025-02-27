@@ -12,7 +12,7 @@ use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
  * Shared helper methods: logging, var_export styles, exception handling, etc.
  */
 class Helpers {
-	public static function toPhpLiteral( $value ): string {
+	public static function toPhpLiteral( mixed $value ): string {
 		$value = var_export( $value, true );
 
 		$value = str_replace( 'NULL', 'null', $value );
@@ -38,8 +38,6 @@ class Helpers {
 
 	/**
 	 * Handle reflection exceptions and increment missingReferences
-	 *
-	 * @param-out array<string,int> $missingReferences
 	 */
 	public static function handleBetterReflectionException( Throwable $ex ): void {
 		if ( $ex instanceof IdentifierNotFound ) {
@@ -50,7 +48,7 @@ class Helpers {
 		}
 
 		if ( $ex instanceof UnableToCompileNode ) {
-			$symbol = $ex->constantName();
+			$symbol = $ex->constantName() ?? 'unknown_constant';
 			self::trackMissingReference( $symbol );
 
 			return;

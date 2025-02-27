@@ -100,14 +100,16 @@ class Worker {
 		foreach ( $childPids as $cpid ) {
 			// Initialize $status as int, so pcntl_wifexited sees an int
 			$status = 0;
+
+			/** @var int $status */
 			pcntl_waitpid( $cpid, $status );
 
-			if ( ! pcntl_wifexited( $status ) ) {
+			if ( ! pcntl_wifexited( $status ) ) { // @phpstan-ignore-line
 				fwrite( STDERR, "Child process {$cpid} died abnormally.\n" );
 				$this->killRemainingChildren( $childPids, $cpid );
 				exit( 1 );
 			}
-			$exitCode = pcntl_wexitstatus( $status );
+			$exitCode = pcntl_wexitstatus( $status ); // @phpstan-ignore-line
 			if ( $exitCode !== 0 ) {
 				fwrite( STDERR, "Child process {$cpid} exited with code {$exitCode}.\n" );
 				$this->killRemainingChildren( $childPids, $cpid );
@@ -136,7 +138,10 @@ class Worker {
 			}
 			// We know $missingReferences is array<string,int>, so cast each new count to int:
 			foreach ( $arr as $sym => $count ) {
-				$missingReferences[ $sym ] = (int) ( $missingReferences[ $sym ] ?? 0 ) + (int) $count;
+				if ( ! is_int( $count ) ) {
+					continue;
+				}
+				$missingReferences[ $sym ] = (int) ( $missingReferences[ $sym ] ?? 0 ) + $count;
 			}
 		}
 
@@ -158,7 +163,7 @@ class Worker {
 		int $totalChunks,
 		bool $verbose
 	): int {
-		/** @var callable(string,array<string,int>):string $fileStubber */
+		/** @var callable(string):string $fileStubber */
 		$fileStubber = require __DIR__ . '/file-stubber.php';
 
 		$total = count( $filePaths );
