@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionFunction as BRFunction;
+use Roave\BetterReflection\Reflection\ReflectionFunction;
 use Throwable;
 
 class FunctionStubGenerator {
 	/**
 	 * Generate a function stub.
 	 */
-	public function generateFunctionStub( BRFunction $fn ): string {
+	public function generateFunctionStub( ReflectionFunction $fn ): string {
 		/** @var array<string,int> $missingReferences */
 		$buf       = '';
 

@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionMethod as BRMethod;
+use Roave\BetterReflection\Reflection\ReflectionMethod;
 use Throwable;
 
 class MethodStubGenerator {
 	/**
 	 * Generate a method stub.
 	 */
-	public function generateMethodStub( BRMethod $method ): string {
+	public function generateMethodStub( ReflectionMethod $method ): string {
 		$buf       = '';
 
 		$doc = $method->getDocComment();

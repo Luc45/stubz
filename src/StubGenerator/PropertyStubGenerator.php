@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionProperty as BRProperty;
+use Roave\BetterReflection\Reflection\ReflectionProperty;
 use Throwable;
 
 class PropertyStubGenerator {
 	/**
 	 * Generate a property stub.
 	 */
-	public function generatePropertyStub( BRProperty $prop ): string {
+	public function generatePropertyStub( ReflectionProperty $prop ): string {
 		$out = '';
 
 		$doc = $prop->getDocComment();

@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionParameter as BRParameter;
+use Roave\BetterReflection\Reflection\ReflectionParameter;
 use Throwable;
 
 class ParameterStubGenerator {
 	/**
 	 * Generate a parameter stub.
 	 */
-	public function generateParameterStub( BRParameter $param ): string {
+	public function generateParameterStub( ReflectionParameter $param ): string {
 		try {
 			$typeObj = $param->getType();
 		} catch ( Throwable $ex ) {

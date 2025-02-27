@@ -83,7 +83,6 @@ class Worker {
 					$chunkFiles,
 					$sourceDir,
 					$outputDir,
-					$childMissing,
 					$idx,
 					$numChunks,
 					$verbose
@@ -134,6 +133,10 @@ class Worker {
 			$arr = json_decode( $data, true );
 			if ( ! is_array( $arr ) ) {
 				continue;
+			}
+			// We know $missingReferences is array<string,int>, so cast each new count to int:
+			foreach ( $arr as $sym => $count ) {
+				$missingReferences[ $sym ] = (int) ( $missingReferences[ $sym ] ?? 0 ) + (int) $count;
 			}
 		}
 

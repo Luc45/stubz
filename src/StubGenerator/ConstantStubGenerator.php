@@ -2,16 +2,16 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionConstant as BRConstant;
+use Roave\BetterReflection\Reflection\ReflectionConstant;
 use Throwable;
 
 /**
  * Generate a global constant stub ("const FOO = ...;").
  */
 class ConstantStubGenerator {
-	public function generateConstantStub( BRConstant $constant ): string {
+	public function generateConstantStub( ReflectionConstant $constant ): string {
 		$buf       = '';
 
 		// If it's a class constant, skip

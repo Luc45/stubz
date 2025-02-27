@@ -7,10 +7,10 @@ use Roave\BetterReflection\Reflector\DefaultReflector;
 use Roave\BetterReflection\SourceLocator\Type\AggregateSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\PhpInternalSourceLocator;
 use Roave\BetterReflection\SourceLocator\Type\SingleFileSourceLocator;
-use Stubz\Stubber\ClassStubGenerator;
-use Stubz\Stubber\FunctionStubGenerator;
-use Stubz\Stubber\ConstantStubGenerator;
-use Stubz\Stubber\NamespaceStubGenerator;
+use Stubz\StubGenerator\ClassStubGenerator;
+use Stubz\StubGenerator\FunctionStubGenerator;
+use Stubz\StubGenerator\ConstantStubGenerator;
+use Stubz\StubGenerator\NamespaceStubGenerator;
 
 /**
  * This file returns a closure that, given a single file path + reference array,

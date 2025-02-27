@@ -2,7 +2,7 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
 use Throwable;
 use Roave\BetterReflection\Reflector\Exception\IdentifierNotFound;

@@ -2,17 +2,17 @@
 
 declare( strict_types=1 );
 
-namespace Stubz\Stubber;
+namespace Stubz\StubGenerator;
 
-use Roave\BetterReflection\Reflection\ReflectionClass as BRClass;
-use Roave\BetterReflection\Reflection\ReflectionEnum as BREnum;
+use Roave\BetterReflection\Reflection\ReflectionClass;
+use Roave\BetterReflection\Reflection\ReflectionEnum;
 use Throwable;
 
 class ClassStubGenerator {
 	/**
 	 * Generate a class/trait/interface/enum stub from reflection.
 	 */
-	public function generateClassStub( BRClass $class ): string {
+	public function generateClassStub( ReflectionClass $class ): string {
 		$buf       = '';
 
 		// 1) Doc comment
@@ -73,7 +73,7 @@ class ClassStubGenerator {
 		// ---------------------------------------------------------------------
 		// 4) Enum handling (cases, "magic" members, etc.)
 		// ---------------------------------------------------------------------
-		if ( $class->isEnum() && $class instanceof BREnum ) {
+		if ( $class->isEnum() && $class instanceof ReflectionEnum ) {
 			$cases = $class->getCases();
 
 			if ( $class->isBacked() ) {
@@ -154,7 +154,7 @@ class ClassStubGenerator {
 	/**
 	 * Describe how the class is declared: interface, trait, enum, abstract, final, etc.
 	 */
-	private function getClassDeclaration( BRClass $class ): string {
+	private function getClassDeclaration( ReflectionClass $class ): string {
 		if ( $class->isInterface() ) {
 			$out = 'interface ' . $class->getShortName();
 		} elseif ( $class->isTrait() ) {
