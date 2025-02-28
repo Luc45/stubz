@@ -14,7 +14,7 @@ class File
      *
      * @var string
      */
-    protected $path = null;
+    protected $path;
     /**
      * The source property of the file, derived from the filename.
      *
@@ -26,7 +26,7 @@ class File
      *
      * @var int|null
      */
-    protected $rotation = null;
+    protected $rotation;
     /**
      * The date the file was created, as a Unix timestamp, derived from the filename.
      *
@@ -44,7 +44,7 @@ class File
      *
      * @var resource
      */
-    protected $stream = null;
+    protected $stream;
     /**
      * Class File
      *

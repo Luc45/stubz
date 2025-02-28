@@ -11,7 +11,7 @@ class WC_Tax
      *
      * @var int
      */
-    public static $precision = null;
+    public static $precision;
     /**
      * Round at subtotal.
      *

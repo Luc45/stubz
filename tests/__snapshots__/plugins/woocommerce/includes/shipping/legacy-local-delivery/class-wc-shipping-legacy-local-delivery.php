@@ -17,13 +17,13 @@ class WC_Shipping_Legacy_Local_Delivery extends \WC_Shipping_Local_Pickup
      *
      * @var string
      */
-    public $type = null;
+    public $type;
     /**
      * Allowed post/zip codes for the shipping method.
      *
      * @var string
      */
-    public $codes = null;
+    public $codes;
     /**
      * Constructor.
      */

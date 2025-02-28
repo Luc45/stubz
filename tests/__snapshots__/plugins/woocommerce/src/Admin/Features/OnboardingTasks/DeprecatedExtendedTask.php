@@ -60,7 +60,7 @@ class DeprecatedExtendedTask extends \Automattic\WooCommerce\Admin\Features\Onbo
      *
      * @var string|null
      */
-    public $time = null;
+    public $time;
     /**
      * Title.
      *

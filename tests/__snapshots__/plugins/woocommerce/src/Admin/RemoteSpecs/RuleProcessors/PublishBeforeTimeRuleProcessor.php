@@ -12,7 +12,7 @@ class PublishBeforeTimeRuleProcessor implements \Automattic\WooCommerce\Admin\Re
      *
      * @var DateTimeProviderInterface
      */
-    protected $date_time_provider = null;
+    protected $date_time_provider;
     /**
      * Constructor.
      *

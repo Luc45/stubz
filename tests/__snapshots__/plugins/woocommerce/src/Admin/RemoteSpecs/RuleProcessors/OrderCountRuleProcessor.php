@@ -12,7 +12,7 @@ class OrderCountRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpe
      *
      * @var OrdersProvider
      */
-    protected $orders_provider = null;
+    protected $orders_provider;
     /**
      * Constructor.
      *

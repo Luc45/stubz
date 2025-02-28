@@ -16,13 +16,13 @@ class WC_WCCOM_Site_Installation_Manager
      *
      * @var int
      */
-    protected $product_id = null;
+    protected $product_id;
     /**
      * The idempotency key.
      *
      * @var string
      */
-    protected $idempotency_key = null;
+    protected $idempotency_key;
     /**
      * Constructor.
      *

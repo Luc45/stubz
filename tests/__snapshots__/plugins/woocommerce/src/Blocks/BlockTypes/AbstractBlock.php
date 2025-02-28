@@ -30,19 +30,19 @@ abstract class AbstractBlock
      *
      * @var AssetApi
      */
-    protected $asset_api = null;
+    protected $asset_api;
     /**
      * Instance of the asset data registry.
      *
      * @var AssetDataRegistry
      */
-    protected $asset_data_registry = null;
+    protected $asset_data_registry;
     /**
      * Instance of the integration registry.
      *
      * @var IntegrationRegistry
      */
-    protected $integration_registry = null;
+    protected $integration_registry;
     /**
      * Constructor.
      *

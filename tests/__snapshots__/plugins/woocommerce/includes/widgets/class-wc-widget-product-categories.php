@@ -11,13 +11,13 @@ class WC_Widget_Product_Categories extends \WC_Widget
      *
      * @var array
      */
-    public $cat_ancestors = null;
+    public $cat_ancestors;
     /**
      * Current Category.
      *
      * @var bool
      */
-    public $current_cat = null;
+    public $current_cat;
     /**
      * Constructor.
      */

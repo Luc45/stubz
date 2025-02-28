@@ -11,19 +11,19 @@ class ActionScheduler_WPCLI_QueueRunner extends \ActionScheduler_Abstract_QueueR
      *
      * @var array
      */
-    protected $actions = null;
+    protected $actions;
     /**
      * ActionScheduler_ActionClaim instance.
      *
      * @var ActionScheduler_ActionClaim
      */
-    protected $claim = null;
+    protected $claim;
     /**
      * Progress bar instance.
      *
      * @var \cli\progress\Bar
      */
-    protected $progress_bar = null;
+    protected $progress_bar;
     /**
      * ActionScheduler_WPCLI_QueueRunner constructor.
      *

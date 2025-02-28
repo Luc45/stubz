@@ -51,7 +51,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var string
      */
-    public $title = null;
+    public $title;
     /**
      * This is an array of rates - methods must populate this array to register shipping costs.
      *
@@ -101,7 +101,7 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      * @deprecated 2.6.0
      * @var string
      */
-    public $availability = null;
+    public $availability;
     /**
      * Availability countries - legacy. Used for method Availability.
      * No longer useful for instance based shipping methods.
@@ -115,20 +115,20 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var int
      */
-    public $method_order = null;
+    public $method_order;
     /**
      * Whether the shipping method has settings or not. Preferably, use {@see has_settings()} instead.
      *
      * @var bool
      */
-    public $has_settings = null;
+    public $has_settings;
     /**
      * When the method supports the settings modal, this is the admin settings HTML.
      * Preferably, use {@see get_admin_options_html()} instead.
      *
      * @var string|bool
      */
-    public $settings_html = null;
+    public $settings_html;
     /**
      * Constructor.
      *

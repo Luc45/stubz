@@ -12,7 +12,7 @@ final class WC_Cart_Session
      * @since 3.2.0
      * @var WC_Cart
      */
-    protected $cart = null;
+    protected $cart;
     /**
      * Sets up the items provided, and calculate totals.
      *

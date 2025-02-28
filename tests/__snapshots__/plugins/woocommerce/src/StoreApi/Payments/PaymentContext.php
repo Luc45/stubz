@@ -18,7 +18,7 @@ class PaymentContext
      *
      * @var \WC_Order
      */
-    protected $order = null;
+    protected $order;
     /**
      * Holds data to send to the payment gateway to support payment.
      *

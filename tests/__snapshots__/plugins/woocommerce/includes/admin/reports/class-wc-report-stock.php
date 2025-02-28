@@ -14,7 +14,7 @@ class WC_Report_Stock extends \WP_List_Table
      *
      * @var int
      */
-    protected $max_items = null;
+    protected $max_items;
     /**
      * Constructor.
      */

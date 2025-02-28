@@ -11,7 +11,7 @@ class WC_Helper
      *
      * @var $log
      */
-    public static $log = null;
+    public static $log;
     /**
      * Get an absolute path to the requested helper view.
      *

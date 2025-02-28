@@ -7,7 +7,7 @@ class RawArgument implements \Automattic\WooCommerce\Vendor\League\Container\Arg
     /**
      * @var mixed
      */
-    protected $value = null;
+    protected $value;
     /**
      * Construct.
      *

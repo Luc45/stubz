@@ -15,13 +15,13 @@ class WC_Shipping_Legacy_Free_Shipping extends \WC_Shipping_Method
      *
      * @var float
      */
-    public $min_amount = null;
+    public $min_amount;
     /**
      * Requires option.
      *
      * @var string
      */
-    public $requires = null;
+    public $requires;
     /**
      * Constructor.
      */

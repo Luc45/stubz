@@ -12,7 +12,7 @@ class RoutesController
      *
      * @var SchemaController
      */
-    protected $schema_controller = null;
+    protected $schema_controller;
     /**
      * Stores routes.
      *

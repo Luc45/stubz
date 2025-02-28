@@ -21,7 +21,7 @@ class ActionScheduler_LogEntry
      *
      * @var Datetime $date
      */
-    protected $date = null;
+    protected $date;
     /**
      * Constructor
      *

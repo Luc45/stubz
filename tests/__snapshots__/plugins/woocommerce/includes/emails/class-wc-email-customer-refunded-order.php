@@ -16,13 +16,13 @@ class WC_Email_Customer_Refunded_Order extends \WC_Email
      *
      * @var WC_Order|bool
      */
-    public $refund = null;
+    public $refund;
     /**
      * Is the order partial refunded?
      *
      * @var bool
      */
-    public $partial_refund = null;
+    public $partial_refund;
     /**
      * Constructor.
      */

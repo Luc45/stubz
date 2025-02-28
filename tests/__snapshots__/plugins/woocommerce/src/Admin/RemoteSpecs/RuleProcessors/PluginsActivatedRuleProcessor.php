@@ -12,7 +12,7 @@ class PluginsActivatedRuleProcessor implements \Automattic\WooCommerce\Admin\Rem
      *
      * @var PluginsProviderInterface
      */
-    protected $plugins_provider = null;
+    protected $plugins_provider;
     /**
      * Constructor.
      *

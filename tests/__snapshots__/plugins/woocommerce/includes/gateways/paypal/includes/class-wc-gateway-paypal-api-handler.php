@@ -11,19 +11,19 @@ class WC_Gateway_Paypal_API_Handler
      *
      * @var string
      */
-    public static $api_username = null;
+    public static $api_username;
     /**
      * API Password
      *
      * @var string
      */
-    public static $api_password = null;
+    public static $api_password;
     /**
      * API Signature
      *
      * @var string
      */
-    public static $api_signature = null;
+    public static $api_signature;
     /**
      * Sandbox
      *

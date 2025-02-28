@@ -12,79 +12,79 @@ class WC_WCCOM_Site_Installation_State
      *
      * @var string
      */
-    protected $product_id = null;
+    protected $product_id;
     /**
      * The idempotency key.
      *
      * @var string
      */
-    protected $idempotency_key = null;
+    protected $idempotency_key;
     /**
      * The last step name.
      *
      * @var string
      */
-    protected $last_step_name = null;
+    protected $last_step_name;
     /**
      * The last step status.
      *
      * @var string
      */
-    protected $last_step_status = null;
+    protected $last_step_status;
     /**
      * The last step error.
      *
      * @var string
      */
-    protected $last_step_error = null;
+    protected $last_step_error;
     /**
      * The product type.
      *
      * @var string
      */
-    protected $product_type = null;
+    protected $product_type;
     /**
      * The product name.
      *
      * @var string
      */
-    protected $product_name = null;
+    protected $product_name;
     /**
      * The product slug.
      *
      * @var string
      */
-    protected $download_url = null;
+    protected $download_url;
     /**
      * The path to the downloaded file.
      *
      * @var string
      */
-    protected $download_path = null;
+    protected $download_path;
     /**
      * The path to the unpacked file.
      *
      * @var string
      */
-    protected $unpacked_path = null;
+    protected $unpacked_path;
     /**
      * The path to the installed file.
      *
      * @var string
      */
-    protected $installed_path = null;
+    protected $installed_path;
     /**
      * The plugin info for the already installed plugin.
      *
      * @var array
      */
-    protected $already_installed_plugin_info = null;
+    protected $already_installed_plugin_info;
     /**
      * The timestamp of the installation start.
      *
      * @var int
      */
-    protected $started_date = null;
+    protected $started_date;
     /**
      * Constructor.
      *

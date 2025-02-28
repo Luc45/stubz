@@ -66,7 +66,7 @@ abstract class WC_Data
      * @since 3.0.0
      * @var object
      */
-    protected $data_store = null;
+    protected $data_store;
     /**
      * Stores meta in cache for future reads.
      * A group must be set to to enable caching.

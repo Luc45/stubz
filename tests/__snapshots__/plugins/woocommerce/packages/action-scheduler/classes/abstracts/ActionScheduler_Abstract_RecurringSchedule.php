@@ -18,7 +18,7 @@ abstract class ActionScheduler_Abstract_RecurringSchedule extends \ActionSchedul
      *
      * @var mixed
      */
-    protected $recurrence = null;
+    protected $recurrence;
     /**
      * Construct.
      *

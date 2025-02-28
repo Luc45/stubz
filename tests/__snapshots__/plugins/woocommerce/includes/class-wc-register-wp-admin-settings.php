@@ -10,7 +10,7 @@ class WC_Register_WP_Admin_Settings
      *
      * @var WC_Register_WP_Admin_Settings
      */
-    protected $object = null;
+    protected $object;
     /**
      * Hooks into the settings API and starts registering our settings.
      *

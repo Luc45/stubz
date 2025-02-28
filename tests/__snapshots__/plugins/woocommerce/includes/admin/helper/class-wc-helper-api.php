@@ -11,7 +11,7 @@ class WC_Helper_API
      *
      * @var $api_base
      */
-    public static $api_base = null;
+    public static $api_base;
     /**
      * Load
      *

@@ -15,7 +15,7 @@ abstract class WC_Abstract_Privacy
      *
      * @var string
      */
-    public $name = null;
+    public $name;
     /**
      * This is a list of exporters.
      *
@@ -33,13 +33,13 @@ abstract class WC_Abstract_Privacy
      *
      * @var int
      */
-    protected $export_priority = null;
+    protected $export_priority;
     /**
      * This is a priority for the wp_privacy_personal_data_erasers filter
      *
      * @var int
      */
-    protected $erase_priority = null;
+    protected $erase_priority;
     /**
      * WC_Abstract_Privacy Constructor.
      *

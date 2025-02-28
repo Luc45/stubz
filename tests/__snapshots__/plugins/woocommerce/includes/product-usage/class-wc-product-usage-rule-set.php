@@ -9,7 +9,7 @@ class WC_Product_Usage_Rule_Set
      *
      * @var array|null $rules
      */
-    protected $rules = null;
+    protected $rules;
     /**
      * Constructor
      *

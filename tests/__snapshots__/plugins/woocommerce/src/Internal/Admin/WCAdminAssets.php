@@ -18,7 +18,7 @@ class WCAdminAssets
      *
      * @var array
      */
-    protected $preloaded_dependencies = null;
+    protected $preloaded_dependencies;
     /**
      * Get class instance.
      */

@@ -9,7 +9,7 @@ class ActionScheduler_AsyncRequest_QueueRunner extends \WP_Async_Request
      *
      * @var ActionScheduler_Store
      */
-    protected $store = null;
+    protected $store;
     /**
      * Prefix for ajax hooks
      *

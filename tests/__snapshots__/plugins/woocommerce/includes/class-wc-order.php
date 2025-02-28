@@ -99,7 +99,7 @@ class WC_Order extends \WC_Abstract_Order
      * @deprecated 2.2.0
      * @var stdClass|WC_Order[]
      */
-    public $refunds = null;
+    public $refunds;
     /**
      * When a payment is complete this function is called.
      *

@@ -12,7 +12,7 @@ abstract class Component
      *
      * @var array
      */
-    protected $additional_args = null;
+    protected $additional_args;
     /**
      * Array of required arguments.
      *

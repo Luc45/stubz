@@ -27,7 +27,7 @@ abstract class WP_Async_Request
      *
      * @var mixed
      */
-    protected $identifier = null;
+    protected $identifier;
     /**
      * Data
      *

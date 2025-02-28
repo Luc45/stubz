@@ -7,7 +7,7 @@ class ClassName implements \Automattic\WooCommerce\Vendor\League\Container\Argum
     /**
      * @var string
      */
-    protected $value = null;
+    protected $value;
     /**
      * Construct.
      *

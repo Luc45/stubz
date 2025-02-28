@@ -10,14 +10,14 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @deprecated 4.4.0 For legacy actions.
      * @var array
      */
-    public $legacy_values = null;
+    public $legacy_values;
     /**
      * Legacy cart item keys.
      *
      * @deprecated 4.4.0 For legacy actions.
      * @var string
      */
-    public $legacy_cart_item_key = null;
+    public $legacy_cart_item_key;
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -55,7 +55,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @deprecated 4.4.0 For legacy actions.
      * @var string
      */
-    public $legacy_package_key = null;
+    public $legacy_package_key;
     /**
      * Constructor.
      *

@@ -14,7 +14,7 @@ class InvalidStockLevelsInCartException extends \Exception
      *
      * @var string
      */
-    public $error_code = null;
+    public $error_code;
     /**
      * Additional error data.
      *
@@ -26,7 +26,7 @@ class InvalidStockLevelsInCartException extends \Exception
      *
      * @var WP_Error
      */
-    public $error = null;
+    public $error;
     /**
      * Setup exception.
      *

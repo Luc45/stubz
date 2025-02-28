@@ -15,13 +15,13 @@ final class BlockTypesController
      *
      * @var AssetApi
      */
-    protected $asset_api = null;
+    protected $asset_api;
     /**
      * Instance of the asset data registry.
      *
      * @var AssetDataRegistry
      */
-    protected $asset_data_registry = null;
+    protected $asset_data_registry;
     /**
      * Constructor.
      *

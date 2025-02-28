@@ -9,19 +9,19 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
      *
      * @var ActionScheduler_QueueCleaner
      */
-    protected $cleaner = null;
+    protected $cleaner;
     /**
      * ActionScheduler_FatalErrorMonitor instance.
      *
      * @var ActionScheduler_FatalErrorMonitor
      */
-    protected $monitor = null;
+    protected $monitor;
     /**
      * ActionScheduler_Store instance.
      *
      * @var ActionScheduler_Store
      */
-    protected $store = null;
+    protected $store;
     /**
      * ActionScheduler_Abstract_QueueRunner constructor.
      *

@@ -15,13 +15,13 @@ class WC_Shipping_Flat_Rate extends \WC_Shipping_Method
      *
      * @var string
      */
-    public $cost = null;
+    public $cost;
     /**
      * Shipping method type.
      *
      * @var string
      */
-    public $type = null;
+    public $type;
     /**
      * Constructor.
      *

@@ -26,7 +26,7 @@ abstract class AIEndpoint
      *
      * @var string
      */
-    protected $endpoint = null;
+    protected $endpoint;
     /**
      * Register routes.
      *

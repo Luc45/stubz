@@ -9,13 +9,13 @@ class WC_Gateway_Paypal_PDT_Handler extends \WC_Gateway_Paypal_Response
      *
      * @var string
      */
-    protected $identity_token = null;
+    protected $identity_token;
     /**
      * Receiver email address to validate.
      *
      * @var string Receiver email address.
      */
-    protected $receiver_email = null;
+    protected $receiver_email;
     /**
      * Constructor.
      *

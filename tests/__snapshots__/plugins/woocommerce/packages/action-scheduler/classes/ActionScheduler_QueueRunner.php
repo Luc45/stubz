@@ -11,7 +11,7 @@ class ActionScheduler_QueueRunner extends \ActionScheduler_Abstract_QueueRunner
      *
      * @var ActionScheduler_AsyncRequest_QueueRunner
      */
-    protected $async_request = null;
+    protected $async_request;
     /**
      * Get instance.
      *

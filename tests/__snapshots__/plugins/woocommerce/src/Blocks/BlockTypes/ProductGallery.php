@@ -18,7 +18,7 @@ class ProductGallery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
      *
      * @var array
      */
-    protected $dialog_context = null;
+    protected $dialog_context;
     /**
      * Initialize the block and Hook into the `render_block_context` filter
      * to update the context for dialog rendering.

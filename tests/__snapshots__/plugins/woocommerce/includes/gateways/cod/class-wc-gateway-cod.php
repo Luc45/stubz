@@ -17,19 +17,19 @@ class WC_Gateway_COD extends \WC_Payment_Gateway
      *
      * @var string
      */
-    public $instructions = null;
+    public $instructions;
     /**
      * Enable for shipping methods.
      *
      * @var array
      */
-    public $enable_for_methods = null;
+    public $enable_for_methods;
     /**
      * Enable for virtual products.
      *
      * @var bool
      */
-    public $enable_for_virtual = null;
+    public $enable_for_virtual;
     /**
      * Constructor for the gateway.
      */

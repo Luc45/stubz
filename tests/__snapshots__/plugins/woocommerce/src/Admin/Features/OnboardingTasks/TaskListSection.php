@@ -44,7 +44,7 @@ class TaskListSection
      *
      * @var TaskList
      */
-    protected $task_list = null;
+    protected $task_list;
     /**
      * Constructor
      *

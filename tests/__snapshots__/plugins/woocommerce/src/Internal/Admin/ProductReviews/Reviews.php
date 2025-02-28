@@ -19,7 +19,7 @@ class Reviews
      *
      * @var ReviewsListTable|null
      */
-    protected $reviews_list_table = null;
+    protected $reviews_list_table;
     /**
      * Constructor.
      */

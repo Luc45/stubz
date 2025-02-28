@@ -27,7 +27,7 @@ class WC_Log_Handler_Email extends \WC_Log_Handler
      *
      * @var int Integer representation of minimum log level to handle.
      */
-    protected $threshold = null;
+    protected $threshold;
     /**
      * Stores email recipients.
      *

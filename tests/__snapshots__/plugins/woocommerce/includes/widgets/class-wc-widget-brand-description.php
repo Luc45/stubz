@@ -16,25 +16,25 @@ class WC_Widget_Brand_Description extends \WP_Widget
      *
      * @var string
      */
-    public $woo_widget_cssclass = null;
+    public $woo_widget_cssclass;
     /**
      * Widget description.
      *
      * @var string
      */
-    public $woo_widget_description = null;
+    public $woo_widget_description;
     /**
      * Widget idbase.
      *
      * @var string
      */
-    public $woo_widget_idbase = null;
+    public $woo_widget_idbase;
     /**
      * Widget name.
      *
      * @var string
      */
-    public $woo_widget_name = null;
+    public $woo_widget_name;
     /** Constructor */
     public function __construct()
 {

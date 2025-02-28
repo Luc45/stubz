@@ -10,7 +10,7 @@ class WC_Discounts
      * @since 3.2.0
      * @var WC_Cart|WC_Order
      */
-    protected $object = null;
+    protected $object;
     /**
      * An array of items to discount.
      *

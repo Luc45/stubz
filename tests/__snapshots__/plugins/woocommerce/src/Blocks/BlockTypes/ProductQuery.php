@@ -18,7 +18,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @var array
      */
-    protected $parsed_block = null;
+    protected $parsed_block;
     /**
      * Orderby options not natively supported by WordPress REST API
      *
@@ -47,7 +47,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @var array
      */
-    protected $valid_query_vars = null;
+    protected $valid_query_vars;
     /**
      * Initialize this block type.
      *

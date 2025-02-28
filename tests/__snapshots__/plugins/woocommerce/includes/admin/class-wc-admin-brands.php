@@ -9,7 +9,7 @@ class WC_Brands_Admin
      *
      * @var array
      */
-    public $settings_tabs = null;
+    public $settings_tabs;
     /**
      * Admin fields.
      *

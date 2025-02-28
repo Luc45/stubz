@@ -14,13 +14,13 @@ class StockAvailabilityException extends \Exception
      *
      * @var string
      */
-    public $error_code = null;
+    public $error_code;
     /**
      * The name of the product that can only be purchased individually.
      *
      * @var string
      */
-    public $product_name = null;
+    public $product_name;
     /**
      * Additional error data.
      *

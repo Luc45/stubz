@@ -15,19 +15,19 @@ class WC_Gateway_Paypal_Request
      *
      * @var WC_Gateway_Paypal
      */
-    protected $gateway = null;
+    protected $gateway;
     /**
      * Endpoint for requests from PayPal.
      *
      * @var string
      */
-    protected $notify_url = null;
+    protected $notify_url;
     /**
      * Endpoint for requests to PayPal.
      *
      * @var string
      */
-    protected $endpoint = null;
+    protected $endpoint;
     /**
      * Constructor.
      *

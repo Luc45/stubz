@@ -108,19 +108,19 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery imple
      *
      * @var SqlQuery
      */
-    protected $subquery = null;
+    protected $subquery;
     /**
      * Totals query object.
      *
      * @var SqlQuery
      */
-    protected $total_query = null;
+    protected $total_query;
     /**
      * Intervals query object.
      *
      * @var SqlQuery
      */
-    protected $interval_query = null;
+    protected $interval_query;
     /**
      * Refresh the cache for the current query when true.
      *

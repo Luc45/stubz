@@ -18,31 +18,31 @@ class ProgressBar
      *
      * @var integer
      */
-    protected $total_ticks = null;
+    protected $total_ticks;
     /**
      * Total number of ticks.
      *
      * @var integer
      */
-    protected $count = null;
+    protected $count;
     /**
      * Progress bar update interval.
      *
      * @var integer
      */
-    protected $interval = null;
+    protected $interval;
     /**
      * Progress bar message.
      *
      * @var string
      */
-    protected $message = null;
+    protected $message;
     /**
      * Instance.
      *
      * @var \cli\progress\Bar
      */
-    protected $progress_bar = null;
+    protected $progress_bar;
     /**
      * ProgressBar constructor.
      *

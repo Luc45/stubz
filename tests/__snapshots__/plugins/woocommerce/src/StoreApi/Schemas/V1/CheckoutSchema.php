@@ -19,25 +19,25 @@ class CheckoutSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstrac
      *
      * @var BillingAddressSchema
      */
-    protected $billing_address_schema = null;
+    protected $billing_address_schema;
     /**
      * Shipping address schema instance.
      *
      * @var ShippingAddressSchema
      */
-    protected $shipping_address_schema = null;
+    protected $shipping_address_schema;
     /**
      * Image Attachment schema instance.
      *
      * @var ImageAttachmentSchema
      */
-    protected $image_attachment_schema = null;
+    protected $image_attachment_schema;
     /**
      * Additional fields controller.
      *
      * @var CheckoutFields
      */
-    protected $additional_fields_controller = null;
+    protected $additional_fields_controller;
     /**
      * Constructor.
      *

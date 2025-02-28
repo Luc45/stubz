@@ -13,7 +13,7 @@ class Renderer
      *
      * @var array
      */
-    protected $parsed_block = null;
+    protected $parsed_block;
     /**
      * Constructor.
      */

@@ -15,7 +15,7 @@ class WC_Shipping_Local_Pickup extends \WC_Shipping_Method
      *
      * @var string
      */
-    public $cost = null;
+    public $cost;
     /**
      * Constructor.
      *

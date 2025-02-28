@@ -12,7 +12,7 @@ class RouteException extends \Exception
      *
      * @var string
      */
-    public $error_code = null;
+    public $error_code;
     /**
      * Additional error data.
      *

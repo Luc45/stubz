@@ -21,7 +21,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $status_options = null;
+    protected $status_options;
     /**
      * Constructor.
      */

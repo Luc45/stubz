@@ -13,37 +13,37 @@ abstract class AbstractCartRoute extends \Automattic\WooCommerce\StoreApi\Routes
      *
      * @var CartSchema
      */
-    protected $schema = null;
+    protected $schema;
     /**
      * Schema class for the cart.
      *
      * @var CartSchema
      */
-    protected $cart_schema = null;
+    protected $cart_schema;
     /**
      * Schema class for the cart item.
      *
      * @var CartItemSchema
      */
-    protected $cart_item_schema = null;
+    protected $cart_item_schema;
     /**
      * Cart controller class instance.
      *
      * @var CartController
      */
-    protected $cart_controller = null;
+    protected $cart_controller;
     /**
      * Order controller class instance.
      *
      * @var OrderController
      */
-    protected $order_controller = null;
+    protected $order_controller;
     /**
      * Additional fields controller class instance.
      *
      * @var CheckoutFields
      */
-    protected $additional_fields_controller = null;
+    protected $additional_fields_controller;
     /**
      * True when this route has been requested with a valid cart token.
      *

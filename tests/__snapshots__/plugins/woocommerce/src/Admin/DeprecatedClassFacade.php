@@ -12,7 +12,7 @@ class DeprecatedClassFacade
      *
      * @var object
      */
-    protected $instance = null;
+    protected $instance;
     /**
      * The name of the non-deprecated class that this facade covers.
      *

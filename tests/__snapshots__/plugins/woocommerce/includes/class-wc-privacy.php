@@ -9,7 +9,7 @@ class WC_Privacy extends \WC_Abstract_Privacy
      *
      * @var WC_Privacy_Background_Process
      */
-    protected static $background_process = null;
+    protected static $background_process;
     /**
      * Init - hook into events.
      */

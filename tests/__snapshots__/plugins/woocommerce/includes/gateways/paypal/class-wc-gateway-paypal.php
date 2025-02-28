@@ -22,31 +22,31 @@ class WC_Gateway_Paypal extends \WC_Payment_Gateway
      *
      * @var bool
      */
-    public $testmode = null;
+    public $testmode;
     /**
      * Whether the debug mode is enabled.
      *
      * @var bool
      */
-    public $debug = null;
+    public $debug;
     /**
      * Email address to send payments to.
      *
      * @var string
      */
-    public $email = null;
+    public $email;
     /**
      * Receiver email.
      *
      * @var string
      */
-    public $receiver_email = null;
+    public $receiver_email;
     /**
      * Identity token.
      *
      * @var string
      */
-    public $identity_token = null;
+    public $identity_token;
     /**
      * Constructor for the gateway.
      */

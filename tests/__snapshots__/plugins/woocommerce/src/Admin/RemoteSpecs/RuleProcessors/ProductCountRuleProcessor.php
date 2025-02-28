@@ -13,7 +13,7 @@ class ProductCountRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteS
      *
      * @var WC_Product_Query
      */
-    protected $product_query = null;
+    protected $product_query;
     /**
      * Constructor.
      *

@@ -9,13 +9,13 @@ class WC_Regenerate_Images
      *
      * @var WC_Regenerate_Images_Request
      */
-    protected static $background_process = null;
+    protected static $background_process;
     /**
      * Stores size being generated on the fly.
      *
      * @var string
      */
-    protected static $regenerate_size = null;
+    protected static $regenerate_size;
     /**
      * Init function
      */

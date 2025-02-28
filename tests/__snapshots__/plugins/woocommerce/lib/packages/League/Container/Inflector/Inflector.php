@@ -7,11 +7,11 @@ class Inflector implements \Automattic\WooCommerce\Vendor\League\Container\Argum
     /**
      * @var string
      */
-    protected $type = null;
+    protected $type;
     /**
      * @var callable|null
      */
-    protected $callback = null;
+    protected $callback;
     /**
      * @var array
      */

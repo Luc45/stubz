@@ -16,7 +16,7 @@ class Api
      *
      * @var string
      */
-    public $wc_version = null;
+    public $wc_version;
     /**
      * Constructor for class
      *

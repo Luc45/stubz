@@ -12,7 +12,7 @@ class Order extends \WC_Order
      *
      * @var void|array
      */
-    protected $refunded_line_items = null;
+    protected $refunded_line_items;
     /**
      * Caches the customer ID.
      *

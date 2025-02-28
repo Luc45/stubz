@@ -11,15 +11,15 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
     /**
      * @var DefinitionAggregateInterface
      */
-    protected $definitions = null;
+    protected $definitions;
     /**
      * @var ServiceProviderAggregateInterface
      */
-    protected $providers = null;
+    protected $providers;
     /**
      * @var InflectorAggregateInterface
      */
-    protected $inflectors = null;
+    protected $inflectors;
     /**
      * @var ContainerInterface[]
      */

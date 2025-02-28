@@ -9,7 +9,7 @@ class ActionScheduler_QueueCleaner
      *
      * @var int
      */
-    protected $batch_size = null;
+    protected $batch_size;
     /**
      * ActionScheduler_QueueCleaner constructor.
      *

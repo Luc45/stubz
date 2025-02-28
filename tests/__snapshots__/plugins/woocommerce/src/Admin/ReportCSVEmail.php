@@ -12,19 +12,19 @@ class ReportCSVEmail extends \WC_Email
      *
      * @var array
      */
-    protected $report_labels = null;
+    protected $report_labels;
     /**
      * Report type (e.g. 'customers').
      *
      * @var string
      */
-    protected $report_type = null;
+    protected $report_type;
     /**
      * Download URL.
      *
      * @var string
      */
-    protected $download_url = null;
+    protected $download_url;
     /**
      * Constructor.
      */

@@ -12,7 +12,7 @@ class NotRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\Rule
      *
      * @var RuleEvaluator
      */
-    protected $rule_evaluator = null;
+    protected $rule_evaluator;
     /**
      * Constructor.
      *

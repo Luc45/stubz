@@ -29,19 +29,19 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      *
      * @var ActionScheduler_Store
      */
-    protected $store = null;
+    protected $store;
     /**
      * A logger to use for getting action logs to display
      *
      * @var ActionScheduler_Logger
      */
-    protected $logger = null;
+    protected $logger;
     /**
      * A ActionScheduler_QueueRunner runner instance (or child class)
      *
      * @var ActionScheduler_QueueRunner
      */
-    protected $runner = null;
+    protected $runner;
     /**
      * Bulk actions. The key of the array is the method name of the implementation.
      * Example: bulk_<key>(array $ids, string $sql_in).

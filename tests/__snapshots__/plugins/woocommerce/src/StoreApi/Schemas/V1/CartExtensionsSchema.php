@@ -19,7 +19,7 @@ class CartExtensionsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\A
      *
      * @var CartSchema
      */
-    public $cart_schema = null;
+    public $cart_schema;
     /**
      * Constructor.
      *

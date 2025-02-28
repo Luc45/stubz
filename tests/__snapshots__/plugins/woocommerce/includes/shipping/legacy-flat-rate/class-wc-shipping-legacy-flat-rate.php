@@ -21,20 +21,20 @@ class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
      *
      * @var string
      */
-    public $cost = null;
+    public $cost;
     /**
      * Shipping method type.
      *
      * @var string
      */
-    public $type = null;
+    public $type;
     /**
      * Shipping method options.
      *
      * @deprecated 2.4.0
      * @var string
      */
-    public $options = null;
+    public $options;
     /**
      * Constructor.
      */

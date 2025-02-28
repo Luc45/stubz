@@ -9,7 +9,7 @@ class WC_WCCOM_Site_Installation_Step_Activate_Product implements \WC_WCCOM_Site
      *
      * @var WC_WCCOM_Site_Installation_State
      */
-    protected $state = null;
+    protected $state;
     /**
      * Constructor.
      *

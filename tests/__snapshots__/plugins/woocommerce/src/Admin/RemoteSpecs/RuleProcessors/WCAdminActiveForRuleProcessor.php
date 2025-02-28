@@ -13,7 +13,7 @@ class WCAdminActiveForRuleProcessor implements \Automattic\WooCommerce\Admin\Rem
      *
      * @var WCAdminActiveForProvider
      */
-    protected $wcadmin_active_for_provider = null;
+    protected $wcadmin_active_for_provider;
     /**
      * Constructor
      *

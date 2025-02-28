@@ -9,19 +9,19 @@ class WC_Session_Handler extends \WC_Session
      *
      * @var string cookie name
      */
-    protected $_cookie = null;
+    protected $_cookie;
     /**
      * Stores session expiry.
      *
      * @var string session due to expire timestamp
      */
-    protected $_session_expiring = null;
+    protected $_session_expiring;
     /**
      * Stores session due to expire timestamp.
      *
      * @var string session expiration timestamp
      */
-    protected $_session_expiration = null;
+    protected $_session_expiration;
     /**
      * True when the cookie exists.
      *
@@ -33,7 +33,7 @@ class WC_Session_Handler extends \WC_Session
      *
      * @var string Custom session table name
      */
-    protected $_table = null;
+    protected $_table;
     /**
      * Constructor for the session class.
      */

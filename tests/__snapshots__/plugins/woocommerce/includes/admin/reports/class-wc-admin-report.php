@@ -26,37 +26,37 @@ class WC_Admin_Report
      *
      * @var int
      */
-    public $chart_interval = null;
+    public $chart_interval;
     /**
      * Group by SQL query.
      *
      * @var string
      */
-    public $group_by_query = null;
+    public $group_by_query;
     /**
      * The bar width.
      *
      * @var int
      */
-    public $barwidth = null;
+    public $barwidth;
     /**
      * Group chart item by day or month.
      *
      * @var string
      */
-    public $chart_groupby = null;
+    public $chart_groupby;
     /**
      * The start date of the report.
      *
      * @var int timestamp
      */
-    public $start_date = null;
+    public $start_date;
     /**
      * The end date of the report.
      *
      * @var int timestamp
      */
-    public $end_date = null;
+    public $end_date;
     /**
      * Get report totals such as order totals and discount amounts.
      *

@@ -24,7 +24,7 @@ class WC_REST_Report_Sales_V1_Controller extends \WC_REST_Controller
      *
      * @var WC_Admin_Report
      */
-    protected $report = null;
+    protected $report;
     /**
      * Register the routes for sales reports.
      */

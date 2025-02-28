@@ -16,7 +16,7 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var string
      */
-    public $order_button_text = null;
+    public $order_button_text;
     /**
      * Yes or no based on whether the method is enabled.
      *
@@ -28,19 +28,19 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var string
      */
-    public $title = null;
+    public $title;
     /**
      * Payment method description for the frontend.
      *
      * @var string
      */
-    public $description = null;
+    public $description;
     /**
      * Chosen payment method id.
      *
      * @var bool
      */
-    public $chosen = null;
+    public $chosen;
     /**
      * Gateway title.
      *
@@ -58,25 +58,25 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var bool
      */
-    public $has_fields = null;
+    public $has_fields;
     /**
      * Countries this gateway is allowed for.
      *
      * @var array
      */
-    public $countries = null;
+    public $countries;
     /**
      * Available for all counties or specific.
      *
      * @var string
      */
-    public $availability = null;
+    public $availability;
     /**
      * Icon for the gateway.
      *
      * @var string
      */
-    public $icon = null;
+    public $icon;
     /**
      * Supported features such as 'default_credit_card_form', 'refunds'.
      *

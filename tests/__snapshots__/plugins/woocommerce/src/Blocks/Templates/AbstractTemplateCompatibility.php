@@ -17,7 +17,7 @@ abstract class AbstractTemplateCompatibility
      *
      * @var array $hook_data The hook data.
      */
-    protected $hook_data = null;
+    protected $hook_data;
     /**
      * Initialization method.
      */

@@ -30,7 +30,7 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      *
      * @var array
      */
-    protected $report_columns = null;
+    protected $report_columns;
     /**
      * Data store context used to pass to filters.
      *

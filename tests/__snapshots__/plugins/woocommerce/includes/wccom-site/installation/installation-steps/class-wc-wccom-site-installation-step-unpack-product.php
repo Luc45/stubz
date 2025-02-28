@@ -9,7 +9,7 @@ class WC_WCCOM_Site_Installation_Step_Unpack_Product implements \WC_WCCOM_Site_I
      *
      * @var WC_WCCOM_Site_Installation_State
      */
-    protected $state = null;
+    protected $state;
     /**
      * Constructor.
      *

@@ -18,19 +18,19 @@ class Controller extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      *
      * @var HandlerRegistry
      */
-    protected $collection_handler_registry = null;
+    protected $collection_handler_registry;
     /**
      * Instance of QueryBuilder.
      *
      * @var QueryBuilder
      */
-    protected $query_builder = null;
+    protected $query_builder;
     /**
      * Instance of Renderer.
      *
      * @var Renderer
      */
-    protected $renderer = null;
+    protected $renderer;
     /**
      * Initialize this block type.
      *

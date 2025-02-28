@@ -28,14 +28,14 @@ abstract class WP_Background_Process extends \WP_Async_Request
      * @var mixed
      * @access protected
      */
-    protected $cron_hook_identifier = null;
+    protected $cron_hook_identifier;
     /**
      * Cron_interval_identifier
      *
      * @var mixed
      * @access protected
      */
-    protected $cron_interval_identifier = null;
+    protected $cron_interval_identifier;
     /**
      * Initiate new background process
      */

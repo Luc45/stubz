@@ -12,7 +12,7 @@ class SqlQuery
      *
      * @var string
      */
-    protected $context = null;
+    protected $context;
     /**
      * Constructor.
      *

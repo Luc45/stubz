@@ -13,31 +13,31 @@ abstract class WC_Widget extends \WP_Widget
      *
      * @var string
      */
-    public $widget_cssclass = null;
+    public $widget_cssclass;
     /**
      * Widget description.
      *
      * @var string
      */
-    public $widget_description = null;
+    public $widget_description;
     /**
      * Widget ID.
      *
      * @var string
      */
-    public $widget_id = null;
+    public $widget_id;
     /**
      * Widget name.
      *
      * @var string
      */
-    public $widget_name = null;
+    public $widget_name;
     /**
      * Settings.
      *
      * @var array
      */
-    public $settings = null;
+    public $settings;
     /**
      * Constructor.
      */

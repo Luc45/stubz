@@ -11,7 +11,7 @@ abstract class AbstractServiceProvider implements \Automattic\WooCommerce\Vendor
     /**
      * @var string
      */
-    protected $identifier = null;
+    protected $identifier;
     /**
      * {@inheritdoc}
      */

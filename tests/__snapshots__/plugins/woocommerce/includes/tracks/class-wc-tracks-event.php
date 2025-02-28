@@ -12,7 +12,7 @@ class WC_Tracks_Event
      *
      * @var WP_Error
      */
-    public $error = null;
+    public $error;
     /**
      * WC_Tracks_Event constructor.
      *

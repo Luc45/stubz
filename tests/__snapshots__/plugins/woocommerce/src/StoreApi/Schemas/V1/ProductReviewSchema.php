@@ -19,7 +19,7 @@ class ProductReviewSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Ab
      *
      * @var ImageAttachmentSchema
      */
-    protected $image_attachment_schema = null;
+    protected $image_attachment_schema;
     /**
      * Constructor.
      *

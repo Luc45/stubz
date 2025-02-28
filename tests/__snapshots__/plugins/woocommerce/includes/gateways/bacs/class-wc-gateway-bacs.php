@@ -17,19 +17,19 @@ class WC_Gateway_BACS extends \WC_Payment_Gateway
      *
      * @var array
      */
-    public $locale = null;
+    public $locale;
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *
      * @var string
      */
-    public $instructions = null;
+    public $instructions;
     /**
      * Account details.
      *
      * @var array
      */
-    public $account_details = null;
+    public $account_details;
     /**
      * Constructor for the gateway.
      */

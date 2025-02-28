@@ -19,7 +19,7 @@ class WC_Log_Handler_File extends \WC_Log_Handler
      *
      * @var int
      */
-    protected $log_size_limit = null;
+    protected $log_size_limit;
     /**
      * Cache logs that could not be written.
      *

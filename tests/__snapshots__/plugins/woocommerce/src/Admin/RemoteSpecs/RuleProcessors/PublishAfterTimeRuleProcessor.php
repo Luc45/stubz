@@ -12,7 +12,7 @@ class PublishAfterTimeRuleProcessor implements \Automattic\WooCommerce\Admin\Rem
      *
      * @var DateTimeProviderInterface
      */
-    protected $date_time_provider = null;
+    protected $date_time_provider;
     /**
      * Constructor.
      *

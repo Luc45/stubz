@@ -12,14 +12,14 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var WC_Cart
      */
-    protected $cart = null;
+    protected $cart;
     /**
      * Reference to customer object.
      *
      * @since 3.2.0
      * @var array
      */
-    protected $customer = null;
+    protected $customer;
     /**
      * Line items to calculate.
      *
@@ -91,7 +91,7 @@ final class WC_Cart_Totals
      *
      * @var array
      */
-    protected $item_tax_rates = null;
+    protected $item_tax_rates;
     /**
      * Sets up the items provided, and calculate totals.
      *

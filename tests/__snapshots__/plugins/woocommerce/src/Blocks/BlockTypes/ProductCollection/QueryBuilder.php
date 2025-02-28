@@ -13,7 +13,7 @@ class QueryBuilder
      *
      * @var array
      */
-    protected $valid_query_vars = null;
+    protected $valid_query_vars;
     /**
      * Orderby options not natively supported by WordPress REST API
      *

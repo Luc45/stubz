@@ -21,13 +21,13 @@ abstract class AbstractSchema
      *
      * @var ExtendSchema
      */
-    protected $extend = null;
+    protected $extend;
     /**
      * Schema Controller instance.
      *
      * @var SchemaController
      */
-    protected $controller = null;
+    protected $controller;
     /**
      * Constructor.
      *

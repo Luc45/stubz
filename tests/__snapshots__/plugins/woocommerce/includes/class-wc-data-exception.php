@@ -9,13 +9,13 @@ class WC_Data_Exception extends \Exception
      *
      * @var string
      */
-    protected $error_code = null;
+    protected $error_code;
     /**
      * Error extra data.
      *
      * @var array
      */
-    protected $error_data = null;
+    protected $error_data;
     /**
      * Setup exception.
      *

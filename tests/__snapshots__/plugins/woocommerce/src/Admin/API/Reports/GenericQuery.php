@@ -30,7 +30,7 @@ class GenericQuery extends \WC_Object_Query
      *
      * @var string
      */
-    protected $name = null;
+    protected $name;
     /**
      * Create a new query.
      *

@@ -9,13 +9,13 @@ class WC_Logger implements \WC_Logger_Interface
      *
      * @var array
      */
-    protected $handlers = null;
+    protected $handlers;
     /**
      * Minimum log level this handler will process.
      *
      * @var int Integer representation of minimum log level to handle.
      */
-    protected $threshold = null;
+    protected $threshold;
     /**
      * Constructor for the logger.
      *

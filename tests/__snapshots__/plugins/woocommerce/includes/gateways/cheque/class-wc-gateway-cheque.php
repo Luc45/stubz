@@ -17,7 +17,7 @@ class WC_Gateway_Cheque extends \WC_Payment_Gateway
      *
      * @var string
      */
-    public $instructions = null;
+    public $instructions;
     /**
      * Constructor for the gateway.
      */

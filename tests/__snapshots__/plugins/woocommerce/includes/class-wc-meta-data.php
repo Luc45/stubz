@@ -10,14 +10,14 @@ class WC_Meta_Data implements \JsonSerializable
      * @since 3.2.0
      * @var array
      */
-    protected $current_data = null;
+    protected $current_data;
     /**
      * Metadata data
      *
      * @since 3.2.0
      * @var array
      */
-    protected $data = null;
+    protected $data;
     /**
      * Constructor.
      *

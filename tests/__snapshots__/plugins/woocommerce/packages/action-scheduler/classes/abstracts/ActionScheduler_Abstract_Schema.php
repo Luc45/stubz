@@ -21,7 +21,7 @@ abstract class ActionScheduler_Abstract_Schema
      *
      * @var string
      */
-    protected $db_version = null;
+    protected $db_version;
     /**
      * Names of tables that will be registered by this class.
      *

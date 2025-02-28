@@ -16,31 +16,31 @@ class WC_Email_Customer_New_Account extends \WC_Email
      *
      * @var string
      */
-    public $user_login = null;
+    public $user_login;
     /**
      * User email.
      *
      * @var string
      */
-    public $user_email = null;
+    public $user_email;
     /**
      * User password.
      *
      * @var string
      */
-    public $user_pass = null;
+    public $user_pass;
     /**
      * Is the password generated?
      *
      * @var bool
      */
-    public $password_generated = null;
+    public $password_generated;
     /**
      * Magic link to set initial password.
      *
      * @var string
      */
-    public $set_password_url = null;
+    public $set_password_url;
     /**
      * Constructor.
      */

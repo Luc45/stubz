@@ -9,7 +9,7 @@ abstract class WC_Session
      *
      * @var int $_customer_id Customer ID.
      */
-    protected $_customer_id = null;
+    protected $_customer_id;
     /**
      * Session Data.
      *

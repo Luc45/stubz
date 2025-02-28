@@ -16,25 +16,25 @@ class WC_Email extends \WC_Settings_API
      *
      * @var String
      */
-    public $id = null;
+    public $id;
     /**
      * Email method title.
      *
      * @var string
      */
-    public $title = null;
+    public $title;
     /**
      * 'yes' if the method is enabled.
      *
      * @var string yes, no
      */
-    public $enabled = null;
+    public $enabled;
     /**
      * Description for the email.
      *
      * @var string
      */
-    public $description = null;
+    public $description;
     /**
      * Default heading.
      *
@@ -58,49 +58,49 @@ class WC_Email extends \WC_Settings_API
      *
      * @var string
      */
-    public $template_plain = null;
+    public $template_plain;
     /**
      * HTML template path.
      *
      * @var string
      */
-    public $template_html = null;
+    public $template_html;
     /**
      * Template path.
      *
      * @var string
      */
-    public $template_base = null;
+    public $template_base;
     /**
      * Recipients for the email.
      *
      * @var string
      */
-    public $recipient = null;
+    public $recipient;
     /**
      * Object this email is for, for example a customer, product, or email.
      *
      * @var object|bool
      */
-    public $object = null;
+    public $object;
     /**
      * Mime boundary (for multipart emails).
      *
      * @var string
      */
-    public $mime_boundary = null;
+    public $mime_boundary;
     /**
      * Mime boundary header (for multipart emails).
      *
      * @var string
      */
-    public $mime_boundary_header = null;
+    public $mime_boundary_header;
     /**
      * True when email is being sent.
      *
      * @var bool
      */
-    public $sending = null;
+    public $sending;
     /**
      * True when the email notification is sent manually only.
      *
@@ -194,7 +194,7 @@ class WC_Email extends \WC_Settings_API
      *
      * @var string
      */
-    public $email_type = null;
+    public $email_type;
     /**
      * Constructor.
      */

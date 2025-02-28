@@ -17,7 +17,7 @@ abstract class Task
      *
      * @var TaskList
      */
-    protected $task_list = null;
+    protected $task_list;
     /**
      * Duration to millisecond mapping.
      *

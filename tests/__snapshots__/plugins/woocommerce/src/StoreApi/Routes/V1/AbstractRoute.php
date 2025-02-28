@@ -14,7 +14,7 @@ abstract class AbstractRoute implements \Automattic\WooCommerce\StoreApi\Routes\
      *
      * @var AbstractSchema
      */
-    protected $schema = null;
+    protected $schema;
     /**
      * Route namespace.
      *
@@ -26,7 +26,7 @@ abstract class AbstractRoute implements \Automattic\WooCommerce\StoreApi\Routes\
      *
      * @var SchemaController
      */
-    protected $schema_controller = null;
+    protected $schema_controller;
     /**
      * Constructor.
      *

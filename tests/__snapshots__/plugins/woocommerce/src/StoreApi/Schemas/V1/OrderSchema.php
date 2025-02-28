@@ -19,55 +19,55 @@ class OrderSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSc
      *
      * @var OrderItemSchema
      */
-    public $item_schema = null;
+    public $item_schema;
     /**
      * Order controller class instance.
      *
      * @var OrderController
      */
-    protected $order_controller = null;
+    protected $order_controller;
     /**
      * Coupon schema instance.
      *
      * @var OrderCouponSchema
      */
-    public $coupon_schema = null;
+    public $coupon_schema;
     /**
      * Product item schema instance representing cross-sell items.
      *
      * @var ProductSchema
      */
-    public $cross_sells_item_schema = null;
+    public $cross_sells_item_schema;
     /**
      * Fee schema instance.
      *
      * @var OrderFeeSchema
      */
-    public $fee_schema = null;
+    public $fee_schema;
     /**
      * Shipping rates schema instance.
      *
      * @var CartShippingRateSchema
      */
-    public $shipping_rate_schema = null;
+    public $shipping_rate_schema;
     /**
      * Shipping address schema instance.
      *
      * @var ShippingAddressSchema
      */
-    public $shipping_address_schema = null;
+    public $shipping_address_schema;
     /**
      * Billing address schema instance.
      *
      * @var BillingAddressSchema
      */
-    public $billing_address_schema = null;
+    public $billing_address_schema;
     /**
      * Error schema instance.
      *
      * @var ErrorSchema
      */
-    public $error_schema = null;
+    public $error_schema;
     /**
      * Constructor.
      *

@@ -77,13 +77,13 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @var OrdersTableDataStoreMeta
      */
-    protected $data_store_meta = null;
+    protected $data_store_meta;
     /**
      * The database util object to use.
      *
      * @var DatabaseUtil
      */
-    protected $database_util = null;
+    protected $database_util;
     /**
      * Table column to WC_Order mapping for wc_orders table.
      *

@@ -12,7 +12,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      *
      * @var string
      */
-    protected $block_name = null;
+    protected $block_name;
     /**
      * Default attribute values.
      *

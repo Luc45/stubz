@@ -23,13 +23,13 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var string
      */
-    protected $table_name = null;
+    protected $table_name;
     /**
      * Package name, used to get options from WP_List_Table::get_items_per_page.
      *
      * @var string
      */
-    protected $package = null;
+    protected $package;
     /**
      * How many items do we render per page?
      *
@@ -98,7 +98,7 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      *
      * @var string
      */
-    protected $table_header = null;
+    protected $table_header;
     /**
      * Enables bulk actions. It must be an array where the key is the action name
      * and the value is the label (which is translated automatically). It is important

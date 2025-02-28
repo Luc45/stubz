@@ -16,7 +16,7 @@ class WC_Email_Customer_Note extends \WC_Email
      *
      * @var string
      */
-    public $customer_note = null;
+    public $customer_note;
     /**
      * Constructor.
      */

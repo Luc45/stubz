@@ -11,7 +11,7 @@ class ActionScheduler_AdminView extends \ActionScheduler_AdminView_Deprecated
      *
      * @var ActionScheduler_ListTable
      */
-    protected $list_table = null;
+    protected $list_table;
     /**
      * Get instance.
      *

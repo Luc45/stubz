@@ -18,7 +18,7 @@ class RelatedProducts extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      *
      * @var array
      */
-    protected $parsed_block = null;
+    protected $parsed_block;
     /**
      * Initialize this block type.
      *

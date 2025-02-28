@@ -29,7 +29,7 @@ class WC_Shipping_Free_Shipping extends \WC_Shipping_Method
      *
      * @var string
      */
-    public $ignore_discounts = null;
+    public $ignore_discounts;
     /**
      * Constructor.
      *

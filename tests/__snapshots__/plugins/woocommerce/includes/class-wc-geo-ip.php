@@ -45,43 +45,43 @@ class WC_Geo_IP
      *
      * @var int
      */
-    public $flags = null;
+    public $flags;
     /**
      * File handler.
      *
      * @var resource
      */
-    public $filehandle = null;
+    public $filehandle;
     /**
      * Memory buffer.
      *
      * @var string
      */
-    public $memory_buffer = null;
+    public $memory_buffer;
     /**
      * Database type.
      *
      * @var int
      */
-    public $databaseType = null;
+    public $databaseType;
     /**
      * Database segments.
      *
      * @var int
      */
-    public $databaseSegments = null;
+    public $databaseSegments;
     /**
      * Record length.
      *
      * @var int
      */
-    public $record_length = null;
+    public $record_length;
     /**
      * Shmid.
      *
      * @var string
      */
-    public $shmid = null;
+    public $shmid;
     /**
      * Two letters country codes.
      *
@@ -1229,55 +1229,55 @@ class WC_Geo_IP_Record
      *
      * @var string
      */
-    public $country_code = null;
+    public $country_code;
     /**
      * 3 letters country code.
      *
      * @var string
      */
-    public $country_code3 = null;
+    public $country_code3;
     /**
      * Country name.
      *
      * @var string
      */
-    public $country_name = null;
+    public $country_name;
     /**
      * Region.
      *
      * @var string
      */
-    public $region = null;
+    public $region;
     /**
      * City.
      *
      * @var string
      */
-    public $city = null;
+    public $city;
     /**
      * Postal code.
      *
      * @var string
      */
-    public $postal_code = null;
+    public $postal_code;
     /**
      * Latitude
      *
      * @var int
      */
-    public $latitude = null;
+    public $latitude;
     /**
      * Longitude.
      *
      * @var int
      */
-    public $longitude = null;
+    public $longitude;
     /**
      * Area code.
      *
      * @var int
      */
-    public $area_code = null;
+    public $area_code;
     /**
      * DMA Code.
      *
@@ -1286,17 +1286,17 @@ class WC_Geo_IP_Record
      *
      * @var float
      */
-    public $dma_code = null;
+    public $dma_code;
     /**
      * Metro code.
      *
      * @var float
      */
-    public $metro_code = null;
+    public $metro_code;
     /**
      * Continent code.
      *
      * @var string
      */
-    public $continent_code = null;
+    public $continent_code;
 }

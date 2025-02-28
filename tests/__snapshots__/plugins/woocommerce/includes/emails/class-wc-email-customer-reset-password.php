@@ -16,25 +16,25 @@ class WC_Email_Customer_Reset_Password extends \WC_Email
      *
      * @var integer
      */
-    public $user_id = null;
+    public $user_id;
     /**
      * User login name.
      *
      * @var string
      */
-    public $user_login = null;
+    public $user_login;
     /**
      * User email.
      *
      * @var string
      */
-    public $user_email = null;
+    public $user_email;
     /**
      * Reset key.
      *
      * @var string
      */
-    public $reset_key = null;
+    public $reset_key;
     /**
      * Constructor.
      */

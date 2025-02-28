@@ -13,7 +13,7 @@ class WC_Brands
      *
      * @var mixed|null
      */
-    public $template_url = null;
+    public $template_url;
     /**
      * __construct function.
      */

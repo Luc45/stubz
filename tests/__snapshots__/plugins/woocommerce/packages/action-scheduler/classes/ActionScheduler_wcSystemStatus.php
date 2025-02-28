@@ -9,7 +9,7 @@ class ActionScheduler_wcSystemStatus
      *
      * @var ActionScheduler_Store
      */
-    protected $store = null;
+    protected $store;
     /**
      * Constructor method for ActionScheduler_wcSystemStatus.
      *

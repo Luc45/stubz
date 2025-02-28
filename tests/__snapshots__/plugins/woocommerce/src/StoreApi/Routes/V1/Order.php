@@ -14,7 +14,7 @@ class Order extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
      *
      * @var OrderController
      */
-    protected $order_controller = null;
+    protected $order_controller;
     /**
      * Constructor.
      *

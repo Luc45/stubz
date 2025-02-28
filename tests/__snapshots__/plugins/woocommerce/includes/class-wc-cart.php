@@ -27,7 +27,7 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    protected $shipping_methods = null;
+    protected $shipping_methods;
     /**
      * Total defaults used to reset.
      *
@@ -64,13 +64,13 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var WC_Cart_Session
      */
-    protected $session = null;
+    protected $session;
     /**
      * Reference to the cart fees API class.
      *
      * @var WC_Cart_Fees
      */
-    protected $fees_api = null;
+    protected $fees_api;
     /**
      * Constructor for the cart class. Loads options and hooks in the init method.
      */

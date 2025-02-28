@@ -8,9 +8,6 @@ use Roave\BetterReflection\Reflection\ReflectionProperty;
 use Throwable;
 
 class PropertyStubGenerator {
-	/**
-	 * Generate a property stub.
-	 */
 	public function generatePropertyStub( ReflectionProperty $prop ): string {
 		$out = '';
 
@@ -41,9 +38,9 @@ class PropertyStubGenerator {
 
 		$out .= "    {$vis}{$static} {$readonly}{$typeStr}\${$prop->getName()}";
 
-		// Default value if any
 		try {
-			if ( $prop->hasDefaultValue() ) {
+			// Only emit a default if there's an actual default expression in code.
+			if ( $prop->getDefaultValueExpression() !== null ) {
 				$out .= ' = ' . Helpers::toPhpLiteral( $prop->getDefaultValue() );
 			}
 		} catch ( Throwable $ex ) {

@@ -12,31 +12,31 @@ class WC_Tax_Rate_Importer extends \WP_Importer
      *
      * @var int
      */
-    public $id = null;
+    public $id;
     /**
      * The current file url.
      *
      * @var string
      */
-    public $file_url = null;
+    public $file_url;
     /**
      * The current import page.
      *
      * @var string
      */
-    public $import_page = null;
+    public $import_page;
     /**
      * The current delimiter.
      *
      * @var string
      */
-    public $delimiter = null;
+    public $delimiter;
     /**
      * Error message for import.
      *
      * @var string
      */
-    public $import_error_message = null;
+    public $import_error_message;
     /**
      * Constructor.
      */

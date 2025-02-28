@@ -12,7 +12,7 @@ class GoogleAnalytics
      *
      * @var AssetApi
      */
-    protected $asset_api = null;
+    protected $asset_api;
     /**
      * Constructor.
      *

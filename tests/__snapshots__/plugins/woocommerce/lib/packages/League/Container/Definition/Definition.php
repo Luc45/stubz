@@ -7,11 +7,11 @@ class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argu
     /**
      * @var string
      */
-    protected $alias = null;
+    protected $alias;
     /**
      * @var mixed
      */
-    protected $concrete = null;
+    protected $concrete;
     /**
      * @var boolean
      */
@@ -31,7 +31,7 @@ class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argu
     /**
      * @var mixed
      */
-    protected $resolved = null;
+    protected $resolved;
     /**
      * Constructor.
      *
