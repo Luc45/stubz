@@ -30,7 +30,7 @@ class OrdersTableSearchQuery
      *     @type string $where WHERE clause.
      * }
      */
-    public function get_sql_clauses() : array
+    public function get_sql_clauses(): array
     {
     }
 }

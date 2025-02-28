@@ -12,7 +12,7 @@ class ProductAttributeTerms extends \Automattic\WooCommerce\StoreApi\Routes\V1\A
      *
      * @var string
      */
-    const IDENTIFIER = 'product-attribute-terms';
+    public const IDENTIFIER = 'product-attribute-terms';
     /**
      * Get the path of this REST route.
      *

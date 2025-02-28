@@ -70,7 +70,7 @@ trait AccessiblePrivateMethods
      *                                         in the order in which they were added to the action. Default 10.
      * @param int             $accepted_args   Optional. The number of arguments the function accepts. Default 1.
      */
-    protected static function add_action(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1) : void
+    protected static function add_action(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1): void
     {
     }
     /**
@@ -88,7 +88,7 @@ trait AccessiblePrivateMethods
      *                                         in the order in which they were added to the filter. Default 10.
      * @param int             $accepted_args   Optional. The number of arguments the function accepts. Default 1.
      */
-    protected static function add_filter(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1) : void
+    protected static function add_filter(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1): void
     {
     }
     /**
@@ -97,7 +97,7 @@ trait AccessiblePrivateMethods
      * @param callable $callback The callback to process.
      * @return void
      */
-    protected static function process_callback_before_hooking($callback) : void
+    protected static function process_callback_before_hooking($callback): void
     {
     }
     /**
@@ -106,7 +106,7 @@ trait AccessiblePrivateMethods
      * @param string $method_name Method name.
      * @return bool True if the method has been marked as externally accessible, false if the method doesn't exist.
      */
-    protected function mark_method_as_accessible(string $method_name) : bool
+    protected function mark_method_as_accessible(string $method_name): bool
     {
     }
     /**
@@ -115,7 +115,7 @@ trait AccessiblePrivateMethods
      * @param string $method_name Method name.
      * @return bool True if the method has been marked as externally accessible, false if the method doesn't exist.
      */
-    protected static function mark_static_method_as_accessible(string $method_name) : bool
+    protected static function mark_static_method_as_accessible(string $method_name): bool
     {
     }
     /**

@@ -7,12 +7,12 @@
  */
 abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
 {
-    const STATUS_COMPLETE = 'complete';
-    const STATUS_PENDING = 'pending';
-    const STATUS_RUNNING = 'in-progress';
-    const STATUS_FAILED = 'failed';
-    const STATUS_CANCELED = 'canceled';
-    const DEFAULT_CLASS = 'ActionScheduler_wpPostStore';
+    public const STATUS_COMPLETE = 'complete';
+    public const STATUS_PENDING = 'pending';
+    public const STATUS_RUNNING = 'in-progress';
+    public const STATUS_FAILED = 'failed';
+    public const STATUS_CANCELED = 'canceled';
+    public const DEFAULT_CLASS = 'ActionScheduler_wpPostStore';
     /**
      * Maximum length of args.
      *
@@ -29,7 +29,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return int The action ID
      */
-    public abstract function save_action(\ActionScheduler_Action $action, ?\DateTime $scheduled_date = \null);
+    abstract public function save_action(\ActionScheduler_Action $action, ?\DateTime $scheduled_date = \null);
     /**
      * Get action.
      *
@@ -37,7 +37,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return ActionScheduler_Action
      */
-    public abstract function fetch_action($action_id);
+    abstract public function fetch_action($action_id);
     /**
      * Find an action.
      *
@@ -77,7 +77,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public abstract function query_actions($query = array(), $query_type = 'select');
+    abstract public function query_actions($query = array(), $query_type = 'select');
     /**
      * Run query to get a single action ID.
      *
@@ -97,7 +97,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return array
      */
-    public abstract function action_counts();
+    abstract public function action_counts();
     /**
      * Get additional action counts.
      *
@@ -113,13 +113,13 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @param string $action_id Action ID.
      */
-    public abstract function cancel_action($action_id);
+    abstract public function cancel_action($action_id);
     /**
      * Delete action.
      *
      * @param string $action_id Action ID.
      */
-    public abstract function delete_action($action_id);
+    abstract public function delete_action($action_id);
     /**
      * Get action's schedule or run timestamp.
      *
@@ -127,7 +127,7 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return DateTime The date the action is schedule to run, or the date that it ran.
      */
-    public abstract function get_date($action_id);
+    abstract public function get_date($action_id);
     /**
      * Make a claim.
      *
@@ -138,64 +138,64 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      *
      * @return ActionScheduler_ActionClaim
      */
-    public abstract function stake_claim($max_actions = 10, ?\DateTime $before_date = \null, $hooks = array(), $group = '');
+    abstract public function stake_claim($max_actions = 10, ?\DateTime $before_date = \null, $hooks = array(), $group = '');
     /**
      * Get claim count.
      *
      * @return int
      */
-    public abstract function get_claim_count();
+    abstract public function get_claim_count();
     /**
      * Release the claim.
      *
      * @param ActionScheduler_ActionClaim $claim Claim object.
      */
-    public abstract function release_claim(\ActionScheduler_ActionClaim $claim);
+    abstract public function release_claim(\ActionScheduler_ActionClaim $claim);
     /**
      * Un-claim the action.
      *
      * @param string $action_id Action ID.
      */
-    public abstract function unclaim_action($action_id);
+    abstract public function unclaim_action($action_id);
     /**
      * Mark action as failed.
      *
      * @param string $action_id Action ID.
      */
-    public abstract function mark_failure($action_id);
+    abstract public function mark_failure($action_id);
     /**
      * Log action's execution.
      *
      * @param string $action_id Actoin ID.
      */
-    public abstract function log_execution($action_id);
+    abstract public function log_execution($action_id);
     /**
      * Mark action as complete.
      *
      * @param string $action_id Action ID.
      */
-    public abstract function mark_complete($action_id);
+    abstract public function mark_complete($action_id);
     /**
      * Get action's status.
      *
      * @param string $action_id Action ID.
      * @return string
      */
-    public abstract function get_status($action_id);
+    abstract public function get_status($action_id);
     /**
      * Get action's claim ID.
      *
      * @param string $action_id Action ID.
      * @return mixed
      */
-    public abstract function get_claim_id($action_id);
+    abstract public function get_claim_id($action_id);
     /**
      * Find actions by claim ID.
      *
      * @param string $claim_id Claim ID.
      * @return array
      */
-    public abstract function find_actions_by_claim_id($claim_id);
+    abstract public function find_actions_by_claim_id($claim_id);
     /**
      * Validate SQL operator.
      *

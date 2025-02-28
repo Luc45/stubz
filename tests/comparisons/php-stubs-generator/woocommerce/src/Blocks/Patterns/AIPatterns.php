@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  */
 class AIPatterns
 {
-    const PATTERNS_AI_DATA_POST_TYPE = 'patterns_ai_data';
+    public const PATTERNS_AI_DATA_POST_TYPE = 'patterns_ai_data';
     /**
      * Constructor for the class.
      */
@@ -27,7 +27,7 @@ class AIPatterns
      *
      * @return bool
      */
-    public function update_ai_connection_allowed_option() : bool
+    public function update_ai_connection_allowed_option(): bool
     {
     }
     /**

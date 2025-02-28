@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives;
  */
 abstract class Incentive
 {
-    const PREFIX = 'woocommerce_admin_pes_incentive_';
+    public const PREFIX = 'woocommerce_admin_pes_incentive_';
     /**
      * The user meta name for storing dismissed incentives.
      *
@@ -38,7 +38,7 @@ abstract class Incentive
      *
      * @return array The incentives list with details for each incentive.
      */
-    public function get_all(string $country_code, string $incentive_type = '') : array
+    public function get_all(string $country_code, string $incentive_type = ''): array
     {
     }
     /**
@@ -52,7 +52,7 @@ abstract class Incentive
      *
      * @return ?array The incentive details. Returns null if there is no incentive available.
      */
-    public function get_by_promo_id(string $promo_id, string $country_code, string $incentive_type = '') : ?array
+    public function get_by_promo_id(string $promo_id, string $country_code, string $incentive_type = ''): ?array
     {
     }
     /**
@@ -65,7 +65,7 @@ abstract class Incentive
      *
      * @return ?array The incentive details. Returns null if there is no incentive available.
      */
-    public function get_by_id(string $incentive_id, string $country_code) : ?array
+    public function get_by_id(string $incentive_id, string $country_code): ?array
     {
     }
     /**
@@ -77,7 +77,7 @@ abstract class Incentive
      *
      * @return boolean Whether the incentive should be visible.
      */
-    public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false) : bool
+    public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false): bool
     {
     }
     /**
@@ -93,7 +93,7 @@ abstract class Incentive
      * @return bool True if the incentive was not previously dismissed and now it is.
      *              False if the incentive was already dismissed, or we failed to persist the dismissal data.
      */
-    public function dismiss(string $id, string $context = 'all', ?int $timestamp = null) : bool
+    public function dismiss(string $id, string $context = 'all', ?int $timestamp = null): bool
     {
     }
     /**
@@ -105,7 +105,7 @@ abstract class Incentive
      *
      * @return boolean Whether the incentive has been manually dismissed.
      */
-    public function is_dismissed(string $id, string $context = '') : bool
+    public function is_dismissed(string $id, string $context = ''): bool
     {
     }
     /**
@@ -115,7 +115,7 @@ abstract class Incentive
      *
      * @return array The contexts in which the incentive has been dismissed.
      */
-    public function get_dismissals(string $id) : array
+    public function get_dismissals(string $id): array
     {
     }
     /**
@@ -123,7 +123,7 @@ abstract class Incentive
      *
      * @return array The dismissed incentives grouped by suggestion.
      */
-    protected function get_all_dismissed_incentives() : array
+    protected function get_all_dismissed_incentives(): array
     {
     }
     /**
@@ -133,7 +133,7 @@ abstract class Incentive
      *
      * @return bool Whether the dismissed incentives were saved successfully.
      */
-    protected function save_all_dismissed_incentives(array $dismissed_incentives) : bool
+    protected function save_all_dismissed_incentives(array $dismissed_incentives): bool
     {
     }
     /**
@@ -141,7 +141,7 @@ abstract class Incentive
      *
      * @return bool Whether the current user has the required capabilities view incentives.
      */
-    protected function user_has_caps() : bool
+    protected function user_has_caps(): bool
     {
     }
     /**
@@ -153,7 +153,7 @@ abstract class Incentive
      *
      * @return bool Whether the incentive data is valid.
      */
-    protected function validate_incentive(array $incentive) : bool
+    protected function validate_incentive(array $incentive): bool
     {
     }
     /**
@@ -161,7 +161,7 @@ abstract class Incentive
      *
      * @return boolean Whether the corresponding extension suggestion plugin is active.
      */
-    protected abstract function is_extension_active() : bool;
+    abstract protected function is_extension_active(): bool;
     /**
      * Get eligible incentives.
      *
@@ -169,5 +169,5 @@ abstract class Incentive
      *
      * @return array List of eligible incentives.
      */
-    protected abstract function get_incentives(string $country_code) : array;
+    abstract protected function get_incentives(string $country_code): array;
 }

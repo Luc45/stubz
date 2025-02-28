@@ -18,7 +18,7 @@ class CheckoutOrderSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Ch
      *
      * @var string
      */
-    const IDENTIFIER = 'checkout-order';
+    public const IDENTIFIER = 'checkout-order';
     /**
      * Checkout schema properties.
      *

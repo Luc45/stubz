@@ -29,7 +29,7 @@ class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\M
      *
      * @return array Config.
      */
-    protected function get_schema_config() : array
+    protected function get_schema_config(): array
     {
     }
     /**
@@ -37,7 +37,7 @@ class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\M
      *
      * @return \string[][] Config.
      */
-    protected function get_core_column_mapping() : array
+    protected function get_core_column_mapping(): array
     {
     }
     /**
@@ -45,7 +45,7 @@ class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\M
      *
      * @return \string[][] Config.
      */
-    public function get_meta_column_config() : array
+    public function get_meta_column_config(): array
     {
     }
     /**
@@ -54,7 +54,7 @@ class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\M
      * @param array $entity_ids The ids of the entities being inserted or updated.
      * @return string The additional string for the WHERE clause.
      */
-    protected function get_additional_where_clause_for_get_data_to_insert_or_update(array $entity_ids) : string
+    protected function get_additional_where_clause_for_get_data_to_insert_or_update(array $entity_ids): string
     {
     }
     /**

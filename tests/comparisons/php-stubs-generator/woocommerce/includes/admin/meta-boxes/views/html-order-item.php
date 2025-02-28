@@ -8,6 +8,7 @@
  * @param   WC_Product  $product The product that is being edited.
  * @param   string      $context The context in which the quantity editor is shown, 'edit' or 'refund'.
  */
+
 $step_edit = \apply_filters('woocommerce_quantity_input_step_admin', $step, $product, 'edit');
 /**
  * Filter to change the product quantity minimum in the order editor of the admin area.

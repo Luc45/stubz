@@ -552,7 +552,7 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Object_
      *
      * @return bool True if the feature is enabled.
      */
-    protected function cogs_feature_is_enabled() : bool
+    protected function cogs_feature_is_enabled(): bool
     {
     }
 }

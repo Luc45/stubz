@@ -12,13 +12,14 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
 class ImportSetWCShipping implements \Automattic\WooCommerce\Blueprint\StepProcessor
 {
     use \Automattic\WooCommerce\Blueprint\UseWPFunctions;
+
     /**
      * Process the import of WooCommerce shipping settings.
      *
      * @param object $schema The schema object containing import details.
      * @return StepProcessorResult
      */
-    public function process($schema) : \Automattic\WooCommerce\Blueprint\StepProcessorResult
+    public function process($schema): \Automattic\WooCommerce\Blueprint\StepProcessorResult
     {
     }
     /**
@@ -58,7 +59,7 @@ class ImportSetWCShipping implements \Automattic\WooCommerce\Blueprint\StepProce
      *
      * @return string
      */
-    public function get_step_class() : string
+    public function get_step_class(): string
     {
     }
 }

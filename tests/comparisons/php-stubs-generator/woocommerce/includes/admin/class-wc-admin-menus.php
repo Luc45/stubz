@@ -10,7 +10,7 @@ class WC_Admin_Menus
      *
      * @var string
      */
-    const HIDE_CSS_CLASS = 'hide-if-js';
+    public const HIDE_CSS_CLASS = 'hide-if-js';
     /**
      * Hook in tabs.
      */
@@ -151,7 +151,7 @@ class WC_Admin_Menus
      *
      * @return void
      */
-    public function orders_menu() : void
+    public function orders_menu(): void
     {
     }
     /**

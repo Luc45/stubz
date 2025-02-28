@@ -18,7 +18,7 @@ class OrderFeeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstrac
      *
      * @var string
      */
-    const IDENTIFIER = 'order-fee';
+    public const IDENTIFIER = 'order-fee';
     /**
      * Cart schema properties.
      *

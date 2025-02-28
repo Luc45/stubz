@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin\EmailPreview;
  */
 class EmailPreview
 {
-    const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
-    const DEFAULT_EMAIL_ID = 'customer_processing_order';
+    public const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
+    public const DEFAULT_EMAIL_ID = 'customer_processing_order';
     /**
      * The single instance of the class.
      *
@@ -20,7 +20,7 @@ class EmailPreview
      *
      * @return object Instance.
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**

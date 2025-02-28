@@ -10,7 +10,7 @@ class OnboardingMailchimp
     /**
      * Get class instance.
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**

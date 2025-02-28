@@ -83,9 +83,9 @@ class WC_WCCOM_Site_Installation_State
      * @var int
      */
     protected $started_date;
-    const STEP_STATUS_IN_PROGRESS = 'in-progress';
-    const STEP_STATUS_FAILED = 'failed';
-    const STEP_STATUS_COMPLETED = 'completed';
+    public const STEP_STATUS_IN_PROGRESS = 'in-progress';
+    public const STEP_STATUS_FAILED = 'failed';
+    public const STEP_STATUS_COMPLETED = 'completed';
     /**
      * Constructor.
      *

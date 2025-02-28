@@ -14,6 +14,7 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * Exportable traits.
      */
     use \Automattic\WooCommerce\Admin\API\Reports\ExportableTraits;
+
     /**
      * Route base.
      *

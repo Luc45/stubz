@@ -55,7 +55,7 @@ trait OrderAttributionMeta
      *
      * @return string The device type.
      */
-    protected function get_device_type(array $values) : string
+    protected function get_device_type(array $values): string
     {
     }
     /**
@@ -71,7 +71,7 @@ trait OrderAttributionMeta
      *
      * @return void
      */
-    private function set_field_prefix() : void
+    private function set_field_prefix(): void
     {
     }
     /**
@@ -83,7 +83,7 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function filter_meta_data(array $meta) : array
+    private function filter_meta_data(array $meta): array
     {
     }
     /**
@@ -93,7 +93,7 @@ trait OrderAttributionMeta
      *
      * @return string The prefixed field name.
      */
-    private function get_prefixed_field_name($name) : string
+    private function get_prefixed_field_name($name): string
     {
     }
     /**
@@ -103,7 +103,7 @@ trait OrderAttributionMeta
      *
      * @return string The prefixed field name.
      */
-    private function get_meta_prefixed_field_name(string $name) : string
+    private function get_meta_prefixed_field_name(string $name): string
     {
     }
     /**
@@ -113,7 +113,7 @@ trait OrderAttributionMeta
      *
      * @return string
      */
-    private function unprefix_meta_field_name(string $name) : string
+    private function unprefix_meta_field_name(string $name): string
     {
     }
     /**
@@ -135,7 +135,7 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_unprefixed_field_values(array $raw_values = array()) : array
+    private function get_unprefixed_field_values(array $raw_values = array()): array
     {
     }
     /**
@@ -145,7 +145,7 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_source_values(array $raw_values = array()) : array
+    private function get_source_values(array $raw_values = array()): array
     {
     }
     /**
@@ -158,7 +158,7 @@ trait OrderAttributionMeta
      *
      * @return string
      */
-    private function get_origin_label(string $source_type, string $source, bool $translated = true) : string
+    private function get_origin_label(string $source_type, string $source, bool $translated = true): string
     {
     }
     /**
@@ -168,7 +168,7 @@ trait OrderAttributionMeta
      *
      * @return string
      */
-    private function get_field_description(string $field_name) : string
+    private function get_field_description(string $field_name): string
     {
     }
 }

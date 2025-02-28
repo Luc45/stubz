@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class OrderItemSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\ItemSchema
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\ProductItemTrait;
+
     /**
      * The schema item name.
      *
@@ -19,7 +20,7 @@ class OrderItemSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\ItemSc
      *
      * @var string
      */
-    const IDENTIFIER = 'order-item';
+    public const IDENTIFIER = 'order-item';
     /**
      * Get order items data.
      *

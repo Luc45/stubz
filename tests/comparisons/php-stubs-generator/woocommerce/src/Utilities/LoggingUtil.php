@@ -12,7 +12,7 @@ final class LoggingUtil
      *
      * @return string
      */
-    public static function get_logs_tab_url() : string
+    public static function get_logs_tab_url(): string
     {
     }
     /**
@@ -20,7 +20,7 @@ final class LoggingUtil
      *
      * @return bool
      */
-    public static function logging_is_enabled() : bool
+    public static function logging_is_enabled(): bool
     {
     }
     /**
@@ -28,7 +28,7 @@ final class LoggingUtil
      *
      * @return string
      */
-    public static function get_default_handler() : string
+    public static function get_default_handler(): string
     {
     }
     /**
@@ -36,7 +36,7 @@ final class LoggingUtil
      *
      * @return int
      */
-    public static function get_retention_period() : int
+    public static function get_retention_period(): int
     {
     }
     /**
@@ -44,7 +44,7 @@ final class LoggingUtil
      *
      * @return string
      */
-    public static function get_level_threshold() : string
+    public static function get_level_threshold(): string
     {
     }
     /**
@@ -60,7 +60,7 @@ final class LoggingUtil
      *
      * @return string
      */
-    public static function generate_log_file_id(string $source, ?int $rotation = null, int $created = 0) : string
+    public static function generate_log_file_id(string $source, ?int $rotation = null, int $created = 0): string
     {
     }
     /**
@@ -70,7 +70,7 @@ final class LoggingUtil
      *
      * @return string
      */
-    public static function generate_log_file_hash(string $file_id) : string
+    public static function generate_log_file_hash(string $file_id): string
     {
     }
     /**
@@ -80,7 +80,7 @@ final class LoggingUtil
      *
      * @return string The full directory path, with trailing slash.
      */
-    public static function get_log_directory(bool $create_dir = true) : string
+    public static function get_log_directory(bool $create_dir = true): string
     {
     }
     /**
@@ -88,7 +88,7 @@ final class LoggingUtil
      *
      * @return int
      */
-    public static function get_log_directory_size() : int
+    public static function get_log_directory_size(): int
     {
     }
 }

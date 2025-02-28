@@ -10,7 +10,7 @@ class Init
     /**
      * The context name used to identify the editor.
      */
-    const EDITOR_CONTEXT_NAME = 'woocommerce/edit-product';
+    public const EDITOR_CONTEXT_NAME = 'woocommerce/edit-product';
     /**
      * Constructor
      */

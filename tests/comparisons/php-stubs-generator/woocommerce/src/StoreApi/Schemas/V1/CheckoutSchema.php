@@ -18,7 +18,7 @@ class CheckoutSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstrac
      *
      * @var string
      */
-    const IDENTIFIER = 'checkout';
+    public const IDENTIFIER = 'checkout';
     /**
      * Billing address schema instance.
      *

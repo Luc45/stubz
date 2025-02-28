@@ -6,6 +6,7 @@
 class WC_Cache_Helper
 {
     use \Automattic\WooCommerce\Caching\CacheNameSpaceTrait;
+
     /**
      * Hook in methods.
      */

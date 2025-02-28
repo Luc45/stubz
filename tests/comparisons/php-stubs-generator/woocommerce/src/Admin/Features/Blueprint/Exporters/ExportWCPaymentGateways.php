@@ -18,7 +18,7 @@ class ExportWCPaymentGateways implements \Automattic\WooCommerce\Blueprint\Expor
      *
      * @return Step
      */
-    public function export() : \Automattic\WooCommerce\Blueprint\Steps\Step
+    public function export(): \Automattic\WooCommerce\Blueprint\Steps\Step
     {
     }
     /**

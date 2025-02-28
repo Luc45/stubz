@@ -336,7 +336,7 @@ class WC_Brands
      *
      * @return void
      */
-    function reset_layered_nav_counts_on_status_change($new_status, $old_status, $post)
+    public function reset_layered_nav_counts_on_status_change($new_status, $old_status, $post)
     {
     }
     /**

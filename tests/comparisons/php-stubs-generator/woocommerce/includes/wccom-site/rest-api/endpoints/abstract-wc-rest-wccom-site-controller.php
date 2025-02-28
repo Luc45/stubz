@@ -20,7 +20,7 @@ abstract class WC_REST_WCCOM_Site_Controller extends \WC_REST_Controller
      * @param WP_USER $user User object.
      * @return bool
      */
-    protected abstract function user_has_permission($user) : bool;
+    abstract protected function user_has_permission($user): bool;
     /**
      * Check permissions.
      *

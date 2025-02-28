@@ -64,7 +64,7 @@ abstract class GenericStatsController extends \Automattic\WooCommerce\Admin\API\
      *
      * @return array
      */
-    protected abstract function get_item_properties_schema();
+    abstract protected function get_item_properties_schema();
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *

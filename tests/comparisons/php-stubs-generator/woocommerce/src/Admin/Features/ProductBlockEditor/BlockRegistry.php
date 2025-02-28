@@ -10,23 +10,23 @@ class BlockRegistry
     /**
      * Generic blocks directory.
      */
-    const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
+    public const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
     /**
      * Product fields blocks directory.
      */
-    const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
+    public const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
     /**
      * Array of all available generic blocks.
      */
-    const GENERIC_BLOCKS = array('woocommerce/conditional', 'woocommerce/product-checkbox-field', 'woocommerce/product-collapsible', 'woocommerce/product-radio-field', 'woocommerce/product-pricing-field', 'woocommerce/product-section', 'woocommerce/product-section-description', 'woocommerce/product-subsection', 'woocommerce/product-subsection-description', 'woocommerce/product-details-section-description', 'woocommerce/product-tab', 'woocommerce/product-toggle-field', 'woocommerce/product-taxonomy-field', 'woocommerce/product-text-field', 'woocommerce/product-text-area-field', 'woocommerce/product-number-field', 'woocommerce/product-linked-list-field', 'woocommerce/product-select-field', 'woocommerce/product-notice-field');
+    public const GENERIC_BLOCKS = array('woocommerce/conditional', 'woocommerce/product-checkbox-field', 'woocommerce/product-collapsible', 'woocommerce/product-radio-field', 'woocommerce/product-pricing-field', 'woocommerce/product-section', 'woocommerce/product-section-description', 'woocommerce/product-subsection', 'woocommerce/product-subsection-description', 'woocommerce/product-details-section-description', 'woocommerce/product-tab', 'woocommerce/product-toggle-field', 'woocommerce/product-taxonomy-field', 'woocommerce/product-text-field', 'woocommerce/product-text-area-field', 'woocommerce/product-number-field', 'woocommerce/product-linked-list-field', 'woocommerce/product-select-field', 'woocommerce/product-notice-field');
     /**
      * Array of all available product fields blocks.
      */
-    const PRODUCT_FIELDS_BLOCKS = array('woocommerce/product-catalog-visibility-field', 'woocommerce/product-custom-fields', 'woocommerce/product-custom-fields-toggle-field', 'woocommerce/product-description-field', 'woocommerce/product-downloads-field', 'woocommerce/product-images-field', 'woocommerce/product-inventory-email-field', 'woocommerce/product-sku-field', 'woocommerce/product-name-field', 'woocommerce/product-regular-price-field', 'woocommerce/product-sale-price-field', 'woocommerce/product-schedule-sale-fields', 'woocommerce/product-shipping-class-field', 'woocommerce/product-shipping-dimensions-fields', 'woocommerce/product-summary-field', 'woocommerce/product-tag-field', 'woocommerce/product-inventory-quantity-field', 'woocommerce/product-variation-items-field', 'woocommerce/product-password-field', 'woocommerce/product-list-field', 'woocommerce/product-has-variations-notice', 'woocommerce/product-single-variation-notice');
+    public const PRODUCT_FIELDS_BLOCKS = array('woocommerce/product-catalog-visibility-field', 'woocommerce/product-custom-fields', 'woocommerce/product-custom-fields-toggle-field', 'woocommerce/product-description-field', 'woocommerce/product-downloads-field', 'woocommerce/product-images-field', 'woocommerce/product-inventory-email-field', 'woocommerce/product-sku-field', 'woocommerce/product-name-field', 'woocommerce/product-regular-price-field', 'woocommerce/product-sale-price-field', 'woocommerce/product-schedule-sale-fields', 'woocommerce/product-shipping-class-field', 'woocommerce/product-shipping-dimensions-fields', 'woocommerce/product-summary-field', 'woocommerce/product-tag-field', 'woocommerce/product-inventory-quantity-field', 'woocommerce/product-variation-items-field', 'woocommerce/product-password-field', 'woocommerce/product-list-field', 'woocommerce/product-has-variations-notice', 'woocommerce/product-single-variation-notice');
     /**
      * Get the singleton instance.
      */
-    public static function get_instance() : \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\BlockRegistry
+    public static function get_instance(): \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\BlockRegistry
     {
     }
     /**
@@ -49,7 +49,7 @@ class BlockRegistry
      *
      * @param string $block_name Block name.
      */
-    public function is_registered($block_name) : bool
+    public function is_registered($block_name): bool
     {
     }
     /**

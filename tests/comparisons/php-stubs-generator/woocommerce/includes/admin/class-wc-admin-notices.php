@@ -111,7 +111,7 @@ class WC_Admin_Notices
      * @param int|null $user_id User id, or null for the current user.
      * @return bool True if the user has dismissed the notice.
      */
-    public static function user_has_dismissed_notice(string $name, ?int $user_id = \null) : bool
+    public static function user_has_dismissed_notice(string $name, ?int $user_id = \null): bool
     {
     }
     /**

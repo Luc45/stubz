@@ -31,7 +31,7 @@ class MatchImageBySKU
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_product_image_sku_setting(array $settings, string $section_id) : array
+    public function add_product_image_sku_setting(array $settings, string $section_id): array
     {
     }
 }

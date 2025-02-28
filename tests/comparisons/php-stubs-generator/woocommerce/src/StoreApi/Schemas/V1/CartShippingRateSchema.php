@@ -18,7 +18,7 @@ class CartShippingRateSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-shipping-rate';
+    public const IDENTIFIER = 'cart-shipping-rate';
     /**
      * Cart schema properties.
      *

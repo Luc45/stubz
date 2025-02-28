@@ -11,10 +11,11 @@ class PerformanceOnMobile
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-performance-on-mobile';
+    public const NOTE_NAME = 'wc-admin-performance-on-mobile';
     /**
      * Get the note.
      *

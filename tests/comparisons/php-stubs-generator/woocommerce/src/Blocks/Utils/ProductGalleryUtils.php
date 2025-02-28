@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  */
 class ProductGalleryUtils
 {
-    const CROP_IMAGE_SIZE_NAME = '_woo_blocks_product_gallery_crop_full';
+    public const CROP_IMAGE_SIZE_NAME = '_woo_blocks_product_gallery_crop_full';
     /**
      * When requesting a full-size image, this function may return an array with a single image.
      * However, when requesting a non-full-size image, it will always return an array with multiple images.

@@ -59,7 +59,7 @@ class PluginInstaller implements \Automattic\WooCommerce\Internal\RegisterHooksI
      * @return array Information about the installation result.
      * @throws \InvalidArgumentException Source doesn't start with 'https://downloads.wordpress.org/', or installer name is 'WooCommerce' but caller is not WooCommerce core code.
      */
-    public function install_plugin(string $plugin_url, array $metadata = array()) : array
+    public function install_plugin(string $plugin_url, array $metadata = array()): array
     {
     }
     /**

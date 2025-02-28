@@ -91,7 +91,7 @@ class File
      *     @type string   $file_id   The public ID of the log file (filename without the hash).
      * }
      */
-    public static function parse_path(string $path) : array
+    public static function parse_path(string $path): array
     {
     }
     /**
@@ -107,7 +107,7 @@ class File
      *
      * @return string
      */
-    public static function generate_file_id(string $source, ?int $rotation = null, int $created = 0) : string
+    public static function generate_file_id(string $source, ?int $rotation = null, int $created = 0): string
     {
     }
     /**
@@ -117,7 +117,7 @@ class File
      *
      * @return string
      */
-    public static function generate_hash(string $file_id) : string
+    public static function generate_hash(string $file_id): string
     {
     }
     /**
@@ -127,7 +127,7 @@ class File
      *
      * @return string
      */
-    public static function sanitize_source(string $source) : string
+    public static function sanitize_source(string $source): string
     {
     }
     /**
@@ -135,7 +135,7 @@ class File
      *
      * @return void
      */
-    protected function ingest_path() : void
+    protected function ingest_path(): void
     {
     }
     /**
@@ -145,7 +145,7 @@ class File
      *
      * @return bool
      */
-    public function has_standard_filename() : bool
+    public function has_standard_filename(): bool
     {
     }
     /**
@@ -153,7 +153,7 @@ class File
      *
      * @return bool
      */
-    public function is_readable() : bool
+    public function is_readable(): bool
     {
     }
     /**
@@ -161,7 +161,7 @@ class File
      *
      * @return bool
      */
-    public function is_writable() : bool
+    public function is_writable(): bool
     {
     }
     /**
@@ -180,7 +180,7 @@ class File
      *
      * @return bool
      */
-    public function close_stream() : bool
+    public function close_stream(): bool
     {
     }
     /**
@@ -188,7 +188,7 @@ class File
      *
      * @return string
      */
-    public function get_path() : string
+    public function get_path(): string
     {
     }
     /**
@@ -196,7 +196,7 @@ class File
      *
      * @return string
      */
-    public function get_basename() : string
+    public function get_basename(): string
     {
     }
     /**
@@ -204,7 +204,7 @@ class File
      *
      * @return string
      */
-    public function get_source() : string
+    public function get_source(): string
     {
     }
     /**
@@ -212,7 +212,7 @@ class File
      *
      * @return int|null
      */
-    public function get_rotation() : ?int
+    public function get_rotation(): ?int
     {
     }
     /**
@@ -220,7 +220,7 @@ class File
      *
      * @return string
      */
-    public function get_hash() : string
+    public function get_hash(): string
     {
     }
     /**
@@ -228,7 +228,7 @@ class File
      *
      * @return string
      */
-    public function get_file_id() : string
+    public function get_file_id(): string
     {
     }
     /**
@@ -236,7 +236,7 @@ class File
      *
      * @return int
      */
-    public function get_created_timestamp() : int
+    public function get_created_timestamp(): int
     {
     }
     /**
@@ -260,7 +260,7 @@ class File
      *
      * @return bool
      */
-    protected function create() : bool
+    protected function create(): bool
     {
     }
     /**
@@ -270,7 +270,7 @@ class File
      *
      * @return bool
      */
-    public function write(string $text) : bool
+    public function write(string $text): bool
     {
     }
     /**
@@ -278,7 +278,7 @@ class File
      *
      * @return bool True if the file was successfully rotated.
      */
-    public function rotate() : bool
+    public function rotate(): bool
     {
     }
     /**
@@ -286,7 +286,7 @@ class File
      *
      * @return bool True on success, false on failure.
      */
-    public function delete() : bool
+    public function delete(): bool
     {
     }
 }

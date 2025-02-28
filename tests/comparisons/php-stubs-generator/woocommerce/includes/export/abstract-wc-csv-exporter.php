@@ -62,7 +62,7 @@ abstract class WC_CSV_Exporter
     /**
      * Prepare data that will be exported.
      */
-    public abstract function prepare_data_to_export();
+    abstract public function prepare_data_to_export();
     /**
      * Return an array of supported column names and ids.
      *

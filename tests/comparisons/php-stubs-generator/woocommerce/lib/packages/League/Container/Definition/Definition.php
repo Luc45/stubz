@@ -6,6 +6,7 @@ class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argu
 {
     use \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverTrait;
     use \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait;
+
     /**
      * @var string
      */
@@ -46,37 +47,37 @@ class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argu
     /**
      * {@inheritdoc}
      */
-    public function addTag(string $tag) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function addTag(string $tag): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function hasTag(string $tag) : bool
+    public function hasTag(string $tag): bool
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function setAlias(string $id) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function setAlias(string $id): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function getAlias() : string
+    public function getAlias(): string
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function setShared(bool $shared = true) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function setShared(bool $shared = true): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function isShared() : bool
+    public function isShared(): bool
     {
     }
     /**
@@ -88,31 +89,31 @@ class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argu
     /**
      * {@inheritdoc}
      */
-    public function setConcrete($concrete) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function setConcrete($concrete): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function addArgument($arg) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function addArgument($arg): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function addArguments(array $args) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function addArguments(array $args): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function addMethodCall(string $method, array $args = []) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function addMethodCall(string $method, array $args = []): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function addMethodCalls(array $methods = []) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function addMethodCalls(array $methods = []): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**

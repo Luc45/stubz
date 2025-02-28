@@ -12,13 +12,13 @@ class CartCoupons extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCar
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-coupons';
+    public const IDENTIFIER = 'cart-coupons';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'cart-coupon';
+    public const SCHEMA_TYPE = 'cart-coupon';
     /**
      * Get the path of this REST route.
      *

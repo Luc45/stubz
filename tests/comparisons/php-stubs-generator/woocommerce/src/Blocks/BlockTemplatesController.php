@@ -14,7 +14,7 @@ class BlockTemplatesController
      *
      * @var string
      */
-    const TEMPLATES_ROOT_DIR = 'templates';
+    public const TEMPLATES_ROOT_DIR = 'templates';
     /**
      * Initialization method.
      */

@@ -18,7 +18,7 @@ class TimeUtil
      *
      * @return DateTimeZone DateTimeZone object representing UTC.
      */
-    public static function get_utc_date_time_zone() : \DateTimeZone
+    public static function get_utc_date_time_zone(): \DateTimeZone
     {
     }
     /**
@@ -28,7 +28,7 @@ class TimeUtil
      * @param string $format The format to verify the date string against.
      * @return bool True if $date represents a valid date/time according to $format, false otherwise.
      */
-    public static function is_valid_date(string $date, string $format = 'Y-m-d H:i:s') : bool
+    public static function is_valid_date(string $date, string $format = 'Y-m-d H:i:s'): bool
     {
     }
 }

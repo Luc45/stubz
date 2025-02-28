@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  */
 final class ProductFilterRating extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
-    const RATING_FILTER_QUERY_VAR = 'rating_filter';
+    public const RATING_FILTER_QUERY_VAR = 'rating_filter';
     /**
      * Register the query param keys.
      *

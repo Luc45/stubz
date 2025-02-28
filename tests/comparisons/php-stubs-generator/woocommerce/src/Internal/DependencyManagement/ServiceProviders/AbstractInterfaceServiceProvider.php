@@ -18,7 +18,7 @@ abstract class AbstractInterfaceServiceProvider extends \Automattic\WooCommerce\
      *
      * @return bool
      */
-    public function provides(string $alias) : bool
+    public function provides(string $alias): bool
     {
     }
     /**
@@ -34,7 +34,7 @@ abstract class AbstractInterfaceServiceProvider extends \Automattic\WooCommerce\
      *
      * @return DefinitionInterface
      */
-    protected function add_with_implements_tags(string $id, $concrete = null, ?bool $shared = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function add_with_implements_tags(string $id, $concrete = null, ?bool $shared = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -45,7 +45,7 @@ abstract class AbstractInterfaceServiceProvider extends \Automattic\WooCommerce\
      *
      * @return DefinitionInterface
      */
-    protected function share_with_implements_tags(string $id, $concrete = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function share_with_implements_tags(string $id, $concrete = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
 }

@@ -11,10 +11,11 @@ class OnboardingPayments
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-onboarding-payments-reminder';
+    public const NOTE_NAME = 'wc-admin-onboarding-payments-reminder';
     /**
      * Get the note.
      *

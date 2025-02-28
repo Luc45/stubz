@@ -13,8 +13,8 @@ class PriceFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      * @var string
      */
     protected $block_name = 'price-filter';
-    const MIN_PRICE_QUERY_VAR = 'min_price';
-    const MAX_PRICE_QUERY_VAR = 'max_price';
+    public const MIN_PRICE_QUERY_VAR = 'min_price';
+    public const MAX_PRICE_QUERY_VAR = 'max_price';
     /**
      * Extra data passed through from server to client for block.
      *

@@ -14,7 +14,7 @@ class CartTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPage
      *
      * @var string
      */
-    const SLUG = 'page-cart';
+    public const SLUG = 'page-cart';
     /**
      * Initialization method.
      */

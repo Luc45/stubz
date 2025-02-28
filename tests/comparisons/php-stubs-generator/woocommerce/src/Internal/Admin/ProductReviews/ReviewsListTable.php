@@ -20,7 +20,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function prepare_items() : void
+    public function prepare_items(): void
     {
     }
     /**
@@ -28,7 +28,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return int Customized per-page value if available, or 20 as the default.
      */
-    protected function get_per_page() : int
+    protected function get_per_page(): int
     {
     }
     /**
@@ -36,7 +36,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    protected function set_review_product() : void
+    protected function set_review_product(): void
     {
     }
     /**
@@ -46,7 +46,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    protected function set_review_status() : void
+    protected function set_review_status(): void
     {
     }
     /**
@@ -56,7 +56,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    protected function set_review_type() : void
+    protected function set_review_type(): void
     {
     }
     /**
@@ -64,7 +64,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_sort_arguments() : array
+    protected function get_sort_arguments(): array
     {
     }
     /**
@@ -72,7 +72,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_filter_type_arguments() : array
+    protected function get_filter_type_arguments(): array
     {
     }
     /**
@@ -80,7 +80,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_filter_rating_arguments() : array
+    protected function get_filter_rating_arguments(): array
     {
     }
     /**
@@ -88,7 +88,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    public function get_filter_product_arguments() : array
+    public function get_filter_product_arguments(): array
     {
     }
     /**
@@ -96,7 +96,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_status_arguments() : array
+    protected function get_status_arguments(): array
     {
     }
     /**
@@ -104,7 +104,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_search_arguments() : array
+    protected function get_search_arguments(): array
     {
     }
     /**
@@ -112,7 +112,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_offset_arguments() : array
+    protected function get_offset_arguments(): array
     {
     }
     /**
@@ -121,7 +121,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param array $default_query_args Query args for the main request.
      * @return array
      */
-    protected function get_total_comments_arguments(array $default_query_args) : array
+    protected function get_total_comments_arguments(array $default_query_args): array
     {
     }
     /**
@@ -132,7 +132,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function display() : void
+    public function display(): void
     {
     }
     /**
@@ -144,7 +144,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    public function single_row($item) : void
+    public function single_row($item): void
     {
     }
     /**
@@ -159,7 +159,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param string|mixed     $primary     Primary column name.
      * @return string
      */
-    protected function handle_row_actions($item, $column_name, $primary) : string
+    protected function handle_row_actions($item, $column_name, $primary): string
     {
     }
     /**
@@ -167,7 +167,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array Table columns and their headings.
      */
-    public function get_columns() : array
+    public function get_columns(): array
     {
     }
     /**
@@ -175,7 +175,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return string Name of the primary column.
      */
-    protected function get_primary_column_name() : string
+    protected function get_primary_column_name(): string
     {
     }
     /**
@@ -186,7 +186,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_sortable_columns() : array
+    protected function get_sortable_columns(): array
     {
     }
     /**
@@ -196,7 +196,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_bulk_actions() : array
+    protected function get_bulk_actions(): array
     {
     }
     /**
@@ -216,7 +216,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function process_bulk_action() : void
+    public function process_bulk_action(): void
     {
     }
     /**
@@ -224,7 +224,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_status_filters() : array
+    protected function get_status_filters(): array
     {
     }
     /**
@@ -238,7 +238,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return array An associative array of fully-formed comment status links. Includes 'All', 'Pending', 'Approved', 'Spam', and 'Trash'.
      */
-    protected function get_views() : array
+    protected function get_views(): array
     {
     }
     /**
@@ -248,7 +248,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param int    $post_id      Current post ID.
      * @return string
      */
-    protected function get_view_url(string $comment_type, int $post_id) : string
+    protected function get_view_url(string $comment_type, int $post_id): string
     {
     }
     /**
@@ -258,7 +258,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param int    $product_id ID of the product if we're filtering by product in this request. Otherwise, `0` for no product filters.
      * @return int
      */
-    protected function get_review_count(string $status, int $product_id) : int
+    protected function get_review_count(string $status, int $product_id): int
     {
     }
     /**
@@ -267,7 +267,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param string $status Status key from {@see ReviewsListTable::get_status_filters()}.
      * @return string
      */
-    protected function convert_status_to_query_value(string $status) : string
+    protected function convert_status_to_query_value(string $status): string
     {
     }
     /**
@@ -279,7 +279,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function no_items() : void
+    public function no_items(): void
     {
     }
     /**
@@ -288,7 +288,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_cb($item) : void
+    protected function column_cb($item): void
     {
     }
     /**
@@ -299,7 +299,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_comment($item) : void
+    protected function column_comment($item): void
     {
     }
     /**
@@ -310,7 +310,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_author($item) : void
+    protected function column_author($item): void
     {
     }
     /**
@@ -321,7 +321,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_date($item) : void
+    protected function column_date($item): void
     {
     }
     /**
@@ -332,7 +332,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_response($item) : void
+    protected function column_response($item): void
     {
     }
     /**
@@ -341,7 +341,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_type($item) : void
+    protected function column_type($item): void
     {
     }
     /**
@@ -350,7 +350,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item Review or reply being rendered.
      * @return void
      */
-    protected function column_rating($item) : void
+    protected function column_rating($item): void
     {
     }
     /**
@@ -360,7 +360,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param string|mixed     $column_name Name of the column being rendered.
      * @return void
      */
-    protected function column_default($item, $column_name) : void
+    protected function column_default($item, $column_name): void
     {
     }
     /**
@@ -371,7 +371,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WP_Comment|mixed $item        The review or reply being rendered.
      * @return string
      */
-    protected function filter_column_output($column_name, $output, $item) : string
+    protected function filter_column_output($column_name, $output, $item): string
     {
     }
     /**
@@ -383,7 +383,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param string|mixed $which Position (top or bottom).
      * @return void
      */
-    protected function extra_tablenav($which) : void
+    protected function extra_tablenav($which): void
     {
     }
     /**
@@ -394,7 +394,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param string|mixed $current_type The current comment item type slug.
      * @return void
      */
-    protected function review_type_dropdown($current_type) : void
+    protected function review_type_dropdown($current_type): void
     {
     }
     /**
@@ -403,7 +403,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param int|string|mixed $current_rating Rating to display reviews for.
      * @return void
      */
-    public function review_rating_dropdown($current_rating) : void
+    public function review_rating_dropdown($current_rating): void
     {
     }
     /**
@@ -412,7 +412,7 @@ class ReviewsListTable extends \WP_List_Table
      * @param WC_Product|null $current_product The current product (or null when displaying all reviews).
      * @return void
      */
-    protected function product_search(?\WC_Product $current_product) : void
+    protected function product_search(?\WC_Product $current_product): void
     {
     }
     /**
@@ -425,7 +425,7 @@ class ReviewsListTable extends \WP_List_Table
      *
      * @return void
      */
-    protected function comments_bubble($post_id, $pending_comments) : void
+    protected function comments_bubble($post_id, $pending_comments): void
     {
     }
 }

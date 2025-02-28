@@ -5,10 +5,10 @@
  */
 class ActionScheduler_wpPostStore extends \ActionScheduler_Store
 {
-    const POST_TYPE = 'scheduled-action';
-    const GROUP_TAXONOMY = 'action-group';
-    const SCHEDULE_META_KEY = '_action_manager_schedule';
-    const DEPENDENCIES_MET = 'as-post-store-dependencies-met';
+    public const POST_TYPE = 'scheduled-action';
+    public const GROUP_TAXONOMY = 'action-group';
+    public const SCHEDULE_META_KEY = '_action_manager_schedule';
+    public const DEPENDENCIES_MET = 'as-post-store-dependencies-met';
     /**
      * Local Timezone.
      *

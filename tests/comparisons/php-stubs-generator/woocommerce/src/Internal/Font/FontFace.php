@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Internal\Font;
  */
 class FontFace
 {
-    const POST_TYPE = 'wp_font_face';
+    public const POST_TYPE = 'wp_font_face';
     /**
      * Gets the installed font face by slug.
      *

@@ -12,7 +12,7 @@ class UpdatePatterns
     /**
      * All patterns that are actively in use in the Assembler.
      */
-    const WC_PATTERNS_IN_THE_ASSEMBLER = ['woocommerce-blocks/featured-category-triple', 'woocommerce-blocks/hero-product-3-split', 'woocommerce-blocks/hero-product-chessboard', 'woocommerce-blocks/hero-product-split', 'woocommerce-blocks/product-collection-4-columns', 'woocommerce-blocks/product-collection-5-columns', 'woocommerce-blocks/social-follow-us-in-social-media', 'woocommerce-blocks/testimonials-3-columns', 'woocommerce-blocks/product-collection-featured-products-5-columns'];
+    public const WC_PATTERNS_IN_THE_ASSEMBLER = ['woocommerce-blocks/featured-category-triple', 'woocommerce-blocks/hero-product-3-split', 'woocommerce-blocks/hero-product-chessboard', 'woocommerce-blocks/hero-product-split', 'woocommerce-blocks/product-collection-4-columns', 'woocommerce-blocks/product-collection-5-columns', 'woocommerce-blocks/social-follow-us-in-social-media', 'woocommerce-blocks/testimonials-3-columns', 'woocommerce-blocks/product-collection-featured-products-5-columns'];
     /**
      * Generate AI content and assign AI-managed images to Patterns.
      *

@@ -13,7 +13,7 @@ interface DefinitionAggregateInterface extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return DefinitionInterface
      */
-    public function add(string $id, $definition, bool $shared = false) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
+    public function add(string $id, $definition, bool $shared = false): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
     /**
      * Checks whether alias exists as definition.
      *
@@ -21,7 +21,7 @@ interface DefinitionAggregateInterface extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return boolean
      */
-    public function has(string $id) : bool;
+    public function has(string $id): bool;
     /**
      * Checks whether tag exists as definition.
      *
@@ -29,7 +29,7 @@ interface DefinitionAggregateInterface extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return boolean
      */
-    public function hasTag(string $tag) : bool;
+    public function hasTag(string $tag): bool;
     /**
      * Get the definition to be extended.
      *
@@ -37,7 +37,7 @@ interface DefinitionAggregateInterface extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return DefinitionInterface
      */
-    public function getDefinition(string $id) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
+    public function getDefinition(string $id): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface;
     /**
      * Resolve and build a concrete value from an id/alias.
      *

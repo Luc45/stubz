@@ -30,13 +30,13 @@ abstract class AbstractRoute implements \Automattic\WooCommerce\StoreApi\Routes\
      *
      * @var string
      */
-    const SCHEMA_TYPE = '';
+    public const SCHEMA_TYPE = '';
     /**
      * The routes schema version.
      *
      * @var integer
      */
-    const SCHEMA_VERSION = 1;
+    public const SCHEMA_VERSION = 1;
     /**
      * Constructor.
      *

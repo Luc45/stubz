@@ -9,18 +9,19 @@ class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRo
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\DraftOrderTrait;
     use \Automattic\WooCommerce\StoreApi\Utilities\CheckoutTrait;
+
     /**
      * The route identifier.
      *
      * @var string
      */
-    const IDENTIFIER = 'checkout';
+    public const IDENTIFIER = 'checkout';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'checkout';
+    public const SCHEMA_TYPE = 'checkout';
     /**
      * Get the path of this REST route.
      *

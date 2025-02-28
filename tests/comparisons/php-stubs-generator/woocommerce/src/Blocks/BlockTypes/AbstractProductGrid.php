@@ -96,7 +96,7 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      *
      * @param array $query_args Query args.
      */
-    protected abstract function set_block_query_args(&$query_args);
+    abstract protected function set_block_query_args(&$query_args);
     /**
      * Set categories query args.
      *

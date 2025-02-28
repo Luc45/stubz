@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
  */
 class Products extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
-    const PRODUCT_COUNT_TRANSIENT_NAME = 'woocommerce_product_task_product_count_transient';
+    public const PRODUCT_COUNT_TRANSIENT_NAME = 'woocommerce_product_task_product_count_transient';
     /**
      * Constructor
      *

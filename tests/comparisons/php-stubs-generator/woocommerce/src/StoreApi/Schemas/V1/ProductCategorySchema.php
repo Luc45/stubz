@@ -18,7 +18,7 @@ class ProductCategorySchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\
      *
      * @var string
      */
-    const IDENTIFIER = 'product-category';
+    public const IDENTIFIER = 'product-category';
     /**
      * Image attachment schema instance.
      *

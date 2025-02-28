@@ -12,13 +12,13 @@ class ProductsBySlug extends \Automattic\WooCommerce\StoreApi\Routes\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'products-by-slug';
+    public const IDENTIFIER = 'products-by-slug';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'product';
+    public const SCHEMA_TYPE = 'product';
     /**
      * Get the path of this REST route.
      *

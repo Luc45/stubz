@@ -12,15 +12,15 @@ abstract class DataSourcePoller
     /**
      * Get class instance.
      */
-    public static abstract function get_instance();
+    abstract public static function get_instance();
     /**
      * Name of data sources filter.
      */
-    const FILTER_NAME = 'data_source_poller_data_sources';
+    public const FILTER_NAME = 'data_source_poller_data_sources';
     /**
      * Name of data source specs filter.
      */
-    const FILTER_NAME_SPECS = 'data_source_poller_specs';
+    public const FILTER_NAME_SPECS = 'data_source_poller_specs';
     /**
      * Id of DataSourcePoller.
      *

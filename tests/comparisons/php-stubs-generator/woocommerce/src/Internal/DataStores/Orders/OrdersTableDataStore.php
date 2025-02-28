@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements \WC_Object_Data_Store_Interface, \WC_Order_Data_Store_Interface
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
      *
@@ -43,7 +44,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @return void
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStoreMeta $data_store_meta, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStoreMeta $data_store_meta, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
     {
     }
     /**
@@ -139,7 +140,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @internal This method should only be used by internally and in cases where the CRUD operations of this datastore
      *           are bypassed for performance purposes. This interface is not guaranteed.
      */
-    public function clear_cached_data(array $order_ids) : array
+    public function clear_cached_data(array $order_ids): array
     {
     }
     /**
@@ -150,7 +151,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @return bool Whether the cache as fully invalidated.
      */
-    public function clear_all_cached_data() : bool
+    public function clear_all_cached_data(): bool
     {
     }
     /**
@@ -450,7 +451,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @param int $order_id The order id to check.
      * @return bool True if an order exists with the given name.
      */
-    public function order_exists($order_id) : bool
+    public function order_exists($order_id): bool
     {
     }
     /**
@@ -517,7 +518,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @return \stdClass[] DB Order objects or error.
      */
-    protected function get_order_data_for_ids(array $ids) : array
+    protected function get_order_data_for_ids(array $ids): array
     {
     }
     /**
@@ -542,7 +543,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @param string             $context The context: either 'create' or 'backfill'.
      * @return int The new post ID.
      */
-    protected function maybe_create_backup_post(&$order, string $context) : int
+    protected function maybe_create_backup_post(&$order, string $context): int
     {
     }
     /**
@@ -583,7 +584,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @since 6.8.0
      */
-    protected function get_db_rows_for_order(\WC_Abstract_Order $order, string $context = 'create', bool $only_changes = false) : array
+    protected function get_db_rows_for_order(\WC_Abstract_Order $order, string $context = 'create', bool $only_changes = false): array
     {
     }
     /**
@@ -622,7 +623,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @param int $order_id Th id of the order that has been deleted from the orders table.
      * @return void
      */
-    protected function handle_order_deletion_with_sync_disabled($order_id) : void
+    protected function handle_order_deletion_with_sync_disabled($order_id): void
     {
     }
     /**
@@ -642,7 +643,7 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @return bool If the operation was successful.
      */
-    public function untrash_order(\WC_Order $order) : bool
+    public function untrash_order(\WC_Order $order): bool
     {
     }
     /**

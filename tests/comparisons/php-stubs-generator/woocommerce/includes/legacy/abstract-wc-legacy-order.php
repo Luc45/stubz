@@ -6,10 +6,10 @@
  * Legacy and deprecated functions are here to keep the WC_Abstract_Order clean.
  * This class will be removed in future versions.
  *
- * @version	 3.0.0
- * @package	 WooCommerce\Abstracts
- * @category	Abstract Class
- * @author	  WooThemes
+ * @version  3.0.0
+ * @package  WooCommerce\Abstracts
+ * @category    Abstract Class
+ * @author    WooThemes
  */
 abstract class WC_Abstract_Legacy_Order extends \WC_Data
 {
@@ -251,7 +251,7 @@ abstract class WC_Abstract_Legacy_Order extends \WC_Data
     /**
      * Expand item meta into the $item array.
      * @deprecated 3.0.0 Item meta no longer expanded due to new order item
-     *		classes. This function now does nothing to avoid data breakage.
+     *      classes. This function now does nothing to avoid data breakage.
      * @param array $item before expansion.
      * @return array
      */

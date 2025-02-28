@@ -40,7 +40,7 @@ class FileController
      *
      * @return bool True if the contents were successfully written to the file.
      */
-    public function write_to_file(string $source, string $text, ?int $time = null) : bool
+    public function write_to_file(string $source, string $text, ?int $time = null): bool
     {
     }
     /**
@@ -72,7 +72,7 @@ class FileController
      *
      * @return File[]
      */
-    public function get_files_by_id(array $file_ids) : array
+    public function get_files_by_id(array $file_ids): array
     {
     }
     /**
@@ -111,7 +111,7 @@ class FileController
      *
      * @return int The number of files that were deleted.
      */
-    public function delete_files(array $file_ids) : int
+    public function delete_files(array $file_ids): int
     {
     }
     /**
@@ -153,7 +153,7 @@ class FileController
      *
      * @return int
      */
-    public function get_log_directory_size() : int
+    public function get_log_directory_size(): int
     {
     }
     /**
@@ -161,7 +161,7 @@ class FileController
      *
      * @return bool True on successfully invalidating the cache.
      */
-    public function invalidate_cache() : bool
+    public function invalidate_cache(): bool
     {
     }
 }

@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
 class OrderAttributionBlocksController implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     use \Automattic\WooCommerce\Internal\Traits\ScriptDebug;
+
     /**
      * Bind dependencies on init.
      *
@@ -19,7 +20,7 @@ class OrderAttributionBlocksController implements \Automattic\WooCommerce\Intern
      * @param FeaturesController         $features_controller           Features controller.
      * @param OrderAttributionController $order_attribution_controller Instance of the order attribution controller.
      */
-    public final function init(\Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend_schema, \Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, \Automattic\WooCommerce\Internal\Orders\OrderAttributionController $order_attribution_controller)
+    final public function init(\Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend_schema, \Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, \Automattic\WooCommerce\Internal\Orders\OrderAttributionController $order_attribution_controller)
     {
     }
     /**

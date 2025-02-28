@@ -8,10 +8,11 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 class SimpleProductTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate implements \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\ProductFormTemplateInterface
 {
     use \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\DownloadableProductTrait;
+
     /**
      * The context name used to identify the editor.
      */
-    const GROUP_IDS = array('GENERAL' => 'general', 'ORGANIZATION' => 'organization', 'INVENTORY' => 'inventory', 'SHIPPING' => 'shipping', 'VARIATIONS' => 'variations', 'LINKED_PRODUCTS' => 'linked-products');
+    public const GROUP_IDS = array('GENERAL' => 'general', 'ORGANIZATION' => 'organization', 'INVENTORY' => 'inventory', 'SHIPPING' => 'shipping', 'VARIATIONS' => 'variations', 'LINKED_PRODUCTS' => 'linked-products');
     /**
      * SimpleProductTemplate constructor.
      */
@@ -21,19 +22,19 @@ class SimpleProductTemplate extends \Automattic\WooCommerce\Internal\Features\Pr
     /**
      * Get the template ID.
      */
-    public function get_id() : string
+    public function get_id(): string
     {
     }
     /**
      * Get the template title.
      */
-    public function get_title() : string
+    public function get_title(): string
     {
     }
     /**
      * Get the template description.
      */
-    public function get_description() : string
+    public function get_description(): string
     {
     }
     /**

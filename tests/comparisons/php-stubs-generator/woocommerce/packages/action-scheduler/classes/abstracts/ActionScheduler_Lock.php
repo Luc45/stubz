@@ -30,14 +30,14 @@ abstract class ActionScheduler_Lock
      * @param string $lock_type A string to identify different lock types.
      * @return bool
      */
-    public abstract function set($lock_type);
+    abstract public function set($lock_type);
     /**
      * If a lock is set, return the timestamp it was set to expiry.
      *
      * @param string $lock_type A string to identify different lock types.
      * @return bool|int False if no lock is set, otherwise the timestamp for when the lock is set to expire.
      */
-    public abstract function get_expiration($lock_type);
+    abstract public function get_expiration($lock_type);
     /**
      * Get the amount of time to set for a given lock. 60 seconds by default.
      *

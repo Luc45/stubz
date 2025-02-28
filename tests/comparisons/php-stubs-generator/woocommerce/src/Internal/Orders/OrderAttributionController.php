@@ -13,6 +13,7 @@ class OrderAttributionController implements \Automattic\WooCommerce\Internal\Reg
     use \Automattic\WooCommerce\Internal\Traits\OrderAttributionMeta {
         get_prefixed_field_name as public;
     }
+
     /**
      * Initialization method.
      *
@@ -24,7 +25,7 @@ class OrderAttributionController implements \Automattic\WooCommerce\Internal\Reg
      * @param FeaturesController $controller The feature controller.
      * @param WPConsentAPI       $consent    The WPConsentAPI integration.
      */
-    public final function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy, \Automattic\WooCommerce\Internal\Features\FeaturesController $controller, \Automattic\WooCommerce\Internal\Integrations\WPConsentAPI $consent)
+    final public function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy, \Automattic\WooCommerce\Internal\Features\FeaturesController $controller, \Automattic\WooCommerce\Internal\Integrations\WPConsentAPI $consent)
     {
     }
     /**
@@ -46,7 +47,7 @@ class OrderAttributionController implements \Automattic\WooCommerce\Internal\Reg
      *
      * @return array
      */
-    public function get_field_names() : array
+    public function get_field_names(): array
     {
     }
     /**
@@ -54,7 +55,7 @@ class OrderAttributionController implements \Automattic\WooCommerce\Internal\Reg
      *
      * @return string
      */
-    public function get_prefix() : string
+    public function get_prefix(): string
     {
     }
     /**

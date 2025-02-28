@@ -39,7 +39,7 @@ abstract class ObjectCache
      *
      * @return string
      */
-    public abstract function get_object_type() : string;
+    abstract public function get_object_type(): string;
     /**
      * Creates a new instance of the class.
      *
@@ -53,7 +53,7 @@ abstract class ObjectCache
      *
      * @return int
      */
-    public function get_default_expiration_value() : int
+    public function get_default_expiration_value(): int
     {
     }
     /**
@@ -65,7 +65,7 @@ abstract class ObjectCache
      * @return bool True on success, false on error.
      * @throws CacheException Invalid parameter, or null id was passed and get_object_id returns null too.
      */
-    public function set($object, $id = null, int $expiration = self::DEFAULT_EXPIRATION) : bool
+    public function set($object, $id = null, int $expiration = self::DEFAULT_EXPIRATION): bool
     {
     }
     /**
@@ -77,7 +77,7 @@ abstract class ObjectCache
      * @return bool True on success, false on error or if no object with the supplied id was cached.
      * @throws CacheException Invalid parameter, or null id was passed and get_object_id returns null too.
      */
-    public function update_if_cached($object, $id = null, int $expiration = self::DEFAULT_EXPIRATION) : bool
+    public function update_if_cached($object, $id = null, int $expiration = self::DEFAULT_EXPIRATION): bool
     {
     }
     /**
@@ -102,7 +102,7 @@ abstract class ObjectCache
      * @param int|string $id The id of the object to remove.
      * @return bool True if the object is removed from the cache successfully, false otherwise (because the object wasn't cached or for other reason).
      */
-    public function remove($id) : bool
+    public function remove($id): bool
     {
     }
     /**
@@ -110,7 +110,7 @@ abstract class ObjectCache
      *
      * @return bool True on success, false on error.
      */
-    public function flush() : bool
+    public function flush(): bool
     {
     }
     /**
@@ -119,7 +119,7 @@ abstract class ObjectCache
      * @param int|string $id The id of the object to check.
      * @return bool True if there's a cached object with the specified id.
      */
-    public function is_cached($id) : bool
+    public function is_cached($id): bool
     {
     }
     /**
@@ -129,20 +129,20 @@ abstract class ObjectCache
      * @param array|object $object The object to get the id for.
      * @return int|string|null
      */
-    protected abstract function get_object_id($object);
+    abstract protected function get_object_id($object);
     /**
      * Validate an object before it's cached.
      *
      * @param array|object $object Object to validate.
      * @return array|null An array with validation error messages, null or an empty array if there are no errors.
      */
-    protected abstract function validate($object) : ?array;
+    abstract protected function validate($object): ?array;
     /**
      * Get the instance of the cache engine to use.
      *
      * @return CacheEngine
      */
-    protected function get_cache_engine_instance() : \Automattic\WooCommerce\Caching\CacheEngine
+    protected function get_cache_engine_instance(): \Automattic\WooCommerce\Caching\CacheEngine
     {
     }
     /**
@@ -151,7 +151,7 @@ abstract class ObjectCache
      *
      * @return string
      */
-    protected function get_random_string() : string
+    protected function get_random_string(): string
     {
     }
 }

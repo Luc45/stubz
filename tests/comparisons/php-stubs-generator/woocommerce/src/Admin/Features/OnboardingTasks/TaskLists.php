@@ -33,11 +33,11 @@ class TaskLists
      *
      * @var array
      */
-    const DEFAULT_TASKS = array('StoreDetails', 'Products', 'WooCommercePayments', 'Payments', 'Tax', 'Shipping', 'Marketing', 'Appearance', 'AdditionalPayments', 'ReviewShippingOptions', 'GetMobileApp');
+    public const DEFAULT_TASKS = array('StoreDetails', 'Products', 'WooCommercePayments', 'Payments', 'Tax', 'Shipping', 'Marketing', 'Appearance', 'AdditionalPayments', 'ReviewShippingOptions', 'GetMobileApp');
     /**
      * Get class instance.
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**

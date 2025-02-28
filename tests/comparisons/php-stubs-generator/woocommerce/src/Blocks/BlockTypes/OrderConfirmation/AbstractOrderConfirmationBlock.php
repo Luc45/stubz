@@ -39,7 +39,7 @@ abstract class AbstractOrderConfirmationBlock extends \Automattic\WooCommerce\Bl
      * @param string       $content Original block content.
      * @return string
      */
-    protected abstract function render_content($order, $permission = false, $attributes = [], $content = '');
+    abstract protected function render_content($order, $permission = false, $attributes = [], $content = '');
     /**
      * This is what gets rendered when the order does not exist. Renders nothing by default, but can be overridden by
      * child classes.

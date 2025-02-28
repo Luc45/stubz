@@ -14,7 +14,7 @@ class ProductCatalogTemplate extends \Automattic\WooCommerce\Blocks\Templates\Ab
      *
      * @var string
      */
-    const SLUG = 'archive-product';
+    public const SLUG = 'archive-product';
     /**
      * Initialization method.
      */

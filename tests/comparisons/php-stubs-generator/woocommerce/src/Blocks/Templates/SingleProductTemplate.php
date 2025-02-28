@@ -14,7 +14,7 @@ class SingleProductTemplate extends \Automattic\WooCommerce\Blocks\Templates\Abs
      *
      * @var string
      */
-    const SLUG = 'single-product';
+    public const SLUG = 'single-product';
     /**
      * Initialization method.
      */

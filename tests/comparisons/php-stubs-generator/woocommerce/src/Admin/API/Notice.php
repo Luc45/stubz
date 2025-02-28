@@ -42,7 +42,7 @@ class Notice extends \WC_REST_Data_Controller
      *
      * @return bool
      */
-    public function get_permission() : bool
+    public function get_permission(): bool
     {
     }
 }

@@ -12,19 +12,19 @@ trait BlockFormattedTemplateTrait
      *
      * @return array The block configuration as a formatted template.
      */
-    public function get_formatted_template() : array
+    public function get_formatted_template(): array
     {
     }
     /**
      * Get the block hide conditions formatted for inclusion in a formatted template.
      */
-    private function get_formatted_hide_conditions() : array
+    private function get_formatted_hide_conditions(): array
     {
     }
     /**
      * Get the block disable conditions formatted for inclusion in a formatted template.
      */
-    private function get_formatted_disable_conditions() : array
+    private function get_formatted_disable_conditions(): array
     {
     }
     /**
@@ -32,7 +32,7 @@ trait BlockFormattedTemplateTrait
      *
      * @param array $conditions The conditions to format.
      */
-    private function format_conditions($conditions) : array
+    private function format_conditions($conditions): array
     {
     }
 }

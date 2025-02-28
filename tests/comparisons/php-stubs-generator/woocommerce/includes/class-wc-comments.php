@@ -158,7 +158,7 @@ class WC_Comments
      *
      * @return array
      */
-    public static function add_review_comment_filter(array $comment_types) : array
+    public static function add_review_comment_filter(array $comment_types): array
     {
     }
     /**

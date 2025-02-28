@@ -32,7 +32,7 @@ abstract class AbstractSchema
      *
      * @var string
      */
-    const EXTENDING_KEY = 'extensions';
+    public const EXTENDING_KEY = 'extensions';
     /**
      * Constructor.
      *
@@ -64,7 +64,7 @@ abstract class AbstractSchema
      *
      * @return array
      */
-    public abstract function get_properties();
+    abstract public function get_properties();
     /**
      * Recursive removal of arg_options.
      *

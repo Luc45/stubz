@@ -16,7 +16,7 @@ final class StringUtil
      *
      * @return bool True if the $string starts with $starts_with, false otherwise.
      */
-    public static function starts_with(string $string, string $starts_with, bool $case_sensitive = true) : bool
+    public static function starts_with(string $string, string $starts_with, bool $case_sensitive = true): bool
     {
     }
     /**
@@ -28,7 +28,7 @@ final class StringUtil
      *
      * @return bool True if the $string ends with $ends_with, false otherwise.
      */
-    public static function ends_with(string $string, string $ends_with, bool $case_sensitive = true) : bool
+    public static function ends_with(string $string, string $ends_with, bool $case_sensitive = true): bool
     {
     }
     /**
@@ -39,7 +39,7 @@ final class StringUtil
      * @param bool   $case_sensitive Indicates whether the comparison should be case-sensitive.
      * @return bool True if $contained is contained inside $string, false otherwise.
      */
-    public static function contains(string $string, string $contained, bool $case_sensitive = true) : bool
+    public static function contains(string $string, string $contained, bool $case_sensitive = true): bool
     {
     }
     /**
@@ -48,7 +48,7 @@ final class StringUtil
      * @param string $plugin_file_path The path of the main plugin file (can be passed as __FILE__ from the plugin itself).
      * @return string The name of the plugin in the form 'directory/file.php'.
      */
-    public static function plugin_name_from_plugin_file(string $plugin_file_path) : string
+    public static function plugin_name_from_plugin_file(string $plugin_file_path): string
     {
     }
     /**

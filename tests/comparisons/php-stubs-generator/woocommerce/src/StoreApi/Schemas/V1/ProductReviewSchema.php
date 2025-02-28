@@ -18,7 +18,7 @@ class ProductReviewSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Ab
      *
      * @var string
      */
-    const IDENTIFIER = 'product-review';
+    public const IDENTIFIER = 'product-review';
     /**
      * Image attachment schema instance.
      *

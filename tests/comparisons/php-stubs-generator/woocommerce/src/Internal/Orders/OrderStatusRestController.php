@@ -24,7 +24,7 @@ class OrderStatusRestController extends \Automattic\WooCommerce\Internal\RestApi
      *
      * @return string
      */
-    protected function get_rest_api_namespace() : string
+    protected function get_rest_api_namespace(): string
     {
     }
     /**

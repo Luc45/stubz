@@ -11,6 +11,7 @@ class Order extends \WC_Order
      * Order traits.
      */
     use \Automattic\WooCommerce\Admin\Overrides\OrderTraits;
+
     /**
      * Holds refund amounts and quantities for the order.
      *

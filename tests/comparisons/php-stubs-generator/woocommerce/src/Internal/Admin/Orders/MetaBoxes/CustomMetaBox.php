@@ -34,7 +34,7 @@ class CustomMetaBox
      *
      * @return void
      */
-    public function render_meta_form(\WC_Order $order) : void
+    public function render_meta_form(\WC_Order $order): void
     {
     }
     /**

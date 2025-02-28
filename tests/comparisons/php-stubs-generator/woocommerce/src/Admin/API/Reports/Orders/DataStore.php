@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders;
 class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     use \Automattic\WooCommerce\Internal\Traits\OrderAttributionMeta;
+
     /**
      * Dynamically sets the date column name based on configuration
      *

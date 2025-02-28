@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Taxes\Stats;
 class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     use \Automattic\WooCommerce\Admin\API\Reports\StatsDataStoreTrait;
+
     /**
      * Table used to get the data.
      *

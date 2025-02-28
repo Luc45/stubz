@@ -14,7 +14,7 @@ class IppFunctions
      *
      * @return bool true if order is eligible, false otherwise
      */
-    public static function is_order_in_person_payment_eligible(\WC_Order $order) : bool
+    public static function is_order_in_person_payment_eligible(\WC_Order $order): bool
     {
     }
     /**
@@ -22,7 +22,7 @@ class IppFunctions
      *
      * @return bool true if store is eligible, false otherwise
      */
-    public static function is_store_in_person_payment_eligible() : bool
+    public static function is_store_in_person_payment_eligible(): bool
     {
     }
     /**
@@ -33,7 +33,7 @@ class IppFunctions
      *
      * @return bool true if specified country and currency match the store's ones. false otherwise
      */
-    public static function has_store_specified_country_currency(string $country, string $currency) : bool
+    public static function has_store_specified_country_currency(string $country, string $currency): bool
     {
     }
 }

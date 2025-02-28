@@ -25,7 +25,7 @@ class CacheException extends \Exception
      *
      * @return string String representation of the exception object.
      */
-    public function __toString() : string
+    public function __toString(): string
     {
     }
     /**
@@ -33,7 +33,7 @@ class CacheException extends \Exception
      *
      * @return array Error messages passed to the exception constructor.
      */
-    public function get_errors() : array
+    public function get_errors(): array
     {
     }
     /**
@@ -41,7 +41,7 @@ class CacheException extends \Exception
      *
      * @return object The object that threw the exception.
      */
-    public function get_thrower() : object
+    public function get_thrower(): object
     {
     }
     /**

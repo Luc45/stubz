@@ -37,7 +37,7 @@ class OrdersTableQuery
      *
      * @since 7.0.0
      */
-    public function get_core_mapping_alias(string $mapping_id) : string
+    public function get_core_mapping_alias(string $mapping_id): string
     {
     }
     /**
@@ -48,7 +48,7 @@ class OrdersTableQuery
      *
      * @since 7.0.0
      */
-    public function get_core_mapping_join(string $mapping_id) : string
+    public function get_core_mapping_join(string $mapping_id): string
     {
     }
     /**
@@ -61,7 +61,7 @@ class OrdersTableQuery
      * @param string $type     The column type as specified in {@see OrdersTableDataStore} column mappings.
      * @return string The resulting WHERE condition.
      */
-    public function where(string $table, string $field, string $operator, $value, string $type) : string
+    public function where(string $table, string $field, string $operator, $value, string $type): string
     {
     }
     /**
@@ -70,7 +70,7 @@ class OrdersTableQuery
      * @param string $arg_key Query var.
      * @return bool TRUE if query var is set.
      */
-    public function arg_isset(string $arg_key) : bool
+    public function arg_isset(string $arg_key): bool
     {
     }
     /**
@@ -98,7 +98,7 @@ class OrdersTableQuery
      * @return string The prefixed table name.
      * @throws \Exception When table ID is not found.
      */
-    public function get_table_name(string $table_id = '') : string
+    public function get_table_name(string $table_id = ''): string
     {
     }
     /**

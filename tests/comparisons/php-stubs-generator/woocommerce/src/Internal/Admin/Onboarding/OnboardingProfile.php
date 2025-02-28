@@ -10,11 +10,11 @@ class OnboardingProfile
     /**
      * Profile data option name.
      */
-    const DATA_OPTION = 'woocommerce_onboarding_profile';
+    public const DATA_OPTION = 'woocommerce_onboarding_profile';
     /**
      * Option for storing the onboarding profile progress.
      */
-    const PROGRESS_OPTION = 'woocommerce_onboarding_profile_progress';
+    public const PROGRESS_OPTION = 'woocommerce_onboarding_profile_progress';
     /**
      * Add onboarding actions.
      */

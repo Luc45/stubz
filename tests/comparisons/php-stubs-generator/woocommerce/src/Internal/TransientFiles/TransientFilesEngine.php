@@ -40,7 +40,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      *
      * @param LegacyProxy $legacy_proxy The instance of LegacyProxy to use.
      */
-    public final function init(\Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+    final public function init(\Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
     {
     }
     /**
@@ -59,7 +59,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @return string Effective base directory where transient files are stored.
      * @throws Exception The custom base directory (as specified via filter) doesn't exist, or the default base directory can't be created.
      */
-    public function get_transient_files_directory() : string
+    public function get_transient_files_directory(): string
     {
     }
     /**
@@ -71,7 +71,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @throws \InvalidArgumentException Invalid expiration date (wrongly formatted, or it's a date in the past).
      * @throws \Exception The directory to store the file doesn't exist and can't be created.
      */
-    public function create_transient_file(string $file_contents, $expiration_date) : string
+    public function create_transient_file(string $file_contents, $expiration_date): string
     {
     }
     /**
@@ -80,7 +80,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @param string $filename The name of the transient file to locate.
      * @return string|null The full physical path of the file, or null if the files doesn't exist.
      */
-    public function get_transient_file_path(string $filename) : ?string
+    public function get_transient_file_path(string $filename): ?string
     {
     }
     /**
@@ -89,7 +89,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @param string $filename The name of the transient file to get the expiration date for.
      * @return string|null Expiration date formatted as Y-m-d, null if the file name isn't encoding a proper date.
      */
-    public static function get_expiration_date(string $filename) : ?string
+    public static function get_expiration_date(string $filename): ?string
     {
     }
     /**
@@ -114,7 +114,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @return bool True if the file has expired, false otherwise.
      * @throws \Exception Thrown by DateTime if a wrong file path is passed.
      */
-    public function file_has_expired(string $file_path) : bool
+    public function file_has_expired(string $file_path): bool
     {
     }
     /**
@@ -123,7 +123,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @param string $filename The name of the file to delete.
      * @return bool True if the file has been deleted, false otherwise (the file didn't exist).
      */
-    public function delete_transient_file(string $filename) : bool
+    public function delete_transient_file(string $filename): bool
     {
     }
     /**
@@ -133,7 +133,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @return array "deleted_count" with the number of files actually deleted, "files_remain" that will be true if there are still files left to delete.
      * @throws Exception The base directory for transient files (possibly changed via filter) doesn't exist.
      */
-    public function delete_expired_files(int $limit = 1000) : array
+    public function delete_expired_files(int $limit = 1000): array
     {
     }
     /**
@@ -141,20 +141,20 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      *
      * @return bool True if the expired files cleanup action is currently scheduled, false otherwise.
      */
-    public function expired_files_cleanup_is_scheduled() : bool
+    public function expired_files_cleanup_is_scheduled(): bool
     {
     }
     /**
      * Schedule an action that will do one round of expired files cleanup.
      * The action is scheduled to run immediately. If a previous pending action exists, it's unscheduled first.
      */
-    public function schedule_expired_files_cleanup() : void
+    public function schedule_expired_files_cleanup(): void
     {
     }
     /**
      * Remove the scheduled action that does the expired files cleanup, if it's scheduled.
      */
-    public function unschedule_expired_files_cleanup() : void
+    public function unschedule_expired_files_cleanup(): void
     {
     }
     /**
@@ -172,7 +172,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_expired_files_cleanup_action() : void
+    public function handle_expired_files_cleanup_action(): void
     {
     }
     /**
@@ -183,7 +183,7 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_debug_tools_entries(array $tools_array) : array
+    public function add_debug_tools_entries(array $tools_array): array
     {
     }
     /**

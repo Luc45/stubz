@@ -13,14 +13,15 @@ class MarketingJetpack
 {
     // Shared Note Traits.
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-marketing-jetpack-backup';
+    public const NOTE_NAME = 'wc-admin-marketing-jetpack-backup';
     /**
      * Product IDs that include Backup.
      */
-    const BACKUP_IDS = [2010, 2011, 2012, 2013, 2014, 2015, 2100, 2101, 2102, 2103, 2005, 2006, 2000, 2003, 2001, 2004];
+    public const BACKUP_IDS = [2010, 2011, 2012, 2013, 2014, 2015, 2100, 2101, 2102, 2103, 2005, 2006, 2000, 2003, 2001, 2004];
     /**
      * Maybe add a note on Jetpack Backups for Jetpack sites older than a week without Backups.
      */

@@ -23,7 +23,7 @@ class FeaturesUtil
      * @param bool $include_enabled_info True to include the 'is_enabled' field in the returned features info.
      * @returns array An array of information about existing features.
      */
-    public static function get_features(bool $include_experimental = false, bool $include_enabled_info = false) : array
+    public static function get_features(bool $include_experimental = false, bool $include_enabled_info = false): array
     {
     }
     /**
@@ -32,7 +32,7 @@ class FeaturesUtil
      * @param  string $feature_id Unique feature id.
      * @return bool True if the feature is enabled, false if not or if the feature doesn't exist.
      */
-    public static function feature_is_enabled(string $feature_id) : bool
+    public static function feature_is_enabled(string $feature_id): bool
     {
     }
     /**
@@ -47,7 +47,7 @@ class FeaturesUtil
      * @param bool   $positive_compatibility True if the plugin declares being compatible with the feature, false if it declares being incompatible.
      * @return bool True on success, false on error (feature doesn't exist or not inside the required hook).
      */
-    public static function declare_compatibility(string $feature_id, string $plugin_file, bool $positive_compatibility = true) : bool
+    public static function declare_compatibility(string $feature_id, string $plugin_file, bool $positive_compatibility = true): bool
     {
     }
     /**
@@ -58,7 +58,7 @@ class FeaturesUtil
      * @param string $plugin_name Plugin name, in the form 'directory/file.php'.
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of plugin ids.
      */
-    public static function get_compatible_features_for_plugin(string $plugin_name) : array
+    public static function get_compatible_features_for_plugin(string $plugin_name): array
     {
     }
     /**
@@ -67,21 +67,21 @@ class FeaturesUtil
      * @param string $feature_id Feature id.
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of plugin names.
      */
-    public static function get_compatible_plugins_for_feature(string $feature_id) : array
+    public static function get_compatible_plugins_for_feature(string $feature_id): array
     {
     }
     /**
      * Sets a flag indicating that it's allowed to enable features for which incompatible plugins are active
      * from the WooCommerce feature settings page.
      */
-    public static function allow_enabling_features_with_incompatible_plugins() : void
+    public static function allow_enabling_features_with_incompatible_plugins(): void
     {
     }
     /**
      * Sets a flag indicating that it's allowed to activate plugins for which incompatible features are enabled
      * from the WordPress plugins page.
      */
-    public static function allow_activating_plugins_with_incompatible_features() : void
+    public static function allow_activating_plugins_with_incompatible_features(): void
     {
     }
 }

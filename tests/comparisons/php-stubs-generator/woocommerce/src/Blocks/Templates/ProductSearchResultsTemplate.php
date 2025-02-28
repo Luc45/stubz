@@ -14,7 +14,7 @@ class ProductSearchResultsTemplate extends \Automattic\WooCommerce\Blocks\Templa
      *
      * @var string
      */
-    const SLUG = 'product-search-results';
+    public const SLUG = 'product-search-results';
     /**
      * Initialization method.
      */

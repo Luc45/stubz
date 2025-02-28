@@ -14,7 +14,7 @@ class ProductAttributeTemplate extends \Automattic\WooCommerce\Blocks\Templates\
      *
      * @var string
      */
-    const SLUG = 'taxonomy-product_attribute';
+    public const SLUG = 'taxonomy-product_attribute';
     /**
      * The template used as a fallback if that one is customized.
      *

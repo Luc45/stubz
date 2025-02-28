@@ -12,7 +12,7 @@ class Pexels
     /**
      * The Pexels API endpoint.
      */
-    const EXTERNAL_MEDIA_PEXELS_ENDPOINT = '/wpcom/v2/external-media/list/pexels';
+    public const EXTERNAL_MEDIA_PEXELS_ENDPOINT = '/wpcom/v2/external-media/list/pexels';
     /**
      * Returns the list of images for the given search criteria.
      *

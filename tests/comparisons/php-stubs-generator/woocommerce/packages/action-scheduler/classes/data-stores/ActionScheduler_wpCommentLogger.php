@@ -5,8 +5,8 @@
  */
 class ActionScheduler_wpCommentLogger extends \ActionScheduler_Logger
 {
-    const AGENT = 'ActionScheduler';
-    const TYPE = 'action_log';
+    public const AGENT = 'ActionScheduler';
+    public const TYPE = 'action_log';
     /**
      * Create log entry.
      *

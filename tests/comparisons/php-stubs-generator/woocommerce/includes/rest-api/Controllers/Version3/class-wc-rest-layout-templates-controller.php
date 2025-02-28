@@ -28,7 +28,7 @@ class WC_REST_Layout_Templates_Controller extends \WC_REST_Controller
      *
      * @param WP_REST_Request $request The request.
      */
-    public function get_items_permissions_check($request) : bool
+    public function get_items_permissions_check($request): bool
     {
     }
     /**
@@ -36,7 +36,7 @@ class WC_REST_Layout_Templates_Controller extends \WC_REST_Controller
      *
      * @param WP_REST_Request $request The request.
      */
-    public function get_item_permissions_check($request) : bool
+    public function get_item_permissions_check($request): bool
     {
     }
     /**

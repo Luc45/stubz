@@ -8,4 +8,5 @@
  * Inserter: false
  * Feature Flag: coming-soon-newsletter-template
  */
+
 $current_theme = \wp_get_theme()->get_stylesheet();

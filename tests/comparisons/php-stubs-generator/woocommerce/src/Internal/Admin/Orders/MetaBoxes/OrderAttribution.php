@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
 class OrderAttribution
 {
     use \Automattic\WooCommerce\Internal\Traits\OrderAttributionMeta;
+
     /**
      * OrderAttribution constructor.
      */

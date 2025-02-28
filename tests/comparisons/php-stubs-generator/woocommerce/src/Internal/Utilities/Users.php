@@ -17,7 +17,7 @@ class Users
      *
      * @return bool
      */
-    public static function is_site_administrator(int $user_id = 0) : bool
+    public static function is_site_administrator(int $user_id = 0): bool
     {
     }
     /**

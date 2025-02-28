@@ -11,17 +11,17 @@ namespace Automattic\WooCommerce\Admin\Notes;
 class WC_Admin_Note extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
 {
     // These constants must be redeclared as to not break plugins that use them.
-    const E_WC_ADMIN_NOTE_ERROR = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_ERROR;
-    const E_WC_ADMIN_NOTE_WARNING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_WARNING;
-    const E_WC_ADMIN_NOTE_UPDATE = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_UPDATE;
-    const E_WC_ADMIN_NOTE_INFORMATIONAL = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_INFORMATIONAL;
-    const E_WC_ADMIN_NOTE_MARKETING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_MARKETING;
-    const E_WC_ADMIN_NOTE_SURVEY = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_SURVEY;
-    const E_WC_ADMIN_NOTE_PENDING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_PENDING;
-    const E_WC_ADMIN_NOTE_UNACTIONED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_UNACTIONED;
-    const E_WC_ADMIN_NOTE_ACTIONED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_ACTIONED;
-    const E_WC_ADMIN_NOTE_SNOOZED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_SNOOZED;
-    const E_WC_ADMIN_NOTE_EMAIL = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_EMAIL;
+    public const E_WC_ADMIN_NOTE_ERROR = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_ERROR;
+    public const E_WC_ADMIN_NOTE_WARNING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_WARNING;
+    public const E_WC_ADMIN_NOTE_UPDATE = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_UPDATE;
+    public const E_WC_ADMIN_NOTE_INFORMATIONAL = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_INFORMATIONAL;
+    public const E_WC_ADMIN_NOTE_MARKETING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_MARKETING;
+    public const E_WC_ADMIN_NOTE_SURVEY = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_SURVEY;
+    public const E_WC_ADMIN_NOTE_PENDING = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_PENDING;
+    public const E_WC_ADMIN_NOTE_UNACTIONED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_UNACTIONED;
+    public const E_WC_ADMIN_NOTE_ACTIONED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_ACTIONED;
+    public const E_WC_ADMIN_NOTE_SNOOZED = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_SNOOZED;
+    public const E_WC_ADMIN_NOTE_EMAIL = \Automattic\WooCommerce\Admin\Notes\Note::E_WC_ADMIN_NOTE_EMAIL;
     /**
      * The name of the non-deprecated class that this facade covers.
      *

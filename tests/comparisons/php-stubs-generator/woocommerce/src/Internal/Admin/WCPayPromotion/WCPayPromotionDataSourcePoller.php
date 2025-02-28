@@ -7,13 +7,13 @@ namespace Automattic\WooCommerce\Internal\Admin\WCPayPromotion;
  */
 class WCPayPromotionDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
-    const ID = 'payment_method_promotion';
+    public const ID = 'payment_method_promotion';
     /**
      * Default data sources array.
      *
      * @deprecated since 9.5.0. Use get_data_sources() instead.
      */
-    const DATA_SOURCES = array();
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *

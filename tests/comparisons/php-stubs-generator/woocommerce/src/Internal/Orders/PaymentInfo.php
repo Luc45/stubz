@@ -14,7 +14,7 @@ class PaymentInfo
      *
      * @return array
      */
-    public static function get_card_info(\WC_Abstract_Order $order) : array
+    public static function get_card_info(\WC_Abstract_Order $order): array
     {
     }
 }

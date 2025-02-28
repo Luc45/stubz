@@ -9,6 +9,7 @@
 class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareRestControllerTrait;
+
     /**
      * Endpoint namespace.
      *
@@ -170,7 +171,7 @@ class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
      * @param string          $context Request context.
      * @return array Product data to be included in the response.
      */
-    protected function prepare_object_for_response_core($object_data, $request, $context) : array
+    protected function prepare_object_for_response_core($object_data, $request, $context): array
     {
     }
 }

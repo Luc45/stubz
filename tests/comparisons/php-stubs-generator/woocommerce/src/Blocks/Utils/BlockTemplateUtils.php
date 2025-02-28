@@ -22,8 +22,8 @@ class BlockTemplateUtils
      *     @var string TEMPLATE_PARTS_DIR_NAME  Directory name of the block template parts directory.
      * }
      */
-    const DIRECTORY_NAMES = array('DEPRECATED_TEMPLATES' => 'block-templates', 'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts', 'TEMPLATES' => 'templates', 'TEMPLATE_PARTS' => 'parts');
-    const TEMPLATES_ROOT_DIR = 'templates';
+    public const DIRECTORY_NAMES = array('DEPRECATED_TEMPLATES' => 'block-templates', 'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts', 'TEMPLATES' => 'templates', 'TEMPLATE_PARTS' => 'parts');
+    public const TEMPLATES_ROOT_DIR = 'templates';
     /**
      * WooCommerce plugin slug
      *
@@ -31,7 +31,7 @@ class BlockTemplateUtils
      *
      * @var string
      */
-    const PLUGIN_SLUG = 'woocommerce/woocommerce';
+    public const PLUGIN_SLUG = 'woocommerce/woocommerce';
     /**
      * Deprecated WooCommerce plugin slug
      *
@@ -40,7 +40,7 @@ class BlockTemplateUtils
      *
      * @var string
      */
-    const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
+    public const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
     /**
      * Returns the template matching the slug
      *

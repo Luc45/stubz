@@ -18,7 +18,7 @@ class ErrorSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSc
      *
      * @var string
      */
-    const IDENTIFIER = 'error';
+    public const IDENTIFIER = 'error';
     /**
      * Product schema properties.
      *

@@ -12,13 +12,13 @@ class Patterns extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
      *
      * @var string
      */
-    const IDENTIFIER = 'patterns';
+    public const IDENTIFIER = 'patterns';
     /**
      * The schema item identifier.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'patterns';
+    public const SCHEMA_TYPE = 'patterns';
     /**
      * Get the path of this REST route.
      *

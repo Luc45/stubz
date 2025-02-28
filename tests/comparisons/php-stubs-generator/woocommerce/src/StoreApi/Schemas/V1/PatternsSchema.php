@@ -18,7 +18,7 @@ class PatternsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstrac
      *
      * @var string
      */
-    const IDENTIFIER = 'patterns';
+    public const IDENTIFIER = 'patterns';
     /**
      * Patterns schema properties.
      *

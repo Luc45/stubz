@@ -199,19 +199,19 @@ class MobileDetect
      *
      * @deprecated since version 2.6.9
      */
-    const VER = '([\\w._\\+]+)';
+    public const VER = '([\\w._\\+]+)';
     /**
      * Stores the version number of the current release.
      */
-    const VERSION = '3.74.3';
+    public const VERSION = '3.74.3';
     /**
      * A type for the version() method indicating a string return value.
      */
-    const VERSION_TYPE_STRING = 'text';
+    public const VERSION_TYPE_STRING = 'text';
     /**
      * A type for the version() method indicating a float return value.
      */
-    const VERSION_TYPE_FLOAT = 'float';
+    public const VERSION_TYPE_FLOAT = 'float';
     /**
      * A cache for resolved matches
      * @var array
@@ -802,7 +802,7 @@ class MobileDetect
      *
      * @return string The version number in semantic version format.
      */
-    public static function getScriptVersion() : string
+    public static function getScriptVersion(): string
     {
     }
     /**
@@ -819,7 +819,7 @@ class MobileDetect
      *
      * @return array
      */
-    public function getHttpHeaders() : array
+    public function getHttpHeaders(): array
     {
     }
     /**
@@ -832,10 +832,10 @@ class MobileDetect
      *
      * @return string|null The value of the header.
      */
-    public function getHttpHeader(string $header) : ?string
+    public function getHttpHeader(string $header): ?string
     {
     }
-    public function getMobileHeaders() : array
+    public function getMobileHeaders(): array
     {
     }
     /**
@@ -844,7 +844,7 @@ class MobileDetect
      *
      * @return array List of HTTP headers.
      */
-    public function getUaHttpHeaders() : array
+    public function getUaHttpHeaders(): array
     {
     }
     /**
@@ -855,7 +855,7 @@ class MobileDetect
      *
      * @return bool If there were CloudFront headers to be set
      */
-    public function setCfHeaders(array $cfHeaders = null) : bool
+    public function setCfHeaders(array $cfHeaders = null): bool
     {
     }
     /**
@@ -863,7 +863,7 @@ class MobileDetect
      *
      * @return array
      */
-    public function getCfHeaders() : array
+    public function getCfHeaders(): array
     {
     }
     /**
@@ -873,7 +873,7 @@ class MobileDetect
      *
      * @return string|null
      */
-    public function setUserAgent(string $userAgent = null) : ?string
+    public function setUserAgent(string $userAgent = null): ?string
     {
     }
     /**
@@ -881,13 +881,13 @@ class MobileDetect
      *
      * @return string|null The user agent if it's set.
      */
-    public function getUserAgent() : ?string
+    public function getUserAgent(): ?string
     {
     }
-    public function getMatchingRegex() : ?string
+    public function getMatchingRegex(): ?string
     {
     }
-    public function getMatchesArray() : ?array
+    public function getMatchesArray(): ?array
     {
     }
     /**
@@ -895,7 +895,7 @@ class MobileDetect
      *
      * @return array List of phone devices.
      */
-    public static function getPhoneDevices() : array
+    public static function getPhoneDevices(): array
     {
     }
     /**
@@ -903,7 +903,7 @@ class MobileDetect
      *
      * @return array List of tablet devices.
      */
-    public static function getTabletDevices() : array
+    public static function getTabletDevices(): array
     {
     }
     /**
@@ -911,7 +911,7 @@ class MobileDetect
      *
      * @return array List of user agents.
      */
-    public static function getUserAgents() : array
+    public static function getUserAgents(): array
     {
     }
     /**
@@ -919,7 +919,7 @@ class MobileDetect
      *
      * @return array List of browsers / user agents.
      */
-    public static function getBrowsers() : array
+    public static function getBrowsers(): array
     {
     }
     /**
@@ -928,7 +928,7 @@ class MobileDetect
      *
      * @return array
      */
-    public function getRules() : array
+    public function getRules(): array
     {
     }
     /**
@@ -936,7 +936,7 @@ class MobileDetect
      *
      * @return array The list of mobile operating systems.
      */
-    public static function getOperatingSystems() : array
+    public static function getOperatingSystems(): array
     {
     }
     /**
@@ -946,7 +946,7 @@ class MobileDetect
      *
      * @return bool
      */
-    public function checkHttpHeadersForMobile() : bool
+    public function checkHttpHeadersForMobile(): bool
     {
     }
     /**
@@ -967,7 +967,7 @@ class MobileDetect
      * @param string|null $userAgent deprecated
      * @return bool
      */
-    protected function matchDetectionRulesAgainstUA(string $userAgent = null) : bool
+    protected function matchDetectionRulesAgainstUA(string $userAgent = null): bool
     {
     }
     /**
@@ -979,7 +979,7 @@ class MobileDetect
      *
      * @return bool
      */
-    protected function matchUAAgainstKey(string $key) : bool
+    protected function matchUAAgainstKey(string $key): bool
     {
     }
     /**
@@ -989,7 +989,7 @@ class MobileDetect
      * @param array|null $httpHeaders deprecated
      * @return bool
      */
-    public function isMobile(string $userAgent = null, array $httpHeaders = null) : bool
+    public function isMobile(string $userAgent = null, array $httpHeaders = null): bool
     {
     }
     /**
@@ -1000,7 +1000,7 @@ class MobileDetect
      * @param array|null $httpHeaders deprecated
      * @return bool
      */
-    public function isTablet(string $userAgent = null, array $httpHeaders = null) : bool
+    public function isTablet(string $userAgent = null, array $httpHeaders = null): bool
     {
     }
     /**
@@ -1013,7 +1013,7 @@ class MobileDetect
      *
      * @todo: The httpHeaders part is not yet used.
      */
-    public function is(string $key, string $userAgent = null, array $httpHeaders = null) : bool
+    public function is(string $key, string $userAgent = null, array $httpHeaders = null): bool
     {
     }
     /**
@@ -1031,7 +1031,7 @@ class MobileDetect
      *
      * @todo: search in the HTTP headers too.
      */
-    public function match(string $regex, string $userAgent = null) : bool
+    public function match(string $regex, string $userAgent = null): bool
     {
     }
     /**
@@ -1039,7 +1039,7 @@ class MobileDetect
      *
      * @return array
      */
-    public static function getProperties() : array
+    public static function getProperties(): array
     {
     }
     /**
@@ -1051,7 +1051,7 @@ class MobileDetect
      *
      * @todo Remove the error suppression from str_replace() call.
      */
-    public function prepareVersionNo(string $ver) : float
+    public function prepareVersionNo(string $ver): float
     {
     }
     /**

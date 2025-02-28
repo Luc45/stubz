@@ -448,7 +448,7 @@ class WC_Email extends \WC_Settings_API
      *
      * @return string
      */
-    protected function get_must_use_css_styles() : string
+    protected function get_must_use_css_styles(): string
     {
     }
     /**

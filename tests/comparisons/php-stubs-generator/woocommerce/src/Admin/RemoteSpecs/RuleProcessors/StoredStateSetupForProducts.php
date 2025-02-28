@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  */
 class StoredStateSetupForProducts
 {
-    const ASYNC_RUN_REMOTE_NOTIFICATIONS_ACTION_NAME = 'woocommerce_admin/stored_state_setup_for_products/async/run_remote_notifications';
+    public const ASYNC_RUN_REMOTE_NOTIFICATIONS_ACTION_NAME = 'woocommerce_admin/stored_state_setup_for_products/async/run_remote_notifications';
     /**
      * Initialize the class via the admin_init hook.
      */
@@ -19,7 +19,7 @@ class StoredStateSetupForProducts
      *
      * @internal
      */
-    public static final function init()
+    final public static function init()
     {
     }
     /**

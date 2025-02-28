@@ -19,7 +19,7 @@ class CostOfGoodsSoldController implements \Automattic\WooCommerce\Internal\Regi
      * @internal
      * @param FeaturesController $features_controller The instance of FeaturesController to use.
      */
-    public final function init(\Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller)
+    final public function init(\Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller)
     {
     }
     /**
@@ -27,7 +27,7 @@ class CostOfGoodsSoldController implements \Automattic\WooCommerce\Internal\Regi
      *
      * @return bool True if the engine is enabled, false otherwise.
      */
-    public function feature_is_enabled() : bool
+    public function feature_is_enabled(): bool
     {
     }
     /**

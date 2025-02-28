@@ -43,7 +43,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return DefinitionInterface
      */
-    public function add(string $id, $concrete = null, ?bool $shared = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function add(string $id, $concrete = null, ?bool $shared = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -54,7 +54,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return DefinitionInterface
      */
-    public function share(string $id, $concrete = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function share(string $id, $concrete = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -64,7 +64,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return self
      */
-    public function defaultToShared(bool $shared = true) : \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
+    public function defaultToShared(bool $shared = true): \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
     {
     }
     /**
@@ -74,7 +74,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return DefinitionInterface
      */
-    public function extend(string $id) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function extend(string $id): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -84,7 +84,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return self
      */
-    public function addServiceProvider($provider) : self
+    public function addServiceProvider($provider): self
     {
     }
     /**
@@ -96,7 +96,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
     /**
      * {@inheritdoc}
      */
-    public function has($id) : bool
+    public function has($id): bool
     {
     }
     /**
@@ -107,7 +107,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return InflectorInterface
      */
-    public function inflector(string $type, ?callable $callback = null) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
+    public function inflector(string $type, ?callable $callback = null): \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
     {
     }
     /**
@@ -118,7 +118,7 @@ class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\Containe
      *
      * @return self
      */
-    public function delegate(\Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface $container) : self
+    public function delegate(\Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface $container): self
     {
     }
 }

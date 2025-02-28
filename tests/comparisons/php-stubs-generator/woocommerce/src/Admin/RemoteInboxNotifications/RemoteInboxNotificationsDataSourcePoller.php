@@ -9,13 +9,13 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
  */
 class RemoteInboxNotificationsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
-    const ID = 'remote_inbox_notifications';
+    public const ID = 'remote_inbox_notifications';
     /**
      * Default data sources array.
      *
      * @deprecated since 9.5.0. Use get_data_sources() instead.
      */
-    const DATA_SOURCES = array();
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *

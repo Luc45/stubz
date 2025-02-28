@@ -14,7 +14,7 @@ class OrderConfirmationTemplate extends \Automattic\WooCommerce\Blocks\Templates
      *
      * @var string
      */
-    const SLUG = 'order-confirmation';
+    public const SLUG = 'order-confirmation';
     /**
      * Initialization method.
      */

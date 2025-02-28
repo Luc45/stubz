@@ -67,7 +67,7 @@ class FeaturesController
      * @param LegacyProxy $proxy The instance of LegacyProxy to use.
      * @param PluginUtil  $plugin_util The instance of PluginUtil to use.
      */
-    public final function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy, \Automattic\WooCommerce\Utilities\PluginUtil $plugin_util)
+    final public function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy, \Automattic\WooCommerce\Utilities\PluginUtil $plugin_util)
     {
     }
     /**
@@ -85,7 +85,7 @@ class FeaturesController
      * @param bool $include_enabled_info True to include the 'is_enabled' field in the returned features info.
      * @returns array An array of information about existing features.
      */
-    public function get_features(bool $include_experimental = false, bool $include_enabled_info = false) : array
+    public function get_features(bool $include_experimental = false, bool $include_enabled_info = false): array
     {
     }
     /**
@@ -96,7 +96,7 @@ class FeaturesController
      * @return bool True if plugins that don't declare compatibility nor incompatibility with the feature will be considered incompatible with the feature.
      * @throws \InvalidArgumentException The feature doesn't exist.
      */
-    public function get_plugins_are_incompatible_by_default(string $feature_id) : bool
+    public function get_plugins_are_incompatible_by_default(string $feature_id): bool
     {
     }
     /**
@@ -105,7 +105,7 @@ class FeaturesController
      * @param  string $feature_id Unique feature id.
      * @return bool True if the feature is enabled, false if not or if the feature doesn't exist.
      */
-    public function feature_is_enabled(string $feature_id) : bool
+    public function feature_is_enabled(string $feature_id): bool
     {
     }
     /**
@@ -115,7 +115,7 @@ class FeaturesController
      * @param bool   $enable True to enable the feature, false to disable it.
      * @return bool True on success, false if feature doesn't exist or the new value is the same as the old value.
      */
-    public function change_feature_enable(string $feature_id, bool $enable) : bool
+    public function change_feature_enable(string $feature_id, bool $enable): bool
     {
     }
     /**
@@ -133,7 +133,7 @@ class FeaturesController
      * @return bool True on success, false on error (feature doesn't exist or not inside the required hook).
      * @throws \Exception A plugin attempted to declare itself as compatible and incompatible with a given feature at the same time.
      */
-    public function declare_compatibility(string $feature_id, string $plugin_name, bool $positive_compatibility = true) : bool
+    public function declare_compatibility(string $feature_id, string $plugin_name, bool $positive_compatibility = true): bool
     {
     }
     /**
@@ -145,7 +145,7 @@ class FeaturesController
      * @param bool   $enabled_features_only True to return only names of enabled plugins.
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of feature ids.
      */
-    public function get_compatible_features_for_plugin(string $plugin_name, bool $enabled_features_only = false) : array
+    public function get_compatible_features_for_plugin(string $plugin_name, bool $enabled_features_only = false): array
     {
     }
     /**
@@ -155,7 +155,7 @@ class FeaturesController
      * @param bool   $active_only True to return only active plugins.
      * @return array An array having a 'compatible', an 'incompatible' and an 'uncertain' key, each holding an array of plugin names.
      */
-    public function get_compatible_plugins_for_feature(string $feature_id, bool $active_only = false) : array
+    public function get_compatible_plugins_for_feature(string $feature_id, bool $active_only = false): array
     {
     }
     /**
@@ -168,7 +168,7 @@ class FeaturesController
      * @param  string $feature_id The id of the feature.
      * @return string The option that enables or disables the feature.
      */
-    public function feature_enable_option_name(string $feature_id) : string
+    public function feature_enable_option_name(string $feature_id): string
     {
     }
     /**
@@ -178,21 +178,21 @@ class FeaturesController
      * @param string $feature_id The feature id to check.
      * @return bool True if the id corresponds to a legacy feature.
      */
-    public function is_legacy_feature(string $feature_id) : bool
+    public function is_legacy_feature(string $feature_id): bool
     {
     }
     /**
      * Sets a flag indicating that it's allowed to enable features for which incompatible plugins are active
      * from the WooCommerce feature settings page.
      */
-    public function allow_enabling_features_with_incompatible_plugins() : void
+    public function allow_enabling_features_with_incompatible_plugins(): void
     {
     }
     /**
      * Sets a flag indicating that it's allowed to activate plugins for which incompatible features are enabled
      * from the WordPress plugins page.
      */
-    public function allow_activating_plugins_with_incompatible_features() : void
+    public function allow_activating_plugins_with_incompatible_features(): void
     {
     }
     /**
@@ -205,7 +205,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function start_listening_for_option_changes() : void
+    public function start_listening_for_option_changes(): void
     {
     }
     /**
@@ -262,7 +262,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_feature_settings($settings, $current_section) : array
+    public function add_feature_settings($settings, $current_section): array
     {
     }
     /**
@@ -272,7 +272,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_plugin_deactivation($plugin_name) : void
+    public function handle_plugin_deactivation($plugin_name): void
     {
     }
     /**
@@ -286,7 +286,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function filter_plugins_list($plugin_list) : array
+    public function filter_plugins_list($plugin_list): array
     {
     }
     /**
@@ -305,7 +305,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function display_notices_in_plugins_page() : void
+    public function display_notices_in_plugins_page(): void
     {
     }
     /**
@@ -321,7 +321,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function maybe_invalidate_cached_plugin_data() : void
+    public function maybe_invalidate_cached_plugin_data(): void
     {
     }
     /**
@@ -341,7 +341,7 @@ class FeaturesController
      *
      * @return string
      */
-    public function get_features_page_url() : string
+    public function get_features_page_url(): string
     {
     }
     /**
@@ -368,7 +368,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function enqueue_script_to_fix_plugin_list_html($current_screen) : void
+    public function enqueue_script_to_fix_plugin_list_html($current_screen): void
     {
     }
     /**
@@ -383,7 +383,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_plugins_page_views_list($views) : array
+    public function handle_plugins_page_views_list($views): array
     {
     }
     /**
@@ -406,7 +406,7 @@ class FeaturesController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function change_feature_enable_from_query_params() : void
+    public function change_feature_enable_from_query_params(): void
     {
     }
 }

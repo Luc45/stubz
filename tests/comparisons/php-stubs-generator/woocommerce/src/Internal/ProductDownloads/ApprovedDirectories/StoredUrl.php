@@ -22,7 +22,7 @@ class StoredUrl
      *
      * @return int
      */
-    public function get_id() : int
+    public function get_id(): int
     {
     }
     /**
@@ -30,7 +30,7 @@ class StoredUrl
      *
      * @return string
      */
-    public function get_url() : string
+    public function get_url(): string
     {
     }
     /**
@@ -38,7 +38,7 @@ class StoredUrl
      *
      * @return bool
      */
-    public function is_enabled() : bool
+    public function is_enabled(): bool
     {
     }
 }

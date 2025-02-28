@@ -13,7 +13,7 @@ class StockFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      * @var string
      */
     protected $block_name = 'stock-filter';
-    const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
+    public const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
     /**
      * Extra data passed through from server to client for block.
      *

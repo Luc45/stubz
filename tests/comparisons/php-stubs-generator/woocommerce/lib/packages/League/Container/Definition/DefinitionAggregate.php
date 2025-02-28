@@ -5,6 +5,7 @@ namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 class DefinitionAggregate implements \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionAggregateInterface
 {
     use \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait;
+
     /**
      * @var DefinitionInterface[]
      */
@@ -20,25 +21,25 @@ class DefinitionAggregate implements \Automattic\WooCommerce\Vendor\League\Conta
     /**
      * {@inheritdoc}
      */
-    public function add(string $id, $definition, bool $shared = false) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function add(string $id, $definition, bool $shared = false): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function has(string $id) : bool
+    public function has(string $id): bool
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function hasTag(string $tag) : bool
+    public function hasTag(string $tag): bool
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function getDefinition(string $id) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function getDefinition(string $id): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -50,13 +51,13 @@ class DefinitionAggregate implements \Automattic\WooCommerce\Vendor\League\Conta
     /**
      * {@inheritdoc}
      */
-    public function resolveTagged(string $tag, bool $new = false) : array
+    public function resolveTagged(string $tag, bool $new = false): array
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function getIterator() : \Generator
+    public function getIterator(): \Generator
     {
     }
 }

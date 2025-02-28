@@ -59,7 +59,7 @@ class WC_Site_Tracking
      *
      * @return bool If setting the cookie was attempted (will be false if tracking is not allowed).
      */
-    public static function set_tracking_cookie(string $cookie_key, string $cookie_value, int $expire = 0, bool $secure = \false, bool $http_only = \false) : bool
+    public static function set_tracking_cookie(string $cookie_key, string $cookie_value, int $expire = 0, bool $secure = \false, bool $http_only = \false): bool
     {
     }
 }

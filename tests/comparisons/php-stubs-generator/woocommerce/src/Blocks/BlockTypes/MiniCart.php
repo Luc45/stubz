@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     use \Automattic\WooCommerce\Blocks\Utils\BlockHooksTrait;
+
     /**
      * Block name.
      *

@@ -12,7 +12,7 @@ class Cart extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
      *
      * @var string
      */
-    const IDENTIFIER = 'cart';
+    public const IDENTIFIER = 'cart';
     /**
      * Get the path of this REST route.
      *

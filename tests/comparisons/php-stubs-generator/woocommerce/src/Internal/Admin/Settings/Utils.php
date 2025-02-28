@@ -17,7 +17,7 @@ class Utils
      *
      * @return array The updated base order map, normalized.
      */
-    public static function order_map_apply_mappings(array $base_map, array $new_mappings) : array
+    public static function order_map_apply_mappings(array $base_map, array $new_mappings): array
     {
     }
     /**
@@ -35,7 +35,7 @@ class Utils
      *
      * @return array The updated order map. This map is not normalized.
      */
-    public static function order_map_move_at_order(array $order_map, string $id, int $order) : array
+    public static function order_map_move_at_order(array $order_map, string $id, int $order): array
     {
     }
     /**
@@ -47,7 +47,7 @@ class Utils
      *
      * @return array The updated order map.
      */
-    public static function order_map_place_at_order(array $order_map, string $id, int $order) : array
+    public static function order_map_place_at_order(array $order_map, string $id, int $order): array
     {
     }
     /**
@@ -59,7 +59,7 @@ class Utils
      *
      * @return array The updated order map. If the id is already in the order map, the order map is returned as is.
      */
-    public static function order_map_add_at_order(array $order_map, string $id, int $order) : array
+    public static function order_map_add_at_order(array $order_map, string $id, int $order): array
     {
     }
     /**
@@ -71,7 +71,7 @@ class Utils
      *
      * @return array The normalized order map.
      */
-    public static function order_map_normalize(array $order_map) : array
+    public static function order_map_normalize(array $order_map): array
     {
     }
     /**
@@ -82,7 +82,7 @@ class Utils
      *
      * @return array The updated order map.
      */
-    public static function order_map_change_min_order(array $order_map, int $new_min_order) : array
+    public static function order_map_change_min_order(array $order_map, int $new_min_order): array
     {
     }
     /**
@@ -90,7 +90,7 @@ class Utils
      *
      * @return string[] The list of plugin slug suffixes used for handling non-standard testing slugs.
      */
-    public static function get_testing_plugin_slug_suffixes() : array
+    public static function get_testing_plugin_slug_suffixes(): array
     {
     }
     /**
@@ -102,7 +102,7 @@ class Utils
      *
      * @return string[] The list of testing plugin slugs generated from the standard/official plugin slug.
      */
-    public static function generate_testing_plugin_slugs(string $slug, bool $include_original = false) : array
+    public static function generate_testing_plugin_slugs(string $slug, bool $include_original = false): array
     {
     }
     /**
@@ -116,7 +116,7 @@ class Utils
      *
      * @return string The normalized plugin slug.
      */
-    public static function normalize_plugin_slug(string $slug) : string
+    public static function normalize_plugin_slug(string $slug): string
     {
     }
     /**
@@ -133,7 +133,7 @@ class Utils
      *
      * @return string The truncated text.
      */
-    public static function truncate_with_words(string $text, int $target_length, string $append = null) : string
+    public static function truncate_with_words(string $text, int $target_length, string $append = null): string
     {
     }
 }

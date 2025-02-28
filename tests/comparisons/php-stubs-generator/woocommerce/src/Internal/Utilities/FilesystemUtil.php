@@ -13,7 +13,7 @@ class FilesystemUtil
      * @return WP_Filesystem_Base
      * @throws Exception Thrown when the filesystem fails to initialize.
      */
-    public static function get_wp_filesystem() : \WP_Filesystem_Base
+    public static function get_wp_filesystem(): \WP_Filesystem_Base
     {
     }
     /**
@@ -33,7 +33,7 @@ class FilesystemUtil
      * @param string $path Directory to create.
      * @throws \Exception In case of error.
      */
-    public static function mkdir_p_not_indexable(string $path) : void
+    public static function mkdir_p_not_indexable(string $path): void
     {
     }
     /**
@@ -41,7 +41,7 @@ class FilesystemUtil
      *
      * @return bool True if the $wp_filesystem global was successfully initialized.
      */
-    protected static function initialize_wp_filesystem() : bool
+    protected static function initialize_wp_filesystem(): bool
     {
     }
 }

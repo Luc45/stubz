@@ -14,7 +14,7 @@ class ComingSoonTemplate extends \Automattic\WooCommerce\Blocks\Templates\Abstra
      *
      * @var string
      */
-    const SLUG = 'coming-soon';
+    public const SLUG = 'coming-soon';
     /**
      * Returns the title of the template.
      *

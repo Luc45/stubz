@@ -11,10 +11,11 @@ class MagentoMigration
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-magento-migration';
+    public const NOTE_NAME = 'wc-admin-magento-migration';
     /**
      * Attach hooks.
      */

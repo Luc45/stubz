@@ -20,7 +20,7 @@ class PluginUtil
      *
      * @param LegacyProxy $proxy The instance of LegacyProxy to use.
      */
-    public final function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy)
+    final public function init(\Automattic\WooCommerce\Proxies\LegacyProxy $proxy)
     {
     }
     /**
@@ -46,7 +46,7 @@ class PluginUtil
      * @param bool $active_only True to return only active plugins, false to return all the active plugins.
      * @return string[] A list of plugin ids (path/file.php).
      */
-    public function get_woocommerce_aware_plugins(bool $active_only = false) : array
+    public function get_woocommerce_aware_plugins(bool $active_only = false): array
     {
     }
     /**
@@ -55,7 +55,7 @@ class PluginUtil
      * @param string $plugin_id Plugin id (path/file.php).
      * @return string Printable plugin name, or the plugin id itself if printable name is not available.
      */
-    public function get_plugin_name(string $plugin_id) : string
+    public function get_plugin_name(string $plugin_id): string
     {
     }
     /**
@@ -65,7 +65,7 @@ class PluginUtil
      * @return bool True if the plugin exists and is WooCommerce aware.
      * @throws \Exception The input is neither a string nor an array.
      */
-    public function is_woocommerce_aware_plugin($plugin_file_or_data) : bool
+    public function is_woocommerce_aware_plugin($plugin_file_or_data): bool
     {
     }
     /**
@@ -83,7 +83,7 @@ class PluginUtil
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_plugin_de_activation() : void
+    public function handle_plugin_de_activation(): void
     {
     }
     /**
@@ -97,7 +97,7 @@ class PluginUtil
      *
      * @return string Warning string.
      */
-    public function generate_incompatible_plugin_feature_warning(string $feature_id, array $plugin_feature_info) : string
+    public function generate_incompatible_plugin_feature_warning(string $feature_id, array $plugin_feature_info): string
     {
     }
     /**
@@ -109,7 +109,7 @@ class PluginUtil
      * @param array  $compatibility_info Array containing "compatible', 'incompatible' and 'uncertain' keys.
      * @return array Items in 'incompatible' and 'uncertain' if plugins are incompatible by default with the feature; only items in 'incompatible' otherwise.
      */
-    public function get_items_considered_incompatible(string $feature_id, array $compatibility_info) : array
+    public function get_items_considered_incompatible(string $feature_id, array $compatibility_info): array
     {
     }
     /**

@@ -17,7 +17,7 @@ class PageController
      *
      * @return void
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController $file_controller, \Automattic\WooCommerce\Internal\Admin\Logging\Settings $settings) : void
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController $file_controller, \Automattic\WooCommerce\Internal\Admin\Logging\Settings $settings): void
     {
     }
     /**
@@ -27,7 +27,7 @@ class PageController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function maybe_do_logs_tab_action() : void
+    public function maybe_do_logs_tab_action(): void
     {
     }
     /**
@@ -45,7 +45,7 @@ class PageController
      *
      * @return string
      */
-    public function get_logs_tab_url() : string
+    public function get_logs_tab_url(): string
     {
     }
     /**
@@ -53,7 +53,7 @@ class PageController
      *
      * @return void
      */
-    public function render() : void
+    public function render(): void
     {
     }
     /**
@@ -61,7 +61,7 @@ class PageController
      *
      * @return string[]
      */
-    public function get_query_param_defaults() : array
+    public function get_query_param_defaults(): array
     {
     }
     /**
@@ -71,7 +71,7 @@ class PageController
      *
      * @return array
      */
-    public function get_query_params(array $param_keys = array()) : array
+    public function get_query_params(array $param_keys = array()): array
     {
     }
     /**
@@ -83,7 +83,7 @@ class PageController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function setup_screen_options(string $view) : void
+    public function setup_screen_options(string $view): void
     {
     }
     /**
@@ -95,7 +95,7 @@ class PageController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_list_table_bulk_actions(string $view) : void
+    public function handle_list_table_bulk_actions(string $view): void
     {
     }
 }

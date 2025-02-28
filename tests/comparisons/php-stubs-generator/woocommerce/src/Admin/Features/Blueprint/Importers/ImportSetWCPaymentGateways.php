@@ -12,13 +12,14 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
 class ImportSetWCPaymentGateways implements \Automattic\WooCommerce\Blueprint\StepProcessor
 {
     use \Automattic\WooCommerce\Blueprint\UseWPFunctions;
+
     /**
      * Process the import of WooCommerce payment gateways settings.
      *
      * @param object $schema The schema object containing import details.
      * @return StepProcessorResult
      */
-    public function process($schema) : \Automattic\WooCommerce\Blueprint\StepProcessorResult
+    public function process($schema): \Automattic\WooCommerce\Blueprint\StepProcessorResult
     {
     }
     /**
@@ -34,7 +35,7 @@ class ImportSetWCPaymentGateways implements \Automattic\WooCommerce\Blueprint\St
      *
      * @return string
      */
-    public function get_step_class() : string
+    public function get_step_class(): string
     {
     }
 }

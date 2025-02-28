@@ -90,7 +90,7 @@ abstract class RestApiControllerBase implements \Automattic\WooCommerce\Internal
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_woocommerce_rest_api_get_rest_namespaces(array $namespaces) : array
+    public function handle_woocommerce_rest_api_get_rest_namespaces(array $namespaces): array
     {
     }
     /**
@@ -100,14 +100,14 @@ abstract class RestApiControllerBase implements \Automattic\WooCommerce\Internal
      *
      * @return string
      */
-    protected abstract function get_rest_api_namespace() : string;
+    abstract protected function get_rest_api_namespace(): string;
     /**
      * Register the REST API endpoints handled by this controller.
      *
      * Use 'register_rest_route' in the usual way, it's recommended to use the 'run' method for 'callback'
      * and the 'check_permission' method for 'permission_check', see the example in the class comment.
      */
-    public abstract function register_routes();
+    abstract public function register_routes();
     /**
      * Handle a request for one of the provided REST API endpoints.
      *
@@ -129,7 +129,7 @@ abstract class RestApiControllerBase implements \Automattic\WooCommerce\Internal
      * @param Exception $exception The exception to maybe include information from.
      * @return WP_Error
      */
-    protected function internal_wp_error(\Exception $exception) : \WP_Error
+    protected function internal_wp_error(\Exception $exception): \WP_Error
     {
     }
     /**
@@ -157,7 +157,7 @@ abstract class RestApiControllerBase implements \Automattic\WooCommerce\Internal
      *
      * @return array
      */
-    protected function get_base_schema() : array
+    protected function get_base_schema(): array
     {
     }
 }

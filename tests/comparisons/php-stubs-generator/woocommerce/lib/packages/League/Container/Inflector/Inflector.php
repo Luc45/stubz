@@ -6,6 +6,7 @@ class Inflector implements \Automattic\WooCommerce\Vendor\League\Container\Argum
 {
     use \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverTrait;
     use \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait;
+
     /**
      * @var string
      */
@@ -34,31 +35,31 @@ class Inflector implements \Automattic\WooCommerce\Vendor\League\Container\Argum
     /**
      * {@inheritdoc}
      */
-    public function getType() : string
+    public function getType(): string
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function invokeMethod(string $name, array $args) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
+    public function invokeMethod(string $name, array $args): \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function invokeMethods(array $methods) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
+    public function invokeMethods(array $methods): \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function setProperty(string $property, $value) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
+    public function setProperty(string $property, $value): \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function setProperties(array $properties) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
+    public function setProperties(array $properties): \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
     {
     }
     /**

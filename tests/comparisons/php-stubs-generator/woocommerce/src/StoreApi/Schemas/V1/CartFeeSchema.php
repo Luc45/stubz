@@ -18,7 +18,7 @@ class CartFeeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-fee';
+    public const IDENTIFIER = 'cart-fee';
     /**
      * Cart schema properties.
      *

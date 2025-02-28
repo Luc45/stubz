@@ -22,7 +22,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @return string Name of the processor.
      */
-    public function get_name() : string
+    public function get_name(): string
     {
     }
     /**
@@ -30,7 +30,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @return string Description of what this processor does.
      */
-    public function get_description() : string
+    public function get_description(): string
     {
     }
     /**
@@ -38,7 +38,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @return int Number of items pending processing.
      */
-    public function get_total_pending_count() : int
+    public function get_total_pending_count(): int
     {
     }
     /**
@@ -49,7 +49,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @return array Batch of items to process, containing $size or less items.
      */
-    public function get_next_batch_to_process(int $size) : array
+    public function get_next_batch_to_process(int $size): array
     {
     }
     /**
@@ -59,7 +59,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @param array $batch Batch to process, as returned by 'get_next_batch_to_process'.
      */
-    public function process_batch(array $batch) : void
+    public function process_batch(array $batch): void
     {
     }
     /**
@@ -67,7 +67,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @return int Default batch size.
      */
-    public function get_default_batch_size() : int
+    public function get_default_batch_size(): int
     {
     }
     /**
@@ -78,7 +78,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_woocommerce_debug_tools(array $tools) : array
+    public function handle_woocommerce_debug_tools(array $tools): array
     {
     }
     /**
@@ -88,7 +88,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function enqueue() : string
+    public function enqueue(): string
     {
     }
     /**
@@ -98,7 +98,7 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function dequeue() : string
+    public function dequeue(): string
     {
     }
 }

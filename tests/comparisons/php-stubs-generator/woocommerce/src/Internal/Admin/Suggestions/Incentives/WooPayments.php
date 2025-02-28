@@ -42,7 +42,7 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      *
      * @return boolean Whether the incentive should be visible.
      */
-    public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false) : bool
+    public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false): bool
     {
     }
     /**
@@ -64,7 +64,7 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      *
      * @return boolean Whether the extension plugin is active.
      */
-    protected function is_extension_active() : bool
+    protected function is_extension_active(): bool
     {
     }
     /**
@@ -74,7 +74,7 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      *
      * @return array List of eligible incentives.
      */
-    protected function get_incentives(string $country_code) : array
+    protected function get_incentives(string $country_code): array
     {
     }
 }

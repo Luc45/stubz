@@ -105,7 +105,7 @@ class LookupDataStore
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function on_product_created_or_updated_via_rest_api(\WP_Post $product, \WP_REST_Request $request) : void
+    public function on_product_created_or_updated_via_rest_api(\WP_Post $product, \WP_REST_Request $request): void
     {
     }
     /**
@@ -146,7 +146,7 @@ class LookupDataStore
      *
      * @return bool True if the last lookup table regeneration process was aborted.
      */
-    public function regeneration_was_aborted() : bool
+    public function regeneration_was_aborted(): bool
     {
     }
     /**
@@ -154,7 +154,7 @@ class LookupDataStore
      *
      * @return bool True if the table contains entries, false if the table is empty.
      */
-    public function lookup_table_has_data() : bool
+    public function lookup_table_has_data(): bool
     {
     }
     /**
@@ -165,7 +165,7 @@ class LookupDataStore
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_advanced_section_to_product_settings(array $products) : array
+    public function add_advanced_section_to_product_settings(array $products): array
     {
     }
     /**
@@ -177,7 +177,7 @@ class LookupDataStore
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_product_attributes_lookup_table_settings(array $settings, string $section_id) : array
+    public function add_product_attributes_lookup_table_settings(array $settings, string $section_id): array
     {
     }
     /**

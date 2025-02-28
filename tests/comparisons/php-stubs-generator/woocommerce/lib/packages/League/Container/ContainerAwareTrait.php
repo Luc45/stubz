@@ -19,7 +19,7 @@ trait ContainerAwareTrait
      *
      * @return ContainerAwareInterface
      */
-    public function setContainer(\Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface $container) : \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
+    public function setContainer(\Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface $container): \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
     {
     }
     /**
@@ -27,7 +27,7 @@ trait ContainerAwareTrait
      *
      * @return ContainerInterface
      */
-    public function getContainer() : \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
+    public function getContainer(): \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
     {
     }
     /**
@@ -37,7 +37,7 @@ trait ContainerAwareTrait
      *
      * @return self
      */
-    public function setLeagueContainer(\Automattic\WooCommerce\Vendor\League\Container\Container $container) : \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
+    public function setLeagueContainer(\Automattic\WooCommerce\Vendor\League\Container\Container $container): \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
     {
     }
     /**
@@ -45,7 +45,7 @@ trait ContainerAwareTrait
      *
      * @return Container
      */
-    public function getLeagueContainer() : \Automattic\WooCommerce\Vendor\League\Container\Container
+    public function getLeagueContainer(): \Automattic\WooCommerce\Vendor\League\Container\Container
     {
     }
 }

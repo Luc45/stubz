@@ -14,7 +14,7 @@ trait ScriptDebug
      *
      * @return string
      */
-    protected function get_script_suffix() : string
+    protected function get_script_suffix(): string
     {
     }
     /**
@@ -22,7 +22,7 @@ trait ScriptDebug
      *
      * @return bool
      */
-    protected function is_script_debug_enabled() : bool
+    protected function is_script_debug_enabled(): bool
     {
     }
 }

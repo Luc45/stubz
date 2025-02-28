@@ -18,7 +18,7 @@ class ProductCollectionDataSchema extends \Automattic\WooCommerce\StoreApi\Schem
      *
      * @var string
      */
-    const IDENTIFIER = 'product-collection-data';
+    public const IDENTIFIER = 'product-collection-data';
     /**
      * Product collection data schema properties.
      *

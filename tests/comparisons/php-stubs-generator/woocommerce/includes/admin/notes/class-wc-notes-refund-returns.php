@@ -8,7 +8,7 @@ class WC_Notes_Refund_Returns
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-refund-returns-page';
+    public const NOTE_NAME = 'wc-refund-returns-page';
     /**
      * Attach hooks.
      */

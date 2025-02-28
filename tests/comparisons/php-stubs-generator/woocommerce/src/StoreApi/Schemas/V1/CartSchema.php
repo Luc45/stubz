@@ -18,7 +18,7 @@ class CartSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSch
      *
      * @var string
      */
-    const IDENTIFIER = 'cart';
+    public const IDENTIFIER = 'cart';
     /**
      * Item schema instance.
      *

@@ -98,43 +98,43 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @return bool
      */
-    function is_paying_customer($user_id = '')
+    public function is_paying_customer($user_id = '')
     {
     }
     /**
      * Legacy get address.
      */
-    function get_address()
+    public function get_address()
     {
     }
     /**
      * Legacy get address 2.
      */
-    function get_address_2()
+    public function get_address_2()
     {
     }
     /**
      * Legacy get country.
      */
-    function get_country()
+    public function get_country()
     {
     }
     /**
      * Legacy get state.
      */
-    function get_state()
+    public function get_state()
     {
     }
     /**
      * Legacy get postcode.
      */
-    function get_postcode()
+    public function get_postcode()
     {
     }
     /**
      * Legacy get city.
      */
-    function get_city()
+    public function get_city()
     {
     }
     /**
@@ -142,7 +142,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $country
      */
-    function set_country($country)
+    public function set_country($country)
     {
     }
     /**
@@ -150,7 +150,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $state
      */
-    function set_state($state)
+    public function set_state($state)
     {
     }
     /**
@@ -158,7 +158,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $postcode
      */
-    function set_postcode($postcode)
+    public function set_postcode($postcode)
     {
     }
     /**
@@ -166,7 +166,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $city
      */
-    function set_city($city)
+    public function set_city($city)
     {
     }
     /**
@@ -174,7 +174,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $address
      */
-    function set_address($address)
+    public function set_address($address)
     {
     }
     /**
@@ -182,7 +182,7 @@ abstract class WC_Legacy_Customer extends \WC_Data
      *
      * @param string $address
      */
-    function set_address_2($address)
+    public function set_address_2($address)
     {
     }
 }

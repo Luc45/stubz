@@ -12,7 +12,7 @@ class CartUpdateItem extends \Automattic\WooCommerce\StoreApi\Routes\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-update-item';
+    public const IDENTIFIER = 'cart-update-item';
     /**
      * Get the path of this REST route.
      *

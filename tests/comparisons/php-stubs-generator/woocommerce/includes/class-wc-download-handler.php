@@ -131,7 +131,7 @@ class WC_Download_Handler
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public static function track_download($download, $user_id = \null, $user_ip_address = \null, bool $defer = \false) : void
+    public static function track_download($download, $user_id = \null, $user_ip_address = \null, bool $defer = \false): void
     {
     }
 }

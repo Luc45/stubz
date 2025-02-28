@@ -12,13 +12,13 @@ class Batch extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute imp
      *
      * @var string
      */
-    const IDENTIFIER = 'batch';
+    public const IDENTIFIER = 'batch';
     /**
      * The schema item identifier.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'batch';
+    public const SCHEMA_TYPE = 'batch';
     /**
      * Get the path of this REST route.
      *

@@ -9,7 +9,7 @@
  */
 class WC_Brands_Coupons
 {
-    const E_WC_COUPON_EXCLUDED_BRANDS = 301;
+    public const E_WC_COUPON_EXCLUDED_BRANDS = 301;
     /**
      * Constructor
      */

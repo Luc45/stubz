@@ -15,11 +15,11 @@ namespace Automattic\WooCommerce\Internal\Logging;
  */
 class RemoteLogger extends \WC_Log_Handler
 {
-    const LOG_ENDPOINT = 'https://public-api.wordpress.com/rest/v1.1/logstash';
-    const RATE_LIMIT_ID = 'woocommerce_remote_logging';
-    const RATE_LIMIT_DELAY = 60;
+    public const LOG_ENDPOINT = 'https://public-api.wordpress.com/rest/v1.1/logstash';
+    public const RATE_LIMIT_ID = 'woocommerce_remote_logging';
+    public const RATE_LIMIT_DELAY = 60;
     // 1 minute.
-    const WC_NEW_VERSION_TRANSIENT = 'woocommerce_new_version';
+    public const WC_NEW_VERSION_TRANSIENT = 'woocommerce_new_version';
     /**
      * Handle a log entry.
      *
@@ -84,7 +84,7 @@ class RemoteLogger extends \WC_Log_Handler
      *
      * @return bool
      */
-    protected function is_third_party_error(string $message, array $context) : bool
+    protected function is_third_party_error(string $message, array $context): bool
     {
     }
     /**

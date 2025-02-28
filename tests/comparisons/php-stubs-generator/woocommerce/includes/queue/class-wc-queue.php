@@ -26,7 +26,7 @@ class WC_Queue
      *
      * @return WC_Queue_Interface
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**

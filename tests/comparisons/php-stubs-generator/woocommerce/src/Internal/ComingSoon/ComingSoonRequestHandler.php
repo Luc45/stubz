@@ -15,7 +15,7 @@ class ComingSoonRequestHandler
      *
      * @param ComingSoonHelper $coming_soon_helper Dependency.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ComingSoon\ComingSoonHelper $coming_soon_helper)
+    final public function init(\Automattic\WooCommerce\Internal\ComingSoon\ComingSoonHelper $coming_soon_helper)
     {
     }
     /**

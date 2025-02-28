@@ -123,7 +123,7 @@ class WC_REST_Orders_V2_Controller extends \WC_REST_CRUD_Controller
      * @return array Prepared response data.
      * @since  9.5.0
      */
-    protected function prepare_object_for_response_core($order, $request) : array
+    protected function prepare_object_for_response_core($order, $request): array
     {
     }
     /**

@@ -391,7 +391,7 @@ abstract class WC_Settings_API
      *
      * @return string
      */
-    public function validate_safe_text_field(string $key, ?string $value) : string
+    public function validate_safe_text_field(string $key, ?string $value): string
     {
     }
     /**

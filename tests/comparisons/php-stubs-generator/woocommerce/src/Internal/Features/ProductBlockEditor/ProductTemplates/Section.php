@@ -28,7 +28,7 @@ class Section extends \Automattic\WooCommerce\Internal\Features\ProductBlockEdit
      *
      * @param array $block_config The block data.
      */
-    public function add_subsection(array $block_config) : \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
+    public function add_subsection(array $block_config): \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
     {
     }
     /**
@@ -38,7 +38,7 @@ class Section extends \Automattic\WooCommerce\Internal\Features\ProductBlockEdit
      *
      * @param array $block_config The block data.
      */
-    public function add_section(array $block_config) : \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
+    public function add_section(array $block_config): \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
     {
     }
 }

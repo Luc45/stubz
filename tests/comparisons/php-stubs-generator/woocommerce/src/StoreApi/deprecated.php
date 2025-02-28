@@ -5,6 +5,7 @@
  *
  * This file is autoloaded via composer.json and maps the old namespaces to new namespaces.
  */
+
 $class_aliases = [
     // Old to new namespaces for utils and exceptions.
     \Automattic\WooCommerce\StoreApi\Exceptions\RouteException::class => \Automattic\WooCommerce\Blocks\StoreApi\Routes\RouteException::class,

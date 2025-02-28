@@ -8,26 +8,27 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 abstract class AbstractBlockTemplate implements \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
 {
     use \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockContainerTrait;
+
     /**
      * Get the template ID.
      */
-    public abstract function get_id() : string;
+    abstract public function get_id(): string;
     /**
      * Get the template title.
      */
-    public function get_title() : string
+    public function get_title(): string
     {
     }
     /**
      * Get the template description.
      */
-    public function get_description() : string
+    public function get_description(): string
     {
     }
     /**
      * Get the template area.
      */
-    public function get_area() : string
+    public function get_area(): string
     {
     }
     /**
@@ -35,7 +36,7 @@ abstract class AbstractBlockTemplate implements \Automattic\WooCommerce\Admin\Bl
      *
      * @param string $block_id The block ID.
      */
-    public function get_block(string $block_id) : ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
+    public function get_block(string $block_id): ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
     {
     }
     /**
@@ -69,19 +70,19 @@ abstract class AbstractBlockTemplate implements \Automattic\WooCommerce\Admin\Bl
      * @param string $id_base The base to use when generating an ID.
      * @return string
      */
-    public function generate_block_id(string $id_base) : string
+    public function generate_block_id(string $id_base): string
     {
     }
     /**
      * Get the root template.
      */
-    public function &get_root_template() : \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
+    public function &get_root_template(): \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
     {
     }
     /**
      * Get the inner blocks as a formatted template.
      */
-    public function get_formatted_template() : array
+    public function get_formatted_template(): array
     {
     }
     /**
@@ -89,7 +90,7 @@ abstract class AbstractBlockTemplate implements \Automattic\WooCommerce\Admin\Bl
      *
      * @return array The JSON.
      */
-    public function to_json() : array
+    public function to_json(): array
     {
     }
 }

@@ -10,13 +10,13 @@ class MarketingRecommendationsDataSourcePoller extends \Automattic\WooCommerce\A
     /**
      * Data Source Poller ID.
      */
-    const ID = 'marketing_recommendations';
+    public const ID = 'marketing_recommendations';
     /**
      * Default data sources array.
      *
      * @deprecated since 9.5.0. Use get_data_sources() instead.
      */
-    const DATA_SOURCES = array();
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *

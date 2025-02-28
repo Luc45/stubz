@@ -24,7 +24,7 @@ class PaymentsRestController extends \Automattic\WooCommerce\Internal\RestApiCon
      *
      * @return string
      */
-    protected function get_rest_api_namespace() : string
+    protected function get_rest_api_namespace(): string
     {
     }
     /**
@@ -42,7 +42,7 @@ class PaymentsRestController extends \Automattic\WooCommerce\Internal\RestApiCon
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments) : void
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments): void
     {
     }
     /**

@@ -17,7 +17,7 @@ class ImportSetWCTaxRates implements \Automattic\WooCommerce\Blueprint\StepProce
      * @param object $schema The schema object containing import details.
      * @return StepProcessorResult
      */
-    public function process($schema) : \Automattic\WooCommerce\Blueprint\StepProcessorResult
+    public function process($schema): \Automattic\WooCommerce\Blueprint\StepProcessorResult
     {
     }
     /**
@@ -53,7 +53,7 @@ class ImportSetWCTaxRates implements \Automattic\WooCommerce\Blueprint\StepProce
      *
      * @return string
      */
-    public function get_step_class() : string
+    public function get_step_class(): string
     {
     }
 }

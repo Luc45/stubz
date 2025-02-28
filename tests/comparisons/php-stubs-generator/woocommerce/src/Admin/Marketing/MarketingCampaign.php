@@ -63,7 +63,7 @@ class MarketingCampaign
      *
      * @return string
      */
-    public function get_id() : string
+    public function get_id(): string
     {
     }
     /**
@@ -71,7 +71,7 @@ class MarketingCampaign
      *
      * @return MarketingCampaignType
      */
-    public function get_type() : \Automattic\WooCommerce\Admin\Marketing\MarketingCampaignType
+    public function get_type(): \Automattic\WooCommerce\Admin\Marketing\MarketingCampaignType
     {
     }
     /**
@@ -79,7 +79,7 @@ class MarketingCampaign
      *
      * @return string
      */
-    public function get_title() : string
+    public function get_title(): string
     {
     }
     /**
@@ -87,7 +87,7 @@ class MarketingCampaign
      *
      * @return string
      */
-    public function get_manage_url() : string
+    public function get_manage_url(): string
     {
     }
     /**
@@ -95,7 +95,7 @@ class MarketingCampaign
      *
      * @return Price|null
      */
-    public function get_cost() : ?\Automattic\WooCommerce\Admin\Marketing\Price
+    public function get_cost(): ?\Automattic\WooCommerce\Admin\Marketing\Price
     {
     }
     /**
@@ -103,7 +103,7 @@ class MarketingCampaign
      *
      * @return Price|null
      */
-    public function get_sales() : ?\Automattic\WooCommerce\Admin\Marketing\Price
+    public function get_sales(): ?\Automattic\WooCommerce\Admin\Marketing\Price
     {
     }
 }

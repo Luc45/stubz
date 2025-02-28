@@ -12,7 +12,7 @@ class OrderCache extends \Automattic\WooCommerce\Caching\ObjectCache
      *
      * @return string
      */
-    public function get_object_type() : string
+    public function get_object_type(): string
     {
     }
     /**
@@ -30,7 +30,7 @@ class OrderCache extends \Automattic\WooCommerce\Caching\ObjectCache
      * @param array|object $object The object to validate.
      * @return string[]|null An array of error messages, or null if the object is valid.
      */
-    protected function validate($object) : ?array
+    protected function validate($object): ?array
     {
     }
 }

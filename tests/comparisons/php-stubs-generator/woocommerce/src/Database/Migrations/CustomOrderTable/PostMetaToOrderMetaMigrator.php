@@ -23,7 +23,7 @@ class PostMetaToOrderMetaMigrator extends \Automattic\WooCommerce\Database\Migra
      *
      * @return array Meta data migration config.
      */
-    protected function get_meta_config() : array
+    protected function get_meta_config(): array
     {
     }
 }

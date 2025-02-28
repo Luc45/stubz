@@ -10,7 +10,7 @@ class Reviews
     /**
      * Admin page identifier.
      */
-    const MENU_SLUG = 'product-reviews';
+    public const MENU_SLUG = 'product-reviews';
     /**
      * Reviews page hook name.
      *
@@ -35,7 +35,7 @@ class Reviews
      * @param string $context The context for which the capability is needed (e.g. `view` or `moderate`).
      * @return string
      */
-    public static function get_capability(string $context = 'view') : string
+    public static function get_capability(string $context = 'view'): string
     {
     }
     /**
@@ -45,7 +45,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_reviews_page() : void
+    public function add_reviews_page(): void
     {
     }
     /**
@@ -53,7 +53,7 @@ class Reviews
      *
      * @return string
      */
-    public static function get_reviews_page_url() : string
+    public static function get_reviews_page_url(): string
     {
     }
     /**
@@ -63,7 +63,7 @@ class Reviews
      *
      * @return bool
      */
-    public function is_reviews_page() : bool
+    public function is_reviews_page(): bool
     {
     }
     /**
@@ -73,7 +73,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function load_javascript() : void
+    public function load_javascript(): void
     {
     }
     // phpcs:disable Universal.NamingConventions.NoReservedKeywordParameterNames.objectFound
@@ -83,7 +83,7 @@ class Reviews
      * @param WP_Comment|mixed $object Object to check.
      * @return bool
      */
-    protected function is_review_or_reply($object) : bool
+    protected function is_review_or_reply($object): bool
     {
     }
     // phpcs:enable Universal.NamingConventions.NoReservedKeywordParameterNames.objectFound
@@ -102,7 +102,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_edit_review() : void
+    public function handle_edit_review(): void
     {
     }
     /**
@@ -120,7 +120,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_reply_to_review() : void
+    public function handle_reply_to_review(): void
     {
     }
     /**
@@ -130,7 +130,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function display_notices() : void
+    public function display_notices(): void
     {
     }
     /**
@@ -138,7 +138,7 @@ class Reviews
      *
      * @return void
      */
-    protected function maybe_display_reviews_bulk_action_notice() : void
+    protected function maybe_display_reviews_bulk_action_notice(): void
     {
     }
     /**
@@ -146,7 +146,7 @@ class Reviews
      *
      * @return array
      */
-    protected function get_bulk_action_notice_messages() : array
+    protected function get_bulk_action_notice_messages(): array
     {
     }
     /**
@@ -154,7 +154,7 @@ class Reviews
      *
      * @return string Empty string if there are no pending reviews, or bubble HTML if there are.
      */
-    protected function get_pending_count_bubble() : string
+    protected function get_pending_count_bubble(): string
     {
     }
     /**
@@ -175,7 +175,7 @@ class Reviews
      *
      * @return ReviewsListTable
      */
-    protected function make_reviews_list_table() : \Automattic\WooCommerce\Internal\Admin\ProductReviews\ReviewsListTable
+    protected function make_reviews_list_table(): \Automattic\WooCommerce\Internal\Admin\ProductReviews\ReviewsListTable
     {
     }
     /**
@@ -185,7 +185,7 @@ class Reviews
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function load_reviews_screen() : void
+    public function load_reviews_screen(): void
     {
     }
     /**
@@ -193,7 +193,7 @@ class Reviews
      *
      * @return void
      */
-    public function render_reviews_list_table() : void
+    public function render_reviews_list_table(): void
     {
     }
 }

@@ -28,7 +28,7 @@ class PaymentsController
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments) : void
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments): void
     {
     }
     /**
@@ -46,7 +46,7 @@ class PaymentsController
      *
      * @return array Settings array with additional settings added.
      */
-    public function preload_settings(array $settings) : array
+    public function preload_settings(array $settings): array
     {
     }
     /**
@@ -56,7 +56,7 @@ class PaymentsController
      *
      * @return array The updated list of allowed promo note IDs.
      */
-    public function add_allowed_promo_notes(array $promo_notes = array()) : array
+    public function add_allowed_promo_notes(array $promo_notes = array()): array
     {
     }
 }

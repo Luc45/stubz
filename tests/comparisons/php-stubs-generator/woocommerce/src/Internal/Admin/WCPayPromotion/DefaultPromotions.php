@@ -12,7 +12,7 @@ class DefaultPromotions
      *
      * @return array Suggestion specs.
      */
-    public static function get_all() : array
+    public static function get_all(): array
     {
     }
 }

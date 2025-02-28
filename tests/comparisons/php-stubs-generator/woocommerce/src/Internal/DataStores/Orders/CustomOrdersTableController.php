@@ -50,7 +50,7 @@ class CustomOrdersTableController
      * @param PluginUtil                 $plugin_util The plugin util to use.
      * @param DatabaseUtil               $db_util The database util to use.
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, \Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataCleanup $data_cleanup, \Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableRefundDataStore $refund_data_store, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller, \Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, \Automattic\WooCommerce\Caches\OrderCache $order_cache, \Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, \Automattic\WooCommerce\Utilities\PluginUtil $plugin_util, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $db_util)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, \Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataCleanup $data_cleanup, \Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableRefundDataStore $refund_data_store, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller, \Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, \Automattic\WooCommerce\Caches\OrderCache $order_cache, \Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, \Automattic\WooCommerce\Utilities\PluginUtil $plugin_util, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $db_util)
     {
     }
     /**
@@ -59,7 +59,7 @@ class CustomOrdersTableController
      *
      * @return bool True if the custom orders table usage is enabled
      */
-    public function custom_orders_table_usage_is_enabled() : bool
+    public function custom_orders_table_usage_is_enabled(): bool
     {
     }
     /**
@@ -67,7 +67,7 @@ class CustomOrdersTableController
      *
      * @return bool True if the caching is enabled within the CustomeOrderTable Datastores.
      */
-    public function hpos_data_caching_is_enabled() : bool
+    public function hpos_data_caching_is_enabled(): bool
     {
     }
     /**
@@ -103,7 +103,7 @@ class CustomOrdersTableController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function add_hpos_tools(array $tools_array) : array
+    public function add_hpos_tools(array $tools_array): array
     {
     }
     /**
@@ -139,7 +139,7 @@ class CustomOrdersTableController
      *
      * @return array Array with keys status (bool) and message (string).
      */
-    public function recreate_order_address_fts_index() : array
+    public function recreate_order_address_fts_index(): array
     {
     }
     /**
@@ -187,7 +187,7 @@ class CustomOrdersTableController
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function register_post_type_for_order_placeholders() : void
+    public function register_post_type_for_order_placeholders(): void
     {
     }
     /**

@@ -15,7 +15,7 @@ abstract class TableMigrator
      *
      * @return void
      */
-    protected function clear_errors() : void
+    protected function clear_errors(): void
     {
     }
     /**
@@ -24,7 +24,7 @@ abstract class TableMigrator
      * @param string $error The error message to add.
      * @return void
      */
-    protected function add_error(string $error) : void
+    protected function add_error(string $error): void
     {
     }
     /**
@@ -32,7 +32,7 @@ abstract class TableMigrator
      *
      * @return array
      */
-    protected function get_errors() : array
+    protected function get_errors(): array
     {
     }
     /**
@@ -62,7 +62,7 @@ abstract class TableMigrator
      *
      * @deprecated 8.0.0 Use `fetch_sanitized_migration_data` and `process_migration_data` instead.
      */
-    public function process_migration_batch_for_ids(array $entity_ids) : array
+    public function process_migration_batch_for_ids(array $entity_ids): array
     {
     }
     // phpcs:disable Squiz.Commenting.FunctionComment.InvalidNoReturn, Squiz.Commenting.FunctionCommentThrowTag.Missing -- Methods are not marked abstract for back compat.
@@ -96,7 +96,7 @@ abstract class TableMigrator
      *
      * @deprecated 8.0.0 Use `fetch_sanitized_migration_data` and `process_migration_data` instead.
      */
-    protected abstract function process_migration_batch_for_ids_core(array $entity_ids) : void;
+    abstract protected function process_migration_batch_for_ids_core(array $entity_ids): void;
     /**
      * Check if the amount of processed database rows matches the amount of orders to process, and log an error if not.
      *

@@ -11,12 +11,13 @@ abstract class Task
      * Task traits.
      */
     use \Automattic\WooCommerce\Admin\Features\OnboardingTasks\TaskTraits;
+
     /**
      * Name of the dismiss option.
      *
      * @var string
      */
-    const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
+    public const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
     /**
      * Name of the snooze option.
      *
@@ -24,25 +25,25 @@ abstract class Task
      *
      * @deprecated 7.2.0
      */
-    const SNOOZED_OPTION = 'woocommerce_task_list_remind_me_later_tasks';
+    public const SNOOZED_OPTION = 'woocommerce_task_list_remind_me_later_tasks';
     /**
      * Name of the actioned option.
      *
      * @var string
      */
-    const ACTIONED_OPTION = 'woocommerce_task_list_tracked_completed_actions';
+    public const ACTIONED_OPTION = 'woocommerce_task_list_tracked_completed_actions';
     /**
      * Option name of completed tasks.
      *
      * @var string
      */
-    const COMPLETED_OPTION = 'woocommerce_task_list_tracked_completed_tasks';
+    public const COMPLETED_OPTION = 'woocommerce_task_list_tracked_completed_tasks';
     /**
      * Name of the active task transient.
      *
      * @var string
      */
-    const ACTIVE_TASK_TRANSIENT = 'wc_onboarding_active_task';
+    public const ACTIVE_TASK_TRANSIENT = 'wc_onboarding_active_task';
     /**
      * Parent task list.
      *
@@ -68,25 +69,25 @@ abstract class Task
      *
      * @return string
      */
-    public abstract function get_id();
+    abstract public function get_id();
     /**
      * Title.
      *
      * @return string
      */
-    public abstract function get_title();
+    abstract public function get_title();
     /**
      * Content.
      *
      * @return string
      */
-    public abstract function get_content();
+    abstract public function get_content();
     /**
      * Time.
      *
      * @return string
      */
-    public abstract function get_time();
+    abstract public function get_time();
     /**
      * Parent ID.
      *
@@ -320,7 +321,7 @@ abstract class Task
      *
      * @return bool
      */
-    public function get_record_view_event() : bool
+    public function get_record_view_event(): bool
     {
     }
     /**

@@ -22,13 +22,13 @@ abstract class AbstractPageTemplate extends \Automattic\WooCommerce\Blocks\Templ
      *
      * @return \WP_Post|null Post object or null.
      */
-    protected abstract function get_placeholder_page();
+    abstract protected function get_placeholder_page();
     /**
      * Should return true on pages/endpoints/routes where the template should be shown.
      *
      * @return boolean
      */
-    protected abstract function is_active_template();
+    abstract protected function is_active_template();
     /**
      * When the page should be displaying the template, add it to the hierarchy.
      *

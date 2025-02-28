@@ -72,7 +72,7 @@ class Table extends \WP_List_Table
      *
      * @return string
      */
-    public function column_enabled(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\StoredUrl $item) : string
+    public function column_enabled(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\StoredUrl $item): string
     {
     }
     /**
@@ -92,7 +92,7 @@ class Table extends \WP_List_Table
      *
      * @return string
      */
-    public function get_action_url(string $action, int $id, string $nonce_action = 'modify_approved_directories') : string
+    public function get_action_url(string $action, int $id, string $nonce_action = 'modify_approved_directories'): string
     {
     }
     /**
@@ -100,7 +100,7 @@ class Table extends \WP_List_Table
      *
      * @return string
      */
-    public function get_base_url() : string
+    public function get_base_url(): string
     {
     }
     /**

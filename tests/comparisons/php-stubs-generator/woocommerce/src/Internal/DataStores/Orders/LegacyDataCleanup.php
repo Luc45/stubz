@@ -21,7 +21,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      * @param DataSynchronizer          $data_synchronizer Data synchronizer instance.
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing, \Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataHandler $legacy_handler, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
+    final public function init(\Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing, \Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataHandler $legacy_handler, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
     {
     }
     /**
@@ -29,7 +29,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      *
      * @return string Name of the process.
      */
-    public function get_name() : string
+    public function get_name(): string
     {
     }
     /**
@@ -37,7 +37,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      *
      * @return string Description.
      */
-    public function get_description() : string
+    public function get_description(): string
     {
     }
     /**
@@ -45,7 +45,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      *
      * @return int Number of pending records.
      */
-    public function get_total_pending_count() : int
+    public function get_total_pending_count(): int
     {
     }
     /**
@@ -54,7 +54,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      * @param int $size Size of the batch.
      * @return array Batch of records.
      */
-    public function get_next_batch_to_process(int $size) : array
+    public function get_next_batch_to_process(int $size): array
     {
     }
     /**
@@ -62,7 +62,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      *
      * @param array $batch Batch details.
      */
-    public function process_batch(array $batch) : void
+    public function process_batch(array $batch): void
     {
     }
     /**
@@ -70,7 +70,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      *
      * @return int Default batch size.
      */
-    public function get_default_batch_size() : int
+    public function get_default_batch_size(): int
     {
     }
     /**
@@ -96,7 +96,7 @@ class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcess
      * @param boolean $enabled TRUE if the process should be initiated, FALSE if it should be canceled.
      * @return boolean Whether the legacy data cleanup was initiated or not.
      */
-    public function toggle_flag(bool $enabled) : bool
+    public function toggle_flag(bool $enabled): bool
     {
     }
     /**

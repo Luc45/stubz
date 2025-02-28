@@ -14,13 +14,13 @@ class Products extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
      *
      * @var string
      */
-    const IDENTIFIER = 'ai/products';
+    public const IDENTIFIER = 'ai/products';
     /**
      * The schema item identifier.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'ai/products';
+    public const SCHEMA_TYPE = 'ai/products';
     /**
      * Get the path of this REST route.
      *

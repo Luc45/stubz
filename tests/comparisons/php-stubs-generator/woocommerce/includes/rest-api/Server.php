@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\RestApi;
 class Server
 {
     use \Automattic\WooCommerce\RestApi\Utilities\SingletonTrait;
+
     /**
      * REST API namespaces and endpoints.
      *

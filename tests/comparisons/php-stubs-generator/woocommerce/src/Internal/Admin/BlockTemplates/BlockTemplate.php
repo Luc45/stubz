@@ -10,7 +10,7 @@ class BlockTemplate extends \Automattic\WooCommerce\Internal\Admin\BlockTemplate
     /**
      * Get the template ID.
      */
-    public function get_id() : string
+    public function get_id(): string
     {
     }
     /**
@@ -18,7 +18,7 @@ class BlockTemplate extends \Automattic\WooCommerce\Internal\Admin\BlockTemplate
      *
      * @param array $block_config The block data.
      */
-    public function add_block(array $block_config) : \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
+    public function add_block(array $block_config): \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
     {
     }
 }

@@ -11,10 +11,11 @@ class PaymentsMoreInfoNeeded
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-payments-more-info-needed';
+    public const NOTE_NAME = 'wc-admin-payments-more-info-needed';
     /**
      * Should this note exist?
      */

@@ -79,7 +79,7 @@ class Controller extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @param array           $query   Query args.
      * @param WP_REST_Request $request Request.
      */
-    public function update_rest_query_in_editor($query, $request) : array
+    public function update_rest_query_in_editor($query, $request): array
     {
     }
     /**

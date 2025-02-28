@@ -14,9 +14,9 @@ namespace Action_Scheduler\Migration;
 class Scheduler
 {
     /** Migration action hook. */
-    const HOOK = 'action_scheduler/migration_hook';
+    public const HOOK = 'action_scheduler/migration_hook';
     /** Migration action group. */
-    const GROUP = 'action-scheduler-migration';
+    public const GROUP = 'action-scheduler-migration';
     /**
      * Set up the callback for the scheduled job.
      */

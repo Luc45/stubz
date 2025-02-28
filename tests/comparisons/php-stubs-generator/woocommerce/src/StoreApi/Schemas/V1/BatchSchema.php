@@ -18,7 +18,7 @@ class BatchSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSc
      *
      * @var string
      */
-    const IDENTIFIER = 'batch';
+    public const IDENTIFIER = 'batch';
     /**
      * Batch schema properties.
      *

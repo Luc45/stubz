@@ -9,6 +9,7 @@
 class WC_REST_Product_Variations_Controller extends \WC_REST_Product_Variations_V2_Controller
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareRestControllerTrait;
+
     /**
      * Endpoint namespace.
      *

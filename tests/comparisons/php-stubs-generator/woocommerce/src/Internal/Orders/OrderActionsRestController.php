@@ -14,7 +14,7 @@ class OrderActionsRestController extends \Automattic\WooCommerce\Internal\RestAp
      *
      * @return string
      */
-    protected function get_rest_api_namespace() : string
+    protected function get_rest_api_namespace(): string
     {
     }
     /**

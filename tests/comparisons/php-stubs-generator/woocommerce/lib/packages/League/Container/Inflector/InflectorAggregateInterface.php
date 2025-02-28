@@ -12,7 +12,7 @@ interface InflectorAggregateInterface extends \Automattic\WooCommerce\Vendor\Lea
      *
      * @return Inflector
      */
-    public function add(string $type, ?callable $callback = null) : \Automattic\WooCommerce\Vendor\League\Container\Inflector\Inflector;
+    public function add(string $type, ?callable $callback = null): \Automattic\WooCommerce\Vendor\League\Container\Inflector\Inflector;
     /**
      * Applies all inflectors to an object.
      *

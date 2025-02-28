@@ -128,13 +128,13 @@ abstract class ActionScheduler
     /**
      * Clone.
      */
-    public final function __clone()
+    final public function __clone()
     {
     }
     /**
      * Wakeup.
      */
-    public final function __wakeup()
+    final public function __wakeup()
     {
     }
     /** Deprecated **/

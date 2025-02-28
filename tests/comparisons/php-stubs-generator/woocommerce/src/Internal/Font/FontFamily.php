@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Internal\Font;
  */
 class FontFamily
 {
-    const POST_TYPE = 'wp_font_family';
+    public const POST_TYPE = 'wp_font_family';
     /**
      * Registers the font family post type.
      *

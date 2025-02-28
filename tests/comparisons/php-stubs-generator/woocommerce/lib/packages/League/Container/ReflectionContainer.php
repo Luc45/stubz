@@ -6,6 +6,7 @@ class ReflectionContainer implements \Automattic\WooCommerce\Vendor\League\Conta
 {
     use \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverTrait;
     use \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait;
+
     /**
      * @var boolean
      */
@@ -27,7 +28,7 @@ class ReflectionContainer implements \Automattic\WooCommerce\Vendor\League\Conta
     /**
      * {@inheritdoc}
      */
-    public function has($id) : bool
+    public function has($id): bool
     {
     }
     /**
@@ -51,7 +52,7 @@ class ReflectionContainer implements \Automattic\WooCommerce\Vendor\League\Conta
      *
      * @return self
      */
-    public function cacheResolutions(bool $option = true) : \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
+    public function cacheResolutions(bool $option = true): \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
     {
     }
 }

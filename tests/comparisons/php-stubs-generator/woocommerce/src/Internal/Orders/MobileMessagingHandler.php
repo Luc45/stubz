@@ -17,7 +17,7 @@ class MobileMessagingHandler
      *
      * @return ?string
      */
-    public static function prepare_mobile_message(\WC_Order $order, ?int $blog_id, \DateTime $now, string $domain) : ?string
+    public static function prepare_mobile_message(\WC_Order $order, ?int $blog_id, \DateTime $now, string $domain): ?string
     {
     }
 }

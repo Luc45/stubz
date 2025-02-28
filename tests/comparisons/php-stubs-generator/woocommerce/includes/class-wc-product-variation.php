@@ -343,7 +343,7 @@ class WC_Product_Variation extends \WC_Product_Simple
      *
      * @return bool The current value of the flag.
      */
-    public function get_cogs_value_overrides_parent() : bool
+    public function get_cogs_value_overrides_parent(): bool
     {
     }
     /**
@@ -353,7 +353,7 @@ class WC_Product_Variation extends \WC_Product_Simple
      *
      * @param bool $value The value to set for the flag.
      */
-    public function set_cogs_value_overrides_parent(bool $value) : void
+    public function set_cogs_value_overrides_parent(bool $value): void
     {
     }
     /**
@@ -364,7 +364,7 @@ class WC_Product_Variation extends \WC_Product_Simple
      *
      * @return float
      */
-    protected function get_cogs_effective_value_core() : float
+    protected function get_cogs_effective_value_core(): float
     {
     }
 }

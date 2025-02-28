@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\Internal\Integrations;
 class WPConsentAPI
 {
     use \Automattic\WooCommerce\Internal\Traits\ScriptDebug;
+
     /**
      * Identifier of the consent category used for order attribution.
      *

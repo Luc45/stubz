@@ -85,7 +85,7 @@ class WC_Admin_Addons
      *
      * @return string Body class with added class for Marketplace or My Subscriptions page.
      */
-    public static function filter_admin_body_classes(string $admin_body_class = '') : string
+    public static function filter_admin_body_classes(string $admin_body_class = ''): string
     {
     }
     /**
@@ -94,7 +94,7 @@ class WC_Admin_Addons
      * @param object $action Action object.
      * @return string URL.
      */
-    public static function get_action_url($action) : string
+    public static function get_action_url($action): string
     {
     }
     /**

@@ -10,7 +10,7 @@ final class LayoutTemplateRegistry
     /**
      * Get the instance of the class.
      */
-    public static function get_instance() : \Automattic\WooCommerce\LayoutTemplates\LayoutTemplateRegistry
+    public static function get_instance(): \Automattic\WooCommerce\LayoutTemplates\LayoutTemplateRegistry
     {
     }
     /**
@@ -24,7 +24,7 @@ final class LayoutTemplateRegistry
      *
      * @param string $layout_template_id Layout template ID.
      */
-    public function is_registered($layout_template_id) : bool
+    public function is_registered($layout_template_id): bool
     {
     }
     /**
@@ -47,7 +47,7 @@ final class LayoutTemplateRegistry
      *
      * @param array $query_params Query params.
      */
-    public function instantiate_layout_templates(array $query_params = array()) : array
+    public function instantiate_layout_templates(array $query_params = array()): array
     {
     }
 }

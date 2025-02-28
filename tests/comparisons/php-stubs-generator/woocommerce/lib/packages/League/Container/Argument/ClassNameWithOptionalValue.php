@@ -14,7 +14,7 @@ class ClassNameWithOptionalValue implements \Automattic\WooCommerce\Vendor\Leagu
     /**
      * @inheritDoc
      */
-    public function getClassName() : string
+    public function getClassName(): string
     {
     }
     public function getOptionalValue()

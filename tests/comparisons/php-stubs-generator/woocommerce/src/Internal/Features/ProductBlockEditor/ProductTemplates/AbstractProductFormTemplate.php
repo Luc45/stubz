@@ -10,7 +10,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
     /**
      * Get the template area.
      */
-    public function get_area() : string
+    public function get_area(): string
     {
     }
     /**
@@ -19,7 +19,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
      * @param string $group_id The group block ID.
      * @throws \UnexpectedValueException If block is not of type GroupInterface.
      */
-    public function get_group_by_id(string $group_id) : ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
+    public function get_group_by_id(string $group_id): ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
     {
     }
     /**
@@ -28,7 +28,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
      * @param string $section_id The section block ID.
      * @throws \UnexpectedValueException If block is not of type SectionInterface.
      */
-    public function get_section_by_id(string $section_id) : ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface
+    public function get_section_by_id(string $section_id): ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface
     {
     }
     /**
@@ -37,7 +37,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
      * @param string $subsection_id The subsection block ID.
      * @throws \UnexpectedValueException If block is not of type SubsectionInterface.
      */
-    public function get_subsection_by_id(string $subsection_id) : ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
+    public function get_subsection_by_id(string $subsection_id): ?\Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
     {
     }
     /**
@@ -45,7 +45,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
      *
      * @param string $block_id The block block ID.
      */
-    public function get_block_by_id(string $block_id) : ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
+    public function get_block_by_id(string $block_id): ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
     {
     }
     /**
@@ -53,7 +53,7 @@ abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Inter
      *
      * @param array $block_config The block data.
      */
-    public function add_group(array $block_config) : \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
+    public function add_group(array $block_config): \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
     {
     }
 }

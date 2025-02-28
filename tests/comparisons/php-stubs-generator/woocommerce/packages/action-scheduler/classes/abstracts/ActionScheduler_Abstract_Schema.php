@@ -53,7 +53,7 @@ abstract class ActionScheduler_Abstract_Schema
      *
      * @return string The CREATE TABLE statement, suitable for passing to dbDelta
      */
-    protected abstract function get_table_definition($table);
+    abstract protected function get_table_definition($table);
     /**
      * Get full table name.
      *

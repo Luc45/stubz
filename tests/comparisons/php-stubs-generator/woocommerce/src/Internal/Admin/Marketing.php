@@ -8,18 +8,19 @@ namespace Automattic\WooCommerce\Internal\Admin;
 class Marketing
 {
     use \Automattic\WooCommerce\Internal\Admin\CouponsMovedTrait;
+
     /**
      * Constant representing the key for the submenu name value in the global $submenu array.
      *
      * @var int
      */
-    const SUBMENU_NAME_KEY = 0;
+    public const SUBMENU_NAME_KEY = 0;
     /**
      * Constant representing the key for the submenu location value in the global $submenu array.
      *
      * @var int
      */
-    const SUBMENU_LOCATION_KEY = 2;
+    public const SUBMENU_LOCATION_KEY = 2;
     /**
      * Class instance.
      *

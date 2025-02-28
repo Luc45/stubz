@@ -27,7 +27,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function no_items() : void
+    public function no_items(): void
     {
     }
     /**
@@ -35,7 +35,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function prepare_column_headers() : void
+    public function prepare_column_headers(): void
     {
     }
     /**
@@ -43,7 +43,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function prepare_items() : void
+    public function prepare_items(): void
     {
     }
     /**
@@ -51,7 +51,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return array
      */
-    public function get_columns() : array
+    public function get_columns(): array
     {
     }
     /**
@@ -61,7 +61,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_file_id(array $item) : string
+    public function column_file_id(array $item): string
     {
     }
     /**
@@ -71,7 +71,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_line_number(array $item) : string
+    public function column_line_number(array $item): string
     {
     }
     /**
@@ -81,7 +81,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_line(array $item) : string
+    public function column_line(array $item): string
     {
     }
     /**
@@ -89,7 +89,7 @@ class SearchListTable extends \WP_List_Table
      *
      * @return int
      */
-    public function get_per_page_default() : int
+    public function get_per_page_default(): int
     {
     }
 }

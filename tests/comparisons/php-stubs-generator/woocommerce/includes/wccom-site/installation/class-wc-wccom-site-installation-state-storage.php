@@ -11,7 +11,7 @@ class WC_WCCOM_Site_Installation_State_Storage
      * @param int $product_id The product ID.
      * @return WC_WCCOM_Site_Installation_State|null
      */
-    public static function get_state($product_id) : ?\WC_WCCOM_Site_Installation_State
+    public static function get_state($product_id): ?\WC_WCCOM_Site_Installation_State
     {
     }
     /**
@@ -20,7 +20,7 @@ class WC_WCCOM_Site_Installation_State_Storage
      * @param WC_WCCOM_Site_Installation_State $state The state to save.
      * @return bool
      */
-    public static function save_state(\WC_WCCOM_Site_Installation_State $state) : bool
+    public static function save_state(\WC_WCCOM_Site_Installation_State $state): bool
     {
     }
     /**
@@ -29,7 +29,7 @@ class WC_WCCOM_Site_Installation_State_Storage
      * @param WC_WCCOM_Site_Installation_State $state The state to delete.
      * @return bool
      */
-    public static function delete_state(\WC_WCCOM_Site_Installation_State $state) : bool
+    public static function delete_state(\WC_WCCOM_Site_Installation_State $state): bool
     {
     }
     /**
@@ -38,7 +38,7 @@ class WC_WCCOM_Site_Installation_State_Storage
      * @param int $product_id The product ID.
      * @return string
      */
-    protected static function get_storage_key($product_id) : string
+    protected static function get_storage_key($product_id): string
     {
     }
 }

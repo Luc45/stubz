@@ -12,7 +12,7 @@ class CartRemoveCoupon extends \Automattic\WooCommerce\StoreApi\Routes\V1\Abstra
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-remove-coupon';
+    public const IDENTIFIER = 'cart-remove-coupon';
     /**
      * Get the path of this REST route.
      *

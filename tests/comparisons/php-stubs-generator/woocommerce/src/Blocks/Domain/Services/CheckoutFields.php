@@ -18,26 +18,26 @@ class CheckoutFields
      *
      * @var string
      */
-    const BILLING_FIELDS_PREFIX = '_wc_billing/';
+    public const BILLING_FIELDS_PREFIX = '_wc_billing/';
     /**
      * Shipping fields meta key.
      *
      * @var string
      */
-    const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
+    public const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
     /**
      * Additional fields meta key.
      *
      * @var string
      * @deprecated 8.9.0 Use OTHER_FIELDS_PREFIX instead.
      */
-    const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
+    public const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
     /**
      * Other fields meta key.
      *
      * @var string
      */
-    const OTHER_FIELDS_PREFIX = '_wc_other/';
+    public const OTHER_FIELDS_PREFIX = '_wc_other/';
     /**
      * Sets up core fields.
      *

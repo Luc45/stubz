@@ -12,7 +12,7 @@ abstract class AbstractTermsRoute extends \Automattic\WooCommerce\StoreApi\Route
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'term';
+    public const SCHEMA_TYPE = 'term';
     /**
      * Get the query params for collections of attributes.
      *

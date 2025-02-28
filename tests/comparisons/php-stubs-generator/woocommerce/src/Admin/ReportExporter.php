@@ -8,25 +8,26 @@ namespace Automattic\WooCommerce\Admin;
 class ReportExporter
 {
     /**
-     * Slug to identify the scheduler.
-     *
-     * @var string
-     */
-    public static $name = 'report_exporter';
-    /**
      * Scheduler traits.
      */
     use \Automattic\WooCommerce\Admin\Schedulers\SchedulerTraits {
         init as scheduler_init;
     }
     /**
+     * Slug to identify the scheduler.
+     *
+     * @var string
+     */
+    public static $name = 'report_exporter';
+
+    /**
      * Export status option name.
      */
-    const EXPORT_STATUS_OPTION = 'woocommerce_admin_report_export_status';
+    public const EXPORT_STATUS_OPTION = 'woocommerce_admin_report_export_status';
     /**
      * Export file download action.
      */
-    const DOWNLOAD_EXPORT_ACTION = 'woocommerce_admin_download_report_csv';
+    public const DOWNLOAD_EXPORT_ACTION = 'woocommerce_admin_download_report_csv';
     /**
      * Get all available scheduling actions.
      * Used to determine action hook names and clear events.

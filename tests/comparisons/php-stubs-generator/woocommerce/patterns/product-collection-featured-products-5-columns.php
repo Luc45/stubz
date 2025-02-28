@@ -5,4 +5,5 @@
  * Slug: woocommerce-blocks/product-collection-featured-products-5-columns
  * Categories: WooCommerce, featured-selling
  */
+
 $collection_title = $content['titles'][0]['default'] ?? '';

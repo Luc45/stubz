@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features;
  */
 class LaunchYourStore
 {
-    const BANNER_DISMISS_USER_META_KEY = 'coming_soon_banner_dismissed';
+    public const BANNER_DISMISS_USER_META_KEY = 'coming_soon_banner_dismissed';
     /**
      * Constructor.
      */

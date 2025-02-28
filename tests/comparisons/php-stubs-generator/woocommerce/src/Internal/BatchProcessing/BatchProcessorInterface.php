@@ -14,13 +14,13 @@ interface BatchProcessorInterface
      *
      * @return string Name of the processor.
      */
-    public function get_name() : string;
+    public function get_name(): string;
     /**
      * Get a user-friendly description for this processor.
      *
      * @return string Description of what this processor does.
      */
-    public function get_description() : string;
+    public function get_description(): string;
     /**
      * Get the total number of pending items that require processing.
      * Once an item is successfully processed by 'process_batch' it shouldn't be included in this count.
@@ -30,7 +30,7 @@ interface BatchProcessorInterface
      *
      * @return int Number of items pending processing.
      */
-    public function get_total_pending_count() : int;
+    public function get_total_pending_count(): int;
     /**
      * Returns the next batch of items that need to be processed.
      *
@@ -47,7 +47,7 @@ interface BatchProcessorInterface
      *
      * @return array Batch of items to process, containing $size or less items.
      */
-    public function get_next_batch_to_process(int $size) : array;
+    public function get_next_batch_to_process(int $size): array;
     /**
      * Process data for the supplied batch.
      *
@@ -63,7 +63,7 @@ interface BatchProcessorInterface
      *
      * @param array $batch Batch to process, as returned by 'get_next_batch_to_process'.
      */
-    public function process_batch(array $batch) : void;
+    public function process_batch(array $batch): void;
     /**
      * Default (preferred) batch size to pass to 'get_next_batch_to_process'.
      * The controller will pass this size unless it's externally configured
@@ -71,5 +71,5 @@ interface BatchProcessorInterface
      *
      * @return int Default batch size.
      */
-    public function get_default_batch_size() : int;
+    public function get_default_batch_size(): int;
 }

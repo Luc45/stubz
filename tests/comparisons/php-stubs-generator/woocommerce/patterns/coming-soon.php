@@ -9,4 +9,5 @@
  *
  * @package WooCommerce\Blocks
  */
+
 $store_pages_only = 'yes' === \get_option('woocommerce_store_pages_only', 'no');

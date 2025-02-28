@@ -21,7 +21,7 @@ class ListTable extends \WP_List_Table
      * @internal This method is not intended to be used directly (except for testing).
      * @param PageController $page_controller Page controller instance for this request.
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Orders\PageController $page_controller)
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Orders\PageController $page_controller)
     {
     }
     /**
@@ -31,7 +31,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function setup($args = array()) : void
+    public function setup($args = array()): void
     {
     }
     /**
@@ -87,7 +87,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_blank_state() : void
+    public function render_blank_state(): void
     {
     }
     /**
@@ -137,7 +137,7 @@ class ListTable extends \WP_List_Table
      *
      * @return array List of year-months.
      */
-    protected function get_and_maybe_update_months_filter_cache() : array
+    protected function get_and_maybe_update_months_filter_cache(): array
     {
     }
     /**
@@ -192,7 +192,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_order_number_column(\WC_Order $order) : void
+    public function render_order_number_column(\WC_Order $order): void
     {
     }
     /**
@@ -202,7 +202,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_order_date_column(\WC_Order $order) : void
+    public function render_order_date_column(\WC_Order $order): void
     {
     }
     /**
@@ -212,7 +212,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_order_status_column(\WC_Order $order) : void
+    public function render_order_status_column(\WC_Order $order): void
     {
     }
     /**
@@ -222,7 +222,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_billing_address_column(\WC_Order $order) : void
+    public function render_billing_address_column(\WC_Order $order): void
     {
     }
     /**
@@ -232,7 +232,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_shipping_address_column(\WC_Order $order) : void
+    public function render_shipping_address_column(\WC_Order $order): void
     {
     }
     /**
@@ -242,7 +242,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_order_total_column(\WC_Order $order) : void
+    public function render_order_total_column(\WC_Order $order): void
     {
     }
     /**
@@ -252,7 +252,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function render_wc_actions_column(\WC_Order $order) : void
+    public function render_wc_actions_column(\WC_Order $order): void
     {
     }
     /**
@@ -280,7 +280,7 @@ class ListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function enqueue_scripts() : void
+    public function enqueue_scripts(): void
     {
     }
     /**
@@ -288,7 +288,7 @@ class ListTable extends \WP_List_Table
      *
      * @return string HTML template.
      */
-    public function get_order_preview_template() : string
+    public function get_order_preview_template(): string
     {
     }
     /**

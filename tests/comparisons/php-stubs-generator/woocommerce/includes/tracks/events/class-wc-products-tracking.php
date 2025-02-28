@@ -8,7 +8,7 @@ class WC_Products_Tracking
     /**
      * Tracks source.
      */
-    const TRACKS_SOURCE = 'product-legacy-editor';
+    public const TRACKS_SOURCE = 'product-legacy-editor';
     /**
      * Init tracking.
      */

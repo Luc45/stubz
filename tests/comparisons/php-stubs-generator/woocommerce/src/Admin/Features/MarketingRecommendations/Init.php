@@ -13,13 +13,13 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @var string
      */
-    const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
+    public const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
     /**
      * Slug of the subcategory specifying marketing channels on the WooCommerce.com store.
      *
      * @var string
      */
-    const MARKETING_CHANNEL_SUBCATEGORY_SLUG = 'sales-channels';
+    public const MARKETING_CHANNEL_SUBCATEGORY_SLUG = 'sales-channels';
     /**
      * Constructor.
      */
@@ -60,7 +60,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @return array
      */
-    public static function get_recommended_plugins() : array
+    public static function get_recommended_plugins(): array
     {
     }
     /**
@@ -68,7 +68,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @return array
      */
-    public static function get_recommended_marketing_channels() : array
+    public static function get_recommended_marketing_channels(): array
     {
     }
     /**
@@ -76,7 +76,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @return array
      */
-    public static function get_recommended_marketing_extensions_excluding_channels() : array
+    public static function get_recommended_marketing_extensions_excluding_channels(): array
     {
     }
     /**
@@ -85,7 +85,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      * @since 9.5.0
      * @return array
      */
-    public static function get_misc_recommendations() : array
+    public static function get_misc_recommendations(): array
     {
     }
     /**
@@ -95,7 +95,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @return bool
      */
-    protected static function is_marketing_plugin(array $plugin_data) : bool
+    protected static function is_marketing_plugin(array $plugin_data): bool
     {
     }
     /**
@@ -105,7 +105,7 @@ class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
      *
      * @return bool
      */
-    protected static function is_marketing_channel_plugin(array $plugin_data) : bool
+    protected static function is_marketing_channel_plugin(array $plugin_data): bool
     {
     }
     /**

@@ -14,7 +14,7 @@ class MigrationHelper
      *
      * @return array Schema config escaped for backtick.
      */
-    public static function escape_schema_for_backtick(array $schema_config) : array
+    public static function escape_schema_for_backtick(array $schema_config): array
     {
     }
     /**
@@ -35,7 +35,7 @@ class MigrationHelper
      *
      * @return string $wpdb placeholder.
      */
-    public static function get_wpdb_placeholder_for_type(string $type) : string
+    public static function get_wpdb_placeholder_for_type(string $type): string
     {
     }
     /**
@@ -45,7 +45,7 @@ class MigrationHelper
      *
      * @return string SQL clause for INSERT...ON DUPLICATE KEY UPDATE
      */
-    public static function generate_on_duplicate_statement_clause(array $columns) : string
+    public static function generate_on_duplicate_statement_clause(array $columns): string
     {
     }
     /**
@@ -55,7 +55,7 @@ class MigrationHelper
      * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
      * @return bool True if there are more records that need to be migrated, false otherwise.
      */
-    public static function migrate_country_states(string $country_code, array $old_to_new_states_mapping) : bool
+    public static function migrate_country_states(string $country_code, array $old_to_new_states_mapping): bool
     {
     }
 }

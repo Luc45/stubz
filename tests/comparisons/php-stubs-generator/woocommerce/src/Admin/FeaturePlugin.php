@@ -34,7 +34,7 @@ class FeaturePlugin extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
      *
      * @return object Instance.
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**

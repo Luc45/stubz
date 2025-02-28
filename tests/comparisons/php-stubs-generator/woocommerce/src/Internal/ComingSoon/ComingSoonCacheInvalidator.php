@@ -12,7 +12,7 @@ class ComingSoonCacheInvalidator
      *
      * @internal
      */
-    public final function init()
+    final public function init()
     {
     }
     /**

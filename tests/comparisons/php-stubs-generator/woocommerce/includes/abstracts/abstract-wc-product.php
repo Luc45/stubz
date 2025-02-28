@@ -11,6 +11,7 @@
 class WC_Product extends \WC_Abstract_Legacy_Product
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * This is the name of this object type.
      *
@@ -1564,7 +1565,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @param float $value The value to set for this product.
      */
-    public function set_cogs_value(float $value) : void
+    public function set_cogs_value(float $value): void
     {
     }
     /**
@@ -1574,7 +1575,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @return float The current value for this product.
      */
-    public function get_cogs_value() : float
+    public function get_cogs_value(): float
     {
     }
     /**
@@ -1585,7 +1586,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @return float The effective value for this product.
      */
-    public function get_cogs_effective_value() : float
+    public function get_cogs_effective_value(): float
     {
     }
     /**
@@ -1598,7 +1599,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @return float The effective value for this product.
      */
-    protected function get_cogs_effective_value_core() : float
+    protected function get_cogs_effective_value_core(): float
     {
     }
     /**
@@ -1609,7 +1610,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @return float The effective total value for this product.
      */
-    public function get_cogs_total_value() : float
+    public function get_cogs_total_value(): float
     {
     }
     /**
@@ -1621,7 +1622,7 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      *
      * @return float The effective total value for this product.
      */
-    protected function get_cogs_total_value_core() : float
+    protected function get_cogs_total_value_core(): float
     {
     }
 }

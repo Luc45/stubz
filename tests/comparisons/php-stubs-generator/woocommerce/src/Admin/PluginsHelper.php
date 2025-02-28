@@ -18,27 +18,27 @@ class PluginsHelper
     /**
      * The URL for the WooCommerce subscription page.
      */
-    const WOO_SUBSCRIPTION_PAGE_URL = 'https://woocommerce.com/my-account/my-subscriptions/';
+    public const WOO_SUBSCRIPTION_PAGE_URL = 'https://woocommerce.com/my-account/my-subscriptions/';
     /**
      * The URL for the WooCommerce.com cart page.
      */
-    const WOO_CART_PAGE_URL = 'https://woocommerce.com/cart/';
+    public const WOO_CART_PAGE_URL = 'https://woocommerce.com/cart/';
     /**
      * The URL for the WooCommerce.com add payment method page.
      */
-    const WOO_ADD_PAYMENT_METHOD_URL = 'https://woocommerce.com/my-account/add-payment-method/';
+    public const WOO_ADD_PAYMENT_METHOD_URL = 'https://woocommerce.com/my-account/add-payment-method/';
     /**
      * Meta key for dismissing expired subscription notices.
      */
-    const DISMISS_EXPIRED_SUBS_NOTICE = 'woo_subscription_expired_notice_dismiss';
+    public const DISMISS_EXPIRED_SUBS_NOTICE = 'woo_subscription_expired_notice_dismiss';
     /**
      * Meta key for dismissing expiring subscription notices
      */
-    const DISMISS_EXPIRING_SUBS_NOTICE = 'woo_subscription_expiring_notice_dismiss';
+    public const DISMISS_EXPIRING_SUBS_NOTICE = 'woo_subscription_expiring_notice_dismiss';
     /**
      * Meta key for dismissing missing subscription notices
      */
-    const DISMISS_MISSING_SUBS_NOTICE = 'woo_subscription_missing_notice_dismiss';
+    public const DISMISS_MISSING_SUBS_NOTICE = 'woo_subscription_missing_notice_dismiss';
     /**
      * Initialize hooks.
      */

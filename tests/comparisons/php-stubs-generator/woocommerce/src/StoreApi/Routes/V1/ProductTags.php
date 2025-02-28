@@ -12,7 +12,7 @@ class ProductTags extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractTer
      *
      * @var string
      */
-    const IDENTIFIER = 'product-tags';
+    public const IDENTIFIER = 'product-tags';
     /**
      * Get the path of this REST route.
      *

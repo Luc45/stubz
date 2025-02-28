@@ -11,10 +11,11 @@ class LaunchChecklist
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-launch-checklist';
+    public const NOTE_NAME = 'wc-admin-launch-checklist';
     /**
      * Get the note.
      *

@@ -103,7 +103,7 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      * @param array           $args    Query args.
      * @param WP_REST_Request $request Request.
      */
-    public function update_rest_query($args, $request) : array
+    public function update_rest_query($args, $request): array
     {
     }
     /**

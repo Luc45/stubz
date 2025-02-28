@@ -6,6 +6,7 @@
 class WC_Checkout
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * The single instance of the class.
      *

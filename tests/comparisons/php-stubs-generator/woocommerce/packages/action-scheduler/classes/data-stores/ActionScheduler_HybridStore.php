@@ -9,7 +9,7 @@
  */
 class ActionScheduler_HybridStore extends \ActionScheduler_Store
 {
-    const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
+    public const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
     /**
      * ActionScheduler_HybridStore constructor.
      *

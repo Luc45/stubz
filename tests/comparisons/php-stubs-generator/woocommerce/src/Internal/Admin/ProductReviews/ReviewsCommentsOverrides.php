@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
  */
 class ReviewsCommentsOverrides
 {
-    const REVIEWS_MOVED_NOTICE_ID = 'product_reviews_moved';
+    public const REVIEWS_MOVED_NOTICE_ID = 'product_reviews_moved';
     /**
      * Constructor.
      */
@@ -19,7 +19,7 @@ class ReviewsCommentsOverrides
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function display_notices() : void
+    public function display_notices(): void
     {
     }
     /**
@@ -27,7 +27,7 @@ class ReviewsCommentsOverrides
      *
      * @return void
      */
-    protected function maybe_display_reviews_moved_notice() : void
+    protected function maybe_display_reviews_moved_notice(): void
     {
     }
     /**
@@ -35,7 +35,7 @@ class ReviewsCommentsOverrides
      *
      * @return bool
      */
-    protected function should_display_reviews_moved_notice() : bool
+    protected function should_display_reviews_moved_notice(): bool
     {
     }
     /**
@@ -43,7 +43,7 @@ class ReviewsCommentsOverrides
      *
      * @return void
      */
-    protected function display_reviews_moved_notice() : void
+    protected function display_reviews_moved_notice(): void
     {
     }
     /**
@@ -69,7 +69,7 @@ class ReviewsCommentsOverrides
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function exclude_reviews_from_comments($args) : array
+    public function exclude_reviews_from_comments($args): array
     {
     }
 }

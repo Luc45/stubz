@@ -20,7 +20,7 @@ class CLIRunner
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $controller, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $synchronizer, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_orders_migration_controller)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $controller, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $synchronizer, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_orders_migration_controller)
     {
     }
     /**
@@ -42,7 +42,7 @@ class CLIRunner
      *
      * @return int The number of orders to be migrated.*
      */
-    public function count_unmigrated($args = array(), $assoc_args = array()) : int
+    public function count_unmigrated($args = array(), $assoc_args = array()): int
     {
     }
     /**
@@ -335,7 +335,7 @@ class CLIRunner
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function compatibility_info(array $args = array(), array $assoc_args = array()) : void
+    public function compatibility_info(array $args = array(), array $assoc_args = array()): void
     {
     }
     /**
@@ -343,7 +343,7 @@ class CLIRunner
      *
      * @since 9.1.0
      */
-    public function enable_compat_mode() : void
+    public function enable_compat_mode(): void
     {
     }
     /**
@@ -351,7 +351,7 @@ class CLIRunner
      *
      * @since 9.1.0
      */
-    public function disable_compat_mode() : void
+    public function disable_compat_mode(): void
     {
     }
 }

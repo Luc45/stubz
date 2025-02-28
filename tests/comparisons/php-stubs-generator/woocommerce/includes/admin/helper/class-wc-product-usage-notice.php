@@ -11,28 +11,28 @@ class WC_Product_Usage_Notice
      *
      * @var string
      */
-    const DISMISSED_COUNT_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_count_';
+    public const DISMISSED_COUNT_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_count_';
     /**
      * User meta key prefix to store timestamp of last dismissed product usage notice.
      * Product ID is the suffix part.
      *
      * @var string
      */
-    const DISMISSED_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_timestamp_';
+    public const DISMISSED_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_timestamp_';
     /**
      * User meta key prefix to store timestamp of last clicked remind later from
      * product usage notice. Product ID is the suffix part.
      *
      * @var string
      */
-    const REMIND_LATER_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_remind_later_timestamp_';
+    public const REMIND_LATER_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_remind_later_timestamp_';
     /**
      * User meta key to store timestamp of last dismissed of any product usage
      * notices. There's no product ID in the meta key.
      *
      * @var string
      */
-    const LAST_DISMISSED_TIMESTAMP_META = '_woocommerce_product_usage_notice_last_dismissed_timestamp';
+    public const LAST_DISMISSED_TIMESTAMP_META = '_woocommerce_product_usage_notice_last_dismissed_timestamp';
     /**
      * Loads the class, runs on init.
      *

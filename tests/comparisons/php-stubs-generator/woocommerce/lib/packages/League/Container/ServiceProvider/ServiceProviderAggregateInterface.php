@@ -11,7 +11,7 @@ interface ServiceProviderAggregateInterface extends \Automattic\WooCommerce\Vend
      *
      * @return self
      */
-    public function add($provider) : \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface;
+    public function add($provider): \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface;
     /**
      * Determines whether a service is provided by the aggregate.
      *
@@ -19,7 +19,7 @@ interface ServiceProviderAggregateInterface extends \Automattic\WooCommerce\Vend
      *
      * @return boolean
      */
-    public function provides(string $service) : bool;
+    public function provides(string $service): bool;
     /**
      * Invokes the register method of a provider that provides a specific service.
      *

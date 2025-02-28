@@ -11,10 +11,11 @@ class RealTimeOrderAlerts
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-real-time-order-alerts';
+    public const NOTE_NAME = 'wc-admin-real-time-order-alerts';
     /**
      * Get the note.
      *

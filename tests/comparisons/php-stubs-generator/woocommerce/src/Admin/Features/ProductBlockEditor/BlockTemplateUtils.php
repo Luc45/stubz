@@ -12,13 +12,13 @@ class BlockTemplateUtils
      *
      * @var string
      */
-    const TEMPLATES_ROOT_DIR = 'templates';
+    public const TEMPLATES_ROOT_DIR = 'templates';
     /**
      * Directory names.
      *
      * @var array
      */
-    const DIRECTORY_NAMES = array('TEMPLATES' => 'product-form', 'TEMPLATE_PARTS' => 'product-form/parts');
+    public const DIRECTORY_NAMES = array('TEMPLATES' => 'product-form', 'TEMPLATE_PARTS' => 'product-form/parts');
     /**
      * Return the path to a block template file.
      * Otherwise, False.

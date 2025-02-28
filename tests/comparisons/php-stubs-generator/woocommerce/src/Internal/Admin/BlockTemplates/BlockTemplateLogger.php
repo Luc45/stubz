@@ -7,16 +7,16 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
  */
 class BlockTemplateLogger
 {
-    const BLOCK_ADDED = 'block_added';
-    const BLOCK_REMOVED = 'block_removed';
-    const BLOCK_MODIFIED = 'block_modified';
-    const BLOCK_ADDED_TO_DETACHED_CONTAINER = 'block_added_to_detached_container';
-    const HIDE_CONDITION_ADDED = 'hide_condition_added';
-    const HIDE_CONDITION_REMOVED = 'hide_condition_removed';
-    const HIDE_CONDITION_ADDED_TO_DETACHED_BLOCK = 'hide_condition_added_to_detached_block';
-    const ERROR_AFTER_BLOCK_ADDED = 'error_after_block_added';
-    const ERROR_AFTER_BLOCK_REMOVED = 'error_after_block_removed';
-    const LOG_HASH_TRANSIENT_BASE_NAME = 'wc_block_template_events_log_hash_';
+    public const BLOCK_ADDED = 'block_added';
+    public const BLOCK_REMOVED = 'block_removed';
+    public const BLOCK_MODIFIED = 'block_modified';
+    public const BLOCK_ADDED_TO_DETACHED_CONTAINER = 'block_added_to_detached_container';
+    public const HIDE_CONDITION_ADDED = 'hide_condition_added';
+    public const HIDE_CONDITION_REMOVED = 'hide_condition_removed';
+    public const HIDE_CONDITION_ADDED_TO_DETACHED_BLOCK = 'hide_condition_added_to_detached_block';
+    public const ERROR_AFTER_BLOCK_ADDED = 'error_after_block_added';
+    public const ERROR_AFTER_BLOCK_REMOVED = 'error_after_block_removed';
+    public const LOG_HASH_TRANSIENT_BASE_NAME = 'wc_block_template_events_log_hash_';
     /**
      * Event types.
      *
@@ -38,7 +38,7 @@ class BlockTemplateLogger
     /**
      * Get the singleton instance.
      */
-    public static function get_instance() : \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockTemplateLogger
+    public static function get_instance(): \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockTemplateLogger
     {
     }
     /**
@@ -52,7 +52,7 @@ class BlockTemplateLogger
      *
      * @param string $template_id Template ID.
      */
-    public function template_events_to_json(string $template_id) : array
+    public function template_events_to_json(string $template_id): array
     {
     }
     /**

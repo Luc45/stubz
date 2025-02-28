@@ -30,7 +30,7 @@ abstract class WC_Deprecated_Hooks
      *
      * @param string $hook_name Hook name.
      */
-    public abstract function hook_in($hook_name);
+    abstract public function hook_in($hook_name);
     /**
      * Get old hooks to map to new hook.
      *
@@ -55,7 +55,7 @@ abstract class WC_Deprecated_Hooks
      * @param  mixed  $return_value      Returned value.
      * @return mixed
      */
-    public abstract function handle_deprecated_hook($new_hook, $old_hook, $new_callback_args, $return_value);
+    abstract public function handle_deprecated_hook($new_hook, $old_hook, $new_callback_args, $return_value);
     /**
      * Get deprecated version.
      *
@@ -81,5 +81,5 @@ abstract class WC_Deprecated_Hooks
      * @param  array  $new_callback_args New callback args.
      * @return mixed
      */
-    protected abstract function trigger_hook($old_hook, $new_callback_args);
+    abstract protected function trigger_hook($old_hook, $new_callback_args);
 }

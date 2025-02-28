@@ -10,9 +10,9 @@ class PageController
     /**
      * App entry point.
      */
-    const APP_ENTRY_POINT = 'wc-admin';
+    public const APP_ENTRY_POINT = 'wc-admin';
     // JS-powered page root.
-    const PAGE_ROOT = 'wc-admin';
+    public const PAGE_ROOT = 'wc-admin';
     /**
      * We want a single instance of this class so we can accurately track registered menus and pages.
      */

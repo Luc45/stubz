@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Caching;
 class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
 {
     use \Automattic\WooCommerce\Caching\CacheNameSpaceTrait;
+
     /**
      * Retrieves an object cached under a given key.
      *
@@ -40,7 +41,7 @@ class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
      *
      * @return bool True if the object is cached successfully, false otherwise.
      */
-    public function cache_object(string $key, $object, int $expiration, string $group = '') : bool
+    public function cache_object(string $key, $object, int $expiration, string $group = ''): bool
     {
     }
     /**
@@ -53,7 +54,7 @@ class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
      * @return array Array of return values, grouped by key. Each value is either
      *                true on success, or false on failure
      */
-    public function cache_objects(array $objects, int $expiration, string $group = '') : array
+    public function cache_objects(array $objects, int $expiration, string $group = ''): array
     {
     }
     /**
@@ -64,7 +65,7 @@ class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
      *
      * @return bool True if the object is removed from the cache successfully, false otherwise (because the object wasn't cached or for other reason).
      */
-    public function delete_cached_object(string $key, string $group = '') : bool
+    public function delete_cached_object(string $key, string $group = ''): bool
     {
     }
     /**
@@ -75,7 +76,7 @@ class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
      *
      * @return bool True if there's an object cached under the given key, false otherwise.
      */
-    public function is_cached(string $key, string $group = '') : bool
+    public function is_cached(string $key, string $group = ''): bool
     {
     }
     /**
@@ -85,7 +86,7 @@ class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
      *
      * @return bool True if the group is deleted successfully, false otherwise.
      */
-    public function delete_cache_group(string $group = '') : bool
+    public function delete_cache_group(string $group = ''): bool
     {
     }
 }

@@ -12,7 +12,7 @@ class AssignDefaultCategory
      *
      * @internal
      */
-    public final function init()
+    final public function init()
     {
     }
     /**

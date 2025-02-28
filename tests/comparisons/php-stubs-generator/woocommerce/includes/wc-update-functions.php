@@ -867,7 +867,7 @@ function wc_update_930_migrate_user_meta_for_launch_your_store_tour()
 /**
  * Recreate FTS index if it already exists, so that phone number can be added to the index.
  */
-function wc_update_940_add_phone_to_order_address_fts_index() : void
+function wc_update_940_add_phone_to_order_address_fts_index(): void
 {
 }
 /**

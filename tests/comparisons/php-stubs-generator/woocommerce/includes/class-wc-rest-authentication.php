@@ -29,7 +29,7 @@ class WC_REST_Authentication
      * @internal
      * @return self
      */
-    public static function instance() : self
+    public static function instance(): self
     {
     }
     /**

@@ -18,7 +18,7 @@ class ArrayUtil
      *
      * @return bool True if array is a list, false otherwise.
      */
-    public static function array_is_list(array $arr) : bool
+    public static function array_is_list(array $arr): bool
     {
     }
     /**
@@ -30,7 +30,7 @@ class ArrayUtil
      *
      * @return array The merged list sorted by the key values.
      */
-    public static function merge_by_key(array $arr1, array $arr2, string $key) : array
+    public static function merge_by_key(array $arr1, array $arr2, string $key): array
     {
     }
 }

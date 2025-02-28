@@ -40,13 +40,13 @@ class Synchronize
      *
      * @param Register $register The active approved download directories instance in use.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
+    final public function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
     {
     }
     /**
      * Performs any work needed to add hooks and otherwise integrate with the wider system.
      */
-    public final function init_hooks()
+    final public function init_hooks()
     {
     }
     /**
@@ -73,7 +73,7 @@ class Synchronize
      *
      * @return bool
      */
-    public function start() : bool
+    public function start(): bool
     {
     }
     /**
@@ -93,7 +93,7 @@ class Synchronize
      *
      * @return bool
      */
-    public function in_progress() : bool
+    public function in_progress(): bool
     {
     }
     /**
@@ -101,7 +101,7 @@ class Synchronize
      *
      * @return int
      */
-    public function get_progress() : int
+    public function get_progress(): int
     {
     }
 }

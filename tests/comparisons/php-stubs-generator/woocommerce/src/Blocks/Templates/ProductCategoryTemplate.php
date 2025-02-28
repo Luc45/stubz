@@ -14,7 +14,7 @@ class ProductCategoryTemplate extends \Automattic\WooCommerce\Blocks\Templates\A
      *
      * @var string
      */
-    const SLUG = 'taxonomy-product_cat';
+    public const SLUG = 'taxonomy-product_cat';
     /**
      * The template used as a fallback if that one is customized.
      *

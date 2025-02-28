@@ -16,21 +16,21 @@ abstract class AbstractTemplate
      *
      * @var string
      */
-    const SLUG = '';
+    public const SLUG = '';
     /**
      * Initialization method.
      */
-    public abstract function init();
+    abstract public function init();
     /**
      * Should return the title of the template.
      *
      * @return string
      */
-    public abstract function get_template_title();
+    abstract public function get_template_title();
     /**
      * Should return the description of the template.
      *
      * @return string
      */
-    public abstract function get_template_description();
+    abstract public function get_template_description();
 }

@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 class CartController
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\DraftOrderTrait;
+
     /**
      * Makes the cart and sessions available to a route by loading them from core.
      */

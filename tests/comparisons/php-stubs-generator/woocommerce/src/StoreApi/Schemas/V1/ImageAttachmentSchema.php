@@ -18,7 +18,7 @@ class ImageAttachmentSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\
      *
      * @var string
      */
-    const IDENTIFIER = 'image';
+    public const IDENTIFIER = 'image';
     /**
      * Product schema properties.
      *

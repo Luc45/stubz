@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  */
 final class ProductFilterStatus extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
-    const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
+    public const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
     /**
      * Register the query param keys.
      *

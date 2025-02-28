@@ -16,7 +16,7 @@ class WCCore extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      *
      * @return string The provider icon URL of the payment gateway.
      */
-    public function get_icon(\WC_Payment_Gateway $payment_gateway) : string
+    public function get_icon(\WC_Payment_Gateway $payment_gateway): string
     {
     }
 }

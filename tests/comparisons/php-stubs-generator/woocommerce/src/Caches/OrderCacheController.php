@@ -13,7 +13,7 @@ class OrderCacheController
      * @internal
      * @param OrderCache $order_cache The order cache engine to use.
      */
-    public final function init(\Automattic\WooCommerce\Caches\OrderCache $order_cache)
+    final public function init(\Automattic\WooCommerce\Caches\OrderCache $order_cache)
     {
     }
     /**
@@ -21,7 +21,7 @@ class OrderCacheController
      *
      * @return bool True if the order cache is enabled.
      */
-    public function orders_cache_usage_is_enabled() : bool
+    public function orders_cache_usage_is_enabled(): bool
     {
     }
     /**
@@ -32,7 +32,7 @@ class OrderCacheController
      * is checked by orders_cache_usage_is_enabled. In the next request the
      * feature will be again enabled or not depending on how the feature is set.
      */
-    public function temporarily_disable_orders_cache_usage() : void
+    public function temporarily_disable_orders_cache_usage(): void
     {
     }
     /**
@@ -40,13 +40,13 @@ class OrderCacheController
      *
      * @return bool True if the order cache is currently temporarily disabled.
      */
-    public function orders_cache_usage_is_temporarly_disabled() : bool
+    public function orders_cache_usage_is_temporarly_disabled(): bool
     {
     }
     /**
      * Restore the order cache usage that had been temporarily disabled.
      */
-    public function maybe_restore_orders_cache_usage() : void
+    public function maybe_restore_orders_cache_usage(): void
     {
     }
 }

@@ -10,31 +10,31 @@ class RateLimits extends \WC_Rate_Limiter
     /**
      * Cache group.
      */
-    const CACHE_GROUP = 'store_api_rate_limit';
+    public const CACHE_GROUP = 'store_api_rate_limit';
     /**
      * Rate limiting enabled default value.
      *
      * @var boolean
      */
-    const ENABLED = false;
+    public const ENABLED = false;
     /**
      * Proxy support enabled default value.
      *
      * @var boolean
      */
-    const PROXY_SUPPORT = false;
+    public const PROXY_SUPPORT = false;
     /**
      * Default amount of max requests allowed for the defined timeframe.
      *
      * @var int
      */
-    const LIMIT = 25;
+    public const LIMIT = 25;
     /**
      * Default time in seconds before rate limits are reset.
      *
      * @var int
      */
-    const SECONDS = 10;
+    public const SECONDS = 10;
     /**
      * Gets a cache prefix.
      *

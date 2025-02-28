@@ -27,7 +27,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function no_items() : void
+    public function no_items(): void
     {
     }
     /**
@@ -35,7 +35,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_bulk_actions() : array
+    protected function get_bulk_actions(): array
     {
     }
     /**
@@ -43,7 +43,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_sources_list() : array
+    protected function get_sources_list(): array
     {
     }
     /**
@@ -53,7 +53,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return void
      */
-    protected function extra_tablenav($which) : void
+    protected function extra_tablenav($which): void
     {
     }
     /**
@@ -61,7 +61,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function prepare_column_headers() : void
+    public function prepare_column_headers(): void
     {
     }
     /**
@@ -69,7 +69,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return void
      */
-    public function prepare_items() : void
+    public function prepare_items(): void
     {
     }
     /**
@@ -77,7 +77,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return array
      */
-    public function get_columns() : array
+    public function get_columns(): array
     {
     }
     /**
@@ -85,7 +85,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return array
      */
-    protected function get_sortable_columns() : array
+    protected function get_sortable_columns(): array
     {
     }
     /**
@@ -95,7 +95,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_cb($item) : string
+    public function column_cb($item): string
     {
     }
     /**
@@ -105,7 +105,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_source($item) : string
+    public function column_source($item): string
     {
     }
     /**
@@ -115,7 +115,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_created($item) : string
+    public function column_created($item): string
     {
     }
     /**
@@ -125,7 +125,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_modified($item) : string
+    public function column_modified($item): string
     {
     }
     /**
@@ -135,7 +135,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return string
      */
-    public function column_size($item) : string
+    public function column_size($item): string
     {
     }
     /**
@@ -143,7 +143,7 @@ class FileListTable extends \WP_List_Table
      *
      * @return int
      */
-    public function get_per_page_default() : int
+    public function get_per_page_default(): int
     {
     }
 }

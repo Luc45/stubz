@@ -14,7 +14,7 @@ class ProductTagTemplate extends \Automattic\WooCommerce\Blocks\Templates\Abstra
      *
      * @var string
      */
-    const SLUG = 'taxonomy-product_tag';
+    public const SLUG = 'taxonomy-product_tag';
     /**
      * The template used as a fallback if that one is customized.
      *

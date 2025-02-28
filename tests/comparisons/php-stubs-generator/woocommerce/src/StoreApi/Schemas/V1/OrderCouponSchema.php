@@ -18,7 +18,7 @@ class OrderCouponSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abst
      *
      * @var string
      */
-    const IDENTIFIER = 'order-coupon';
+    public const IDENTIFIER = 'order-coupon';
     /**
      * Cart schema properties.
      *

@@ -11,6 +11,7 @@ class OrderRefund extends \WC_Order_Refund
      * Order traits.
      */
     use \Automattic\WooCommerce\Admin\Overrides\OrderTraits;
+
     /**
      * Caches the customer ID.
      *

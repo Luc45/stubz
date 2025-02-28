@@ -17,7 +17,7 @@ trait WC_Item_Totals
      *
      * @return array having `total`|`subtotal` property.
      */
-    protected abstract function get_values_for_total($field);
+    abstract protected function get_values_for_total($field);
     /**
      * Return rounded total based on settings. Will be used by Cart and Orders.
      *

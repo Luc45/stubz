@@ -5,7 +5,7 @@
  */
 class WC_WCCOM_Site_Installation_Manager
 {
-    const STEPS = array('get_product_info', 'download_product', 'unpack_product', 'move_product', 'activate_product');
+    public const STEPS = array('get_product_info', 'download_product', 'unpack_product', 'move_product', 'activate_product');
     /**
      * The product ID.
      *
@@ -34,7 +34,7 @@ class WC_WCCOM_Site_Installation_Manager
      * @return bool
      * @throws WC_REST_WCCOM_Site_Installer_Error If installation failed to run.
      */
-    public function run_installation(string $run_until_step) : bool
+    public function run_installation(string $run_until_step): bool
     {
     }
     /**
@@ -43,7 +43,7 @@ class WC_WCCOM_Site_Installation_Manager
      * @return bool
      * @throws WC_REST_WCCOM_Site_Installer_Error If the installation cannot be rest.
      */
-    public function reset_installation() : bool
+    public function reset_installation(): bool
     {
     }
     /**
@@ -63,7 +63,7 @@ class WC_WCCOM_Site_Installation_Manager
      * @param WC_WCCOM_Site_Installation_State $state Installation state.
      * @return string
      */
-    protected function get_next_step($state) : string
+    protected function get_next_step($state): string
     {
     }
     /**

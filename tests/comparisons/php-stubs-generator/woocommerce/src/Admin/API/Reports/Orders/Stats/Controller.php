@@ -11,6 +11,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders\Stats;
 class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsController
 {
     use \Automattic\WooCommerce\Admin\API\Reports\OrderAwareControllerTrait;
+
     /**
      * Route base.
      *

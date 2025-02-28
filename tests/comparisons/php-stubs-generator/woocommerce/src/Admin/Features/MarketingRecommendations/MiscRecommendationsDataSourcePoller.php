@@ -25,7 +25,7 @@ class MiscRecommendationsDataSourcePoller extends \Automattic\WooCommerce\Admin\
     /**
      * Data Source Poller ID.
      */
-    const ID = 'misc_recommendations';
+    public const ID = 'misc_recommendations';
     /**
      * Class instance.
      *

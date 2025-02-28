@@ -9,10 +9,10 @@
  */
 class ActionScheduler_StoreSchema extends \ActionScheduler_Abstract_Schema
 {
-    const ACTIONS_TABLE = 'actionscheduler_actions';
-    const CLAIMS_TABLE = 'actionscheduler_claims';
-    const GROUPS_TABLE = 'actionscheduler_groups';
-    const DEFAULT_DATE = '0000-00-00 00:00:00';
+    public const ACTIONS_TABLE = 'actionscheduler_actions';
+    public const CLAIMS_TABLE = 'actionscheduler_claims';
+    public const GROUPS_TABLE = 'actionscheduler_groups';
+    public const DEFAULT_DATE = '0000-00-00 00:00:00';
     /**
      * Schema version.
      *

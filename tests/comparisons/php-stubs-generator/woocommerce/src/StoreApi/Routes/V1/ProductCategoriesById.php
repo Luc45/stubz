@@ -12,13 +12,13 @@ class ProductCategoriesById extends \Automattic\WooCommerce\StoreApi\Routes\V1\A
      *
      * @var string
      */
-    const IDENTIFIER = 'product-categories-by-id';
+    public const IDENTIFIER = 'product-categories-by-id';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'product-category';
+    public const SCHEMA_TYPE = 'product-category';
     /**
      * Get the path of this REST route.
      *

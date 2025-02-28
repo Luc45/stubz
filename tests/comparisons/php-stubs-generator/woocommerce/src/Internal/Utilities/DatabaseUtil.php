@@ -14,7 +14,7 @@ class DatabaseUtil
      * @param bool   $execute Ture to actually execute the queries, false to only simulate the execution.
      * @return array The result of the execution (or simulation) from dbDelta.
      */
-    public function dbdelta(string $queries = '', bool $execute = true) : array
+    public function dbdelta(string $queries = '', bool $execute = true): array
     {
     }
     /**
@@ -23,7 +23,7 @@ class DatabaseUtil
      * @param string $creation_queries The SQL queries to execute ("CREATE TABLE" statements, same format as for dbDelta).
      * @return array An array containing the names of the tables that currently don't exist in the database.
      */
-    public function get_missing_tables(string $creation_queries) : array
+    public function get_missing_tables(string $creation_queries): array
     {
     }
     /**
@@ -32,7 +32,7 @@ class DatabaseUtil
      * @param array $dbdelta_output The output from the execution of dbdelta.
      * @return array[] An array containing a 'created_tables' key whose value is an array with the names of the tables that have been (or would have been) created.
      */
-    public function parse_dbdelta_output(array $dbdelta_output) : array
+    public function parse_dbdelta_output(array $dbdelta_output): array
     {
     }
     /**
@@ -52,7 +52,7 @@ class DatabaseUtil
      * @param string $index_name The name of the index to be dropped.
      * @return bool True if the index has been dropped, false if either the table or the index don't exist.
      */
-    public function drop_table_index(string $table_name, string $index_name) : bool
+    public function drop_table_index(string $table_name, string $index_name): bool
     {
     }
     /**
@@ -72,7 +72,7 @@ class DatabaseUtil
      * @param string $index_name Index name, empty string for the primary key.
      * @return array The index columns. Empty array if the table or the index don't exist.
      */
-    public function get_index_columns(string $table_name, string $index_name = '') : array
+    public function get_index_columns(string $table_name, string $index_name = ''): array
     {
     }
     /**
@@ -103,7 +103,7 @@ class DatabaseUtil
      *
      * @return string SQL clause for INSERT...ON DUPLICATE KEY UPDATE
      */
-    public function generate_on_duplicate_statement_clause(array $columns) : string
+    public function generate_on_duplicate_statement_clause(array $columns): string
     {
     }
     /**
@@ -120,7 +120,7 @@ class DatabaseUtil
      *
      * @return int Returns the value of DB's  ON DUPLICATE KEY UPDATE clause.
      */
-    public function insert_on_duplicate_key_update($table_name, $data, $format) : int
+    public function insert_on_duplicate_key_update($table_name, $data, $format): int
     {
     }
     /**
@@ -148,7 +148,7 @@ class DatabaseUtil
      *
      * @return int Max index length.
      */
-    public function get_max_index_length() : int
+    public function get_max_index_length(): int
     {
     }
     /**
@@ -156,7 +156,7 @@ class DatabaseUtil
      *
      * @return void
      */
-    public function create_fts_index_order_address_table() : void
+    public function create_fts_index_order_address_table(): void
     {
     }
     /**
@@ -166,7 +166,7 @@ class DatabaseUtil
      *
      * @return void
      */
-    public function drop_fts_index_order_address_table() : void
+    public function drop_fts_index_order_address_table(): void
     {
     }
     /**
@@ -178,7 +178,7 @@ class DatabaseUtil
      *
      * @return string Sanitized search term.
      */
-    public function sanitise_boolean_fts_search_term(string $param) : string
+    public function sanitise_boolean_fts_search_term(string $param): string
     {
     }
     /**
@@ -186,7 +186,7 @@ class DatabaseUtil
      *
      * @return bool
      */
-    public function fts_index_on_order_address_table_exists() : bool
+    public function fts_index_on_order_address_table_exists(): bool
     {
     }
     /**
@@ -194,7 +194,7 @@ class DatabaseUtil
      *
      * @return void
      */
-    public function create_fts_index_order_item_table() : void
+    public function create_fts_index_order_item_table(): void
     {
     }
     /**
@@ -202,7 +202,7 @@ class DatabaseUtil
      *
      * @return bool
      */
-    public function fts_index_on_order_item_table_exists() : bool
+    public function fts_index_on_order_item_table_exists(): bool
     {
     }
 }

@@ -78,7 +78,7 @@ class ArrayUtil
      *
      * @return string
      */
-    public static function to_ranges_string(array $items, string $item_separator = ', ', string $range_separator = '-', bool $sort = true) : string
+    public static function to_ranges_string(array $items, string $item_separator = ', ', string $range_separator = '-', bool $sort = true): string
     {
     }
     /**
@@ -90,7 +90,7 @@ class ArrayUtil
      * @param int    $selector_type Selector type, one of the SELECT_BY_* constants.
      * @return array The selected values.
      */
-    public static function select(array $items, string $selector_name, int $selector_type = self::SELECT_BY_AUTO) : array
+    public static function select(array $items, string $selector_name, int $selector_type = self::SELECT_BY_AUTO): array
     {
     }
     /**
@@ -102,7 +102,7 @@ class ArrayUtil
      *
      * @return array The converted assoc array.
      */
-    public static function select_as_assoc(array $items, string $selector_name, int $selector_type = self::SELECT_BY_AUTO) : array
+    public static function select_as_assoc(array $items, string $selector_name, int $selector_type = self::SELECT_BY_AUTO): array
     {
     }
     /**
@@ -126,7 +126,7 @@ class ArrayUtil
      *
      * @return array The difference between the two arrays.
      */
-    public static function deep_assoc_array_diff(array $array1, array $array2, bool $strict = true) : array
+    public static function deep_assoc_array_diff(array $array1, array $array2, bool $strict = true): array
     {
     }
     /**
@@ -136,7 +136,7 @@ class ArrayUtil
      * @param mixed $value The value to maybe push.
      * @return bool True if the value has been added to the array, false if the value was already in the array.
      */
-    public static function push_once(array &$items, $value) : bool
+    public static function push_once(array &$items, $value): bool
     {
     }
     /**
@@ -148,7 +148,7 @@ class ArrayUtil
      * @return bool True if the key has been added to the array, false if not (the key already existed).
      * @throws \Exception The key already exists in the array but the value is not an array.
      */
-    public static function ensure_key_is_array(array &$items, string $key, bool $throw_if_existing_is_not_array = false) : bool
+    public static function ensure_key_is_array(array &$items, string $key, bool $throw_if_existing_is_not_array = false): bool
     {
     }
     /**
@@ -162,7 +162,7 @@ class ArrayUtil
      * @param bool   $single_values True to only return the last suitable array found for each column value.
      * @return array The grouped array.
      */
-    public static function group_by_column(array $items, string $column, bool $single_values = false) : array
+    public static function group_by_column(array $items, string $column, bool $single_values = false): array
     {
     }
 }

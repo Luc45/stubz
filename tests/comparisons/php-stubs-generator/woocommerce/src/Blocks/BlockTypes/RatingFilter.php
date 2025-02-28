@@ -13,7 +13,7 @@ class RatingFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      * @var string
      */
     protected $block_name = 'rating-filter';
-    const RATING_QUERY_VAR = 'rating_filter';
+    public const RATING_QUERY_VAR = 'rating_filter';
     /**
      * Get the frontend script handle for this block type.
      *

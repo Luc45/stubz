@@ -14,7 +14,7 @@ class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Block
     /**
      * The custom ID of the loop item block as the replacement of the core/null block.
      */
-    const LOOP_ITEM_ID = 'product-loop-item';
+    public const LOOP_ITEM_ID = 'product-loop-item';
     /**
      * The data of supported hooks, containing the hook name, the block name,
      * position, and the callbacks.

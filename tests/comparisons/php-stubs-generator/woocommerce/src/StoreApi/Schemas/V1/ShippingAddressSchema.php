@@ -20,7 +20,7 @@ class ShippingAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\
      *
      * @var string
      */
-    const IDENTIFIER = 'shipping-address';
+    public const IDENTIFIER = 'shipping-address';
     /**
      * Convert a term object into an object suitable for the response.
      *

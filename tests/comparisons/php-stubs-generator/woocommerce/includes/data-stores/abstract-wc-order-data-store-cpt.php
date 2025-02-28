@@ -56,7 +56,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP implem
      * @param int $order_id The order id to check.
      * @return bool True if an order exists with the given name.
      */
-    public function order_exists($order_id) : bool
+    public function order_exists($order_id): bool
     {
     }
     /**

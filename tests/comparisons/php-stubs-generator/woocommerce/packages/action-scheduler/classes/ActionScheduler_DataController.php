@@ -14,15 +14,15 @@
 class ActionScheduler_DataController
 {
     /** Action data store class name. */
-    const DATASTORE_CLASS = 'ActionScheduler_DBStore';
+    public const DATASTORE_CLASS = 'ActionScheduler_DBStore';
     /** Logger data store class name. */
-    const LOGGER_CLASS = 'ActionScheduler_DBLogger';
+    public const LOGGER_CLASS = 'ActionScheduler_DBLogger';
     /** Migration status option name. */
-    const STATUS_FLAG = 'action_scheduler_migration_status';
+    public const STATUS_FLAG = 'action_scheduler_migration_status';
     /** Migration status option value. */
-    const STATUS_COMPLETE = 'complete';
+    public const STATUS_COMPLETE = 'complete';
     /** Migration minimum required PHP version. */
-    const MIN_PHP_VERSION = '5.5';
+    public const MIN_PHP_VERSION = '5.5';
     /**
      * Get a flag indicating whether the migration environment dependencies are met.
      *

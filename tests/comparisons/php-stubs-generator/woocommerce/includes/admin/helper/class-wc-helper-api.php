@@ -40,7 +40,7 @@ class WC_Helper_API
      * @param string $url The URL to add the access token and signature to.
      * @return string
      */
-    public static function add_auth_parameters(string $url) : string
+    public static function add_auth_parameters(string $url): string
     {
     }
     /**

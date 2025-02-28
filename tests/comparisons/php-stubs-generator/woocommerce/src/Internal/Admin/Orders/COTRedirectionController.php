@@ -18,7 +18,7 @@ class COTRedirectionController
     /**
      * Add hooks needed to perform our magic.
      */
-    public function setup() : void
+    public function setup(): void
     {
     }
     /**

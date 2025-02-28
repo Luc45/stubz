@@ -13,7 +13,7 @@ class ReceiptRenderingRestController extends \Automattic\WooCommerce\Internal\Re
      *
      * @return string
      */
-    protected function get_rest_api_namespace() : string
+    protected function get_rest_api_namespace(): string
     {
     }
     /**

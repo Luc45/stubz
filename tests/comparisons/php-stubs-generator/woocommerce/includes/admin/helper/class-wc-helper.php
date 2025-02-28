@@ -211,7 +211,7 @@ class WC_Helper
      * @param string $request_hash request hash to be verified.
      * @return bool
      */
-    public static function verify_request_hash(string $request_hash) : bool
+    public static function verify_request_hash(string $request_hash): bool
     {
     }
     /**
@@ -367,7 +367,7 @@ class WC_Helper
      *
      * @return bool
      */
-    public static function is_site_connected() : bool
+    public static function is_site_connected(): bool
     {
     }
     /**
@@ -389,7 +389,7 @@ class WC_Helper
      *
      * @return void
      */
-    public static function update_auth_option(string $access_token, string $access_token_secret, int $site_id) : void
+    public static function update_auth_option(string $access_token, string $access_token_secret, int $site_id): void
     {
     }
     /**

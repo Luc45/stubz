@@ -1421,7 +1421,7 @@ class WC_Order extends \WC_Abstract_Order
      *
      * @return bool If the operation was successful.
      */
-    public function untrash() : bool
+    public function untrash(): bool
     {
     }
     /**

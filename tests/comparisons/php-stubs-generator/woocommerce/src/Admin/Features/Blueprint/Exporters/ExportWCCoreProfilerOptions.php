@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
 class ExportWCCoreProfilerOptions implements \Automattic\WooCommerce\Blueprint\Exporters\StepExporter, \Automattic\WooCommerce\Blueprint\Exporters\HasAlias
 {
     use \Automattic\WooCommerce\Blueprint\UseWPFunctions;
+
     /**
      * Export the step
      *

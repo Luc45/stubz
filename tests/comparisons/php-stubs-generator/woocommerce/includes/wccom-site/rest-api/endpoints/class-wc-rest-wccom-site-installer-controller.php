@@ -28,7 +28,7 @@ class WC_REST_WCCOM_Site_Installer_Controller extends \WC_REST_WCCOM_Site_Contro
      * @param WP_USER $user User object.
      * @return bool
      */
-    public function user_has_permission($user) : bool
+    public function user_has_permission($user): bool
     {
     }
     /**

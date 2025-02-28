@@ -23,7 +23,7 @@ class Settings
      *
      * @return string The full directory path, with trailing slash.
      */
-    public static function get_log_directory(bool $create_dir = true) : string
+    public static function get_log_directory(bool $create_dir = true): string
     {
     }
     /**
@@ -35,7 +35,7 @@ class Settings
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function save_settings(string $view) : void
+    public function save_settings(string $view): void
     {
     }
     /**
@@ -43,7 +43,7 @@ class Settings
      *
      * @return void
      */
-    public function render_form() : void
+    public function render_form(): void
     {
     }
     /**
@@ -51,7 +51,7 @@ class Settings
      *
      * @return bool
      */
-    public function logging_is_enabled() : bool
+    public function logging_is_enabled(): bool
     {
     }
     /**
@@ -59,7 +59,7 @@ class Settings
      *
      * @return string
      */
-    public function get_default_handler() : string
+    public function get_default_handler(): string
     {
     }
     /**
@@ -67,7 +67,7 @@ class Settings
      *
      * @return int
      */
-    public function get_retention_period() : int
+    public function get_retention_period(): int
     {
     }
     /**
@@ -75,7 +75,7 @@ class Settings
      *
      * @return string
      */
-    public function get_level_threshold() : string
+    public function get_level_threshold(): string
     {
     }
 }

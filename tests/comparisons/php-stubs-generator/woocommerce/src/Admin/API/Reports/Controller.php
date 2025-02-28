@@ -13,6 +13,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
 {
     use \Automattic\WooCommerce\Admin\API\Reports\OrderAwareControllerTrait;
+
     /**
      * Get all reports.
      *

@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
  */
 class Payments
 {
-    const USER_PAYMENTS_NOX_PROFILE_KEY = 'woocommerce_payments_nox_profile';
-    const SUGGESTIONS_CONTEXT = 'wc_settings_payments';
+    public const USER_PAYMENTS_NOX_PROFILE_KEY = 'woocommerce_payments_nox_profile';
+    public const SUGGESTIONS_CONTEXT = 'wc_settings_payments';
     /**
      * Initialize the class instance.
      *
@@ -17,7 +17,7 @@ class Payments
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders $payment_providers, \Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions) : void
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders $payment_providers, \Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions): void
     {
     }
     /**
@@ -29,7 +29,7 @@ class Payments
      * @return array The payment providers details list.
      * @throws Exception If there are malformed or invalid suggestions.
      */
-    public function get_payment_providers(string $location) : array
+    public function get_payment_providers(string $location): array
     {
     }
     /**
@@ -40,7 +40,7 @@ class Payments
      * @return array[] The payment extension suggestions for the given location, split into preferred and other.
      * @throws Exception If there are malformed or invalid suggestions.
      */
-    public function get_payment_extension_suggestions(string $location) : array
+    public function get_payment_extension_suggestions(string $location): array
     {
     }
     /**
@@ -48,7 +48,7 @@ class Payments
      *
      * @return array The payment extension suggestions categories.
      */
-    public function get_payment_extension_suggestion_categories() : array
+    public function get_payment_extension_suggestion_categories(): array
     {
     }
     /**
@@ -57,7 +57,7 @@ class Payments
      * @return string The ISO 3166-1 alpha-2 country code to use for the overall business location.
      *                If the user didn't set a location, the WC base location country code is used.
      */
-    public function get_country() : string
+    public function get_country(): string
     {
     }
     /**
@@ -65,7 +65,7 @@ class Payments
      *
      * @param string $location The country code. This should be a ISO 3166-1 alpha-2 country code.
      */
-    public function set_country(string $location) : bool
+    public function set_country(string $location): bool
     {
     }
     /**
@@ -75,7 +75,7 @@ class Payments
      *
      * @return bool True if the payment providers ordering was successfully updated, false otherwise.
      */
-    public function update_payment_providers_order_map(array $order_map) : bool
+    public function update_payment_providers_order_map(array $order_map): bool
     {
     }
     /**
@@ -86,7 +86,7 @@ class Payments
      * @return bool True if the suggestion was successfully hidden, false otherwise.
      * @throws Exception If the suggestion ID is invalid.
      */
-    public function hide_payment_extension_suggestion(string $id) : bool
+    public function hide_payment_extension_suggestion(string $id): bool
     {
     }
     /**
@@ -101,7 +101,7 @@ class Payments
      *              False if the incentive was already dismissed or could not be dismissed.
      * @throws Exception If the incentive could not be dismissed due to an error.
      */
-    public function dismiss_extension_suggestion_incentive(string $suggestion_id, string $incentive_id, string $context = 'all') : bool
+    public function dismiss_extension_suggestion_incentive(string $suggestion_id, string $incentive_id, string $context = 'all'): bool
     {
     }
 }

@@ -10,7 +10,7 @@ class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Stor
     /**
      * Names of the database fields for the download permissions table.
      */
-    const DOWNLOAD_PERMISSION_DB_FIELDS = array('download_id', 'product_id', 'user_id', 'user_email', 'order_id', 'order_key', 'downloads_remaining', 'access_granted', 'download_count', 'access_expires');
+    public const DOWNLOAD_PERMISSION_DB_FIELDS = array('download_id', 'product_id', 'user_id', 'user_email', 'order_id', 'order_key', 'downloads_remaining', 'access_granted', 'download_count', 'access_expires');
     /**
      * Create download permission for a user, from an array of data.
      *

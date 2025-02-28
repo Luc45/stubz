@@ -14,7 +14,7 @@ class CSVUploadHelper
      *
      * @return string
      */
-    protected function get_import_subdir_name() : string
+    protected function get_import_subdir_name(): string
     {
     }
     /**
@@ -25,7 +25,7 @@ class CSVUploadHelper
      * @return string
      * @throws \Exception In case the upload directory doesn't exits or can't be created.
      */
-    public function get_import_dir(bool $create = true) : string
+    public function get_import_dir(bool $create = true): string
     {
     }
     /**
@@ -43,7 +43,7 @@ class CSVUploadHelper
      *
      * @throws \Exception In case of error.
      */
-    public function handle_csv_upload(string $import_type, string $files_index = 'import', ?array $allowed_mime_types = null) : array
+    public function handle_csv_upload(string $import_type, string $files_index = 'import', ?array $allowed_mime_types = null): array
     {
     }
     /**
@@ -54,7 +54,7 @@ class CSVUploadHelper
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function override_upload_dir($uploads) : array
+    public function override_upload_dir($uploads): array
     {
     }
     /**
@@ -66,7 +66,7 @@ class CSVUploadHelper
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function override_unique_filename(string $filename, string $ext) : string
+    public function override_unique_filename(string $filename, string $ext): string
     {
     }
     /**
@@ -78,7 +78,7 @@ class CSVUploadHelper
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function remove_txt_from_uploaded_file(array $file) : array
+    public function remove_txt_from_uploaded_file(array $file): array
     {
     }
 }

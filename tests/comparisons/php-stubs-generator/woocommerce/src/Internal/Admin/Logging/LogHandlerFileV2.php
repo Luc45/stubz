@@ -50,7 +50,7 @@ class LogHandlerFileV2 extends \WC_Log_Handler
      *
      * @return string
      */
-    protected function determine_source() : string
+    protected function determine_source(): string
     {
     }
     /**
@@ -60,7 +60,7 @@ class LogHandlerFileV2 extends \WC_Log_Handler
      *
      * @return int The number of files that were deleted.
      */
-    public function clear(string $source) : int
+    public function clear(string $source): int
     {
     }
     /**
@@ -70,7 +70,7 @@ class LogHandlerFileV2 extends \WC_Log_Handler
      *
      * @return int The number of files that were deleted.
      */
-    public function delete_logs_before_timestamp(int $timestamp = 0) : int
+    public function delete_logs_before_timestamp(int $timestamp = 0): int
     {
     }
 }

@@ -12,13 +12,13 @@ class ProductReviews extends \Automattic\WooCommerce\StoreApi\Routes\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'product-reviews';
+    public const IDENTIFIER = 'product-reviews';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'product-review';
+    public const SCHEMA_TYPE = 'product-review';
     /**
      * Get the path of this REST route.
      *

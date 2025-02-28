@@ -25,7 +25,7 @@ class ReceiptRenderingEngine
      * @param LegacyProxy          $legacy_proxy The instance of LegacyProxy to use.
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\TransientFiles\TransientFilesEngine $transient_files_engine, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+    final public function init(\Automattic\WooCommerce\Internal\TransientFiles\TransientFilesEngine $transient_files_engine, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
     {
     }
     /**
@@ -46,7 +46,7 @@ class ReceiptRenderingEngine
      * @throws InvalidArgumentException Invalid expiration date (wrongly formatted, or it's a date in the past).
      * @throws Exception The directory to store the file doesn't exist and can't be created.
      */
-    public function generate_receipt($order, $expiration_date = null, bool $force_new = false) : ?string
+    public function generate_receipt($order, $expiration_date = null, bool $force_new = false): ?string
     {
     }
     /**
@@ -59,7 +59,7 @@ class ReceiptRenderingEngine
      * @return string|null The receipt file name, or null if no receipt is currently available for the order.
      * @throws Exception Thrown if a wrong file path is passed.
      */
-    public function get_existing_receipt($order) : ?string
+    public function get_existing_receipt($order): ?string
     {
     }
 }

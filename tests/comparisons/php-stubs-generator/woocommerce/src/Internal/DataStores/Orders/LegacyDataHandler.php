@@ -16,7 +16,7 @@ class LegacyDataHandler
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator)
     {
     }
     /**
@@ -25,7 +25,7 @@ class LegacyDataHandler
      * @param array $order_ids If provided, total is computed only among IDs in this array, which can be either individual IDs or ranges like "100-200".
      * @return int Number of orders.
      */
-    public function count_orders_for_cleanup($order_ids = array()) : int
+    public function count_orders_for_cleanup($order_ids = array()): int
     {
     }
     /**
@@ -35,7 +35,7 @@ class LegacyDataHandler
      * @param int   $limit     Limit the number of results.
      * @return array[int] Order IDs.
      */
-    public function get_orders_for_cleanup($order_ids = array(), int $limit = 0) : array
+    public function get_orders_for_cleanup($order_ids = array(), int $limit = 0): array
     {
     }
     /**
@@ -46,7 +46,7 @@ class LegacyDataHandler
      * @return void
      * @throws \Exception When an error occurs.
      */
-    public function cleanup_post_data(int $order_id, bool $skip_checks = false) : void
+    public function cleanup_post_data(int $order_id, bool $skip_checks = false): void
     {
     }
     /**
@@ -58,7 +58,7 @@ class LegacyDataHandler
      * @param int $order_id Order ID.
      * @return array Array of [HPOS value, post value] keyed by property, for all properties where HPOS and post value differ.
      */
-    public function get_diff_for_order(int $order_id) : array
+    public function get_diff_for_order(int $order_id): array
     {
     }
     /**

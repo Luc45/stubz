@@ -45,7 +45,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      * @param BatchProcessingController        $batch_processing_controller The batch processing controller to use.
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy, \Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, \Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, \Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator, \Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy, \Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller)
     {
     }
     /**
@@ -53,7 +53,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return bool True if the custom orders tables exist in the database.
      */
-    public function check_orders_table_exists() : bool
+    public function check_orders_table_exists(): bool
     {
     }
     /**
@@ -61,7 +61,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return bool Whether orders table exists.
      */
-    public function get_table_exists() : bool
+    public function get_table_exists(): bool
     {
     }
     /**
@@ -83,7 +83,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return bool
      */
-    public function data_sync_is_enabled() : bool
+    public function data_sync_is_enabled(): bool
     {
     }
     /**
@@ -91,7 +91,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return string
      */
-    public function get_background_sync_mode() : string
+    public function get_background_sync_mode(): string
     {
     }
     /**
@@ -99,7 +99,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return bool
      */
-    public function background_sync_is_enabled() : bool
+    public function background_sync_is_enabled(): bool
     {
     }
     /**
@@ -146,7 +146,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return int
      */
-    public function get_background_sync_interval() : int
+    public function get_background_sync_interval(): int
     {
     }
     /**
@@ -195,7 +195,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return int
      */
-    public function get_current_orders_pending_sync_count_cached() : int
+    public function get_current_orders_pending_sync_count_cached(): int
     {
     }
     /**
@@ -207,7 +207,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @param bool $use_cache Whether to use the cached value instead of fetching from database.
      */
-    public function get_current_orders_pending_sync_count($use_cache = false) : int
+    public function get_current_orders_pending_sync_count($use_cache = false): int
     {
     }
     /**
@@ -215,7 +215,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return bool Whether the custom orders table the authoritative data source for orders currently.
      */
-    public function custom_orders_table_is_authoritative() : bool
+    public function custom_orders_table_is_authoritative(): bool
     {
     }
     /**
@@ -250,7 +250,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @param array $batch Batch details.
      */
-    public function process_batch(array $batch) : void
+    public function process_batch(array $batch): void
     {
     }
     /**
@@ -258,7 +258,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return int Number of pending records.
      */
-    public function get_total_pending_count() : int
+    public function get_total_pending_count(): int
     {
     }
     /**
@@ -268,7 +268,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return array Batch of records.
      */
-    public function get_next_batch_to_process(int $size) : array
+    public function get_next_batch_to_process(int $size): array
     {
     }
     /**
@@ -276,7 +276,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return int Default batch size.
      */
-    public function get_default_batch_size() : int
+    public function get_default_batch_size(): int
     {
     }
     /**
@@ -284,7 +284,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return string Name of the process.
      */
-    public function get_name() : string
+    public function get_name(): string
     {
     }
     /**
@@ -292,7 +292,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @return string Description.
      */
-    public function get_description() : string
+    public function get_description(): string
     {
     }
     /**
@@ -322,7 +322,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_deleted_post($postid, $post) : void
+    public function handle_deleted_post($postid, $post): void
     {
     }
     /**
@@ -334,7 +334,7 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function handle_updated_order($order_id) : void
+    public function handle_updated_order($order_id): void
     {
     }
     /**

@@ -13,7 +13,7 @@ class Filterer
      * @internal
      * @param LookupDataStore $data_store The data store to use.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
+    final public function init(\Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
     {
     }
     /**

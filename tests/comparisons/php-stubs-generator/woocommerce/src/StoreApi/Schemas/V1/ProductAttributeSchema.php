@@ -18,7 +18,7 @@ class ProductAttributeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1
      *
      * @var string
      */
-    const IDENTIFIER = 'product-attribute';
+    public const IDENTIFIER = 'product-attribute';
     /**
      * Term properties.
      *

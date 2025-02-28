@@ -23,7 +23,7 @@ class URL
      *
      * @return string
      */
-    public function __toString() : string
+    public function __toString(): string
     {
     }
     /**
@@ -31,7 +31,7 @@ class URL
      *
      * @return string[]
      */
-    public function get_all_parent_urls() : array
+    public function get_all_parent_urls(): array
     {
     }
     /**
@@ -63,7 +63,7 @@ class URL
      *
      * @return string
      */
-    public function get_url(array $component_overrides = array()) : string
+    public function get_url(array $component_overrides = array()): string
     {
     }
     /**
@@ -73,7 +73,7 @@ class URL
      *
      * @return string
      */
-    public function get_path(?string $path_override = null) : string
+    public function get_path(?string $path_override = null): string
     {
     }
     /**
@@ -81,7 +81,7 @@ class URL
      *
      * @return bool True if absolute, else false.
      */
-    public function is_absolute() : bool
+    public function is_absolute(): bool
     {
     }
     /**
@@ -89,7 +89,7 @@ class URL
      *
      * @return bool True if relative, else false.
      */
-    public function is_relative() : bool
+    public function is_relative(): bool
     {
     }
 }

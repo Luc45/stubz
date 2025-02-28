@@ -141,5 +141,5 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
      *        Generally, this should be capitalised and not localised as it's a proper noun.
      * @return int The number of actions processed.
      */
-    public abstract function run($context = '');
+    abstract public function run($context = '');
 }

@@ -14,7 +14,7 @@ class CheckoutHeaderTemplate extends \Automattic\WooCommerce\Blocks\Templates\Ab
      *
      * @var string
      */
-    const SLUG = 'checkout-header';
+    public const SLUG = 'checkout-header';
     /**
      * The template part area where the template part belongs.
      *

@@ -19,7 +19,7 @@ class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      *
      * @return bool True if the payment gateway is in test mode, false otherwise.
      */
-    public function is_in_test_mode(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_in_test_mode(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
     /**
@@ -32,7 +32,7 @@ class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      *
      * @return bool True if the payment gateway is in dev mode, false otherwise.
      */
-    public function is_in_dev_mode(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_in_dev_mode(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
     /**
@@ -43,7 +43,7 @@ class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      * @return bool True if the payment gateway account is connected, false otherwise.
      *              If the payment gateway does not provide the information, it will return true.
      */
-    public function is_account_connected(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_account_connected(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
     /**
@@ -55,7 +55,7 @@ class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      *              If the payment gateway does not provide the information,
      *              it will infer it from having a connected account.
      */
-    public function is_onboarding_completed(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_onboarding_completed(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
     /**
@@ -68,7 +68,7 @@ class PayPal extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      *
      * @return bool True if the payment gateway is in test mode onboarding, false otherwise.
      */
-    public function is_in_test_mode_onboarding(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_in_test_mode_onboarding(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
 }

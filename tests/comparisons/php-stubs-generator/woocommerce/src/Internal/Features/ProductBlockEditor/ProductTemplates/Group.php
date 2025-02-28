@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 class Group extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\ProductBlock implements \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
 {
     use \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockContainerTrait;
+
     // phpcs:disable Squiz.Commenting.FunctionCommentThrowTag.WrongNumber
     /**
      * Group Block constructor.
@@ -29,7 +30,7 @@ class Group extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor
      *
      * @param array $block_config The block data.
      */
-    public function add_section(array $block_config) : \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface
+    public function add_section(array $block_config): \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface
     {
     }
 }

@@ -372,7 +372,7 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT implemen
      *
      * @return bool If the operation was successful.
      */
-    public function untrash_order(\WC_Order $order) : bool
+    public function untrash_order(\WC_Order $order): bool
     {
     }
 }

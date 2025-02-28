@@ -143,6 +143,6 @@ function wc_rest_is_from_product_editor()
  *
  * @return bool True if the namespace should be loaded, false otherwise.
  */
-function wc_rest_should_load_namespace(string $ns, string $rest_route = '') : bool
+function wc_rest_should_load_namespace(string $ns, string $rest_route = ''): bool
 {
 }

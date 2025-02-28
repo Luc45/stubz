@@ -33,7 +33,7 @@ class PostsToOrdersMigrationController
      *
      * @param array $order_post_ids List of post IDs of the orders to migrate.
      */
-    public function migrate_orders(array $order_post_ids) : void
+    public function migrate_orders(array $order_post_ids): void
     {
     }
     /**
@@ -43,7 +43,7 @@ class PostsToOrdersMigrationController
      *
      * @return array Array of failed IDs along with columns.
      */
-    public function verify_migrated_orders(array $order_post_ids) : array
+    public function verify_migrated_orders(array $order_post_ids): array
     {
     }
     /**
@@ -51,7 +51,7 @@ class PostsToOrdersMigrationController
      *
      * @param int $order_post_id Post ID of the order to migrate.
      */
-    public function migrate_order(int $order_post_id) : void
+    public function migrate_order(int $order_post_id): void
     {
     }
 }

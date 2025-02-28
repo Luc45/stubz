@@ -18,7 +18,7 @@ class CartCouponSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstr
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-coupon';
+    public const IDENTIFIER = 'cart-coupon';
     /**
      * Cart schema properties.
      *

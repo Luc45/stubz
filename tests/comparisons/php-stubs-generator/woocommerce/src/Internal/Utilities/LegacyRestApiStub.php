@@ -29,7 +29,7 @@ class LegacyRestApiStub implements \Automattic\WooCommerce\Internal\RegisterHook
      * @internal
      * @param RestApiUtil $rest_api_util The instance of RestApiUtil to use.
      */
-    public final function init(\Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util)
+    final public function init(\Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util)
     {
     }
     /**

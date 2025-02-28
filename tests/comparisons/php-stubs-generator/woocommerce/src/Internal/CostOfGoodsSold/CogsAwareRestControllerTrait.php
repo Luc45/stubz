@@ -8,13 +8,14 @@ namespace Automattic\WooCommerce\Internal\CostOfGoodsSold;
 trait CogsAwareRestControllerTrait
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * Add Cost of Goods Sold related information for a given product to the array of data that will become the REST response.
      *
      * @param array      $data Array of response data.
      * @param WC_Product $product Product to get the information from.
      */
-    private function add_cogs_info_to_returned_product_data(array &$data, $product) : void
+    private function add_cogs_info_to_returned_product_data(array &$data, $product): void
     {
     }
     /**
@@ -23,7 +24,7 @@ trait CogsAwareRestControllerTrait
      * @param WP_Rest_Request $request Request data.
      * @param WC_Product      $product The product to apply the data to.
      */
-    private function set_cogs_info_in_product_object($request, $product) : void
+    private function set_cogs_info_in_product_object($request, $product): void
     {
     }
     /**
@@ -33,7 +34,7 @@ trait CogsAwareRestControllerTrait
      * @param bool  $for_variations_controller True if the information is for an endpoint in the variations controller.
      * @return array Updated schema information.
      */
-    private function add_cogs_related_product_schema(array $schema, bool $for_variations_controller) : array
+    private function add_cogs_related_product_schema(array $schema, bool $for_variations_controller): array
     {
     }
 }

@@ -14,7 +14,7 @@ class Product extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
      *
      * @var string
      */
-    const AI_CONTENT_GENERATED = 'ai_content_generated';
+    public const AI_CONTENT_GENERATED = 'ai_content_generated';
     /**
      * Endpoint.
      *

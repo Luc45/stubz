@@ -39,5 +39,5 @@ abstract class AbstractDependencyType
      *
      * @return void
      */
-    public abstract function get(\Automattic\WooCommerce\Blocks\Registry\Container $container);
+    abstract public function get(\Automattic\WooCommerce\Blocks\Registry\Container $container);
 }

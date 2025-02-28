@@ -16,7 +16,7 @@ class COTMigrationUtil
      *
      * @return void
      */
-    public final function init(\Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $table_controller, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
+    final public function init(\Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $table_controller, \Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
     {
     }
     /**
@@ -26,7 +26,7 @@ class COTMigrationUtil
      *
      * @return string
      */
-    public function get_order_admin_screen() : string
+    public function get_order_admin_screen(): string
     {
     }
     /**
@@ -34,7 +34,7 @@ class COTMigrationUtil
      *
      * @return bool
      */
-    public function is_custom_order_tables_in_sync() : bool
+    public function is_custom_order_tables_in_sync(): bool
     {
     }
     /**
@@ -68,7 +68,7 @@ class COTMigrationUtil
      *
      * @return int Order or post ID.
      */
-    public function get_post_or_order_id($post_or_order_object) : int
+    public function get_post_or_order_id($post_or_order_object): int
     {
     }
     /**
@@ -79,7 +79,7 @@ class COTMigrationUtil
      *
      * @return bool Whether the passed param is an order.
      */
-    public function is_order($order_id, array $types = array('shop_order')) : bool
+    public function is_order($order_id, array $types = array('shop_order')): bool
     {
     }
     /**

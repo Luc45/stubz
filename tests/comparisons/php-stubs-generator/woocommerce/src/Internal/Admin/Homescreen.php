@@ -10,7 +10,7 @@ class Homescreen
     /**
      * Menu slug.
      */
-    const MENU_SLUG = 'wc-admin';
+    public const MENU_SLUG = 'wc-admin';
     /**
      * Class instance.
      *

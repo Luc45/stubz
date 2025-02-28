@@ -192,7 +192,7 @@ class WC_Admin_Log_Table_List extends \WP_List_Table
      *
      * @return int
      */
-    public function get_per_page_default() : int
+    public function get_per_page_default(): int
     {
     }
 }

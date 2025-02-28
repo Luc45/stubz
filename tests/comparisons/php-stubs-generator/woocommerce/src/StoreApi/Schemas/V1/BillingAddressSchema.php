@@ -20,7 +20,7 @@ class BillingAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\A
      *
      * @var string
      */
-    const IDENTIFIER = 'billing-address';
+    public const IDENTIFIER = 'billing-address';
     /**
      * Term properties.
      *

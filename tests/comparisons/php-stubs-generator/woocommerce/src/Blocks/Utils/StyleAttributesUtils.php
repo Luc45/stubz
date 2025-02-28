@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
 class StyleAttributesUtils
 {
     // Empty style array.
-    const EMPTY_STYLE = ['class' => '', 'style' => '', 'value' => ''];
+    public const EMPTY_STYLE = ['class' => '', 'style' => '', 'value' => ''];
     /**
      * If color value is in preset format, convert it to a CSS var. Else return same value
      * For example:

@@ -85,7 +85,7 @@ class WC_Product_CSV_Importer_Controller
      *
      * @throws \Exception When file validation fails.
      */
-    protected static function check_file_path(string $path) : void
+    protected static function check_file_path(string $path): void
     {
     }
     /**

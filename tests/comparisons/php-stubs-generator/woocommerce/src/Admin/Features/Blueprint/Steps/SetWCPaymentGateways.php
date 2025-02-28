@@ -41,7 +41,7 @@ class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
      *
      * @return string
      */
-    public static function get_step_name() : string
+    public static function get_step_name(): string
     {
     }
     /**
@@ -50,7 +50,7 @@ class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
      * @param int $version Optional version number of the schema.
      * @return array The schema array.
      */
-    public static function get_schema($version = 1) : array
+    public static function get_schema($version = 1): array
     {
     }
     /**
@@ -58,7 +58,7 @@ class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
      *
      * @return array The JSON array.
      */
-    public function prepare_json_array() : array
+    public function prepare_json_array(): array
     {
     }
 }

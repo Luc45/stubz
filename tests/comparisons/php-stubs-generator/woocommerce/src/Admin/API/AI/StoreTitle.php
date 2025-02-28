@@ -14,19 +14,19 @@ class StoreTitle extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
      *
      * @var string
      */
-    const STORE_TITLE_OPTION_NAME = 'blogname';
+    public const STORE_TITLE_OPTION_NAME = 'blogname';
     /**
      * The AI generated store title option name.
      *
      * @var string
      */
-    const AI_STORE_TITLE_OPTION_NAME = 'ai_generated_site_title';
+    public const AI_STORE_TITLE_OPTION_NAME = 'ai_generated_site_title';
     /**
      * The default store title.
      *
      * @var string
      */
-    const DEFAULT_TITLE = 'Site Title';
+    public const DEFAULT_TITLE = 'Site Title';
     /**
      * Endpoint.
      *

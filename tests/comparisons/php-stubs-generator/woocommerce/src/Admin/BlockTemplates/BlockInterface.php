@@ -34,15 +34,15 @@ interface BlockInterface
     /**
      * Get the block name.
      */
-    public function get_name() : string;
+    public function get_name(): string;
     /**
      * Get the block ID.
      */
-    public function get_id() : string;
+    public function get_id(): string;
     /**
      * Get the block order.
      */
-    public function get_order() : int;
+    public function get_order(): int;
     /**
      * Set the block order.
      *
@@ -52,7 +52,7 @@ interface BlockInterface
     /**
      * Get the block attributes.
      */
-    public function get_attributes() : array;
+    public function get_attributes(): array;
     /**
      * Set the block attributes.
      *
@@ -69,11 +69,11 @@ interface BlockInterface
     /**
      * Get the parent container that the block belongs to.
      */
-    public function &get_parent() : \Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface;
+    public function &get_parent(): \Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface;
     /**
      * Get the root template that the block belongs to.
      */
-    public function &get_root_template() : \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface;
+    public function &get_root_template(): \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface;
     /**
      * Remove the block from its parent.
      */
@@ -83,7 +83,7 @@ interface BlockInterface
      *
      * @return bool True if the block is detached from its parent or root template.
      */
-    public function is_detached() : bool;
+    public function is_detached(): bool;
     /**
      * Add a hide condition to the block.
      *
@@ -93,7 +93,7 @@ interface BlockInterface
      * @param string $expression An expression, which if true, will hide the block.
      * @return string The key of the hide condition, which can be used to remove the hide condition.
      */
-    public function add_hide_condition(string $expression) : string;
+    public function add_hide_condition(string $expression): string;
     /**
      * Remove a hide condition from the block.
      *
@@ -103,7 +103,7 @@ interface BlockInterface
     /**
      * Get the hide conditions of the block.
      */
-    public function get_hide_conditions() : array;
+    public function get_hide_conditions(): array;
     /**
      * Add a disable condition to the block.
      *
@@ -113,7 +113,7 @@ interface BlockInterface
      * @param string $expression An expression, which if true, will disable the block.
      * @return string The key of the disable condition, which can be used to remove the disable condition.
      */
-    public function add_disable_condition(string $expression) : string;
+    public function add_disable_condition(string $expression): string;
     /**
      * Remove a disable condition from the block.
      *
@@ -123,11 +123,11 @@ interface BlockInterface
     /**
      * Get the disable conditions of the block.
      */
-    public function get_disable_conditions() : array;
+    public function get_disable_conditions(): array;
     /**
      * Get the block configuration as a formatted template.
      *
      * @return array The block configuration as a formatted template.
      */
-    public function get_formatted_template() : array;
+    public function get_formatted_template(): array;
 }

@@ -145,7 +145,7 @@ class WooCommercePayments extends \Automattic\WooCommerce\Admin\Features\Onboard
      *
      * @return bool
      */
-    public static function has_other_ecommerce_gateways() : bool
+    public static function has_other_ecommerce_gateways(): bool
     {
     }
     /**

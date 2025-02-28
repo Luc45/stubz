@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
 {
     use \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockFormattedTemplateTrait;
+
     /**
      * Block constructor.
      *
@@ -37,19 +38,19 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
     /**
      * Get the block name.
      */
-    public function get_name() : string
+    public function get_name(): string
     {
     }
     /**
      * Get the block ID.
      */
-    public function get_id() : string
+    public function get_id(): string
     {
     }
     /**
      * Get the block order.
      */
-    public function get_order() : int
+    public function get_order(): int
     {
     }
     /**
@@ -63,7 +64,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
     /**
      * Get the block attributes.
      */
-    public function get_attributes() : array
+    public function get_attributes(): array
     {
     }
     /**
@@ -86,13 +87,13 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
     /**
      * Get the template that this block belongs to.
      */
-    public function &get_root_template() : \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
+    public function &get_root_template(): \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
     {
     }
     /**
      * Get the parent block container.
      */
-    public function &get_parent() : \Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface
+    public function &get_parent(): \Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface
     {
     }
     /**
@@ -106,7 +107,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
      *
      * @return bool True if the block is detached from its parent block container or the template it belongs to.
      */
-    public function is_detached() : bool
+    public function is_detached(): bool
     {
     }
     /**
@@ -117,7 +118,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
      *
      * @param string $expression An expression, which if true, will hide the block.
      */
-    public function add_hide_condition(string $expression) : string
+    public function add_hide_condition(string $expression): string
     {
     }
     /**
@@ -131,7 +132,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
     /**
      * Get the hide conditions of the block.
      */
-    public function get_hide_conditions() : array
+    public function get_hide_conditions(): array
     {
     }
     /**
@@ -142,7 +143,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
      *
      * @param string $expression An expression, which if true, will disable the block.
      */
-    public function add_disable_condition(string $expression) : string
+    public function add_disable_condition(string $expression): string
     {
     }
     /**
@@ -156,7 +157,7 @@ class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\Bloc
     /**
      * Get the disable conditions of the block.
      */
-    public function get_disable_conditions() : array
+    public function get_disable_conditions(): array
     {
     }
 }

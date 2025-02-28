@@ -16,7 +16,7 @@ class CustomerHistory
      *
      * @return void
      */
-    public function output(\WC_Order $order) : void
+    public function output(\WC_Order $order): void
     {
     }
 }

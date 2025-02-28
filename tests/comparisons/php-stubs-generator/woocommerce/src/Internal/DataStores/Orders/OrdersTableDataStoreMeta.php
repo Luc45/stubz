@@ -40,7 +40,7 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
      *
      * @return bool
      */
-    public function delete_meta(&$object, $meta) : bool
+    public function delete_meta(&$object, $meta): bool
     {
     }
     /**
@@ -62,7 +62,7 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
      *
      * @return bool
      */
-    public function update_meta(&$object, $meta) : bool
+    public function update_meta(&$object, $meta): bool
     {
     }
     // @phpcs:enable Universal.NamingConventions.NoReservedKeywordParameterNames.objectFound
@@ -73,7 +73,7 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
      *
      * @return \stdClass[][] An array, keyed by the object IDs, containing arrays of raw meta data for each object.
      */
-    public function get_meta_data_for_object_ids(array $object_ids) : array
+    public function get_meta_data_for_object_ids(array $object_ids): array
     {
     }
     /**
@@ -87,7 +87,7 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
      * @return bool[] Array of return values, grouped by the object_id. Each value is either true on success, or false
      *                if the contents were not deleted.
      */
-    public function clear_cached_data(array $object_ids) : array
+    public function clear_cached_data(array $object_ids): array
     {
     }
     /**
@@ -98,7 +98,7 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
      *
      * @return bool Whether the cache as fully invalidated.
      */
-    public function clear_all_cached_data() : bool
+    public function clear_all_cached_data(): bool
     {
     }
 }

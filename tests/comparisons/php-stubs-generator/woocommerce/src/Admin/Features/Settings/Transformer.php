@@ -14,13 +14,13 @@ class Transformer
      *
      * @return array Transformed settings data.
      */
-    public function transform(array $raw_settings) : array
+    public function transform(array $raw_settings): array
     {
     }
     /**
      * Reset the state to its initial values.
      */
-    public function reset_state() : void
+    public function reset_state(): void
     {
     }
 }

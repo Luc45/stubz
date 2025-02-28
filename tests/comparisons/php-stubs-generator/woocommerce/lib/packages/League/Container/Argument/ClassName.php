@@ -19,7 +19,7 @@ class ClassName implements \Automattic\WooCommerce\Vendor\League\Container\Argum
     /**
      * {@inheritdoc}
      */
-    public function getClassName() : string
+    public function getClassName(): string
     {
     }
 }

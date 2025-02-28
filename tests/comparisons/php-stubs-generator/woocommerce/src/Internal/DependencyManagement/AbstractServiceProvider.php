@@ -30,7 +30,7 @@ abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\Le
      *
      * @throws ContainerException Error when reflecting the class, or class injection method is not public, or an argument has no valid type hint.
      */
-    protected function add_with_auto_arguments(string $class_name, $concrete = null, bool $shared = false) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function add_with_auto_arguments(string $class_name, $concrete = null, bool $shared = false): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -46,7 +46,7 @@ abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\Le
      *
      * @throws ContainerException Error when reflecting the class, or class injection method is not public, or an argument has no valid type hint.
      */
-    protected function share_with_auto_arguments(string $class_name, $concrete = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function share_with_auto_arguments(string $class_name, $concrete = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -58,7 +58,7 @@ abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return DefinitionInterface The generated container definition.
      */
-    protected function add(string $id, $concrete = null, ?bool $shared = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function add(string $id, $concrete = null, ?bool $shared = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -69,7 +69,7 @@ abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\Le
      *
      * @return DefinitionInterface The generated container definition.
      */
-    protected function share(string $id, $concrete = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    protected function share(string $id, $concrete = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
 }

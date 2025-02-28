@@ -14,7 +14,7 @@ abstract class CustomMetaDataStore
      *
      * @return string
      */
-    protected abstract function get_table_name();
+    abstract protected function get_table_name();
     /**
      * Returns the name of the field/column used for identifiying metadata entries.
      *
@@ -56,7 +56,7 @@ abstract class CustomMetaDataStore
      *
      * @return bool
      */
-    public function delete_meta(&$object, $meta) : bool
+    public function delete_meta(&$object, $meta): bool
     {
     }
     /**
@@ -78,7 +78,7 @@ abstract class CustomMetaDataStore
      *
      * @return bool
      */
-    public function update_meta(&$object, $meta) : bool
+    public function update_meta(&$object, $meta): bool
     {
     }
     /**
@@ -121,7 +121,7 @@ abstract class CustomMetaDataStore
      *
      * @return \stdClass[][] An array, keyed by object_ids, containing array of raw meta data records for each object. Objects with no meta data will have an empty array.
      */
-    public function get_meta_data_for_object_ids(array $object_ids) : array
+    public function get_meta_data_for_object_ids(array $object_ids): array
     {
     }
 }

@@ -15,14 +15,14 @@ class MarketingSpecs
      *
      * @var string
      */
-    const KNOWLEDGE_BASE_TRANSIENT = 'wc_marketing_knowledge_base';
+    public const KNOWLEDGE_BASE_TRANSIENT = 'wc_marketing_knowledge_base';
     /**
      * Load knowledge base posts from WooCommerce.com
      *
      * @param string|null $topic The topic of marketing knowledgebase to retrieve.
      * @return array
      */
-    public function get_knowledge_base_posts(?string $topic) : array
+    public function get_knowledge_base_posts(?string $topic): array
     {
     }
 }

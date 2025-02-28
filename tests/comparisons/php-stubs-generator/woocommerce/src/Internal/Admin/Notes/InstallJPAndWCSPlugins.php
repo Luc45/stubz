@@ -11,10 +11,11 @@ class InstallJPAndWCSPlugins
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-install-jp-and-wcs-plugins';
+    public const NOTE_NAME = 'wc-admin-install-jp-and-wcs-plugins';
     /**
      * Constructor.
      */

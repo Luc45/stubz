@@ -12,7 +12,7 @@ final class OrderUtil
      *
      * @return string
      */
-    public static function get_order_admin_screen() : string
+    public static function get_order_admin_screen(): string
     {
     }
     /**
@@ -20,7 +20,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function custom_orders_table_usage_is_enabled() : bool
+    public static function custom_orders_table_usage_is_enabled(): bool
     {
     }
     /**
@@ -28,7 +28,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function custom_orders_table_datastore_cache_enabled() : bool
+    public static function custom_orders_table_datastore_cache_enabled(): bool
     {
     }
     /**
@@ -36,7 +36,7 @@ final class OrderUtil
      *
      * @return bool True if the orders cache should be used, false otherwise.
      */
-    public static function orders_cache_usage_is_enabled() : bool
+    public static function orders_cache_usage_is_enabled(): bool
     {
     }
     /**
@@ -44,7 +44,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function is_custom_order_tables_in_sync() : bool
+    public static function is_custom_order_tables_in_sync(): bool
     {
     }
     /**
@@ -78,7 +78,7 @@ final class OrderUtil
      *
      * @return int Order or post ID.
      */
-    public static function get_post_or_order_id($post_or_order_object) : int
+    public static function get_post_or_order_id($post_or_order_object): int
     {
     }
     /**
@@ -109,7 +109,7 @@ final class OrderUtil
      *
      * @return string Admin url for an order.
      */
-    public static function get_order_admin_edit_url(int $order_id) : string
+    public static function get_order_admin_edit_url(int $order_id): string
     {
     }
     /**
@@ -117,7 +117,7 @@ final class OrderUtil
      *
      * @return string Link for new order.
      */
-    public static function get_order_admin_new_url() : string
+    public static function get_order_admin_new_url(): string
     {
     }
     /**
@@ -127,7 +127,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function is_order_list_table_screen($order_type = 'shop_order') : bool
+    public static function is_order_list_table_screen($order_type = 'shop_order'): bool
     {
     }
     /**
@@ -137,7 +137,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function is_order_edit_screen($order_type = 'shop_order') : bool
+    public static function is_order_edit_screen($order_type = 'shop_order'): bool
     {
     }
     /**
@@ -147,7 +147,7 @@ final class OrderUtil
      *
      * @return bool
      */
-    public static function is_new_order_screen($order_type = 'shop_order') : bool
+    public static function is_new_order_screen($order_type = 'shop_order'): bool
     {
     }
     /**
@@ -185,7 +185,7 @@ final class OrderUtil
      * @return string The status without the prefix.
      * @since 9.2.0
      */
-    public static function remove_status_prefix(string $status) : string
+    public static function remove_status_prefix(string $status): string
     {
     }
 }

@@ -6,6 +6,7 @@
 class WC_Order_Item extends \WC_Data implements \ArrayAccess
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * Legacy cart item values.
      *
@@ -264,7 +265,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      *
      * @return bool True if this line item has an associated Cost of Goods Sold value.
      */
-    public function has_cogs() : bool
+    public function has_cogs(): bool
     {
     }
     /**
@@ -275,7 +276,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @return bool True if the value has been calculated successfully (and set as the actual value), false otherwise (and the value hasn't changed).
      * @throws Exception The class doesn't implement its own version of calculate_cogs_value_core. Derived classes are expected to override that method when has_cogs returns true.
      */
-    public function calculate_cogs_value() : bool
+    public function calculate_cogs_value(): bool
     {
     }
     // phpcs:disable Squiz.Commenting.FunctionComment.InvalidNoReturn
@@ -286,7 +287,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @return float|null The calculated value, or null if the value can't be calculated for some reason.
      * @throws Exception The class doesn't implement its own version of this method. Derived classes are expected to override this method when has_cogs returns true.
      */
-    protected function calculate_cogs_value_core() : ?float
+    protected function calculate_cogs_value_core(): ?float
     {
     }
     // phpcs:enable Squiz.Commenting.FunctionComment.InvalidNoReturn
@@ -298,7 +299,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @param string $context What the value is for. Valid values are view and edit.
      * @return float The current value for this order item.
      */
-    public function get_cogs_value($context = 'view') : float
+    public function get_cogs_value($context = 'view'): float
     {
     }
     /**
@@ -311,7 +312,7 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      *
      * @internal This method is intended for data store usage only, the value set here will be overridden by calculate_cogs_value.
      */
-    public function set_cogs_value(float $value) : void
+    public function set_cogs_value(float $value): void
     {
     }
 }

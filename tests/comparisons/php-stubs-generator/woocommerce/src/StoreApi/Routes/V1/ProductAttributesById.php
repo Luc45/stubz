@@ -12,13 +12,13 @@ class ProductAttributesById extends \Automattic\WooCommerce\StoreApi\Routes\V1\A
      *
      * @var string
      */
-    const IDENTIFIER = 'product-attributes-by-id';
+    public const IDENTIFIER = 'product-attributes-by-id';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'product-attribute';
+    public const SCHEMA_TYPE = 'product-attribute';
     /**
      * Get the path of this REST route.
      *

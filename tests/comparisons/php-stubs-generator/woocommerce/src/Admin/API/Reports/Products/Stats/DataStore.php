@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products\Stats;
 class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     use \Automattic\WooCommerce\Admin\API\Reports\StatsDataStoreTrait;
+
     /**
      * Mapping columns to data type to return correct response types.
      *

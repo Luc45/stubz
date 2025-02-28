@@ -89,7 +89,7 @@ abstract class WC_Legacy_Cart
      * Renamed for consistency.
      *
      * @param string $coupon_code
-     * @return bool	True if the coupon is applied, false if it does not exist or cannot be applied.
+     * @return bool True if the coupon is applied, false if it does not exist or cannot be applied.
      */
     public function add_discount($coupon_code)
     {

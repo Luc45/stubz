@@ -24,7 +24,7 @@ abstract class ActionScheduler_Logger
      *
      * @return string The log entry ID
      */
-    public abstract function log($action_id, $message, ?\DateTime $date = \null);
+    abstract public function log($action_id, $message, ?\DateTime $date = \null);
     /**
      * Get action's log entry.
      *
@@ -32,7 +32,7 @@ abstract class ActionScheduler_Logger
      *
      * @return ActionScheduler_LogEntry
      */
-    public abstract function get_entry($entry_id);
+    abstract public function get_entry($entry_id);
     /**
      * Get action's logs.
      *
@@ -40,7 +40,7 @@ abstract class ActionScheduler_Logger
      *
      * @return ActionScheduler_LogEntry[]
      */
-    public abstract function get_logs($action_id);
+    abstract public function get_logs($action_id);
     /**
      * Initialize.
      *

@@ -11,8 +11,8 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  */
 class DraftOrders
 {
-    const DB_STATUS = 'wc-checkout-draft';
-    const STATUS = 'checkout-draft';
+    public const DB_STATUS = 'wc-checkout-draft';
+    public const STATUS = 'checkout-draft';
     /**
      * Constructor
      *

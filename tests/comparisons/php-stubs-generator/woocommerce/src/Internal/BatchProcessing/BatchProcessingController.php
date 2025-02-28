@@ -15,20 +15,20 @@ class BatchProcessingController
      * (because it's been just enqueued or because it threw an error while processing a batch),
      * that's one single action that reschedules itself continuously.
      */
-    const WATCHDOG_ACTION_NAME = 'wc_schedule_pending_batch_processes';
+    public const WATCHDOG_ACTION_NAME = 'wc_schedule_pending_batch_processes';
     /*
      * Identifier of the action that will do the actual batch processing.
      * There's one action per enqueued processor that will keep rescheduling itself
      * as long as there are still pending items to process
      * (except if there's an error that caused no items to be processed at all).
      */
-    const PROCESS_SINGLE_BATCH_ACTION_NAME = 'wc_run_batch_process';
-    const ENQUEUED_PROCESSORS_OPTION_NAME = 'wc_pending_batch_processes';
-    const ACTION_GROUP = 'wc_batch_processes';
+    public const PROCESS_SINGLE_BATCH_ACTION_NAME = 'wc_run_batch_process';
+    public const ENQUEUED_PROCESSORS_OPTION_NAME = 'wc_pending_batch_processes';
+    public const ACTION_GROUP = 'wc_batch_processes';
     /**
      * Maximum number of failures per processor before it gets dequeued.
      */
-    const FAILING_PROCESS_MAX_ATTEMPTS_DEFAULT = 5;
+    public const FAILING_PROCESS_MAX_ATTEMPTS_DEFAULT = 5;
     /**
      * BatchProcessingController constructor.
      *
@@ -42,7 +42,7 @@ class BatchProcessingController
      *
      * @param string $processor_class_name Fully qualified class name of the processor, must implement `BatchProcessorInterface`.
      */
-    public function enqueue_processor(string $processor_class_name) : void
+    public function enqueue_processor(string $processor_class_name): void
     {
     }
     /**
@@ -53,7 +53,7 @@ class BatchProcessingController
      *
      * @return bool True if a batch processing action is already scheduled for the processor.
      */
-    public function is_scheduled(string $processor_class_name) : bool
+    public function is_scheduled(string $processor_class_name): bool
     {
     }
     /**
@@ -61,7 +61,7 @@ class BatchProcessingController
      *
      * @return array List (of string) of the class names of the enqueued processors.
      */
-    public function get_enqueued_processors() : array
+    public function get_enqueued_processors(): array
     {
     }
     /**
@@ -71,7 +71,7 @@ class BatchProcessingController
      *
      * @return bool True if the processor is enqueued.
      */
-    public function is_enqueued(string $processor_class_name) : bool
+    public function is_enqueued(string $processor_class_name): bool
     {
     }
     /**
@@ -80,13 +80,13 @@ class BatchProcessingController
      * @param string $processor_class_name Fully qualified class name of the processor.
      * @return bool True if the processor has been dequeued, false if the processor wasn't enqueued (so nothing has been done).
      */
-    public function remove_processor(string $processor_class_name) : bool
+    public function remove_processor(string $processor_class_name): bool
     {
     }
     /**
      * Dequeues and de-schedules all the processors.
      */
-    public function force_clear_all_processes() : void
+    public function force_clear_all_processes(): void
     {
     }
     /**
@@ -96,7 +96,7 @@ class BatchProcessingController
      * @param BatchProcessorInterface $batch_processor Batch processor instance.
      * @param array                   $batch Batch that was being processed.
      */
-    protected function log_error(\Exception $error, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface $batch_processor, array $batch) : void
+    protected function log_error(\Exception $error, \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface $batch_processor, array $batch): void
     {
     }
 }

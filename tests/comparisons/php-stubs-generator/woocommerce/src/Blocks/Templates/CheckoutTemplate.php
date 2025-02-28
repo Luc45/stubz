@@ -14,7 +14,7 @@ class CheckoutTemplate extends \Automattic\WooCommerce\Blocks\Templates\Abstract
      *
      * @var string
      */
-    const SLUG = 'page-checkout';
+    public const SLUG = 'page-checkout';
     /**
      * Initialization method.
      */

@@ -20,7 +20,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      * @return DefinitionInterface The generated definition for the container.
      * @throws ContainerException Invalid parameters.
      */
-    public function add(string $class_name, $concrete = null, ?bool $shared = null) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function add(string $class_name, $concrete = null, ?bool $shared = null): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -32,7 +32,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      * @return DefinitionInterface The modified definition.
      * @throws ContainerException Invalid parameters.
      */
-    public function replace(string $class_name, $concrete) : \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
+    public function replace(string $class_name, $concrete): \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
     {
     }
     /**
@@ -41,7 +41,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      * @param string $class_name The class name whose definition had been replaced.
      * @return bool True if the registration has been reset, false if no replacement had been made for the specified class name.
      */
-    public function reset_replacement(string $class_name) : bool
+    public function reset_replacement(string $class_name): bool
     {
     }
     /**
@@ -85,7 +85,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      *
      * @return bool True if the class is allowed to be registered, false otherwise.
      */
-    protected function is_class_allowed(string $class_name) : bool
+    protected function is_class_allowed(string $class_name): bool
     {
     }
     /**
@@ -94,7 +94,7 @@ class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\
      * @param string $class_name The class name to check.
      * @return bool True if the name corresponds to an anonymous class.
      */
-    protected function is_anonymous_class(string $class_name) : bool
+    protected function is_anonymous_class(string $class_name): bool
     {
     }
 }

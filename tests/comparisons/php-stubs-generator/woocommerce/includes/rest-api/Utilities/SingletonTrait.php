@@ -26,7 +26,7 @@ trait SingletonTrait
      *
      * @return object Instance.
      */
-    public static final function instance()
+    final public static function instance()
     {
     }
     /**
@@ -38,7 +38,7 @@ trait SingletonTrait
     /**
      * Prevent unserializing.
      */
-    public final function __wakeup()
+    final public function __wakeup()
     {
     }
 }

@@ -12,13 +12,13 @@ class CartItems extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartR
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-items';
+    public const IDENTIFIER = 'cart-items';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'cart-item';
+    public const SCHEMA_TYPE = 'cart-item';
     /**
      * Get the path of this REST route.
      *

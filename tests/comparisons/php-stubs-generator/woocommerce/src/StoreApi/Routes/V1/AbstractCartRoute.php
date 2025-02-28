@@ -8,12 +8,13 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 abstract class AbstractCartRoute extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\DraftOrderTrait;
+
     /**
      * The route's schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'cart';
+    public const SCHEMA_TYPE = 'cart';
     /**
      * Schema class instance.
      *

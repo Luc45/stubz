@@ -11,6 +11,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Categories;
 class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController implements \Automattic\WooCommerce\Admin\API\Reports\ExportableInterface
 {
     use \Automattic\WooCommerce\Admin\API\Reports\OrderAwareControllerTrait;
+
     /**
      * Route base.
      *

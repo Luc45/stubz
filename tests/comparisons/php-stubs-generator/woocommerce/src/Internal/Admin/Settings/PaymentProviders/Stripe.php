@@ -17,7 +17,7 @@ class Stripe extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
      * @return bool True if the payment gateway account is connected, false otherwise.
      *              If the payment gateway does not provide the information, it will return true.
      */
-    public function is_account_connected(\WC_Payment_Gateway $payment_gateway) : bool
+    public function is_account_connected(\WC_Payment_Gateway $payment_gateway): bool
     {
     }
 }

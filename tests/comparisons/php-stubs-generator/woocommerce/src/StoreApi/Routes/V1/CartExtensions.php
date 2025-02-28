@@ -12,13 +12,13 @@ class CartExtensions extends \Automattic\WooCommerce\StoreApi\Routes\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-extensions';
+    public const IDENTIFIER = 'cart-extensions';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'cart-extensions';
+    public const SCHEMA_TYPE = 'cart-extensions';
     /**
      * Get the path of this REST route.
      *

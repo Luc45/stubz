@@ -10,6 +10,7 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
 final class QuantityLimits
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\DraftOrderTrait;
+
     /**
      * Get quantity limits (min, max, step/multiple) for a product or cart item.
      *

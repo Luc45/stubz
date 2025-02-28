@@ -35,7 +35,7 @@ class Price
      *
      * @return string
      */
-    public function get_value() : string
+    public function get_value(): string
     {
     }
     /**
@@ -43,7 +43,7 @@ class Price
      *
      * @return string
      */
-    public function get_currency() : string
+    public function get_currency(): string
     {
     }
 }

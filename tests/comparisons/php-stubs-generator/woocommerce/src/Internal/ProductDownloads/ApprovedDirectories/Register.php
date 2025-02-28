@@ -15,7 +15,7 @@ class Register
      *
      * @internal
      */
-    public final function init()
+    final public function init()
     {
     }
     /**
@@ -23,7 +23,7 @@ class Register
      *
      * @return string
      */
-    public function get_table() : string
+    public function get_table(): string
     {
     }
     /**
@@ -33,7 +33,7 @@ class Register
      *
      * @return string
      */
-    public function get_mode() : string
+    public function get_mode(): string
     {
     }
     /**
@@ -45,7 +45,7 @@ class Register
      *
      * @return bool
      */
-    public function set_mode(string $mode) : bool
+    public function set_mode(string $mode): bool
     {
     }
     /**
@@ -62,7 +62,7 @@ class Register
      *
      * @return int
      */
-    public function add_approved_directory(string $url, bool $enabled = true) : int
+    public function add_approved_directory(string $url, bool $enabled = true): int
     {
     }
     /**
@@ -79,7 +79,7 @@ class Register
      *
      * @return bool
      */
-    public function update_approved_directory(int $id, string $url, bool $enabled = true) : bool
+    public function update_approved_directory(int $id, string $url, bool $enabled = true): bool
     {
     }
     /**
@@ -89,7 +89,7 @@ class Register
      *
      * @return bool
      */
-    public function approved_directory_exists(string $url) : bool
+    public function approved_directory_exists(string $url): bool
     {
     }
     /**
@@ -127,7 +127,7 @@ class Register
      *
      * @return bool
      */
-    public function is_valid_path(string $download_url) : bool
+    public function is_valid_path(string $download_url): bool
     {
     }
     /**
@@ -154,7 +154,7 @@ class Register
      *
      * @return array
      */
-    public function list(array $args) : array
+    public function list(array $args): array
     {
     }
     /**
@@ -164,7 +164,7 @@ class Register
      *
      * @return bool
      */
-    public function delete_by_id(int $id) : bool
+    public function delete_by_id(int $id): bool
     {
     }
     /**
@@ -172,7 +172,7 @@ class Register
      *
      * @return bool
      */
-    public function delete_all() : bool
+    public function delete_all(): bool
     {
     }
     /**
@@ -182,7 +182,7 @@ class Register
      *
      * @return bool
      */
-    public function enable_by_id(int $id) : bool
+    public function enable_by_id(int $id): bool
     {
     }
     /**
@@ -192,7 +192,7 @@ class Register
      *
      * @return bool
      */
-    public function disable_by_id(int $id) : bool
+    public function disable_by_id(int $id): bool
     {
     }
     /**
@@ -200,7 +200,7 @@ class Register
      *
      * @return bool
      */
-    public function enable_all() : bool
+    public function enable_all(): bool
     {
     }
     /**
@@ -208,7 +208,7 @@ class Register
      *
      * @return bool
      */
-    public function disable_all() : bool
+    public function disable_all(): bool
     {
     }
     /**
@@ -219,7 +219,7 @@ class Register
      *
      * @return int
      */
-    public function count(bool $enabled = true) : int
+    public function count(bool $enabled = true): int
     {
     }
 }

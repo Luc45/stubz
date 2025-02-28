@@ -12,5 +12,5 @@ interface SubsectionInterface extends \Automattic\WooCommerce\Admin\BlockTemplat
      *
      * @param array $block_config block config.
      */
-    public function add_block(array $block_config) : \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface;
+    public function add_block(array $block_config): \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface;
 }

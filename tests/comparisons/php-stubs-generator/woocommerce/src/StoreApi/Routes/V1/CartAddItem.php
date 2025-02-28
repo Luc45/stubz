@@ -12,7 +12,7 @@ class CartAddItem extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCar
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-add-item';
+    public const IDENTIFIER = 'cart-add-item';
     /**
      * Get the path of this REST route.
      *

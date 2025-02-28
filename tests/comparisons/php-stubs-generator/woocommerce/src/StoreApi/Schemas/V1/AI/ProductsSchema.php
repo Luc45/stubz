@@ -20,7 +20,7 @@ class ProductsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstrac
      *
      * @var string
      */
-    const IDENTIFIER = 'ai/products';
+    public const IDENTIFIER = 'ai/products';
     /**
      * Products schema properties.
      *

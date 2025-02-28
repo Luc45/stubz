@@ -17,7 +17,7 @@ class RuntimeContainer
      *
      * @var string
      */
-    const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
+    public const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
     /**
      * Cache of classes already resolved.
      *
@@ -79,7 +79,7 @@ class RuntimeContainer
      * @param string $class_name The class name.
      * @return bool True if the class with the supplied name can be resolved with 'get'.
      */
-    public function has(string $class_name) : bool
+    public function has(string $class_name): bool
     {
     }
     /**
@@ -89,7 +89,7 @@ class RuntimeContainer
      *
      * @return bool True if the class is allowed to be registered, false otherwise.
      */
-    protected function is_class_allowed(string $class_name) : bool
+    protected function is_class_allowed(string $class_name): bool
     {
     }
     /**
@@ -102,7 +102,7 @@ class RuntimeContainer
      *
      * @return bool True if this class should be used as the core WooCommerce dependency injection container, false if ExtendedContainer should be used instead.
      */
-    public static function should_use() : bool
+    public static function should_use(): bool
     {
     }
 }

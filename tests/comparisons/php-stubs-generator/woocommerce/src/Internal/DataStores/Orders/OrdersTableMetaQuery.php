@@ -26,7 +26,7 @@ class OrdersTableMetaQuery
      *     @type string $where WHERE clause.
      * }
      */
-    public function get_sql_clauses() : array
+    public function get_sql_clauses(): array
     {
     }
     /**
@@ -36,7 +36,7 @@ class OrdersTableMetaQuery
      *
      * @return array
      */
-    public function get_orderby_keys() : array
+    public function get_orderby_keys(): array
     {
     }
     /**
@@ -50,7 +50,7 @@ class OrdersTableMetaQuery
      *
      * @throws \Exception When an invalid key is passed.
      */
-    public function get_orderby_clause_for_key(string $key) : string
+    public function get_orderby_clause_for_key(string $key): string
     {
     }
 }

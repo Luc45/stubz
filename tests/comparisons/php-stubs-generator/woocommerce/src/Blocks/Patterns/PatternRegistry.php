@@ -9,8 +9,8 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  */
 class PatternRegistry
 {
-    const SLUG_REGEX = '/^[A-z0-9\\/_-]+$/';
-    const COMMA_SEPARATED_REGEX = '/[\\s,]+/';
+    public const SLUG_REGEX = '/^[A-z0-9\\/_-]+$/';
+    public const COMMA_SEPARATED_REGEX = '/[\\s,]+/';
     /**
      * Register a block pattern.
      *

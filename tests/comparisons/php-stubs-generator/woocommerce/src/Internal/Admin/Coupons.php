@@ -8,6 +8,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
 class Coupons
 {
     use \Automattic\WooCommerce\Internal\Admin\CouponsMovedTrait;
+
     /**
      * Class instance.
      *

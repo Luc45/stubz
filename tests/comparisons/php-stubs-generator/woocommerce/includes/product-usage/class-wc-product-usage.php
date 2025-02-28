@@ -27,7 +27,7 @@ class WC_Product_Usage
      * @param int $product_id product id to get feature restriction rules.
      * @since 9.3.0
      */
-    public static function get_rules_for_product(int $product_id) : ?\WC_Product_Usage_Rule_Set
+    public static function get_rules_for_product(int $product_id): ?\WC_Product_Usage_Rule_Set
     {
     }
 }

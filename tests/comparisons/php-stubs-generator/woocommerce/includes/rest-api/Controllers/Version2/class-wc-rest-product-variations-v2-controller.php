@@ -51,7 +51,7 @@ class WC_REST_Product_Variations_V2_Controller extends \WC_REST_Products_V2_Cont
      *
      * @since 9.2.0
      */
-    protected function check_variation_parent(int $variation_id, int $parent_id) : bool
+    protected function check_variation_parent(int $variation_id, int $parent_id): bool
     {
     }
     /**

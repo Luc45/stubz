@@ -110,7 +110,7 @@ function wc_product_post_type_link($permalink, $post)
  *
  * @return void
  */
-function wc_product_canonical_redirect() : void
+function wc_product_canonical_redirect(): void
 {
 }
 /**

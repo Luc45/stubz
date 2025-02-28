@@ -41,7 +41,7 @@ abstract class MetaToMetaTableMigrator extends \Automattic\WooCommerce\Database\
      *  ),
      * )
      */
-    protected abstract function get_meta_config() : array;
+    abstract protected function get_meta_config(): array;
     /**
      * MetaToMetaTableMigrator constructor.
      */
@@ -63,7 +63,7 @@ abstract class MetaToMetaTableMigrator extends \Automattic\WooCommerce\Database\
      *
      * @param array $entity_ids Ids of entities ro migrate.
      */
-    protected function process_migration_batch_for_ids_core(array $entity_ids) : void
+    protected function process_migration_batch_for_ids_core(array $entity_ids): void
     {
     }
     /**
@@ -87,7 +87,7 @@ abstract class MetaToMetaTableMigrator extends \Automattic\WooCommerce\Database\
      *   ...,
      * )
      */
-    public function fetch_data_for_migration_for_ids(array $entity_ids) : array
+    public function fetch_data_for_migration_for_ids(array $entity_ids): array
     {
     }
 }

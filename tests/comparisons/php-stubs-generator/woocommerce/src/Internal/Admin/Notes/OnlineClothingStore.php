@@ -11,10 +11,11 @@ class OnlineClothingStore
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-online-clothing-store';
+    public const NOTE_NAME = 'wc-admin-online-clothing-store';
     /**
      * Get the note.
      *

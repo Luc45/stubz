@@ -73,7 +73,7 @@ class AsyncPluginsInstallLogger implements \Automattic\WooCommerce\Admin\Plugins
      *
      * @return string - Time frame.
      */
-    function get_timeframe($timeInMs)
+    public function get_timeframe($timeInMs)
     {
     }
 }

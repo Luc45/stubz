@@ -12,7 +12,7 @@ class WcPayWelcomePage
     /**
      * The incentive type for the WooPayments welcome page.
      */
-    const INCENTIVE_TYPE = 'welcome_page';
+    public const INCENTIVE_TYPE = 'welcome_page';
     /**
      * Class instance.
      *
@@ -24,7 +24,7 @@ class WcPayWelcomePage
      *
      * @return ?WcPayWelcomePage
      */
-    public static function instance() : ?\Automattic\WooCommerce\Internal\Admin\WcPayWelcomePage
+    public static function instance(): ?\Automattic\WooCommerce\Internal\Admin\WcPayWelcomePage
     {
     }
     /**
@@ -57,7 +57,7 @@ class WcPayWelcomePage
      * @param array $settings Shared settings.
      * @return array The updated shared settings.
      */
-    public function shared_settings(array $settings) : array
+    public function shared_settings(array $settings): array
     {
     }
     /**
@@ -67,7 +67,7 @@ class WcPayWelcomePage
      *
      * @return array
      */
-    public function allowed_promo_notes(array $promo_notes = array()) : array
+    public function allowed_promo_notes(array $promo_notes = array()): array
     {
     }
     /**
@@ -77,7 +77,7 @@ class WcPayWelcomePage
      *
      * @return string
      */
-    public function onboarding_task_badge(string $badge) : string
+    public function onboarding_task_badge(string $badge): string
     {
     }
     /**
@@ -87,7 +87,7 @@ class WcPayWelcomePage
      *
      * @return ?array The filtered task additional data.
      */
-    public function onboarding_task_additional_data(?array $additional_data) : ?array
+    public function onboarding_task_additional_data(?array $additional_data): ?array
     {
     }
     /**
@@ -97,7 +97,7 @@ class WcPayWelcomePage
      *
      * @return bool Whether we have an incentive available to show.
      */
-    public function has_incentive(bool $skip_wcpay_active = false) : bool
+    public function has_incentive(bool $skip_wcpay_active = false): bool
     {
     }
 }

@@ -14,7 +14,7 @@ class PostToOrderTableMigrator extends \Automattic\WooCommerce\Database\Migratio
      *
      * @return array Config.
      */
-    protected function get_schema_config() : array
+    protected function get_schema_config(): array
     {
     }
     /**
@@ -22,7 +22,7 @@ class PostToOrderTableMigrator extends \Automattic\WooCommerce\Database\Migratio
      *
      * @return \string[][] Config.
      */
-    protected function get_core_column_mapping() : array
+    protected function get_core_column_mapping(): array
     {
     }
     /**
@@ -30,7 +30,7 @@ class PostToOrderTableMigrator extends \Automattic\WooCommerce\Database\Migratio
      *
      * @return \string[][] Config.
      */
-    public function get_meta_column_config() : array
+    public function get_meta_column_config(): array
     {
     }
 }

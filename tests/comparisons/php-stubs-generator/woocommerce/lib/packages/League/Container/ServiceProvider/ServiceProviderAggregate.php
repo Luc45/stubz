@@ -5,6 +5,7 @@ namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 class ServiceProviderAggregate implements \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface
 {
     use \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareTrait;
+
     /**
      * @var ServiceProviderInterface[]
      */
@@ -16,19 +17,19 @@ class ServiceProviderAggregate implements \Automattic\WooCommerce\Vendor\League\
     /**
      * {@inheritdoc}
      */
-    public function add($provider) : \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface
+    public function add($provider): \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function provides(string $service) : bool
+    public function provides(string $service): bool
     {
     }
     /**
      * {@inheritdoc}
      */
-    public function getIterator() : \Generator
+    public function getIterator(): \Generator
     {
     }
     /**

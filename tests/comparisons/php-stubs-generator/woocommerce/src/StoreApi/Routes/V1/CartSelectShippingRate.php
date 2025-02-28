@@ -12,7 +12,7 @@ class CartSelectShippingRate extends \Automattic\WooCommerce\StoreApi\Routes\V1\
      *
      * @var string
      */
-    const IDENTIFIER = 'cart-select-shipping-rate';
+    public const IDENTIFIER = 'cart-select-shipping-rate';
     /**
      * Get the path of this REST route.
      *

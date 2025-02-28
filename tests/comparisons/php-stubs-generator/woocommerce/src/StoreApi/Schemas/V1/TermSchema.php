@@ -18,7 +18,7 @@ class TermSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSch
      *
      * @var string
      */
-    const IDENTIFIER = 'term';
+    public const IDENTIFIER = 'term';
     /**
      * Term properties.
      *

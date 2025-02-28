@@ -19,7 +19,7 @@ class HtmlSanitizer
      *
      * @return string
      */
-    public function styled_post_content(string $html) : string
+    public function styled_post_content(string $html): string
     {
     }
     /**
@@ -38,7 +38,7 @@ class HtmlSanitizer
      *
      * @return string
      */
-    public function sanitize(string $html, array $sanitizer_rules = self::LOW_HTML_BALANCED_TAGS_NO_LINKS) : string
+    public function sanitize(string $html, array $sanitizer_rules = self::LOW_HTML_BALANCED_TAGS_NO_LINKS): string
     {
     }
 }

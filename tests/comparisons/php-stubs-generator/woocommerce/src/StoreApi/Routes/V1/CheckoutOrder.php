@@ -9,18 +9,19 @@ class CheckoutOrder extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractC
 {
     use \Automattic\WooCommerce\StoreApi\Utilities\OrderAuthorizationTrait;
     use \Automattic\WooCommerce\StoreApi\Utilities\CheckoutTrait;
+
     /**
      * The route identifier.
      *
      * @var string
      */
-    const IDENTIFIER = 'checkout-order';
+    public const IDENTIFIER = 'checkout-order';
     /**
      * The routes schema.
      *
      * @var string
      */
-    const SCHEMA_TYPE = 'checkout-order';
+    public const SCHEMA_TYPE = 'checkout-order';
     /**
      * Get the path of this REST route.
      *

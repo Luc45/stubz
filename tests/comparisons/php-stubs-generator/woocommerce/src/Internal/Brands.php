@@ -12,7 +12,7 @@ class Brands
      *
      * @internal
      */
-    public static final function init()
+    final public static function init()
     {
     }
     /**

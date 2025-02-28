@@ -7,15 +7,15 @@
  */
 class WC_Woo_Update_Manager_Plugin
 {
-    const WOO_UPDATE_MANAGER_PLUGIN_MAIN_FILE = 'woo-update-manager/woo-update-manager.php';
-    const WOO_UPDATE_MANAGER_DOWNLOAD_URL = 'https://woocommerce.com/product-download/woo-update-manager';
-    const WOO_UPDATE_MANAGER_SLUG = 'woo-update-manager';
+    public const WOO_UPDATE_MANAGER_PLUGIN_MAIN_FILE = 'woo-update-manager/woo-update-manager.php';
+    public const WOO_UPDATE_MANAGER_DOWNLOAD_URL = 'https://woocommerce.com/product-download/woo-update-manager';
+    public const WOO_UPDATE_MANAGER_SLUG = 'woo-update-manager';
     /**
      * Loads the class, runs on init.
      *
      * @return void
      */
-    public static function load() : void
+    public static function load(): void
     {
     }
     /**
@@ -23,7 +23,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return bool
      */
-    public static function is_plugin_active() : bool
+    public static function is_plugin_active(): bool
     {
     }
     /**
@@ -31,7 +31,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return bool
      */
-    public static function is_plugin_installed() : bool
+    public static function is_plugin_installed(): bool
     {
     }
     /**
@@ -39,7 +39,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return string
      */
-    public static function generate_install_url() : string
+    public static function generate_install_url(): string
     {
     }
     /**
@@ -47,7 +47,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return int
      */
-    public static function get_plugin_slug() : string
+    public static function get_plugin_slug(): string
     {
     }
     /**
@@ -55,7 +55,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return void
      */
-    public static function show_woo_update_manager_install_notice() : void
+    public static function show_woo_update_manager_install_notice(): void
     {
     }
     /**
@@ -63,7 +63,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return bool
      */
-    protected static function install_admin_notice_dismissed() : bool
+    protected static function install_admin_notice_dismissed(): bool
     {
     }
     /**
@@ -71,7 +71,7 @@ class WC_Woo_Update_Manager_Plugin
      *
      * @return bool
      */
-    protected static function activate_admin_notice_dismissed() : bool
+    protected static function activate_admin_notice_dismissed(): bool
     {
     }
 }

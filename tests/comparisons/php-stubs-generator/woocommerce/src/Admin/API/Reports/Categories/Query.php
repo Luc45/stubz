@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Categories;
  */
 class Query extends \Automattic\WooCommerce\Admin\API\Reports\Query
 {
-    const REPORT_NAME = 'report-categories';
+    public const REPORT_NAME = 'report-categories';
     /**
      * Valid fields for Categories report.
      *

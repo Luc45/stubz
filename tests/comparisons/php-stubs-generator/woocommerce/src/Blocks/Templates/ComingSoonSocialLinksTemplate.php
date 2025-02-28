@@ -14,7 +14,7 @@ class ComingSoonSocialLinksTemplate extends \Automattic\WooCommerce\Blocks\Templ
      *
      * @var string
      */
-    const SLUG = 'coming-soon-social-links';
+    public const SLUG = 'coming-soon-social-links';
     /**
      * The template part area where the template part belongs.
      *

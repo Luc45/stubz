@@ -171,7 +171,7 @@ class WC_Product_Download implements \ArrayAccess
      *
      * @return bool
      */
-    public function get_enabled() : bool
+    public function get_enabled(): bool
     {
     }
     /*

@@ -15,7 +15,7 @@ class SyncUI
      *
      * @param Register $register Register of approved directories.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
+    final public function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
     {
     }
     /**
@@ -23,7 +23,7 @@ class SyncUI
      * except in the case where the current user is not a site administrator, no hooks will
      * be initialized.
      */
-    public final function init_hooks()
+    final public function init_hooks()
     {
     }
     /**
@@ -33,7 +33,7 @@ class SyncUI
      *
      * @return array
      */
-    public function add_tools(array $tools) : array
+    public function add_tools(array $tools): array
     {
     }
     /**

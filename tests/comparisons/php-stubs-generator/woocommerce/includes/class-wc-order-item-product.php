@@ -299,7 +299,7 @@ class WC_Order_Item_Product extends \WC_Order_Item
      *
      * @return bool Always true.
      */
-    public function has_cogs() : bool
+    public function has_cogs(): bool
     {
     }
     /**
@@ -307,7 +307,7 @@ class WC_Order_Item_Product extends \WC_Order_Item
      *
      * @return float|null The calculated value, null if the product associated to the line item no longer exists.
      */
-    public function calculate_cogs_value_core() : ?float
+    public function calculate_cogs_value_core(): ?float
     {
     }
 }

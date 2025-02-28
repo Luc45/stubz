@@ -8,6 +8,7 @@
 final class WC_Cart_Totals
 {
     use \WC_Item_Totals;
+
     /**
      * Sets up the items provided, and calculate totals.
      *

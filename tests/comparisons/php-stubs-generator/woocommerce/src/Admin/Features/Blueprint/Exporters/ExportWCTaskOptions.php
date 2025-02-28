@@ -12,6 +12,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
 class ExportWCTaskOptions implements \Automattic\WooCommerce\Blueprint\Exporters\StepExporter, \Automattic\WooCommerce\Blueprint\Exporters\HasAlias
 {
     use \Automattic\WooCommerce\Blueprint\UseWPFunctions;
+
     /**
      * Export WooCommerce task options.
      *

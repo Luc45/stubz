@@ -18,7 +18,7 @@ class OrderSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSc
      *
      * @var string
      */
-    const IDENTIFIER = 'order';
+    public const IDENTIFIER = 'order';
     /**
      * Item schema instance.
      *

@@ -12,7 +12,7 @@ class PageController
      *
      * @return void
      */
-    public function setup() : void
+    public function setup(): void
     {
     }
     /**
@@ -40,7 +40,7 @@ class PageController
      *
      * @return void
      */
-    public function register_menu() : void
+    public function register_menu(): void
     {
     }
     /**
@@ -48,7 +48,7 @@ class PageController
      *
      * @return void
      */
-    public function output() : void
+    public function output(): void
     {
     }
     /**
@@ -64,7 +64,7 @@ class PageController
      *
      * @return string Orders screen URL.
      */
-    public function get_orders_url() : string
+    public function get_orders_url(): string
     {
     }
     /**
@@ -74,7 +74,7 @@ class PageController
      *
      * @return string Edit link.
      */
-    public function get_edit_url(int $order_id) : string
+    public function get_edit_url(int $order_id): string
     {
     }
     /**
@@ -83,7 +83,7 @@ class PageController
      * @param string $order_type The order type. Defaults to 'shop_order'.
      * @return string
      */
-    public function get_new_page_url($order_type = 'shop_order') : string
+    public function get_new_page_url($order_type = 'shop_order'): string
     {
     }
     /**
@@ -95,7 +95,7 @@ class PageController
      *
      * @throws \Exception When an invalid order type is passed.
      */
-    public function get_base_page_url($order_type) : string
+    public function get_base_page_url($order_type): string
     {
     }
     /**
@@ -107,7 +107,7 @@ class PageController
      *
      * @return bool
      */
-    public function is_order_screen($type = 'shop_order', $action = '') : bool
+    public function is_order_screen($type = 'shop_order', $action = ''): bool
     {
     }
 }

@@ -60,7 +60,7 @@ class TourInAppMarketplace extends \Automattic\WooCommerce\Admin\Features\Onboar
      *
      * @return bool
      */
-    public function get_record_view_event() : bool
+    public function get_record_view_event(): bool
     {
     }
 }

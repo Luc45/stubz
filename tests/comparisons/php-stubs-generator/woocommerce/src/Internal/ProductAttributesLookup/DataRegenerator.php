@@ -35,7 +35,7 @@ class DataRegenerator
      * @internal
      * @param LookupDataStore $data_store The data store to use.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
+    final public function init(\Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
     {
     }
     /**
@@ -61,7 +61,7 @@ class DataRegenerator
      * @param bool $in_background True if regeneration will continue in the background using scheduled actions.
      * @return int Highest product id that will be processed.
      */
-    public function initiate_regeneration(bool $in_background = true) : int
+    public function initiate_regeneration(bool $in_background = true): int
     {
     }
     /**
@@ -139,7 +139,7 @@ class DataRegenerator
      *
      * @return bool True if any pending regeneration step scheduled action exists.
      */
-    public function has_scheduled_action_for_regeneration_step() : bool
+    public function has_scheduled_action_for_regeneration_step(): bool
     {
     }
     /**

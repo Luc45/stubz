@@ -18,7 +18,7 @@ class MarketingChannels
      *
      * @throws Exception If the given marketing channel is already registered.
      */
-    public function register(\Automattic\WooCommerce\Admin\Marketing\MarketingChannelInterface $channel) : void
+    public function register(\Automattic\WooCommerce\Admin\Marketing\MarketingChannelInterface $channel): void
     {
     }
     /**
@@ -26,7 +26,7 @@ class MarketingChannels
      *
      * @return void
      */
-    public function unregister_all() : void
+    public function unregister_all(): void
     {
     }
     /**
@@ -34,7 +34,7 @@ class MarketingChannels
      *
      * @return MarketingChannelInterface[]
      */
-    public function get_registered_channels() : array
+    public function get_registered_channels(): array
     {
     }
 }

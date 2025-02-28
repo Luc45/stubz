@@ -9,6 +9,7 @@
 class WC_REST_Orders_Controller extends \WC_REST_Orders_V2_Controller
 {
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * Endpoint namespace.
      *
@@ -61,7 +62,7 @@ class WC_REST_Orders_Controller extends \WC_REST_Orders_V2_Controller
      * @return void
      * @throws WC_REST_Exception If item ID is not associated with order.
      */
-    protected function remove_item(\WC_Order $order, string $item_type, int $item_id) : void
+    protected function remove_item(\WC_Order $order, string $item_type, int $item_id): void
     {
     }
     /**
@@ -111,7 +112,7 @@ class WC_REST_Orders_Controller extends \WC_REST_Orders_V2_Controller
      * @return array Prepared response data.
      * @since  9.5.0
      */
-    protected function prepare_object_for_response_core($order, $request) : array
+    protected function prepare_object_for_response_core($order, $request): array
     {
     }
 }

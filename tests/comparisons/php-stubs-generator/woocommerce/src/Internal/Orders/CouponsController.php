@@ -12,7 +12,7 @@ class CouponsController
      *
      * @throws Exception If order or coupon is invalid.
      */
-    public function add_coupon_discount_via_ajax() : void
+    public function add_coupon_discount_via_ajax(): void
     {
     }
     /**
@@ -22,7 +22,7 @@ class CouponsController
      * @return object The retrieved order object.
      * @throws \Exception Invalid order or coupon.
      */
-    public function add_coupon_discount(array $post_variables) : object
+    public function add_coupon_discount(array $post_variables): object
     {
     }
 }

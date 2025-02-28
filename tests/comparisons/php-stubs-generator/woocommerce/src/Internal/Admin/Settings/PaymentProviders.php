@@ -29,7 +29,7 @@ class PaymentProviders
      *
      * @internal
      */
-    public final function init(\Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions) : void
+    final public function init(\Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions): void
     {
     }
     /**
@@ -43,7 +43,7 @@ class PaymentProviders
      *
      * @return array The payment gateway objects list.
      */
-    public function get_payment_gateways(bool $exclude_shells = true) : array
+    public function get_payment_gateways(bool $exclude_shells = true): array
     {
     }
     /**
@@ -56,7 +56,7 @@ class PaymentProviders
      *
      * @return array The payment gateway details.
      */
-    public function get_payment_gateway_details(\WC_Payment_Gateway $payment_gateway, int $payment_gateway_order, string $country_code = '') : array
+    public function get_payment_gateway_details(\WC_Payment_Gateway $payment_gateway, int $payment_gateway_order, string $country_code = ''): array
     {
     }
     /**
@@ -69,7 +69,7 @@ class PaymentProviders
      *
      * @return array The payment gateway base details.
      */
-    public function get_payment_gateway_base_details(\WC_Payment_Gateway $payment_gateway, int $payment_gateway_order, string $country_code = '') : array
+    public function get_payment_gateway_base_details(\WC_Payment_Gateway $payment_gateway, int $payment_gateway_order, string $country_code = ''): array
     {
     }
     /**
@@ -79,7 +79,7 @@ class PaymentProviders
      *
      * @return string The plugin slug of the payment gateway.
      */
-    public function get_payment_gateway_plugin_slug(\WC_Payment_Gateway $payment_gateway) : string
+    public function get_payment_gateway_plugin_slug(\WC_Payment_Gateway $payment_gateway): string
     {
     }
     /**
@@ -92,7 +92,7 @@ class PaymentProviders
      *
      * @return string The plugin file corresponding to the payment gateway plugin. Does not include the .php extension.
      */
-    public function get_payment_gateway_plugin_file(\WC_Payment_Gateway $payment_gateway, string $plugin_slug = '') : string
+    public function get_payment_gateway_plugin_file(\WC_Payment_Gateway $payment_gateway, string $plugin_slug = ''): string
     {
     }
     /**
@@ -100,7 +100,7 @@ class PaymentProviders
      *
      * @return array The registered offline payment methods gateways keyed by their global gateways list order/index.
      */
-    public function get_offline_payment_methods_gateways() : array
+    public function get_offline_payment_methods_gateways(): array
     {
     }
     /**
@@ -110,7 +110,7 @@ class PaymentProviders
      *
      * @return bool True if the payment gateway is an offline payment method, false otherwise.
      */
-    public function is_offline_payment_method(string $id) : bool
+    public function is_offline_payment_method(string $id): bool
     {
     }
     /**
@@ -122,7 +122,7 @@ class PaymentProviders
      * @return array[] The payment extension suggestions for the given location, split into preferred and other.
      * @throws Exception If there are malformed or invalid suggestions.
      */
-    public function get_extension_suggestions(string $location, string $context = '') : array
+    public function get_extension_suggestions(string $location, string $context = ''): array
     {
     }
     /**
@@ -132,7 +132,7 @@ class PaymentProviders
      *
      * @return ?array The payment extension suggestion details, or null if not found.
      */
-    public function get_extension_suggestion_by_id(string $id) : ?array
+    public function get_extension_suggestion_by_id(string $id): ?array
     {
     }
     /**
@@ -143,7 +143,7 @@ class PaymentProviders
      *
      * @return ?array The payment extension suggestion details, or null if not found.
      */
-    public function get_extension_suggestion_by_plugin_slug(string $slug, string $country_code = '') : ?array
+    public function get_extension_suggestion_by_plugin_slug(string $slug, string $country_code = ''): ?array
     {
     }
     /**
@@ -154,7 +154,7 @@ class PaymentProviders
      * @return bool True if the suggestion was successfully hidden, false otherwise.
      * @throws Exception If the suggestion ID is invalid.
      */
-    public function hide_extension_suggestion(string $id) : bool
+    public function hide_extension_suggestion(string $id): bool
     {
     }
     /**
@@ -162,7 +162,7 @@ class PaymentProviders
      *
      * @return array The payment extension suggestions categories.
      */
-    public function get_extension_suggestion_categories() : array
+    public function get_extension_suggestion_categories(): array
     {
     }
     /**
@@ -170,7 +170,7 @@ class PaymentProviders
      *
      * @return array The payment providers order map.
      */
-    public function get_order_map() : array
+    public function get_order_map(): array
     {
     }
     /**
@@ -180,7 +180,7 @@ class PaymentProviders
      *
      * @return bool True if the payment providers order map was successfully saved, false otherwise.
      */
-    public function save_order_map(array $order_map) : bool
+    public function save_order_map(array $order_map): bool
     {
     }
     /**
@@ -197,7 +197,7 @@ class PaymentProviders
      *
      * @return bool True if the payment providers ordering was successfully updated, false otherwise.
      */
-    public function update_payment_providers_order_map(array $order_map) : bool
+    public function update_payment_providers_order_map(array $order_map): bool
     {
     }
     /**
@@ -211,7 +211,7 @@ class PaymentProviders
      *
      * @return array The updated payment providers order map.
      */
-    public function enhance_order_map(array $order_map) : array
+    public function enhance_order_map(array $order_map): array
     {
     }
     /**
@@ -221,7 +221,7 @@ class PaymentProviders
      *
      * @return string The ID of the suggestion order map entry.
      */
-    public function get_suggestion_order_map_id(string $suggestion_id) : string
+    public function get_suggestion_order_map_id(string $suggestion_id): string
     {
     }
     /**
@@ -231,7 +231,7 @@ class PaymentProviders
      *
      * @return bool True if the ID is a suggestion order map entry ID, false otherwise.
      */
-    public function is_suggestion_order_map_id(string $id) : bool
+    public function is_suggestion_order_map_id(string $id): bool
     {
     }
     /**
@@ -241,7 +241,7 @@ class PaymentProviders
      *
      * @return string The ID of the suggestion.
      */
-    public function get_suggestion_id_from_order_map_id(string $order_map_id) : string
+    public function get_suggestion_id_from_order_map_id(string $order_map_id): string
     {
     }
     /**
@@ -250,7 +250,7 @@ class PaymentProviders
      * @internal
      * @return void
      */
-    public function reset_memo() : void
+    public function reset_memo(): void
     {
     }
 }

@@ -27,7 +27,7 @@ class WebhookUtil
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function reassign_webhooks_to_new_user_id(int $old_user_id, ?int $new_user_id) : void
+    public function reassign_webhooks_to_new_user_id(int $old_user_id, ?int $new_user_id): void
     {
     }
     /**
@@ -40,7 +40,7 @@ class WebhookUtil
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
-    public function maybe_render_user_with_webhooks_warning(\WP_User $current_user, array $userids) : void
+    public function maybe_render_user_with_webhooks_warning(\WP_User $current_user, array $userids): void
     {
     }
     /**
@@ -50,7 +50,7 @@ class WebhookUtil
      *
      * @return int
      */
-    public function get_legacy_webhooks_count(bool $clear_cache = false) : int
+    public function get_legacy_webhooks_count(bool $clear_cache = false): int
     {
     }
 }

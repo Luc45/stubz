@@ -11,6 +11,7 @@ abstract class Component
      * Product Component traits.
      */
     use \Automattic\WooCommerce\Internal\Admin\ProductForm\ComponentTrait;
+
     /**
      * Component additional arguments.
      *

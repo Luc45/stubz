@@ -103,9 +103,9 @@ class WC_Email_Customer_New_Account extends \WC_Email
     }
     /**
      * Generate set password URL link for a new user.
-     * 
+     *
      * See also Automattic\WooCommerce\Blocks\Domain\Services\Email\CustomerNewAccount and wp_new_user_notification.
-     * 
+     *
      * @since 6.0.0
      * @return string
      */

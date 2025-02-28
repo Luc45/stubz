@@ -29,7 +29,7 @@ namespace Automattic\WooCommerce\Blocks;
  */
 class BlockPatterns
 {
-    const CATEGORIES_PREFIXES = ['_woo_', '_dotcom_imported_'];
+    public const CATEGORIES_PREFIXES = ['_woo_', '_dotcom_imported_'];
     /**
      * Constructor for class
      *

@@ -10,6 +10,7 @@ trait BlockContainerTrait
     use \Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockFormattedTemplateTrait {
         get_formatted_template as get_block_formatted_template;
     }
+
     /**
      * The inner blocks.
      *
@@ -28,7 +29,7 @@ trait BlockContainerTrait
      * @throws \UnexpectedValueException If the block container is not the parent of the block.
      * @throws \UnexpectedValueException If the block container's root template is not the same as the block's root template.
      */
-    protected function &add_inner_block(\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block) : \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
+    protected function &add_inner_block(\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block): \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
     {
     }
     // phpcs:enable Squiz.Commenting.FunctionCommentThrowTag.WrongNumber
@@ -37,7 +38,7 @@ trait BlockContainerTrait
      *
      * @param BlockInterface $block The block.
      */
-    private function is_block_descendant(\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block) : bool
+    private function is_block_descendant(\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block): bool
     {
     }
     /**
@@ -45,7 +46,7 @@ trait BlockContainerTrait
      *
      * @param string $block_id The block ID.
      */
-    public function get_block(string $block_id) : ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
+    public function get_block(string $block_id): ?\Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
     {
     }
     /**
@@ -76,13 +77,13 @@ trait BlockContainerTrait
     /**
      * Get the inner blocks sorted by order.
      */
-    private function get_inner_blocks_sorted_by_order() : array
+    private function get_inner_blocks_sorted_by_order(): array
     {
     }
     /**
      * Get the inner blocks as a formatted template.
      */
-    public function get_formatted_template() : array
+    public function get_formatted_template(): array
     {
     }
     /**

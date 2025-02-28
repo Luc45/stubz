@@ -11,10 +11,11 @@ class ChoosingTheme
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-choosing-a-theme';
+    public const NOTE_NAME = 'wc-admin-choosing-a-theme';
     /**
      * Get the note.
      *

@@ -14,7 +14,7 @@ class UI
      *
      * @param Register $register Register of approved directories.
      */
-    public final function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
+    final public function init(\Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
     {
     }
     /**
@@ -22,7 +22,7 @@ class UI
      * except in the case where the current user is not a site administrator, no hooks will
      * be initialized.
      */
-    public final function init_hooks()
+    final public function init_hooks()
     {
     }
     /**
@@ -32,7 +32,7 @@ class UI
      *
      * @return array
      */
-    public function add_section(array $sections) : array
+    public function add_section(array $sections): array
     {
     }
     /**

@@ -10,19 +10,19 @@ class ComingSoonHelper
     /**
      * Returns true when the entire site is live.
      */
-    public function is_site_live() : bool
+    public function is_site_live(): bool
     {
     }
     /**
      * Returns true when the entire site is coming soon mode.
      */
-    public function is_site_coming_soon() : bool
+    public function is_site_coming_soon(): bool
     {
     }
     /**
      * Returns true when only the store pages are in coming soon mode.
      */
-    public function is_store_coming_soon() : bool
+    public function is_store_coming_soon(): bool
     {
     }
     /**
@@ -30,7 +30,7 @@ class ComingSoonHelper
      *
      * @param string $url The URL to check.
      */
-    public function is_url_coming_soon(string $url) : bool
+    public function is_url_coming_soon(string $url): bool
     {
     }
     /**

@@ -18,7 +18,7 @@ class ProductSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\Abstract
      *
      * @var string
      */
-    const IDENTIFIER = 'product';
+    public const IDENTIFIER = 'product';
     /**
      * Image attachment schema instance.
      *

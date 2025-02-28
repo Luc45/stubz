@@ -11,6 +11,7 @@ namespace Automattic\WooCommerce\Admin\API;
 class ProductAttributeTerms extends \WC_REST_Product_Attribute_Terms_Controller
 {
     use \Automattic\WooCommerce\Admin\API\CustomAttributeTraits;
+
     /**
      * Endpoint namespace.
      *

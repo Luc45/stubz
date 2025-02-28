@@ -11,10 +11,11 @@ class CustomizeStoreWithBlocks
      * Note traits.
      */
     use \Automattic\WooCommerce\Admin\Notes\NoteTraits;
+
     /**
      * Name of the note for use in the database.
      */
-    const NOTE_NAME = 'wc-admin-customize-store-with-blocks';
+    public const NOTE_NAME = 'wc-admin-customize-store-with-blocks';
     /**
      * Get the note.
      *

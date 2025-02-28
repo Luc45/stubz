@@ -7,6 +7,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
 {
     use \WC_Item_Totals;
     use \Automattic\WooCommerce\Internal\CostOfGoodsSold\CogsAwareTrait;
+
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -1106,7 +1107,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @return string Order title.
      */
-    public function get_title() : string
+    public function get_title(): string
     {
     }
     /**
@@ -1128,7 +1129,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @return float The calculated value.
      */
-    public function calculate_cogs_total_value() : float
+    public function calculate_cogs_total_value(): float
     {
     }
     /**
@@ -1137,7 +1138,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @return float The calculated value.
      */
-    protected function calculate_cogs_total_value_core() : float
+    protected function calculate_cogs_total_value_core(): float
     {
     }
     /**
@@ -1147,7 +1148,7 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @return float The current value for this order.
      */
-    public function get_cogs_total_value() : float
+    public function get_cogs_total_value(): float
     {
     }
     /**

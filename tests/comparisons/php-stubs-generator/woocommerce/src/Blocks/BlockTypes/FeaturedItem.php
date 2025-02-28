@@ -31,14 +31,14 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @param array $attributes Block attributes. Default empty array.
      * @return \WP_Term|\WC_Product|null
      */
-    protected abstract function get_item($attributes);
+    abstract protected function get_item($attributes);
     /**
      * Returns the name of the featured item.
      *
      * @param \WP_Term|\WC_Product $item Item object.
      * @return string
      */
-    protected abstract function get_item_title($item);
+    abstract protected function get_item_title($item);
     /**
      * Returns the featured item image URL.
      *
@@ -46,7 +46,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @param string               $size Image size, defaults to 'full'.
      * @return string
      */
-    protected abstract function get_item_image($item, $size = 'full');
+    abstract protected function get_item_image($item, $size = 'full');
     /**
      * Renders the featured item attributes.
      *
@@ -54,7 +54,7 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @param array                $attributes Block attributes. Default empty array.
      * @return string
      */
-    protected abstract function render_attributes($item, $attributes);
+    abstract protected function render_attributes($item, $attributes);
     /**
      * Render the featured item block.
      *
