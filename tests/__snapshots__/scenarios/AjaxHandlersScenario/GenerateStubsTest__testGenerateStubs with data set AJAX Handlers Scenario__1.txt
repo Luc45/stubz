@@ -1,13 +1,16 @@
 <?php
 
-namespace AjaxHandlersScenario;
+namespace AjaxHandlersScenario\ajax;
 
 /**
- * Main plugin file that initializes all AJAX handlers.
+ * Handles AJAX requests for the plugin.
  */
-class AjaxMain
+class AjaxHandler
 {
-    public function init(): void
+    public function register(): void
+{
+}
+    public function handleDoSomething(): void
 {
 }
 }

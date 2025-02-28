@@ -21,6 +21,8 @@ class Stubz {
 		$verbose   = $options['verbose'] ?? false;
 		$finder    = $this->getFinder( $options );
 
+		$finder->sortByName();
+
 		// Convert Finder -> list of file paths
 		$filePaths = [];
 		foreach ( $finder as $file ) {
