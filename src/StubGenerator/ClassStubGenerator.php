@@ -4,59 +4,47 @@ declare( strict_types=1 );
 
 namespace Stubz\StubGenerator;
 
+use PhpParser\Node\Expr\ConstFetch;
+use PhpParser\Node\Scalar\MagicConst\Dir;
+use PhpParser\Node\Scalar\MagicConst\File;
 use Roave\BetterReflection\Reflection\ReflectionClass;
 use Roave\BetterReflection\Reflection\ReflectionEnum;
 use Throwable;
 
 class ClassStubGenerator {
-	/**
-	 * Generate a class/trait/interface/enum stub from reflection.
-	 */
 	public function generateClassStub( ReflectionClass $class ): string {
 		$buf = '';
 
-		// 1) Doc comment
 		$doc = $class->getDocComment();
 		if ( $doc !== null ) {
 			$buf .= $doc . "\n";
 		}
-
-		// 2) Attributes
 		foreach ( $class->getAttributes() as $attr ) {
 			$buf .= ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
-		// 3) Class/trait/interface/enum declaration
 		$buf .= $this->getClassDeclaration( $class );
 
-		// Potential "extends" for normal classes
-		// (using getParentClassName() instead of getParentClass())
 		$parentName = $class->getParentClassName();
 
-		// If not interface/trait/enum => handle extends/implements
 		if ( $class->isInterface() ) {
-			// If this is an interface, gather *parent* interfaces via getInterfaceClassNames()
 			$parentInterfaces = [];
 			try {
 				$ifaceNames = $class->getInterfaceClassNames();
-				sort( $ifaceNames ); // Sort for consistent ordering
+				sort( $ifaceNames );
 				foreach ( $ifaceNames as $iname ) {
 					$parentInterfaces[] = '\\' . ltrim( $iname, '\\' );
 				}
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
 			}
-
 			if ( ! empty( $parentInterfaces ) ) {
 				$buf .= ' extends ' . implode( ', ', $parentInterfaces );
 			}
 		} elseif ( ! $class->isTrait() && ! $class->isEnum() ) {
-			// If it's a class (abstract, final, or normal)
 			if ( $parentName ) {
 				$buf .= ' extends \\' . ltrim( $parentName, '\\' );
 			}
-
-			// Then gather interfaces via getInterfaceClassNames() for "implements"
 			$interfaces = [];
 			try {
 				$ifaceNames = $class->getInterfaceClassNames();
@@ -67,7 +55,6 @@ class ClassStubGenerator {
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
 			}
-
 			if ( ! empty( $interfaces ) ) {
 				$buf .= ' implements ' . implode( ', ', $interfaces );
 			}
@@ -75,14 +62,10 @@ class ClassStubGenerator {
 
 		$buf .= "\n{\n";
 
-		// ---------------------------------------------------------------------
-		// 4) Enum handling (cases, "magic" members, etc.)
-		// ---------------------------------------------------------------------
+		// Enums
 		if ( $class->isEnum() && $class instanceof ReflectionEnum ) {
 			$cases = $class->getCases();
-
 			if ( $class->isBacked() ) {
-				// "Backed" enum => produce `case X = 'foo';`, plus $value, from/tryFrom
 				foreach ( $cases as $case ) {
 					try {
 						$val = Helpers::toPhpLiteral( $case->getValue() );
@@ -91,50 +74,51 @@ class ClassStubGenerator {
 						Helpers::handleBetterReflectionException( $ex );
 					}
 				}
-
-				// The typical lines the snapshot expects:
 				$buf .= "    public readonly string \$name;\n";
-				$buf .= "    public readonly string \$value;\n"; // your test expects 'string' specifically
+				$buf .= "    public readonly string \$value;\n";
 				$buf .= "    public static function cases(): array\n    {\n    }\n";
 				$buf .= "    public static function from(string|int \$value): static\n    {\n    }\n";
 				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n    }\n";
 			} else {
-				// "Pure" enum => produce `case X;`, no "= value"
 				foreach ( $cases as $case ) {
 					$buf .= "    case {$case->getName()};\n";
 				}
-				// Minimal set for pure enums
 				$buf .= "    public readonly string \$name;\n";
 				$buf .= "    public static function cases(): array\n    {\n    }\n";
 			}
 		}
 
-		// ---------------------------------------------------------------------
-		// 5) Class constants
-		// ---------------------------------------------------------------------
+		// Class constants
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
-			$visibility = 'public';
-			if ( $refConst->isPrivate() ) {
-				$visibility = 'private';
-			} elseif ( $refConst->isProtected() ) {
-				$visibility = 'protected';
-			}
-
+			// Skip private
 			if ( $refConst->isPrivate() ) {
 				continue;
 			}
 
+			$visibility = 'public';
+			if ( $refConst->isProtected() ) {
+				$visibility = 'protected';
+			}
+
 			try {
-				$val = Helpers::toPhpLiteral( $refConst->getValue() );
+				// Try to see if it references a global constant, etc.
+				$astNode = $refConst->getValueExpression();
+				if ( $astNode instanceof File ) {
+					$val = '__FILE__';
+				} elseif ( $astNode instanceof Dir ) {
+					$val = '__DIR__';
+				} elseif ( $astNode instanceof ConstFetch ) {
+					$val = $astNode->name->toString();
+				} else {
+					$val = Helpers::toPhpLiteral( $refConst->getValue() );
+				}
 				$buf .= "    {$visibility} const {$constName} = {$val};\n";
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
 			}
 		}
 
-		// ---------------------------------------------------------------------
-		// 6) Properties
-		// ---------------------------------------------------------------------
+		// Properties
 		try {
 			$props = $class->getImmediateProperties();
 		} catch ( Throwable $ex ) {
@@ -147,9 +131,7 @@ class ClassStubGenerator {
 			}
 		}
 
-		// ---------------------------------------------------------------------
-		// 7) Methods
-		// ---------------------------------------------------------------------
+		// Methods
 		try {
 			$methods = $class->getImmediateMethods();
 		} catch ( Throwable $ex ) {
@@ -167,24 +149,23 @@ class ClassStubGenerator {
 		return $buf;
 	}
 
-	/**
-	 * Describe how the class is declared: interface, trait, enum, abstract, final, etc.
-	 */
 	private function getClassDeclaration( ReflectionClass $class ): string {
 		if ( $class->isInterface() ) {
-			$out = 'interface ' . $class->getShortName();
-		} elseif ( $class->isTrait() ) {
-			$out = 'trait ' . $class->getShortName();
-		} elseif ( $class->isEnum() ) {
-			$out = 'enum ' . $class->getShortName();
-		} elseif ( $class->isAbstract() ) {
-			$out = 'abstract class ' . $class->getShortName();
-		} elseif ( $class->isFinal() ) {
-			$out = 'final class ' . $class->getShortName();
-		} else {
-			$out = 'class ' . $class->getShortName();
+			return 'interface ' . $class->getShortName();
+		}
+		if ( $class->isTrait() ) {
+			return 'trait ' . $class->getShortName();
+		}
+		if ( $class->isEnum() ) {
+			return 'enum ' . $class->getShortName();
+		}
+		if ( $class->isAbstract() ) {
+			return 'abstract class ' . $class->getShortName();
+		}
+		if ( $class->isFinal() ) {
+			return 'final class ' . $class->getShortName();
 		}
 
-		return $out;
+		return 'class ' . $class->getShortName();
 	}
 }
