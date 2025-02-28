@@ -123,7 +123,7 @@ class GenerateStubsTest extends TestCase {
 			}
 
 			$cmd = sprintf(
-				'NO_STUB_CACHE=1 php %s%s %s %s 2>&1',
+				'php %s%s %s %s 2>&1',
 				escapeshellarg( $scriptPath ),
 				$excludeFlags,
 				escapeshellarg( $sourceDir ),

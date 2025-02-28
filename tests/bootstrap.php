@@ -17,6 +17,9 @@ trait TestHelpers {
 			}
 		}
 
+		// Sort alphabetically.
+		sort( $results );
+
 		return $results;
 	}
 }
