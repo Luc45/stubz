@@ -21,12 +21,9 @@ abstract class WC_Abstract_Legacy_Order
      * @return int order item ID
      * @throws WC_Data_Exception
      */
-    public function add_coupon($code = array (
-), $discount = 0, $discount_tax = 0)
-    {
-        // stub
-    }
-
+    public function add_coupon($code = array(), $discount = 0, $discount_tax = 0)
+{
+}
     /**
      * Add a tax row to the order.
      * @param int $tax_rate_id
@@ -36,10 +33,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function add_tax($tax_rate_id, $tax_amount = 0, $shipping_tax_amount = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a shipping row to the order.
      * @param WC_Shipping_Rate shipping_rate
@@ -47,10 +42,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function add_shipping($shipping_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a fee to the order.
      * Order must be saved prior to adding items.
@@ -63,10 +56,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return int         Updated order item ID.
      */
     public function add_fee($fee)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a line item for the order.
      *
@@ -79,10 +70,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function update_product($item, $product, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update coupon for order. Note this does not update order totals.
      * @param object|int $item
@@ -91,10 +80,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function update_coupon($item, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update shipping method for order.
      *
@@ -106,10 +93,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function update_shipping($item, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update fee for order.
      *
@@ -121,10 +106,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function update_fee($item, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update tax line on order.
      * Note this does not update order totals.
@@ -136,10 +119,8 @@ abstract class WC_Abstract_Legacy_Order
      * @throws WC_Data_Exception
      */
     public function update_tax($item, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a product (either product or variation).
      * @deprecated 4.4.0
@@ -147,20 +128,16 @@ abstract class WC_Abstract_Legacy_Order
      * @return WC_Product|bool
      */
     public function get_product_from_item($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the customer address.
      * @param array $address Address data.
      * @param string $type Type of address; 'billing' or 'shipping'.
      */
     public function set_address($address, $type = 'billing')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set an order total.
      * @param float $amount
@@ -168,10 +145,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return bool
      */
     public function legacy_set_total($amount, $total_type = 'total')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic __isset method for backwards compatibility. Handles legacy properties which could be accessed directly in the past.
      *
@@ -179,10 +154,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic __get method for backwards compatibility.
      *
@@ -190,10 +163,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * has_meta function for order items. This is different to the WC_Data
      * version and should be removed in future versions.
@@ -205,28 +176,22 @@ abstract class WC_Abstract_Legacy_Order
      * @return array of meta data.
      */
     public function has_meta($order_item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display meta data belonging to an item.
      * @param  array $item
      */
     public function display_item_meta($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display download links for an order item.
      * @param  array $item
      */
     public function display_item_downloads($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Download URL.
      *
@@ -235,10 +200,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return string
      */
     public function get_download_url($product_id, $download_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the downloadable files for an item in this order.
      *
@@ -246,20 +209,16 @@ abstract class WC_Abstract_Legacy_Order
      * @return array
      */
     public function get_item_downloads($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets shipping total. Alias of WC_Order::get_shipping_total().
      * @deprecated 3.0.0 since this is an alias only.
      * @return float
      */
     public function get_total_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item meta.
      * @deprecated 3.0.0
@@ -269,10 +228,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return array|string
      */
     public function get_item_meta($order_item_id, $key = '', $single = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all item meta data in array format in the order it was saved. Does not group meta by key like get_item_meta().
      *
@@ -280,10 +237,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return array of objects
      */
     public function get_item_meta_array($order_item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon codes only.
      *
@@ -291,10 +246,8 @@ abstract class WC_Abstract_Legacy_Order
      * @return array
      */
     public function get_used_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Expand item meta into the $item array.
      * @deprecated 3.0.0 Item meta no longer expanded due to new order item
@@ -303,20 +256,16 @@ abstract class WC_Abstract_Legacy_Order
      * @return array
      */
     public function expand_item_meta($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load the order object. Called from the constructor.
      * @deprecated 3.0.0 Logic moved to constructor
      * @param int|object|WC_Order $order Order to init.
      */
     protected function init($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an order from the database.
      * @deprecated 3.0
@@ -324,66 +273,52 @@ abstract class WC_Abstract_Legacy_Order
      * @return bool
      */
     public function get_order($id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Populates an order from the loaded post data.
      * @deprecated 3.0
      * @param mixed $result
      */
     public function populate($result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel the order and restore the cart (before payment).
      * @deprecated 3.0.0 Moved to event handler.
      * @param string $note (default: '') Optional note to add.
      */
     public function cancel_order($note = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Record sales.
      * @deprecated 3.0.0
      */
     public function record_product_sales()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increase applied coupon counts.
      * @deprecated 3.0.0
      */
     public function increase_coupon_usage_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decrease applied coupon counts.
      * @deprecated 3.0.0
      */
     public function decrease_coupon_usage_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reduce stock levels for all line items in the order.
      * @deprecated 3.0.0
      */
     public function reduce_order_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send the stock notifications.
      * @deprecated 3.0.0 No longer needs to be called directly.
@@ -393,29 +328,22 @@ abstract class WC_Abstract_Legacy_Order
      * @param $qty_ordered
      */
     public function send_stock_notifications($product, $new_stock, $qty_ordered)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output items for display in html emails.
      * @deprecated 3.0.0 Moved to template functions.
      * @param array $args Items args.
      * @return string
      */
-    public function email_order_items_table($args = array (
-))
-    {
-        // stub
-    }
-
+    public function email_order_items_table($args = array())
+{
+}
     /**
      * Get currency.
      * @deprecated 3.0.0
      */
     public function get_order_currency()
-    {
-        // stub
-    }
-
+{
+}
 }

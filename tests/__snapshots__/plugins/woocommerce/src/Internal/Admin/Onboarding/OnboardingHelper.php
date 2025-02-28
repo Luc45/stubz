@@ -17,41 +17,31 @@ class OnboardingHelper
     /**
      * Get class instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Init.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the help tab setup link to reset the onboarding profiler.
      */
     public function add_help_tab()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the onboarding task list and redirect to the dashboard.
      */
     public function reset_task_list()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the extended task list and redirect to the dashboard.
      */
     public function reset_extended_task_list()
-    {
-        // stub
-    }
-
+{
+}
 }

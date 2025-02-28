@@ -21,10 +21,8 @@ class FeaturedProduct
      * @return \WP_Term|null
      */
     protected function get_item($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of the featured product.
      *
@@ -32,10 +30,8 @@ class FeaturedProduct
      * @return string
      */
     protected function get_item_title($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the featured product image URL.
      *
@@ -44,10 +40,8 @@ class FeaturedProduct
      * @return string
      */
     protected function get_item_image($product, $size = 'full')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the featured product attributes.
      *
@@ -56,8 +50,6 @@ class FeaturedProduct
      * @return string
      */
     protected function render_attributes($product, $attributes)
-    {
-        // stub
-    }
-
+{
+}
 }

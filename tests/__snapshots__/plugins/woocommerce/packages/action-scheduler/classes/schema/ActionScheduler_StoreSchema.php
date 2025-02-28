@@ -30,28 +30,22 @@ class ActionScheduler_StoreSchema
      * Construct.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs additional setup work required to support this schema.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get table definition.
      *
      * @param string $table Table name.
      */
     protected function get_table_definition($table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the actions table schema, allowing datetime fields to be NULL.
      *
@@ -65,8 +59,6 @@ class ActionScheduler_StoreSchema
      * @param string $db_version The existing schema version of the table.
      */
     public function update_schema_5_0($table, $db_version)
-    {
-        // stub
-    }
-
+{
+}
 }

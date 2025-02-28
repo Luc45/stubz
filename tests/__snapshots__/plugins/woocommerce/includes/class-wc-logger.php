@@ -26,30 +26,24 @@ class WC_Logger
      * @param string $threshold Optional. Define an explicit threshold. May be configured via  WC_LOG_THRESHOLD. By default, all logs will be processed.
      */
     public function __construct($handlers = null, $threshold = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of log handler instances.
      *
      * @return WC_Log_Handler_Interface[]
      */
     protected function get_handlers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the log threshold as a numerical level severity.
      *
      * @return int
      */
     protected function get_threshold()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether to handle or ignore log.
      *
@@ -57,10 +51,8 @@ class WC_Logger
      * @return bool True if the log should be handled.
      */
     protected function should_handle($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a log entry.
      *
@@ -73,10 +65,8 @@ class WC_Logger
      * @return bool
      */
     public function add($handle, $message, $level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a log entry.
      *
@@ -94,12 +84,9 @@ class WC_Logger
      *
      * @return void
      */
-    public function log($level, $message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function log($level, $message, $context = array())
+{
+}
     /**
      * Adds an emergency level message.
      *
@@ -110,12 +97,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function emergency($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function emergency($message, $context = array())
+{
+}
     /**
      * Adds an alert level message.
      *
@@ -127,12 +111,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function alert($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function alert($message, $context = array())
+{
+}
     /**
      * Adds a critical level message.
      *
@@ -144,12 +125,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function critical($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function critical($message, $context = array())
+{
+}
     /**
      * Adds an error level message.
      *
@@ -161,12 +139,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function error($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function error($message, $context = array())
+{
+}
     /**
      * Adds a warning level message.
      *
@@ -180,12 +155,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function warning($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function warning($message, $context = array())
+{
+}
     /**
      * Adds a notice level message.
      *
@@ -196,12 +168,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function notice($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function notice($message, $context = array())
+{
+}
     /**
      * Adds a info level message.
      *
@@ -213,12 +182,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function info($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function info($message, $context = array())
+{
+}
     /**
      * Adds a debug level message.
      *
@@ -229,12 +195,9 @@ class WC_Logger
      * @param string $message Message to log.
      * @param array  $context Log context.
      */
-    public function debug($message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function debug($message, $context = array())
+{
+}
     /**
      * Clear entries for a chosen file/source.
      *
@@ -242,18 +205,14 @@ class WC_Logger
      * @return bool
      */
     public function clear($source = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear all logs older than a defined number of days. Defaults to 30 days.
      *
      * @return void
      */
     public function clear_expired_logs()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -24,20 +24,16 @@ class RestApi
      * @since 9.3.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the current user has permission to perform the request.
      *
      * @return bool|\WP_Error
      */
     public function check_permission()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the export request.
      *
@@ -45,10 +41,8 @@ class RestApi
      * @return \WP_HTTP_Response The response object.
      */
     public function export($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the import request.
      *
@@ -56,10 +50,8 @@ class RestApi
      * @throws \InvalidArgumentException If the import fails.
      */
     public function import()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the upload request.
      *
@@ -70,10 +62,8 @@ class RestApi
      * @return array
      */
     public function queue()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the uploaded file.
      *
@@ -82,10 +72,8 @@ class RestApi
      * @return array
      */
     public function process(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert step list from the frontend to the backend format.
      *
@@ -105,10 +93,8 @@ class RestApi
      * @return array
      */
     private function steps_payload_to_blueprint_steps($steps)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of settings that will be overridden by the import.
      *
@@ -116,28 +102,22 @@ class RestApi
      * @return array List of settings that will be overridden.
      */
     private function get_settings_to_overwrite(array $requested_steps): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the queue endpoint.
      *
      * @return array
      */
     public function get_queue_response_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the process endpoint.
      *
      * @return array
      */
     public function get_process_response_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

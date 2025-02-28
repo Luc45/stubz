@@ -29,20 +29,16 @@ class FileExporter
      *                                   part of the path.
      */
     public function __construct(string $path, string $alternate_filename = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Configure PHP and stream the file to the browser.
      *
      * @return WP_Error|void Only returns something if there is an error.
      */
     public function emit_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send HTTP headers at the beginning of a file.
      *
@@ -51,28 +47,22 @@ class FileExporter
      * @return void
      */
     private function send_headers(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send the contents of the file.
      *
      * @return void
      */
     private function send_contents(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the file that will be sent to the browser.
      *
      * @return string
      */
     private function get_filename(): string
-    {
-        // stub
-    }
-
+{
+}
 }

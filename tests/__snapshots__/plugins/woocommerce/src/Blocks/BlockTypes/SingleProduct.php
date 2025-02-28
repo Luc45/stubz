@@ -28,8 +28,7 @@ class SingleProduct
      *
      * @var array
      */
-    protected $single_product_inner_blocks_names = array (
-);
+    protected $single_product_inner_blocks_names = array();
 
     /**
      * Initialize the block and Hook into the `render_block_context` filter
@@ -38,10 +37,8 @@ class SingleProduct
      * @var string
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Restore the global post variable right before generating the render output for the post title and/or post excerpt blocks.
      *
@@ -58,10 +55,8 @@ class SingleProduct
      * @return mixed
      */
     public function restore_global_post($block_content, $parsed_block, $block_instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the context by injecting the correct post data
      * for each one of the Single Product inner blocks.
@@ -73,10 +68,8 @@ class SingleProduct
      * @return array Updated block context.
      */
     public function update_context($context, $block, $parent_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extract the inner block names for the Single Product block. This way it's possible
      * to map all the inner blocks for a Single Product block and manipulate the data as needed.
@@ -86,12 +79,9 @@ class SingleProduct
      *
      * @return array Array containing all the inner block names of a Single Product block.
      */
-    protected function extract_single_product_inner_block_names($block, &$result = array (
-))
-    {
-        // stub
-    }
-
+    protected function extract_single_product_inner_block_names($block, &$result = array())
+{
+}
     /**
      * Replace the global post for the Single Product inner blocks and reset it after.
      *
@@ -103,10 +93,8 @@ class SingleProduct
      * @param array $context Block context.
      */
     protected function replace_post_for_single_product_inner_block($block, &$context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -115,8 +103,6 @@ class SingleProduct
      * @return null This block has no frontend script.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
 }

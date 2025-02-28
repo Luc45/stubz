@@ -27,90 +27,72 @@ class AdditionalPayments
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Title.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Content.
      *
      * @return string
      */
     public function get_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Time.
      *
      * @return string
      */
     public function get_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Task completion.
      *
      * @return bool
      */
     public function is_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Task visibility.
      *
      * @return bool
      */
     public function can_view()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Action URL.
      *
      * @return string
      */
     public function get_action_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any enabled gateways in other category.
      *
      * @return bool
      */
     private static function has_enabled_other_category_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any enabled gateways in additional category.
      *
      * @return bool
      */
     private static function has_enabled_additional_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any enabled gateways based on the given criteria.
      *
@@ -118,10 +100,8 @@ class AdditionalPayments
      * @return bool
      */
     private static function has_enabled_gateways($filter = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of gateways to suggest.
      *
@@ -130,8 +110,6 @@ class AdditionalPayments
      * @return array
      */
     private static function get_suggestion_gateways($filter_by = 'category_additional')
-    {
-        // stub
-    }
-
+{
+}
 }

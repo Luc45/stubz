@@ -20,28 +20,22 @@ class HandpickedProducts
      * @param array $query_args Query args.
      */
     protected function set_block_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set visibility query args. Handpicked products will show hidden products if chosen.
      *
      * @param array $query_args Query args.
      */
     protected function set_visibility_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block attributes.
      *
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
 }

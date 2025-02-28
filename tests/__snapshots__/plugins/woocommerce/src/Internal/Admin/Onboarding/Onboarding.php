@@ -12,9 +12,7 @@ class Onboarding
      *
      * @internal This method is for internal purposes only.
      */
-    public static final function init()
-    {
-        // stub
-    }
-
+    final public static function init()
+{
+}
 }

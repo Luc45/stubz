@@ -9,10 +9,8 @@ class WC_Widget_Product_Search
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -22,8 +20,6 @@ class WC_Widget_Product_Search
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
 }

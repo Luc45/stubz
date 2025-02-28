@@ -20,64 +20,48 @@ class ProductVariationTemplate
      * ProductVariationTemplate constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template ID.
      */
     public function get_id(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template title.
      */
     public function get_title(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template description.
      */
     public function get_description(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the group blocks to the template.
      */
     protected function add_group_blocks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the general group blocks to the template.
      */
     protected function add_general_group_blocks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the inventory group blocks to the template.
      */
     protected function add_inventory_group_blocks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the shipping group blocks to the template.
      */
     protected function add_shipping_group_blocks()
-    {
-        // stub
-    }
-
+{
+}
 }

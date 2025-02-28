@@ -10,9 +10,7 @@
  */
 function woocommerce_store_api_register_endpoint_data($args)
 {
-    // stub
 }
-
 /**
  * Add callback functions that can be executed by the cart/extensions endpoint.
  *
@@ -23,9 +21,7 @@ function woocommerce_store_api_register_endpoint_data($args)
  */
 function woocommerce_store_api_register_update_callback($args)
 {
-    // stub
 }
-
 /**
  * Registers and validates payment requirements callbacks.
  *
@@ -36,9 +32,7 @@ function woocommerce_store_api_register_update_callback($args)
  */
 function woocommerce_store_api_register_payment_requirements($args)
 {
-    // stub
 }
-
 /**
  * Returns a formatter instance.
  *
@@ -49,5 +43,4 @@ function woocommerce_store_api_register_payment_requirements($args)
  */
 function woocommerce_store_api_get_formatter($name)
 {
-    // stub
 }

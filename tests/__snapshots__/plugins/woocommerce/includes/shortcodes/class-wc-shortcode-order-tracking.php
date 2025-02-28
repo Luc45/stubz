@@ -12,18 +12,14 @@ class WC_Shortcode_Order_Tracking
      * @return string
      */
     public static function get($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the shortcode.
      *
      * @param array $atts Shortcode attributes.
      */
     public static function output($atts)
-    {
-        // stub
-    }
-
+{
+}
 }

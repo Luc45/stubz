@@ -22,20 +22,16 @@ class ProductTemplate
      * - Hook into pre_render_block to update the query.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
      * @param string $key Data to get, or default to everything.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -46,10 +42,8 @@ class ProductTemplate
      * @return string | void Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether a block list contains a block that uses the featured image.
      *
@@ -58,10 +52,8 @@ class ProductTemplate
      * @return bool Whether the block list contains a block that uses the featured image.
      */
     protected function block_core_post_template_uses_featured_image($inner_blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Product Template renders inner blocks manually so we need to skip default
      * rendering routine for its inner blocks
@@ -71,8 +63,6 @@ class ProductTemplate
      * @return array
      */
     public function add_block_type_metadata_settings($settings, $metadata)
-    {
-        // stub
-    }
-
+{
+}
 }

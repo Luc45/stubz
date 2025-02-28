@@ -43,10 +43,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create an item.
      *
@@ -54,10 +52,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|boolean
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read an item.
      *
@@ -65,10 +61,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update an item.
      *
@@ -76,10 +70,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete an item.
      *
@@ -87,10 +79,8 @@ abstract class WC_REST_Posts_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -99,10 +89,8 @@ abstract class WC_REST_Posts_Controller
      * @return boolean|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single item.
      *
@@ -110,10 +98,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single item.
      *
@@ -121,10 +107,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add post meta fields.
      *
@@ -133,20 +117,16 @@ abstract class WC_REST_Posts_Controller
      * @return bool|WP_Error
      */
     protected function add_post_meta_fields($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete post.
      *
      * @param WP_Post $post Post object.
      */
     protected function delete_post($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single post.
      *
@@ -154,10 +134,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of posts.
      *
@@ -165,10 +143,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single item.
      *
@@ -176,10 +152,8 @@ abstract class WC_REST_Posts_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -188,10 +162,8 @@ abstract class WC_REST_Posts_Controller
      * @return array Links for the given post.
      */
     protected function prepare_links($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine the allowed query_vars for a get_items() response and
      * prepare for WP_Query.
@@ -200,32 +172,25 @@ abstract class WC_REST_Posts_Controller
      * @param WP_REST_Request $request Request object.
      * @return array          $query_args
      */
-    protected function prepare_items_query($prepared_args = array (
-), $request = null)
-    {
-        // stub
-    }
-
+    protected function prepare_items_query($prepared_args = array(), $request = null)
+{
+}
     /**
      * Get all the WP Query vars that are allowed for the API request.
      *
      * @return array
      */
     protected function get_allowed_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update post meta fields.
      *
@@ -234,8 +199,6 @@ abstract class WC_REST_Posts_Controller
      * @return bool|WP_Error
      */
     protected function update_post_meta_fields($post, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,10 +15,8 @@ abstract class DataSourcePoller
      * Log a deprecation to the error log.
      */
     private static function log_deprecation()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor.
      *
@@ -26,13 +24,9 @@ abstract class DataSourcePoller
      * @param array  $data_sources urls for data sources.
      * @param array  $args Options for DataSourcePoller.
      */
-    public function __construct($id, $data_sources = array (
-), $args = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($id, $data_sources = array(), $args = array())
+{
+}
     /**
      * Reads the data sources for specs and persists those specs.
      *
@@ -40,10 +34,8 @@ abstract class DataSourcePoller
      * @return array list of specs.
      */
     public function get_specs_from_data_sources()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads the data sources for specs and persists those specs.
      *
@@ -51,10 +43,8 @@ abstract class DataSourcePoller
      * @return bool Whether any specs were read.
      */
     public function read_specs_from_data_sources()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the specs transient.
      *
@@ -62,10 +52,8 @@ abstract class DataSourcePoller
      * @return bool success of failure of transient deletion.
      */
     public function delete_specs_transient()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the specs transient.
      *
@@ -75,8 +63,6 @@ abstract class DataSourcePoller
      * @deprecated 8.8.0
      */
     public function set_specs_transient($specs, $expiration = 0)
-    {
-        // stub
-    }
-
+{
+}
 }

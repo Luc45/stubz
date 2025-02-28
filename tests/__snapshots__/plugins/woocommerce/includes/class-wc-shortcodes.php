@@ -9,10 +9,8 @@ class WC_Shortcodes
      * Init shortcodes.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shortcode Wrapper.
      *
@@ -22,26 +20,21 @@ class WC_Shortcodes
      *
      * @return string
      */
-    public static function shortcode_wrapper($function, $atts = array (
-), $wrapper = array (
+    public static function shortcode_wrapper($function, $atts = array(), $wrapper = array (
   'class' => 'woocommerce',
   'before' => null,
   'after' => null,
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cart page shortcode.
      *
      * @return string
      */
     public static function cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checkout page shortcode.
      *
@@ -49,10 +42,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function checkout($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order tracking page shortcode.
      *
@@ -60,10 +51,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function order_tracking($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * My account page shortcode.
      *
@@ -71,10 +60,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function my_account($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List products in a category shortcode.
      *
@@ -82,10 +69,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_category($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List all (or limited) product categories.
      *
@@ -93,10 +78,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_categories($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recent Products shortcode.
      *
@@ -104,10 +87,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function recent_products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List multiple products shortcode.
      *
@@ -115,10 +96,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display a single product.
      *
@@ -126,10 +105,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display a single product price + cart button.
      *
@@ -137,10 +114,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_add_to_cart($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart URL for a product.
      *
@@ -148,10 +123,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_add_to_cart_url($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List all products on sale.
      *
@@ -159,10 +132,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function sale_products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List best selling products on sale.
      *
@@ -170,10 +141,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function best_selling_products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List top rated products on sale.
      *
@@ -181,10 +150,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function top_rated_products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output featured products.
      *
@@ -192,10 +159,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function featured_products($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show a single product page.
      *
@@ -203,20 +168,16 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_page($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show messages.
      *
      * @return string
      */
     public static function shop_messages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order by rating.
      *
@@ -225,10 +186,8 @@ class WC_Shortcodes
      * @return     array
      */
     public static function order_by_rating_post_clauses($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List products with an attribute shortcode.
      * Example [product_attribute attribute="color" filter="black"].
@@ -237,10 +196,8 @@ class WC_Shortcodes
      * @return string
      */
     public static function product_attribute($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List related products.
      *
@@ -248,8 +205,6 @@ class WC_Shortcodes
      * @return string
      */
     public static function related_products($atts)
-    {
-        // stub
-    }
-
+{
+}
 }

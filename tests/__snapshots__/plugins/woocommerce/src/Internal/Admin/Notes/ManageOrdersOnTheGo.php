@@ -15,8 +15,6 @@ class ManageOrdersOnTheGo
      * @return Note|null
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -33,24 +33,21 @@ final class ExtendSchema
      *
      * @var array
      */
-    private $extend_data = array (
-);
+    private $extend_data = array();
 
     /**
      * Data to be extended
      *
      * @var array
      */
-    private $callback_methods = array (
-);
+    private $callback_methods = array();
 
     /**
      * Array of payment requirements
      *
      * @var array
      */
-    private $payment_requirements = array (
-);
+    private $payment_requirements = array();
 
     /**
      * Constructor
@@ -58,10 +55,8 @@ final class ExtendSchema
      * @param Formatters $formatters An instance of the formatters class.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Formatters $formatters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register endpoint data under a specified namespace
      *
@@ -78,10 +73,8 @@ final class ExtendSchema
      * @throws \Exception On failure to register.
      */
     public function register_endpoint_data($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add callback functions that can be executed by the cart/extensions endpoint.
      *
@@ -95,10 +88,8 @@ final class ExtendSchema
      * @throws \Exception On failure to register.
      */
     public function register_update_callback($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers and validates payment requirements callbacks.
      *
@@ -111,10 +102,8 @@ final class ExtendSchema
      * @throws \Exception On failure to register.
      */
     public function register_payment_requirements($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a formatter instance.
      *
@@ -122,10 +111,8 @@ final class ExtendSchema
      * @return FormatterInterface
      */
     public function get_formatter($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get callback for a specific endpoint and namespace.
      *
@@ -135,10 +122,8 @@ final class ExtendSchema
      * @throws \Exception When callback is not callable or parameters are incorrect.
      */
     public function get_update_callback($namespace)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the registered endpoint data
      *
@@ -147,12 +132,9 @@ final class ExtendSchema
      * @return object Returns an casted object with registered endpoint data.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_endpoint_data($endpoint, array $passed_args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_endpoint_data($endpoint, array $passed_args = array())
+{
+}
     /**
      * Returns the registered endpoint schema
      *
@@ -161,12 +143,9 @@ final class ExtendSchema
      * @return object Returns an array with registered schema data.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_endpoint_schema($endpoint, array $passed_args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_endpoint_schema($endpoint, array $passed_args = array())
+{
+}
     /**
      * Returns the additional payment requirements for the cart which are required to make payments. Values listed here
      * are compared against each Payment Gateways "supports" flag.
@@ -178,10 +157,8 @@ final class ExtendSchema
     public function get_payment_requirements(array $requirements = array (
   0 => 'products',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Throws error and/or silently logs it.
      *
@@ -189,10 +166,8 @@ final class ExtendSchema
      * @throws \Exception An error to throw if we have debug enabled and user is admin.
      */
     private function throw_exception($exception_or_error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format schema for an extension.
      *
@@ -202,8 +177,6 @@ final class ExtendSchema
      * @return array Formatted schema.
      */
     private function format_extensions_properties($namespace, $schema, $schema_type)
-    {
-        // stub
-    }
-
+{
+}
 }

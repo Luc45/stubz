@@ -18,12 +18,9 @@ class WC_Product_CSV_Importer
      * @param string $file   File to read.
      * @param array  $params Arguments for the parser.
      */
-    public function __construct($file, $params = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($file, $params = array())
+{
+}
     /**
      * Convert a string from the input encoding to UTF-8.
      *
@@ -31,18 +28,14 @@ class WC_Product_CSV_Importer
      * @return string The converted string.
      */
     private function adjust_character_encoding($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read file.
      */
     protected function read_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove UTF-8 BOM signature.
      *
@@ -51,18 +44,14 @@ class WC_Product_CSV_Importer
      * @return string
      */
     protected function remove_utf8_bom($string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set file mapped keys.
      */
     protected function set_mapped_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse relative field and return product ID.
      *
@@ -79,10 +68,8 @@ class WC_Product_CSV_Importer
      * @return int|string
      */
     public function parse_relative_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the ID field.
      *
@@ -94,10 +81,8 @@ class WC_Product_CSV_Importer
      * @return int
      */
     public function parse_id_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse relative comma-delineated field and return product ID.
      *
@@ -106,10 +91,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function parse_relative_comma_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a comma-delineated field from a CSV.
      *
@@ -118,10 +101,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function parse_comma_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a field that is generally '1' or '0' but can be something else.
      *
@@ -130,10 +111,8 @@ class WC_Product_CSV_Importer
      * @return bool|string
      */
     public function parse_bool_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a float value field.
      *
@@ -142,10 +121,8 @@ class WC_Product_CSV_Importer
      * @return float|string
      */
     public function parse_float_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the stock qty field.
      *
@@ -154,10 +131,8 @@ class WC_Product_CSV_Importer
      * @return float|string
      */
     public function parse_stock_quantity_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the tax status field.
      *
@@ -166,10 +141,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     public function parse_tax_status_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a category field from a CSV.
      * Categories are separated by commas and subcategories are "parent > subcategory".
@@ -179,10 +152,8 @@ class WC_Product_CSV_Importer
      * @return array of arrays with "parent" and "name" keys.
      */
     public function parse_categories_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a tag field from a CSV.
      *
@@ -191,10 +162,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function parse_tags_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a tag field from a CSV with space separators.
      *
@@ -203,10 +172,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function parse_tags_spaces_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a shipping class field from a CSV.
      *
@@ -215,10 +182,8 @@ class WC_Product_CSV_Importer
      * @return int
      */
     public function parse_shipping_class_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse images list from a CSV. Images can be filenames or URLs.
      *
@@ -227,10 +192,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function parse_images_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse dates from a CSV.
      * Dates requires the format YYYY-MM-DD and time is optional.
@@ -240,10 +203,8 @@ class WC_Product_CSV_Importer
      * @return string|null
      */
     public function parse_date_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse dates from a CSV.
      * Dates can be Unix timestamps or in any format supported by strtotime().
@@ -253,10 +214,8 @@ class WC_Product_CSV_Importer
      * @return string|null
      */
     public function parse_datetime_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse backorders from a CSV.
      *
@@ -265,10 +224,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     public function parse_backorders_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Just skip current field.
      *
@@ -280,10 +237,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     public function parse_skip_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse download file urls, we should allow shortcodes here.
      *
@@ -294,10 +249,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     public function parse_download_file_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse an int value field
      *
@@ -306,10 +259,8 @@ class WC_Product_CSV_Importer
      * @return int
      */
     public function parse_int_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a description value field
      *
@@ -318,10 +269,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     public function parse_description_field($description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the published field. 1 is published, 0 is private, -1 is draft.
      * Alternatively, 'true' can be used for published and 'false' for draft.
@@ -331,10 +280,8 @@ class WC_Product_CSV_Importer
      * @return float|string
      */
     public function parse_published_field($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deprecated get formatting callback method.
      *
@@ -342,10 +289,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     protected function get_formating_callback()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatting callback.
      *
@@ -353,10 +298,8 @@ class WC_Product_CSV_Importer
      * @return array
      */
     protected function get_formatting_callback()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if strings starts with determined word.
      *
@@ -366,10 +309,8 @@ class WC_Product_CSV_Importer
      * @return bool
      */
     protected function starts_with($haystack, $needle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Expand special and internal data into the correct formats for the product CRUD.
      *
@@ -378,18 +319,14 @@ class WC_Product_CSV_Importer
      * @return array
      */
     protected function expand_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map and format raw data to known fields.
      */
     protected function set_parsed_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a string to identify the row from parsed data.
      *
@@ -398,10 +335,8 @@ class WC_Product_CSV_Importer
      * @return string
      */
     protected function get_row_id($parsed_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process importer.
      *
@@ -412,8 +347,6 @@ class WC_Product_CSV_Importer
      * @return array
      */
     public function import()
-    {
-        // stub
-    }
-
+{
+}
 }

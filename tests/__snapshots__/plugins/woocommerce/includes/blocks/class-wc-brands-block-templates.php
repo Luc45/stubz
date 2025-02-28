@@ -13,20 +13,16 @@ class WC_Brands_Block_Templates
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the taxonomy-product_brand template from DB in case a user customized it in FSE
      *
      * @return WP_Post|null The taxonomy-product_brand
      */
     private function get_product_brand_template_db()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fixes a bug regarding taxonomies and FSE.
      * Without this, the system will always load archive-product.php version instead of taxonomy_product_brand.html
@@ -40,10 +36,8 @@ class WC_Brands_Block_Templates
      * @return bool True if the system is checking archive-product
      */
     public function has_block_template($has_template, $template_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block template for Taxonomy Product Brand. First it attempts to load the last version from DB
      * Otherwise it loads the file based template.
@@ -53,10 +47,8 @@ class WC_Brands_Block_Templates
      * @return WP_Block_Template The taxonomy-product_brand template.
      */
     private function get_product_brands_template($template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Function to check if a template name is woocommerce/taxonomy-product_brand
      *
@@ -70,10 +62,8 @@ class WC_Brands_Block_Templates
      * @return bool True if the template is woocommerce/taxonomy-product_brand
      */
     private function is_taxonomy_product_brand_template($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block template for Taxonomy Product Brand if requested.
      * Triggered by get_block_file_template action
@@ -85,10 +75,8 @@ class WC_Brands_Block_Templates
      * @return WP_Block_Template|null The taxonomy-product_brand template.
      */
     public function get_block_file_template($block_template, $id, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the Block template in the template query results needed by FSE
      * Triggered by get_block_templates action
@@ -100,8 +88,6 @@ class WC_Brands_Block_Templates
      * @return WP_Block_Template[] Array of the matched Block Templates to render.
      */
     public function get_block_templates($query_result, $query, $template_type)
-    {
-        // stub
-    }
-
+{
+}
 }

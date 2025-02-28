@@ -14,18 +14,14 @@ class Installer
      * Initialize class features.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Installation tasks ran on admin_init callback.
      */
     public function install()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Modifies default page content replacing it with classic shortcode block.
      * We check for shortcode as default because after WooCommerce 8.3, block-based checkout is used by default.
@@ -35,18 +31,14 @@ class Installer
      * @return array
      */
     public function create_pages($pages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set up the database tables which the plugin needs to function.
      */
     public function maybe_create_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create database table, if it doesn't already exist.
      *
@@ -57,18 +49,14 @@ class Installer
      * @return bool False on error, true if already exists or success.
      */
     protected function maybe_create_table($table_name, $create_sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a notice if table creation fails.
      *
      * @param string $table_name Name of the missing table.
      */
     protected function add_create_table_notice($table_name)
-    {
-        // stub
-    }
-
+{
+}
 }

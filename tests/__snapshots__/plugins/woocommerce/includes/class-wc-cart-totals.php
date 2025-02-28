@@ -29,8 +29,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $items = array (
-);
+    protected $items = array();
 
     /**
      * Fees to calculate.
@@ -38,8 +37,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $fees = array (
-);
+    protected $fees = array();
 
     /**
      * Shipping costs.
@@ -47,8 +45,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $shipping = array (
-);
+    protected $shipping = array();
 
     /**
      * Applied coupon objects.
@@ -56,8 +53,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $coupons = array (
-);
+    protected $coupons = array();
 
     /**
      * Item/coupon discount totals.
@@ -65,8 +61,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $coupon_discount_totals = array (
-);
+    protected $coupon_discount_totals = array();
 
     /**
      * Item/coupon discount tax totals.
@@ -74,8 +69,7 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $coupon_discount_tax_totals = array (
-);
+    protected $coupon_discount_tax_totals = array();
 
     /**
      * Should taxes be calculated?
@@ -118,20 +112,16 @@ final class WC_Cart_Totals
      * @param WC_Cart $cart Cart object to calculate totals for.
      */
     public function __construct(&$cart = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run all calculation methods on the given items in sequence.
      *
      * @since 3.2.0
      */
     protected function calculate()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default blank set of props used per item.
      *
@@ -139,10 +129,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function get_default_item_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default blank set of props used per fee.
      *
@@ -150,10 +138,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function get_default_fee_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default blank set of props used per shipping row.
      *
@@ -161,10 +147,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function get_default_shipping_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles a cart or order object passed in for calculation. Normalises data
      * into the same format for use by this class.
@@ -179,10 +163,8 @@ final class WC_Cart_Totals
      * @since 3.2.0
      */
     protected function get_items_from_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get item costs grouped by tax class.
      *
@@ -190,10 +172,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function get_tax_class_costs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get fee objects from the cart. Normalises data
      * into the same format for use by this class.
@@ -201,20 +181,16 @@ final class WC_Cart_Totals
      * @since 3.2.0
      */
     protected function get_fees_from_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping methods from the cart and normalise.
      *
      * @since 3.2.0
      */
     protected function get_shipping_from_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of coupon objects from the cart. Normalises data
      * into the same format for use by this class.
@@ -222,10 +198,8 @@ final class WC_Cart_Totals
      * @since  3.2.0
      */
     protected function get_coupons_from_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sort coupons so discounts apply consistently across installs.
      *
@@ -240,10 +214,8 @@ final class WC_Cart_Totals
      * @return int
      */
     protected function sort_coupons_callback($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ran to remove all base taxes from an item. Used when prices include tax, and the customer is tax exempt.
      *
@@ -252,10 +224,8 @@ final class WC_Cart_Totals
      * @return object
      */
     protected function remove_item_base_taxes($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only ran if woocommerce_adjust_non_base_location_prices is true.
      *
@@ -269,10 +239,8 @@ final class WC_Cart_Totals
      * @return object
      */
     protected function adjust_non_base_location_price($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discounted price of an item with precision (in cents).
      *
@@ -281,10 +249,8 @@ final class WC_Cart_Totals
      * @return int
      */
     protected function get_discounted_price_in_cents($item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax rates for an item. Caches rates in class to avoid multiple look ups.
      *
@@ -292,10 +258,8 @@ final class WC_Cart_Totals
      * @return array of taxes
      */
     protected function get_item_tax_rates($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get item costs grouped by tax class.
      *
@@ -303,10 +267,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function get_item_costs_by_tax_class()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single total with or without precision (in cents).
      *
@@ -316,10 +278,8 @@ final class WC_Cart_Totals
      * @return int|float
      */
     public function get_total($key = 'total', $in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a single total.
      *
@@ -328,10 +288,8 @@ final class WC_Cart_Totals
      * @param int    $total Total to set.
      */
     protected function set_total($key, $total)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all totals with or without precision (in cents).
      *
@@ -340,10 +298,8 @@ final class WC_Cart_Totals
      * @return array.
      */
     public function get_totals($in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns array of values for totals calculation.
      *
@@ -351,10 +307,8 @@ final class WC_Cart_Totals
      * @return array Items object
      */
     protected function get_values_for_total($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes merged by type.
      *
@@ -368,10 +322,8 @@ final class WC_Cart_Totals
   1 => 'fees',
   2 => 'shipping',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Round merged taxes.
      *
@@ -381,10 +333,8 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function round_merged_taxes($taxes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combine item taxes into a single array, preserving keys.
      *
@@ -393,20 +343,16 @@ final class WC_Cart_Totals
      * @return array
      */
     protected function combine_item_taxes($item_taxes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate item totals.
      *
      * @since 3.2.0
      */
     protected function calculate_item_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Subtotals are costs before discounts.
      *
@@ -422,10 +368,8 @@ final class WC_Cart_Totals
      * @since 3.2.0
      */
     protected function calculate_item_subtotals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate COUPON based discounts which change item prices.
      *
@@ -433,10 +377,8 @@ final class WC_Cart_Totals
      * @uses  WC_Discounts class.
      */
     protected function calculate_discounts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Triggers the cart fees API, grabs the list of fees, and calculates taxes.
      *
@@ -445,28 +387,22 @@ final class WC_Cart_Totals
      * @since 3.2.0
      */
     protected function calculate_fee_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate any shipping taxes.
      *
      * @since 3.2.0
      */
     protected function calculate_shipping_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Main cart totals.
      *
      * @since 3.2.0
      */
     protected function calculate_totals()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -24,25 +24,21 @@ class WC_Product_CSV_Exporter
      *
      * @var array
      */
-    protected $product_types_to_export = array (
-);
+    protected $product_types_to_export = array();
 
     /**
      * Products belonging to what category should be exported.
      *
      * @var string
      */
-    protected $product_category_to_export = array (
-);
+    protected $product_category_to_export = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Should meta be exported?
      *
@@ -51,10 +47,8 @@ class WC_Product_CSV_Exporter
      * @since 3.1.0
      */
     public function enable_meta_export($enable_meta_export)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Product types to export.
      *
@@ -63,10 +57,8 @@ class WC_Product_CSV_Exporter
      * @since 3.1.0
      */
     public function set_product_types_to_export($product_types_to_export)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Product category to export
      *
@@ -76,10 +68,8 @@ class WC_Product_CSV_Exporter
      * @return void
      */
     public function set_product_category_to_export($product_category_to_export)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of columns to export.
      *
@@ -87,20 +77,16 @@ class WC_Product_CSV_Exporter
      * @return array
      */
     public function get_default_column_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare data for export.
      *
      * @since 3.1.0
      */
     public function prepare_data_to_export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Take a product and generate row data from it for export.
      *
@@ -109,10 +95,8 @@ class WC_Product_CSV_Exporter
      * @return array
      */
     protected function generate_row_data($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get published value.
      *
@@ -122,10 +106,8 @@ class WC_Product_CSV_Exporter
      * @return int
      */
     protected function get_column_value_published($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted sale price.
      *
@@ -134,10 +116,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_sale_price($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted regular price.
      *
@@ -146,10 +126,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_regular_price($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product_cat value.
      *
@@ -159,10 +137,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_category_ids($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product_tag value.
      *
@@ -172,10 +148,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_tag_ids($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product_shipping_class value.
      *
@@ -185,10 +159,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_shipping_class_id($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get images value.
      *
@@ -198,10 +170,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_images($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare linked products for export.
      *
@@ -211,10 +181,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function prepare_linked_products_for_export($linked_products)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cross_sell_ids value.
      *
@@ -224,10 +192,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_cross_sell_ids($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get upsell_ids value.
      *
@@ -237,10 +203,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_upsell_ids($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get parent_id value.
      *
@@ -250,10 +214,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_parent_id($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get grouped_products value.
      *
@@ -263,10 +225,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_grouped_products($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download_limit value.
      *
@@ -276,10 +236,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_download_limit($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download_expiry value.
      *
@@ -289,10 +247,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_download_expiry($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get stock value.
      *
@@ -302,10 +258,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_stock($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get stock status value.
      *
@@ -315,10 +269,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_stock_status($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get backorders.
      *
@@ -328,10 +280,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_backorders($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get low stock amount value.
      *
@@ -341,10 +291,8 @@ class WC_Product_CSV_Exporter
      * @return int|string Empty string if value not set
      */
     protected function get_column_value_low_stock_amount($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get type value.
      *
@@ -354,10 +302,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function get_column_value_type($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter description field for export.
      * Convert newlines to '\n'.
@@ -368,10 +314,8 @@ class WC_Product_CSV_Exporter
      * @return string
      */
     protected function filter_description_field($description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export downloads.
      *
@@ -381,10 +325,8 @@ class WC_Product_CSV_Exporter
      * @since 3.1.0
      */
     protected function prepare_downloads_for_export($product, &$row)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export attributes data.
      *
@@ -394,10 +336,8 @@ class WC_Product_CSV_Exporter
      * @since 3.1.0
      */
     protected function prepare_attributes_for_export($product, &$row)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export meta data.
      *
@@ -407,8 +347,6 @@ class WC_Product_CSV_Exporter
      * @since 3.1.0
      */
     protected function prepare_meta_for_export($product, &$row)
-    {
-        // stub
-    }
-
+{
+}
 }

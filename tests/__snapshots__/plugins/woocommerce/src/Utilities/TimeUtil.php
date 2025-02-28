@@ -18,20 +18,16 @@ class TimeUtil
      * Class constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the instance of the DateTimeZone object representing UTC.
      *
      * @return DateTimeZone DateTimeZone object representing UTC.
      */
     public static function get_utc_date_time_zone(): DateTimeZone
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a string represents a valid date in a given format.
      *
@@ -40,8 +36,6 @@ class TimeUtil
      * @return bool True if $date represents a valid date/time according to $format, false otherwise.
      */
     public static function is_valid_date(string $date, string $format = 'Y-m-d H:i:s'): bool
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,10 +11,8 @@ class TaxesController
      * Calculate line taxes via Ajax call.
      */
     public function calc_line_taxes_via_ajax(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate line taxes programmatically.
      *
@@ -22,8 +20,6 @@ class TaxesController
      * @return object The retrieved order object.
      */
     public function calc_line_taxes(array $post_variables): object
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -31,10 +31,8 @@ class WC_Payment_Token_Data_Store
      * @throws Exception Throw exception if invalid or missing payment token fields.
      */
     public function create(&$token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a payment token.
      *
@@ -45,10 +43,8 @@ class WC_Payment_Token_Data_Store
      * @throws Exception Throw exception if invalid or missing payment token fields.
      */
     public function update(&$token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a payment token from the database.
      *
@@ -57,10 +53,8 @@ class WC_Payment_Token_Data_Store
      * @param bool             $force_delete Unused param.
      */
     public function delete(&$token, $force_delete = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read a token from the database.
      *
@@ -71,10 +65,8 @@ class WC_Payment_Token_Data_Store
      * @throws Exception Throw exception if invalid payment token.
      */
     public function read(&$token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read extra data associated with the token (like last4 digits of a card for expiry dates).
      *
@@ -82,10 +74,8 @@ class WC_Payment_Token_Data_Store
      * @since 3.0.0
      */
     protected function read_extra_data(&$token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves extra token data as meta.
      *
@@ -95,10 +85,8 @@ class WC_Payment_Token_Data_Store
      * @return array List of updated props.
      */
     protected function save_extra_data(&$token, $force = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of objects (stdObject) matching specific token criteria.
      * Accepts token_id, user_id, gateway_id, and type.
@@ -109,10 +97,8 @@ class WC_Payment_Token_Data_Store
      * @return array
      */
     public function get_tokens($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an stdObject of a token for a user's default token.
      * Should contain the fields token_id, gateway_id, token, user_id, type, is_default.
@@ -122,10 +108,8 @@ class WC_Payment_Token_Data_Store
      * @return object
      */
     public function get_users_default_token($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an stdObject of a token.
      * Should contain the fields token_id, gateway_id, token, user_id, type, is_default.
@@ -135,10 +119,8 @@ class WC_Payment_Token_Data_Store
      * @return object
      */
     public function get_token_by_id($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns metadata for a specific payment token.
      *
@@ -147,10 +129,8 @@ class WC_Payment_Token_Data_Store
      * @return array
      */
     public function get_metadata($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a token's type by ID.
      *
@@ -159,10 +139,8 @@ class WC_Payment_Token_Data_Store
      * @return string
      */
     public function get_token_type_by_id($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update's a tokens default status in the database. Used for quickly
      * looping through tokens and setting their statuses instead of creating a bunch
@@ -176,8 +154,6 @@ class WC_Payment_Token_Data_Store
      * @return void
      */
     public function set_default_status($token_id, $status = true)
-    {
-        // stub
-    }
-
+{
+}
 }

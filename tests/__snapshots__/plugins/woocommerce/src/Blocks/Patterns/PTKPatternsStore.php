@@ -28,10 +28,8 @@ class PTKPatternsStore
      * @param PTKClient $ptk_client An instance of PatternsToolkit.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Patterns\PTKClient $ptk_client)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Resets the cached patterns when the `woocommerce_allow_tracking` option is disabled.
      * Resets and fetch the patterns from the PTK when it is enabled (if the scheduler
@@ -40,20 +38,16 @@ class PTKPatternsStore
      * @return void
      */
     public function flush_or_fetch_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule an async action to fetch the PTK patterns when the scheduler is initialized.
      *
      * @return void
      */
     private function schedule_fetch_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule an action if it's not already pending.
      *
@@ -61,20 +55,16 @@ class PTKPatternsStore
      * @return void
      */
     private function schedule_action_if_not_pending($action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the patterns from the Patterns Toolkit cache.
      *
      * @return array
      */
     public function get_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the patterns that have external dependencies.
      *
@@ -82,10 +72,8 @@ class PTKPatternsStore
      * @return array
      */
     private function filter_patterns(array $patterns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Re-fetch the patterns when the WooCommerce plugin is updated.
      *
@@ -95,40 +83,32 @@ class PTKPatternsStore
      * @return void
      */
     public function fetch_patterns_on_plugin_update($upgrader_object, $options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the cached patterns to fetch them again from the PTK.
      *
      * @return void
      */
     public function flush_cached_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the cached patterns and fetch them again from the PTK API.
      *
      * @return void
      */
     public function fetch_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the user allowed tracking.
      *
      * @return bool
      */
     private function allowed_tracking_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change the categories of the patterns to match the ones used in the CYS flow
      *
@@ -136,10 +116,8 @@ class PTKPatternsStore
      * @return array The patterns with the categories mapped.
      */
     private function map_categories(array $patterns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the pattern has external dependencies.
      *
@@ -148,8 +126,6 @@ class PTKPatternsStore
      * @return bool
      */
     private function has_external_dependencies($pattern)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,30 +15,24 @@ abstract class WC_Object_Query
      *
      * @var array
      */
-    protected $query_vars = array (
-);
+    protected $query_vars = array();
 
     /**
      * Create a new query.
      *
      * @param array $args Criteria to query on in a format similar to WP_Query.
      */
-    public function __construct($args = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($args = array())
+{
+}
     /**
      * Get the current query vars.
      *
      * @return array
      */
     public function get_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of a query variable.
      *
@@ -47,10 +41,8 @@ abstract class WC_Object_Query
      * @return mixed Query variable value if set, otherwise default.
      */
     public function get($query_var, $default = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a query variable.
      *
@@ -58,18 +50,14 @@ abstract class WC_Object_Query
      * @param mixed  $value Value to set for query variable.
      */
     public function set($query_var, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default allowed query vars.
      *
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
 }

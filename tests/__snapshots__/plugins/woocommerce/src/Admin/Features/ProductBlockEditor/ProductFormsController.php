@@ -20,10 +20,8 @@ class ProductFormsController
      * Set up the product forms controller.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate form templates after WooCommerce plugin update.
      *
@@ -32,10 +30,8 @@ class ProductFormsController
      * @return void
      */
     public function migrate_templates_when_plugin_updated(WP_Upgrader $upgrader, array $hook_extra)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update a product_form post for each product form template.
      * If the post already exists, it will be updated.
@@ -45,8 +41,6 @@ class ProductFormsController
      * @return void
      */
     public function migrate_product_form_posts($action)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,60 +16,46 @@ class WC_Admin_Status
      * Handles output of the reports page in admin.
      */
     public static function output()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles output of report.
      */
     public static function status_report()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles output of tools.
      */
     public static function status_tools()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tools.
      *
      * @return array of tools
      */
     public static function get_tools()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show the logs page.
      */
     public static function status_logs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show the log page contents for file log handler.
      */
     public static function status_logs_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show the log page contents for db log handler.
      */
     public static function status_logs_db()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve metadata from a file. Based on WP Core's get_file_data function.
      *
@@ -78,10 +64,8 @@ class WC_Admin_Status
      * @return string
      */
     public static function get_file_version($file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the log file handle.
      *
@@ -89,10 +73,8 @@ class WC_Admin_Status
      * @return string
      */
     public static function get_log_file_handle($filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Scan the template files.
      *
@@ -100,20 +82,16 @@ class WC_Admin_Status
      * @return array
      */
     public static function scan_template_files($template_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Scan the log files.
      *
      * @return array
      */
     public static function scan_log_files()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get latest version of a theme by slug.
      *
@@ -121,56 +99,44 @@ class WC_Admin_Status
      * @return string Version number if found.
      */
     public static function get_latest_theme_version($theme)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove/delete the chosen file.
      */
     public static function remove_log()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a stored instance of the DB log list table class.
      *
      * @return WC_Admin_Log_Table_List
      */
     public static function get_db_log_list_table()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear DB log table.
      *
      * @since 3.0.0
      */
     private static function flush_db_logs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk DB log table actions.
      *
      * @since 3.0.0
      */
     private static function log_table_bulk_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints table info if a base table is not present.
      */
     private static function output_tables_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the information about plugins for the system status report.
      * Used for both active and inactive plugins sections.
@@ -180,8 +146,6 @@ class WC_Admin_Status
      * @return void
      */
     private static function output_plugins_info($plugins, $untested_plugins)
-    {
-        // stub
-    }
-
+{
+}
 }

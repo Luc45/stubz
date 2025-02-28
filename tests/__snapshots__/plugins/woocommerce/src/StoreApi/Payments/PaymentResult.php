@@ -31,8 +31,7 @@ class PaymentResult
      *
      * @var string
      */
-    protected $payment_details = array (
-);
+    protected $payment_details = array();
 
     /**
      * Redirect URL for checkout.
@@ -47,20 +46,16 @@ class PaymentResult
      * @param string $status Sets the payment status for the result.
      */
     public function __construct($status = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic getter for protected properties.
      *
      * @param string $name Property name.
      */
     public function __get($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set payment status.
      *
@@ -69,30 +64,22 @@ class PaymentResult
      * @param string $payment_status Status to set.
      */
     public function set_status($payment_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set payment details.
      *
      * @param array $payment_details Array of key value pairs of data.
      */
-    public function set_payment_details($payment_details = array (
-))
-    {
-        // stub
-    }
-
+    public function set_payment_details($payment_details = array())
+{
+}
     /**
      * Set redirect URL.
      *
      * @param array $redirect_url URL to redirect the customer to after checkout.
      */
-    public function set_redirect_url($redirect_url = array (
-))
-    {
-        // stub
-    }
-
+    public function set_redirect_url($redirect_url = array())
+{
+}
 }

@@ -20,10 +20,8 @@ class PluginsActivatedRuleProcessor
      * @param PluginsProviderInterface $plugins_provider The plugins provider.
      */
     public function __construct($plugins_provider = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the rule.
      *
@@ -33,10 +31,8 @@ class PluginsActivatedRuleProcessor
      * @return bool Whether the rule passes or not.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -45,8 +41,6 @@ class PluginsActivatedRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

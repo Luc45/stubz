@@ -30,21 +30,17 @@ class Register
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * Supplies the name of the database table used to store approved directories.
      *
      * @return string
      */
     public function get_table(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a string indicating the current mode.
      *
@@ -53,10 +49,8 @@ class Register
      * @return string
      */
     public function get_mode(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the mode. This effectively controls if approved directories are enforced or not.
      *
@@ -67,10 +61,8 @@ class Register
      * @return bool
      */
     public function set_mode(string $mode): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a new URL path.
      *
@@ -86,10 +78,8 @@ class Register
      * @return int
      */
     public function add_approved_directory(string $url, bool $enabled = true): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates an existing approved directory.
      *
@@ -105,10 +95,8 @@ class Register
      * @return bool
      */
     public function update_approved_directory(int $id, string $url, bool $enabled = true): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the specified URL is already an approved directory.
      *
@@ -117,10 +105,8 @@ class Register
      * @return bool
      */
     public function approved_directory_exists(string $url): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the path identified by $id, or false if it does not exist.
      *
@@ -129,10 +115,8 @@ class Register
      * @return StoredUrl|false
      */
     public function get_by_id(int $id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the path identified by $url, or false if it does not exist.
      *
@@ -141,10 +125,8 @@ class Register
      * @return StoredUrl|false
      */
     public function get_by_url(string $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the URL is within an approved directory. The approved directory must be enabled
      * (it is possible for individual approved directories to be disabled).
@@ -161,10 +143,8 @@ class Register
      * @return bool
      */
     public function is_valid_path(string $download_url): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Used when a URL string is prepared before potentially adding it to the database.
      *
@@ -178,10 +158,8 @@ class Register
      * @return string
      */
     private function prepare_url_for_upsert(string $url): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalizes the provided URL, by trimming whitespace per normal PHP conventions
      * and removing any trailing slashes. If it lacks a scheme, the file scheme is
@@ -194,10 +172,8 @@ class Register
      * @return string
      */
     private function normalize_url(string $url): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Lists currently approved directories.
      *
@@ -223,10 +199,8 @@ class Register
      * @return array
      */
     public function list(array $args): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the approved directory identitied by the supplied ID.
      *
@@ -235,20 +209,16 @@ class Register
      * @return bool
      */
     public function delete_by_id(int $id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the entirev approved directory list.
      *
      * @return bool
      */
     public function delete_all(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enable the approved directory identitied by the supplied ID.
      *
@@ -257,10 +227,8 @@ class Register
      * @return bool
      */
     public function enable_by_id(int $id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Disable the approved directory identitied by the supplied ID.
      *
@@ -269,30 +237,24 @@ class Register
      * @return bool
      */
     public function disable_by_id(int $id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enables all Approved Download Directory rules in a single operation.
      *
      * @return bool
      */
     public function enable_all(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Disables all Approved Download Directory rules in a single operation.
      *
      * @return bool
      */
     public function disable_all(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates the number of approved directories that are enabled (or disabled, if optional
      * param $enabled is set to false).
@@ -302,8 +264,6 @@ class Register
      * @return int
      */
     public function count(bool $enabled = true): int
-    {
-        // stub
-    }
-
+{
+}
 }

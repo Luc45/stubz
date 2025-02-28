@@ -12,8 +12,6 @@ abstract class ActionScheduler_Abstract_QueueRunner_Deprecated
      * @return int The number of seconds.
      */
     protected function get_maximum_execution_time()
-    {
-        // stub
-    }
-
+{
+}
 }

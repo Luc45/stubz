@@ -9,17 +9,13 @@
  */
 function wc_protected_product_add_to_cart($passed, $product_id)
 {
-    // stub
 }
-
 /**
  * Clears the cart session when called.
  */
 function wc_empty_cart()
 {
-    // stub
 }
-
 /**
  * Load the persistent cart.
  *
@@ -29,9 +25,7 @@ function wc_empty_cart()
  */
 function wc_load_persistent_cart($user_login, $user)
 {
-    // stub
 }
-
 /**
  * Retrieves unvalidated referer from '_wp_http_referer' or HTTP referer.
  *
@@ -42,9 +36,7 @@ function wc_load_persistent_cart($user_login, $user)
  */
 function wc_get_raw_referer()
 {
-    // stub
 }
-
 /**
  * Add to cart messages.
  *
@@ -56,9 +48,7 @@ function wc_get_raw_referer()
  */
 function wc_add_to_cart_message($products, $show_qty = false, $return = false)
 {
-    // stub
 }
-
 /**
  * Comma separate a list of item names, and replace final comma with 'and'.
  *
@@ -67,41 +57,31 @@ function wc_add_to_cart_message($products, $show_qty = false, $return = false)
  */
 function wc_format_list_of_items($items)
 {
-    // stub
 }
-
 /**
  * Clear cart after payment.
  */
 function wc_clear_cart_after_payment()
 {
-    // stub
 }
-
 /**
  * Get the subtotal.
  */
 function wc_cart_totals_subtotal_html()
 {
-    // stub
 }
-
 /**
  * Get shipping methods.
  */
 function wc_cart_totals_shipping_html()
 {
-    // stub
 }
-
 /**
  * Get taxes total.
  */
 function wc_cart_totals_taxes_total_html()
 {
-    // stub
 }
-
 /**
  * Get a coupon label.
  *
@@ -112,9 +92,7 @@ function wc_cart_totals_taxes_total_html()
  */
 function wc_cart_totals_coupon_label($coupon, $echo = true)
 {
-    // stub
 }
-
 /**
  * Get coupon display HTML.
  *
@@ -122,17 +100,13 @@ function wc_cart_totals_coupon_label($coupon, $echo = true)
  */
 function wc_cart_totals_coupon_html($coupon)
 {
-    // stub
 }
-
 /**
  * Get order total html including inc tax if needed.
  */
 function wc_cart_totals_order_total_html()
 {
-    // stub
 }
-
 /**
  * Get the fee value.
  *
@@ -140,9 +114,7 @@ function wc_cart_totals_order_total_html()
  */
 function wc_cart_totals_fee_html($fee)
 {
-    // stub
 }
-
 /**
  * Get a shipping methods full label including price.
  *
@@ -151,9 +123,7 @@ function wc_cart_totals_fee_html($fee)
  */
 function wc_cart_totals_shipping_method_label($method)
 {
-    // stub
 }
-
 /**
  * Round discount.
  *
@@ -163,9 +133,7 @@ function wc_cart_totals_shipping_method_label($method)
  */
 function wc_cart_round_discount($value, $precision)
 {
-    // stub
 }
-
 /**
  * Gets chosen shipping method IDs from chosen_shipping_methods session, without instance IDs.
  *
@@ -174,9 +142,7 @@ function wc_cart_round_discount($value, $precision)
  */
 function wc_get_chosen_shipping_method_ids()
 {
-    // stub
 }
-
 /**
  * Get chosen method for package from session.
  *
@@ -187,9 +153,7 @@ function wc_get_chosen_shipping_method_ids()
  */
 function wc_get_chosen_shipping_method_for_package($key, $package)
 {
-    // stub
 }
-
 /**
  * Choose the default method for a package.
  *
@@ -201,9 +165,7 @@ function wc_get_chosen_shipping_method_for_package($key, $package)
  */
 function wc_get_default_shipping_method_for_package($key, $package, $chosen_method)
 {
-    // stub
 }
-
 /**
  * See if the methods have changed since the last request.
  *
@@ -214,9 +176,7 @@ function wc_get_default_shipping_method_for_package($key, $package, $chosen_meth
  */
 function wc_shipping_methods_have_changed($key, $package)
 {
-    // stub
 }
-
 /**
  * Gets a hash of important product data that when changed should cause cart items to be invalidated.
  *
@@ -227,5 +187,4 @@ function wc_shipping_methods_have_changed($key, $package)
  */
 function wc_get_cart_item_data_hash($product)
 {
-    // stub
 }

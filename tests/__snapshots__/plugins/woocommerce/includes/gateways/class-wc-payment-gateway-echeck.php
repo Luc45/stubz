@@ -15,18 +15,14 @@ class WC_Payment_Gateway_ECheck
      * @since 2.6.0
      */
     public function payment_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs fields for entering eCheck information.
      *
      * @since 2.6.0
      */
     public function form()
-    {
-        // stub
-    }
-
+{
+}
 }

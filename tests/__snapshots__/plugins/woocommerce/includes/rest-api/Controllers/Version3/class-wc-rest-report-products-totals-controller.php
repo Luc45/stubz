@@ -29,10 +29,8 @@ class WC_REST_Report_Products_Totals_Controller
      * @return array
      */
     protected function get_reports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report object for serialization.
      *
@@ -41,18 +39,14 @@ class WC_REST_Report_Products_Totals_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($report, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

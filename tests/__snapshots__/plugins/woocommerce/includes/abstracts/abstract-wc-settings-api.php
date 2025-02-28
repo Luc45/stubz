@@ -24,32 +24,28 @@ abstract class WC_Settings_API
      *
      * @var array of strings
      */
-    public $errors = array (
-);
+    public $errors = array();
 
     /**
      * Setting values.
      *
      * @var array
      */
-    public $settings = array (
-);
+    public $settings = array();
 
     /**
      * Form option fields.
      *
      * @var array
      */
-    public $form_fields = array (
-);
+    public $form_fields = array();
 
     /**
      * The posted settings data. When empty, $_POST data will be used.
      *
      * @var array
      */
-    protected $data = array (
-);
+    protected $data = array();
 
     /**
      * Get the form fields after they are initialized.
@@ -57,10 +53,8 @@ abstract class WC_Settings_API
      * @return array of options
      */
     public function get_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set default required properties for each field.
      *
@@ -68,18 +62,14 @@ abstract class WC_Settings_API
      * @return array
      */
     protected function set_defaults($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the admin options table.
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise settings form fields.
      *
@@ -88,10 +78,8 @@ abstract class WC_Settings_API
      * @since  1.0.0
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -99,10 +87,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a fields type. Defaults to "text" if not set.
      *
@@ -110,10 +96,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_field_type($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a fields default value. Defaults to "" if not set.
      *
@@ -121,10 +105,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_field_default($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a field's posted and validated value.
      *
@@ -133,33 +115,25 @@ abstract class WC_Settings_API
      * @param array  $post_data Posted data.
      * @return string
      */
-    public function get_field_value($key, $field, $post_data = array (
-))
-    {
-        // stub
-    }
-
+    public function get_field_value($key, $field, $post_data = array())
+{
+}
     /**
      * Sets the POSTed data. This method can be used to set specific data, instead of taking it from the $_POST array.
      *
      * @param array $data Posted data.
      */
-    public function set_post_data($data = array (
-))
-    {
-        // stub
-    }
-
+    public function set_post_data($data = array())
+{
+}
     /**
      * Returns the POSTed data, to be used to save the settings.
      *
      * @return array
      */
     public function get_post_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single option.
      *
@@ -169,10 +143,8 @@ abstract class WC_Settings_API
      * @return bool was anything saved?
      */
     public function update_option($key, $value = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes and saves options.
      * If there is an error thrown, will continue to save and validate fields, but will leave the erroring field out.
@@ -180,36 +152,28 @@ abstract class WC_Settings_API
      * @return bool was anything saved?
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an error message for display in admin on save.
      *
      * @param string $error Error message.
      */
     public function add_error($error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get admin error messages.
      */
     public function get_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display admin error messages.
      */
     public function display_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Settings.
      *
@@ -221,10 +185,8 @@ abstract class WC_Settings_API
      * @uses get_option(), add_option()
      */
     public function init_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get option from DB.
      *
@@ -235,10 +197,8 @@ abstract class WC_Settings_API
      * @return string The value specified for the option or a default value for the option.
      */
     public function get_option($key, $empty_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prefix key for settings.
      *
@@ -246,10 +206,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_field_key($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Settings HTML.
      *
@@ -261,12 +219,9 @@ abstract class WC_Settings_API
      * @since  1.0.0
      * @uses   method_exists()
      */
-    public function generate_settings_html($form_fields = array (
-), $echo = true)
-    {
-        // stub
-    }
-
+    public function generate_settings_html($form_fields = array(), $echo = true)
+{
+}
     /**
      * Get HTML for tooltips.
      *
@@ -274,10 +229,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_tooltip_html($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get HTML for descriptions.
      *
@@ -285,10 +238,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_description_html($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get custom attributes.
      *
@@ -296,10 +247,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function get_custom_attribute_html($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Text Input HTML.
      *
@@ -309,10 +258,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_text_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates HTML for the 'safe_text' input type (mostly used for gateway-related settings).
      *
@@ -323,10 +270,8 @@ abstract class WC_Settings_API
      * @since 7.6.0
      */
     public function generate_safe_text_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Price Input HTML.
      *
@@ -336,10 +281,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_price_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Decimal Input HTML.
      *
@@ -349,10 +292,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_decimal_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Password Input HTML.
      *
@@ -362,10 +303,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_password_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Color Picker Input HTML.
      *
@@ -375,10 +314,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_color_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Textarea HTML.
      *
@@ -388,10 +325,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_textarea_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Checkbox HTML.
      *
@@ -401,10 +336,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_checkbox_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Select HTML.
      *
@@ -414,10 +347,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_select_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Multiselect HTML.
      *
@@ -427,10 +358,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_multiselect_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Title HTML.
      *
@@ -440,10 +369,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function generate_title_html($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Text Field.
      *
@@ -454,10 +381,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_text_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize 'Safe Text' fields.
      *
@@ -473,10 +398,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_safe_text_field(string $key, string|null $value): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Price Field.
      *
@@ -487,10 +410,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_price_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Decimal Field.
      *
@@ -501,10 +422,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_decimal_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Password Field. No input sanitization is used to avoid corrupting passwords.
      *
@@ -513,10 +432,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_password_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Textarea Field.
      *
@@ -526,10 +443,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_textarea_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Checkbox Field.
      *
@@ -540,10 +455,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_checkbox_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Select Field.
      *
@@ -552,10 +465,8 @@ abstract class WC_Settings_API
      * @return string
      */
     public function validate_select_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Multiselect Field.
      *
@@ -564,22 +475,17 @@ abstract class WC_Settings_API
      * @return string|array
      */
     public function validate_multiselect_field($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the data on the "Settings" form.
      *
      * @deprecated 2.6.0 No longer used.
      * @param array $form_fields Array of fields.
      */
-    public function validate_settings_fields($form_fields = array (
-))
-    {
-        // stub
-    }
-
+    public function validate_settings_fields($form_fields = array())
+{
+}
     /**
      * Format settings if needed.
      *
@@ -588,8 +494,6 @@ abstract class WC_Settings_API
      * @return array
      */
     public function format_settings($value)
-    {
-        // stub
-    }
-
+{
+}
 }

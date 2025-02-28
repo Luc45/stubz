@@ -23,10 +23,8 @@ class WC_REST_Order_Notes_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($note, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single order note.
      *
@@ -34,18 +32,14 @@ class WC_REST_Order_Notes_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Order Notes schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

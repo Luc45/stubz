@@ -19,11 +19,9 @@ class RestockRefundedItemsAdjuster
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * Initializes the restock refunded items meta for order version less than 5.5.
      *
@@ -33,8 +31,6 @@ class RestockRefundedItemsAdjuster
      * @param array $items Order items to save.
      */
     public function initialize_restock_refunded_items($order_id, $items)
-    {
-        // stub
-    }
-
+{
+}
 }

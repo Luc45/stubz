@@ -39,56 +39,44 @@ class WC_Gateway_COD
      * Constructor for the gateway.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setup general properties for the gateway.
      */
     protected function setup_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Gateway Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check If The Gateway Is Available For Use.
      *
      * @return bool
      */
     public function is_available()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks to see whether or not the admin settings are being accessed by the current request.
      *
      * @return bool
      */
     private function is_accessing_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads all of the shipping method options for the enable_for_methods field.
      *
      * @return array
      */
     private function load_shipping_method_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates whether a rate exists in an array of canonically-formatted rate IDs that activates this gateway.
      *
@@ -98,10 +86,8 @@ class WC_Gateway_COD
      * @return array
      */
     private function get_matching_rates($rate_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the payment and return the result.
      *
@@ -109,18 +95,14 @@ class WC_Gateway_COD
      * @return array
      */
     public function process_payment($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output for the order received page.
      */
     public function thankyou_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change payment complete order status to completed for COD orders.
      *
@@ -131,10 +113,8 @@ class WC_Gateway_COD
      * @return string
      */
     public function change_payment_complete_order_status($status, $order_id = 0, $order = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add content to the WC emails.
      *
@@ -143,8 +123,6 @@ class WC_Gateway_COD
      * @param bool     $plain_text Email format: plain text or HTML.
      */
     public function email_instructions($order, $sent_to_admin, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
 }

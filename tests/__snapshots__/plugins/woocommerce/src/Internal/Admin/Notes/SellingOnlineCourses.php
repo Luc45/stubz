@@ -13,10 +13,8 @@ class SellingOnlineCourses
      * Attach hooks.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check to see if the profiler options match before possibly adding note.
      *
@@ -25,18 +23,14 @@ class SellingOnlineCourses
      * @param string $option    The name of the option.
      */
     public static function check_onboarding_profile($old_value, $value, $option)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the note.
      *
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -37,10 +37,8 @@ class WC_REST_Product_Categories_V1_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update term meta fields.
      *
@@ -49,18 +47,14 @@ class WC_REST_Product_Categories_V1_Controller
      * @return bool|WP_Error
      */
     protected function update_term_meta_fields($term, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Category schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

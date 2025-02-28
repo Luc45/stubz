@@ -11,10 +11,8 @@ abstract class AbstractProductFormTemplate
      * Get the template area.
      */
     public function get_area(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a group block by ID.
      *
@@ -22,10 +20,8 @@ abstract class AbstractProductFormTemplate
      * @throws \UnexpectedValueException If block is not of type GroupInterface.
      */
     public function get_group_by_id(string $group_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a section block by ID.
      *
@@ -33,10 +29,8 @@ abstract class AbstractProductFormTemplate
      * @throws \UnexpectedValueException If block is not of type SectionInterface.
      */
     public function get_section_by_id(string $section_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a subsection block by ID.
      *
@@ -44,28 +38,22 @@ abstract class AbstractProductFormTemplate
      * @throws \UnexpectedValueException If block is not of type SubsectionInterface.
      */
     public function get_subsection_by_id(string $subsection_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a block by ID.
      *
      * @param string $block_id The block block ID.
      */
     public function get_block_by_id(string $block_id): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a custom block type to this template.
      *
      * @param array $block_config The block data.
      */
     public function add_group(array $block_config): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
-    {
-        // stub
-    }
-
+{
+}
 }

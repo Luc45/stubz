@@ -20,10 +20,8 @@ class BusinessDescription
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the business description.
      *
@@ -31,18 +29,14 @@ class BusinessDescription
      * @return WP_REST_Response|WP_Error Response object.
      */
     public function update_business_description($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Business Description response.
      *
      * @return array
      */
     public function get_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

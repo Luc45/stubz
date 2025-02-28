@@ -20,10 +20,8 @@ class AsyncPluginsInstallLogger
      * @param string $option_name option name.
      */
     public function __construct(string $option_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the option.
      *
@@ -32,20 +30,16 @@ class AsyncPluginsInstallLogger
      * @return bool
      */
     private function update(array $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the option.
      *
      * @return false|mixed|void
      */
     private function get()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add requested plugin.
      *
@@ -54,10 +48,8 @@ class AsyncPluginsInstallLogger
      * @return void
      */
     public function install_requested(string $plugin_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add installed plugin.
      *
@@ -67,10 +59,8 @@ class AsyncPluginsInstallLogger
      * @return void
      */
     public function installed(string $plugin_name, int $duration)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change status to activated.
      *
@@ -79,10 +69,8 @@ class AsyncPluginsInstallLogger
      * @return void
      */
     public function activated(string $plugin_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an error.
      *
@@ -92,27 +80,20 @@ class AsyncPluginsInstallLogger
      * @return void
      */
     public function add_error(string $plugin_name, string|null $error_message = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Record completed_time.
      *
      * @param array $data return data from install_plugins().
      * @return void
      */
-    public function complete($data = array (
-))
-    {
-        // stub
-    }
-
+    public function complete($data = array())
+{
+}
     private function get_plugin_track_key($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns time frame for a given time in milliseconds.
      *
@@ -121,13 +102,9 @@ class AsyncPluginsInstallLogger
      * @return string - Time frame.
      */
     public function get_timeframe($timeInMs)
-    {
-        // stub
-    }
-
+{
+}
     private function track($data)
-    {
-        // stub
-    }
-
+{
+}
 }

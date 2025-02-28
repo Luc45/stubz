@@ -15,9 +15,7 @@
  */
 function wc_get_products($args)
 {
-    // stub
 }
-
 /**
  * Main function for returning products, uses the WC_Product_Factory class.
  *
@@ -30,12 +28,9 @@ function wc_get_products($args)
  * @param array $deprecated Previously used to pass arguments to the factory, e.g. to force a type.
  * @return WC_Product|null|false
  */
-function wc_get_product($the_product = false, $deprecated = array (
-))
+function wc_get_product($the_product = false, $deprecated = array())
 {
-    // stub
 }
-
 /**
  * Get a product object.
  *
@@ -47,9 +42,7 @@ function wc_get_product($the_product = false, $deprecated = array (
  */
 function wc_get_product_object($product_type, $product_id = 0)
 {
-    // stub
 }
-
 /**
  * Returns whether or not SKUS are enabled.
  *
@@ -57,9 +50,7 @@ function wc_get_product_object($product_type, $product_id = 0)
  */
 function wc_product_sku_enabled()
 {
-    // stub
 }
-
 /**
  * Returns whether or not product weights are enabled.
  *
@@ -67,9 +58,7 @@ function wc_product_sku_enabled()
  */
 function wc_product_weight_enabled()
 {
-    // stub
 }
-
 /**
  * Returns whether or not product dimensions (HxWxD) are enabled.
  *
@@ -77,9 +66,7 @@ function wc_product_weight_enabled()
  */
 function wc_product_dimensions_enabled()
 {
-    // stub
 }
-
 /**
  * Clear transient cache for product data.
  *
@@ -87,9 +74,7 @@ function wc_product_dimensions_enabled()
  */
 function wc_delete_product_transients($post_id = 0)
 {
-    // stub
 }
-
 /**
  * Function that returns an array containing the IDs of the products that are on sale.
  *
@@ -98,9 +83,7 @@ function wc_delete_product_transients($post_id = 0)
  */
 function wc_get_product_ids_on_sale()
 {
-    // stub
 }
-
 /**
  * Function that returns an array containing the IDs of the featured products.
  *
@@ -109,9 +92,7 @@ function wc_get_product_ids_on_sale()
  */
 function wc_get_featured_product_ids()
 {
-    // stub
 }
-
 /**
  * Filter to allow product_cat in the permalinks for products.
  *
@@ -121,9 +102,7 @@ function wc_get_featured_product_ids()
  */
 function wc_product_post_type_link($permalink, $post)
 {
-    // stub
 }
-
 /**
  * Ensure that the product_cat value determined in `wc_product_post_type_link` is the canonical value.
  *
@@ -133,9 +112,7 @@ function wc_product_post_type_link($permalink, $post)
  */
 function wc_product_canonical_redirect(): void
 {
-    // stub
 }
-
 /**
  * Get the placeholder image URL either from media, or use the fallback image.
  *
@@ -144,9 +121,7 @@ function wc_product_canonical_redirect(): void
  */
 function wc_placeholder_img_src($size = 'woocommerce_thumbnail')
 {
-    // stub
 }
-
 /**
  * Get the placeholder image.
  *
@@ -158,9 +133,7 @@ function wc_placeholder_img_src($size = 'woocommerce_thumbnail')
  */
 function wc_placeholder_img($size = 'woocommerce_thumbnail', $attr = '')
 {
-    // stub
 }
-
 /**
  * Variation Formatting.
  *
@@ -174,17 +147,13 @@ function wc_placeholder_img($size = 'woocommerce_thumbnail', $attr = '')
  */
 function wc_get_formatted_variation($variation, $flat = false, $include_names = true, $skip_attributes_in_name = false)
 {
-    // stub
 }
-
 /**
  * Function which handles the start and end of scheduled sales via cron.
  */
 function wc_scheduled_sales()
 {
-    // stub
 }
-
 /**
  * Get attachment image attributes.
  *
@@ -193,9 +162,7 @@ function wc_scheduled_sales()
  */
 function wc_get_attachment_image_attributes($attr)
 {
-    // stub
 }
-
 /**
  * Prepare attachment for JavaScript.
  *
@@ -204,17 +171,13 @@ function wc_get_attachment_image_attributes($attr)
  */
 function wc_prepare_attachment_for_js($response)
 {
-    // stub
 }
-
 /**
  * Track product views.
  */
 function wc_track_product_view()
 {
-    // stub
 }
-
 /**
  * Get product types.
  *
@@ -223,9 +186,7 @@ function wc_track_product_view()
  */
 function wc_get_product_types()
 {
-    // stub
 }
-
 /**
  * Check if product sku is unique.
  *
@@ -236,9 +197,7 @@ function wc_get_product_types()
  */
 function wc_product_has_unique_sku($product_id, $sku)
 {
-    // stub
 }
-
 /**
  * Check if product unique ID is unique.
  *
@@ -249,9 +208,7 @@ function wc_product_has_unique_sku($product_id, $sku)
  */
 function wc_product_has_global_unique_id($product_id, $global_unique_id)
 {
-    // stub
 }
-
 /**
  * Force a unique SKU.
  *
@@ -260,9 +217,7 @@ function wc_product_has_global_unique_id($product_id, $global_unique_id)
  */
 function wc_product_force_unique_sku($product_id)
 {
-    // stub
 }
-
 /**
  * Recursively appends a suffix until a unique SKU is found.
  *
@@ -274,9 +229,7 @@ function wc_product_force_unique_sku($product_id)
  */
 function wc_product_generate_unique_sku($product_id, $sku, $index = 0)
 {
-    // stub
 }
-
 /**
  * Get product ID by SKU.
  *
@@ -286,9 +239,7 @@ function wc_product_generate_unique_sku($product_id, $sku, $index = 0)
  */
 function wc_get_product_id_by_sku($sku)
 {
-    // stub
 }
-
 /**
  * Get product ID by Unique ID.
  *
@@ -298,9 +249,7 @@ function wc_get_product_id_by_sku($sku)
  */
 function wc_get_product_id_by_global_unique_id($global_unique_id)
 {
-    // stub
 }
-
 /**
  * Get attributes/data for an individual variation from the database and maintain it's integrity.
  *
@@ -310,9 +259,7 @@ function wc_get_product_id_by_global_unique_id($global_unique_id)
  */
 function wc_get_product_variation_attributes($variation_id)
 {
-    // stub
 }
-
 /**
  * Get all product cats for a product by ID, including hierarchy
  *
@@ -322,9 +269,7 @@ function wc_get_product_variation_attributes($variation_id)
  */
 function wc_get_product_cat_ids($product_id)
 {
-    // stub
 }
-
 /**
  * Gets data about an attachment, such as alt text and captions.
  *
@@ -337,9 +282,7 @@ function wc_get_product_cat_ids($product_id)
  */
 function wc_get_product_attachment_props($attachment_id = null, $product = false)
 {
-    // stub
 }
-
 /**
  * Get product visibility options.
  *
@@ -348,9 +291,7 @@ function wc_get_product_attachment_props($attachment_id = null, $product = false
  */
 function wc_get_product_visibility_options()
 {
-    // stub
 }
-
 /**
  * Get product tax class options.
  *
@@ -359,9 +300,7 @@ function wc_get_product_visibility_options()
  */
 function wc_get_product_tax_class_options()
 {
-    // stub
 }
-
 /**
  * Get stock status options.
  *
@@ -370,9 +309,7 @@ function wc_get_product_tax_class_options()
  */
 function wc_get_product_stock_status_options()
 {
-    // stub
 }
-
 /**
  * Get backorder options.
  *
@@ -381,9 +318,7 @@ function wc_get_product_stock_status_options()
  */
 function wc_get_product_backorder_options()
 {
-    // stub
 }
-
 /**
  * Get related products based on product category and tags.
  *
@@ -393,12 +328,9 @@ function wc_get_product_backorder_options()
  * @param  array $exclude_ids Exclude IDs from the results.
  * @return array
  */
-function wc_get_related_products($product_id, $limit = 5, $exclude_ids = array (
-))
+function wc_get_related_products($product_id, $limit = 5, $exclude_ids = array())
 {
-    // stub
 }
-
 /**
  * Retrieves product term ids for a taxonomy.
  *
@@ -409,9 +341,7 @@ function wc_get_related_products($product_id, $limit = 5, $exclude_ids = array (
  */
 function wc_get_product_term_ids($product_id, $taxonomy)
 {
-    // stub
 }
-
 /**
  * For a given product, and optionally price/qty, work out the price with tax included, based on store settings.
  *
@@ -420,12 +350,9 @@ function wc_get_product_term_ids($product_id, $taxonomy)
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float|string Price with tax included, or an empty string if price calculation failed.
  */
-function wc_get_price_including_tax($product, $args = array (
-))
+function wc_get_price_including_tax($product, $args = array())
 {
-    // stub
 }
-
 /**
  * For a given product, and optionally price/qty, work out the price with tax excluded, based on store settings.
  *
@@ -434,12 +361,9 @@ function wc_get_price_including_tax($product, $args = array (
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float|string Price with tax excluded, or an empty string if price calculation failed.
  */
-function wc_get_price_excluding_tax($product, $args = array (
-))
+function wc_get_price_excluding_tax($product, $args = array())
 {
-    // stub
 }
-
 /**
  * Returns the price including or excluding tax.
  *
@@ -453,12 +377,9 @@ function wc_get_price_excluding_tax($product, $args = array (
  * @param  array      $args Optional arguments to pass product quantity and price.
  * @return float
  */
-function wc_get_price_to_display($product, $args = array (
-))
+function wc_get_price_to_display($product, $args = array())
 {
-    // stub
 }
-
 /**
  * Returns the product categories in a list.
  *
@@ -470,9 +391,7 @@ function wc_get_price_to_display($product, $args = array (
  */
 function wc_get_product_category_list($product_id, $sep = ', ', $before = '', $after = '')
 {
-    // stub
 }
-
 /**
  * Returns the product tags in a list.
  *
@@ -484,9 +403,7 @@ function wc_get_product_category_list($product_id, $sep = ', ', $before = '', $a
  */
 function wc_get_product_tag_list($product_id, $sep = ', ', $before = '', $after = '')
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get visible only.
  *
@@ -496,9 +413,7 @@ function wc_get_product_tag_list($product_id, $sep = ', ', $before = '', $after 
  */
 function wc_products_array_filter_visible($product)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get visible grouped products only.
  *
@@ -508,9 +423,7 @@ function wc_products_array_filter_visible($product)
  */
 function wc_products_array_filter_visible_grouped($product)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get products the user can edit only.
  *
@@ -520,9 +433,7 @@ function wc_products_array_filter_visible_grouped($product)
  */
 function wc_products_array_filter_editable($product)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get products the user can view only.
  *
@@ -532,9 +443,7 @@ function wc_products_array_filter_editable($product)
  */
 function wc_products_array_filter_readable($product)
 {
-    // stub
 }
-
 /**
  * Sort an array of products by a value.
  *
@@ -548,9 +457,7 @@ function wc_products_array_filter_readable($product)
  */
 function wc_products_array_orderby($products, $orderby = 'date', $order = 'desc')
 {
-    // stub
 }
-
 /**
  * Sort by title.
  *
@@ -561,9 +468,7 @@ function wc_products_array_orderby($products, $orderby = 'date', $order = 'desc'
  */
 function wc_products_array_orderby_title($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by id.
  *
@@ -574,9 +479,7 @@ function wc_products_array_orderby_title($a, $b)
  */
 function wc_products_array_orderby_id($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by date.
  *
@@ -587,9 +490,7 @@ function wc_products_array_orderby_id($a, $b)
  */
 function wc_products_array_orderby_date($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by modified.
  *
@@ -600,9 +501,7 @@ function wc_products_array_orderby_date($a, $b)
  */
 function wc_products_array_orderby_modified($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by menu order.
  *
@@ -613,9 +512,7 @@ function wc_products_array_orderby_modified($a, $b)
  */
 function wc_products_array_orderby_menu_order($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by price low to high.
  *
@@ -626,9 +523,7 @@ function wc_products_array_orderby_menu_order($a, $b)
  */
 function wc_products_array_orderby_price($a, $b)
 {
-    // stub
 }
-
 /**
  * Queue a product for syncing at the end of the request.
  *
@@ -636,9 +531,7 @@ function wc_products_array_orderby_price($a, $b)
  */
 function wc_deferred_product_sync($product_id)
 {
-    // stub
 }
-
 /**
  * See if the lookup table is being generated already.
  *
@@ -647,9 +540,7 @@ function wc_deferred_product_sync($product_id)
  */
 function wc_update_product_lookup_tables_is_running()
 {
-    // stub
 }
-
 /**
  * Populate lookup table data for products.
  *
@@ -657,9 +548,7 @@ function wc_update_product_lookup_tables_is_running()
  */
 function wc_update_product_lookup_tables()
 {
-    // stub
 }
-
 /**
  * Populate lookup table column data.
  *
@@ -668,9 +557,7 @@ function wc_update_product_lookup_tables()
  */
 function wc_update_product_lookup_tables_column($column)
 {
-    // stub
 }
-
 /**
  * Populate rating count lookup table data for products.
  *
@@ -679,9 +566,7 @@ function wc_update_product_lookup_tables_column($column)
  */
 function wc_update_product_lookup_tables_rating_count($rows)
 {
-    // stub
 }
-
 /**
  * Populate a batch of rating count lookup table data for products.
  *
@@ -691,9 +576,7 @@ function wc_update_product_lookup_tables_rating_count($rows)
  */
 function wc_update_product_lookup_tables_rating_count_batch($offset = 0, $limit = 0)
 {
-    // stub
 }
-
 /**
  * Attach product featured image. Use image filename to match a product sku when product is not provided.
  *
@@ -705,5 +588,4 @@ function wc_update_product_lookup_tables_rating_count_batch($offset = 0, $limit 
  */
 function wc_product_attach_featured_image($attachment_id, $product = null, $save_product = true)
 {
-    // stub
 }

@@ -22,10 +22,8 @@ class WC_WCCOM_Site_Installer
      * @return bool|string
      */
     public static function get_wporg_plugin_main_file($dir)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get plugin info
      *
@@ -34,18 +32,14 @@ class WC_WCCOM_Site_Installer
      * @return bool|array
      */
     public static function get_plugin_info($dir)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an instance of WP_Upgrader to use for installing plugins.
      *
      * @return WP_Upgrader
      */
     public static function get_wp_upgrader()
-    {
-        // stub
-    }
-
+{
+}
 }

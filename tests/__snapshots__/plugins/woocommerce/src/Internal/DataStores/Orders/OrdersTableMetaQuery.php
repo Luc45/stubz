@@ -54,40 +54,35 @@ class OrdersTableMetaQuery
      *
      * @var array
      */
-    private $queries = array (
-);
+    private $queries = array();
 
     /**
      * Flat list of clauses by name.
      *
      * @var array
      */
-    private $flattened_clauses = array (
-);
+    private $flattened_clauses = array();
 
     /**
      * JOIN clauses to add to the main SQL query.
      *
      * @var array
      */
-    private $join = array (
-);
+    private $join = array();
 
     /**
      * WHERE clauses to add to the main SQL query.
      *
      * @var array
      */
-    private $where = array (
-);
+    private $where = array();
 
     /**
      * Table aliases in use by the meta query. Used to optimize JOINs when possible.
      *
      * @var array
      */
-    private $table_aliases = array (
-);
+    private $table_aliases = array();
 
     /**
      * Constructor.
@@ -95,10 +90,8 @@ class OrdersTableMetaQuery
      * @param OrdersTableQuery $q The main query being performed.
      */
     public function __construct(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableQuery $q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns JOIN and WHERE clauses to be appended to the main SQL query.
      *
@@ -108,10 +101,8 @@ class OrdersTableMetaQuery
      * }
      */
     public function get_sql_clauses(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of names (corresponding to meta_query clauses) that can be used as an 'orderby' arg.
      *
@@ -120,10 +111,8 @@ class OrdersTableMetaQuery
      * @return array
      */
     public function get_orderby_keys(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an SQL fragment for the given meta_query key that can be used in an ORDER BY clause.
      * Call {@see 'get_orderby_keys'} to obtain a list of valid keys.
@@ -136,10 +125,8 @@ class OrdersTableMetaQuery
      * @throws \Exception When an invalid key is passed.
      */
     public function get_orderby_clause_for_key(string $key): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether a given meta_query clause is atomic or not (i.e. not nested).
      *
@@ -147,10 +134,8 @@ class OrdersTableMetaQuery
      * @return boolean TRUE if atomic, FALSE otherwise.
      */
     private function is_atomic(array $arg): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes the meta_query argument.
      *
@@ -158,10 +143,8 @@ class OrdersTableMetaQuery
      * @return array A sanitized meta query array.
      */
     private function sanitize_meta_query(array $q): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure we use an AND or OR relation. Defaults to AND.
      *
@@ -169,10 +152,8 @@ class OrdersTableMetaQuery
      * @return string
      */
     private function sanitize_relation(string $relation): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the correct type for a given meta type.
      *
@@ -180,10 +161,8 @@ class OrdersTableMetaQuery
      * @return string MySQL type.
      */
     private function sanitize_cast_type(string $type = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure a JOIN array does not have duplicates.
      *
@@ -191,10 +170,8 @@ class OrdersTableMetaQuery
      * @return array A sanitized JOIN array.
      */
     private function sanitize_join(array $join): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flattens a nested WHERE array.
      *
@@ -202,20 +179,16 @@ class OrdersTableMetaQuery
      * @return string An SQL WHERE clause.
      */
     private function flatten_where_clauses($where): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds all the required internal bits for this meta query.
      *
      * @return void
      */
     private function build_query(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes meta_query entries and generates the necessary table aliases, JOIN statements and WHERE conditions.
      *
@@ -224,10 +197,8 @@ class OrdersTableMetaQuery
      * @return array A nested array of WHERE conditions.
      */
     private function process(array &$arg, &$parent = null): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a JOIN clause to handle an atomic meta_query clause.
      *
@@ -236,10 +207,8 @@ class OrdersTableMetaQuery
      * @return string An SQL JOIN clause.
      */
     private function generate_join_for_clause(array $clause, string $alias): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds a common table alias that the meta_query clause can use, or creates one.
      *
@@ -248,10 +217,8 @@ class OrdersTableMetaQuery
      * @return string A table alias for use in an SQL JOIN clause.
      */
     private function find_or_create_table_alias_for_clause(array $clause, array $parent_query): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether two meta_query clauses can share a JOIN.
      *
@@ -261,10 +228,8 @@ class OrdersTableMetaQuery
      * @return boolean TRUE if the clauses can share a table alias, FALSE otherwise.
      */
     private function is_operator_compatible_with_shared_join(array $clause, array $sibling, string $relation = 'AND'): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates an SQL WHERE clause for a given meta_query atomic clause based on its meta key.
      * Adapted from WordPress' `WP_Meta_Query::get_sql_for_clause()` method.
@@ -273,10 +238,8 @@ class OrdersTableMetaQuery
      * @return string An SQL WHERE clause or an empty string if $clause is invalid.
      */
     private function generate_where_for_clause_key(array $clause): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates an SQL WHERE clause for a given meta_query atomic clause based on its meta value.
      * Adapted from WordPress' `WP_Meta_Query::get_sql_for_clause()` method.
@@ -285,8 +248,6 @@ class OrdersTableMetaQuery
      * @return string An SQL WHERE clause or an empty string if $clause is invalid.
      */
     private function generate_where_for_clause_value($clause): string
-    {
-        // stub
-    }
-
+{
+}
 }

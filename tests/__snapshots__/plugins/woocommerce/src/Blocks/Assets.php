@@ -17,10 +17,8 @@ class Assets
      * @deprecated 5.0.0
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block scripts & styles.
      *
@@ -28,10 +26,8 @@ class Assets
      * @deprecated 5.0.0
      */
     public static function register_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the vendors style file. We need to do it after the other files
      * because we need to check if `wp-edit-post` has been enqueued.
@@ -39,10 +35,8 @@ class Assets
      * @deprecated 5.0.0
      */
     public static function enqueue_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add body classes.
      *
@@ -50,12 +44,9 @@ class Assets
      * @param array $classes Array of CSS classnames.
      * @return array Modified array of CSS classnames.
      */
-    public static function add_theme_body_class($classes = array (
-))
-    {
-        // stub
-    }
-
+    public static function add_theme_body_class($classes = array())
+{
+}
     /**
      * Add theme class to admin body.
      *
@@ -64,20 +55,16 @@ class Assets
      * @return array Modified string of CSS classnames.
      */
     public static function add_theme_admin_body_class($classes = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a redirect field to the login form so blocks can redirect users after login.
      *
      * @deprecated 5.0.0
      */
     public static function redirect_to_field()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queues a block script in the frontend.
      *
@@ -90,10 +77,7 @@ class Assets
      * @param string $handle       Optional. Provided if the handle should be different than the script name. `wc-` prefix automatically added.
      * @param array  $dependencies Optional. An array of registered script handles this script depends on. Default empty array.
      */
-    public static function register_block_script($script_name, $handle = '', $dependencies = array (
-))
-    {
-        // stub
-    }
-
+    public static function register_block_script($script_name, $handle = '', $dependencies = array())
+{
+}
 }

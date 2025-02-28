@@ -23,8 +23,6 @@ class ProductDownloadsServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

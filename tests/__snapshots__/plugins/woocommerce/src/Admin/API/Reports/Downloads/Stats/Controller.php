@@ -24,10 +24,8 @@ class Controller
      * @return array
      */
     protected function prepare_reports_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data from `'downloads-stats'` GenericQuery.
      *
@@ -36,12 +34,9 @@ class Controller
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_datastore_data($query_args = array())
+{
+}
     /**
      * Prepare a report data item for serialization.
      *
@@ -50,10 +45,8 @@ class Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($report, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's item properties schema.
      * Will be used by `get_item_schema` as `totals` and `subtotals`.
@@ -61,10 +54,8 @@ class Controller
      * @return array
      */
     protected function get_item_properties_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      * It does not have the segments as in GenericStatsController.
@@ -72,18 +63,14 @@ class Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

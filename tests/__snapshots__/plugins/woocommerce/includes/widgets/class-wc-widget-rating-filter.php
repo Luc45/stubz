@@ -9,10 +9,8 @@ class WC_Widget_Rating_Filter
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count products after other filters have occurred by adjusting the main query.
      *
@@ -20,10 +18,8 @@ class WC_Widget_Rating_Filter
      * @return int
      */
     protected function get_filtered_product_count($rating)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Widget function.
      *
@@ -32,8 +28,6 @@ class WC_Widget_Rating_Filter
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
 }

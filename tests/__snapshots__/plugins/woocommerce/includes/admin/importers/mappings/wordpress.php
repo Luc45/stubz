@@ -9,5 +9,4 @@
  */
 function wc_importer_wordpress_mappings($mappings)
 {
-    // stub
 }

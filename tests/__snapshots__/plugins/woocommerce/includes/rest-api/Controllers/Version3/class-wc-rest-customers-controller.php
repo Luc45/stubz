@@ -24,18 +24,14 @@ class WC_REST_Customers_Controller
      * @return array
      */
     protected function get_formatted_item_data($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Customer's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

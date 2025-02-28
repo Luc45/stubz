@@ -22,10 +22,8 @@ class PatternsSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Patterns response.
      *
@@ -34,8 +32,6 @@ class PatternsSchema
      * @return array
      */
     public function get_item_response($item)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -35,34 +35,26 @@ class ActionScheduler_LogEntry
      *                            not provided a new Datetime object (with current time) will be created.
      */
     public function __construct($action_id, $message, $date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the date when this log entry was created
      *
      * @return Datetime
      */
     public function get_date()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get action ID of log entry.
      */
     public function get_action_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get log entry message.
      */
     public function get_message()
-    {
-        // stub
-    }
-
+{
+}
 }

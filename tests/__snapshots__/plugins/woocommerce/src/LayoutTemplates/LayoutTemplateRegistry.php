@@ -19,43 +19,35 @@ final class LayoutTemplateRegistry
      *
      * @var array
      */
-    protected $layout_templates_info = array (
-);
+    protected $layout_templates_info = array();
 
     /**
      * Layout template instances.
      *
      * @var array
      */
-    protected $layout_template_instances = array (
-);
+    protected $layout_template_instances = array();
 
     /**
      * Get the instance of the class.
      */
     public static function get_instance(): Automattic\WooCommerce\LayoutTemplates\LayoutTemplateRegistry
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unregister all layout templates.
      */
     public function unregister_all()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a layout template is registered.
      *
      * @param string $layout_template_id Layout template ID.
      */
     public function is_registered($layout_template_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a single layout template.
      *
@@ -69,40 +61,30 @@ final class LayoutTemplateRegistry
      * @throws \ValueError If the specified layout template class does not implement the BlockTemplateInterface.
      */
     public function register($layout_template_id, $layout_template_area, $layout_template_class_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Instantiate the matching layout templates and return them.
      *
      * @param array $query_params Query params.
      */
-    public function instantiate_layout_templates(array $query_params = array (
-)): array
-    {
-        // stub
-    }
-
+    public function instantiate_layout_templates(array $query_params = array()): array
+{
+}
     /**
      * Instantiate a single layout template and return it.
      *
      * @param array $layout_template_info Layout template info.
      */
     private function get_layout_template_instance($layout_template_info): Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get matching layout templates info.
      *
      * @param array $query_params Query params.
      */
-    private function get_matching_layout_templates_info(array $query_params = array (
-)): array
-    {
-        // stub
-    }
-
+    private function get_matching_layout_templates_info(array $query_params = array()): array
+{
+}
 }

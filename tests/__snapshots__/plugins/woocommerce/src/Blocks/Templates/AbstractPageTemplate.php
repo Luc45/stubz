@@ -15,24 +15,20 @@ abstract class AbstractPageTemplate
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the page object assigned to this template/page.
      *
      * @return \WP_Post|null Post object or null.
      */
-    protected abstract function get_placeholder_page();
-
+    abstract protected function get_placeholder_page();
     /**
      * Should return true on pages/endpoints/routes where the template should be shown.
      *
      * @return boolean
      */
-    protected abstract function is_active_template();
-
+    abstract protected function is_active_template();
     /**
      * When the page should be displaying the template, add it to the hierarchy.
      *
@@ -43,10 +39,8 @@ abstract class AbstractPageTemplate
      * @param array $templates Templates that match the pages_template_hierarchy.
      */
     public function page_template_hierarchy($templates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forces the page title to match the template title when this template is active.
      *
@@ -57,8 +51,6 @@ abstract class AbstractPageTemplate
      * @return string
      */
     public function page_template_title($title)
-    {
-        // stub
-    }
-
+{
+}
 }

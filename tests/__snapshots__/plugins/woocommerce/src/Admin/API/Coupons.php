@@ -23,10 +23,8 @@ class Coupons
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add coupon code searching to the WC API.
      *
@@ -34,10 +32,8 @@ class Coupons
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of posts and add the code search option to WP_Query.
      *
@@ -45,10 +41,8 @@ class Coupons
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add code searching to the WP Query
      *
@@ -58,8 +52,6 @@ class Coupons
      * @return string
      */
     public static function add_wp_query_search_code_filter($where, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
 }

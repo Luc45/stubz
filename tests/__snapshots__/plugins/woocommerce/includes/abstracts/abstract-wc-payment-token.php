@@ -47,10 +47,8 @@ abstract class WC_Payment_Token
      * @param mixed $token Token.
      */
     public function __construct($token = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the raw payment token.
      *
@@ -59,10 +57,8 @@ abstract class WC_Payment_Token
      * @return string Raw token
      */
     public function get_token($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the type of this payment token (CC, eCheck, or something else).
      * Overwritten by child classes.
@@ -72,10 +68,8 @@ abstract class WC_Payment_Token
      * @return string Payment Token Type (CC, eCheck)
      */
     public function get_type($deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get type to display to user.
      * Get's overwritten by child classes.
@@ -85,10 +79,8 @@ abstract class WC_Payment_Token
      * @return string
      */
     public function get_display_name($deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the user ID associated with the token or false if this token is not associated.
      *
@@ -97,10 +89,8 @@ abstract class WC_Payment_Token
      * @return int User ID if this token is associated with a user or 0 if no user is associated
      */
     public function get_user_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the ID of the gateway associated with this payment token.
      *
@@ -109,10 +99,8 @@ abstract class WC_Payment_Token
      * @return string Gateway ID
      */
     public function get_gateway_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the ID of the gateway associated with this payment token.
      *
@@ -121,10 +109,8 @@ abstract class WC_Payment_Token
      * @return string Gateway ID
      */
     public function get_is_default($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the raw payment token.
      *
@@ -132,10 +118,8 @@ abstract class WC_Payment_Token
      * @param string $token Payment token.
      */
     public function set_token($token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the user ID for the user associated with this order.
      *
@@ -143,10 +127,8 @@ abstract class WC_Payment_Token
      * @param int $user_id User ID.
      */
     public function set_user_id($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the gateway ID.
      *
@@ -154,10 +136,8 @@ abstract class WC_Payment_Token
      * @param string $gateway_id Gateway ID.
      */
     public function set_gateway_id($gateway_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Marks the payment as default or non-default.
      *
@@ -165,10 +145,8 @@ abstract class WC_Payment_Token
      * @param boolean $is_default True or false.
      */
     public function set_default($is_default)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if the token is marked as default.
      *
@@ -176,10 +154,8 @@ abstract class WC_Payment_Token
      * @return boolean True if the token is default
      */
     public function is_default()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate basic token info (token and type are required).
      *
@@ -187,8 +163,6 @@ abstract class WC_Payment_Token
      * @return boolean True if the passed data is valid
      */
     public function validate()
-    {
-        // stub
-    }
-
+{
+}
 }

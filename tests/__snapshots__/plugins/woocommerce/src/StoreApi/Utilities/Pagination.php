@@ -17,10 +17,8 @@ class Pagination
      * @return \WP_REST_Response
      */
     public function add_headers($response, $request, $total_items, $total_pages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current page.
      *
@@ -28,10 +26,8 @@ class Pagination
      * @return int Get the page from the request object.
      */
     protected function get_current_page($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get base for links from the request object.
      *
@@ -39,10 +35,8 @@ class Pagination
      * @return string
      */
     protected function get_link_base($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a page link.
      *
@@ -52,8 +46,6 @@ class Pagination
      * @param string            $link_base Base URL.
      */
     protected function add_page_link(&$response, $name, $page, $link_base)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -44,10 +44,8 @@ class WC_Gateway_Paypal_API_Handler
      * @return array
      */
     public static function get_capture_request($order, $amount = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get refund request args.
      *
@@ -57,10 +55,8 @@ class WC_Gateway_Paypal_API_Handler
      * @return array
      */
     public static function get_refund_request($order, $amount = null, $reason = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Capture an authorization.
      *
@@ -69,10 +65,8 @@ class WC_Gateway_Paypal_API_Handler
      * @return object Either an object of name value pairs for a success, or a WP_ERROR object.
      */
     public static function do_capture($order, $amount = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Refund an order via PayPal.
      *
@@ -82,18 +76,15 @@ class WC_Gateway_Paypal_API_Handler
      * @return object Either an object of name value pairs for a success, or a WP_ERROR object.
      */
     public static function refund_transaction($order, $amount = null, $reason = '')
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * Here for backwards compatibility.
  *
  * @since 3.0.0
  */
-class WC_Gateway_Paypal_Refund extends \WC_Gateway_Paypal_API_Handler
+class WC_Gateway_Paypal_Refund
 {
     /**
      * Get refund request args. Proxy to WC_Gateway_Paypal_API_Handler::get_refund_request().
@@ -105,10 +96,8 @@ class WC_Gateway_Paypal_Refund extends \WC_Gateway_Paypal_API_Handler
      * @return array
      */
     public static function get_request($order, $amount = null, $reason = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an order refund.
      *
@@ -119,8 +108,6 @@ class WC_Gateway_Paypal_Refund extends \WC_Gateway_Paypal_API_Handler
      * @return object Either an object of name value pairs for a success, or a WP_ERROR object.
      */
     public static function refund_order($order, $amount = null, $reason = '', $sandbox = false)
-    {
-        // stub
-    }
-
+{
+}
 }

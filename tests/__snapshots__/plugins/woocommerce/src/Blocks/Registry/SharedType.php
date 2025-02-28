@@ -25,8 +25,6 @@ class SharedType
      * @return mixed
      */
     public function get(Automattic\WooCommerce\Blocks\Registry\Container $container)
-    {
-        // stub
-    }
-
+{
+}
 }

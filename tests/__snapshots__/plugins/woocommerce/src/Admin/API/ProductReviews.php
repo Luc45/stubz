@@ -24,8 +24,6 @@ class ProductReviews
      * @return array Links for the given product review.
      */
     protected function prepare_links($review)
-    {
-        // stub
-    }
-
+{
+}
 }

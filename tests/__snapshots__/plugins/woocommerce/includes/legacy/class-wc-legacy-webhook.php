@@ -12,10 +12,8 @@ abstract class WC_Legacy_Webhook
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic __get method for backwards compatibility. Maps legacy vars to new getters.
      *
@@ -23,10 +21,8 @@ abstract class WC_Legacy_Webhook
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the post data for the webhook.
      *
@@ -35,10 +31,8 @@ abstract class WC_Legacy_Webhook
      * @return     null|WP_Post
      */
     public function get_post_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the webhook status.
      *
@@ -47,8 +41,6 @@ abstract class WC_Legacy_Webhook
      * @param      string $status Status to set.
      */
     public function update_status($status)
-    {
-        // stub
-    }
-
+{
+}
 }

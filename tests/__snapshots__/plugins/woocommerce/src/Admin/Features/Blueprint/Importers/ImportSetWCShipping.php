@@ -18,10 +18,8 @@ class ImportSetWCShipping
      * @return StepProcessorResult
      */
     public function process($schema): Automattic\WooCommerce\Blueprint\StepProcessorResult
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter shipping methods data.
      *
@@ -30,10 +28,8 @@ class ImportSetWCShipping
      * @return mixed
      */
     protected function filter_shipping_methods_data($methods)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Post process shipping methods.
      *
@@ -42,10 +38,8 @@ class ImportSetWCShipping
      * @return void
      */
     protected function post_process_shipping_methods($methods)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Insert data into the specified table.
      *
@@ -56,28 +50,22 @@ class ImportSetWCShipping
      * @return array The IDs of the inserted rows.
      */
     protected function insert($table, $format, $rows)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add local pickup settings.
      *
      * @param object $local_pickup The local pickup settings.
      */
     private function add_local_pickup($local_pickup)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the class name for the step.
      *
      * @return string
      */
     public function get_step_class(): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -61,8 +61,7 @@ class WC_CLI_REST_Command
      *
      * @var array
      */
-    private $supported_ids = array (
-);
+    private $supported_ids = array();
 
     /**
      * Sets up REST Command.
@@ -72,31 +71,24 @@ class WC_CLI_REST_Command
      * @param array  $schema Schema object.
      */
     public function __construct($name, $route, $schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Passes supported ID arguments (things like product_id, order_id, etc) that we should look for in addition to id.
      *
      * @param array $supported_ids List of supported IDs.
      */
-    public function set_supported_ids($supported_ids = array (
-))
-    {
-        // stub
-    }
-
+    public function set_supported_ids($supported_ids = array())
+{
+}
     /**
      * Returns an ID of supported ID arguments (things like product_id, order_id, etc) that we should look for in addition to id.
      *
      * @return array
      */
     public function get_supported_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a new item.
      *
@@ -106,10 +98,8 @@ class WC_CLI_REST_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function create_item($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an existing item.
      *
@@ -119,10 +109,8 @@ class WC_CLI_REST_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function delete_item($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single item.
      *
@@ -132,10 +120,8 @@ class WC_CLI_REST_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function get_item($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List all items.
      *
@@ -145,10 +131,8 @@ class WC_CLI_REST_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function list_items($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update an existing item.
      *
@@ -158,10 +142,8 @@ class WC_CLI_REST_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function update_item($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do a REST Request
      *
@@ -172,10 +154,8 @@ class WC_CLI_REST_Command
      * @return array
      */
     private function do_request($method, $route, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Formatter object based on supplied parameters.
      *
@@ -183,10 +163,8 @@ class WC_CLI_REST_Command
      * @return \WP_CLI\Formatter
      */
     protected function get_formatter(&$assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of fields present in a given context
      *
@@ -194,22 +172,17 @@ class WC_CLI_REST_Command
      * @return array
      */
     private function get_context_fields($context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the route for this resource
      *
      * @param  array $args Positional arguments passed to the originating WP-CLI command.
      * @return string
      */
-    private function get_filled_route($args = array (
-))
-    {
-        // stub
-    }
-
+    private function get_filled_route($args = array())
+{
+}
     /**
      * Reduce an item to specific fields.
      *
@@ -218,10 +191,8 @@ class WC_CLI_REST_Command
      * @return array
      */
     private static function limit_item_to_fields($item, $fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * JSON can be passed in some more complicated objects, like the payment gateway settings array.
      * This function decodes the json (if present) and tries to get it's value.
@@ -231,8 +202,6 @@ class WC_CLI_REST_Command
      * @return array
      */
     protected function decode_json($arr)
-    {
-        // stub
-    }
-
+{
+}
 }

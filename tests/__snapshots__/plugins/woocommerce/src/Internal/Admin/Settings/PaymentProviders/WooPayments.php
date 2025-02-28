@@ -19,10 +19,8 @@ class WooPayments
      * @return bool True if the payment gateway needs setup, false otherwise.
      */
     public function needs_setup(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in test mode.
      *
@@ -34,10 +32,8 @@ class WooPayments
      * @return bool True if the payment gateway is in test mode, false otherwise.
      */
     public function is_in_test_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in dev mode.
      *
@@ -49,10 +45,8 @@ class WooPayments
      * @return bool True if the payment gateway is in dev mode, false otherwise.
      */
     public function is_in_dev_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in test mode onboarding (aka sandbox or test-drive).
      *
@@ -64,10 +58,8 @@ class WooPayments
      * @return bool True if the payment gateway is in test mode onboarding, false otherwise.
      */
     public function is_in_test_mode_onboarding(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the onboarding URL for the payment gateway.
      *
@@ -80,10 +72,8 @@ class WooPayments
      * @return string The onboarding URL for the payment gateway.
      */
     public function get_onboarding_url(WC_Payment_Gateway $payment_gateway, string $return_url = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any paid orders.
      *
@@ -93,10 +83,8 @@ class WooPayments
      * @return boolean Whether the store has any paid orders.
      */
     private function has_orders(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any other enabled ecommerce gateways.
      *
@@ -105,8 +93,6 @@ class WooPayments
      * @return bool True if the store has any enabled ecommerce gateways, false otherwise.
      */
     private function has_enabled_other_ecommerce_gateways(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -21,10 +21,8 @@ class ArraySearch
      * @return mixed|null
      */
     public function transform($value, stdClass|null $arguments = null, $default_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Transformer arguments.
      *
@@ -33,8 +31,6 @@ class ArraySearch
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null)
-    {
-        // stub
-    }
-
+{
+}
 }

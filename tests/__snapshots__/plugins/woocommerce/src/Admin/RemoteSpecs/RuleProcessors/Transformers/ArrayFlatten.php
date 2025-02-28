@@ -18,12 +18,9 @@ class ArrayFlatten
      *
      * @return mixed|null
      */
-    public function transform($value, stdClass|null $arguments = null, $default_value = array (
-))
-    {
-        // stub
-    }
-
+    public function transform($value, stdClass|null $arguments = null, $default_value = array())
+{
+}
     /**
      * Validate Transformer arguments.
      *
@@ -32,8 +29,6 @@ class ArrayFlatten
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null)
-    {
-        // stub
-    }
-
+{
+}
 }

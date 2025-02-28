@@ -60,10 +60,8 @@ class WC_Gateway_Paypal
      * Constructor for the gateway.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return whether or not this gateway still requires setup to function.
      *
@@ -74,10 +72,8 @@ class WC_Gateway_Paypal
      * @return bool
      */
     public function needs_setup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Logging method.
      *
@@ -86,10 +82,8 @@ class WC_Gateway_Paypal
      *                      emergency|alert|critical|error|warning|notice|info|debug.
      */
     public static function log($message, $level = 'info')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes and saves options.
      * If there is an error thrown, will continue to save and validate fields, but will leave the erroring field out.
@@ -97,20 +91,16 @@ class WC_Gateway_Paypal
      * @return bool was anything saved?
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get gateway icon.
      *
      * @return string
      */
     public function get_icon()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the link for an icon based on country.
      *
@@ -118,10 +108,8 @@ class WC_Gateway_Paypal
      * @return string
      */
     protected function get_icon_url($country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get PayPal images for a country.
      *
@@ -129,20 +117,16 @@ class WC_Gateway_Paypal
      * @return array of image URLs
      */
     protected function get_icon_image($country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if this gateway is available in the user's country based on currency.
      *
      * @return bool
      */
     public function is_valid_for_use()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Admin Panel Options.
      * - Options for bits like 'title' and availability on a country-by-country basis.
@@ -150,18 +134,14 @@ class WC_Gateway_Paypal
      * @since 1.0.0
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Gateway Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the transaction URL.
      *
@@ -169,10 +149,8 @@ class WC_Gateway_Paypal
      * @return string
      */
     public function get_transaction_url($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the payment and return the result.
      *
@@ -180,10 +158,8 @@ class WC_Gateway_Paypal
      * @return array
      */
     public function process_payment($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Can the order be refunded via PayPal?
      *
@@ -191,18 +167,14 @@ class WC_Gateway_Paypal
      * @return bool
      */
     public function can_refund_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init the API class and set the username/password etc.
      */
     protected function init_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process a refund if supported.
      *
@@ -212,30 +184,24 @@ class WC_Gateway_Paypal
      * @return bool|WP_Error
      */
     public function process_refund($order_id, $amount = null, $reason = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Capture payment when the order is changed from on-hold to complete or processing
      *
      * @param  int $order_id Order ID.
      */
     public function capture_payment($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load admin scripts.
      *
      * @since 3.3.0
      */
     public function admin_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Custom PayPal order received text.
      *
@@ -245,10 +211,8 @@ class WC_Gateway_Paypal
      * @return string
      */
     public function order_received_text($text, $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether PayPal Standard should be loaded or not.
      *
@@ -259,18 +223,14 @@ class WC_Gateway_Paypal
      * @return bool Whether PayPal Standard should be loaded.
      */
     public function should_load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the store has at least one PayPal Standand order.
      *
      * @return bool
      */
     public function has_paypal_orders()
-    {
-        // stub
-    }
-
+{
+}
 }

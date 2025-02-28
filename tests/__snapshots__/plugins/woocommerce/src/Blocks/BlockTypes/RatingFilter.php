@@ -22,18 +22,14 @@ class RatingFilter
      * @param string $key Data to get, or default to everything.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

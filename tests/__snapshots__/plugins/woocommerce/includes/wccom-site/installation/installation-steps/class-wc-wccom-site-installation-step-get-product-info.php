@@ -18,10 +18,8 @@ class WC_WCCOM_Site_Installation_Step_Get_Product_Info
      * @param array $state The current installation state.
      */
     public function __construct($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the step installation process.
      *
@@ -29,10 +27,8 @@ class WC_WCCOM_Site_Installation_Step_Get_Product_Info
      * @return array
      */
     public function run()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download URL for wporg product.
      *
@@ -42,10 +38,8 @@ class WC_WCCOM_Site_Installation_Step_Get_Product_Info
      * @throws Installer_Error Installer Error.
      */
     protected function get_wporg_download_url($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download URL for wccom product.
      *
@@ -55,8 +49,6 @@ class WC_WCCOM_Site_Installation_Step_Get_Product_Info
      * @throws Installer_Error Installer Error.
      */
     protected function get_wccom_download_url($product_id)
-    {
-        // stub
-    }
-
+{
+}
 }

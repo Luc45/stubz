@@ -33,12 +33,9 @@ class WC_Product_Cat_List_Walker
      * @param int    $depth Depth of category. Used for tab indentation.
      * @param array  $args Will only append content if style argument value is 'list'.
      */
-    public function start_lvl(&$output, $depth = 0, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function start_lvl(&$output, $depth = 0, $args = array())
+{
+}
     /**
      * Ends the list of after the elements are added.
      *
@@ -49,12 +46,9 @@ class WC_Product_Cat_List_Walker
      * @param int    $depth Depth of category. Used for tab indentation.
      * @param array  $args Will only append content if style argument value is 'list'.
      */
-    public function end_lvl(&$output, $depth = 0, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function end_lvl(&$output, $depth = 0, $args = array())
+{
+}
     /**
      * Start the element output.
      *
@@ -67,12 +61,9 @@ class WC_Product_Cat_List_Walker
      * @param array   $args              Arguments.
      * @param integer $current_object_id Current object ID.
      */
-    public function start_el(&$output, $cat, $depth = 0, $args = array (
-), $current_object_id = 0)
-    {
-        // stub
-    }
-
+    public function start_el(&$output, $cat, $depth = 0, $args = array(), $current_object_id = 0)
+{
+}
     /**
      * Ends the element output, if needed.
      *
@@ -84,12 +75,9 @@ class WC_Product_Cat_List_Walker
      * @param int    $depth  Depth of category. Not used.
      * @param array  $args   Only uses 'list' for whether should append to output.
      */
-    public function end_el(&$output, $cat, $depth = 0, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function end_el(&$output, $cat, $depth = 0, $args = array())
+{
+}
     /**
      * Traverse elements to create list from elements.
      *
@@ -111,8 +99,6 @@ class WC_Product_Cat_List_Walker
      * @return null Null on failure with no changes to parameters.
      */
     public function display_element($element, &$children_elements, $max_depth, $depth, $args, &$output)
-    {
-        // stub
-    }
-
+{
+}
 }

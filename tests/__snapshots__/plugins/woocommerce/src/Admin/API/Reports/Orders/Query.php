@@ -22,8 +22,6 @@ class Query
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
 }

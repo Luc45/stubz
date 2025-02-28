@@ -30,18 +30,14 @@ class Api
      * @param AssetDataRegistry     $asset_registry  Used for registering data to pass along to the request.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry $payment_method_registry, Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry $asset_registry)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize class features.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add payment method script handles as script dependencies.
      *
@@ -50,10 +46,8 @@ class Api
      * @return array
      */
     public function add_payment_method_script_dependencies($dependencies, $handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the payment gateway is enabled.
      *
@@ -61,28 +55,22 @@ class Api
      * @return boolean
      */
     private function is_payment_gateway_enabled($gateway)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add payment method data to Asset Registry.
      */
     public function add_payment_method_script_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register payment method integrations bundled with blocks.
      *
      * @param PaymentMethodRegistry $payment_method_registry Payment method registry instance.
      */
     public function register_payment_method_integrations(Automattic\WooCommerce\Blocks\Payments\PaymentMethodRegistry $payment_method_registry)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify all dependencies of registered payment methods have been registered.
      * If not, remove that payment method script from the list of dependencies
@@ -90,8 +78,6 @@ class Api
      * an error in the admin.
      */
     public function verify_payment_methods_dependencies()
-    {
-        // stub
-    }
-
+{
+}
 }

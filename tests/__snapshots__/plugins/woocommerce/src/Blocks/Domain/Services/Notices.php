@@ -33,18 +33,14 @@ class Notices
      * @param Package $package An instance of the package class.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Domain\Package $package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize notice hooks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Allow SVG icon in notices.
      *
@@ -52,10 +48,8 @@ class Notices
      * @return array
      */
     public function add_kses_notice_allowed_tags($allowed_tags)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replaces core notice templates with those from blocks.
      *
@@ -76,18 +70,14 @@ class Notices
      * @return string
      */
     public function get_notices_template($template, $template_name, $args, $template_path, $default_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replaces all notices with the new block-based notices.
      *
      * @return void
      */
     public function enqueue_notice_styles()
-    {
-        // stub
-    }
-
+{
+}
 }

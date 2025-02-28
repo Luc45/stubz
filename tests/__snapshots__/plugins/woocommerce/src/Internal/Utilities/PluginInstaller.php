@@ -27,10 +27,8 @@ class PluginInstaller
      * Attach hooks used by the class.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Programmatically installs a plugin. Upgrade/reinstall of already existing plugins is not supported.
      * The plugin source must be the WordPress.org plugins directory.
@@ -68,12 +66,9 @@ class PluginInstaller
      * @return array Information about the installation result.
      * @throws \InvalidArgumentException Source doesn't start with 'https://downloads.wordpress.org/', or installer name is 'WooCommerce' but caller is not WooCommerce core code.
      */
-    public function install_plugin(string $plugin_url, array $metadata = array (
-)): array
-    {
-        // stub
-    }
-
+    public function install_plugin(string $plugin_url, array $metadata = array()): array
+{
+}
     /**
      * Core version of 'install_plugin' (it doesn't handle the $installing_plugin flag).
      *
@@ -83,10 +78,8 @@ class PluginInstaller
      * @throws \InvalidArgumentException Source doesn't start with 'https://downloads.wordpress.org/', or installer name is 'WooCommerce' but caller is not WooCommerce core code.
      */
     private function install_plugin_core(string $plugin_url, array $metadata): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if WooCommerce is installed and active in the current blog.
      * This is useful for multisite installs when a blog other than the one running this code is selected with 'switch_to_blog'.
@@ -94,10 +87,8 @@ class PluginInstaller
      * @return bool True if WooCommerce is installed and active in the current blog, false otherwise.
      */
     private static function woocommerce_is_active_in_current_site(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'plugin_list_rows' hook, it will display a notice under the name of the plugins
      * that have been installed using this class (unless the 'woocommerce_show_autoinstalled_plugin_notices' filter
@@ -109,10 +100,8 @@ class PluginInstaller
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_plugin_list_rows($plugin_file, $plugin_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'upgrader_process_complete' hook. It's used to remove the autoinstalled plugin information
      * for plugins that are upgraded or reinstalled manually (or more generally, by using any install method
@@ -124,8 +113,6 @@ class PluginInstaller
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_upgrader_process_complete(WP_Upgrader $upgrader, array $hook_extra)
-    {
-        // stub
-    }
-
+{
+}
 }

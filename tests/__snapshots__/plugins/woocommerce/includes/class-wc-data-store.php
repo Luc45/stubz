@@ -68,30 +68,24 @@ class WC_Data_Store
      * @param string $object_type Name of object.
      */
     public function __construct($object_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only store the object type to avoid serializing the data store instance.
      *
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Re-run the constructor with the object type.
      *
      * @throws Exception When validation fails.
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads a data store.
      *
@@ -102,10 +96,8 @@ class WC_Data_Store
      * @return WC_Data_Store
      */
     public static function load($object_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the class name of the current data store.
      *
@@ -113,10 +105,8 @@ class WC_Data_Store
      * @return string
      */
     public function get_current_class_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads an object from the data store.
      *
@@ -124,22 +114,17 @@ class WC_Data_Store
      * @param WC_Data $data WooCommerce data instance.
      */
     public function read(&$data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads multiple objects from the data store.
      *
      * @since 6.9.0
      * @param array[WC_Data] $objects Array of object instances to read.
      */
-    public function read_multiple(&$objects = array (
-))
-    {
-        // stub
-    }
-
+    public function read_multiple(&$objects = array())
+{
+}
     /**
      * Create an object in the data store.
      *
@@ -147,10 +132,8 @@ class WC_Data_Store
      * @param WC_Data $data WooCommerce data instance.
      */
     public function create(&$data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update an object in the data store.
      *
@@ -158,10 +141,8 @@ class WC_Data_Store
      * @param WC_Data $data WooCommerce data instance.
      */
     public function update(&$data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an object from the data store.
      *
@@ -169,12 +150,9 @@ class WC_Data_Store
      * @param WC_Data $data WooCommerce data instance.
      * @param array   $args Array of args to pass to the delete method.
      */
-    public function delete(&$data, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$data, $args = array())
+{
+}
     /**
      * Data stores can define additional functions (for example, coupons have
      * some helper methods for increasing or decreasing usage). This passes
@@ -186,10 +164,8 @@ class WC_Data_Store
      * @return mixed
      */
     public function __call($method, $parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the data store we are working with has a callable method.
      *
@@ -198,8 +174,6 @@ class WC_Data_Store
      * @return bool Whether the passed method is callable.
      */
     public function has_callable(string $method): bool
-    {
-        // stub
-    }
-
+{
+}
 }

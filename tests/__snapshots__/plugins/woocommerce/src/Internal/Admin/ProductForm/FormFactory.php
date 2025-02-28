@@ -19,49 +19,41 @@ class FormFactory
      *
      * @var array
      */
-    protected static $form_fields = array (
-);
+    protected static $form_fields = array();
 
     /**
      * Store form cards.
      *
      * @var array
      */
-    protected static $form_subsections = array (
-);
+    protected static $form_subsections = array();
 
     /**
      * Store form sections.
      *
      * @var array
      */
-    protected static $form_sections = array (
-);
+    protected static $form_sections = array();
 
     /**
      * Store form tabs.
      *
      * @var array
      */
-    protected static $form_tabs = array (
-);
+    protected static $form_tabs = array();
 
     /**
      * Get class instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Init.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a field to the product form.
      *
@@ -78,10 +70,8 @@ class FormFactory
      * @return Field|WP_Error New field or WP_Error.
      */
     public static function add_field($id, $plugin_id, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a Subsection to the product form.
      *
@@ -90,12 +80,9 @@ class FormFactory
      * @param array  $args Array containing the necessary arguments.
      * @return Subsection|WP_Error New subsection or WP_Error.
      */
-    public static function add_subsection($id, $plugin_id, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function add_subsection($id, $plugin_id, $args = array())
+{
+}
     /**
      * Adds a section to the product form.
      *
@@ -105,10 +92,8 @@ class FormFactory
      * @return Section|WP_Error New section or WP_Error.
      */
     public static function add_section($id, $plugin_id, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a tab to the product form.
      *
@@ -118,10 +103,8 @@ class FormFactory
      * @return Tab|WP_Error New section or WP_Error.
      */
     public static function add_tab($id, $plugin_id, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered fields.
      *
@@ -132,10 +115,8 @@ class FormFactory
   'key' => 'order',
   'order' => 'asc',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered cards.
      *
@@ -146,10 +127,8 @@ class FormFactory
   'key' => 'order',
   'order' => 'asc',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered sections.
      *
@@ -160,10 +139,8 @@ class FormFactory
   'key' => 'order',
   'order' => 'asc',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered tabs.
      *
@@ -174,10 +151,8 @@ class FormFactory
   'key' => 'order',
   'order' => 'asc',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered items.
      *
@@ -185,10 +160,8 @@ class FormFactory
      * @return array List of registered items.
      */
     private static function get_item_list($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of registered items.
      *
@@ -201,10 +174,8 @@ class FormFactory
   'key' => 'order',
   'order' => 'asc',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates a new item.
      *
@@ -216,8 +187,6 @@ class FormFactory
      * @return Field|Card|Section|Tab|WP_Error New product form item or WP_Error.
      */
     private static function create_item($type, $class_name, $id, $plugin_id, $args)
-    {
-        // stub
-    }
-
+{
+}
 }

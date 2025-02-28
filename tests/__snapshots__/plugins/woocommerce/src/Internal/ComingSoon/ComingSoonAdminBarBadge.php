@@ -12,21 +12,17 @@ class ComingSoonAdminBarBadge
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * Sets up the hooks if user has required capabilities.
      *
      * @internal
      */
     public function init_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add site visibility cache badge to WP admin bar.
      *
@@ -34,18 +30,14 @@ class ComingSoonAdminBarBadge
      * @param WP_Admin_Bar $wp_admin_bar The WP_Admin_Bar instance.
      */
     public function site_visibility_badge($wp_admin_bar)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output CSS for site visibility badge.
      *
      * @internal
      */
     public function output_css()
-    {
-        // stub
-    }
-
+{
+}
 }

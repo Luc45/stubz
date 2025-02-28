@@ -18,18 +18,14 @@ class SiteHealth
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Counts specific types of WooCommerce entities to determine if a persistent object cache would be beneficial.
      *
@@ -41,8 +37,6 @@ class SiteHealth
      * @return true|null True if the store would benefit from a persistent object cache. Otherwise null.
      */
     public function should_suggest_persistent_object_cache($check)
-    {
-        // stub
-    }
-
+{
+}
 }

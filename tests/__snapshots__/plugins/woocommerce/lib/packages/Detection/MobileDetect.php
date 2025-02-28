@@ -206,8 +206,7 @@ class MobileDetect
      * A cache for resolved matches
      * @var array
      */
-    protected array $cache = array (
-);
+    protected array $cache = array();
 
     /**
      * The User-Agent HTTP header is stored in here.
@@ -219,15 +218,13 @@ class MobileDetect
      * HTTP headers in the PHP-flavor. So HTTP_USER_AGENT and SERVER_SOFTWARE.
      * @var array
      */
-    protected array $httpHeaders = array (
-);
+    protected array $httpHeaders = array();
 
     /**
      * CloudFront headers. E.g. CloudFront-Is-Desktop-Viewer, CloudFront-Is-Mobile-Viewer & CloudFront-Is-Tablet-Viewer.
      * @var array
      */
-    protected array $cloudfrontHeaders = array (
-);
+    protected array $cloudfrontHeaders = array();
 
     /**
      * The matching Regex.
@@ -634,10 +631,8 @@ class MobileDetect
      *                               from the $headers array instead.
      */
     public function __construct(array|null $headers = null, string|null $userAgent = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current script version.
      * This is useful for the demo.php file,
@@ -647,10 +642,8 @@ class MobileDetect
      * @return string The version number in semantic version format.
      */
     public static function getScriptVersion(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the HTTP Headers. Must be PHP-flavored. This method will reset existing headers.
      *
@@ -658,20 +651,16 @@ class MobileDetect
      *                           the headers. The default null is left for backwards compatibility.
      */
     public function setHttpHeaders(array|null $httpHeaders = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the HTTP headers.
      *
      * @return array
      */
     public function getHttpHeaders(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves a particular header. If it doesn't exist, no exception/error is caused.
      * Simply null is returned.
@@ -683,15 +672,11 @@ class MobileDetect
      * @return string|null The value of the header.
      */
     public function getHttpHeader(string $header): string|null
-    {
-        // stub
-    }
-
+{
+}
     public function getMobileHeaders(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all possible HTTP headers that
      * can contain the User-Agent string.
@@ -699,10 +684,8 @@ class MobileDetect
      * @return array List of HTTP headers.
      */
     public function getUaHttpHeaders(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set CloudFront headers
      * http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/header-caching.html#header-caching-web-device
@@ -712,29 +695,23 @@ class MobileDetect
      * @return bool If there were CloudFront headers to be set
      */
     public function setCfHeaders(array|null $cfHeaders = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the cloudfront headers.
      *
      * @return array
      */
     public function getCfHeaders(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * @param string $userAgent
      * @return string
      */
     private function prepareUserAgent(string $userAgent): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the User-Agent to be used.
      *
@@ -743,70 +720,54 @@ class MobileDetect
      * @return string|null
      */
     public function setUserAgent(string|null $userAgent = null): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the User-Agent.
      *
      * @return string|null The user agent if it's set.
      */
     public function getUserAgent(): string|null
-    {
-        // stub
-    }
-
+{
+}
     public function getMatchingRegex(): string|null
-    {
-        // stub
-    }
-
+{
+}
     public function getMatchesArray(): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the list of known phone devices.
      *
      * @return array List of phone devices.
      */
     public static function getPhoneDevices(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the list of known tablet devices.
      *
      * @return array List of tablet devices.
      */
     public static function getTabletDevices(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Alias for getBrowsers() method.
      *
      * @return array List of user agents.
      */
     public static function getUserAgents(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the list of known browsers. Specifically, the user agents.
      *
      * @return array List of browsers / user agents.
      */
     public static function getBrowsers(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method gets the mobile detection rules. This method is used for the magic methods $detect->is*().
      * Retrieve the current set of rules.
@@ -814,20 +775,16 @@ class MobileDetect
      * @return array
      */
     public function getRules(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the list of mobile operating systems.
      *
      * @return array The list of mobile operating systems.
      */
     public static function getOperatingSystems(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check the HTTP headers for signs of mobile.
      * This is the fastest mobile check possible; it's used
@@ -836,10 +793,8 @@ class MobileDetect
      * @return bool
      */
     public function checkHttpHeadersForMobile(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic overloading method.
      *
@@ -850,10 +805,8 @@ class MobileDetect
      * @throws BadMethodCallException when the method doesn't exist and doesn't start with 'is'
      */
     public function __call(string $name, array $arguments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find a detection rule that matches the current User-agent.
      *
@@ -861,10 +814,8 @@ class MobileDetect
      * @return bool
      */
     protected function matchDetectionRulesAgainstUA(string|null $userAgent = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search for a certain key in the rules array.
      * If the key is found then try to match the corresponding
@@ -875,10 +826,8 @@ class MobileDetect
      * @return bool
      */
     protected function matchUAAgainstKey(string $key): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the device is mobile.
      * Returns true if any type of mobile device detected, including special ones
@@ -887,10 +836,8 @@ class MobileDetect
      * @return bool
      */
     public function isMobile(string|null $userAgent = null, array|null $httpHeaders = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the device is a tablet.
      * Return true if any type of tablet device is detected.
@@ -900,10 +847,8 @@ class MobileDetect
      * @return bool
      */
     public function isTablet(string|null $userAgent = null, array|null $httpHeaders = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This method checks for a certain property in the
      * userAgent.
@@ -915,10 +860,8 @@ class MobileDetect
      * @todo: The httpHeaders part is not yet used.
      */
     public function is(string $key, string|null $userAgent = null, array|null $httpHeaders = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Some detection rules are relative (not standard),
      * because of the diversity of devices, vendors and
@@ -935,20 +878,16 @@ class MobileDetect
      * @todo: search in the HTTP headers too.
      */
     public function match(string $regex, string|null $userAgent = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the properties array.
      *
      * @return array
      */
     public static function getProperties(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the version number.
      *
@@ -959,10 +898,8 @@ class MobileDetect
      * @todo Remove the error suppression from str_replace() call.
      */
     public function prepareVersionNo(string $ver): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check the version of the given property in the User-Agent.
      * Will return a float number. (e.g. 2_0 will return 2.0, 4.3.1 will return 4.31)
@@ -977,8 +914,6 @@ class MobileDetect
      * @return string|float|false The version of the property we are trying to extract.
      */
     public function version(string $propertyName, string $type = 'text')
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -41,20 +41,16 @@ class WC_Geolocation
      * @return bool
      */
     private static function is_geolocation_enabled($current_settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current user IP Address.
      *
      * @return string
      */
     public static function get_ip_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get user IP Address using an external service.
      * This can be used as a fallback for users on localhost where
@@ -63,10 +59,8 @@ class WC_Geolocation
      * @return string
      */
     public static function get_external_ip_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Geolocate an IP address.
      *
@@ -76,10 +70,8 @@ class WC_Geolocation
      * @return array
      */
     public static function geolocate_ip($ip_address = '', $fallback = false, $api_fallback = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Path to our local db.
      *
@@ -88,10 +80,8 @@ class WC_Geolocation
      * @return string
      */
     public static function get_local_database_path($deprecated = '2')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update geoip database.
      *
@@ -99,10 +89,8 @@ class WC_Geolocation
      * Extract files with PharData. Tool built into PHP since 5.3.
      */
     public static function update_database()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches the country code from the request headers, if one is available.
      *
@@ -110,10 +98,8 @@ class WC_Geolocation
      * @return string The country code pulled from the headers, or empty string if one was not found.
      */
     private static function get_country_code_from_headers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Use APIs to Geolocate the user.
      *
@@ -127,10 +113,8 @@ class WC_Geolocation
      * @return string
      */
     private static function geolocate_via_api($ip_address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook in geolocation functionality.
      *
@@ -138,10 +122,8 @@ class WC_Geolocation
      * @return null
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevent geolocation via MaxMind when using legacy versions of php.
      *
@@ -151,10 +133,8 @@ class WC_Geolocation
      * @return string
      */
     public static function disable_geolocation_on_legacy_php($default_customer_address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe trigger a DB update for the first time.
      *
@@ -164,8 +144,6 @@ class WC_Geolocation
      * @return string
      */
     public static function maybe_update_database($new_value, $old_value)
-    {
-        // stub
-    }
-
+{
+}
 }

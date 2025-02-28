@@ -24,10 +24,8 @@ class Migration_Command
      * Register the command with WP-CLI
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the data migration.
      *
@@ -37,10 +35,8 @@ class Migration_Command
      * @return void
      */
     public function migrate($positional_args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build the config object used to create the Runner
      *
@@ -49,16 +45,12 @@ class Migration_Command
      * @return ActionScheduler\Migration\Config
      */
     private function get_migration_config($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook command line logging into migration actions.
      */
     private function init_logging()
-    {
-        // stub
-    }
-
+{
+}
 }

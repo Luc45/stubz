@@ -20,10 +20,8 @@ class Images
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate Images from Pexels
      *
@@ -32,8 +30,6 @@ class Images
      * @return WP_Error|WP_REST_Response
      */
     public function generate_images(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
 }

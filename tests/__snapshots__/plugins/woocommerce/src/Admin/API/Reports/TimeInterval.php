@@ -28,30 +28,24 @@ class TimeInterval
      * @return DateTime
      */
     public static function convert_local_datetime_to_gmt($datetime_string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns default 'before' parameter for the reports.
      *
      * @return DateTime
      */
     public static function default_before()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns default 'after' parameter for the reports.
      *
      * @return DateTime
      */
     public static function default_after()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns date format to be used as grouping clause in SQL.
      *
@@ -61,10 +55,8 @@ class TimeInterval
      * @return mixed
      */
     public static function db_datetime_format($time_interval, $table_name, $date_column_name = 'date_created')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns quarter for the DateTime.
      *
@@ -72,10 +64,8 @@ class TimeInterval
      * @return int|null
      */
     public static function quarter($datetime)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns simple week number for the DateTime, for week starting on $first_day_of_week.
      *
@@ -87,10 +77,8 @@ class TimeInterval
      * @return int
      */
     public static function simple_week_number($datetime, $first_day_of_week)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns ISO 8601 week number for the DateTime, if week starts on Monday,
      * otherwise returns simple week number.
@@ -102,10 +90,8 @@ class TimeInterval
      * @return int
      */
     public static function week_number($datetime, $first_day_of_week)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns time interval id for the DateTime.
      *
@@ -114,10 +100,8 @@ class TimeInterval
      * @return string
      */
     public static function time_interval_id($time_interval, $datetime)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculates number of time intervals between two dates, closed interval on both sides.
      *
@@ -128,10 +112,8 @@ class TimeInterval
      * @return int
      */
     public static function intervals_between($start_datetime, $end_datetime, $interval)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a new DateTime object representing the next hour start/previous hour end if reversed.
      *
@@ -140,10 +122,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_hour_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a new DateTime object representing the next day start, or previous day end if reversed.
      *
@@ -152,10 +132,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_day_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns DateTime object representing the next week start, or previous week end if reversed.
      *
@@ -168,10 +146,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_week_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a new DateTime object representing the next month start, or previous month end if reversed.
      *
@@ -180,10 +156,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_month_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a new DateTime object representing the next quarter start, or previous quarter end if reversed.
      *
@@ -192,10 +166,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_quarter_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a new DateTime object representing the next year start, or previous year end if reversed.
      *
@@ -204,10 +176,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function next_year_start($datetime, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns beginning of next time interval for provided DateTime.
      *
@@ -219,10 +189,8 @@ class TimeInterval
      * @return DateTime
      */
     public static function iterate($datetime, $time_interval, $reversed = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns expected number of items on the page in case of date ordering.
      *
@@ -233,10 +201,8 @@ class TimeInterval
      * @return float|int
      */
     public static function expected_intervals_on_page($expected_interval_count, $items_per_page, $page_no)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if there are any intervals that need to be filled in the response.
      *
@@ -251,10 +217,8 @@ class TimeInterval
      * @return bool
      */
     public static function intervals_missing($expected_interval_count, $db_records, $items_per_page, $page_no, $order, $order_by, $intervals_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalize "*_between" parameters to "*_min" and "*_max" for numeric values
      * and "*_after" and "*_before" for date values.
@@ -265,10 +229,8 @@ class TimeInterval
      * @return array Normalized query values.
      */
     public static function normalize_between_params($request, $param_names, $is_date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a "*_between" range argument (an array with 2 numeric items).
      *
@@ -278,10 +240,8 @@ class TimeInterval
      * @return WP_Error|boolean
      */
     public static function rest_validate_between_numeric_arg($value, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a "*_between" range argument (an array with 2 date items).
      *
@@ -291,10 +251,8 @@ class TimeInterval
      * @return WP_Error|boolean
      */
     public static function rest_validate_between_date_arg($value, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get dates from a timeframe string.
      *
@@ -303,8 +261,6 @@ class TimeInterval
      * @return array
      */
     public static function get_timeframe_dates($timeframe, $current_date = null)
-    {
-        // stub
-    }
-
+{
+}
 }

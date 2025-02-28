@@ -13,7 +13,6 @@ interface PluginsProviderInterface
      * @return array
      */
     public function get_active_plugin_slugs();
-
     /**
      * Get plugin data.
      *
@@ -22,7 +21,6 @@ interface PluginsProviderInterface
      * @return array|false
      */
     public function get_plugin_data($plugin);
-
     /**
      * Get the path to the plugin file relative to the plugins directory from the plugin slug.
      *
@@ -33,5 +31,4 @@ interface PluginsProviderInterface
      * @return string|false
      */
     public function get_plugin_path_from_slug($slug);
-
 }

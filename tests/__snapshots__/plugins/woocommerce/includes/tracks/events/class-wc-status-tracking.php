@@ -9,16 +9,12 @@ class WC_Status_Tracking
      * Init tracking.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Tracks events to the status page.
      */
     public function track_status_view()
-    {
-        // stub
-    }
-
+{
+}
 }

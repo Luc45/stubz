@@ -84,108 +84,86 @@ class DeprecatedExtendedTask
      * @param array    $args Array of task args.
      */
     public function __construct($task_list, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * ID.
      *
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Additional info.
      *
      * @return string
      */
     public function get_additional_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Content.
      *
      * @return string
      */
     public function get_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Level.
      *
      * @return int
      */
     public function get_level()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Title
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Time
      *
      * @return string|null
      */
     public function get_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a task is snoozeable.
      *
      * @return bool
      */
     public function is_snoozeable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a task is dismissable.
      *
      * @return bool
      */
     public function is_dismissable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a task is dismissable.
      *
      * @return bool
      */
     public function is_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a task is dismissable.
      *
      * @return bool
      */
     public function can_view()
-    {
-        // stub
-    }
-
+{
+}
 }

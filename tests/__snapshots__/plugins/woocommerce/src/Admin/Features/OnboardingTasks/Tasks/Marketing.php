@@ -20,50 +20,40 @@ class Marketing
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Title.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Content.
      *
      * @return string
      */
     public function get_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Time.
      *
      * @return string
      */
     public function get_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Task visibility.
      *
      * @return bool
      */
     public function can_view()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the marketing plugins.
      *
@@ -71,10 +61,8 @@ class Marketing
      * @return array
      */
     public static function get_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has installed marketing extensions.
      *
@@ -82,8 +70,6 @@ class Marketing
      * @return bool
      */
     public static function has_installed_extensions()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -20,10 +20,8 @@ abstract class ActionScheduler_Logger
      * @return ActionScheduler_Logger
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create log entry.
      *
@@ -33,8 +31,7 @@ abstract class ActionScheduler_Logger
      *
      * @return string The log entry ID
      */
-    public abstract function log($action_id, $message, DateTime|null $date = null);
-
+    abstract public function log($action_id, $message, DateTime|null $date = null);
     /**
      * Get action's log entry.
      *
@@ -42,8 +39,7 @@ abstract class ActionScheduler_Logger
      *
      * @return ActionScheduler_LogEntry
      */
-    public abstract function get_entry($entry_id);
-
+    abstract public function get_entry($entry_id);
     /**
      * Get action's logs.
      *
@@ -51,54 +47,43 @@ abstract class ActionScheduler_Logger
      *
      * @return ActionScheduler_LogEntry[]
      */
-    public abstract function get_logs($action_id);
-
+    abstract public function get_logs($action_id);
     /**
      * Initialize.
      *
      * @codeCoverageIgnore
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register callback for storing action.
      */
     public function hook_stored_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unhook callback for storing action.
      */
     public function unhook_stored_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action stored.
      *
      * @param int $action_id Action ID.
      */
     public function log_stored_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action cancellation.
      *
      * @param int $action_id Action ID.
      */
     public function log_canceled_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action start.
      *
@@ -106,10 +91,8 @@ abstract class ActionScheduler_Logger
      * @param string $context Action execution context.
      */
     public function log_started_action($action_id, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action completion.
      *
@@ -118,10 +101,8 @@ abstract class ActionScheduler_Logger
      * @param string                      $context Action execution context.
      */
     public function log_completed_action($action_id, $action = null, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action failure.
      *
@@ -130,10 +111,8 @@ abstract class ActionScheduler_Logger
      * @param string    $context Action execution context.
      */
     public function log_failed_action($action_id, Exception $exception, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action timeout.
      *
@@ -141,10 +120,8 @@ abstract class ActionScheduler_Logger
      * @param string $timeout Timeout.
      */
     public function log_timed_out_action($action_id, $timeout)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log unexpected shutdown.
      *
@@ -152,20 +129,16 @@ abstract class ActionScheduler_Logger
      * @param mixed[] $error     Error.
      */
     public function log_unexpected_shutdown($action_id, $error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log action reset.
      *
      * @param int $action_id Action ID.
      */
     public function log_reset_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log ignored action.
      *
@@ -173,10 +146,8 @@ abstract class ActionScheduler_Logger
      * @param string $context Action execution context.
      */
     public function log_ignored_action($action_id, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log the failure of fetching the action.
      *
@@ -184,10 +155,8 @@ abstract class ActionScheduler_Logger
      * @param null|Exception $exception The exception which occurred when fetching the action. NULL by default for backward compatibility.
      */
     public function log_failed_fetch_action($action_id, Exception|null $exception = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log the failure of scheduling the action's next instance.
      *
@@ -195,10 +164,8 @@ abstract class ActionScheduler_Logger
      * @param Exception $exception Exception object.
      */
     public function log_failed_schedule_next_instance($action_id, Exception $exception)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk add cancel action log entries.
      *
@@ -208,8 +175,6 @@ abstract class ActionScheduler_Logger
      * @param array $action_ids List of action ID.
      */
     public function bulk_log_cancel_actions($action_ids)
-    {
-        // stub
-    }
-
+{
+}
 }

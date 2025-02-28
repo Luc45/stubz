@@ -30,18 +30,14 @@ class WC_REST_System_Status_V2_Controller
      * called from Server.php
      */
     public static function register_cache_clean()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the route for /system_status
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to view system status.
      *
@@ -49,10 +45,8 @@ class WC_REST_System_Status_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a system status info, by section.
      *
@@ -60,20 +54,16 @@ class WC_REST_System_Status_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the system status schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of sections and the data associated with each.
      *
@@ -81,10 +71,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_item_mappings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of sections and the data associated with each.
      *
@@ -93,10 +81,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_item_mappings_per_fields($fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of environment information. Includes thing like software
      * versions, and various server settings.
@@ -105,10 +91,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_environment_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if field item exists.
      *
@@ -119,10 +103,8 @@ class WC_REST_System_Status_V2_Controller
      * @return bool
      */
     private function check_if_field_item_exists($section, $items, $fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of environment information. Includes thing like software
      * versions, and various server settings.
@@ -131,10 +113,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_environment_info_per_fields($fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add prefix to table.
      *
@@ -142,50 +122,40 @@ class WC_REST_System_Status_V2_Controller
      * @return stromg
      */
     protected function add_db_table_prefix($table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of database information. Version, prefix, and table existence.
      *
      * @return array
      */
     public function get_database_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of counts of objects. Orders, products, etc.
      *
      * @return array
      */
     public function get_post_type_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of plugins active on the site.
      *
      * @return array
      */
     public function get_active_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of inactive plugins.
      *
      * @return array
      */
     public function get_inactive_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format plugin data, including data on updates, into a standard format.
      *
@@ -195,10 +165,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array Formatted data.
      */
     protected function format_plugin_data($plugin, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of Dropins and MU plugins.
      *
@@ -206,10 +174,8 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_dropins_mu_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info on the current active theme, info on parent theme (if presnet)
      * and a list of template overrides.
@@ -217,26 +183,20 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_theme_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear the system status theme cache
      */
     public static function clean_theme_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear the system status plugin caches
      */
     public static function clean_plugin_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get some setting values for the site that are useful for debugging
      * purposes. For full settings access, use the settings api.
@@ -244,20 +204,16 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns security tips.
      *
      * @return array
      */
     public function get_security_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a mini-report on WC pages and if they are configured correctly:
      * Present, visible, and including the correct shortcode or block.
@@ -265,30 +221,24 @@ class WC_REST_System_Status_V2_Controller
      * @return array
      */
     public function get_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about the logging system.
      *
      * @return array
      */
     protected function get_logging_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any query params needed.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the system status response
      *
@@ -297,8 +247,6 @@ class WC_REST_System_Status_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($system_status, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

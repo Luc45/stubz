@@ -10,17 +10,14 @@ class WC_Cache_Helper
      *
      * @var array Array of transient keys.
      */
-    private static $delete_transients = array (
-);
+    private static $delete_transients = array();
 
     /**
      * Hook in methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set additional nocache headers.
      *
@@ -28,10 +25,8 @@ class WC_Cache_Helper
      * @since 3.6.0
      */
     public static function additional_nocache_headers($headers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a transient to delete on shutdown.
      *
@@ -39,20 +34,16 @@ class WC_Cache_Helper
      * @param string|array $keys Transient key or keys.
      */
     public static function queue_delete_transient($keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Transients that don't need to be cleaned right away can be deleted on shutdown to avoid repetition.
      *
      * @since 3.6.0
      */
     public static function delete_transients_on_shutdown()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Used to clear layered nav counts based on passed attribute names.
      *
@@ -60,38 +51,30 @@ class WC_Cache_Helper
      * @param array $attribute_keys Attribute keys.
      */
     public static function invalidate_attribute_count($attribute_keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a hash of the customer location.
      *
      * @return string
      */
     public static function geolocation_ajax_get_location_hash()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevent caching on certain pages
      */
     public static function prevent_caching()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When using geolocation via ajax, to bust cache, redirect if the location hash does not equal the querystring.
      *
      * This prevents caching of the wrong data for this request.
      */
     public static function geolocation_ajax_redirect()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the `woocommerce_geo_hash` cookie, which is used to help ensure we display
      * the correct pricing etc to customers, according to their billing country.
@@ -105,10 +88,8 @@ class WC_Cache_Helper
      *    ensuring we update the cookie any time the billing country is changed.
      */
     public static function update_geolocation_hash()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get transient version.
      *
@@ -130,10 +111,8 @@ class WC_Cache_Helper
      * @return string transient version based on time(), 10 digits.
      */
     public static function get_transient_version($group, $refresh = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set constants to prevent caching by some plugins.
      *
@@ -141,18 +120,14 @@ class WC_Cache_Helper
      * @return mixed
      */
     public static function set_nocache_constants($return = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notices function.
      */
     public static function notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clean term caches added by WooCommerce.
      *
@@ -161,10 +136,8 @@ class WC_Cache_Helper
      * @param string    $taxonomy Taxonomy name.
      */
     public static function clean_term_cache($ids, $taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When the transient version increases, this is used to remove all past transients to avoid filling the DB.
      *
@@ -175,8 +148,6 @@ class WC_Cache_Helper
      * @param string $version Version of the transient to remove.
      */
     public static function delete_version_transients($version = '')
-    {
-        // stub
-    }
-
+{
+}
 }

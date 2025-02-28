@@ -75,10 +75,8 @@ class Runner
      * @param Config $config Migration configuration object.
      */
     public function __construct(Action_Scheduler\Migration\Config $config)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run migration batch.
      *
@@ -87,26 +85,20 @@ class Runner
      * @return int Size of batch processed.
      */
     public function run($batch_size = 10)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migration a batch of actions.
      *
      * @param array $action_ids List of action IDs to migrate.
      */
     public function migrate_actions(array $action_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize destination store and logger.
      */
     public function init_destination()
-    {
-        // stub
-    }
-
+{
+}
 }

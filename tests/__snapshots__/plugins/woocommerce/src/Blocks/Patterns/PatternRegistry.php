@@ -21,10 +21,8 @@ class PatternRegistry
      * @return array<string, string>
      */
     private function get_category_labels()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a block pattern.
      *
@@ -35,10 +33,8 @@ class PatternRegistry
      * @return void
      */
     public function register_block_pattern($source, $pattern_data, $dictionary)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the patterns dictionary to get the pattern data corresponding to the pattern slug.
      *
@@ -48,10 +44,8 @@ class PatternRegistry
      * @return array|null
      */
     private function get_pattern_from_dictionary($dictionary, $slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a kebab-case string to capital case.
      *
@@ -60,8 +54,6 @@ class PatternRegistry
      * @return string
      */
     private static function kebab_to_capital_case($value)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -19,10 +19,8 @@ class ActionScheduler_DBLogger
      * @return int     The log entry ID.
      */
     public function log($action_id, $message, DateTime|null $date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve an action log entry.
      *
@@ -31,10 +29,8 @@ class ActionScheduler_DBLogger
      * @return ActionScheduler_LogEntry
      */
     public function get_entry($entry_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create an action log entry from a database record.
      *
@@ -43,10 +39,8 @@ class ActionScheduler_DBLogger
      * @return ActionScheduler_LogEntry
      */
     private function create_entry_from_db_record($record)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve an action's log entries from the database.
      *
@@ -55,38 +49,30 @@ class ActionScheduler_DBLogger
      * @return ActionScheduler_LogEntry[]
      */
     public function get_logs($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the data store.
      *
      * @codeCoverageIgnore
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the action logs for an action.
      *
      * @param int $action_id Action ID.
      */
     public function clear_deleted_action_logs($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk add cancel action log entries.
      *
      * @param array $action_ids List of action ID.
      */
     public function bulk_log_cancel_actions($action_ids)
-    {
-        // stub
-    }
-
+{
+}
 }

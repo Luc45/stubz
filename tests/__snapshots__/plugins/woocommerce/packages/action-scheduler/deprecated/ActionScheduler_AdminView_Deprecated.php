@@ -16,10 +16,8 @@ class ActionScheduler_AdminView_Deprecated
      * @param array $args Args.
      */
     public function action_scheduler_post_type_args($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Customise the post status related views displayed on the Scheduled Actions administration screen.
      *
@@ -27,10 +25,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return array $views An associative array of views and view labels which can be used to filter the 'scheduled-action' posts displayed on the Scheduled Actions administration screen.
      */
     public function list_table_views($views)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do not include the "Edit" action for the Scheduled Actions administration screen.
      *
@@ -40,10 +36,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return array $actions An associative array of actions which can be performed on the 'scheduled-action' post type.
      */
     public function bulk_actions($actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Completely customer the columns displayed on the Scheduled Actions administration screen.
      *
@@ -54,10 +48,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return array $columns An associative array of columns that are use for the table on the Scheduled Actions administration screen.
      */
     public function list_table_columns($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make our custom title & date columns use defaulting title & date sorting.
      *
@@ -65,10 +57,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return array $columns An associative array of columns that can be used to sort the table on the Scheduled Actions administration screen.
      */
     public static function list_table_sortable_columns($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print the content for our custom columns.
      *
@@ -76,10 +66,8 @@ class ActionScheduler_AdminView_Deprecated
      * @param int    $post_id The ID of the 'scheduled-action' post for which this row relates.
      */
     public static function list_table_column_content($column_name, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide the inline "Edit" action for all 'scheduled-action' posts.
      *
@@ -90,20 +78,16 @@ class ActionScheduler_AdminView_Deprecated
      * @return array $actions An associative array of actions which can be performed on the 'scheduled-action' post type.
      */
     public static function row_actions($actions, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run an action when triggered from the Action Scheduler administration screen.
      *
      * @codeCoverageIgnore
      */
     public static function maybe_execute_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an interval of seconds into a two part human friendly string.
      *
@@ -116,10 +100,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return void
      */
     public static function admin_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter search queries to allow searching by Claim ID (i.e. post_password).
      *
@@ -128,10 +110,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return void
      */
     public function custom_orderby($orderby, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter search queries to allow searching by Claim ID (i.e. post_password).
      *
@@ -140,10 +120,8 @@ class ActionScheduler_AdminView_Deprecated
      * @return void
      */
     public function search_post_password($search, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change messages when a scheduled action is updated.
      *
@@ -151,8 +129,6 @@ class ActionScheduler_AdminView_Deprecated
      * @return array
      */
     public function post_updated_messages($messages)
-    {
-        // stub
-    }
-
+{
+}
 }

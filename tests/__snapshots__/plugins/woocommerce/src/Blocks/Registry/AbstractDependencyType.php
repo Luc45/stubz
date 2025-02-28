@@ -27,10 +27,8 @@ abstract class AbstractDependencyType
      *                                  type instance.
      */
     public function __construct($callable_or_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Resolver for the internal dependency value.
      *
@@ -39,10 +37,8 @@ abstract class AbstractDependencyType
      * @return mixed
      */
     protected function resolve_value(Automattic\WooCommerce\Blocks\Registry\Container $container)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the value stored internally for this DependencyType
      *
@@ -50,6 +46,5 @@ abstract class AbstractDependencyType
      *
      * @return void
      */
-    public abstract function get(Automattic\WooCommerce\Blocks\Registry\Container $container);
-
+    abstract public function get(Automattic\WooCommerce\Blocks\Registry\Container $container);
 }

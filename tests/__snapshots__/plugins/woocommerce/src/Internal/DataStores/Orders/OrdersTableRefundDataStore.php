@@ -78,12 +78,9 @@ class OrdersTableRefundDataStore
      *
      * @return void
      */
-    public function delete(&$refund, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$refund, $args = array())
+{
+}
     /**
      * Helper method to set refund props.
      *
@@ -93,30 +90,24 @@ class OrdersTableRefundDataStore
      * @since 8.0.0
      */
     protected function set_order_props_from_data(&$refund, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to create a refund in the database.
      *
      * @param \WC_Abstract_Order $refund Refund object.
      */
     public function create(&$refund)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update refund in database.
      *
      * @param \WC_Order $refund Refund object.
      */
     public function update(&$refund)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that updates post meta based on an refund object.
      * Mostly used for backwards compatibility purposes in this datastore.
@@ -124,28 +115,22 @@ class OrdersTableRefundDataStore
      * @param \WC_Order $refund Refund object.
      */
     public function update_order_meta(&$refund)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a title for the new post type.
      *
      * @return string
      */
     protected function get_post_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns data store object to use backfilling.
      *
      * @return \WC_Order_Refund_Data_Store_CPT
      */
     protected function get_post_data_store_for_backfill()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -10,5 +10,4 @@
  */
 function wc_initial_state($namespace, $data = null)
 {
-    // stub
 }

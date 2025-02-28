@@ -16,7 +16,6 @@ interface RuleProcessorInterface
      * @return bool The result of the processing.
      */
     public function process($rule, $stored_state);
-
     /**
      * Validates the rule.
      *
@@ -25,5 +24,4 @@ interface RuleProcessorInterface
      * @return bool Pass/fail.
      */
     public function validate($rule);
-
 }

@@ -26,10 +26,8 @@ class WC_REST_Customer_Downloads_V1_Controller
      * Register the routes for customers.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read customers.
      *
@@ -37,10 +35,8 @@ class WC_REST_Customer_Downloads_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all customer downloads.
      *
@@ -48,10 +44,8 @@ class WC_REST_Customer_Downloads_V1_Controller
      * @return array
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single download output for response.
      *
@@ -60,10 +54,8 @@ class WC_REST_Customer_Downloads_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($download, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -72,28 +64,22 @@ class WC_REST_Customer_Downloads_V1_Controller
      * @return array Links for the given customer download.
      */
     protected function prepare_links($download, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Customer Download's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

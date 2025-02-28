@@ -9,8 +9,7 @@ class WCPayPromotionDataSourcePoller
 {
     const ID = 'payment_method_promotion';
 
-    const DATA_SOURCES = array (
-);
+    const DATA_SOURCES = array();
 
     /**
      * Class instance.
@@ -23,18 +22,14 @@ class WCPayPromotionDataSourcePoller
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data sources.
      *
      * @return array
      */
     public static function get_data_sources()
-    {
-        // stub
-    }
-
+{
+}
 }

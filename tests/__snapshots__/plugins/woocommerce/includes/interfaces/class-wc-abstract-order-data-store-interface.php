@@ -17,7 +17,6 @@ interface WC_Abstract_Order_Data_Store_Interface
      * @return array
      */
     public function read_items($order, $type);
-
     /**
      * Remove all line items (products, coupons, shipping, taxes) from the order.
      *
@@ -25,7 +24,6 @@ interface WC_Abstract_Order_Data_Store_Interface
      * @param string   $type Order item type. Default null.
      */
     public function delete_items($order, $type = null);
-
     /**
      * Get token ids for an order.
      *
@@ -33,7 +31,6 @@ interface WC_Abstract_Order_Data_Store_Interface
      * @return array
      */
     public function get_payment_token_ids($order);
-
     /**
      * Update token ids for an order.
      *
@@ -41,5 +38,4 @@ interface WC_Abstract_Order_Data_Store_Interface
      * @param array    $token_ids Token IDs.
      */
     public function update_payment_token_ids($order, $token_ids);
-
 }

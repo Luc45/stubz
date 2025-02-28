@@ -20,10 +20,8 @@ class OrdersScheduler
      * @internal
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add customer dependencies.
      *
@@ -31,10 +29,8 @@ class OrdersScheduler
      * @return array
      */
     public static function get_dependencies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order/refund IDs and total count that need to be synced.
      *
@@ -45,10 +41,8 @@ class OrdersScheduler
      * @param bool     $skip_existing Skip already imported orders.
      */
     public static function get_items($limit = 10, $page = 1, $days = false, $skip_existing = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to ger order/refund IDS and total count that needs to be synced.
      *
@@ -61,10 +55,8 @@ class OrdersScheduler
      * @return object Total counts.
      */
     private static function get_items_from_posts_table($limit, $page, $days, $skip_existing)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to ger order/refund IDS and total count that needs to be synced from HPOS.
      *
@@ -77,20 +69,16 @@ class OrdersScheduler
      * @return object Total counts.
      */
     private static function get_items_from_orders_table($limit, $page, $days, $skip_existing)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total number of rows imported.
      *
      * @internal
      */
     public static function get_total_imported()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule this import if the post is an order or refund.
      *
@@ -100,10 +88,8 @@ class OrdersScheduler
      * @returns int The order id
      */
     public static function possibly_schedule_import($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Imports a single order or refund to update lookup tables for.
      * If an error is encountered in one of the updates, a retry action is scheduled.
@@ -113,10 +99,8 @@ class OrdersScheduler
      * @return void
      */
     public static function import($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a batch of orders.
      *
@@ -125,8 +109,6 @@ class OrdersScheduler
      * @return void
      */
     public static function delete($batch_size)
-    {
-        // stub
-    }
-
+{
+}
 }

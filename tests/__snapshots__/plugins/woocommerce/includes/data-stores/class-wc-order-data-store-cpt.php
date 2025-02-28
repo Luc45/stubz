@@ -87,10 +87,8 @@ class WC_Order_Data_Store_CPT
      * @param WC_Order $order Order object.
      */
     public function create(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read order data. Can be overridden by child classes to load other props.
      *
@@ -99,20 +97,16 @@ class WC_Order_Data_Store_CPT
      * @since 3.0.0
      */
     protected function read_order_data(&$order, $post_object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to update an order in the database.
      *
      * @param WC_Order $order Order object.
      */
     public function update(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that updates all the post meta for an order based on its settings in the WC_Order class.
      *
@@ -120,10 +114,8 @@ class WC_Order_Data_Store_CPT
      * @since 3.0.0
      */
     protected function update_post_meta(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Excerpt for post.
      *
@@ -131,10 +123,8 @@ class WC_Order_Data_Store_CPT
      * @return string
      */
     protected function get_post_excerpt($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order key.
      *
@@ -143,10 +133,8 @@ class WC_Order_Data_Store_CPT
      * @return string
      */
     protected function get_order_key($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get amount already refunded.
      *
@@ -154,10 +142,8 @@ class WC_Order_Data_Store_CPT
      * @return float
      */
     public function get_total_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total tax refunded.
      *
@@ -165,10 +151,8 @@ class WC_Order_Data_Store_CPT
      * @return float
      */
     public function get_total_tax_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total shipping refunded.
      *
@@ -176,10 +160,8 @@ class WC_Order_Data_Store_CPT
      * @return float
      */
     public function get_total_shipping_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds an Order ID based on an order key.
      *
@@ -187,10 +169,8 @@ class WC_Order_Data_Store_CPT
      * @return int The ID of an order, or 0 if the order could not be found
      */
     public function get_order_id_by_order_key($order_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return count of orders with a specific status.
      *
@@ -198,10 +178,8 @@ class WC_Order_Data_Store_CPT
      * @return int
      */
     public function get_order_count($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all orders matching the passed in args.
      *
@@ -212,12 +190,9 @@ class WC_Order_Data_Store_CPT
      *
      * @return array|object
      */
-    public function get_orders($args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_orders($args = array())
+{
+}
     /**
      * Generate meta query for wc_get_orders.
      *
@@ -226,10 +201,8 @@ class WC_Order_Data_Store_CPT
      * @return array
      */
     private function get_orders_generate_customer_meta_query($values, $relation = 'or')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get unpaid orders after a certain date,
      *
@@ -237,10 +210,8 @@ class WC_Order_Data_Store_CPT
      * @return array
      */
     public function get_unpaid_orders($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search order data for a term and return ids.
      *
@@ -248,10 +219,8 @@ class WC_Order_Data_Store_CPT
      * @return array of ids
      */
     public function search_orders($term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether permissions were generated yet.
      *
@@ -259,10 +228,8 @@ class WC_Order_Data_Store_CPT
      * @return bool
      */
     public function get_download_permissions_granted($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether permissions were generated yet.
      *
@@ -270,10 +237,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_download_permissions_granted($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether sales were recorded.
      *
@@ -281,10 +246,8 @@ class WC_Order_Data_Store_CPT
      * @return bool
      */
     public function get_recorded_sales($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether sales were recorded.
      *
@@ -292,10 +255,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_recorded_sales($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether coupon counts were updated.
      *
@@ -303,10 +264,8 @@ class WC_Order_Data_Store_CPT
      * @return bool
      */
     public function get_recorded_coupon_usage_counts($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether coupon counts were updated.
      *
@@ -314,10 +273,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_recorded_coupon_usage_counts($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether email have been sent for this order.
      *
@@ -326,10 +283,8 @@ class WC_Order_Data_Store_CPT
      * @return bool               Whether email is sent.
      */
     public function get_email_sent($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether email have been sent for this order.
      *
@@ -338,10 +293,8 @@ class WC_Order_Data_Store_CPT
      * @return bool               Whether email is sent.
      */
     public function get_new_order_email_sent($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether email was sent.
      *
@@ -349,10 +302,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_email_sent($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether email was sent.
      *
@@ -360,10 +311,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_new_order_email_sent($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of coupon_code => meta_key for coupon which have usage limit and have tentative keys.
      * Pass $coupon_id if key for only one of the coupon is needed.
@@ -374,10 +323,8 @@ class WC_Order_Data_Store_CPT
      * @return array|string Key value pair for coupon code and meta key name. If $coupon_id is passed, returns meta_key for only that coupon.
      */
     public function get_coupon_held_keys($order, $coupon_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of coupon_code => meta_key for coupon which have usage limit per customer and have tentative keys.
      *
@@ -387,10 +334,8 @@ class WC_Order_Data_Store_CPT
      * @return mixed
      */
     public function get_coupon_held_keys_for_users($order, $coupon_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add/Update list of meta keys that are currently being used by this order to hold a coupon.
      * This is used to figure out what all meta entries we should delete when order is cancelled/completed.
@@ -402,10 +347,8 @@ class WC_Order_Data_Store_CPT
      * @return mixed
      */
     public function set_coupon_held_keys($order, $held_keys, $held_keys_for_user)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Release all coupons held by this order.
      *
@@ -413,10 +356,8 @@ class WC_Order_Data_Store_CPT
      * @param bool     $save  Whether to delete keys from DB right away. Could be useful to pass `false` if you are building a bulk request.
      */
     public function release_held_coupons($order, $save = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether stock was reduced.
      *
@@ -424,10 +365,8 @@ class WC_Order_Data_Store_CPT
      * @return bool
      */
     public function get_stock_reduced($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether stock was reduced.
      *
@@ -435,10 +374,8 @@ class WC_Order_Data_Store_CPT
      * @return bool
      */
     public function get_order_stock_reduced($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether stock was reduced.
      *
@@ -446,10 +383,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_stock_reduced($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether stock was reduced.
      *
@@ -457,10 +392,8 @@ class WC_Order_Data_Store_CPT
      * @param bool         $set True or false.
      */
     public function set_order_stock_reduced($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order type based on Order ID.
      *
@@ -470,10 +403,8 @@ class WC_Order_Data_Store_CPT
      * @return string
      */
     public function get_order_type($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get valid WP_Query args from a WC_Order_Query's query variables.
      *
@@ -482,10 +413,8 @@ class WC_Order_Data_Store_CPT
      * @return array
      */
     protected function get_wp_query_args($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query for Orders matching specific criteria.
      *
@@ -496,10 +425,8 @@ class WC_Order_Data_Store_CPT
      * @return array|object
      */
     public function query($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Compile order response and set caches as needed for order ids.
      *
@@ -510,10 +437,8 @@ class WC_Order_Data_Store_CPT
      * @return array Orders.
      */
     private function compile_orders($order_ids, $query_vars, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to prime caches for orders. Call this if you are going to be fetching orders in a loop.
      *
@@ -521,10 +446,8 @@ class WC_Order_Data_Store_CPT
      * @param array $query_vars Original query arguments.
      */
     public function prime_caches_for_orders($order_ids, $query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prime refund cache for orders.
      *
@@ -532,10 +455,8 @@ class WC_Order_Data_Store_CPT
      * @param array $query_vars Query vars for the query.
      */
     private function prime_refund_caches_for_order($order_ids, $query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prime cache for raw meta data for orders in bulk. Difference between this and WP built-in metadata is that this method also fetches `meta_id` field which we use and cache it.
      *
@@ -543,10 +464,8 @@ class WC_Order_Data_Store_CPT
      * @param array $query_vars Query vars for the query.
      */
     private function prime_raw_meta_cache_for_orders($order_ids, $query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attempts to restore the specified order back to its original status (after having been trashed).
      *
@@ -555,8 +474,6 @@ class WC_Order_Data_Store_CPT
      * @return bool If the operation was successful.
      */
     public function untrash_order(WC_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
 }

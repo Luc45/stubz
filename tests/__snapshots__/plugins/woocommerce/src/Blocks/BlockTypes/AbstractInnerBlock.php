@@ -21,10 +21,8 @@ abstract class AbstractInnerBlock
      * fix the issue of missing translations in the inspector (in the Editor mode)
      */
     protected function register_block_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For lazy loaded inner blocks, we don't want to enqueue the script but rather leave it for webpack to do that.
      *
@@ -33,18 +31,14 @@ abstract class AbstractInnerBlock
      * @return array|string|null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

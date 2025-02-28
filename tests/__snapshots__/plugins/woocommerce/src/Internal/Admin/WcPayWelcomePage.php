@@ -31,42 +31,32 @@ class WcPayWelcomePage
      * @return ?WcPayWelcomePage
      */
     public static function instance(): Automattic\WooCommerce\Internal\Admin\WcPayWelcomePage|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WCPayWelcomePage constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register hooks.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delayed hook registration.
      */
     public function delayed_register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers the WooPayments welcome page.
      */
     public function register_menu_and_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds shared settings for the WooPayments incentive.
      *
@@ -74,10 +64,8 @@ class WcPayWelcomePage
      * @return array The updated shared settings.
      */
     public function shared_settings(array $settings): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds allowed promo notes for the WooPayments incentives.
      *
@@ -85,12 +73,9 @@ class WcPayWelcomePage
      *
      * @return array
      */
-    public function allowed_promo_notes(array $promo_notes = array (
-)): array
-    {
-        // stub
-    }
-
+    public function allowed_promo_notes(array $promo_notes = array()): array
+{
+}
     /**
      * Adds the WooPayments incentive badge to the onboarding task.
      *
@@ -99,10 +84,8 @@ class WcPayWelcomePage
      * @return string
      */
     public function onboarding_task_badge(string $badge): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the onboarding task additional data to add the WooPayments incentive data to it.
      *
@@ -111,10 +94,8 @@ class WcPayWelcomePage
      * @return ?array The filtered task additional data.
      */
     public function onboarding_task_additional_data(array|null $additional_data): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if we have an incentive available to show.
      *
@@ -123,30 +104,24 @@ class WcPayWelcomePage
      * @return bool Whether we have an incentive available to show.
      */
     public function has_incentive(bool $skip_wcpay_active = false): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the WooPayments incentive details, if available.
      *
      * @return array|null The incentive details. Null if there is no incentive available.
      */
     private function get_incentive(): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the WooPayments plugin is active.
      *
      * @return boolean
      */
     private function is_wcpay_active(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the current incentive has been manually dismissed.
      *
@@ -155,10 +130,8 @@ class WcPayWelcomePage
      * @return boolean
      */
     private function is_incentive_dismissed(array $incentive): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the slug of the active payments task.
      *
@@ -167,28 +140,22 @@ class WcPayWelcomePage
      * @return string Either 'woocommerce-payments' or 'payments'. Empty string if no task is found.
      */
     private function get_active_payments_task_slug(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the WooCommerce setup task list Payments task instance.
      *
      * @return Task|null The Payments task instance. null if the task is not found.
      */
     private function get_payments_task(): Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the WooCommerce setup task list Payments task is complete.
      *
      * @return bool True if the Payments task is complete, false otherwise.
      */
     private function is_payments_task_complete(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

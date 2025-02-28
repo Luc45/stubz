@@ -8,8 +8,6 @@ namespace TraitsExample;
 trait LoggerTrait
 {
     protected function logMessage(string $msg): void
-    {
-        // stub
-    }
-
+{
+}
 }

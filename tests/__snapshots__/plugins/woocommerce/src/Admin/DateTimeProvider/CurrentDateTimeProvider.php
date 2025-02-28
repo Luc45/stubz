@@ -15,8 +15,6 @@ class CurrentDateTimeProvider
      * @return DateTime
      */
     public function get_now()
-    {
-        // stub
-    }
-
+{
+}
 }

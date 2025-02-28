@@ -30,18 +30,15 @@ abstract class ActionScheduler_Abstract_Schema
      *
      * @var array
      */
-    protected $tables = array (
-);
+    protected $tables = array();
 
     /**
      * Can optionally be used by concrete classes to carry out additional initialization work
      * as needed.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register tables with WordPress, and create them if needed.
      *
@@ -50,10 +47,8 @@ abstract class ActionScheduler_Abstract_Schema
      * @return void
      */
     public function register_tables($force_update = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get table definition.
      *
@@ -61,8 +56,7 @@ abstract class ActionScheduler_Abstract_Schema
      *
      * @return string The CREATE TABLE statement, suitable for passing to dbDelta
      */
-    protected abstract function get_table_definition($table);
-
+    abstract protected function get_table_definition($table);
     /**
      * Determine if the database schema is out of date
      * by comparing the integer found in $this->schema_version
@@ -71,10 +65,8 @@ abstract class ActionScheduler_Abstract_Schema
      * @return bool
      */
     private function schema_update_required()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the option in WordPress to indicate that
      * our schema is now up to date
@@ -82,10 +74,8 @@ abstract class ActionScheduler_Abstract_Schema
      * @return void
      */
     private function mark_schema_update_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the schema for the given table
      *
@@ -94,10 +84,8 @@ abstract class ActionScheduler_Abstract_Schema
      * @return void
      */
     private function update_table($table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get full table name.
      *
@@ -107,18 +95,14 @@ abstract class ActionScheduler_Abstract_Schema
      *                table prefix for the current blog
      */
     protected function get_full_table_name($table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Confirms that all of the tables registered by this schema class have been created.
      *
      * @return bool
      */
     public function tables_exist()
-    {
-        // stub
-    }
-
+{
+}
 }

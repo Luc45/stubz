@@ -15,10 +15,8 @@ class Package
      * @deprecated since 4.5.0. Directly call Automattic\WooCommerce\RestApi\Server::instance()->init()
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the version of the package.
      *
@@ -26,10 +24,8 @@ class Package
      * @return string
      */
     public static function get_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the path to the package.
      *
@@ -37,8 +33,6 @@ class Package
      * @return string
      */
     public static function get_path()
-    {
-        // stub
-    }
-
+{
+}
 }

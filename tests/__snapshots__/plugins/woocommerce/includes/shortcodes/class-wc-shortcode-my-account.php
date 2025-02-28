@@ -13,20 +13,16 @@ class WC_Shortcode_My_Account
      * @return string
      */
     public static function get($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the shortcode.
      *
      * @param array $atts Shortcode attributes.
      */
     public static function output($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add notices to the my account page.
      *
@@ -34,56 +30,44 @@ class WC_Shortcode_My_Account
      * logged out. See `woocommerce_my_account_message`.
      */
     private static function my_account_add_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * My account page.
      *
      * @param array $atts Shortcode attributes.
      */
     private static function my_account($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * View order page.
      *
      * @param int $order_id Order ID.
      */
     public static function view_order($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Edit account details page.
      */
     public static function edit_account()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Edit address page.
      *
      * @param string $load_address Type of address; 'billing' or 'shipping'.
      */
     public static function edit_address($load_address = 'billing')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Lost password page handling.
      */
     public static function lost_password()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles sending password retrieval email to customer.
      *
@@ -93,10 +77,8 @@ class WC_Shortcode_My_Account
      * @return bool True: when finish. False: on error
      */
     public static function retrieve_password()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves a user row based on password reset key and login.
      *
@@ -106,10 +88,8 @@ class WC_Shortcode_My_Account
      * @return WP_User|bool User's database row on success, false for invalid keys
      */
     public static function check_password_reset_key($key, $login)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles resetting the user's password.
      *
@@ -119,26 +99,20 @@ class WC_Shortcode_My_Account
      * @param string $new_pass New password for the user in plaintext.
      */
     public static function reset_password($user, $new_pass)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set or unset the cookie.
      *
      * @param string $value Cookie value.
      */
     public static function set_reset_password_cookie($value = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show the add payment method page.
      */
     public static function add_payment_method()
-    {
-        // stub
-    }
-
+{
+}
 }

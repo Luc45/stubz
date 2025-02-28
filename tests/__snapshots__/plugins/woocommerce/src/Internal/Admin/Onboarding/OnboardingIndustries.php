@@ -11,20 +11,16 @@ class OnboardingIndustries
      * Init.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of allowed industries for the onboarding wizard.
      *
      * @return array
      */
     public static function get_allowed_industries()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add preloaded data to onboarding.
      *
@@ -32,8 +28,6 @@ class OnboardingIndustries
      * @return array
      */
     public static function preload_data($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

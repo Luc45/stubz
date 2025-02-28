@@ -22,10 +22,8 @@ class TaxonomiesMetaBox
      * @return void
      */
     public function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $orders_table_data_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers meta boxes to be rendered in order edit screen for taxonomies.
      *
@@ -37,10 +35,8 @@ class TaxonomiesMetaBox
      * @return void
      */
     public function add_taxonomies_meta_boxes(string $screen_id, string $order_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save handler for taxonomy data.
      *
@@ -48,10 +44,8 @@ class TaxonomiesMetaBox
      * @param array|null         $taxonomy_input Taxonomy input passed from input.
      */
     public function save_taxonomies(WC_Abstract_Order $order, $taxonomy_input)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize taxonomy input by calling sanitize callbacks for each registered taxonomy.
      *
@@ -60,10 +54,8 @@ class TaxonomiesMetaBox
      * @return array Sanitized taxonomy input.
      */
     private function sanitize_tax_input($taxonomy_data): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the categories meta box to the order screen. This is just a wrapper around the post_categories_meta_box.
      *
@@ -73,10 +65,8 @@ class TaxonomiesMetaBox
      * @return void
      */
     public function order_categories_meta_box($order, $box)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the tags meta box to the order screen. This is just a wrapper around the post_tags_meta_box.
      *
@@ -86,8 +76,6 @@ class TaxonomiesMetaBox
      * @return void
      */
     public function order_tags_meta_box($order, $box)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,9 +11,7 @@
  */
 function wc_change_get_terms_defaults($defaults, $taxonomies)
 {
-    // stub
 }
-
 /**
  * Adds support to get_terms for menu_order argument.
  *
@@ -22,9 +20,7 @@ function wc_change_get_terms_defaults($defaults, $taxonomies)
  */
 function wc_change_pre_get_terms($terms_query)
 {
-    // stub
 }
-
 /**
  * Adjust term query to handle custom sorting parameters.
  *
@@ -35,9 +31,7 @@ function wc_change_pre_get_terms($terms_query)
  */
 function wc_terms_clauses($clauses, $taxonomies, $args)
 {
-    // stub
 }
-
 /**
  * Helper to get cached object terms and filter by field using wp_list_pluck().
  * Works as a cached alternative for wp_get_post_terms() and wp_get_object_terms().
@@ -51,9 +45,7 @@ function wc_terms_clauses($clauses, $taxonomies, $args)
  */
 function wc_get_object_terms($object_id, $taxonomy, $field = null, $index_key = null)
 {
-    // stub
 }
-
 /**
  * Cached version of wp_get_post_terms().
  * This is a private function (internal use ONLY).
@@ -64,12 +56,9 @@ function wc_get_object_terms($object_id, $taxonomy, $field = null, $index_key = 
  * @param  array  $args       Query arguments.
  * @return array
  */
-function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array (
-))
+function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array())
 {
-    // stub
 }
-
 /**
  * Wrapper used to get terms for a product.
  *
@@ -78,12 +67,9 @@ function _wc_get_cached_product_terms($product_id, $taxonomy, $args = array (
  * @param  array  $args       Query arguments.
  * @return array
  */
-function wc_get_product_terms($product_id, $taxonomy, $args = array (
-))
+function wc_get_product_terms($product_id, $taxonomy, $args = array())
 {
-    // stub
 }
-
 /**
  * Sort by name (numeric).
  *
@@ -93,9 +79,7 @@ function wc_get_product_terms($product_id, $taxonomy, $args = array (
  */
 function _wc_get_product_terms_name_num_usort_callback($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort by parent.
  *
@@ -105,20 +89,15 @@ function _wc_get_product_terms_name_num_usort_callback($a, $b)
  */
 function _wc_get_product_terms_parent_usort_callback($a, $b)
 {
-    // stub
 }
-
 /**
  * WooCommerce Dropdown categories.
  *
  * @param array $args Args to control display of dropdown.
  */
-function wc_product_dropdown_categories($args = array (
-))
+function wc_product_dropdown_categories($args = array())
 {
-    // stub
 }
-
 /**
  * Custom walker for Product Categories.
  *
@@ -129,9 +108,7 @@ function wc_product_dropdown_categories($args = array (
  */
 function wc_walk_category_dropdown_tree(...$args)
 {
-    // stub
 }
-
 /**
  * Migrate data from WC term meta to WP term meta.
  *
@@ -143,9 +120,7 @@ function wc_walk_category_dropdown_tree(...$args)
  */
 function wc_taxonomy_metadata_migrate_data($wp_db_version, $wp_current_db_version)
 {
-    // stub
 }
-
 /**
  * Move a term before the a given element of its hierarchy level.
  *
@@ -158,9 +133,7 @@ function wc_taxonomy_metadata_migrate_data($wp_db_version, $wp_current_db_versio
  */
 function wc_reorder_terms($the_term, $next_id, $taxonomy, $index = 0, $terms = null)
 {
-    // stub
 }
-
 /**
  * Set the sort order of a term.
  *
@@ -172,9 +145,7 @@ function wc_reorder_terms($the_term, $next_id, $taxonomy, $index = 0, $terms = n
  */
 function wc_set_term_order($term_id, $index, $taxonomy, $recursive = false)
 {
-    // stub
 }
-
 /**
  * Function for recounting product terms, ignoring hidden products.
  *
@@ -185,9 +156,7 @@ function wc_set_term_order($term_id, $index, $taxonomy, $recursive = false)
  */
 function _wc_term_recount($terms, $taxonomy, $callback = true, $terms_are_term_taxonomy_ids = true)
 {
-    // stub
 }
-
 /**
  * Recount terms after the stock amount changes.
  *
@@ -195,9 +164,7 @@ function _wc_term_recount($terms, $taxonomy, $callback = true, $terms_are_term_t
  */
 function wc_recount_after_stock_change($product_id)
 {
-    // stub
 }
-
 /**
  * Overrides the original term count for product categories and tags with the product count.
  * that takes catalog visibility into account.
@@ -208,9 +175,7 @@ function wc_recount_after_stock_change($product_id)
  */
 function wc_change_term_counts($terms, $taxonomies)
 {
-    // stub
 }
-
 /**
  * Return products in a given term, and cache value.
  *
@@ -222,9 +187,7 @@ function wc_change_term_counts($terms, $taxonomies)
  */
 function wc_get_term_product_ids($term_id, $taxonomy)
 {
-    // stub
 }
-
 /**
  * When a post is updated and terms recounted (called by _update_post_term_count), clear the ids.
  *
@@ -237,9 +200,7 @@ function wc_get_term_product_ids($term_id, $taxonomy)
  */
 function wc_clear_term_product_ids($object_id, $terms, $tt_ids, $taxonomy, $append, $old_tt_ids)
 {
-    // stub
 }
-
 /**
  * Get full list of product visibility term ids.
  *
@@ -248,9 +209,7 @@ function wc_clear_term_product_ids($object_id, $terms, $tt_ids, $taxonomy, $appe
  */
 function wc_get_product_visibility_term_ids()
 {
-    // stub
 }
-
 /**
  * Recounts all terms.
  *
@@ -259,9 +218,7 @@ function wc_get_product_visibility_term_ids()
  */
 function wc_recount_all_terms()
 {
-    // stub
 }
-
 /**
  * Recounts terms by product.
  *
@@ -271,5 +228,4 @@ function wc_recount_all_terms()
  */
 function _wc_recount_terms_by_product($product_id = '')
 {
-    // stub
 }

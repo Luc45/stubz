@@ -43,10 +43,8 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * Class constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a new order item in the database.
      *
@@ -54,10 +52,8 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * @since 3.0.0
      */
     public function create(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a order item in the database.
      *
@@ -65,10 +61,8 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * @since 3.0.0
      */
     public function update(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove an order item from the database.
      *
@@ -76,12 +70,9 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * @param array         $args Array of args to pass to the delete method.
      * @since 3.0.0
      */
-    public function delete(&$item, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$item, $args = array())
+{
+}
     /**
      * Read a order item from the database.
      *
@@ -91,10 +82,8 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * @since 3.0.0
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $item->get_id() will be set.
@@ -103,28 +92,22 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store
      * @since 3.0.0
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear meta cache.
      *
      * @param WC_Order_Item $item Order item object.
      */
     public function clear_cache(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Persist the Cost of Goods Sold related data to the database.
      *
      * @param WC_Order_Item $item The order item for which the data will be persisted.
      */
     private function save_cogs_data(WC_Order_Item $item)
-    {
-        // stub
-    }
-
+{
+}
 }

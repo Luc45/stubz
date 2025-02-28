@@ -35,36 +35,27 @@ class Migration
      * @var array
      */
     public function run_migrations()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a flag to indicate if the blockified Product Grid Block should be rendered by default.
      */
     public static function wc_blocks_update_1030_blockified_product_grid_block()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rename `checkout` template to `page-checkout`.
      */
     public static function wc_blocks_update_1120_rename_checkout_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rename `cart` template to `page-cart`.
      */
     public static function wc_blocks_update_1120_rename_cart_template()
-    {
-        // stub
-    }
-
+{
 }
-
+}
 const WP_POST_REVISIONS = false;
 
 const WP_POST_REVISIONS = false;

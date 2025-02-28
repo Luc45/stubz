@@ -29,10 +29,8 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
      * @return WC_Shipping_Zone|WP_Error
      */
     protected function get_zone($zone_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read Shipping Zones.
      *
@@ -40,10 +38,8 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create Shipping Zones.
      *
@@ -51,10 +47,8 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
      * @return WP_Error|boolean
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to edit Shipping Zones.
      *
@@ -62,10 +56,8 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
      * @return WP_Error|boolean
      */
     public function update_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to delete Shipping Zones.
      *
@@ -73,8 +65,6 @@ abstract class WC_REST_Shipping_Zones_Controller_Base
      * @return WP_Error|boolean
      */
     public function delete_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
 }

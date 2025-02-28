@@ -16,8 +16,6 @@ class WC_Customizer_Control_Cropping
      * Render control.
      */
     public function render_content()
-    {
-        // stub
-    }
-
+{
+}
 }

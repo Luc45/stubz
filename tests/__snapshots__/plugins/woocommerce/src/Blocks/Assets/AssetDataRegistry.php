@@ -18,16 +18,14 @@ class AssetDataRegistry
      *
      * @var array
      */
-    private $data = array (
-);
+    private $data = array();
 
     /**
      * Contains preloaded API data.
      *
      * @var array
      */
-    private $preloaded_api_requests = array (
-);
+    private $preloaded_api_requests = array();
 
     /**
      * Lazy data is an array of closures that will be invoked just before
@@ -35,8 +33,7 @@ class AssetDataRegistry
      *
      * @var array
      */
-    private $lazy_data = array (
-);
+    private $lazy_data = array();
 
     /**
      * Asset handle for registered data.
@@ -58,18 +55,14 @@ class AssetDataRegistry
      * @param Api $asset_api  Asset API interface for various asset registration.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\Api $asset_api)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WP asset registration for enqueueing asset data.
      */
     protected function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exposes core data via the wcSettings global. This data is shared throughout the client.
      *
@@ -79,40 +72,32 @@ class AssetDataRegistry
      * @return array  An array containing core data.
      */
     protected function get_core_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get currency data to include in settings.
      *
      * @return array
      */
     protected function get_currency_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get locale data to include in settings.
      *
      * @return array
      */
     protected function get_locale_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get store pages to include in settings.
      *
      * @return array
      */
     protected function get_store_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product related settings.
      *
@@ -121,10 +106,8 @@ class AssetDataRegistry
      * @return array
      */
     protected function get_products_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a page object into a standard array of data.
      *
@@ -132,10 +115,8 @@ class AssetDataRegistry
      * @return array
      */
     protected function format_page_resource($page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns block-related data for enqueued wc-settings script.
      * Format order statuses by removing a leading 'wc-' if present.
@@ -143,10 +124,8 @@ class AssetDataRegistry
      * @return array formatted statuses.
      */
     protected function get_order_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Used for on demand initialization of asset data and registering it with
      * the internal data registry.
@@ -154,10 +133,8 @@ class AssetDataRegistry
      * Note: core data will overwrite any externally registered data via the api.
      */
     protected function initialize_core_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loops through each registered lazy data callback and adds the returned
      * value to the data array.
@@ -168,20 +145,16 @@ class AssetDataRegistry
      * @return void
      */
     protected function execute_lazy_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exposes private registered data to child classes.
      *
      * @return array  The registered data on the private data property
      */
     protected function get()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Allows checking whether a key exists.
      *
@@ -189,10 +162,8 @@ class AssetDataRegistry
      * @return bool  Whether the key exists in the current data registry.
      */
     public function exists($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Interface for adding data to the registry.
      *
@@ -206,20 +177,16 @@ class AssetDataRegistry
      *                                  If false, duplicate data will cause an exception.
      */
     public function add($key, $data, $check_key_exists = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hydrate from the API.
      *
      * @param string $path REST API path to preload.
      */
     public function hydrate_api_request($path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hydrate some data from the API.
      *
@@ -231,30 +198,24 @@ class AssetDataRegistry
      * @throws InvalidArgumentException  Only throws when site is in debug mode. Always logs the error.
      */
     public function hydrate_data_from_api_request($key, $path, $check_key_exists = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a page permalink to the data registry.
      *
      * @param integer $page_id Page ID to add to the registry.
      */
     public function register_page_id($page_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for registering the data script via WordPress API.
      *
      * @return void
      */
     public function register_data_script()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for enqueuing asset data via the WP api.
      *
@@ -264,10 +225,8 @@ class AssetDataRegistry
      * happen for routes that need it.
      */
     public function enqueue_asset_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See self::add() for docs.
      *
@@ -275,18 +234,14 @@ class AssetDataRegistry
      * @param   mixed  $data  Value for the data.
      */
     protected function add_data($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exposes whether the current site is in debug mode or not.
      *
      * @return boolean  True means the site is in debug mode.
      */
     protected function debug()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -30,20 +30,16 @@ class ProductSchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Product schema properties.
      *
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a WooCommerce product into an object suitable for the response.
      *
@@ -51,10 +47,8 @@ class ProductSchema
      * @return array
      */
     public function get_item_response($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of product images.
      *
@@ -62,10 +56,8 @@ class ProductSchema
      * @return array
      */
     protected function get_images(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets remaining stock amount for a product.
      *
@@ -73,10 +65,8 @@ class ProductSchema
      * @return integer|null
      */
     protected function get_remaining_stock(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If a product has low stock, return the remaining stock amount for display.
      *
@@ -84,10 +74,8 @@ class ProductSchema
      * @return integer|null
      */
     protected function get_low_stock_remaining(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the given attribute is valid.
      *
@@ -95,10 +83,8 @@ class ProductSchema
      * @return boolean
      */
     protected function filter_valid_attribute($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the given attribute is valid and used for variations.
      *
@@ -106,10 +92,8 @@ class ProductSchema
      * @return boolean
      */
     protected function filter_variation_attribute($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation IDs and attributes from the DB.
      *
@@ -117,10 +101,8 @@ class ProductSchema
      * @returns array
      */
     protected function get_variations(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of product attributes and attribute terms.
      *
@@ -128,10 +110,8 @@ class ProductSchema
      * @return array
      */
     protected function get_attributes(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare an attribute term for the response.
      *
@@ -139,10 +119,8 @@ class ProductSchema
      * @return object
      */
     protected function prepare_product_attribute_taxonomy_value(WP_Term $term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare an attribute term for the response.
      *
@@ -152,10 +130,8 @@ class ProductSchema
      * @return object
      */
     protected function prepare_product_attribute_value($name, $id = 0, $slug = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of pricing data.
      *
@@ -164,10 +140,8 @@ class ProductSchema
      * @return array
      */
     protected function prepare_product_price_response(WC_Product $product, $tax_display_mode = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WooCommerce can return prices including or excluding tax; choose the correct method based on tax display mode.
      *
@@ -175,10 +149,8 @@ class ProductSchema
      * @return string Valid tax display mode.
      */
     protected function get_tax_display_mode($tax_display_mode = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WooCommerce can return prices including or excluding tax; choose the correct method based on tax display mode.
      *
@@ -186,10 +158,8 @@ class ProductSchema
      * @return string Function name.
      */
     protected function get_price_function_from_tax_display_mode($tax_display_mode)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get price range from certain product types.
      *
@@ -198,10 +168,8 @@ class ProductSchema
      * @return object|null
      */
     protected function get_price_range(WC_Product $product, $tax_display_mode = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of terms assigned to the product.
      *
@@ -210,8 +178,6 @@ class ProductSchema
      * @return array Array of terms (id, name, slug).
      */
     protected function get_term_list(WC_Product $product, $taxonomy = '')
-    {
-        // stub
-    }
-
+{
+}
 }

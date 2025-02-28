@@ -62,10 +62,8 @@ abstract class WC_Log_Levels
      * @return bool True if $level is a valid level.
      */
     public static function is_valid_level($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Translate level string to integer.
      *
@@ -73,20 +71,16 @@ abstract class WC_Log_Levels
      * @return int 100 (debug) - 800 (emergency) or 0 if not recognized
      */
     public static function get_level_severity($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an associative array with `level name => numerical severity` key/value pairs.
      *
      * @return int[]
      */
     public static function get_all_level_severities()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Translate severity integer to level string.
      *
@@ -94,20 +88,16 @@ abstract class WC_Log_Levels
      * @return bool|string False if not recognized. Otherwise string representation of level.
      */
     public static function get_severity_level($severity)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an associative array with `numerical severity => level name` key/value pairs.
      *
      * @return string[]
      */
     public static function get_all_severity_levels()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the UI label for a log level.
      *
@@ -116,18 +106,14 @@ abstract class WC_Log_Levels
      * @return string
      */
     public static function get_level_label($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the UI labels for all log levels.
      *
      * @return string[]
      */
     public static function get_all_level_labels()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -13,50 +13,40 @@ class ReviewsCommentsOverrides
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders admin notices.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function display_notices(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * May render an admin notice informing the user that reviews were moved to a new page.
      *
      * @return void
      */
     protected function maybe_display_reviews_moved_notice(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the admin notice informing the user that reviews were moved to a new page should be displayed.
      *
      * @return bool
      */
     protected function should_display_reviews_moved_notice(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders an admin notice informing the user that reviews were moved to a new page.
      *
      * @return void
      */
     protected function display_reviews_moved_notice(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the capability required to dismiss the notice.
      *
@@ -70,10 +60,8 @@ class ReviewsCommentsOverrides
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function get_dismiss_capability($default_capability, $notice_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Excludes product reviews from showing in the comments page.
      *
@@ -83,8 +71,6 @@ class ReviewsCommentsOverrides
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function exclude_reviews_from_comments($args): array
-    {
-        // stub
-    }
-
+{
+}
 }

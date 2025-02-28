@@ -8,22 +8,16 @@ namespace AbstractScenario;
 abstract class AbstractEntity
 {
     public abstract function getType(): string;
-
     public function describe(): string
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * A final class extending the abstract one.
  */
 final class ConcreteEntity extends \AbstractScenario\AbstractEntity
 {
     public function getType(): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,10 +15,8 @@ class Utils
      * @param WP_Block $block Block instance.
      */
     public static function prepare_and_execute_query($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function that constructs a WP_Query args array from
      * a Product Collection or global query.
@@ -29,10 +27,8 @@ class Utils
      * @return array Returns the constructed WP_Query arguments.
      */
     public static function get_query_vars($block, $page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove query array from tax or meta query by searching for arrays that
      * contain exact key => value pair.
@@ -44,10 +40,8 @@ class Utils
      * @return array
      */
     public static function remove_query_array($queries, $key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse WP Query's front-end context for the Product Collection block.
      *
@@ -64,18 +58,14 @@ class Utils
      * }
      */
     public static function parse_frontend_location_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove falsy item from array, recursively.
      *
      * @param array $array The input array to filter.
      */
     private static function remove_empty_array_recursive($array)
-    {
-        // stub
-    }
-
+{
+}
 }

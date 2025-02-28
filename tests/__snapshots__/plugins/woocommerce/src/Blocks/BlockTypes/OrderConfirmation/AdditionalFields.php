@@ -23,10 +23,7 @@ class AdditionalFields
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
 }

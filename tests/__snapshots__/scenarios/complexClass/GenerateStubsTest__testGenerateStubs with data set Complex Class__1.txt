@@ -5,8 +5,6 @@ namespace MyProject\Nested;
 class SomeNestedFile
 {
     public static function nestedFunction()
-    {
-        // stub
-    }
-
+{
+}
 }

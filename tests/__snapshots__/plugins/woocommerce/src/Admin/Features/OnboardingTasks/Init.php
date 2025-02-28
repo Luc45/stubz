@@ -18,26 +18,20 @@ class Init
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get task item data for settings filter.
      *
      * @return array
      */
     public static function get_settings()
-    {
-        // stub
-    }
-
+{
+}
 }

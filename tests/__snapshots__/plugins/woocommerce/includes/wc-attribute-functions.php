@@ -9,9 +9,7 @@
  */
 function wc_get_text_attributes($raw_attributes)
 {
-    // stub
 }
-
 /**
  * See if an attribute is actually valid.
  *
@@ -21,9 +19,7 @@ function wc_get_text_attributes($raw_attributes)
  */
 function wc_get_text_attributes_filter_callback($value)
 {
-    // stub
 }
-
 /**
  * Implode an array of attributes using WC_DELIMITER.
  *
@@ -33,9 +29,7 @@ function wc_get_text_attributes_filter_callback($value)
  */
 function wc_implode_text_attributes($attributes)
 {
-    // stub
 }
-
 /**
  * Get attribute taxonomies.
  *
@@ -43,9 +37,7 @@ function wc_implode_text_attributes($attributes)
  */
 function wc_get_attribute_taxonomies()
 {
-    // stub
 }
-
 /**
  * Get (cached) attribute taxonomy ID and name pairs.
  *
@@ -54,9 +46,7 @@ function wc_get_attribute_taxonomies()
  */
 function wc_get_attribute_taxonomy_ids()
 {
-    // stub
 }
-
 /**
  * Get (cached) attribute taxonomy label and name pairs.
  *
@@ -65,9 +55,7 @@ function wc_get_attribute_taxonomy_ids()
  */
 function wc_get_attribute_taxonomy_labels()
 {
-    // stub
 }
-
 /**
  * Get a product attribute name.
  *
@@ -76,9 +64,7 @@ function wc_get_attribute_taxonomy_labels()
  */
 function wc_attribute_taxonomy_name($attribute_name)
 {
-    // stub
 }
-
 /**
  * Get the attribute name used when storing values in post meta.
  *
@@ -88,9 +74,7 @@ function wc_attribute_taxonomy_name($attribute_name)
  */
 function wc_variation_attribute_name($attribute_name)
 {
-    // stub
 }
-
 /**
  * Get a product attribute name by ID.
  *
@@ -100,9 +84,7 @@ function wc_variation_attribute_name($attribute_name)
  */
 function wc_attribute_taxonomy_name_by_id($attribute_id)
 {
-    // stub
 }
-
 /**
  * Get a product attribute ID by name.
  *
@@ -112,9 +94,7 @@ function wc_attribute_taxonomy_name_by_id($attribute_id)
  */
 function wc_attribute_taxonomy_id_by_name($name)
 {
-    // stub
 }
-
 /**
  * Get a product attributes label.
  *
@@ -124,9 +104,7 @@ function wc_attribute_taxonomy_id_by_name($name)
  */
 function wc_attribute_label($name, $product = '')
 {
-    // stub
 }
-
 /**
  * Get a product attributes orderby setting.
  *
@@ -135,9 +113,7 @@ function wc_attribute_label($name, $product = '')
  */
 function wc_attribute_orderby($name)
 {
-    // stub
 }
-
 /**
  * Get an array of product attribute taxonomies.
  *
@@ -145,9 +121,7 @@ function wc_attribute_orderby($name)
  */
 function wc_get_attribute_taxonomy_names()
 {
-    // stub
 }
-
 /**
  * Get attribute types.
  *
@@ -156,9 +130,7 @@ function wc_get_attribute_taxonomy_names()
  */
 function wc_get_attribute_types()
 {
-    // stub
 }
-
 /**
  * Check if there are custom attribute types.
  *
@@ -167,9 +139,7 @@ function wc_get_attribute_types()
  */
 function wc_has_custom_attribute_types()
 {
-    // stub
 }
-
 /**
  * Get attribute type label.
  *
@@ -179,9 +149,7 @@ function wc_has_custom_attribute_types()
  */
 function wc_get_attribute_type_label($type)
 {
-    // stub
 }
-
 /**
  * Check if attribute name is reserved.
  * https://codex.wordpress.org/Function_Reference/register_taxonomy#Reserved_Terms.
@@ -192,9 +160,7 @@ function wc_get_attribute_type_label($type)
  */
 function wc_check_if_attribute_name_is_reserved($attribute_name)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get visible only.
  *
@@ -204,9 +170,7 @@ function wc_check_if_attribute_name_is_reserved($attribute_name)
  */
 function wc_attributes_array_filter_visible($attribute)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get variation attributes only.
  *
@@ -216,9 +180,7 @@ function wc_attributes_array_filter_visible($attribute)
  */
 function wc_attributes_array_filter_variation($attribute)
 {
-    // stub
 }
-
 /**
  * Check if an attribute is included in the attributes area of a variation name.
  *
@@ -229,9 +191,7 @@ function wc_attributes_array_filter_variation($attribute)
  */
 function wc_is_attribute_in_product_name($attribute, $name)
 {
-    // stub
 }
-
 /**
  * Callback for array filter to get default attributes.  Will allow for '0' string values, but regard all other
  * class PHP FALSE equivalents normally.
@@ -242,9 +202,7 @@ function wc_is_attribute_in_product_name($attribute, $name)
  */
 function wc_array_filter_default_attributes($attribute)
 {
-    // stub
 }
-
 /**
  * Get attribute data by ID.
  *
@@ -254,9 +212,7 @@ function wc_array_filter_default_attributes($attribute)
  */
 function wc_get_attribute($id)
 {
-    // stub
 }
-
 /**
  * Create attribute.
  *
@@ -279,9 +235,7 @@ function wc_get_attribute($id)
  */
 function wc_create_attribute($args)
 {
-    // stub
 }
-
 /**
  * Update an attribute.
  *
@@ -294,9 +248,7 @@ function wc_create_attribute($args)
  */
 function wc_update_attribute($id, $args)
 {
-    // stub
 }
-
 /**
  * Delete attribute by ID.
  *
@@ -306,9 +258,7 @@ function wc_update_attribute($id, $args)
  */
 function wc_delete_attribute($id)
 {
-    // stub
 }
-
 /**
  * Get an unprefixed product attribute name.
  *
@@ -319,5 +269,4 @@ function wc_delete_attribute($id)
  */
 function wc_attribute_taxonomy_slug($attribute_name)
 {
-    // stub
 }

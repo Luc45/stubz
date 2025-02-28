@@ -16,8 +16,6 @@ class InboxNotifications
      * Deletes the note.
      */
     public static function delete_surface_cart_checkout_blocks_notification()
-    {
-        // stub
-    }
-
+{
+}
 }

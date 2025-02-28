@@ -16,10 +16,8 @@ class NoteStatusRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -28,8 +26,6 @@ class NoteStatusRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

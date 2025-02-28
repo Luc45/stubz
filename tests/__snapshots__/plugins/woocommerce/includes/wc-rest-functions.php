@@ -13,9 +13,7 @@
  */
 function wc_rest_prepare_date_response($date, $utc = true)
 {
-    // stub
 }
-
 /**
  * Returns image mime types users are allowed to upload via the API.
  *
@@ -24,9 +22,7 @@ function wc_rest_prepare_date_response($date, $utc = true)
  */
 function wc_rest_allowed_image_mime_types()
 {
-    // stub
 }
-
 /**
  * Upload image from URL.
  *
@@ -36,9 +32,7 @@ function wc_rest_allowed_image_mime_types()
  */
 function wc_rest_upload_image_from_url($image_url)
 {
-    // stub
 }
-
 /**
  * Set uploaded image as attachment.
  *
@@ -49,9 +43,7 @@ function wc_rest_upload_image_from_url($image_url)
  */
 function wc_rest_set_uploaded_image_as_attachment($upload, $id = 0)
 {
-    // stub
 }
-
 /**
  * Validate reports request arguments.
  *
@@ -63,9 +55,7 @@ function wc_rest_set_uploaded_image_as_attachment($upload, $id = 0)
  */
 function wc_rest_validate_reports_request_arg($value, $request, $param)
 {
-    // stub
 }
-
 /**
  * Encodes a value according to RFC 3986.
  * Supports multidimensional arrays.
@@ -76,9 +66,7 @@ function wc_rest_validate_reports_request_arg($value, $request, $param)
  */
 function wc_rest_urlencode_rfc3986($value)
 {
-    // stub
 }
-
 /**
  * Check permissions of posts on REST API.
  *
@@ -90,9 +78,7 @@ function wc_rest_urlencode_rfc3986($value)
  */
 function wc_rest_check_post_permissions($post_type, $context = 'read', $object_id = 0)
 {
-    // stub
 }
-
 /**
  * Check permissions of users on REST API.
  *
@@ -103,9 +89,7 @@ function wc_rest_check_post_permissions($post_type, $context = 'read', $object_i
  */
 function wc_rest_check_user_permissions($context = 'read', $object_id = 0)
 {
-    // stub
 }
-
 /**
  * Check permissions of product terms on REST API.
  *
@@ -117,9 +101,7 @@ function wc_rest_check_user_permissions($context = 'read', $object_id = 0)
  */
 function wc_rest_check_product_term_permissions($taxonomy, $context = 'read', $object_id = 0)
 {
-    // stub
 }
-
 /**
  * Check manager permissions on REST API.
  *
@@ -130,9 +112,7 @@ function wc_rest_check_product_term_permissions($taxonomy, $context = 'read', $o
  */
 function wc_rest_check_manager_permissions($object, $context = 'read')
 {
-    // stub
 }
-
 /**
  * Check product reviews permissions on REST API.
  *
@@ -143,9 +123,7 @@ function wc_rest_check_manager_permissions($object, $context = 'read')
  */
 function wc_rest_check_product_reviews_permissions($context = 'read', $object_id = 0)
 {
-    // stub
 }
-
 /**
  * Returns true if the current REST request is from the product editor.
  *
@@ -154,9 +132,7 @@ function wc_rest_check_product_reviews_permissions($context = 'read', $object_id
  */
 function wc_rest_is_from_product_editor()
 {
-    // stub
 }
-
 /**
  * Check if a REST namespace should be loaded. Useful to maintain site performance even when lots of REST namespaces are registered.
  *
@@ -169,5 +145,4 @@ function wc_rest_is_from_product_editor()
  */
 function wc_rest_should_load_namespace(string $ns, string $rest_route = ''): bool
 {
-    // stub
 }

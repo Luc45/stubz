@@ -22,10 +22,8 @@ class CartOrderSummaryBlock
      * @return array|bool
      */
     private function get_inner_block_content($block_name, $content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the regex that will return an inner block.
      *
@@ -33,10 +31,8 @@ class CartOrderSummaryBlock
      * @return string Regex pattern.
      */
     private function inner_block_regex($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the Cart Order Summary block.
      *
@@ -46,8 +42,6 @@ class CartOrderSummaryBlock
      * @return string Rendered block.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

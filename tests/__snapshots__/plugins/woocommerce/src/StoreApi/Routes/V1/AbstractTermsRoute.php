@@ -15,10 +15,8 @@ abstract class AbstractTermsRoute
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get terms matching passed in args.
      *
@@ -28,10 +26,8 @@ abstract class AbstractTermsRoute
      * @return \WP_REST_Response
      */
     protected function get_terms_response($taxonomy, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get count of terms for current query.
      *
@@ -40,8 +36,6 @@ abstract class AbstractTermsRoute
      * @return int
      */
     protected function get_term_count($taxonomy, $args)
-    {
-        // stub
-    }
-
+{
+}
 }

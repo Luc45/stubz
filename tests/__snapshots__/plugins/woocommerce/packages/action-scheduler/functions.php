@@ -11,12 +11,9 @@
  *
  * @return int The action ID. Zero if there was an error scheduling the action.
  */
-function as_enqueue_async_action($hook, $args = array (
-), $group = '', $unique = false, $priority = 10)
+function as_enqueue_async_action($hook, $args = array(), $group = '', $unique = false, $priority = 10)
 {
-    // stub
 }
-
 /**
  * Schedule an action to run one time
  *
@@ -29,12 +26,9 @@ function as_enqueue_async_action($hook, $args = array (
  *
  * @return int The action ID. Zero if there was an error scheduling the action.
  */
-function as_schedule_single_action($timestamp, $hook, $args = array (
-), $group = '', $unique = false, $priority = 10)
+function as_schedule_single_action($timestamp, $hook, $args = array(), $group = '', $unique = false, $priority = 10)
 {
-    // stub
 }
-
 /**
  * Schedule a recurring action
  *
@@ -48,12 +42,9 @@ function as_schedule_single_action($timestamp, $hook, $args = array (
  *
  * @return int The action ID. Zero if there was an error scheduling the action.
  */
-function as_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $args = array (
-), $group = '', $unique = false, $priority = 10)
+function as_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $args = array(), $group = '', $unique = false, $priority = 10)
 {
-    // stub
 }
-
 /**
  * Schedule an action that recurs on a cron-like schedule.
  *
@@ -79,12 +70,9 @@ function as_schedule_recurring_action($timestamp, $interval_in_seconds, $hook, $
  *
  * @return int The action ID. Zero if there was an error scheduling the action.
  */
-function as_schedule_cron_action($timestamp, $schedule, $hook, $args = array (
-), $group = '', $unique = false, $priority = 10)
+function as_schedule_cron_action($timestamp, $schedule, $hook, $args = array(), $group = '', $unique = false, $priority = 10)
 {
-    // stub
 }
-
 /**
  * Cancel the next occurrence of a scheduled action.
  *
@@ -101,12 +89,9 @@ function as_schedule_cron_action($timestamp, $schedule, $hook, $args = array (
  *
  * @return int|null The scheduled action ID if a scheduled action was found, or null if no matching action found.
  */
-function as_unschedule_action($hook, $args = array (
-), $group = '')
+function as_unschedule_action($hook, $args = array(), $group = '')
 {
-    // stub
 }
-
 /**
  * Cancel all occurrences of a scheduled action.
  *
@@ -114,12 +99,9 @@ function as_unschedule_action($hook, $args = array (
  * @param array  $args Args that would have been passed to the job.
  * @param string $group The group the job is assigned to.
  */
-function as_unschedule_all_actions($hook, $args = array (
-), $group = '')
+function as_unschedule_all_actions($hook, $args = array(), $group = '')
 {
-    // stub
 }
-
 /**
  * Check if there is an existing action in the queue with a given hook, args and group combination.
  *
@@ -137,9 +119,7 @@ function as_unschedule_all_actions($hook, $args = array (
  */
 function as_next_scheduled_action($hook, $args = null, $group = '')
 {
-    // stub
 }
-
 /**
  * Check if there is a scheduled action in the queue but more efficiently than as_next_scheduled_action().
  *
@@ -156,9 +136,7 @@ function as_next_scheduled_action($hook, $args = null, $group = '')
  */
 function as_has_scheduled_action($hook, $args = null, $group = '')
 {
-    // stub
 }
-
 /**
  * Find scheduled actions
  *
@@ -181,12 +159,9 @@ function as_has_scheduled_action($hook, $args = null, $group = '')
  *
  * @return array
  */
-function as_get_scheduled_actions($args = array (
-), $return_format)
+function as_get_scheduled_actions($args = array(), $return_format)
 {
-    // stub
 }
-
 /**
  * Helper function to create an instance of DateTime based on a given
  * string and timezone. By default, will return the current date/time
@@ -206,5 +181,4 @@ function as_get_scheduled_actions($args = array (
  */
 function as_get_datetime_object($date_string = null, $timezone = 'UTC')
 {
-    // stub
 }

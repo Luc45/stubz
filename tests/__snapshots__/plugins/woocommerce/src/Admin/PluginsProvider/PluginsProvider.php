@@ -22,10 +22,8 @@ class PluginsProvider
      * @return array
      */
     public function get_active_plugin_slugs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the deactivated plugin. This is needed because the deactivated_plugin
      * hook happens before the option is updated which means that getting the
@@ -34,10 +32,8 @@ class PluginsProvider
      * @param string $plugin_path The path to the plugin being deactivated.
      */
     public static function set_deactivated_plugin($plugin_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get plugin data.
      *
@@ -46,10 +42,8 @@ class PluginsProvider
      * @return array|false
      */
     public function get_plugin_data($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path to the plugin file relative to the plugins directory from the plugin slug.
      *
@@ -60,8 +54,6 @@ class PluginsProvider
      * @return string|false
      */
     public function get_plugin_path_from_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
 }

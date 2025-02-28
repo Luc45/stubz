@@ -13,8 +13,7 @@ class WC_Admin_Notices
      *
      * @var array
      */
-    private static $notices = array (
-);
+    private static $notices = array();
 
     /**
      * Array of notices - name => callback.
@@ -47,10 +46,8 @@ class WC_Admin_Notices
      * Initializes the class.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses query to create nonces when available.
      *
@@ -59,73 +56,57 @@ class WC_Admin_Notices
      * @return object $response The prepared WP_REST_Response object.
      */
     public static function prepare_note_with_nonce($response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Store the locally cached notices to DB.
      */
     public static function store_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of the locally cached notices array for the current site.
      *
      * @return array
      */
     public static function get_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the locally cached notices array for the current site.
      *
      * @param array $notices New value for the locally cached notices array.
      */
     private static function set_notices(array $notices)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove all notices from the locally cached notices array.
      */
     public static function remove_all_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset notices for themes when switched or a new version of WC is installed.
      */
     public static function reset_admin_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an admin notice about unsupported webhooks with Legacy API payload if at least one of these exist
      * and the Legacy REST API plugin is not installed.
      */
     private static function maybe_add_legacy_api_removal_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the admin notice about the unsupported webhooks if the Legacy REST API plugin is installed.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function maybe_remove_legacy_api_removal_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show a notice.
      *
@@ -133,10 +114,8 @@ class WC_Admin_Notices
      * @param bool   $force_save Force saving inside this method instead of at the 'shutdown'.
      */
     public static function add_notice($name, $force_save = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a notice from being displayed.
      *
@@ -144,10 +123,8 @@ class WC_Admin_Notices
      * @param bool   $force_save Force saving inside this method instead of at the 'shutdown'.
      */
     public static function remove_notice($name, $force_save = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a given set of notices.
      *
@@ -159,10 +136,8 @@ class WC_Admin_Notices
      * @return void
      */
     public static function remove_notices($names_array_or_regex, $force_save = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if a notice is being shown.
      *
@@ -171,28 +146,22 @@ class WC_Admin_Notices
      * @return boolean
      */
     public static function has_notice($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide a notice if the GET variable is set.
      */
     public static function hide_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide a single notice.
      *
      * @param string $name Notice name.
      */
     private static function hide_notice($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given user has dismissed a given admin notice.
      *
@@ -203,18 +172,14 @@ class WC_Admin_Notices
      * @return bool True if the user has dismissed the notice.
      */
     public static function user_has_dismissed_notice(string $name, int|null $user_id = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add notices + styles if needed.
      */
     public static function add_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a custom notice.
      *
@@ -222,98 +187,76 @@ class WC_Admin_Notices
      * @param string $notice_html Notice HTML.
      */
     public static function add_custom_notice($name, $notice_html)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output any stored custom notices.
      */
     public static function output_custom_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If we need to update the database, include a message with the DB update button.
      */
     public static function update_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If we have just installed, show a message with the install pages button.
      *
      * @deprecated 4.6.0
      */
     public static function install_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show a notice highlighting bad template files.
      */
     public static function template_file_check_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show a notice asking users to convert to shipping zones.
      *
      * @todo remove in 4.0.0
      */
     public static function legacy_shipping_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * No shipping methods.
      */
     public static function no_shipping_methods_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice shown when regenerating thumbnails background process is running.
      */
     public static function regenerating_thumbnails_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about secure connection.
      */
     public static function secure_connection_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice shown when regenerating thumbnails background process is running.
      *
      * @since 3.6.0
      */
     public static function regenerating_lookup_table_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add notice about minimum PHP and WordPress requirement.
      *
      * @since 3.6.5
      */
     public static function add_min_version_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about WordPress and PHP minimum requirements.
      *
@@ -323,74 +266,58 @@ class WC_Admin_Notices
      * @return void
      */
     public static function wp_php_min_requirements_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add MaxMind missing license key notice.
      *
      * @since 3.9.0
      */
     public static function add_maxmind_missing_license_key_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Add notice about Redirect-only download method, nudging user to switch to a different method instead.
      */
     public static function add_redirect_download_method_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about the completion of the product downloads sync, with further advice for the site operator.
      */
     public static function download_directories_sync_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display MaxMind missing license key notice.
      *
      * @since 3.9.0
      */
     public static function maxmind_missing_license_key_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about Redirect-Only download method.
      *
      * @since 4.0
      */
     public static function redirect_download_method_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about uploads directory begin unprotected.
      *
      * @since 4.2.0
      */
     public static function uploads_directory_is_unprotected_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notice about base tables missing.
      */
     public static function base_tables_missing_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the store is running SSL.
      *
@@ -398,10 +325,8 @@ class WC_Admin_Notices
      * @since  3.5.1
      */
     protected static function is_ssl()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper for is_plugin_active.
      *
@@ -409,30 +334,24 @@ class WC_Admin_Notices
      * @return boolean
      */
     protected static function is_plugin_active($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Simplify Commerce is no longer in core.
      *
      * @deprecated 3.6.0 No longer shown.
      */
     public static function simplify_commerce_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show the Theme Check notice.
      *
      * @deprecated 3.3.0 No longer shown.
      */
     public static function theme_check_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if uploads directory is protected.
      *
@@ -440,8 +359,6 @@ class WC_Admin_Notices
      * @return bool
      */
     protected static function is_uploads_directory_protected()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -33,28 +33,22 @@ class WC_REST_Products_V1_Controller
      * Initialize product actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the routes for products.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get post types.
      *
      * @return array
      */
     protected function get_post_types()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query args.
      *
@@ -63,10 +57,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     public function query_args($args, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the downloads for a product or product variation.
      *
@@ -74,10 +66,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_downloads($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxonomy terms.
      *
@@ -86,10 +76,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_taxonomy_terms($product, $taxonomy = 'cat')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the images for a product or product variation.
      *
@@ -97,10 +85,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_images($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute taxonomy label.
      *
@@ -108,10 +94,8 @@ class WC_REST_Products_V1_Controller
      * @return string
      */
     protected function get_attribute_taxonomy_label($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default attributes.
      *
@@ -119,10 +103,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_default_attributes($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute options.
      *
@@ -131,10 +113,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_attribute_options($product_id, $attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the attributes for a product or product variation.
      *
@@ -142,10 +122,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_attributes($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product menu order.
      *
@@ -154,10 +132,8 @@ class WC_REST_Products_V1_Controller
      * @return int
      */
     protected function get_product_menu_order($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product data.
      *
@@ -165,10 +141,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_product_data($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an individual variation's data.
      *
@@ -176,10 +150,8 @@ class WC_REST_Products_V1_Controller
      * @return array
      */
     protected function get_variation_data($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product output for response.
      *
@@ -188,10 +160,8 @@ class WC_REST_Products_V1_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -200,10 +170,8 @@ class WC_REST_Products_V1_Controller
      * @return array Links for the given product.
      */
     protected function prepare_links($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product for create or update.
      *
@@ -211,10 +179,8 @@ class WC_REST_Products_V1_Controller
      * @return WP_Error|stdClass $data Post object.
      */
     protected function prepare_item_for_database($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single product.
      *
@@ -222,10 +188,8 @@ class WC_REST_Products_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single product.
      *
@@ -233,10 +197,8 @@ class WC_REST_Products_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves a product to the database.
      *
@@ -244,10 +206,8 @@ class WC_REST_Products_V1_Controller
      * @return int
      */
     public function save_product($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save product images.
      *
@@ -257,10 +217,8 @@ class WC_REST_Products_V1_Controller
      * @throws WC_REST_Exception
      */
     protected function save_product_images($product_id, $images)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product images.
      *
@@ -270,10 +228,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function set_product_images($product, $images)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save product shipping data.
      *
@@ -282,10 +238,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function save_product_shipping_data($product, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save downloadable files.
      *
@@ -295,10 +249,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function save_downloadable_files($product, $downloads, $deprecated = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save taxonomy terms.
      *
@@ -308,10 +260,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function save_taxonomy_terms($product, $terms, $taxonomy = 'cat')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save default attributes.
      *
@@ -322,10 +272,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function save_default_attributes($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save product meta.
      *
@@ -336,10 +284,8 @@ class WC_REST_Products_V1_Controller
      * @throws WC_REST_Exception
      */
     protected function save_product_meta($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product meta.
      *
@@ -349,10 +295,8 @@ class WC_REST_Products_V1_Controller
      * @return WC_Product
      */
     protected function set_product_meta($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save variations.
      *
@@ -362,10 +306,8 @@ class WC_REST_Products_V1_Controller
      * @return bool
      */
     protected function save_variations_data($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add post meta fields.
      *
@@ -374,10 +316,8 @@ class WC_REST_Products_V1_Controller
      * @return bool|WP_Error
      */
     protected function add_post_meta_fields($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update post meta fields.
      *
@@ -386,30 +326,24 @@ class WC_REST_Products_V1_Controller
      * @return bool|WP_Error
      */
     protected function update_post_meta_fields($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear cache/transients.
      *
      * @param WP_Post $post Post data.
      */
     public function clear_transients($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete post.
      *
      * @param int|WP_Post $id Post ID or WP_Post instance.
      */
     protected function delete_post($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single item.
      *
@@ -417,28 +351,22 @@ class WC_REST_Products_V1_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Product's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

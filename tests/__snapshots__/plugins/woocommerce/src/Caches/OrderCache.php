@@ -13,10 +13,8 @@ class OrderCache
      * @return string
      */
     public function get_object_type(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the id of an object to be cached.
      *
@@ -24,10 +22,8 @@ class OrderCache
      * @return int|string|null The id of the object, or null if it can't be determined.
      */
     protected function get_object_id($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate an object before caching it.
      *
@@ -35,8 +31,6 @@ class OrderCache
      * @return string[]|null An array of error messages, or null if the object is valid.
      */
     protected function validate($object): array|null
-    {
-        // stub
-    }
-
+{
+}
 }

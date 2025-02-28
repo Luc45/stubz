@@ -17,27 +17,21 @@ class OnboardingJetpack
     /**
      * Get class instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Init.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the woocommerce_setup_jetpack_opted_in to true when Jetpack connects to WPCOM.
      */
     public function set_woocommerce_setup_jetpack_opted_in()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure that Jetpack gets installed and activated ahead of WooCommerce Payments
      * if both are being installed/activated at the same time.
@@ -50,8 +44,6 @@ class OnboardingJetpack
      * @return array
      */
     public function activate_and_install_jetpack_ahead_of_wcpay($plugins)
-    {
-        // stub
-    }
-
+{
+}
 }

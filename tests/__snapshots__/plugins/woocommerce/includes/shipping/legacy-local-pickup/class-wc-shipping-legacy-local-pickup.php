@@ -22,18 +22,14 @@ class WC_Shipping_Legacy_Local_Pickup
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process and redirect if disabled.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -41,47 +37,36 @@ class WC_Shipping_Legacy_Local_Pickup
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init function.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping.
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * Initialize form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get postcodes for this method.
      *
      * @return array
      */
     public function get_valid_postcodes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if a given postcode matches valid postcodes.
      *
@@ -90,10 +75,8 @@ class WC_Shipping_Legacy_Local_Pickup
      * @return boolean
      */
     public function is_valid_postcode($postcode, $country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the method is available.
      *
@@ -101,10 +84,8 @@ class WC_Shipping_Legacy_Local_Pickup
      * @return bool
      */
     public function is_available($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clean function.
      *
@@ -113,8 +94,6 @@ class WC_Shipping_Legacy_Local_Pickup
      * @return string
      */
     public function clean($code)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -32,26 +32,20 @@ final class SessionHandler
      * Constructor for the session class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init hooks and session data.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the token header to load the correct session.
      */
     protected function init_session_from_token()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the session.
      *
@@ -61,16 +55,12 @@ final class SessionHandler
      * @return string|array|bool
      */
     public function get_session($customer_id, $default = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save data and delete user session.
      */
     public function save_data()
-    {
-        // stub
-    }
-
+{
+}
 }

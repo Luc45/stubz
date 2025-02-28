@@ -10,24 +10,21 @@ class WC_Cart
      *
      * @var array
      */
-    public $cart_contents = array (
-);
+    public $cart_contents = array();
 
     /**
      * Contains an array of removed cart items so we can restore them if needed.
      *
      * @var array
      */
-    public $removed_cart_contents = array (
-);
+    public $removed_cart_contents = array();
 
     /**
      * Contains an array of coupon codes applied to the cart.
      *
      * @var array
      */
-    public $applied_coupons = array (
-);
+    public $applied_coupons = array();
 
     /**
      * This stores the chosen shipping methods for the cart item packages.
@@ -47,20 +44,17 @@ class WC_Cart
   'shipping_total' => 0,
   'shipping_tax' => 0,
   'shipping_taxes' => 
-  array (
-  ),
+  array(),
   'discount_total' => 0,
   'discount_tax' => 0,
   'cart_contents_total' => 0,
   'cart_contents_tax' => 0,
   'cart_contents_taxes' => 
-  array (
-  ),
+  array(),
   'fee_total' => 0,
   'fee_tax' => 0,
   'fee_taxes' => 
-  array (
-  ),
+  array(),
   'total' => 0,
   'total_tax' => 0,
 );
@@ -70,8 +64,7 @@ class WC_Cart
      *
      * @var array
      */
-    protected $totals = array (
-);
+    protected $totals = array();
 
     /**
      * Reference to the cart session handling class.
@@ -91,20 +84,16 @@ class WC_Cart
      * Constructor for the cart class. Loads options and hooks in the init method.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When cloning, ensure object properties are handled.
      *
      * These properties store a reference to the cart, so we use new instead of clone.
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cart contents.
      *
@@ -112,10 +101,8 @@ class WC_Cart
      * @return array of cart items
      */
     public function get_cart_contents()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return items removed from the cart.
      *
@@ -123,20 +110,16 @@ class WC_Cart
      * @return array
      */
     public function get_removed_cart_contents()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the array of applied coupon codes.
      *
      * @return array of applied coupons
      */
     public function get_applied_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all calculated coupon totals.
      *
@@ -144,10 +127,8 @@ class WC_Cart
      * @return array
      */
     public function get_coupon_discount_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all calculated coupon tax totals.
      *
@@ -155,10 +136,8 @@ class WC_Cart
      * @return array
      */
     public function get_coupon_discount_tax_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all calculated totals.
      *
@@ -166,10 +145,8 @@ class WC_Cart
      * @return array
      */
     public function get_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a total.
      *
@@ -178,10 +155,8 @@ class WC_Cart
      * @return mixed
      */
     protected function get_totals_var($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get subtotal.
      *
@@ -189,10 +164,8 @@ class WC_Cart
      * @return float
      */
     public function get_subtotal()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get subtotal_tax.
      *
@@ -200,10 +173,8 @@ class WC_Cart
      * @return float
      */
     public function get_subtotal_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount_total.
      *
@@ -211,10 +182,8 @@ class WC_Cart
      * @return float
      */
     public function get_discount_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount_tax.
      *
@@ -222,10 +191,8 @@ class WC_Cart
      * @return float
      */
     public function get_discount_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_total.
      *
@@ -233,10 +200,8 @@ class WC_Cart
      * @return float
      */
     public function get_shipping_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_tax.
      *
@@ -244,10 +209,8 @@ class WC_Cart
      * @return float
      */
     public function get_shipping_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cart total. This is the total of items in the cart, but after discounts. Subtotal is before discounts.
      *
@@ -255,10 +218,8 @@ class WC_Cart
      * @return float
      */
     public function get_cart_contents_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cart tax amount.
      *
@@ -266,10 +227,8 @@ class WC_Cart
      * @return float
      */
     public function get_cart_contents_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cart total after calculation.
      *
@@ -278,10 +237,8 @@ class WC_Cart
      * @return float|string
      */
     public function get_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax amount.
      *
@@ -289,10 +246,8 @@ class WC_Cart
      * @return float
      */
     public function get_total_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total fee amount.
      *
@@ -300,10 +255,8 @@ class WC_Cart
      * @return float
      */
     public function get_fee_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total fee tax amount.
      *
@@ -311,40 +264,32 @@ class WC_Cart
      * @return float
      */
     public function get_fee_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes.
      *
      * @since 3.2.0
      */
     public function get_shipping_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes.
      *
      * @since 3.2.0
      */
     public function get_cart_contents_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes.
      *
      * @since 3.2.0
      */
     public function get_fee_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return whether or not the cart is displaying prices including tax, rather than excluding tax.
      *
@@ -352,79 +297,60 @@ class WC_Cart
      * @return bool
      */
     public function display_prices_including_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the contents of the cart.
      *
      * @param array $value Cart array.
      */
     public function set_cart_contents($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set items removed from the cart.
      *
      * @since 3.2.0
      * @param array $value Item array.
      */
-    public function set_removed_cart_contents($value = array (
-))
-    {
-        // stub
-    }
-
+    public function set_removed_cart_contents($value = array())
+{
+}
     /**
      * Sets the array of applied coupon codes.
      *
      * @param array $value List of applied coupon codes.
      */
-    public function set_applied_coupons($value = array (
-))
-    {
-        // stub
-    }
-
+    public function set_applied_coupons($value = array())
+{
+}
     /**
      * Sets the array of calculated coupon totals.
      *
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_coupon_discount_totals($value = array (
-))
-    {
-        // stub
-    }
-
+    public function set_coupon_discount_totals($value = array())
+{
+}
     /**
      * Sets the array of calculated coupon tax totals.
      *
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_coupon_discount_tax_totals($value = array (
-))
-    {
-        // stub
-    }
-
+    public function set_coupon_discount_tax_totals($value = array())
+{
+}
     /**
      * Set all calculated totals.
      *
      * @since 3.2.0
      * @param array $value Value to set.
      */
-    public function set_totals($value = array (
-))
-    {
-        // stub
-    }
-
+    public function set_totals($value = array())
+{
+}
     /**
      * Set subtotal.
      *
@@ -432,10 +358,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_subtotal($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set subtotal.
      *
@@ -443,10 +367,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_subtotal_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount_total.
      *
@@ -454,10 +376,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_discount_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount_tax.
      *
@@ -465,10 +385,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_discount_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_total.
      *
@@ -476,10 +394,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_shipping_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_tax.
      *
@@ -487,10 +403,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_shipping_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set cart_contents_total.
      *
@@ -498,10 +412,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_cart_contents_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set cart tax amount.
      *
@@ -509,10 +421,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_cart_contents_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set cart total.
      *
@@ -520,10 +430,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total tax amount.
      *
@@ -531,10 +439,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_total_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set fee amount.
      *
@@ -542,10 +448,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_fee_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set fee tax.
      *
@@ -553,10 +457,8 @@ class WC_Cart
      * @param string $value Value to set.
      */
     public function set_fee_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set taxes.
      *
@@ -564,10 +466,8 @@ class WC_Cart
      * @param array $value Tax values.
      */
     public function set_shipping_taxes($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set taxes.
      *
@@ -575,10 +475,8 @@ class WC_Cart
      * @param array $value Tax values.
      */
     public function set_cart_contents_taxes($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set taxes.
      *
@@ -586,30 +484,24 @@ class WC_Cart
      * @param array $value Tax values.
      */
     public function set_fee_taxes($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the cart and shipping taxes, merged.
      *
      * @return array merged taxes
      */
     public function get_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the contents of the cart in an array.
      *
      * @return array contents of the cart
      */
     public function get_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a specific item in the cart.
      *
@@ -617,20 +509,16 @@ class WC_Cart
      * @return array Item data
      */
     public function get_cart_item($item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the cart is empty.
      *
      * @return bool
      */
     public function is_empty()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Empties the cart and optionally the persistent cart too.
      *
@@ -639,20 +527,16 @@ class WC_Cart
      * @param bool $clear_persistent_cart Should the persistent cart be cleared too. Defaults to true.
      */
     public function empty_cart($clear_persistent_cart = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get number of items in the cart.
      *
      * @return int
      */
     public function get_cart_contents_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get weight of items in the cart.
      *
@@ -660,56 +544,44 @@ class WC_Cart
      * @return float
      */
     public function get_cart_contents_weight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cart items quantities - merged so we can do accurate stock checks on items across multiple lines.
      *
      * @return array
      */
     public function get_cart_item_quantities()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check all cart items for errors.
      */
     public function check_cart_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check cart coupons for errors.
      */
     public function check_cart_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Looks through cart items and checks the posts are not trashed or deleted.
      *
      * @return bool|WP_Error
      */
     public function check_cart_item_validity()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Looks through the cart to check each item is in stock. If not, add an error.
      *
      * @return bool|WP_Error
      */
     public function check_cart_item_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets and formats a list of cart item data + variations for display on the frontend.
      *
@@ -718,20 +590,16 @@ class WC_Cart
      * @return string
      */
     public function get_item_data($cart_item, $flat = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cross sells based on the items in the cart.
      *
      * @return array cross_sells (item ids)
      */
     public function get_cross_sells()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the url to remove an item from the cart.
      *
@@ -739,10 +607,8 @@ class WC_Cart
      * @return string url to page
      */
     public function get_remove_url($cart_item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the url to re-add an item into the cart.
      *
@@ -750,40 +616,32 @@ class WC_Cart
      * @return string url to page
      */
     public function get_undo_url($cart_item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes, merged by code, formatted ready for output.
      *
      * @return array
      */
     public function get_tax_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all tax classes for items in the cart.
      *
      * @return array
      */
     public function get_cart_item_tax_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all tax classes for shipping based on the items in the cart.
      *
      * @return array
      */
     public function get_cart_item_tax_classes_for_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines the value that the customer spent and the subtotal
      * displayed, used for things like coupon validation.
@@ -799,10 +657,8 @@ class WC_Cart
      * @return string
      */
     public function get_displayed_subtotal()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if product is in the cart and return cart item key.
      *
@@ -812,10 +668,8 @@ class WC_Cart
      * @return string cart item key
      */
     public function find_product_in_cart($cart_id = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a unique ID for the cart item being added.
      *
@@ -825,13 +679,9 @@ class WC_Cart
      * @param array $cart_item_data other cart item data passed which affects this items uniqueness in the cart.
      * @return string cart item key
      */
-    public function generate_cart_id($product_id, $variation_id = 0, $variation = array (
-), $cart_item_data = array (
-))
-    {
-        // stub
-    }
-
+    public function generate_cart_id($product_id, $variation_id = 0, $variation = array(), $cart_item_data = array())
+{
+}
     /**
      * Add a product to the cart.
      *
@@ -843,13 +693,9 @@ class WC_Cart
      * @param array $cart_item_data extra cart item data we want to pass into the item.
      * @return string|bool $cart_item_key
      */
-    public function add_to_cart($product_id = 0, $quantity = 1, $variation_id = 0, $variation = array (
-), $cart_item_data = array (
-))
-    {
-        // stub
-    }
-
+    public function add_to_cart($product_id = 0, $quantity = 1, $variation_id = 0, $variation = array(), $cart_item_data = array())
+{
+}
     /**
      * Remove a cart item.
      *
@@ -858,10 +704,8 @@ class WC_Cart
      * @return bool
      */
     public function remove_cart_item($cart_item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Restore a cart item.
      *
@@ -869,10 +713,8 @@ class WC_Cart
      * @return bool
      */
     public function restore_cart_item($cart_item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the quantity for an item in the cart using it's key.
      *
@@ -882,10 +724,8 @@ class WC_Cart
      * @return bool
      */
     public function set_quantity($cart_item_key, $quantity = 1, $refresh_totals = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cart's owner.
      *
@@ -893,48 +733,38 @@ class WC_Cart
      * @return WC_Customer
      */
     public function get_customer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate totals for the items in the cart.
      *
      * @uses WC_Cart_Totals
      */
     public function calculate_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Looks at the totals to see if payment is actually required.
      *
      * @return bool
      */
     public function needs_payment()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get selected shipping methods after calculation.
      *
      * @return array
      */
     public function get_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Uses the shipping class to calculate shipping then gets the totals when its finished.
      */
     public function calculate_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given a set of packages with rates, get the chosen ones only.
      *
@@ -942,12 +772,9 @@ class WC_Cart
      * @param array $calculated_shipping_packages Array of packages.
      * @return array
      */
-    protected function get_chosen_shipping_methods($calculated_shipping_packages = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_chosen_shipping_methods($calculated_shipping_packages = array())
+{
+}
     /**
      * Filter items needing shipping callback.
      *
@@ -956,10 +783,8 @@ class WC_Cart
      * @return bool
      */
     protected function filter_items_needing_shipping($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get only items that need shipping.
      *
@@ -967,10 +792,8 @@ class WC_Cart
      * @return array
      */
     protected function get_items_needing_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get packages to calculate shipping for.
      *
@@ -985,50 +808,40 @@ class WC_Cart
      * @return array of cart items
      */
     public function get_shipping_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Looks through the cart to see if shipping is actually required.
      *
      * @return bool whether or not the cart needs shipping
      */
     public function needs_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Should the shipping address form be shown.
      *
      * @return bool
      */
     public function needs_shipping_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sees if the customer has entered enough data to calc the shipping yet.
      *
      * @return bool
      */
     public function show_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the shipping total (after calculation).
      *
      * @return string price or string for the shipping total
      */
     public function get_cart_shipping_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check for user coupons (now that we have billing email). If a coupon is invalid, add an error.
      *
@@ -1039,10 +852,8 @@ class WC_Cart
      * @param array $posted Post data.
      */
     public function check_customer_coupons($posted)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the given email address(es) matches the ones specified on the coupon.
      *
@@ -1053,10 +864,8 @@ class WC_Cart
      * @deprecated 9.0.0 In favor of static method Automattic\WooCommerce\Utilities\DiscountsUtil::is_coupon_emails_allowed.
      */
     public function is_coupon_emails_allowed($check_emails, $restrictions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not a discount has been applied.
      *
@@ -1064,10 +873,8 @@ class WC_Cart
      * @return bool
      */
     public function has_discount($coupon_code = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Applies a coupon code passed to the method.
      *
@@ -1075,10 +882,8 @@ class WC_Cart
      * @return bool True if the coupon is applied, false if it does not exist or cannot be applied.
      */
     public function apply_coupon($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of applied coupon objects and codes.
      *
@@ -1086,10 +891,8 @@ class WC_Cart
      * @return array of applied coupons
      */
     public function get_coupons($deprecated = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the discount amount for a used coupon.
      *
@@ -1098,10 +901,8 @@ class WC_Cart
      * @return float discount amount
      */
     public function get_coupon_discount_amount($code, $ex_tax = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the discount tax amount for a used coupon (for tax inclusive prices).
      *
@@ -1109,20 +910,16 @@ class WC_Cart
      * @return float discount amount
      */
     public function get_coupon_discount_tax_amount($code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove coupons from the cart of a defined type. Type 1 is before tax, type 2 is after tax.
      *
      * @param null $deprecated No longer used.
      */
     public function remove_coupons($deprecated = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a single coupon by code.
      *
@@ -1130,20 +927,16 @@ class WC_Cart
      * @return bool
      */
     public function remove_coupon($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger an action so 3rd parties can add custom fees.
      *
      * @since 2.0.0
      */
     public function calculate_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return reference to fees API.
      *
@@ -1151,10 +944,8 @@ class WC_Cart
      * @return WC_Cart_Fees
      */
     public function fees_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add additional fee to the cart.
      *
@@ -1169,10 +960,8 @@ class WC_Cart
      * @param string $tax_class The tax class for the fee if taxable. A blank string is standard tax class. (default: '').
      */
     public function add_fee($name, $amount, $taxable = false, $tax_class = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all added fees from the Fees API.
      *
@@ -1180,30 +969,24 @@ class WC_Cart
      * @return array
      */
     public function get_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the total excluding taxes.
      *
      * @return string formatted price
      */
     public function get_total_ex_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the cart contents total (after calculation).
      *
      * @return string formatted price
      */
     public function get_cart_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the sub total (after calculation).
      *
@@ -1211,10 +994,8 @@ class WC_Cart
      * @return string formatted price
      */
     public function get_cart_subtotal($compound = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product row price per item.
      *
@@ -1222,10 +1003,8 @@ class WC_Cart
      * @return string formatted price
      */
     public function get_product_price($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product row subtotal.
      *
@@ -1238,20 +1017,16 @@ class WC_Cart
      * @return string formatted price
      */
     public function get_product_subtotal($product, $quantity)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the cart tax (after calculation).
      *
      * @return string formatted price
      */
     public function get_cart_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a tax amount.
      *
@@ -1259,10 +1034,8 @@ class WC_Cart
      * @return float amount
      */
     public function get_tax_amount($tax_rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a tax amount.
      *
@@ -1270,10 +1043,8 @@ class WC_Cart
      * @return float amount
      */
     public function get_shipping_tax_amount($tax_rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax row amounts with or without compound taxes includes.
      *
@@ -1282,38 +1053,30 @@ class WC_Cart
      * @return float price
      */
     public function get_taxes_total($compound = true, $display = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the total discount amount.
      *
      * @return mixed formatted price or false if there are none
      */
     public function get_total_discount()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset cart totals to the defaults. Useful before running calculations.
      */
     private function reset_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns 'incl' if tax should be included in cart, otherwise returns 'excl'.
      *
      * @return string
      */
     public function get_tax_price_display_mode()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the hash based on cart contents.
      *
@@ -1321,8 +1084,6 @@ class WC_Cart
      * @return string hash for cart content
      */
     public function get_cart_hash()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -18,10 +18,8 @@ class IsEcommerceRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the rule.
      *
@@ -30,8 +28,6 @@ class IsEcommerceRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

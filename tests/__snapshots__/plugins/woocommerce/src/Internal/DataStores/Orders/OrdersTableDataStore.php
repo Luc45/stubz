@@ -12,16 +12,14 @@ class OrdersTableDataStore
      *
      * @var array
      */
-    private static $reading_order_ids = array (
-);
+    private static $reading_order_ids = array();
 
     /**
      * Keep track of order IDs that are actively being backfilled. We use this to prevent further read on sync from add_|update_|delete_postmeta etc hooks. If we allow this, then we would end up syncing the same order multiple times as it is being backfilled.
      *
      * @var array
      */
-    private static $backfilling_order_ids = array (
-);
+    private static $backfilling_order_ids = array();
 
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
@@ -487,51 +485,41 @@ class OrdersTableDataStore
      *
      * @return void
      */
-    public final function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStoreMeta $data_store_meta, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStoreMeta $data_store_meta, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+{
+}
     /**
      * Get the custom orders table name.
      *
      * @return string The custom orders table name.
      */
     public static function get_orders_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order addresses table name.
      *
      * @return string The order addresses table name.
      */
     public static function get_addresses_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the orders operational data table name.
      *
      * @return string The orders operational data table name.
      */
     public static function get_operational_data_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the orders meta data table name.
      *
      * @return string Name of order meta data table.
      */
     public static function get_meta_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the names of all the tables involved in the custom orders table feature.
      *
@@ -540,40 +528,32 @@ class OrdersTableDataStore
      * @return string[]
      */
     public function get_all_table_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Similar to get_all_table_names, but also returns the table name along with the items table.
      *
      * @return array Names of the tables.
      */
     public static function get_all_table_names_with_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return combined mappings for all order tables.
      *
      * @return array|\array[][][] Return combined mapping.
      */
     public function get_all_order_column_mappings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The group name to use when caching order object data.
      *
      * @return string
      */
     private function get_cache_group(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete cached order data for the given object_ids.
      *
@@ -586,10 +566,8 @@ class OrdersTableDataStore
      *           are bypassed for performance purposes. This interface is not guaranteed.
      */
     public function clear_cached_data(array $order_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invalidate all the cache used by this data store.
      *
@@ -599,30 +577,24 @@ class OrdersTableDataStore
      * @return bool Whether the cache as fully invalidated.
      */
     public function clear_all_cached_data(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to get alias for order table, this is used in select query.
      *
      * @return string Alias.
      */
     private function get_order_table_alias(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to get alias for op table, this is used in select query.
      *
      * @return string Alias.
      */
     private function get_op_table_alias(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to get alias for address table, this is used in select query.
      *
@@ -631,40 +603,32 @@ class OrdersTableDataStore
      * @return string Alias.
      */
     private function get_address_table_alias(string $type): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get a CPT data store instance to use.
      *
      * @return \WC_Order_Data_Store_CPT Data store instance.
      */
     public function get_cpt_data_store_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns data store object to use backfilling.
      *
      * @return \Abstract_WC_Order_Data_Store_CPT
      */
     protected function get_post_data_store_for_backfill()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Backfills order details in to WP_Post DB. Uses WC_Order_Data_store_CPT.
      *
      * @param \WC_Abstract_Order $order Order object to backfill.
      */
     public function backfill_post_record($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates an order (in this datastore) from another order object.
      *
@@ -672,10 +636,8 @@ class OrdersTableDataStore
      * @return bool Whether the order was updated.
      */
     public function update_order_from_object($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to persist a DB row to database. Uses insert_or_update when possible.
      *
@@ -684,10 +646,8 @@ class OrdersTableDataStore
      * @return bool|int Number of rows affected, boolean false on error.
      */
     private function persist_db_row($update)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get information about whether permissions are granted yet.
      *
@@ -696,10 +656,8 @@ class OrdersTableDataStore
      * @return bool Whether permissions are granted.
      */
     public function get_download_permissions_granted($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether permissions were generated yet.
      *
@@ -707,10 +665,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_download_permissions_granted($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether sales were recorded.
      *
@@ -719,10 +675,8 @@ class OrdersTableDataStore
      * @return bool Whether sales are recorded.
      */
     public function get_recorded_sales($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether sales were recorded.
      *
@@ -730,10 +684,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_recorded_sales($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether coupon counts were updated.
      *
@@ -742,10 +694,8 @@ class OrdersTableDataStore
      * @return bool Whether coupon counts were updated.
      */
     public function get_recorded_coupon_usage_counts($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether coupon counts were updated.
      *
@@ -753,10 +703,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_recorded_coupon_usage_counts($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether email have been sent for this order.
      *
@@ -765,10 +713,8 @@ class OrdersTableDataStore
      * @return bool Whether email is sent.
      */
     public function get_email_sent($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether email was sent.
      *
@@ -776,10 +722,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_email_sent($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper setter for email_sent.
      *
@@ -788,10 +732,8 @@ class OrdersTableDataStore
      * @return bool Whether email was sent.
      */
     public function get_new_order_email_sent($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper setter for new order email sent.
      *
@@ -799,10 +741,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_new_order_email_sent($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether stock was reduced.
      *
@@ -811,10 +751,8 @@ class OrdersTableDataStore
      * @return bool Whether stock was reduced.
      */
     public function get_stock_reduced($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether stock was reduced.
      *
@@ -822,10 +760,8 @@ class OrdersTableDataStore
      * @param bool      $set True or false.
      */
     public function set_stock_reduced($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper getter for `order_stock_reduced`.
      *
@@ -833,10 +769,8 @@ class OrdersTableDataStore
      * @return bool Whether stock was reduced.
      */
     public function get_order_stock_reduced($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper setter for `order_stock_reduced`.
      *
@@ -844,10 +778,8 @@ class OrdersTableDataStore
      * @param bool      $set Whether stock was reduced.
      */
     public function set_order_stock_reduced($order, $set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get token ids for an order.
      *
@@ -855,10 +787,8 @@ class OrdersTableDataStore
      * @return array
      */
     public function get_payment_token_ids($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update token ids for an order.
      *
@@ -866,10 +796,8 @@ class OrdersTableDataStore
      * @param array    $token_ids Payment token ids.
      */
     public function update_payment_token_ids($order, $token_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get amount already refunded.
      *
@@ -878,10 +806,8 @@ class OrdersTableDataStore
      * @return float Refunded amount.
      */
     public function get_total_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total tax refunded.
      *
@@ -889,10 +815,8 @@ class OrdersTableDataStore
      * @return float
      */
     public function get_total_tax_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total shipping refunded.
      *
@@ -900,10 +824,8 @@ class OrdersTableDataStore
      * @return float
      */
     public function get_total_shipping_refunded($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds an Order ID based on an order key.
      *
@@ -911,10 +833,8 @@ class OrdersTableDataStore
      * @return int The ID of an order, or 0 if the order could not be found
      */
     public function get_order_id_by_order_key($order_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return count of orders with a specific status.
      *
@@ -922,10 +842,8 @@ class OrdersTableDataStore
      * @return int
      */
     public function get_order_count($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all orders matching the passed in args.
      *
@@ -933,12 +851,9 @@ class OrdersTableDataStore
      * @param  array $args List of args passed to wc_get_orders().
      * @return array|object
      */
-    public function get_orders($args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_orders($args = array())
+{
+}
     /**
      * Get unpaid orders last updated before the specified date.
      *
@@ -947,10 +862,8 @@ class OrdersTableDataStore
      * @return array Array of order IDs.
      */
     public function get_unpaid_orders($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get unpaid orders last updated before the specified GMT date.
      *
@@ -959,10 +872,8 @@ class OrdersTableDataStore
      * @return array Array of order IDs.
      */
     public function get_unpaid_orders_gmt($gmt_timestamp)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search order data for a term and return matching order IDs.
      *
@@ -971,10 +882,8 @@ class OrdersTableDataStore
      * @return int[] Array of order IDs.
      */
     public function search_orders($term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch order type for orders in bulk.
      *
@@ -983,10 +892,8 @@ class OrdersTableDataStore
      * @return array array( $order_id1 => $type1, ... ) Array for all orders.
      */
     public function get_orders_type($order_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order type from DB.
      *
@@ -995,10 +902,8 @@ class OrdersTableDataStore
      * @return string Order type.
      */
     public function get_order_type($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an order exists by id.
      *
@@ -1008,10 +913,8 @@ class OrdersTableDataStore
      * @return bool True if an order exists with the given name.
      */
     public function order_exists($order_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read an order from custom tables.
      *
@@ -1020,10 +923,8 @@ class OrdersTableDataStore
      * @throws \Exception If passed order is invalid.
      */
     public function read(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads multiple orders from custom tables in one pass.
      *
@@ -1032,20 +933,16 @@ class OrdersTableDataStore
      * @throws \Exception If passed an invalid order.
      */
     public function read_multiple(&$orders)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read the Cost of Goods Sold value for a given order from the database, if available, and apply it to the order.
      *
      * @param \WC_Abstract_Order $order The order to get the COGS value for.
      */
     private function read_cogs_data(WC_Abstract_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to check whether to sync the order.
      *
@@ -1054,10 +951,8 @@ class OrdersTableDataStore
      * @return bool Whether the order should be synced.
      */
     private function should_sync_order(WC_Abstract_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to initialize order object from DB data.
      *
@@ -1068,10 +963,8 @@ class OrdersTableDataStore
      * @return void
      */
     protected function init_order_record(WC_Abstract_Order &$order, int $order_id, stdClass $order_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For post based data stores, this was used to filter internal meta data. For custom tables, technically there is no internal meta data,
      * (i.e. we store all core data as properties for the order, and not in meta data). So this method is a no-op.
@@ -1086,10 +979,8 @@ class OrdersTableDataStore
      * @return array Filtered meta data.
      */
     public function filter_raw_meta_data(&$object, $raw_meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync order to/from posts tables if we are able to detect difference between order and posts but the sync is enabled.
      *
@@ -1100,10 +991,8 @@ class OrdersTableDataStore
      * @throws \Exception If passed an invalid order.
      */
     private function maybe_sync_order(WC_Abstract_Order &$order, WC_Abstract_Order $post_order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the post type order representation.
      *
@@ -1112,10 +1001,8 @@ class OrdersTableDataStore
      * @return \WC_Order Order object.
      */
     private function get_cpt_order($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to get posts data for an order in bullk. We use to this to compute posts object in bulk so that we can compare it with COT data.
      *
@@ -1124,10 +1011,8 @@ class OrdersTableDataStore
      * @return array List of posts.
      */
     private function get_post_orders_for_ids(array $orders): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Computes whether post has been updated after last order. Tries to do it as efficiently as possible.
      *
@@ -1137,10 +1022,8 @@ class OrdersTableDataStore
      * @return bool True if post is different than order.
      */
     private function is_post_different_from_order($order, $post_order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate meta data from post to order.
      *
@@ -1150,10 +1033,8 @@ class OrdersTableDataStore
      * @return array List of meta data that was migrated.
      */
     private function migrate_meta_data_from_post_order(WC_Abstract_Order &$order, WC_Abstract_Order $post_order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to compute diff between metadata of post and cot data for an order.
      *
@@ -1166,10 +1047,8 @@ class OrdersTableDataStore
      * @return array Difference between post and COT meta data.
      */
     private function get_diff_meta_data_between_orders(WC_Abstract_Order &$order1, WC_Abstract_Order $order2, $sync = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate post record from a given order object.
      *
@@ -1179,10 +1058,8 @@ class OrdersTableDataStore
      * @return void
      */
     private function migrate_post_record(WC_Abstract_Order &$order, WC_Abstract_Order $post_order): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets order properties based on a row from the database.
      *
@@ -1190,10 +1067,8 @@ class OrdersTableDataStore
      * @param object             $order_data A row of order data from the database.
      */
     protected function set_order_props_from_data(&$order, $order_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order prop if a setter exists in either the order object or in the data store.
      *
@@ -1204,10 +1079,8 @@ class OrdersTableDataStore
      * @return bool True if the property was set, false otherwise.
      */
     private function set_order_prop(WC_Abstract_Order $order, string $prop_name, $prop_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve raw order data for multiple IDs.
      *
@@ -1216,10 +1089,8 @@ class OrdersTableDataStore
      * @return \stdClass[] DB Order objects or error.
      */
     protected function get_order_data_for_ids(array $ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve raw order data from the database for the given a set of IDs.
      *
@@ -1228,10 +1099,8 @@ class OrdersTableDataStore
      * @return \stdClass[] Keyed array of objects containing raw order data keyed by the order IDs.
      */
     private function get_order_data_for_ids_from_db(array $ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve raw order data from cache for the given a set of IDs.
      *
@@ -1240,10 +1109,8 @@ class OrdersTableDataStore
      * @return \stdClass[] Keyed array of objects containing raw order data keyed by the order IDs.
      */
     private function get_order_data_for_ids_from_cache(array $ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Store the raw data for a set of orders in cache.
      *
@@ -1252,30 +1119,24 @@ class OrdersTableDataStore
      * @return void
      */
     private function set_order_data_in_cache(array $order_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate combined select statement.
      *
      * @return string Select SQL statement to fetch order.
      */
     private function get_order_table_select_statement()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to generate select statement for fetching metadata in bulk.
      *
      * @return string Select SQL statement to fetch order metadata.
      */
     private function get_order_meta_select_statement()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate join query for billing addresses in wc_address table.
      *
@@ -1285,10 +1146,8 @@ class OrdersTableDataStore
      * @return array Select and join statements for billing address table.
      */
     private function join_billing_address_table_to_order_query($order_table_alias, $address_table_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate join query for shipping addresses in wc_address table.
      *
@@ -1298,10 +1157,8 @@ class OrdersTableDataStore
      * @return array Select and join statements for shipping address table.
      */
     private function join_shipping_address_table_to_order_query($order_table_alias, $address_table_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate join and select query for address table.
      *
@@ -1312,10 +1169,8 @@ class OrdersTableDataStore
      * @return array Select and join statements for address table.
      */
     private function join_address_table_order_query($address_type, $order_table_alias, $address_table_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to join order operational data table.
      *
@@ -1325,10 +1180,8 @@ class OrdersTableDataStore
      * @return array Select and join queries for operational data table.
      */
     private function join_operational_data_table_to_order_query($order_table_alias, $operational_table_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate join and select clauses.
      *
@@ -1340,10 +1193,8 @@ class OrdersTableDataStore
      * @return array Select and join queries.
      */
     private function generate_select_and_join_clauses($order_table_alias, $table, $table_alias, $column_props_map)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to generate select clause for props.
      *
@@ -1353,10 +1204,8 @@ class OrdersTableDataStore
      * @return string Select clause.
      */
     private function generate_select_clause_for_props($table_alias, $props)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Persists order changes to the database.
      *
@@ -1368,20 +1217,16 @@ class OrdersTableDataStore
      * @since 6.8.0
      */
     protected function persist_order_to_db(&$order, bool $force_all_fields = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save the Cost of Goods Sold value of a given order to the database.
      *
      * @param WC_Abstract_Order $order The order to save the COGS value for.
      */
     private function save_cogs_data(WC_Abstract_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Takes care of creating the backup post in the posts table (placeholder or actual order post, depending on sync settings).
      *
@@ -1392,10 +1237,8 @@ class OrdersTableDataStore
      * @return int The new post ID.
      */
     protected function maybe_create_backup_post(&$order, string $context): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set default taxonomies for the order.
      *
@@ -1407,10 +1250,8 @@ class OrdersTableDataStore
      * @return array Sanitized tax input with default taxonomies.
      */
     public function init_default_taxonomies(WC_Abstract_Order $order, array $sanitized_tax_input)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set custom taxonomies for the order.
      *
@@ -1422,10 +1263,8 @@ class OrdersTableDataStore
      * @return void
      */
     public function set_custom_taxonomies(WC_Abstract_Order $order, array $sanitized_tax_input)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates an array of rows with all the details required to insert or update an order in the database.
      *
@@ -1439,10 +1278,8 @@ class OrdersTableDataStore
      * @since 6.8.0
      */
     protected function get_db_rows_for_order(WC_Abstract_Order $order, string $context = 'create', bool $only_changes = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Produces an array with keys 'row' and 'format' that can be passed to `$wpdb->update()` as the `$data` and
      * `$format` parameters. Values are taken from the order changes array and properly formatted for inclusion in the
@@ -1456,10 +1293,8 @@ class OrdersTableDataStore
      * @since 6.8.0
      */
     protected function get_db_row_from_order($order, $column_mapping, $only_changes = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete an order from the database.
      *
@@ -1468,12 +1303,9 @@ class OrdersTableDataStore
      *
      * @return void
      */
-    public function delete(&$order, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$order, $args = array())
+{
+}
     /**
      * Handles the deletion of an order from the orders table when sync is disabled:
      *
@@ -1485,10 +1317,8 @@ class OrdersTableDataStore
      * @return void
      */
     protected function handle_order_deletion_with_sync_disabled($order_id): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the parent id of child orders to the parent order's parent if the post type
      * for the order is hierarchical, just delete the child orders otherwise.
@@ -1498,10 +1328,8 @@ class OrdersTableDataStore
      * @return void
      */
     private function upshift_or_delete_child_orders($order): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trashes an order.
      *
@@ -1510,10 +1338,8 @@ class OrdersTableDataStore
      * @return void
      */
     public function trash_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attempts to restore the specified order back to its original status (after having been trashed).
      *
@@ -1522,10 +1348,8 @@ class OrdersTableDataStore
      * @return bool If the operation was successful.
      */
     public function untrash_order(WC_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes order data from custom order tables.
      *
@@ -1533,20 +1357,16 @@ class OrdersTableDataStore
      * @return void
      */
     public function delete_order_data_from_custom_order_tables($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to create an order in the database.
      *
      * @param \WC_Order $order Order object.
      */
     public function create(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method responsible for persisting new data to order table.
      *
@@ -1561,20 +1381,16 @@ class OrdersTableDataStore
      * @throws \Exception When unable to save data.
      */
     protected function persist_save(&$order, bool $force_all_fields = false, $backfill = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to update an order in the database.
      *
      * @param \WC_Order $order Order object.
      */
     public function update(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Proxy to updating order meta. Here for backward compatibility reasons.
      *
@@ -1583,10 +1399,8 @@ class OrdersTableDataStore
      * @return void
      */
     protected function update_post_meta(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that is responsible for persisting order updates to the database.
      *
@@ -1600,20 +1414,16 @@ class OrdersTableDataStore
      * @throws \Exception When unable to persist order.
      */
     protected function persist_updates(&$order, $backfill = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to check whether to backfill post record.
      *
      * @return bool
      */
     private function should_backfill_post_record()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to decide whether to backfill post record.
      *
@@ -1622,10 +1432,8 @@ class OrdersTableDataStore
      * @return void
      */
     private function maybe_backfill_post_record($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that updates post meta based on an order object.
      * Mostly used for backwards compatibility purposes in this datastore.
@@ -1635,10 +1443,8 @@ class OrdersTableDataStore
      * @since 7.0.0
      */
     public function update_order_meta(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to update billing and shipping address metadata.
      *
@@ -1648,10 +1454,8 @@ class OrdersTableDataStore
      * @return void
      */
     private function update_address_index_meta($order, $changes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of coupon_code => meta_key for coupon which have usage limit and have tentative keys.
      * Pass $coupon_id if key for only one of the coupon is needed.
@@ -1662,10 +1466,8 @@ class OrdersTableDataStore
      * @return array|string Key value pair for coupon code and meta key name. If $coupon_id is passed, returns meta_key for only that coupon.
      */
     public function get_coupon_held_keys($order, $coupon_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of coupon_code => meta_key for coupon which have usage limit per customer and have tentative keys.
      *
@@ -1675,10 +1477,8 @@ class OrdersTableDataStore
      * @return mixed
      */
     public function get_coupon_held_keys_for_users($order, $coupon_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add/Update list of meta keys that are currently being used by this order to hold a coupon.
      * This is used to figure out what all meta entries we should delete when order is cancelled/completed.
@@ -1690,10 +1490,8 @@ class OrdersTableDataStore
      * @return mixed
      */
     public function set_coupon_held_keys($order, $held_keys, $held_keys_for_user)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Release all coupons held by this order.
      *
@@ -1701,10 +1499,8 @@ class OrdersTableDataStore
      * @param bool     $save  Whether to delete keys from DB right away. Could be useful to pass `false` if you are building a bulk request.
      */
     public function release_held_coupons($order, $save = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs actual query to get orders. Uses `OrdersTableQuery` to build and generate the query.
      *
@@ -1713,20 +1509,16 @@ class OrdersTableDataStore
      * @return array|object List of orders and count of orders.
      */
     public function query($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the SQL needed to create all the tables needed for the custom orders table feature.
      *
      * @return string
      */
     public function get_database_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of meta for an object.
      *
@@ -1734,10 +1526,8 @@ class OrdersTableDataStore
      * @return array
      */
     public function read_meta(&$object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes meta based on meta ID.
      *
@@ -1747,10 +1537,8 @@ class OrdersTableDataStore
      * @return bool
      */
     public function delete_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add new piece of meta.
      *
@@ -1760,10 +1548,8 @@ class OrdersTableDataStore
      * @return int|bool  meta ID or false on failure
      */
     public function add_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update meta.
      *
@@ -1773,10 +1559,8 @@ class OrdersTableDataStore
      * @return bool The number of rows updated, or false on error.
      */
     public function update_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Perform after meta change operations, including updating the date_modified field, clearing caches and applying changes.
      *
@@ -1786,10 +1570,8 @@ class OrdersTableDataStore
      * @return bool True if changes were applied, false otherwise.
      */
     protected function after_meta_change(&$order, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to check whether the modified date needs to be updated after a meta save.
      *
@@ -1803,8 +1585,6 @@ class OrdersTableDataStore
      * @return bool Whether the modified date needs to be updated.
      */
     private function should_save_after_meta_change($order, $meta = null)
-    {
-        // stub
-    }
-
+{
+}
 }

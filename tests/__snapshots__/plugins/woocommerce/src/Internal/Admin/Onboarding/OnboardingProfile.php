@@ -15,10 +15,8 @@ class OnboardingProfile
      * Add onboarding actions.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger the woocommerce_onboarding_profile_completed action
      *
@@ -26,18 +24,14 @@ class OnboardingProfile
      * @param array $value Current value.
      */
     public static function trigger_complete($old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the profiler still needs to be completed.
      *
      * @return bool
      */
     public static function needs_completion()
-    {
-        // stub
-    }
-
+{
+}
 }

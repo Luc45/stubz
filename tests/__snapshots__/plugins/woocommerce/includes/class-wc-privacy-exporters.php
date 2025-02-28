@@ -13,10 +13,8 @@ class WC_Privacy_Exporters
      * @return array An array of personal data in name value pairs
      */
     public static function customer_data_exporter($email_address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds and exports data which could be used to identify a person from WooCommerce data associated with an email address.
      *
@@ -28,10 +26,8 @@ class WC_Privacy_Exporters
      * @return array An array of personal data in name value pairs
      */
     public static function order_data_exporter($email_address, $page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds and exports customer download logs by email address.
      *
@@ -42,10 +38,8 @@ class WC_Privacy_Exporters
      * @return array An array of personal data in name value pairs
      */
     public static function download_data_exporter($email_address, $page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get personal data (key/value pairs) for a user object.
      *
@@ -55,10 +49,8 @@ class WC_Privacy_Exporters
      * @return array
      */
     protected static function get_customer_personal_data($user)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get personal data (key/value pairs) for an order object.
      *
@@ -67,10 +59,8 @@ class WC_Privacy_Exporters
      * @return array
      */
     protected static function get_order_personal_data($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get personal data (key/value pairs) for a download object.
      *
@@ -79,10 +69,8 @@ class WC_Privacy_Exporters
      * @return array
      */
     protected static function get_download_personal_data($download)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds and exports payment tokens by email address for a customer.
      *
@@ -92,8 +80,6 @@ class WC_Privacy_Exporters
      * @return array An array of personal data in name value pairs
      */
     public static function customer_tokens_exporter($email_address, $page)
-    {
-        // stub
-    }
-
+{
+}
 }

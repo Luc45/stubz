@@ -35,35 +35,29 @@ class QueryBuilder
      *
      * @var array
      */
-    protected $attributes_filter_query_args = array (
-);
+    protected $attributes_filter_query_args = array();
 
     /**
      * Collection handler store.
      *
      * @var array
      */
-    protected $collection_handler_store = array (
-);
+    protected $collection_handler_store = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the collection handler store.
      *
      * @param array $collection_handler_store The collection handler store containing registered collection handlers.
      */
     public function set_collection_handler_store($collection_handler_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set collection handler.
      *
@@ -71,40 +65,32 @@ class QueryBuilder
      * @param array  $handlers        Collection handlers.
      */
     public function set_collection_handler($collection_name, $handlers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set attributes filter query args.
      *
      * @param array $args The attributes filter query arguments.
      */
     public function set_attributes_filter_query_args($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return or initialize $valid_query_vars.
      *
      * @return array
      */
     private function get_valid_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get custom order options.
      *
      * @return array
      */
     public function get_custom_order_opts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the final query arguments for the frontend.
      *
@@ -114,10 +100,8 @@ class QueryBuilder
      * @param bool  $is_exclude_applied_filters Whether to exclude the applied filters or not.
      */
     public function get_final_frontend_query($collection_args, $query, $page = 1, $is_exclude_applied_filters = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query to filter products by taxonomies (product categories, product tags, etc.)
      *
@@ -141,10 +125,8 @@ class QueryBuilder
      * @return array Query to filter products by taxonomies.
      */
     private function get_filter_by_taxonomies_query($tax_query): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get final query args based on provided values
      *
@@ -154,10 +136,8 @@ class QueryBuilder
      * @param bool  $is_exclude_applied_filters Whether to exclude the applied filters or not.
      */
     public function get_final_query_args($collection_args, $common_query_values, $query, $is_exclude_applied_filters = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query args for preview mode. These query args will be used with WP_Query to fetch the products.
      *
@@ -166,10 +146,8 @@ class QueryBuilder
      * @param WP_REST_Request $request         Request.
      */
     public function get_preview_query_args($collection_args, $args, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query for products depending on their stock status.
      *
@@ -177,10 +155,8 @@ class QueryBuilder
      * @return array
      */
     private function get_stock_status_query($stock_statuses)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge tax_queries from various queries.
      *
@@ -188,10 +164,8 @@ class QueryBuilder
      * @return array
      */
     private function merge_tax_queries(...$queries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the `tax_query` for the requested attributes
      *
@@ -199,12 +173,9 @@ class QueryBuilder
      *
      * @return array
      */
-    private function get_product_attributes_query($attributes = array (
-))
-    {
-        // stub
-    }
-
+    private function get_product_attributes_query($attributes = array())
+{
+}
     /**
      * Generates a tax query to filter products based on their "featured" status.
      * If the `$featured` parameter is true, the function will return a tax query
@@ -216,30 +187,24 @@ class QueryBuilder
      * @return array A tax query for fetching featured products if `$featured` is true; otherwise, an empty array.
      */
     private function get_featured_query($featured)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by price.
      *
      * @return array
      */
     private function get_filter_by_price_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by attributes.
      *
      * @return array
      */
     private function get_filter_by_attributes_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the query args related to the filter by attributes block.
      *
@@ -258,30 +223,24 @@ class QueryBuilder
      * )
      */
     private function get_filter_by_attributes_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by stock status.
      *
      * @return array
      */
     private function get_filter_by_stock_status_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by rating.
      *
      * @return array
      */
     private function get_filter_by_rating_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge two array recursively but replace the non-array values instead of
      * merging them. The merging strategy:
@@ -331,20 +290,16 @@ class QueryBuilder
      * @param array $new_array  Second array.
      */
     private function array_merge_recursive_replace_non_array_properties($base, $new_array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return queries that are generated by query args.
      *
      * @return array
      */
     private function get_queries_by_applied_filters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query for product visibility depending on their stock status.
      *
@@ -354,10 +309,8 @@ class QueryBuilder
      * @return array Tax query for product visibility.
      */
     private function get_product_visibility_query($stock_query, $stock_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructs a date query for product filtering based on a specified time frame.
      *
@@ -370,10 +323,8 @@ class QueryBuilder
      * @return array Date query array; empty if parameters are invalid.
      */
     private function get_date_query(array $time_frame): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query arguments for price range filter.
      * We are adding these extra query arguments to be used in `posts_clauses`
@@ -389,10 +340,8 @@ class QueryBuilder
      * @return array Query arguments.
      */
     public function get_price_range_query_args($price_range)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the `posts_clauses` filter to the main query.
      *
@@ -400,10 +349,8 @@ class QueryBuilder
      * @param WP_Query $query   The WP_Query instance.
      */
     public function add_price_range_filter_posts_clauses($clauses, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query for price filters when dealing with displayed taxes.
      *
@@ -413,10 +360,8 @@ class QueryBuilder
      * @return string Constructed query.
      */
     protected function get_price_filter_query_for_displayed_taxes($price_filter, $column = 'min_price', $operator = '>=')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjusts a price filter based on a tax class and whether or not the amount includes or excludes taxes.
      *
@@ -427,10 +372,8 @@ class QueryBuilder
      * @return float
      */
     protected function adjust_price_filter_for_tax_class($price_filter, $tax_class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines if price filters need adjustment based on the tax display settings.
      *
@@ -442,10 +385,8 @@ class QueryBuilder
      * @return bool True if the price filters need to be adjusted for tax display settings, false otherwise.
      */
     private function should_adjust_price_range_for_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a post__in query to filter products to the set of provided IDs.
      *
@@ -454,10 +395,8 @@ class QueryBuilder
      * @return array The post__in query.
      */
     private function get_handpicked_query($handpicked_products)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query for on sale products.
      *
@@ -466,10 +405,8 @@ class QueryBuilder
      * @return array
      */
     private function get_on_sale_products_query($is_on_sale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge in the first parameter the keys "post_in", "meta_query" and "tax_query" of the second parameter.
      *
@@ -477,10 +414,8 @@ class QueryBuilder
      * @return array
      */
     private function merge_queries(...$queries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return query params to support custom sort values
      *
@@ -489,10 +424,8 @@ class QueryBuilder
      * @return array
      */
     private function get_custom_orderby_query($orderby)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the `posts_clauses` filter to add price-based sorting
      *
@@ -501,10 +434,8 @@ class QueryBuilder
      * @return array   Modified list of clauses.
      */
     public function add_price_sorting_posts_clauses($clauses, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the `posts_clauses` filter to add sales-based sorting
      *
@@ -513,10 +444,8 @@ class QueryBuilder
      * @return array   Modified list of clauses.
      */
     public function add_sales_sorting_posts_clauses($clauses, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -524,10 +453,8 @@ class QueryBuilder
      * @return string
      */
     protected function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge all of the 'post__in' values and return an array containing only values that are present in all arrays.
      *
@@ -536,8 +463,6 @@ class QueryBuilder
      * @return int[] The merged 'post__in' values.
      */
     private function merge_post__in(...$post__in)
-    {
-        // stub
-    }
-
+{
+}
 }

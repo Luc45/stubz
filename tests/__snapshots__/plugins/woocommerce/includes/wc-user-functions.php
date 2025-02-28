@@ -10,9 +10,7 @@
  */
 function wc_disable_admin_bar($show_admin_bar)
 {
-    // stub
 }
-
 /**
  * Create a new customer.
  *
@@ -25,12 +23,9 @@ function wc_disable_admin_bar($show_admin_bar)
  * @param  array  $args     List of arguments to pass to `wp_insert_user()`.
  * @return int|WP_Error Returns WP_Error on failure, Int (user ID) on success.
  */
-function wc_create_new_customer($email, $username = '', $password = '', $args = array (
-))
+function wc_create_new_customer($email, $username = '', $password = '', $args = array())
 {
-    // stub
 }
-
 /**
  * Create a unique username for a new customer.
  *
@@ -40,12 +35,9 @@ function wc_create_new_customer($email, $username = '', $password = '', $args = 
  * @param string $suffix Append string to username to make it unique.
  * @return string Generated username.
  */
-function wc_create_new_customer_username($email, $new_user_args = array (
-), $suffix = '')
+function wc_create_new_customer_username($email, $new_user_args = array(), $suffix = '')
 {
-    // stub
 }
-
 /**
  * Login a customer (set auth cookie and set global user object).
  *
@@ -53,9 +45,7 @@ function wc_create_new_customer_username($email, $new_user_args = array (
  */
 function wc_set_customer_auth_cookie($customer_id)
 {
-    // stub
 }
-
 /**
  * Get past orders (by email) and update them.
  *
@@ -64,9 +54,7 @@ function wc_set_customer_auth_cookie($customer_id)
  */
 function wc_update_new_customer_past_orders($customer_id)
 {
-    // stub
 }
-
 /**
  * Order payment completed - This is a paying customer.
  *
@@ -74,9 +62,7 @@ function wc_update_new_customer_past_orders($customer_id)
  */
 function wc_paying_customer($order_id)
 {
-    // stub
 }
-
 /**
  * Checks if a user (by email or ID or both) has bought an item.
  *
@@ -87,9 +73,7 @@ function wc_paying_customer($order_id)
  */
 function wc_customer_bought_product($customer_email, $user_id, $product_id)
 {
-    // stub
 }
-
 /**
  * Checks if the current user has a role.
  *
@@ -98,9 +82,7 @@ function wc_customer_bought_product($customer_email, $user_id, $product_id)
  */
 function wc_current_user_has_role($role)
 {
-    // stub
 }
-
 /**
  * Checks if a user has a role.
  *
@@ -110,9 +92,7 @@ function wc_current_user_has_role($role)
  */
 function wc_user_has_role($user, $role)
 {
-    // stub
 }
-
 /**
  * Checks if a user has a certain capability.
  *
@@ -124,9 +104,7 @@ function wc_user_has_role($user, $role)
  */
 function wc_customer_has_capability($allcaps, $caps, $args)
 {
-    // stub
 }
-
 /**
  * Safe way of allowing shop managers restricted capabilities that will remove
  * access to the capabilities if WooCommerce is deactivated.
@@ -141,9 +119,7 @@ function wc_customer_has_capability($allcaps, $caps, $args)
  */
 function wc_shop_manager_has_capability($allcaps, $caps, $args, $user)
 {
-    // stub
 }
-
 /**
  * Modify the list of editable roles to prevent non-admin adding admin users.
  *
@@ -152,9 +128,7 @@ function wc_shop_manager_has_capability($allcaps, $caps, $args, $user)
  */
 function wc_modify_editable_roles($roles)
 {
-    // stub
 }
-
 /**
  * Modify capabilities to prevent non-admin users editing admin users.
  *
@@ -168,9 +142,7 @@ function wc_modify_editable_roles($roles)
  */
 function wc_modify_map_meta_cap($caps, $cap, $user_id, $args)
 {
-    // stub
 }
-
 /**
  * Get customer download permissions from the database.
  *
@@ -179,9 +151,7 @@ function wc_modify_map_meta_cap($caps, $cap, $user_id, $args)
  */
 function wc_get_customer_download_permissions($customer_id)
 {
-    // stub
 }
-
 /**
  * Get customer available downloads.
  *
@@ -190,9 +160,7 @@ function wc_get_customer_download_permissions($customer_id)
  */
 function wc_get_customer_available_downloads($customer_id)
 {
-    // stub
 }
-
 /**
  * Get total spent by customer.
  *
@@ -201,9 +169,7 @@ function wc_get_customer_available_downloads($customer_id)
  */
 function wc_get_customer_total_spent($user_id)
 {
-    // stub
 }
-
 /**
  * Get total orders by customer.
  *
@@ -212,9 +178,7 @@ function wc_get_customer_total_spent($user_id)
  */
 function wc_get_customer_order_count($user_id)
 {
-    // stub
 }
-
 /**
  * Reset _customer_user on orders when a user is deleted.
  *
@@ -222,9 +186,7 @@ function wc_get_customer_order_count($user_id)
  */
 function wc_reset_order_customer_id_on_deleted_user($user_id)
 {
-    // stub
 }
-
 /**
  * Get review verification status.
  *
@@ -233,9 +195,7 @@ function wc_reset_order_customer_id_on_deleted_user($user_id)
  */
 function wc_review_is_from_verified_owner($comment_id)
 {
-    // stub
 }
-
 /**
  * Disable author archives for customers.
  *
@@ -243,9 +203,7 @@ function wc_review_is_from_verified_owner($comment_id)
  */
 function wc_disable_author_archives_for_customers()
 {
-    // stub
 }
-
 /**
  * Hooks into the `profile_update` hook to set the user last updated timestamp.
  *
@@ -255,9 +213,7 @@ function wc_disable_author_archives_for_customers()
  */
 function wc_update_profile_last_update_time($user_id, $old)
 {
-    // stub
 }
-
 /**
  * Hooks into the update user meta function to set the user last updated timestamp.
  *
@@ -269,9 +225,7 @@ function wc_update_profile_last_update_time($user_id, $old)
  */
 function wc_meta_update_last_update_time($meta_id, $user_id, $meta_key, $_meta_value)
 {
-    // stub
 }
-
 /**
  * Sets a user's "last update" time to the current timestamp.
  *
@@ -280,9 +234,7 @@ function wc_meta_update_last_update_time($meta_id, $user_id, $meta_key, $_meta_v
  */
 function wc_set_user_last_update_time($user_id)
 {
-    // stub
 }
-
 /**
  * Get customer saved payment methods list.
  *
@@ -292,9 +244,7 @@ function wc_set_user_last_update_time($user_id)
  */
 function wc_get_customer_saved_methods_list($customer_id)
 {
-    // stub
 }
-
 /**
  * Get info about customer's last order.
  *
@@ -304,9 +254,7 @@ function wc_get_customer_saved_methods_list($customer_id)
  */
 function wc_get_customer_last_order($customer_id)
 {
-    // stub
 }
-
 /**
  * Add support for searching by display_name.
  *
@@ -316,9 +264,7 @@ function wc_get_customer_last_order($customer_id)
  */
 function wc_user_search_columns($search_columns)
 {
-    // stub
 }
-
 /**
  * When a user is deleted in WordPress, delete corresponding WooCommerce data.
  *
@@ -326,9 +272,7 @@ function wc_user_search_columns($search_columns)
  */
 function wc_delete_user_data($user_id)
 {
-    // stub
 }
-
 /**
  * Store user agents. Used for tracker.
  *
@@ -338,9 +282,7 @@ function wc_delete_user_data($user_id)
  */
 function wc_maybe_store_user_agent($user_login, $user)
 {
-    // stub
 }
-
 /**
  * Update logic triggered on login.
  *
@@ -350,9 +292,7 @@ function wc_maybe_store_user_agent($user_login, $user)
  */
 function wc_user_logged_in($user_login, $user)
 {
-    // stub
 }
-
 /**
  * Update when the user was last active.
  *
@@ -360,9 +300,7 @@ function wc_user_logged_in($user_login, $user)
  */
 function wc_current_user_is_active()
 {
-    // stub
 }
-
 /**
  * Set the user last active timestamp to now.
  *
@@ -371,9 +309,7 @@ function wc_current_user_is_active()
  */
 function wc_update_user_last_active($user_id)
 {
-    // stub
 }
-
 /**
  * Translate WC roles using the woocommerce textdomain.
  *
@@ -386,5 +322,4 @@ function wc_update_user_last_active($user_id)
  */
 function wc_translate_user_roles($translation, $text, $context, $domain)
 {
-    // stub
 }

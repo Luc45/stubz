@@ -51,8 +51,7 @@ class WC_Coupon_Data_Store_CPT
      * @since 4.1.0
      * @var array
      */
-    protected $updated_props = array (
-);
+    protected $updated_props = array();
 
     /**
      * Method to create a new coupon in the database.
@@ -61,10 +60,8 @@ class WC_Coupon_Data_Store_CPT
      * @param WC_Coupon $coupon Coupon object.
      */
     public function create(&$coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read a coupon.
      *
@@ -75,10 +72,8 @@ class WC_Coupon_Data_Store_CPT
      * @throws Exception If invalid coupon.
      */
     public function read(&$coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a metadata value that is stored as either a string consisting of a comma-separated list of values
      * or as a serialized array.
@@ -91,10 +86,8 @@ class WC_Coupon_Data_Store_CPT
      * @return array The metadata value as an array, with empty values removed.
      */
     private function get_coupon_meta_as_array($coupon_id, string $meta_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates a coupon in the database.
      *
@@ -102,10 +95,8 @@ class WC_Coupon_Data_Store_CPT
      * @param WC_Coupon $coupon Coupon object.
      */
     public function update(&$coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes a coupon from the database.
      *
@@ -114,12 +105,9 @@ class WC_Coupon_Data_Store_CPT
      * @param WC_Coupon $coupon Coupon object.
      * @param array     $args Array of args to pass to the delete method.
      */
-    public function delete(&$coupon, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$coupon, $args = array())
+{
+}
     /**
      * Helper method that updates all the post meta for a coupon based on it's settings in the WC_Coupon class.
      *
@@ -127,10 +115,8 @@ class WC_Coupon_Data_Store_CPT
      * @since 3.0.0
      */
     private function update_post_meta(&$coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increase usage count for current coupon.
      *
@@ -141,10 +127,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int New usage count.
      */
     public function increase_usage_count(&$coupon, $used_by = '', $order = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to add a `_used_by` record to track coupons used by the user.
      *
@@ -153,10 +137,8 @@ class WC_Coupon_Data_Store_CPT
      * @param string    $coupon_held_key (Optional) Update meta key to `_used_by` instead of adding a new record.
      */
     private function add_coupon_used_by($coupon, $used_by, $coupon_held_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decrease usage count for current coupon.
      *
@@ -166,10 +148,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int New usage count.
      */
     public function decrease_usage_count(&$coupon, $used_by = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increase or decrease the usage count for a coupon by 1.
      *
@@ -179,10 +159,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int New usage count
      */
     private function update_usage_count_meta(&$coupon, $operation = 'increase')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns tentative usage count for coupon.
      *
@@ -191,10 +169,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int Tentative usage count.
      */
     public function get_tentative_usage_count($coupon_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of uses for a coupon by user ID.
      *
@@ -204,10 +180,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int
      */
     public function get_usage_by_user_id(&$coupon, $user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of uses for a coupon by email address
      *
@@ -217,10 +191,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int
      */
     public function get_usage_by_email(&$coupon, $email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tentative coupon usages for user.
      *
@@ -230,10 +202,8 @@ class WC_Coupon_Data_Store_CPT
      * @return string|null
      */
     public function get_tentative_usages_for_user($coupon_id, $user_aliases)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get held time for resources before cancelling the order.
      * It will use `woocommerce_coupon_hold_minutes` filter to get the value, defaulting to `woocommerce_hold_stock_minutes` option if set, with a 1-minute minimum if set to 0.
@@ -242,10 +212,8 @@ class WC_Coupon_Data_Store_CPT
      * @return int
      */
     private function get_tentative_held_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check and records coupon usage tentatively for short period of time so that counts validation is correct. Returns early if there is no limit defined for the coupon.
      *
@@ -254,10 +222,8 @@ class WC_Coupon_Data_Store_CPT
      * @return bool|int|string|null Returns meta key if coupon was held, null if returned early.
      */
     public function check_and_hold_coupon($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate query to calculate tentative usages for the coupon.
      *
@@ -266,10 +232,8 @@ class WC_Coupon_Data_Store_CPT
      * @return string Query for tentative usages.
      */
     private function get_tentative_usage_query($coupon_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check and records coupon usage tentatively for passed user aliases for short period of time so that counts validation is correct. Returns early if there is no limit per user for the coupon.
      *
@@ -280,10 +244,8 @@ class WC_Coupon_Data_Store_CPT
      * @return null|false|int
      */
     public function check_and_hold_coupon_for_user($coupon, $user_aliases, $user_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate query to calculate tentative usages for the coupon by the user.
      *
@@ -293,10 +255,8 @@ class WC_Coupon_Data_Store_CPT
      * @return string Tentative usages query.
      */
     private function get_tentative_usage_query_for_user($coupon_id, $user_aliases)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This function clears coupon data from the WP cache after certain operations which, for performance reasons,
      * are done via SQL queries.
@@ -305,10 +265,8 @@ class WC_Coupon_Data_Store_CPT
      * @return void
      */
     private function refresh_coupon_data(&$coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a coupon code for a specific ID.
      *
@@ -317,10 +275,8 @@ class WC_Coupon_Data_Store_CPT
      * @return string Coupon Code
      */
     public function get_code_by_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of IDs for for a specific coupon code.
      * Can return multiple to check for existence.
@@ -330,8 +286,6 @@ class WC_Coupon_Data_Store_CPT
      * @return array Array of IDs.
      */
     public function get_ids_by_code($code)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -28,10 +28,8 @@ class WC_REST_Data_Controller
      * @since 3.5.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read site data.
      *
@@ -39,10 +37,8 @@ class WC_REST_Data_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read site settings.
      *
@@ -50,10 +46,8 @@ class WC_REST_Data_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of data resources.
      *
@@ -62,10 +56,8 @@ class WC_REST_Data_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a data resource object for serialization.
      *
@@ -74,10 +66,8 @@ class WC_REST_Data_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($resource, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -85,10 +75,8 @@ class WC_REST_Data_Controller
      * @return array Links for the given country.
      */
     protected function prepare_links($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data index schema, conforming to JSON Schema.
      *
@@ -96,8 +84,6 @@ class WC_REST_Data_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

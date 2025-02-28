@@ -14,8 +14,7 @@ class WC_Log_Handler_File
      *
      * @var array
      */
-    protected $handles = array (
-);
+    protected $handles = array();
 
     /**
      * File size limit for log files in bytes.
@@ -32,8 +31,7 @@ class WC_Log_Handler_File
      *
      * @var array
      */
-    protected $cached_logs = array (
-);
+    protected $cached_logs = array();
 
     /**
      * Constructor for the logger.
@@ -41,20 +39,16 @@ class WC_Log_Handler_File
      * @param int $log_size_limit Optional. Size limit for log files. Default 5mb.
      */
     public function __construct($log_size_limit = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Destructor.
      *
      * Cleans up open file handles.
      */
     public function __destruct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle a log entry.
      *
@@ -72,10 +66,8 @@ class WC_Log_Handler_File
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds a log entry text from timestamp, level and message.
      *
@@ -87,10 +79,8 @@ class WC_Log_Handler_File
      * @return string Formatted log entry.
      */
     protected static function format_entry($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Open log file for writing.
      *
@@ -99,10 +89,8 @@ class WC_Log_Handler_File
      * @return bool Success.
      */
     protected function open($handle, $mode = 'a')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a handle is open.
      *
@@ -110,10 +98,8 @@ class WC_Log_Handler_File
      * @return bool True if $handle is open.
      */
     protected function is_open($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Close a handle.
      *
@@ -121,10 +107,8 @@ class WC_Log_Handler_File
      * @return bool success
      */
     protected function close($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a log entry to chosen file.
      *
@@ -134,10 +118,8 @@ class WC_Log_Handler_File
      * @return bool True if write was successful.
      */
     protected function add($entry, $handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear entries from chosen file.
      *
@@ -146,10 +128,8 @@ class WC_Log_Handler_File
      * @return bool
      */
     public function clear($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove/delete the chosen file.
      *
@@ -158,10 +138,8 @@ class WC_Log_Handler_File
      * @return bool
      */
     public function remove($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if log file should be rotated.
      *
@@ -171,10 +149,8 @@ class WC_Log_Handler_File
      * @return bool True if if should be rotated.
      */
     protected function should_rotate($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rotate log files.
      *
@@ -190,10 +166,8 @@ class WC_Log_Handler_File
      * @param string $handle Log handle.
      */
     protected function log_rotate($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increment a log file suffix.
      *
@@ -202,10 +176,8 @@ class WC_Log_Handler_File
      * @return bool True if increment was successful, otherwise false.
      */
     protected function increment_log_infix($handle, $number = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a log file path.
      *
@@ -213,10 +185,8 @@ class WC_Log_Handler_File
      * @return bool|string The log file path or false if path cannot be determined.
      */
     public static function get_log_file_path($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a log file name.
      *
@@ -227,10 +197,8 @@ class WC_Log_Handler_File
      * @return bool|string The log file name or false if cannot be determined.
      */
     public static function get_log_file_name($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cache log to write later.
      *
@@ -238,18 +206,14 @@ class WC_Log_Handler_File
      * @param string $handle Log entry handle.
      */
     protected function cache_log($entry, $handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Write cached logs.
      */
     public function write_cached_logs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete all logs older than a defined timestamp.
      *
@@ -257,10 +221,8 @@ class WC_Log_Handler_File
      * @param integer $timestamp Timestamp to delete logs before.
      */
     public static function delete_logs_before_timestamp($timestamp = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all log files in the log directory.
      *
@@ -268,8 +230,6 @@ class WC_Log_Handler_File
      * @return array
      */
     public static function get_log_files()
-    {
-        // stub
-    }
-
+{
+}
 }

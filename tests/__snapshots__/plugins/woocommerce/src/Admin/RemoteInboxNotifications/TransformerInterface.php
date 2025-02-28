@@ -23,7 +23,6 @@ interface TransformerInterface
      * @return mixed|null
      */
     public function transform($value, stdClass|null $arguments = null, $default_value = null);
-
     /**
      * Validate Transformer arguments.
      *
@@ -32,5 +31,4 @@ interface TransformerInterface
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null);
-
 }

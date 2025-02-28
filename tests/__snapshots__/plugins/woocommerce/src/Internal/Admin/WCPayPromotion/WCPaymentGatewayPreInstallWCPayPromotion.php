@@ -15,26 +15,20 @@ class WCPaymentGatewayPreInstallWCPayPromotion
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Gateway Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the promotional gateway has been dismissed.
      *
      * @return bool
      */
     public static function is_dismissed()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -5,8 +5,6 @@ namespace CustomFinderScenario;
 trait ExtraCodeTrait
 {
     public function traitMethod()
-    {
-        // stub
-    }
-
+{
+}
 }

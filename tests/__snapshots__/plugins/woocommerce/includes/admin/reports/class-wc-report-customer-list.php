@@ -12,26 +12,20 @@ class WC_Report_Customer_List
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * No items found text.
      */
     public function no_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the report.
      */
     public function output_report()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get column value.
      *
@@ -40,20 +34,16 @@ class WC_Report_Customer_List
      * @return string
      */
     public function column_default($user, $column_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get columns.
      *
      * @return array
      */
     public function get_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order users by name.
      *
@@ -61,16 +51,12 @@ class WC_Report_Customer_List
      * @return WP_User_Query
      */
     public function order_by_last_name($query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare customer list items.
      */
     public function prepare_items()
-    {
-        // stub
-    }
-
+{
+}
 }

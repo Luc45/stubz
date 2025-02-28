@@ -20,10 +20,8 @@ class CustomersScheduler
      * @internal
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add customer dependencies.
      *
@@ -31,10 +29,8 @@ class CustomersScheduler
      * @return array
      */
     public static function get_dependencies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the customer IDs and total count that need to be synced.
      *
@@ -45,10 +41,8 @@ class CustomersScheduler
      * @param bool     $skip_existing Skip already imported customers.
      */
     public static function get_items($limit = 10, $page = 1, $days = false, $skip_existing = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude users that already exist in our customer lookup table.
      *
@@ -58,10 +52,8 @@ class CustomersScheduler
      * @param WP_User_Query $wp_user_query WP_User_Query to modify.
      */
     public static function exclude_existing_customers_from_query($wp_user_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total number of rows imported.
      *
@@ -69,10 +61,8 @@ class CustomersScheduler
      * @return int
      */
     public static function get_total_imported()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Imports a single customer.
      *
@@ -81,10 +71,8 @@ class CustomersScheduler
      * @return void
      */
     public static function import($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a batch of customers.
      *
@@ -93,8 +81,6 @@ class CustomersScheduler
      * @return void
      */
     public static function delete($batch_size)
-    {
-        // stub
-    }
-
+{
+}
 }

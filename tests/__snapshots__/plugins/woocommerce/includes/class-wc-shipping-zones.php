@@ -13,10 +13,8 @@ class WC_Shipping_Zones
      * @return array Array of arrays.
      */
     public static function get_zones($context = 'admin')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping zone using it's ID
      *
@@ -25,10 +23,8 @@ class WC_Shipping_Zones
      * @return WC_Shipping_Zone|bool
      */
     public static function get_zone($zone_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping zone by an ID.
      *
@@ -38,10 +34,8 @@ class WC_Shipping_Zones
      * @return WC_Shipping_Zone|bool
      */
     public static function get_zone_by($by = 'zone_id', $id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping zone using it's ID.
      *
@@ -50,10 +44,8 @@ class WC_Shipping_Zones
      * @return bool|WC_Shipping_Method
      */
     public static function get_shipping_method($instance_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a zone using it's ID
      *
@@ -61,10 +53,8 @@ class WC_Shipping_Zones
      * @since 2.6.0
      */
     public static function delete_zone($zone_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find a matching zone for a given package.
      *
@@ -74,8 +64,6 @@ class WC_Shipping_Zones
      * @return WC_Shipping_Zone
      */
     public static function get_zone_matching_package($package)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -24,8 +24,6 @@ class OrdersProvider
      * @return integer The number of orders.
      */
     public function get_order_count()
-    {
-        // stub
-    }
-
+{
+}
 }

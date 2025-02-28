@@ -12,8 +12,7 @@ final class WC_Cart_Fees
      *
      * @var object[]
      */
-    private $fees = array (
-);
+    private $fees = array();
 
     /**
      * New fees are made out of these props.
@@ -37,18 +36,14 @@ final class WC_Cart_Fees
      * @since 3.2.0
      */
     public function __construct($deprecated = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register methods for this object on the appropriate WordPress hooks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a fee. Fee IDs must be unique.
      *
@@ -56,43 +51,33 @@ final class WC_Cart_Fees
      * @param array $args Array of fee properties.
      * @return object Either a fee object if added, or a WP_Error if it failed.
      */
-    public function add_fee($args = array (
-))
-    {
-        // stub
-    }
-
+    public function add_fee($args = array())
+{
+}
     /**
      * Get fees.
      *
      * @return array
      */
     public function get_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set fees.
      *
      * @param object[] $raw_fees Array of fees.
      */
-    public function set_fees($raw_fees = array (
-))
-    {
-        // stub
-    }
-
+    public function set_fees($raw_fees = array())
+{
+}
     /**
      * Remove all fees.
      *
      * @since 3.2.0
      */
     public function remove_all_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sort fees by amount.
      *
@@ -101,10 +86,8 @@ final class WC_Cart_Fees
      * @return int
      */
     protected function sort_fees_callback($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a unique ID for the fee being added.
      *
@@ -112,8 +95,6 @@ final class WC_Cart_Fees
      * @return string fee key.
      */
     private function generate_id($fee)
-    {
-        // stub
-    }
-
+{
+}
 }

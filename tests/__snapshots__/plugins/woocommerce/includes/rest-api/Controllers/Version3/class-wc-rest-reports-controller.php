@@ -22,8 +22,6 @@ class WC_REST_Reports_Controller
      * @return array
      */
     protected function get_reports()
-    {
-        // stub
-    }
-
+{
+}
 }

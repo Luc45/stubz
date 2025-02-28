@@ -23,10 +23,8 @@ class SingleProductTemplateCompatibility
      * @return string
      */
     public function inject_hooks($block_content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject custom hooks to the first and last blocks.
      * Since that there is a custom logic for the first and last block, we have to inject the hooks manually.
@@ -43,10 +41,8 @@ class SingleProductTemplateCompatibility
      * @return string
      */
     private function inject_hook_to_first_and_last_blocks($block_content, $block, $block_hooks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the render block data to inject our custom attribute needed to
      * determine which is the first block of the Single Product Template.
@@ -58,18 +54,14 @@ class SingleProductTemplateCompatibility
      * @return array
      */
     public function update_render_block_data($parsed_block, $source_block, $parent_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set supported hooks.
      */
     protected function set_hook_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add compatibility layer to the first and last block of the Single Product Template.
      *
@@ -77,10 +69,8 @@ class SingleProductTemplateCompatibility
      * @return string
      */
     public static function add_compatibility_layer($template_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For compatibility reason, we need to wrap the Single Product template in a div with specific class.
      * For more details, see https://github.com/woocommerce/woocommerce-blocks/issues/8314.
@@ -89,10 +79,8 @@ class SingleProductTemplateCompatibility
      * @return array Wrapped template content inside a div.
      */
     private static function wrap_single_product_template($template_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add custom attributes to the first group block and last group block that wrap Single Product Template blocks.
      *
@@ -100,10 +88,8 @@ class SingleProductTemplateCompatibility
      * @return array
      */
     private static function inject_custom_attributes_to_first_and_last_block_single_product_template($wrapped_blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrap all the blocks inside the template in a group block.
      *
@@ -111,10 +97,8 @@ class SingleProductTemplateCompatibility
      * @return array Group block with the blocks inside.
      */
     private static function create_wrap_block_group($blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the Single Product template has a single product template block:
      * woocommerce/product-gallery-image, woocommerce/product-details, woocommerce/add-to-cart-form, etc.
@@ -123,10 +107,8 @@ class SingleProductTemplateCompatibility
      * @return bool True if the template has a single product template block, false otherwise.
      */
     private static function has_single_product_template_blocks($parsed_blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Group blocks in this way:
      * B1 + TP1 + B2 + B3 + B4 + TP2 + B5
@@ -138,10 +120,8 @@ class SingleProductTemplateCompatibility
      * @return array Array of blocks grouped by template part.
      */
     private static function group_blocks($parsed_blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject the hooks after the div wrapper.
      *
@@ -150,10 +130,8 @@ class SingleProductTemplateCompatibility
      * @return array
      */
     private function inject_hooks_after_the_wrapper($block_content, $hooks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Plain custom HTML block is parsed as block with an empty blockName with a filled innerHTML.
      *
@@ -161,10 +139,8 @@ class SingleProductTemplateCompatibility
      * @return bool
      */
     private static function is_custom_html($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serialize template.
      *
@@ -172,8 +148,6 @@ class SingleProductTemplateCompatibility
      * @return string
      */
     private static function serialize_blocks($parsed_blocks)
-    {
-        // stub
-    }
-
+{
+}
 }

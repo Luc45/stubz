@@ -30,20 +30,16 @@ class ProductCategorySchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Term properties.
      *
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a term object into an object suitable for the response.
      *
@@ -51,10 +47,8 @@ class ProductCategorySchema
      * @return array
      */
     public function get_item_response($term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total number of reviews for products in a category.
      *
@@ -62,8 +56,6 @@ class ProductCategorySchema
      * @return int
      */
     protected function get_category_review_count($term)
-    {
-        // stub
-    }
-
+{
+}
 }

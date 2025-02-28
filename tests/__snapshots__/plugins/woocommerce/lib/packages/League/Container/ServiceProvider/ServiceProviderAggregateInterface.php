@@ -12,7 +12,6 @@ interface ServiceProviderAggregateInterface
      * @return self
      */
     public function add($provider): Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface;
-
     /**
      * Determines whether a service is provided by the aggregate.
      *
@@ -21,7 +20,6 @@ interface ServiceProviderAggregateInterface
      * @return boolean
      */
     public function provides(string $service): bool;
-
     /**
      * Invokes the register method of a provider that provides a specific service.
      *
@@ -30,5 +28,4 @@ interface ServiceProviderAggregateInterface
      * @return void
      */
     public function register(string $service);
-
 }

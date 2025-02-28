@@ -14,8 +14,6 @@ class Query
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

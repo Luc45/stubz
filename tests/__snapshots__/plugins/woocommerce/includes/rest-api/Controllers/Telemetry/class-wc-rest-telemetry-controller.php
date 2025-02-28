@@ -26,10 +26,8 @@ class WC_REST_Telemetry_Controller
      * Register the route for /tracker
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to post telemetry data
      *
@@ -37,20 +35,16 @@ class WC_REST_Telemetry_Controller
      * @return WP_Error|boolean
      */
     public function telemetry_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Record WCTracker Data
      *
      * @param  WP_REST_Request $request Full details about the request.
      */
     public function record_usage_data($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get usage data from current request
      *
@@ -58,18 +52,14 @@ class WC_REST_Telemetry_Controller
      * @return Array
      */
     public function get_usage_data($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any query params needed.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

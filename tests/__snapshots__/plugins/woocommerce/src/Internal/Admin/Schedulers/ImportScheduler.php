@@ -16,10 +16,8 @@ abstract class ImportScheduler
      * @return bool
      */
     public static function is_importing()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get batch sizes.
      *
@@ -27,10 +25,8 @@ abstract class ImportScheduler
      * @return array
      */
     public static function get_batch_sizes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all available scheduling actions.
      * Used to determine action hook names and clear events.
@@ -39,10 +35,8 @@ abstract class ImportScheduler
      * @return array
      */
     public static function get_scheduler_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queue the imports into multiple batches.
      *
@@ -51,10 +45,8 @@ abstract class ImportScheduler
      * @param boolean         $skip_existing Skip existing records.
      */
     public static function import_batch_init($days, $skip_existing)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Imports a batch of items to update.
      *
@@ -65,20 +57,16 @@ abstract class ImportScheduler
      * @return void
      */
     public static function import_batch($batch_number, $days, $skip_existing)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queue item deletion in batches.
      *
      * @internal
      */
     public static function delete_batch_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a batch by passing the count to be deleted to the child delete method.
      *
@@ -86,8 +74,6 @@ abstract class ImportScheduler
      * @return void
      */
     public static function delete_batch()
-    {
-        // stub
-    }
-
+{
+}
 }

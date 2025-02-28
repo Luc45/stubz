@@ -11,17 +11,12 @@ class MyCustomAttribute
     private string $description;
 
     public function __construct(string $description)
-    {
-        // stub
-    }
-
-    public function getDescription(): string
-    {
-        // stub
-    }
-
+{
 }
-
+    public function getDescription(): string
+{
+}
+}
 /**
  * A class marked with MyCustomAttribute.
  */
@@ -30,8 +25,6 @@ class DemoClass
 {
     #[AttributesScenario\MyCustomAttribute('Demo method with attributes')]
     public function doSomething(): string
-    {
-        // stub
-    }
-
+{
+}
 }

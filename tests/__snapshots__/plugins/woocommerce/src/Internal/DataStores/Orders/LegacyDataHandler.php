@@ -37,23 +37,18 @@ class LegacyDataHandler
      *
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator)
+{
+}
     /**
      * Returns the total number of orders for which legacy post data can be removed.
      *
      * @param array $order_ids If provided, total is computed only among IDs in this array, which can be either individual IDs or ranges like "100-200".
      * @return int Number of orders.
      */
-    public function count_orders_for_cleanup($order_ids = array (
-)): int
-    {
-        // stub
-    }
-
+    public function count_orders_for_cleanup($order_ids = array()): int
+{
+}
     /**
      * Returns a set of orders for which legacy post data can be removed.
      *
@@ -61,12 +56,9 @@ class LegacyDataHandler
      * @param int   $limit     Limit the number of results.
      * @return array[int] Order IDs.
      */
-    public function get_orders_for_cleanup($order_ids = array (
-), int $limit = 0): array
-    {
-        // stub
-    }
-
+    public function get_orders_for_cleanup($order_ids = array(), int $limit = 0): array
+{
+}
     /**
      * Builds a SQL statement to either count or obtain IDs for orders in need of cleanup.
      *
@@ -75,12 +67,9 @@ class LegacyDataHandler
      * @param integer $limit     If provided, the query will be limited to this number of results. Does not apply when $result is 'count'.
      * @return string SQL query.
      */
-    private function build_sql_query_for_cleanup(array $order_ids = array (
-), string $result = 'ids', int $limit = 0): string
-    {
-        // stub
-    }
-
+    private function build_sql_query_for_cleanup(array $order_ids = array(), string $result = 'ids', int $limit = 0): string
+{
+}
     /**
      * Performs a cleanup of post data for a given order and also converts the post to the placeholder type in the backup table.
      *
@@ -90,10 +79,8 @@ class LegacyDataHandler
      * @throws \Exception When an error occurs.
      */
     public function cleanup_post_data(int $order_id, bool $skip_checks = false): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether an HPOS-backed order is newer than the corresponding post.
      *
@@ -102,10 +89,8 @@ class LegacyDataHandler
      * @throws \Exception When the order is not an HPOS order.
      */
     private function is_order_newer_than_post(WC_Abstract_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds an array with properties and metadata for which HPOS and post record have different values.
      * Given it's mostly informative nature, it doesn't perform any deep or recursive searches and operates only on top-level properties/metadata.
@@ -116,10 +101,8 @@ class LegacyDataHandler
      * @return array Array of [HPOS value, post value] keyed by property, for all properties where HPOS and post value differ.
      */
     public function get_diff_for_order(int $order_id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an order object as seen by either the HPOS or CPT datastores.
      *
@@ -131,10 +114,8 @@ class LegacyDataHandler
      * @throws \Exception When an error occurs.
      */
     public function get_order_from_datastore(int $order_id, string $data_store_id = 'hpos')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Backfills an order from/to the CPT or HPOS datastore.
      *
@@ -147,12 +128,9 @@ class LegacyDataHandler
      * @return void
      * @throws \Exception When an error occurs.
      */
-    public function backfill_order_to_datastore(int $order_id, string $source_data_store, string $destination_data_store, array $fields = array (
-))
-    {
-        // stub
-    }
-
+    public function backfill_order_to_datastore(int $order_id, string $source_data_store, string $destination_data_store, array $fields = array())
+{
+}
     /**
      * Returns all metadata in an order object as an array.
      *
@@ -160,20 +138,16 @@ class LegacyDataHandler
      * @return array Array of metadata grouped by meta key.
      */
     private function order_meta_to_array(WC_Order &$order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns names of all order base properties supported by HPOS.
      *
      * @return string[] Property names.
      */
     private function get_order_base_props(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filters a set of HPOS row updates to those matching a specific set of order properties.
      * Called via the `woocommerce_orders_table_datastore_db_rows_for_order` filter in `backfill_order_to_datastore`.
@@ -184,10 +158,8 @@ class LegacyDataHandler
      * @see OrdersTableDataStore::get_db_rows_for_order()
      */
     private function limit_hpos_update_to_props(array $rows, array $props)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates meta_keys and property names for a partial order backfill.
      *
@@ -198,8 +170,6 @@ class LegacyDataHandler
      * @return void
      */
     private function validate_backfill_fields(array $fields, WC_Abstract_Order $order)
-    {
-        // stub
-    }
-
+{
+}
 }

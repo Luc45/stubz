@@ -12,8 +12,6 @@ class ActionScheduler_NullLogEntry
      * @param string $message   Log entry.
      */
     public function __construct($action_id = '', $message = '')
-    {
-        // stub
-    }
-
+{
+}
 }

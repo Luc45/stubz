@@ -21,20 +21,16 @@ class ActionScheduler_SimpleSchedule
      * @return DateTime|null
      */
     public function calculate_next(DateTime $after)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule is not recurring.
      *
      * @return bool
      */
     public function is_recurring()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serialize schedule with data required prior to AS 3.0.0
      *
@@ -49,10 +45,8 @@ class ActionScheduler_SimpleSchedule
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserialize recurring schedules serialized/stored prior to AS 3.0.0
      *
@@ -64,8 +58,6 @@ class ActionScheduler_SimpleSchedule
      * map the old property names with matching visibility.
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -29,10 +29,8 @@ class MarketingChannels
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to view marketing channels.
      *
@@ -41,10 +39,8 @@ class MarketingChannels
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return installed marketing channels.
      *
@@ -53,10 +49,8 @@ class MarketingChannels
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares the item for the REST response.
      *
@@ -66,18 +60,14 @@ class MarketingChannels
      * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the item's schema, conforming to JSON Schema.
      *
      * @return array Item schema data.
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

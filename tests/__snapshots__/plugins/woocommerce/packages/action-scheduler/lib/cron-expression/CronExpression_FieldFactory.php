@@ -11,8 +11,7 @@ class CronExpression_FieldFactory
     /**
      * @var array Cache of instantiated fields
      */
-    private $fields = array (
-);
+    private $fields = array();
 
     /**
      * Get an instance of a field object for a cron expression position
@@ -23,8 +22,6 @@ class CronExpression_FieldFactory
      * @throws InvalidArgumentException if a position is not valid
      */
     public function getField($position)
-    {
-        // stub
-    }
-
+{
+}
 }

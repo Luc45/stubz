@@ -26,10 +26,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * Register the route for /payment_gateways and /payment_gateways/<id>
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to view payment gateways.
      *
@@ -37,10 +35,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a payment gateway.
      *
@@ -48,10 +44,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to edit payment gateways.
      *
@@ -59,10 +53,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_Error|boolean
      */
     public function update_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get payment gateways.
      *
@@ -70,10 +62,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single payment gateway.
      *
@@ -81,10 +71,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update A Single Payment Method.
      *
@@ -92,10 +80,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a gateway based on the current request object.
      *
@@ -103,10 +89,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_REST_Response|null
      */
     public function get_gateway($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a payment gateway for response.
      *
@@ -115,10 +99,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return WP_REST_Response   $response   Response data.
      */
     public function prepare_item_for_response($gateway, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return settings associated with this payment gateway.
      *
@@ -127,10 +109,8 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return array
      */
     public function get_settings($gateway)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -139,28 +119,22 @@ class WC_REST_Payment_Gateways_V2_Controller
      * @return array
      */
     protected function prepare_links($gateway, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the payment gateway schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any query params needed.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

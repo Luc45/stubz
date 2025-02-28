@@ -22,10 +22,8 @@ class ContentProcessor
      * @return mixed|WP_Error
      */
     public static function summarize_business_description($business_description, $ai_connection, $token, $character_limit = 150)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure that images are provided for assignment to products and patterns.
      *
@@ -37,10 +35,8 @@ class ContentProcessor
      * @return array|int|mixed|string|WP_Error
      */
     public static function verify_images($images, $ai_connection, $token, $business_description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust the size of images for optimal performance on products and patterns.
      *
@@ -50,8 +46,6 @@ class ContentProcessor
      * @return string
      */
     public static function adjust_image_size($image_url, $usage_type)
-    {
-        // stub
-    }
-
+{
+}
 }

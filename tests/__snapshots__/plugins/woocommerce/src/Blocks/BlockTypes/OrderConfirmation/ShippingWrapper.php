@@ -22,20 +22,15 @@ class ShippingWrapper
      * @param array        $attributes Block attributes.
      * @param string       $content Original block content.
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

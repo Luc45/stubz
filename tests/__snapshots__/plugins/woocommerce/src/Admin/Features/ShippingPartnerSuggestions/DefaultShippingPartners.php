@@ -13,10 +13,8 @@ class DefaultShippingPartners
      * @return array Default specs.
      */
     public static function get_all()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rules that match the store base location to one of the provided countries.
      *
@@ -24,8 +22,6 @@ class DefaultShippingPartners
      * @return object Rules to match.
      */
     public static function get_rules_for_countries($countries)
-    {
-        // stub
-    }
-
+{
+}
 }

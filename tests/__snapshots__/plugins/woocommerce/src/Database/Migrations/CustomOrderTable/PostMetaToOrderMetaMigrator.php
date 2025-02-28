@@ -23,18 +23,14 @@ class PostMetaToOrderMetaMigrator
      * @param array $excluded_columns List of meta keys to exclude from migration.
      */
     public function __construct($excluded_columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate config for meta data migration.
      *
      * @return array Meta data migration config.
      */
     protected function get_meta_config(): array
-    {
-        // stub
-    }
-
+{
+}
 }

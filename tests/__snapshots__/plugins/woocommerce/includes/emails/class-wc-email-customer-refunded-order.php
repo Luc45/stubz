@@ -30,10 +30,8 @@ class WC_Email_Customer_Refunded_Order
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
@@ -42,10 +40,8 @@ class WC_Email_Customer_Refunded_Order
      * @return string
      */
     public function get_default_subject($partial = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
@@ -54,30 +50,24 @@ class WC_Email_Customer_Refunded_Order
      * @return string
      */
     public function get_default_heading($partial = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
      * @return string
      */
     public function get_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
      * @return string
      */
     public function get_heading()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set email strings.
      *
@@ -85,10 +75,8 @@ class WC_Email_Customer_Refunded_Order
      * @deprecated 3.1.0 Unused.
      */
     public function set_email_strings($partial_refund = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Full refund notification.
      *
@@ -96,10 +84,8 @@ class WC_Email_Customer_Refunded_Order
      * @param int $refund_id Refund ID.
      */
     public function trigger_full($order_id, $refund_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Partial refund notification.
      *
@@ -107,10 +93,8 @@ class WC_Email_Customer_Refunded_Order
      * @param int $refund_id Refund ID.
      */
     public function trigger_partial($order_id, $refund_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger.
      *
@@ -119,30 +103,24 @@ class WC_Email_Customer_Refunded_Order
      * @param int  $refund_id Refund ID.
      */
     public function trigger($order_id, $partial_refund = false, $refund_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content html.
      *
      * @return string
      */
     public function get_content_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content plain.
      *
      * @return string
      */
     public function get_content_plain()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default content to show below main email content.
      *
@@ -150,16 +128,12 @@ class WC_Email_Customer_Refunded_Order
      * @return string
      */
     public function get_default_additional_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise settings form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
 }

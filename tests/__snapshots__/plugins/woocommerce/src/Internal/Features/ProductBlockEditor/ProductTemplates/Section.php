@@ -19,20 +19,16 @@ class Section
      * @throws \InvalidArgumentException If blockName key and value are passed into block configuration.
      */
     public function __construct(array $config, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface &$root_template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface|null &$parent = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a sub-section block type to this template.
      *
      * @param array $block_config The block data.
      */
     public function add_subsection(array $block_config): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a sub-section block type to this template.
      *
@@ -41,8 +37,6 @@ class Section
      * @param array $block_config The block data.
      */
     public function add_section(array $block_config): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface
-    {
-        // stub
-    }
-
+{
+}
 }

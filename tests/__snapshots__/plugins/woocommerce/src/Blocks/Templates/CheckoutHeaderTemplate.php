@@ -22,28 +22,22 @@ class CheckoutHeaderTemplate
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the title of the template.
      *
      * @return string
      */
     public function get_template_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the description of the template.
      *
      * @return string
      */
     public function get_template_description()
-    {
-        // stub
-    }
-
+{
+}
 }

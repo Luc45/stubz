@@ -20,8 +20,7 @@ class CheckoutFields
      *
      * @var array
      */
-    private $additional_fields = array (
-);
+    private $additional_fields = array();
 
     /**
      * Fields locations.
@@ -65,26 +64,20 @@ class CheckoutFields
      * @param AssetDataRegistry $asset_data_registry Instance of the asset data registry.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry $asset_data_registry)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize hooks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add fields data to the asset data registry.
      */
     public function add_fields_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add session meta keys.
      *
@@ -94,10 +87,8 @@ class CheckoutFields
      * @return array
      */
     public function add_session_meta_keys($keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If a field does not declare a sanitization callback, this is the default sanitization callback.
      *
@@ -106,10 +97,8 @@ class CheckoutFields
      * @return mixed
      */
     public function default_sanitize_callback($value, $field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If a field does not declare a validation callback, this is the default validation callback.
      *
@@ -118,10 +107,8 @@ class CheckoutFields
      * @return WP_Error|void If there is a validation error, return an WP_Error object.
      */
     public function default_validate_callback($value, $field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers an additional field for Checkout.
      *
@@ -130,10 +117,8 @@ class CheckoutFields
      * @return WP_Error|void True if the field was registered, a WP_Error otherwise.
      */
     public function register_checkout_field($options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deregister a checkout field.
      *
@@ -142,10 +127,8 @@ class CheckoutFields
      * @internal
      */
     public function deregister_checkout_field($field_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the "base" options (id, label, location) and shows warnings if they're not supplied.
      *
@@ -153,10 +136,8 @@ class CheckoutFields
      * @return bool false if an error was encountered, true otherwise.
      */
     private function validate_options(&$options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes the options for a select field and returns the new field_options array.
      *
@@ -166,10 +147,8 @@ class CheckoutFields
      * @return array|false The updated $field_data array or false if an error was encountered.
      */
     private function process_select_field($field_data, $options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes the options for a checkbox field and returns the new field_options array.
      *
@@ -179,10 +158,8 @@ class CheckoutFields
      * @return array|false The updated $field_data array or false if an error was encountered.
      */
     private function process_checkbox_field($field_data, $options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes the attributes supplied during field registration.
      *
@@ -192,40 +169,32 @@ class CheckoutFields
      * @return array The processed attributes.
      */
     private function register_field_attributes($id, $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the keys of all core fields.
      *
      * @return array An array of field keys.
      */
     public function get_core_fields_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of all core fields.
      *
      * @return array An array of fields.
      */
     public function get_core_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of all additional fields.
      *
      * @return array An array of fields.
      */
     public function get_additional_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the location of a field.
      *
@@ -233,10 +202,8 @@ class CheckoutFields
      * @return string The location of the field.
      */
     public function get_field_location($field_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize an additional field against any custom sanitization rules.
      *
@@ -246,10 +213,8 @@ class CheckoutFields
      * @return mixed
      */
     public function sanitize_field($field_key, $field_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate an additional field against any custom validation rules.
      *
@@ -260,10 +225,8 @@ class CheckoutFields
      * @return WP_Error
      */
     public function validate_field($field_key, $field_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the default locale with additional fields without country limitations.
      *
@@ -271,30 +234,24 @@ class CheckoutFields
      * @return mixed
      */
     public function update_default_locale_with_fields($locale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of fields keys for the address location.
      *
      * @return array An array of fields keys.
      */
     public function get_address_fields_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of fields keys for the contact location.
      *
      * @return array An array of fields keys.
      */
     public function get_contact_fields_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of fields keys for the additional area location.
      *
@@ -302,20 +259,16 @@ class CheckoutFields
      * @deprecated 8.9.0 Use get_order_fields_keys instead.
      */
     public function get_additional_fields_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of fields keys for the additional area group.
      *
      * @return array An array of fields keys.
      */
     public function get_order_fields_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of fields for a given location.
      *
@@ -323,10 +276,8 @@ class CheckoutFields
      * @return array An array of fields definitions.
      */
     public function get_fields_for_location($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates a set of fields for a given location against custom validation rules.
      *
@@ -336,10 +287,8 @@ class CheckoutFields
      * @return WP_Error
      */
     public function validate_fields_for_location($fields, $location, $group = 'other')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates a field to check it belongs to the given location and is valid according to its registration.
      *
@@ -352,10 +301,8 @@ class CheckoutFields
      * @return true|WP_Error True if the field is valid, a WP_Error otherwise.
      */
     public function validate_field_for_location($key, $value, $location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns all fields key for a given group.
      *
@@ -364,10 +311,8 @@ class CheckoutFields
      * @return string[] Field keys.
      */
     public function get_fields_for_group($group = 'other')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the given key is a valid field.
      *
@@ -376,10 +321,8 @@ class CheckoutFields
      * @return bool True if the field is valid, false otherwise.
      */
     public function is_field($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the given key is a valid customer field.
      *
@@ -390,10 +333,8 @@ class CheckoutFields
      * @return bool True if the field is valid, false otherwise.
      */
     public function is_customer_field($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Persists a field value for a given order. This would also optionally set the field value on the customer object if the order is linked to a registered customer.
      *
@@ -406,10 +347,8 @@ class CheckoutFields
      * @return void
      */
     public function persist_field_for_order(string $key, $value, WC_Order $order, string $group = 'other', bool $set_customer = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Persists a field value for a given customer.
      *
@@ -421,10 +360,8 @@ class CheckoutFields
      * @return void
      */
     public function persist_field_for_customer(string $key, $value, WC_Customer $customer, string $group = 'other')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a field value in an array meta, supporting routing things to billing, shipping, or additional fields, based on a prefix for the key.
      *
@@ -436,10 +373,8 @@ class CheckoutFields
      * @return void
      */
     private function set_array_meta(string $key, $value, WC_Data $wc_object, string $group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a field value for a given object.
      *
@@ -450,10 +385,8 @@ class CheckoutFields
      * @return mixed The field value.
      */
     public function get_field_from_object(string $key, WC_Data $wc_object, string $group = 'other')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of all fields values for a given object in a group.
      *
@@ -464,10 +397,8 @@ class CheckoutFields
      * @return array An array of fields.
      */
     public function get_all_fields_from_object(WC_Data $wc_object, string $group = 'other', bool $all = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Copies additional fields from an order to a customer.
      *
@@ -475,10 +406,8 @@ class CheckoutFields
      * @param WC_Customer $customer The customer to sync the fields for.
      */
     public function sync_customer_additional_fields_with_order(WC_Order $order, WC_Customer $customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Copies additional fields from a customer to an order.
      *
@@ -486,10 +415,8 @@ class CheckoutFields
      * @param WC_Customer $customer The customer to sync the fields for.
      */
     public function sync_order_additional_fields_with_customer(WC_Order $order, WC_Customer $customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * From a set of fields, returns only the ones for a given location.
      *
@@ -498,10 +425,8 @@ class CheckoutFields
      * @return array The filtered fields.
      */
     public function filter_fields_for_location(array $fields, string $location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter fields for order confirmation.
      *
@@ -509,10 +434,8 @@ class CheckoutFields
      * @return array The filtered fields.
      */
     public function filter_fields_for_order_confirmation($fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get additional fields for an order.
      *
@@ -523,10 +446,8 @@ class CheckoutFields
      * @return array An array of fields definitions as well as their values formatted for display.
      */
     public function get_order_additional_fields_with_values(WC_Order $order, string $location, string $group = 'other', string $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Formats a raw field value for display based on its type definition.
      *
@@ -535,10 +456,8 @@ class CheckoutFields
      * @return string
      */
     public function format_additional_field_value($value, $field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a group meta prefix based on its name.
      *
@@ -546,10 +465,8 @@ class CheckoutFields
      * @return string The group meta prefix.
      */
     public static function get_group_key($group_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a group name based on passed group key.
      *
@@ -557,8 +474,6 @@ class CheckoutFields
      * @return string The group meta prefix.
      */
     public static function get_group_name($group_key)
-    {
-        // stub
-    }
-
+{
+}
 }

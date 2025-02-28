@@ -20,10 +20,8 @@ class WC_REST_WCCOM_Site_Connection_Controller
      * @since 9.6.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether user has permission to access controller's endpoints.
      *
@@ -32,10 +30,8 @@ class WC_REST_WCCOM_Site_Connection_Controller
      * @return bool
      */
     public function user_has_permission($user): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Disconnect the site from WooCommerce.com.
      *
@@ -44,8 +40,6 @@ class WC_REST_WCCOM_Site_Connection_Controller
      * @return WP_REST_Response
      */
     public function handle_disconnect_request($request)
-    {
-        // stub
-    }
-
+{
+}
 }

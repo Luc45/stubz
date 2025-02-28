@@ -23,12 +23,9 @@ class BillingAddress
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -36,10 +33,7 @@ class BillingAddress
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
 }

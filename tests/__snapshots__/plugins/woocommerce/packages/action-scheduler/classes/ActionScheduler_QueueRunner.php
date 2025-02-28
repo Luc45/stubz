@@ -37,10 +37,8 @@ class ActionScheduler_QueueRunner
      * @codeCoverageIgnore
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * ActionScheduler_QueueRunner constructor.
      *
@@ -50,36 +48,28 @@ class ActionScheduler_QueueRunner
      * @param ActionScheduler_AsyncRequest_QueueRunner|null $async_request Async request runner object.
      */
     public function __construct(ActionScheduler_Store|null $store = null, ActionScheduler_FatalErrorMonitor|null $monitor = null, ActionScheduler_QueueCleaner|null $cleaner = null, ActionScheduler_AsyncRequest_QueueRunner|null $async_request = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize.
      *
      * @codeCoverageIgnore
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook check for dispatching an async request.
      */
     public function hook_dispatch_async_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unhook check for dispatching an async request.
      */
     public function unhook_dispatch_async_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if we should dispatch an async request to process actions.
      *
@@ -99,10 +89,8 @@ class ActionScheduler_QueueRunner
      * should dispatch a request to process pending actions.
      */
     public function maybe_dispatch_async_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process actions in the queue. Attached to self::WP_CRON_HOOK i.e. 'action_scheduler_run_queue'
      *
@@ -118,10 +106,8 @@ class ActionScheduler_QueueRunner
      * @return int The number of actions processed.
      */
     public function run($context = 'WP Cron')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process a batch of actions pending in the queue.
      *
@@ -134,10 +120,8 @@ class ActionScheduler_QueueRunner
      * @return int The number of actions processed.
      */
     protected function do_batch($size = 100, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush the cache if possible (intended for use after a batch of actions has been processed).
      *
@@ -145,10 +129,8 @@ class ActionScheduler_QueueRunner
      * runtime cache, which may lead to unexpected results.
      */
     protected function clear_caches()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add schedule to WP cron.
      *
@@ -156,8 +138,6 @@ class ActionScheduler_QueueRunner
      * @return array<string, array<string, int|string>>
      */
     public function add_wp_cron_schedule($schedules)
-    {
-        // stub
-    }
-
+{
+}
 }

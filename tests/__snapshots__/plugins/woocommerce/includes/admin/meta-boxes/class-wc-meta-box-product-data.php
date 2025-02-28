@@ -11,38 +11,30 @@ class WC_Meta_Box_Product_Data
      * @param WP_Post $post Post object.
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show tab content/settings.
      */
     private static function output_tabs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of product type options.
      *
      * @return array
      */
     private static function get_product_type_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of tabs to show.
      *
      * @return array
      */
     private static function get_product_data_tabs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback to sort product data tabs on priority.
      *
@@ -53,10 +45,8 @@ class WC_Meta_Box_Product_Data
      * @return bool
      */
     private static function product_data_tabs_sort($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter callback for finding variation attributes.
      *
@@ -64,10 +54,8 @@ class WC_Meta_Box_Product_Data
      * @return bool
      */
     private static function filter_variation_attributes($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter callback for finding non-variation attributes.
      *
@@ -75,18 +63,14 @@ class WC_Meta_Box_Product_Data
      * @return bool
      */
     private static function filter_non_variation_attributes($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show options for the variable product type.
      */
     public static function output_variations()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare downloads for save.
      *
@@ -97,20 +81,16 @@ class WC_Meta_Box_Product_Data
      * @return array
      */
     private static function prepare_downloads($file_names, $file_urls, $file_hashes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare children for save.
      *
      * @return array
      */
     private static function prepare_children()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare attributes for save.
      *
@@ -119,10 +99,8 @@ class WC_Meta_Box_Product_Data
      * @return array
      */
     public static function prepare_attributes($data = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare attributes for a specific variation or defaults.
      *
@@ -132,10 +110,8 @@ class WC_Meta_Box_Product_Data
      * @return array
      */
     private static function prepare_set_attributes($all_attributes, $key_prefix = 'attribute_', $index = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data.
      *
@@ -143,10 +119,8 @@ class WC_Meta_Box_Product_Data
      * @param WP_Post $post Post object.
      */
     public static function save($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save variation meta box data.
      *
@@ -154,8 +128,6 @@ class WC_Meta_Box_Product_Data
      * @param WP_Post $post Post object.
      */
     public static function save_variations($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
 }

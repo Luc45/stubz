@@ -20,20 +20,16 @@ class ProductTag
      * @param array $query_args Query args.
      */
     protected function set_block_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block attributes.
      *
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -41,10 +37,7 @@ class ProductTag
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
 }

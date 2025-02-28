@@ -13,10 +13,8 @@ class OrderAttribution
      * OrderAttribution constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the meta data for display.
      *
@@ -27,10 +25,8 @@ class OrderAttribution
      * @return void
      */
     public function format_meta_data(array &$meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the attribution data metabox for the order.
      *
@@ -41,8 +37,6 @@ class OrderAttribution
      * @return void
      */
     public function output(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
 }

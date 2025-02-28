@@ -15,30 +15,24 @@ abstract class ActionScheduler_Store_Deprecated
      * @param int $action_id The ID of the action.
      */
     public function mark_failed_fetch_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add base hooks
      *
      * @since 2.2.6
      */
     protected static function hook()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove base hooks
      *
      * @since 2.2.6
      */
     protected static function unhook()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the site's local time.
      *
@@ -46,8 +40,6 @@ abstract class ActionScheduler_Store_Deprecated
      * @return DateTimeZone
      */
     protected function get_local_timezone()
-    {
-        // stub
-    }
-
+{
+}
 }

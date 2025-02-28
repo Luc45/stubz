@@ -106,10 +106,8 @@ class WC_Deprecated_Filter_Hooks
      * @param string $hook_name Hook name.
      */
     public function hook_in($hook_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the old hook is in-use, trigger it.
      *
@@ -120,10 +118,8 @@ class WC_Deprecated_Filter_Hooks
      * @return mixed
      */
     public function handle_deprecated_hook($new_hook, $old_hook, $new_callback_args, $return_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fire off a legacy hook with it's args.
      *
@@ -132,8 +128,6 @@ class WC_Deprecated_Filter_Hooks
      * @return mixed
      */
     protected function trigger_hook($old_hook, $new_callback_args)
-    {
-        // stub
-    }
-
+{
+}
 }

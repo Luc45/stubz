@@ -53,16 +53,14 @@ class BlockTemplateLogger
      *
      * @var array
      */
-    private $all_template_events = array (
-);
+    private $all_template_events = array();
 
     /**
      * Templates.
      *
      * @var array
      */
-    private $templates = array (
-);
+    private $templates = array();
 
     /**
      * Threshold severity.
@@ -75,28 +73,22 @@ class BlockTemplateLogger
      * Get the singleton instance.
      */
     public static function get_instance(): Automattic\WooCommerce\Internal\Admin\BlockTemplates\BlockTemplateLogger
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor.
      */
     protected function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all template events for a given template as a JSON like array.
      *
      * @param string $template_id Template ID.
      */
     public function template_events_to_json(string $template_id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all template events as a JSON like array.
      *
@@ -105,20 +97,16 @@ class BlockTemplateLogger
      * @return array The JSON.
      */
     private function to_json(array $template_events): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log all template events for a given template to the log file.
      *
      * @param string $template_id Template ID.
      */
     public function log_template_events_to_file(string $template_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Has the template events changed since the last time they were logged?
      *
@@ -126,20 +114,16 @@ class BlockTemplateLogger
      * @param string $events_hash Events hash.
      */
     private function has_template_events_changed(string $template_id, string $events_hash)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a hash for a given set of template events.
      *
      * @param array $template_events Template events.
      */
     private function generate_template_events_hash(array $template_events): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the template events hash for a given template.
      *
@@ -147,10 +131,8 @@ class BlockTemplateLogger
      * @param string $hash        Hash of template events.
      */
     private function set_template_events_log_hash(string $template_id, string $hash)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log an event.
      *
@@ -158,22 +140,17 @@ class BlockTemplateLogger
      * @param BlockInterface $block           Block.
      * @param array          $additional_info Additional info.
      */
-    private function log(string $event_type, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, $additional_info = array (
-))
-    {
-        // stub
-    }
-
+    private function log(string $event_type, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, $additional_info = array())
+{
+}
     /**
      * Should the logger handle a given level?
      *
      * @param int $level Level to check.
      */
     private function should_handle($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a template event.
      *
@@ -183,72 +160,56 @@ class BlockTemplateLogger
      * @param BlockInterface         $block           Block.
      * @param array                  $additional_info Additional info.
      */
-    private function add_template_event(array $event_type_info, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface $template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface $container, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, array $additional_info = array (
-))
-    {
-        // stub
-    }
-
+    private function add_template_event(array $event_type_info, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface $template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface $container, Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, array $additional_info = array())
+{
+}
     /**
      * Format a message for logging.
      *
      * @param string $message Message to log.
      * @param array  $info    Additional info to log.
      */
-    private function format_message(string $message, array $info = array (
-)): string
-    {
-        // stub
-    }
-
+    private function format_message(string $message, array $info = array()): string
+{
+}
     /**
      * Format info for logging.
      *
      * @param array $info Info to log.
      */
     private function format_info(array $info): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format an exception for logging.
      *
      * @param \Exception $exception Exception to format.
      */
     private function format_exception(Exception $exception): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format an exception trace for logging.
      *
      * @param array $trace Exception trace to format.
      */
     private function format_exception_trace(array $trace): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a block template for logging.
      *
      * @param BlockTemplateInterface $template Template to format.
      */
     private function format_template(Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface $template): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a block for logging.
      *
      * @param BlockInterface $block Block to format.
      */
     private function format_block(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block): string
-    {
-        // stub
-    }
-
+{
+}
 }

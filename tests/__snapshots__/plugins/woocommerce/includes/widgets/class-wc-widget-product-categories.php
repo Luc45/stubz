@@ -25,10 +25,8 @@ class WC_Widget_Product_Categories
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -37,8 +35,6 @@ class WC_Widget_Product_Categories
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
 }

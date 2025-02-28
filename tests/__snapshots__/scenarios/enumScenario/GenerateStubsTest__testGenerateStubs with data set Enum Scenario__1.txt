@@ -15,46 +15,34 @@ enum UserStatus
     public readonly string $value;
 
     public static function cases(): array
-    {
-        // stub
-    }
+{
+}
 
     public static function from(string|int $value): static
-    {
-        // stub
-    }
+{
+}
 
     public static function tryFrom(string|int $value): ?static
-    {
-        // stub
-    }
+{
+}
 
     public readonly string $name;
 
     public readonly string $value;
 
     public function label(): string
-    {
-        // stub
-    }
-
-    public static function cases(): array
-    {
-        // stub
-    }
-
-    public static function from(string|int $value): static
-    {
-        // stub
-    }
-
-    public static function tryFrom(string|int $value): static|null
-    {
-        // stub
-    }
-
+{
 }
-
+    public static function cases(): array
+{
+}
+    public static function from(string|int $value): static
+{
+}
+    public static function tryFrom(string|int $value): static|null
+{
+}
+}
 class User
 {
     public string $name;
@@ -62,13 +50,9 @@ class User
     public EnumExample\UserStatus $status;
 
     public function __construct(string $name, EnumExample\UserStatus $status)
-    {
-        // stub
-    }
-
+{
+}
     public function getStatusLabel(): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -40,20 +40,16 @@ class GenericQuery
      * @extends WC_Object_Query::_construct
      */
     public function __construct($args, $name = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Valid fields for Products report.
      *
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data from `report-{$name}` store, based on the current query vars.
      * Filters query vars through `woocommerce_analytics_{snake_case(name)}_query_args` filter.
@@ -62,8 +58,6 @@ class GenericQuery
      * @return mixed filtered results from the data store.
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

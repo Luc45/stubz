@@ -15,8 +15,7 @@ class Packages
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $packages = array (
-);
+    protected static $packages = array();
 
     /**
      * Array of package names and their main package classes.
@@ -52,28 +51,22 @@ class Packages
      * Static-only class.
      */
     private function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init the package loader.
      *
      * @since 3.7.0
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for WordPress init hook.
      */
     public static function on_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks a package exists by looking for it's directory.
      *
@@ -81,10 +74,8 @@ class Packages
      * @return boolean
      */
     public static function package_exists($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks a package exists by looking for it's directory.
      *
@@ -92,20 +83,16 @@ class Packages
      * @return boolean
      */
     public static function should_load_class($class_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets all merged, enabled packages.
      *
      * @return array
      */
     protected static function get_enabled_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a package is enabled.
      *
@@ -113,19 +100,15 @@ class Packages
      * @return boolean
      */
     public static function is_package_enabled($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare merged packages for initialization.
      * Especially useful when running actions early in the 'plugins_loaded' timeline.
      */
     public static function prepare_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deactivates merged feature plugins.
      *
@@ -135,20 +118,16 @@ class Packages
      * because it will be deactivated on the request that updates or activates WooCommerce.
      */
     protected static function deactivate_merged_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevent plugins already merged into WooCommerce core from getting activated as standalone plugins.
      *
      * @param string $plugin Plugin name.
      */
     public static function deactivate_merged_plugins($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark merged plugins as pending update.
      * This is required for correctly displaying maintenance notices.
@@ -156,10 +135,8 @@ class Packages
      * @param array $plugins Plugins list.
      */
     public static function mark_merged_plugins_as_pending_update($plugins)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Displays a maintenance notice next to merged plugins, to inform users
      * that the plugin functionality is now offered by WooCommerce core.
@@ -169,28 +146,22 @@ class Packages
      * @param string $plugin_file Plugin file.
      */
     public static function display_notice_for_merged_plugins($plugin_file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads packages after plugins_loaded hook.
      *
      * Each package should include an init file which loads the package so it can be used by core.
      */
     protected static function initialize_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If a package is missing, add an admin notice.
      *
      * @param string $package Package name.
      */
     protected static function missing_package($package)
-    {
-        // stub
-    }
-
+{
+}
 }

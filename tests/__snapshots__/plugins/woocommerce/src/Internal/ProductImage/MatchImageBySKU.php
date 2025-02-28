@@ -18,18 +18,14 @@ class MatchImageBySKU
      * MatchImageBySKU constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the hooks used by the class.
      */
     private function init_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is this feature enabled.
      *
@@ -37,10 +33,8 @@ class MatchImageBySKU
      * @return bool
      */
     public function is_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for 'woocommerce_get_settings_products', adds the settings related to the product image SKU matching table.
      *
@@ -51,8 +45,6 @@ class MatchImageBySKU
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_product_image_sku_setting(array $settings, string $section_id): array
-    {
-        // stub
-    }
-
+{
+}
 }

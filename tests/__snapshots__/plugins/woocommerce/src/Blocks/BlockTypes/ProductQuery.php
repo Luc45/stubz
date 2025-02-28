@@ -36,8 +36,7 @@ class ProductQuery
      *
      * @var array
      */
-    protected $attributes_filter_query_args = array (
-);
+    protected $attributes_filter_query_args = array();
 
     /** This is a feature flag to enable the custom inherit Global Query implementation.
      * This is not intended to be a permanent feature flag, but rather a temporary.
@@ -63,10 +62,8 @@ class ProductQuery
      * - Hook into pre_render_block to update the query.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Post Template support for grid view was introduced in Gutenberg 16 / WordPress 6.3
      * Fixed in:
@@ -74,10 +71,8 @@ class ProductQuery
      * - https://github.com/woocommerce/woocommerce-blocks/pull/10360
      */
     private function check_if_post_template_has_support_for_grid_view()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -85,12 +80,9 @@ class ProductQuery
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Check if a given block
      *
@@ -98,10 +90,8 @@ class ProductQuery
      * @return boolean
      */
     public static function is_woocommerce_variation($parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueues the variation styles when rendering the Product Query variation.
      *
@@ -111,10 +101,8 @@ class ProductQuery
      * @return string The block content.
      */
     public function enqueue_styles(string $block_content, array $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the query for the product query block.
      *
@@ -122,10 +110,8 @@ class ProductQuery
      * @param array       $parsed_block The block being rendered.
      */
     public function update_query($pre_render, $parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge tax_queries from various queries.
      *
@@ -133,10 +119,8 @@ class ProductQuery
      * @return array
      */
     private function merge_tax_queries(...$queries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the query for the product query block in Editor.
      *
@@ -144,10 +128,8 @@ class ProductQuery
      * @param WP_REST_Request $request Request.
      */
     public function update_rest_query($args, $request): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a custom query based on attributes, filters and global WP_Query.
      *
@@ -156,10 +138,8 @@ class ProductQuery
      * @return array
      */
     public function build_query($query, $block = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge in the first parameter the keys "post_in", "meta_query" and "tax_query" of the second parameter.
      *
@@ -167,10 +147,8 @@ class ProductQuery
      * @return array
      */
     private function merge_queries(...$queries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extends allowed `collection_params` for the REST API
      *
@@ -182,20 +160,16 @@ class ProductQuery
      * @return array
      */
     public function extend_rest_query_allowed_params($params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query for on sale products.
      *
      * @return array
      */
     private function get_on_sale_products_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return query params to support custom sort values
      *
@@ -204,10 +178,8 @@ class ProductQuery
      * @return array
      */
     private function get_custom_orderby_query($orderby)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply the query only to a subset of products
      *
@@ -217,10 +189,8 @@ class ProductQuery
      * @return array
      */
     private function filter_query_to_only_include_ids($query, $ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the `tax_query` for the requested attributes
      *
@@ -228,12 +198,9 @@ class ProductQuery
      *
      * @return array
      */
-    private function get_product_attributes_query($attributes = array (
-))
-    {
-        // stub
-    }
-
+    private function get_product_attributes_query($attributes = array())
+{
+}
     /**
      * Return a query for products depending on their stock status.
      *
@@ -241,10 +208,8 @@ class ProductQuery
      * @return array
      */
     private function get_stock_status_query($stock_statii)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query for product visibility depending on their stock status.
      *
@@ -253,20 +218,16 @@ class ProductQuery
      * @return array Tax query for product visibility.
      */
     private function get_product_visibility_query($stock_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the query vars that are used by filter blocks.
      *
      * @return array
      */
     private function get_query_vars_from_filter_blocks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the query vars that are used by filter blocks.
      *
@@ -274,10 +235,8 @@ class ProductQuery
      * @return array
      */
     public function set_query_vars($public_query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the query args related to the filter by attributes block.
      *
@@ -296,20 +255,16 @@ class ProductQuery
      * )
      */
     private function get_filter_by_attributes_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return queries that are generated by query args.
      *
      * @return array
      */
     private function get_queries_by_applied_filters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return queries that are generated by attributes
      *
@@ -317,50 +272,40 @@ class ProductQuery
      * @return array
      */
     private function get_queries_by_custom_attributes($parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by price.
      *
      * @return array
      */
     private function get_filter_by_price_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by attributes.
      *
      * @return array
      */
     private function get_filter_by_attributes_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by stock status.
      *
      * @return array
      */
     private function get_filter_by_stock_status_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return or initialize $valid_query_vars.
      *
      * @return array
      */
     private function get_valid_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge two array recursively but replace the non-array values instead of
      * merging them. The merging strategy:
@@ -410,10 +355,8 @@ class ProductQuery
      * @param array $new  Second array.
      */
     private function array_merge_recursive_replace_non_array_properties($base, $new)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product-related query variables from the global query.
      *
@@ -422,20 +365,16 @@ class ProductQuery
      * @return array
      */
     private function get_global_query($parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query that filters products by rating.
      *
      * @return array
      */
     private function get_filter_by_rating_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query to filter products by taxonomies (product categories, product tags, etc.)
      *
@@ -459,10 +398,8 @@ class ProductQuery
      * @return array Query to filter products by taxonomies.
      */
     private function get_filter_by_taxonomies_query($query): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the keyword filter from the given query.
      *
@@ -470,8 +407,6 @@ class ProductQuery
      * @return array The keyword filter, or an empty array if none is found.
      */
     private function get_filter_by_keyword_query($query): array
-    {
-        // stub
-    }
-
+{
+}
 }

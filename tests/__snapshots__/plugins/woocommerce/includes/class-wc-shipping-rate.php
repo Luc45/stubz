@@ -19,8 +19,7 @@ class WC_Shipping_Rate
   'label' => '',
   'cost' => 0,
   'taxes' => 
-  array (
-  ),
+  array(),
   'tax_status' => 'taxable',
   'description' => '',
   'delivery_time' => '',
@@ -32,8 +31,7 @@ class WC_Shipping_Rate
      * @since 2.6.0
      * @var   array
      */
-    protected $meta_data = array (
-);
+    protected $meta_data = array();
 
     /**
      * Constructor.
@@ -48,12 +46,9 @@ class WC_Shipping_Rate
      * @param string  $description   Shipping rate description.
      * @param string  $delivery_time Shipping rate delivery time.
      */
-    public function __construct($id = '', $label = '', $cost = 0, $taxes = array (
-), $method_id = '', $instance_id = 0, $tax_status = 'taxable', $description = '', $delivery_time = '')
-    {
-        // stub
-    }
-
+    public function __construct($id = '', $label = '', $cost = 0, $taxes = array(), $method_id = '', $instance_id = 0, $tax_status = 'taxable', $description = '', $delivery_time = '')
+{
+}
     /**
      * Magic methods to support direct access to props.
      *
@@ -62,10 +57,8 @@ class WC_Shipping_Rate
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic methods to support direct access to props.
      *
@@ -74,10 +67,8 @@ class WC_Shipping_Rate
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic methods to support direct access to props.
      *
@@ -86,10 +77,8 @@ class WC_Shipping_Rate
      * @param mixed  $value Value.
      */
     public function __set($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set ID for the rate. This is usually a combination of the method and instance IDs.
      *
@@ -97,10 +86,8 @@ class WC_Shipping_Rate
      * @param string $id Shipping rate ID.
      */
     public function set_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping method ID the rate belongs to.
      *
@@ -108,10 +95,8 @@ class WC_Shipping_Rate
      * @param string $method_id Shipping method ID.
      */
     public function set_method_id($method_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set instance ID the rate belongs to.
      *
@@ -119,10 +104,8 @@ class WC_Shipping_Rate
      * @param int $instance_id Instance ID.
      */
     public function set_instance_id($instance_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate label.
      *
@@ -130,10 +113,8 @@ class WC_Shipping_Rate
      * @param string $label Shipping rate label.
      */
     public function set_label($label)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate cost.
      *
@@ -142,10 +123,8 @@ class WC_Shipping_Rate
      * @param string $cost Shipping rate cost.
      */
     public function set_cost($cost)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate taxes.
      *
@@ -153,10 +132,8 @@ class WC_Shipping_Rate
      * @param array $taxes List of taxes applied to shipping rate.
      */
     public function set_taxes($taxes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax status.
      *
@@ -164,10 +141,8 @@ class WC_Shipping_Rate
      * @param string $value Tax status.
      */
     public function set_tax_status($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate description.
      *
@@ -175,10 +150,8 @@ class WC_Shipping_Rate
      * @param string $description Shipping rate description.
      */
     public function set_description($description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate delivery time.
      *
@@ -186,10 +159,8 @@ class WC_Shipping_Rate
      * @param string $delivery_time Shipping rate delivery time.
      */
     public function set_delivery_time($delivery_time)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get ID for the rate. This is usually a combination of the method and instance IDs.
      *
@@ -197,10 +168,8 @@ class WC_Shipping_Rate
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping method ID the rate belongs to.
      *
@@ -208,10 +177,8 @@ class WC_Shipping_Rate
      * @return string
      */
     public function get_method_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get instance ID the rate belongs to.
      *
@@ -219,20 +186,16 @@ class WC_Shipping_Rate
      * @return int
      */
     public function get_instance_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate label.
      *
      * @return string
      */
     public function get_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate cost.
      *
@@ -240,10 +203,8 @@ class WC_Shipping_Rate
      * @return string
      */
     public function get_cost()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate taxes.
      *
@@ -251,30 +212,24 @@ class WC_Shipping_Rate
      * @return array
      */
     public function get_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping tax.
      *
      * @return float
      */
     public function get_shipping_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax status.
      *
      * @return string
      */
     public function get_tax_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate description.
      *
@@ -282,10 +237,8 @@ class WC_Shipping_Rate
      * @return string
      */
     public function get_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate delivery time.
      *
@@ -293,10 +246,8 @@ class WC_Shipping_Rate
      * @return string
      */
     public function get_delivery_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add some meta data for this rate.
      *
@@ -305,10 +256,8 @@ class WC_Shipping_Rate
      * @param string $value Value.
      */
     public function add_meta_data($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all meta data for this rate.
      *
@@ -316,8 +265,6 @@ class WC_Shipping_Rate
      * @return array
      */
     public function get_meta_data()
-    {
-        // stub
-    }
-
+{
+}
 }

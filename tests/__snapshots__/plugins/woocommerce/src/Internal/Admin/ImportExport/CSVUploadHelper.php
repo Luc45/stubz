@@ -15,10 +15,8 @@ class CSVUploadHelper
      * @return string
      */
     protected function get_import_subdir_name(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the full path to the CSV import directory within the uploads folder.
      * It will attempt to create the directory if it doesn't exist.
@@ -28,10 +26,8 @@ class CSVUploadHelper
      * @throws \Exception In case the upload directory doesn't exits or can't be created.
      */
     public function get_import_dir(bool $create = true): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles a CSV file upload.
      *
@@ -48,10 +44,8 @@ class CSVUploadHelper
      * @throws \Exception In case of error.
      */
     public function handle_csv_upload(string $import_type, string $files_index = 'import', array|null $allowed_mime_types = null): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooked onto 'upload_dir' to override the default upload directory for a CSV upload.
      *
@@ -61,10 +55,8 @@ class CSVUploadHelper
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function override_upload_dir($uploads): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a random string to the name of an uploaded CSV file to make it less discoverable. Hooked onto 'wp_unique_filename'.
      *
@@ -75,10 +67,8 @@ class CSVUploadHelper
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function override_unique_filename(string $filename, string $ext): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * `wp_import_handle_upload()` appends .txt to any file name. This function is hooked onto 'wp_handle_upload_prefilter'
      * to remove those extra characters.
@@ -89,8 +79,6 @@ class CSVUploadHelper
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function remove_txt_from_uploaded_file(array $file): array
-    {
-        // stub
-    }
-
+{
+}
 }

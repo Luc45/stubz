@@ -51,20 +51,16 @@ class CheckoutSchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checkout schema properties.
      *
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the response for checkout.
      *
@@ -72,10 +68,8 @@ class CheckoutSchema
      * @return array
      */
     public function get_item_response($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the checkout response based on the current order and any payments.
      *
@@ -84,10 +78,8 @@ class CheckoutSchema
      * @return array
      */
     protected function get_checkout_response(WC_Order $order, Automattic\WooCommerce\StoreApi\Payments\PaymentResult|null $payment_result = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This prepares the payment details for the response so it's following the
      * schema where it's an array of objects.
@@ -98,10 +90,8 @@ class CheckoutSchema
      *               as distinct properties.
      */
     protected function prepare_payment_details_for_response(array $payment_details)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the additional fields response.
      *
@@ -109,20 +99,16 @@ class CheckoutSchema
      * @return array
      */
     protected function get_additional_fields_response(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for additional fields.
      *
      * @return array
      */
     protected function get_additional_fields_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the schema for additional fields.
      *
@@ -130,10 +116,8 @@ class CheckoutSchema
      * @return array
      */
     protected function generate_additional_fields_schema(...$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if any additional field is required, so that the parent item is required as well.
      *
@@ -141,10 +125,8 @@ class CheckoutSchema
      * @return bool
      */
     protected function schema_has_required_property($additional_fields_schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize and format additional fields object.
      *
@@ -152,10 +134,8 @@ class CheckoutSchema
      * @return array
      */
     public function sanitize_additional_fields($fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate additional fields object.
      *
@@ -166,8 +146,6 @@ class CheckoutSchema
      * @return true|\WP_Error
      */
     public function validate_additional_fields($fields, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

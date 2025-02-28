@@ -15,8 +15,6 @@ class WooCommerceSubscriptions
      * @return Note|null
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

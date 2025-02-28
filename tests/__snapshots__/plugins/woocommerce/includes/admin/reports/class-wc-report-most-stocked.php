@@ -12,8 +12,6 @@ class WC_Report_Most_Stocked
      * @param int $per_page How many results to show per page.
      */
     public function get_items($current_page, $per_page)
-    {
-        // stub
-    }
-
+{
+}
 }

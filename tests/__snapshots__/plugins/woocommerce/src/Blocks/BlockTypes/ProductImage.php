@@ -28,26 +28,20 @@ class ProductImage
      * @return array
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * It is necessary to register and enqueues assets during the render phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block's attributes.
      *
@@ -55,10 +49,8 @@ class ProductImage
      * @return array  Block attributes merged with defaults.
      */
     private function parse_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render on Sale Badge.
      *
@@ -67,10 +59,8 @@ class ProductImage
      * @return string
      */
     private function render_on_sale_badge($product, $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render anchor.
      *
@@ -81,10 +71,8 @@ class ProductImage
      * @return string
      */
     private function render_anchor($product, $on_sale_badge, $product_image, $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render Image.
      *
@@ -93,10 +81,8 @@ class ProductImage
      * @return string
      */
     private function render_image($product, $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -104,12 +90,9 @@ class ProductImage
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Include and render the block
      *
@@ -119,8 +102,6 @@ class ProductImage
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

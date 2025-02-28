@@ -24,10 +24,8 @@ class WC_REST_Orders_Controller
      * @return bool
      */
     protected function calculate_coupons($request, $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order for create or update.
      *
@@ -37,10 +35,8 @@ class WC_REST_Orders_Controller
      * @return WP_Error|WC_Data
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update a line item, overridden to add COGS data as needed.
      *
@@ -51,10 +47,8 @@ class WC_REST_Orders_Controller
      * @throws WC_REST_Exception Invalid data, server error.
      */
     protected function prepare_line_items($posted, $action = 'create', $item = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper method to remove order items.
      * When updating, the item ID provided is checked to ensure it is associated
@@ -68,10 +62,8 @@ class WC_REST_Orders_Controller
      * @throws WC_REST_Exception If item ID is not associated with order.
      */
     protected function remove_item(WC_Order $order, string $item_type, int $item_id): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an object data.
      *
@@ -82,10 +74,8 @@ class WC_REST_Orders_Controller
      * @return WC_Data|WP_Error
      */
     protected function save_object($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -94,20 +84,16 @@ class WC_REST_Orders_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Order's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the Cost of Goods Sold related fields to the schema.
      *
@@ -115,20 +101,16 @@ class WC_REST_Orders_Controller
      * @return array The updated schema.
      */
     private function add_cogs_related_schema(array $schema): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to prepare a single order object for response
      * (doesn't fire hooks, execute rest_ensure_response, or add links).
@@ -139,8 +121,6 @@ class WC_REST_Orders_Controller
      * @since  9.5.0
      */
     protected function prepare_object_for_response_core($order, $request): array
-    {
-        // stub
-    }
-
+{
+}
 }

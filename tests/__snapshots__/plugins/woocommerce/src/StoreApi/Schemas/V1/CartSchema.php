@@ -79,20 +79,16 @@ class CartSchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cart schema properties.
      *
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a woo cart into an object suitable for the response.
      *
@@ -100,10 +96,8 @@ class CartSchema
      * @return array
      */
     public function get_item_response($cart)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total data.
      *
@@ -111,10 +105,8 @@ class CartSchema
      * @return array
      */
     protected function get_totals($cart)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax lines from the cart and format to match schema.
      *
@@ -122,10 +114,8 @@ class CartSchema
      * @return array
      */
     protected function get_tax_lines($cart)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cart validation errors.
      *
@@ -133,8 +123,6 @@ class CartSchema
      * @return array
      */
     protected function get_cart_errors($cart)
-    {
-        // stub
-    }
-
+{
+}
 }

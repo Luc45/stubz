@@ -44,10 +44,8 @@ class HtmlSanitizer
      * @return string
      */
     public function styled_post_content(string $html): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes the HTML according to the provided rules.
      *
@@ -91,10 +89,8 @@ class HtmlSanitizer
     ),
   ),
 )): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Applies callbacks used to process the string before and after wp_kses().
      *
@@ -108,8 +104,6 @@ class HtmlSanitizer
      * @return string
      */
     private function apply_string_callbacks(array $callbacks, string $string): string
-    {
-        // stub
-    }
-
+{
+}
 }

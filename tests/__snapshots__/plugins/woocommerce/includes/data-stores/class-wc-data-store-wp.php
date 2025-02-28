@@ -30,8 +30,7 @@ class WC_Data_Store_WP
      *
      * @var array
      */
-    protected $internal_meta_keys = array (
-);
+    protected $internal_meta_keys = array();
 
     /**
      * Meta data which should exist in the DB, even if empty.
@@ -40,8 +39,7 @@ class WC_Data_Store_WP
      *
      * @var array
      */
-    protected $must_exist_meta_keys = array (
-);
+    protected $must_exist_meta_keys = array();
 
     /**
      * Get and store terms from a taxonomy.
@@ -52,10 +50,8 @@ class WC_Data_Store_WP
      * @return array of terms
      */
     protected function get_term_ids($object, $taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of meta for an object.
      *
@@ -64,10 +60,8 @@ class WC_Data_Store_WP
      * @return array
      */
     public function read_meta(&$object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to filter internal meta keys from all meta data rows for the object.
      *
@@ -79,10 +73,8 @@ class WC_Data_Store_WP
      * @return mixed|void
      */
     public function filter_raw_meta_data(&$object, $raw_meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes meta based on meta ID.
      *
@@ -91,10 +83,8 @@ class WC_Data_Store_WP
      * @param  stdClass $meta (containing at least ->id).
      */
     public function delete_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add new piece of meta.
      *
@@ -104,10 +94,8 @@ class WC_Data_Store_WP
      * @return int meta ID
      */
     public function add_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update meta.
      *
@@ -116,10 +104,8 @@ class WC_Data_Store_WP
      * @param  stdClass $meta (containing ->id, ->key and ->value).
      */
     public function update_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Table structure is slightly different between meta types, this function will return what we need to know.
      *
@@ -127,10 +113,8 @@ class WC_Data_Store_WP
      * @return array Array elements: table, object_id_field, meta_id_field
      */
     protected function get_db_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Internal meta keys we don't want exposed as part of meta_data. This is in
      * addition to all data props with _ prefix.
@@ -141,10 +125,8 @@ class WC_Data_Store_WP
      * @return string
      */
     protected function prefix_key($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback to remove unwanted meta data.
      *
@@ -152,10 +134,8 @@ class WC_Data_Store_WP
      * @return bool
      */
     protected function exclude_internal_meta_keys($meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a list of props and meta keys that need updated based on change state
      * or if they are present in the database or not.
@@ -166,10 +146,8 @@ class WC_Data_Store_WP
      * @return array                        A mapping of meta keys => prop names, filtered by ones that should be updated.
      */
     protected function get_props_to_update($object, $meta_key_to_props, $meta_type = 'post')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update meta data in, or delete it from, the database.
      *
@@ -188,10 +166,8 @@ class WC_Data_Store_WP
      * @return bool True if updated/deleted.
      */
     protected function update_or_delete_post_meta($object, $meta_key, $meta_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get valid WP_Query args from a WC_Object_Query's query variables.
      *
@@ -200,10 +176,8 @@ class WC_Data_Store_WP
      * @return array
      */
     protected function get_wp_query_args($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map a valid date query var to WP_Query arguments.
      * Valid date formats: YYYY-MM-DD or timestamp, possibly combined with an operator from $valid_operators.
@@ -215,12 +189,9 @@ class WC_Data_Store_WP
      * @param array  $wp_query_args WP_Query args.
      * @return array Modified $wp_query_args
      */
-    public function parse_date_for_wp_query($query_var, $key, $wp_query_args = array (
-))
-    {
-        // stub
-    }
-
+    public function parse_date_for_wp_query($query_var, $key, $wp_query_args = array())
+{
+}
     /**
      * Return list of internal meta keys.
      *
@@ -228,10 +199,8 @@ class WC_Data_Store_WP
      * @return array
      */
     public function get_internal_meta_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the terms are suitable for searching.
      *
@@ -244,10 +213,8 @@ class WC_Data_Store_WP
      * @return array Terms that are not stopwords.
      */
     protected function get_valid_search_terms($terms)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve stopwords used when parsing search terms.
      *
@@ -255,10 +222,8 @@ class WC_Data_Store_WP
      * @return array Stopwords.
      */
     protected function get_search_stopwords()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data to save to a lookup table.
      *
@@ -268,10 +233,8 @@ class WC_Data_Store_WP
      * @return array
      */
     protected function get_data_for_lookup_table($id, $table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get primary key name for lookup table.
      *
@@ -280,10 +243,8 @@ class WC_Data_Store_WP
      * @return string
      */
     protected function get_primary_key_for_lookup_table($table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a lookup table for an object.
      *
@@ -294,10 +255,8 @@ class WC_Data_Store_WP
      * @return NULL
      */
     protected function update_lookup_table($id, $table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete lookup table data for an ID.
      *
@@ -306,10 +265,8 @@ class WC_Data_Store_WP
      * @param string $table Lookup table name.
      */
     public function delete_from_lookup_table($id, $table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts a WP post date string into a timestamp.
      *
@@ -319,8 +276,6 @@ class WC_Data_Store_WP
      * @return int|null The date string converted to a timestamp or null.
      */
     protected function string_to_timestamp($time_string)
-    {
-        // stub
-    }
-
+{
+}
 }

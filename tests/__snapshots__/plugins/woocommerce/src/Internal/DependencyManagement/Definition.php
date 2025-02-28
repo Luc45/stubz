@@ -17,10 +17,8 @@ class Definition
      * @return object
      */
     protected function resolveClass(string $concrete)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invoke methods on resolved instance, including 'init'.
      *
@@ -29,10 +27,8 @@ class Definition
      * @return object
      */
     protected function invokeMethods($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invoke the 'init' method on a resolved object.
      *
@@ -43,17 +39,13 @@ class Definition
      * @return void
      */
     private function invokeInit($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forget the cached resolved object, so the next time it's requested
      * it will be resolved again.
      */
     public function forgetResolved()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -25,28 +25,22 @@ class ReportExporter
      * @return array
      */
     public static function get_scheduler_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add action dependencies.
      *
      * @return array
      */
     public static function get_dependencies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook in action methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queue up actions for a full report export.
      *
@@ -56,12 +50,9 @@ class ReportExporter
      * @param bool   $send_email Optional. Send an email when the export is complete.
      * @return int Number of items to export.
      */
-    public static function queue_report_export($export_id, $report_type, $report_args = array (
-), $send_email = false)
-    {
-        // stub
-    }
-
+    public static function queue_report_export($export_id, $report_type, $report_args = array(), $send_email = false)
+{
+}
     /**
      * Process a report export action.
      *
@@ -72,10 +63,8 @@ class ReportExporter
      * @return void
      */
     public static function export_report($page_number, $export_id, $report_type, $report_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a key to reference an export status.
      *
@@ -84,10 +73,8 @@ class ReportExporter
      * @return string Status key.
      */
     protected static function get_status_key($report_type, $export_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the completion percentage of a report export.
      *
@@ -97,10 +84,8 @@ class ReportExporter
      * @return void
      */
     public static function update_export_percentage_complete($report_type, $export_id, $percentage)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the completion percentage of a report export.
      *
@@ -109,18 +94,14 @@ class ReportExporter
      * @return bool|int Completion percentage, or false if export not found.
      */
     public static function get_export_percentage_complete($report_type, $export_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serve the export file.
      */
     public static function download_export_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process a report export email action.
      *
@@ -130,8 +111,6 @@ class ReportExporter
      * @return void
      */
     public static function email_report_download_link($user_id, $export_id, $report_type)
-    {
-        // stub
-    }
-
+{
+}
 }

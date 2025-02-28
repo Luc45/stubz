@@ -25,8 +25,6 @@ class FeatureGating
      * @param string $environment Hardcoded environment value. Useful for tests.
      */
     public function __construct($environment = 'unset')
-    {
-        // stub
-    }
-
+{
+}
 }

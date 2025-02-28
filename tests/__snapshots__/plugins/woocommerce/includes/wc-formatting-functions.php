@@ -9,9 +9,7 @@
  */
 function wc_string_to_bool($string)
 {
-    // stub
 }
-
 /**
  * Converts a bool to a 'yes' or 'no'.
  *
@@ -21,9 +19,7 @@ function wc_string_to_bool($string)
  */
 function wc_bool_to_string($bool)
 {
-    // stub
 }
-
 /**
  * Explode a string into an array by $delimiter and remove empty values.
  *
@@ -34,9 +30,7 @@ function wc_bool_to_string($bool)
  */
 function wc_string_to_array($string, $delimiter = ',')
 {
-    // stub
 }
-
 /**
  * Sanitize taxonomy names. Slug format (no spaces, lowercase).
  * Urldecode is used to reverse munging of UTF8 characters.
@@ -46,9 +40,7 @@ function wc_string_to_array($string, $delimiter = ',')
  */
 function wc_sanitize_taxonomy_name($taxonomy)
 {
-    // stub
 }
-
 /**
  * Sanitize permalink values before insertion into DB.
  *
@@ -60,9 +52,7 @@ function wc_sanitize_taxonomy_name($taxonomy)
  */
 function wc_sanitize_permalink($value)
 {
-    // stub
 }
-
 /**
  * Gets the filename part of a download URL.
  *
@@ -71,9 +61,7 @@ function wc_sanitize_permalink($value)
  */
 function wc_get_filename_from_url($file_url)
 {
-    // stub
 }
-
 /**
  * Normalise dimensions, unify to cm then convert to wanted unit value.
  *
@@ -91,9 +79,7 @@ function wc_get_filename_from_url($file_url)
  */
 function wc_get_dimension($dimension, $to_unit, $from_unit = '')
 {
-    // stub
 }
-
 /**
  * Normalise weights, unify to kg then convert to wanted unit value.
  *
@@ -111,9 +97,7 @@ function wc_get_dimension($dimension, $to_unit, $from_unit = '')
  */
 function wc_get_weight($weight, $to_unit, $from_unit = '')
 {
-    // stub
 }
-
 /**
  * Trim trailing zeros off prices.
  *
@@ -122,9 +106,7 @@ function wc_get_weight($weight, $to_unit, $from_unit = '')
  */
 function wc_trim_zeros($price)
 {
-    // stub
 }
-
 /**
  * Round a tax amount.
  *
@@ -134,9 +116,7 @@ function wc_trim_zeros($price)
  */
 function wc_round_tax_total($value, $precision = null)
 {
-    // stub
 }
-
 /**
  * Round half down in PHP 5.2.
  *
@@ -147,9 +127,7 @@ function wc_round_tax_total($value, $precision = null)
  */
 function wc_legacy_round_half_down($value, $precision)
 {
-    // stub
 }
-
 /**
  * Make a refund total negative.
  *
@@ -159,9 +137,7 @@ function wc_legacy_round_half_down($value, $precision)
  */
 function wc_format_refund_total($amount)
 {
-    // stub
 }
-
 /**
  * Format decimal numbers ready for DB storage.
  *
@@ -176,9 +152,7 @@ function wc_format_refund_total($amount)
  */
 function wc_format_decimal($number, $dp = false, $trim_zeros = false)
 {
-    // stub
 }
-
 /**
  * Convert a float to a string without locale formatting which PHP adds when changing floats to strings.
  *
@@ -187,9 +161,7 @@ function wc_format_decimal($number, $dp = false, $trim_zeros = false)
  */
 function wc_float_to_string($float)
 {
-    // stub
 }
-
 /**
  * Format a price with WC Currency Locale settings.
  *
@@ -198,9 +170,7 @@ function wc_float_to_string($float)
  */
 function wc_format_localized_price($value)
 {
-    // stub
 }
-
 /**
  * Format a decimal with the decimal separator for prices or PHP Locale settings.
  *
@@ -209,9 +179,7 @@ function wc_format_localized_price($value)
  */
 function wc_format_localized_decimal($value)
 {
-    // stub
 }
-
 /**
  * Format a coupon code.
  *
@@ -221,9 +189,7 @@ function wc_format_localized_decimal($value)
  */
 function wc_format_coupon_code($value)
 {
-    // stub
 }
-
 /**
  * Sanitize a coupon code.
  *
@@ -237,9 +203,7 @@ function wc_format_coupon_code($value)
  */
 function wc_sanitize_coupon_code($value)
 {
-    // stub
 }
-
 /**
  * Clean variables using sanitize_text_field. Arrays are cleaned recursively.
  * Non-scalar values are ignored.
@@ -249,9 +213,7 @@ function wc_sanitize_coupon_code($value)
  */
 function wc_clean($var)
 {
-    // stub
 }
-
 /**
  * Function wp_check_invalid_utf8 with recursive array support.
  *
@@ -260,9 +222,7 @@ function wc_clean($var)
  */
 function wc_check_invalid_utf8($var)
 {
-    // stub
 }
-
 /**
  * Run wc_clean over posted textarea but maintain line breaks.
  *
@@ -272,9 +232,7 @@ function wc_check_invalid_utf8($var)
  */
 function wc_sanitize_textarea($var)
 {
-    // stub
 }
-
 /**
  * Sanitize a string destined to be a tooltip.
  *
@@ -284,9 +242,7 @@ function wc_sanitize_textarea($var)
  */
 function wc_sanitize_tooltip($var)
 {
-    // stub
 }
-
 /**
  * Merge two arrays.
  *
@@ -296,9 +252,7 @@ function wc_sanitize_tooltip($var)
  */
 function wc_array_overlay($a1, $a2)
 {
-    // stub
 }
-
 /**
  * Formats a stock amount by running it through a filter.
  *
@@ -307,9 +261,7 @@ function wc_array_overlay($a1, $a2)
  */
 function wc_stock_amount($amount)
 {
-    // stub
 }
-
 /**
  * Get the price format depending on the currency position.
  *
@@ -317,9 +269,7 @@ function wc_stock_amount($amount)
  */
 function get_woocommerce_price_format()
 {
-    // stub
 }
-
 /**
  * Return the thousand separator for prices.
  *
@@ -328,9 +278,7 @@ function get_woocommerce_price_format()
  */
 function wc_get_price_thousand_separator()
 {
-    // stub
 }
-
 /**
  * Return the decimal separator for prices.
  *
@@ -339,9 +287,7 @@ function wc_get_price_thousand_separator()
  */
 function wc_get_price_decimal_separator()
 {
-    // stub
 }
-
 /**
  * Return the number of decimals after the decimal point.
  *
@@ -350,9 +296,7 @@ function wc_get_price_decimal_separator()
  */
 function wc_get_price_decimals()
 {
-    // stub
 }
-
 /**
  * Format the price with a currency symbol.
  *
@@ -376,12 +320,9 @@ function wc_get_price_decimals()
  * }
  * @return string
  */
-function wc_price($price, $args = array (
-))
+function wc_price($price, $args = array())
 {
-    // stub
 }
-
 /**
  * Notation to numbers.
  *
@@ -392,9 +333,7 @@ function wc_price($price, $args = array (
  */
 function wc_let_to_num($size)
 {
-    // stub
 }
-
 /**
  * WooCommerce Date Format - Allows to change date format for everything WooCommerce.
  *
@@ -402,9 +341,7 @@ function wc_let_to_num($size)
  */
 function wc_date_format()
 {
-    // stub
 }
-
 /**
  * WooCommerce Time Format - Allows to change time format for everything WooCommerce.
  *
@@ -412,9 +349,7 @@ function wc_date_format()
  */
 function wc_time_format()
 {
-    // stub
 }
-
 /**
  * Convert mysql datetime to PHP timestamp, forcing UTC. Wrapper for strtotime.
  *
@@ -427,9 +362,7 @@ function wc_time_format()
  */
 function wc_string_to_timestamp($time_string, $from_timestamp = null)
 {
-    // stub
 }
-
 /**
  * Convert a date string to a WC_DateTime.
  *
@@ -439,9 +372,7 @@ function wc_string_to_timestamp($time_string, $from_timestamp = null)
  */
 function wc_string_to_datetime($time_string)
 {
-    // stub
 }
-
 /**
  * WooCommerce Timezone - helper to retrieve the timezone string for a site until.
  * a WP core method exists (see https://core.trac.wordpress.org/ticket/24730).
@@ -453,9 +384,7 @@ function wc_string_to_datetime($time_string)
  */
 function wc_timezone_string()
 {
-    // stub
 }
-
 /**
  * Get timezone offset in seconds.
  *
@@ -464,9 +393,7 @@ function wc_timezone_string()
  */
 function wc_timezone_offset()
 {
-    // stub
 }
-
 /**
  * Callback which can flatten post meta (gets the first value if it's an array).
  *
@@ -476,9 +403,7 @@ function wc_timezone_offset()
  */
 function wc_flatten_meta_callback($value)
 {
-    // stub
 }
-
 /**
  * Convert RGB to HEX.
  *
@@ -488,9 +413,7 @@ function wc_flatten_meta_callback($value)
  */
 function wc_rgb_from_hex($color)
 {
-    // stub
 }
-
 /**
  * Make HEX color darker.
  *
@@ -501,9 +424,7 @@ function wc_rgb_from_hex($color)
  */
 function wc_hex_darker($color, $factor = 30)
 {
-    // stub
 }
-
 /**
  * Make HEX color lighter.
  *
@@ -514,9 +435,7 @@ function wc_hex_darker($color, $factor = 30)
  */
 function wc_hex_lighter($color, $factor = 30)
 {
-    // stub
 }
-
 /**
  * Determine whether a hex color is light.
  *
@@ -525,9 +444,7 @@ function wc_hex_lighter($color, $factor = 30)
  */
 function wc_hex_is_light($color)
 {
-    // stub
 }
-
 /**
  * Detect if we should use a light or dark color on a background color.
  *
@@ -540,9 +457,7 @@ function wc_hex_is_light($color)
  */
 function wc_light_or_dark($color, $dark = '#000000', $light = '#FFFFFF')
 {
-    // stub
 }
-
 /**
  * Format string as hex.
  *
@@ -551,9 +466,7 @@ function wc_light_or_dark($color, $dark = '#000000', $light = '#FFFFFF')
  */
 function wc_format_hex($hex)
 {
-    // stub
 }
-
 /**
  * Format the postcode according to the country and length of the postcode.
  *
@@ -563,9 +476,7 @@ function wc_format_hex($hex)
  */
 function wc_format_postcode($postcode, $country)
 {
-    // stub
 }
-
 /**
  * Normalize postcodes.
  *
@@ -577,9 +488,7 @@ function wc_format_postcode($postcode, $country)
  */
 function wc_normalize_postcode($postcode)
 {
-    // stub
 }
-
 /**
  * Format phone numbers.
  *
@@ -588,9 +497,7 @@ function wc_normalize_postcode($postcode)
  */
 function wc_format_phone_number($phone)
 {
-    // stub
 }
-
 /**
  * Sanitize phone number.
  * Allows only numbers and "+" (plus sign).
@@ -601,9 +508,7 @@ function wc_format_phone_number($phone)
  */
 function wc_sanitize_phone_number($phone)
 {
-    // stub
 }
-
 /**
  * Wrapper for mb_strtoupper which see's if supported first.
  *
@@ -613,9 +518,7 @@ function wc_sanitize_phone_number($phone)
  */
 function wc_strtoupper($string)
 {
-    // stub
 }
-
 /**
  * Make a string lowercase.
  * Try to use mb_strtolower() when available.
@@ -626,9 +529,7 @@ function wc_strtoupper($string)
  */
 function wc_strtolower($string)
 {
-    // stub
 }
-
 /**
  * Trim a string and append a suffix.
  *
@@ -641,9 +542,7 @@ function wc_strtolower($string)
  */
 function wc_trim_string($string, $chars = 200, $suffix = '...')
 {
-    // stub
 }
-
 /**
  * Format content to display shortcodes.
  *
@@ -653,9 +552,7 @@ function wc_trim_string($string, $chars = 200, $suffix = '...')
  */
 function wc_format_content($raw_string)
 {
-    // stub
 }
-
 /**
  * Format product short description.
  * Adds support for Jetpack Markdown.
@@ -667,9 +564,7 @@ function wc_format_content($raw_string)
  */
 function wc_format_product_short_description($content)
 {
-    // stub
 }
-
 /**
  * Formats curency symbols when saved in settings.
  *
@@ -681,9 +576,7 @@ function wc_format_product_short_description($content)
  */
 function wc_format_option_price_separators($value, $option, $raw_value)
 {
-    // stub
 }
-
 /**
  * Formats decimals when saved in settings.
  *
@@ -695,9 +588,7 @@ function wc_format_option_price_separators($value, $option, $raw_value)
  */
 function wc_format_option_price_num_decimals($value, $option, $raw_value)
 {
-    // stub
 }
-
 /**
  * Formats hold stock option and sets cron event up.
  *
@@ -709,9 +600,7 @@ function wc_format_option_price_num_decimals($value, $option, $raw_value)
  */
 function wc_format_option_hold_stock_minutes($value, $option, $raw_value)
 {
-    // stub
 }
-
 /**
  * Sanitize terms from an attribute text based.
  *
@@ -721,9 +610,7 @@ function wc_format_option_hold_stock_minutes($value, $option, $raw_value)
  */
 function wc_sanitize_term_text_based($term)
 {
-    // stub
 }
-
 /**
  * Make numeric postcode.
  *
@@ -736,9 +623,7 @@ function wc_sanitize_term_text_based($term)
  */
 function wc_make_numeric_postcode($postcode)
 {
-    // stub
 }
-
 /**
  * Format the stock amount ready for display based on settings.
  *
@@ -748,9 +633,7 @@ function wc_make_numeric_postcode($postcode)
  */
 function wc_format_stock_for_display($product)
 {
-    // stub
 }
-
 /**
  * Format the stock quantity ready for display.
  *
@@ -761,9 +644,7 @@ function wc_format_stock_for_display($product)
  */
 function wc_format_stock_quantity_for_display($stock_quantity, $product)
 {
-    // stub
 }
-
 /**
  * Format a sale price for display.
  *
@@ -774,9 +655,7 @@ function wc_format_stock_quantity_for_display($stock_quantity, $product)
  */
 function wc_format_sale_price($regular_price, $sale_price)
 {
-    // stub
 }
-
 /**
  * Format a price range for display.
  *
@@ -786,9 +665,7 @@ function wc_format_sale_price($regular_price, $sale_price)
  */
 function wc_format_price_range($from, $to)
 {
-    // stub
 }
-
 /**
  * Format a weight for display.
  *
@@ -798,9 +675,7 @@ function wc_format_price_range($from, $to)
  */
 function wc_format_weight($weight)
 {
-    // stub
 }
-
 /**
  * Format dimensions for display.
  *
@@ -810,9 +685,7 @@ function wc_format_weight($weight)
  */
 function wc_format_dimensions($dimensions)
 {
-    // stub
 }
-
 /**
  * Format a date for output.
  *
@@ -824,9 +697,7 @@ function wc_format_dimensions($dimensions)
  */
 function wc_format_datetime($date, $format = '')
 {
-    // stub
 }
-
 /**
  * Process oEmbeds.
  *
@@ -836,9 +707,7 @@ function wc_format_datetime($date, $format = '')
  */
 function wc_do_oembeds($content)
 {
-    // stub
 }
-
 /**
  * Get part of a string before :.
  *
@@ -851,9 +720,7 @@ function wc_do_oembeds($content)
  */
 function wc_get_string_before_colon($string)
 {
-    // stub
 }
-
 /**
  * Array merge and sum function.
  *
@@ -864,9 +731,7 @@ function wc_get_string_before_colon($string)
  */
 function wc_array_merge_recursive_numeric()
 {
-    // stub
 }
-
 /**
  * Implode and escape HTML attributes for output.
  *
@@ -876,9 +741,7 @@ function wc_array_merge_recursive_numeric()
  */
 function wc_implode_html_attributes($raw_attributes)
 {
-    // stub
 }
-
 /**
  * Escape JSON for use on HTML or attribute text nodes.
  *
@@ -889,9 +752,7 @@ function wc_implode_html_attributes($raw_attributes)
  */
 function wc_esc_json($json, $html = false)
 {
-    // stub
 }
-
 /**
  * Parse a relative date option from the settings API into a standard format.
  *
@@ -901,9 +762,7 @@ function wc_esc_json($json, $html = false)
  */
 function wc_parse_relative_date_option($raw_value)
 {
-    // stub
 }
-
 /**
  * Format the endpoint slug, strip out anything not allowed in a url.
  *
@@ -913,5 +772,4 @@ function wc_parse_relative_date_option($raw_value)
  */
 function wc_sanitize_endpoint_slug($raw_value)
 {
-    // stub
 }

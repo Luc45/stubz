@@ -25,19 +25,15 @@ class Translations
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor.
      * Hooks added here should be removed in `wc_admin_initialize` via the feature plugin.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a filename to cache translations from JS chunks.
      *
@@ -46,10 +42,8 @@ class Translations
      * @return string Filename.
      */
     private function get_combined_translation_filename($domain, $locale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combines data from translation chunk files based on officially downloaded file format.
      *
@@ -57,10 +51,8 @@ class Translations
      * @return array Combined translation chunk data.
      */
     private function combine_official_translation_chunks($json_i18n_filenames)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combines data from translation chunk files based on user-generated file formats,
      * such as wp-cli tool or Loco Translate plugin.
@@ -69,10 +61,8 @@ class Translations
      * @return array Combined translation chunk data.
      */
     private function combine_user_translation_chunks($json_i18n_filenames)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find and combine translation chunk files.
      *
@@ -84,10 +74,8 @@ class Translations
      * @return array Combined translation chunk data.
      */
     private function get_translation_chunk_data($lang_dir, $domain, $locale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combine and save translations for a specific locale.
      *
@@ -98,10 +86,8 @@ class Translations
      * @param string $locale Locale being retrieved.
      */
     private function build_and_save_translations($language_dir, $plugin_domain, $locale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combine translation chunks when plugin is activated.
      *
@@ -111,18 +97,14 @@ class Translations
      * and wp_set_script_translations().
      */
     private function generate_translation_strings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads the required translation scripts on the correct pages.
      */
     public function potentially_load_translation_script_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load translation strings from language packs for dynamic imports.
      *
@@ -133,20 +115,16 @@ class Translations
      * @return string New file location for the script being translated.
      */
     public function load_script_translation_file($file, $handle, $domain)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run when plugin is activated (can be WooCommerce or WooCommerce Admin).
      *
      * @param string $filename Activated plugin filename.
      */
     public function potentially_generate_translation_strings($filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combine translation chunks when files are updated.
      *
@@ -159,8 +137,6 @@ class Translations
      * @param array                  $hook_extra Info about the upgraded language packs.
      */
     public function combine_translation_chunk_files($instance, $hook_extra)
-    {
-        // stub
-    }
-
+{
+}
 }

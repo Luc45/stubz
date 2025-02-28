@@ -28,10 +28,8 @@ class ProductAverageRating
      * @return array
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Overwrite parent method to prevent script registration.
      *
@@ -39,20 +37,16 @@ class ProductAverageRating
      * phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -62,8 +56,6 @@ class ProductAverageRating
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

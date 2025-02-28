@@ -18,8 +18,6 @@ class DryRun_LogMigrator
      * @param int $destination_action_id Destination logger object.
      */
     public function migrate($source_action_id, $destination_action_id)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -30,36 +30,28 @@ class Checkout
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dequeues the scripts added by WC Core to the Checkout page.
      *
      * @return void
      */
     public function dequeue_woocommerce_core_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exposes settings exposed by the checkout block.
      */
     public function register_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block pattern for Empty Cart Message to make it translatable.
      */
     public function register_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor script handle for this block type.
      *
@@ -67,10 +59,8 @@ class Checkout
      * @return array|string;
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -79,20 +69,16 @@ class Checkout
      * @return array|string
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -101,10 +87,8 @@ class Checkout
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Append frontend scripts when rendering the block.
      *
@@ -114,20 +98,16 @@ class Checkout
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if we're viewing a checkout page endpoint, rather than the main checkout page itself.
      *
      * @return boolean
      */
     protected function is_checkout_endpoint()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the local pickup title in WooCommerce Settings when the checkout page containing a Checkout block is saved.
      *
@@ -136,10 +116,8 @@ class Checkout
      * @return void
      */
     public function update_local_pickup_title($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recurse through the blocks to find the shipping methods block, then get the value of the localPickupText attribute from it.
      *
@@ -147,10 +125,8 @@ class Checkout
      * @return null|string  The local pickup text if found, otherwise void.
      */
     private function find_local_pickup_text_in_checkout_block($blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -158,38 +134,29 @@ class Checkout
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Get payment methods that are enabled in settings.
      *
      * @return array
      */
     protected function get_enabled_payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Are we currently on the admin block editor screen?
      */
     protected function is_block_editor()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get saved customer payment methods for use in checkout.
      */
     protected function hydrate_customer_payment_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for woocommerce_payment_methods_list_item filter to add token id
      * to the generated list.
@@ -200,28 +167,22 @@ class Checkout
      * @return array The list item with the token id added.
      */
     public static function include_token_id_with_payment_methods($list_item, $token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register script and style assets for the block type before it is registered.
      *
      * This registers the scripts; it does not enqueue them.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of Checkout block & its inner-block types.
      *
      * @return array;
      */
     public static function get_checkout_block_types()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -24,10 +24,8 @@ class FeaturesUtil
      * @returns array An array of information about existing features.
      */
     public static function get_features(bool $include_experimental = false, bool $include_enabled_info = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given feature is currently enabled.
      *
@@ -35,10 +33,8 @@ class FeaturesUtil
      * @return bool True if the feature is enabled, false if not or if the feature doesn't exist.
      */
     public static function feature_is_enabled(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Declare (in)compatibility with a given feature for a given plugin.
      *
@@ -52,10 +48,8 @@ class FeaturesUtil
      * @return bool True on success, false on error (feature doesn't exist or not inside the required hook).
      */
     public static function declare_compatibility(string $feature_id, string $plugin_file, bool $positive_compatibility = true): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the ids of the features that a certain plugin has declared compatibility for.
      *
@@ -65,10 +59,8 @@ class FeaturesUtil
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of plugin ids.
      */
     public static function get_compatible_features_for_plugin(string $plugin_name): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the names of the plugins that have been declared compatible or incompatible with a given feature.
      *
@@ -76,26 +68,20 @@ class FeaturesUtil
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of plugin names.
      */
     public static function get_compatible_plugins_for_feature(string $feature_id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a flag indicating that it's allowed to enable features for which incompatible plugins are active
      * from the WooCommerce feature settings page.
      */
     public static function allow_enabling_features_with_incompatible_plugins(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a flag indicating that it's allowed to activate plugins for which incompatible features are enabled
      * from the WordPress plugins page.
      */
     public static function allow_activating_plugins_with_incompatible_features(): void
-    {
-        // stub
-    }
-
+{
+}
 }

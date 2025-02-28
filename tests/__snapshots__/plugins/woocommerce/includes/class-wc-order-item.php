@@ -70,10 +70,8 @@ class WC_Order_Item
      * @param int|object|array $item ID to load from the DB, or WC_Order_Item object.
      */
     public function __construct($item = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge changes with data and clear.
      * Overrides WC_Data::apply_changes.
@@ -83,10 +81,8 @@ class WC_Order_Item
      * @since 3.2.0
      */
     public function apply_changes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order ID this meta belongs to.
      *
@@ -94,10 +90,8 @@ class WC_Order_Item
      * @return int
      */
     public function get_order_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item name.
      *
@@ -105,80 +99,64 @@ class WC_Order_Item
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type. Overridden by child classes.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get quantity.
      *
      * @return int
      */
     public function get_quantity()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax status.
      *
      * @return string
      */
     public function get_tax_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax class.
      *
      * @return string
      */
     public function get_tax_class()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get parent order object.
      *
      * @return WC_Order
      */
     public function get_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order ID.
      *
      * @param int $value Order ID.
      */
     public function set_order_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order item name.
      *
      * @param string $value Item name.
      */
     public function set_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Type checking.
      *
@@ -186,10 +164,8 @@ class WC_Order_Item
      * @return boolean
      */
     public function is_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate item taxes.
      *
@@ -197,12 +173,9 @@ class WC_Order_Item
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_taxes($calculate_tax_for = array())
+{
+}
     /**
      * Wrapper for get_formatted_meta_data that includes all metadata by default. See https://github.com/woocommerce/woocommerce/pull/30948
      *
@@ -211,10 +184,8 @@ class WC_Order_Item
      * @return array
      */
     public function get_all_formatted_meta_data($hideprefix = '_', $include_all = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Expands things like term slugs before return.
      *
@@ -223,10 +194,8 @@ class WC_Order_Item
      * @return array
      */
     public function get_formatted_meta_data($hideprefix = '_', $include_all = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet for ArrayAccess.
      *
@@ -235,10 +204,8 @@ class WC_Order_Item
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetUnset for ArrayAccess.
      *
@@ -246,10 +213,8 @@ class WC_Order_Item
      */
     #[ReturnTypeWillChange]
     public function offsetUnset($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists for ArrayAccess.
      *
@@ -258,10 +223,8 @@ class WC_Order_Item
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetGet for ArrayAccess.
      *
@@ -270,10 +233,8 @@ class WC_Order_Item
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the current order item has an associated Cost of Goods Sold value.
      *
@@ -285,10 +246,8 @@ class WC_Order_Item
      * @return bool True if this line item has an associated Cost of Goods Sold value.
      */
     public function has_cogs(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the Cost of Goods Sold value and set it as the actual value for this line item.
      *
@@ -298,10 +257,8 @@ class WC_Order_Item
      * @throws Exception The class doesn't implement its own version of calculate_cogs_value_core. Derived classes are expected to override that method when has_cogs returns true.
      */
     public function calculate_cogs_value(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to calculate the Cost of Goods Sold value for this line item:
      * it doesn't check if COGS is enabled at class or system level, doesn't fire hooks, and doesn't set the value as the current one for the line item.
@@ -310,10 +267,8 @@ class WC_Order_Item
      * @throws Exception The class doesn't implement its own version of this method. Derived classes are expected to override this method when has_cogs returns true.
      */
     protected function calculate_cogs_value_core(): float|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of the Cost of Goods Sold for this order item.
      *
@@ -323,10 +278,8 @@ class WC_Order_Item
      * @return float The current value for this order item.
      */
     public function get_cogs_value($context = 'view'): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the value of the Cost of Goods Sold for this order item.
      * Usually you'll want to use calculate_cogs_value instead.
@@ -338,8 +291,6 @@ class WC_Order_Item
      * @internal This method is intended for data store usage only, the value set here will be overridden by calculate_cogs_value.
      */
     public function set_cogs_value(float $value): void
-    {
-        // stub
-    }
-
+{
+}
 }

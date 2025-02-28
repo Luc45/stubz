@@ -26,10 +26,8 @@ class BatchFetcher
      * @param ActionScheduler_Store $source_store Source store object.
      */
     public function __construct(ActionScheduler_Store $source_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a list of actions.
      *
@@ -38,10 +36,8 @@ class BatchFetcher
      * @return int[] A list of action IDs
      */
     public function fetch($count = 10)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a list of prioritized of action search parameters.
      *
@@ -50,8 +46,6 @@ class BatchFetcher
      * @return array
      */
     private function get_query_strategies($count)
-    {
-        // stub
-    }
-
+{
+}
 }

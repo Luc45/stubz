@@ -28,18 +28,14 @@ class ProductSKU
      * phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -49,8 +45,6 @@ class ProductSKU
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

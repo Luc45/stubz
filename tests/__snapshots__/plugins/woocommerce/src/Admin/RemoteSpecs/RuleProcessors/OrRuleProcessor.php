@@ -21,10 +21,8 @@ class OrRuleProcessor
      * @param RuleEvaluator $rule_evaluator The rule evaluator to use.
      */
     public function __construct($rule_evaluator = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs an OR operation on the rule's left and right operands.
      *
@@ -34,10 +32,8 @@ class OrRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -46,8 +42,6 @@ class OrRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

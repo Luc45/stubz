@@ -19,8 +19,7 @@ abstract class Component
      *
      * @var array
      */
-    protected $required_arguments = array (
-);
+    protected $required_arguments = array();
 
     /**
      * Constructor
@@ -30,20 +29,16 @@ abstract class Component
      * @param array  $additional_args Array containing additional arguments.
      */
     public function __construct($id, $plugin_id, $additional_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Component arguments.
      *
      * @return array
      */
     public function get_additional_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Component arguments.
      *
@@ -51,20 +46,16 @@ abstract class Component
      * @return mixed
      */
     public function get_additional_argument($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the component as JSON.
      *
      * @return array
      */
     public function get_json()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sorting function for product form component.
      *
@@ -73,12 +64,9 @@ abstract class Component
      * @param array     $sort_by key and order to sort by.
      * @return int
      */
-    public static function sort($a, $b, $sort_by = array (
-))
-    {
-        // stub
-    }
-
+    public static function sort($a, $b, $sort_by = array())
+{
+}
     /**
      * Gets argument by dot notation path.
      *
@@ -88,10 +76,8 @@ abstract class Component
      * @return mixed|null
      */
     public static function get_argument_from_path($arguments, $path, $delimiter = '.')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get missing arguments of args array.
      *
@@ -99,8 +85,6 @@ abstract class Component
      * @return array
      */
     public function get_missing_arguments($args)
-    {
-        // stub
-    }
-
+{
+}
 }

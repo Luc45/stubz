@@ -61,30 +61,24 @@ class WC_Coupon
   'usage_count' => 0,
   'individual_use' => false,
   'product_ids' => 
-  array (
-  ),
+  array(),
   'excluded_product_ids' => 
-  array (
-  ),
+  array(),
   'usage_limit' => 0,
   'usage_limit_per_user' => 0,
   'limit_usage_to_x_items' => null,
   'free_shipping' => false,
   'product_categories' => 
-  array (
-  ),
+  array(),
   'excluded_product_categories' => 
-  array (
-  ),
+  array(),
   'exclude_sale_items' => false,
   'minimum_amount' => '',
   'maximum_amount' => '',
   'email_restrictions' => 
-  array (
-  ),
+  array(),
   'used_by' => 
-  array (
-  ),
+  array(),
   'virtual' => false,
 );
 
@@ -122,20 +116,16 @@ class WC_Coupon
      * @param mixed $data Coupon data, object, ID or code.
      */
     public function __construct($data = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the object has an ID, read using the data store.
      *
      * @since 3.4.1
      */
     protected function read_object_from_database()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks the coupon type.
      *
@@ -143,10 +133,8 @@ class WC_Coupon
      * @return bool
      */
     public function is_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prefix for action and filter hooks on data.
      *
@@ -154,10 +142,8 @@ class WC_Coupon
      * @return string
      */
     protected function get_hook_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon code.
      *
@@ -166,10 +152,8 @@ class WC_Coupon
      * @return string
      */
     public function get_code($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon description.
      *
@@ -178,10 +162,8 @@ class WC_Coupon
      * @return string
      */
     public function get_description($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon status.
      *
@@ -190,10 +172,8 @@ class WC_Coupon
      * @return string
      */
     public function get_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount type.
      *
@@ -202,10 +182,8 @@ class WC_Coupon
      * @return string
      */
     public function get_discount_type($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon amount.
      *
@@ -214,10 +192,8 @@ class WC_Coupon
      * @return string
      */
     public function get_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon expiration date.
      *
@@ -226,10 +202,8 @@ class WC_Coupon
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_expires($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_created
      *
@@ -238,10 +212,8 @@ class WC_Coupon
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_created($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_modified
      *
@@ -250,10 +222,8 @@ class WC_Coupon
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_modified($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon usage count.
      *
@@ -262,10 +232,8 @@ class WC_Coupon
      * @return integer
      */
     public function get_usage_count($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the "individual use" checkbox status.
      *
@@ -274,10 +242,8 @@ class WC_Coupon
      * @return bool
      */
     public function get_individual_use($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product IDs this coupon can apply to.
      *
@@ -286,10 +252,8 @@ class WC_Coupon
      * @return array
      */
     public function get_product_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product IDs that this coupon should not apply to.
      *
@@ -298,10 +262,8 @@ class WC_Coupon
      * @return array
      */
     public function get_excluded_product_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon usage limit.
      *
@@ -310,10 +272,8 @@ class WC_Coupon
      * @return integer
      */
     public function get_usage_limit($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon usage limit per customer (for a single customer)
      *
@@ -322,10 +282,8 @@ class WC_Coupon
      * @return integer
      */
     public function get_usage_limit_per_user($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Usage limited to certain amount of items
      *
@@ -334,10 +292,8 @@ class WC_Coupon
      * @return integer|null
      */
     public function get_limit_usage_to_x_items($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If this coupon grants free shipping or not.
      *
@@ -346,10 +302,8 @@ class WC_Coupon
      * @return bool
      */
     public function get_free_shipping($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product categories this coupon can apply to.
      *
@@ -358,10 +312,8 @@ class WC_Coupon
      * @return array
      */
     public function get_product_categories($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product categories this coupon cannot not apply to.
      *
@@ -370,10 +322,8 @@ class WC_Coupon
      * @return array
      */
     public function get_excluded_product_categories($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If this coupon should exclude items on sale.
      *
@@ -382,10 +332,8 @@ class WC_Coupon
      * @return bool
      */
     public function get_exclude_sale_items($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get minimum spend amount.
      *
@@ -394,10 +342,8 @@ class WC_Coupon
      * @return float
      */
     public function get_minimum_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get maximum spend amount.
      *
@@ -406,10 +352,8 @@ class WC_Coupon
      * @return float
      */
     public function get_maximum_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get emails to check customer usage restrictions.
      *
@@ -418,10 +362,8 @@ class WC_Coupon
      * @return array
      */
     public function get_email_restrictions($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get records of all users who have used the current coupon.
      *
@@ -430,10 +372,8 @@ class WC_Coupon
      * @return array
      */
     public function get_used_by($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the filter is added through the woocommerce_get_shop_coupon_data filter, it's virtual and not in the DB.
      *
@@ -442,10 +382,8 @@ class WC_Coupon
      * @return boolean
      */
     public function get_virtual($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount amount for a cart item.
      *
@@ -455,10 +393,8 @@ class WC_Coupon
      * @return float Amount this coupon has discounted.
      */
     public function get_discount_amount($discounting_amount, $cart_item = null, $single = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set coupon code.
      *
@@ -466,10 +402,8 @@ class WC_Coupon
      * @param string $code Coupon code.
      */
     public function set_code($code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set coupon description.
      *
@@ -477,10 +411,8 @@ class WC_Coupon
      * @param string $description Description.
      */
     public function set_description($description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set coupon status.
      *
@@ -488,10 +420,8 @@ class WC_Coupon
      * @param string $status Status.
      */
     public function set_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount type.
      *
@@ -499,10 +429,8 @@ class WC_Coupon
      * @param string $discount_type Discount type.
      */
     public function set_discount_type($discount_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set amount.
      *
@@ -510,10 +438,8 @@ class WC_Coupon
      * @param float $amount Amount.
      */
     public function set_amount($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set expiration date.
      *
@@ -521,10 +447,8 @@ class WC_Coupon
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if there is no date.
      */
     public function set_date_expires($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date_created
      *
@@ -532,10 +456,8 @@ class WC_Coupon
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if there is no date.
      */
     public function set_date_created($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date_modified
      *
@@ -543,10 +465,8 @@ class WC_Coupon
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if there is no date.
      */
     public function set_date_modified($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set how many times this coupon has been used.
      *
@@ -554,10 +474,8 @@ class WC_Coupon
      * @param int $usage_count Usage count.
      */
     public function set_usage_count($usage_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if this coupon can only be used once.
      *
@@ -565,10 +483,8 @@ class WC_Coupon
      * @param bool $is_individual_use If is for individual use.
      */
     public function set_individual_use($is_individual_use)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product IDs this coupon can be used with.
      *
@@ -576,10 +492,8 @@ class WC_Coupon
      * @param array $product_ids Products IDs.
      */
     public function set_product_ids($product_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product IDs this coupon cannot be used with.
      *
@@ -587,10 +501,8 @@ class WC_Coupon
      * @param array $excluded_product_ids Exclude product IDs.
      */
     public function set_excluded_product_ids($excluded_product_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the amount of times this coupon can be used.
      *
@@ -598,10 +510,8 @@ class WC_Coupon
      * @param int $usage_limit Usage limit.
      */
     public function set_usage_limit($usage_limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the amount of times this coupon can be used per user.
      *
@@ -609,10 +519,8 @@ class WC_Coupon
      * @param int $usage_limit Usage limit.
      */
     public function set_usage_limit_per_user($usage_limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set usage limit to x number of items.
      *
@@ -620,10 +528,8 @@ class WC_Coupon
      * @param int|null $limit_usage_to_x_items Limit usage to X items.
      */
     public function set_limit_usage_to_x_items($limit_usage_to_x_items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if this coupon enables free shipping or not.
      *
@@ -631,10 +537,8 @@ class WC_Coupon
      * @param bool $free_shipping If grant free shipping.
      */
     public function set_free_shipping($free_shipping)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product category IDs this coupon can be used with.
      *
@@ -642,10 +546,8 @@ class WC_Coupon
      * @param array $product_categories List of product categories.
      */
     public function set_product_categories($product_categories)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product category IDs this coupon cannot be used with.
      *
@@ -653,10 +555,8 @@ class WC_Coupon
      * @param array $excluded_product_categories List of excluded product categories.
      */
     public function set_excluded_product_categories($excluded_product_categories)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if this coupon should excluded sale items or not.
      *
@@ -664,10 +564,8 @@ class WC_Coupon
      * @param bool $exclude_sale_items If should exclude sale items.
      */
     public function set_exclude_sale_items($exclude_sale_items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the minimum spend amount.
      *
@@ -675,10 +573,8 @@ class WC_Coupon
      * @param float $amount Minimum amount.
      */
     public function set_minimum_amount($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the maximum spend amount.
      *
@@ -686,22 +582,17 @@ class WC_Coupon
      * @param float $amount Maximum amount.
      */
     public function set_maximum_amount($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set email restrictions.
      *
      * @since 3.0.0
      * @param array $emails List of emails.
      */
-    public function set_email_restrictions($emails = array (
-))
-    {
-        // stub
-    }
-
+    public function set_email_restrictions($emails = array())
+{
+}
     /**
      * Set which users have used this coupon.
      *
@@ -709,10 +600,8 @@ class WC_Coupon
      * @param array $used_by List of user IDs.
      */
     public function set_used_by($used_by)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set coupon virtual state.
      *
@@ -720,10 +609,8 @@ class WC_Coupon
      * @since 3.2.0
      */
     public function set_virtual($virtual)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Developers can programmatically return coupons. This function will read those values into our WC_Coupon class.
      *
@@ -732,10 +619,8 @@ class WC_Coupon
      * @param array  $coupon Array of coupon properties.
      */
     public function read_manual_coupon($code, $coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increase usage count for current coupon.
      *
@@ -743,29 +628,23 @@ class WC_Coupon
      * @param WC_Order $order  If provided, will clear the coupons held by this order.
      */
     public function increase_usage_count($used_by = '', $order = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decrease usage count for current coupon.
      *
      * @param string $used_by Either user ID or billing email.
      */
     public function decrease_usage_count($used_by = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the error_message string.
      * @return string
      */
     public function get_error_message()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the error_message string.
      *
@@ -774,10 +653,8 @@ class WC_Coupon
      * @return void
      */
     public function set_error_message(string $message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a coupon is valid for the cart.
      *
@@ -785,20 +662,16 @@ class WC_Coupon
      * @return bool
      */
     public function is_valid()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a coupon is valid.
      *
      * @return bool
      */
     public function is_valid_for_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a coupon is valid for a product.
      *
@@ -806,12 +679,9 @@ class WC_Coupon
      * @param array      $values  Values.
      * @return bool
      */
-    public function is_valid_for_product($product, $values = array (
-))
-    {
-        // stub
-    }
-
+    public function is_valid_for_product($product, $values = array())
+{
+}
     /**
      * Converts one of the WC_Coupon message/error codes to a message string and.
      * displays the message/error.
@@ -820,10 +690,8 @@ class WC_Coupon
      * @param string $notice_type Notice type.
      */
     public function add_coupon_message($msg_code, $notice_type = 'success')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map one of the WC_Coupon message codes to a message string.
      *
@@ -831,10 +699,8 @@ class WC_Coupon
      * @return string Message/error string.
      */
     public function get_coupon_message($msg_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map one of the WC_Coupon error codes to a message string.
      *
@@ -842,10 +708,8 @@ class WC_Coupon
      * @return string Message/error string
      */
     public function get_coupon_error($err_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map one of the WC_Coupon error codes to an error string.
      * No coupon instance will be available where a coupon does not exist,
@@ -855,10 +719,8 @@ class WC_Coupon
      * @return string Error string.
      */
     public static function get_generic_coupon_error($err_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the coupon information that is needed to reapply the coupon to an existing order.
      * This information is intended to be stored as a meta value in the order line item corresponding to the coupon
@@ -875,20 +737,16 @@ class WC_Coupon
      * @return string A JSON string with information that allows the coupon to be reapplied to an existing order.
      */
     public function get_short_info(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the coupon parameters from a reapply information set generated with 'get_short_info'.
      *
      * @param string $info JSON string with reapply information as returned by 'get_short_info'.
      */
     public function set_short_info(string $info)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns alternate error messages based on context (eg. Cart and Checkout).
      *
@@ -897,8 +755,6 @@ class WC_Coupon
      * @return array Context based alternate error messages.
      */
     public function get_context_based_coupon_errors($err_code = null)
-    {
-        // stub
-    }
-
+{
+}
 }

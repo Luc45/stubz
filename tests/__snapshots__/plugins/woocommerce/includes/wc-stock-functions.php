@@ -15,9 +15,7 @@
  */
 function wc_update_product_stock($product, $stock_quantity = null, $operation = 'set', $updating = false)
 {
-    // stub
 }
-
 /**
  * Update a product's stock status.
  *
@@ -26,9 +24,7 @@ function wc_update_product_stock($product, $stock_quantity = null, $operation = 
  */
 function wc_update_product_stock_status($product_id, $status)
 {
-    // stub
 }
-
 /**
  * When a payment is complete, we can reduce stock levels for items within an order.
  *
@@ -37,9 +33,7 @@ function wc_update_product_stock_status($product_id, $status)
  */
 function wc_maybe_reduce_stock_levels($order_id)
 {
-    // stub
 }
-
 /**
  * When a payment is cancelled, restore stock.
  *
@@ -48,9 +42,7 @@ function wc_maybe_reduce_stock_levels($order_id)
  */
 function wc_maybe_increase_stock_levels($order_id)
 {
-    // stub
 }
-
 /**
  * Reduce stock levels for items within an order, if stock has not already been reduced for the items.
  *
@@ -59,9 +51,7 @@ function wc_maybe_increase_stock_levels($order_id)
  */
 function wc_reduce_stock_levels($order_id)
 {
-    // stub
 }
-
 /**
  * After stock change events, triggers emails and adds order notes.
  *
@@ -71,9 +61,7 @@ function wc_reduce_stock_levels($order_id)
  */
 function wc_trigger_stock_change_notifications($order, $changes)
 {
-    // stub
 }
-
 /**
  * Check if a product's stock quantity has reached certain thresholds and trigger appropriate actions.
  *
@@ -86,9 +74,7 @@ function wc_trigger_stock_change_notifications($order, $changes)
  */
 function wc_trigger_stock_change_actions($product)
 {
-    // stub
 }
-
 /**
  * Increase stock levels for items within an order.
  *
@@ -97,9 +83,7 @@ function wc_trigger_stock_change_actions($product)
  */
 function wc_increase_stock_levels($order_id)
 {
-    // stub
 }
-
 /**
  * See how much stock is being held in pending orders.
  *
@@ -110,9 +94,7 @@ function wc_increase_stock_levels($order_id)
  */
 function wc_get_held_stock_quantity(WC_Product $product, $exclude_order_id = 0)
 {
-    // stub
 }
-
 /**
  * Hold stock for an order.
  *
@@ -123,9 +105,7 @@ function wc_get_held_stock_quantity(WC_Product $product, $exclude_order_id = 0)
  */
 function wc_reserve_stock_for_order($order)
 {
-    // stub
 }
-
 /**
  * Release held stock for an order.
  *
@@ -134,9 +114,7 @@ function wc_reserve_stock_for_order($order)
  */
 function wc_release_stock_for_order($order)
 {
-    // stub
 }
-
 /**
  * Release coupons used for another order.
  *
@@ -146,9 +124,7 @@ function wc_release_stock_for_order($order)
  */
 function wc_release_coupons_for_order($order, bool $save = true)
 {
-    // stub
 }
-
 /**
  * Return low stock amount to determine if notification needs to be sent
  *
@@ -163,5 +139,4 @@ function wc_release_coupons_for_order($order, bool $save = true)
  */
 function wc_get_low_stock_amount(WC_Product $product)
 {
-    // stub
 }

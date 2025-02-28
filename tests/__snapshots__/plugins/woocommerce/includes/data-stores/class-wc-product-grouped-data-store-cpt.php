@@ -15,10 +15,8 @@ class WC_Product_Grouped_Data_Store_CPT
      * @since 3.0.0
      */
     protected function update_post_meta(&$product, $force = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle updated meta props after updating meta data.
      *
@@ -26,10 +24,8 @@ class WC_Product_Grouped_Data_Store_CPT
      * @param  WC_Product $product Product object.
      */
     protected function handle_updated_props(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync grouped product prices with children.
      *
@@ -37,18 +33,14 @@ class WC_Product_Grouped_Data_Store_CPT
      * @param WC_Product|int $product Product object or product ID.
      */
     public function sync_price(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loop over child products and update the grouped product prices.
      *
      * @param WC_Product $product Product object.
      */
     protected function update_prices_from_children(&$product)
-    {
-        // stub
-    }
-
+{
+}
 }

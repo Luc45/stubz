@@ -136,10 +136,8 @@ abstract class WC_Settings_Page
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings page ID.
      *
@@ -147,10 +145,8 @@ abstract class WC_Settings_Page
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings page label.
      *
@@ -158,18 +154,14 @@ abstract class WC_Settings_Page
      * @return string
      */
     public function get_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates the React mount point for settings slot.
      */
     public function add_settings_slot()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add this page to settings.
      *
@@ -178,10 +170,8 @@ abstract class WC_Settings_Page
      * @return mixed
      */
     public function add_settings_page($pages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get page settings data to populate the settings editor.
      *
@@ -190,10 +180,8 @@ abstract class WC_Settings_Page
      * @return array
      */
     public function add_settings_page_data($pages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings data for a specific section.
      *
@@ -202,10 +190,8 @@ abstract class WC_Settings_Page
      * @return array Settings data for the section.
      */
     protected function get_section_settings_data($section_id, $sections)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Populate the value for a given section setting.
      *
@@ -213,10 +199,8 @@ abstract class WC_Settings_Page
      * @return array The setting array with populated value.
      */
     protected function populate_setting_value($section_setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the custom view given the current tab and section.
      *
@@ -224,10 +208,8 @@ abstract class WC_Settings_Page
      * @return string The custom view. HTML output.
      */
     public function get_custom_view($section_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the custom type field by calling the action and returning the setting with the content, id, and type.
      *
@@ -236,10 +218,8 @@ abstract class WC_Settings_Page
      * @return array The setting with the content, id, and type.
      */
     public function get_custom_type_field($action, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings array for the default section.
      *
@@ -260,10 +240,8 @@ abstract class WC_Settings_Page
      * @return array Settings array, each item being an associative array representing a setting.
      */
     public function get_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings array.
      *
@@ -280,11 +258,9 @@ abstract class WC_Settings_Page
      *
      * @return array Settings array, each item being an associative array representing a setting.
      */
-    public final function get_settings_for_section($section_id)
-    {
-        // stub
-    }
-
+    final public function get_settings_for_section($section_id)
+{
+}
     /**
      * Get the settings for a given section.
      * This method is invoked from 'get_settings_for_section' when no 'get_settings_for_{current_section}_section'
@@ -298,20 +274,16 @@ abstract class WC_Settings_Page
      * @return array Settings array, each item being an associative array representing a setting.
      */
     protected function get_settings_for_section_core($section_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all sections for this page, both the own ones and the ones defined via filters.
      *
      * @return array
      */
     public function get_sections()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get own sections for this page.
      * Derived classes should override this method if they define sections.
@@ -326,50 +298,38 @@ abstract class WC_Settings_Page
      * @return array An associative array where keys are section identifiers and the values are translated section names.
      */
     protected function get_own_sections()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output sections.
      */
     public function output_sections()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the HTML for the settings.
      */
     public function output()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save settings and trigger the 'woocommerce_update_options_'.id action.
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save settings for current section.
      */
     protected function save_settings_for_current_section()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger the 'woocommerce_update_options_'.id action.
      *
      * @param string $section_id Section to trigger the action for, or null for current section.
      */
     protected function do_update_options_action($section_id = null)
-    {
-        // stub
-    }
-
+{
+}
 }

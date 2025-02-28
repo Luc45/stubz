@@ -15,8 +15,6 @@ class EditProductsOnTheMove
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

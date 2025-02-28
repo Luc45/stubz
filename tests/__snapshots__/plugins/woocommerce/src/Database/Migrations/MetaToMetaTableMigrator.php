@@ -48,16 +48,13 @@ abstract class MetaToMetaTableMigrator
      *  ),
      * )
      */
-    protected abstract function get_meta_config(): array;
-
+    abstract protected function get_meta_config(): array;
     /**
      * MetaToMetaTableMigrator constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return data to be migrated for a batch of entities.
      *
@@ -66,20 +63,16 @@ abstract class MetaToMetaTableMigrator
      * @return array[] Data to be migrated. Would be of the form: array( 'data' => array( ... ), 'errors' => array( ... ) ).
      */
     public function fetch_sanitized_migration_data($entity_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate a batch of entities from the posts table to the corresponding table.
      *
      * @param array $entity_ids Ids of entities ro migrate.
      */
     protected function process_migration_batch_for_ids_core(array $entity_ids): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process migration data for a batch of entities.
      *
@@ -88,10 +81,8 @@ abstract class MetaToMetaTableMigrator
      * @return array Array of errors and exception if any.
      */
     public function process_migration_data(array $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate update SQL for given batch.
      *
@@ -100,10 +91,8 @@ abstract class MetaToMetaTableMigrator
      * @return string Query to update batch records.
      */
     private function generate_update_sql_for_batch(array $batch): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate insert sql queries for batches.
      *
@@ -112,10 +101,8 @@ abstract class MetaToMetaTableMigrator
      * @return string Insert SQL query.
      */
     private function generate_insert_sql_for_batch(array $batch): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch data for migration.
      *
@@ -128,10 +115,8 @@ abstract class MetaToMetaTableMigrator
      * )
      */
     public function fetch_data_for_migration_for_ids(array $entity_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get already migrated records. Will be used to find prevent migration of already migrated records.
      *
@@ -140,10 +125,8 @@ abstract class MetaToMetaTableMigrator
      * @return array Already migrated records.
      */
     private function get_already_migrated_records(array $entity_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Classify each record on whether to migrate or update.
      *
@@ -153,10 +136,8 @@ abstract class MetaToMetaTableMigrator
      * @return array[] Returns two arrays, first for records to migrate, and second for records to upgrade.
      */
     private function classify_update_insert_records(array $to_migrate, array $already_migrated): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to build query used to fetch data from source meta table.
      *
@@ -165,8 +146,6 @@ abstract class MetaToMetaTableMigrator
      * @return string Query that can be used to fetch data.
      */
     private function build_meta_table_query(array $entity_ids): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -29,10 +29,8 @@ class BlockTemplateUtils
      * @return AbstractTemplate|AbstractTemplatePart|null
      */
     public static function get_template($template_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array containing the references of
      * the passed blocks and their inner blocks.
@@ -42,10 +40,8 @@ class BlockTemplateUtils
      * @return array block references to the passed blocks and their inner blocks.
      */
     public static function flatten_blocks(&$blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses wp_template content and injects the current theme's
      * stylesheet as a theme attribute into each wp_template_part
@@ -55,10 +51,8 @@ class BlockTemplateUtils
      * @return string Updated wp_template content.
      */
     public static function inject_theme_attribute_in_content($template_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a unified template object based a post Object.
      * Important: This method is an almost identical duplicate from wp-includes/block-template-utils.php as it was not intended for public use. It has been modified to build templates from plugins rather than themes.
@@ -68,10 +62,8 @@ class BlockTemplateUtils
      * @return \WP_Block_Template|\WP_Error Template.
      */
     public static function build_template_result_from_post($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a unified template object based on a theme file.
      *
@@ -83,10 +75,8 @@ class BlockTemplateUtils
      * @return \WP_Block_Template Template.
      */
     public static function build_template_result_from_file($template_file, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a new template object so that we can make Woo Blocks default templates available in the current theme should they not have any.
      *
@@ -98,10 +88,8 @@ class BlockTemplateUtils
      * @return object Block template object.
      */
     public static function create_new_block_template_object($template_file, $template_type, $template_slug, $template_is_from_theme = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds all nested template part file paths in a theme's directory.
      *
@@ -109,10 +97,8 @@ class BlockTemplateUtils
      * @return array $path_list A list of paths to all template part files.
      */
     public static function get_template_paths($template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the directory where templates of a specific template type can be found.
      *
@@ -121,10 +107,8 @@ class BlockTemplateUtils
      * @return string
      */
     public static function get_templates_directory($template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns template title.
      *
@@ -132,10 +116,8 @@ class BlockTemplateUtils
      * @return string Human friendly title.
      */
     public static function get_block_template_title($template_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns template description.
      *
@@ -143,10 +125,8 @@ class BlockTemplateUtils
      * @return string Template description.
      */
     public static function get_block_template_description($template_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns area for template parts.
      *
@@ -155,10 +135,8 @@ class BlockTemplateUtils
      * @return string Template part area.
      */
     public static function get_block_template_area($template_slug, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts template paths into a slug
      *
@@ -166,10 +144,8 @@ class BlockTemplateUtils
      * @return string slug
      */
     public static function generate_template_slug_from_path($path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the first matching template part within themes directories
      *
@@ -187,10 +163,8 @@ class BlockTemplateUtils
      * @return string|null  The matched path or `null` if no match was found.
      */
     public static function get_theme_template_path($template_slug, $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the theme has a template. So we know if to load our own in or not.
      *
@@ -198,10 +172,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function theme_has_template($template_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the theme has a template. So we know if to load our own in or not.
      *
@@ -209,10 +181,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function theme_has_template_part($template_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks to see if they are using a compatible version of WP, or if not they have a compatible version of the Gutenberg plugin installed.
      *
@@ -221,10 +191,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function supports_block_templates($template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if we can fall back to an `archive-product` template stored on the db for a given slug.
      *
@@ -233,10 +201,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function template_is_eligible_for_fallback_from_db($template_slug, $db_templates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the `archive-product` fallback template stored on the db for a given slug.
      *
@@ -245,10 +211,8 @@ class BlockTemplateUtils
      * @return boolean|object
      */
     public static function get_fallback_template_from_db($template_slug, $db_templates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if we can fall back to the `archive-product` file template for a given slug in the current theme.
      *
@@ -259,10 +223,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function template_is_eligible_for_fallback_from_theme($template_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the `has_theme_file` to `true` for templates with fallbacks
      *
@@ -281,10 +243,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function set_has_theme_file_if_fallback_is_available($query_result, $template)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes templates that were added to a theme's block-templates directory, but already had a customised version saved in the database.
      *
@@ -293,10 +253,8 @@ class BlockTemplateUtils
      * @return array List of templates with duplicates removed. The customised alternative is preferred over the theme default.
      */
     public static function remove_theme_templates_with_custom_alternative($templates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes customized templates that shouldn't be available. That means customized templates based on the
      * WooCommerce default template when there is a customized template based on the theme template.
@@ -307,10 +265,8 @@ class BlockTemplateUtils
      * @return array Filtered list of templates with only relevant templates available.
      */
     public static function remove_duplicate_customized_templates($templates, $theme_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the blockified templates should be used or not.
      * If the option is not stored on the db, we need to check if the current theme is a block one or not.
@@ -318,10 +274,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function should_use_blockified_product_grid_templates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether the provided $blocks contains any of the $block_names,
      * or if they contain a pattern that contains any of the $block_names.
@@ -331,10 +285,8 @@ class BlockTemplateUtils
      * @return bool Whether the content contains the specified block.
      */
     public static function has_block_including_patterns($block_names, $blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the passed `$template` has the legacy template block.
      *
@@ -342,10 +294,8 @@ class BlockTemplateUtils
      * @return boolean
      */
     public static function template_has_legacy_template_block($template)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the title, description and area of a template to the correct values and to make them more user-friendly.
      * For example, instead of:
@@ -361,10 +311,8 @@ class BlockTemplateUtils
      * @return WP_Block_Template
      */
     public static function update_template_data($template, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the templates saved in the database.
      *
@@ -373,12 +321,9 @@ class BlockTemplateUtils
      *
      * @return int[]|\WP_Post[] An array of found templates.
      */
-    public static function get_block_templates_from_db($slugs = array (
-), $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+    public static function get_block_templates_from_db($slugs = array(), $template_type = 'wp_template')
+{
+}
     /**
      * Gets the template part by slug
      *
@@ -387,8 +332,6 @@ class BlockTemplateUtils
      * @return string The template part content.
      */
     public static function get_template_part($slug)
-    {
-        // stub
-    }
-
+{
+}
 }

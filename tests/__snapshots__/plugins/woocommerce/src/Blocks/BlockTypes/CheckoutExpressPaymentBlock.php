@@ -32,10 +32,8 @@ class CheckoutExpressPaymentBlock
      * Initialise the block
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Synchorize the express payment attributes between the Cart and Checkout pages.
      *
@@ -43,10 +41,8 @@ class CheckoutExpressPaymentBlock
      * @param WP_Post $post Post object.
      */
     public function sync_express_payment_attrs($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the express payment attributes in the other page (Cart or Checkout).
      *
@@ -54,8 +50,6 @@ class CheckoutExpressPaymentBlock
      * @param array  $updated_attrs     The updated attributes.
      */
     private function update_other_page_with_express_payment_attrs($cart_or_checkout, $updated_attrs)
-    {
-        // stub
-    }
-
+{
+}
 }

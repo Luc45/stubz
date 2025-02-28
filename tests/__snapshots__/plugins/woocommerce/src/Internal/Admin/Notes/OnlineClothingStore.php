@@ -17,18 +17,14 @@ class OnlineClothingStore
      * @return bool Whether the industries includes fashion-apparel-accessories.
      */
     private static function is_in_fashion_industry($industries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the note.
      *
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

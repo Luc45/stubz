@@ -22,8 +22,6 @@ class EnginesServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

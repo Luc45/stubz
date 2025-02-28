@@ -18,10 +18,8 @@ class WC_Product_Usage_Rule_Set
      * @param array $rules product feature restriction rules.
      */
     public function __construct($rules)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the value of a rule by name
      *
@@ -29,8 +27,6 @@ class WC_Product_Usage_Rule_Set
      * @return mixed|null
      */
     public function get_rule(string $rule_name)
-    {
-        // stub
-    }
-
+{
+}
 }

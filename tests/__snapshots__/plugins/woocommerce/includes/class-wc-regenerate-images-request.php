@@ -16,30 +16,24 @@ class WC_Regenerate_Images_Request
      * Initiate new background process.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is job running?
      *
      * @return boolean
      */
     public function is_running()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Limit each task ran per batch to 1 for image regen.
      *
      * @return bool
      */
     protected function batch_limit_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether an attachment can have its thumbnails regenerated.
      *
@@ -49,10 +43,8 @@ class WC_Regenerate_Images_Request
      * @return bool Whether the given attachment can have its thumbnails regenerated.
      */
     protected function is_regeneratable($attachment)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Code to execute for each item in the queue
      *
@@ -60,10 +52,8 @@ class WC_Regenerate_Images_Request
      * @return bool
      */
     protected function task($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filters the list of thumbnail sizes to only include those which have missing files.
      *
@@ -73,10 +63,8 @@ class WC_Regenerate_Images_Request
      * @return array An associative array of image sizes.
      */
     public function filter_image_sizes_to_only_missing_thumbnails($sizes, $metadata, $attachment_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the sizes we want to regenerate.
      *
@@ -84,18 +72,14 @@ class WC_Regenerate_Images_Request
      * @return array
      */
     public function adjust_intermediate_image_sizes($sizes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This runs once the job has completed all items on the queue.
      *
      * @return void
      */
     protected function complete()
-    {
-        // stub
-    }
-
+{
+}
 }

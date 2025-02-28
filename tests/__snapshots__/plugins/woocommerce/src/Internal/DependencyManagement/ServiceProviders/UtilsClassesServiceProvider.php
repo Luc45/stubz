@@ -29,8 +29,6 @@ class UtilsClassesServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -20,10 +20,8 @@ class PublishAfterTimeRuleProcessor
      * @param DateTimeProviderInterface $date_time_provider The DateTime provider.
      */
     public function __construct($date_time_provider = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the rule.
      *
@@ -33,10 +31,8 @@ class PublishAfterTimeRuleProcessor
      * @return bool Whether the rule passes or not.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -45,8 +41,6 @@ class PublishAfterTimeRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

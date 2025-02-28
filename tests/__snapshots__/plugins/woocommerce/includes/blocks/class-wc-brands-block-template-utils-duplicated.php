@@ -28,10 +28,8 @@ class BlockTemplateUtilsDuplicated
      * @return array block references to the passed blocks and their inner blocks.
      */
     public static function gutenberg_flatten_blocks(&$blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses wp_template content and injects the current theme's
      * stylesheet as a theme attribute into each wp_template_part
@@ -41,10 +39,8 @@ class BlockTemplateUtilsDuplicated
      * @return string Updated wp_template content.
      */
     public static function gutenberg_inject_theme_attribute_in_content($template_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a unified template object based a post Object.
      *
@@ -53,10 +49,8 @@ class BlockTemplateUtilsDuplicated
      * @return \WP_Block_Template|\WP_Error Template.
      */
     public static function gutenberg_build_template_result_from_post($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a unified template object based on a theme file.
      *
@@ -66,10 +60,8 @@ class BlockTemplateUtilsDuplicated
      * @return \WP_Block_Template Template.
      */
     public static function gutenberg_build_template_result_from_file($template_file, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a new template object so that we can make Woo Blocks default templates available in the current theme should they not have any.
      *
@@ -81,10 +73,8 @@ class BlockTemplateUtilsDuplicated
      * @return object Block template object.
      */
     public static function create_new_block_template_object($template_file, $template_type, $template_slug, $template_is_from_theme = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts template slugs into readable titles.
      *
@@ -92,10 +82,8 @@ class BlockTemplateUtilsDuplicated
      * @return string Human friendly title converted from the slug.
      */
     public static function convert_slug_to_title($template_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the first matching template part within themes directories
      *
@@ -113,10 +101,8 @@ class BlockTemplateUtilsDuplicated
      * @return string|null  The matched path or `null` if no match was found.
      */
     public static function get_theme_template_path($template_slug, $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the theme has a template. So we know if to load our own in or not.
      *
@@ -124,10 +110,8 @@ class BlockTemplateUtilsDuplicated
      * @return boolean
      */
     public static function theme_has_template($template_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the theme has a template. So we know if to load our own in or not.
      *
@@ -135,20 +119,16 @@ class BlockTemplateUtilsDuplicated
      * @return boolean
      */
     public static function theme_has_template_part($template_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks to see if they are using a compatible version of WP, or if not they have a compatible version of the Gutenberg plugin installed.
      *
      * @return boolean
      */
     public static function supports_block_templates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the blockified templates should be used or not.
      *
@@ -158,8 +138,6 @@ class BlockTemplateUtilsDuplicated
      * @return boolean
      */
     public static function should_use_blockified_product_grid_templates()
-    {
-        // stub
-    }
-
+{
+}
 }

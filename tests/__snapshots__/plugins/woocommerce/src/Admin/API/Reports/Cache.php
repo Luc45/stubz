@@ -13,20 +13,16 @@ class Cache
      * Invalidate cache.
      */
     public static function invalidate()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cache version number.
      *
      * @return string
      */
     public static function get_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cached value.
      *
@@ -34,10 +30,8 @@ class Cache
      * @return mixed
      */
     public static function get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update cached value.
      *
@@ -46,8 +40,6 @@ class Cache
      * @return bool
      */
     public static function set($key, $value)
-    {
-        // stub
-    }
-
+{
+}
 }

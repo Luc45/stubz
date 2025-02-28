@@ -28,21 +28,17 @@ class LegacyRestApiStub
      * Set up the Legacy REST API endpoints stub.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the class dependencies.
      *
      * @internal
      * @param RestApiUtil $rest_api_util The instance of RestApiUtil to use.
      */
-    public final function init(Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util)
+{
+}
     /**
      * Add the necessary rewrite rules for the Legacy REST API
      * (either the dedicated extension if it's installed, or the stub otherwise).
@@ -50,10 +46,8 @@ class LegacyRestApiStub
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function add_rewrite_rules_for_legacy_rest_api_stub()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the necessary request query variables for the Legacy REST API
      * (either the dedicated extension if it's installed, or the stub otherwise).
@@ -64,10 +58,8 @@ class LegacyRestApiStub
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function add_query_vars_for_legacy_rest_api_stub($vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an incoming request for the Legacy REST API.
      *
@@ -79,18 +71,14 @@ class LegacyRestApiStub
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function parse_legacy_rest_api_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process a "wc-api" variable if present in the query, by triggering the appropriate hooks.
      */
     private static function maybe_process_wc_api_query_var()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data from a WooCommerce API endpoint.
      * This method used to be part of the WooCommerce Legacy REST API.
@@ -101,10 +89,7 @@ class LegacyRestApiStub
      * @param array  $params Params to pass with request.
      * @return array|\WP_Error
      */
-    public function get_endpoint_data($endpoint, $params = array (
-))
-    {
-        // stub
-    }
-
+    public function get_endpoint_data($endpoint, $params = array())
+{
+}
 }

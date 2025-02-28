@@ -16,20 +16,16 @@ class WC_Settings_General
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings or the default section.
      *
      * @return array
      */
     protected function get_settings_for_default_section()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output a color picker input box.
      *
@@ -39,8 +35,6 @@ class WC_Settings_General
      * @param string $desc (default: '') Description for input.
      */
     public function color_picker($name, $id, $value, $desc = '')
-    {
-        // stub
-    }
-
+{
+}
 }

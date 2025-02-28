@@ -21,16 +21,12 @@ class CheckoutActionsBlock
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register style variations for the block.
      */
     public function register_style_variations()
-    {
-        // stub
-    }
-
+{
+}
 }

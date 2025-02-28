@@ -10,8 +10,7 @@ class WC_Query
      *
      * @var array
      */
-    public $query_vars = array (
-);
+    public $query_vars = array();
 
     /**
      * Reference to the main product query on the page.
@@ -38,34 +37,26 @@ class WC_Query
      * Constructor for the query class. Hooks in methods.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the chosen attributes so that get_layered_nav_chosen_attributes will get them from the query again.
      */
     public static function reset_chosen_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any errors from querystring.
      */
     public function get_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init query vars by loading options.
      */
     public function init_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get page title for an endpoint.
      *
@@ -77,10 +68,8 @@ class WC_Query
      * @return string The page title.
      */
     public function get_endpoint_title($endpoint, $action = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Endpoint mask describing the places the endpoint should be added.
      *
@@ -88,18 +77,14 @@ class WC_Query
      * @return int
      */
     public function get_endpoints_mask()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add endpoints for query vars.
      */
     public function add_endpoints()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add query vars.
      *
@@ -107,38 +92,30 @@ class WC_Query
      * @return array
      */
     public function add_query_vars($vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query vars.
      *
      * @return array
      */
     public function get_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query current active query var.
      *
      * @return string
      */
     public function get_current_endpoint()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the request and look for query vars - endpoints may not be supported.
      */
     public function parse_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Are we currently on the front page?
      *
@@ -146,10 +123,8 @@ class WC_Query
      * @return bool
      */
     private function is_showing_page_on_front($q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the front page a page we define?
      *
@@ -157,10 +132,8 @@ class WC_Query
      * @return bool
      */
     private function page_on_front_is($page_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a copy of `$query` with all query vars that are allowed on the front page stripped.
      * Used when the shop page is also the front page.
@@ -169,10 +142,8 @@ class WC_Query
      * @return array The filtered query vars.
      */
     private function filter_out_valid_front_page_query_vars($query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether a query var is allowed on the front page or not.
      *
@@ -180,20 +151,16 @@ class WC_Query
      * @return boolean TRUE when query var is allowed on the front page. FALSE otherwise.
      */
     private function is_query_var_valid_on_front_page($query_var)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into pre_get_posts to do the main product query.
      *
      * @param WP_Query $q Query instance.
      */
     public function pre_get_posts($q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'the_posts' WP filter.
      *
@@ -203,10 +170,8 @@ class WC_Query
      * @return array
      */
     public function handle_get_posts($posts, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Pre_get_posts above may adjust the main query to add WooCommerce logic. When this query is done, we need to ensure
      * all custom filters are removed.
@@ -217,10 +182,8 @@ class WC_Query
      * @return array
      */
     public function remove_product_query_filters($posts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This function used to be hooked to found_posts and adjust the posts count when the filtering by attribute
      * widget was used and variable products were present. Now it isn't hooked anymore and does nothing but return
@@ -233,30 +196,24 @@ class WC_Query
      * @return int Adjusted posts count.
      */
     public function adjust_posts_count($count, $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Instance version of get_layered_nav_chosen_attributes, needed for unit tests.
      *
      * @return array
      */
     protected function get_layered_nav_chosen_attributes_inst()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the posts (or the ids of the posts) found in the current WP loop.
      *
      * @return array Array of posts or post ids.
      */
     protected function get_current_posts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WP SEO meta description.
      *
@@ -265,10 +222,8 @@ class WC_Query
      * @return string
      */
     public function wpseo_metadesc()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WP SEO meta key.
      *
@@ -277,10 +232,8 @@ class WC_Query
      * @return string
      */
     public function wpseo_metakey()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query the products, applying sorting/ordering etc.
      * This applies to the main WordPress loop.
@@ -288,10 +241,8 @@ class WC_Query
      * @param WP_Query $q Query instance.
      */
     public function product_query($q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add extra clauses to the product query.
      *
@@ -302,26 +253,20 @@ class WC_Query
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function product_query_post_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the query.
      */
     public function remove_product_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove ordering queries.
      */
     public function remove_ordering_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of arguments for ordering products based on the selected values.
      *
@@ -330,10 +275,8 @@ class WC_Query
      * @return array
      */
     public function get_catalog_ordering_args($orderby = '', $order = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Custom query used to filter products by price.
      *
@@ -345,10 +288,8 @@ class WC_Query
      * @return array
      */
     public function price_filter_post_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle numeric price sorting.
      *
@@ -356,10 +297,8 @@ class WC_Query
      * @return array
      */
     public function order_by_price_asc_post_clauses($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle numeric price sorting.
      *
@@ -367,10 +306,8 @@ class WC_Query
      * @return array
      */
     public function order_by_price_desc_post_clauses($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WP Core does not let us change the sort direction for individual orderby params - https://core.trac.wordpress.org/ticket/17065.
      *
@@ -380,10 +317,8 @@ class WC_Query
      * @return array
      */
     public function order_by_popularity_post_clauses($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order by rating post clauses.
      *
@@ -391,10 +326,8 @@ class WC_Query
      * @return array
      */
     public function order_by_rating_post_clauses($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -402,10 +335,8 @@ class WC_Query
      * @return string
      */
     private function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Appends meta queries to an array.
      *
@@ -413,12 +344,9 @@ class WC_Query
      * @param  bool  $main_query If is main query.
      * @return array
      */
-    public function get_meta_query($meta_query = array (
-), $main_query = false)
-    {
-        // stub
-    }
-
+    public function get_meta_query($meta_query = array(), $main_query = false)
+{
+}
     /**
      * Appends tax queries to an array.
      *
@@ -426,60 +354,47 @@ class WC_Query
      * @param  bool  $main_query If is main query.
      * @return array
      */
-    public function get_tax_query($tax_query = array (
-), $main_query = false)
-    {
-        // stub
-    }
-
+    public function get_tax_query($tax_query = array(), $main_query = false)
+{
+}
     /**
      * Get the main query which product queries ran against.
      *
      * @return WP_Query
      */
     public static function get_main_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the tax query which was used by the main query.
      *
      * @return array
      */
     public static function get_main_tax_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the meta query which was used by the main query.
      *
      * @return array
      */
     public static function get_main_meta_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on WP_Query::parse_search
      */
     public static function get_main_search_query_sql()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of attributes and terms selected with the layered nav widget.
      *
      * @return array
      */
     public static function get_layered_nav_chosen_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the add-to-cart param from pagination urls.
      *
@@ -487,10 +402,8 @@ class WC_Query
      * @return string
      */
     public function remove_add_to_cart_pagination($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a meta query for filtering by rating.
      *
@@ -498,10 +411,8 @@ class WC_Query
      * @return array
      */
     public function rating_filter_meta_query()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a meta query to handle product visibility.
      *
@@ -510,10 +421,8 @@ class WC_Query
      * @return array
      */
     public function visibility_meta_query($compare = 'IN')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a meta query to handle product stock status.
      *
@@ -522,30 +431,24 @@ class WC_Query
      * @return array
      */
     public function stock_status_meta_query($status = 'instock')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Layered nav init.
      *
      * @deprecated 2.6.0
      */
     public function layered_nav_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an unpaginated list all product IDs (both filtered and unfiltered). Makes use of transients.
      *
      * @deprecated 2.6.0 due to performance concerns
      */
     public function get_products_in_view()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Layered Nav post filter.
      *
@@ -554,10 +457,8 @@ class WC_Query
      * @param mixed $deprecated Deprecated.
      */
     public function layered_nav_query($deprecated)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search post excerpt.
      *
@@ -566,18 +467,14 @@ class WC_Query
      * @deprecated 3.2.0 - Not needed anymore since WordPress 4.5.
      */
     public function search_post_excerpt($where = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the posts_where filter.
      *
      * @deprecated 3.2.0 - Nothing to remove anymore because search_post_excerpt() is deprecated.
      */
     public function remove_posts_where()
-    {
-        // stub
-    }
-
+{
+}
 }

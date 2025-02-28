@@ -15,10 +15,8 @@ class WC_Payment_Gateway_CC
      * @since 2.6.0
      */
     public function payment_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output field name HTML
      *
@@ -29,18 +27,14 @@ class WC_Payment_Gateway_CC
      * @return string
      */
     public function field_name($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs fields for entering credit card information.
      *
      * @since 2.6.0
      */
     public function form()
-    {
-        // stub
-    }
-
+{
+}
 }

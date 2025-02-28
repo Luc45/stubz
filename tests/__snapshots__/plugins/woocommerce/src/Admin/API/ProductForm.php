@@ -28,10 +28,8 @@ class ProductForm
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage woocommerce.
      *
@@ -39,10 +37,8 @@ class ProductForm
      * @return WP_Error|boolean
      */
     public function get_product_form_permission_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the form fields.
      *
@@ -50,10 +46,8 @@ class ProductForm
      * @return WP_REST_Response|WP_Error
      */
     public function get_fields($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the form config.
      *
@@ -61,8 +55,6 @@ class ProductForm
      * @return WP_REST_Response|WP_Error
      */
     public function get_form_config($request)
-    {
-        // stub
-    }
-
+{
+}
 }

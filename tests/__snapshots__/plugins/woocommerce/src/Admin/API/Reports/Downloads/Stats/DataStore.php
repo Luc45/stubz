@@ -42,10 +42,8 @@ class DataStore
      * @override DownloadsDataStore::assign_report_columns()
      */
     protected function assign_report_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default query arguments to be used by get_data().
      * These defaults are only partially applied when used via REST API, as that has its own defaults.
@@ -55,10 +53,8 @@ class DataStore
      * @return array Query parameters.
      */
     public function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the report data based on normalized parameters.
      * Will be called by `get_data` if there is no data in cache.
@@ -74,10 +70,8 @@ class DataStore
      * @return stdClass|WP_Error Data object `{ totals: *, intervals: array, total: int, pages: int, page_no: int }`, or error.
      */
     public function get_noncached_stats_data($query_args, $params, &$data, $expected_interval_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalizes order_by clause to match to SQL query.
      *
@@ -87,8 +81,6 @@ class DataStore
      * @return string
      */
     protected function normalize_order_by($order_by)
-    {
-        // stub
-    }
-
+{
+}
 }

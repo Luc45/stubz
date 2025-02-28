@@ -9,8 +9,7 @@ class PaymentGatewaySuggestionsDataSourcePoller
 {
     const ID = 'payment_gateway_suggestions';
 
-    const DATA_SOURCES = array (
-);
+    const DATA_SOURCES = array();
 
     /**
      * Class instance.
@@ -23,18 +22,14 @@ class PaymentGatewaySuggestionsDataSourcePoller
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data sources with dynamic base URL.
      *
      * @return array
      */
     public static function get_data_sources()
-    {
-        // stub
-    }
-
+{
+}
 }

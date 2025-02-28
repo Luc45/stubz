@@ -23,16 +23,14 @@ abstract class WC_Abstract_Privacy
      *
      * @var array
      */
-    protected $exporters = array (
-);
+    protected $exporters = array();
 
     /**
      * This is a list of erasers.
      *
      * @var array
      */
-    protected $erasers = array (
-);
+    protected $erasers = array();
 
     /**
      * This is a priority for the wp_privacy_personal_data_exporters filter
@@ -56,26 +54,20 @@ abstract class WC_Abstract_Privacy
      * @param int    $erase_priority  Erase priority.
      */
     public function __construct($name = '', $export_priority = 5, $erase_priority = 10)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook in events.
      */
     protected function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the privacy message on WC privacy page.
      */
     public function add_privacy_message()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the message of the privacy to display.
      * To be overloaded by the implementor.
@@ -83,34 +75,26 @@ abstract class WC_Abstract_Privacy
      * @return string
      */
     public function get_privacy_message()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Integrate this exporter implementation within the WordPress core exporters.
      *
      * @param array $exporters List of exporter callbacks.
      * @return array
      */
-    public function register_exporters($exporters = array (
-))
-    {
-        // stub
-    }
-
+    public function register_exporters($exporters = array())
+{
+}
     /**
      * Integrate this eraser implementation within the WordPress core erasers.
      *
      * @param array $erasers List of eraser callbacks.
      * @return array
      */
-    public function register_erasers($erasers = array (
-))
-    {
-        // stub
-    }
-
+    public function register_erasers($erasers = array())
+{
+}
     /**
      * Add exporter to list of exporters.
      *
@@ -121,10 +105,8 @@ abstract class WC_Abstract_Privacy
      * @return array
      */
     public function add_exporter($id, $name, $callback)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add eraser to list of erasers.
      *
@@ -135,8 +117,6 @@ abstract class WC_Abstract_Privacy
      * @return array
      */
     public function add_eraser($id, $name, $callback)
-    {
-        // stub
-    }
-
+{
+}
 }

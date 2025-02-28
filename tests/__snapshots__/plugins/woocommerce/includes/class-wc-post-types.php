@@ -9,26 +9,20 @@ class WC_Post_Types
      * Hook in methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register core taxonomies.
      */
     public static function register_taxonomies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register core post types.
      */
     public static function register_post_types()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Customize taxonomies update messages.
      *
@@ -37,36 +31,28 @@ class WC_Post_Types
      * @return bool
      */
     public static function updated_term_messages($messages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register our custom post statuses, used for order status.
      */
     public static function register_post_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush rules if the event is queued.
      *
      * @since 3.3.0
      */
     public static function maybe_flush_rewrite_rules()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush rewrite rules.
      */
     public static function flush_rewrite_rules()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Disable Gutenberg for products.
      *
@@ -75,18 +61,14 @@ class WC_Post_Types
      * @return bool
      */
     public static function gutenberg_can_edit_post_type($can_edit, $post_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Product Support to Jetpack Omnisearch.
      */
     public static function support_jetpack_omnisearch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Added product for Jetpack related posts.
      *
@@ -94,8 +76,6 @@ class WC_Post_Types
      * @return array
      */
     public static function rest_api_allowed_post_types($post_types)
-    {
-        // stub
-    }
-
+{
+}
 }

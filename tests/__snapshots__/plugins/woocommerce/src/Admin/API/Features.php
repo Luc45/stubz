@@ -28,10 +28,8 @@ class Features
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read onboarding profile data.
      *
@@ -39,10 +37,8 @@ class Features
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return available payment methods.
      *
@@ -51,8 +47,6 @@ class Features
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_features($request)
-    {
-        // stub
-    }
-
+{
+}
 }

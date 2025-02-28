@@ -5,9 +5,7 @@
  */
 function wc_template_redirect()
 {
-    // stub
 }
-
 /**
  * When loading sensitive checkout or account pages, send a HTTP header to limit rendering of pages to same origin iframes for security reasons.
  *
@@ -17,9 +15,7 @@ function wc_template_redirect()
  */
 function wc_send_frame_options_header()
 {
-    // stub
 }
-
 /**
  * No index our endpoints.
  * Prevent indexing pages like order-received.
@@ -28,9 +24,7 @@ function wc_send_frame_options_header()
  */
 function wc_prevent_endpoint_indexing()
 {
-    // stub
 }
-
 /**
  * Remove adjacent_posts_rel_link_wp_head - pointless for products.
  *
@@ -38,9 +32,7 @@ function wc_prevent_endpoint_indexing()
  */
 function wc_prevent_adjacent_posts_rel_link_wp_head()
 {
-    // stub
 }
-
 /**
  * Show the gallery if JS is disabled.
  *
@@ -48,9 +40,7 @@ function wc_prevent_adjacent_posts_rel_link_wp_head()
  */
 function wc_gallery_noscript()
 {
-    // stub
 }
-
 /**
  * When the_post is called, put product data into a global.
  *
@@ -59,21 +49,16 @@ function wc_gallery_noscript()
  */
 function wc_setup_product_data($post)
 {
-    // stub
 }
-
 /**
  * Sets up the woocommerce_loop global from the passed args or from the main query.
  *
  * @since 3.3.0
  * @param array $args Args to pass into the global.
  */
-function wc_setup_loop($args = array (
-))
+function wc_setup_loop($args = array())
 {
-    // stub
 }
-
 /**
  * Resets the woocommerce_loop global.
  *
@@ -81,9 +66,7 @@ function wc_setup_loop($args = array (
  */
 function wc_reset_loop()
 {
-    // stub
 }
-
 /**
  * Gets a property from the woocommerce_loop global.
  *
@@ -94,9 +77,7 @@ function wc_reset_loop()
  */
 function wc_get_loop_prop($prop, $default = '')
 {
-    // stub
 }
-
 /**
  * Sets a property in the woocommerce_loop global.
  *
@@ -106,9 +87,7 @@ function wc_get_loop_prop($prop, $default = '')
  */
 function wc_set_loop_prop($prop, $value = '')
 {
-    // stub
 }
-
 /**
  * Set the current visibility for a product in the woocommerce_loop global.
  *
@@ -118,9 +97,7 @@ function wc_set_loop_prop($prop, $value = '')
  */
 function wc_set_loop_product_visibility($product_id, $value)
 {
-    // stub
 }
-
 /**
  * Gets the cached current visibility for a product from the woocommerce_loop global.
  *
@@ -131,9 +108,7 @@ function wc_set_loop_product_visibility($product_id, $value)
  */
 function wc_get_loop_product_visibility($product_id)
 {
-    // stub
 }
-
 /**
  * Should the WooCommerce loop be displayed?
  *
@@ -144,9 +119,7 @@ function wc_get_loop_product_visibility($product_id)
  */
 function woocommerce_product_loop()
 {
-    // stub
 }
-
 /**
  * Output generator tag to aid debugging.
  *
@@ -156,9 +129,7 @@ function woocommerce_product_loop()
  */
 function wc_generator_tag($gen, $type)
 {
-    // stub
 }
-
 /**
  * Add body classes for WC pages.
  *
@@ -167,9 +138,7 @@ function wc_generator_tag($gen, $type)
  */
 function wc_body_class($classes)
 {
-    // stub
 }
-
 /**
  * NO JS handling.
  *
@@ -177,9 +146,7 @@ function wc_body_class($classes)
  */
 function wc_no_js()
 {
-    // stub
 }
-
 /**
  * Display the classes for the product cat div.
  *
@@ -189,9 +156,7 @@ function wc_no_js()
  */
 function wc_product_cat_class($class = '', $category = null)
 {
-    // stub
 }
-
 /**
  * Get the default columns setting - this is how many products will be shown per row in loops.
  *
@@ -200,9 +165,7 @@ function wc_product_cat_class($class = '', $category = null)
  */
 function wc_get_default_products_per_row()
 {
-    // stub
 }
-
 /**
  * Get the default rows setting - this is how many product rows will be shown in loops.
  *
@@ -211,9 +174,7 @@ function wc_get_default_products_per_row()
  */
 function wc_get_default_product_rows_per_page()
 {
-    // stub
 }
-
 /**
  * Reset the product grid settings when a new theme is activated.
  *
@@ -221,9 +182,7 @@ function wc_get_default_product_rows_per_page()
  */
 function wc_reset_product_grid_settings()
 {
-    // stub
 }
-
 /**
  * Get classname for woocommerce loops.
  *
@@ -232,9 +191,7 @@ function wc_reset_product_grid_settings()
  */
 function wc_get_loop_class()
 {
-    // stub
 }
-
 /**
  * Get the classes for the product cat div.
  *
@@ -247,9 +204,7 @@ function wc_get_loop_class()
  */
 function wc_get_product_cat_class($class = '', $category = null)
 {
-    // stub
 }
-
 /**
  * Adds extra post classes for products via the WordPress post_class hook, if used.
  *
@@ -263,9 +218,7 @@ function wc_get_product_cat_class($class = '', $category = null)
  */
 function wc_product_post_class($classes, $class = '', $post_id = 0)
 {
-    // stub
 }
-
 /**
  * Get product taxonomy HTML classes.
  *
@@ -276,9 +229,7 @@ function wc_product_post_class($classes, $class = '', $post_id = 0)
  */
 function wc_get_product_taxonomy_class($term_ids, $taxonomy)
 {
-    // stub
 }
-
 /**
  * Retrieves the classes for the post div as an array.
  *
@@ -292,9 +243,7 @@ function wc_get_product_taxonomy_class($term_ids, $taxonomy)
  */
 function wc_get_product_class($class = '', $product = null)
 {
-    // stub
 }
-
 /**
  * Display the classes for the product div.
  *
@@ -304,9 +253,7 @@ function wc_get_product_class($class = '', $product = null)
  */
 function wc_product_class($class = '', $product_id = null)
 {
-    // stub
 }
-
 /**
  * Outputs hidden form inputs for each query string variable.
  *
@@ -317,12 +264,9 @@ function wc_product_class($class = '', $product_id = null)
  * @param bool         $return Whether to return.
  * @return string
  */
-function wc_query_string_form_fields($values = null, $exclude = array (
-), $current_key = '', $return = false)
+function wc_query_string_form_fields($values = null, $exclude = array(), $current_key = '', $return = false)
 {
-    // stub
 }
-
 /**
  * Get the terms and conditions page ID.
  *
@@ -331,9 +275,7 @@ function wc_query_string_form_fields($values = null, $exclude = array (
  */
 function wc_terms_and_conditions_page_id()
 {
-    // stub
 }
-
 /**
  * Get the privacy policy page ID.
  *
@@ -342,9 +284,7 @@ function wc_terms_and_conditions_page_id()
  */
 function wc_privacy_policy_page_id()
 {
-    // stub
 }
-
 /**
  * See if the checkbox is enabled or not based on the existence of the terms page and checkbox text.
  *
@@ -353,9 +293,7 @@ function wc_privacy_policy_page_id()
  */
 function wc_terms_and_conditions_checkbox_enabled()
 {
-    // stub
 }
-
 /**
  * Get the terms and conditions checkbox text, if set.
  *
@@ -364,9 +302,7 @@ function wc_terms_and_conditions_checkbox_enabled()
  */
 function wc_get_terms_and_conditions_checkbox_text()
 {
-    // stub
 }
-
 /**
  * Get the privacy policy text, if set.
  *
@@ -376,9 +312,7 @@ function wc_get_terms_and_conditions_checkbox_text()
  */
 function wc_get_privacy_policy_text($type = '')
 {
-    // stub
 }
-
 /**
  * Output t&c checkbox text.
  *
@@ -386,9 +320,7 @@ function wc_get_privacy_policy_text($type = '')
  */
 function wc_terms_and_conditions_checkbox_text()
 {
-    // stub
 }
-
 /**
  * Output t&c page's content (if set). The page can be set from checkout settings.
  *
@@ -396,9 +328,7 @@ function wc_terms_and_conditions_checkbox_text()
  */
 function wc_terms_and_conditions_page_content()
 {
-    // stub
 }
-
 /**
  * Render privacy policy text on the checkout.
  *
@@ -406,9 +336,7 @@ function wc_terms_and_conditions_page_content()
  */
 function wc_checkout_privacy_policy_text()
 {
-    // stub
 }
-
 /**
  * Render privacy policy text on the register forms.
  *
@@ -416,9 +344,7 @@ function wc_checkout_privacy_policy_text()
  */
 function wc_registration_privacy_policy_text()
 {
-    // stub
 }
-
 /**
  * Output privacy policy text. This is custom text which can be added via the customizer/privacy settings section.
  *
@@ -429,9 +355,7 @@ function wc_registration_privacy_policy_text()
  */
 function wc_privacy_policy_text($type = 'checkout')
 {
-    // stub
 }
-
 /**
  * Replaces placeholders with links to WooCommerce policy pages.
  *
@@ -441,9 +365,7 @@ function wc_privacy_policy_text($type = 'checkout')
  */
 function wc_replace_policy_page_link_placeholders($text)
 {
-    // stub
 }
-
 /**
  * Output WooCommerce content.
  *
@@ -453,41 +375,31 @@ function wc_replace_policy_page_link_placeholders($text)
  */
 function woocommerce_content()
 {
-    // stub
 }
-
 /**
  * Output the start of the page wrapper.
  */
 function woocommerce_output_content_wrapper()
 {
-    // stub
 }
-
 /**
  * Output the end of the page wrapper.
  */
 function woocommerce_output_content_wrapper_end()
 {
-    // stub
 }
-
 /**
  * Get the shop sidebar template.
  */
 function woocommerce_get_sidebar()
 {
-    // stub
 }
-
 /**
  * Adds a demo store banner to the site if enabled.
  */
 function woocommerce_demo_store()
 {
-    // stub
 }
-
 /**
  * Page Title function.
  *
@@ -496,9 +408,7 @@ function woocommerce_demo_store()
  */
 function woocommerce_page_title($echo = true)
 {
-    // stub
 }
-
 /**
  * Output the start of a product loop. By default this is a UL.
  *
@@ -507,9 +417,7 @@ function woocommerce_page_title($echo = true)
  */
 function woocommerce_product_loop_start($echo = true)
 {
-    // stub
 }
-
 /**
  * Output the end of a product loop. By default this is a UL.
  *
@@ -518,17 +426,13 @@ function woocommerce_product_loop_start($echo = true)
  */
 function woocommerce_product_loop_end($echo = true)
 {
-    // stub
 }
-
 /**
  * Show the product title in the product loop. By default this is an H2.
  */
 function woocommerce_template_loop_product_title()
 {
-    // stub
 }
-
 /**
  * Show the subcategory title in the product loop.
  *
@@ -536,25 +440,19 @@ function woocommerce_template_loop_product_title()
  */
 function woocommerce_template_loop_category_title($category)
 {
-    // stub
 }
-
 /**
  * Insert the opening anchor tag for products in the loop.
  */
 function woocommerce_template_loop_product_link_open()
 {
-    // stub
 }
-
 /**
  * Insert the closing anchor tag for products in the loop.
  */
 function woocommerce_template_loop_product_link_close()
 {
-    // stub
 }
-
 /**
  * Insert the opening anchor tag for categories in the loop.
  *
@@ -562,84 +460,63 @@ function woocommerce_template_loop_product_link_close()
  */
 function woocommerce_template_loop_category_link_open($category)
 {
-    // stub
 }
-
 /**
  * Insert the closing anchor tag for categories in the loop.
  */
 function woocommerce_template_loop_category_link_close()
 {
-    // stub
 }
-
 /**
  * Output the products header on taxonomy archives.
  */
 function woocommerce_product_taxonomy_archive_header()
 {
-    // stub
 }
-
 /**
  * Show an archive description on taxonomy archives.
  */
 function woocommerce_taxonomy_archive_description()
 {
-    // stub
 }
-
 /**
  * Show a shop page description on product archives.
  */
 function woocommerce_product_archive_description()
 {
-    // stub
 }
-
 /**
  * Get the add to cart template for the loop.
  *
  * @param array $args Arguments.
  */
-function woocommerce_template_loop_add_to_cart($args = array (
-))
+function woocommerce_template_loop_add_to_cart($args = array())
 {
-    // stub
 }
-
 /**
  * Get the product thumbnail for the loop.
  */
 function woocommerce_template_loop_product_thumbnail()
 {
-    // stub
 }
-
 /**
  * Get the product price for the loop.
  */
 function woocommerce_template_loop_price()
 {
-    // stub
 }
-
 /**
  * Display the average rating in the loop.
  */
 function woocommerce_template_loop_rating()
 {
-    // stub
 }
-
 /**
  * Get the sale flash for the loop.
  */
 function woocommerce_show_product_loop_sale_flash()
 {
-    // stub
 }
-
 /**
  * Get the product thumbnail, or the placeholder if not set.
  *
@@ -648,20 +525,15 @@ function woocommerce_show_product_loop_sale_flash()
  * @param  bool   $placeholder True to return $placeholder if no image is found, or false to return an empty string.
  * @return string
  */
-function woocommerce_get_product_thumbnail($size = 'woocommerce_thumbnail', $attr = array (
-), $placeholder = true)
+function woocommerce_get_product_thumbnail($size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true)
 {
-    // stub
 }
-
 /**
  * Output the result count text (Showing x - x of x results).
  */
 function woocommerce_result_count()
 {
-    // stub
 }
-
 /**
  * Output the product sorting options.
  *
@@ -669,33 +541,25 @@ function woocommerce_result_count()
  */
 function woocommerce_catalog_ordering($attributes = null)
 {
-    // stub
 }
-
 /**
  * Output the pagination.
  */
 function woocommerce_pagination()
 {
-    // stub
 }
-
 /**
  * Output the product image before the single product summary.
  */
 function woocommerce_show_product_images()
 {
-    // stub
 }
-
 /**
  * Output the product thumbnails.
  */
 function woocommerce_show_product_thumbnails()
 {
-    // stub
 }
-
 /**
  * Get HTML for a gallery image.
  *
@@ -709,9 +573,7 @@ function woocommerce_show_product_thumbnails()
  */
 function wc_get_gallery_image_html($attachment_id, $main_image = false, $image_index = -1)
 {
-    // stub
 }
-
 /**
  * Get alt text based on product name and image position in gallery.
  *
@@ -723,113 +585,85 @@ function wc_get_gallery_image_html($attachment_id, $main_image = false, $image_i
  */
 function woocommerce_get_alt_from_product_title_and_position($product_name, $main_image, $image_index)
 {
-    // stub
 }
-
 /**
  * Output the product tabs.
  */
 function woocommerce_output_product_data_tabs()
 {
-    // stub
 }
-
 /**
  * Output the product title.
  */
 function woocommerce_template_single_title()
 {
-    // stub
 }
-
 /**
  * Output the product rating.
  */
 function woocommerce_template_single_rating()
 {
-    // stub
 }
-
 /**
  * Output the product price.
  */
 function woocommerce_template_single_price()
 {
-    // stub
 }
-
 /**
  * Output the product short description (excerpt).
  */
 function woocommerce_template_single_excerpt()
 {
-    // stub
 }
-
 /**
  * Output the product meta.
  */
 function woocommerce_template_single_meta()
 {
-    // stub
 }
-
 /**
  * Output the product sharing.
  */
 function woocommerce_template_single_sharing()
 {
-    // stub
 }
-
 /**
  * Output the product sale flash.
  */
 function woocommerce_show_product_sale_flash()
 {
-    // stub
 }
-
 /**
  * Trigger the single product add to cart action.
  */
 function woocommerce_template_single_add_to_cart()
 {
-    // stub
 }
-
 /**
  * Output the simple product add to cart area.
  */
 function woocommerce_simple_add_to_cart()
 {
-    // stub
 }
-
 /**
  * Output the grouped product add to cart area.
  */
 function woocommerce_grouped_add_to_cart()
 {
-    // stub
 }
-
 /**
  * Output the variable product add to cart area.
  */
 function woocommerce_variable_add_to_cart()
 {
-    // stub
 }
-
 /**
  * Output the external product add to cart area.
  */
 function woocommerce_external_add_to_cart()
 {
-    // stub
 }
-
 /**
  * Output the quantity input for add to cart forms.
  *
@@ -839,52 +673,39 @@ function woocommerce_external_add_to_cart()
  *
  * @return string
  */
-function woocommerce_quantity_input($args = array (
-), $product = null, $echo = true)
+function woocommerce_quantity_input($args = array(), $product = null, $echo = true)
 {
-    // stub
 }
-
 /**
  * Output the description tab content.
  */
 function woocommerce_product_description_tab()
 {
-    // stub
 }
-
 /**
  * Output the attributes tab content.
  */
 function woocommerce_product_additional_information_tab()
 {
-    // stub
 }
-
 /**
  * Add default product tabs to product pages.
  *
  * @param array $tabs Array of tabs.
  * @return array
  */
-function woocommerce_default_product_tabs($tabs = array (
-))
+function woocommerce_default_product_tabs($tabs = array())
 {
-    // stub
 }
-
 /**
  * Sort tabs by priority.
  *
  * @param array $tabs Array of tabs.
  * @return array
  */
-function woocommerce_sort_product_tabs($tabs = array (
-))
+function woocommerce_sort_product_tabs($tabs = array())
 {
-    // stub
 }
-
 /**
  * Sort Priority Callback Function
  *
@@ -894,9 +715,7 @@ function woocommerce_sort_product_tabs($tabs = array (
  */
 function _sort_priority_callback($a, $b)
 {
-    // stub
 }
-
 /**
  * Output the Review comments template.
  *
@@ -906,9 +725,7 @@ function _sort_priority_callback($a, $b)
  */
 function woocommerce_comments($comment, $args, $depth)
 {
-    // stub
 }
-
 /**
  * Display the review authors gravatar
  *
@@ -917,9 +734,7 @@ function woocommerce_comments($comment, $args, $depth)
  */
 function woocommerce_review_display_gravatar($comment)
 {
-    // stub
 }
-
 /**
  * Display the reviewers star rating
  *
@@ -927,9 +742,7 @@ function woocommerce_review_display_gravatar($comment)
  */
 function woocommerce_review_display_rating()
 {
-    // stub
 }
-
 /**
  * Display the review authors meta (name, verified owner, review date)
  *
@@ -937,36 +750,27 @@ function woocommerce_review_display_rating()
  */
 function woocommerce_review_display_meta()
 {
-    // stub
 }
-
 /**
  * Display the review content.
  */
 function woocommerce_review_display_comment_text()
 {
-    // stub
 }
-
 /**
  * Output the related products.
  */
 function woocommerce_output_related_products()
 {
-    // stub
 }
-
 /**
  * Output the related products.
  *
  * @param array $args Provided arguments.
  */
-function woocommerce_related_products($args = array (
-))
+function woocommerce_related_products($args = array())
 {
-    // stub
 }
-
 /**
  * Output product up sells.
  *
@@ -977,9 +781,7 @@ function woocommerce_related_products($args = array (
  */
 function woocommerce_upsell_display($limit = -1, $columns = 4, $orderby = 'rand', $order = 'desc')
 {
-    // stub
 }
-
 /**
  * Output the cart shipping calculator.
  *
@@ -987,17 +789,13 @@ function woocommerce_upsell_display($limit = -1, $columns = 4, $orderby = 'rand'
  */
 function woocommerce_shipping_calculator($button_text = '')
 {
-    // stub
 }
-
 /**
  * Output the cart totals.
  */
 function woocommerce_cart_totals()
 {
-    // stub
 }
-
 /**
  * Output the cart cross-sells.
  *
@@ -1008,33 +806,25 @@ function woocommerce_cart_totals()
  */
 function woocommerce_cross_sell_display($limit = 2, $columns = 2, $orderby = 'rand', $order = 'desc')
 {
-    // stub
 }
-
 /**
  * Output the proceed to checkout button.
  */
 function woocommerce_button_proceed_to_checkout()
 {
-    // stub
 }
-
 /**
  * Output the view cart button.
  */
 function woocommerce_widget_shopping_cart_button_view_cart()
 {
-    // stub
 }
-
 /**
  * Output the proceed to checkout button.
  */
 function woocommerce_widget_shopping_cart_proceed_to_checkout()
 {
-    // stub
 }
-
 /**
  * Output to view cart subtotal.
  *
@@ -1042,50 +832,37 @@ function woocommerce_widget_shopping_cart_proceed_to_checkout()
  */
 function woocommerce_widget_shopping_cart_subtotal()
 {
-    // stub
 }
-
 /**
  * Output the Mini-cart - used by cart widget.
  *
  * @param array $args Arguments.
  */
-function woocommerce_mini_cart($args = array (
-))
+function woocommerce_mini_cart($args = array())
 {
-    // stub
 }
-
 /**
  * Output the WooCommerce Login Form.
  *
  * @param array $args Arguments.
  */
-function woocommerce_login_form($args = array (
-))
+function woocommerce_login_form($args = array())
 {
-    // stub
 }
-
 /**
  * Output the WooCommerce Checkout Login Form.
  */
 function woocommerce_checkout_login_form()
 {
-    // stub
 }
-
 /**
  * Output the WooCommerce Breadcrumb.
  *
  * @param array $args Arguments.
  */
-function woocommerce_breadcrumb($args = array (
-))
+function woocommerce_breadcrumb($args = array())
 {
-    // stub
 }
-
 /**
  * Output the Order review table for the checkout.
  *
@@ -1093,25 +870,19 @@ function woocommerce_breadcrumb($args = array (
  */
 function woocommerce_order_review($deprecated = false)
 {
-    // stub
 }
-
 /**
  * Output the Payment Methods on the checkout.
  */
 function woocommerce_checkout_payment()
 {
-    // stub
 }
-
 /**
  * Output the Coupon form for the checkout.
  */
 function woocommerce_checkout_coupon_form()
 {
-    // stub
 }
-
 /**
  * Check if we will be showing products or not (and not sub-categories only).
  *
@@ -1119,9 +890,7 @@ function woocommerce_checkout_coupon_form()
  */
 function woocommerce_products_will_display()
 {
-    // stub
 }
-
 /**
  * See what is going to display in the loop.
  *
@@ -1130,9 +899,7 @@ function woocommerce_products_will_display()
  */
 function woocommerce_get_loop_display_mode()
 {
-    // stub
 }
-
 /**
  * Maybe display categories before, or instead of, a product loop.
  *
@@ -1142,9 +909,7 @@ function woocommerce_get_loop_display_mode()
  */
 function woocommerce_maybe_show_product_subcategories($loop_html = '')
 {
-    // stub
 }
-
 /**
  * This is a legacy function which used to check if we needed to display subcats and then output them. It was called by templates.
  *
@@ -1160,12 +925,9 @@ function woocommerce_maybe_show_product_subcategories($loop_html = '')
  * @param array $args Arguments.
  * @return null|boolean
  */
-function woocommerce_product_subcategories($args = array (
-))
+function woocommerce_product_subcategories($args = array())
 {
-    // stub
 }
-
 /**
  * Display product sub categories as thumbnails.
  *
@@ -1176,12 +938,9 @@ function woocommerce_product_subcategories($args = array (
  * @param array $args Arguments.
  * @return boolean
  */
-function woocommerce_output_product_categories($args = array (
-))
+function woocommerce_output_product_categories($args = array())
 {
-    // stub
 }
-
 /**
  * Get (and cache) product subcategories.
  *
@@ -1190,9 +949,7 @@ function woocommerce_output_product_categories($args = array (
  */
 function woocommerce_get_product_subcategories($parent_id = 0)
 {
-    // stub
 }
-
 /**
  * Show subcategory thumbnails.
  *
@@ -1200,9 +957,7 @@ function woocommerce_get_product_subcategories($parent_id = 0)
  */
 function woocommerce_subcategory_thumbnail($category)
 {
-    // stub
 }
-
 /**
  * Displays order details in a table.
  *
@@ -1210,9 +965,7 @@ function woocommerce_subcategory_thumbnail($category)
  */
 function woocommerce_order_details_table($order_id)
 {
-    // stub
 }
-
 /**
  * Displays order downloads in a table.
  *
@@ -1221,9 +974,7 @@ function woocommerce_order_details_table($order_id)
  */
 function woocommerce_order_downloads_table($downloads)
 {
-    // stub
 }
-
 /**
  * Display an 'order again' button on the view order page.
  *
@@ -1231,9 +982,7 @@ function woocommerce_order_downloads_table($downloads)
  */
 function woocommerce_order_again_button($order)
 {
-    // stub
 }
-
 /**
  * Outputs a checkout/address form field.
  *
@@ -1244,9 +993,7 @@ function woocommerce_order_again_button($order)
  */
 function woocommerce_form_field($key, $args, $value = null)
 {
-    // stub
 }
-
 /**
  * Display product search form.
  *
@@ -1261,69 +1008,52 @@ function woocommerce_form_field($key, $args, $value = null)
  */
 function get_product_search_form($echo = true)
 {
-    // stub
 }
-
 /**
  * Output the Auth header.
  */
 function woocommerce_output_auth_header()
 {
-    // stub
 }
-
 /**
  * Output the Auth footer.
  */
 function woocommerce_output_auth_footer()
 {
-    // stub
 }
-
 /**
  * Output placeholders for the single variation.
  */
 function woocommerce_single_variation()
 {
-    // stub
 }
-
 /**
  * Output the add to cart button for variations.
  */
 function woocommerce_single_variation_add_to_cart_button()
 {
-    // stub
 }
-
 /**
  * Output a list of variation attributes for use in the cart forms.
  *
  * @param array $args Arguments.
  * @since 2.4.0
  */
-function wc_dropdown_variation_attribute_options($args = array (
-))
+function wc_dropdown_variation_attribute_options($args = array())
 {
-    // stub
 }
-
 /**
  * My Account content output.
  */
 function woocommerce_account_content()
 {
-    // stub
 }
-
 /**
  * My Account navigation template.
  */
 function woocommerce_account_navigation()
 {
-    // stub
 }
-
 /**
  * My Account > Orders template.
  *
@@ -1331,9 +1061,7 @@ function woocommerce_account_navigation()
  */
 function woocommerce_account_orders($current_page)
 {
-    // stub
 }
-
 /**
  * My Account > View order template.
  *
@@ -1341,17 +1069,13 @@ function woocommerce_account_orders($current_page)
  */
 function woocommerce_account_view_order($order_id)
 {
-    // stub
 }
-
 /**
  * My Account > Downloads template.
  */
 function woocommerce_account_downloads()
 {
-    // stub
 }
-
 /**
  * My Account > Edit address template.
  *
@@ -1359,41 +1083,31 @@ function woocommerce_account_downloads()
  */
 function woocommerce_account_edit_address($type)
 {
-    // stub
 }
-
 /**
  * My Account > Downloads template.
  */
 function woocommerce_account_payment_methods()
 {
-    // stub
 }
-
 /**
  * My Account > Add payment method template.
  */
 function woocommerce_account_add_payment_method()
 {
-    // stub
 }
-
 /**
  * My Account > Edit account template.
  */
 function woocommerce_account_edit_account()
 {
-    // stub
 }
-
 /**
  * Handles the loop when no products were found/no product exist.
  */
 function wc_no_products_found()
 {
-    // stub
 }
-
 /**
  * Get HTML for the order items to be shown in emails.
  *
@@ -1403,12 +1117,9 @@ function wc_no_products_found()
  * @since 3.0.0
  * @return string
  */
-function wc_get_email_order_items($order, $args = array (
-))
+function wc_get_email_order_items($order, $args = array())
 {
-    // stub
 }
-
 /**
  * Display item meta data.
  *
@@ -1417,12 +1128,9 @@ function wc_get_email_order_items($order, $args = array (
  * @param  array         $args Arguments.
  * @return string|void
  */
-function wc_display_item_meta($item, $args = array (
-))
+function wc_display_item_meta($item, $args = array())
 {
-    // stub
 }
-
 /**
  * Display item download links.
  *
@@ -1431,20 +1139,15 @@ function wc_display_item_meta($item, $args = array (
  * @param  array         $args Arguments.
  * @return string|void
  */
-function wc_display_item_downloads($item, $args = array (
-))
+function wc_display_item_downloads($item, $args = array())
 {
-    // stub
 }
-
 /**
  * Get the shop sidebar template.
  */
 function woocommerce_photoswipe()
 {
-    // stub
 }
-
 /**
  * Outputs a list of product attributes for a product.
  *
@@ -1453,9 +1156,7 @@ function woocommerce_photoswipe()
  */
 function wc_display_product_attributes($product)
 {
-    // stub
 }
-
 /**
  * Get HTML to show product stock.
  *
@@ -1465,9 +1166,7 @@ function wc_display_product_attributes($product)
  */
 function wc_get_stock_html($product)
 {
-    // stub
 }
-
 /**
  * Get HTML for ratings.
  *
@@ -1478,9 +1177,7 @@ function wc_get_stock_html($product)
  */
 function wc_get_rating_html($rating, $count = 0)
 {
-    // stub
 }
-
 /**
  * Get HTML for star rating.
  *
@@ -1491,9 +1188,7 @@ function wc_get_rating_html($rating, $count = 0)
  */
 function wc_get_star_rating_html($rating, $count = 0)
 {
-    // stub
 }
-
 /**
  * Returns a 'from' prefix if you want to show where prices start at.
  *
@@ -1502,9 +1197,7 @@ function wc_get_star_rating_html($rating, $count = 0)
  */
 function wc_get_price_html_from_text()
 {
-    // stub
 }
-
 /**
  * Get the redirect URL after logging out. Defaults to the my account page.
  *
@@ -1513,9 +1206,7 @@ function wc_get_price_html_from_text()
  */
 function wc_get_logout_redirect_url()
 {
-    // stub
 }
-
 /**
  * Get logout link.
  *
@@ -1525,9 +1216,7 @@ function wc_get_logout_redirect_url()
  */
 function wc_logout_url($redirect = '')
 {
-    // stub
 }
-
 /**
  * Show notice if cart is empty.
  *
@@ -1535,9 +1224,7 @@ function wc_logout_url($redirect = '')
  */
 function wc_empty_cart_message()
 {
-    // stub
 }
-
 /**
  * Disable search engines indexing core, dynamic, cart/checkout pages.
  *
@@ -1546,9 +1233,7 @@ function wc_empty_cart_message()
  */
 function wc_page_noindex()
 {
-    // stub
 }
-
 /**
  * Disable search engines indexing core, dynamic, cart/checkout pages.
  * Uses "wp_robots" filter introduced in WP 5.7.
@@ -1559,9 +1244,7 @@ function wc_page_noindex()
  */
 function wc_page_no_robots($robots)
 {
-    // stub
 }
-
 /**
  * Get a slug identifying the current theme.
  *
@@ -1570,9 +1253,7 @@ function wc_page_no_robots($robots)
  */
 function wc_get_theme_slug_for_templates()
 {
-    // stub
 }
-
 /**
  * Gets and formats a list of cart item data + variations for display on the frontend.
  *
@@ -1583,9 +1264,7 @@ function wc_get_theme_slug_for_templates()
  */
 function wc_get_formatted_cart_item_data($cart_item, $flat = false)
 {
-    // stub
 }
-
 /**
  * Gets the url to remove an item from the cart.
  *
@@ -1595,9 +1274,7 @@ function wc_get_formatted_cart_item_data($cart_item, $flat = false)
  */
 function wc_get_cart_remove_url($cart_item_key)
 {
-    // stub
 }
-
 /**
  * Gets the url to re-add an item into the cart.
  *
@@ -1607,9 +1284,7 @@ function wc_get_cart_remove_url($cart_item_key)
  */
 function wc_get_cart_undo_url($cart_item_key)
 {
-    // stub
 }
-
 /**
  * Outputs all queued notices on WC pages.
  *
@@ -1617,9 +1292,7 @@ function wc_get_cart_undo_url($cart_item_key)
  */
 function woocommerce_output_all_notices()
 {
-    // stub
 }
-
 /**
  * Products RSS Feed.
  *
@@ -1627,9 +1300,7 @@ function woocommerce_output_all_notices()
  */
 function wc_products_rss_feed()
 {
-    // stub
 }
-
 /**
  * Reset the loop's index and columns when we're done outputting a product loop.
  *
@@ -1637,9 +1308,7 @@ function wc_products_rss_feed()
  */
 function woocommerce_reset_loop()
 {
-    // stub
 }
-
 /**
  * Output the reviews tab content.
  *
@@ -1647,9 +1316,7 @@ function woocommerce_reset_loop()
  */
 function woocommerce_product_reviews_tab()
 {
-    // stub
 }
-
 /**
  * Display pay buttons HTML.
  *
@@ -1657,9 +1324,7 @@ function woocommerce_product_reviews_tab()
  */
 function wc_get_pay_buttons()
 {
-    // stub
 }
-
 /**
  * Update the product archive title to the title of the shop page. Fallback to
  * 'Shop' if the shop page doesn't exist.
@@ -1671,9 +1336,7 @@ function wc_get_pay_buttons()
  */
 function wc_update_product_archive_title($post_type_name, $post_type)
 {
-    // stub
 }
-
 /**
  * Set the version of the hooked blocks in the database. Used when WC is installed for the first time.
  *
@@ -1683,9 +1346,7 @@ function wc_update_product_archive_title($post_type_name, $post_type)
  */
 function wc_set_hooked_blocks_version()
 {
-    // stub
 }
-
 /**
  * Attach functions that listen to theme switches.
  *
@@ -1697,9 +1358,7 @@ function wc_set_hooked_blocks_version()
  */
 function wc_after_switch_theme($old_name, $old_theme)
 {
-    // stub
 }
-
 /**
  * Update the Store Notice visibility when switching themes:
  * - When switching from a classic theme to a block theme, disable the Store Notice.
@@ -1714,9 +1373,7 @@ function wc_after_switch_theme($old_name, $old_theme)
  */
 function wc_update_store_notice_visible_on_theme_switch($old_name, $old_theme)
 {
-    // stub
 }
-
 /**
  * If the user switches from a classic to a block theme and they haven't already got a woocommerce_hooked_blocks_version,
  * set the version of the hooked blocks in the database, or as "no" to disable all block hooks then set as the latest WC version.
@@ -1729,9 +1386,7 @@ function wc_update_store_notice_visible_on_theme_switch($old_name, $old_theme)
  */
 function wc_set_hooked_blocks_version_on_theme_switch($old_name, $old_theme)
 {
-    // stub
 }
-
 /**
  * Add aria-label to pagination numbers.
  *
@@ -1743,5 +1398,4 @@ function wc_set_hooked_blocks_version_on_theme_switch($old_name, $old_theme)
  */
 function wc_add_aria_label_to_pagination_numbers($html, $args)
 {
-    // stub
 }

@@ -22,20 +22,16 @@ class CartShippingRateSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schema for a single rate.
      *
      * @return array
      */
     protected function get_rate_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a shipping rate from WooCommerce into a valid response.
      *
@@ -43,10 +39,8 @@ class CartShippingRateSchema
      * @return array
      */
     public function get_item_response($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets and formats the destination address of a package.
      *
@@ -54,10 +48,8 @@ class CartShippingRateSchema
      * @return object
      */
     protected function prepare_package_destination_response($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets items from a package and creates an array of strings containing product names and quantities.
      *
@@ -65,10 +57,8 @@ class CartShippingRateSchema
      * @return array
      */
     protected function prepare_package_items_response($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare an array of rates from a package for the response.
      *
@@ -76,10 +66,8 @@ class CartShippingRateSchema
      * @return array
      */
     protected function prepare_package_shipping_rates_response($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Response for a single rate.
      *
@@ -88,10 +76,8 @@ class CartShippingRateSchema
      * @return array
      */
     protected function get_rate_response($rate, $selected_rate = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a prop of the rate object, if callable.
      *
@@ -100,10 +86,8 @@ class CartShippingRateSchema
      * @return string
      */
     protected function get_rate_prop($rate, $prop)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts rate meta data into a suitable response object.
      *
@@ -111,8 +95,6 @@ class CartShippingRateSchema
      * @return array
      */
     protected function get_rate_meta_data($rate)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,38 +15,30 @@ class SingleProductTemplate
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the title of the template.
      *
      * @return string
      */
     public function get_template_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the description of the template.
      *
      * @return string
      */
     public function get_template_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the default block template from Woo Blocks if no theme templates exist.
      */
     public function render_block_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the block template objects to be used.
      *
@@ -54,10 +46,8 @@ class SingleProductTemplate
      * @return array
      */
     public function update_single_product_content($query_result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replace the first single product template block with the password form. Remove all other single product template blocks.
      *
@@ -66,10 +56,8 @@ class SingleProductTemplate
      * @return array Parsed blocks
      */
     private static function replace_first_single_product_template_block_with_password_form($parsed_blocks, $is_already_replaced)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add password form to the Single Product Template.
      *
@@ -77,8 +65,6 @@ class SingleProductTemplate
      * @return string
      */
     public static function add_password_form($content)
-    {
-        // stub
-    }
-
+{
+}
 }

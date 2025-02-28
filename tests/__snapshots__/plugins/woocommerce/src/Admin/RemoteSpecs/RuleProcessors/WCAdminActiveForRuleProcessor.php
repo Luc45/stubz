@@ -21,10 +21,8 @@ class WCAdminActiveForRuleProcessor
      * @param object $wcadmin_active_for_provider Provides the amount of time wcadmin has been active for.
      */
     public function __construct($wcadmin_active_for_provider = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs a comparison operation against the amount of time wc-admin has
      * been active for in days.
@@ -35,10 +33,8 @@ class WCAdminActiveForRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -47,8 +43,6 @@ class WCAdminActiveForRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

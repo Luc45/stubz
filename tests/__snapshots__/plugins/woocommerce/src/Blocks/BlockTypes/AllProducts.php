@@ -21,18 +21,13 @@ class AllProducts
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * It is necessary to register and enqueue assets during the render phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
 }

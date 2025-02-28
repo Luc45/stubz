@@ -21,10 +21,8 @@ class DotNotation
      * @return mixed
      */
     public function transform($value, stdClass|null $arguments = null, $default_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find the given $path in $array_to_search by dot notation.
      *
@@ -35,10 +33,8 @@ class DotNotation
      * @return mixed|null
      */
     public function get($array_to_search, $path, $default_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Transformer arguments.
      *
@@ -47,8 +43,6 @@ class DotNotation
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null)
-    {
-        // stub
-    }
-
+{
+}
 }

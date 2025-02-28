@@ -15,10 +15,8 @@ class BlockTemplatesController
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the `core/template-part` block on the server.
      *
@@ -29,10 +27,8 @@ class BlockTemplatesController
      * @return string The render.
      */
     public function render_woocommerce_template_part($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This function is used on the `pre_get_block_template` hook to return the fallback template from the db in case
      * the template is eligible for it.
@@ -49,20 +45,16 @@ class BlockTemplatesController
      * @return object|null
      */
     public function get_block_template_fallback($template, $id, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the fallback template to the template hierarchy.
      *
      * @param array $template_hierarchy A list of template candidates, in descending order of priority.
      */
     public function add_fallback_template_to_hierarchy($template_hierarchy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * By default, the Template Part Block only supports template parts that are in the current theme directory.
      * This render_callback wrapper allows us to add support for plugin-housed template parts.
@@ -71,10 +63,8 @@ class BlockTemplatesController
      * @param array $metadata     Metadata provided for registering a block type.
      */
     public function add_plugin_templates_parts_support($settings, $metadata)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevents shortcodes in templates having their HTML content broken by wpautop.
      *
@@ -84,10 +74,8 @@ class BlockTemplatesController
      * @param array $metadata     Metadata provided for registering a block type.
      */
     public function prevent_shortcodes_html_breakage($settings, $metadata)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevents the pages that are assigned as Cart/Checkout from showing the "template" selector in the page-editor.
      * We want to avoid this flow and point users towards the Site Editor instead.
@@ -95,10 +83,8 @@ class BlockTemplatesController
      * @return void
      */
     public function hide_template_selector_in_cart_checkout_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This function checks if there's a block template file in `woocommerce/templates/templates/`
      * to return to pre_get_posts short-circuiting the query in Gutenberg.
@@ -111,10 +97,8 @@ class BlockTemplatesController
      * @return mixed|\WP_Block_Template|\WP_Error
      */
     public function get_block_file_template($template, $id, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the template title and description to WooCommerce templates.
      *
@@ -124,10 +108,8 @@ class BlockTemplatesController
      * @return WP_Block_Template|null
      */
     public function add_block_template_details($block_template, $id, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the block template objects to be used.
      *
@@ -137,10 +119,8 @@ class BlockTemplatesController
      * @return array
      */
     public function add_block_templates($query_result, $query, $template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the templates saved in the database.
      *
@@ -149,12 +129,9 @@ class BlockTemplatesController
      *
      * @return int[]|\WP_Post[] An array of found templates.
      */
-    public function get_block_templates_from_db($slugs = array (
-), $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+    public function get_block_templates_from_db($slugs = array(), $template_type = 'wp_template')
+{
+}
     /**
      * Gets the templates from the WooCommerce blocks directory, skipping those for which a template already exists
      * in the theme directory.
@@ -166,10 +143,8 @@ class BlockTemplatesController
      * @return array Templates from the WooCommerce blocks plugin directory.
      */
     public function get_block_templates_from_woocommerce($slugs, $already_found_templates, $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get and build the block template objects from the block template files.
      *
@@ -178,12 +153,9 @@ class BlockTemplatesController
      *
      * @return array WP_Block_Template[] An array of block template objects.
      */
-    public function get_block_templates($slugs = array (
-), $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+    public function get_block_templates($slugs = array(), $template_type = 'wp_template')
+{
+}
     /**
      * Checks whether a block template with that name exists in Woo Blocks
      *
@@ -193,8 +165,6 @@ class BlockTemplatesController
      * @return boolean
      */
     public function block_template_is_available($template_name, $template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
 }

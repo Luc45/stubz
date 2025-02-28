@@ -26,10 +26,8 @@ class WC_Helper_Options
      * @return bool True if the option has been updated.
      */
     public static function update($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an option by key
      *
@@ -41,8 +39,6 @@ class WC_Helper_Options
      * @return mixed An option or the default.
      */
     public static function get($key, $default = false)
-    {
-        // stub
-    }
-
+{
+}
 }

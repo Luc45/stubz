@@ -55,29 +55,23 @@ class OrderAttributionController
      * @param FeaturesController $controller The feature controller.
      * @param WPConsentAPI       $consent    The WPConsentAPI integration.
      */
-    public final function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy, Automattic\WooCommerce\Internal\Features\FeaturesController $controller, Automattic\WooCommerce\Internal\Integrations\WPConsentAPI $consent)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy, Automattic\WooCommerce\Internal\Features\FeaturesController $controller, Automattic\WooCommerce\Internal\Integrations\WPConsentAPI $consent)
+{
+}
     /**
      * Register this class instance to the appropriate hooks.
      *
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WordPress on init.
      */
     public function on_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the order is created in the admin, set the source type and origin to admin/Web admin.
      * Only execute this if the order is created in the admin interface (or via ajax in the admin interface).
@@ -87,48 +81,38 @@ class OrderAttributionController
      * @since 8.5.0
      */
     private function maybe_set_admin_source(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all of the field names.
      *
      * @return array
      */
     public function get_field_names(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the prefix for the fields.
      *
      * @return string
      */
     public function get_prefix(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Scripts & styles for custom source tracking and cart tracking.
      */
     private function enqueue_scripts_and_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the stylesheet for admin pages.
      *
      * @return void
      */
     private function enqueue_admin_scripts_and_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display the origin column in the orders table.
      *
@@ -137,10 +121,8 @@ class OrderAttributionController
      * @return void
      */
     private function display_origin_column($order_id): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the translated origin label for the Origin column in the orders table.
      *
@@ -151,10 +133,8 @@ class OrderAttributionController
      * @return void
      */
     private function output_origin_column(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles the `<wc-order-attribution-inputs>` element for checkout forms, ensuring that the field is only output once.
      *
@@ -163,10 +143,8 @@ class OrderAttributionController
      * @return void
      */
     public function stamp_checkout_html_element_once()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output `<wc-order-attribution-inputs>` element that contributes the order attribution values to the enclosing form.
      * Used customer register forms, and for checkout forms through `stamp_checkout_html_element()`.
@@ -174,10 +152,8 @@ class OrderAttributionController
      * @return void
      */
     public function stamp_html_element()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save source data for a Customer object.
      *
@@ -186,10 +162,8 @@ class OrderAttributionController
      * @return void
      */
     private function set_customer_source_data(WC_Customer $customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save source data for an Order object.
      *
@@ -199,10 +173,8 @@ class OrderAttributionController
      * @return void
      */
     private function set_order_source_data(array $source_data, WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log a message as a debug log entry.
      *
@@ -211,10 +183,8 @@ class OrderAttributionController
      * @param string $level   The log level.
      */
     private function log(string $message, string $method, string $level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send order source data to Tracks.
      *
@@ -224,20 +194,16 @@ class OrderAttributionController
      * @return void
      */
     private function send_order_tracks(array $source_data, WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the screen ID for the orders page.
      *
      * @return string
      */
     private function get_order_screen_id(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the origin column in the orders table.
      *
@@ -246,8 +212,6 @@ class OrderAttributionController
      * @return void
      */
     private function register_order_origin_column()
-    {
-        // stub
-    }
-
+{
+}
 }

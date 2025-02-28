@@ -19,8 +19,6 @@ class Subsection
      * @throws \InvalidArgumentException If blockName key and value are passed into block configuration.
      */
     public function __construct(array $config, Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface &$root_template, Automattic\WooCommerce\Admin\BlockTemplates\ContainerInterface|null &$parent = null)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -63,10 +63,8 @@ trait StatsDataStoreTrait
      * Initialize query objects.
      */
     protected function initialize_queries()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the stats report data based on normalized parameters.
      * Prepares the basic intervals and object structure
@@ -78,8 +76,6 @@ trait StatsDataStoreTrait
      * @return stdClass|WP_Error Data object, or error.
      */
     public function get_noncached_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
 }

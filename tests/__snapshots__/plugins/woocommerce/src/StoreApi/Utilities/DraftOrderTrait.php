@@ -15,30 +15,24 @@ trait DraftOrderTrait
      * @return integer
      */
     protected function get_draft_order_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates draft order data in the customer session.
      *
      * @param integer $order_id Draft order ID.
      */
     protected function set_draft_order_id($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Uses the draft order ID to return an order object, if valid.
      *
      * @return \WC_Order|null;
      */
     protected function get_draft_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether the passed argument is a draft order or an order that is
      * pending/failed and the cart hasn't changed.
@@ -47,8 +41,6 @@ trait DraftOrderTrait
      * @return boolean Whether the order is valid as a draft order.
      */
     protected function is_valid_draft_order($order_object)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -17,30 +17,24 @@ class CartUpdateCustomer
      * @return string
      */
     public function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path of this rest route.
      *
      * @return string
      */
     public static function get_path_regex()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method arguments for this REST route.
      *
      * @return array An array of endpoints.
      */
     public function get_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate address params now they are populated.
      *
@@ -50,10 +44,8 @@ class CartUpdateCustomer
      * @return \WP_Error|true
      */
     protected function validate_address_params($request, $billing, $shipping)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the request and return a valid response for this endpoint.
      *
@@ -61,10 +53,8 @@ class CartUpdateCustomer
      * @return \WP_REST_Response
      */
     protected function get_route_post_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get full customer billing address.
      *
@@ -72,10 +62,8 @@ class CartUpdateCustomer
      * @return array
      */
     protected function get_customer_billing_address(WC_Customer $customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get full customer shipping address.
      *
@@ -83,8 +71,6 @@ class CartUpdateCustomer
      * @return array
      */
     protected function get_customer_shipping_address(WC_Customer $customer)
-    {
-        // stub
-    }
-
+{
+}
 }

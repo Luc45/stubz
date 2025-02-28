@@ -8,9 +8,7 @@
  */
 function woocommerce_register_additional_checkout_field($options)
 {
-    // stub
 }
-
 /**
  * Register a checkout field.
  *
@@ -20,9 +18,7 @@ function woocommerce_register_additional_checkout_field($options)
  */
 function __experimental_woocommerce_blocks_register_checkout_field($options)
 {
-    // stub
 }
-
 /**
  * Deregister a checkout field.
  *
@@ -32,5 +28,4 @@ function __experimental_woocommerce_blocks_register_checkout_field($options)
  */
 function __internal_woocommerce_blocks_deregister_checkout_field($field_id)
 {
-    // stub
 }

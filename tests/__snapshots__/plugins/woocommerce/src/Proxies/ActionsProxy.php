@@ -17,10 +17,8 @@ class ActionsProxy
      * @return int The number of times action hook $tag is fired.
      */
     public function did_action($tag)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calls the callback functions that have been added to a filter hook.
      *
@@ -31,8 +29,6 @@ class ActionsProxy
      * @return mixed The filtered value after all hooked functions are applied to it.
      */
     public function apply_filters($tag, $value, ...$parameters)
-    {
-        // stub
-    }
-
+{
+}
 }

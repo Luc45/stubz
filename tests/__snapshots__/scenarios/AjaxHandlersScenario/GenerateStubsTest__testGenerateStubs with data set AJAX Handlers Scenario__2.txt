@@ -8,13 +8,9 @@ namespace AjaxHandlersScenario\ajax;
 class AjaxHandler
 {
     public function register(): void
-    {
-        // stub
-    }
-
+{
+}
     public function handleDoSomething(): void
-    {
-        // stub
-    }
-
+{
+}
 }

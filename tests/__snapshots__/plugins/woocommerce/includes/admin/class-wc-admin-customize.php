@@ -9,10 +9,8 @@ class WC_Admin_Customize
      * Initialize customize actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register customize new nav menu item types.
      * This will register WooCommerce account endpoints as a nav menu item type.
@@ -22,10 +20,8 @@ class WC_Admin_Customize
      * @return array
      */
     public function register_customize_nav_menu_item_types($item_types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register account endpoints to customize nav menu items.
      *
@@ -36,10 +32,7 @@ class WC_Admin_Customize
      * @param  integer $page   Page number.
      * @return array
      */
-    public function register_customize_nav_menu_items($items = array (
-), $type = '', $object = '', $page = 0)
-    {
-        // stub
-    }
-
+    public function register_customize_nav_menu_items($items = array(), $type = '', $object = '', $page = 0)
+{
+}
 }

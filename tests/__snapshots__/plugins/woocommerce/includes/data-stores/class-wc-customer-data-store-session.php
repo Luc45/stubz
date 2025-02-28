@@ -51,30 +51,24 @@ class WC_Customer_Data_Store_Session
      * @param WC_Customer $customer Customer object.
      */
     public function create(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the session. Note, this does not persist the data to the DB.
      *
      * @param WC_Customer $customer Customer object.
      */
     public function update(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves all customer data to the session.
      *
      * @param WC_Customer $customer Customer object.
      */
     public function save_to_session($customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read customer data from the session unless the user has logged in, in which case the stored ID will differ from
      * the actual ID.
@@ -83,20 +77,16 @@ class WC_Customer_Data_Store_Session
      * @param WC_Customer $customer Customer object.
      */
     public function read(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set default values for the customer object if props are unset.
      *
      * @param WC_Customer $customer Customer object.
      */
     protected function set_defaults(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes the customer session.
      *
@@ -104,12 +94,9 @@ class WC_Customer_Data_Store_Session
      * @param WC_Customer $customer Customer object.
      * @param array       $args Array of args to pass to the delete method.
      */
-    public function delete(&$customer, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$customer, $args = array())
+{
+}
     /**
      * Gets the customers last order.
      *
@@ -118,10 +105,8 @@ class WC_Customer_Data_Store_Session
      * @return WC_Order|false
      */
     public function get_last_order(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the number of orders this customer has.
      *
@@ -130,10 +115,8 @@ class WC_Customer_Data_Store_Session
      * @return integer
      */
     public function get_order_count(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return how much money this customer has spent.
      *
@@ -142,8 +125,6 @@ class WC_Customer_Data_Store_Session
      * @return float
      */
     public function get_total_spent(&$customer)
-    {
-        // stub
-    }
-
+{
+}
 }

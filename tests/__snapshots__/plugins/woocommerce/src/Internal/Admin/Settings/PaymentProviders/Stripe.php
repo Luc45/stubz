@@ -18,8 +18,6 @@ class Stripe
      *              If the payment gateway does not provide the information, it will return true.
      */
     public function is_account_connected(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
 }

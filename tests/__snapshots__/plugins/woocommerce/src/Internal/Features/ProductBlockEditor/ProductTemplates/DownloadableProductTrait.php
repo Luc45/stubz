@@ -13,8 +13,6 @@ trait DownloadableProductTrait
      * @param GroupInterface $parent_block The parent block.
      */
     private function add_downloadable_product_blocks($parent_block)
-    {
-        // stub
-    }
-
+{
+}
 }

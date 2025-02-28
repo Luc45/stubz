@@ -10,9 +10,7 @@
  */
 function wc_importer_shopify_mappings($mappings, $raw_headers)
 {
-    // stub
 }
-
 /**
  * Add special wildcard Shopify mappings.
  *
@@ -23,9 +21,7 @@ function wc_importer_shopify_mappings($mappings, $raw_headers)
  */
 function wc_importer_shopify_special_mappings($mappings, $raw_headers)
 {
-    // stub
 }
-
 /**
  * Expand special Shopify columns to WC format.
  *
@@ -35,5 +31,4 @@ function wc_importer_shopify_special_mappings($mappings, $raw_headers)
  */
 function wc_importer_shopify_expand_data($data)
 {
-    // stub
 }

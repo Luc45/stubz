@@ -15,20 +15,16 @@ class IppFunctions
      * @return bool true if order is eligible, false otherwise
      */
     public static function is_order_in_person_payment_eligible(WC_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if store is eligible to accept In-Person Payments.
      *
      * @return bool true if store is eligible, false otherwise
      */
     public static function is_store_in_person_payment_eligible(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the store has specified country location and currency used.
      *
@@ -38,8 +34,6 @@ class IppFunctions
      * @return bool true if specified country and currency match the store's ones. false otherwise
      */
     public static function has_store_specified_country_currency(string $country, string $currency): bool
-    {
-        // stub
-    }
-
+{
+}
 }

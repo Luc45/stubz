@@ -19,8 +19,6 @@ class MarketingSpecs
      * @return array
      */
     public function get_knowledge_base_posts(string|null $topic): array
-    {
-        // stub
-    }
-
+{
+}
 }

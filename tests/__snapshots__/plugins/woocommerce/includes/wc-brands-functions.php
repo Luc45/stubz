@@ -9,9 +9,7 @@
  */
 function wc_get_brand_thumbnail_url($brand_id, $size = 'full')
 {
-    // stub
 }
-
 /**
  * Helper function :: wc_get_brand_thumbnail_image function.
  *
@@ -23,9 +21,7 @@ function wc_get_brand_thumbnail_url($brand_id, $size = 'full')
  */
 function wc_get_brand_thumbnail_image($brand, $size = '')
 {
-    // stub
 }
-
 /**
  * Retrieves product's brands.
  *
@@ -37,9 +33,7 @@ function wc_get_brand_thumbnail_image($brand, $size = '')
  */
 function wc_get_brands($post_id = 0, $sep = ', ', $before = '', $after = '')
 {
-    // stub
 }
-
 /**
  * Polyfill for get_brand_thumbnail_image.
  *
@@ -49,9 +43,7 @@ function wc_get_brands($post_id = 0, $sep = ', ', $before = '', $after = '')
  */
 function get_brand_thumbnail_url($brand_id, $size = 'full')
 {
-    // stub
 }
-
 /**
  * Polyfill for get_brand_thumbnail_image.
  *
@@ -61,9 +53,7 @@ function get_brand_thumbnail_url($brand_id, $size = 'full')
  */
 function get_brand_thumbnail_image($brand, $size = '')
 {
-    // stub
 }
-
 /**
  * Polyfill for get_brands.
  *
@@ -75,5 +65,4 @@ function get_brand_thumbnail_image($brand, $size = '')
  */
 function get_brands($post_id = 0, $sep = ', ', $before = '', $after = '')
 {
-    // stub
 }

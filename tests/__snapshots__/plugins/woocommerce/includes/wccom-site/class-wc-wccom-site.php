@@ -15,20 +15,16 @@ class WC_WCCOM_Site
      * @since 3.7.0
      */
     public static function load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include support files.
      *
      * @since 3.7.0
      */
     protected static function includes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Authenticate WooCommerce.com request.
      *
@@ -37,10 +33,8 @@ class WC_WCCOM_Site
      * @return int|false
      */
     public static function authenticate_wccom($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the authorization header.
      *
@@ -53,10 +47,8 @@ class WC_WCCOM_Site
      * @return string Authorization header if set.
      */
     protected static function get_authorization_header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if this is a request to WCCOM Site REST API.
      *
@@ -64,10 +56,8 @@ class WC_WCCOM_Site
      * @return bool
      */
     protected static function is_request_to_wccom_site_rest_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify WooCommerce.com request from a given body and signature request.
      *
@@ -78,10 +68,8 @@ class WC_WCCOM_Site
      * @return bool
      */
     protected static function verify_wccom_request($body, $signature, $access_token_secret)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register wccom-site REST namespace.
      *
@@ -90,8 +78,6 @@ class WC_WCCOM_Site
      * @return array Registered namespaces.
      */
     public static function register_rest_namespace($namespaces)
-    {
-        // stub
-    }
-
+{
+}
 }

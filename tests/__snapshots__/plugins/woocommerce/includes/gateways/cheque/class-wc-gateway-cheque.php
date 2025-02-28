@@ -25,26 +25,20 @@ class WC_Gateway_Cheque
      * Constructor for the gateway.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Gateway Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output for the order received page.
      */
     public function thankyou_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add content to the WC emails.
      *
@@ -54,10 +48,8 @@ class WC_Gateway_Cheque
      * @param bool     $plain_text Email format: plain text or HTML.
      */
     public function email_instructions($order, $sent_to_admin, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the payment and return the result.
      *
@@ -65,8 +57,6 @@ class WC_Gateway_Cheque
      * @return array
      */
     public function process_payment($order_id)
-    {
-        // stub
-    }
-
+{
+}
 }

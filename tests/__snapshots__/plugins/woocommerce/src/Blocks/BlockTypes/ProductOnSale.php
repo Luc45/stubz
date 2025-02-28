@@ -20,18 +20,14 @@ class ProductOnSale
      * @param array $query_args Query args.
      */
     protected function set_block_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block attributes.
      *
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
 }

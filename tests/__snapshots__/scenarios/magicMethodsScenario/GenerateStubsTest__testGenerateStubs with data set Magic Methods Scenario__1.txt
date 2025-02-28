@@ -7,32 +7,21 @@ namespace MagicMethodsScenario;
  */
 class MagicBox implements \Stringable
 {
-    private array $properties = array (
-);
+    private array $properties = array();
 
     public function __get(string $name): mixed
-    {
-        // stub
-    }
-
+{
+}
     public function __set(string $name, mixed $value): void
-    {
-        // stub
-    }
-
+{
+}
     public function __isset(string $name): bool
-    {
-        // stub
-    }
-
+{
+}
     public function __unset(string $name): void
-    {
-        // stub
-    }
-
+{
+}
     public function __toString(): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -21,10 +21,8 @@ class RuleEvaluator
      * @param GetRuleProcessor $get_rule_processor The GetRuleProcessor to use.
      */
     public function __construct($get_rule_processor = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Evaluate the given rules as an AND operation - return false early if a
      * rule evaluates to false.
@@ -37,10 +35,7 @@ class RuleEvaluator
      *
      * @return bool The result of the operation.
      */
-    public function evaluate($rules, $stored_state = null, $logger_args = array (
-))
-    {
-        // stub
-    }
-
+    public function evaluate($rules, $stored_state = null, $logger_args = array())
+{
+}
 }

@@ -14,10 +14,8 @@ class WC_Shipping_Zone_Data_Store
      * @param WC_Shipping_Zone $zone Shipping zone object.
      */
     public function create(&$zone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update zone in the database.
      *
@@ -25,10 +23,8 @@ class WC_Shipping_Zone_Data_Store
      * @param WC_Shipping_Zone $zone Shipping zone object.
      */
     public function update(&$zone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read a shipping zone from the database.
      *
@@ -37,10 +33,8 @@ class WC_Shipping_Zone_Data_Store
      * @throws Exception If invalid data store.
      */
     public function read(&$zone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes a shipping zone from the database.
      *
@@ -49,12 +43,9 @@ class WC_Shipping_Zone_Data_Store
      * @param  array            $args Array of args to pass to the delete method.
      * @return void
      */
-    public function delete(&$zone, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$zone, $args = array())
+{
+}
     /**
      * Get a list of shipping methods for a specific zone.
      *
@@ -64,10 +55,8 @@ class WC_Shipping_Zone_Data_Store
      * @return array               Array of objects containing method_id, method_order, instance_id, is_enabled
      */
     public function get_methods($zone_id, $enabled_only)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get count of methods for a zone.
      *
@@ -76,10 +65,8 @@ class WC_Shipping_Zone_Data_Store
      * @return int Method Count
      */
     public function get_method_count($zone_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a shipping method to a zone.
      *
@@ -90,10 +77,8 @@ class WC_Shipping_Zone_Data_Store
      * @return int             Instance ID
      */
     public function add_method($zone_id, $type, $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a method instance.
      *
@@ -101,10 +86,8 @@ class WC_Shipping_Zone_Data_Store
      * @param int $instance_id Instance ID.
      */
     public function delete_method($instance_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a shipping zone method instance.
      *
@@ -113,10 +96,8 @@ class WC_Shipping_Zone_Data_Store
      * @return object
      */
     public function get_method($instance_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find a matching zone ID for a given package.
      *
@@ -125,10 +106,8 @@ class WC_Shipping_Zone_Data_Store
      * @return int
      */
     public function get_zone_id_from_package($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an ordered list of zones.
      *
@@ -136,10 +115,8 @@ class WC_Shipping_Zone_Data_Store
      * @return array An array of objects containing a zone_id, zone_name, and zone_order.
      */
     public function get_zones()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a zone ID from an instance ID.
      *
@@ -148,20 +125,16 @@ class WC_Shipping_Zone_Data_Store
      * @return int
      */
     public function get_zone_id_by_instance_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read location data from the database.
      *
      * @param WC_Shipping_Zone $zone Shipping zone object.
      */
     private function read_zone_locations(&$zone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save locations to the DB.
      * This function clears old locations, then re-inserts new if any changes are found.
@@ -173,8 +146,6 @@ class WC_Shipping_Zone_Data_Store
      * @return bool|void
      */
     private function save_locations(&$zone)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -22,8 +22,6 @@ class ImportExportServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

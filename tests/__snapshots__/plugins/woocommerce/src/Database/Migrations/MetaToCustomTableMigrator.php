@@ -35,10 +35,8 @@ abstract class MetaToCustomTableMigrator
      * MetaToCustomTableMigrator constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
     * Specify schema config the source and destination table.
     *
@@ -65,8 +63,7 @@ abstract class MetaToCustomTableMigrator
     			'primary_key_type' => $type bool|int|string|decimal
     		)
     */
-    protected abstract function get_schema_config(): array;
-
+    abstract protected function get_schema_config(): array;
     /**
      * Specify column config from the source table.
      *
@@ -82,8 +79,7 @@ abstract class MetaToCustomTableMigrator
      *  ....
      * ).
      */
-    protected abstract function get_core_column_mapping(): array;
-
+    abstract protected function get_core_column_mapping(): array;
     /**
      * Specify meta keys config from source meta table.
      *
@@ -99,8 +95,7 @@ abstract class MetaToCustomTableMigrator
      *  ....
      * ).
      */
-    protected abstract function get_meta_column_config(): array;
-
+    abstract protected function get_meta_column_config(): array;
     /**
      * Generate SQL for data insertion.
      *
@@ -113,10 +108,8 @@ abstract class MetaToCustomTableMigrator
      * ...
      */
     private function generate_insert_sql_for_batch(array $batch): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate SQL for data updating.
      *
@@ -135,20 +128,16 @@ abstract class MetaToCustomTableMigrator
      * ...
      */
     private function generate_update_sql_for_batch(array $batch, array $entity_row_mapping): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate schema for primary ID column of destination table.
      *
      * @return array[] Schema for primary ID column.
      */
     private function get_destination_table_primary_id_schema(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate values and columns clauses to be used in INSERT and INSERT..ON DUPLICATE KEY UPDATE statements.
      *
@@ -158,10 +147,8 @@ abstract class MetaToCustomTableMigrator
      * @return array SQL clause for values, columns placeholders, and columns.
      */
     private function generate_column_clauses(array $columns_schema, array $batch): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return data to be migrated for a batch of entities.
      *
@@ -170,10 +157,8 @@ abstract class MetaToCustomTableMigrator
      * @return array[] Data to be migrated. Would be of the form: array( 'data' => array( ... ), 'errors' => array( ... ) ).
      */
     public function fetch_sanitized_migration_data($entity_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate a batch of entities from the posts table to the corresponding table.
      *
@@ -182,10 +167,8 @@ abstract class MetaToCustomTableMigrator
      * @return void
      */
     protected function process_migration_batch_for_ids_core(array $entity_ids): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process migration data for a batch of entities.
      *
@@ -194,20 +177,16 @@ abstract class MetaToCustomTableMigrator
      * @return array Array of errors and exception if any.
      */
     public function process_migration_data(array $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process batch for insertion into destination table.
      *
      * @param array $batch Data to insert, will be of the form as returned by `data` in `fetch_data_for_migration_for_ids`.
      */
     private function process_insert_batch(array $batch): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process batch for update into destination table.
      *
@@ -215,10 +194,8 @@ abstract class MetaToCustomTableMigrator
      * @param array $ids_mapping Maps rows to update data with their original IDs.
      */
     private function process_update_batch(array $batch, array $ids_mapping): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch data for migration.
      *
@@ -236,10 +213,8 @@ abstract class MetaToCustomTableMigrator
      * )
      */
     private function fetch_data_for_migration_for_ids(array $entity_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch id mappings for records that are already inserted in the destination table.
      *
@@ -256,10 +231,8 @@ abstract class MetaToCustomTableMigrator
      * )
      */
     protected function get_already_existing_records(array $entity_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get additional string to be appended to the WHERE clause of the SQL query used by get_data_to_insert_or_update.
      *
@@ -267,10 +240,8 @@ abstract class MetaToCustomTableMigrator
      * @return string Additional string for the WHERE clause, must either be empty or start with "AND" or "OR".
      */
     protected function get_additional_where_clause_for_get_data_to_insert_or_update(array $entity_ids): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to build query used to fetch data from core source table.
      *
@@ -279,10 +250,8 @@ abstract class MetaToCustomTableMigrator
      * @return string Query that can be used to fetch data.
      */
     private function build_entity_table_query(array $entity_ids): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to build query that will be used to fetch data from source meta table.
      *
@@ -291,10 +260,8 @@ abstract class MetaToCustomTableMigrator
      * @return string Query for fetching meta data.
      */
     private function build_meta_data_query(array $entity_ids): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to validate and combine data before we try to insert.
      *
@@ -304,10 +271,8 @@ abstract class MetaToCustomTableMigrator
      * @return array[] Validated and combined data with errors.
      */
     private function process_and_sanitize_data(array $entity_data, array $meta_data): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to sanitize core source table.
      *
@@ -316,10 +281,8 @@ abstract class MetaToCustomTableMigrator
      * @param array $entity_data Original source data.
      */
     private function process_and_sanitize_entity_data(array &$sanitized_entity_data, array &$error_records, array $entity_data): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to sanitize soure meta data.
      *
@@ -328,10 +291,8 @@ abstract class MetaToCustomTableMigrator
      * @param array $meta_data Original source data.
      */
     private function processs_and_sanitize_meta_data(array &$sanitized_entity_data, array &$error_records, array $meta_data): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate and transform data so that we catch as many errors as possible before inserting.
      *
@@ -341,10 +302,8 @@ abstract class MetaToCustomTableMigrator
      * @return float|int|mixed|string|\WP_Error
      */
     private function validate_data($value, string $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify whether data was migrated properly for given IDs.
      *
@@ -353,10 +312,8 @@ abstract class MetaToCustomTableMigrator
      * @return array List of IDs along with columns that failed to migrate.
      */
     public function verify_migrated_data(array $source_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate query to fetch data from both source and destination tables. Use the results in `verify_data` to verify if data was migrated properly.
      *
@@ -365,10 +322,8 @@ abstract class MetaToCustomTableMigrator
      * @return string SELECT statement.
      */
     protected function build_verification_query($source_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fill source metadata for given IDs for verification. This will return filled data in following format:
      * [
@@ -389,10 +344,8 @@ abstract class MetaToCustomTableMigrator
      * @return array Filled $results param with source metadata.
      */
     private function fill_source_metadata($results, $source_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to generate where clause for fetching data for verification.
      *
@@ -401,10 +354,8 @@ abstract class MetaToCustomTableMigrator
      * @return string WHERE clause.
      */
     protected function get_where_clause_for_verification($source_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify data from both source and destination tables and check if they were migrated properly.
      *
@@ -413,10 +364,8 @@ abstract class MetaToCustomTableMigrator
      * @return array Array of failed IDs if any, along with columns/meta_key names.
      */
     protected function verify_data($collected_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to verify and compare core columns.
      *
@@ -426,10 +375,8 @@ abstract class MetaToCustomTableMigrator
      * @return array Array of failed IDs if any, along with columns/meta_key names.
      */
     private function verify_entity_columns($row, $failed_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to verify meta columns.
      *
@@ -439,10 +386,8 @@ abstract class MetaToCustomTableMigrator
      * @return array Array of failed IDs if any, along with columns/meta_key names.
      */
     private function verify_meta_columns($row, $failed_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to pre-process rows to make sure we parse the correct type.
      *
@@ -454,10 +399,8 @@ abstract class MetaToCustomTableMigrator
      * @return array Processed row.
      */
     private function pre_process_row($row, $schema, $alias, $destination_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get default value of a type.
      *
@@ -466,8 +409,6 @@ abstract class MetaToCustomTableMigrator
      * @return mixed Default value.
      */
     private function get_type_defaults($type)
-    {
-        // stub
-    }
-
+{
+}
 }

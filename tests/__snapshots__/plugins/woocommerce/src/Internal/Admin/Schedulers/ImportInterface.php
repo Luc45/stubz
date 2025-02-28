@@ -14,7 +14,6 @@ interface ImportInterface
      * @param bool     $skip_existing Skip already imported items.
      */
     public static function get_items($limit, $page, $days, $skip_existing);
-
     /**
      * Get total number of items already imported.
      *
@@ -22,5 +21,4 @@ interface ImportInterface
      * @return null
      */
     public static function get_total_imported();
-
 }

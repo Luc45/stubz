@@ -9,10 +9,8 @@ class WC_Widget_Product_Tag_Cloud
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -22,10 +20,8 @@ class WC_Widget_Product_Tag_Cloud
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the taxonomy being displayed.
      *
@@ -33,10 +29,8 @@ class WC_Widget_Product_Tag_Cloud
      * @return string
      */
     public function get_current_taxonomy($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns topic count text.
      *
@@ -45,10 +39,8 @@ class WC_Widget_Product_Tag_Cloud
      * @return string
      */
     public function topic_count_text($count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the taxonomy being displayed.
      *
@@ -57,10 +49,8 @@ class WC_Widget_Product_Tag_Cloud
      * @return string
      */
     public function _get_current_taxonomy($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns topic count text.
      *
@@ -70,8 +60,6 @@ class WC_Widget_Product_Tag_Cloud
      * @return string
      */
     public function _topic_count_text($count)
-    {
-        // stub
-    }
-
+{
+}
 }

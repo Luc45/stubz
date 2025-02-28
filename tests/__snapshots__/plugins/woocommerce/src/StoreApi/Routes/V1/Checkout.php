@@ -24,20 +24,16 @@ class Checkout
      * @return string
      */
     public function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path of this rest route.
      *
      * @return string
      */
     public static function get_path_regex()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a nonce is required for the route.
      *
@@ -45,20 +41,16 @@ class Checkout
      * @return bool
      */
     protected function requires_nonce(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method arguments for this REST route.
      *
      * @return array An array of endpoints.
      */
     public function get_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the route response based on the type of request.
      *
@@ -67,10 +59,8 @@ class Checkout
      * @return \WP_REST_Response
      */
     public function get_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert the cart into a new draft order, or update an existing draft order, and return an updated cart response.
      *
@@ -79,10 +69,8 @@ class Checkout
      * @return \WP_REST_Response
      */
     protected function get_route_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate required additional fields on request.
      *
@@ -91,10 +79,8 @@ class Checkout
      * @throws RouteException When a required additional field is missing.
      */
     public function validate_required_additional_fields(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an order.
      *
@@ -111,10 +97,8 @@ class Checkout
      * @return \WP_REST_Response
      */
     protected function get_route_post_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response when something went wrong.
      *
@@ -124,12 +108,9 @@ class Checkout
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array())
+{
+}
     /**
      * Get route response when something went wrong.
      *
@@ -138,12 +119,9 @@ class Checkout
      * @param array     $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array())
+{
+}
     /**
      * Adds additional data to the \WP_Error object.
      *
@@ -154,10 +132,8 @@ class Checkout
      * @returns \WP_Error The \WP_Error with the cart added.
      */
     private function add_data_to_error_object($error, $data, $http_status_code, bool $include_cart = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update a draft order based on the cart.
      *
@@ -165,10 +141,8 @@ class Checkout
      * @throws RouteException On error.
      */
     private function create_or_update_draft_order(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the current customer session using data from the request (e.g. address data).
      *
@@ -177,10 +151,8 @@ class Checkout
      * @param \WP_REST_Request $request Full details about the request.
      */
     private function update_customer_from_request(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the chosen payment method from the request.
      *
@@ -189,10 +161,8 @@ class Checkout
      * @return \WC_Payment_Gateway|null
      */
     private function get_request_payment_method(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order processing relating to customer account.
      *
@@ -203,10 +173,8 @@ class Checkout
      * @param \WP_REST_Request $request Request object.
      */
     private function process_customer(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check request options and store (shop) config to determine if a user account should be created as part of order
      * processing.
@@ -215,10 +183,8 @@ class Checkout
      * @return boolean True if a new user account should be created.
      */
     private function should_create_customer_account(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This validates if the order can be placed regarding settings in WooCommerce > Settings > Accounts & Privacy
      * If registration during checkout is disabled, guest checkout is disabled and the user is not logged in, prevent checkout.
@@ -226,8 +192,6 @@ class Checkout
      * @throws RouteException If user cannot place order.
      */
     private function validate_user_can_place_order()
-    {
-        // stub
-    }
-
+{
+}
 }

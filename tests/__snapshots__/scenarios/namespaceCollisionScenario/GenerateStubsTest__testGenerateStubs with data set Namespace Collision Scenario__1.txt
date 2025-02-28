@@ -5,26 +5,18 @@ namespace NamespaceCollisionOne;
 class Thing
 {
     public function identify(): string
-    {
-        // stub
-    }
-
+{
 }
-
+}
 class Thing
 {
     public function identify(): string
-    {
-        // stub
-    }
-
+{
 }
-
+}
 class Consumer
 {
     public function process(): array
-    {
-        // stub
-    }
-
+{
+}
 }

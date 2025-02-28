@@ -24,20 +24,16 @@ class WC_Product_Download implements \ArrayAccess
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get allowed mime types.
      *
      * @return array
      */
     public function get_allowed_mime_types()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get type of file path set.
      *
@@ -45,30 +41,24 @@ class WC_Product_Download implements \ArrayAccess
      * @return string absolute, relative, or shortcode.
      */
     public function get_type_of_file_path($file_path = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file type.
      *
      * @return string
      */
     public function get_file_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file extension.
      *
      * @return string
      */
     public function get_file_extension()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Confirms that the download is of an allowed filetype, that it exists and that it is
      * contained within an approved directory. Used before adding to a product's list of
@@ -80,30 +70,24 @@ class WC_Product_Download implements \ArrayAccess
      * @param bool $auto_add_to_approved_directory_list If the download is not already in the approved directory list, automatically add it if possible.
      */
     public function check_is_valid(bool $auto_add_to_approved_directory_list = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if file is allowed.
      *
      * @return boolean
      */
     public function is_allowed_filetype()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate file exists.
      *
      * @return boolean
      */
     public function file_exists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Confirms that the download exists within an approved directory.
      *
@@ -116,10 +100,8 @@ class WC_Product_Download implements \ArrayAccess
      * @param bool $auto_add_to_approved_directory_list If the download is not already in the approved directory list, automatically add it if possible.
      */
     private function approved_directory_checks(bool $auto_add_to_approved_directory_list = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convenience method, allows us to re-use the same exception messaging from different areas.
      *
@@ -130,30 +112,24 @@ class WC_Product_Download implements \ArrayAccess
      * @return void
      */
     private function raise_invalid_file_exception(string $download_file): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set ID.
      *
      * @param string $value Download ID.
      */
     public function set_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set name.
      *
      * @param string $value Download name.
      */
     public function set_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set previous_hash.
      *
@@ -161,50 +137,40 @@ class WC_Product_Download implements \ArrayAccess
      * @param string $value Previous hash.
      */
     public function set_previous_hash($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set file.
      *
      * @param string $value File URL/Path.
      */
     public function set_file($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the status of the download to enabled (true) or disabled (false).
      *
      * @param bool $enabled True indicates the downloadable file is enabled, false indicates it is disabled.
      */
     public function set_enabled(bool $enabled = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get id.
      *
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get name.
      *
      * @return string
      */
     public function get_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get previous_hash.
      *
@@ -212,30 +178,24 @@ class WC_Product_Download implements \ArrayAccess
      * @return string
      */
     public function get_previous_hash()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file.
      *
      * @return string
      */
     public function get_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get status of the download.
      *
      * @return bool
      */
     public function get_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetGet.
      *
@@ -244,10 +204,8 @@ class WC_Product_Download implements \ArrayAccess
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet.
      *
@@ -256,10 +214,8 @@ class WC_Product_Download implements \ArrayAccess
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetUnset.
      *
@@ -267,10 +223,8 @@ class WC_Product_Download implements \ArrayAccess
      */
     #[ReturnTypeWillChange]
     public function offsetUnset($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists.
      *
@@ -279,8 +233,6 @@ class WC_Product_Download implements \ArrayAccess
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
 }

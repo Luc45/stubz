@@ -55,18 +55,14 @@ class DataStore
      * @override ReportsDataStore::assign_report_columns()
      */
     protected function assign_report_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set up all the hooks for maintaining and populating table data.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync customers data after an order was deleted.
      *
@@ -77,10 +73,8 @@ class DataStore
      * @param int $customer_id Customer ID.
      */
     public static function sync_on_order_delete($order_id, $customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync customers data after an order was updated.
      *
@@ -90,10 +84,8 @@ class DataStore
      * @return true|-1
      */
     public static function sync_order_customer($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maps ordering specified by the user to columns in the database/fields in the data.
      *
@@ -103,10 +95,8 @@ class DataStore
      * @return string
      */
     protected function normalize_order_by($order_by)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills WHERE clause of SQL request with date-related constraints.
      *
@@ -116,20 +106,16 @@ class DataStore
      * @param string $table_name Name of the db table relevant for the date constraint.
      */
     protected function add_time_period_sql_params($query_args, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the database query with parameters used for Customers report: categories and order status.
      *
      * @param array $query_args Query arguments supplied by the user.
      */
     protected function add_sql_query_params($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default query arguments to be used by get_data().
      * These defaults are only partially applied when used via REST API, as that has its own defaults.
@@ -139,10 +125,8 @@ class DataStore
      * @return array Query parameters.
      */
     public function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an existing customer ID for an order if one exists.
      *
@@ -150,10 +134,8 @@ class DataStore
      * @return int|bool
      */
     public static function get_existing_customer_id_from_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the report data based on normalized parameters.
      * Will be called by `get_data` if there is no data in cache.
@@ -165,10 +147,8 @@ class DataStore
      * @return stdClass|WP_Error Data object `{ totals: *, intervals: array, total: int, pages: int, page_no: int }`, or error.
      */
     public function get_noncached_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get or create a customer from a given order.
      *
@@ -176,10 +156,8 @@ class DataStore
      * @return int|bool
      */
     public static function get_or_create_customer_from_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a data object and format object of the customers data coming from the order.
      *
@@ -188,10 +166,8 @@ class DataStore
      * @return array ($data, $format)
      */
     public static function get_customer_order_data_and_format($order, $customer_user = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a guest ID (when user_id is null) by email.
      *
@@ -199,10 +175,8 @@ class DataStore
      * @return false|array Customer array if found, boolean false if not.
      */
     public static function get_guest_id_by_email($email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a registered customer row id by user_id.
      *
@@ -210,10 +184,8 @@ class DataStore
      * @return false|int Customer ID if found, boolean false if not.
      */
     public static function get_customer_id_by_user_id($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the last order made by a customer.
      *
@@ -221,10 +193,8 @@ class DataStore
      * @return object WC_Order|false.
      */
     public static function get_last_order($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the oldest orders made by a customer.
      *
@@ -232,10 +202,8 @@ class DataStore
      * @return array Orders.
      */
     public static function get_oldest_orders($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the amount of orders made by a customer.
      *
@@ -243,10 +211,8 @@ class DataStore
      * @return int|null Amount of orders for customer or null on failure.
      */
     public static function get_order_count($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the database with customer data.
      *
@@ -254,10 +220,8 @@ class DataStore
      * @return int|bool|null Number or rows modified or false on failure.
      */
     public static function update_registered_customer($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the database if the "last active" meta value was changed.
      * Function expects to be hooked into the `added_user_meta` and `updated_user_meta` actions.
@@ -267,10 +231,8 @@ class DataStore
      * @param string $meta_key Meta key being updated.
      */
     public static function update_registered_customer_via_last_active($meta_id, $user_id, $meta_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a user ID is a valid customer or other user role with past orders.
      *
@@ -278,30 +240,24 @@ class DataStore
      * @return bool
      */
     protected static function is_valid_customer($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a customer lookup row.
      *
      * @param int $customer_id Customer ID.
      */
     public static function delete_customer($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a customer lookup row by WordPress User ID.
      *
      * @param int $user_id WordPress User ID.
      */
     public static function delete_customer_by_user_id($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Anonymize the customer data for a single order.
      *
@@ -310,16 +266,12 @@ class DataStore
      * @return void
      */
     public static function anonymize_customer($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize query objects.
      */
     protected function initialize_queries()
-    {
-        // stub
-    }
-
+{
+}
 }

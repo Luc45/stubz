@@ -39,12 +39,9 @@ class WC_Order_Item_Meta
      * @param array       $item defaults to array().
      * @param \WC_Product $product defaults to null.
      */
-    public function __construct($item = array (
-), $product = null)
-    {
-        // stub
-    }
-
+    public function __construct($item = array(), $product = null)
+{
+}
     /**
      * Display meta in a formatted list.
      *
@@ -56,10 +53,8 @@ class WC_Order_Item_Meta
      */
     public function display($flat = false, $return = false, $hideprefix = '_', $delimiter = ', 
 ')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of formatted item meta in format e.g.
      *
@@ -75,10 +70,8 @@ class WC_Order_Item_Meta
      * @return array
      */
     public function get_formatted($hideprefix = '_')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of formatted item meta in format e.g.
      * Handles @deprecated args.
@@ -88,8 +81,6 @@ class WC_Order_Item_Meta
      * @return array
      */
     public function get_formatted_legacy($hideprefix = '_')
-    {
-        // stub
-    }
-
+{
+}
 }

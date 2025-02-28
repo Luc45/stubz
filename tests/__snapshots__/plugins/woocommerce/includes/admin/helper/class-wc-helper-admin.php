@@ -15,10 +15,8 @@ class WC_Helper_Admin
      * @return void
      */
     public static function load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Pushes settings onto the WooCommerce Admin global settings object (wcSettings).
      *
@@ -27,10 +25,8 @@ class WC_Helper_Admin
      * @return mixed $settings
      */
     public static function add_marketplace_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the URL for connecting or disconnecting the store to/from WooCommerce.com.
      * Approach taken from existing helper code that isn't exposed.
@@ -38,36 +34,28 @@ class WC_Helper_Admin
      * @return string
      */
     public static function get_connection_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers the REST routes for the featured products endpoint.
      * This endpoint is used by the WooCommerce > Extensions > Discover
      * page.
      */
     public static function register_rest_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The Extensions page can only be accessed by users with the manage_woocommerce
      * capability. So the API mimics that behavior.
      */
     public static function get_permission()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch featured products from WooCommerce.com and serve them
      * as JSON.
      */
     public static function get_featured()
-    {
-        // stub
-    }
-
+{
+}
 }

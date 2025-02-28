@@ -18,10 +18,8 @@ class ProductReviews
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -32,8 +30,6 @@ class ProductReviews
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

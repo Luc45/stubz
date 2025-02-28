@@ -21,10 +21,8 @@ class ProductSearch
      * @return null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -34,10 +32,8 @@ class ProductSearch
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -45,10 +41,7 @@ class ProductSearch
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
 }

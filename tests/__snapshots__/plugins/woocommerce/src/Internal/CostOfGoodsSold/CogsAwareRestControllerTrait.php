@@ -14,10 +14,8 @@ trait CogsAwareRestControllerTrait
      * @param WC_Product $product Product to get the information from.
      */
     private function add_cogs_info_to_returned_product_data(array &$data, $product): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply Cost of Goods Sold related information received in the request body to a product object.
      *
@@ -25,10 +23,8 @@ trait CogsAwareRestControllerTrait
      * @param WC_Product      $product The product to apply the data to.
      */
     private function set_cogs_info_in_product_object($request, $product): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Cost of Goods Sold related schema information to a given REST endpoint schema.
      *
@@ -37,8 +33,6 @@ trait CogsAwareRestControllerTrait
      * @return array Updated schema information.
      */
     private function add_cogs_related_product_schema(array $schema, bool $for_variations_controller): array
-    {
-        // stub
-    }
-
+{
+}
 }

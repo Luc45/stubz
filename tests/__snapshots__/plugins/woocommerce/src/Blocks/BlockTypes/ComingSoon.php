@@ -18,10 +18,8 @@ class ComingSoon
      * It is necessary to register and enqueue assets during the render phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -33,10 +31,8 @@ class ComingSoon
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -45,8 +41,6 @@ class ComingSoon
      * @return array|string|null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
 }

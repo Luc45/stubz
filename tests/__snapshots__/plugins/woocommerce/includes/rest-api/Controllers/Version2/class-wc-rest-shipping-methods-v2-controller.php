@@ -26,10 +26,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * Register the route for /shipping_methods and /shipping_methods/<method>
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to view shipping methods.
      *
@@ -37,10 +35,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a shipping method.
      *
@@ -48,10 +44,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping methods.
      *
@@ -59,10 +53,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single Shipping Method.
      *
@@ -70,10 +62,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a shipping method for response.
      *
@@ -82,10 +72,8 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return WP_REST_Response   $response Response data.
      */
     public function prepare_item_for_response($method, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -94,28 +82,22 @@ class WC_REST_Shipping_Methods_V2_Controller
      * @return array
      */
     protected function prepare_links($method, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the shipping method schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any query params needed.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

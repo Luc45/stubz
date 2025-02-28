@@ -23,10 +23,8 @@ abstract class AbstractTemplateCompatibility
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the render block data to inject our custom attribute needed to
      * determine which blocks belong to an inherited Products block.
@@ -37,8 +35,7 @@ abstract class AbstractTemplateCompatibility
      *
      * @return array
      */
-    public abstract function update_render_block_data($parsed_block, $source_block, $parent_block);
-
+    abstract public function update_render_block_data($parsed_block, $source_block, $parent_block);
     /**
      * Inject hooks to rendered content of corresponding blocks.
      *
@@ -46,8 +43,7 @@ abstract class AbstractTemplateCompatibility
      * @param mixed $block         The parsed block data.
      * @return string
      */
-    public abstract function inject_hooks($block_content, $block);
-
+    abstract public function inject_hooks($block_content, $block);
     /**
      * The hook data to inject to the rendered content of blocks. This also
      * contains hooked functions that will be removed by remove_default_hooks.
@@ -71,18 +67,15 @@ abstract class AbstractTemplateCompatibility
      *   replaced. The key is the function name and the value is the
      *   priority.
      */
-    protected abstract function set_hook_data();
-
+    abstract protected function set_hook_data();
     /**
      * Remove the default callback added by WooCommerce. We replaced these
      * callbacks by blocks so we have to remove them to prevent duplicated
      * content.
      */
     protected function remove_default_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the buffer content of the hooks to append/prepend to render content.
      *
@@ -92,8 +85,6 @@ abstract class AbstractTemplateCompatibility
      * @return string
      */
     protected function get_hooks_buffer($hooks, $position)
-    {
-        // stub
-    }
-
+{
+}
 }

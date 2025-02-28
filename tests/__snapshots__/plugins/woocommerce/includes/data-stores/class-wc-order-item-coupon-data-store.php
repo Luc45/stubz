@@ -25,10 +25,8 @@ class WC_Order_Item_Coupon_Data_Store
      * @param WC_Order_Item_Coupon $item Coupon order item.
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $item->get_id() will be set.
@@ -37,8 +35,6 @@ class WC_Order_Item_Coupon_Data_Store
      * @param WC_Order_Item_Coupon $item Coupon order item.
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,16 +11,12 @@ class TasksController
      * Init tasks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register tasks.
      */
     public function register_tasks()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -25,12 +25,9 @@ class Controller
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_datastore_data($query_args = array())
+{
+}
     /**
      * Maps query arguments from the REST request.
      *
@@ -38,10 +35,8 @@ class Controller
      * @return array
      */
     protected function prepare_reports_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get one report.
      *
@@ -49,10 +44,8 @@ class Controller
      * @return array|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report data item for serialization.
      *
@@ -61,10 +54,8 @@ class Controller
      * @return \WP_REST_Response
      */
     public function prepare_item_for_response($report, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -72,40 +63,32 @@ class Controller
      * @return array
      */
     protected function prepare_links($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the column names for export.
      *
      * @return array Key value pair of Column ID => Label.
      */
     public function get_export_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the column values for export.
      *
@@ -113,8 +96,6 @@ class Controller
      * @return array Key value pair of Column ID => Row Value.
      */
     public function prepare_item_for_export($item)
-    {
-        // stub
-    }
-
+{
+}
 }

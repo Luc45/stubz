@@ -23,34 +23,26 @@ final class AssetsController
      * @param AssetApi $asset_api  Asset API interface for various asset registration.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\Api $asset_api)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize class features.
      */
     protected function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block scripts & styles.
      */
     public function register_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register and enqueue assets for exclusive usage within the Site Editor.
      */
     public function register_and_enqueue_site_editor_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Defines resource hints to help speed up the loading of some critical blocks.
      *
@@ -61,40 +53,32 @@ final class AssetsController
      * @return array URLs to print for resource hints.
      */
     public function add_resource_hints($urls, $relation_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get resource hints during prefetch requests.
      *
      * @return array Array of URLs.
      */
     private function get_prefetch_resource_hints()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get resource hints during prerender requests.
      *
      * @return array Array of URLs.
      */
     private function get_prerender_resource_hints()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block asset resource hints in the cache or null if not found.
      *
      * @return array|null Array of resource hints.
      */
     private function get_block_asset_resource_hints_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the block asset resource hints in the cache.
      *
@@ -102,10 +86,8 @@ final class AssetsController
      * @param array  $data Array of resource hints.
      */
     private function set_block_asset_resource_hints_cache($filename, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get resource hint for a block by name.
      *
@@ -113,10 +95,8 @@ final class AssetsController
      * @return array
      */
     private function get_block_asset_resource_hints($filename = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the src of all script dependencies (handles).
      *
@@ -124,10 +104,8 @@ final class AssetsController
      * @return string[] Array of src strings.
      */
     private function get_script_dependency_src_array(array $dependencies)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an absolute url to relative links for WordPress core scripts.
      *
@@ -135,10 +113,8 @@ final class AssetsController
      * @return string Correct full path string.
      */
     private function get_absolute_url($src)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Skip Jetpack Boost minification on older versions of Jetpack Boost where it causes issues.
      *
@@ -147,10 +123,8 @@ final class AssetsController
      * @return mixed
      */
     public function skip_boost_minification_for_cart_checkout($do_concat, $handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add body classes to the frontend and within admin.
      *
@@ -158,10 +132,8 @@ final class AssetsController
      * @return string|array Modified classnames.
      */
     public function add_theme_body_class($classes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file modified time as a cache buster if we're in dev mode.
      *
@@ -169,10 +141,8 @@ final class AssetsController
      * @return string The cache buster value to use for the given file.
      */
     protected function get_file_version($file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers a style according to `wp_register_style`.
      *
@@ -183,20 +153,15 @@ final class AssetsController
      *                        'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param boolean $rtl   Optional. Whether or not to register RTL styles.
      */
-    protected function register_style($handle, $src, $deps = array (
-), $media = 'all', $rtl = false)
-    {
-        // stub
-    }
-
+    protected function register_style($handle, $src, $deps = array(), $media = 'all', $rtl = false)
+{
+}
     /**
      * Update block style dependencies after they have been registered.
      */
     public function update_block_style_dependencies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fix scripts with wc-settings dependency.
      *
@@ -211,8 +176,6 @@ final class AssetsController
      * @see https://github.com/woocommerce/woocommerce-gutenberg-products-block/issues/5052
      */
     public function update_block_settings_dependencies()
-    {
-        // stub
-    }
-
+{
+}
 }

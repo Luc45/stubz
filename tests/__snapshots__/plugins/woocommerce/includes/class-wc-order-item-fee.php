@@ -36,8 +36,7 @@ class WC_Order_Item_Fee
   'taxes' => 
   array (
     'total' => 
-    array (
-    ),
+    array(),
   ),
 );
 
@@ -49,10 +48,8 @@ class WC_Order_Item_Fee
      * @return array
      */
     protected function get_tax_class_costs($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate item taxes.
      *
@@ -60,62 +57,49 @@ class WC_Order_Item_Fee
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_taxes($calculate_tax_for = array())
+{
+}
     /**
      * Set fee amount.
      *
      * @param string $value Amount.
      */
     public function set_amount($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax class.
      *
      * @param string $value Tax class.
      */
     public function set_tax_class($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax_status.
      *
      * @param string $value Tax status.
      */
     public function set_tax_status($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total.
      *
      * @param string $amount Fee amount (do not enter negative amounts).
      */
     public function set_total($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total tax.
      *
      * @param string $amount Amount.
      */
     public function set_total_tax($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set taxes.
      *
@@ -124,10 +108,8 @@ class WC_Order_Item_Fee
      * @param array $raw_tax_data Raw tax data.
      */
     public function set_taxes($raw_tax_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get fee amount.
      *
@@ -135,10 +117,8 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item name.
      *
@@ -146,20 +126,16 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax class.
      *
@@ -167,10 +143,8 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_tax_class($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax status.
      *
@@ -178,10 +152,8 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_tax_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total fee.
      *
@@ -189,10 +161,8 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax.
      *
@@ -200,10 +170,8 @@ class WC_Order_Item_Fee
      * @return string
      */
     public function get_total_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get fee taxes.
      *
@@ -211,10 +179,8 @@ class WC_Order_Item_Fee
      * @return array
      */
     public function get_taxes($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetGet for ArrayAccess/Backwards compatibility.
      *
@@ -223,10 +189,8 @@ class WC_Order_Item_Fee
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet for ArrayAccess/Backwards compatibility.
      *
@@ -236,10 +200,8 @@ class WC_Order_Item_Fee
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists for ArrayAccess
      *
@@ -248,8 +210,6 @@ class WC_Order_Item_Fee
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -29,10 +29,8 @@ class MarketingCampaigns
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to view marketing campaigns.
      *
@@ -41,10 +39,8 @@ class MarketingCampaigns
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an aggregated array of marketing campaigns for all active marketing channels.
      *
@@ -53,10 +49,8 @@ class MarketingCampaigns
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted price based on Price type.
      *
@@ -72,10 +66,8 @@ class MarketingCampaigns
      * @return String formatted price.
      */
     private function get_formatted_price($price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares the item for the REST response.
      *
@@ -85,28 +77,22 @@ class MarketingCampaigns
      * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the item's schema, conforming to JSON Schema.
      *
      * @return array Item schema data.
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the query params for the collections.
      *
      * @return array Query parameters for the collection.
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

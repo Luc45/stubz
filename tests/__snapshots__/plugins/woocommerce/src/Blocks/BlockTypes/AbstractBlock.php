@@ -58,19 +58,15 @@ abstract class AbstractBlock
      * @param string              $block_name Optionally set block name during construct.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\Api $asset_api, Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry $asset_data_registry, Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry $integration_registry, $block_name = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the interactivity namespace. Only used when utilizing the interactivity API.
      * @return string The interactivity namespace, used to namespace interactivity API actions and state.
      */
     protected function get_full_block_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The default render_callback for all blocks. This will ensure assets are enqueued just in time, then render
      * the block (if applicable).
@@ -80,22 +76,17 @@ abstract class AbstractBlock
      * @param WP_Block|null  $block      Block instance.
      * @return string Rendered block type output.
      */
-    public function render_callback($attributes = array (
-), $content = '', $block = null)
-    {
-        // stub
-    }
-
+    public function render_callback($attributes = array(), $content = '', $block = null)
+{
+}
     /**
      * Enqueue assets used for rendering the block in editor context.
      *
      * This is needed if a block is not yet within the post content--`render` and `enqueue_assets` may not have ran.
      */
     public function enqueue_editor_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize this block type.
      *
@@ -103,20 +94,16 @@ abstract class AbstractBlock
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register script and style assets for the block type before it is registered.
      *
      * This registers the scripts; it does not enqueue them.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Injects Chunk Translations into the page so translations work for lazy loaded components.
      *
@@ -125,10 +112,8 @@ abstract class AbstractBlock
      * @param string[] $chunks Array of chunk names.
      */
     protected function register_chunk_translations($chunks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate an array of chunks paths for loading translation.
      *
@@ -136,30 +121,24 @@ abstract class AbstractBlock
      * @return string[] $chunks list of chunks to load.
      */
     protected function get_chunks_paths($chunks_folder)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers the block type with WordPress.
      *
      * @return string[] Chunks paths.
      */
     protected function register_block_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block type.
      *
      * @return string
      */
     protected function get_block_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the render callback for this block type.
      *
@@ -169,10 +148,8 @@ abstract class AbstractBlock
      * @return callable|null;
      */
     protected function get_block_type_render_callback()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor script data for this block type.
      *
@@ -181,10 +158,8 @@ abstract class AbstractBlock
      * @return array|string
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor style handle for this block type.
      *
@@ -192,10 +167,8 @@ abstract class AbstractBlock
      * @return string|null
      */
     protected function get_block_type_editor_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -204,20 +177,16 @@ abstract class AbstractBlock
      * @return array|string|null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]|null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the supports array for this block type.
      *
@@ -225,30 +194,24 @@ abstract class AbstractBlock
      * @return string;
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block attributes.
      *
      * @return array;
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block usesContext.
      *
      * @return array;
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses block attributes from the render_callback.
      *
@@ -256,10 +219,8 @@ abstract class AbstractBlock
      * @return array
      */
     protected function parse_render_callback_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block. Extended by children.
      *
@@ -269,10 +230,8 @@ abstract class AbstractBlock
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -284,10 +243,8 @@ abstract class AbstractBlock
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Data passed through from server to client for block.
      *
@@ -295,12 +252,9 @@ abstract class AbstractBlock
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Get routes from a REST API namespace.
      *
@@ -308,19 +262,14 @@ abstract class AbstractBlock
      * @return array
      */
     protected function get_routes_from_namespace($namespace)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register/enqueue scripts used for this block on the frontend, during render.
      *
      * @param array $attributes Any attributes that currently are available from the block.
      */
-    protected function enqueue_scripts(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_scripts(array $attributes = array())
+{
+}
 }

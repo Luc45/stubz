@@ -52,10 +52,8 @@ class WC_Order_Refund
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get status - always completed for refunds.
      *
@@ -63,18 +61,14 @@ class WC_Order_Refund
      * @return string
      */
     public function get_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a title for the new post type.
      */
     public function get_post_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get refunded amount.
      *
@@ -82,10 +76,8 @@ class WC_Order_Refund
      * @return int|float
      */
     public function get_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get refund reason.
      *
@@ -94,10 +86,8 @@ class WC_Order_Refund
      * @return string
      */
     public function get_reason($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get ID of user who did the refund.
      *
@@ -106,10 +96,8 @@ class WC_Order_Refund
      * @return int
      */
     public function get_refunded_by($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if the payment was refunded via API.
      *
@@ -118,10 +106,8 @@ class WC_Order_Refund
      * @return bool
      */
     public function get_refunded_payment($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted refunded amount.
      *
@@ -129,10 +115,8 @@ class WC_Order_Refund
      * @return string
      */
     public function get_formatted_refund_amount()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set refunded amount.
      *
@@ -140,10 +124,8 @@ class WC_Order_Refund
      * @throws WC_Data_Exception Exception if the amount is invalid.
      */
     public function set_amount($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set refund reason.
      *
@@ -151,10 +133,8 @@ class WC_Order_Refund
      * @throws WC_Data_Exception Exception if the amount is invalid.
      */
     public function set_reason($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set refunded by.
      *
@@ -162,10 +142,8 @@ class WC_Order_Refund
      * @throws WC_Data_Exception Exception if the amount is invalid.
      */
     public function set_refunded_by($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if the payment was refunded via API.
      *
@@ -173,10 +151,8 @@ class WC_Order_Refund
      * @param bool $value Value to set.
      */
     public function set_refunded_payment($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic __get method for backwards compatibility.
      *
@@ -184,10 +160,8 @@ class WC_Order_Refund
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an refund from the database.
      *
@@ -196,10 +170,8 @@ class WC_Order_Refund
      * @return bool
      */
     public function get_refund($id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get refund amount.
      *
@@ -207,10 +179,8 @@ class WC_Order_Refund
      * @return int|float
      */
     public function get_refund_amount()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get refund reason.
      *
@@ -218,8 +188,6 @@ class WC_Order_Refund
      * @return string
      */
     public function get_refund_reason()
-    {
-        // stub
-    }
-
+{
+}
 }

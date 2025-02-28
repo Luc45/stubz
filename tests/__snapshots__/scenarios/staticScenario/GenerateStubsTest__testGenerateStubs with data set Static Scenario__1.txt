@@ -16,16 +16,12 @@ class Counter
      * Increments the static counter.
      */
     public static function increment(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the current static counter value.
      */
     public static function getCount(): int
-    {
-        // stub
-    }
-
+{
+}
 }

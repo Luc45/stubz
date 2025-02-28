@@ -18,18 +18,14 @@ class Query
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get revenue data based on the current query vars.
      *
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -28,10 +28,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @since 3.0.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a single setting.
      *
@@ -40,10 +38,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all settings in a group.
      *
@@ -52,10 +48,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all settings in a group.
      *
@@ -64,10 +58,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array|WP_Error
      */
     public function get_group_settings($group_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of countries and states for use in the base location setting.
      *
@@ -75,10 +67,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array Array of states and countries.
      */
     private function get_countries_and_states()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get setting data.
      *
@@ -88,10 +78,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return stdClass|WP_Error
      */
     public function get_setting($group_id, $setting_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk create, update and delete items.
      *
@@ -100,10 +88,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array Of WP_Error or WP_REST_Response.
      */
     public function batch_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single setting in a group.
      *
@@ -112,10 +98,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single setting object for response.
      *
@@ -125,10 +109,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -138,10 +120,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array Links for the given setting.
      */
     protected function prepare_links($setting_id, $group_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure the current user has access to READ the settings APIs.
      *
@@ -150,10 +130,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure the current user has access to WRITE the settings APIs.
      *
@@ -162,10 +140,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|boolean
      */
     public function update_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure the current user has access to WRITE the settings APIs.
      *
@@ -176,10 +152,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return WP_Error|boolean True if the request has permission, otherwise false.
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filters out bad values from the settings array/filter so we
      * only return known values via the API.
@@ -189,10 +163,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array
      */
     public function filter_setting($setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For image_width, Crop can return "0" instead of false -- so we want
      * to make sure we return these consistently the same we accept them.
@@ -203,10 +175,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array
      */
     public function cast_image_width($setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for allowed keys for each setting response.
      *
@@ -215,10 +185,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return boolean
      */
     public function allowed_setting_keys($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Boolean for if a setting type is a valid supported setting type.
      *
@@ -227,10 +195,8 @@ class WC_REST_Setting_Options_V2_Controller
      * @return bool
      */
     public function is_setting_type_valid($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the settings schema, conforming to JSON Schema.
      *
@@ -238,8 +204,6 @@ class WC_REST_Setting_Options_V2_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

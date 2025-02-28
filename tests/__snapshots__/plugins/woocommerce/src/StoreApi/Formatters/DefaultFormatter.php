@@ -14,10 +14,7 @@ class DefaultFormatter
      * @param array $options Options that influence the formatting.
      * @return mixed
      */
-    public function format($value, array $options = array (
-))
-    {
-        // stub
-    }
-
+    public function format($value, array $options = array())
+{
+}
 }

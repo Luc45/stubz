@@ -39,11 +39,9 @@ class WC_Order_Item_Product
   'taxes' => 
   array (
     'subtotal' => 
-    array (
-    ),
+    array(),
     'total' => 
-    array (
-    ),
+    array(),
   ),
 );
 
@@ -53,129 +51,102 @@ class WC_Order_Item_Product
      * @param int $value Quantity.
      */
     public function set_quantity($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax class.
      *
      * @param string $value Tax class.
      */
     public function set_tax_class($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set Product ID
      *
      * @param int $value Product ID.
      */
     public function set_product_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set variation ID.
      *
      * @param int $value Variation ID.
      */
     public function set_variation_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Line subtotal (before discounts).
      *
      * @param string $value Subtotal.
      */
     public function set_subtotal($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Line total (after discounts).
      *
      * @param string $value Total.
      */
     public function set_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Line subtotal tax (before discounts).
      *
      * @param string $value Subtotal tax.
      */
     public function set_subtotal_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Line total tax (after discounts).
      *
      * @param string $value Total tax.
      */
     public function set_total_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set line taxes and totals for passed in taxes.
      *
      * @param array $raw_tax_data Raw tax data.
      */
     public function set_taxes($raw_tax_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set variation data (stored as meta data - write only).
      *
      * @param array $data Key/Value pairs.
      */
-    public function set_variation($data = array (
-))
-    {
-        // stub
-    }
-
+    public function set_variation($data = array())
+{
+}
     /**
      * Set properties based on passed in product object.
      *
      * @param WC_Product $product Product instance.
      */
     public function set_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set meta data for backordered products.
      */
     public function set_backorder_meta()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product ID.
      *
@@ -183,10 +154,8 @@ class WC_Order_Item_Product
      * @return int
      */
     public function get_product_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation ID.
      *
@@ -194,10 +163,8 @@ class WC_Order_Item_Product
      * @return int
      */
     public function get_variation_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get quantity.
      *
@@ -205,10 +172,8 @@ class WC_Order_Item_Product
      * @return int
      */
     public function get_quantity($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax class.
      *
@@ -216,10 +181,8 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_tax_class($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the item subtotal. This is the price of the item times the quantity
      * excluding taxes before coupon discounts.
@@ -228,10 +191,8 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_subtotal($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get subtotal tax.
      *
@@ -239,10 +200,8 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_subtotal_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the item total. This is the price of the item times the quantity
      * excluding taxes after coupon discounts.
@@ -251,10 +210,8 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax.
      *
@@ -262,10 +219,8 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_total_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes.
      *
@@ -273,20 +228,16 @@ class WC_Order_Item_Product
      * @return array
      */
     public function get_taxes($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the associated product.
      *
      * @return WC_Product|bool
      */
     public function get_product()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Download URL.
      *
@@ -294,30 +245,24 @@ class WC_Order_Item_Product
      * @return string
      */
     public function get_item_download_url($download_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get any associated downloadable files.
      *
      * @return array
      */
     public function get_item_downloads()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax status.
      *
      * @return string
      */
     public function get_tax_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetGet for ArrayAccess/Backwards compatibility.
      *
@@ -326,10 +271,8 @@ class WC_Order_Item_Product
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet for ArrayAccess/Backwards compatibility.
      *
@@ -339,10 +282,8 @@ class WC_Order_Item_Product
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists for ArrayAccess.
      *
@@ -351,10 +292,8 @@ class WC_Order_Item_Product
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates that product line items have an associated Cost of Goods Sold value.
      * Note that this is true even if the product has np COGS value (in that case the COGS value for the line item will be zero)-
@@ -362,18 +301,14 @@ class WC_Order_Item_Product
      * @return bool Always true.
      */
     public function has_cogs(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the Cost of Goods Sold value for this line item.
      *
      * @return float|null The calculated value, null if the product associated to the line item no longer exists.
      */
     public function calculate_cogs_value_core(): float|null
-    {
-        // stub
-    }
-
+{
+}
 }

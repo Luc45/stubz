@@ -11,8 +11,7 @@ class WC_Webhook
      *
      * @var array
      */
-    protected $processed = array (
-);
+    protected $processed = array();
 
     /**
      * Stores webhook data.
@@ -43,20 +42,16 @@ class WC_Webhook
      * @throws Exception If webhook cannot be read/found and $data is set.
      */
     public function __construct($data = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the hooks associated with the webhook.
      *
      * @since 2.2.0
      */
     public function enqueue()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the webhook for delivery by verifying that it should be delivered.
      * and scheduling the delivery (in the background by default, or immediately).
@@ -66,10 +61,8 @@ class WC_Webhook
      * @return mixed $arg Returns the argument in case the webhook was hooked into a filter.
      */
     public function process($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper to check if the webhook should be delivered, as some hooks.
      * (like `wp_trash_post`) will fire for every post type, not just ours.
@@ -79,10 +72,8 @@ class WC_Webhook
      * @return bool       True if webhook should be delivered, false otherwise.
      */
     private function should_deliver($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if webhook is active.
      *
@@ -90,10 +81,8 @@ class WC_Webhook
      * @return bool  True if validation passes.
      */
     private function is_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if topic is valid.
      *
@@ -101,10 +90,8 @@ class WC_Webhook
      * @return bool  True if validation passes.
      */
     private function is_valid_topic()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the criteria for certain actions.
      *
@@ -113,10 +100,8 @@ class WC_Webhook
      * @return bool       True if validation passes.
      */
     private function is_valid_action($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates post actions.
      *
@@ -125,10 +110,8 @@ class WC_Webhook
      * @return bool       True if validation passes.
      */
     private function is_valid_post_action($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates user actions.
      *
@@ -137,10 +120,8 @@ class WC_Webhook
      * @return bool       True if validation passes.
      */
     private function is_valid_user_action($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates WC processing actions.
      *
@@ -149,10 +130,8 @@ class WC_Webhook
      * @return bool       True if validation passes.
      */
     private function is_valid_processing_action($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks the resource for this webhook is valid e.g. valid post status.
      *
@@ -161,10 +140,8 @@ class WC_Webhook
      * @return bool       True if validation passes.
      */
     private function is_valid_resource($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the specified resource has already been queued for delivery within the current request.
      *
@@ -175,10 +152,8 @@ class WC_Webhook
      * @return bool
      */
     protected function is_already_processed($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deliver the webhook payload using wp_safe_remote_request().
      *
@@ -186,10 +161,8 @@ class WC_Webhook
      * @param mixed $arg First hook argument.
      */
     public function deliver($arg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get WP API integration payload.
      *
@@ -200,10 +173,8 @@ class WC_Webhook
      * @return array
      */
     private function get_wp_api_payload($resource, $resource_id, $event)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build the payload data for the webhook.
      *
@@ -213,10 +184,8 @@ class WC_Webhook
      * @since  2.2.0
      */
     public function build_payload($resource_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a base64-encoded HMAC-SHA256 signature of the payload body so the
      * recipient can verify the authenticity of the webhook. Note that the signature
@@ -227,10 +196,8 @@ class WC_Webhook
      * @return string
      */
     public function generate_signature($payload)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a new unique hash as a delivery id based on current time and wehbook id.
      * Return the hash for inclusion in the webhook request.
@@ -239,10 +206,8 @@ class WC_Webhook
      * @return string
      */
     public function get_new_delivery_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log the delivery request/response.
      *
@@ -253,10 +218,8 @@ class WC_Webhook
      * @param float          $duration    Request duration.
      */
     public function log_delivery($delivery_id, $request, $response, $duration)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Track consecutive delivery failures and automatically disable the webhook.
      * if more than 5 consecutive failures occur. A failure is defined as a.
@@ -265,10 +228,8 @@ class WC_Webhook
      * @since 2.2.0
      */
     private function failed_delivery()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the delivery logs for this webhook.
      *
@@ -276,10 +237,8 @@ class WC_Webhook
      * @return string
      */
     public function get_delivery_logs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the delivery log specified by the ID. The delivery log includes:
      *
@@ -295,10 +254,8 @@ class WC_Webhook
      * @return void
      */
     public function get_delivery_log($delivery_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send a test ping to the delivery URL, sent when the webhook is first created.
      *
@@ -306,10 +263,8 @@ class WC_Webhook
      * @return bool|WP_Error
      */
     public function deliver_ping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the friendly name for the webhook.
      *
@@ -319,10 +274,8 @@ class WC_Webhook
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the webhook status.
      *
@@ -336,10 +289,8 @@ class WC_Webhook
      * @return string status
      */
     public function get_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get webhook created date.
      *
@@ -349,10 +300,8 @@ class WC_Webhook
      * @return WC_DateTime|null Object if the date is set or null if there is no date.
      */
     public function get_date_created($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get webhook modified date.
      *
@@ -362,10 +311,8 @@ class WC_Webhook
      * @return WC_DateTime|null Object if the date is set or null if there is no date.
      */
     public function get_date_modified($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the secret used for generating the HMAC-SHA256 signature.
      *
@@ -375,10 +322,8 @@ class WC_Webhook
      * @return string
      */
     public function get_secret($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the webhook topic, e.g. `order.created`.
      *
@@ -388,10 +333,8 @@ class WC_Webhook
      * @return string
      */
     public function get_topic($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the delivery URL.
      *
@@ -401,10 +344,8 @@ class WC_Webhook
      * @return string
      */
     public function get_delivery_url($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the user ID for this webhook.
      *
@@ -414,10 +355,8 @@ class WC_Webhook
      * @return int
      */
     public function get_user_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * API version.
      *
@@ -427,10 +366,8 @@ class WC_Webhook
      * @return string
      */
     public function get_api_version($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the failure count.
      *
@@ -440,10 +377,8 @@ class WC_Webhook
      * @return int
      */
     public function get_failure_count($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get pending delivery.
      *
@@ -453,10 +388,8 @@ class WC_Webhook
      * @return bool
      */
     public function get_pending_delivery($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set webhook name.
      *
@@ -464,10 +397,8 @@ class WC_Webhook
      * @param string $name Webhook name.
      */
     public function set_name($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set webhook created date.
      *
@@ -478,10 +409,8 @@ class WC_Webhook
      *                                  Null if their is no date.
      */
     public function set_date_created($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set webhook modified date.
      *
@@ -492,10 +421,8 @@ class WC_Webhook
      *                                  Null if their is no date.
      */
     public function set_date_modified($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set status.
      *
@@ -503,10 +430,8 @@ class WC_Webhook
      * @param string $status Status.
      */
     public function set_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the secret used for generating the HMAC-SHA256 signature.
      *
@@ -514,10 +439,8 @@ class WC_Webhook
      * @param string $secret Secret.
      */
     public function set_secret($secret)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the webhook topic and associated hooks.
      * The topic resource & event are also saved separately.
@@ -526,10 +449,8 @@ class WC_Webhook
      * @param string $topic Webhook topic.
      */
     public function set_topic($topic)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the delivery URL.
      *
@@ -537,10 +458,8 @@ class WC_Webhook
      * @param string $url Delivery URL.
      */
     public function set_delivery_url($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set user ID.
      *
@@ -548,10 +467,8 @@ class WC_Webhook
      * @param int $user_id User ID.
      */
     public function set_user_id($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set API version.
      *
@@ -559,10 +476,8 @@ class WC_Webhook
      * @param int|string $version REST API version.
      */
     public function set_api_version($version)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set pending delivery.
      *
@@ -570,10 +485,8 @@ class WC_Webhook
      * @param bool $pending_delivery Set true if is pending for delivery.
      */
     public function set_pending_delivery($pending_delivery)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set failure count.
      *
@@ -581,10 +494,8 @@ class WC_Webhook
      * @param bool $failure_count Total of failures.
      */
     public function set_failure_count($failure_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the associated hook names for a topic.
      *
@@ -593,10 +504,8 @@ class WC_Webhook
      * @return array
      */
     private function get_topic_hooks($topic)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the hook names for the webhook.
      *
@@ -604,10 +513,8 @@ class WC_Webhook
      * @return array
      */
     public function get_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the resource for the webhook, e.g. `order`.
      *
@@ -615,10 +522,8 @@ class WC_Webhook
      * @return string
      */
     public function get_resource()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the event for the webhook, e.g. `created`.
      *
@@ -626,18 +531,14 @@ class WC_Webhook
      * @return string
      */
     public function get_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the webhook i18n status.
      *
      * @return string
      */
     public function get_i18n_status()
-    {
-        // stub
-    }
-
+{
+}
 }

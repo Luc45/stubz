@@ -64,8 +64,7 @@ abstract class WC_Shipping_Method
      *
      * @var array
      */
-    public $rates = array (
-);
+    public $rates = array();
 
     /**
      * If 'taxable' tax will be charged for this method (if applicable).
@@ -100,16 +99,14 @@ abstract class WC_Shipping_Method
      *
      * @var array
      */
-    public $instance_form_fields = array (
-);
+    public $instance_form_fields = array();
 
     /**
      * Instance settings.
      *
      * @var array
      */
-    public $instance_settings = array (
-);
+    public $instance_settings = array();
 
     /**
      * Availability - legacy. Used for method Availability.
@@ -127,8 +124,7 @@ abstract class WC_Shipping_Method
      * @deprecated 2.6.0
      * @var array
      */
-    public $countries = array (
-);
+    public $countries = array();
 
     /**
      * Shipping method order.
@@ -158,10 +154,8 @@ abstract class WC_Shipping_Method
      * @param int $instance_id Instance ID.
      */
     public function __construct($instance_id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a shipping method supports a given feature.
      *
@@ -171,31 +165,24 @@ abstract class WC_Shipping_Method
      * @return bool True if the shipping method supports the feature, false otherwise.
      */
     public function supports($feature)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Called to calculate shipping rates for this method. Rates can be added using the add_rate() method.
      *
      * @param array $package Package array.
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * Whether or not we need to calculate tax on top of the shipping rate.
      *
      * @return boolean
      */
     public function is_taxable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether or not this method is enabled in settings.
      *
@@ -203,10 +190,8 @@ abstract class WC_Shipping_Method
      * @return boolean
      */
     public function is_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the shipping method instance ID.
      *
@@ -214,10 +199,8 @@ abstract class WC_Shipping_Method
      * @return int
      */
     public function get_instance_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the shipping method title.
      *
@@ -225,10 +208,8 @@ abstract class WC_Shipping_Method
      * @return string
      */
     public function get_method_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the shipping method description.
      *
@@ -236,20 +217,16 @@ abstract class WC_Shipping_Method
      * @return string
      */
     public function get_method_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the shipping title which is user set.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return calculated rates for a package.
      *
@@ -258,10 +235,8 @@ abstract class WC_Shipping_Method
      * @return array
      */
     public function get_rates_for_package($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a rate ID based on this methods ID and instance, with an optional
      * suffix if distinguishing between multiple rates.
@@ -271,21 +246,16 @@ abstract class WC_Shipping_Method
      * @return string
      */
     public function get_rate_id($suffix = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a shipping rate. If taxes are not set they will be calculated based on cost.
      *
      * @param array $args Arguments (default: array()).
      */
-    public function add_rate($args = array (
-))
-    {
-        // stub
-    }
-
+    public function add_rate($args = array())
+{
+}
     /**
      * Calc taxes per item being shipping in costs array.
      *
@@ -294,10 +264,8 @@ abstract class WC_Shipping_Method
      * @return array of taxes
      */
     protected function get_taxes_per_item($costs)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is this method available?
      *
@@ -305,10 +273,8 @@ abstract class WC_Shipping_Method
      * @return bool
      */
     public function is_available($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get fee to add to shipping cost.
      *
@@ -317,38 +283,30 @@ abstract class WC_Shipping_Method
      * @return float
      */
     public function get_fee($fee, $total)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does this method have a settings page?
      *
      * @return bool
      */
     public function has_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return admin options as a html string.
      *
      * @return string
      */
     public function get_admin_options_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the shipping settings screen.
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get_option function.
      *
@@ -359,10 +317,8 @@ abstract class WC_Shipping_Method
      * @return mixed  The value specified for the option or a default value for the option.
      */
     public function get_option($key, $empty_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an option from the settings API, using defaults if necessary to prevent undefined notices.
      *
@@ -371,10 +327,8 @@ abstract class WC_Shipping_Method
      * @return mixed  The value specified for the option or a default value for the option.
      */
     public function get_instance_option($key, $empty_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings fields for instances of this shipping method (within zones).
      * Should be overridden by shipping methods to add options.
@@ -383,10 +337,8 @@ abstract class WC_Shipping_Method
      * @return array
      */
     public function get_instance_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -394,20 +346,16 @@ abstract class WC_Shipping_Method
      * @return string
      */
     public function get_instance_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Settings for instances.
      *
      * @since 2.6.0
      */
     public function init_instance_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes and saves global shipping method options in the admin area.
      *
@@ -417,8 +365,6 @@ abstract class WC_Shipping_Method
      * @return bool was anything saved?
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
 }

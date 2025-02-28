@@ -18,10 +18,8 @@ class FontFace
      * @return \WP_Post|null The font face post or null if not found.
      */
     public static function get_installed_font_faces_by_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes a single src value for a font face.
      *
@@ -32,10 +30,8 @@ class FontFace
      * @return string Sanitized value.
      */
     private static function sanitize_src($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles file upload error.
      *
@@ -46,10 +42,8 @@ class FontFace
      * @return WP_Error WP_Error object.
      */
     private static function handle_font_file_upload_error($file, $message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles the upload of a font file using wp_handle_upload().
      *
@@ -59,20 +53,16 @@ class FontFace
      * @return array Array containing uploaded file attributes on success, or error on failure.
      */
     private static function handle_font_file_upload($file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Downloads a file from a URL.
      *
      * @param string $file_url The file URL.
      **/
     private static function download_file($file_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inserts a font face.
      *
@@ -81,10 +71,8 @@ class FontFace
      * @return \WP_Error|\WP_Post The inserted font face post or an error if the font face already exists.
      */
     public static function insert_font_face(array $font_face, int $parent_font_family_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates a font face.
      *
@@ -92,8 +80,6 @@ class FontFace
      * @return \WP_Error|null The error if the font family is invalid, null otherwise.
      */
     private static function validate_font_face($font_face)
-    {
-        // stub
-    }
-
+{
+}
 }

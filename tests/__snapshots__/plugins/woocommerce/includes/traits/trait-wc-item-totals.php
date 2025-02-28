@@ -17,8 +17,7 @@ trait WC_Item_Totals
      *
      * @return array having `total`|`subtotal` property.
      */
-    protected abstract function get_values_for_total($field);
-
+    abstract protected function get_values_for_total($field);
     /**
      * Return rounded total based on settings. Will be used by Cart and Orders.
      *
@@ -29,10 +28,8 @@ trait WC_Item_Totals
      * @return float|int Appropriately rounded value.
      */
     public static function get_rounded_items_total($values)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply rounding to item subtotal before summing.
      *
@@ -41,10 +38,8 @@ trait WC_Item_Totals
      * @return float
      */
     public static function round_item_subtotal($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Should always round at subtotal?
      *
@@ -52,10 +47,8 @@ trait WC_Item_Totals
      * @return bool
      */
     protected static function round_at_subtotal()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply rounding to an array of taxes before summing. Rounds to store DP setting, ignoring precision.
      *
@@ -65,8 +58,6 @@ trait WC_Item_Totals
      * @return float
      */
     protected static function round_line_tax($value, $in_cents = true)
-    {
-        // stub
-    }
-
+{
+}
 }

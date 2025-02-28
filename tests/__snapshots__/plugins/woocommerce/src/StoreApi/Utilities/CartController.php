@@ -13,28 +13,22 @@ class CartController
      * Makes the cart and sessions available to a route by loading them from core.
      */
     public function load_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalizes the cart by fixing any quantity violations.
      */
     public function normalize_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the latest cart instance, and ensures totals have been calculated before returning.
      *
      * @return \WC_Cart
      */
     public function get_cart_for_response()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recalculates the cart totals and returns the updated cart instance.
      *
@@ -43,10 +37,8 @@ class CartController
      * @return \WC_Cart
      */
     public function calculate_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on the core cart class but returns errors rather than rendering notices directly.
      *
@@ -60,10 +52,8 @@ class CartController
      * @return string
      */
     public function add_to_cart($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on core `set_quantity` method, but validates if an item is sold individually first and enforces any limits in
      * place.
@@ -74,10 +64,8 @@ class CartController
      * @param integer $quantity Cart quantity.
      */
     public function set_cart_item_quantity($item_id, $quantity = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate all items in the cart and check for errors.
      *
@@ -87,10 +75,8 @@ class CartController
      * @param array       $request Add to cart request params.
      */
     public function validate_add_to_cart(WC_Product $product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the error message for out of stock products and adds product names to it.
      *
@@ -100,10 +86,8 @@ class CartController
      * @returns string The translated and correctly pluralised message.
      */
     private function add_product_names_to_message($singular, $plural, $items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Takes a string describing the type of stock extension, whether there is a single product or multiple products
      * causing this exception and returns an appropriate error message.
@@ -114,40 +98,32 @@ class CartController
      * @return string
      */
     private function get_error_message_for_stock_exception_type($exception_type, $singular_or_plural)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate cart and check for errors.
      *
      * @throws InvalidCartException Exception if invalid data is detected in the cart.
      */
     public function validate_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When placing an order, validate that the cart is not empty.
      *
      * @throws InvalidCartException Exception if the cart is empty.
      */
     public function validate_cart_not_empty()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate all items in the cart and check for errors.
      *
      * @throws InvalidCartException Exception if invalid data is detected due to insufficient stock levels.
      */
     public function validate_cart_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This method will take arrays of exceptions relating to stock, and will convert them to a WP_Error object.
      *
@@ -159,10 +135,8 @@ class CartController
      * @return WP_Error  The WP_Error object returned. Will have errors if any exceptions were in the args. It will be empty if they do not.
      */
     private function stock_exceptions_to_wp_errors($too_many_in_cart_products, $not_purchasable_products, $partial_out_of_stock_products, $out_of_stock_products)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates an existing cart item and returns any errors.
      *
@@ -174,30 +148,24 @@ class CartController
      * @param array $cart_item Cart item array.
      */
     public function validate_cart_item($cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate all coupons in the cart and check for errors.
      *
      * @throws InvalidCartException Exception if invalid data is detected.
      */
     public function validate_cart_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the cart and get a list of errors.
      *
      * @return WP_Error A WP_Error instance containing the cart's errors.
      */
     public function get_cart_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get main instance of cart class.
      *
@@ -205,10 +173,8 @@ class CartController
      * @return \WC_Cart
      */
     public function get_cart_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a cart item from the woo core cart class.
      *
@@ -216,10 +182,8 @@ class CartController
      * @return array
      */
     public function get_cart_item($item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns all cart items.
      *
@@ -227,28 +191,22 @@ class CartController
      * @return array
      */
     public function get_cart_items($callback = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get hashes for items in the current cart. Useful for tracking changes.
      *
      * @return array
      */
     public function get_cart_hashes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Empty cart contents.
      */
     public function empty_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if cart has applied coupon by code.
      *
@@ -256,10 +214,8 @@ class CartController
      * @return bool
      */
     public function has_coupon($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns all applied coupons.
      *
@@ -267,10 +223,8 @@ class CartController
      * @return array
      */
     public function get_cart_coupons($callback = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping packages from the cart with calculated shipping rates.
      *
@@ -280,10 +234,8 @@ class CartController
      * @return array
      */
     public function get_shipping_packages($calculate_rates = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates a name for a package.
      *
@@ -292,10 +244,8 @@ class CartController
      * @return string
      */
     protected function get_package_name($package, $index)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Selects a shipping rate.
      *
@@ -303,10 +253,8 @@ class CartController
      * @param string     $rate_id ID of the rate being chosen.
      */
     public function select_shipping_rate($package_id, $rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on the core cart class but returns errors rather than rendering notices directly.
      *
@@ -319,10 +267,8 @@ class CartController
      * @param string $coupon_code Coupon code.
      */
     public function apply_coupon($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates an existing cart coupon and returns any errors.
      *
@@ -331,10 +277,8 @@ class CartController
      * @throws RouteException Exception if invalid data is detected.
      */
     protected function validate_cart_coupon(WC_Coupon $coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the qty of a product across line items.
      *
@@ -342,10 +286,8 @@ class CartController
      * @return int
      */
     protected function get_product_quantity_in_cart($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets remaining stock for a product.
      *
@@ -353,10 +295,8 @@ class CartController
      * @return int
      */
     protected function get_remaining_stock_for_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a product object to be added to the cart.
      *
@@ -366,10 +306,8 @@ class CartController
      * @return \WC_Product|Error Returns a product object if purchasable.
      */
     protected function get_product_for_cart($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For a given product, get the product ID.
      *
@@ -377,10 +315,8 @@ class CartController
      * @return int
      */
     protected function get_product_id(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For a given product, get the variation ID.
      *
@@ -388,10 +324,8 @@ class CartController
      * @return int
      */
     protected function get_variation_id(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default exception thrown when an item cannot be added to the cart.
      *
@@ -400,10 +334,8 @@ class CartController
      * @param \WC_Product $product Product object associated with the cart item.
      */
     protected function throw_default_product_exception(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter data for add to cart requests.
      *
@@ -411,10 +343,8 @@ class CartController
      * @return array Updated request array.
      */
     protected function filter_request_data($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If variations are set, validate and format the values ready to add to the cart.
      *
@@ -424,10 +354,8 @@ class CartController
      * @return array Updated request array.
      */
     protected function parse_variation_data($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to match request data to a variation ID and return the ID.
      *
@@ -438,10 +366,8 @@ class CartController
      * @return int Matching variation ID.
      */
     protected function get_variation_id_from_variation_data($request, $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format and sanitize variation data posted to the API.
      *
@@ -454,10 +380,8 @@ class CartController
      * @return array
      */
     protected function sanitize_variation_data($variation_data, $variable_product_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product attributes from the variable product (which may be the parent if the product object is a variation).
      *
@@ -467,8 +391,6 @@ class CartController
      * @return array
      */
     protected function get_variable_product_attributes($product)
-    {
-        // stub
-    }
-
+{
+}
 }

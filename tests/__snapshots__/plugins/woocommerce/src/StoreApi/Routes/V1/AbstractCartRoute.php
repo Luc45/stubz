@@ -65,10 +65,8 @@ abstract class AbstractCartRoute
      * @param AbstractSchema   $schema Schema class for this route.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\SchemaController $schema_controller, Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema $schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Are we updating data or getting data?
      *
@@ -76,10 +74,8 @@ abstract class AbstractCartRoute
      * @return boolean
      */
     protected function is_update_request(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the route response based on the type of request.
      *
@@ -88,10 +84,8 @@ abstract class AbstractCartRoute
      * @return \WP_REST_Response
      */
     public function get_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add nonce headers to a response object.
      *
@@ -100,20 +94,16 @@ abstract class AbstractCartRoute
      * @return \WP_REST_Response
      */
     protected function add_response_headers(WP_REST_Response $response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load the cart session before handling responses.
      *
      * @param \WP_REST_Request $request Request object.
      */
     protected function load_cart_session(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a cart token for the response headers.
      *
@@ -123,30 +113,24 @@ abstract class AbstractCartRoute
      * @return string
      */
     protected function get_cart_token()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the secret for the cart token using wp_salt.
      *
      * @return string
      */
     protected function get_cart_token_secret()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the expiration of the cart token. Defaults to 48h.
      *
      * @return int
      */
     protected function get_cart_token_expiration()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the request has a valid cart token.
      *
@@ -154,10 +138,8 @@ abstract class AbstractCartRoute
      * @return bool
      */
     protected function has_cart_token(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a nonce is required for the route.
      *
@@ -166,10 +148,8 @@ abstract class AbstractCartRoute
      * @return bool
      */
     protected function requires_nonce(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Triggered after an update to cart data. Re-calculates totals and updates draft orders (if they already exist) to
      * keep all data in sync.
@@ -177,10 +157,8 @@ abstract class AbstractCartRoute
      * @param \WP_REST_Request $request Request object.
      */
     protected function cart_updated(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For non-GET endpoints, require and validate a nonce to prevent CSRF attacks.
      *
@@ -192,10 +170,8 @@ abstract class AbstractCartRoute
      * @return \WP_Error|boolean
      */
     protected function check_nonce(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response when something went wrong.
      *
@@ -206,10 +182,7 @@ abstract class AbstractCartRoute
      *
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array())
+{
+}
 }

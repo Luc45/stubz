@@ -5,6 +5,6 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 /**
  * Used to represent a problem encountered when processing a URL.
  */
-class URLException extends \Exception implements \Stringable, \Throwable
+class URLException implements \Stringable, \Throwable
 {
 }

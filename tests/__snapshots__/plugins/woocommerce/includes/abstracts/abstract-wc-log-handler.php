@@ -15,10 +15,8 @@ abstract class WC_Log_Handler
      * @return string Formatted time for use in log entry.
      */
     protected static function format_time($timestamp)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds a log entry text from level, timestamp and message.
      *
@@ -30,18 +28,14 @@ abstract class WC_Log_Handler
      * @return string Formatted log entry.
      */
     protected static function format_entry($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a backtrace that shows where the logging function was called.
      *
      * @return array
      */
     protected static function get_backtrace()
-    {
-        // stub
-    }
-
+{
+}
 }

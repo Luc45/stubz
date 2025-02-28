@@ -15,9 +15,7 @@
  */
 function wc_get_orders($args)
 {
-    // stub
 }
-
 /**
  * Main function for returning orders, uses the WC_Order_Factory class.
  *
@@ -29,9 +27,7 @@ function wc_get_orders($args)
  */
 function wc_get_order($the_order = false)
 {
-    // stub
 }
-
 /**
  * Get all order statuses.
  *
@@ -41,9 +37,7 @@ function wc_get_order($the_order = false)
  */
 function wc_get_order_statuses()
 {
-    // stub
 }
-
 /**
  * See if a string is an order status.
  *
@@ -52,9 +46,7 @@ function wc_get_order_statuses()
  */
 function wc_is_order_status($maybe_status)
 {
-    // stub
 }
-
 /**
  * Get list of statuses which are consider 'paid'.
  *
@@ -63,9 +55,7 @@ function wc_is_order_status($maybe_status)
  */
 function wc_get_is_paid_statuses()
 {
-    // stub
 }
-
 /**
  * Get list of statuses which are consider 'pending payment'.
  *
@@ -74,9 +64,7 @@ function wc_get_is_paid_statuses()
  */
 function wc_get_is_pending_statuses()
 {
-    // stub
 }
-
 /**
  * Get the nice name for an order status.
  *
@@ -86,9 +74,7 @@ function wc_get_is_pending_statuses()
  */
 function wc_get_order_status_name($status)
 {
-    // stub
 }
-
 /**
  * Generate an order key with prefix.
  *
@@ -98,9 +84,7 @@ function wc_get_order_status_name($status)
  */
 function wc_generate_order_key($key = '')
 {
-    // stub
 }
-
 /**
  * Finds an Order ID based on an order key.
  *
@@ -109,9 +93,7 @@ function wc_generate_order_key($key = '')
  */
 function wc_get_order_id_by_order_key($order_key)
 {
-    // stub
 }
-
 /**
  * Get all registered order types.
  *
@@ -123,9 +105,7 @@ function wc_get_order_id_by_order_key($order_key)
  */
 function wc_get_order_types($for = '')
 {
-    // stub
 }
-
 /**
  * Get an order type by post type name.
  *
@@ -134,9 +114,7 @@ function wc_get_order_types($for = '')
  */
 function wc_get_order_type($type)
 {
-    // stub
 }
-
 /**
  * Register order type. Do not use before init.
  *
@@ -157,12 +135,9 @@ function wc_get_order_type($type)
  * @param  array  $args An array of arguments.
  * @return bool Success or failure
  */
-function wc_register_order_type($type, $args = array (
-))
+function wc_register_order_type($type, $args = array())
 {
-    // stub
 }
-
 /**
  * Return the count of processing orders.
  *
@@ -170,9 +145,7 @@ function wc_register_order_type($type, $args = array (
  */
 function wc_processing_order_count()
 {
-    // stub
 }
-
 /**
  * Return the orders count of a specific order status.
  *
@@ -182,9 +155,7 @@ function wc_processing_order_count()
  */
 function wc_orders_count($status, string $type = '')
 {
-    // stub
 }
-
 /**
  * Grant downloadable product access to the file identified by $download_id.
  *
@@ -197,9 +168,7 @@ function wc_orders_count($status, string $type = '')
  */
 function wc_downloadable_file_permission($download_id, $product, $order, $qty = 1, $item = null)
 {
-    // stub
 }
-
 /**
  * Order Status completed - give downloadable product access to customer.
  *
@@ -208,9 +177,7 @@ function wc_downloadable_file_permission($download_id, $product, $order, $qty = 
  */
 function wc_downloadable_product_permissions($order_id, $force = false)
 {
-    // stub
 }
-
 /**
  * Clear all transients cache for order data.
  *
@@ -218,9 +185,7 @@ function wc_downloadable_product_permissions($order_id, $force = false)
  */
 function wc_delete_shop_order_transients($order = 0)
 {
-    // stub
 }
-
 /**
  * See if we only ship to billing addresses.
  *
@@ -228,9 +193,7 @@ function wc_delete_shop_order_transients($order = 0)
  */
 function wc_ship_to_billing_address_only()
 {
-    // stub
 }
-
 /**
  * Create a new order refund programmatically.
  *
@@ -241,12 +204,9 @@ function wc_ship_to_billing_address_only()
  * @param array $args New refund arguments.
  * @return WC_Order_Refund|WP_Error
  */
-function wc_create_refund($args = array (
-))
+function wc_create_refund($args = array())
 {
-    // stub
 }
-
 /**
  * Try to refund the payment for an order via the gateway.
  *
@@ -259,9 +219,7 @@ function wc_create_refund($args = array (
  */
 function wc_refund_payment($order, $amount, $reason = '')
 {
-    // stub
 }
-
 /**
  * Restock items during refund.
  *
@@ -271,9 +229,7 @@ function wc_refund_payment($order, $amount, $reason = '')
  */
 function wc_restock_refunded_items($order, $refunded_line_items)
 {
-    // stub
 }
-
 /**
  * Get tax class by tax id.
  *
@@ -283,9 +239,7 @@ function wc_restock_refunded_items($order, $refunded_line_items)
  */
 function wc_get_tax_class_by_tax_id($tax_id)
 {
-    // stub
 }
-
 /**
  * Get payment gateway class by order data.
  *
@@ -295,9 +249,7 @@ function wc_get_tax_class_by_tax_id($tax_id)
  */
 function wc_get_payment_gateway_by_order($order)
 {
-    // stub
 }
-
 /**
  * When refunding an order, create a refund line item if the partial refunds do not match order total.
  *
@@ -308,9 +260,7 @@ function wc_get_payment_gateway_by_order($order)
  */
 function wc_order_fully_refunded($order_id)
 {
-    // stub
 }
-
 /**
  * Search orders.
  *
@@ -320,9 +270,7 @@ function wc_order_fully_refunded($order_id)
  */
 function wc_order_search($term)
 {
-    // stub
 }
-
 /**
  * Update total sales amount for each product within a paid order.
  *
@@ -331,9 +279,7 @@ function wc_order_search($term)
  */
 function wc_update_total_sales_counts($order_id)
 {
-    // stub
 }
-
 /**
  * Update used coupon amount for each coupon within an order.
  *
@@ -342,17 +288,13 @@ function wc_update_total_sales_counts($order_id)
  */
 function wc_update_coupon_usage_counts($order_id)
 {
-    // stub
 }
-
 /**
  * Cancel all unpaid orders after held duration to prevent stock lock for those products.
  */
 function wc_cancel_unpaid_orders()
 {
-    // stub
 }
-
 /**
  * Sanitize order id removing unwanted characters.
  *
@@ -364,9 +306,7 @@ function wc_cancel_unpaid_orders()
  */
 function wc_sanitize_order_id($order_id)
 {
-    // stub
 }
-
 /**
  * Get an order note.
  *
@@ -376,9 +316,7 @@ function wc_sanitize_order_id($order_id)
  */
 function wc_get_order_note($data)
 {
-    // stub
 }
-
 /**
  * Get order notes.
  *
@@ -408,9 +346,7 @@ function wc_get_order_note($data)
  */
 function wc_get_order_notes($args)
 {
-    // stub
 }
-
 /**
  * Create an order note.
  *
@@ -423,9 +359,7 @@ function wc_get_order_notes($args)
  */
 function wc_create_order_note($order_id, $note, $is_customer_note = false, $added_by_user = false)
 {
-    // stub
 }
-
 /**
  * Delete an order note.
  *
@@ -435,5 +369,4 @@ function wc_create_order_note($order_id, $note, $is_customer_note = false, $adde
  */
 function wc_delete_order_note($note_id)
 {
-    // stub
 }

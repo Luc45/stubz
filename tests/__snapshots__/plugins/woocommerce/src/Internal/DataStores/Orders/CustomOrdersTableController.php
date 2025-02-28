@@ -106,18 +106,14 @@ class CustomOrdersTableController
      * Class constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the hooks used by the class.
      */
     private function init_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Class initialization, invoked by the DI container.
      *
@@ -133,11 +129,9 @@ class CustomOrdersTableController
      * @param PluginUtil                 $plugin_util The plugin util to use.
      * @param DatabaseUtil               $db_util The database util to use.
      */
-    public final function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataCleanup $data_cleanup, Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableRefundDataStore $refund_data_store, Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller, Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, Automattic\WooCommerce\Caches\OrderCache $order_cache, Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, Automattic\WooCommerce\Utilities\PluginUtil $plugin_util, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $db_util)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer, Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataCleanup $data_cleanup, Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableRefundDataStore $refund_data_store, Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller, Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller, Automattic\WooCommerce\Caches\OrderCache $order_cache, Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, Automattic\WooCommerce\Utilities\PluginUtil $plugin_util, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $db_util)
+{
+}
     /**
      * Is the custom orders table usage enabled via settings?
      * This can be true only if the feature is enabled and a table regeneration has been completed.
@@ -145,20 +139,16 @@ class CustomOrdersTableController
      * @return bool True if the custom orders table usage is enabled
      */
     public function custom_orders_table_usage_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is caching of data within the CustomerOrdersTable datastores enabled?
      *
      * @return bool True if the caching is enabled within the CustomeOrderTable Datastores.
      */
     public function hpos_data_caching_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the instance of the orders data store to use.
      *
@@ -169,10 +159,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function get_orders_data_store($default_data_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the instance of the refunds data store to use.
      *
@@ -183,10 +171,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function get_refunds_data_store($default_data_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the instance of a given data store.
      *
@@ -196,10 +182,8 @@ class CustomOrdersTableController
      * @return \WC_Object_Data_Store_Interface|string The actual data store to use.
      */
     private function get_data_store_instance($default_data_store, string $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an entry to Status - Tools to create or regenerate the custom orders table,
      * and also an entry to delete the table as appropriate.
@@ -210,20 +194,16 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_hpos_tools(array $tools_array): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the custom orders tables and any related options and data in response to the user pressing the tool button.
      *
      * @throws \Exception Can't delete the tables.
      */
     private function delete_custom_orders_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the individual setting updated hook.
      *
@@ -234,10 +214,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_updated_option($option, $old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process option that enables FTS index on orders table. Tries to create an FTS index when option is enabled.
      *
@@ -250,10 +228,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_updated_option_fts_index($option, $old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recreate order addresses FTS index. Useful when updating to 9.4 when phone number was added to index, or when other recreating index is needed.
      *
@@ -262,10 +238,8 @@ class CustomOrdersTableController
      * @return array Array with keys status (bool) and message (string).
      */
     public function recreate_order_address_fts_index(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the setting pre-update hook.
      * We use it to verify that authoritative orders table switch doesn't happen while sync is pending.
@@ -279,10 +253,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_pre_update_option($value, $option, $old_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback to trigger a sync immediately by clicking a button on the Features screen.
      *
@@ -291,10 +263,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function sync_now()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Tell WP Admin to remove the sync query arg from the URL.
      *
@@ -305,10 +275,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function register_removable_query_arg($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the woocommerce_after_register_post_type post,
      * registers the post type for placeholder orders.
@@ -318,10 +286,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function register_post_type_for_order_placeholders(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the definition for the HPOS feature.
      *
@@ -332,40 +298,32 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_feature_definition($features_controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the HPOS setting for rendering HPOS vs Post setting block in Features section of the settings page.
      *
      * @return array Feature setting object.
      */
     private function get_hpos_setting_for_feature()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the setting for rendering sync enabling setting block in Features section of the settings page.
      *
      * @return array Feature setting object.
      */
     private function get_hpos_setting_for_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a value indicating if changing the authoritative data source for orders while there are orders pending synchronization is allowed.
      *
      * @return bool
      */
     private function changing_data_source_with_sync_pending_is_allowed(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rewrites post edit links for HPOS placeholder posts so that they go to the HPOS order itself.
      * Hooked onto `get_edit_post_link`.
@@ -379,10 +337,8 @@ class CustomOrdersTableController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function maybe_rewrite_order_edit_link($link, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the `order_objects` cache group as non-persistent if Custom Order data caching is enabled.
      *
@@ -392,8 +348,6 @@ class CustomOrdersTableController
      * @return void
      */
     public function maybe_set_order_cache_group_as_non_persistent()
-    {
-        // stub
-    }
-
+{
+}
 }

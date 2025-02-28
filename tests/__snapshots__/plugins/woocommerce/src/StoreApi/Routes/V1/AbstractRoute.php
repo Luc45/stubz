@@ -39,40 +39,32 @@ abstract class AbstractRoute
      * @param AbstractSchema   $schema Schema class for this route.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\SchemaController $schema_controller, Automattic\WooCommerce\StoreApi\Schemas\v1\AbstractSchema $schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the namespace for this route.
      *
      * @return string
      */
     public function get_namespace()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the namespace for this route.
      *
      * @param string $namespace Given namespace.
      */
     public function set_namespace($namespace)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get item schema properties.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the route response based on the type of request.
      *
@@ -80,10 +72,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     public function get_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the route response based on the type of request.
      *
@@ -91,10 +81,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     protected function get_response_by_request_method(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts an error to a response object. Based on \WP_REST_Server.
      *
@@ -102,10 +90,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response List of associative arrays with code and message keys.
      */
     protected function error_to_response($error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response for GET requests.
      *
@@ -116,10 +102,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     protected function get_route_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response for POST requests.
      *
@@ -130,10 +114,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     protected function get_route_post_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response for PUT requests.
      *
@@ -144,10 +126,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     protected function get_route_update_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response for DELETE requests.
      *
@@ -158,10 +138,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response
      */
     protected function get_route_delete_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get route response when something went wrong.
      *
@@ -171,12 +149,9 @@ abstract class AbstractRoute
      * @param array  $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return \WP_Error WP Error object.
      */
-    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_route_error_response($error_code, $error_message, $http_status_code = 500, $additional_data = array())
+{
+}
     /**
      * Get route response when something went wrong and the supplied error is a WP_Error. This currently only happens
      * when an item in the cart is out of stock, partially out of stock, can only be bought individually, or when the
@@ -187,12 +162,9 @@ abstract class AbstractRoute
      * @param array    $additional_data  Extra data (key value pairs) to expose in the error response.
      * @return WP_Error WP Error object.
      */
-    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array())
+{
+}
     /**
      * Prepare a single item for response.
      *
@@ -201,10 +173,8 @@ abstract class AbstractRoute
      * @return \WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the context param.
      *
@@ -213,12 +183,9 @@ abstract class AbstractRoute
      * @param array $args Optional. Additional arguments for context parameter. Default empty array.
      * @return array Context parameter details.
      */
-    protected function get_context_param($args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_context_param($args = array())
+{
+}
     /**
      * Prepares a response for insertion into a collection.
      *
@@ -226,10 +193,8 @@ abstract class AbstractRoute
      * @return array|mixed Response data, ready for insertion into collection data.
      */
     protected function prepare_response_for_collection(WP_REST_Response $response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -238,18 +203,14 @@ abstract class AbstractRoute
      * @return array
      */
     protected function prepare_links($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the query params for the collections.
      *
      * @return array Query parameters for the collection.
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,26 +16,20 @@ class WC_Settings_Accounts
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings array.
      *
      * @return array
      */
     protected function get_settings_for_default_section()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the HTML for the settings.
      */
     public function output()
-    {
-        // stub
-    }
-
+{
+}
 }

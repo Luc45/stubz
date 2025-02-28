@@ -44,18 +44,14 @@ class WC_Shipping_Legacy_Flat_Rate
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process and redirect if disabled.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -63,26 +59,20 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init function.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Evaluate a cost from a sum/string.
      *
@@ -90,12 +80,9 @@ class WC_Shipping_Legacy_Flat_Rate
      * @param  array  $args Arguments.
      * @return string
      */
-    protected function evaluate_cost($sum, $args = array (
-))
-    {
-        // stub
-    }
-
+    protected function evaluate_cost($sum, $args = array())
+{
+}
     /**
      * Work out fee (shortcode).
      *
@@ -103,21 +90,16 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return string
      */
     public function fee($atts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping.
      *
      * @param array $package (default: array()).
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * Get items in package.
      *
@@ -125,10 +107,8 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return int
      */
     public function get_package_item_qty($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds and returns shipping classes and the products with said class.
      *
@@ -136,10 +116,8 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return array
      */
     public function find_shipping_classes($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds extra calculated flat rates.
      *
@@ -152,10 +130,8 @@ class WC_Shipping_Legacy_Flat_Rate
      * @param array $rate Rate information.
      */
     public function calculate_extra_shipping($method, $rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the percentage adjustment for each shipping rate.
      *
@@ -167,10 +143,8 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return float
      */
     public function calc_percentage_adjustment($cost, $percent_adjustment, $percent_operator, $base_price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get extra cost.
      *
@@ -181,8 +155,6 @@ class WC_Shipping_Legacy_Flat_Rate
      * @return float
      */
     public function get_extra_cost($cost_string, $type, $package)
-    {
-        // stub
-    }
-
+{
+}
 }

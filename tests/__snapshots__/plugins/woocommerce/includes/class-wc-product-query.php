@@ -11,18 +11,14 @@ class WC_Product_Query
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get products matching the current query vars.
      *
      * @return array|object of WC_Product objects
      */
     public function get_products()
-    {
-        // stub
-    }
-
+{
+}
 }

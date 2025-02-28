@@ -33,10 +33,8 @@ class WC_REST_Coupons_V2_Controller
      * Register the routes for coupons.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get object.
      *
@@ -45,10 +43,8 @@ class WC_REST_Coupons_V2_Controller
      * @return WC_Data
      */
     protected function get_object($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data.
      *
@@ -57,10 +53,8 @@ class WC_REST_Coupons_V2_Controller
      * @return array
      */
     protected function get_formatted_item_data($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single coupon output for response.
      *
@@ -70,10 +64,8 @@ class WC_REST_Coupons_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -82,10 +74,8 @@ class WC_REST_Coupons_V2_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only return writable props from schema.
      *
@@ -93,10 +83,8 @@ class WC_REST_Coupons_V2_Controller
      * @return bool
      */
     protected function filter_writable_props($schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single coupon for create or update.
      *
@@ -105,28 +93,22 @@ class WC_REST_Coupons_V2_Controller
      * @return WP_Error|WC_Data
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Coupon's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

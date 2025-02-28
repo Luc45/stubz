@@ -5,7 +5,7 @@
  *
  * This is a custom extension to DateTime that
  */
-class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
+class ActionScheduler_DateTime implements \DateTimeInterface
 {
     /**
      * UTC offset.
@@ -26,10 +26,8 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      */
     #[ReturnTypeWillChange]
     public function getTimestamp()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the UTC offset.
      *
@@ -38,10 +36,8 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      * @param string|int $offset UTC offset value.
      */
     public function setUtcOffset($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the timezone offset.
      *
@@ -50,10 +46,8 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      */
     #[ReturnTypeWillChange]
     public function getOffset()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the TimeZone associated with the DateTime
      *
@@ -64,10 +58,8 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      */
     #[ReturnTypeWillChange]
     public function setTimezone($timezone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the timestamp with the WordPress timezone offset added or subtracted.
      *
@@ -75,8 +67,6 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      * @return int
      */
     public function getOffsetTimestamp()
-    {
-        // stub
-    }
-
+{
+}
 }

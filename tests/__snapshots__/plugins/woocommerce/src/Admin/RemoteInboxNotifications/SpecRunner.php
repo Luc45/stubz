@@ -14,10 +14,8 @@ class SpecRunner
      * @param object $stored_state Stored state.
      */
     public static function run_spec($spec, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the URL for an action.
      *
@@ -26,10 +24,8 @@ class SpecRunner
      * @return string The URL for the action.
      */
     private static function get_url($action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the locale for the WordPress locale, or fall back to the en_US
      * locale.
@@ -39,10 +35,8 @@ class SpecRunner
      * @returns object The locale that was found, or null if no matching locale was found.
      */
     public static function get_locale($locales)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the action locale that matches the note locale, or fall back to the
      * en_US locale.
@@ -52,10 +46,8 @@ class SpecRunner
      * @return object The matching locale, or the en_US fallback locale, or null if neither was found.
      */
     public static function get_action_locale($action_locales)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the actions for a note.
      *
@@ -64,8 +56,6 @@ class SpecRunner
      * @return array The actions.
      */
     public static function get_actions($spec)
-    {
-        // stub
-    }
-
+{
+}
 }

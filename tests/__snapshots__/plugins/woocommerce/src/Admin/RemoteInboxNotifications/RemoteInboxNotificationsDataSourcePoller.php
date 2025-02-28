@@ -11,8 +11,7 @@ class RemoteInboxNotificationsDataSourcePoller
 {
     const ID = 'remote_inbox_notifications';
 
-    const DATA_SOURCES = array (
-);
+    const DATA_SOURCES = array();
 
     /**
      * Class instance.
@@ -25,10 +24,8 @@ class RemoteInboxNotificationsDataSourcePoller
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the spec.
      *
@@ -38,10 +35,8 @@ class RemoteInboxNotificationsDataSourcePoller
      * @return bool The result of the validation.
      */
     protected function validate_spec($spec, $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the action.
      *
@@ -51,18 +46,14 @@ class RemoteInboxNotificationsDataSourcePoller
      * @return bool The result of the validation.
      */
     private function validate_action($action, $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data sources.
      *
      * @return array
      */
     public static function get_data_sources()
-    {
-        // stub
-    }
-
+{
+}
 }

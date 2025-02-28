@@ -14,40 +14,32 @@ abstract class AbstractDynamicBlock
      * @return null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get block attributes.
      *
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the alignment property.
      *
      * @return array Property definition for align.
      */
     protected function get_schema_align()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for a list of IDs.
      *
      * @return array Property definition for a list of numeric ids.
      */
     protected function get_schema_list_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for a boolean value.
      *
@@ -55,10 +47,8 @@ abstract class AbstractDynamicBlock
      * @return array Property definition.
      */
     protected function get_schema_boolean($default = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for a numeric value.
      *
@@ -66,10 +56,8 @@ abstract class AbstractDynamicBlock
      * @return array Property definition.
      */
     protected function get_schema_number($default)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for a string value.
      *
@@ -77,8 +65,6 @@ abstract class AbstractDynamicBlock
      * @return array Property definition.
      */
     protected function get_schema_string($default = '')
-    {
-        // stub
-    }
-
+{
+}
 }

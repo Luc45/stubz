@@ -12,8 +12,7 @@ class WC_Product_Grouped
      */
     protected $extra_data = array (
   'children' => 
-  array (
-  ),
+  array(),
 );
 
     /**
@@ -22,20 +21,16 @@ class WC_Product_Grouped
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text.
      *
      * @return string
      */
     public function add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text description - used in aria tags.
      *
@@ -43,10 +38,8 @@ class WC_Product_Grouped
      * @return string
      */
     public function add_to_cart_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is on sale.
      *
@@ -54,20 +47,16 @@ class WC_Product_Grouped
      * @return bool
      */
     public function is_on_sale($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns false if the product cannot be bought.
      *
      * @return bool
      */
     public function is_purchasable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price in html format.
      *
@@ -75,10 +64,8 @@ class WC_Product_Grouped
      * @return string
      */
     public function get_price_html($price = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the children of this product.
      *
@@ -86,20 +73,16 @@ class WC_Product_Grouped
      * @return array
      */
     public function get_children($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the children of this product.
      *
      * @param array $children List of product children.
      */
     public function set_children($children)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync a grouped product with it's children. These sync functions sync
      * upwards (from child to parent) when the variation is saved.
@@ -109,8 +92,6 @@ class WC_Product_Grouped
      * @return WC_Product Synced product object.
      */
     public static function sync($product, $save = true)
-    {
-        // stub
-    }
-
+{
+}
 }

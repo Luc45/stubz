@@ -9,10 +9,8 @@ class WC_Product_Collection_Block_Tracking
      * Init Tracking.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Track feature usage of the Product Collection block within the site editor.
      *
@@ -22,10 +20,8 @@ class WC_Product_Collection_Block_Tracking
      * @return void
      */
     public function track_collection_instances($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Track usage of the Product Collection block within the given blocks.
      *
@@ -37,10 +33,8 @@ class WC_Product_Collection_Block_Tracking
      * @return array Parsed instances of the Product Collection block.
      */
     private function parse_blocks_track_data($blocks, $is_in_single_product = false, $is_in_template_part = false, $is_in_synced_pattern = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse editor's location context from WP Post.
      *
@@ -59,10 +53,8 @@ class WC_Product_Collection_Block_Tracking
      * @return string Returns the context.
      */
     private function parse_editor_location_context($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the collection query filters from the query attributes.
      *
@@ -70,8 +62,6 @@ class WC_Product_Collection_Block_Tracking
      * @return array The filters data for tracking.
      */
     private function get_query_filters_usage_data($block)
-    {
-        // stub
-    }
-
+{
+}
 }

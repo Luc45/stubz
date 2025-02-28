@@ -15,8 +15,6 @@ class PatternsDictionary
      * @return array[]
      */
     public static function get()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -55,38 +55,31 @@ abstract class ObjectCache
      *
      * @return string
      */
-    public abstract function get_object_type(): string;
-
+    abstract public function get_object_type(): string;
     /**
      * Creates a new instance of the class.
      *
      * @throws CacheException If get_object_type returns null or an empty string.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default expiration time for cached objects, in seconds.
      *
      * @return int
      */
     public function get_default_expiration_value(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the cache engine to use and cache it internally.
      *
      * @return CacheEngine
      */
     private function get_cache_engine(): Automattic\WooCommerce\Caching\CacheEngine
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an object to the cache, or update an already cached object.
      *
@@ -97,10 +90,8 @@ abstract class ObjectCache
      * @throws CacheException Invalid parameter, or null id was passed and get_object_id returns null too.
      */
     public function set($object, $id = null, int $expiration = -1): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update an object in the cache, but only if an object is already cached with the same id.
      *
@@ -111,10 +102,8 @@ abstract class ObjectCache
      * @throws CacheException Invalid parameter, or null id was passed and get_object_id returns null too.
      */
     public function update_if_cached($object, $id = null, int $expiration = -1): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the id from an object if the id itself is null.
      *
@@ -126,10 +115,8 @@ abstract class ObjectCache
      * @throws CacheException Passed $id is null and get_object_id returned null too.
      */
     private function get_id_from_object_if_null($object, $id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the given expiration time value is valid, throw an exception if not.
      *
@@ -138,10 +125,8 @@ abstract class ObjectCache
      * @throws CacheException Expiration time is negative or higher than MAX_EXPIRATION.
      */
     private function verify_expiration_value(int $expiration): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a cached object, and if no object is cached with the given id,
      * try to get one via get_from_datastore method or by supplying a callback and then cache it.
@@ -156,10 +141,8 @@ abstract class ObjectCache
      * @throws CacheException Invalid id parameter.
      */
     public function get($id, int $expiration = -1, callable|null $get_from_datastore_callback = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove an object from the cache.
      *
@@ -167,20 +150,16 @@ abstract class ObjectCache
      * @return bool True if the object is removed from the cache successfully, false otherwise (because the object wasn't cached or for other reason).
      */
     public function remove($id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove all the objects from the cache.
      *
      * @return bool True on success, false on error.
      */
     public function flush(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is a given object cached?
      *
@@ -188,10 +167,8 @@ abstract class ObjectCache
      * @return bool True if there's a cached object with the specified id.
      */
     public function is_cached($id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the id of an object. This is used by 'set' when a null id is passed.
      * If the object id can't be determined the method must return null.
@@ -199,26 +176,22 @@ abstract class ObjectCache
      * @param array|object $object The object to get the id for.
      * @return int|string|null
      */
-    protected abstract function get_object_id($object);
-
+    abstract protected function get_object_id($object);
     /**
      * Validate an object before it's cached.
      *
      * @param array|object $object Object to validate.
      * @return array|null An array with validation error messages, null or an empty array if there are no errors.
      */
-    protected abstract function validate($object): array|null;
-
+    abstract protected function validate($object): array|null;
     /**
      * Get the instance of the cache engine to use.
      *
      * @return CacheEngine
      */
     protected function get_cache_engine_instance(): Automattic\WooCommerce\Caching\CacheEngine
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a random string to be used to compose the cache key prefix.
      * It should return a different string each time.
@@ -226,8 +199,6 @@ abstract class ObjectCache
      * @return string
      */
     protected function get_random_string(): string
-    {
-        // stub
-    }
-
+{
+}
 }

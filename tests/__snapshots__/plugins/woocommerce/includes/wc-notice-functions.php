@@ -10,9 +10,7 @@
  */
 function wc_notice_count($notice_type = '')
 {
-    // stub
 }
-
 /**
  * Check if a notice has already been added.
  *
@@ -23,9 +21,7 @@ function wc_notice_count($notice_type = '')
  */
 function wc_has_notice($message, $notice_type = 'success')
 {
-    // stub
 }
-
 /**
  * Add and store a notice.
  *
@@ -35,12 +31,9 @@ function wc_has_notice($message, $notice_type = 'success')
  * @param string $notice_type Optional. The name of the notice type - either error, success or notice.
  * @param array  $data        Optional notice data.
  */
-function wc_add_notice($message, $notice_type = 'success', $data = array (
-))
+function wc_add_notice($message, $notice_type = 'success', $data = array())
 {
-    // stub
 }
-
 /**
  * Set all notices at once.
  *
@@ -49,9 +42,7 @@ function wc_add_notice($message, $notice_type = 'success', $data = array (
  */
 function wc_set_notices($notices)
 {
-    // stub
 }
-
 /**
  * Unset all notices.
  *
@@ -59,9 +50,7 @@ function wc_set_notices($notices)
  */
 function wc_clear_notices()
 {
-    // stub
 }
-
 /**
  * Prints messages and errors which are stored in the session, then clears them.
  *
@@ -71,9 +60,7 @@ function wc_clear_notices()
  */
 function wc_print_notices($return = false)
 {
-    // stub
 }
-
 /**
  * Print a single notice immediately.
  *
@@ -84,12 +71,9 @@ function wc_print_notices($return = false)
  * @param array  $data        Optional notice data. @since 3.9.0.
  * @param bool   $return      true to return rather than echo. @since 7.7.0.
  */
-function wc_print_notice($message, $notice_type = 'success', $data = array (
-), $return = false)
+function wc_print_notice($message, $notice_type = 'success', $data = array(), $return = false)
 {
-    // stub
 }
-
 /**
  * Returns all queued notices, optionally filtered by a notice type.
  *
@@ -100,9 +84,7 @@ function wc_print_notice($message, $notice_type = 'success', $data = array (
  */
 function wc_get_notices($notice_type = '')
 {
-    // stub
 }
-
 /**
  * Add notices for WP Errors.
  *
@@ -110,9 +92,7 @@ function wc_get_notices($notice_type = '')
  */
 function wc_add_wp_error_notices($errors)
 {
-    // stub
 }
-
 /**
  * Filters out the same tags as wp_kses_post, but allows tabindex for <a> element.
  *
@@ -122,9 +102,7 @@ function wc_add_wp_error_notices($errors)
  */
 function wc_kses_notice($message)
 {
-    // stub
 }
-
 /**
  * Get notice data attribute.
  *
@@ -134,5 +112,4 @@ function wc_kses_notice($message)
  */
 function wc_get_notice_data_attr($notice)
 {
-    // stub
 }

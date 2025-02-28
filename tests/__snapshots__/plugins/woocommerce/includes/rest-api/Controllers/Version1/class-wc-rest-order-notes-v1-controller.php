@@ -33,10 +33,8 @@ class WC_REST_Order_Notes_V1_Controller
      * Register the routes for order notes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read order notes.
      *
@@ -44,10 +42,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access create order notes.
      *
@@ -56,10 +52,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return bool|WP_Error
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a order note.
      *
@@ -67,10 +61,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access delete a order note.
      *
@@ -79,10 +71,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order notes from an order.
      *
@@ -91,10 +81,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single order note.
      *
@@ -102,10 +90,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single order note.
      *
@@ -113,10 +99,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single order note.
      *
@@ -124,10 +108,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order note output for response.
      *
@@ -136,10 +118,8 @@ class WC_REST_Order_Notes_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($note, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -147,28 +127,22 @@ class WC_REST_Order_Notes_V1_Controller
      * @return array Links for the given order note.
      */
     protected function prepare_links($note)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Order Notes schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -39,10 +39,8 @@ class WC_Product_Variation
      * @param int|WC_Product|object $product Product to init.
      */
     public function __construct($product = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prefix for action and filter hooks on data.
      *
@@ -50,20 +48,16 @@ class WC_Product_Variation
      * @return string
      */
     protected function get_hook_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get internal type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the stock level comes from another product ID.
      *
@@ -71,30 +65,24 @@ class WC_Product_Variation
      * @return int
      */
     public function get_stock_managed_by_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product's title. For variations this is the parent product name.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product name with SKU or ID. Used within admin.
      *
      * @return string Formatted product name
      */
     public function get_formatted_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation attribute values. Keys are prefixed with attribute_, as stored, unless $with_prefix is false.
      *
@@ -102,10 +90,8 @@ class WC_Product_Variation
      * @return array of attributes and their values for this variation.
      */
     public function get_variation_attributes($with_prefix = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a single product attribute as a string.
      *
@@ -113,10 +99,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_attribute($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper for get_permalink. Adds this variations attributes to the URL.
      *
@@ -124,20 +108,16 @@ class WC_Product_Variation
      * @return string
      */
     public function get_permalink($item_object = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to url used mainly in loops.
      *
      * @return string
      */
     public function add_to_cart_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get SKU (Stock-keeping unit) - product unique ID.
      *
@@ -145,10 +125,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_sku($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product's weight.
      *
@@ -156,10 +134,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_weight($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product length.
      *
@@ -167,10 +143,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_length($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product width.
      *
@@ -178,10 +152,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_width($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product height.
      *
@@ -189,10 +161,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_height($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the tax class.
      *
@@ -202,10 +172,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_tax_class($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if product manage stock.
      *
@@ -214,10 +182,8 @@ class WC_Product_Variation
      * @return boolean|string true, false, or parent.
      */
     public function get_manage_stock($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns number of items available for sale.
      *
@@ -225,10 +191,8 @@ class WC_Product_Variation
      * @return int|null
      */
     public function get_stock_quantity($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get backorders.
      *
@@ -237,10 +201,8 @@ class WC_Product_Variation
      * @return string yes no or notify
      */
     public function get_backorders($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get main image ID.
      *
@@ -249,10 +211,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_image_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get purchase note.
      *
@@ -261,10 +221,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_purchase_note($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping class ID.
      *
@@ -273,10 +231,8 @@ class WC_Product_Variation
      * @return int
      */
     public function get_shipping_class_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get catalog visibility.
      *
@@ -284,10 +240,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_catalog_visibility($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute summary.
      *
@@ -299,10 +253,8 @@ class WC_Product_Variation
      * @return string
      */
     public function get_attribute_summary($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set attribute summary.
      *
@@ -312,10 +264,8 @@ class WC_Product_Variation
      * @param string $attribute_summary Summary of attribute names and values assigned to the variation.
      */
     public function set_attribute_summary($attribute_summary)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the parent data array for this variation.
      *
@@ -323,10 +273,8 @@ class WC_Product_Variation
      * @param array $parent_data parent data array for this variation.
      */
     public function set_parent_data($parent_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the parent data array for this variation.
      *
@@ -334,10 +282,8 @@ class WC_Product_Variation
      * @return array
      */
     public function get_parent_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set attributes. Unlike the parent product which uses terms, variations are assigned
      * specific attributes using name value pairs.
@@ -345,10 +291,8 @@ class WC_Product_Variation
      * @param array $raw_attributes array of raw attributes.
      */
     public function set_attributes($raw_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has any visible attributes.
      *
@@ -358,10 +302,8 @@ class WC_Product_Variation
      * @return boolean
      */
     public function has_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns false if the product cannot be bought.
      * Override abstract method so that: i) Disabled variations are not be purchasable by admins. ii) Enabled variations are not purchasable if the parent product is not purchasable.
@@ -369,10 +311,8 @@ class WC_Product_Variation
      * @return bool
      */
     public function is_purchasable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Controls whether this particular variation will appear greyed-out (inactive) or not (active).
      * Used by extensions to make incompatible variations appear greyed-out, etc.
@@ -381,10 +321,8 @@ class WC_Product_Variation
      * @return bool
      */
     public function variation_is_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if this particular variation is visible. Invisible variations are enabled and can be selected, but no price / stock info is displayed.
      * Instead, a suitable 'unavailable' message is displayed.
@@ -393,20 +331,16 @@ class WC_Product_Variation
      * @return bool
      */
     public function variation_is_visible()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return valid tax classes. Adds 'parent' to the default list of valid tax classes.
      *
      * @return array valid tax classes
      */
     protected function get_valid_tax_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of the "Cost of Goods Sold value is additive" flag for this product.
      * See get_cogs_effective_value_core.
@@ -414,10 +348,8 @@ class WC_Product_Variation
      * @return bool The current value of the flag.
      */
     public function get_cogs_value_is_additive(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the value of the "Cost of Goods Sold value is additive" flag for this product.
      * See get_cogs_effective_value_core.
@@ -427,10 +359,8 @@ class WC_Product_Variation
      * @param bool $value The value to set for the flag.
      */
     public function set_cogs_value_is_additive(bool $value): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replacement of the parent adjust_cogs_value_before_set method
      * to disable the conversion of zero to null.
@@ -439,10 +369,8 @@ class WC_Product_Variation
      * @return float|null The actual value that will be set for the cost property.
      */
     protected function adjust_cogs_value_before_set(float|null $value): float|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the effective total value of the Cost of Goods Sold for this product.
      * (the monetary value that will be applied to orders and used for analytics purposes).
@@ -454,18 +382,14 @@ class WC_Product_Variation
      * @return float
      */
     protected function get_cogs_total_value_core(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Cost of Goods Sold effective value of the parent product.
      *
      * @return float Cost of Goods Sold effective value of the parent product.
      */
     public function get_parent_cogs_effective_value(): float
-    {
-        // stub
-    }
-
+{
+}
 }

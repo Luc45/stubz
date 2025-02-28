@@ -80,10 +80,8 @@ abstract class RestApiControllerBase
      * Register the hooks used by the class.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the woocommerce_rest_api_get_rest_namespaces filter
      * to add ourselves to the list of REST API controllers registered by WooCommerce.
@@ -94,10 +92,8 @@ abstract class RestApiControllerBase
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_woocommerce_rest_api_get_rest_namespaces(array $namespaces): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the WooCommerce REST API namespace for the class. It must be unique across all other derived classes
      * and the keys returned by the 'get_vX_controllers' methods in includes/rest-api/Server.php.
@@ -105,16 +101,14 @@ abstract class RestApiControllerBase
      *
      * @return string
      */
-    protected abstract function get_rest_api_namespace(): string;
-
+    abstract protected function get_rest_api_namespace(): string;
     /**
      * Register the REST API endpoints handled by this controller.
      *
      * Use 'register_rest_route' in the usual way, it's recommended to use the 'run' method for 'callback'
      * and the 'check_permission' method for 'permission_check', see the example in the class comment.
      */
-    public abstract function register_routes();
-
+    abstract public function register_routes();
     /**
      * Handle a request for one of the provided REST API endpoints.
      *
@@ -128,10 +122,8 @@ abstract class RestApiControllerBase
      * @return WP_Error|WP_HTTP_Response|WP_REST_Response The response to send back to the client.
      */
     protected function run(WP_REST_Request $request, string $method_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an WP_Error object for an internal server error, with exception information if the current user is an admin.
      *
@@ -139,10 +131,8 @@ abstract class RestApiControllerBase
      * @return WP_Error
      */
     protected function internal_wp_error(Exception $exception): WP_Error
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an authentication error message for a given HTTP verb.
      *
@@ -150,10 +140,8 @@ abstract class RestApiControllerBase
      * @return array|null Error information on success, null otherwise.
      */
     protected function get_authentication_error_by_method(string $method)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Permission check for REST API endpoints, given the request method.
      *
@@ -163,18 +151,14 @@ abstract class RestApiControllerBase
      * @return bool|WP_Error True if the current user has the capability, otherwise an "Unauthorized" error or False if no error is available for the request method.
      */
     protected function check_permission(WP_REST_Request $request, string $required_capability_name, ...$extra_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the base schema for the REST API endpoints.
      *
      * @return array
      */
     protected function get_base_schema(): array
-    {
-        // stub
-    }
-
+{
+}
 }

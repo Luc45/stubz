@@ -24,8 +24,6 @@ class ActionScheduler_DBStoreMigrator
      * @throws \RuntimeException When the action is not saved.
      */
     public function save_action(ActionScheduler_Action $action, DateTime|null $scheduled_date = null, DateTime|null $last_attempt_date = null)
-    {
-        // stub
-    }
-
+{
+}
 }

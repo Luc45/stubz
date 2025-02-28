@@ -32,10 +32,8 @@ final class JsonWebToken
      * @return string
      */
     public static function create(array $payload, string $secret)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates a provided token against the provided secret.
      * Checks for format, valid header for our class, expiration claim validity and signature.
@@ -47,10 +45,8 @@ final class JsonWebToken
      * @return bool
      */
     public static function validate(string $token, string $secret)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the decoded/encoded header, payload and signature from a token string.
      *
@@ -59,20 +55,16 @@ final class JsonWebToken
      * @return object
      */
     public static function get_parts(string $token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the json formatted header for our HS256 JWT token.
      *
      * @return string|bool
      */
     private static function generate_header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a sha256 signature for the provided string using the provided secret.
      *
@@ -82,10 +74,8 @@ final class JsonWebToken
      * @return false|string
      */
     private static function generate_signature(string $string, string $secret)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the payload in json formatted string.
      *
@@ -94,10 +84,8 @@ final class JsonWebToken
      * @return string|bool
      */
     private static function generate_payload(array $payload)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Encodes a string to url safe base64.
      *
@@ -106,10 +94,8 @@ final class JsonWebToken
      * @return string
      */
     private static function to_base_64_url(string $string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decodes a string encoded using url safe base64, supporting auto padding.
      *
@@ -118,8 +104,6 @@ final class JsonWebToken
      * @return string
      */
     private static function from_base_64_url(string $string)
-    {
-        // stub
-    }
-
+{
+}
 }

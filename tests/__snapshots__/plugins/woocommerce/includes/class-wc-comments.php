@@ -9,10 +9,8 @@ class WC_Comments
      * Hook in methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if comments are open.
      *
@@ -22,10 +20,8 @@ class WC_Comments
      * @return bool
      */
     public static function comments_open($open, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude order comments from queries and RSS.
      *
@@ -39,10 +35,8 @@ class WC_Comments
      * @return array
      */
     public static function exclude_order_comments($clauses)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude order comments from feed.
      *
@@ -50,10 +44,8 @@ class WC_Comments
      * @param mixed $join Deprecated.
      */
     public static function exclude_order_comments_from_feed_join($join)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude order comments from queries and RSS.
      *
@@ -61,10 +53,8 @@ class WC_Comments
      * @return string
      */
     public static function exclude_order_comments_from_feed_where($where)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude webhook comments from queries and RSS.
      *
@@ -73,10 +63,8 @@ class WC_Comments
      * @return array
      */
     public static function exclude_webhook_comments($clauses)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude webhooks comments from feed.
      *
@@ -84,10 +72,8 @@ class WC_Comments
      * @param mixed $join Deprecated.
      */
     public static function exclude_webhook_comments_from_feed_join($join)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude webhook comments from queries and RSS.
      *
@@ -96,10 +82,8 @@ class WC_Comments
      * @return string
      */
     public static function exclude_webhook_comments_from_feed_where($where)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the comment ratings.
      *
@@ -107,20 +91,16 @@ class WC_Comments
      * @return array
      */
     public static function check_comment_rating($comment_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rating field for comments.
      *
      * @param int $comment_id Comment ID.
      */
     public static function add_comment_rating($comment_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Modify recipient of review email.
      *
@@ -129,20 +109,16 @@ class WC_Comments
      * @return array
      */
     public static function comment_moderation_recipients($emails, $comment_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure product average rating and review count is kept up to date.
      *
      * @param int $post_id Post ID.
      */
     public static function clear_transients($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete comments count cache whenever there is
      * new comment or the status of a comment changes. Cache
@@ -150,10 +126,8 @@ class WC_Comments
      * is called.
      */
     public static function delete_comments_count_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove order notes, webhook delivery logs, and product reviews from wp_count_comments().
      *
@@ -163,10 +137,8 @@ class WC_Comments
      * @return object
      */
     public static function wp_count_comments($stats, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make sure WP displays avatars for comments with the `review` type.
      *
@@ -175,10 +147,8 @@ class WC_Comments
      * @return array
      */
     public static function add_avatar_for_review_comment_type($comment_types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Product Reviews filter for `review` comment type.
      *
@@ -189,10 +159,8 @@ class WC_Comments
      * @return array
      */
     public static function add_review_comment_filter(array $comment_types): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if a review is from a verified owner at submission.
      *
@@ -200,10 +168,8 @@ class WC_Comments
      * @return bool
      */
     public static function add_comment_purchase_verification($comment_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product rating for a product. Please note this is not cached.
      *
@@ -212,10 +178,8 @@ class WC_Comments
      * @return float
      */
     public static function get_average_rating_for_product(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Utility function for getting review counts for multiple products in one query. This is not cached.
      *
@@ -226,10 +190,8 @@ class WC_Comments
      * @return array
      */
     public static function get_review_counts_for_product_ids($product_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product review count for a product (not replies). Please note this is not cached.
      *
@@ -238,10 +200,8 @@ class WC_Comments
      * @return int
      */
     public static function get_review_count_for_product(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product rating count for a product. Please note this is not cached.
      *
@@ -250,10 +210,8 @@ class WC_Comments
      * @return int[]
      */
     public static function get_rating_counts_for_product(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update comment type of product reviews.
      *
@@ -262,20 +220,16 @@ class WC_Comments
      * @return array
      */
     public static function update_comment_type($comment_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate product reviews if requires a verified owner.
      *
      * @param int $comment_post_id Post ID.
      */
     public static function validate_product_review_verified_owners($comment_post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines if a comment is of the default type.
      *
@@ -287,8 +241,6 @@ class WC_Comments
      * @return bool
      */
     private static function is_default_comment_type($comment_type)
-    {
-        // stub
-    }
-
+{
+}
 }

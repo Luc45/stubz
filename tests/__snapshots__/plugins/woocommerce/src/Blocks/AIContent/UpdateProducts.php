@@ -65,20 +65,16 @@ class UpdateProducts
      * @return array|WP_Error The generated content for the products. An error if the content could not be generated.
      */
     public function generate_content($ai_connection, $token, $images, $business_description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all dummy products that were not modified by the store owner.
      *
      * @return array|WP_Error An array with the dummy products that need to have their content updated by AI.
      */
     public function fetch_dummy_products_to_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify if the dummy product should have its content generated and managed by AI.
      *
@@ -87,10 +83,8 @@ class UpdateProducts
      * @return bool
      */
     public function should_update_dummy_product($dummy_product): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates a new product and assigns the _headstart_post meta to it.
      *
@@ -99,10 +93,8 @@ class UpdateProducts
      * @return bool|int|\WP_Error
      */
     public function create_new_product($product_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all existing products that have the _headstart_post meta assigned to them.
      *
@@ -111,10 +103,8 @@ class UpdateProducts
      * @return array|null
      */
     public function fetch_product_ids(string $type = 'user_created')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the hash for a product based on its name, description and image_id.
      *
@@ -123,10 +113,8 @@ class UpdateProducts
      * @return false|string
      */
     public function get_hash_for_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the hash for a product that had its content AI-generated.
      *
@@ -135,10 +123,8 @@ class UpdateProducts
      * @return false|mixed
      */
     public function get_hash_for_ai_modified_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a hash with the AI-generated content and save it as a meta for the product.
      *
@@ -147,10 +133,8 @@ class UpdateProducts
      * @return bool|int
      */
     public function create_hash_for_ai_modified_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the product content with the AI-generated content.
      *
@@ -159,10 +143,8 @@ class UpdateProducts
      * @return void|WP_Error
      */
     public function update_product_content($ai_generated_product_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Upload the image for the product.
      *
@@ -173,10 +155,8 @@ class UpdateProducts
      * @return int|string|WP_Error
      */
     private function product_image_upload($product_id, $image_src, $image_alt)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assigns the default content for the products.
      *
@@ -186,10 +166,8 @@ class UpdateProducts
      * @return array[]
      */
     public function assign_ai_selected_images_to_dummy_products($dummy_products_to_update, $ai_selected_images)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the product content.
      *
@@ -202,18 +180,14 @@ class UpdateProducts
      * @return array|int|string|\WP_Error
      */
     public function assign_ai_generated_content_to_dummy_products($ai_connection, $token, $products_information_list, $business_description, $search_term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the products content.
      */
     public function reset_products_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the product with the new content.
      *
@@ -226,8 +200,6 @@ class UpdateProducts
      * @return int|\WP_Error
      */
     private function product_update($product, $product_image_id, $product_title, $product_description, $product_price)
-    {
-        // stub
-    }
-
+{
+}
 }

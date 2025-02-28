@@ -56,18 +56,15 @@ abstract class GenericStatsController
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the report's item properties schema.
      * Will be used by `get_item_schema` as `totals` and `subtotals`.
      *
      * @return array
      */
-    protected abstract function get_item_properties_schema();
-
+    abstract protected function get_item_properties_schema();
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
@@ -77,10 +74,8 @@ abstract class GenericStatsController
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the report data.
      *
@@ -94,8 +89,6 @@ abstract class GenericStatsController
      * @return \WP_REST_Response|\WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
 }

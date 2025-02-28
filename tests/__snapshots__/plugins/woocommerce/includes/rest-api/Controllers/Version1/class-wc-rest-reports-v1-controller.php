@@ -26,10 +26,8 @@ class WC_REST_Reports_V1_Controller
      * Register the routes for reports.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read reports.
      *
@@ -37,10 +35,8 @@ class WC_REST_Reports_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get reports list.
      *
@@ -48,10 +44,8 @@ class WC_REST_Reports_V1_Controller
      * @return array
      */
     protected function get_reports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all reports.
      *
@@ -59,10 +53,8 @@ class WC_REST_Reports_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report object for serialization.
      *
@@ -71,28 +63,22 @@ class WC_REST_Reports_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($report, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

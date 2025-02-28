@@ -20,10 +20,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @since 7.7.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether user has permission to access controller's endpoints.
      *
@@ -32,10 +30,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return bool
      */
     public function user_has_permission($user): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install WooCommerce.com products.
      *
@@ -44,10 +40,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function install($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset installation state.
      *
@@ -56,10 +50,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function reset_install($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a standardized response for a successful request.
      *
@@ -67,10 +59,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return WP_REST_Response|WP_Error
      */
     protected function success_response($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a standardized response for a failed request.
      *
@@ -79,10 +69,8 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return WP_REST_Response|WP_Error
      */
     protected function failure_response($product_id, $exception)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map the installation state to a response.
      *
@@ -90,8 +78,6 @@ class WC_REST_WCCOM_Site_Installer_Controller
      * @return array
      */
     protected function map_state_to_response($state)
-    {
-        // stub
-    }
-
+{
+}
 }

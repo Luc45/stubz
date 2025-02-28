@@ -14,10 +14,8 @@ class MiniCartUtils
      * @return array Reformatted attributes that are compatible with the color panel component.
      */
     public static function migrate_attributes_to_color_panel($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the SVG icon for the mini cart.
      *
@@ -26,8 +24,6 @@ class MiniCartUtils
      * @return string The SVG icon.
      */
     public static function get_svg_icon($icon_name, $icon_color = 'currentColor')
-    {
-        // stub
-    }
-
+{
+}
 }

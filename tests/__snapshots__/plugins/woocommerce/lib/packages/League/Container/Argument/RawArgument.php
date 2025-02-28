@@ -15,16 +15,12 @@ class RawArgument
      * @param mixed $value
      */
     public function __construct($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function getValue()
-    {
-        // stub
-    }
-
+{
+}
 }

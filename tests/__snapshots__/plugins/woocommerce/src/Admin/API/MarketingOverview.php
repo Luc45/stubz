@@ -28,10 +28,8 @@ class MarketingOverview
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return installed marketing extensions data.
      *
@@ -40,10 +38,8 @@ class MarketingOverview
      * @return \WP_Error|\WP_REST_Response
      */
     public function activate_plugin($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage plugins.
      *
@@ -52,10 +48,8 @@ class MarketingOverview
      * @return \WP_Error|boolean
      */
     public function install_plugins_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return installed marketing extensions data.
      *
@@ -64,8 +58,6 @@ class MarketingOverview
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_installed_plugins($request)
-    {
-        // stub
-    }
-
+{
+}
 }

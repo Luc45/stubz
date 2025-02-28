@@ -26,10 +26,8 @@ class WC_REST_Product_Attribute_Terms_V1_Controller
      * Register the routes for terms.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product attribute term output for response.
      *
@@ -38,10 +36,8 @@ class WC_REST_Product_Attribute_Terms_V1_Controller
      * @return WP_REST_Response $response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update term meta fields.
      *
@@ -50,18 +46,14 @@ class WC_REST_Product_Attribute_Terms_V1_Controller
      * @return bool|WP_Error
      */
     protected function update_term_meta_fields($term, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Attribute Term's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

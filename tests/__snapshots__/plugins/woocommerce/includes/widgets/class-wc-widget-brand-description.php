@@ -42,10 +42,8 @@ class WC_Widget_Brand_Description
 
     /** Constructor */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Echoes the widget content.
      *
@@ -56,10 +54,8 @@ class WC_Widget_Brand_Description
      * @param array $instance The settings for the particular instance of the widget.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates widget instance.
      *
@@ -69,18 +65,14 @@ class WC_Widget_Brand_Description
      * @param array $old_instance Old widget instance.
      */
     public function update($new_instance, $old_instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the settings update form.
      *
      * @param array $instance Current settings.
      */
     public function form($instance)
-    {
-        // stub
-    }
-
+{
+}
 }

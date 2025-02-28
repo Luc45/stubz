@@ -18,16 +18,14 @@ class WC_Discounts
      *
      * @var array
      */
-    protected $items = array (
-);
+    protected $items = array();
 
     /**
      * An array of discounts which have been applied to items.
      *
      * @var array[] Code => Item Key => Value
      */
-    protected $discounts = array (
-);
+    protected $discounts = array();
 
     /**
      * WC_Discounts Constructor.
@@ -35,10 +33,8 @@ class WC_Discounts
      * @param WC_Cart|WC_Order $object Cart or order object.
      */
     public function __construct($object = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set items directly. Used by WC_Cart_Totals.
      *
@@ -46,10 +42,8 @@ class WC_Discounts
      * @param array $items Items to set.
      */
     public function set_items($items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalise cart items which will be discounted.
      *
@@ -57,10 +51,8 @@ class WC_Discounts
      * @param WC_Cart $cart Cart object.
      */
     public function set_items_from_cart($cart)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalise order items which will be discounted.
      *
@@ -68,10 +60,8 @@ class WC_Discounts
      * @param WC_Order $order Order object.
      */
     public function set_items_from_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the object concerned.
      *
@@ -79,10 +69,8 @@ class WC_Discounts
      * @return object
      */
     public function get_object()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get items.
      *
@@ -90,10 +78,8 @@ class WC_Discounts
      * @return object[]
      */
     public function get_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get items to validate.
      *
@@ -101,10 +87,8 @@ class WC_Discounts
      * @return object[]
      */
     public function get_items_to_validate()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount by key with or without precision.
      *
@@ -114,10 +98,8 @@ class WC_Discounts
      * @return float
      */
     public function get_discount($key, $in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all discount totals.
      *
@@ -126,10 +108,8 @@ class WC_Discounts
      * @return array
      */
     public function get_discounts($in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all discount totals per item.
      *
@@ -138,10 +118,8 @@ class WC_Discounts
      * @return array
      */
     public function get_discounts_by_item($in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all discount totals per coupon.
      *
@@ -150,10 +128,8 @@ class WC_Discounts
      * @return array
      */
     public function get_discounts_by_coupon($in_cents = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discounted price of an item without precision.
      *
@@ -162,10 +138,8 @@ class WC_Discounts
      * @return float
      */
     public function get_discounted_price($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discounted price of an item to precision (in cents).
      *
@@ -174,10 +148,8 @@ class WC_Discounts
      * @return int
      */
     public function get_discounted_price_in_cents($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply a discount to all items using a coupon.
      *
@@ -188,10 +160,8 @@ class WC_Discounts
      * @return bool|WP_Error True if applied or WP_Error instance in failure.
      */
     public function apply_coupon($coupon, $validate = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sort by price.
      *
@@ -201,10 +171,8 @@ class WC_Discounts
      * @return int
      */
     protected function sort_by_price($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter out all products which have been fully discounted to 0.
      * Used as array_filter callback.
@@ -214,10 +182,8 @@ class WC_Discounts
      * @return bool
      */
     protected function filter_products_with_price($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get items which the coupon should be applied to.
      *
@@ -226,10 +192,8 @@ class WC_Discounts
      * @return array
      */
     protected function get_items_to_apply_coupon($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply percent discount to items and return an array of discounts granted.
      *
@@ -239,10 +203,8 @@ class WC_Discounts
      * @return int Total discounted.
      */
     protected function apply_coupon_percent($coupon, $items_to_apply)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply fixed product discount to items.
      *
@@ -253,10 +215,8 @@ class WC_Discounts
      * @return int Total discounted.
      */
     protected function apply_coupon_fixed_product($coupon, $items_to_apply, $amount = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply fixed cart discount to items.
      *
@@ -267,10 +227,8 @@ class WC_Discounts
      * @return int Total discounted.
      */
     protected function apply_coupon_fixed_cart($coupon, $items_to_apply, $amount = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply custom coupon discount to items.
      *
@@ -280,10 +238,8 @@ class WC_Discounts
      * @return int Total discounted.
      */
     protected function apply_coupon_custom($coupon, $items_to_apply)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deal with remaining fractional discounts by splitting it over items
      * until the amount is expired, discounting 1 cent at a time.
@@ -295,10 +251,8 @@ class WC_Discounts
      * @return int Total discounted.
      */
     protected function apply_coupon_remainder($coupon, $items_to_apply, $amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon exists or throw exception.
      *
@@ -311,10 +265,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_exists($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon usage limit is valid or throw exception.
      *
@@ -324,10 +276,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_usage_limit($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon user usage limit is valid or throw exception.
      *
@@ -341,10 +291,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_user_usage_limit($coupon, $user_id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon date is valid or throw exception.
      *
@@ -354,10 +302,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_expiry_date($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon amount is valid or throw exception.
      *
@@ -367,10 +313,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_minimum_amount($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon amount is valid or throw exception.
      *
@@ -380,10 +324,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_maximum_amount($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon is valid for products in the list is valid or throw exception.
      *
@@ -393,10 +335,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_product_ids($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon is valid for product categories in the list is valid or throw exception.
      *
@@ -406,10 +346,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_product_categories($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon is valid for sale items in the list is valid or throw exception.
      *
@@ -419,10 +357,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_sale_items($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * All exclusion rules must pass at the same time for a product coupon to be valid.
      *
@@ -432,10 +368,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_excluded_items($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cart discounts cannot be added if non-eligible product is found.
      *
@@ -445,10 +379,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_eligible_items($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude products.
      *
@@ -458,10 +390,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_excluded_product_ids($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude categories from product list.
      *
@@ -471,10 +401,8 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_excluded_product_categories($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure coupon is valid for allowed emails or throw exception.
      *
@@ -484,20 +412,16 @@ class WC_Discounts
      * @return bool
      */
     protected function validate_coupon_allowed_emails($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the object subtotal
      *
      * @return int
      */
     protected function get_object_subtotal()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a coupon is valid.
      *
@@ -525,8 +449,6 @@ class WC_Discounts
      * @since  3.2.0
      */
     public function is_coupon_valid($coupon)
-    {
-        // stub
-    }
-
+{
+}
 }

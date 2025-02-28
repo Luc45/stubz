@@ -13,10 +13,8 @@ class OptionSanitizer
      * OptionSanitizer constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes values for options of type 'color' before persisting to the database.
      * Falls back to previous/default value for the option if given an invalid value.
@@ -29,8 +27,6 @@ class OptionSanitizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function sanitize_color_option($value, $option)
-    {
-        // stub
-    }
-
+{
+}
 }

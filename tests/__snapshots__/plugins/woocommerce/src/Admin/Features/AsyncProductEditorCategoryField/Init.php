@@ -13,10 +13,8 @@ class Init
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds meta_box_cb callback arguments for custom metabox.
      *
@@ -24,24 +22,18 @@ class Init
      * @return array $args category taxonomy args.
      */
     public function add_metabox_args($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts needed for the product form block editor.
      */
     public function enqueue_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue styles needed for the rich text editor.
      */
     public function enqueue_styles()
-    {
-        // stub
-    }
-
+{
+}
 }

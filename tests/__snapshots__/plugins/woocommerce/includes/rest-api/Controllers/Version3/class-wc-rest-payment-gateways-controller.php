@@ -23,10 +23,8 @@ class WC_REST_Payment_Gateways_Controller
      * @return WP_REST_Response   $response   Response data.
      */
     public function prepare_item_for_response($gateway, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return settings associated with this payment gateway.
      *
@@ -35,18 +33,14 @@ class WC_REST_Payment_Gateways_Controller
      * @return array
      */
     public function get_settings($gateway)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the payment gateway schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

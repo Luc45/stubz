@@ -37,10 +37,8 @@ final class Container
      * Class constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds an entry of the container by its identifier and returns it.
      * See the comment about ContainerException in RuntimeContainer::get.
@@ -55,10 +53,8 @@ final class Container
      * @throws \Exception Exception thrown in the constructor or in the 'init' method of one of the resolved classes.
      */
     public function get(string $id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the container can return an entry for the given identifier.
      * Returns false otherwise.
@@ -71,18 +67,14 @@ final class Container
      * @return bool
      */
     public function has(string $id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The list of service provider classes to register.
      *
      * @var string[]
      */
     private function get_service_providers(): array
-    {
-        // stub
-    }
-
+{
+}
 }

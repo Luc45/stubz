@@ -29,10 +29,8 @@ class WC_Admin_Marketplace_Promotions
      * @return void
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule a daily cron event to fetch promotions.
      *
@@ -41,20 +39,16 @@ class WC_Admin_Marketplace_Promotions
      * @return void
      */
     private static function schedule_cron_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch promotions from the API and store them in a transient.
      *
      * @return void
      */
     public static function update_promotions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get active Marketplace promotions from the transient.
      * Use `woocommerce_marketplace_suppress_promotions` filter to suppress promotions.
@@ -62,10 +56,8 @@ class WC_Admin_Marketplace_Promotions
      * @since 9.0
      */
     public static function get_active_promotions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get promotions to show in the Woo in-app marketplace and load them into a transient
      * with a 12-hour life. Run as a recurring scheduled action.
@@ -73,10 +65,8 @@ class WC_Admin_Marketplace_Promotions
      * @return array
      */
     private static function fetch_marketplace_promotions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If there's an active promotion of the format `menu_bubble`,
      * add a filter to show a bubble on the Extensions item in the
@@ -88,10 +78,8 @@ class WC_Admin_Marketplace_Promotions
      * @throws Exception  If we are unable to create a DateTime from the date_to_gmt.
      */
     private static function maybe_show_bubble_promotions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * From the array of promotions, select those of a given format.
      *
@@ -100,12 +88,9 @@ class WC_Admin_Marketplace_Promotions
      *
      * @return array
      */
-    private static function get_promotions_of_format($promotions = array (
-), $format = ''): array
-    {
-        // stub
-    }
-
+    private static function get_promotions_of_format($promotions = array(), $format = ''): array
+{
+}
     /**
      * Find promotions that are still active – they have a date range that
      * includes the current date.
@@ -114,12 +99,9 @@ class WC_Admin_Marketplace_Promotions
      *
      * @return array
      */
-    private static function filter_out_inactive_promotions($promotions = array (
-))
-    {
-        // stub
-    }
-
+    private static function filter_out_inactive_promotions($promotions = array())
+{
+}
     /**
      * Promos arrive in the array of promotions as an array of arrays with the key 'promos'.
      * We merge them into the main array.
@@ -129,12 +111,9 @@ class WC_Admin_Marketplace_Promotions
      *
      * @return array
      * */
-    private static function merge_promos(array|null $promotions = array (
-)): array
-    {
-        // stub
-    }
-
+    private static function merge_promos(array|null $promotions = array()): array
+{
+}
     /**
      * Callback for the `woocommerce_marketplace_menu_items` filter
      * in `Automattic\WooCommerce\Internal\Admin\Marketplace::get_marketplace_pages`.
@@ -146,12 +125,9 @@ class WC_Admin_Marketplace_Promotions
      *
      * @return array
      */
-    public static function filter_marketplace_menu_items($menu_items, $promotion = array (
-)): array
-    {
-        // stub
-    }
-
+    public static function filter_marketplace_menu_items($menu_items, $promotion = array()): array
+{
+}
     /**
      * Return the markup for a menu item bubble with a given text.
      *
@@ -161,10 +137,8 @@ class WC_Admin_Marketplace_Promotions
      * @return string
      */
     private static function append_bubble(string $menu_item_text, string $bubble_text): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When WooCommerce is disabled, clear the WP Cron event we use to fetch promotions.
      *
@@ -173,10 +147,8 @@ class WC_Admin_Marketplace_Promotions
      * @return void
      */
     public static function clear_cron_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear deprecated scheduled action that was used to fetch promotions in WooCommerce 8.8.
      * Replaced with a transient in WooCommerce 9.0.
@@ -184,18 +156,14 @@ class WC_Admin_Marketplace_Promotions
      * @return void
      */
     public static function clear_deprecated_scheduled_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * We can't clear deprecated action from AS when it's running,
      * so we schedule a new single action to clear the deprecated
      * `woocommerce_marketplace_fetch_promotions` action.
      */
     public static function clear_deprecated_action()
-    {
-        // stub
-    }
-
+{
+}
 }

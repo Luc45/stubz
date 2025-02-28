@@ -23,10 +23,8 @@ class WC_REST_Webhooks_V2_Controller
      * @return WP_REST_Response $response
      */
     public function prepare_item_for_response($id, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default REST API version.
      *
@@ -34,18 +32,14 @@ class WC_REST_Webhooks_V2_Controller
      * @return string
      */
     protected function get_default_api_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Webhook's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

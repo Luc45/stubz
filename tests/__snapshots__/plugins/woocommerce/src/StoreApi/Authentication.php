@@ -11,10 +11,8 @@ class Authentication
      * Hook into WP lifecycle events. This is hooked by the StoreAPI class on `rest_api_init`.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add allowed cors headers for store API headers.
      *
@@ -22,10 +20,8 @@ class Authentication
      * @return array
      */
     public function allowed_cors_headers($allowed_headers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add CORS headers to a response object.
      *
@@ -43,20 +39,16 @@ class Authentication
      * @return bool
      */
     public function send_cors_headers($value, $result, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the request a preflight request? Checks the request method
      *
      * @return boolean
      */
     protected function is_preflight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if we're using a cart token to access the Store API.
      *
@@ -64,20 +56,16 @@ class Authentication
      * @return boolean
      */
     protected function has_valid_cart_token(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the secret for the cart token using wp_salt.
      *
      * @return string
      */
     protected function get_cart_token_secret()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The Store API does not require authentication.
      *
@@ -85,10 +73,8 @@ class Authentication
      * @return \WP_Error|null|bool
      */
     public function check_authentication($result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When the login cookies are set, they are not available until the next page reload. For the Store API, specifically
      * for returning updated nonces, we need this to be available immediately.
@@ -96,10 +82,8 @@ class Authentication
      * @param string $logged_in_cookie The value for the logged in cookie.
      */
     public function set_logged_in_cookie($logged_in_cookie)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Opt in to rate limiting for the checkout endpoint.
      *
@@ -107,10 +91,8 @@ class Authentication
      * @return \WP_Error|null|bool
      */
     public function opt_in_checkout_endpoint($result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Applies Rate Limiting to the request, and passes through any errors from other authentication methods used before this one.
      *
@@ -118,20 +100,16 @@ class Authentication
      * @return \WP_Error|null|bool
      */
     protected function apply_rate_limiting($result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if is request to the Store API.
      *
      * @return bool
      */
     protected function is_request_to_store_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current user IP Address.
      *
@@ -151,10 +129,8 @@ class Authentication
      * @return string
      */
     protected static function get_ip_address(bool $proxy_support = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Uses filter_var() to validate and return ipv4 and ipv6 addresses
      * Will return 0.0.0.0 if the ip is not valid. This is done to group and still rate limit invalid ips.
@@ -164,8 +140,6 @@ class Authentication
      * @return string
      */
     protected static function validate_ip($ip)
-    {
-        // stub
-    }
-
+{
+}
 }

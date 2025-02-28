@@ -28,10 +28,8 @@ class Leaderboards
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data for the coupons leaderboard.
      *
@@ -41,10 +39,8 @@ class Leaderboards
      * @param string $persisted_query URL query string.
      */
     protected function get_coupons_leaderboard($per_page, $after, $before, $persisted_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data for the categories leaderboard.
      *
@@ -54,10 +50,8 @@ class Leaderboards
      * @param string $persisted_query URL query string.
      */
     protected function get_categories_leaderboard($per_page, $after, $before, $persisted_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data for the customers leaderboard.
      *
@@ -67,10 +61,8 @@ class Leaderboards
      * @param string $persisted_query URL query string.
      */
     protected function get_customers_leaderboard($per_page, $after, $before, $persisted_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data for the products leaderboard.
      *
@@ -80,10 +72,8 @@ class Leaderboards
      * @param string $persisted_query URL query string.
      */
     protected function get_products_leaderboard($per_page, $after, $before, $persisted_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of all leaderboards.
      *
@@ -94,10 +84,8 @@ class Leaderboards
      * @return array
      */
     public function get_leaderboards($per_page, $after, $before, $persisted_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all leaderboards.
      *
@@ -105,10 +93,8 @@ class Leaderboards
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of allowed leaderboards.
      *
@@ -116,10 +102,8 @@ class Leaderboards
      * @return array|WP_Error
      */
     public function get_allowed_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -128,38 +112,30 @@ class Leaderboards
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get schema for the list of allowed leaderboards.
      *
      * @return array $schema
      */
     public function get_public_allowed_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

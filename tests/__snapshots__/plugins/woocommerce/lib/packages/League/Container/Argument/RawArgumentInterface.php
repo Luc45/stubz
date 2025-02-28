@@ -10,5 +10,4 @@ interface RawArgumentInterface
      * @return mixed
      */
     public function getValue();
-
 }

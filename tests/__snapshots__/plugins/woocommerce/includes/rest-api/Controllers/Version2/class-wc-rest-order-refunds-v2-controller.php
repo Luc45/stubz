@@ -34,25 +34,20 @@ class WC_REST_Order_Refunds_V2_Controller
      *
      * @var array
      */
-    protected $request = array (
-);
+    protected $request = array();
 
     /**
      * Order refunds actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the routes for order refunds.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get object.
      *
@@ -61,10 +56,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return WC_Data
      */
     protected function get_object($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data.
      *
@@ -73,10 +66,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return array
      */
     protected function get_formatted_item_data($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order output for response.
      *
@@ -88,10 +79,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -100,10 +89,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return array                   Links for the given post.
      */
     protected function prepare_links($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -112,10 +99,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares one object for create or update operation.
      *
@@ -125,10 +110,8 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return WP_Error|WC_Data The prepared item, or WP_Error object on failure.
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an object data.
      *
@@ -138,28 +121,22 @@ class WC_REST_Order_Refunds_V2_Controller
      * @return WC_Data|WP_Error
      */
     protected function save_object($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refund schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -34,10 +34,8 @@ class ActionScheduler_WPCommentCleaner
      * Initialize the class and attach callbacks.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines if there are log entries in the wp comments table.
      *
@@ -46,41 +44,31 @@ class ActionScheduler_WPCommentCleaner
      * @return boolean Whether there are scheduled action comments in the comments table.
      */
     public static function has_logs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedules the WP Post comment table cleanup to run in 6 months if it's not already scheduled.
      * Attached to the migration complete hook 'action_scheduler/migration_complete'.
      */
     public static function maybe_schedule_cleanup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete all action comments from the WP Comments table.
      */
     public static function delete_all_action_comments()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers admin notices about the orphaned action logs.
      */
     public static function register_admin_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints details about the orphaned action logs and includes information on where to learn more.
      */
     public static function print_admin_notice()
-    {
-        // stub
-    }
-
+{
+}
 }

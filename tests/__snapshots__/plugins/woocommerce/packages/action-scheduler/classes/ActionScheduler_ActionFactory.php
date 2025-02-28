@@ -18,12 +18,9 @@ class ActionScheduler_ActionFactory
      *
      * @return ActionScheduler_Action An instance of the stored action.
      */
-    public function get_stored_action($status, $hook, array $args = array (
-), ActionScheduler_Schedule|null $schedule = null, $group = '')
-    {
-        // stub
-    }
-
+    public function get_stored_action($status, $hook, array $args = array(), ActionScheduler_Schedule|null $schedule = null, $group = '')
+{
+}
     /**
      * Enqueue an action to run one time, as soon as possible (rather a specific scheduled time).
      *
@@ -37,12 +34,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function async($hook, $args = array (
-), $group = '')
-    {
-        // stub
-    }
-
+    public function async($hook, $args = array(), $group = '')
+{
+}
     /**
      * Same as async, but also supports $unique param.
      *
@@ -53,12 +47,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function async_unique($hook, $args = array (
-), $group = '', $unique = true)
-    {
-        // stub
-    }
-
+    public function async_unique($hook, $args = array(), $group = '', $unique = true)
+{
+}
     /**
      * Create single action.
      *
@@ -69,12 +60,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function single($hook, $args = array (
-), $when = null, $group = '')
-    {
-        // stub
-    }
-
+    public function single($hook, $args = array(), $when = null, $group = '')
+{
+}
     /**
      * Create single action only if there is no pending or running action with same name and params.
      *
@@ -86,12 +74,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function single_unique($hook, $args = array (
-), $when = null, $group = '', $unique = true)
-    {
-        // stub
-    }
-
+    public function single_unique($hook, $args = array(), $when = null, $group = '', $unique = true)
+{
+}
     /**
      * Create the first instance of an action recurring on a given interval.
      *
@@ -103,12 +88,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function recurring($hook, $args = array (
-), $first = null, $interval = null, $group = '')
-    {
-        // stub
-    }
-
+    public function recurring($hook, $args = array(), $first = null, $interval = null, $group = '')
+{
+}
     /**
      * Create the first instance of an action recurring on a given interval only if there is no pending or running action with same name and params.
      *
@@ -121,12 +103,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function recurring_unique($hook, $args = array (
-), $first = null, $interval = null, $group = '', $unique = true)
-    {
-        // stub
-    }
-
+    public function recurring_unique($hook, $args = array(), $first = null, $interval = null, $group = '', $unique = true)
+{
+}
     /**
      * Create the first instance of an action recurring on a Cron schedule.
      *
@@ -140,12 +119,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      */
-    public function cron($hook, $args = array (
-), $base_timestamp = null, $schedule = null, $group = '')
-    {
-        // stub
-    }
-
+    public function cron($hook, $args = array(), $base_timestamp = null, $schedule = null, $group = '')
+{
+}
     /**
      * Create the first instance of an action recurring on a Cron schedule only if there is no pending or running action with same name and params.
      *
@@ -160,12 +136,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The ID of the stored action.
      **/
-    public function cron_unique($hook, $args = array (
-), $base_timestamp = null, $schedule = null, $group = '', $unique = true)
-    {
-        // stub
-    }
-
+    public function cron_unique($hook, $args = array(), $base_timestamp = null, $schedule = null, $group = '', $unique = true)
+{
+}
     /**
      * Create a successive instance of a recurring or cron action.
      *
@@ -191,10 +164,8 @@ class ActionScheduler_ActionFactory
      * @throws InvalidArgumentException If $action is not a recurring action.
      */
     public function repeat($action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates a scheduled action.
      *
@@ -220,12 +191,9 @@ class ActionScheduler_ActionFactory
      *
      * @return int The action ID. Zero if there was an error scheduling the action.
      */
-    public function create(array $options = array (
-))
-    {
-        // stub
-    }
-
+    public function create(array $options = array())
+{
+}
     /**
      * Save action to database.
      *
@@ -234,10 +202,8 @@ class ActionScheduler_ActionFactory
      * @return int The ID of the stored action
      */
     protected function store(ActionScheduler_Action $action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Store action if it's unique.
      *
@@ -246,8 +212,6 @@ class ActionScheduler_ActionFactory
      * @return int ID of the created action. Will be 0 if action was not created.
      */
     protected function store_unique_action(ActionScheduler_Action $action)
-    {
-        // stub
-    }
-
+{
+}
 }

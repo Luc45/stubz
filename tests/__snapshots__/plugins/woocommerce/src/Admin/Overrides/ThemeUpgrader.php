@@ -20,10 +20,7 @@ class ThemeUpgrader
      *
      * @return bool|WP_Error True if the installation was successful, false or a WP_Error object otherwise.
      */
-    public function install($package, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function install($package, $args = array())
+{
+}
 }

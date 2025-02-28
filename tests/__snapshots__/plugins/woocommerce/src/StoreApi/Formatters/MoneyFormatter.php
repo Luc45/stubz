@@ -16,10 +16,7 @@ class MoneyFormatter
      * @param array            $options Options that influence the formatting.
      * @return string
      */
-    public function format($value, array $options = array (
-))
-    {
-        // stub
-    }
-
+    public function format($value, array $options = array())
+{
+}
 }

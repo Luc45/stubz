@@ -27,8 +27,6 @@ class ShippingAddressSchema
      * @return array
      */
     public function get_item_response($address)
-    {
-        // stub
-    }
-
+{
+}
 }

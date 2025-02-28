@@ -20,20 +20,16 @@ class ActionScheduler_wcSystemStatus
      * @return void
      */
     public function __construct($store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display action data, including number of actions grouped by status and the oldest & newest action in each status.
      *
      * Helpful to identify issues, like a clogged queue.
      */
     public function render()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get oldest and newest scheduled dates for a given set of statuses.
      *
@@ -41,10 +37,8 @@ class ActionScheduler_wcSystemStatus
      * @return array
      */
     protected function get_oldest_and_newest($status_keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get oldest or newest scheduled date for a given status.
      *
@@ -53,10 +47,8 @@ class ActionScheduler_wcSystemStatus
      * @return DateTime
      */
     protected function get_action_status_date($status, $date_type = 'oldest')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get oldest or newest scheduled date for a given status.
      *
@@ -65,10 +57,8 @@ class ActionScheduler_wcSystemStatus
      * @param array $oldest_and_newest Date of the oldest and newest action with each status.
      */
     protected function get_template($status_labels, $action_counts, $oldest_and_newest)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is triggered when invoking inaccessible methods in an object context.
      *
@@ -79,8 +69,6 @@ class ActionScheduler_wcSystemStatus
      * @link https://php.net/manual/en/language.oop5.overloading.php#language.oop5.overloading.methods
      */
     public function __call($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
 }

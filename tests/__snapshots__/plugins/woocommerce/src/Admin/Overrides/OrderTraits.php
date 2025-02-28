@@ -15,10 +15,8 @@ trait OrderTraits
      * @return float|int
      */
     public function get_item_shipping_amount($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping tax amount for line item/product as a total shipping tax amount ratio based on quantity.
      *
@@ -31,10 +29,8 @@ trait OrderTraits
      * @return float|int
      */
     public function get_item_shipping_tax_amount($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculates coupon amount for specified line item/product.
      *
@@ -45,8 +41,6 @@ trait OrderTraits
      * @return float
      */
     public function get_item_coupon_amount($item)
-    {
-        // stub
-    }
-
+{
+}
 }

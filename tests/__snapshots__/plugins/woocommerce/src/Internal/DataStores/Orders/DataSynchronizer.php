@@ -99,10 +99,8 @@ class DataSynchronizer
      * Class constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Class initialization, invoked by the DI container.
      *
@@ -114,79 +112,63 @@ class DataSynchronizer
      * @param BatchProcessingController        $batch_processing_controller The batch processing controller to use.
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy, Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store, Automattic\WooCommerce\Internal\Utilities\DatabaseUtil $database_util, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy, Automattic\WooCommerce\Caches\OrderCacheController $order_cache_controller, Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing_controller)
+{
+}
     /**
      * Does the custom orders tables exist in the database?
      *
      * @return bool True if the custom orders tables exist in the database.
      */
     public function check_orders_table_exists(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the value of the orders table created option. If it's not set, then it checks the orders table and set it accordingly.
      *
      * @return bool Whether orders table exists.
      */
     public function get_table_exists(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create the custom orders database tables and log an error if that's not possible.
      *
      * @return bool True if all the tables were successfully created, false otherwise.
      */
     public function create_database_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the custom orders database tables.
      */
     public function delete_database_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the real-time data sync between old and new tables currently enabled?
      *
      * @return bool
      */
     public function data_sync_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current background data sync mode.
      *
      * @return string
      */
     public function get_background_sync_mode(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the background data sync between old and new tables currently enabled?
      *
      * @return bool
      */
     public function background_sync_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an option change for specific keys.
      *
@@ -199,10 +181,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_updated_option($option_key, $old_value, $new_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an option change when the key didn't exist before.
      *
@@ -214,10 +194,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_added_option($option_key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an option deletion for specific keys.
      *
@@ -228,20 +206,16 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_deleted_option($option_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the time interval, in seconds, between background syncs.
      *
      * @return int
      */
     public function get_background_sync_interval(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Keys that can be ignored during synchronization or verification.
      *
@@ -250,30 +224,24 @@ class DataSynchronizer
      * @return string[]
      */
     public function get_ignored_order_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule an event to run background sync when the mode is set to interval.
      *
      * @return void
      */
     private function schedule_background_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove any pending background sync events.
      *
      * @return void
      */
     private function unschedule_background_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback to check for pending syncs and enqueue the background data sync processor when in interval mode.
      *
@@ -282,10 +250,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_interval_background_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback to keep the background data sync processor enqueued when in continuous mode.
      *
@@ -294,10 +260,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_continuous_background_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current sync process status.
      * The information is meaningful only if pending_data_sync_is_in_progress return true.
@@ -307,20 +271,16 @@ class DataSynchronizer
      * @deprecated 9.0.0
      */
     public function get_sync_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total number of orders pending synchronization.
      *
      * @return int
      */
     public function get_current_orders_pending_sync_count_cached(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate how many orders need to be synchronized currently.
      * A database query is performed to get how many orders match one of the following:
@@ -331,30 +291,24 @@ class DataSynchronizer
      * @param bool $use_cache Whether to use the cached value instead of fetching from database.
      */
     public function get_current_orders_pending_sync_count($use_cache = false): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the meta value for order deletion records based on which table is currently authoritative.
      *
      * @return string self::DELETED_FROM_ORDERS_META_VALUE if the orders table is authoritative, self::DELETED_FROM_POSTS_META_VALUE otherwise.
      */
     private function get_current_deletion_record_meta_value()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the custom orders table the authoritative data source for orders currently?
      *
      * @return bool Whether the custom orders table the authoritative data source for orders currently.
      */
     public function custom_orders_table_is_authoritative(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of ids of orders than are out of sync.
      *
@@ -372,10 +326,8 @@ class DataSynchronizer
      * @throws \Exception Invalid parameter.
      */
     public function get_ids_of_orders_pending_sync(int $type, int $limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the ids of the orders that are marked as deleted in the orders meta table.
      *
@@ -384,30 +336,24 @@ class DataSynchronizer
      * @return array An array of order ids.
      */
     private function get_deleted_order_ids(bool $deleted_from_orders_table, int $limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cleanup all the synchronization status information,
      * because the process has been disabled by the user via settings,
      * or because there's nothing left to synchronize.
      */
     public function cleanup_synchronization_state()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process data for current batch.
      *
      * @param array $batch Batch details.
      */
     public function process_batch(array $batch): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Take a batch of order ids pending synchronization and process those that were deleted, ignoring the others
      * (which will be orders that were created or modified) and returning the ids of the orders actually processed.
@@ -417,20 +363,16 @@ class DataSynchronizer
      * @return array Order ids that have been actually processed.
      */
     private function process_deleted_orders(array $batch, bool $custom_orders_table_is_authoritative): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total number of pending records that require update.
      *
      * @return int Number of pending records.
      */
     public function get_total_pending_count(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the batch with records that needs to be processed for a given size.
      *
@@ -439,40 +381,32 @@ class DataSynchronizer
      * @return array Batch of records.
      */
     public function get_next_batch_to_process(int $size): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default batch size to use.
      *
      * @return int Default batch size.
      */
     public function get_default_batch_size(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * A user friendly name for this process.
      *
      * @return string Name of the process.
      */
     public function get_name(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * A user friendly description for this process.
      *
      * @return string Description.
      */
     public function get_description(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevents deletion of order backup posts (regardless of sync setting) when HPOS is authoritative and the order
      * still exists in HPOS.
@@ -488,10 +422,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function maybe_prevent_deletion_of_post($delete, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the 'deleted_post' action.
      *
@@ -503,10 +435,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_deleted_post($postid, $post): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the 'woocommerce_update_order' action.
      *
@@ -517,10 +447,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_updated_order($order_id): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles deletion of auto-draft orders in sync with WP's own auto-draft deletion.
      *
@@ -531,10 +459,8 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function delete_auto_draft_orders()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles deletion of trashed orders after `EMPTY_TRASH_DAYS` as defined by WordPress.
      *
@@ -545,8 +471,6 @@ class DataSynchronizer
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function delete_trashed_orders()
-    {
-        // stub
-    }
-
+{
+}
 }

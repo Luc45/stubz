@@ -27,10 +27,8 @@ class WC_Order_Item_Shipping_Data_Store
      * @throws Exception If invalid shipping order item.
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $id will be set.
@@ -39,8 +37,6 @@ class WC_Order_Item_Shipping_Data_Store
      * @param WC_Order_Item_Shipping $item Item to save.
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
 }

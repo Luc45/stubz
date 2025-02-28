@@ -11,10 +11,8 @@ class WC_Admin_Addons
      * @return array|WP_Error
      */
     public static function fetch_featured()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the error is due to an SSL error
      *
@@ -23,20 +21,16 @@ class WC_Admin_Addons
      * @return bool True if SSL error, false otherwise
      */
     public static function is_ssl_error($error_message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get sections for the addons screen
      *
      * @return array of objects
      */
     public static function get_sections()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get section for the addons screen.
      *
@@ -45,18 +39,14 @@ class WC_Admin_Addons
      * @return object|bool
      */
     public static function get_section($section_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns in-app-purchase URL params.
      */
     public static function get_in_app_purchase_url_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in-app-purchase URL params to link.
      *
@@ -66,10 +56,8 @@ class WC_Admin_Addons
      * @param string $url    Destination URL.
      */
     public static function add_in_app_purchase_url_params($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs a button.
      *
@@ -79,20 +67,16 @@ class WC_Admin_Addons
      * @param string $plugin The plugin the button is promoting.
      */
     public static function output_button($url, $text, $style, $plugin = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process requests to legacy marketplace menu and redirect to correct in-app pages.
      *
      * @return void
      */
     public static function handle_legacy_marketplace_redirects()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * We're displaying page=wc-addons and page=wc-addons&section=helper as two separate pages.
      * When we're on those pages, add body classes to distinguishe them.
@@ -102,10 +86,8 @@ class WC_Admin_Addons
      * @return string Body class with added class for Marketplace or My Subscriptions page.
      */
     public static function filter_admin_body_classes(string $admin_body_class = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Take an action object and return the URL based on properties of the action.
      *
@@ -113,10 +95,8 @@ class WC_Admin_Addons
      * @return string URL.
      */
     public static function get_action_url($action): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the locale data from a transient.
      *
@@ -134,10 +114,8 @@ class WC_Admin_Addons
      * @return mixed Value of transient.
      */
     private static function get_locale_data_from_transient($transient, $locale)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the locale data in a transient.
      *
@@ -156,10 +134,8 @@ class WC_Admin_Addons
      * @return bool True if the value was set, false otherwise.
      */
     private static function set_locale_data_in_transient($transient, $value, $locale, $expiration = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make wp_safe_remote_get request to WooCommerce.com endpoint.
      * Optionally pass user auth token, locale or country.
@@ -170,10 +146,7 @@ class WC_Admin_Addons
      *
      * @return array|WP_Error
      */
-    public static function fetch($url, $options = array (
-))
-    {
-        // stub
-    }
-
+    public static function fetch($url, $options = array())
+{
+}
 }

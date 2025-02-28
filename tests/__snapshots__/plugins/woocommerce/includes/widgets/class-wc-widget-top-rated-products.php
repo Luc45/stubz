@@ -9,10 +9,8 @@ class WC_Widget_Top_Rated_Products
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -21,8 +19,6 @@ class WC_Widget_Top_Rated_Products
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
 }

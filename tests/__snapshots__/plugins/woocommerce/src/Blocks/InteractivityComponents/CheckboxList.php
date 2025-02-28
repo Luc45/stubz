@@ -23,8 +23,6 @@ class CheckboxList
      * @return string|false
      */
     public static function render($props)
-    {
-        // stub
-    }
-
+{
+}
 }

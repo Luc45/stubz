@@ -21,10 +21,8 @@ class WC_Product_External
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product url.
      *
@@ -32,10 +30,8 @@ class WC_Product_External
      * @return string
      */
     public function get_product_url($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get button text.
      *
@@ -43,10 +39,8 @@ class WC_Product_External
      * @return string
      */
     public function get_button_text($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product URL.
      *
@@ -54,10 +48,8 @@ class WC_Product_External
      * @param string $product_url Product URL.
      */
     public function set_product_url($product_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set button text.
      *
@@ -65,10 +57,8 @@ class WC_Product_External
      * @param string $button_text Button text.
      */
     public function set_button_text($button_text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * External products cannot be stock managed.
      *
@@ -76,10 +66,8 @@ class WC_Product_External
      * @param bool $manage_stock If manage stock.
      */
     public function set_manage_stock($manage_stock)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * External products cannot be stock managed.
      *
@@ -88,10 +76,8 @@ class WC_Product_External
      * @param string $stock_status Stock status.
      */
     public function set_stock_status($stock_status = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * External products cannot be backordered.
      *
@@ -99,10 +85,8 @@ class WC_Product_External
      * @param string $backorders Options: 'yes', 'no' or 'notify'.
      */
     public function set_backorders($backorders)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns false if the product cannot be bought.
      *
@@ -110,10 +94,8 @@ class WC_Product_External
      * @return bool
      */
     public function is_purchasable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to url used mainly in loops.
      *
@@ -121,10 +103,8 @@ class WC_Product_External
      * @return string
      */
     public function add_to_cart_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text for the single page.
      *
@@ -132,10 +112,8 @@ class WC_Product_External
      * @return string
      */
     public function single_add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text.
      *
@@ -143,10 +121,8 @@ class WC_Product_External
      * @return string
      */
     public function add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text description - used in aria tags.
      *
@@ -154,8 +130,6 @@ class WC_Product_External
      * @return string
      */
     public function add_to_cart_description()
-    {
-        // stub
-    }
-
+{
+}
 }

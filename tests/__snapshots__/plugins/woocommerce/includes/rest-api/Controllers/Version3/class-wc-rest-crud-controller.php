@@ -28,10 +28,8 @@ abstract class WC_REST_CRUD_Controller
      * @return object WC_Data object or WP_Error object.
      */
     protected function get_object($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read an item.
      *
@@ -39,10 +37,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update an item.
      *
@@ -50,10 +46,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete an item.
      *
@@ -61,10 +55,8 @@ abstract class WC_REST_CRUD_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get object permalink.
      *
@@ -72,10 +64,8 @@ abstract class WC_REST_CRUD_Controller
      * @return string
      */
     protected function get_permalink($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares the object for the REST response.
      *
@@ -85,10 +75,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WP_REST_Response Response object on success, or WP_Error object on failure.
      */
     protected function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares one object for create or update operation.
      *
@@ -98,10 +86,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WC_Data The prepared item, or WP_Error object on failure.
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single item.
      *
@@ -109,10 +95,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an object data.
      *
@@ -122,10 +106,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WC_Data|WP_Error
      */
     protected function save_object($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single item.
      *
@@ -133,10 +115,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single post.
      *
@@ -144,10 +124,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -156,10 +134,8 @@ abstract class WC_REST_CRUD_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get objects.
      *
@@ -168,10 +144,8 @@ abstract class WC_REST_CRUD_Controller
      * @return array
      */
     protected function get_objects($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of posts.
      *
@@ -179,10 +153,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single item.
      *
@@ -190,10 +162,8 @@ abstract class WC_REST_CRUD_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get fields for an object if getter is defined.
      *
@@ -203,10 +173,8 @@ abstract class WC_REST_CRUD_Controller
      * @return array Data fetched from getters.
      */
     public function fetch_fields_using_getters($object, $context, $fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -215,18 +183,14 @@ abstract class WC_REST_CRUD_Controller
      * @return array                   Links for the given post.
      */
     protected function prepare_links($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

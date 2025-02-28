@@ -27,18 +27,14 @@ class OrderStatusRestController
      * @return string
      */
     protected function get_rest_api_namespace(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the routes for order statuses.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all order statuses.
      *
@@ -46,18 +42,14 @@ class OrderStatusRestController
      * @return WP_Error|WP_REST_Response
      */
     public function get_items(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order status schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

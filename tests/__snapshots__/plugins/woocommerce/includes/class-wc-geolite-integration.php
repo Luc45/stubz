@@ -27,10 +27,8 @@ class WC_Geolite_Integration
      * @param string $database MaxMind GeoLite2 database path.
      */
     public function __construct($database)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get country 2-letters ISO by IP address.
      * Returns empty string when not able to find any ISO code.
@@ -40,10 +38,8 @@ class WC_Geolite_Integration
      * @deprecated 3.9.0
      */
     public function get_country_iso($ip_address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Logging method.
      *
@@ -55,8 +51,6 @@ class WC_Geolite_Integration
      *                        Defaults to 'info'.
      */
     private function log($message, $level = 'info')
-    {
-        // stub
-    }
-
+{
+}
 }

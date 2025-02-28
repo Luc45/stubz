@@ -20,34 +20,26 @@ trait SingletonTrait
      * @return void
      */
     protected function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get class instance.
      *
      * @return object Instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Prevent cloning.
      */
     private function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevent unserializing.
      */
-    public final function __wakeup()
-    {
-        // stub
-    }
-
+    final public function __wakeup()
+{
+}
 }

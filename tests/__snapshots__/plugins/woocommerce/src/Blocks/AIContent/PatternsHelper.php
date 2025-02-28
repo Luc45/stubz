@@ -19,30 +19,24 @@ class PatternsHelper
      * @return string The image.
      */
     public static function get_image_url($images, $index, $default_image)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the post that has the generated data by the AI for the patterns.
      *
      * @return \WP_Post|null
      */
     public static function get_patterns_ai_data_post()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the post that has the generated data by the AI for the patterns.
      *
      * @return \WP_Post|null
      */
     public static function delete_patterns_ai_data_post()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Upsert the patterns AI data.
      *
@@ -51,10 +45,8 @@ class PatternsHelper
      * @return WP_Error|null
      */
     public static function upsert_patterns_ai_data_post($patterns_dictionary)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Patterns Dictionary.
      *
@@ -63,10 +55,8 @@ class PatternsHelper
      * @return array|WP_Error Returns pattern dictionary or WP_Error on failure.
      */
     public static function get_patterns_dictionary($pattern_slug = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Searches for a pattern by slug in a given dictionary.
      *
@@ -76,8 +66,6 @@ class PatternsHelper
      * @return array|null Returns the pattern if found, otherwise null.
      */
     private static function find_pattern_by_slug($patterns_dictionary, $slug)
-    {
-        // stub
-    }
-
+{
+}
 }

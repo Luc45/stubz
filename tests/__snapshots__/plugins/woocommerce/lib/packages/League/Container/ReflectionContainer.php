@@ -14,28 +14,22 @@ class ReflectionContainer
      *
      * @var array
      */
-    protected $cache = array (
-);
+    protected $cache = array();
 
     /**
      * {@inheritdoc}
      *
      * @throws ReflectionException
      */
-    public function get($id, array $args = array (
-))
-    {
-        // stub
-    }
-
+    public function get($id, array $args = array())
+{
+}
     /**
      * {@inheritdoc}
      */
     public function has($id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invoke a callable via the container.
      *
@@ -46,12 +40,9 @@ class ReflectionContainer
      *
      * @throws ReflectionException
      */
-    public function call(callable $callable, array $args = array (
-))
-    {
-        // stub
-    }
-
+    public function call(callable $callable, array $args = array())
+{
+}
     /**
      * Whether the container should default to caching resolutions and returning
      * the cache on following calls.
@@ -61,8 +52,6 @@ class ReflectionContainer
      * @return self
      */
     public function cacheResolutions(bool $option = true): Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -19,27 +19,22 @@ class WC_Admin_Meta_Boxes
      *
      * @var array
      */
-    public static $meta_box_errors = array (
-);
+    public static $meta_box_errors = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an error message.
      *
      * @param string $text Error to add.
      */
     public static function add_error($text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save errors to an option.
      *
@@ -47,10 +42,8 @@ class WC_Admin_Meta_Boxes
      * Unless you are sure you want this, consider using the append_to_error_store() method instead.
      */
     public function save_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If additional errors have been added in the current request (ie, via the add_error() method) then they
      * will be added to the persistent error store via the Options API.
@@ -58,50 +51,38 @@ class WC_Admin_Meta_Boxes
      * @since 6.5.0
      */
     public function append_to_error_store()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show any stored error messages.
      */
     public function output_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add WC Meta boxes.
      */
     public function add_meta_boxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add default sort order for meta boxes on product page.
      */
     public function add_product_boxes_sort_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove bloat.
      */
     public function remove_meta_boxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rename core meta boxes.
      */
     public function rename_meta_boxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if we're saving, the trigger an action based on the post type.
      *
@@ -109,10 +90,8 @@ class WC_Admin_Meta_Boxes
      * @param  object $post Post object.
      */
     public function save_meta_boxes($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove irrelevant block templates from the list of available templates for products.
      * This will also remove custom created templates.
@@ -122,8 +101,6 @@ class WC_Admin_Meta_Boxes
      * @return string[] Templates array excluding block-based templates.
      */
     public function remove_block_templates($templates)
-    {
-        // stub
-    }
-
+{
+}
 }

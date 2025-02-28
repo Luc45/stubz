@@ -23,10 +23,8 @@ abstract class TableMigrator
      * @return void
      */
     protected function clear_errors(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an error message to the errors list unless it's there already.
      *
@@ -34,20 +32,16 @@ abstract class TableMigrator
      * @return void
      */
     protected function add_error(string $error): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of error messages added.
      *
      * @return array
      */
     protected function get_errors(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run $wpdb->query and add the error, if any, to the errors list.
      *
@@ -55,10 +49,8 @@ abstract class TableMigrator
      * @return mixed Whatever $wpdb->query returns.
      */
     protected function db_query(string $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run $wpdb->get_results and add the error, if any, to the errors list.
      *
@@ -67,10 +59,8 @@ abstract class TableMigrator
      * @return mixed Whatever $wpdb->get_results returns.
      */
     protected function db_get_results(string|null $query = null, string $output)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate a batch of orders, logging any database error that could arise and the exception thrown if any.
      *
@@ -80,10 +70,8 @@ abstract class TableMigrator
      * @deprecated 8.0.0 Use `fetch_sanitized_migration_data` and `process_migration_data` instead.
      */
     public function process_migration_batch_for_ids(array $entity_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return data to be migrated for a batch of entities.
      *
@@ -92,10 +80,8 @@ abstract class TableMigrator
      * @return array[] Data to be migrated. Would be of the form: array( 'data' => array( ... ), 'errors' => array( ... ) ).
      */
     public function fetch_sanitized_migration_data(array $entity_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process migration data for a batch of entities.
      *
@@ -104,10 +90,8 @@ abstract class TableMigrator
      * @return array Array of errors and exception if any.
      */
     public function process_migration_data(array $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The core method that actually performs the migration for the supplied batch of order ids.
      * It doesn't need to deal with database errors nor with exceptions.
@@ -117,8 +101,7 @@ abstract class TableMigrator
      *
      * @deprecated 8.0.0 Use `fetch_sanitized_migration_data` and `process_migration_data` instead.
      */
-    protected abstract function process_migration_batch_for_ids_core(array $entity_ids): void;
-
+    abstract protected function process_migration_batch_for_ids_core(array $entity_ids): void;
     /**
      * Check if the amount of processed database rows matches the amount of orders to process, and log an error if not.
      *
@@ -127,8 +110,6 @@ abstract class TableMigrator
      * @return void
      */
     protected function maybe_add_insert_or_update_error(string $operation, $received_rows_count)
-    {
-        // stub
-    }
-
+{
+}
 }

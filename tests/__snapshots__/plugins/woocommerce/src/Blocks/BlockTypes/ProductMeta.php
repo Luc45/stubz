@@ -21,20 +21,16 @@ class ProductMeta
      * @return null
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_editor_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -42,18 +38,14 @@ class ProductMeta
      * @return null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

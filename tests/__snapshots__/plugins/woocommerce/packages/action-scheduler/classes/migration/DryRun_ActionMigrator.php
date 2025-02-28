@@ -21,8 +21,6 @@ class DryRun_ActionMigrator
      * @return int
      */
     public function migrate($source_action_id)
-    {
-        // stub
-    }
-
+{
+}
 }

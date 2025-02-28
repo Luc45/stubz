@@ -89,10 +89,8 @@ class WC_Customer
      * @throws Exception If customer cannot be read/found and $data is set.
      */
     public function __construct($data = 0, $is_session = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a customer and reassign posts..
      *
@@ -101,20 +99,16 @@ class WC_Customer
      * @return bool
      */
     public function delete_and_reassign($reassign = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is customer outside base country (for tax purposes)?
      *
      * @return bool
      */
     public function is_customer_outside_base()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return this customer's avatar.
      *
@@ -122,50 +116,40 @@ class WC_Customer
      * @return string
      */
     public function get_avatar_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxable address.
      *
      * @return array
      */
     public function get_taxable_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a customer's downloadable products.
      *
      * @return array Array of downloadable products
      */
     public function get_downloadable_products()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is customer VAT exempt?
      *
      * @return bool
      */
     public function is_vat_exempt()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Has calculated shipping?
      *
      * @return bool
      */
     public function has_calculated_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the customer has a non-empty shipping address.
      *
@@ -177,10 +161,8 @@ class WC_Customer
      * @return bool
      */
     public function has_shipping_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get if customer is VAT exempt?
      *
@@ -188,50 +170,40 @@ class WC_Customer
      * @return bool
      */
     public function get_is_vat_exempt()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get password (only used when updating the user object).
      *
      * @return string
      */
     public function get_password()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Has customer calculated shipping?
      *
      * @return bool
      */
     public function get_calculated_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if customer has tax exemption.
      *
      * @param bool $is_vat_exempt If is vat exempt.
      */
     public function set_is_vat_exempt($is_vat_exempt)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculated shipping?
      *
      * @param bool $calculated If shipping is calculated.
      */
     public function set_calculated_shipping($calculated = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's password.
      *
@@ -239,40 +211,32 @@ class WC_Customer
      * @param string $password Password.
      */
     public function set_password($password)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the customers last order.
      *
      * @return WC_Order|false
      */
     public function get_last_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the number of orders this customer has.
      *
      * @return integer
      */
     public function get_order_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return how much money this customer has spent.
      *
      * @return float
      */
     public function get_total_spent()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the customer's username.
      *
@@ -281,10 +245,8 @@ class WC_Customer
      * @return string
      */
     public function get_username($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the customer's email.
      *
@@ -293,10 +255,8 @@ class WC_Customer
      * @return string
      */
     public function get_email($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return customer's first name.
      *
@@ -305,10 +265,8 @@ class WC_Customer
      * @return string
      */
     public function get_first_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return customer's last name.
      *
@@ -317,10 +275,8 @@ class WC_Customer
      * @return string
      */
     public function get_last_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return customer's display name.
      *
@@ -329,10 +285,8 @@ class WC_Customer
      * @return string
      */
     public function get_display_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return customer's user role.
      *
@@ -341,10 +295,8 @@ class WC_Customer
      * @return string
      */
     public function get_role($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the date this customer was created.
      *
@@ -353,10 +305,8 @@ class WC_Customer
      * @return WC_DateTime|null object if the date is set or null if there is no date.
      */
     public function get_date_created($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the date this customer was last updated.
      *
@@ -365,10 +315,8 @@ class WC_Customer
      * @return WC_DateTime|null object if the date is set or null if there is no date.
      */
     public function get_date_modified($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a prop for a getter method.
      *
@@ -379,10 +327,8 @@ class WC_Customer
      * @return mixed
      */
     protected function get_address_prop($prop, $address_type = 'billing', $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing.
      *
@@ -391,10 +337,8 @@ class WC_Customer
      * @return array
      */
     public function get_billing($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_first_name.
      *
@@ -402,10 +346,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_first_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_last_name.
      *
@@ -413,10 +355,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_last_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_company.
      *
@@ -424,10 +364,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_company($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_address_1.
      *
@@ -435,10 +373,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_address($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_address_1.
      *
@@ -446,10 +382,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_address_1($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_address_2.
      *
@@ -457,10 +391,8 @@ class WC_Customer
      * @return string $value
      */
     public function get_billing_address_2($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_city.
      *
@@ -468,10 +400,8 @@ class WC_Customer
      * @return string $value
      */
     public function get_billing_city($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_state.
      *
@@ -479,10 +409,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_state($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_postcode.
      *
@@ -490,10 +418,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_postcode($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_country.
      *
@@ -501,10 +427,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_country($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_email.
      *
@@ -512,10 +436,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_email($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing_phone.
      *
@@ -523,10 +445,8 @@ class WC_Customer
      * @return string
      */
     public function get_billing_phone($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping.
      *
@@ -535,10 +455,8 @@ class WC_Customer
      * @return array
      */
     public function get_shipping($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_first_name.
      *
@@ -546,10 +464,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_first_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_last_name.
      *
@@ -557,10 +473,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_last_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_company.
      *
@@ -568,10 +482,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_company($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_address_1.
      *
@@ -579,10 +491,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_address($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_address_1.
      *
@@ -590,10 +500,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_address_1($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_address_2.
      *
@@ -601,10 +509,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_address_2($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_city.
      *
@@ -612,10 +518,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_city($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_state.
      *
@@ -623,10 +527,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_state($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_postcode.
      *
@@ -634,10 +536,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_postcode($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_country.
      *
@@ -645,10 +545,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_country($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping phone.
      *
@@ -657,10 +555,8 @@ class WC_Customer
      * @return string
      */
     public function get_shipping_phone($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the user a paying customer?
      *
@@ -669,10 +565,8 @@ class WC_Customer
      * @return bool
      */
     public function get_is_paying_customer($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's username.
      *
@@ -680,10 +574,8 @@ class WC_Customer
      * @param string $username Username.
      */
     public function set_username($username)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's email.
      *
@@ -691,10 +583,8 @@ class WC_Customer
      * @param string $value Email.
      */
     public function set_email($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's first name.
      *
@@ -702,10 +592,8 @@ class WC_Customer
      * @param string $first_name First name.
      */
     public function set_first_name($first_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's last name.
      *
@@ -713,10 +601,8 @@ class WC_Customer
      * @param string $last_name Last name.
      */
     public function set_last_name($last_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's display name.
      *
@@ -724,10 +610,8 @@ class WC_Customer
      * @param string $display_name Display name.
      */
     public function set_display_name($display_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer's user role(s).
      *
@@ -735,10 +619,8 @@ class WC_Customer
      * @param mixed $role User role.
      */
     public function set_role($role)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the date this customer was last updated.
      *
@@ -746,10 +628,8 @@ class WC_Customer
      * @param  string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_created($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the date this customer was last updated.
      *
@@ -757,30 +637,24 @@ class WC_Customer
      * @param  string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_modified($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer address to match shop base address.
      *
      * @since 3.0.0
      */
     public function set_billing_address_to_base()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer shipping address to base address.
      *
      * @since 3.0.0
      */
     public function set_shipping_address_to_base()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets all address info at once.
      *
@@ -790,10 +664,8 @@ class WC_Customer
      * @param string $city     City.
      */
     public function set_billing_location($country, $state = '', $postcode = '', $city = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets all shipping info at once.
      *
@@ -803,10 +675,8 @@ class WC_Customer
      * @param string $city     City.
      */
     public function set_shipping_location($country, $state = '', $postcode = '', $city = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a prop for a setter method.
      *
@@ -816,230 +686,184 @@ class WC_Customer
      * @param mixed  $value        Value of the prop.
      */
     protected function set_address_prop($prop, $address_type, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_first_name.
      *
      * @param string $value Billing first name.
      */
     public function set_billing_first_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_last_name.
      *
      * @param string $value Billing last name.
      */
     public function set_billing_last_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_company.
      *
      * @param string $value Billing company.
      */
     public function set_billing_company($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_address_1.
      *
      * @param string $value Billing address line 1.
      */
     public function set_billing_address($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_address_1.
      *
      * @param string $value Billing address line 1.
      */
     public function set_billing_address_1($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_address_2.
      *
      * @param string $value Billing address line 2.
      */
     public function set_billing_address_2($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_city.
      *
      * @param string $value Billing city.
      */
     public function set_billing_city($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_state.
      *
      * @param string $value Billing state.
      */
     public function set_billing_state($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_postcode.
      *
      * @param string $value Billing postcode.
      */
     public function set_billing_postcode($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_country.
      *
      * @param string $value Billing country.
      */
     public function set_billing_country($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_email.
      *
      * @param string $value Billing email.
      */
     public function set_billing_email($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing_phone.
      *
      * @param string $value Billing phone.
      */
     public function set_billing_phone($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_first_name.
      *
      * @param string $value Shipping first name.
      */
     public function set_shipping_first_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_last_name.
      *
      * @param string $value Shipping last name.
      */
     public function set_shipping_last_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_company.
      *
      * @param string $value Shipping company.
      */
     public function set_shipping_company($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_address_1.
      *
      * @param string $value Shipping address line 1.
      */
     public function set_shipping_address($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_address_1.
      *
      * @param string $value Shipping address line 1.
      */
     public function set_shipping_address_1($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_address_2.
      *
      * @param string $value Shipping address line 2.
      */
     public function set_shipping_address_2($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_city.
      *
      * @param string $value Shipping city.
      */
     public function set_shipping_city($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_state.
      *
      * @param string $value Shipping state.
      */
     public function set_shipping_state($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_postcode.
      *
      * @param string $value Shipping postcode.
      */
     public function set_shipping_postcode($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_country.
      *
      * @param string $value Shipping country.
      */
     public function set_shipping_country($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping phone.
      *
@@ -1047,10 +871,8 @@ class WC_Customer
      * @param string $value Shipping phone.
      */
     public function set_shipping_phone($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if the user a paying customer.
      *
@@ -1058,8 +880,6 @@ class WC_Customer
      * @param bool $is_paying_customer If is a paying customer.
      */
     public function set_is_paying_customer($is_paying_customer)
-    {
-        // stub
-    }
-
+{
+}
 }

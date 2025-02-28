@@ -13,20 +13,16 @@ class DefaultFreeExtensions
      * @return string
      */
     private static function get_woo_logo()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default specs.
      *
      * @return array Default specs.
      */
     public static function get_all()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the plugin arguments by slug.
      *
@@ -34,10 +30,8 @@ class DefaultFreeExtensions
      * @return array
      */
     public static function get_plugin($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decorate plugin data with core profiler fields.
      *
@@ -50,10 +44,8 @@ class DefaultFreeExtensions
      * @return array
      */
     public static function with_core_profiler_fields(array $plugins)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the country restrictions for use in the `is_visible` key for
      * recommending the tax functionality of WooCommerce Shipping & Tax.
@@ -61,8 +53,6 @@ class DefaultFreeExtensions
      * @return array
      */
     private static function get_rules_for_wcservices_tax_countries()
-    {
-        // stub
-    }
-
+{
+}
 }

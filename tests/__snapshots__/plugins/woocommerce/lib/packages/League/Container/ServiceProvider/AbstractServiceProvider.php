@@ -7,8 +7,7 @@ abstract class AbstractServiceProvider
     /**
      * @var array
      */
-    protected $provides = array (
-);
+    protected $provides = array();
 
     /**
      * @var string
@@ -19,24 +18,18 @@ abstract class AbstractServiceProvider
      * {@inheritdoc}
      */
     public function provides(string $alias): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function setIdentifier(string $id): Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function getIdentifier(): string
-    {
-        // stub
-    }
-
+{
+}
 }

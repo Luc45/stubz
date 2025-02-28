@@ -18,10 +18,8 @@ class ProductDetails
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -32,18 +30,14 @@ class ProductDetails
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the tabs with their content to be rendered by the block.
      *
      * @return string The tabs html to be rendered by the block
      */
     protected function render_tabs()
-    {
-        // stub
-    }
-
+{
+}
 }

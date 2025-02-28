@@ -24,10 +24,8 @@ class BillingAddressSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize and format the given address object.
      *
@@ -37,10 +35,8 @@ class BillingAddressSchema
      * @return array
      */
     public function sanitize_callback($address, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the given address object.
      *
@@ -50,10 +46,8 @@ class BillingAddressSchema
      * @return true|\WP_Error
      */
     public function validate_callback($address, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a term object into an object suitable for the response.
      *
@@ -63,8 +57,6 @@ class BillingAddressSchema
      * @return array
      */
     public function get_item_response($address)
-    {
-        // stub
-    }
-
+{
+}
 }

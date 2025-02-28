@@ -39,10 +39,8 @@ class FileController
      * @return int
      */
     private function get_file_size_limit(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Write a log entry to the appropriate file, after rotating the file if necessary.
      *
@@ -53,10 +51,8 @@ class FileController
      * @return bool True if the contents were successfully written to the file.
      */
     public function write_to_file(string $source, string $text, int|null $time = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the full name of a file based on source and date values.
      *
@@ -66,10 +62,8 @@ class FileController
      * @return string
      */
     private function generate_filename(string $source, int $time): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the rotations of a file and increment them, so that they overwrite the previous file with that rotation.
      *
@@ -78,10 +72,8 @@ class FileController
      * @return bool True if the file and all its rotations were successfully rotated.
      */
     private function rotate_file($file_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of log files.
      *
@@ -101,12 +93,9 @@ class FileController
      *
      * @return File[]|int|WP_Error
      */
-    public function get_files(array $args = array (
-), bool $count_only = false)
-    {
-        // stub
-    }
-
+    public function get_files(array $args = array(), bool $count_only = false)
+{
+}
     /**
      * Get one or more File instances from an array of file IDs.
      *
@@ -115,10 +104,8 @@ class FileController
      * @return File[]
      */
     public function get_files_by_id(array $file_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a File instance from a file ID.
      *
@@ -127,10 +114,8 @@ class FileController
      * @return File|WP_Error
      */
     public function get_file_by_id(string $file_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get File instances for a given file ID and all of its related rotations.
      *
@@ -140,10 +125,8 @@ class FileController
      *                         key for the iteration of the file that hasn't been rotated (if it exists).
      */
     public function get_file_rotations(string $file_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get an array of File instances.
      *
@@ -152,20 +135,16 @@ class FileController
      * @return File[]
      */
     private function convert_paths_to_objects(array $paths): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of sources for existing log files.
      *
      * @return array|WP_Error
      */
     public function get_file_sources()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete one or more files from the filesystem.
      *
@@ -174,10 +153,8 @@ class FileController
      * @return int The number of files that were deleted.
      */
     public function delete_files(array $file_ids): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stream a single file to the browser without zipping it first.
      *
@@ -186,10 +163,8 @@ class FileController
      * @return WP_Error|void Only returns something if there is an error.
      */
     public function export_single_file($file_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a zip archive of log files and stream it to the browser.
      *
@@ -198,10 +173,8 @@ class FileController
      * @return WP_Error|void Only returns something if there is an error.
      */
     public function export_multiple_files(array $file_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search within a set of log files for a particular string.
      *
@@ -213,31 +186,23 @@ class FileController
      * @return array|int|WP_Error When matches are found, each array item is an associative array that includes the
      *                            file ID, line number, and the matched string with HTML markup around the matched parts.
      */
-    public function search_within_files(string $search, array $args = array (
-), array $file_args = array (
-), bool $count_only = false)
-    {
-        // stub
-    }
-
+    public function search_within_files(string $search, array $args = array(), array $file_args = array(), bool $count_only = false)
+{
+}
     /**
      * Calculate the size, in bytes, of the log directory.
      *
      * @return int
      */
     public function get_log_directory_size(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invalidate the cache group related to log file data.
      *
      * @return bool True on successfully invalidating the cache.
      */
     public function invalidate_cache(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

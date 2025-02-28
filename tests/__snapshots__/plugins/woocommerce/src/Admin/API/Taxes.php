@@ -23,10 +23,8 @@ class Taxes
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all taxes and allow filtering by tax code.
      *
@@ -34,8 +32,6 @@ class Taxes
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
 }

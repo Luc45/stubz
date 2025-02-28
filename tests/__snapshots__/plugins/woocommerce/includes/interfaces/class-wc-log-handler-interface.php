@@ -20,5 +20,4 @@ interface WC_Log_Handler_Interface
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context);
-
 }

@@ -16,12 +16,9 @@ abstract class Query
      *
      * @param array $args Criteria to query on in a format similar to WP_Query.
      */
-    public function __construct($args = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($args = array())
+{
+}
     /**
      * Get report data matching the current query vars.
      *
@@ -30,8 +27,6 @@ abstract class Query
      * @return array|object of WC_Product objects
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

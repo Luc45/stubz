@@ -19,10 +19,8 @@ class COTRedirectionController
      * Add hooks needed to perform our magic.
      */
     public function setup(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Listen for denied admin requests and, if they appear to relate to HPOS admin screens, potentially
      * redirect the user to the equivalent CPT-driven screens.
@@ -32,8 +30,6 @@ class COTRedirectionController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_hpos_admin_requests($query_params = null)
-    {
-        // stub
-    }
-
+{
+}
 }

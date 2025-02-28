@@ -35,12 +35,9 @@ class WC_Product_Cat_Dropdown_Walker
      * @param array  $args              Arguments.
      * @param int    $current_object_id Current object ID.
      */
-    public function start_el(&$output, $cat, $depth = 0, $args = array (
-), $current_object_id = 0)
-    {
-        // stub
-    }
-
+    public function start_el(&$output, $cat, $depth = 0, $args = array(), $current_object_id = 0)
+{
+}
     /**
      * Traverse elements to create list from elements.
      *
@@ -62,8 +59,6 @@ class WC_Product_Cat_Dropdown_Walker
      * @return null Null on failure with no changes to parameters.
      */
     public function display_element($element, &$children_elements, $max_depth, $depth, $args, &$output)
-    {
-        // stub
-    }
-
+{
+}
 }

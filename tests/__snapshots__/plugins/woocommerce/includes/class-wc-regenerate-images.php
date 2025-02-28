@@ -23,10 +23,8 @@ class WC_Regenerate_Images
      * Init function
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If an intermediate size meta differs from the actual image size (settings were changed?) return false so the wrong size is not used.
      *
@@ -36,10 +34,8 @@ class WC_Regenerate_Images
      * @return array
      */
     public static function filter_image_get_intermediate_size($data, $attachment_id, $size)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * We need to track if uncropped was on or off when generating the images.
      *
@@ -47,10 +43,8 @@ class WC_Regenerate_Images
      * @return array
      */
     public static function add_uncropped_metadata($meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if an image's dimensions match actual settings.
      *
@@ -59,36 +53,28 @@ class WC_Regenerate_Images
      * @return bool True if they match. False if they do not (may trigger regen).
      */
     protected static function image_size_matches_settings($image, $size)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show notice when job is running in background.
      */
     public static function regenerating_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss notice and cancel jobs.
      */
     public static function dismiss_regenerating_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Regenerate images if the settings have changed since last re-generation.
      *
      * @return void
      */
     public static function maybe_regenerate_images()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if we should maybe generate a new image size if not already there.
      *
@@ -99,10 +85,8 @@ class WC_Regenerate_Images
      * @return array
      */
     public static function maybe_resize_image($image, $attachment_id, $size, $icon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get full size image dimensions.
      *
@@ -110,10 +94,8 @@ class WC_Regenerate_Images
      * @return array Width and height. Empty array if the dimensions cannot be found.
      */
     private static function get_full_size_image_dimensions($attachment_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure we are dealing with the correct image attachment
      *
@@ -121,10 +103,8 @@ class WC_Regenerate_Images
      * @return boolean
      */
     public static function is_regeneratable($attachment)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only regenerate images for the requested size.
      *
@@ -132,10 +112,8 @@ class WC_Regenerate_Images
      * @return array
      */
     public static function adjust_intermediate_image_sizes($sizes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the thumbnail filename and dimensions for a given file.
      *
@@ -146,10 +124,8 @@ class WC_Regenerate_Images
      * @return array|false An array of the filename, thumbnail width, and thumbnail height, or false on failure to resize such as the thumbnail being larger than the fullsize image.
      */
     private static function get_image($fullsizepath, $thumbnail_width, $thumbnail_height, $crop)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Regenerate the image according to the required size
      *
@@ -160,10 +136,8 @@ class WC_Regenerate_Images
      * @return string
      */
     private static function resize_and_return_image($attachment_id, $image, $size, $icon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Image downsize, without this classes filtering on the results.
      *
@@ -172,18 +146,14 @@ class WC_Regenerate_Images
      * @return string New image URL.
      */
     private static function unfiltered_image_downsize($attachment_id, $size)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of images and queue them for regeneration
      *
      * @return void
      */
     public static function queue_image_regeneration()
-    {
-        // stub
-    }
-
+{
+}
 }

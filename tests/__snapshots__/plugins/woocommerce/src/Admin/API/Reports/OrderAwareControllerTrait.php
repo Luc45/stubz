@@ -21,10 +21,8 @@ trait OrderAwareControllerTrait
      * @return string|null The Order Number or null if the order doesn't exist.
      */
     protected function get_order_number($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether the order is valid.
      *
@@ -32,10 +30,8 @@ trait OrderAwareControllerTrait
      * @return bool True if the order is valid, false otherwise.
      */
     protected function is_valid_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order total with the related currency formatting.
      * Returns the parent order total if the order is actually a refund.
@@ -44,10 +40,8 @@ trait OrderAwareControllerTrait
      * @return string|null The Order Number or null if the order doesn't exist.
      */
     protected function get_total_formatted($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order statuses without prefixes.
      * Includes unregistered statuses that have been marked "actionable".
@@ -55,10 +49,8 @@ trait OrderAwareControllerTrait
      * @return array
      */
     public static function get_order_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order statuses (and labels) without prefixes.
      *
@@ -66,8 +58,6 @@ trait OrderAwareControllerTrait
      * @return array
      */
     public static function get_order_status_labels()
-    {
-        // stub
-    }
-
+{
+}
 }

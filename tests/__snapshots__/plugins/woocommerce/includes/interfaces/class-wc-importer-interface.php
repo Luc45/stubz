@@ -17,7 +17,6 @@ interface WC_Importer_Interface
      * @return array
      */
     public function import();
-
     /**
      * Get file raw keys.
      *
@@ -28,40 +27,34 @@ interface WC_Importer_Interface
      * @return array
      */
     public function get_raw_keys();
-
     /**
      * Get file mapped headers.
      *
      * @return array
      */
     public function get_mapped_keys();
-
     /**
      * Get raw data.
      *
      * @return array
      */
     public function get_raw_data();
-
     /**
      * Get parsed data.
      *
      * @return array
      */
     public function get_parsed_data();
-
     /**
      * Get file pointer position from the last read.
      *
      * @return int
      */
     public function get_file_position();
-
     /**
      * Get file pointer position as a percentage of file size.
      *
      * @return int
      */
     public function get_percent_complete();
-
 }

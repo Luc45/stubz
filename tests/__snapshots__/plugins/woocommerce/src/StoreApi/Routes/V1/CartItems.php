@@ -17,30 +17,24 @@ class CartItems
      * @return string
      */
     public function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path of this rest route.
      *
      * @return string
      */
     public static function get_path_regex()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method arguments for this REST route.
      *
      * @return array An array of endpoints.
      */
     public function get_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of cart items.
      *
@@ -49,10 +43,8 @@ class CartItems
      * @return \WP_REST_Response
      */
     protected function get_route_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates one item from the collection.
      *
@@ -61,10 +53,8 @@ class CartItems
      * @return \WP_REST_Response
      */
     protected function get_route_post_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes all items in the cart.
      *
@@ -73,10 +63,8 @@ class CartItems
      * @return \WP_REST_Response
      */
     protected function get_route_delete_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -85,8 +73,6 @@ class CartItems
      * @return array
      */
     protected function prepare_links($cart_item, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

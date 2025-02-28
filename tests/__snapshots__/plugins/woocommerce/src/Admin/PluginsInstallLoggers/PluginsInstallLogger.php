@@ -14,7 +14,6 @@ interface PluginsInstallLogger
      * @return mixed
      */
     public function install_requested(string $plugin_name);
-
     /**
      * Called when a plugin installed successfully.
      *
@@ -23,7 +22,6 @@ interface PluginsInstallLogger
      * @return mixed
      */
     public function installed(string $plugin_name, int $duration);
-
     /**
      * Called when a plugin activated successfully.
      *
@@ -31,7 +29,6 @@ interface PluginsInstallLogger
      * @return mixed
      */
     public function activated(string $plugin_name);
-
     /**
      * Called when an error occurred while installing a plugin.
      *
@@ -40,14 +37,11 @@ interface PluginsInstallLogger
      * @return mixed
      */
     public function add_error(string $plugin_name, string|null $error_message = null);
-
     /**
      * Called when all plugins are processed.
      *
      * @param array $data return data from install_plugins().
      * @return mixed
      */
-    public function complete($data = array (
-));
-
+    public function complete($data = array());
 }

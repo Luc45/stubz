@@ -21,10 +21,8 @@ class NoticeHandler
      * @param string $error_code Error code for the thrown exceptions.
      */
     public static function convert_notices_to_exceptions($error_code = 'unknown_server_error')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Collects queued error notices into a \WP_Error.
      *
@@ -38,8 +36,6 @@ class NoticeHandler
      * @return \WP_Error The WP_Error object containing all error notices.
      */
     public static function convert_notices_to_wp_errors($error_code = 'unknown_server_error')
-    {
-        // stub
-    }
-
+{
+}
 }

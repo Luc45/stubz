@@ -25,10 +25,8 @@ class WC_Tax
      * Load options.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When the woocommerce_tax_classes option is changed, remove any orphan rates.
      *
@@ -37,10 +35,8 @@ class WC_Tax
      * @param  string $value New rates value.
      */
     public static function maybe_remove_tax_class_rates($old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate tax for a line.
      *
@@ -51,10 +47,8 @@ class WC_Tax
      * @return array                       Array of rates + prices after tax.
      */
     public static function calc_tax($price, $rates, $price_includes_tax = false, $deprecated = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the shipping tax using a passed array of rates.
      *
@@ -63,10 +57,8 @@ class WC_Tax
      * @return array
      */
     public static function calc_shipping_tax($price, $rates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Round to precision.
      *
@@ -81,10 +73,8 @@ class WC_Tax
      * @return float
      */
     public static function round($in)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calc tax from inclusive price.
      *
@@ -93,10 +83,8 @@ class WC_Tax
      * @return array
      */
     public static function calc_inclusive_tax($price, $rates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calc tax from exclusive price.
      *
@@ -105,34 +93,26 @@ class WC_Tax
      * @return array
      */
     public static function calc_exclusive_tax($price, $rates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Searches for all matching country/state/postcode tax rates.
      *
      * @param array $args Args that determine the rate to find.
      * @return array
      */
-    public static function find_rates($args = array (
-))
-    {
-        // stub
-    }
-
+    public static function find_rates($args = array())
+{
+}
     /**
      * Searches for all matching country/state/postcode tax rates.
      *
      * @param array $args Args that determine the rate to find.
      * @return array
      */
-    public static function find_shipping_rates($args = array (
-))
-    {
-        // stub
-    }
-
+    public static function find_shipping_rates($args = array())
+{
+}
     /**
      * Does the sort comparison. Compares (in this order):
      * - Priority
@@ -147,10 +127,8 @@ class WC_Tax
      * @return int
      */
     private static function sort_rates_callback($rate1, $rate2)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Logical sort order for tax rates based on the following in order of priority.
      *
@@ -158,10 +136,8 @@ class WC_Tax
      * @return array
      */
     private static function sort_rates($rates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loop through a set of tax rates and get the matching rates (1 per priority).
      *
@@ -173,10 +149,8 @@ class WC_Tax
      * @return array
      */
     private static function get_matched_tax_rates($country, $state, $postcode, $city, $tax_class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the customer tax location based on their status and the current page.
      *
@@ -187,10 +161,8 @@ class WC_Tax
      * @return array
      */
     public static function get_tax_location($tax_class = '', $customer = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get's an array of matching rates for a tax class.
      *
@@ -199,10 +171,8 @@ class WC_Tax
      * @return  array
      */
     public static function get_rates($tax_class = '', $customer = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get's an array of matching rates from location and tax class. $customer parameter is used to preserve backward compatibility for filter.
      *
@@ -213,10 +183,8 @@ class WC_Tax
      * @return mixed|void Tax rates.
      */
     public static function get_rates_from_location($tax_class, $location, $customer = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get's an array of matching rates for the shop's base country.
      *
@@ -224,10 +192,8 @@ class WC_Tax
      * @return array
      */
     public static function get_base_tax_rates($tax_class = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Alias for get_base_tax_rates().
      *
@@ -236,10 +202,8 @@ class WC_Tax
      * @return array
      */
     public static function get_shop_base_rate($tax_class = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of matching shipping tax rates for a given class.
      *
@@ -248,10 +212,8 @@ class WC_Tax
      * @return mixed
      */
     public static function get_shipping_tax_rates($tax_class = null, $customer = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return true/false depending on if a rate is a compound rate.
      *
@@ -259,10 +221,8 @@ class WC_Tax
      * @return  bool
      */
     public static function is_compound($key_or_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a given rates label.
      *
@@ -270,10 +230,8 @@ class WC_Tax
      * @return  string
      */
     public static function get_rate_label($key_or_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a given rates percent.
      *
@@ -281,10 +239,8 @@ class WC_Tax
      * @return  string
      */
     public static function get_rate_percent($key_or_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a given rates percent.
      *
@@ -292,10 +248,8 @@ class WC_Tax
      * @return  float
      */
     public static function get_rate_percent_value($key_or_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a rates code. Code is made up of COUNTRY-STATE-NAME-Priority. E.g GB-VAT-1, US-AL-TAX-1.
      *
@@ -303,10 +257,8 @@ class WC_Tax
      * @return string
      */
     public static function get_rate_code($key_or_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sums a set of taxes to form a single total. Values are pre-rounded to precision from 3.6.0.
      *
@@ -314,10 +266,8 @@ class WC_Tax
      * @return float
      */
     public static function get_tax_total($taxes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets all tax rate classes from the database.
      *
@@ -325,20 +275,16 @@ class WC_Tax
      * @return array Array of tax class objects consisting of tax_rate_class_id, name, and slug.
      */
     public static function get_tax_rate_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get store tax class names.
      *
      * @return array Array of class names ("Reduced rate", "Zero rate", etc).
      */
     public static function get_tax_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get store tax classes as slugs.
      *
@@ -346,10 +292,8 @@ class WC_Tax
      * @return array Array of class slugs ("reduced-rate", "zero-rate", etc).
      */
     public static function get_tax_class_slugs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a new tax class.
      *
@@ -359,10 +303,8 @@ class WC_Tax
      * @return WP_Error|array Returns name and slug (array) if the tax class is created, or WP_Error if something went wrong.
      */
     public static function create_tax_class($name, $slug = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an existing tax class.
      *
@@ -372,10 +314,8 @@ class WC_Tax
      * @return array|bool Returns the tax class as an array. False if not found.
      */
     public static function get_tax_class_by($field, $item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an existing tax class.
      *
@@ -385,10 +325,8 @@ class WC_Tax
      * @return WP_Error|bool Returns true if deleted successfully, false if nothing was deleted, or WP_Error if there is an invalid request.
      */
     public static function delete_tax_class_by($field, $item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the city.
      *
@@ -396,10 +334,8 @@ class WC_Tax
      * @return string
      */
     private static function format_tax_rate_city($city)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the state.
      *
@@ -407,10 +343,8 @@ class WC_Tax
      * @return string
      */
     private static function format_tax_rate_state($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the country.
      *
@@ -418,10 +352,8 @@ class WC_Tax
      * @return string
      */
     private static function format_tax_rate_country($country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the tax rate name.
      *
@@ -429,10 +361,8 @@ class WC_Tax
      * @return string
      */
     private static function format_tax_rate_name($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the rate.
      *
@@ -440,10 +370,8 @@ class WC_Tax
      * @return string
      */
     private static function format_tax_rate($rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the priority.
      *
@@ -451,10 +379,8 @@ class WC_Tax
      * @return int
      */
     private static function format_tax_rate_priority($priority)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the class.
      *
@@ -462,10 +388,8 @@ class WC_Tax
      * @return string
      */
     public static function format_tax_rate_class($class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare and format tax rate for DB insertion.
      *
@@ -473,10 +397,8 @@ class WC_Tax
      * @return array
      */
     private static function prepare_tax_rate($tax_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Insert a new tax rate.
      *
@@ -488,10 +410,8 @@ class WC_Tax
      * @return int tax rate id
      */
     public static function _insert_tax_rate($tax_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax rate.
      *
@@ -504,10 +424,8 @@ class WC_Tax
      * @return array|object
      */
     public static function _get_tax_rate($tax_rate_id, $output_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a tax rate.
      *
@@ -519,10 +437,8 @@ class WC_Tax
      * @param array $tax_rate Tax rate values.
      */
     public static function _update_tax_rate($tax_rate_id, $tax_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a tax rate from the database.
      *
@@ -532,10 +448,8 @@ class WC_Tax
      * @param  int $tax_rate_id Tax rate to delete.
      */
     public static function _delete_tax_rate($tax_rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update postcodes for a tax rate in the DB.
      *
@@ -547,10 +461,8 @@ class WC_Tax
      * @param string $postcodes String of postcodes separated by ; characters.
      */
     public static function _update_tax_rate_postcodes($tax_rate_id, $postcodes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update cities for a tax rate in the DB.
      *
@@ -562,10 +474,8 @@ class WC_Tax
      * @param string $cities Cities to set.
      */
     public static function _update_tax_rate_cities($tax_rate_id, $cities)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates locations (postcode and city).
      *
@@ -578,10 +488,8 @@ class WC_Tax
      * @param string $type Location type.
      */
     private static function update_tax_rate_locations($tax_rate_id, $values, $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Used by admin settings page.
      *
@@ -590,8 +498,6 @@ class WC_Tax
      * @return array|null|object
      */
     public static function get_rates_for_tax_class($tax_class)
-    {
-        // stub
-    }
-
+{
+}
 }

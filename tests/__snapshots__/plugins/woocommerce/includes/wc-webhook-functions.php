@@ -7,9 +7,7 @@
  */
 function wc_webhook_execute_queue()
 {
-    // stub
 }
-
 /**
  * Process webhook delivery.
  *
@@ -19,9 +17,7 @@ function wc_webhook_execute_queue()
  */
 function wc_webhook_process_delivery($webhook, $arg)
 {
-    // stub
 }
-
 /**
  * Wrapper function to execute the `woocommerce_deliver_webhook_async` cron.
  * hook, see WC_Webhook::process().
@@ -33,9 +29,7 @@ function wc_webhook_process_delivery($webhook, $arg)
  */
 function wc_deliver_webhook_async($webhook_id, $arg)
 {
-    // stub
 }
-
 /**
  * Check if the given topic is a valid webhook topic, a topic is valid if:
  *
@@ -48,9 +42,7 @@ function wc_deliver_webhook_async($webhook_id, $arg)
  */
 function wc_is_webhook_valid_topic($topic)
 {
-    // stub
 }
-
 /**
  * Check if given status is a valid webhook status.
  *
@@ -60,9 +52,7 @@ function wc_is_webhook_valid_topic($topic)
  */
 function wc_is_webhook_valid_status($status)
 {
-    // stub
 }
-
 /**
  * Get Webhook statuses.
  *
@@ -71,9 +61,7 @@ function wc_is_webhook_valid_status($status)
  */
 function wc_get_webhook_statuses()
 {
-    // stub
 }
-
 /**
  * Load webhooks.
  *
@@ -85,9 +73,7 @@ function wc_get_webhook_statuses()
  */
 function wc_load_webhooks($status = '', $limit = null)
 {
-    // stub
 }
-
 /**
  * Get webhook.
  *
@@ -97,9 +83,7 @@ function wc_load_webhooks($status = '', $limit = null)
  */
 function wc_get_webhook($id)
 {
-    // stub
 }
-
 /**
  * Get webhoook REST API versions.
  *
@@ -108,5 +92,4 @@ function wc_get_webhook($id)
  */
 function wc_get_webhook_rest_api_versions()
 {
-    // stub
 }

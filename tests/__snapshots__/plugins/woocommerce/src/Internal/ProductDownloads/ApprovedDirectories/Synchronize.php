@@ -41,19 +41,15 @@ class Synchronize
      *
      * @param Register $register The active approved download directories instance in use.
      */
-    public final function init(Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\Register $register)
+{
+}
     /**
      * Performs any work needed to add hooks and otherwise integrate with the wider system.
      */
-    public final function init_hooks()
-    {
-        // stub
-    }
-
+    final public function init_hooks()
+{
+}
     /**
      * Initializes the Approved Download Directories feature, typically following an update or
      * during initial installation.
@@ -62,10 +58,8 @@ class Synchronize
      * @param bool $enable_feature Enable (default) or disable the feature.
      */
     public function init_feature(bool $synchronize = true, bool $enable_feature = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * By default we add the woocommerce_uploads directory (file path plus web URL) to the list
      * of approved download directories.
@@ -73,36 +67,28 @@ class Synchronize
      * @throws Exception If the default directories cannot be added to the Approved List.
      */
     public function add_default_directories()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Starts the synchronization process.
      *
      * @return bool
      */
     public function start(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs the synchronization task.
      */
     public function run()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stops/cancels the current synchronization task.
      */
     public function stop()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queries for the next batch of downloadable products, applying logic to ensure we only fetch those that actually
      * have downloadable files (a downloadable product can be created that does not have downloadable files and/or
@@ -111,10 +97,8 @@ class Synchronize
      * @return array
      */
     private function get_next_set_of_downloadable_products(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes an individual downloadable product, adding the parent paths for any downloadable files to the
      * Approved Download Directories list.
@@ -125,28 +109,22 @@ class Synchronize
      * @param WC_Product $product The product we wish to examine for downloadable file paths.
      */
     private function process_product(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if a synchronization of product download directories is in progress.
      *
      * @return bool
      */
     public function in_progress(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a value between 0 and 100 representing the percentage complete of the current sync.
      *
      * @return int
      */
     public function get_progress(): int
-    {
-        // stub
-    }
-
+{
+}
 }

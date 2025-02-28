@@ -57,10 +57,8 @@ class RestApiParameterUtil
      * @param \WP_REST_Request $request The request to adjust.
      */
     public static function adjust_create_refund_request_parameters(WP_REST_Request &$request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the "amount" parameter for the request based on the amounts found in line items.
      * This will ONLY be possible if ALL of the following is true:
@@ -75,10 +73,8 @@ class RestApiParameterUtil
      * @return number|null The calculated amount, or null if it can't be calculated.
      */
     private static function calculate_refund_amount_from_line_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert the line items of a refund request to internal format (see adjust_create_refund_request_parameters).
      *
@@ -86,10 +82,8 @@ class RestApiParameterUtil
      * @return array The converted line items.
      */
     private static function adjust_line_items_for_create_refund_request($line_items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust the taxes array from a line item in a refund request, see adjust_create_refund_parameters.
      *
@@ -97,10 +91,8 @@ class RestApiParameterUtil
      * @return array The adjusted array.
      */
     private static function adjust_taxes_for_create_refund_request_line_item($taxes_array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is an array sequential or associative?
      *
@@ -108,8 +100,6 @@ class RestApiParameterUtil
      * @return bool True if the array is associative, false if it's sequential.
      */
     private static function is_associative(array $the_array)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -13,30 +13,24 @@ class OrdersTableDataStoreMeta
      * @return string
      */
     protected function get_cache_group()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of the table used for storage.
      *
      * @return string
      */
     protected function get_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of the field/column used for associating meta with objects.
      *
      * @return string
      */
     protected function get_object_id_field()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes meta based on meta ID.
      *
@@ -46,10 +40,8 @@ class OrdersTableDataStoreMeta
      * @return bool
      */
     public function delete_meta(&$object, $meta): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add new piece of meta.
      *
@@ -59,10 +51,8 @@ class OrdersTableDataStoreMeta
      * @return int|false meta ID
      */
     public function add_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update meta.
      *
@@ -72,10 +62,8 @@ class OrdersTableDataStoreMeta
      * @return bool
      */
     public function update_meta(&$object, $meta): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return order meta data for multiple IDs. Results are cached.
      *
@@ -84,10 +72,8 @@ class OrdersTableDataStoreMeta
      * @return \stdClass[][] An array, keyed by the object IDs, containing arrays of raw meta data for each object.
      */
     public function get_meta_data_for_object_ids(array $object_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve raw object meta from cache for the given a set of IDs.
      *
@@ -96,10 +82,8 @@ class OrdersTableDataStoreMeta
      * @return \stdClass[][] An array, keyed by the object IDs, containing arrays of raw meta data for each object.
      */
     private function get_meta_data_for_object_ids_from_cache(array $object_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Store the raw meta data for a set of objects in cache.
      *
@@ -108,10 +92,8 @@ class OrdersTableDataStoreMeta
      * @return void
      */
     private function set_meta_data_for_objects_in_cache(array $meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete cached meta data for the given object_ids.
      *
@@ -124,10 +106,8 @@ class OrdersTableDataStoreMeta
      *                if the contents were not deleted.
      */
     public function clear_cached_data(array $object_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invalidate all the cache used by this data store.
      *
@@ -137,8 +117,6 @@ class OrdersTableDataStoreMeta
      * @return bool Whether the cache as fully invalidated.
      */
     public function clear_all_cached_data(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

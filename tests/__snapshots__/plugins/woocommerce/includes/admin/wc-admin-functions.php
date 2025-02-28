@@ -7,9 +7,7 @@
  */
 function wc_get_screen_ids()
 {
-    // stub
 }
-
 /**
  * Get page ID for a specific WC resource.
  *
@@ -19,9 +17,7 @@ function wc_get_screen_ids()
  */
 function wc_get_page_screen_id($for)
 {
-    // stub
 }
-
 /**
  * Create a page and store the ID in an option.
  *
@@ -35,9 +31,7 @@ function wc_get_page_screen_id($for)
  */
 function wc_create_page($slug, $option = '', $page_title = '', $page_content = '', $post_parent = 0, $post_status = 'publish')
 {
-    // stub
 }
-
 /**
  * Output admin fields.
  *
@@ -47,9 +41,7 @@ function wc_create_page($slug, $option = '', $page_title = '', $page_content = '
  */
 function woocommerce_admin_fields($options)
 {
-    // stub
 }
-
 /**
  * Update all settings which are passed.
  *
@@ -58,9 +50,7 @@ function woocommerce_admin_fields($options)
  */
 function woocommerce_update_options($options, $data = null)
 {
-    // stub
 }
-
 /**
  * Get a setting from the settings API.
  *
@@ -70,9 +60,7 @@ function woocommerce_update_options($options, $data = null)
  */
 function woocommerce_settings_get_option($option_name, $default = '')
 {
-    // stub
 }
-
 /**
  * Sees if line item stock has already reduced stock, and whether those values need adjusting e.g. after changing item qty.
  *
@@ -83,9 +71,7 @@ function woocommerce_settings_get_option($option_name, $default = '')
  */
 function wc_maybe_adjust_line_item_product_stock($item, $item_quantity = -1)
 {
-    // stub
 }
-
 /**
  * Save order items. Uses the CRUD.
  *
@@ -95,9 +81,7 @@ function wc_maybe_adjust_line_item_product_stock($item, $item_quantity = -1)
  */
 function wc_save_order_items($order_id, $items)
 {
-    // stub
 }
-
 /**
  * Get HTML for some action buttons. Used in list tables.
  *
@@ -107,9 +91,7 @@ function wc_save_order_items($order_id, $items)
  */
 function wc_render_action_buttons($actions)
 {
-    // stub
 }
-
 /**
  * Shows a notice if variations are missing prices.
  *
@@ -118,9 +100,7 @@ function wc_render_action_buttons($actions)
  */
 function wc_render_invalid_variation_notice($product_object)
 {
-    // stub
 }
-
 /**
  * Get current admin page URL.
  *
@@ -132,9 +112,7 @@ function wc_render_invalid_variation_notice($product_object)
  */
 function wc_get_current_admin_url()
 {
-    // stub
 }
-
 /**
  * Get default product type options.
  *
@@ -144,5 +122,4 @@ function wc_get_current_admin_url()
  */
 function wc_get_default_product_type_options()
 {
-    // stub
 }

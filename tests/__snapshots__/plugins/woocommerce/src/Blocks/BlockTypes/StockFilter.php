@@ -23,28 +23,21 @@ class StockFilter
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $stock_statuses = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $stock_statuses = array())
+{
+}
     /**
      * Get Stock status query variables values.
      */
     public static function get_stock_status_query_var_values()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

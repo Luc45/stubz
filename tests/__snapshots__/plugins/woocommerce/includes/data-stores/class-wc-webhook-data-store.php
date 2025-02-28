@@ -12,10 +12,8 @@ class WC_Webhook_Data_Store
      * @param WC_Webhook $webhook Webhook instance.
      */
     public function create(&$webhook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read a webhook from the database.
      *
@@ -24,10 +22,8 @@ class WC_Webhook_Data_Store
      * @throws Exception When webhook is invalid.
      */
     public function read(&$webhook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a webhook.
      *
@@ -35,10 +31,8 @@ class WC_Webhook_Data_Store
      * @param WC_Webhook $webhook Webhook instance.
      */
     public function update(&$webhook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a webhook from the database.
      *
@@ -46,10 +40,8 @@ class WC_Webhook_Data_Store
      * @param WC_Webhook $webhook      Webhook instance.
      */
     public function delete(&$webhook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get API version number.
      *
@@ -58,10 +50,8 @@ class WC_Webhook_Data_Store
      * @return int
      */
     public function get_api_version_number($api_version)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get webhooks IDs from the database.
      *
@@ -71,10 +61,8 @@ class WC_Webhook_Data_Store
      * @return int[]
      */
     public function get_webhooks_ids($status = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search webhooks.
      *
@@ -82,10 +70,8 @@ class WC_Webhook_Data_Store
      * @return array|object
      */
     public function search_webhooks($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count webhooks.
      *
@@ -94,20 +80,16 @@ class WC_Webhook_Data_Store
      * @return int
      */
     protected function get_webhook_count($status = 'active')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total webhook counts by status.
      *
      * @return array
      */
     public function get_count_webhooks_by_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given string is in known statuses, based on return value of @see wc_get_webhook_statuses().
      *
@@ -116,10 +98,8 @@ class WC_Webhook_Data_Store
      * @param  string $status Status to check.
      */
     private function validate_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the transient key used to cache a set of webhook IDs, optionally filtered by status.
      *
@@ -128,10 +108,8 @@ class WC_Webhook_Data_Store
      * @return string
      */
     private function get_transient_key($status = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the transients used to cache a set of webhook IDs, optionally filtered by status.
      *
@@ -139,8 +117,6 @@ class WC_Webhook_Data_Store
      * @param string $status Optional - status of cache to delete, or 'all' to delete all caches.
      */
     private function delete_transients($status = '')
-    {
-        // stub
-    }
-
+{
+}
 }

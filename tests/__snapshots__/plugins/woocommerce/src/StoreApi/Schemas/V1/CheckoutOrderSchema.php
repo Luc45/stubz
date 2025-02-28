@@ -22,8 +22,6 @@ class CheckoutOrderSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
 }

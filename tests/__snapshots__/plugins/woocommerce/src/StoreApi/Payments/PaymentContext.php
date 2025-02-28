@@ -26,8 +26,7 @@ class PaymentContext
      *
      * @var array Key value pairs.
      */
-    protected $payment_data = array (
-);
+    protected $payment_data = array();
 
     /**
      * Magic getter for protected properties.
@@ -35,49 +34,38 @@ class PaymentContext
      * @param string $name Property name.
      */
     public function __get($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the chosen payment method ID context.
      *
      * @param string $payment_method Payment method ID.
      */
     public function set_payment_method($payment_method)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the payment method instance for the current set payment method.
      *
      * @return \WC_Payment_Gateway|null An instance of the payment gateway if it exists.
      */
     public function get_payment_method_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the order context.
      *
      * @param \WC_Order $order Order object.
      */
     public function set_order(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set payment data context.
      *
      * @param array $payment_data Array of key value pairs of data.
      */
-    public function set_payment_data($payment_data = array (
-))
-    {
-        // stub
-    }
-
+    public function set_payment_data($payment_data = array())
+{
+}
 }

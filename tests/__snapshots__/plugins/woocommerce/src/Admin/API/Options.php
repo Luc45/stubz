@@ -29,10 +29,8 @@ class Options
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to get options.
      *
@@ -40,10 +38,8 @@ class Options
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the user has permission given an option name.
      *
@@ -53,10 +49,8 @@ class Options
      * @return boolean
      */
     public function user_has_permission($option, $request, $is_update = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update options.
      *
@@ -64,10 +58,8 @@ class Options
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of options and respective permissions for the current user.
      *
@@ -75,20 +67,16 @@ class Options
      * @return array
      */
     public function get_option_permissions($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default available option permissions.
      *
      * @return array
      */
     public static function get_default_option_permissions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of options and respective values.
      *
@@ -96,10 +84,8 @@ class Options
      * @return array Options object with option values.
      */
     public function get_options($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates an array of objects.
      *
@@ -107,18 +93,14 @@ class Options
      * @return array Options object with a boolean if the option was updated.
      */
     public function update_options($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

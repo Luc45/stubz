@@ -15,10 +15,8 @@ class CartCheckoutUtils
      * @return bool
      */
     public static function is_cart_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if:
      * - The checkout page is being viewed.
@@ -27,10 +25,8 @@ class CartCheckoutUtils
      * @return bool
      */
     public static function is_checkout_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the post content contains a block with a specific attribute value.
      *
@@ -40,30 +36,24 @@ class CartCheckoutUtils
      * @return boolean
      */
     public static function has_block_variation($block_id, $attribute, $value, $post_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the default cart page is using the Cart block.
      *
      * @return bool true if the WC cart page is using the Cart block.
      */
     public static function is_cart_block_default()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the default checkout page is using the Checkout block.
      *
      * @return bool true if the WC checkout page is using the Checkout block.
      */
     public static function is_checkout_block_default()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate checkout block field visibility attributes to settings when using the checkout block.
      *
@@ -80,40 +70,32 @@ class CartCheckoutUtils
      * If the attributes are missing, we assume default values are needed.
      */
     protected static function migrate_checkout_block_field_visibility_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default visibility for the address_2 field.
      *
      * @return string
      */
     public static function get_company_field_visibility()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default visibility for the address_2 field.
      *
      * @return string
      */
     public static function get_address_2_field_visibility()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default visibility for the address_2 field.
      *
      * @return string
      */
     public static function get_phone_field_visibility()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the template overriding the page loads the page content or not.
      * Templates by default load the page content, but if that block is deleted the content can get out of sync with the one presented in the page editor.
@@ -123,20 +105,16 @@ class CartCheckoutUtils
      * @return bool true if the template has out of sync content.
      */
     public static function is_overriden_by_custom_template_content(string $block): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets country codes, names, states, and locale information.
      *
      * @return array
      */
     public static function get_country_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes accents from an array of values, sorts by the values, then returns the original array values sorted.
      *
@@ -144,20 +122,16 @@ class CartCheckoutUtils
      * @return array Sorted array.
      */
     protected static function deep_sort_with_accents($array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves formatted shipping zones from WooCommerce.
      *
      * @return array An array of formatted shipping zones.
      */
     public static function get_shipping_zones()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recursively search the checkout block to find the express checkout block and
      * get the button style attributes
@@ -166,10 +140,8 @@ class CartCheckoutUtils
      * @param string $cart_or_checkout The block type to check.
      */
     public static function find_express_checkout_attributes($blocks, $cart_or_checkout)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given an array of blocks, find the express payment block and update its attributes.
      *
@@ -178,8 +150,6 @@ class CartCheckoutUtils
      * @param array  $updated_attrs The new attributes to set.
      */
     public static function update_blocks_with_new_attrs(&$blocks, $cart_or_checkout, $updated_attrs)
-    {
-        // stub
-    }
-
+{
+}
 }

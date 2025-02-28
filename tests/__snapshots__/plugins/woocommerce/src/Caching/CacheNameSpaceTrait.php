@@ -21,20 +21,16 @@ trait CacheNameSpaceTrait
      * @return string Prefix.
      */
     public static function get_cache_prefix($group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increment group cache prefix (invalidates cache).
      *
      * @param string $group Group of cache to clear.
      */
     public static function incr_cache_prefix($group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Invalidate cache group.
      *
@@ -42,10 +38,8 @@ trait CacheNameSpaceTrait
      * @since 3.9.0
      */
     public static function invalidate_cache_group($group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get prefixed key.
      *
@@ -55,8 +49,6 @@ trait CacheNameSpaceTrait
      * @return string Prefixed key.
      */
     public static function get_prefixed_key($key, $group)
-    {
-        // stub
-    }
-
+{
+}
 }

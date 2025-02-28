@@ -20,8 +20,7 @@ class WC_Order_Item_Shipping
   'taxes' => 
   array (
     'total' => 
-    array (
-    ),
+    array(),
   ),
   'tax_status' => 'taxable',
 );
@@ -33,12 +32,9 @@ class WC_Order_Item_Shipping
      * @param  array $calculate_tax_for Location data to get taxes for. Required.
      * @return bool  True if taxes were calculated.
      */
-    public function calculate_taxes($calculate_tax_for = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_taxes($calculate_tax_for = array())
+{
+}
     /**
      * Set order item name.
      *
@@ -46,10 +42,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set method title.
      *
@@ -57,10 +51,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_method_title($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping method id.
      *
@@ -68,10 +60,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_method_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping instance id.
      *
@@ -79,10 +69,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_instance_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total.
      *
@@ -90,10 +78,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total tax.
      *
@@ -101,10 +87,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     protected function set_total_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set taxes.
      *
@@ -114,10 +98,8 @@ class WC_Order_Item_Shipping
      * @throws WC_Data_Exception May throw exception if data is invalid.
      */
     public function set_taxes($raw_tax_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax_status.
      *
@@ -127,30 +109,24 @@ class WC_Order_Item_Shipping
      * @return void
      */
     public function set_tax_status($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set properties based on passed in shipping rate object.
      *
      * @param WC_Shipping_Rate $shipping_rate Shipping rate to set.
      */
     public function set_shipping_rate($shipping_rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item name.
      *
@@ -158,10 +134,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get title.
      *
@@ -169,10 +143,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_method_title($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method ID.
      *
@@ -180,10 +152,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_method_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get instance ID.
      *
@@ -191,10 +161,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_instance_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total cost.
      *
@@ -202,10 +170,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax.
      *
@@ -213,10 +179,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_total_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes.
      *
@@ -224,10 +188,8 @@ class WC_Order_Item_Shipping
      * @return array
      */
     public function get_taxes($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax class.
      *
@@ -235,10 +197,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_tax_class($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax status.
      *
@@ -246,10 +206,8 @@ class WC_Order_Item_Shipping
      * @return string
      */
     public function get_tax_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Offset get: for ArrayAccess/Backwards compatibility.
      *
@@ -258,10 +216,8 @@ class WC_Order_Item_Shipping
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Offset set: for ArrayAccess/Backwards compatibility.
      *
@@ -271,10 +227,8 @@ class WC_Order_Item_Shipping
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Offset exists: for ArrayAccess.
      *
@@ -283,8 +237,6 @@ class WC_Order_Item_Shipping
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
 }

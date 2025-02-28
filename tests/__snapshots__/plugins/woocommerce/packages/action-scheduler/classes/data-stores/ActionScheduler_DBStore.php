@@ -50,10 +50,8 @@ class ActionScheduler_DBStore
      * @codeCoverageIgnore
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an action, checks if this is a unique action before actually saving.
      *
@@ -64,10 +62,8 @@ class ActionScheduler_DBStore
      * @throws RuntimeException     Throws exception when saving the action fails.
      */
     public function save_unique_action(ActionScheduler_Action $action, DateTime|null $scheduled_date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an action. Can save duplicate action as well, prefer using `save_unique_action` instead.
      *
@@ -78,10 +74,8 @@ class ActionScheduler_DBStore
      * @throws RuntimeException     Throws exception when saving the action fails.
      */
     public function save_action(ActionScheduler_Action $action, DateTime|null $scheduled_date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an action.
      *
@@ -93,10 +87,8 @@ class ActionScheduler_DBStore
      * @throws \RuntimeException     Throws exception when saving the action fails.
      */
     private function save_action_to_db(ActionScheduler_Action $action, DateTime|null $date = null, $unique = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to build insert query.
      *
@@ -106,10 +98,8 @@ class ActionScheduler_DBStore
      * @return string Insert query.
      */
     private function build_insert_sql(array $data, $unique)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to build where clause for action insert statement.
      *
@@ -120,10 +110,8 @@ class ActionScheduler_DBStore
      * @return string Where clause to be used with insert.
      */
     private function build_where_clause_for_insert($data, $table_name, $unique)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get $wpdb->prepare placeholder for a given column name.
      *
@@ -132,10 +120,8 @@ class ActionScheduler_DBStore
      * @return string Placeholder to use for given column.
      */
     private function get_placeholder_for_column($column_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a hash from json_encoded $args using MD5 as this isn't for security.
      *
@@ -143,10 +129,8 @@ class ActionScheduler_DBStore
      * @return string
      */
     protected function hash_args($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get action args query param value from action args.
      *
@@ -154,10 +138,8 @@ class ActionScheduler_DBStore
      * @return string
      */
     protected function get_args_for_query($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a group's ID based on its name/slug.
      *
@@ -167,10 +149,8 @@ class ActionScheduler_DBStore
      * @return array The group IDs, if they exist or were successfully created. May be empty.
      */
     protected function get_group_ids($slugs, $create_if_not_exists = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create an action group.
      *
@@ -179,10 +159,8 @@ class ActionScheduler_DBStore
      * @return int Group ID.
      */
     protected function create_group($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve an action.
      *
@@ -191,20 +169,16 @@ class ActionScheduler_DBStore
      * @return ActionScheduler_Action
      */
     public function fetch_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a null action.
      *
      * @return ActionScheduler_NullAction
      */
     protected function get_null_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create an action from a database record.
      *
@@ -213,10 +187,8 @@ class ActionScheduler_DBStore
      * @return ActionScheduler_Action|ActionScheduler_CanceledAction|ActionScheduler_FinishedAction
      */
     protected function make_action_from_db_record($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the SQL statement to query (or count) actions.
      *
@@ -230,10 +202,8 @@ class ActionScheduler_DBStore
      * @throws \RuntimeException When "unknown partial args matching value".
      */
     protected function get_query_actions_sql(array $query, $select_or_count = 'select')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query for action count or list of action IDs.
      *
@@ -246,22 +216,17 @@ class ActionScheduler_DBStore
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public function query_actions($query = array (
-), $query_type = 'select')
-    {
-        // stub
-    }
-
+    public function query_actions($query = array(), $query_type = 'select')
+{
+}
     /**
      * Get a count of all actions in the store, grouped by status.
      *
      * @return array Set of 'status' => int $count pairs for statuses with 1 or more actions of that status.
      */
     public function action_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel an action.
      *
@@ -271,10 +236,8 @@ class ActionScheduler_DBStore
      * @throws \InvalidArgumentException If the action update failed.
      */
     public function cancel_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel pending actions by hook.
      *
@@ -285,10 +248,8 @@ class ActionScheduler_DBStore
      * @return void
      */
     public function cancel_actions_by_hook($hook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel pending actions by group.
      *
@@ -297,10 +258,8 @@ class ActionScheduler_DBStore
      * @return void
      */
     public function cancel_actions_by_group($group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk cancel actions.
      *
@@ -309,10 +268,8 @@ class ActionScheduler_DBStore
      * @param array $query_args Query parameters.
      */
     protected function bulk_cancel_actions($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an action.
      *
@@ -320,10 +277,8 @@ class ActionScheduler_DBStore
      * @throws \InvalidArgumentException If the action deletion failed.
      */
     public function delete_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schedule date for an action.
      *
@@ -332,10 +287,8 @@ class ActionScheduler_DBStore
      * @return \DateTime The local date the action is scheduled to run, or the date that it ran.
      */
     public function get_date($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the GMT schedule date for an action.
      *
@@ -345,10 +298,8 @@ class ActionScheduler_DBStore
      * @return \DateTime The GMT date the action is scheduled to run, or the date that it ran.
      */
     protected function get_date_gmt($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stake a claim on actions.
      *
@@ -359,22 +310,17 @@ class ActionScheduler_DBStore
      *
      * @return ActionScheduler_ActionClaim
      */
-    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
-), $group = '')
-    {
-        // stub
-    }
-
+    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(), $group = '')
+{
+}
     /**
      * Generate a new action claim.
      *
      * @return int Claim ID.
      */
     protected function generate_claim_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a claim filter.
      *
@@ -383,10 +329,8 @@ class ActionScheduler_DBStore
      * @return void
      */
     public function set_claim_filter($filter_name, $filter_values)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the claim filter value.
      *
@@ -394,10 +338,8 @@ class ActionScheduler_DBStore
      * @return mixed
      */
     public function get_claim_filter($filter_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark actions claimed.
      *
@@ -411,22 +353,17 @@ class ActionScheduler_DBStore
      * @throws \InvalidArgumentException Throws InvalidArgumentException if group doesn't exist.
      * @throws \RuntimeException Throws RuntimeException if unable to claim action.
      */
-    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array (
-), $group = '')
-    {
-        // stub
-    }
-
+    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array(), $group = '')
+{
+}
     /**
      * Get the number of active claims.
      *
      * @return int
      */
     public function get_claim_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an action's claim ID, as stored in the claim_id column.
      *
@@ -434,10 +371,8 @@ class ActionScheduler_DBStore
      * @return mixed
      */
     public function get_claim_id($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the action IDs of action in a claim.
      *
@@ -445,10 +380,8 @@ class ActionScheduler_DBStore
      * @return int[]
      */
     public function find_actions_by_claim_id($claim_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Release actions from a claim and delete the claim.
      *
@@ -456,10 +389,8 @@ class ActionScheduler_DBStore
      * @throws \RuntimeException When unable to release actions from claim.
      */
     public function release_claim(ActionScheduler_ActionClaim $claim)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the claim from an action.
      *
@@ -468,10 +399,8 @@ class ActionScheduler_DBStore
      * @return void
      */
     public function unclaim_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark an action as failed.
      *
@@ -479,10 +408,8 @@ class ActionScheduler_DBStore
      * @throws \InvalidArgumentException Throw an exception if action was not updated.
      */
     public function mark_failure($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add execution message to action log.
      *
@@ -493,10 +420,8 @@ class ActionScheduler_DBStore
      * @return void
      */
     public function log_execution($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark an action as complete.
      *
@@ -506,10 +431,8 @@ class ActionScheduler_DBStore
      * @throws \InvalidArgumentException Throw an exception if action was not updated.
      */
     public function mark_complete($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an action's status.
      *
@@ -520,8 +443,6 @@ class ActionScheduler_DBStore
      * @throws \RuntimeException Throw an exception if action status could not be retrieved.
      */
     public function get_status($action_id)
-    {
-        // stub
-    }
-
+{
+}
 }

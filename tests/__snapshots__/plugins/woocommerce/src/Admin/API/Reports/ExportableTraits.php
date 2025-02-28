@@ -14,8 +14,6 @@ trait ExportableTraits
      * @return string Formatted value.
      */
     public static function csv_number_format($value)
-    {
-        // stub
-    }
-
+{
+}
 }

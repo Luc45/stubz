@@ -23,8 +23,6 @@ class AdminSettingsServiceProvider
      * Registers services provided by this class.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

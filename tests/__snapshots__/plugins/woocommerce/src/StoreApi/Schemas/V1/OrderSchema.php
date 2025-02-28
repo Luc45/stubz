@@ -86,20 +86,16 @@ class OrderSchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order schema properties.
      *
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an order for response.
      *
@@ -107,10 +103,8 @@ class OrderSchema
      * @return array
      */
     public function get_item_response($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total data.
      *
@@ -118,8 +112,6 @@ class OrderSchema
      * @return array
      */
     protected function get_totals($order)
-    {
-        // stub
-    }
-
+{
+}
 }

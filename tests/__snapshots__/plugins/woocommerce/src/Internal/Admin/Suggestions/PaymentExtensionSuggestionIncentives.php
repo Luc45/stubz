@@ -19,8 +19,7 @@ class PaymentExtensionSuggestionIncentives
      *
      * @var Incentive[]
      */
-    private array $instances = array (
-);
+    private array $instances = array();
 
     /**
      * Get the first found incentive details for a specific payment extension suggestion.
@@ -33,10 +32,8 @@ class PaymentExtensionSuggestionIncentives
      * @return ?array The incentive details. Returns null if there is no incentive available.
      */
     public function get_incentive(string $suggestion_id, string $country_code, string $incentive_type = '', bool $skip_visibility_check = false): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the incentives list for a specific payment extension suggestion.
      *
@@ -49,10 +46,8 @@ class PaymentExtensionSuggestionIncentives
      * @return array The incentives list.
      */
     public function get_incentives(string $suggestion_id, string $country_code, string $incentive_type = '', bool $skip_visibility_check = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an incentive is visible.
      *
@@ -64,10 +59,8 @@ class PaymentExtensionSuggestionIncentives
      * @return bool Whether there is a visible incentive for the suggestion.
      */
     public function is_incentive_visible(string $incentive_id, string $suggestion_id, string $country_code, bool $skip_extension_active_check = false): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an incentive has been dismissed for a specific payment extension suggestion.
      *
@@ -78,10 +71,8 @@ class PaymentExtensionSuggestionIncentives
      * @return bool Whether the incentive has been dismissed for the suggestion.
      */
     public function is_incentive_dismissed(string $incentive_id, string $suggestion_id, string $context = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the dismissals (contexts) for an incentive.
      *
@@ -91,10 +82,8 @@ class PaymentExtensionSuggestionIncentives
      * @return string[] The contexts in which the incentive has been dismissed.
      */
     public function get_incentive_dismissals(string $incentive_id, string $suggestion_id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss an incentive for a specific payment extension suggestion.
      *
@@ -107,10 +96,8 @@ class PaymentExtensionSuggestionIncentives
      * @throws \Exception If no incentives provider is available for the suggestion.
      */
     public function dismiss_incentive(string $incentive_id, string $suggestion_id, string $context = 'all'): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the incentive provider instance for a specific payment extension suggestion.
      *
@@ -120,10 +107,8 @@ class PaymentExtensionSuggestionIncentives
      *                    Returns null if no provider is available for the suggestion.
      */
     public function get_incentive_instance(string $suggestion_id): Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives\Incentive|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a specific payment extension suggestion has an incentive provider registered.
      *
@@ -132,8 +117,6 @@ class PaymentExtensionSuggestionIncentives
      * @return bool Whether the suggestion has an incentive provider registered.
      */
     public function has_incentive_provider(string $suggestion_id): bool
-    {
-        // stub
-    }
-
+{
+}
 }

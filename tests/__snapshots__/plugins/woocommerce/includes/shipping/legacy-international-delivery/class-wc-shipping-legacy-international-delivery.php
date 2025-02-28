@@ -15,10 +15,8 @@ class WC_Shipping_Legacy_International_Delivery
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -26,18 +24,14 @@ class WC_Shipping_Legacy_International_Delivery
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise settings form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if package is available.
      *
@@ -45,8 +39,6 @@ class WC_Shipping_Legacy_International_Delivery
      * @return bool
      */
     public function is_available($package)
-    {
-        // stub
-    }
-
+{
+}
 }

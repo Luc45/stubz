@@ -20,8 +20,6 @@ class OptionSanitizerServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

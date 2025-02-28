@@ -19,20 +19,16 @@ class McStats
      * @return array Array with one item, where the key is the prefixed group and the value are all stats concatenated with a comma. If group not found, an empty array will be returned
      */
     public function get_group_query_args($group_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the tracking pixels for the current stats and empty the stored stats from the object
      *
      * @return void
      */
     public function do_stats()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs stats code for a one-off, server-side.
      *
@@ -41,18 +37,14 @@ class McStats
      * @return bool If it worked.
      */
     public function do_server_side_stat($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Pings the stats server for the current stats and empty the stored stats from the object
      *
      * @return void
      */
     public function do_server_side_stats()
-    {
-        // stub
-    }
-
+{
+}
 }

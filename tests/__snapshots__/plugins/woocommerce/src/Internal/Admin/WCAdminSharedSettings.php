@@ -25,28 +25,22 @@ class WCAdminSharedSettings
      * Hook into WooCommerce Blocks.
      */
     protected function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get class instance.
      *
      * @return object Instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds settings to the Blocks AssetDataRegistry when woocommerce_blocks is loaded.
      *
      * @return void
      */
     public function on_woocommerce_blocks_loaded()
-    {
-        // stub
-    }
-
+{
+}
 }

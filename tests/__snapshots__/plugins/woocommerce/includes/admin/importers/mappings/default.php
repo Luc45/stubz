@@ -8,9 +8,7 @@
  */
 function wc_importer_current_locale()
 {
-    // stub
 }
-
 /**
  * Add English mapping placeholders when not using English as current language.
  *
@@ -20,9 +18,7 @@ function wc_importer_current_locale()
  */
 function wc_importer_default_english_mappings($mappings)
 {
-    // stub
 }
-
 /**
  * Add English special mapping placeholders when not using English as current language.
  *
@@ -32,5 +28,4 @@ function wc_importer_default_english_mappings($mappings)
  */
 function wc_importer_default_special_english_mappings($mappings)
 {
-    // stub
 }

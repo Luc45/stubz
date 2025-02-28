@@ -11,8 +11,6 @@ class WC_Meta_Box_Order_Notes
      * @param WP_Post|WC_Order $post Post or order object.
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
 }

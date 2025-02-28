@@ -29,28 +29,22 @@ class RelatedProducts
      * - Hook into pre_render_block to update the query.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the query for the product query block.
      *
@@ -58,10 +52,8 @@ class RelatedProducts
      * @param array       $parsed_block The block being rendered.
      */
     public function update_query($pre_render, $parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a custom query based on attributes, filters and global WP_Query.
      *
@@ -70,10 +62,8 @@ class RelatedProducts
      * @return array
      */
     public function build_query($query, $block = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If there are no related products, return an empty string.
      *
@@ -83,10 +73,8 @@ class RelatedProducts
      * @return string The block content.
      */
     public function render_block(string $content, array $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether the block is a related products block.
      *
@@ -96,10 +84,8 @@ class RelatedProducts
      * @return bool Whether the block is a related products block.
      */
     private function is_related_products_block($parsed_block, $rendered_block = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get related products ids.
      * The logic is copied from the core function woocommerce_related_products. https://github.com/woocommerce/woocommerce/blob/ca49caabcba84ce9f60a03c6d3534ec14b350b80/plugins/woocommerce/includes/wc-template-functions.php/#L2039-L2074
@@ -108,8 +94,6 @@ class RelatedProducts
      * @return array Products ids.
      */
     private function get_related_products_ids($product_per_page = 5)
-    {
-        // stub
-    }
-
+{
+}
 }

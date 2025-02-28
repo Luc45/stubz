@@ -22,10 +22,8 @@ class CartFeeSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a WooCommerce cart fee to an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class CartFeeSchema
      * @return array
      */
     public function get_item_response($fee)
-    {
-        // stub
-    }
-
+{
+}
 }

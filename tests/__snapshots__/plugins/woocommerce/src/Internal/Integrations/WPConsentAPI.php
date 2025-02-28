@@ -22,38 +22,30 @@ class WPConsentAPI
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register our hooks on init.
      *
      * @return void
      */
     protected function on_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if WP Cookie Consent API is active
      *
      * @return bool
      */
     protected function is_wp_consent_api_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue JS for integration with WP Consent Level API
      *
      * @return void
      */
     private function enqueue_consent_api_scripts()
-    {
-        // stub
-    }
-
+{
+}
 }

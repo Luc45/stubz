@@ -13,8 +13,6 @@ abstract class ItemSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
 }

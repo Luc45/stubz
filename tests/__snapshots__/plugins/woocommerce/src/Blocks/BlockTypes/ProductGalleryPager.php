@@ -18,30 +18,24 @@ class ProductGalleryPager
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -51,10 +45,8 @@ class ProductGalleryPager
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the pager for the product gallery.
      *
@@ -64,10 +56,8 @@ class ProductGalleryPager
      * @return string|null The rendered pager HTML, or null if the pager should not be displayed.
      */
     private function render_pager($product_gallery_images_ids, $pager_display_mode, $number_of_thumbnails)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the pager pages for the product gallery.
      *
@@ -77,10 +67,8 @@ class ProductGalleryPager
      * @return string The rendered pager pages HTML.
      */
     private function render_pager_pages($product_gallery_images_ids, $number_of_thumbnails, $pager_display_mode = 'dots')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates an SVG dot icon with the specified opacity.
      *
@@ -88,8 +76,6 @@ class ProductGalleryPager
      * @return string The SVG dot icon HTML.
      */
     private function get_dot_icon($is_active = false)
-    {
-        // stub
-    }
-
+{
+}
 }

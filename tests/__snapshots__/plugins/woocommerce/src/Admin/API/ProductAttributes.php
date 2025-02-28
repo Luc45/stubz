@@ -21,30 +21,24 @@ class ProductAttributes
      * Register the routes for custom product attributes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Attribute's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single attribute by it's slug.
      *
@@ -52,10 +46,8 @@ class ProductAttributes
      * @return WP_REST_Response
      */
     public function get_item_by_slug($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format custom attribute items for response (mimic the structure of a taxonomy - backed attribute).
      *
@@ -63,10 +55,8 @@ class ProductAttributes
      * @return array
      */
     protected function format_custom_attribute_items_for_response($custom_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all attributes, with support for searching (which includes custom attributes).
      *
@@ -74,8 +64,6 @@ class ProductAttributes
      * @return WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
 }

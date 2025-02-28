@@ -26,10 +26,8 @@ class WC_REST_Product_Reviews_V2_Controller
      * Register the routes for product reviews.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to batch manage product reviews.
      *
@@ -37,10 +35,8 @@ class WC_REST_Product_Reviews_V2_Controller
      * @return WP_Error|boolean
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product review output for response.
      *
@@ -49,10 +45,8 @@ class WC_REST_Product_Reviews_V2_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($review, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk create, update and delete items.
      *
@@ -61,18 +55,14 @@ class WC_REST_Product_Reviews_V2_Controller
      * @return array Of WP_Error or WP_REST_Response.
      */
     public function batch_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Product Review's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

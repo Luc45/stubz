@@ -8,8 +8,6 @@ namespace TraitsExample;
 class RendererLogger
 {
     public function doSomethingAndLog(): string
-    {
-        // stub
-    }
-
+{
+}
 }

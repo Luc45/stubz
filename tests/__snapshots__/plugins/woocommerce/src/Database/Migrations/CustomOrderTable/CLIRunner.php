@@ -41,19 +41,15 @@ class CLIRunner
      *
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $controller, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $synchronizer, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_orders_migration_controller)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController $controller, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $synchronizer, Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_orders_migration_controller)
+{
+}
     /**
      * Registers commands for CLI.
      */
     public function register_commands()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the COT feature is enabled.
      *
@@ -62,18 +58,14 @@ class CLIRunner
      * @return bool Whether the COT feature is enabled.
      */
     private function is_enabled($log = true): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Free some in-memory usage.
      */
     private function free_in_memory_usage()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count how many orders have yet to be migrated into the custom orders table.
      *
@@ -87,13 +79,9 @@ class CLIRunner
      *
      * @return int The number of orders to be migrated.*
      */
-    public function count_unmigrated($args = array (
-), $assoc_args = array (
-)): int
-    {
-        // stub
-    }
-
+    public function count_unmigrated($args = array(), $assoc_args = array()): int
+{
+}
     /**
      * Sync order data between the custom order tables and the core WordPress post tables.
      *
@@ -112,13 +100,9 @@ class CLIRunner
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function sync($args = array (
-), $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function sync($args = array(), $assoc_args = array())
+{
+}
     /**
      * [Deprecated] Use `wp wc hpos sync` instead.
      * Copy order data into the postmeta table.
@@ -142,13 +126,9 @@ class CLIRunner
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function migrate(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function migrate(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Verify migrated order data with original posts data.
      *
@@ -195,13 +175,9 @@ class CLIRunner
      * @param array $args Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function verify_cot_data($args = array (
-), $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function verify_cot_data($args = array(), $assoc_args = array())
+{
+}
     /**
      * Helper method to get count for orders needing verification.
      *
@@ -213,10 +189,8 @@ class CLIRunner
      * @return int Order count.
      */
     private function get_verify_order_count(int $order_id_start, int $order_id_end, array $order_types, bool $log = true): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify meta data as part of verifying the order object.
      *
@@ -226,10 +200,8 @@ class CLIRunner
      * @return array Failed IDs with meta details.
      */
     private function verify_meta_data(array $order_ids, array $failed_ids): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to normalize response from meta queries into order_id > meta_key > meta_values.
      *
@@ -238,10 +210,8 @@ class CLIRunner
      * @return array Normalized data.
      */
     private function normalize_raw_meta_data(array $data): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set custom order tables (HPOS) to authoritative if: 1). HPOS and posts tables are in sync, or, 2). This is a new shop (in this case also create tables). Additionally, all installed WC plugins should be compatible.
      *
@@ -272,13 +242,9 @@ class CLIRunner
      *
      * @return void
      */
-    public function enable(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function enable(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Disables custom order tables (HPOS) and posts to authoritative if HPOS and post tables are in sync.
      *
@@ -299,10 +265,8 @@ class CLIRunner
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
     public function disable($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When HPOS is enabled, this command lets you remove redundant data from the postmeta table for migrated orders.
      *
@@ -341,13 +305,9 @@ class CLIRunner
      * @param array $assoc_args Associative arguments (options) passed to the command.
      * @return void
      */
-    public function cleanup_post_data(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function cleanup_post_data(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Displays a summary of HPOS situation on this site.
      *
@@ -356,13 +316,9 @@ class CLIRunner
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function status(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function status(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Displays differences for an order between the HPOS and post datastore.
      *
@@ -395,13 +351,9 @@ class CLIRunner
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function diff(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function diff(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Backfills an order from either the HPOS or the posts datastore.
      *
@@ -437,13 +389,9 @@ class CLIRunner
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function backfill(array $args = array (
-), array $assoc_args = array (
-))
-    {
-        // stub
-    }
-
+    public function backfill(array $args = array(), array $assoc_args = array())
+{
+}
     /**
      * Show the list of WooCommerce-aware plugins known to be compatible, incompatible or without compatibility declaration for HPOS. Note that inactive plugins will always be listed in the "uncertain" list.
      *
@@ -458,13 +406,9 @@ class CLIRunner
      * @param array $args       Positional arguments passed to the command.
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
-    public function compatibility_info(array $args = array (
-), array $assoc_args = array (
-)): void
-    {
-        // stub
-    }
-
+    public function compatibility_info(array $args = array(), array $assoc_args = array()): void
+{
+}
     /**
      * Get the printable names for a set of plugins given their file names.
      *
@@ -473,50 +417,40 @@ class CLIRunner
      * @return array A sorted array of plugin names or file names.
      */
     private function get_printable_plugin_names(array $plugins, bool $display_filenames): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print a list of plugin names.
      *
      * @param array $plugins The names to print.
      */
     private function print_plugin_names(array $plugins): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show a log message using the WP_CLI text colorization feature.
      *
      * @param string $text Text to show.
      */
     private function log(string $text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enables compatibility mode, which keeps the HPOS and posts datastore in sync.
      *
      * @since 9.1.0
      */
     public function enable_compat_mode(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Disables compatibility mode, which keeps the HPOS and posts datastore in sync.
      *
      * @since 9.1.0
      */
     public function disable_compat_mode(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Toggles compatibility mode on or off.
      *
@@ -525,8 +459,6 @@ class CLIRunner
      * @param bool $enabled TRUE to enable compatibility mode, FALSE to disable.
      */
     private function toggle_compat_mode(bool $enabled): void
-    {
-        // stub
-    }
-
+{
+}
 }

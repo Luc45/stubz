@@ -8,9 +8,7 @@
  */
 function wc_lostpassword_url($default_url = '')
 {
-    // stub
 }
-
 /**
  * Get the link to the edit account details page.
  *
@@ -18,9 +16,7 @@ function wc_lostpassword_url($default_url = '')
  */
 function wc_customer_edit_account_url()
 {
-    // stub
 }
-
 /**
  * Get the edit address slug translation.
  *
@@ -31,9 +27,7 @@ function wc_customer_edit_account_url()
  */
 function wc_edit_address_i18n($id, $flip = false)
 {
-    // stub
 }
-
 /**
  * Get My Account menu items.
  *
@@ -42,9 +36,7 @@ function wc_edit_address_i18n($id, $flip = false)
  */
 function wc_get_account_menu_items()
 {
-    // stub
 }
-
 /**
  * Find current item in account menu.
  *
@@ -54,9 +46,7 @@ function wc_get_account_menu_items()
  */
 function wc_is_current_account_menu_item($endpoint)
 {
-    // stub
 }
-
 /**
  * Get account menu item classes.
  *
@@ -66,9 +56,7 @@ function wc_is_current_account_menu_item($endpoint)
  */
 function wc_get_account_menu_item_classes($endpoint)
 {
-    // stub
 }
-
 /**
  * Get account endpoint URL.
  *
@@ -78,9 +66,7 @@ function wc_get_account_menu_item_classes($endpoint)
  */
 function wc_get_account_endpoint_url($endpoint)
 {
-    // stub
 }
-
 /**
  * Get My Account > Orders columns.
  *
@@ -89,9 +75,7 @@ function wc_get_account_endpoint_url($endpoint)
  */
 function wc_get_account_orders_columns()
 {
-    // stub
 }
-
 /**
  * Get My Account > Downloads columns.
  *
@@ -100,9 +84,7 @@ function wc_get_account_orders_columns()
  */
 function wc_get_account_downloads_columns()
 {
-    // stub
 }
-
 /**
  * Get My Account > Payment methods columns.
  *
@@ -111,9 +93,7 @@ function wc_get_account_downloads_columns()
  */
 function wc_get_account_payment_methods_columns()
 {
-    // stub
 }
-
 /**
  * Get My Account > Payment methods types
  *
@@ -122,9 +102,7 @@ function wc_get_account_payment_methods_columns()
  */
 function wc_get_account_payment_methods_types()
 {
-    // stub
 }
-
 /**
  * Get account orders actions.
  *
@@ -134,9 +112,7 @@ function wc_get_account_payment_methods_types()
  */
 function wc_get_account_orders_actions($order)
 {
-    // stub
 }
-
 /**
  * Get account formatted address.
  *
@@ -148,9 +124,7 @@ function wc_get_account_orders_actions($order)
  */
 function wc_get_account_formatted_address($address_type = 'billing', $customer_id = 0)
 {
-    // stub
 }
-
 /**
  * Returns an array of a user's saved payments list for output on the account tab.
  *
@@ -161,9 +135,7 @@ function wc_get_account_formatted_address($address_type = 'billing', $customer_i
  */
 function wc_get_account_saved_payment_methods_list($list, $customer_id)
 {
-    // stub
 }
-
 /**
  * Controls the output for credit cards on the my account page.
  *
@@ -174,9 +146,7 @@ function wc_get_account_saved_payment_methods_list($list, $customer_id)
  */
 function wc_get_account_saved_payment_methods_list_item_cc($item, $payment_token)
 {
-    // stub
 }
-
 /**
  * Controls the output for eChecks on the my account page.
  *
@@ -187,5 +157,4 @@ function wc_get_account_saved_payment_methods_list_item_cc($item, $payment_token
  */
 function wc_get_account_saved_payment_methods_list_item_echeck($item, $payment_token)
 {
-    // stub
 }

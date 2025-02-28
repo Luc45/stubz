@@ -15,58 +15,46 @@ class CartTemplate
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the title of the template.
      *
      * @return string
      */
     public function get_template_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the description of the template.
      *
      * @return string
      */
     public function get_template_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the default block template from Woo Blocks if no theme templates exist.
      */
     public function render_block_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the page object assigned to this template/page.
      *
      * @return \WP_Post|null Post object or null.
      */
     protected function get_placeholder_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * True when viewing the cart page or cart endpoint.
      *
      * @return boolean
      */
     protected function is_active_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When the page should be displaying the template, add it to the hierarchy.
      *
@@ -77,8 +65,6 @@ class CartTemplate
      * @param array $templates Templates that match the pages_template_hierarchy.
      */
     public function page_template_hierarchy($templates)
-    {
-        // stub
-    }
-
+{
+}
 }

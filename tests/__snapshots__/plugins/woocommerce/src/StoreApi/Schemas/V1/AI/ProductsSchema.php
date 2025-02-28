@@ -24,10 +24,8 @@ class ProductsSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Products response.
      *
@@ -36,8 +34,6 @@ class ProductsSchema
      * @return array
      */
     public function get_item_response($item)
-    {
-        // stub
-    }
-
+{
+}
 }

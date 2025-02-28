@@ -28,10 +28,8 @@ class ProductSummary
      * @return array
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Overwrite parent method to prevent script registration.
      *
@@ -39,18 +37,14 @@ class ProductSummary
      * phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product description depends on config.
      *
@@ -59,10 +53,8 @@ class ProductSummary
      * @return string
      */
     private function get_source($product, $show_description_if_empty)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create anchor element based on input.
      *
@@ -71,10 +63,8 @@ class ProductSummary
      * @return string
      */
     private function create_anchor($product, $link_text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get first paragraph from some HTML text, or return the whole string.
      *
@@ -82,10 +72,8 @@ class ProductSummary
      * @return string First paragraph found in string.
      */
     private function get_first_paragraph($source)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count words, characters (excluding spaces), or characters (including spaces).
      *
@@ -94,10 +82,8 @@ class ProductSummary
      * @return int Count of specified type.
      */
     private function count_text($text, $count_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trim characters to a specified length.
      *
@@ -107,10 +93,8 @@ class ProductSummary
      * @return string Trimmed text.
      */
     private function trim_characters($text, $max_length, $count_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the summary text from a string of text. It's not ideal
      * but allows keeping the editor and frontend consistent.
@@ -127,10 +111,8 @@ class ProductSummary
      * @return string Generated summary.
      */
     private function generate_summary($source, $max_length)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -140,8 +122,6 @@ class ProductSummary
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

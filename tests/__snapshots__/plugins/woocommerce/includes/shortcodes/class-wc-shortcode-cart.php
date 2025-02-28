@@ -11,18 +11,14 @@ class WC_Shortcode_Cart
      * @throws Exception When some data is invalid.
      */
     public static function calculate_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the cart shortcode.
      *
      * @param array $atts Shortcode attributes.
      */
     public static function output($atts)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -28,20 +28,16 @@ class LegacyProxy
      * @throws \Exception The requested class has a namespace starting with ' Automattic\WooCommerce', or there was an error creating an instance of the class.
      */
     public function get_instance_of(string $class_name, ...$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an instance of a class implementing WC_Queue_Interface.
      *
      * @return \WC_Queue_Interface The instance.
      */
     private function get_instance_of_wc_queue_interface()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Call a user function. This should be used to execute any non-idempotent function, especially
      * those in the `includes` directory or provided by WordPress.
@@ -52,10 +48,8 @@ class LegacyProxy
      * @return mixed The result from the function.
      */
     public function call_function($function_name, ...$parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Call a static method in a class. This should be used to execute any non-idempotent method in classes
      * from the `includes` directory.
@@ -67,10 +61,8 @@ class LegacyProxy
      * @return mixed The result from the method.
      */
     public function call_static($class_name, $method_name, ...$parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of a global.
      *
@@ -78,10 +70,8 @@ class LegacyProxy
      * @return mixed The value of the global.
      */
     public function get_global(string $global_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Terminates execution of the script.
      *
@@ -89,8 +79,6 @@ class LegacyProxy
      * @return void
      */
     public function exit($status = '')
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -12,8 +12,7 @@ class WC_Product_Variable_Data_Store_CPT
      *
      * @var array
      */
-    protected $prices_array = array (
-);
+    protected $prices_array = array();
 
     /**
      * Read attributes from post meta.
@@ -21,10 +20,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @param WC_Product $product Product object.
      */
     protected function read_attributes(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read product data.
      *
@@ -33,10 +30,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     protected function read_product_data(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads variation child IDs.
      *
@@ -46,10 +41,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return array
      */
     public function read_children(&$product, $force_read = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads an array of attributes used for variations, as well as their possible values.
      *
@@ -58,10 +51,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return array
      */
     public function read_variation_attributes(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of all sale and regular prices from all variations. This is used for example when displaying the price range at variable product level or seeing if the variable product is on sale.
      *
@@ -75,10 +66,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since  3.0.0
      */
     public function read_price_data(&$product, $for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create unique cache key based on the tax location (affects displayed/cached prices), product version and active price filters.
      * DEVELOPERS should filter this hash if offering conditional pricing to keep it unique.
@@ -90,10 +79,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return string
      */
     protected function get_price_hash(&$product, $for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have a weight set?
      *
@@ -103,10 +90,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return boolean
      */
     public function child_has_weight($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have dimensions set?
      *
@@ -116,10 +101,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return boolean
      */
     public function child_has_dimensions($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is a child in stock?
      *
@@ -129,10 +112,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return boolean
      */
     public function child_is_in_stock($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have a stock status?
      *
@@ -143,10 +124,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return boolean
      */
     public function child_has_stock_status($product, $status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Syncs all variation names if the parent name is changed.
      *
@@ -157,10 +136,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     public function sync_variation_names(&$product, $previous_name = '', $new_name = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stock managed at the parent level - update children being managed by this product.
      * This sync function syncs downwards (from parent to child) when the variable product is saved.
@@ -170,10 +147,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     public function sync_managed_variation_stock_status(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync variable product prices with children.
      *
@@ -182,10 +157,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     public function sync_price(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync variable product stock status with children.
      * Change does not persist unless saved by caller.
@@ -195,10 +168,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     public function sync_stock_status(&$product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete variations of a product.
      *
@@ -208,20 +179,16 @@ class WC_Product_Variable_Data_Store_CPT
      * @since 3.0.0
      */
     public function delete_variations($product_id, $force_delete = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Untrash variations.
      *
      * @param int $product_id Product ID.
      */
     public function untrash_variations($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the children data by checking the structure and type of the data.
      *
@@ -230,10 +197,8 @@ class WC_Product_Variable_Data_Store_CPT
      * @return bool True if valid, false otherwise.
      */
     protected function validate_children_data($children, $current_version)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the prices data by checking the structure and type of the data.
      *
@@ -242,8 +207,6 @@ class WC_Product_Variable_Data_Store_CPT
      * @return bool True if valid, false otherwise.
      */
     protected function validate_prices_data($prices_array, $current_version)
-    {
-        // stub
-    }
-
+{
+}
 }

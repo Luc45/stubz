@@ -16,7 +16,6 @@ interface WC_Order_Data_Store_Interface
      * @return float
      */
     public function get_total_refunded($order);
-
     /**
      * Get the total tax refunded.
      *
@@ -24,7 +23,6 @@ interface WC_Order_Data_Store_Interface
      * @return float
      */
     public function get_total_tax_refunded($order);
-
     /**
      * Get the total shipping refunded.
      *
@@ -32,7 +30,6 @@ interface WC_Order_Data_Store_Interface
      * @return float
      */
     public function get_total_shipping_refunded($order);
-
     /**
      * Finds an Order ID based on an order key.
      *
@@ -40,7 +37,6 @@ interface WC_Order_Data_Store_Interface
      * @return int The ID of an order, or 0 if the order could not be found.
      */
     public function get_order_id_by_order_key($order_key);
-
     /**
      * Return count of orders with a specific status.
      *
@@ -48,7 +44,6 @@ interface WC_Order_Data_Store_Interface
      * @return int
      */
     public function get_order_count($status);
-
     /**
      * Get all orders matching the passed in args.
      *
@@ -56,9 +51,7 @@ interface WC_Order_Data_Store_Interface
      * @param array $args Arguments.
      * @return array of orders
      */
-    public function get_orders($args = array (
-));
-
+    public function get_orders($args = array());
     /**
      * Get unpaid orders after a certain date,
      *
@@ -66,7 +59,6 @@ interface WC_Order_Data_Store_Interface
      * @return array
      */
     public function get_unpaid_orders($date);
-
     /**
      * Search order data for a term and return ids.
      *
@@ -74,7 +66,6 @@ interface WC_Order_Data_Store_Interface
      * @return array of ids
      */
     public function search_orders($term);
-
     /**
      * Gets information about whether permissions were generated yet.
      *
@@ -82,7 +73,6 @@ interface WC_Order_Data_Store_Interface
      * @return bool
      */
     public function get_download_permissions_granted($order);
-
     /**
      * Stores information about whether permissions were generated yet.
      *
@@ -90,7 +80,6 @@ interface WC_Order_Data_Store_Interface
      * @param bool     $set If should set.
      */
     public function set_download_permissions_granted($order, $set);
-
     /**
      * Gets information about whether sales were recorded.
      *
@@ -98,7 +87,6 @@ interface WC_Order_Data_Store_Interface
      * @return bool
      */
     public function get_recorded_sales($order);
-
     /**
      * Stores information about whether sales were recorded.
      *
@@ -106,7 +94,6 @@ interface WC_Order_Data_Store_Interface
      * @param bool     $set If should set.
      */
     public function set_recorded_sales($order, $set);
-
     /**
      * Gets information about whether coupon counts were updated.
      *
@@ -114,7 +101,6 @@ interface WC_Order_Data_Store_Interface
      * @return bool
      */
     public function get_recorded_coupon_usage_counts($order);
-
     /**
      * Stores information about whether coupon counts were updated.
      *
@@ -122,7 +108,6 @@ interface WC_Order_Data_Store_Interface
      * @param bool     $set If should set.
      */
     public function set_recorded_coupon_usage_counts($order, $set);
-
     /**
      * Get the order type based on Order ID.
      *
@@ -130,5 +115,4 @@ interface WC_Order_Data_Store_Interface
      * @return string
      */
     public function get_order_type($order_id);
-
 }

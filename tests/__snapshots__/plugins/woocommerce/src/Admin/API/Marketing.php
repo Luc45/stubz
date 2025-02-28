@@ -28,10 +28,8 @@ class Marketing
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to install plugins.
      *
@@ -39,10 +37,8 @@ class Marketing
      * @return WP_Error|boolean
      */
     public function get_recommended_plugins_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return installed marketing extensions data.
      *
@@ -51,10 +47,8 @@ class Marketing
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_recommended_plugins($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return installed marketing extensions data.
      *
@@ -63,10 +57,8 @@ class Marketing
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_knowledge_base_posts($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return misc recommendations.
      *
@@ -77,8 +69,6 @@ class Marketing
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_misc_recommendations($request)
-    {
-        // stub
-    }
-
+{
+}
 }

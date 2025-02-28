@@ -46,10 +46,8 @@ class WC_CLI_Runner
      * Register's all endpoints as commands once WP and WC have all loaded.
      */
     public static function after_wp_load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates command information and tells WP CLI about all
      * commands available from a route.
@@ -59,10 +57,7 @@ class WC_CLI_Runner
      * @param array               $route_data Command data.
      * @param array               $command_args WP-CLI command arguments.
      */
-    private static function register_route_commands($rest_command, $route, $route_data, $command_args = array (
-))
-    {
-        // stub
-    }
-
+    private static function register_route_commands($rest_command, $route, $route_data, $command_args = array())
+{
+}
 }

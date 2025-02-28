@@ -30,10 +30,8 @@ class WC_Order_Item_Tax_Data_Store
      * @throws Exception If invalid order item.
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $id will be set.
@@ -42,8 +40,6 @@ class WC_Order_Item_Tax_Data_Store
      * @param WC_Order_Item_Tax $item Tax order item object.
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
 }

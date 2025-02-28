@@ -25,10 +25,8 @@ class LogHandlerFileV2
      * LogHandlerFileV2 class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle a log entry.
      *
@@ -46,10 +44,8 @@ class LogHandlerFileV2
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds a log entry text from level, timestamp, and message.
      *
@@ -61,20 +57,16 @@ class LogHandlerFileV2
      * @return string Formatted log entry.
      */
     protected static function format_entry($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Figures out a source string to use for a log entry based on where the log method was called from.
      *
      * @return string
      */
     protected function determine_source(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete all logs from a specific source.
      *
@@ -83,10 +75,8 @@ class LogHandlerFileV2
      * @return int The number of files that were deleted.
      */
     public function clear(string $source): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete all logs older than a specified timestamp.
      *
@@ -95,8 +85,6 @@ class LogHandlerFileV2
      * @return int The number of files that were deleted.
      */
     public function delete_logs_before_timestamp(int $timestamp = 0): int
-    {
-        // stub
-    }
-
+{
+}
 }

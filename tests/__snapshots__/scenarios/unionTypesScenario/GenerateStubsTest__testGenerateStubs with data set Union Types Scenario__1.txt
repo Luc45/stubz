@@ -8,13 +8,9 @@ namespace UnionTypesScenario;
 class Formatter
 {
     public function formatString(int|string $value): string
-    {
-        // stub
-    }
-
+{
+}
     public function combineValues(int|string|float $a, int|string|float $b): string
-    {
-        // stub
-    }
-
+{
+}
 }

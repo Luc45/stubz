@@ -10,8 +10,7 @@ class WC_Payment_Gateways
      *
      * @var array
      */
-    public $payment_gateways = array (
-);
+    public $payment_gateways = array();
 
     /**
      * The single instance of the class.
@@ -30,46 +29,36 @@ class WC_Payment_Gateways
      * @return WC_Payment_Gateways Main instance
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cloning is forbidden.
      *
      * @since 2.1
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserializing instances of this class is forbidden.
      *
      * @since 2.1
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize payment gateways.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load gateways and hook in functions.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into payment gateway settings changes.
      *
@@ -79,10 +68,8 @@ class WC_Payment_Gateways
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function on_payment_gateways_initialized(WC_Payment_Gateways $wc_payment_gateways)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for when a gateway settings option was added or updated.
      *
@@ -93,10 +80,8 @@ class WC_Payment_Gateways
      * @since 8.5.0
      */
     private function payment_gateway_settings_option_changed($gateway, $value, $option, $old_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Email the site admin when a payment gateway has been enabled.
      *
@@ -105,10 +90,8 @@ class WC_Payment_Gateways
      * @since 8.5.0
      */
     private function notify_admin_payment_gateway_enabled($gateway)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines from changes in settings if a gateway was enabled.
      *
@@ -117,20 +100,16 @@ class WC_Payment_Gateways
      * @return bool Whether the gateway was enabled or not.
      */
     private function was_gateway_enabled($value, $old_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get gateways.
      *
      * @return array
      */
     public function payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of registered gateway ids
      *
@@ -138,20 +117,16 @@ class WC_Payment_Gateways
      * @return array of strings
      */
     public function get_payment_gateway_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get available gateways.
      *
      * @return array
      */
     public function get_available_payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for array filter. Returns true if gateway is of correct type.
      *
@@ -160,28 +135,22 @@ class WC_Payment_Gateways
      * @return bool
      */
     protected function filter_valid_gateway_class($gateway)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the current, active gateway.
      *
      * @param array $gateways Available payment gateways.
      */
     public function set_current_gateway($gateways)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save options in admin.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines if PayPal Standard should be loaded.
      *
@@ -189,8 +158,6 @@ class WC_Payment_Gateways
      * @return bool Whether PayPal Standard should be loaded or not.
      */
     protected function should_load_paypal_standard()
-    {
-        // stub
-    }
-
+{
+}
 }

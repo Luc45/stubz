@@ -33,18 +33,14 @@ class WC_REST_Coupons_V1_Controller
      * Coupons actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the routes for coupons.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query args.
      *
@@ -53,10 +49,8 @@ class WC_REST_Coupons_V1_Controller
      * @return array
      */
     public function query_args($args, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single coupon output for response.
      *
@@ -65,20 +59,16 @@ class WC_REST_Coupons_V1_Controller
      * @return WP_REST_Response $data
      */
     public function prepare_item_for_response($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only return writable props from schema.
      * @param  array $schema
      * @return bool
      */
     protected function filter_writable_props($schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single coupon for create or update.
      *
@@ -86,10 +76,8 @@ class WC_REST_Coupons_V1_Controller
      * @return WP_Error|stdClass $data Post object.
      */
     protected function prepare_item_for_database($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single item.
      *
@@ -97,10 +85,8 @@ class WC_REST_Coupons_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single coupon.
      *
@@ -108,10 +94,8 @@ class WC_REST_Coupons_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves a coupon to the database.
      *
@@ -120,28 +104,22 @@ class WC_REST_Coupons_V1_Controller
      * @return WP_Error|int
      */
     protected function save_coupon($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Coupon's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

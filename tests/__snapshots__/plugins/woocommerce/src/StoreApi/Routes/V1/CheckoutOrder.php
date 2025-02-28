@@ -24,30 +24,24 @@ class CheckoutOrder
      * @return string
      */
     public function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path of this rest route.
      *
      * @return string
      */
     public static function get_path_regex()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method arguments for this REST route.
      *
      * @return array An array of endpoints.
      */
     public function get_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an order.
      *
@@ -64,10 +58,8 @@ class CheckoutOrder
      * @return \WP_REST_Response
      */
     protected function get_route_post_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the current customer session using data from the request (e.g. address data).
      *
@@ -76,10 +68,8 @@ class CheckoutOrder
      * @param \WP_REST_Request $request Full details about the request.
      */
     private function update_billing_address(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the chosen payment method from the request.
      *
@@ -88,10 +78,8 @@ class CheckoutOrder
      * @return \WC_Payment_Gateway|null
      */
     private function get_request_payment_method(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the order with user details (e.g. address).
      *
@@ -99,8 +87,6 @@ class CheckoutOrder
      * @param \WP_REST_Request $request Request object.
      */
     private function process_customer(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
 }

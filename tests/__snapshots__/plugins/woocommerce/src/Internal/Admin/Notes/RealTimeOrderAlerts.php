@@ -15,8 +15,6 @@ class RealTimeOrderAlerts
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

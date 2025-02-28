@@ -11,10 +11,8 @@ class WC_Meta_Box_Order_Downloads
      * @param WC_Order|WP_Post $post Post or order object.
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data.
      *
@@ -22,8 +20,6 @@ class WC_Meta_Box_Order_Downloads
      * @param WP_Post $post Post object.
      */
     public static function save($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
 }

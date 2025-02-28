@@ -24,20 +24,16 @@ class WC_REST_Taxes_Controller
      * @return array
      */
     protected function add_tax_rate_locales($data, $tax)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the taxes schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single tax.
      *
@@ -45,10 +41,8 @@ class WC_REST_Taxes_Controller
      * @return WP_Error|WP_REST_Response The response, or an error.
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single tax.
      *
@@ -56,10 +50,8 @@ class WC_REST_Taxes_Controller
      * @return WP_Error|WP_REST_Response The response, or an error.
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert array "cities" and "postcodes" parameters
      * into semicolon-separated strings "city" and "postcode".
@@ -67,8 +59,6 @@ class WC_REST_Taxes_Controller
      * @param WP_REST_Request $request The request to adjust.
      */
     private function adjust_cities_and_postcodes(&$request)
-    {
-        // stub
-    }
-
+{
+}
 }

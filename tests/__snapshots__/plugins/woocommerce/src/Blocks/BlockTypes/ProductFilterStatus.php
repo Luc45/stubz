@@ -23,10 +23,8 @@ final class ProductFilterStatus
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the query param keys.
      *
@@ -36,10 +34,8 @@ final class ProductFilterStatus
      * @return array Active filters param keys.
      */
     public function get_filter_query_param_keys($filter_param_keys, $url_param_keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the active filter items.
      *
@@ -48,10 +44,8 @@ final class ProductFilterStatus
      * @return array Active filters items.
      */
     public function prepare_selected_filters($items, $params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -59,12 +53,9 @@ final class ProductFilterStatus
      *                               Note, this will be empty in the editor context when the block is
      *                               not in the post content on editor load.
      */
-    protected function enqueue_data(array $stock_statuses = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $stock_statuses = array())
+{
+}
     /**
      * Include and render the block.
      *
@@ -74,18 +65,14 @@ final class ProductFilterStatus
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the status filter data for current block.
      *
      * @param WP_Block $block Block instance.
      */
     private function get_stock_status_counts($block)
-    {
-        // stub
-    }
-
+{
+}
 }

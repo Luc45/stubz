@@ -42,10 +42,8 @@ class ActionMigrator
      * @param LogMigrator            $log_migrator Log migrator object.
      */
     public function __construct(ActionScheduler_Store $source_store, ActionScheduler_Store $destination_store, Action_Scheduler\Migration\LogMigrator $log_migrator)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate an action.
      *
@@ -55,8 +53,6 @@ class ActionMigrator
      * @throws \RuntimeException When unable to delete action from the source store.
      */
     public function migrate($source_action_id)
-    {
-        // stub
-    }
-
+{
+}
 }

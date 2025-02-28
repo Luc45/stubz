@@ -13,21 +13,18 @@ interface WC_Object_Data_Store_Interface
      * @param WC_Data $data Data object.
      */
     public function create(&$data);
-
     /**
      * Method to read a record. Creates a new WC_Data based object.
      *
      * @param WC_Data $data Data object.
      */
     public function read(&$data);
-
     /**
      * Updates a record in the database.
      *
      * @param WC_Data $data Data object.
      */
     public function update(&$data);
-
     /**
      * Deletes a record from the database.
      *
@@ -35,9 +32,7 @@ interface WC_Object_Data_Store_Interface
      * @param  array   $args Array of args to pass to the delete method.
      * @return bool result
      */
-    public function delete(&$data, $args = array (
-));
-
+    public function delete(&$data, $args = array());
     /**
      * Returns an array of meta for an object.
      *
@@ -45,7 +40,6 @@ interface WC_Object_Data_Store_Interface
      * @return array
      */
     public function read_meta(&$data);
-
     /**
      * Deletes meta based on meta ID.
      *
@@ -54,7 +48,6 @@ interface WC_Object_Data_Store_Interface
      * @return array
      */
     public function delete_meta(&$data, $meta);
-
     /**
      * Add new piece of meta.
      *
@@ -63,7 +56,6 @@ interface WC_Object_Data_Store_Interface
      * @return int meta ID
      */
     public function add_meta(&$data, $meta);
-
     /**
      * Update meta.
      *
@@ -71,5 +63,4 @@ interface WC_Object_Data_Store_Interface
      * @param  object  $meta Meta object (containing ->id, ->key and ->value).
      */
     public function update_meta(&$data, $meta);
-
 }

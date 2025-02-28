@@ -20,8 +20,6 @@ class FilterWrapper
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

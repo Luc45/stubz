@@ -33,10 +33,8 @@ class WC_REST_Product_Variations_V2_Controller
      * Register the routes for products.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get object.
      *
@@ -45,10 +43,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return WC_Data|null
      */
     protected function get_object($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks that a variation belongs to the specified parent product.
      *
@@ -59,10 +55,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @since 9.2.0
      */
     protected function check_variation_parent(int $variation_id, int $parent_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read an item.
      *
@@ -70,10 +64,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update an item.
      *
@@ -81,10 +73,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete an item.
      *
@@ -92,10 +82,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single variation output for response.
      *
@@ -105,10 +93,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -117,10 +103,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single variation for create or update.
      *
@@ -129,20 +113,16 @@ class WC_REST_Product_Variations_V2_Controller
      * @return WP_Error|WC_Data
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear caches here so in sync with any new variations.
      *
      * @param WC_Data $object Object data.
      */
     public function clear_transients($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a variation.
      *
@@ -151,10 +131,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return bool|WP_Error|WP_REST_Response
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk create, update and delete items.
      *
@@ -163,10 +141,8 @@ class WC_REST_Product_Variations_V2_Controller
      * @return array Of WP_Error or WP_REST_Response.
      */
     public function batch_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -175,18 +151,14 @@ class WC_REST_Product_Variations_V2_Controller
      * @return array                   Links for the given post.
      */
     protected function prepare_links($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Variation's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

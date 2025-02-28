@@ -11,10 +11,8 @@ class WC_Notes_Run_Db_Update
      * Attach hooks.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current notice id from the database.
      *
@@ -23,18 +21,14 @@ class WC_Notes_Run_Db_Update
      * @return int|void Note id or null in case no note was found.
      */
     private static function get_current_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set this notice to an actioned one, so that it's no longer displayed.
      */
     public static function set_notice_actioned()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether the note is up to date for a fresh display.
      *
@@ -48,10 +42,8 @@ class WC_Notes_Run_Db_Update
      * @return bool
      */
     private static function note_up_to_date($note, $update_url, $current_actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create and set up the first (out of 3) 'Database update needed' notice and store it in the database.
      *
@@ -61,10 +53,8 @@ class WC_Notes_Run_Db_Update
      * @return int Created/Updated note id
      */
     private static function update_needed_notice($note_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the existing note with $note_id with information about the db upgrade being in progress.
      *
@@ -73,10 +63,8 @@ class WC_Notes_Run_Db_Update
      * @param int $note_id Note id to update.
      */
     private static function update_in_progress_notice($note_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the existing note with $note_id with information that db upgrade is done.
      *
@@ -85,10 +73,8 @@ class WC_Notes_Run_Db_Update
      * @param int $note_id Note id to update.
      */
     private static function update_done_notice($note_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the correct content of the db update note to be displayed by WC Admin.
      *
@@ -101,8 +87,6 @@ class WC_Notes_Run_Db_Update
      * The notice should also be hidden if the db does not need an update and the notice does not exist.
      */
     public static function show_reminder()
-    {
-        // stub
-    }
-
+{
+}
 }

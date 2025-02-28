@@ -14,13 +14,9 @@ class UserProfile
     public bool $isActive;
 
     public function __construct(string $username, int $age, bool $isActive = true)
-    {
-        // stub
-    }
-
+{
+}
     public function getProfile(): string
-    {
-        // stub
-    }
-
+{
+}
 }

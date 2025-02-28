@@ -14,13 +14,9 @@ class Product
     private int $stock;
 
     public function __construct(string $name, float $price, int $stock = 0)
-    {
-        // stub
-    }
-
+{
+}
     public function getInfo(): string
-    {
-        // stub
-    }
-
+{
+}
 }

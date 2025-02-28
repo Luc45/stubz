@@ -28,8 +28,7 @@ class MiniCart
      *
      * @var string[]
      */
-    protected $scripts_to_lazy_load = array (
-);
+    protected $scripts_to_lazy_load = array();
 
     /**
      *  Inc Tax label.
@@ -68,10 +67,8 @@ class MiniCart
      * @param IntegrationRegistry $integration_registry Instance of the integration registry.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\Api $asset_api, Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry $asset_data_registry, Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry $integration_registry)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize this block type.
      *
@@ -79,10 +76,8 @@ class MiniCart
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for the Block Hooks API to modify the attributes of the hooked block.
      *
@@ -95,10 +90,8 @@ class MiniCart
      * @return array|null
      */
     public function modify_hooked_block_attributes($parsed_hooked_block, $hooked_block_type, $relative_position, $parsed_anchor_block, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor script handle for this block type.
      *
@@ -106,10 +99,8 @@ class MiniCart
      * @return array|string;
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -118,20 +109,16 @@ class MiniCart
      * @return array|string
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -139,20 +126,15 @@ class MiniCart
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Prints the variable containing information about the scripts to lazy load.
      */
     public function print_lazy_load_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the script data given its handle.
      *
@@ -161,20 +143,16 @@ class MiniCart
      * @return \_WP_Dependency|null Object containing the script data if found, or null.
      */
     protected function get_script_from_handle($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recursively appends a scripts and its dependencies into the scripts_to_lazy_load array.
      *
      * @param \_WP_Dependency $script Object containing script data.
      */
     protected function append_script_and_deps_src($script)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the markup for the cart price.
      *
@@ -183,10 +161,8 @@ class MiniCart
      * @return string
      */
     protected function get_cart_price_markup($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the markup for render the tax label.
      *
@@ -195,10 +171,8 @@ class MiniCart
      * @return string
      */
     protected function get_include_tax_label_markup($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Append frontend scripts when rendering the Mini-Cart block.
      *
@@ -208,10 +182,8 @@ class MiniCart
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the markup for the Mini-Cart block.
      *
@@ -220,20 +192,16 @@ class MiniCart
      * @return string The HTML markup.
      */
     protected function get_markup($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the main instance of WC_Cart class.
      *
      * @return \WC_Cart CartController class instance.
      */
     protected function get_cart_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array with data for handle the tax label.
      * the entire logic of this function is was taken from:
@@ -242,26 +210,20 @@ class MiniCart
      * @return array;
      */
     protected function get_tax_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare translations for inner blocks and dependencies.
      */
     protected function get_inner_blocks_translations()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block pattern for Empty Cart Message to make it translatable.
      */
     public function register_empty_cart_message_block_pattern()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the Mini-Cart should be rendered or not.
      *
@@ -270,8 +232,6 @@ class MiniCart
      * @return bool
      */
     public function should_not_render_mini_cart(array $attributes)
-    {
-        // stub
-    }
-
+{
+}
 }

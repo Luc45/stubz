@@ -16,10 +16,8 @@ class WPCacheEngine
      * @return array|object|null The cached object, or null if there's no object cached under the passed key.
      */
     public function get_cached_object(string $key, string $group = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves a set of objects cached under the given keys.
      *
@@ -29,10 +27,8 @@ class WPCacheEngine
      * @return array The cached array of objects keyed by the given keys, values will be null for any non-cached keys.
      */
     public function get_cached_objects(array $keys, string $group = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Caches an object under a given key, and with a given expiration.
      *
@@ -44,10 +40,8 @@ class WPCacheEngine
      * @return bool True if the object is cached successfully, false otherwise.
      */
     public function cache_object(string $key, $object, int $expiration, string $group = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Caches an object under a given key, and with a given expiration.
      *
@@ -59,10 +53,8 @@ class WPCacheEngine
      *                true on success, or false on failure
      */
     public function cache_objects(array $objects, int $expiration, string $group = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes a cached object from the cache.
      *
@@ -72,10 +64,8 @@ class WPCacheEngine
      * @return bool True if the object is removed from the cache successfully, false otherwise (because the object wasn't cached or for other reason).
      */
     public function delete_cached_object(string $key, string $group = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if an object is cached under a given key.
      *
@@ -85,10 +75,8 @@ class WPCacheEngine
      * @return bool True if there's an object cached under the given key, false otherwise.
      */
     public function is_cached(string $key, string $group = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes all cached objects under a given group.
      *
@@ -97,8 +85,6 @@ class WPCacheEngine
      * @return bool True if the group is deleted successfully, false otherwise.
      */
     public function delete_cache_group(string $group = ''): bool
-    {
-        // stub
-    }
-
+{
+}
 }

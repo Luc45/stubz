@@ -15,8 +15,6 @@ trait CogsAwareTrait
      * @return bool True if the feature is enabled.
      */
     protected function cogs_is_enabled(string|null $doing_it_wrong_function_name = null): bool
-    {
-        // stub
-    }
-
+{
+}
 }

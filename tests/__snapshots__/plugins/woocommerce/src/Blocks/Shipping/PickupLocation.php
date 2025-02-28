@@ -12,8 +12,7 @@ class PickupLocation
      *
      * @var array
      */
-    protected $pickup_locations = array (
-);
+    protected $pickup_locations = array();
 
     /**
      * Cost
@@ -26,18 +25,14 @@ class PickupLocation
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init function.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a given address is complete.
      *
@@ -45,21 +40,16 @@ class PickupLocation
      * @return bool
      */
     protected function has_valid_pickup_location($address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping.
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * See if the method is available.
      *
@@ -67,10 +57,8 @@ class PickupLocation
      * @return bool
      */
     public function is_available($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Translates meta data for the shipping method.
      *
@@ -80,18 +68,14 @@ class PickupLocation
      * @return string
      */
     public function translate_meta_data($label, $name, $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Admin options screen.
      *
      * See also WC_Shipping_Method::admin_options().
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
 }

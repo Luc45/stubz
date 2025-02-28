@@ -21,8 +21,7 @@ class Init
      *
      * @var array
      */
-    private $product_templates = array (
-);
+    private $product_templates = array();
 
     /**
      * Redirection controller.
@@ -35,10 +34,8 @@ class Init
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds the product template ID to the product if it doesn't exist.
      *
@@ -46,34 +43,26 @@ class Init
      * @param WC_Product       $product The product.
      */
     public function possibly_add_template_id($response, $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts needed for the product form block editor.
      */
     public function enqueue_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue styles needed for the rich text editor.
      */
     public function enqueue_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dequeue conflicting styles.
      */
     public function dequeue_conflicting_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the edit product links when the new experience is enabled.
      *
@@ -82,10 +71,8 @@ class Init
      * @return string
      */
     public function update_edit_product_link($link, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enables variation post type in REST API.
      *
@@ -93,10 +80,8 @@ class Init
      * @return array Array of post type arguments.
      */
     public function enable_rest_api_for_product_variation($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds fields so that we can store user preferences for the variations block.
      *
@@ -104,36 +89,28 @@ class Init
      * @return array
      */
     public function add_user_data_fields($user_data_fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the current screen to the block editor if a wc-admin page.
      */
     public function set_current_screen_to_block_editor_if_wc_admin()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product editor settings.
      */
     private function get_product_editor_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default product templates.
      *
      * @return array The default templates.
      */
     private function get_default_product_templates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create default product template by custom product type if it does not have a
      * template associated yet.
@@ -142,34 +119,26 @@ class Init
      * @return array The new templates.
      */
     private function create_default_product_template_by_custom_product_type(array $templates)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register layout templates.
      */
     public function register_layout_templates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register product templates.
      */
     public function register_product_templates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register user metas.
      */
     public function register_user_metas()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers the metadata block attribute for all block types.
      * This is a fallback/temporary solution until
@@ -182,10 +151,8 @@ class Init
      * @return array $args
      */
     public function register_metadata_attribute($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filters woocommerce block types.
      *
@@ -193,8 +160,6 @@ class Init
      * @return array
      */
     public function get_block_types($block_types)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -19,10 +19,8 @@ class Count
      * @return number
      */
     public function transform($value, stdClass|null $arguments = null, $default_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Transformer arguments.
      *
@@ -31,8 +29,6 @@ class Count
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null)
-    {
-        // stub
-    }
-
+{
+}
 }

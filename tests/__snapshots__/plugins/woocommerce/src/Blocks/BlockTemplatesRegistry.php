@@ -14,17 +14,14 @@ class BlockTemplatesRegistry
      *
      * @var AbstractTemplate[]|AbstractTemplatePart[]
      */
-    private $templates = array (
-);
+    private $templates = array();
 
     /**
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the template matching the slug
      *
@@ -33,8 +30,6 @@ class BlockTemplatesRegistry
      * @return AbstractTemplate|AbstractTemplatePart|null
      */
     public function get_template($template_slug)
-    {
-        // stub
-    }
-
+{
+}
 }

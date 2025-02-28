@@ -28,10 +28,8 @@ class Controller
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maps query arguments from the REST request.
      *
@@ -39,10 +37,8 @@ class Controller
      * @return array
      */
     protected function prepare_reports_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query products.
      *
@@ -50,10 +46,8 @@ class Controller
      * @return array
      */
     protected function get_products($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all reports.
      *
@@ -61,10 +55,8 @@ class Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional search filters for products.
      *
@@ -74,10 +66,8 @@ class Controller
      * @return string
      */
     public static function add_wp_query_filter($where, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join posts meta tables when product search or low stock query is present.
      *
@@ -87,10 +77,8 @@ class Controller
      * @return string
      */
     public static function add_wp_query_join($join, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -99,10 +87,8 @@ class Controller
      * @return string
      */
     protected static function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Group by post ID to prevent duplicates.
      *
@@ -112,10 +98,8 @@ class Controller
      * @return string
      */
     public static function add_wp_query_group_by($groupby, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Custom orderby clauses using the lookup tables.
      *
@@ -125,10 +109,8 @@ class Controller
      * @return array
      */
     public static function add_wp_query_orderby($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report data item for serialization.
      *
@@ -137,10 +119,8 @@ class Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($product, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -148,40 +128,32 @@ class Controller
      * @return array
      */
     protected function prepare_links($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the column names for export.
      *
      * @return array Key value pair of Column ID => Label.
      */
     public function get_export_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the column values for export.
      *
@@ -189,8 +161,6 @@ class Controller
      * @return array Key value pair of Column ID => Row Value.
      */
     public function prepare_item_for_export($item)
-    {
-        // stub
-    }
-
+{
+}
 }

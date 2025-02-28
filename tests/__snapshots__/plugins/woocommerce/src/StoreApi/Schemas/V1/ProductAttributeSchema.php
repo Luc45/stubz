@@ -22,10 +22,8 @@ class ProductAttributeSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an attribute object into an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class ProductAttributeSchema
      * @return array
      */
     public function get_item_response($attribute)
-    {
-        // stub
-    }
-
+{
+}
 }

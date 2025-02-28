@@ -14,10 +14,8 @@ class EvaluateExtension
      * @return object The evaluated extension.
      */
     private static function evaluate($extension)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Evaluates the specs and returns the bundles with visible extensions.
      *
@@ -25,10 +23,7 @@ class EvaluateExtension
      * @param array $allowed_bundles Optional array of allowed bundles to be returned.
      * @return array The bundles and errors.
      */
-    public static function evaluate_bundles($specs, $allowed_bundles = array (
-))
-    {
-        // stub
-    }
-
+    public static function evaluate_bundles($specs, $allowed_bundles = array())
+{
+}
 }

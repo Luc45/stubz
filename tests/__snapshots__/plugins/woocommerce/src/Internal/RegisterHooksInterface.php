@@ -19,5 +19,4 @@ interface RegisterHooksInterface
      * @return void
      */
     public function register();
-
 }

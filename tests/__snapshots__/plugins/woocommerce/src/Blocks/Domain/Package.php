@@ -47,10 +47,8 @@ class Package
      * @param FeatureGating $deprecated     Deprecated Feature gating class.
      */
     public function __construct($version, $plugin_path, $deprecated = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the version of WooCommerce Blocks.
      *
@@ -62,29 +60,23 @@ class Package
      * @return string
      */
     public function get_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the version of WooCommerce Blocks stored in the database.
      *
      * @return string
      */
     public function get_version_stored_on_db()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the version of WooCommerce Blocks in the database.
      * This is useful during the first installation or after the upgrade process.
      */
     public function set_version_stored_on_db()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the path to the plugin directory.
      *
@@ -94,10 +86,8 @@ class Package
      * @return string
      */
     public function get_path($relative_path = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the url to the blocks plugin directory.
      *
@@ -107,18 +97,14 @@ class Package
      * @return string
      */
     public function get_url($relative_url = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an instance of the FeatureGating class.
      *
      * @return FeatureGating
      */
     public function feature()
-    {
-        // stub
-    }
-
+{
+}
 }

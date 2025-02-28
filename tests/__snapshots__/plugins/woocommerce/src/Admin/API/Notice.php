@@ -28,10 +28,8 @@ class Notice
      * Register the routes for admin notes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save notice dismiss information in user meta.
      *
@@ -39,18 +37,14 @@ class Notice
      * @return WP_REST_Response|WP_Error
      */
     public function dissmiss_notice($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check user has the necessary permissions to perform this action.
      *
      * @return bool
      */
     public function get_permission(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

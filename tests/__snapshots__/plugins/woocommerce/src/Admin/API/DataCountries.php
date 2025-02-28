@@ -23,18 +23,14 @@ class DataCountries
      * @since 3.5.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get country fields.
      *
      * @return array
      */
     public function get_locales()
-    {
-        // stub
-    }
-
+{
+}
 }

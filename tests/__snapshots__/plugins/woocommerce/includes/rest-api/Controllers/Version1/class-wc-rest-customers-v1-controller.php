@@ -26,10 +26,8 @@ class WC_REST_Customers_V1_Controller
      * Register the routes for customers.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read customers.
      *
@@ -37,20 +35,16 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns list of allowed roles for the REST API.
      *
      * @return array $roles Allowed roles to be updated via the REST API.
      */
     private function allowed_roles(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access create customers.
      *
@@ -59,10 +53,8 @@ class WC_REST_Customers_V1_Controller
      * @return bool|WP_Error
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a customer.
      *
@@ -70,10 +62,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access update a customer.
      *
@@ -82,10 +72,8 @@ class WC_REST_Customers_V1_Controller
      * @return bool|WP_Error
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access delete a customer.
      *
@@ -94,10 +82,8 @@ class WC_REST_Customers_V1_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -106,10 +92,8 @@ class WC_REST_Customers_V1_Controller
      * @return bool|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all customers.
      *
@@ -117,10 +101,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single customer.
      *
@@ -128,10 +110,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single customer.
      *
@@ -139,10 +119,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single user.
      *
@@ -150,10 +128,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single customer.
      *
@@ -161,10 +137,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single customer output for response.
      *
@@ -173,10 +147,8 @@ class WC_REST_Customers_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($user_data, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update customer meta fields.
      *
@@ -184,10 +156,8 @@ class WC_REST_Customers_V1_Controller
      * @param WP_REST_Request $request
      */
     protected function update_customer_meta_fields($customer, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -195,38 +165,30 @@ class WC_REST_Customers_V1_Controller
      * @return array Links for the given customer.
      */
     protected function prepare_links($customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Customer's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get role names.
      *
      * @return array
      */
     protected function get_role_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

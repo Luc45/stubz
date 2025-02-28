@@ -22,8 +22,6 @@ class Field
      * @throws \Exception If there are missing arguments.
      */
     public function __construct($id, $plugin_id, $additional_args)
-    {
-        // stub
-    }
-
+{
+}
 }

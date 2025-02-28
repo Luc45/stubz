@@ -14,38 +14,31 @@ abstract class CustomMetaDataStore
      *
      * @return string
      */
-    protected abstract function get_table_name();
-
+    abstract protected function get_table_name();
     /**
      * Returns the name of the field/column used for identifiying metadata entries.
      *
      * @return string
      */
     protected function get_meta_id_field()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of the field/column used for associating meta with objects.
      *
      * @return string
      */
     protected function get_object_id_field()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Describes the structure of the metadata table.
      *
      * @return array Array elements: table, object_id_field, meta_id_field.
      */
     protected function get_db_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of meta for an object.
      *
@@ -53,10 +46,8 @@ abstract class CustomMetaDataStore
      * @return array
      */
     public function read_meta(&$object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes meta based on meta ID.
      *
@@ -66,10 +57,8 @@ abstract class CustomMetaDataStore
      * @return bool
      */
     public function delete_meta(&$object, $meta): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add new piece of meta.
      *
@@ -79,10 +68,8 @@ abstract class CustomMetaDataStore
      * @return int|false meta ID
      */
     public function add_meta(&$object, $meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update meta.
      *
@@ -92,10 +79,8 @@ abstract class CustomMetaDataStore
      * @return bool
      */
     public function update_meta(&$object, $meta): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves metadata by meta ID.
      *
@@ -103,10 +88,8 @@ abstract class CustomMetaDataStore
      * @return object|bool Metadata object or FALSE if not found.
      */
     public function get_metadata_by_id($meta_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves metadata by meta key.
      *
@@ -116,10 +99,8 @@ abstract class CustomMetaDataStore
      * @return \stdClass|bool Metadata object or FALSE if not found.
      */
     public function get_metadata_by_key(&$object, string $meta_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns distinct meta keys in use.
      *
@@ -131,10 +112,8 @@ abstract class CustomMetaDataStore
      * @return string[]
      */
     public function get_meta_keys($limit = 100, $order = 'ASC', $include_private = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return order meta data for multiple IDs.
      *
@@ -143,8 +122,6 @@ abstract class CustomMetaDataStore
      * @return \stdClass[][] An array, keyed by object_ids, containing array of raw meta data records for each object. Objects with no meta data will have an empty array.
      */
     public function get_meta_data_for_object_ids(array $object_ids): array
-    {
-        // stub
-    }
-
+{
+}
 }

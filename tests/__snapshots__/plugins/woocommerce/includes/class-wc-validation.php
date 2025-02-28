@@ -12,10 +12,8 @@ class WC_Validation
      * @return bool
      */
     public static function is_email($email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates a phone number using a regular expression.
      *
@@ -23,10 +21,8 @@ class WC_Validation
      * @return bool
      */
     public static function is_phone($phone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks for a valid postcode.
      *
@@ -35,10 +31,8 @@ class WC_Validation
      * @return bool
      */
     public static function is_postcode($postcode, $country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if is a GB postcode.
      *
@@ -46,10 +40,8 @@ class WC_Validation
      * @return bool
      */
     public static function is_gb_postcode($to_check)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format the postcode according to the country and length of the postcode.
      *
@@ -58,10 +50,8 @@ class WC_Validation
      * @return string  Formatted postcode.
      */
     public static function format_postcode($postcode, $country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a given phone number.
      *
@@ -69,8 +59,6 @@ class WC_Validation
      * @return string
      */
     public static function format_phone($tel)
-    {
-        // stub
-    }
-
+{
+}
 }

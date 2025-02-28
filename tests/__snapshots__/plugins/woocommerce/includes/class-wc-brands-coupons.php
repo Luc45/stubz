@@ -15,10 +15,8 @@ class WC_Brands_Coupons
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the coupon based on included and/or excluded product brands.
      *
@@ -36,10 +34,8 @@ class WC_Brands_Coupons
      * @return bool         $valid  True if coupon is valid, otherwise Exception will be thrown.
      */
     public function is_coupon_valid($valid, $coupon, $discounts = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a coupon is valid for a product.
      *
@@ -52,10 +48,8 @@ class WC_Brands_Coupons
      * @return bool       $valid
      */
     public function is_valid_for_product($valid, $product, $coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Display a custom error message when a cart discount coupon does not validate
      * because an excluded brand was found in the cart.
@@ -65,10 +59,8 @@ class WC_Brands_Coupons
      * @return string
      */
     public function brand_exclusion_error($err, $err_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of brands that are assigned to a specific product
      *
@@ -76,10 +68,8 @@ class WC_Brands_Coupons
      * @return array brands
      */
     private function get_product_brands($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set brand settings as properties on coupon object. These properties are
      * lists of included product brand IDs and list of excluded brand IDs.
@@ -89,10 +79,8 @@ class WC_Brands_Coupons
      * @return void
      */
     private function set_brand_settings_on_coupon($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product (or variant) ID.
      *
@@ -100,8 +88,6 @@ class WC_Brands_Coupons
      * @return int Product ID
      */
     private function get_product_id($product)
-    {
-        // stub
-    }
-
+{
+}
 }

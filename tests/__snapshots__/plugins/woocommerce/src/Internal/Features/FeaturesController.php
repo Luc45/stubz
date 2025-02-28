@@ -20,24 +20,21 @@ class FeaturesController
      *
      * @var array[]
      */
-    private $features = array (
-);
+    private $features = array();
 
     /**
      * The registered compatibility info for WooCommerce plugins, with plugin names as keys.
      *
      * @var array
      */
-    private $compatibility_info_by_plugin = array (
-);
+    private $compatibility_info_by_plugin = array();
 
     /**
      * The registered compatibility info for WooCommerce plugins, with feature ids as keys.
      *
      * @var array
      */
-    private $compatibility_info_by_feature = array (
-);
+    private $compatibility_info_by_feature = array();
 
     /**
      * The LegacyProxy instance to use.
@@ -80,10 +77,8 @@ class FeaturesController
      * Creates a new instance of the class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a feature.
      *
@@ -121,22 +116,17 @@ class FeaturesController
      *
      * @return void
      */
-    public function add_feature_definition($slug, $name, array $args = array (
-))
-    {
-        // stub
-    }
-
+    public function add_feature_definition($slug, $name, array $args = array())
+{
+}
     /**
      * Generate and cache the feature definitions.
      *
      * @return array[]
      */
     private function get_feature_definitions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the class instance.
      *
@@ -145,11 +135,9 @@ class FeaturesController
      * @param LegacyProxy $proxy The instance of LegacyProxy to use.
      * @param PluginUtil  $plugin_util The instance of PluginUtil to use.
      */
-    public final function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy, Automattic\WooCommerce\Utilities\PluginUtil $plugin_util)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy, Automattic\WooCommerce\Utilities\PluginUtil $plugin_util)
+{
+}
     /**
      * Get all the existing WooCommerce features.
      *
@@ -166,10 +154,8 @@ class FeaturesController
      * @returns array An array of information about existing features.
      */
     public function get_features(bool $include_experimental = false, bool $include_enabled_info = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if plugins that don't declare compatibility nor incompatibility with a given feature
      * are to be considered incompatible with that feature.
@@ -179,10 +165,8 @@ class FeaturesController
      * @throws \InvalidArgumentException The feature doesn't exist.
      */
     public function get_plugins_are_incompatible_by_default(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given feature is currently enabled.
      *
@@ -190,10 +174,8 @@ class FeaturesController
      * @return bool True if the feature is enabled, false if not or if the feature doesn't exist.
      */
     public function feature_is_enabled(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given feature is enabled by default.
      *
@@ -201,10 +183,8 @@ class FeaturesController
      * @return boolean TRUE if the feature is enabled by default, FALSE otherwise.
      */
     private function feature_is_enabled_by_default(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change the enabled/disabled status of a feature.
      *
@@ -213,10 +193,8 @@ class FeaturesController
      * @return bool True on success, false if feature doesn't exist or the new value is the same as the old value.
      */
     public function change_feature_enable(string $feature_id, bool $enable): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Declare (in)compatibility with a given feature for a given plugin.
      *
@@ -233,10 +211,8 @@ class FeaturesController
      * @throws \Exception A plugin attempted to declare itself as compatible and incompatible with a given feature at the same time.
      */
     public function declare_compatibility(string $feature_id, string $plugin_name, bool $positive_compatibility = true): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a feature exists with a given id.
      *
@@ -244,10 +220,8 @@ class FeaturesController
      * @return bool True if the feature exists.
      */
     private function feature_exists(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the ids of the features that a certain plugin has declared compatibility for.
      *
@@ -258,10 +232,8 @@ class FeaturesController
      * @return array An array having a 'compatible' and an 'incompatible' key, each holding an array of feature ids.
      */
     public function get_compatible_features_for_plugin(string $plugin_name, bool $enabled_features_only = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the names of the plugins that have been declared compatible or incompatible with a given feature.
      *
@@ -270,10 +242,8 @@ class FeaturesController
      * @return array An array having a 'compatible', an 'incompatible' and an 'uncertain' key, each holding an array of plugin names.
      */
     public function get_compatible_plugins_for_feature(string $feature_id, bool $active_only = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the 'woocommerce_init' has run or is running, do a 'wc_doing_it_wrong' if not.
      *
@@ -282,10 +252,8 @@ class FeaturesController
      * @return bool True if 'woocommerce_init' has run or is running, false otherwise.
      */
     private function verify_did_woocommerce_init(string|null $function_name = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the option that enables/disables a given feature.
      *
@@ -297,10 +265,8 @@ class FeaturesController
      * @return string The option that enables or disables the feature.
      */
     public function feature_enable_option_name(string $feature_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether a feature id corresponds to a legacy feature
      * (a feature that existed prior to the implementation of the features engine).
@@ -309,28 +275,22 @@ class FeaturesController
      * @return bool True if the id corresponds to a legacy feature.
      */
     public function is_legacy_feature(string $feature_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a flag indicating that it's allowed to enable features for which incompatible plugins are active
      * from the WooCommerce feature settings page.
      */
     public function allow_enabling_features_with_incompatible_plugins(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a flag indicating that it's allowed to activate plugins for which incompatible features are enabled
      * from the WordPress plugins page.
      */
     public function allow_activating_plugins_with_incompatible_features(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds our callbacks for the `updated_option` and `added_option` filter hooks.
      *
@@ -342,10 +302,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function start_listening_for_option_changes(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'added_option' hook.
      *
@@ -357,10 +315,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_added_option(string $option, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'updated_option' hook.
      *
@@ -375,10 +331,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function process_updated_option(string $option, $old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'woocommerce_get_sections_advanced' hook,
      * it adds the "Features" section to the advanced settings page.
@@ -389,10 +343,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_features_section($sections)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'woocommerce_get_settings_advanced' hook,
      * it adds the settings UI for all the existing features.
@@ -407,10 +359,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_feature_settings($settings, $current_section): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the parameters to display the setting enable/disable UI for a given feature.
      *
@@ -419,10 +369,8 @@ class FeaturesController
      * @return array The parameters to add to the settings array.
      */
     private function get_setting_for_feature(string $feature_id, array $feature): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the plugin deactivation hook.
      *
@@ -431,10 +379,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_plugin_deactivation($plugin_name): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the all_plugins filter.
      *
@@ -447,10 +393,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function filter_plugins_list($plugin_list): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the list of plugins incompatible with a given feature.
      *
@@ -460,40 +404,32 @@ class FeaturesController
      * @return array List of plugins incompatible with the given feature.
      */
     public function get_incompatible_plugins($feature_id, $plugin_list)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the admin_notices action.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function display_notices_in_plugins_page(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shows a warning when there are any incompatibility between active plugins and enabled features.
      * The warning is shown in on any admin screen except the plugins screen itself, since
      * there's already a "You are viewing plugins that are incompatible" notice.
      */
     private function maybe_display_feature_incompatibility_warning(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shows a "You are viewing the plugins that are incompatible with the X feature"
      * if we are in the plugins page and the query string of the current request
      * looks like '?plugin_status=incompatible_with_feature&feature_id=<feature id>'.
      */
     private function maybe_display_current_feature_filter_description(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the 'incompatible with features' plugin list is being rendered, invalidate existing cached plugin data.
      *
@@ -508,10 +444,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function maybe_invalidate_cached_plugin_data(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'after_plugin_row' action.
      * Displays a "This plugin is incompatible with X features" notice if necessary.
@@ -522,20 +456,16 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_plugin_list_rows($plugin_file, $plugin_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the URL of the features settings page.
      *
      * @return string
      */
     public function get_features_page_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fix for the HTML of the plugins list when there are feature-plugin incompatibility warnings.
      *
@@ -561,10 +491,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function enqueue_script_to_fix_plugin_list_html($current_screen): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handler for the 'views_plugins' hook that shows the links to the different views in the plugins page.
      * If we come from a "Manage incompatible plugins" in the features page we'll show just two views:
@@ -578,10 +506,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_plugins_page_views_list($views): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the feature nonce to be sent from client side.
      *
@@ -592,10 +518,8 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function set_change_feature_enable_nonce($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Changes the feature given it's id, a toggle value and nonce as a query param.
      *
@@ -605,8 +529,6 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function change_feature_enable_from_query_params(): void
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -27,10 +27,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * Register the routes for webhook deliveries.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read taxes.
      *
@@ -38,10 +36,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a tax.
      *
@@ -49,10 +45,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all webhook deliveries.
      *
@@ -61,10 +55,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single webhook delivery.
      *
@@ -72,10 +64,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single webhook delivery output for response.
      *
@@ -84,10 +74,8 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($log, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -95,28 +83,22 @@ class WC_REST_Webhook_Deliveries_V1_Controller
      * @return array Links for the given webhook delivery.
      */
     protected function prepare_links($log)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Webhook's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

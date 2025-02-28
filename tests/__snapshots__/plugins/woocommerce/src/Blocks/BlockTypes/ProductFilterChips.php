@@ -23,8 +23,6 @@ final class ProductFilterChips
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

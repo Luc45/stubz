@@ -21,8 +21,7 @@ abstract class WC_REST_WCCOM_Site_Controller
      * @param WP_USER $user User object.
      * @return bool
      */
-    protected abstract function user_has_permission($user): bool;
-
+    abstract protected function user_has_permission($user): bool;
     /**
      * Check permissions.
      *
@@ -32,10 +31,8 @@ abstract class WC_REST_WCCOM_Site_Controller
      * @return bool|WP_Error
      */
     public function check_permission()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a WP_REST_Response.
      *
@@ -44,8 +41,6 @@ abstract class WC_REST_WCCOM_Site_Controller
      * @return WP_REST_Response|WP_Error
      */
     protected function get_response(array $data, int $status = 200)
-    {
-        // stub
-    }
-
+{
+}
 }

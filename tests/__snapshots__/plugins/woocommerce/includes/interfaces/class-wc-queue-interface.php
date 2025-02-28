@@ -17,9 +17,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function add($hook, $args = array (
-), $group = '');
-
+    public function add($hook, $args = array(), $group = '');
     /**
      * Schedule an action to run once at some time in the future
      *
@@ -29,9 +27,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_single($timestamp, $hook, $args = array (
-), $group = '');
-
+    public function schedule_single($timestamp, $hook, $args = array(), $group = '');
     /**
      * Schedule a recurring action
      *
@@ -42,9 +38,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_recurring($timestamp, $interval_in_seconds, $hook, $args = array (
-), $group = '');
-
+    public function schedule_recurring($timestamp, $interval_in_seconds, $hook, $args = array(), $group = '');
     /**
      * Schedule an action that recurs on a cron-like schedule.
      *
@@ -65,9 +59,7 @@ interface WC_Queue_Interface
      * @param string $group The group to assign this job to.
      * @return string The action ID
      */
-    public function schedule_cron($timestamp, $cron_schedule, $hook, $args = array (
-), $group = '');
-
+    public function schedule_cron($timestamp, $cron_schedule, $hook, $args = array(), $group = '');
     /**
      * Dequeue the next scheduled instance of an action with a matching hook (and optionally matching args and group).
      *
@@ -77,9 +69,7 @@ interface WC_Queue_Interface
      * @param array  $args Args that would have been passed to the job.
      * @param string $group The group the job is assigned to (if any).
      */
-    public function cancel($hook, $args = array (
-), $group = '');
-
+    public function cancel($hook, $args = array(), $group = '');
     /**
      * Dequeue all actions with a matching hook (and optionally matching args and group) so no matching actions are ever run.
      *
@@ -87,9 +77,7 @@ interface WC_Queue_Interface
      * @param array  $args Args that would have been passed to the job.
      * @param string $group The group the job is assigned to (if any).
      */
-    public function cancel_all($hook, $args = array (
-), $group = '');
-
+    public function cancel_all($hook, $args = array(), $group = '');
     /**
      * Get the date and time for the next scheduled occurrence of an action with a given hook
      * (an optionally that matches certain args and group), if any.
@@ -100,7 +88,6 @@ interface WC_Queue_Interface
      * @return WC_DateTime|null The date and time for the next occurrence, or null if there is no pending, scheduled action for the given hook
      */
     public function get_next($hook, $args = null, $group = '');
-
     /**
      * Find scheduled actions.
      *
@@ -121,7 +108,5 @@ interface WC_Queue_Interface
      * @param string $return_format OBJECT, ARRAY_A, or ids.
      * @return array
      */
-    public function search($args = array (
-), $return_format);
-
+    public function search($args = array(), $return_format);
 }

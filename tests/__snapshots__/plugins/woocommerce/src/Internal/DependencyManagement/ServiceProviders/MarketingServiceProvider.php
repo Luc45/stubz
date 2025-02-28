@@ -23,10 +23,7 @@ class MarketingServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
 }
-
+}
 const WC_MCM_EXISTS = true;

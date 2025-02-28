@@ -21,10 +21,8 @@ final class ProductsLowInStock
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return # of low in stock count.
      *
@@ -33,10 +31,8 @@ final class ProductsLowInStock
      * @return \WP_Error|\WP_HTTP_Response|\WP_REST_Response
      */
     public function get_low_in_stock_count($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get low in stock products.
      *
@@ -45,10 +41,8 @@ final class ProductsLowInStock
      * @return WP_REST_Response|WP_ERROR
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the last order date for each data.
      *
@@ -56,12 +50,9 @@ final class ProductsLowInStock
      *
      * @return mixed
      */
-    protected function set_last_order_date($results = array (
-))
-    {
-        // stub
-    }
-
+    protected function set_last_order_date($results = array())
+{
+}
     /**
      * Get low in stock products data.
      *
@@ -72,10 +63,8 @@ final class ProductsLowInStock
      * @return array
      */
     protected function get_low_in_stock_products($page = 1, $per_page = 1, $status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check to see if store is using sitewide threshold only. Meaning that it does not have any custom
      * stock threshold for a product.
@@ -83,10 +72,8 @@ final class ProductsLowInStock
      * @return bool
      */
     protected function is_using_sitewide_stock_threshold_only()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Transform post object to expected API response.
      *
@@ -95,10 +82,8 @@ final class ProductsLowInStock
      * @return array
      */
     protected function transform_post_to_api_response($query_result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a query string for low in stock products.
      * The query string includes the following replacement strings:
@@ -111,12 +96,9 @@ final class ProductsLowInStock
      *
      * @return string
      */
-    private function get_base_query($replacements = array (
-))
-    {
-        // stub
-    }
-
+    private function get_base_query($replacements = array())
+{
+}
     /**
      * Add sitewide stock query string to base query string.
      *
@@ -125,10 +107,8 @@ final class ProductsLowInStock
      * @return string
      */
     private function add_sitewide_stock_query_str($query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a query.
      *
@@ -137,10 +117,8 @@ final class ProductsLowInStock
      * @return string
      */
     protected function get_query($sitewide_only = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a count query.
      *
@@ -149,38 +127,30 @@ final class ProductsLowInStock
      * @return string
      */
     protected function get_count_query($sitewide_only = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections for /count-low-in-stock endpoint.
      *
      * @return array
      */
     public function get_low_in_stock_count_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for /count-low-in-stock response.
      *
      * @return array
      */
     public function get_low_in_stock_count_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

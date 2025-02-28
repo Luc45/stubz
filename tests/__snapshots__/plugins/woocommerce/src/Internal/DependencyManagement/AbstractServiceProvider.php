@@ -31,10 +31,8 @@ abstract class AbstractServiceProvider
      * @throws ContainerException Error when reflecting the class, or class injection method is not public, or an argument has no valid type hint.
      */
     protected function add_with_auto_arguments(string $class_name, $concrete = null, bool $shared = false): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the class of a parameter.
      *
@@ -46,10 +44,8 @@ abstract class AbstractServiceProvider
      * @return \ReflectionClass|null The class of the parameter, or null if it hasn't any.
      */
     private function get_class(ReflectionParameter $parameter)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a combination of class name and concrete is valid for registration.
      * Also return the class injection method if the concrete is either a class name or null (then use the supplied class name).
@@ -61,10 +57,8 @@ abstract class AbstractServiceProvider
      * @throws ContainerException Class has a private injection method, can't reflect class, or the concrete is invalid.
      */
     private function reflect_class_or_callable(string $class_name, $concrete)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a class in the container and use reflection to guess the injection method arguments.
      * The class is registered as shared, so `get` on the container always returns the same instance.
@@ -79,10 +73,8 @@ abstract class AbstractServiceProvider
      * @throws ContainerException Error when reflecting the class, or class injection method is not public, or an argument has no valid type hint.
      */
     protected function share_with_auto_arguments(string $class_name, $concrete = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register an entry in the container.
      *
@@ -93,10 +85,8 @@ abstract class AbstractServiceProvider
      * @return DefinitionInterface The generated container definition.
      */
     protected function add(string $id, $concrete = null, bool|null $shared = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a shared entry in the container (`get` always returns the same instance).
      *
@@ -106,8 +96,6 @@ abstract class AbstractServiceProvider
      * @return DefinitionInterface The generated container definition.
      */
     protected function share(string $id, $concrete = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
 }

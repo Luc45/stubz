@@ -21,10 +21,8 @@ class ProductAttributeTerms
      * Register the routes for custom product attributes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a custom attribute.
      *
@@ -32,20 +30,16 @@ class ProductAttributeTerms
      * @return WP_Error|boolean
      */
     public function get_custom_attribute_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Attribute's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query custom attribute values by slug.
      *
@@ -53,10 +47,8 @@ class ProductAttributeTerms
      * @return array Attribute values, formatted for response.
      */
     protected function get_custom_attribute_values($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single custom attribute.
      *
@@ -64,8 +56,6 @@ class ProductAttributeTerms
      * @return WP_REST_Request|WP_Error
      */
     public function get_item_by_slug($request)
-    {
-        // stub
-    }
-
+{
+}
 }

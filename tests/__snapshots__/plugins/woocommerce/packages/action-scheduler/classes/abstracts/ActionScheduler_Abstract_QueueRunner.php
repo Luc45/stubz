@@ -44,10 +44,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @param ActionScheduler_QueueCleaner|null      $cleaner Cleaner object.
      */
     public function __construct(ActionScheduler_Store|null $store = null, ActionScheduler_FatalErrorMonitor|null $monitor = null, ActionScheduler_QueueCleaner|null $cleaner = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process an individual action.
      *
@@ -57,10 +55,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @throws \Exception When error running action.
      */
     public function process_action($action_id, $context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Marks actions as either having failed execution or failed validation, as appropriate.
      *
@@ -72,10 +68,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return void
      */
     private function handle_action_error($action_id, $e, $context, $valid_action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule the next instance of the action if necessary.
      *
@@ -83,10 +77,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @param int                    $action_id Action ID.
      */
     protected function schedule_next_instance(ActionScheduler_Action $action, $action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the specified recurring action has been consistently failing.
      *
@@ -96,58 +88,46 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return bool
      */
     private function recurring_action_is_consistently_failing(ActionScheduler_Action $action, $action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the queue cleaner.
      */
     protected function run_cleanup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of concurrent batches a runner allows.
      *
      * @return int
      */
     public function get_allowed_concurrent_batches()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the number of allowed concurrent batches is met or exceeded.
      *
      * @return bool
      */
     public function has_maximum_concurrent_batches()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the maximum number of seconds a batch can run for.
      *
      * @return int The number of seconds.
      */
     protected function get_time_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of seconds the process has been running.
      *
      * @return int The number of seconds.
      */
     protected function get_execution_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the host's max execution time is (likely) to be exceeded if processing more actions.
      *
@@ -155,10 +135,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return bool
      */
     protected function time_likely_to_be_exceeded($processed_actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get memory limit
      *
@@ -167,10 +145,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return int
      */
     protected function get_memory_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Memory exceeded
      *
@@ -181,10 +157,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return bool
      */
     protected function memory_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the batch limits have been exceeded, which is when memory usage is almost at
      * the maximum limit, or the time to process more actions will exceed the max time limit.
@@ -195,10 +169,8 @@ abstract class ActionScheduler_Abstract_QueueRunner
      * @return bool
      */
     protected function batch_limits_exceeded($processed_actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process actions in the queue.
      *
@@ -206,6 +178,5 @@ abstract class ActionScheduler_Abstract_QueueRunner
      *        Generally, this should be capitalised and not localised as it's a proper noun.
      * @return int The number of actions processed.
      */
-    public abstract function run($context = '');
-
+    abstract public function run($context = '');
 }

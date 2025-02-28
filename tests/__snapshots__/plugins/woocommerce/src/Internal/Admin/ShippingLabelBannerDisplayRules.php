@@ -62,56 +62,44 @@ class ShippingLabelBannerDisplayRules
      * @param bool        $incompatible_plugins_installed Are there any incompatible plugins installed?.
      */
     public function __construct($dotcom_connected, $wcs_version, $incompatible_plugins_installed)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether banner is eligible for display (does not include a/b logic).
      */
     public function should_display_banner()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the banner was not dismissed by the user.
      *
      * @return bool
      */
     private function banner_not_dismissed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if there's a shippable product in the current order.
      *
      * @return bool
      */
     private function order_has_shippable_products()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the store is in the US and has its default currency set to USD.
      *
      * @return bool
      */
     private function store_in_us_and_usd()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if WooCommerce Shipping & Tax is not installed.
      *
      * @return bool
      */
     private function wcs_not_installed()
-    {
-        // stub
-    }
-
+{
+}
 }

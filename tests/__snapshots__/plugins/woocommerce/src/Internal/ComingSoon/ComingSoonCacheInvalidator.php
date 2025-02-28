@@ -12,19 +12,15 @@ class ComingSoonCacheInvalidator
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * Invalidate the WordPress object cache and other known caches.
      *
      * @internal
      */
     public function invalidate_caches()
-    {
-        // stub
-    }
-
+{
+}
 }

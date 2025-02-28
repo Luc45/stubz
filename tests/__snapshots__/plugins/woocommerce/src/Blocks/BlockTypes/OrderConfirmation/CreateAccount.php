@@ -18,20 +18,16 @@ class CreateAccount
      * Initialize this block type.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize hooks.
      *
      * @see https://developer.wordpress.org/reference/hooks/hooked_block/
      */
     protected function initialize_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -40,20 +36,16 @@ class CreateAccount
      * @return array|string
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if delayed account creation is enabled.
      *
      * @return bool
      */
     protected function is_feature_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process posted account form.
      *
@@ -61,10 +53,8 @@ class CreateAccount
      * @return \WP_Error|int
      */
     protected function process_form_post($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This renders the content of the block within the wrapper.
      *
@@ -74,22 +64,17 @@ class CreateAccount
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Render the block when an account has been registered.
      *
      * @return string
      */
     protected function render_confirmation()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -97,10 +82,7 @@ class CreateAccount
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
 }

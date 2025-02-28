@@ -34,10 +34,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @param string $idempotency_key The idempotency key.
      */
     public function __construct(int $product_id, string $idempotency_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the installation.
      *
@@ -46,10 +44,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @throws WC_REST_WCCOM_Site_Installer_Error If installation failed to run.
      */
     public function run_installation(string $run_until_step): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the next step to run.
      *
@@ -57,10 +53,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @throws WC_REST_WCCOM_Site_Installer_Error If the installation cannot be rest.
      */
     public function reset_installation(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the installation can be run.
      *
@@ -70,10 +64,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @throws WC_REST_WCCOM_Site_Installer_Error If the installation cannot be run.
      */
     protected function can_run_installation($run_until_step, $state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the next step to run.
      *
@@ -81,10 +73,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @return string
      */
     protected function get_next_step($state): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the steps to run.
      *
@@ -93,10 +83,8 @@ class WC_WCCOM_Site_Installation_Manager
      * @return string[]
      */
     protected function get_installation_steps(string $start_step, string $end_step)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the step.
      *
@@ -106,8 +94,6 @@ class WC_WCCOM_Site_Installation_Manager
      * @throws WC_REST_WCCOM_Site_Installer_Error If the step fails.
      */
     protected function run_step($step_name, $state)
-    {
-        // stub
-    }
-
+{
+}
 }

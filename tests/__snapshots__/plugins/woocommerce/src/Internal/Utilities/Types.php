@@ -28,8 +28,6 @@ class Types
      * @return mixed
      */
     public static function ensure_instance_of($thing, string $desired_type, callable|null $on_failure = null)
-    {
-        // stub
-    }
-
+{
+}
 }

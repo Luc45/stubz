@@ -15,18 +15,14 @@ trait ScriptDebug
      * @return string
      */
     protected function get_script_suffix(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if SCRIPT_DEBUG is enabled.
      *
      * @return bool
      */
     protected function is_script_debug_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

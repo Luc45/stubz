@@ -20,10 +20,8 @@ class PayPal
      * @return bool True if the payment gateway is in test mode, false otherwise.
      */
     public function is_in_test_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in dev mode.
      *
@@ -35,10 +33,8 @@ class PayPal
      * @return bool True if the payment gateway is in dev mode, false otherwise.
      */
     public function is_in_dev_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway has a payments processor account connected.
      *
@@ -48,10 +44,8 @@ class PayPal
      *              If the payment gateway does not provide the information, it will return true.
      */
     public function is_account_connected(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway has completed the onboarding process.
      *
@@ -62,10 +56,8 @@ class PayPal
      *              it will infer it from having a connected account.
      */
     public function is_onboarding_completed(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in test mode onboarding (aka sandbox or test-drive).
      *
@@ -77,10 +69,8 @@ class PayPal
      * @return bool True if the payment gateway is in test mode onboarding, false otherwise.
      */
     public function is_in_test_mode_onboarding(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the PayPal payment gateway is in sandbox mode.
      *
@@ -90,10 +80,8 @@ class PayPal
      *               Null if the environment could not be determined.
      */
     private function is_paypal_in_sandbox_mode(): bool|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the PayPal payment gateway is onboarded.
      *
@@ -101,8 +89,6 @@ class PayPal
      *               Null if we failed to determine the onboarding status.
      */
     private function is_paypal_onboarded(): bool|null
-    {
-        // stub
-    }
-
+{
+}
 }

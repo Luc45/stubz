@@ -16,30 +16,24 @@ abstract class WC_CSV_Batch_Exporter
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file path to export to.
      *
      * @return string
      */
     protected function get_file_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get CSV headers row file path to export to.
      *
      * @return string
      */
     protected function get_headers_row_file_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the contents of the CSV headers row file. Defaults to the original known headers.
      *
@@ -47,10 +41,8 @@ abstract class WC_CSV_Batch_Exporter
      * @return string
      */
     public function get_headers_row_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file contents.
      *
@@ -58,30 +50,24 @@ abstract class WC_CSV_Batch_Exporter
      * @return string
      */
     public function get_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serve the file and remove once sent to the client.
      *
      * @since 3.1.0
      */
     public function export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the CSV file.
      *
      * @since 3.1.0
      */
     public function generate_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Write data to the file.
      *
@@ -89,10 +75,8 @@ abstract class WC_CSV_Batch_Exporter
      * @param string $data Data.
      */
     protected function write_csv_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get page.
      *
@@ -100,10 +84,8 @@ abstract class WC_CSV_Batch_Exporter
      * @return int
      */
     public function get_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set page.
      *
@@ -111,10 +93,8 @@ abstract class WC_CSV_Batch_Exporter
      * @param int $page Page Nr.
      */
     public function set_page($page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get count of records exported.
      *
@@ -122,10 +102,8 @@ abstract class WC_CSV_Batch_Exporter
      * @return int
      */
     public function get_total_exported()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total % complete.
      *
@@ -133,8 +111,6 @@ abstract class WC_CSV_Batch_Exporter
      * @return int
      */
     public function get_percent_complete()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -12,11 +12,9 @@ class AssignDefaultCategory
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * When a product category is deleted, we need to check
      * if the product has no categories assigned. Then assign
@@ -26,10 +24,8 @@ class AssignDefaultCategory
      * @return void
      */
     public function schedule_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assigns default product category for products
      * that have no categories.
@@ -37,8 +33,6 @@ class AssignDefaultCategory
      * @return void
      */
     public function maybe_assign_default_product_cat()
-    {
-        // stub
-    }
-
+{
+}
 }

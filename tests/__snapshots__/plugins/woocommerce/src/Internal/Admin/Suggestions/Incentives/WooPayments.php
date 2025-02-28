@@ -41,10 +41,8 @@ class WooPayments
      * @param string $suggestion_id The suggestion ID.
      */
     public function __construct(string $suggestion_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an incentive should be visible.
      *
@@ -55,38 +53,30 @@ class WooPayments
      * @return boolean Whether the incentive should be visible.
      */
     public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear the incentives cache.
      */
     public function clear_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the memoized incentives.
      *
      * This is useful for testing purposes.
      */
     public function reset_memo()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the extension plugin is active.
      *
      * @return boolean Whether the extension plugin is active.
      */
     protected function is_extension_active(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches and caches eligible incentives from the WooPayments API.
      *
@@ -95,10 +85,8 @@ class WooPayments
      * @return array List of eligible incentives.
      */
     protected function get_incentives(string $country_code): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the WooPayments payment gateway is active and set up or was at some point,
      * or there are orders processed with it, at some moment.
@@ -106,20 +94,16 @@ class WooPayments
      * @return boolean Whether the store has WooPayments.
      */
     private function has_wcpay(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if there is meaningful data in the WooPayments account cache.
      *
      * @return boolean
      */
     private function has_wcpay_account_data(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store has any paid orders.
      *
@@ -129,10 +113,8 @@ class WooPayments
      * @return boolean Whether the store has any paid orders.
      */
     private function has_orders(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a hash from the store context data.
      *
@@ -141,8 +123,6 @@ class WooPayments
      * @return string The context hash.
      */
     private function generate_context_hash(array $context): string
-    {
-        // stub
-    }
-
+{
+}
 }

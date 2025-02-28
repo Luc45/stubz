@@ -9,10 +9,8 @@ class WC_Widget_Price_Filter
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -22,18 +20,14 @@ class WC_Widget_Price_Filter
      * @param array $instance Widget instance.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get filtered min price for current products.
      *
      * @return int
      */
     protected function get_filtered_price()
-    {
-        // stub
-    }
-
+{
+}
 }

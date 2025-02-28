@@ -40,10 +40,8 @@ class ActionScheduler_wpPostStore
      * @return int
      */
     public function save_action(ActionScheduler_Action $action, DateTime|null $scheduled_date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create post array.
      *
@@ -53,10 +51,8 @@ class ActionScheduler_wpPostStore
      * @return array Returns an array of post data.
      */
     protected function create_post_array(ActionScheduler_Action $action, DateTime|null $scheduled_date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save post array.
      *
@@ -65,10 +61,8 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException Throws an exception if the action could not be saved.
      */
     protected function save_post_array($post_array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter insert post data.
      *
@@ -77,10 +71,8 @@ class ActionScheduler_wpPostStore
      * @return array
      */
     public function filter_insert_post_data($postdata)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a (probably unique) post name for scheduled actions in a more performant manner than wp_unique_post_slug().
      *
@@ -110,10 +102,8 @@ class ActionScheduler_wpPostStore
      * @return string
      */
     public function set_unique_post_slug($override_slug, $slug, $post_ID, $post_status, $post_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save post schedule.
      *
@@ -123,10 +113,8 @@ class ActionScheduler_wpPostStore
      * @return void
      */
     protected function save_post_schedule($post_id, $schedule)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save action group.
      *
@@ -135,10 +123,8 @@ class ActionScheduler_wpPostStore
      * @return void
      */
     protected function save_action_group($post_id, $group)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch actions.
      *
@@ -146,10 +132,8 @@ class ActionScheduler_wpPostStore
      * @return object
      */
     public function fetch_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get post.
      *
@@ -157,20 +141,16 @@ class ActionScheduler_wpPostStore
      * @return WP_Post|null
      */
     protected function get_post($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get NULL action.
      *
      * @return ActionScheduler_NullAction
      */
     protected function get_null_action()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make action from post.
      *
@@ -178,10 +158,8 @@ class ActionScheduler_wpPostStore
      * @return WP_Post
      */
     protected function make_action_from_post($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get action status by post status.
      *
@@ -191,10 +169,8 @@ class ActionScheduler_wpPostStore
      * @return string
      */
     protected function get_action_status_by_post_status($post_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get post status by action status.
      *
@@ -204,10 +180,8 @@ class ActionScheduler_wpPostStore
      * @return string
      */
     protected function get_post_status_by_action_status($action_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the SQL statement to query (or count) actions.
      *
@@ -218,10 +192,8 @@ class ActionScheduler_wpPostStore
      * @return string SQL statement. The returned SQL is already properly escaped.
      */
     protected function get_query_actions_sql(array $query, $select_or_count = 'select')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query for action count or list of action IDs.
      *
@@ -234,22 +206,17 @@ class ActionScheduler_wpPostStore
      *
      * @return string|array|null The IDs of actions matching the query. Null on failure.
      */
-    public function query_actions($query = array (
-), $query_type = 'select')
-    {
-        // stub
-    }
-
+    public function query_actions($query = array(), $query_type = 'select')
+{
+}
     /**
      * Get a count of all actions in the store, grouped by status
      *
      * @return array
      */
     public function action_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel action.
      *
@@ -258,10 +225,8 @@ class ActionScheduler_wpPostStore
      * @throws InvalidArgumentException If $action_id is not identified.
      */
     public function cancel_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete action.
      *
@@ -270,10 +235,8 @@ class ActionScheduler_wpPostStore
      * @throws InvalidArgumentException If action is not identified.
      */
     public function delete_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date for claim id.
      *
@@ -281,10 +244,8 @@ class ActionScheduler_wpPostStore
      * @return ActionScheduler_DateTime The date the action is schedule to run, or the date that it ran.
      */
     public function get_date($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Date GMT.
      *
@@ -294,10 +255,8 @@ class ActionScheduler_wpPostStore
      * @return ActionScheduler_DateTime The date the action is schedule to run, or the date that it ran.
      */
     public function get_date_gmt($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stake claim.
      *
@@ -310,32 +269,25 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException When there is an error staking a claim.
      * @throws InvalidArgumentException When the given group is not valid.
      */
-    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array (
-), $group = '')
-    {
-        // stub
-    }
-
+    public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(), $group = '')
+{
+}
     /**
      * Get claim count.
      *
      * @return int
      */
     public function get_claim_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate claim id.
      *
      * @return string
      */
     protected function generate_claim_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Claim actions.
      *
@@ -348,12 +300,9 @@ class ActionScheduler_wpPostStore
      * @return int The number of actions that were claimed.
      * @throws RuntimeException  When there is a database error.
      */
-    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array (
-), $group = '')
-    {
-        // stub
-    }
-
+    protected function claim_actions($claim_id, $limit, DateTime|null $before_date = null, $hooks = array(), $group = '')
+{
+}
     /**
      * Get IDs of actions within a certain group and up to a certain date/time.
      *
@@ -366,10 +315,8 @@ class ActionScheduler_wpPostStore
      * @throws InvalidArgumentException When the group does not exist.
      */
     protected function get_actions_by_group($group, $limit, DateTime $date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Find actions by claim ID.
      *
@@ -377,10 +324,8 @@ class ActionScheduler_wpPostStore
      * @return array
      */
     public function find_actions_by_claim_id($claim_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Release claim.
      *
@@ -389,10 +334,8 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException When the claim is not unlocked.
      */
     public function release_claim(ActionScheduler_ActionClaim $claim)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unclaim action.
      *
@@ -400,10 +343,8 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException When unable to unlock claim on action ID.
      */
     public function unclaim_action($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark failure on action.
      *
@@ -413,10 +354,8 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException When unable to mark failure on action ID.
      */
     public function mark_failure($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an action's claim ID, as stored in the post password column
      *
@@ -424,10 +363,8 @@ class ActionScheduler_wpPostStore
      * @return mixed
      */
     public function get_claim_id($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an action's status, as stored in the post status column
      *
@@ -437,10 +374,8 @@ class ActionScheduler_wpPostStore
      * @throws InvalidArgumentException When the action ID is invalid.
      */
     public function get_status($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get post column
      *
@@ -450,10 +385,8 @@ class ActionScheduler_wpPostStore
      * @return string|null
      */
     private function get_post_column($action_id, $column_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log Execution.
      *
@@ -462,10 +395,8 @@ class ActionScheduler_wpPostStore
      * @param string $action_id Action ID.
      */
     public function log_execution($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Record that an action was completed.
      *
@@ -475,20 +406,16 @@ class ActionScheduler_wpPostStore
      * @throws RuntimeException         When there was an error executing the action.
      */
     public function mark_complete($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark action as migrated when there is an error deleting the action.
      *
      * @param int $action_id Action ID.
      */
     public function mark_migrated($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether the post store can be migrated.
      *
@@ -496,10 +423,8 @@ class ActionScheduler_wpPostStore
      * @return bool
      */
     public function migration_dependencies_met($setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * InnoDB indexes have a maximum size of 767 bytes by default, which is only 191 characters with utf8mb4.
      *
@@ -510,16 +435,12 @@ class ActionScheduler_wpPostStore
      * @param ActionScheduler_Action $action Action object.
      */
     protected function validate_action(ActionScheduler_Action $action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * (@codeCoverageIgnore)
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
 }

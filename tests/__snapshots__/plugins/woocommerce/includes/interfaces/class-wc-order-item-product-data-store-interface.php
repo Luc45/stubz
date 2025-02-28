@@ -17,5 +17,4 @@ interface WC_Order_Item_Product_Data_Store_Interface
      * @return array
      */
     public function get_download_ids($item, $order);
-
 }

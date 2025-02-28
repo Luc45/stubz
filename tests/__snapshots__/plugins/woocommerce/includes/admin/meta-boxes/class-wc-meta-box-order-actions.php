@@ -11,10 +11,8 @@ class WC_Meta_Box_Order_Actions
      * @param WP_Post|WC_Order $post Post or order object.
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forms a trash/delete order URL.
      *
@@ -23,10 +21,8 @@ class WC_Meta_Box_Order_Actions
      * @return string
      */
     private static function get_trash_or_delete_order_link(int $order_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data.
      *
@@ -34,10 +30,8 @@ class WC_Meta_Box_Order_Actions
      * @param WP_Post $post Post Object.
      */
     public static function save($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the correct message ID.
      *
@@ -47,10 +41,8 @@ class WC_Meta_Box_Order_Actions
      * @return string
      */
     public static function set_email_sent_message($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the available order actions for a given order.
      *
@@ -61,8 +53,6 @@ class WC_Meta_Box_Order_Actions
      * @return array
      */
     private static function get_available_order_actions_for_order($order)
-    {
-        // stub
-    }
-
+{
+}
 }

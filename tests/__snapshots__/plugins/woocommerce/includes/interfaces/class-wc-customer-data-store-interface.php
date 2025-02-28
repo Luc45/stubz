@@ -16,7 +16,6 @@ interface WC_Customer_Data_Store_Interface
      * @return WC_Order|false
      */
     public function get_last_order(&$customer);
-
     /**
      * Return the number of orders this customer has.
      *
@@ -24,7 +23,6 @@ interface WC_Customer_Data_Store_Interface
      * @return integer
      */
     public function get_order_count(&$customer);
-
     /**
      * Return how much money this customer has spent.
      *
@@ -32,5 +30,4 @@ interface WC_Customer_Data_Store_Interface
      * @return float
      */
     public function get_total_spent(&$customer);
-
 }

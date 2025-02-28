@@ -48,10 +48,8 @@ abstract class WC_Widget
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cached widget.
      *
@@ -59,10 +57,8 @@ abstract class WC_Widget
      * @return bool true if the widget is cached otherwise false
      */
     public function get_cached_widget($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cache the widget.
      *
@@ -71,18 +67,14 @@ abstract class WC_Widget
      * @return string the content that was cached
      */
     public function cache_widget($args, $content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush the cache.
      */
     public function flush_widget_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get this widgets title.
      *
@@ -90,10 +82,8 @@ abstract class WC_Widget
      * @return string
      */
     protected function get_instance_title($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the html at the start of a widget.
      *
@@ -101,20 +91,16 @@ abstract class WC_Widget
      * @param array $instance Instance.
      */
     public function widget_start($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the html at the end of a widget.
      *
      * @param  array $args Arguments.
      */
     public function widget_end($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates a particular instance of a widget.
      *
@@ -124,10 +110,8 @@ abstract class WC_Widget
      * @return array
      */
     public function update($new_instance, $old_instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the settings update form.
      *
@@ -136,10 +120,8 @@ abstract class WC_Widget
      * @param array $instance Instance.
      */
     public function form($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current page URL with various filtering props supported by WC.
      *
@@ -147,10 +129,8 @@ abstract class WC_Widget
      * @since  3.3.0
      */
     protected function get_current_page_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get widget id plus scheme/protocol to prevent serving mixed content from (persistently) cached widgets.
      *
@@ -160,8 +140,6 @@ abstract class WC_Widget
      * @return string            Widget id including scheme/protocol.
      */
     protected function get_widget_id_for_cache($widget_id, $scheme = '')
-    {
-        // stub
-    }
-
+{
+}
 }

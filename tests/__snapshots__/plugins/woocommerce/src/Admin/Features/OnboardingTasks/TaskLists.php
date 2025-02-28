@@ -33,8 +33,7 @@ class TaskLists
      *
      * @var array
      */
-    protected static $lists = array (
-);
+    protected static $lists = array();
 
     /**
      * Boolean value to indicate if default tasks have been added.
@@ -46,19 +45,15 @@ class TaskLists
     /**
      * Get class instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Initialize the task lists.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an experiment is the treatment or control.
      *
@@ -66,35 +61,27 @@ class TaskLists
      * @return bool
      */
     public static function is_experiment_treatment($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize default lists.
      */
     public static function init_default_lists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize tasks.
      */
     public static function init_tasks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Temporarily store the active task to persist across page loads when necessary.
      * Most tasks do not need this.
      */
     public static function set_active_task()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a task list.
      *
@@ -102,10 +89,8 @@ class TaskLists
      * @return \WP_Error|TaskList
      */
     public static function add_list($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add task to a given task list.
      *
@@ -115,30 +100,24 @@ class TaskLists
      * @return \WP_Error|Task
      */
     public static function add_task($list_id, $task)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add default extended task lists.
      *
      * @param array $extended_tasks list of extended tasks.
      */
     public static function maybe_add_extended_tasks($extended_tasks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all task lists.
      *
      * @return array
      */
     public static function get_lists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all task lists.
      *
@@ -146,36 +125,28 @@ class TaskLists
      * @return array
      */
     public static function get_lists_by_ids($ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all task list ids.
      *
      * @return array
      */
     public static function get_list_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear all task lists.
      */
     public static function clear_lists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get visible task lists.
      */
     public static function get_visible()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a task list by ID.
      *
@@ -184,10 +155,8 @@ class TaskLists
      * @return TaskList|null
      */
     public static function get_list($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve single task.
      *
@@ -197,10 +166,8 @@ class TaskLists
      * @return Object
      */
     public static function get_task($id, $task_list_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return number of setup tasks remaining
      *
@@ -209,18 +176,14 @@ class TaskLists
      * @return int|null
      */
     public static function setup_tasks_remaining()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add badge to homescreen menu item for remaining tasks
      */
     public static function menu_task_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add visible list ids to component settings.
      *
@@ -229,8 +192,6 @@ class TaskLists
      * @return array
      */
     public static function task_list_preloaded_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

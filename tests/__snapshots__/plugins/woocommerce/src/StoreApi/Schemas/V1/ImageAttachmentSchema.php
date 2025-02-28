@@ -22,10 +22,8 @@ class ImageAttachmentSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a WooCommerce product into an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class ImageAttachmentSchema
      * @return object|null
      */
     public function get_item_response($attachment_id)
-    {
-        // stub
-    }
-
+{
+}
 }

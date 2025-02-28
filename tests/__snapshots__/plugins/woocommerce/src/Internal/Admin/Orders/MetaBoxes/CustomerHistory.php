@@ -17,10 +17,8 @@ class CustomerHistory
      * @return void
      */
     public function output(WC_Order $order): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order history for the customer (data matches Customers report).
      *
@@ -29,8 +27,6 @@ class CustomerHistory
      * @return array|null Order count, total spend, and average spend per order.
      */
     private function get_customer_history($customer_report_id): array|null
-    {
-        // stub
-    }
-
+{
+}
 }

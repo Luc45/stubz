@@ -16,8 +16,6 @@ final class ConnectionHelper
      * @return bool Whether account is connected.
      */
     public static function is_connected()
-    {
-        // stub
-    }
-
+{
+}
 }

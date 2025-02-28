@@ -28,10 +28,8 @@ class ActionScheduler_CronSchedule
      * @param DateTime|null         $first (Optional) The date & time the first instance of this interval schedule ran. Default null, meaning this is the first instance.
      */
     public function __construct(DateTime $start, $recurrence, DateTime|null $first = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate when an instance of this schedule would start based on a given
      * date & time using its the CronExpression.
@@ -40,20 +38,16 @@ class ActionScheduler_CronSchedule
      * @return DateTime
      */
     protected function calculate_next(DateTime $after)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schedule's recurrence.
      *
      * @return string
      */
     public function get_recurrence()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serialize cron schedules with data required prior to AS 3.0.0
      *
@@ -68,18 +62,14 @@ class ActionScheduler_CronSchedule
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserialize cron schedules serialized/stored prior to AS 3.0.0
      *
      * For more background, @see ActionScheduler_Abstract_RecurringSchedule::__wakeup().
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

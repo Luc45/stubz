@@ -30,28 +30,22 @@ class Price
      * @param string $currency The currency of the price.
      */
     public function __construct(string $value, string $currency)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get value of the price.
      *
      * @return string
      */
     public function get_value(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the currency of the price.
      *
      * @return string
      */
     public function get_currency(): string
-    {
-        // stub
-    }
-
+{
+}
 }

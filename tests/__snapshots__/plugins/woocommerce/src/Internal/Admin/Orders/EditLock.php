@@ -21,10 +21,8 @@ class EditLock
      * @return bool|array
      */
     public function get_lock(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether the order is being edited (i.e. locked) by another user.
      *
@@ -32,10 +30,8 @@ class EditLock
      * @return bool TRUE if order is locked and currently being edited by another user. FALSE otherwise.
      */
     public function is_locked_by_another_user(WC_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether the order is being edited by any user.
      *
@@ -43,10 +39,8 @@ class EditLock
      * @return boolean TRUE if order is locked and currently being edited by a user. FALSE otherwise.
      */
     public function is_locked(WC_Order $order): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assigns an order's edit lock to the current user.
      *
@@ -54,10 +48,8 @@ class EditLock
      * @return array|bool FALSE if no user is logged-in, an array in the same format as {@see get_lock()} otherwise.
      */
     public function lock(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooked to 'heartbeat_received' on the edit order page to refresh the lock on an order being edited by the current user.
      *
@@ -66,10 +58,8 @@ class EditLock
      * @return array Response to be sent.
      */
     public function refresh_lock_ajax($response, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooked to 'heartbeat_received' on the orders screen to refresh the locked status of orders in the list table.
      *
@@ -78,10 +68,8 @@ class EditLock
      * @return array Response to be sent.
      */
     public function check_locked_orders_ajax($response, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs HTML for the lock dialog based on the status of the lock on the order (if any).
      * Depending on who owns the lock, this could be a message with the chance to take over or a message indicating that
@@ -91,8 +79,6 @@ class EditLock
      * @return void
      */
     public function render_dialog($order)
-    {
-        // stub
-    }
-
+{
+}
 }

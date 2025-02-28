@@ -4,15 +4,11 @@ namespace GlobalExample;
 
 function GlobalExample\my_global_helper(string $input): string
 {
-    // stub
 }
-
 /**
  * A namespaced function (just to show variety).
  */
 function GlobalExample\my_namespaced_helper(): string
 {
-    // stub
 }
-
 const GlobalExample\MY_GLOBAL_VERSION = '1.2.3';

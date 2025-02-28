@@ -33,10 +33,8 @@ class WC_REST_Webhooks_V1_Controller
      * Register the routes for webhooks.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read webhooks.
      *
@@ -44,10 +42,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access create webhooks.
      *
@@ -56,10 +52,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return bool|WP_Error
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a webhook.
      *
@@ -67,10 +61,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access update a webhook.
      *
@@ -79,10 +71,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return bool|WP_Error
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access delete a webhook.
      *
@@ -91,10 +81,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -103,10 +91,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return bool|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default REST API version.
      *
@@ -114,10 +100,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return string
      */
     protected function get_default_api_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all webhooks.
      *
@@ -125,10 +109,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single item.
      *
@@ -136,10 +118,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single webhook.
      *
@@ -147,10 +127,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single webhook.
      *
@@ -158,10 +136,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single webhook.
      *
@@ -169,10 +145,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single webhook for create or update.
      *
@@ -180,10 +154,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_Error|stdClass $data Post object.
      */
     protected function prepare_item_for_database($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single webhook output for response.
      *
@@ -192,10 +164,8 @@ class WC_REST_Webhooks_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($id, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -203,28 +173,22 @@ class WC_REST_Webhooks_V1_Controller
      * @return array
      */
     protected function prepare_links($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Webhook's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

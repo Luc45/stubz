@@ -32,10 +32,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the aria-describedby description for the add to cart button.
      * Note that this is to provide the description, not the describedby attribute
@@ -44,20 +42,16 @@ class WC_Product_Variable
      * @return string
      */
     public function add_to_cart_aria_describedby()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text.
      *
      * @return string
      */
     public function add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text description - used in aria tags.
      *
@@ -65,10 +59,8 @@ class WC_Product_Variable
      * @return string
      */
     public function add_to_cart_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of all sale and regular prices from all variations. This is used for example when displaying the price range at variable product level or seeing if the variable product is on sale.
      *
@@ -76,10 +68,8 @@ class WC_Product_Variable
      * @return array Array of RAW prices, regular prices, and sale prices with keys set to variation ID.
      */
     public function get_variation_prices($for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the min or max variation regular price.
      *
@@ -88,10 +78,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_variation_regular_price($min_or_max = 'min', $for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the min or max variation sale price.
      *
@@ -100,10 +88,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_variation_sale_price($min_or_max = 'min', $for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the min or max variation (active) price.
      *
@@ -112,10 +98,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_variation_price($min_or_max = 'min', $for_display = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price in html format.
      *
@@ -133,10 +117,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_price_html($price = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the suffix to display after prices > 0.
      *
@@ -149,10 +131,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_price_suffix($price = '', $qty = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a products child ids.
      *
@@ -162,10 +142,8 @@ class WC_Product_Variable
      * @return array Children ids
      */
     public function get_children($visible_only = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a products child ids - visible only.
      *
@@ -175,10 +153,8 @@ class WC_Product_Variable
      * @return array Children ids
      */
     public function get_visible_children()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of attributes used for variations, as well as their possible values.
      *
@@ -187,10 +163,8 @@ class WC_Product_Variable
      * @return array Attributes and their available values
      */
     public function get_variation_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If set, get the default attributes for a variable product.
      *
@@ -198,10 +172,8 @@ class WC_Product_Variable
      * @return string
      */
     public function get_variation_default_attribute($attribute_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Variable products themselves cannot be downloadable.
      *
@@ -209,10 +181,8 @@ class WC_Product_Variable
      * @return bool
      */
     public function get_downloadable($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Variable products themselves cannot be virtual.
      *
@@ -220,10 +190,8 @@ class WC_Product_Variable
      * @return bool
      */
     public function get_virtual($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of available variations for the current product.
      *
@@ -232,10 +200,8 @@ class WC_Product_Variable
      * @return array[]|WC_Product_Variation[]
      */
     public function get_available_variations($return = 'array')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given variation is currently available.
      *
@@ -244,10 +210,8 @@ class WC_Product_Variable
      * @return bool True if the variation is available, false otherwise.
      */
     private function variation_is_available(WC_Product_Variation $variation)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of data for a variation. Used in the add to cart form.
      *
@@ -256,10 +220,8 @@ class WC_Product_Variable
      * @return array|bool
      */
     public function get_available_variation($variation)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets an array of variation attributes.
      *
@@ -267,10 +229,8 @@ class WC_Product_Variable
      * @param array $variation_attributes Attributes list.
      */
     public function set_variation_attributes($variation_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets an array of children for the product.
      *
@@ -278,10 +238,8 @@ class WC_Product_Variable
      * @param array $children Children products.
      */
     public function set_children($children)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets an array of visible children only.
      *
@@ -289,20 +247,16 @@ class WC_Product_Variable
      * @param array $visible_children List of visible children products.
      */
     public function set_visible_children($visible_children)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure properties are set correctly before save.
      *
      * @since 3.0.0
      */
     public function validate_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do any extra processing needed before the actual product save
      * (but after triggering the 'woocommerce_before_..._object_save' action)
@@ -310,10 +264,8 @@ class WC_Product_Variable
      * @return mixed A state value that will be passed to after_data_store_save_or_update.
      */
     protected function before_data_store_save_or_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do any extra processing needed after the actual product save
      * (but before triggering the 'woocommerce_after_..._object_save' action)
@@ -321,10 +273,8 @@ class WC_Product_Variable
      * @param mixed $state The state object that was returned by before_data_store_save_or_update.
      */
     protected function after_data_store_save_or_update($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is on sale.
      *
@@ -332,20 +282,16 @@ class WC_Product_Variable
      * @return bool
      */
     public function is_on_sale($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is a child in stock?
      *
      * @return boolean
      */
     public function child_is_in_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is a child on backorder?
      *
@@ -353,50 +299,40 @@ class WC_Product_Variable
      * @return boolean
      */
     public function child_is_on_backorder()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have a weight set?
      *
      * @return boolean
      */
     public function child_has_weight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have dimensions set?
      *
      * @return boolean
      */
     public function child_has_dimensions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has dimensions set.
      *
      * @return bool
      */
     public function has_dimensions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has weight set.
      *
      * @return bool
      */
     public function has_weight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has additional options that need
      * selecting before adding to cart.
@@ -405,10 +341,8 @@ class WC_Product_Variable
      * @return boolean
      */
     public function has_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync a variable product with its children. These sync functions sync
      * upwards (from child to parent) when the variation is saved.
@@ -418,10 +352,8 @@ class WC_Product_Variable
      * @return WC_Product Synced product object.
      */
     public static function sync($product, $save = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync parent stock status with the status of all children and save.
      *
@@ -430,10 +362,8 @@ class WC_Product_Variable
      * @return WC_Product Synced product object.
      */
     public static function sync_stock_status($product, $save = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sort an associative array of $variation_id => $price pairs in order of min and max prices.
      *
@@ -441,8 +371,6 @@ class WC_Product_Variable
      * @return array
      */
     protected function sort_variation_prices($prices)
-    {
-        // stub
-    }
-
+{
+}
 }

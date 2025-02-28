@@ -20,8 +20,6 @@ class ProductNew
      * @param array $query_args Query args.
      */
     protected function set_block_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
 }

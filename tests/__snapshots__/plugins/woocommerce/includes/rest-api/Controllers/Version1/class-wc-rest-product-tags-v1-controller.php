@@ -37,18 +37,14 @@ class WC_REST_Product_Tags_V1_Controller
      * @return WP_REST_Response $response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Tag's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

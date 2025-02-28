@@ -14,10 +14,8 @@ class WC_CLI_COM_Command
      * Registers a commands for managing WooCommerce.com extensions.
      */
     public static function register_commands()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List extensions owned by the connected site
      *
@@ -39,10 +37,8 @@ class WC_CLI_COM_Command
      * @param  array $assoc_args  WP-CLI associative arguments.
      */
     public static function list_extensions(array $args, array $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * ## OPTIONS
      *
@@ -63,10 +59,8 @@ class WC_CLI_COM_Command
      * @throws \WP_CLI\ExitException If WP_CLI::$capture_exit is true.
      */
     public static function disconnect(array $args, array $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Connects to WooCommerce.com with application-password.
      *
@@ -94,10 +88,8 @@ class WC_CLI_COM_Command
      * @throws \WP_CLI\ExitException If WP_CLI::$capture_exit is true.
      */
     public static function connect(array $args, array $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * We are asking a question and returning an answer as a string.
      *
@@ -106,8 +98,6 @@ class WC_CLI_COM_Command
      * @return string
      */
     protected static function ask($question)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -14,7 +14,5 @@ interface FormatterInterface
      * @param array $options Options that influence the formatting.
      * @return mixed
      */
-    public function format($value, array $options = array (
-));
-
+    public function format($value, array $options = array());
 }

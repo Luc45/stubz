@@ -14,8 +14,6 @@ abstract class ActionScheduler_Schedule_Deprecated
      * @return DateTime|null
      */
     public function next(DateTime|null $after = null)
-    {
-        // stub
-    }
-
+{
+}
 }

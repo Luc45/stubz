@@ -45,10 +45,8 @@ abstract class WP_Background_Process
      * Initiate new background process
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dispatch
      *
@@ -56,10 +54,8 @@ abstract class WP_Background_Process
      * @return array|WP_Error
      */
     public function dispatch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Push to queue
      *
@@ -68,20 +64,16 @@ abstract class WP_Background_Process
      * @return $this
      */
     public function push_to_queue($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save queue
      *
      * @return $this
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update queue
      *
@@ -91,10 +83,8 @@ abstract class WP_Background_Process
      * @return $this
      */
     public function update($key, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete queue
      *
@@ -103,10 +93,8 @@ abstract class WP_Background_Process
      * @return $this
      */
     public function delete($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate key
      *
@@ -118,10 +106,8 @@ abstract class WP_Background_Process
      * @return string
      */
     protected function generate_key($length = 64)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe process queue
      *
@@ -129,20 +115,16 @@ abstract class WP_Background_Process
      * the process is not already running.
      */
     public function maybe_handle()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is queue empty
      *
      * @return bool
      */
     protected function is_queue_empty()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is process running
      *
@@ -150,10 +132,8 @@ abstract class WP_Background_Process
      * in a background process.
      */
     protected function is_process_running()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Lock process
      *
@@ -162,10 +142,8 @@ abstract class WP_Background_Process
      * defined in the time_exceeded() method.
      */
     protected function lock_process()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unlock process
      *
@@ -174,20 +152,16 @@ abstract class WP_Background_Process
      * @return $this
      */
     protected function unlock_process()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get batch
      *
      * @return stdClass Return the first batch from the queue
      */
     protected function get_batch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle
      *
@@ -195,10 +169,8 @@ abstract class WP_Background_Process
      * within server memory and time limit constraints.
      */
     protected function handle()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Memory exceeded
      *
@@ -208,20 +180,16 @@ abstract class WP_Background_Process
      * @return bool
      */
     protected function memory_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get memory limit
      *
      * @return int
      */
     protected function get_memory_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Time exceeded.
      *
@@ -231,10 +199,8 @@ abstract class WP_Background_Process
      * @return bool
      */
     protected function time_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Complete.
      *
@@ -242,10 +208,8 @@ abstract class WP_Background_Process
      * performed, or, call parent::complete().
      */
     protected function complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule cron healthcheck
      *
@@ -254,10 +218,8 @@ abstract class WP_Background_Process
      * @return mixed
      */
     public function schedule_cron_healthcheck($schedules)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle cron healthcheck
      *
@@ -265,26 +227,20 @@ abstract class WP_Background_Process
      * and data exists in the queue.
      */
     public function handle_cron_healthcheck()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule event
      */
     protected function schedule_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear scheduled event
      */
     protected function clear_scheduled_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancel Process
      *
@@ -292,10 +248,8 @@ abstract class WP_Background_Process
      *
      */
     public function cancel_process()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Task
      *
@@ -308,6 +262,5 @@ abstract class WP_Background_Process
      *
      * @return mixed
      */
-    protected abstract function task($item);
-
+    abstract protected function task($item);
 }

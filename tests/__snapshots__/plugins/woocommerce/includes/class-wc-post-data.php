@@ -16,10 +16,8 @@ class WC_Post_Data
      * Hook in methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Link to parent products when getting permalink for variation.
      *
@@ -29,28 +27,22 @@ class WC_Post_Data
      * @return string
      */
     public static function variation_post_link($permalink, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync products queued to sync.
      */
     public static function do_deferred_product_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync a product.
      *
      * @param int $product_id Product ID.
      */
     public static function deferred_product_sync($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When a post status changes.
      *
@@ -59,18 +51,14 @@ class WC_Post_Data
      * @param WP_Post $post       Post data.
      */
     public static function transition_post_status($new_status, $old_status, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete product view transients when needed e.g. when post status changes, or visibility/stock status is modified.
      */
     public static function delete_product_query_transients()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle type changes.
      *
@@ -81,10 +69,8 @@ class WC_Post_Data
      * @param string     $to      New type.
      */
     public static function product_type_changed($product, $from, $to)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When editing a term, check for product attributes.
      *
@@ -93,10 +79,8 @@ class WC_Post_Data
      * @param  string $taxonomy Taxonomy slug.
      */
     public static function edit_term($term_id, $tt_id, $taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When a term is edited, check for product attributes and update variations.
      *
@@ -105,10 +89,8 @@ class WC_Post_Data
      * @param  string $taxonomy Taxonomy slug.
      */
     public static function edited_term($term_id, $tt_id, $taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure floats are correctly converted to strings based on PHP locale.
      *
@@ -120,10 +102,8 @@ class WC_Post_Data
      * @return null|bool
      */
     public static function update_order_item_metadata($check, $object_id, $meta_key, $meta_value, $prev_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure floats are correctly converted to strings based on PHP locale.
      *
@@ -135,10 +115,8 @@ class WC_Post_Data
      * @return null|bool
      */
     public static function update_post_metadata($check, $object_id, $meta_key, $meta_value, $prev_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forces the order posts to have a title in a certain format (containing the date).
      * Forces certain product data based on the product's type, e.g. grouped products cannot have a parent.
@@ -147,10 +125,8 @@ class WC_Post_Data
      * @return array
      */
     public static function wp_insert_post_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change embed data for certain post types.
      *
@@ -160,50 +136,40 @@ class WC_Post_Data
      * @return array
      */
     public static function filter_oembed_response_data($data, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes variations etc belonging to a deleted post, and clears transients.
      *
      * @param mixed $id ID of post being deleted.
      */
     public static function delete_post($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trash post.
      *
      * @param mixed $id Post ID.
      */
     public static function trash_post($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Untrash post.
      *
      * @param mixed $id Post ID.
      */
     public static function untrash_post($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear global unique id if it's not unique.
      *
      * @param mixed $id Post ID.
      */
     private static function clear_global_unique_id_if_necessary($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the post type for a given post.
      *
@@ -211,10 +177,8 @@ class WC_Post_Data
      * @return string The post type.
      */
     private static function get_post_type($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Before deleting an order, do some cleanup.
      *
@@ -222,30 +186,24 @@ class WC_Post_Data
      * @param int $order_id Order ID.
      */
     public static function before_delete_order($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove item meta on permanent deletion.
      *
      * @param int $postid Post ID.
      */
     public static function delete_order_items($postid)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove downloadable permissions on permanent order deletion.
      *
      * @param int $postid Post ID.
      */
     public static function delete_order_downloadable_permissions($postid)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush meta cache for CRUD objects on direct update.
      *
@@ -255,10 +213,8 @@ class WC_Post_Data
      * @param  mixed  $meta_value Meta value.
      */
     public static function flush_object_meta_cache($meta_id, $object_id, $meta_key, $meta_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure default category gets set.
      *
@@ -270,10 +226,8 @@ class WC_Post_Data
      * @param bool   $append    Are we appending or setting terms.
      */
     public static function force_default_term($object_id, $terms, $tt_ids, $taxonomy, $append)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure statuses are correctly reassigned when restoring orders and products.
      *
@@ -283,10 +237,8 @@ class WC_Post_Data
      * @return string
      */
     public static function wp_untrash_post_status($new_status, $post_id, $previous_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When setting stock level, ensure the stock status is kept in sync.
      *
@@ -297,10 +249,8 @@ class WC_Post_Data
      * @deprecated    3.3
      */
     public static function sync_product_stock_status($meta_id, $object_id, $meta_key, $meta_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update changed downloads.
      *
@@ -310,10 +260,8 @@ class WC_Post_Data
      * @param array $downloads    Newly set files.
      */
     public static function process_product_file_download_paths($product_id, $variation_id, $downloads)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete transients when terms are set.
      *
@@ -326,8 +274,6 @@ class WC_Post_Data
      * @param array  $old_tt_ids Old array of term taxonomy IDs.
      */
     public static function set_object_terms($object_id, $terms, $tt_ids, $taxonomy, $append, $old_tt_ids)
-    {
-        // stub
-    }
-
+{
+}
 }

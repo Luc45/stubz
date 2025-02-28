@@ -15,10 +15,8 @@ class DatabaseUtil
      * @return array The result of the execution (or simulation) from dbDelta.
      */
     public function dbdelta(string $queries = '', bool $execute = true): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given a set of table creation SQL statements, check which of the tables are currently missing in the database.
      *
@@ -26,10 +24,8 @@ class DatabaseUtil
      * @return array An array containing the names of the tables that currently don't exist in the database.
      */
     public function get_missing_tables(string $creation_queries): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses the output given by dbdelta and returns information about it.
      *
@@ -37,10 +33,8 @@ class DatabaseUtil
      * @return array[] An array containing a 'created_tables' key whose value is an array with the names of the tables that have been (or would have been) created.
      */
     public function parse_dbdelta_output(array $dbdelta_output): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Drops a database table.
      *
@@ -49,10 +43,8 @@ class DatabaseUtil
      * @return bool True on success, false on error.
      */
     public function drop_database_table(string $table_name, bool $add_prefix = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Drops a table index, if both the table and the index exist.
      *
@@ -61,10 +53,8 @@ class DatabaseUtil
      * @return bool True if the index has been dropped, false if either the table or the index don't exist.
      */
     public function drop_table_index(string $table_name, string $index_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a primary key for a table, only if the table doesn't have a primary key already.
      *
@@ -73,10 +63,8 @@ class DatabaseUtil
      * @return bool True if the key has been created, false if the table already had a primary key.
      */
     public function create_primary_key(string $table_name, array $columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the columns of a given table index, or of the primary key.
      *
@@ -85,10 +73,8 @@ class DatabaseUtil
      * @return array The index columns. Empty array if the table or the index don't exist.
      */
     public function get_index_columns(string $table_name, string $index_name = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Formats an object value of type `$type` for inclusion in the database.
      *
@@ -98,10 +84,8 @@ class DatabaseUtil
      * @throws \Exception When an invalid type is passed.
      */
     public function format_object_value_for_db($value, string $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the `$wpdb` placeholder to use for data type `$type`.
      *
@@ -110,10 +94,8 @@ class DatabaseUtil
      * @throws \Exception When an invalid type is passed.
      */
     public function get_wpdb_format_for_type(string $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates ON DUPLICATE KEY UPDATE clause to be used in migration.
      *
@@ -122,10 +104,8 @@ class DatabaseUtil
      * @return string SQL clause for INSERT...ON DUPLICATE KEY UPDATE
      */
     public function generate_on_duplicate_statement_clause(array $columns): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hybrid of $wpdb->update and $wpdb->insert. It will try to update a row, and if it doesn't exist, it will insert it. This needs unique constraints to be set on the table on all ID columns.
      *
@@ -141,10 +121,8 @@ class DatabaseUtil
      * @return int Returns the value of DB's  ON DUPLICATE KEY UPDATE clause.
      */
     public function insert_on_duplicate_key_update($table_name, $data, $format): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hybrid of $wpdb->update and $wpdb->insert. It will try to update a row, and if it doesn't exist, it will insert it. Unlike `insert_on_duplicate_key_update` it does not require a unique constraint, but also does not guarantee uniqueness on its own.
      *
@@ -163,30 +141,24 @@ class DatabaseUtil
      * @return bool|int Number of rows affected. Boolean false on error.
      */
     public function insert_or_update($table_name, $data, $where, $format, $where_format, $primary_key_column = 'id', $primary_key_format = '%d')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get max index length.
      *
      * @return int Max index length.
      */
     public function get_max_index_length(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a fulltext index on order address table.
      *
      * @return void
      */
     public function create_fts_index_order_address_table(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to drop the fulltext index on order address table.
      *
@@ -195,10 +167,8 @@ class DatabaseUtil
      * @return void
      */
     public function drop_fts_index_order_address_table(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize FTS Search params to remove relevancy operators for performance, and add partial matches. Useful when the sorting is already happening based on some other conditions, so relevancy calculation is not needed.
      *
@@ -209,38 +179,30 @@ class DatabaseUtil
      * @return string Sanitized search term.
      */
     public function sanitise_boolean_fts_search_term(string $param): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if fulltext index with key `order_addresses_fts` on order address table exists.
      *
      * @return bool
      */
     public function fts_index_on_order_address_table_exists(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a fulltext index on order item table.
      *
      * @return void
      */
     public function create_fts_index_order_item_table(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if fulltext index with key `order_item_fts` on order item table exists.
      *
      * @return bool
      */
     public function fts_index_on_order_item_table_exists(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -27,8 +27,6 @@ class COTMigrationServiceProvider
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

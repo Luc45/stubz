@@ -33,27 +33,22 @@ class DeprecatedClassFacade
      *
      * @var array
      */
-    private static $logged_messages = array (
-);
+    private static $logged_messages = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log a deprecation to the error log.
      *
      * @param string $function The name of the deprecated function being called.
      */
     private static function log_deprecation($function)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Executes when calling any function on an instance of this class.
      *
@@ -61,10 +56,8 @@ class DeprecatedClassFacade
      * @param array  $arguments An array of the arguments to the function call.
      */
     public function __call($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Executes when calling any static function on this class.
      *
@@ -72,8 +65,6 @@ class DeprecatedClassFacade
      * @param array  $arguments An array of the arguments to the function call.
      */
     public static function __callStatic($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
 }

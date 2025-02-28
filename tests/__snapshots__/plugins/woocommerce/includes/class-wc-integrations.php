@@ -10,27 +10,22 @@ class WC_Integrations
      *
      * @var array
      */
-    public $integrations = array (
-);
+    public $integrations = array();
 
     /**
      * Initialize integrations.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return loaded integrations.
      *
      * @return array
      */
     public function get_integrations()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a desired integration.
      *
@@ -39,8 +34,6 @@ class WC_Integrations
      * @return mixed|null The integration if one is found, otherwise null.
      */
     public function get_integration($id)
-    {
-        // stub
-    }
-
+{
+}
 }

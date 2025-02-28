@@ -50,38 +50,30 @@ class ActionScheduler_DataController
      * @return bool
      */
     public static function dependencies_met()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a flag indicating whether the migration is complete.
      *
      * @return bool Whether the flag has been set marking the migration as complete
      */
     public static function is_migration_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark the migration as complete.
      */
     public static function mark_migration_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unmark migration when a plugin is de-activated. Will not work in case of silent activation, for example in an update.
      * We do this to mitigate the bug of lost actions which happens if there was an AS 2.x to AS 3.x migration in the past, but that plugin is now
      * deactivated and the site was running on AS 2.x again.
      */
     public static function mark_migration_incomplete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the action store class name.
      *
@@ -90,10 +82,8 @@ class ActionScheduler_DataController
      * @return string
      */
     public static function set_store_class($class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the action logger class name.
      *
@@ -102,63 +92,49 @@ class ActionScheduler_DataController
      * @return string
      */
     public static function set_logger_class($class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the sleep time in seconds.
      *
      * @param integer $sleep_time The number of seconds to pause before resuming operation.
      */
     public static function set_sleep_time($sleep_time)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the tick count required for freeing memory.
      *
      * @param integer $free_ticks The number of ticks to free memory on.
      */
     public static function set_free_ticks($free_ticks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Free memory if conditions are met.
      *
      * @param int $ticks Current tick count.
      */
     public static function maybe_free_memory($ticks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reduce memory footprint by clearing the database query and object caches.
      */
     public static function free_memory()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Connect to table datastores if migration is complete.
      * Otherwise, proceed with the migration if the dependencies have been met.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Singleton factory.
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
 }

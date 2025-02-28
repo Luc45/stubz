@@ -18,18 +18,14 @@ class Settings
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format order statuses by removing a leading 'wc-' if present.
      *
@@ -37,20 +33,16 @@ class Settings
      * @return array formatted statuses.
      */
     public static function get_order_statuses($statuses)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all order statuses present in analytics tables that aren't registered.
      *
      * @return array Unregistered order statuses.
      */
     private function get_unregistered_order_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an object defining the currency options for the site's current currency
      *
@@ -63,10 +55,8 @@ class Settings
      * }
      */
     public static function get_currency_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooks extra necessary data into the component settings array already set in WooCommerce core.
      *
@@ -74,20 +64,16 @@ class Settings
      * @return array Array of component settings.
      */
     public function add_component_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes non-necessary feature properties for the client side.
      *
      * @return array
      */
     public function get_features()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the admin settings for use in the WC REST API
      *
@@ -95,10 +81,8 @@ class Settings
      * @return array
      */
     public function add_settings_group($groups)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add WC Admin specific settings
      *
@@ -106,10 +90,8 @@ class Settings
      * @return array
      */
     public function add_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets custom settings used for WC Admin.
      *
@@ -117,8 +99,6 @@ class Settings
      * @return array
      */
     private function get_custom_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

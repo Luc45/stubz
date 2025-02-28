@@ -61,11 +61,9 @@ class ReceiptRenderingEngine
      * @param LegacyProxy          $legacy_proxy The instance of LegacyProxy to use.
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\TransientFiles\TransientFilesEngine $transient_files_engine, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\TransientFiles\TransientFilesEngine $transient_files_engine, Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+{
+}
     /**
      * Get the (transient) file name of the receipt for an order, creating a new file if necessary.
      *
@@ -85,10 +83,8 @@ class ReceiptRenderingEngine
      * @throws Exception The directory to store the file doesn't exist and can't be created.
      */
     public function generate_receipt($order, $expiration_date = null, bool $force_new = false): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file name of an existing receipt file for an order.
      *
@@ -100,10 +96,8 @@ class ReceiptRenderingEngine
      * @throws Exception Thrown if a wrong file path is passed.
      */
     public function get_existing_receipt($order): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order data that the receipt template will use.
      *
@@ -111,10 +105,8 @@ class ReceiptRenderingEngine
      * @return array The order data as an associative array.
      */
     private function get_order_data(WC_Abstract_Order $order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order data related to WooCommerce Payments.
      *
@@ -130,8 +122,6 @@ class ReceiptRenderingEngine
      * @return array|null An array of payment information for the order, or null if not available.
      */
     private function get_woo_pay_data(WC_Abstract_Order $order): array|null
-    {
-        // stub
-    }
-
+{
+}
 }

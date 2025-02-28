@@ -23,10 +23,8 @@ class CartItemSchema
      * @return array
      */
     public function get_item_response($cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of product images for the cart item.
      *
@@ -36,10 +34,8 @@ class CartItemSchema
      * @return array
      */
     protected function get_cart_images(WC_Product $product, array $cart_item, string $cart_item_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format cart item data removing any HTML tag.
      *
@@ -47,10 +43,8 @@ class CartItemSchema
      * @return array
      */
     protected function get_item_data($cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove HTML tags from cart item data and set the `hidden` property to `__experimental_woocommerce_blocks_hidden`.
      *
@@ -58,8 +52,6 @@ class CartItemSchema
      * @return array
      */
     protected function format_item_data_element($item_data_element)
-    {
-        // stub
-    }
-
+{
+}
 }

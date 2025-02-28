@@ -18,8 +18,6 @@ class EvaluateAndGetStatus
      * @return string The evaluated status.
      */
     public static function evaluate($spec, $current_status, $stored_state, $rule_evaluator)
-    {
-        // stub
-    }
-
+{
+}
 }

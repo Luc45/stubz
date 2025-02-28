@@ -22,10 +22,8 @@ class TermSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a term object into an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class TermSchema
      * @return array
      */
     public function get_item_response($term)
-    {
-        // stub
-    }
-
+{
+}
 }

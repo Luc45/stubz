@@ -28,11 +28,9 @@ class WC_Queue
      *
      * @return WC_Queue_Interface
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Get class to instantiate
      *
@@ -41,10 +39,8 @@ class WC_Queue
      * @return string
      */
     protected static function get_class()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enforce a WC_Queue_Interface
      *
@@ -52,8 +48,6 @@ class WC_Queue
      * @return WC_Queue_Interface
      */
     protected static function validate_instance($instance)
-    {
-        // stub
-    }
-
+{
+}
 }

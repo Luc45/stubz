@@ -25,10 +25,8 @@ class PaymentInfo
      * @return array
      */
     public static function get_card_info(WC_Abstract_Order $order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a CSS-compatible SVG icon of a card brand.
      *
@@ -37,10 +35,8 @@ class PaymentInfo
      * @return string
      */
     private static function get_card_icon(string|null $brand): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about the card used for payment on an order, when the payment gateway is WooPayments.
      *
@@ -51,8 +47,6 @@ class PaymentInfo
      * @return array
      */
     private static function get_wcpay_card_info(WC_Abstract_Order $order): array
-    {
-        // stub
-    }
-
+{
+}
 }

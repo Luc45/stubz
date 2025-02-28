@@ -16,8 +16,6 @@ class DiscountsUtil
      * @return bool
      */
     public static function is_coupon_emails_allowed($check_emails, $restrictions)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -169,11 +169,9 @@ class OnboardingFonts
      *
      * @internal This method is for internal purposes only.
      */
-    public static final function init()
-    {
-        // stub
-    }
-
+    final public static function init()
+{
+}
     /**
      * Start install fonts async job.
      *
@@ -182,20 +180,16 @@ class OnboardingFonts
      * @return string
      */
     public static function start_install_fonts_async_job($old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create Font Families and Font Faces.
      *
      * @return void
      */
     public static function install_fonts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install font families.
      *
@@ -204,10 +198,8 @@ class OnboardingFonts
      * @return array
      */
     private static function install_font_families($slug_font_families_to_install, $font_collection)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install font faces.
      *
@@ -216,10 +208,8 @@ class OnboardingFonts
      * @param array $font_faces_from_collection Font faces from collection.
      */
     private static function install_font_faces($slug_font_families_to_install, $installed_font_families, $font_faces_from_collection)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get font faces data from font collection.
      *
@@ -228,10 +218,8 @@ class OnboardingFonts
      * @return array
      */
     private static function get_font_faces_data_from_font_collection($slug_font_families_to_install, $font_collection)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get font family by slug from font collection.
      *
@@ -240,8 +228,6 @@ class OnboardingFonts
      * @return array|null
      */
     private static function get_font_family_by_slug_from_font_collection($slug, $font_families_collection)
-    {
-        // stub
-    }
-
+{
+}
 }

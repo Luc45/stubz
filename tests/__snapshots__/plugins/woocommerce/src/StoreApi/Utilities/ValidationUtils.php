@@ -15,10 +15,8 @@ class ValidationUtils
      * @return array Array of state names indexed by state keys.
      */
     public function get_states_for_country($country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate provided state against a countries list of defined states.
      *
@@ -29,10 +27,8 @@ class ValidationUtils
      * @return boolean Valid or not valid.
      */
     public function validate_state($state, $country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a state based on the country. If country has defined states, will return a valid upper case state code.
      *
@@ -41,8 +37,6 @@ class ValidationUtils
      * @return string
      */
     public function format_state($state, $country)
-    {
-        // stub
-    }
-
+{
+}
 }

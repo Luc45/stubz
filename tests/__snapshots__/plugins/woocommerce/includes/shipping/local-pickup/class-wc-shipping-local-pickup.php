@@ -24,29 +24,22 @@ class WC_Shipping_Local_Pickup
      * @param int $instance_id Instance ID.
      */
     public function __construct($instance_id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize local pickup.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate local pickup shipping.
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * Sanitize the cost field.
      *
@@ -56,16 +49,12 @@ class WC_Shipping_Local_Pickup
      * @return string
      */
     public function sanitize_cost($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
 }

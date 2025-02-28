@@ -24,18 +24,14 @@ class WC_REST_Webhook_Deliveries_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($log, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Webhook's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

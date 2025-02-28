@@ -14,7 +14,6 @@ interface ProductFormTemplateInterface
      * @return GroupInterface new group block.
      */
     public function add_group(array $block_config): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface;
-
     /**
      * Gets Group block by id.
      *
@@ -22,7 +21,6 @@ interface ProductFormTemplateInterface
      * @return GroupInterface|null
      */
     public function get_group_by_id(string $group_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface|null;
-
     /**
      * Gets Section block by id.
      *
@@ -30,7 +28,6 @@ interface ProductFormTemplateInterface
      * @return SectionInterface|null
      */
     public function get_section_by_id(string $section_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SectionInterface|null;
-
     /**
      * Gets subsection block by id.
      *
@@ -38,7 +35,6 @@ interface ProductFormTemplateInterface
      * @return SubsectionInterface|null
      */
     public function get_subsection_by_id(string $subsection_id): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\SubsectionInterface|null;
-
     /**
      * Gets Block by id.
      *
@@ -46,5 +42,4 @@ interface ProductFormTemplateInterface
      * @return BlockInterface|null
      */
     public function get_block_by_id(string $block_id): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface|null;
-
 }

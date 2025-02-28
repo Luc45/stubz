@@ -29,20 +29,16 @@ class Renderer
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the parsed block.
      *
      * @param array $block The block to be parsed.
      */
     public function set_parsed_block($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the rendering of the block.
      *
@@ -52,28 +48,22 @@ class Renderer
      * @return string
      */
     public function handle_rendering($block_content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the block should be prevented from rendering.
      *
      * @return bool
      */
     private function should_prevent_render()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the render state.
      */
     private function reset_render_state()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enhances the Product Collection block with client-side pagination.
      *
@@ -86,10 +76,8 @@ class Renderer
      * @return string Updated block content with added interactivity attributes.
      */
     public function enhance_product_collection_with_interactivity($block_content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if next tag is a PC block.
      *
@@ -98,20 +86,16 @@ class Renderer
      * @return bool Answer if PC block is available.
      */
     private function is_next_tag_product_collection($p)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set PC block namespace for Interactivity API.
      *
      * @param WP_HTML_Tag_processor $p Initial tag processor.
      */
     private function set_product_collection_namespace($p)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the styles for the list element (fixed width).
      *
@@ -119,10 +103,8 @@ class Renderer
      * @return string
      */
     protected function get_list_styles($fixed_width)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the style attribute for fixed width.
      *
@@ -130,10 +112,8 @@ class Renderer
      * @param string                $fixed_width The fixed width value.
      */
     private function set_fixed_width_style($p, $fixed_width)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle block dimensions if width type is set to 'fixed'.
      *
@@ -141,10 +121,8 @@ class Renderer
      * @param array                 $block The block details.
      */
     private function handle_block_dimensions($p, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attach the init directive to Product Collection block to call
      * the onRender callback.
@@ -155,10 +133,8 @@ class Renderer
      * @return string Updated HTML content.
      */
     private function add_rendering_callback($block_content, $collection)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attach all the Interactivity API directives responsible
      * for client-side navigation.
@@ -168,10 +144,8 @@ class Renderer
      * @return string Updated HTML content.
      */
     private function enable_client_side_navigation($block_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add interactive links to all anchors inside the Query Pagination block.
      * This enabled client-side navigation for the product collection block.
@@ -181,10 +155,8 @@ class Renderer
      * @param \WP_Block $instance      The block instance.
      */
     public function add_navigation_link_directives($block_content, $block, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process pagination links within the block content.
      *
@@ -192,10 +164,8 @@ class Renderer
      * @return string The updated block content.
      */
     private function process_pagination_links($block_content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets up data attributes required for interactivity and client-side navigation.
      *
@@ -204,10 +174,8 @@ class Renderer
      * @param string                 $key_prefix The prefix for the data-wc-key attribute.
      */
     private function update_pagination_anchors($processor, $class_name, $key_prefix)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Provides the location context to each inner block of the product collection block.
      * Hint: Only blocks using the 'query' context will be affected.
@@ -235,10 +203,8 @@ class Renderer
      * }
      */
     public function provide_location_context_for_inner_blocks($context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the global location context.
      * Serve as a runtime cache for the location context.
@@ -248,8 +214,6 @@ class Renderer
      * @return array The location context.
      */
     private function get_location_context()
-    {
-        // stub
-    }
-
+{
+}
 }

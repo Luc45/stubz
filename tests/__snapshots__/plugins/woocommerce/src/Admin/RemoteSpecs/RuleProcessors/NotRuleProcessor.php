@@ -20,10 +20,8 @@ class NotRuleProcessor
      * @param RuleEvaluator $rule_evaluator The rule evaluator to use.
      */
     public function __construct($rule_evaluator = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Evaluates the rules in the operand and negates the result.
      *
@@ -33,10 +31,8 @@ class NotRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -45,8 +41,6 @@ class NotRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

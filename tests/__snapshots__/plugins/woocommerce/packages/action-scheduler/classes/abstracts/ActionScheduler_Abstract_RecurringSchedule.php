@@ -42,50 +42,40 @@ abstract class ActionScheduler_Abstract_RecurringSchedule
      * @param DateTime|null $first (Optional) The date & time the first instance of this interval schedule ran. Default null, meaning this is the first instance.
      */
     public function __construct(DateTime $date, $recurrence, DateTime|null $first = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule is recurring.
      *
      * @return bool
      */
     public function is_recurring()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the date & time of the first schedule in this recurring series.
      *
      * @return DateTime|null
      */
     public function get_first_date()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schedule's recurrence.
      *
      * @return string
      */
     public function get_recurrence()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For PHP 5.2 compat, since DateTime objects can't be serialized
      *
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserialize recurring schedules serialized/stored prior to AS 3.0.0
      *
@@ -97,8 +87,6 @@ abstract class ActionScheduler_Abstract_RecurringSchedule
      * prior to 3.0, we need to correctly map the old property names.
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

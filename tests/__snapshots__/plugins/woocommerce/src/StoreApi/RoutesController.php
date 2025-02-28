@@ -19,8 +19,7 @@ class RoutesController
      *
      * @var array
      */
-    protected $routes = array (
-);
+    protected $routes = array();
 
     /**
      * Namespace for the API.
@@ -35,18 +34,14 @@ class RoutesController
      * @param SchemaController $schema_controller Schema controller class passed to each route.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\SchemaController $schema_controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register all Store API routes. This includes routes under specific version namespaces.
      */
     public function register_all_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a route class instance.
      *
@@ -58,10 +53,8 @@ class RoutesController
      * @return AbstractRoute
      */
     public function get($name, $version = 'v1')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a route path without instantiating the corresponding RoutesController object.
      *
@@ -75,10 +68,8 @@ class RoutesController
      * @return string[] List of route paths.
      */
     public function get_all_routes($version = 'v1', $controller = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register defined list of routes with WordPress.
      *
@@ -86,8 +77,6 @@ class RoutesController
      * @param string $namespace Overrides the default route namespace.
      */
     protected function register_routes($version = 'v1', $namespace = 'wc/store/v1')
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -17,8 +17,6 @@ class WC_CLI_Tool_Command
      * tools endpoints.
      */
     public static function register_commands()
-    {
-        // stub
-    }
-
+{
+}
 }

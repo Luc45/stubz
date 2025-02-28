@@ -8,9 +8,7 @@
  */
 function wc_page_endpoint_title($title)
 {
-    // stub
 }
-
 /**
  * Replace the title part of the document title.
  *
@@ -26,9 +24,7 @@ function wc_page_endpoint_title($title)
  */
 function wc_page_endpoint_document_title_parts($title)
 {
-    // stub
 }
-
 /**
  * Retrieve page ids - used for myaccount, edit_address, shop, cart, checkout, pay, view_order, terms. returns -1 if no page is found.
  *
@@ -37,9 +33,7 @@ function wc_page_endpoint_document_title_parts($title)
  */
 function wc_get_page_id($page)
 {
-    // stub
 }
-
 /**
  * Retrieve page permalink.
  *
@@ -49,9 +43,7 @@ function wc_get_page_id($page)
  */
 function wc_get_page_permalink($page, $fallback = null)
 {
-    // stub
 }
-
 /**
  * Get endpoint URL.
  *
@@ -65,9 +57,7 @@ function wc_get_page_permalink($page, $fallback = null)
  */
 function wc_get_endpoint_url($endpoint, $value = '', $permalink = '')
 {
-    // stub
 }
-
 /**
  * Hide or adjust menu items conditionally.
  *
@@ -76,9 +66,7 @@ function wc_get_endpoint_url($endpoint, $value = '', $permalink = '')
  */
 function wc_nav_menu_items($items)
 {
-    // stub
 }
-
 /**
  * Hide menu items in navigation blocks conditionally.
  *
@@ -90,9 +78,7 @@ function wc_nav_menu_items($items)
  */
 function wc_nav_menu_inner_blocks($inner_blocks)
 {
-    // stub
 }
-
 /**
  * Fix active class in nav for shop page.
  *
@@ -101,9 +87,7 @@ function wc_nav_menu_inner_blocks($inner_blocks)
  */
 function wc_nav_menu_item_classes($menu_items)
 {
-    // stub
 }
-
 /**
  * Fix active class in wp_list_pages for shop page.
  *
@@ -114,5 +98,4 @@ function wc_nav_menu_item_classes($menu_items)
  */
 function wc_list_pages($pages)
 {
-    // stub
 }

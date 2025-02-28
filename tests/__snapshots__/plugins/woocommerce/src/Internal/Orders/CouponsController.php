@@ -13,10 +13,8 @@ class CouponsController
      * @throws Exception If order or coupon is invalid.
      */
     public function add_coupon_discount_via_ajax(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order discount programmatically.
      *
@@ -25,8 +23,6 @@ class CouponsController
      * @throws \Exception Invalid order or coupon.
      */
     public function add_coupon_discount(array $post_variables): object
-    {
-        // stub
-    }
-
+{
+}
 }

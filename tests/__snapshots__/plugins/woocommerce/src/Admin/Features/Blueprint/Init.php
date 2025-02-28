@@ -14,37 +14,30 @@ class Init
      *
      * @var StepExporter[]
      */
-    private array $initialized_exporters = array (
-);
+    private array $initialized_exporters = array();
 
     /**
      * Init constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register REST API routes.
      *
      * @return void
      */
     public function init_rest_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return Woo Exporter classnames.
      *
      * @return StepExporter[]
      */
     public function get_woo_exporters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Woo Specific Exporters.
      *
@@ -53,10 +46,8 @@ class Init
      * @return StepExporter[]
      */
     public function add_woo_exporters(array $exporters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add Woo Specific Importers.
      *
@@ -65,10 +56,8 @@ class Init
      * @return array
      */
     public function add_woo_importers(array $importers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return step groups for JS.
      *
@@ -77,10 +66,8 @@ class Init
      * @return array
      */
     public function get_step_groups_for_js()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add shared JS vars.
      *
@@ -89,8 +76,6 @@ class Init
      * @return mixed
      */
     public function add_js_vars($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

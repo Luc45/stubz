@@ -16,10 +16,8 @@ abstract class CronExpression_AbstractField
      * @return bool
      */
     public function isSatisfied($dateValue, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a value is a range
      *
@@ -28,10 +26,8 @@ abstract class CronExpression_AbstractField
      * @return bool
      */
     public function isRange($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a value is an increments of ranges
      *
@@ -40,10 +36,8 @@ abstract class CronExpression_AbstractField
      * @return bool
      */
     public function isIncrementsOfRanges($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if a value is within a range
      *
@@ -53,10 +47,8 @@ abstract class CronExpression_AbstractField
      * @return bool
      */
     public function isInRange($dateValue, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if a value is within an increments of ranges (offset[-to]/step size)
      *
@@ -66,8 +58,6 @@ abstract class CronExpression_AbstractField
      * @return bool
      */
     public function isInIncrementsOfRanges($dateValue, $value)
-    {
-        // stub
-    }
-
+{
+}
 }

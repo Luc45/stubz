@@ -32,10 +32,8 @@ class UpdatePatterns
      * @return bool|WP_Error
      */
     public function generate_content($ai_connection, $token, $images, $business_description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the patterns with AI generated content.
      *
@@ -47,10 +45,8 @@ class UpdatePatterns
      * @return array|WP_Error The patterns with AI generated content.
      */
     public function generate_ai_content_for_patterns($ai_connection, $token, $patterns, $business_description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares the prompts for the AI.
      *
@@ -59,10 +55,8 @@ class UpdatePatterns
      * @return array
      */
     private function prepare_prompts(array $patterns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares the expected results format for the AI.
      *
@@ -71,10 +65,8 @@ class UpdatePatterns
      * @return array
      */
     private function prepare_expected_results_format(array $prompts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Formats the prompts for the AI.
      *
@@ -85,10 +77,8 @@ class UpdatePatterns
      * @return array
      */
     private function format_prompts_for_ai(array $prompts, string $business_description, array $expected_results_format)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches and validates the AI responses.
      *
@@ -100,10 +90,8 @@ class UpdatePatterns
      * @return array|mixed
      */
     private function fetch_and_validate_ai_responses($ai_connection, $token, $formatted_prompts, $expected_results_format)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Applies the AI responses to the patterns.
      *
@@ -113,10 +101,8 @@ class UpdatePatterns
      * @return mixed
      */
     private function apply_ai_responses_to_patterns(array $patterns, array $ai_responses)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the string from the AI generated content. It removes double quotes that can cause issues when
      * decoding the patterns JSON.
@@ -126,10 +112,8 @@ class UpdatePatterns
      * @return string The sanitized string.
      */
     private function sanitize_string($string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assign selected images to patterns.
      *
@@ -139,20 +123,16 @@ class UpdatePatterns
      * @return array|WP_Error The patterns with images.
      */
     private function assign_selected_images_to_patterns($patterns_dictionary, $selected_images)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Patterns Dictionary.
      *
      * @return mixed|WP_Error|null
      */
     public static function get_patterns_dictionary()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the pattern has images.
      *
@@ -161,10 +141,8 @@ class UpdatePatterns
      * @return bool True if the pattern has images, false otherwise.
      */
     private function pattern_has_images(array $pattern): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the images for the given pattern.
      *
@@ -174,10 +152,8 @@ class UpdatePatterns
      * @return array An array containing an array of the images in the first position and their alts in the second.
      */
     private function get_images_for_pattern(array $pattern, array $selected_images): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the selected image format. Defaults to portrait.
      *
@@ -186,8 +162,6 @@ class UpdatePatterns
      * @return string The selected image format.
      */
     private function get_selected_image_format($selected_image)
-    {
-        // stub
-    }
-
+{
+}
 }

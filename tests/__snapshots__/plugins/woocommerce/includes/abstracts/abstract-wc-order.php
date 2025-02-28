@@ -49,8 +49,7 @@ abstract class WC_Abstract_Order
      * @since 3.0.0
      * @var array
      */
-    protected $items = array (
-);
+    protected $items = array();
 
     /**
      * Order items that need deleting are stored here.
@@ -58,8 +57,7 @@ abstract class WC_Abstract_Order
      * @since 3.0.0
      * @var array
      */
-    protected $items_to_delete = array (
-);
+    protected $items_to_delete = array();
 
     /**
      * Stores meta in cache for future reads.
@@ -106,10 +104,8 @@ abstract class WC_Abstract_Order
      * @param  int|object|WC_Order $order Order to read.
      */
     public function __construct($order = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This method overwrites the base class's clone method to make it a no-op. In base class WC_Data, we are unsetting the meta_id to clone.
      * It seems like this was done to avoid conflicting the metadata when duplicating products. However, doing that does not seems necessary for orders.
@@ -120,20 +116,16 @@ abstract class WC_Abstract_Order
      * @since 7.6.0
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get internal type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all class data in array format.
      *
@@ -141,10 +133,8 @@ abstract class WC_Abstract_Order
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save data to the database.
      *
@@ -152,10 +142,8 @@ abstract class WC_Abstract_Order
      * @return int order ID
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log an error about this order is exception is encountered.
      *
@@ -164,18 +152,14 @@ abstract class WC_Abstract_Order
      * @since 3.7.0
      */
     protected function handle_exception($e, $message = 'Error')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save all order items which are part of this order.
      */
     protected function save_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get parent order ID.
      *
@@ -184,10 +168,8 @@ abstract class WC_Abstract_Order
      * @return integer
      */
     public function get_parent_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets order currency.
      *
@@ -195,10 +177,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_currency($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order_version.
      *
@@ -206,10 +186,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_version($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get prices_include_tax.
      *
@@ -217,10 +195,8 @@ abstract class WC_Abstract_Order
      * @return bool
      */
     public function get_prices_include_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_created.
      *
@@ -228,10 +204,8 @@ abstract class WC_Abstract_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_created($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_modified.
      *
@@ -239,10 +213,8 @@ abstract class WC_Abstract_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_modified($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_modified.
      *
@@ -250,10 +222,8 @@ abstract class WC_Abstract_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_paid($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date_modified.
      *
@@ -261,10 +231,8 @@ abstract class WC_Abstract_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_completed($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the order statuses without wc- internal prefix.
      *
@@ -272,10 +240,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount_total.
      *
@@ -283,10 +249,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_discount_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount_tax.
      *
@@ -294,10 +258,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_discount_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_total.
      *
@@ -305,10 +267,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_shipping_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_tax.
      *
@@ -316,10 +276,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_shipping_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets cart tax amount.
      *
@@ -327,10 +285,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_cart_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets order grand total including taxes, shipping cost, fees, and coupon discounts. Used in gateways.
      *
@@ -338,10 +294,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax amount. Alias for get_order_tax().
      *
@@ -349,10 +303,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_total_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the total discount amount.
      *
@@ -360,10 +312,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_total_discount($ex_tax = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets order subtotal. Order subtotal is the price of all items excluding taxes, fees, shipping cost, and coupon discounts.
      * If sale price is set on an item, the subtotal will include this sale discount. E.g. a product with a regular
@@ -372,20 +322,16 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_subtotal()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxes, merged by code, formatted ready for output.
      *
      * @return array
      */
     public function get_tax_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all valid statuses for this order
      *
@@ -393,10 +339,8 @@ abstract class WC_Abstract_Order
      * @return array Internal status keys e.g. 'wc-processing'
      */
     protected function get_valid_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get user ID. Used by orders, not other order types like refunds.
      *
@@ -404,20 +348,16 @@ abstract class WC_Abstract_Order
      * @return int
      */
     public function get_user_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get user. Used by orders, not other order types like refunds.
      *
      * @return WP_User|false
      */
     public function get_user()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether coupon counts were updated.
      *
@@ -426,30 +366,24 @@ abstract class WC_Abstract_Order
      * @return bool True if coupon counts were updated, false otherwise.
      */
     public function get_recorded_coupon_usage_counts($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get basic order data in array format.
      *
      * @return array
      */
     public function get_base_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about the card used for payment in the order.
      *
      * @return array
      */
     public function get_payment_card_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set parent order ID.
      *
@@ -458,10 +392,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception thrown if parent ID does not exist or is invalid.
      */
     public function set_parent_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order status.
      *
@@ -470,10 +402,8 @@ abstract class WC_Abstract_Order
      * @return array details of change
      */
     public function set_status($new_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order_version.
      *
@@ -481,10 +411,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_version($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order_currency.
      *
@@ -492,10 +420,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_currency($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set prices_include_tax.
      *
@@ -503,10 +429,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_prices_include_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date_created.
      *
@@ -514,10 +438,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_date_created($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date_modified.
      *
@@ -525,10 +447,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_date_modified($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount_total.
      *
@@ -536,10 +456,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_discount_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount_tax.
      *
@@ -547,10 +465,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_discount_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_total.
      *
@@ -558,10 +474,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_shipping_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping_tax.
      *
@@ -569,10 +483,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_shipping_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set cart tax.
      *
@@ -580,10 +492,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_cart_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets order tax (sum of cart and shipping tax). Used internally only.
      *
@@ -591,10 +501,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     protected function set_total_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set total.
      *
@@ -605,10 +513,8 @@ abstract class WC_Abstract_Order
      * @throws WC_Data_Exception Exception may be thrown if value is invalid.
      */
     public function set_total($value, $deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether the coupon usage were counted.
      *
@@ -617,20 +523,16 @@ abstract class WC_Abstract_Order
      * @return void
      */
     public function set_recorded_coupon_usage_counts($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove all line items (products, coupons, shipping, taxes) from the order.
      *
      * @param string $type Order item type. Default null.
      */
     public function remove_order_items($type = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a type to a types group.
      *
@@ -638,10 +540,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     protected function type_to_group($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of items/products within this order.
      *
@@ -649,10 +549,8 @@ abstract class WC_Abstract_Order
      * @return WC_Order_Item[]
      */
     public function get_items($types = 'line_item')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of values for calculations.
      *
@@ -661,10 +559,8 @@ abstract class WC_Abstract_Order
      * @return array Array of values.
      */
     protected function get_values_for_total($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of coupons within this order.
      *
@@ -672,50 +568,40 @@ abstract class WC_Abstract_Order
      * @return WC_Order_Item_Coupon[]
      */
     public function get_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of fees within this order.
      *
      * @return WC_Order_item_Fee[]
      */
     public function get_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of taxes within this order.
      *
      * @return WC_Order_Item_Tax[]
      */
     public function get_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of shipping costs within this order.
      *
      * @return WC_Order_Item_Shipping[]
      */
     public function get_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets formatted shipping method title.
      *
      * @return string
      */
     public function get_shipping_method()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get used coupon codes only.
      *
@@ -723,10 +609,8 @@ abstract class WC_Abstract_Order
      * @return array
      */
     public function get_coupon_codes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the count of order items of a certain type.
      *
@@ -734,10 +618,8 @@ abstract class WC_Abstract_Order
      * @return int|string
      */
     public function get_item_count($item_type = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an order item object, based on its type.
      *
@@ -747,10 +629,8 @@ abstract class WC_Abstract_Order
      * @return WC_Order_Item|false
      */
     public function get_item($item_id, $load_from_db = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get key for where a certain item type is stored in _items.
      *
@@ -759,10 +639,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     protected function get_items_key($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove item from the order.
      *
@@ -770,10 +648,8 @@ abstract class WC_Abstract_Order
      * @return false|void
      */
     public function remove_item($item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds an order item to this order. The order item will not persist until save.
      *
@@ -782,10 +658,8 @@ abstract class WC_Abstract_Order
      * @return false|void
      */
     public function add_item($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check and records coupon usage tentatively so that counts validation is correct. Display an error if coupon usage limit has been reached.
      *
@@ -796,10 +670,8 @@ abstract class WC_Abstract_Order
      * @param string $billing_email Billing email of order.
      */
     public function hold_applied_coupons($billing_email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hold coupon if a global usage limit is defined.
      *
@@ -809,10 +681,8 @@ abstract class WC_Abstract_Order
      * @throws Exception When can't be held.
      */
     private function hold_coupon($coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hold coupon if usage limit per customer is defined.
      *
@@ -824,10 +694,8 @@ abstract class WC_Abstract_Order
      * @throws Exception When coupon can't be held.
      */
     private function hold_coupon_for_users($coupon, $user_ids_and_emails, $user_alias)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to get all aliases for current user and provide billing email.
      *
@@ -837,10 +705,8 @@ abstract class WC_Abstract_Order
      * @throws Exception When validation fails.
      */
     private function get_billing_and_current_user_aliases($billing_email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply a coupon to the order and recalculate totals.
      *
@@ -849,10 +715,8 @@ abstract class WC_Abstract_Order
      * @return true|WP_Error True if applied, error if not.
      */
     public function apply_coupon($raw_coupon)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a coupon from the order and recalculate totals.
      *
@@ -871,10 +735,8 @@ abstract class WC_Abstract_Order
      * @return bool TRUE if coupon was removed, FALSE otherwise.
      */
     public function remove_coupon($code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply all coupons in this order again to all line items.
      * This method is public since WooCommerce 3.8.0.
@@ -882,10 +744,8 @@ abstract class WC_Abstract_Order
      * @since 3.2.0
      */
     public function recalculate_coupons()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a coupon object populated from order line item metadata, to be used when reapplying coupons
      * if the original coupon no longer exists.
@@ -896,10 +756,8 @@ abstract class WC_Abstract_Order
      * @returns WC_Coupon Coupon object populated from order line item metadata, or empty if no such metadata exists (should never happen).
      */
     private function get_temporary_coupon(WC_Order_Item_Coupon $coupon_item): WC_Coupon
-    {
-        // stub
-    }
-
+{
+}
     /**
      * After applying coupons via the WC_Discounts class, update line items.
      *
@@ -907,10 +765,8 @@ abstract class WC_Abstract_Order
      * @param WC_Discounts $discounts Discounts class.
      */
     protected function set_item_discount_amounts($discounts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * After applying coupons via the WC_Discounts class, update or create coupon items.
      *
@@ -918,10 +774,8 @@ abstract class WC_Abstract_Order
      * @param WC_Discounts $discounts Discounts class.
      */
     protected function set_coupon_discount_amounts($discounts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a product line item to the order. This is the only line item type with
      * its own method because it saves looking up order amounts (costs are added up for you).
@@ -931,12 +785,9 @@ abstract class WC_Abstract_Order
      * @param  array      $args Args for the added product.
      * @return int
      */
-    public function add_product($product, $qty = 1, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function add_product($product, $qty = 1, $args = array())
+{
+}
     /**
      * Add a payment token to an order
      *
@@ -945,10 +796,8 @@ abstract class WC_Abstract_Order
      * @return boolean|int The new token ID or false if it failed.
      */
     public function add_payment_token($token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of all payment tokens associated with the current order
      *
@@ -956,10 +805,8 @@ abstract class WC_Abstract_Order
      * @return array An array of payment token objects
      */
     public function get_payment_tokens()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping total.
      *
@@ -967,10 +814,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function calculate_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all tax classes for items in the order.
      *
@@ -978,10 +823,8 @@ abstract class WC_Abstract_Order
      * @return array
      */
     public function get_items_tax_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax location for this order.
      *
@@ -989,12 +832,9 @@ abstract class WC_Abstract_Order
      * @param array $args array Override the location.
      * @return array
      */
-    protected function get_tax_location($args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_tax_location($args = array())
+{
+}
     /**
      * Public wrapper for exposing get_tax_location() method, enabling 3rd parties to get the tax location for an order.
      *
@@ -1002,12 +842,9 @@ abstract class WC_Abstract_Order
      * @param array $args array Override the location.
      * @return array
      */
-    public function get_taxable_location($args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_taxable_location($args = array())
+{
+}
     /**
      * Get tax rates for an order. Use order's shipping or billing address, defaults to base location.
      *
@@ -1017,12 +854,9 @@ abstract class WC_Abstract_Order
      *
      * @return mixed|void Tax rates.
      */
-    protected function get_tax_rates($tax_class, $location_args = array (
-), $customer = null)
-    {
-        // stub
-    }
-
+    protected function get_tax_rates($tax_class, $location_args = array(), $customer = null)
+{
+}
     /**
      * Calculate taxes for all line items and shipping, and store the totals and tax rows.
      *
@@ -1033,30 +867,23 @@ abstract class WC_Abstract_Order
      *
      * @param array $args Added in 3.0.0 to pass things like location.
      */
-    public function calculate_taxes($args = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_taxes($args = array())
+{
+}
     /**
      * Calculate fees for all line items.
      *
      * @return float Fee total.
      */
     public function get_total_fees()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update tax lines for the order based on the line item taxes themselves.
      */
     public function update_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function.
      * If you add all items in this order in cart again, this would be the cart subtotal (assuming all other settings are same).
@@ -1064,10 +891,8 @@ abstract class WC_Abstract_Order
      * @return float Cart subtotal.
      */
     protected function get_cart_subtotal_for_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function.
      * If you add all items in this order in cart again, this would be the cart total (assuming all other settings are same).
@@ -1075,10 +900,8 @@ abstract class WC_Abstract_Order
      * @return float Cart total.
      */
     protected function get_cart_total_for_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate totals by looking at the contents of the order. Stores the totals and returns the orders final total.
      *
@@ -1087,10 +910,8 @@ abstract class WC_Abstract_Order
      * @return float calculated grand total.
      */
     public function calculate_totals($and_taxes = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get item subtotal - this is the cost before discount.
      *
@@ -1100,10 +921,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_item_subtotal($item, $inc_tax = false, $round = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get line subtotal - this is the cost before discount.
      *
@@ -1113,10 +932,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_line_subtotal($item, $inc_tax = false, $round = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate item cost - useful for gateways.
      *
@@ -1126,10 +943,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_item_total($item, $inc_tax = false, $round = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate line total - useful for gateways.
      *
@@ -1139,10 +954,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_line_total($item, $inc_tax = false, $round = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get item tax - useful for gateways.
      *
@@ -1151,10 +964,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_item_tax($item, $round = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get line tax - useful for gateways.
      *
@@ -1162,10 +973,8 @@ abstract class WC_Abstract_Order
      * @return float
      */
     public function get_line_tax($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets line subtotal - formatted for display.
      *
@@ -1174,20 +983,16 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_formatted_line_subtotal($item, $tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets order total - formatted for display.
      *
      * @return string
      */
     public function get_formatted_order_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets subtotal - subtotal is shown before discounts, but with localised taxes.
      *
@@ -1196,10 +1001,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_subtotal_to_display($compound = false, $tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets shipping (formatted).
      *
@@ -1207,10 +1010,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_shipping_to_display($tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the discount amount (formatted).
      *
@@ -1219,10 +1020,8 @@ abstract class WC_Abstract_Order
      * @return string
      */
     public function get_discount_to_display($tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for subtotal.
      *
@@ -1230,10 +1029,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_subtotal_row(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for discounts.
      *
@@ -1241,10 +1038,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_discount_row(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for shipping.
      *
@@ -1252,10 +1047,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_shipping_row(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for fees.
      *
@@ -1263,10 +1056,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_fee_rows(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for taxes.
      *
@@ -1274,10 +1065,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_tax_rows(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for grand total.
      *
@@ -1285,10 +1074,8 @@ abstract class WC_Abstract_Order
      * @param string $tax_display Excl or incl tax display mode.
      */
     protected function add_order_item_totals_total_row(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get totals for display on pages and in emails.
      *
@@ -1296,10 +1083,8 @@ abstract class WC_Abstract_Order
      * @return array
      */
     public function get_order_item_totals($tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks the order status against a passed in status.
      *
@@ -1307,10 +1092,8 @@ abstract class WC_Abstract_Order
      * @return bool
      */
     public function has_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether this order has a specific shipping method or not.
      *
@@ -1318,10 +1101,8 @@ abstract class WC_Abstract_Order
      * @return bool
      */
     public function has_shipping_method($method_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the order contains a free product.
      *
@@ -1329,20 +1110,16 @@ abstract class WC_Abstract_Order
      * @return bool
      */
     public function has_free_item()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order title.
      *
      * @return string Order title.
      */
     public function get_title(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the current order has an associated Cost of Goods Sold value.
      *
@@ -1353,10 +1130,8 @@ abstract class WC_Abstract_Order
      * @return bool True if this order has an associated Cost of Goods Sold value.
      */
     public function has_cogs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the Cost of Goods Sold value and set it as the actual value for this order.
      *
@@ -1365,10 +1140,8 @@ abstract class WC_Abstract_Order
      * @return float The calculated value.
      */
     public function calculate_cogs_total_value(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to calculate the Cost of Goods Sold value for this order:
      * it doesn't check if COGS is enabled at class or system level, doesn't fire hooks, and doesn't set the value as the current one for the order.
@@ -1376,10 +1149,8 @@ abstract class WC_Abstract_Order
      * @return float The calculated value.
      */
     protected function calculate_cogs_total_value_core(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the value of the Cost of Goods Sold for this order.
      *
@@ -1388,10 +1159,8 @@ abstract class WC_Abstract_Order
      * @return float The current value for this order.
      */
     public function get_cogs_total_value(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the value of the Cost of Goods Sold for this order.
      *
@@ -1402,8 +1171,6 @@ abstract class WC_Abstract_Order
      * @internal This method is intended for data store usage only, the value set here will be overridden by calculate_cogs_total_value.
      */
     public function set_cogs_total_value(float $value)
-    {
-        // stub
-    }
-
+{
+}
 }

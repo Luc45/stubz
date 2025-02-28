@@ -22,10 +22,8 @@ class Product
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update product with the content and images powered by AI.
      *
@@ -34,8 +32,6 @@ class Product
      * @return WP_REST_Response
      */
     public function update_product(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
 }

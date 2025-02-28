@@ -51,10 +51,8 @@ class WC_Email_Customer_New_Account
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
@@ -62,10 +60,8 @@ class WC_Email_Customer_New_Account
      * @return string
      */
     public function get_default_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
@@ -73,10 +69,8 @@ class WC_Email_Customer_New_Account
      * @return string
      */
     public function get_default_heading()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger.
      *
@@ -85,30 +79,24 @@ class WC_Email_Customer_New_Account
      * @param bool   $password_generated Whether the password was generated automatically or not.
      */
     public function trigger($user_id, $user_pass = '', $password_generated = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content html.
      *
      * @return string
      */
     public function get_content_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content plain.
      *
      * @return string
      */
     public function get_content_plain()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default content to show below main email content.
      *
@@ -116,10 +104,8 @@ class WC_Email_Customer_New_Account
      * @return string
      */
     public function get_default_additional_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate set password URL link for a new user.
      * 
@@ -129,8 +115,6 @@ class WC_Email_Customer_New_Account
      * @return string
      */
     protected function generate_set_password_url()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -28,20 +28,16 @@ class ProductPrice
      * @return array
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Overwrite parent method to prevent script registration.
      *
@@ -49,18 +45,14 @@ class ProductPrice
      * phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -70,8 +62,6 @@ class ProductPrice
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

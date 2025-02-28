@@ -8,32 +8,24 @@ namespace InheritanceScenario;
 class BaseClass
 {
     public function sayHello(): string
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * MidClass inherits from BaseClass and extends the message.
  */
 class MidClass extends \InheritanceScenario\BaseClass
 {
     public function sayHello(): string
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * FinalClass extends MidClass, creating a 3-level inheritance chain.
  */
 class FinalClass extends \InheritanceScenario\MidClass
 {
     public function sayHello(): string
-    {
-        // stub
-    }
-
+{
+}
 }

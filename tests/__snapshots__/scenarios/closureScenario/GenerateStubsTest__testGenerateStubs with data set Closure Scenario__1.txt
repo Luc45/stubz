@@ -11,16 +11,12 @@ class StringProcessor
      * Applies a callable to a string.
      */
     public function applyTransform(string $input, callable $transform): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a closure that prefixes text.
      */
     public function getPrefixer(string $prefix): Closure
-    {
-        // stub
-    }
-
+{
+}
 }

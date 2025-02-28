@@ -16,10 +16,8 @@ class WC_Plugins_Screen_Updates
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show plugin changes on the plugins screen. Code adapted from W3 Total Cache.
      *
@@ -27,10 +25,8 @@ class WC_Plugins_Screen_Updates
      * @param stdClass $response Plugin update response.
      */
     public function in_plugin_update_message($args, $response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the upgrade notice from WordPress.org.
      *
@@ -38,10 +34,8 @@ class WC_Plugins_Screen_Updates
      * @return string
      */
     protected function get_upgrade_notice($version)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse update notice from readme file.
      *
@@ -50,16 +44,12 @@ class WC_Plugins_Screen_Updates
      * @return string
      */
     private function parse_update_notice($content, $new_version)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * JS for the modal window on the plugins screen.
      */
     public function plugin_screen_modal_js()
-    {
-        // stub
-    }
-
+{
+}
 }

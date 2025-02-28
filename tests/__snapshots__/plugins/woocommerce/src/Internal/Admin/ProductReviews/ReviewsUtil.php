@@ -14,8 +14,6 @@ class ReviewsUtil
      * @return array|mixed
      */
     public static function comments_clauses_without_product_reviews($clauses)
-    {
-        // stub
-    }
-
+{
+}
 }

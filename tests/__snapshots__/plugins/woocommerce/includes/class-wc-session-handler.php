@@ -44,40 +44,32 @@ class WC_Session_Handler
      * Constructor for the session class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init hooks and session data.
      *
      * @since 3.3.0
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setup cookie and customer ID.
      *
      * @since 3.6.0
      */
     public function init_session_cookie()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if session cookie is expired, or belongs to a logged out user.
      *
      * @return bool Whether session cookie is valid.
      */
     private function is_session_cookie_valid()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooks into the wp action to maybe set the session cookie if the user is on a certain page e.g. a checkout endpoint.
      *
@@ -85,10 +77,8 @@ class WC_Session_Handler
      * cart.
      */
     public function maybe_set_customer_session_cookie()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the session cookie on-demand (usually after adding an item to the cart).
      *
@@ -99,10 +89,8 @@ class WC_Session_Handler
      * @param bool $set Should the session cookie be set.
      */
     public function set_customer_session_cookie($set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Should the session cookie be secure?
      *
@@ -110,28 +98,22 @@ class WC_Session_Handler
      * @return bool
      */
     protected function use_secure_cookie()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return true if the current user has an active session, i.e. a cookie to retrieve values.
      *
      * @return bool
      */
     public function has_session()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set session expiration.
      */
     public function set_session_expiration()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a unique customer ID for guests, or return user ID if logged in.
      *
@@ -140,10 +122,8 @@ class WC_Session_Handler
      * @return string
      */
     public function generate_customer_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if this is an auto-generated customer ID.
      *
@@ -152,10 +132,8 @@ class WC_Session_Handler
      * @return bool Whether customer ID is randomly generated.
      */
     private function is_customer_guest($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get session unique ID for requests if session is initialized or user ID if logged in.
      * Introduced to help with unit tests.
@@ -164,10 +142,8 @@ class WC_Session_Handler
      * @return string
      */
     public function get_customer_unique_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the session cookie, if set. Otherwise return false.
      *
@@ -176,56 +152,44 @@ class WC_Session_Handler
      * @return bool|array
      */
     public function get_session_cookie()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get session data.
      *
      * @return array
      */
     public function get_session_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a cache prefix. This is used in session names so the entire cache can be invalidated with 1 function call.
      *
      * @return string
      */
     private function get_cache_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save data and delete guest session.
      *
      * @param int $old_session_key session ID before user logs in.
      */
     public function save_data($old_session_key = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Destroy all session data.
      */
     public function destroy_session()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forget all session data without destroying it.
      */
     public function forget_session()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When a user is logged out, ensure they have a unique nonce by using the customer/session ID.
      *
@@ -234,10 +198,8 @@ class WC_Session_Handler
      * @return int|string
      */
     public function nonce_user_logged_out($uid)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When a user is logged out, ensure they have a unique nonce to manage cart and more using the customer/session ID.
      * This filter runs everything `wp_verify_nonce()` and `wp_create_nonce()` gets called.
@@ -248,18 +210,14 @@ class WC_Session_Handler
      * @return int|string
      */
     public function maybe_update_nonce_user_logged_out($uid, $action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cleanup session data from the database and clear caches.
      */
     public function cleanup_sessions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the session.
      *
@@ -268,20 +226,16 @@ class WC_Session_Handler
      * @return string|array
      */
     public function get_session($customer_id, $default = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the session from the cache and database.
      *
      * @param int $customer_id Customer ID.
      */
     public function delete_session($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the session expiry timestamp.
      *
@@ -289,8 +243,6 @@ class WC_Session_Handler
      * @param int    $timestamp Timestamp to expire the cookie.
      */
     public function update_session_timestamp($customer_id, $timestamp)
-    {
-        // stub
-    }
-
+{
+}
 }

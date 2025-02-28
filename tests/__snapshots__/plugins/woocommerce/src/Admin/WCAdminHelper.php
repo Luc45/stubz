@@ -15,10 +15,8 @@ class WCAdminHelper
      * @return number Number of seconds.
      */
     public static function get_wcadmin_active_for_in_seconds()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test how long WooCommerce Admin has been active.
      *
@@ -26,10 +24,8 @@ class WCAdminHelper
      * @return bool Whether or not WooCommerce admin has been active for $seconds.
      */
     public static function is_wc_admin_active_for($seconds)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if WooCommerce Admin has been active within a pre-defined range.
      *
@@ -39,10 +35,8 @@ class WCAdminHelper
      * @return bool Whether or not WooCommerce admin has been active within the range.
      */
     public static function is_wc_admin_active_in_date_range($range, $custom_start = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if the site is fresh. A fresh site must meet the following requirements.
      *
@@ -52,10 +46,8 @@ class WCAdminHelper
      * @return bool
      */
     public static function is_site_fresh()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if a URL is a store page. This function ignores the domain and protocol of the URL and only checks the path and query string.
      *
@@ -76,10 +68,8 @@ class WCAdminHelper
      * @return bool Whether or not the URL is a store page.
      */
     public static function is_store_page($url = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get normalized URL path.
      * 1. Only keep the path and query string (if any).
@@ -93,8 +83,6 @@ class WCAdminHelper
      * @param string $url URL to normalize.
      */
     private static function get_normalized_url_path($url)
-    {
-        // stub
-    }
-
+{
+}
 }

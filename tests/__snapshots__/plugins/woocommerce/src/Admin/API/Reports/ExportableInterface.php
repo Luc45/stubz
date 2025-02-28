@@ -15,7 +15,6 @@ interface ExportableInterface
      * @return array Key value pair of Column ID => Label.
      */
     public function get_export_columns();
-
     /**
      * Get the column values for export.
      *
@@ -23,5 +22,4 @@ interface ExportableInterface
      * @return array Key value pair of Column ID => Value.
      */
     public function prepare_item_for_export($item);
-
 }

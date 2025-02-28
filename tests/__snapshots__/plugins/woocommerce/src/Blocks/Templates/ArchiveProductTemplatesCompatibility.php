@@ -32,10 +32,8 @@ class ArchiveProductTemplatesCompatibility
      * @return array
      */
     public function update_render_block_data($parsed_block, $source_block, $parent_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject hooks to rendered content of corresponding blocks.
      *
@@ -44,10 +42,8 @@ class ArchiveProductTemplatesCompatibility
      * @return string
      */
     public function inject_hooks($block_content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The hook data to inject to the rendered content of blocks. This also
      * contains hooked functions that will be removed by remove_default_hooks.
@@ -76,18 +72,14 @@ class ArchiveProductTemplatesCompatibility
      * - permanently_removed_actions is an array of functions that we do not want to re-add after they have been removed to avoid duplicate content with the Products block and its inner blocks.
      */
     protected function set_hook_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if current page is a product archive template.
      */
     private function is_archive_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loop through inner blocks recursively to find the Products blocks that
      * inherits query from template.
@@ -95,38 +87,30 @@ class ArchiveProductTemplatesCompatibility
      * @param array $block Parsed block data.
      */
     private function inner_blocks_walker(&$block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Restore default hooks except the ones that are not supposed to be re-added.
      */
     private function restore_default_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether block is within the product-query namespace.
      *
      * @param array $block Parsed block data.
      */
     private function is_block_within_namespace($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether block has isInherited attribute assigned.
      *
      * @param array $block Parsed block data.
      */
     private function is_block_inherited($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The core/post-template has two different block names:
      * - core/post-template when the wrapper is rendered.
@@ -135,68 +119,54 @@ class ArchiveProductTemplatesCompatibility
      * @param array $block Parsed block data.
      */
     private function is_null_post_template($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether block is a Post template.
      *
      * @param string $block_name Block name.
      */
     private function is_post_template($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether block is a Product Template.
      *
      * @param string $block_name Block name.
      */
     private function is_product_template($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if block is either a Post template or a Product Template
      *
      * @param string $block_name Block name.
      */
     private function is_post_or_product_template($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the block is a Products block that inherits query from template.
      *
      * @param array $block Parsed block data.
      */
     private function is_products_block_with_inherit_query($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the block is a Product Collection block that inherits query from template.
      *
      * @param array $block Parsed block data.
      */
     private function is_product_collection_block_with_inherit_query($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Recursively inject the custom attribute to all nested blocks.
      *
      * @param array $block Parsed block data.
      */
     private function inject_attribute(&$block)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -19,10 +19,8 @@ class Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report object for serialization.
      *
@@ -31,10 +29,8 @@ class Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($report, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
@@ -43,18 +39,14 @@ class Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

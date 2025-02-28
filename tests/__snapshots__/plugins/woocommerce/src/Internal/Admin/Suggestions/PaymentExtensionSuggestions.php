@@ -1639,8 +1639,7 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'GU' => 
-  array (
-  ),
+  array(),
   'HK' => 
   array (
     0 => 'woopayments',
@@ -1863,43 +1862,32 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'AO' => 
-  array (
-  ),
+  array(),
   'BJ' => 
-  array (
-  ),
+  array(),
   'BW' => 
   array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'BF' => 
-  array (
-  ),
+  array(),
   'BI' => 
-  array (
-  ),
+  array(),
   'CM' => 
-  array (
-  ),
+  array(),
   'CV' => 
-  array (
-  ),
+  array(),
   'CF' => 
-  array (
-  ),
+  array(),
   'TD' => 
-  array (
-  ),
+  array(),
   'KM' => 
-  array (
-  ),
+  array(),
   'CG' => 
-  array (
-  ),
+  array(),
   'CI' => 
-  array (
-  ),
+  array(),
   'EG' => 
   array (
     'paymob' => 
@@ -1916,28 +1904,22 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'CD' => 
-  array (
-  ),
+  array(),
   'DJ' => 
-  array (
-  ),
+  array(),
   'GQ' => 
-  array (
-  ),
+  array(),
   'ER' => 
-  array (
-  ),
+  array(),
   'SZ' => 
   array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'ET' => 
-  array (
-  ),
+  array(),
   'GA' => 
-  array (
-  ),
+  array(),
   'GH' => 
   array (
     'paystack' => 
@@ -1952,14 +1934,11 @@ class PaymentExtensionSuggestions
     ),
   ),
   'GM' => 
-  array (
-  ),
+  array(),
   'GN' => 
-  array (
-  ),
+  array(),
   'GW' => 
-  array (
-  ),
+  array(),
   'KE' => 
   array (
     0 => 'paypal_full_stack',
@@ -1971,25 +1950,20 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'LR' => 
-  array (
-  ),
+  array(),
   'LY' => 
-  array (
-  ),
+  array(),
   'MG' => 
-  array (
-  ),
+  array(),
   'MW' => 
   array (
     0 => 'paypal_full_stack',
     1 => 'paypal_wallet',
   ),
   'ML' => 
-  array (
-  ),
+  array(),
   'MR' => 
-  array (
-  ),
+  array(),
   'MU' => 
   array (
     0 => 'paypal_full_stack',
@@ -2016,11 +1990,9 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'NA' => 
-  array (
-  ),
+  array(),
   'NE' => 
-  array (
-  ),
+  array(),
   'NG' => 
   array (
     'paystack' => 
@@ -2040,11 +2012,9 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'RW' => 
-  array (
-  ),
+  array(),
   'ST' => 
-  array (
-  ),
+  array(),
   'SN' => 
   array (
     0 => 'paypal_full_stack',
@@ -2056,11 +2026,9 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'SL' => 
-  array (
-  ),
+  array(),
   'SO' => 
-  array (
-  ),
+  array(),
   'ZA' => 
   array (
     'payfast' => 
@@ -2078,32 +2046,23 @@ class PaymentExtensionSuggestions
     2 => 'paypal_wallet',
   ),
   'SS' => 
-  array (
-  ),
+  array(),
   'TZ' => 
-  array (
-  ),
+  array(),
   'TG' => 
-  array (
-  ),
+  array(),
   'TN' => 
-  array (
-  ),
+  array(),
   'UG' => 
-  array (
-  ),
+  array(),
   'EH' => 
-  array (
-  ),
+  array(),
   'ZM' => 
-  array (
-  ),
+  array(),
   'ZW' => 
-  array (
-  ),
+  array(),
   'AF' => 
-  array (
-  ),
+  array(),
   'BH' => 
   array (
     0 => 'paypal_full_stack',
@@ -2123,8 +2082,7 @@ class PaymentExtensionSuggestions
     ),
   ),
   'IQ' => 
-  array (
-  ),
+  array(),
   'IL' => 
   array (
     'airwallex' => 
@@ -2162,8 +2120,7 @@ class PaymentExtensionSuggestions
     1 => 'paypal_wallet',
   ),
   'LB' => 
-  array (
-  ),
+  array(),
   'OM' => 
   array (
     'paymob' => 
@@ -2223,8 +2180,7 @@ class PaymentExtensionSuggestions
     5 => 'paypal_wallet',
   ),
   'YE' => 
-  array (
-  ),
+  array(),
 );
 
     /**
@@ -2248,11 +2204,9 @@ class PaymentExtensionSuggestions
      *
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestionIncentives $suggestion_incentives)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestionIncentives $suggestion_incentives)
+{
+}
     /**
      * Get the list of payment extensions details for a specific country.
      *
@@ -2264,10 +2218,8 @@ class PaymentExtensionSuggestions
      * @throws \Exception If there were malformed or invalid extension details.
      */
     public function get_country_extensions(string $country_code, string $context = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the base details of a payment extension by its ID.
      *
@@ -2276,10 +2228,8 @@ class PaymentExtensionSuggestions
      * @return array|null The extension details for the given ID. Null if not found.
      */
     public function get_by_id(string $extension_id): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the base details of a payment extension by its plugin slug.
      *
@@ -2292,10 +2242,8 @@ class PaymentExtensionSuggestions
      * @return array|null The extension details for the given plugin slug. Null if not found.
      */
     public function get_by_plugin_slug(string $plugin_slug, string $country_code = '', string $context = ''): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss an incentive for a specific payment extension suggestion.
      *
@@ -2309,10 +2257,8 @@ class PaymentExtensionSuggestions
      * @throws \Exception If the incentive could not be dismissed due to an error.
      */
     public function dismiss_incentive(string $incentive_id, string $suggestion_id, string $context = 'all'): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if a payment extension is allowed to be suggested.
      *
@@ -2324,10 +2270,8 @@ class PaymentExtensionSuggestions
      *              Defaults to true if there is no specific logic for the extension.
      */
     private function is_extension_allowed(string $extension_id, string $country_code, string $context = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on the WC onboarding profile, determine if the merchant is selling online.
      *
@@ -2336,10 +2280,8 @@ class PaymentExtensionSuggestions
      * @return bool True if the merchant is selling online, false otherwise.
      */
     private function is_merchant_selling_online(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Based on the WC onboarding profile, determine if the merchant is selling offline.
      *
@@ -2348,10 +2290,8 @@ class PaymentExtensionSuggestions
      * @return bool True if the merchant is selling offline, false otherwise.
      */
     private function is_merchant_selling_offline(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merges country-specific details into the base details of a payment extension.
      *
@@ -2367,10 +2307,8 @@ class PaymentExtensionSuggestions
      * @throws \Exception If the country extension details are malformed or invalid.
      */
     private function with_country_details(array $base_details, array $country_details): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the incentive details for a given extension and country, if any.
      *
@@ -2381,10 +2319,8 @@ class PaymentExtensionSuggestions
      * @return array|null The incentive details for the given extension and country. Null if not found.
      */
     private function get_extension_incentive(string $extension_id, string $country_code, string $context = ''): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the incentive details for a payment extension.
      *
@@ -2393,20 +2329,16 @@ class PaymentExtensionSuggestions
      * @return array The sanitized incentive details.
      */
     private function sanitize_extension_incentive(array $incentive): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the base details of all extensions.
      *
      * @return array[] The base details of all extensions.
      */
     private function get_all_extensions_base_details(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the base details for a specific extension.
      *
@@ -2418,10 +2350,8 @@ class PaymentExtensionSuggestions
      *                Null if the extension is not one we have details for.
      */
     private function get_extension_base_details(string $extension_id): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Standardize the details for an extension.
      *
@@ -2433,8 +2363,6 @@ class PaymentExtensionSuggestions
      * @return array The standardized extension details.
      */
     private function standardize_extension_details(array $extension_details): array
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,10 +16,8 @@ class WC_Autoloader
      * The Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Take a class name and turn it into a file name.
      *
@@ -27,10 +25,8 @@ class WC_Autoloader
      * @return string
      */
     private function get_file_name_from_class($class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include a class file.
      *
@@ -38,18 +34,14 @@ class WC_Autoloader
      * @return bool Successful or not.
      */
     private function load_file($path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Auto-load WC classes on demand to reduce memory consumption.
      *
      * @param string $class Class name.
      */
     public function autoload($class)
-    {
-        // stub
-    }
-
+{
+}
 }

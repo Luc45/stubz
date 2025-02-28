@@ -15,8 +15,6 @@ class ComparisonOperation
      * @param string $operation     The operation used to compare the operands.
      */
     public static function compare($left_operand, $right_operand, $operation)
-    {
-        // stub
-    }
-
+{
+}
 }

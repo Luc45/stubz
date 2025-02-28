@@ -17,19 +17,15 @@ class OnboardingMailchimp
     /**
      * Get class instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Init.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset MailchimpScheduler if profile data is being updated with a new email.
      *
@@ -37,8 +33,6 @@ class OnboardingMailchimp
      * @param array $updating_data Updating option data.
      */
     public function on_profile_data_updated($existing_data, $updating_data)
-    {
-        // stub
-    }
-
+{
+}
 }

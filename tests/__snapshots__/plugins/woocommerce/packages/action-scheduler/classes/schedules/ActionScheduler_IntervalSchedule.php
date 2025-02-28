@@ -27,20 +27,16 @@ class ActionScheduler_IntervalSchedule
      * @return DateTime
      */
     protected function calculate_next(DateTime $after)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule interval in seconds.
      *
      * @return int
      */
     public function interval_in_seconds()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serialize interval schedules with data required prior to AS 3.0.0
      *
@@ -55,18 +51,14 @@ class ActionScheduler_IntervalSchedule
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserialize interval schedules serialized/stored prior to AS 3.0.0
      *
      * For more background, @see ActionScheduler_Abstract_RecurringSchedule::__wakeup().
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

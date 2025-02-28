@@ -18,18 +18,14 @@ class WC_WCCOM_Site_Installation_Step_Download_Product
      * @param array $state The current installation state.
      */
     public function __construct($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the step installation process.
      *
      * @throws Installer_Error Installer Error.
      */
     public function run()
-    {
-        // stub
-    }
-
+{
+}
 }

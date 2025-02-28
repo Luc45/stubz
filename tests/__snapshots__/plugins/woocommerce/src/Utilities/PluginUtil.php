@@ -39,10 +39,8 @@ class PluginUtil
      * Creates a new instance of the class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the class instance.
      *
@@ -50,11 +48,9 @@ class PluginUtil
      *
      * @param LegacyProxy $proxy The instance of LegacyProxy to use.
      */
-    public final function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Proxies\LegacyProxy $proxy)
+{
+}
     /**
      * Wrapper for WP's private `wp_get_active_and_valid_plugins` and `wp_get_active_network_plugins` functions.
      *
@@ -69,10 +65,8 @@ class PluginUtil
      * @return string[] Array of plugin basenames (paths relative to the plugin directory).
      */
     public function get_all_active_valid_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list with the names of the WordPress plugins that are WooCommerce aware
      * (they have a "WC tested up to" header).
@@ -81,10 +75,8 @@ class PluginUtil
      * @return string[] A list of plugin ids (path/file.php).
      */
     public function get_woocommerce_aware_plugins(bool $active_only = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the printable name of a plugin.
      *
@@ -92,10 +84,8 @@ class PluginUtil
      * @return string Printable plugin name, or the plugin id itself if printable name is not available.
      */
     public function get_plugin_name(string $plugin_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a plugin is WooCommerce aware.
      *
@@ -104,10 +94,8 @@ class PluginUtil
      * @throws \Exception The input is neither a string nor an array.
      */
     public function is_woocommerce_aware_plugin($plugin_file_or_data): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Match plugin identifier passed as a parameter with the output from `get_plugins()`.
      *
@@ -116,20 +104,16 @@ class PluginUtil
      * @return string|false Key from the array returned by `get_plugins` if matched. False if no match.
      */
     public function get_wp_plugin_id($plugin_file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle plugin activation and deactivation by clearing the WooCommerce aware plugin ids cache.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_plugin_de_activation(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Utility method to generate warning string for incompatible features based on active plugins.
      *
@@ -142,10 +126,8 @@ class PluginUtil
      * @return string Warning string.
      */
     public function generate_incompatible_plugin_feature_warning(string $feature_id, array $plugin_feature_info): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter plugin/feature compatibility info, returning the names of the plugins/features that are considered incompatible.
      * "Uncertain" information will be included or not depending on the value of the value of the 'plugins_are_incompatible_by_default'
@@ -156,10 +138,8 @@ class PluginUtil
      * @return array Items in 'incompatible' and 'uncertain' if plugins are incompatible by default with the feature; only items in 'incompatible' otherwise.
      */
     public function get_items_considered_incompatible(string $feature_id, array $compatibility_info): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the names of the plugins that are excluded from the feature compatibility UI.
      * These plugins won't be considered as incompatible with any existing feature for the purposes
@@ -168,8 +148,6 @@ class PluginUtil
      * @return string[] Plugin names relative to the root plugins directory.
      */
     public function get_plugins_excluded_from_compatibility_ui()
-    {
-        // stub
-    }
-
+{
+}
 }

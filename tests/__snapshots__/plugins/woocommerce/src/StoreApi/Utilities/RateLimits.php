@@ -24,10 +24,8 @@ class RateLimits
      * @return string
      */
     protected static function get_cache_key($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current rate limit row from DB and normalize types. This query is not cached, and returns
      * a new rate limit row if none exists.
@@ -36,10 +34,8 @@ class RateLimits
      * @return object Object containing reset and remaining.
      */
     protected static function get_rate_limit_row($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns current rate limit values using cache where possible.
      *
@@ -47,10 +43,8 @@ class RateLimits
      * @return object
      */
     public static function get_rate_limit($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If exceeded, seconds until reset.
      *
@@ -59,10 +53,8 @@ class RateLimits
      * @return bool|int
      */
     public static function is_exceeded_retry_after($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the rate limit delay in seconds for action with identifier $id.
      *
@@ -70,10 +62,8 @@ class RateLimits
      * @return object Current rate limits.
      */
     public static function update_rate_limit($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve a cached store api rate limit.
      *
@@ -81,10 +71,8 @@ class RateLimits
      * @return bool|object
      */
     protected static function get_cached($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cache a rate limit.
      *
@@ -93,20 +81,16 @@ class RateLimits
      * @return bool
      */
     protected static function set_cache($action_id, $current_limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return options for Rate Limits, to be returned by the "woocommerce_store_api_rate_limit_options" filter.
      *
      * @return object Default options.
      */
     public static function get_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a single option through provided name.
      *
@@ -115,8 +99,6 @@ class RateLimits
      * @return mixed
      */
     public static function get_option($option)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -18,24 +18,21 @@ abstract class DataSourcePoller
      *
      * @var string
      */
-    protected $id = array (
-);
+    protected $id = array();
 
     /**
      * Default data sources array.
      *
      * @var array
      */
-    protected $data_sources = array (
-);
+    protected $data_sources = array();
 
     /**
      * Default args.
      *
      * @var array
      */
-    protected $args = array (
-);
+    protected $args = array();
 
     /**
      * The logger instance.
@@ -47,8 +44,7 @@ abstract class DataSourcePoller
     /**
      * Get class instance.
      */
-    public static abstract function get_instance();
-
+    abstract public static function get_instance();
     /**
      * Constructor.
      *
@@ -56,23 +52,17 @@ abstract class DataSourcePoller
      * @param array  $data_sources urls for data sources.
      * @param array  $args Options for DataSourcePoller.
      */
-    public function __construct($id, $data_sources = array (
-), $args = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($id, $data_sources = array(), $args = array())
+{
+}
     /**
      * Get the logger instance.
      *
      * @return WC_Logger
      */
     protected static function get_logger()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the key identifier of spec, this can easily be overwritten. Defaults to id.
      *
@@ -80,50 +70,40 @@ abstract class DataSourcePoller
      * @return string|boolean
      */
     protected function get_spec_key($spec)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads the data sources for specs and persists those specs.
      *
      * @return array list of specs.
      */
     public function get_specs_from_data_sources()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets specs from cache if it exists.
      *
      * @return array list of specs.
      */
     public function get_cached_specs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reads the data sources for specs and persists those specs.
      *
      * @return bool Whether any specs were read.
      */
     public function read_specs_from_data_sources()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the specs transient.
      *
      * @return bool success of failure of transient deletion.
      */
     public function delete_specs_transient()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the specs transient.
      *
@@ -131,10 +111,8 @@ abstract class DataSourcePoller
      * @param int   $expiration The expiration time for the transient.
      */
     public function set_specs_transient($specs, $expiration = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read a single data source and return the read specs
      *
@@ -143,10 +121,8 @@ abstract class DataSourcePoller
      * @return array The specs that have been read from the data source.
      */
     protected static function read_data_source($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge the specs.
      *
@@ -155,10 +131,8 @@ abstract class DataSourcePoller
      * @param string $url               The url of the feed being merged in (for error reporting).
      */
     protected function merge_specs($specs_to_merge_in, &$specs, $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the spec.
      *
@@ -168,8 +142,6 @@ abstract class DataSourcePoller
      * @return bool The result of the validation.
      */
     protected function validate_spec($spec, $url)
-    {
-        // stub
-    }
-
+{
+}
 }

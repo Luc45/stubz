@@ -19,8 +19,7 @@ class Segmenter
      *
      * @var array
      */
-    protected $segment_labels = array (
-);
+    protected $segment_labels = array();
 
     /**
      * Query arguments supplied by the user for data store.
@@ -34,8 +33,7 @@ class Segmenter
      *
      * @var array
      */
-    protected $report_columns = array (
-);
+    protected $report_columns = array();
 
     /**
      * Constructor.
@@ -44,10 +42,8 @@ class Segmenter
      * @param array $report_columns Report columns lookup from data store.
      */
     public function __construct($query_args, $report_columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filters definitions for SELECT clauses based on query_args and joins them into one string usable in SELECT clause.
      *
@@ -56,10 +52,8 @@ class Segmenter
      * @return string to be used in SELECT clause statements.
      */
     protected function prepare_selections($columns_mapping)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update row-level db result for segments in 'totals' section to the format used for output.
      *
@@ -69,10 +63,8 @@ class Segmenter
      * @return array Reformatted array.
      */
     protected function reformat_totals_segments($segments_db_result, $segment_dimension)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merges segmented results for totals response part.
      *
@@ -106,10 +98,8 @@ class Segmenter
      * @return array
      */
     protected function merge_segment_totals_results($segment_dimension, $result1, $result2)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merges segmented results for intervals response part.
      *
@@ -149,10 +139,8 @@ class Segmenter
      * @return array
      */
     protected function merge_segment_intervals_results($segment_dimension, $result1, $result2)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update row-level db result for segments in 'intervals' section to the format used for output.
      *
@@ -162,40 +150,32 @@ class Segmenter
      * @return array Reformatted array.
      */
     protected function reformat_intervals_segments($segments_db_result, $segment_dimension)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches all segment ids from db and stores it for later use.
      *
      * @return void
      */
     protected function set_all_segments()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all segment ids for given segmentby query parameter.
      *
      * @return array
      */
     protected function get_all_segments()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all segment labels for given segmentby query parameter.
      *
      * @return array
      */
     protected function get_segment_labels()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Compares two report data objects by pre-defined object property and ASC/DESC ordering.
      *
@@ -204,10 +184,8 @@ class Segmenter
      * @return string
      */
     private function segment_cmp($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds zeroes for segments not present in the data selection.
      *
@@ -216,20 +194,16 @@ class Segmenter
      * @return array
      */
     protected function fill_in_missing_segments($segments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds missing segments to intervals, modifies $data.
      *
      * @param stdClass $data Response data.
      */
     protected function fill_in_missing_interval_segments(&$data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for totals where the segmenting property is bound to product (e.g. category, product_id, variation_id).
      *
@@ -245,10 +219,8 @@ class Segmenter
      * @return array
      */
     protected function get_product_related_totals_segments($segmenting_selections, $segmenting_from, $segmenting_where, $segmenting_groupby, $segmenting_dimension_name, $table_name, $totals_query, $unique_orders_table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for intervals where the segmenting property is bound to product (e.g. category, product_id, variation_id).
      *
@@ -264,10 +236,8 @@ class Segmenter
      * @return array
      */
     protected function get_product_related_intervals_segments($segmenting_selections, $segmenting_from, $segmenting_where, $segmenting_groupby, $segmenting_dimension_name, $table_name, $intervals_query, $unique_orders_table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for totals query where the segmenting property is bound to order (e.g. coupon or customer type).
      *
@@ -281,10 +251,8 @@ class Segmenter
      * @return array
      */
     protected function get_order_related_totals_segments($segmenting_select, $segmenting_from, $segmenting_where, $segmenting_groupby, $table_name, $totals_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for intervals query where the segmenting property is bound to order (e.g. coupon or customer type).
      *
@@ -298,10 +266,8 @@ class Segmenter
      * @return array
      */
     protected function get_order_related_intervals_segments($segmenting_select, $segmenting_from, $segmenting_where, $segmenting_groupby, $table_name, $intervals_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of segments formatted for REST response.
      *
@@ -312,10 +278,8 @@ class Segmenter
      * @return array
      */
     protected function get_segments($type, $query_params, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for segmenting property bound to product (e.g. category, product_id, variation_id).
      *
@@ -332,10 +296,8 @@ class Segmenter
      * @return array
      */
     protected function get_product_related_segments($type, $segmenting_selections, $segmenting_from, $segmenting_where, $segmenting_groupby, $segmenting_dimension_name, $table_name, $query_params, $unique_orders_table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for segmenting property bound to order (e.g. coupon or customer type).
      *
@@ -350,10 +312,8 @@ class Segmenter
      * @return array
      */
     protected function get_order_related_segments($type, $segmenting_select, $segmenting_from, $segmenting_where, $segmenting_groupby, $table_name, $query_params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assign segments to time intervals by updating original $intervals array.
      *
@@ -361,10 +321,8 @@ class Segmenter
      * @param array $intervals_segments Result array from interval segments SQL query.
      */
     protected function assign_segments_to_intervals(&$intervals, $intervals_segments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of segments for totals part of REST response.
      *
@@ -374,10 +332,8 @@ class Segmenter
      * @return array
      */
     public function get_totals_segments($query_params, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds an array of segments to data->intervals object.
      *
@@ -386,8 +342,6 @@ class Segmenter
      * @param string   $table_name Name of the SQL table that is the main order stats table.
      */
     public function add_intervals_segments(&$data, $intervals_query, $table_name)
-    {
-        // stub
-    }
-
+{
+}
 }

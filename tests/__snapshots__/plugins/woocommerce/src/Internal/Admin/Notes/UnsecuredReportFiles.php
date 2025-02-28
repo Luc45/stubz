@@ -15,24 +15,18 @@ class UnsecuredReportFiles
      * @return Note|null
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the note if it passes predefined conditions.
      */
     public static function possibly_add_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the note has been previously added.
      */
     public static function note_exists()
-    {
-        // stub
-    }
-
+{
+}
 }

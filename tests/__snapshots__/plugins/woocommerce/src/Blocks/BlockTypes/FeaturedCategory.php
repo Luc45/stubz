@@ -20,10 +20,8 @@ class FeaturedCategory
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the featured category.
      *
@@ -31,10 +29,8 @@ class FeaturedCategory
      * @return \WP_Term|null
      */
     protected function get_item($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of the featured category.
      *
@@ -42,10 +38,8 @@ class FeaturedCategory
      * @return string
      */
     protected function get_item_title($category)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the featured category image URL.
      *
@@ -54,10 +48,8 @@ class FeaturedCategory
      * @return string
      */
     protected function get_item_image($category, $size = 'full')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the featured category attributes.
      *
@@ -66,8 +58,6 @@ class FeaturedCategory
      * @return string
      */
     protected function render_attributes($category, $attributes)
-    {
-        // stub
-    }
-
+{
+}
 }

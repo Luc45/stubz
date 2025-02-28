@@ -20,10 +20,8 @@ trait BlockHooksTrait
      * @return array An array of block slugs hooked into a given context.
      */
     public function register_hooked_block($hooked_blocks, $position, $anchor_block, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if the provided context contains a the block already.
      *
@@ -31,10 +29,8 @@ trait BlockHooksTrait
      * @return boolean
      */
     protected function has_block_in_content($context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given a provided context, returns the content of the context.
      *
@@ -43,10 +39,8 @@ trait BlockHooksTrait
      * @return string
      */
     protected function get_context_content($context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given a provided context, returns whether the context refers to header content.
      *
@@ -56,10 +50,8 @@ trait BlockHooksTrait
      * @return boolean
      */
     protected function is_template_part_or_pattern($context, $area)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given a provided context, returns whether the context refers to the target area and isn't marked as excluded.
      *
@@ -69,10 +61,8 @@ trait BlockHooksTrait
      * @return boolean
      */
     protected function is_target_area($context, $area)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the pattern is excluded or not
      *
@@ -82,8 +72,6 @@ trait BlockHooksTrait
      * @return boolean
      */
     protected function pattern_is_excluded($context)
-    {
-        // stub
-    }
-
+{
+}
 }

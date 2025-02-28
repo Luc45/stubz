@@ -22,10 +22,8 @@ class OrderCouponSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an order coupon to an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class OrderCouponSchema
      * @return array
      */
     public function get_item_response($coupon)
-    {
-        // stub
-    }
-
+{
+}
 }

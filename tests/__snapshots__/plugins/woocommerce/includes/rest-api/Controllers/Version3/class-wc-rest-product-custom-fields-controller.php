@@ -33,10 +33,8 @@ class WC_REST_Product_Custom_Fields_Controller
      * Register the routes for products.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of custom field names.
      *
@@ -44,10 +42,8 @@ class WC_REST_Product_Custom_Fields_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item_names($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read items.
      *
@@ -55,18 +51,14 @@ class WC_REST_Product_Custom_Fields_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add new options for 'order' to the collection params.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

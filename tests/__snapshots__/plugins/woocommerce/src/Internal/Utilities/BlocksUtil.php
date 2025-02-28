@@ -14,10 +14,8 @@ class BlocksUtil
      * @return array All blocks.
      */
     public static function flatten_blocks($blocks)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all instances of the specified block from the widget area.
      *
@@ -25,10 +23,8 @@ class BlocksUtil
      * @return array Array of blocks as returned by parse_blocks().
      */
     public static function get_blocks_from_widget_area($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all instances of the specified block on a specific template part.
      *
@@ -37,8 +33,6 @@ class BlocksUtil
      * @return array Array of blocks as returned by parse_blocks().
      */
     public static function get_block_from_template_part($block_name, $template_part_slug)
-    {
-        // stub
-    }
-
+{
+}
 }

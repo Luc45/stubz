@@ -18,10 +18,8 @@ class WC_Email_Customer_Invoice
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
@@ -30,10 +28,8 @@ class WC_Email_Customer_Invoice
      * @return string
      */
     public function get_default_subject($paid = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
@@ -42,30 +38,24 @@ class WC_Email_Customer_Invoice
      * @return string
      */
     public function get_default_heading($paid = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
      * @return string
      */
     public function get_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
      * @return string
      */
     public function get_heading()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default content to show below main email content.
      *
@@ -73,10 +63,8 @@ class WC_Email_Customer_Invoice
      * @return string
      */
     public function get_default_additional_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger the sending of this email.
      *
@@ -84,36 +72,28 @@ class WC_Email_Customer_Invoice
      * @param WC_Order $order Order object.
      */
     public function trigger($order_id, $order = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content html.
      *
      * @return string
      */
     public function get_content_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get content plain.
      *
      * @return string
      */
     public function get_content_plain()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise settings form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
 }

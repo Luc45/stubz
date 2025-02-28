@@ -74,10 +74,8 @@ class WC_Customer_Data_Store
      * @return bool
      */
     protected function exclude_internal_meta_keys($meta)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to create a new customer in the database.
      *
@@ -88,10 +86,8 @@ class WC_Customer_Data_Store
      * @throws WC_Data_Exception If unable to create new customer.
      */
     public function create(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read a customer object.
      *
@@ -100,10 +96,8 @@ class WC_Customer_Data_Store
      * @throws Exception If invalid customer.
      */
     public function read(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates a customer in the database.
      *
@@ -111,10 +105,8 @@ class WC_Customer_Data_Store
      * @param WC_Customer $customer Customer object.
      */
     public function update(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes a customer from the database.
      *
@@ -122,12 +114,9 @@ class WC_Customer_Data_Store
      * @param WC_Customer $customer Customer object.
      * @param array       $args Array of args to pass to the delete method.
      */
-    public function delete(&$customer, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$customer, $args = array())
+{
+}
     /**
      * Helper method that updates all the meta for a customer. Used for update & create.
      *
@@ -135,20 +124,16 @@ class WC_Customer_Data_Store
      * @param WC_Customer $customer Customer object.
      */
     private function update_user_meta($customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the usage of the custom orders table is enabled.
      *
      * @return bool
      */
     private function is_cot_in_use(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the customers last order.
      *
@@ -157,10 +142,8 @@ class WC_Customer_Data_Store
      * @return WC_Order|false
      */
     public function get_last_order(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the number of orders this customer has.
      *
@@ -169,10 +152,8 @@ class WC_Customer_Data_Store
      * @return integer
      */
     public function get_order_count(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return how much money this customer has spent.
      *
@@ -181,10 +162,8 @@ class WC_Customer_Data_Store
      * @return float
      */
     public function get_total_spent(&$customer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search customers and return customer IDs.
      *
@@ -195,10 +174,8 @@ class WC_Customer_Data_Store
      * @return array
      */
     public function search_customers($term, $limit = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all user ids who have `billing_email` set to any of the email passed in array.
      *
@@ -207,8 +184,6 @@ class WC_Customer_Data_Store
      * @return array
      */
     public function get_user_ids_for_billing_email($emails)
-    {
-        // stub
-    }
-
+{
+}
 }

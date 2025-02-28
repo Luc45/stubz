@@ -23,28 +23,22 @@ abstract class WC_Admin_List_Table
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show blank slate.
      *
      * @param string $which String which tablenav is being shown.
      */
     public function maybe_render_blank_state($which)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render blank state. Extend to add content.
      */
     protected function render_blank_state()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes this type from list of post types that support "View Mode" switching.
      * View mode is seen on posts where you can switch between list or excerpt. Our post types don't support
@@ -54,18 +48,14 @@ abstract class WC_Admin_List_Table
      * @return array             Array of post types supporting view mode, without this type.
      */
     public function disable_view_mode($post_types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if we should render search filters or not.
      */
     public function restrict_manage_posts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle any filters.
      *
@@ -73,18 +63,14 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function request_query($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render any custom filters and search inputs for the list table.
      */
     protected function render_filters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle any custom filters.
      *
@@ -92,10 +78,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     protected function query_filters($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set row actions.
      *
@@ -104,10 +88,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function row_actions($actions, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get row actions to show in the list table.
      *
@@ -116,10 +98,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     protected function get_row_actions($actions, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust which columns are displayed by default.
      *
@@ -128,10 +108,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function default_hidden_columns($hidden, $screen)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set list table primary column.
      *
@@ -140,30 +118,24 @@ abstract class WC_Admin_List_Table
      * @return string
      */
     public function list_table_primary_column($default, $screen_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define primary column.
      *
      * @return array
      */
     protected function get_primary_column()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define hidden columns.
      *
      * @return array
      */
     protected function define_hidden_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define which columns are sortable.
      *
@@ -171,10 +143,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function define_sortable_columns($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define which columns to show on this screen.
      *
@@ -182,10 +152,8 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function define_columns($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define bulk actions.
      *
@@ -193,20 +161,16 @@ abstract class WC_Admin_List_Table
      * @return array
      */
     public function define_bulk_actions($actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Pre-fetch any data for the row each column has access to it.
      *
      * @param int $post_id Post ID being shown.
      */
     protected function prepare_row_data($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render individual columns.
      *
@@ -214,10 +178,8 @@ abstract class WC_Admin_List_Table
      * @param int    $post_id Post ID being shown.
      */
     public function render_columns($column, $post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle bulk actions.
      *
@@ -227,8 +189,6 @@ abstract class WC_Admin_List_Table
      * @return string
      */
     public function handle_bulk_actions($redirect_to, $action, $ids)
-    {
-        // stub
-    }
-
+{
+}
 }

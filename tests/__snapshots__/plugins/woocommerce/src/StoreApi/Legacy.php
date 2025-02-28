@@ -11,10 +11,8 @@ class Legacy
      * Hook into WP lifecycle events.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attempt to process a payment for the checkout API if no payment methods support the
      * woocommerce_rest_checkout_process_payment_with_context action.
@@ -25,8 +23,6 @@ class Legacy
      * @throws RouteException If the gateway returns an explicit error message.
      */
     public function process_legacy_payment(Automattic\WooCommerce\StoreApi\Payments\PaymentContext $context, Automattic\WooCommerce\StoreApi\Payments\PaymentResult &$result)
-    {
-        // stub
-    }
-
+{
+}
 }

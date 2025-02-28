@@ -23,10 +23,8 @@ abstract class AbstractAddressSchema
      * @param SchemaController $controller Schema Controller instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend, Automattic\WooCommerce\StoreApi\SchemaController $controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Term properties.
      *
@@ -34,10 +32,8 @@ abstract class AbstractAddressSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize and format the given address object.
      *
@@ -47,10 +43,8 @@ abstract class AbstractAddressSchema
      * @return array
      */
     public function sanitize_callback($address, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate the given address object.
      *
@@ -62,18 +56,14 @@ abstract class AbstractAddressSchema
      * @return true|\WP_Error
      */
     public function validate_callback($address, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get additional address fields schema.
      *
      * @return array
      */
     protected function get_additional_address_fields_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

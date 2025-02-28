@@ -21,37 +21,30 @@ class WC_Plugin_Updates
      *
      * @var array
      */
-    protected $major_untested_plugins = array (
-);
+    protected $major_untested_plugins = array();
 
     /**
      * Common JS for initializing and managing thickbox-based modals.
      */
     protected function generic_modal_js()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the inline warning notice for major version updates.
      *
      * @return string
      */
     protected function get_extensions_inline_warning_major()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the warning notice for the modal window.
      *
      * @return string
      */
     protected function get_extensions_modal_warning()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get installed plugins that have a tested version lower than the input version.
      *
@@ -64,10 +57,8 @@ class WC_Plugin_Updates
      * @return array of plugin info arrays
      */
     public function get_untested_plugins($new_version, $release)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get plugins that have a valid value for a specific header.
      *
@@ -75,18 +66,14 @@ class WC_Plugin_Updates
      * @return array Array of plugins that contain the searched header.
      */
     protected function get_plugins_with_header($header)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get plugins which "maybe" are for WooCommerce.
      *
      * @return array of plugin info arrays
      */
     protected function get_plugins_for_woocommerce()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -22,36 +22,28 @@ class Marketing
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add main marketing menu item.
      *
      * Uses priority of 9 so other items can easily be added at the default priority (10).
      */
     public function add_parent_menu_item()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers report pages.
      */
     public function register_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the main Marketing page, which is Marketing > Overview.
      *
@@ -60,10 +52,8 @@ class Marketing
      * gives us the wrong menu link.
      */
     protected function register_overview_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Order marketing menu items alphabetically.
      * Overview should be first, and Coupons should be second, followed by other marketing menu items.
@@ -71,10 +61,8 @@ class Marketing
      * @return  void
      */
     public function reorder_marketing_submenu()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add settings for marketing feature.
      *
@@ -82,8 +70,6 @@ class Marketing
      * @return array
      */
     public function component_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

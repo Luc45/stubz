@@ -28,10 +28,8 @@ class OnboardingProducts
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create products.
      *
@@ -39,10 +37,8 @@ class OnboardingProducts
      * @return WP_Error|WP_REST_Response
      */
     public function create_products($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage themes.
      *
@@ -50,8 +46,6 @@ class OnboardingProducts
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
 }

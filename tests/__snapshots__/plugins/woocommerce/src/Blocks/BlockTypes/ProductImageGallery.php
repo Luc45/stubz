@@ -18,20 +18,16 @@ class ProductImageGallery
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -41,8 +37,6 @@ class ProductImageGallery
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

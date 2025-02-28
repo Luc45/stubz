@@ -21,10 +21,8 @@ class AddToCartWithOptionsQuantitySelector
      * @return array  Block attributes merged with defaults.
      */
     private function parse_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue assets specific to this block.
      * We enqueue frontend scripts only if the quantitySelectorStyle is set to 'stepper'.
@@ -34,10 +32,8 @@ class AddToCartWithOptionsQuantitySelector
      * @param WP_Block $block Block instance.
      */
     protected function enqueue_assets($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add increment and decrement buttons to the quantity input field.
      *
@@ -46,10 +42,8 @@ class AddToCartWithOptionsQuantitySelector
      * @return stringa Quantity input HTML with increment and decrement buttons.
      */
     private function add_steppers($product_html, $product_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add classes to the Quantity Selector needed for the stepper style.
      *
@@ -58,10 +52,8 @@ class AddToCartWithOptionsQuantitySelector
      * @return string The Quantity Selector HTML with classes added.
      */
     private function add_stepper_classes($product_html)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -72,8 +64,6 @@ class AddToCartWithOptionsQuantitySelector
      * @return string | void Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

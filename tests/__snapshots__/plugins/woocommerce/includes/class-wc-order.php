@@ -118,10 +118,8 @@ class WC_Order
      * @return bool success
      */
     public function payment_complete($transaction_id = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets order total - formatted for display.
      *
@@ -131,10 +129,8 @@ class WC_Order
      * @return string
      */
     public function get_formatted_order_total($tax_display = '', $display_refunded = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save data to the database.
      *
@@ -142,10 +138,8 @@ class WC_Order
      * @return int order ID
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log an error about this order is exception is encountered.
      *
@@ -154,10 +148,8 @@ class WC_Order
      * @since 3.7.0
      */
     protected function handle_exception($e, $message = 'Error')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order status.
      *
@@ -168,10 +160,8 @@ class WC_Order
      * @return array
      */
     public function set_status($new_status, $note = '', $manual_update = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set date paid.
      *
@@ -186,10 +176,8 @@ class WC_Order
      * @since 3.0.0
      */
     public function maybe_set_date_paid()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set date completed.
      *
@@ -198,10 +186,8 @@ class WC_Order
      * @since 3.0.0
      */
     protected function maybe_set_date_completed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates status of order immediately.
      *
@@ -212,28 +198,22 @@ class WC_Order
      * @return bool
      */
     public function update_status($new_status, $note = '', $manual = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the status transition.
      */
     protected function status_transition()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get basic order data in array format.
      *
      * @return array
      */
     public function get_base_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all class data in array format.
      *
@@ -241,28 +221,22 @@ class WC_Order
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Expands the shipping and billing information in the changes array.
      */
     public function get_changes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the order number for display (by default, order ID).
      *
      * @return string
      */
     public function get_order_number()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order key.
      *
@@ -271,10 +245,8 @@ class WC_Order
      * @return string
      */
     public function get_order_key($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer_id.
      *
@@ -282,10 +254,8 @@ class WC_Order
      * @return int
      */
     public function get_customer_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Alias for get_customer_id().
      *
@@ -293,20 +263,16 @@ class WC_Order
      * @return int
      */
     public function get_user_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the user associated with the order. False for guests.
      *
      * @return WP_User|false
      */
     public function get_user()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets a prop for a getter method.
      *
@@ -317,10 +283,8 @@ class WC_Order
      * @return mixed
      */
     protected function get_address_prop($prop, $address_type = 'billing', $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing first name.
      *
@@ -328,10 +292,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_first_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing last name.
      *
@@ -339,10 +301,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_last_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing company.
      *
@@ -350,10 +310,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_company($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing address line 1.
      *
@@ -361,10 +319,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_address_1($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing address line 2.
      *
@@ -372,10 +328,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_address_2($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing city.
      *
@@ -383,10 +337,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_city($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing state.
      *
@@ -394,10 +346,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_state($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing postcode.
      *
@@ -405,10 +355,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_postcode($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing country.
      *
@@ -416,10 +364,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_country($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing email.
      *
@@ -427,10 +373,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_email($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get billing phone.
      *
@@ -438,10 +382,8 @@ class WC_Order
      * @return string
      */
     public function get_billing_phone($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping first name.
      *
@@ -449,10 +391,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_first_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_last_name.
      *
@@ -460,10 +400,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_last_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping company.
      *
@@ -471,10 +409,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_company($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping address line 1.
      *
@@ -482,10 +418,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_address_1($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping address line 2.
      *
@@ -493,10 +427,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_address_2($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping city.
      *
@@ -504,10 +436,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_city($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping state.
      *
@@ -515,10 +445,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_state($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping postcode.
      *
@@ -526,10 +454,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_postcode($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping country.
      *
@@ -537,10 +463,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_country($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping phone.
      *
@@ -549,10 +473,8 @@ class WC_Order
      * @return string
      */
     public function get_shipping_phone($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the payment method.
      *
@@ -560,10 +482,8 @@ class WC_Order
      * @return string
      */
     public function get_payment_method($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get payment method title.
      *
@@ -571,10 +491,8 @@ class WC_Order
      * @return string
      */
     public function get_payment_method_title($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get transaction id.
      *
@@ -582,10 +500,8 @@ class WC_Order
      * @return string
      */
     public function get_transaction_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer ip address.
      *
@@ -593,10 +509,8 @@ class WC_Order
      * @return string
      */
     public function get_customer_ip_address($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer user agent.
      *
@@ -604,10 +518,8 @@ class WC_Order
      * @return string
      */
     public function get_customer_user_agent($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get created via.
      *
@@ -615,10 +527,8 @@ class WC_Order
      * @return string
      */
     public function get_created_via($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer note.
      *
@@ -626,10 +536,8 @@ class WC_Order
      * @return string
      */
     public function get_customer_note($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date completed.
      *
@@ -637,10 +545,8 @@ class WC_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_completed($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date paid.
      *
@@ -648,10 +554,8 @@ class WC_Order
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_paid($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cart hash.
      *
@@ -659,10 +563,8 @@ class WC_Order
      * @return string
      */
     public function get_cart_hash($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the requested address in raw, non-formatted way.
      * Note: Merges raw data with get_prop data so changes are returned too.
@@ -672,40 +574,32 @@ class WC_Order
      * @return array The stored address after filter.
      */
     public function get_address($address_type = 'billing')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a formatted shipping address for the order.
      *
      * @return string
      */
     public function get_shipping_address_map_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a formatted billing full name.
      *
      * @return string
      */
     public function get_formatted_billing_full_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a formatted shipping full name.
      *
      * @return string
      */
     public function get_formatted_shipping_full_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a formatted billing address for the order.
      *
@@ -713,10 +607,8 @@ class WC_Order
      * @return string
      */
     public function get_formatted_billing_address($empty_content = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a formatted shipping address for the order.
      *
@@ -724,10 +616,8 @@ class WC_Order
      * @return string
      */
     public function get_formatted_shipping_address($empty_content = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the order has a billing address.
      *
@@ -735,10 +625,8 @@ class WC_Order
      * @return boolean
      */
     public function has_billing_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the order has a shipping address.
      *
@@ -746,10 +634,8 @@ class WC_Order
      * @return boolean
      */
     public function has_shipping_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether stock was reduced.
      *
@@ -758,10 +644,8 @@ class WC_Order
      * @return bool
      */
     public function get_order_stock_reduced(string $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether permissions were generated yet.
      *
@@ -770,10 +654,8 @@ class WC_Order
      * @return bool True if permissions were generated, false otherwise.
      */
     public function get_download_permissions_granted(string $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether email have been sent for this order.
      *
@@ -782,10 +664,8 @@ class WC_Order
      * @return bool
      */
     public function get_new_order_email_sent(string $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets information about whether sales were recorded.
      *
@@ -794,10 +674,8 @@ class WC_Order
      * @return bool True if sales were recorded, false otherwise.
      */
     public function get_recorded_sales(string $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets a prop for a setter method.
      *
@@ -807,10 +685,8 @@ class WC_Order
      * @param mixed  $value Value of the prop.
      */
     protected function set_address_prop($prop, $address_type, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setter for billing address, expects the $address parameter to be key value pairs for individual address props.
      *
@@ -819,10 +695,8 @@ class WC_Order
      * @return void
      */
     public function set_billing_address(array $address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shortcut for calling set_billing_address.
      *
@@ -833,10 +707,8 @@ class WC_Order
      * @return void
      */
     public function set_billing(array $address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setter for shipping address, expects the $address parameter to be key value pairs for individual address props.
      *
@@ -845,10 +717,8 @@ class WC_Order
      * @return void
      */
     public function set_shipping_address(array $address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shortcut for calling set_shipping_address. This is useful in scenarios where set_$prop_name is invoked, and since we store the shipping address as 'shipping' prop in data, it can be called directly.
      *
@@ -857,10 +727,8 @@ class WC_Order
      * @return void
      */
     public function set_shipping(array $address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set order key.
      *
@@ -868,10 +736,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_order_key($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer id.
      *
@@ -879,10 +745,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_customer_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing first name.
      *
@@ -890,10 +754,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_first_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing last name.
      *
@@ -901,10 +763,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_last_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing company.
      *
@@ -912,10 +772,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_company($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing address line 1.
      *
@@ -923,10 +781,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_address_1($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing address line 2.
      *
@@ -934,10 +790,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_address_2($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing city.
      *
@@ -945,10 +799,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_city($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing state.
      *
@@ -956,10 +808,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_state($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing postcode.
      *
@@ -967,10 +817,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_postcode($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing country.
      *
@@ -978,18 +826,14 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_country($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set empty billing email to that of the user who owns the order.
      */
     protected function maybe_set_user_billing_email()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing email.
      *
@@ -997,10 +841,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_email($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set billing phone.
      *
@@ -1008,10 +850,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_billing_phone($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping first name.
      *
@@ -1019,10 +859,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_first_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping last name.
      *
@@ -1030,10 +868,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_last_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping company.
      *
@@ -1041,10 +877,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_company($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping address line 1.
      *
@@ -1052,10 +886,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_address_1($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping address line 2.
      *
@@ -1063,10 +895,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_address_2($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping city.
      *
@@ -1074,10 +904,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_city($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping state.
      *
@@ -1085,10 +913,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_state($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping postcode.
      *
@@ -1096,10 +922,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_postcode($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping country.
      *
@@ -1107,10 +931,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_country($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping phone.
      *
@@ -1119,10 +941,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_shipping_phone($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the payment method.
      *
@@ -1130,10 +950,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_payment_method($payment_method = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set payment method title.
      *
@@ -1141,10 +959,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_payment_method_title($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set transaction id.
      *
@@ -1152,10 +968,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_transaction_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer ip address.
      *
@@ -1163,10 +977,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_customer_ip_address($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer user agent.
      *
@@ -1174,10 +986,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_customer_user_agent($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set created via.
      *
@@ -1185,10 +995,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_created_via($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set customer note.
      *
@@ -1196,10 +1004,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_customer_note($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date completed.
      *
@@ -1207,10 +1013,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_date_completed($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date paid.
      *
@@ -1218,10 +1022,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_date_paid($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set cart hash.
      *
@@ -1229,10 +1031,8 @@ class WC_Order
      * @throws WC_Data_Exception Throws exception when invalid data is found.
      */
     public function set_cart_hash($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether stock was reduced.
      *
@@ -1241,10 +1041,8 @@ class WC_Order
      * @return void
      */
     public function set_order_stock_reduced($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether permissions were generated yet.
      *
@@ -1253,10 +1051,8 @@ class WC_Order
      * @return void
      */
     public function set_download_permissions_granted($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether email was sent.
      *
@@ -1265,10 +1061,8 @@ class WC_Order
      * @return void
      */
     public function set_new_order_email_sent($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Stores information about whether sales were recorded.
      *
@@ -1277,10 +1071,8 @@ class WC_Order
      * @return void
      */
     public function set_recorded_sales($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an order key is valid.
      *
@@ -1288,10 +1080,8 @@ class WC_Order
      * @return bool
      */
     public function key_is_valid($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if order matches cart_hash.
      *
@@ -1299,20 +1089,16 @@ class WC_Order
      * @return bool
      */
     public function has_cart_hash($cart_hash = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if an order can be edited, specifically for use on the Edit Order screen.
      *
      * @return bool
      */
     public function is_editable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if an order has been paid for based on the order status.
      *
@@ -1320,40 +1106,32 @@ class WC_Order
      * @return bool
      */
     public function is_paid()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if product download is permitted.
      *
      * @return bool
      */
     public function is_download_permitted()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if an order needs display the shipping address, based on shipping method.
      *
      * @return bool
      */
     public function needs_shipping_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the order contains a downloadable product.
      *
      * @return bool
      */
     public function has_downloadable_item()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get downloads from all line items for this order.
      *
@@ -1361,20 +1139,16 @@ class WC_Order
      * @return array
      */
     public function get_downloadable_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if an order needs payment, based on status and order total.
      *
      * @return bool
      */
     public function needs_payment()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the order needs processing before it can be completed.
      *
@@ -1388,10 +1162,8 @@ class WC_Order
      * @return bool
      */
     public function needs_processing()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a URL so that a customer can pay for their (unpaid - pending) order. Pass 'true' for the checkout version which doesn't offer gateway choices.
      *
@@ -1399,20 +1171,16 @@ class WC_Order
      * @return string
      */
     public function get_checkout_payment_url($on_checkout = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a URL for the thanks page (order received).
      *
      * @return string
      */
     public function get_checkout_order_received_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a URL so that a customer can cancel their (unpaid - pending) order.
      *
@@ -1420,10 +1188,8 @@ class WC_Order
      * @return string
      */
     public function get_cancel_order_url($redirect = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a raw (unescaped) cancel-order URL for use by payment gateways.
      *
@@ -1431,30 +1197,24 @@ class WC_Order
      * @return string The unescaped cancel-order URL.
      */
     public function get_cancel_order_url_raw($redirect = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to return the cancel endpoint.
      *
      * @return string the cancel endpoint; either the cart page or the home page.
      */
     public function get_cancel_endpoint()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a URL to view an order from the my account page.
      *
      * @return string
      */
     public function get_view_order_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get's the URL to edit the order in the backend.
      *
@@ -1462,10 +1222,8 @@ class WC_Order
      * @return string
      */
     public function get_edit_order_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a note (comment) to the order. Order must exist.
      *
@@ -1475,10 +1233,8 @@ class WC_Order
      * @return int                       Comment ID.
      */
     public function add_order_note($note, $is_customer_note = 0, $added_by_user = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an order note for status transition
      *
@@ -1489,20 +1245,16 @@ class WC_Order
      * @return int                  Comment ID.
      */
     private function add_status_transition_note($note, $transition)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * List order notes (public) for the customer.
      *
      * @return array
      */
     public function get_customer_order_notes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order refunds.
      *
@@ -1510,10 +1262,8 @@ class WC_Order
      * @return array of WC_Order_Refund objects
      */
     public function get_refunds()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get amount already refunded.
      *
@@ -1521,10 +1271,8 @@ class WC_Order
      * @return string
      */
     public function get_total_refunded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total tax refunded.
      *
@@ -1532,10 +1280,8 @@ class WC_Order
      * @return float
      */
     public function get_total_tax_refunded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total shipping refunded.
      *
@@ -1543,10 +1289,8 @@ class WC_Order
      * @return float
      */
     public function get_total_shipping_refunded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the count of order items of a certain type that have been refunded.
      *
@@ -1555,10 +1299,8 @@ class WC_Order
      * @return string
      */
     public function get_item_count_refunded($item_type = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total number of items refunded.
      *
@@ -1568,10 +1310,8 @@ class WC_Order
      * @return int
      */
     public function get_total_qty_refunded($item_type = 'line_item')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refunded amount for a line item.
      *
@@ -1580,10 +1320,8 @@ class WC_Order
      * @return int
      */
     public function get_qty_refunded_for_item($item_id, $item_type = 'line_item')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refunded amount for a line item.
      *
@@ -1592,10 +1330,8 @@ class WC_Order
      * @return int
      */
     public function get_total_refunded_for_item($item_id, $item_type = 'line_item')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refunded tax amount for a line item.
      *
@@ -1605,10 +1341,8 @@ class WC_Order
      * @return double
      */
     public function get_tax_refunded_for_item($item_id, $tax_id, $item_type = 'line_item')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total tax refunded by rate ID.
      *
@@ -1616,30 +1350,24 @@ class WC_Order
      * @return float
      */
     public function get_total_tax_refunded_by_rate_id($rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * How much money is left to refund?
      *
      * @return string
      */
     public function get_remaining_refund_amount()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * How many items are left to refund?
      *
      * @return int
      */
     public function get_remaining_refund_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for the payment method.
      *
@@ -1647,10 +1375,8 @@ class WC_Order
      * @param string $tax_display Tax to display.
      */
     protected function add_order_item_totals_payment_method_row(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add total row for refunds.
      *
@@ -1658,10 +1384,8 @@ class WC_Order
      * @param string $tax_display Tax to display.
      */
     protected function add_order_item_totals_refund_rows(&$total_rows, $tax_display)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get totals for display on pages and in emails.
      *
@@ -1669,10 +1393,8 @@ class WC_Order
      * @return array
      */
     public function get_order_item_totals($tax_display = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if order has been created via admin, checkout, or in another way.
      *
@@ -1681,20 +1403,16 @@ class WC_Order
      * @return bool
      */
     public function is_created_via($modus)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attempts to restore the specified order back to its original status (after having been trashed).
      *
      * @return bool If the operation was successful.
      */
     public function untrash(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates that regular orders have an associated Cost of Goods Sold value.
      * Note that this is true even if the order has no line items with COGS values (in that case the COGS value for the order will be zero)-
@@ -1702,8 +1420,6 @@ class WC_Order
      * @return bool Always true.
      */
     public function has_cogs()
-    {
-        // stub
-    }
-
+{
+}
 }

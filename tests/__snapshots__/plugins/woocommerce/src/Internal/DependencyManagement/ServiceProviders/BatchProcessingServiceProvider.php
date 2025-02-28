@@ -27,8 +27,6 @@ class BatchProcessingServiceProvider
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

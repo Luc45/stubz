@@ -15,28 +15,22 @@ class PostToOrderTableMigrator
      * @return array Config.
      */
     protected function get_schema_config(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get columns config.
      *
      * @return \string[][] Config.
      */
     protected function get_core_column_mapping(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get meta data config.
      *
      * @return \string[][] Config.
      */
     public function get_meta_column_config(): array
-    {
-        // stub
-    }
-
+{
+}
 }

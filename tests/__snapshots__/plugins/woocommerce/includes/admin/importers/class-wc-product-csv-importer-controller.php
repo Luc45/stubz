@@ -27,16 +27,14 @@ class WC_Product_CSV_Importer_Controller
      *
      * @var array
      */
-    protected $steps = array (
-);
+    protected $steps = array();
 
     /**
      * Errors.
      *
      * @var array
      */
-    protected $errors = array (
-);
+    protected $errors = array();
 
     /**
      * The current delimiter for the file being read.
@@ -73,12 +71,9 @@ class WC_Product_CSV_Importer_Controller
      * @param  array  $args Importer arguments.
      * @return WC_Product_CSV_Importer
      */
-    public static function get_importer($file, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function get_importer($file, $args = array())
+{
+}
     /**
      * Check whether a file is a valid CSV file.
      *
@@ -87,10 +82,8 @@ class WC_Product_CSV_Importer_Controller
      * @return bool
      */
     public static function is_file_valid_csv($file, $check_path = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs before controller actions to check that the file used during the import is valid.
      *
@@ -101,10 +94,8 @@ class WC_Product_CSV_Importer_Controller
      * @throws \Exception When file validation fails.
      */
     protected static function check_file_path(string $path): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given file is inside a given directory.
      *
@@ -113,28 +104,22 @@ class WC_Product_CSV_Importer_Controller
      * @return bool True if the file is inside the directory.
      */
     private static function file_is_in_directory(string $file_path, string $directory): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the valid filetypes for a CSV file.
      *
      * @return array
      */
     protected static function get_valid_csv_filetypes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the URL for the next step's screen.
      *
@@ -144,88 +129,67 @@ class WC_Product_CSV_Importer_Controller
      *                      Empty string on failure.
      */
     public function get_next_step_link($step = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output header view.
      */
     protected function output_header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output steps view.
      */
     protected function output_steps()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output footer view.
      */
     protected function output_footer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add error message.
      *
      * @param string $message Error message.
      * @param array  $actions List of actions with 'url' and 'label'.
      */
-    protected function add_error($message, $actions = array (
-))
-    {
-        // stub
-    }
-
+    protected function add_error($message, $actions = array())
+{
+}
     /**
      * Add error message.
      */
     protected function output_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dispatch current step and show correct view.
      */
     public function dispatch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes AJAX requests related to a product CSV import.
      *
      * @since 9.3.0
      */
     public static function dispatch_ajax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output information about the uploading process.
      */
     protected function upload_form()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the upload form and store options.
      */
     public function upload_form_handler()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles the CSV upload and initial parsing of the file to prepare for
      * displaying author import options.
@@ -233,34 +197,26 @@ class WC_Product_CSV_Importer_Controller
      * @return string|WP_Error
      */
     public function handle_upload()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mapping step.
      */
     protected function mapping_form()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Import the file if it exists and is valid.
      */
     public function import()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Done step.
      */
     protected function done()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Columns to normalize.
      *
@@ -268,10 +224,8 @@ class WC_Product_CSV_Importer_Controller
      * @return array
      */
     protected function normalize_columns_names($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Auto map column names.
      *
@@ -280,10 +234,8 @@ class WC_Product_CSV_Importer_Controller
      * @return array
      */
     protected function auto_map_columns($raw_headers, $num_indexes = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map columns using the user's latest import mappings.
      *
@@ -291,10 +243,8 @@ class WC_Product_CSV_Importer_Controller
      * @return array
      */
     public function auto_map_user_preferences($headers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize special column name regex.
      *
@@ -302,10 +252,8 @@ class WC_Product_CSV_Importer_Controller
      * @return string
      */
     protected function sanitize_special_column_name_regex($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get special columns.
      *
@@ -313,10 +261,8 @@ class WC_Product_CSV_Importer_Controller
      * @return array
      */
     protected function get_special_columns($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get mapping options.
      *
@@ -324,8 +270,6 @@ class WC_Product_CSV_Importer_Controller
      * @return array
      */
     protected function get_mapping_options($item = '')
-    {
-        // stub
-    }
-
+{
+}
 }

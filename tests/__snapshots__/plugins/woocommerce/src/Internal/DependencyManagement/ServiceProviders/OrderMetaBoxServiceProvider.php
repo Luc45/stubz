@@ -22,8 +22,6 @@ class OrderMetaBoxServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

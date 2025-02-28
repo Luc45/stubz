@@ -23,12 +23,9 @@ class Downloads
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -36,10 +33,8 @@ class Downloads
      * @return string
      */
     protected function get_inline_styles(array $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -48,20 +43,16 @@ class Downloads
      * @param \WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render column headers for downloads table.
      *
      * @return string
      */
     protected function render_order_downloads_column_headers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render downloads.
      *
@@ -70,10 +61,8 @@ class Downloads
      * @return string
      */
     protected function render_order_downloads($order, $downloads)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render a download row in the table.
      *
@@ -81,8 +70,6 @@ class Downloads
      * @return string
      */
     protected function render_order_download_row($download)
-    {
-        // stub
-    }
-
+{
+}
 }

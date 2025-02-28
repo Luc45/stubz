@@ -12,8 +12,7 @@ class EvaluateSuggestion
      *
      * @var array
      */
-    protected static $memo = array (
-);
+    protected static $memo = array();
 
     /**
      * Evaluates the spec and returns the suggestion.
@@ -23,12 +22,9 @@ class EvaluateSuggestion
      *
      * @return object The evaluated suggestion.
      */
-    public static function evaluate($spec, $logger_args = array (
-))
-    {
-        // stub
-    }
-
+    public static function evaluate($spec, $logger_args = array())
+{
+}
     /**
      * Evaluates the specs and returns the visible suggestions.
      *
@@ -37,20 +33,15 @@ class EvaluateSuggestion
      *
      * @return array The visible suggestions and errors.
      */
-    public static function evaluate_specs($specs, $logger_args = array (
-))
-    {
-        // stub
-    }
-
+    public static function evaluate_specs($specs, $logger_args = array())
+{
+}
     /**
      * Resets the memoized results. Useful for testing.
      */
     public static function reset_memo()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a memoization key for the given specs.
      *
@@ -59,8 +50,6 @@ class EvaluateSuggestion
      * @return string The memoization key.
      */
     private static function get_memo_key($specs)
-    {
-        // stub
-    }
-
+{
+}
 }

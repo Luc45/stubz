@@ -16,8 +16,7 @@ class Container
      *
      * @var AbstractDependencyType[]
      */
-    private $registry = array (
-);
+    private $registry = array();
 
     /**
      * Public api for adding a factory to the container.
@@ -41,10 +40,8 @@ class Container
      * @return FactoryType  An instance of the FactoryType dependency.
      */
     public function factory(Closure $instantiation_callback)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Interface for registering a new dependency with the container.
      *
@@ -65,10 +62,8 @@ class Container
      *                      closure that will create the class instance needed.
      */
     public function register($id, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Interface for retrieving the dependency stored in the container for the
      * given identifier.
@@ -80,8 +75,6 @@ class Container
      * @return mixed  Typically a class instance.
      */
     public function get($id)
-    {
-        // stub
-    }
-
+{
+}
 }

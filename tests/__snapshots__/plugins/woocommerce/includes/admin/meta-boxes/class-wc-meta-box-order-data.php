@@ -10,16 +10,14 @@ class WC_Meta_Box_Order_Data
      *
      * @var array
      */
-    protected static $billing_fields = array (
-);
+    protected static $billing_fields = array();
 
     /**
      * Shipping fields.
      *
      * @var array
      */
-    protected static $shipping_fields = array (
-);
+    protected static $shipping_fields = array();
 
     /**
      * Get billing fields for the meta box.
@@ -29,10 +27,8 @@ class WC_Meta_Box_Order_Data
      * @return array
      */
     protected static function get_billing_fields($order = false, $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping fields for the meta box.
      *
@@ -41,28 +37,22 @@ class WC_Meta_Box_Order_Data
      * @return array
      */
     protected static function get_shipping_fields($order = false, $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init billing and shipping fields we display + save. Maintained for backwards compat.
      */
     public static function init_address_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the metabox.
      *
      * @param WP_Post|WC_Order $post Post or order object.
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data.
      *
@@ -70,8 +60,6 @@ class WC_Meta_Box_Order_Data
      * @throws Exception Required request data is missing.
      */
     public static function save($order_id)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,9 +11,7 @@
  */
 function wc_add_order_item($order_id, $item_array)
 {
-    // stub
 }
-
 /**
  * Update an item for an order.
  *
@@ -26,9 +24,7 @@ function wc_add_order_item($order_id, $item_array)
  */
 function wc_update_order_item($item_id, $args)
 {
-    // stub
 }
-
 /**
  * Delete an item from the order it belongs to based on item id.
  *
@@ -39,9 +35,7 @@ function wc_update_order_item($item_id, $args)
  */
 function wc_delete_order_item($item_id)
 {
-    // stub
 }
-
 /**
  * WooCommerce Order Item Meta API - Update term meta.
  *
@@ -55,9 +49,7 @@ function wc_delete_order_item($item_id)
  */
 function wc_update_order_item_meta($item_id, $meta_key, $meta_value, $prev_value = '')
 {
-    // stub
 }
-
 /**
  * WooCommerce Order Item Meta API - Add term meta.
  *
@@ -71,9 +63,7 @@ function wc_update_order_item_meta($item_id, $meta_key, $meta_value, $prev_value
  */
 function wc_add_order_item_meta($item_id, $meta_key, $meta_value, $unique = false)
 {
-    // stub
 }
-
 /**
  * WooCommerce Order Item Meta API - Delete term meta.
  *
@@ -87,9 +77,7 @@ function wc_add_order_item_meta($item_id, $meta_key, $meta_value, $unique = fals
  */
 function wc_delete_order_item_meta($item_id, $meta_key, $meta_value = '', $delete_all = false)
 {
-    // stub
 }
-
 /**
  * WooCommerce Order Item Meta API - Get term meta.
  *
@@ -102,9 +90,7 @@ function wc_delete_order_item_meta($item_id, $meta_key, $meta_value = '', $delet
  */
 function wc_get_order_item_meta($item_id, $key, $single = true)
 {
-    // stub
 }
-
 /**
  * Get order ID by order item ID.
  *
@@ -115,5 +101,4 @@ function wc_get_order_item_meta($item_id, $key, $single = true)
  */
 function wc_get_order_id_by_order_item_id($item_id)
 {
-    // stub
 }

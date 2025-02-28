@@ -34,10 +34,8 @@ class PluginsHelper
      * Initialize hooks.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path to the plugin file relative to the plugins directory from the plugin slug.
      *
@@ -48,30 +46,24 @@ class PluginsHelper
      * @return string|false The plugin path or false if the plugin is not installed.
      */
     public static function get_plugin_path_from_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of installed plugin slugs.
      *
      * @return array
      */
     public static function get_installed_plugin_slugs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of installed plugins with their file paths as a key value pair.
      *
      * @return array
      */
     public static function get_installed_plugins_paths()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of active plugin slugs.
      *
@@ -80,10 +72,8 @@ class PluginsHelper
      * @return array The list of active plugin slugs.
      */
     public static function get_active_plugin_slugs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a plugin is installed.
      *
@@ -92,10 +82,8 @@ class PluginsHelper
      * @return bool
      */
     public static function is_plugin_installed($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a plugin is active.
      *
@@ -104,10 +92,8 @@ class PluginsHelper
      * @return bool
      */
     public static function is_plugin_active($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get plugin data.
      *
@@ -116,10 +102,8 @@ class PluginsHelper
      * @return array|false
      */
     public static function get_plugin_data($plugin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install an array of plugins.
      *
@@ -129,10 +113,8 @@ class PluginsHelper
      * @return array
      */
     public static function install_plugins($plugins, Automattic\WooCommerce\Admin\PluginsInstallLoggers\PluginsInstallLogger|null $logger = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback registered by OnboardingPlugins::install_and_activate_async.
      *
@@ -143,10 +125,8 @@ class PluginsHelper
      * @return bool
      */
     public static function install_and_activate_plugins_async_callback(array $plugins, string $job_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule plugin installation.
      *
@@ -155,10 +135,8 @@ class PluginsHelper
      * @return string Job ID.
      */
     public static function schedule_install_plugins($plugins)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Activate the requested plugins.
      *
@@ -168,10 +146,8 @@ class PluginsHelper
      * @return WP_Error|array Plugin Status
      */
     public static function activate_plugins($plugins, Automattic\WooCommerce\Admin\PluginsInstallLoggers\PluginsInstallLogger|null $logger = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule plugin activation.
      *
@@ -180,10 +156,8 @@ class PluginsHelper
      * @return string Job ID.
      */
     public static function schedule_activate_plugins($plugins)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Installation status.
      *
@@ -192,10 +166,8 @@ class PluginsHelper
      * @return array Job data.
      */
     public static function get_installation_status($job_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the plugin data for the first action.
      *
@@ -204,10 +176,8 @@ class PluginsHelper
      * @return array Array of action data.
      */
     public static function get_action_data($actions)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Activation status.
      *
@@ -216,70 +186,56 @@ class PluginsHelper
      * @return array Array of action data.
      */
     public static function get_activation_status($job_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show notices to connect to woocommerce.com for unconnected store in the plugin list.
      *
      * @return void
      */
     public static function maybe_show_connect_notice_in_plugin_list()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts for connect notice in WooCommerce settings page.
      *
      * @return void
      */
     public static function maybe_enqueue_scripts_for_connect_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts for notices in plugin list page.
      *
      * @return void
      */
     public static function maybe_enqueue_scripts_for_notices_in_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show notice about to expired subscription on WC settings page.
      *
      * @return void
      */
     public static function maybe_show_expired_subscriptions_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show notice about to expiring subscription on WC settings page.
      *
      * @return void
      */
     public static function maybe_show_expiring_subscriptions_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts for woo subscription notice.
      *
      * @return void
      */
     public static function maybe_enqueue_scripts_for_subscription_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Construct the subscription notice data based on user subscriptions data.
      *
@@ -291,10 +247,8 @@ class PluginsHelper
      * @return array notice data to return. Contains type, parsed_message and product_id.
      */
     public static function get_subscriptions_notice_data(array $all_subs, array $subs_to_show, int $total, array $messages, string $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted notice information for expiring subscription.
      *
@@ -302,10 +256,8 @@ class PluginsHelper
      * @return array notice information.
      */
     public static function get_expiring_subscription_notice($allowed_link = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted notice information for expired subscription.
      *
@@ -313,30 +265,24 @@ class PluginsHelper
      * @return array notice information.
      */
     public static function get_expired_subscription_notice($allowed_link = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted notice information for missing subscription.
      *
      * @return array notice information.
      */
     public static function get_missing_subscription_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get notice information when WCCOM connection is disconnected.
      *
      * @return string disconnect notice.
      */
     public static function get_wccom_disconnected_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether a specific notice should be shown to the current user.
      *
@@ -345,10 +291,8 @@ class PluginsHelper
      * @return bool True if the notice should be shown, false otherwise.
      */
     public static function should_show_notice($dismiss_notice_meta, $show_after_one_month = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the notice data for missing payment method.
      *
@@ -358,8 +302,6 @@ class PluginsHelper
      * @return array the notices data.
      */
     public static function get_missing_payment_method_notice($allowed_link = true, $total_expiring_subscriptions = 1)
-    {
-        // stub
-    }
-
+{
+}
 }

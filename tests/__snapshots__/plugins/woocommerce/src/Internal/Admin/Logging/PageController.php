@@ -38,21 +38,17 @@ class PageController
      *
      * @return void
      */
-    public final function init(Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController $file_controller, Automattic\WooCommerce\Internal\Admin\Logging\Settings $settings): void
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\Admin\Logging\FileV2\FileController $file_controller, Automattic\WooCommerce\Internal\Admin\Logging\Settings $settings): void
+{
+}
     /**
      * Add callbacks to hooks.
      *
      * @return void
      */
     private function init_hooks(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the current tab on the Status page is Logs, and if so, fire an action.
      *
@@ -61,10 +57,8 @@ class PageController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function maybe_do_logs_tab_action(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Notices to display on Logs screens.
      *
@@ -73,90 +67,72 @@ class PageController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the canonical URL for the Logs tab of the Status admin page.
      *
      * @return string
      */
     public function get_logs_tab_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the "Logs" tab, depending on the current default log handler.
      *
      * @return void
      */
     public function render(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render navigation to switch between logs browsing and settings.
      *
      * @return void
      */
     private function render_section_nav(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the views for the FileV2 log handler.
      *
      * @return void
      */
     private function render_filev2(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the file list view.
      *
      * @return void
      */
     private function render_list_files_view(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the single file view.
      *
      * @return void
      */
     private function render_single_file_view(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the search results view.
      *
      * @return void
      */
     private function render_search_results_view(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default values for URL query params for FileV2 views.
      *
      * @return string[]
      */
     public function get_query_param_defaults(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get and validate URL query params for FileV2 views.
      *
@@ -164,12 +140,9 @@ class PageController
      *
      * @return array
      */
-    public function get_query_params(array $param_keys = array (
-)): array
-    {
-        // stub
-    }
-
+    public function get_query_params(array $param_keys = array()): array
+{
+}
     /**
      * Get and cache an instance of the list table.
      *
@@ -178,10 +151,8 @@ class PageController
      * @return FileListTable|SearchListTable
      */
     private function get_list_table(string $view)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register screen options for the logging views.
      *
@@ -192,10 +163,8 @@ class PageController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function setup_screen_options(string $view): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process bulk actions initiated from the log file list table.
      *
@@ -206,10 +175,8 @@ class PageController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_list_table_bulk_actions(string $view): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format a log file line.
      *
@@ -219,18 +186,14 @@ class PageController
      * @return string
      */
     private function format_line(string $line, int $line_number): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render a form for searching within log files.
      *
      * @return void
      */
     private function render_search_field(): void
-    {
-        // stub
-    }
-
+{
+}
 }

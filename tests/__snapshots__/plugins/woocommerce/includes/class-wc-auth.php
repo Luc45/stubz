@@ -13,10 +13,8 @@ class WC_Auth
      * @since 2.4.0
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add query vars.
      *
@@ -25,20 +23,16 @@ class WC_Auth
      * @return string[]
      */
     public function add_query_vars($vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add auth endpoint.
      *
      * @since 2.4.0
      */
     public static function add_endpoint()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get scope name.
      *
@@ -47,10 +41,8 @@ class WC_Auth
      * @return string
      */
     protected function get_i18n_scope($scope)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a list of permissions a scope allows.
      *
@@ -59,10 +51,8 @@ class WC_Auth
      * @return array
      */
     protected function get_permissions_in_scope($scope)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build auth urls.
      *
@@ -72,10 +62,8 @@ class WC_Auth
      * @return string
      */
     protected function build_url($data, $endpoint)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decode and format a URL.
      *
@@ -83,10 +71,8 @@ class WC_Auth
      * @return string
      */
     protected function get_formatted_url($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make validation.
      *
@@ -94,10 +80,8 @@ class WC_Auth
      * @throws Exception When validate fails.
      */
     protected function make_validation()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create keys.
      *
@@ -110,10 +94,8 @@ class WC_Auth
      * @return array
      */
     protected function create_keys($app_name, $app_user_id, $scope)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Post consumer data.
      *
@@ -125,10 +107,8 @@ class WC_Auth
      * @return bool
      */
     protected function post_consumer_data($consumer_data, $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle auth requests.
      *
@@ -136,10 +116,8 @@ class WC_Auth
      * @throws Exception When auth_endpoint validation fails.
      */
     public function handle_auth_requests()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Auth endpoint.
      *
@@ -148,10 +126,8 @@ class WC_Auth
      * @param string $route Route.
      */
     protected function auth_endpoint($route)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe delete key.
      *
@@ -160,8 +136,6 @@ class WC_Auth
      * @param array $key Key.
      */
     private function maybe_delete_key($key)
-    {
-        // stub
-    }
-
+{
+}
 }

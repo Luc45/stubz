@@ -18,10 +18,8 @@ class WC_WCCOM_Site_Installation_Step_Unpack_Product
      * @param array $state The current installation state.
      */
     public function __construct($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the step installation process.
      *
@@ -29,8 +27,6 @@ class WC_WCCOM_Site_Installation_Step_Unpack_Product
      * @throws WC_REST_WCCOM_Site_Installer_Error If the package unpacked path is not returned.
      */
     public function run()
-    {
-        // stub
-    }
-
+{
+}
 }

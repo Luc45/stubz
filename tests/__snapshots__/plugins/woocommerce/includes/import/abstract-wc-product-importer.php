@@ -24,48 +24,42 @@ abstract class WC_Product_Importer
      *
      * @var array
      */
-    protected $params = array (
-);
+    protected $params = array();
 
     /**
      * Raw keys - CSV raw headers.
      *
      * @var array
      */
-    protected $raw_keys = array (
-);
+    protected $raw_keys = array();
 
     /**
      * Mapped keys - CSV headers.
      *
      * @var array
      */
-    protected $mapped_keys = array (
-);
+    protected $mapped_keys = array();
 
     /**
      * Raw data.
      *
      * @var array
      */
-    protected $raw_data = array (
-);
+    protected $raw_data = array();
 
     /**
      * Raw data.
      *
      * @var array
      */
-    protected $file_positions = array (
-);
+    protected $file_positions = array();
 
     /**
      * Parsed data.
      *
      * @var array
      */
-    protected $parsed_data = array (
-);
+    protected $parsed_data = array();
 
     /**
      * Start time of current import.
@@ -82,70 +76,56 @@ abstract class WC_Product_Importer
      * @return array
      */
     public function get_raw_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file mapped headers.
      *
      * @return array
      */
     public function get_mapped_keys()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get raw data.
      *
      * @return array
      */
     public function get_raw_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get parsed data.
      *
      * @return array
      */
     public function get_parsed_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get importer parameters.
      *
      * @return array
      */
     public function get_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file pointer position from the last read.
      *
      * @return int
      */
     public function get_file_position()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file pointer position as a percentage of file size.
      *
      * @return int
      */
     public function get_percent_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product for create or update.
      *
@@ -153,10 +133,8 @@ abstract class WC_Product_Importer
      * @return WC_Product|WP_Error
      */
     protected function get_product_object($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process a single item and save.
      *
@@ -165,10 +143,8 @@ abstract class WC_Product_Importer
      * @return array|WP_Error
      */
     protected function process_item($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert raw image URLs to IDs and set.
      *
@@ -176,10 +152,8 @@ abstract class WC_Product_Importer
      * @param array      $data    Item data.
      */
     protected function set_image_data(&$product, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Append meta data.
      *
@@ -187,10 +161,8 @@ abstract class WC_Product_Importer
      * @param array      $data    Item data.
      */
     protected function set_meta_data(&$product, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product data.
      *
@@ -199,10 +171,8 @@ abstract class WC_Product_Importer
      * @throws Exception If data cannot be set.
      */
     protected function set_product_data(&$product, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set variation data.
      *
@@ -212,10 +182,8 @@ abstract class WC_Product_Importer
      * @throws Exception If data cannot be set.
      */
     protected function set_variation_data(&$variation, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation parent attributes and set "is_variation".
      *
@@ -224,10 +192,8 @@ abstract class WC_Product_Importer
      * @return array
      */
     protected function get_variation_parent_attributes($attributes, $parent)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attachment ID.
      *
@@ -237,10 +203,8 @@ abstract class WC_Product_Importer
      * @throws Exception If attachment cannot be loaded.
      */
     public function get_attachment_id_from_url($url, $product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute taxonomy ID from the imported data.
      * If does not exists register a new attribute.
@@ -250,10 +214,8 @@ abstract class WC_Product_Importer
      * @throws Exception If taxonomy cannot be loaded.
      */
     public function get_attribute_taxonomy_id($raw_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Memory exceeded
      *
@@ -263,20 +225,16 @@ abstract class WC_Product_Importer
      * @return bool
      */
     protected function memory_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get memory limit
      *
      * @return int
      */
     protected function get_memory_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Time exceeded.
      *
@@ -286,10 +244,8 @@ abstract class WC_Product_Importer
      * @return bool
      */
     protected function time_exceeded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Explode CSV cell values using commas by default, and handling escaped
      * separators.
@@ -300,10 +256,8 @@ abstract class WC_Product_Importer
      * @return array
      */
     protected function explode_values($value, $separator = ',')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove formatting and trim each value.
      *
@@ -312,10 +266,8 @@ abstract class WC_Product_Importer
      * @return string
      */
     protected function explode_values_formatter($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * The exporter prepends a ' to escape fields that start with =, +, - or @.
      * Remove the prepended ' character preceding those characters.
@@ -325,8 +277,6 @@ abstract class WC_Product_Importer
      * @return string
      */
     protected function unescape_data($value)
-    {
-        // stub
-    }
-
+{
+}
 }

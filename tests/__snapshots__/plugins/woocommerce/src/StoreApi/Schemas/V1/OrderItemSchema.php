@@ -23,10 +23,8 @@ class OrderItemSchema
      * @return array
      */
     public function get_item_response($order_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get totals data.
      *
@@ -34,8 +32,6 @@ class OrderItemSchema
      * @return array
      */
     public function get_totals($order_item)
-    {
-        // stub
-    }
-
+{
+}
 }

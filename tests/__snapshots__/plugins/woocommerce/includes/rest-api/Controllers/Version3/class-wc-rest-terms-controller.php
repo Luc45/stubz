@@ -24,17 +24,14 @@ abstract class WC_REST_Terms_Controller
      *
      * @var array
      */
-    protected $taxonomies_by_id = array (
-);
+    protected $taxonomies_by_id = array();
 
     /**
      * Register the routes for terms.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read the terms.
      *
@@ -42,10 +39,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create a term.
      *
@@ -53,10 +48,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_Error|boolean
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a term.
      *
@@ -64,10 +57,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update a term.
      *
@@ -75,10 +66,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete a term.
      *
@@ -86,10 +75,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_Error|boolean
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -97,10 +84,8 @@ abstract class WC_REST_Terms_Controller
      * @return boolean|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check permissions.
      *
@@ -109,10 +94,8 @@ abstract class WC_REST_Terms_Controller
      * @return bool|WP_Error
      */
     protected function check_permissions($request, $context = 'read')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get terms associated with a taxonomy.
      *
@@ -120,10 +103,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single term for a taxonomy.
      *
@@ -131,10 +112,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single term from a taxonomy.
      *
@@ -142,10 +121,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single term from a taxonomy.
      *
@@ -153,10 +130,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single term from a taxonomy.
      *
@@ -164,10 +139,8 @@ abstract class WC_REST_Terms_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -176,10 +149,8 @@ abstract class WC_REST_Terms_Controller
      * @return array Links for the given term.
      */
     protected function prepare_links($term, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update term meta fields.
      *
@@ -188,10 +159,8 @@ abstract class WC_REST_Terms_Controller
      * @return bool|WP_Error
      */
     protected function update_term_meta_fields($term, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the terms attached to a product.
      *
@@ -205,10 +174,8 @@ abstract class WC_REST_Terms_Controller
      * @return array List of term objects. (Total count in `$this->total_terms`).
      */
     protected function get_terms_for_product($prepared_args, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Comparison function for sorting terms by a column.
      *
@@ -219,20 +186,16 @@ abstract class WC_REST_Terms_Controller
      * @return int <0 if left is higher "priority" than right, 0 if equal, >0 if right is higher "priority" than left.
      */
     protected function compare_terms($left, $right)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get taxonomy.
      *
@@ -240,8 +203,6 @@ abstract class WC_REST_Terms_Controller
      * @return int|WP_Error
      */
     protected function get_taxonomy($request)
-    {
-        // stub
-    }
-
+{
+}
 }

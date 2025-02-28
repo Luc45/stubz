@@ -26,12 +26,9 @@ class WC_Meta_Data implements \JsonSerializable
      *
      * @param array $meta Data to wrap behind this function.
      */
-    public function __construct($meta = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($meta = array())
+{
+}
     /**
      * When converted to JSON.
      *
@@ -39,18 +36,14 @@ class WC_Meta_Data implements \JsonSerializable
      */
     #[ReturnTypeWillChange]
     public function jsonSerialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge changes with data and clear.
      */
     public function apply_changes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates or updates a property in the metadata object.
      *
@@ -58,10 +51,8 @@ class WC_Meta_Data implements \JsonSerializable
      * @param mixed  $value Value to set.
      */
     public function __set($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a given key exists in our data. This is called internally
      * by `empty` and `isset`.
@@ -71,10 +62,8 @@ class WC_Meta_Data implements \JsonSerializable
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the value of any property.
      *
@@ -82,28 +71,22 @@ class WC_Meta_Data implements \JsonSerializable
      * @return mixed Property value or NULL if it does not exists
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return data changes only.
      *
      * @return array
      */
     public function get_changes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all data as an array.
      *
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

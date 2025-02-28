@@ -20,10 +20,8 @@ class ActionScheduler_CanceledSchedule
      * @return DateTime|null
      */
     public function calculate_next(DateTime $after)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cancelled actions should never have a next schedule, even if get_next()
      * is called with $after < $this->scheduled_date.
@@ -32,20 +30,16 @@ class ActionScheduler_CanceledSchedule
      * @return DateTime|null
      */
     public function get_next(DateTime $after)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Action is not recurring.
      *
      * @return bool
      */
     public function is_recurring()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserialize recurring schedules serialized/stored prior to AS 3.0.0
      *
@@ -57,8 +51,6 @@ class ActionScheduler_CanceledSchedule
      * map the old property names with matching visibility.
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

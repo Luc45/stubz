@@ -36,20 +36,16 @@ class WC_Payment_Token_ECheck
      * @return string
      */
     public function get_display_name($deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook prefix
      *
      * @since 3.0.0
      */
     protected function get_hook_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate eCheck payment tokens.
      *
@@ -60,10 +56,8 @@ class WC_Payment_Token_ECheck
      * @return boolean True if the passed data is valid
      */
     public function validate()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the last four digits.
      *
@@ -72,10 +66,8 @@ class WC_Payment_Token_ECheck
      * @return string Last 4 digits
      */
     public function get_last4($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the last four digits.
      *
@@ -83,8 +75,6 @@ class WC_Payment_Token_ECheck
      * @param string $last4 eCheck last four digits.
      */
     public function set_last4($last4)
-    {
-        // stub
-    }
-
+{
+}
 }

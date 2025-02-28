@@ -21,10 +21,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Rendered label HTML.
      */
     protected function render_variation_label($attribute_name): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render variation selector dropdown.
      *
@@ -34,10 +32,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Rendered dropdown HTML.
      */
     protected function render_variation_selector($product, $attribute_name, $options): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get selected attribute value.
      *
@@ -46,10 +42,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Selected value
      */
     private function get_selected_attribute_value($product, $attribute_name): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get HTML for variation options.
      *
@@ -61,10 +55,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Options HTML
      */
     private function get_variation_options_html($product, $attribute_name, $options, $selected, $is_taxonomy): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render variation form.
      *
@@ -73,10 +65,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Rendered form HTML
      */
     private function render_variation_form($product, $attributes): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variations data.
      *
@@ -84,10 +74,8 @@ class AddToCartWithOptionsVariationSelector
      * @return array|false
      */
     private function get_variations_data($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get form HTML.
      *
@@ -97,10 +85,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Form HTML
      */
     private function get_form_html($product, $variations, $variation_attributes): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get form opening HTML.
      *
@@ -109,10 +95,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Form opening HTML
      */
     private function get_form_opening($product, $variations_attr): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variations table HTML.
      *
@@ -121,10 +105,8 @@ class AddToCartWithOptionsVariationSelector
      * @return string Table HTML
      */
     private function get_variations_table($product, $variation_attributes): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation row HTML.
      *
@@ -134,20 +116,16 @@ class AddToCartWithOptionsVariationSelector
      * @return string Row HTML
      */
     private function get_variation_row($product, $attribute_name, $options): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get reset button row HTML.
      *
      * @return string Row HTML
      */
     private function get_reset_button_row(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -157,8 +135,6 @@ class AddToCartWithOptionsVariationSelector
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block): string
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -13,10 +13,8 @@ final class QueryFilters
      * @internal
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the posts clauses of the main query to support global filters.
      *
@@ -25,10 +23,8 @@ final class QueryFilters
      * @return array
      */
     public function main_query_filter($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add conditional query clauses based on the filter params in query vars.
      *
@@ -37,10 +33,8 @@ final class QueryFilters
      * @return array
      */
     public function add_query_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get price data for current products.
      *
@@ -48,10 +42,8 @@ final class QueryFilters
      * @return object
      */
     public function get_filtered_price($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get stock status counts for the current products.
      *
@@ -59,10 +51,8 @@ final class QueryFilters
      * @return array status=>count pairs.
      */
     public function get_stock_status_counts($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rating counts for the current products.
      *
@@ -70,10 +60,8 @@ final class QueryFilters
      * @return array rating=>count pairs.
      */
     public function get_rating_counts($query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute counts for the current products.
      *
@@ -82,10 +70,8 @@ final class QueryFilters
      * @return array termId=>count pairs.
      */
     public function get_attribute_counts($query_vars, $attribute_to_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add query clauses for stock filter.
      *
@@ -94,10 +80,8 @@ final class QueryFilters
      * @return array
      */
     private function stock_filter_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add query clauses for price filter.
      *
@@ -106,10 +90,8 @@ final class QueryFilters
      * @return array
      */
     private function price_filter_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -117,10 +99,8 @@ final class QueryFilters
      * @return string
      */
     private function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate calculate query by stock status.
      *
@@ -131,10 +111,8 @@ final class QueryFilters
      * @return false|string
      */
     private function generate_stock_status_count_query($status, $product_query_sql, $stock_status_options)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query for price filters when dealing with displayed taxes.
      *
@@ -144,10 +122,8 @@ final class QueryFilters
      * @return string Constructed query.
      */
     private function get_price_filter_query_for_displayed_taxes($price_filter, $column = 'min_price', $operator = '>=')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If price filters need adjustment to work with displayed taxes, this returns true.
      *
@@ -157,10 +133,8 @@ final class QueryFilters
      * @return boolean
      */
     private function adjust_price_filters_for_displayed_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjusts a price filter based on a tax class and whether or not the amount includes or excludes taxes.
      *
@@ -171,20 +145,16 @@ final class QueryFilters
      * @return float
      */
     private function adjust_price_filter_for_tax_class($price_filter, $tax_class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute lookup table name.
      *
      * @return string
      */
     private function get_lookup_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add query clauses for attribute filter.
      *
@@ -193,10 +163,8 @@ final class QueryFilters
      * @return array
      */
     private function attribute_filter_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of attributes and terms selected from query arguments.
      *
@@ -204,8 +172,6 @@ final class QueryFilters
      * @return array
      */
     private function get_chosen_attributes($query_vars)
-    {
-        // stub
-    }
-
+{
+}
 }

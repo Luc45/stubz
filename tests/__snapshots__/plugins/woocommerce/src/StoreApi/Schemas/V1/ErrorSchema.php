@@ -22,10 +22,8 @@ class ErrorSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a WP_Error into an object suitable for the response.
      *
@@ -33,8 +31,6 @@ class ErrorSchema
      * @return array
      */
     public function get_item_response($error)
-    {
-        // stub
-    }
-
+{
+}
 }

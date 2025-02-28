@@ -30,28 +30,22 @@ class Cart
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dequeues the scripts added by WC Core to the Cart page.
      *
      * @return void
      */
     public function dequeue_woocommerce_core_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block pattern for Empty Cart Message to make it translatable.
      */
     public function register_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the editor script handle for this block type.
      *
@@ -59,10 +53,8 @@ class Cart
      * @return array|string;
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -71,20 +63,16 @@ class Cart
      * @return array|string
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -93,10 +81,8 @@ class Cart
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Append frontend scripts when rendering the Cart block.
      *
@@ -106,10 +92,8 @@ class Cart
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -117,30 +101,23 @@ class Cart
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Register script and style assets for the block type before it is registered.
      *
      * This registers the scripts; it does not enqueue them.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of Cart block & its inner-block types.
      *
      * @return array;
      */
     public static function get_cart_block_types()
-    {
-        // stub
-    }
-
+{
+}
 }

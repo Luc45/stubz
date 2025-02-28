@@ -21,24 +21,18 @@ class CronExpression_DayOfWeekField
      * {@inheritdoc}
      */
     public function isSatisfiedBy(DateTime $date, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function increment(DateTime $date, $invert = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function validate($value)
-    {
-        // stub
-    }
-
+{
+}
 }

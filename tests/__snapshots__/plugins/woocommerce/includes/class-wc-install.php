@@ -315,10 +315,8 @@ class WC_Install
      * Hook in tabs.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger `woocommerce_newly_installed` action for new installations.
      *
@@ -327,48 +325,38 @@ class WC_Install
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function newly_installed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check WooCommerce version and run the updater is required.
      *
      * This check is done on all requests and runs if the versions do not match.
      */
     public static function check_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performan manual database update when triggered by WooCommerce System Tools.
      *
      * @since 3.6.5
      */
     public static function manual_database_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add WC Admin based db update notice.
      *
      * @since 4.0.0
      */
     public static function wc_admin_db_update_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run manual database update.
      */
     public static function run_manual_database_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run an update callback when triggered by ActionScheduler.
      *
@@ -377,10 +365,8 @@ class WC_Install
      * @since 3.6.0
      */
     public static function run_update_callback($update_callback)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Triggered when a callback will run.
      *
@@ -388,10 +374,8 @@ class WC_Install
      * @param string $callback Callback name.
      */
     protected static function run_update_callback_start($callback)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Triggered when a callback has ran.
      *
@@ -400,46 +384,36 @@ class WC_Install
      * @param bool   $result Return value from callback. Non-false need to run again.
      */
     protected static function run_update_callback_end($callback, $result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install actions when a update button is clicked within the admin area.
      *
      * This function is hooked into admin_init to affect admin only.
      */
     public static function install_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install WC.
      */
     public static function install()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core function that performs the WooCommerce install.
      */
     private static function install_core()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if we're installing.
      *
      * @return bool
      */
     private static function is_installing()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if all the base tables are present.
      *
@@ -449,30 +423,24 @@ class WC_Install
      * @return array List of queries.
      */
     public static function verify_base_tables($modify_notice = true, $execute = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset any notices added to admin.
      *
      * @since 3.2.0
      */
     private static function remove_admin_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setup WC environment - post types, taxonomies, endpoints.
      *
      * @since 3.2.0
      */
     private static function setup_environment()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is this a brand new WC install?
      *
@@ -482,10 +450,8 @@ class WC_Install
      * @return boolean
      */
     public static function is_new_install()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is a DB update needed?
      *
@@ -493,48 +459,38 @@ class WC_Install
      * @return boolean
      */
     public static function needs_db_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if we need to set redirect transients for activation or not.
      *
      * @since 4.6.0
      */
     private static function maybe_set_activation_transients()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if we need to show or run database updates during install.
      *
      * @since 3.2.0
      */
     private static function maybe_update_db_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the Store ID if not already present.
      *
      * @since 8.4.0
      */
     public static function maybe_set_store_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update WC version to current.
      */
     private static function update_wc_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of DB update callbacks.
      *
@@ -542,28 +498,22 @@ class WC_Install
      * @return array
      */
     public static function get_db_update_callbacks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Push all needed DB updates to the queue for processing.
      */
     private static function update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update DB version to current.
      *
      * @param string|null $version New WooCommerce DB version or null.
      */
     public static function update_db_version($version = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add more cron schedules.
      *
@@ -572,54 +522,42 @@ class WC_Install
      * @return array
      */
     public static function cron_schedules($schedules)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create cron jobs (clear them first).
      */
     private static function create_cron_jobs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create pages on installation.
      */
     public static function maybe_create_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create pages that the plugin relies on, storing page IDs in variables.
      */
     public static function create_pages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default options.
      *
      * Sets up the default options used on the settings page.
      */
     private static function create_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enable HPOS by default for new shops.
      *
      * @since 8.2.0
      */
     public static function maybe_enable_hpos()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the coming soon options for new shops.
      *
@@ -628,44 +566,34 @@ class WC_Install
      * @since 9.3.0
      */
     public static function add_coming_soon_option()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether HPOS should be enabled for new shops.
      *
      * @return bool
      */
     private static function should_enable_hpos_for_new_shop()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete obsolete notes.
      */
     public static function delete_obsolete_notes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate option values to their new keys/names.
      */
     public static function migrate_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the default terms for WC taxonomies - product types and order statuses. Modify this at your own risk.
      */
     public static function create_terms()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install and activate the WooCommerce Legacy REST API plugin from the WordPress.org directory if all the following is true:
      *
@@ -680,20 +608,16 @@ class WC_Install
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function maybe_install_legacy_api_plugin()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If in a previous version of WooCommerce the Legacy REST API plugin was installed manually but the core Legacy REST API was kept disabled,
      * now the Legacy API is still disabled and can't be manually enabled from settings UI (the plugin, which is now in control, won't allow that),
      * which is weird and confusing. So we detect this case and explicitly enable it.
      */
     private static function maybe_activate_legacy_api_enabled_option()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set up the database tables which the plugin needs to function.
      * WARNING: If you are modifying this method, make sure that its safe to call regardless of the state of database.
@@ -714,10 +638,8 @@ class WC_Install
      * @return array Strings containing the results of the various update queries as returned by dbDelta.
      */
     public static function create_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Table schema.
      *
@@ -735,10 +657,8 @@ class WC_Install
      * @return string
      */
     private static function get_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a list of WooCommerce tables. Used to make sure all WC tables are dropped when uninstalling the plugin
      * in a single site or multi site environment.
@@ -746,20 +666,16 @@ class WC_Install
      * @return array WC tables.
      */
     public static function get_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Drop WooCommerce tables.
      *
      * @return void
      */
     public static function drop_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Uninstall tables when MU blog is deleted.
      *
@@ -768,54 +684,42 @@ class WC_Install
      * @return string[]
      */
     public static function wpmu_drop_tables($tables)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create roles and capabilities.
      */
     public static function create_roles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get capabilities for WooCommerce - these are assigned to admin/shop manager during installation or reset.
      *
      * @return array
      */
     public static function get_core_capabilities()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove WooCommerce roles.
      */
     public static function remove_roles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create files/directories.
      */
     private static function create_files()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a placeholder image in the media library.
      *
      * @since 3.5.0
      */
     private static function create_placeholder_image()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show action links on the plugin screen.
      *
@@ -824,10 +728,8 @@ class WC_Install
      * @return array
      */
     public static function plugin_action_links($links)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show row meta on the plugin screen.
      *
@@ -837,10 +739,8 @@ class WC_Install
      * @return array
      */
     public static function plugin_row_meta($links, $file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get slug from path and associate it with the path.
      *
@@ -848,10 +748,8 @@ class WC_Install
      * @param string $key Plugin relative path. Example: woocommerce/woocommerce.php.
      */
     private static function associate_plugin_file($plugins, $key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install a plugin from .org in the background via a cron job (used by
      * installer - opt in).
@@ -863,10 +761,8 @@ class WC_Install
      * @since  2.6.0
      */
     public static function background_installer($plugin_to_install_id, $plugin_to_install)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes redirect added during MailChimp plugin's activation.
      *
@@ -874,10 +770,8 @@ class WC_Install
      * @param string $value  Option value.
      */
     public static function remove_mailchimps_redirect($option, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Install a theme from .org in the background via a cron job (used by installer - opt in).
      *
@@ -887,20 +781,16 @@ class WC_Install
      * @since  3.1.0
      */
     public static function theme_background_installer($theme_slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets whether PayPal Standard will be loaded on install.
      *
      * @since 5.5.0
      */
     private static function set_paypal_standard_load_eligibility()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the content of the sample refunds and return policy page.
      *
@@ -908,10 +798,8 @@ class WC_Install
      * @return string The content for the page
      */
     private static function get_refunds_return_policy_page_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds an admin inbox note after a page has been created to notify
      * user. For example to take action to edit the page such as the
@@ -921,10 +809,8 @@ class WC_Install
      * @return void
      */
     public static function add_admin_note_after_page_created()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When pages are created, we might want to take some action.
      * In this case we want to set an option when refund and returns
@@ -936,10 +822,8 @@ class WC_Install
      * @return void
      */
     public static function page_created($page_id, $page_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Cart block content.
      *
@@ -947,10 +831,8 @@ class WC_Install
      * @return string
      */
     protected static function get_cart_block_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Checkout block content.
      *
@@ -958,8 +840,6 @@ class WC_Install
      * @return string
      */
     protected static function get_checkout_block_content()
-    {
-        // stub
-    }
-
+{
+}
 }

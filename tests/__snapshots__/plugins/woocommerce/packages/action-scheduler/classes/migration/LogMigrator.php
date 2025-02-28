@@ -34,10 +34,8 @@ class LogMigrator
      * @param ActionScheduler_Logger $destination_logger Destination logger object.
      */
     public function __construct(ActionScheduler_Logger $source_logger, ActionScheduler_Logger $destination_logger)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Migrate an action log.
      *
@@ -45,8 +43,6 @@ class LogMigrator
      * @param int $destination_action_id Destination logger object.
      */
     public function migrate($source_action_id, $destination_action_id)
-    {
-        // stub
-    }
-
+{
+}
 }

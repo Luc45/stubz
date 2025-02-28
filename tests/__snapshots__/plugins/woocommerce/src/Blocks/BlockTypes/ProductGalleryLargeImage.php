@@ -20,20 +20,16 @@ class ProductGalleryLargeImage
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -42,10 +38,8 @@ class ProductGalleryLargeImage
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -55,10 +49,8 @@ class ProductGalleryLargeImage
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the main images html code. The first element of the array contains the HTML of the first image that is visible, the second element contains the HTML of the other images that are hidden.
      *
@@ -68,10 +60,8 @@ class ProductGalleryLargeImage
      * @return array
      */
     private function get_main_images_html($context, $product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get directives for the block.
      *
@@ -80,10 +70,8 @@ class ProductGalleryLargeImage
      * @return array
      */
     private function get_directives($block_context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get directives for zoom.
      *
@@ -92,10 +80,8 @@ class ProductGalleryLargeImage
      * @return array
      */
     private function get_zoom_directives($block_context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get directives for opening the dialog.
      *
@@ -104,8 +90,6 @@ class ProductGalleryLargeImage
      * @return array
      */
     private function get_open_dialog_directives($block_context)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -25,10 +25,8 @@ final class I18nUtil
      * @return string
      */
     public static function get_weight_unit_label($weight_unit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the translated label for a dimensions unit of measure.
      *
@@ -40,8 +38,6 @@ final class I18nUtil
      * @return string
      */
     public static function get_dimensions_unit_label($dimensions_unit)
-    {
-        // stub
-    }
-
+{
+}
 }

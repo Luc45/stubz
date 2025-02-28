@@ -18,10 +18,8 @@ class Utils
      * @return array The updated base order map, normalized.
      */
     public static function order_map_apply_mappings(array $base_map, array $new_mappings): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Move an id at a specific order in an order map.
      *
@@ -38,10 +36,8 @@ class Utils
      * @return array The updated order map. This map is not normalized.
      */
     public static function order_map_move_at_order(array $order_map, string $id, int $order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Place an id at a specific order in an order map.
      *
@@ -52,10 +48,8 @@ class Utils
      * @return array The updated order map.
      */
     public static function order_map_place_at_order(array $order_map, string $id, int $order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an id to a specific order in an order map.
      *
@@ -66,10 +60,8 @@ class Utils
      * @return array The updated order map. If the id is already in the order map, the order map is returned as is.
      */
     public static function order_map_add_at_order(array $order_map, string $id, int $order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalize an order map.
      *
@@ -80,10 +72,8 @@ class Utils
      * @return array The normalized order map.
      */
     public static function order_map_normalize(array $order_map): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change the minimum order of an order map.
      *
@@ -93,20 +83,16 @@ class Utils
      * @return array The updated order map.
      */
     public static function order_map_change_min_order(array $order_map, int $new_min_order): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of plugin slug suffixes used for handling non-standard testing slugs.
      *
      * @return string[] The list of plugin slug suffixes used for handling non-standard testing slugs.
      */
     public static function get_testing_plugin_slug_suffixes(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a list of testing plugin slugs from a standard/official plugin slug.
      *
@@ -117,10 +103,8 @@ class Utils
      * @return string[] The list of testing plugin slugs generated from the standard/official plugin slug.
      */
     public static function generate_testing_plugin_slugs(string $slug, bool $include_original = false): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalize a plugin slug to a standard/official slug.
      *
@@ -133,10 +117,8 @@ class Utils
      * @return string The normalized plugin slug.
      */
     public static function normalize_plugin_slug(string $slug): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Truncate a text to a target character length while preserving whole words.
      *
@@ -152,8 +134,6 @@ class Utils
      * @return string The truncated text.
      */
     public static function truncate_with_words(string $text, int $target_length, string|null $append = null): string
-    {
-        // stub
-    }
-
+{
+}
 }

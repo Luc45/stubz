@@ -16,10 +16,8 @@ class OptionRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the option value and handles logging if necessary.
      *
@@ -30,10 +28,8 @@ class OptionRuleProcessor
      * @return mixed The option value.
      */
     private function get_option_value($rule, $default_value, $is_contains)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -42,8 +38,6 @@ class OptionRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

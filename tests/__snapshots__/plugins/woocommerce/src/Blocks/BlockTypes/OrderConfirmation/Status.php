@@ -25,10 +25,8 @@ class Status
      * @return string | void Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This renders the content of the block within the wrapper.
      *
@@ -38,22 +36,17 @@ class Status
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * This is what gets rendered when the order does not exist.
      *
      * @return string
      */
     protected function render_content_fallback()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the order is invalid or there is no permission to view the details, tell the user to check email or log-in.
      *
@@ -61,18 +54,14 @@ class Status
      * @return string
      */
     protected function render_confirmation_notice($order = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Email verification for guest users.
      *
      * @return string
      */
     protected function render_verification_form()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -23,10 +23,8 @@ class Orders
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -34,10 +32,8 @@ class Orders
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to allow searching by partial order number.
      *
@@ -47,10 +43,8 @@ class Orders
      * @return array Modified args with partial order search included.
      */
     private function search_partial_order_number($number, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product IDs, names, and quantity from order ID.
      *
@@ -58,10 +52,8 @@ class Orders
      * @return array
      */
     protected function get_products_by_order_id($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer data from customer_id.
      *
@@ -69,10 +61,8 @@ class Orders
      * @return array
      */
     protected function get_customer_by_id($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data.
      *
@@ -80,8 +70,6 @@ class Orders
      * @return array
      */
     protected function get_formatted_item_data($object)
-    {
-        // stub
-    }
-
+{
+}
 }

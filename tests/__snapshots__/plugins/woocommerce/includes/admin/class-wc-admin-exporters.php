@@ -10,75 +10,58 @@ class WC_Admin_Exporters
      *
      * @var string[]
      */
-    protected $exporters = array (
-);
+    protected $exporters = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return true if WooCommerce export is allowed for current user, false otherwise.
      *
      * @return bool Whether current user can perform export.
      */
     protected function export_allowed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add menu items for our custom exporters.
      */
     public function add_to_menus()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide menu items from view so the pages exist, but the menu items do not.
      */
     public function hide_from_menus()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue scripts.
      */
     public function admin_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export page UI.
      */
     public function product_exporter()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serve the generated file.
      */
     public function download_export_file()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * AJAX callback for doing the actual export to the CSV file.
      */
     public function do_ajax_product_export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the product types that can be exported.
      *
@@ -86,8 +69,6 @@ class WC_Admin_Exporters
      * @return array The product types keys and labels.
      */
     public static function get_product_types()
-    {
-        // stub
-    }
-
+{
+}
 }

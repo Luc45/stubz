@@ -19,8 +19,7 @@ class IntegrationRegistry
      *
      * @var IntegrationInterface[]
      */
-    protected $registered_integrations = array (
-);
+    protected $registered_integrations = array();
 
     /**
      * Initializes all registered integrations.
@@ -30,10 +29,8 @@ class IntegrationRegistry
      * @param string $registry_identifier Identifier for this registry.
      */
     public function initialize($registry_identifier = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers an integration.
      *
@@ -42,10 +39,8 @@ class IntegrationRegistry
      * @return boolean True means registered successfully.
      */
     public function register(Automattic\WooCommerce\Blocks\Integrations\IntegrationInterface $integration)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if an integration is already registered.
      *
@@ -53,10 +48,8 @@ class IntegrationRegistry
      * @return bool True if the integration is registered, false otherwise.
      */
     public function is_registered($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Un-register an integration.
      *
@@ -64,10 +57,8 @@ class IntegrationRegistry
      * @return boolean|IntegrationInterface Returns the unregistered integration instance if unregistered successfully.
      */
     public function unregister($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves a registered Integration by name.
      *
@@ -75,48 +66,38 @@ class IntegrationRegistry
      * @return IntegrationInterface|null The registered integration, or null if it is not registered.
      */
     public function get_registered($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves all registered integrations.
      *
      * @return IntegrationInterface[]
      */
     public function get_all_registered()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of all registered integration's script handles for the editor.
      *
      * @return string[]
      */
     public function get_all_registered_editor_script_handles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of all registered integration's script handles.
      *
      * @return string[]
      */
     public function get_all_registered_script_handles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of all registered integration's script data.
      *
      * @return array
      */
     public function get_all_registered_script_data()
-    {
-        // stub
-    }
-
+{
+}
 }

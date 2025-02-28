@@ -26,10 +26,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * Register the routes for product reviews.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read webhook deliveries.
      *
@@ -37,10 +35,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a product review.
      *
@@ -48,10 +44,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create a new product review.
      *
@@ -59,10 +53,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|boolean
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update a product review.
      *
@@ -70,10 +62,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete a product review.
      *
@@ -81,10 +71,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|boolean
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all reviews from a product.
      *
@@ -93,10 +81,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch a single product review from the database.
      *
@@ -107,10 +93,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return \WP_Comment
      */
     protected function get_review(int $id, int $product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single product review.
      *
@@ -118,10 +102,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a product review.
      *
@@ -129,10 +111,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single product review.
      *
@@ -140,10 +120,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a product review.
      *
@@ -152,10 +130,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return bool|WP_Error|WP_REST_Response
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product review output for response.
      *
@@ -164,10 +140,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($review, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product review to be inserted into the database.
      *
@@ -175,10 +149,8 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return array|WP_Error  $prepared_review
      */
     protected function prepare_item_for_database($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -187,28 +159,22 @@ class WC_REST_Product_Reviews_V1_Controller
      * @return array Links for the given product review.
      */
     protected function prepare_links($review, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Product Review's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

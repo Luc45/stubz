@@ -18,8 +18,6 @@ class Utils
      * @return bool|int Returns true if the current WordPress version satisfies the comparison, false otherwise.
      */
     public static function wp_version_compare($version, $operator = null)
-    {
-        // stub
-    }
-
+{
+}
 }

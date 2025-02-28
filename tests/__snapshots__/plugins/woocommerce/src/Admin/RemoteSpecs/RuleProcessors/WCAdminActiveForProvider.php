@@ -13,8 +13,6 @@ class WCAdminActiveForProvider
      * @return number Number of seconds.
      */
     public function get_wcadmin_active_for_in_seconds()
-    {
-        // stub
-    }
-
+{
+}
 }

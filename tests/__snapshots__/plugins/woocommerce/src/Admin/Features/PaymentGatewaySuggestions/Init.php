@@ -14,10 +14,8 @@ class Init
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Go through the specs and run them.
      *
@@ -25,52 +23,40 @@ class Init
      * @return array
      */
     public static function get_suggestions(array|null $specs = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets either cached or default suggestions.
      *
      * @return array
      */
     public static function get_cached_or_default_suggestions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the specs transient.
      */
     public static function delete_specs_transient()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get specs or fetch remotely if they don't exist.
      */
     public static function get_specs()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if suggestions should be shown in the settings screen.
      *
      * @return bool
      */
     public static function should_display()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss the suggestions.
      */
     public static function dismiss()
-    {
-        // stub
-    }
-
+{
+}
 }

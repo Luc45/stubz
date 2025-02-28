@@ -9,8 +9,7 @@ class MarketingRecommendationsDataSourcePoller
 {
     const ID = 'marketing_recommendations';
 
-    const DATA_SOURCES = array (
-);
+    const DATA_SOURCES = array();
 
     /**
      * Class instance.
@@ -23,18 +22,14 @@ class MarketingRecommendationsDataSourcePoller
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data sources.
      *
      * @return array
      */
     public static function get_data_sources()
-    {
-        // stub
-    }
-
+{
+}
 }

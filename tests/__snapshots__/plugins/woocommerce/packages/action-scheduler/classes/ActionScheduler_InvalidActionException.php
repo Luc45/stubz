@@ -7,7 +7,7 @@
  *
  * @package ActionScheduler
  */
-class ActionScheduler_InvalidActionException extends \InvalidArgumentException
+class ActionScheduler_InvalidActionException
 {
     /**
      * Create a new exception when the action's schedule cannot be fetched.
@@ -17,10 +17,8 @@ class ActionScheduler_InvalidActionException extends \InvalidArgumentException
      * @return static
      */
     public static function from_schedule($action_id, $schedule)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a new exception when the action's args cannot be decoded to an array.
      *
@@ -28,10 +26,7 @@ class ActionScheduler_InvalidActionException extends \InvalidArgumentException
      * @param mixed  $args      Passed arguments.
      * @return static
      */
-    public static function from_decoding_args($action_id, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function from_decoding_args($action_id, $args = array())
+{
+}
 }

@@ -26,10 +26,8 @@ class AddToCartWithOptions
      * @return void
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block's attributes.
      *
@@ -37,10 +35,8 @@ class AddToCartWithOptions
      * @return array  Block attributes merged with defaults.
      */
     private function parse_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -48,12 +44,9 @@ class AddToCartWithOptions
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Render the block.
      *
@@ -64,10 +57,8 @@ class AddToCartWithOptions
      * @return string | void Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a hidden input to the Add to Cart form to indicate that it is a descendent of a Single Product block.
      *
@@ -77,10 +68,8 @@ class AddToCartWithOptions
      * @return string The Add to Cart Form HTML with the hidden input.
      */
     protected function add_is_descendent_of_single_product_block_hidden_input_to_product_form($product_html, $is_descendent_of_single_product_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the add to cart message to prevent the Notice from being displayed when the Add to Cart form is a descendent of a Single Product block
      * and the Add to Cart button is clicked.
@@ -88,10 +77,8 @@ class AddToCartWithOptions
      * @param string $message Message to be displayed when product is added to the cart.
      */
     public function add_to_cart_message_html_filter($message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hooks into the `woocommerce_add_to_cart_redirect` filter to prevent redirecting
      * to another page when the block is inside the Single Product block and the Add to Cart button
@@ -101,8 +88,6 @@ class AddToCartWithOptions
      * @return string The filtered redirect URL.
      */
     public function add_to_cart_redirect_filter($url)
-    {
-        // stub
-    }
-
+{
+}
 }

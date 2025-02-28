@@ -19,10 +19,8 @@ class WC_REST_Settings_Controller
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure the current user has access to WRITE the settings APIs.
      *
@@ -30,10 +28,8 @@ class WC_REST_Settings_Controller
      * @return WP_Error|bool
      */
     public function update_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a setting.
      *
@@ -41,10 +37,8 @@ class WC_REST_Settings_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the groups schema, conforming to JSON Schema.
      *
@@ -52,8 +46,6 @@ class WC_REST_Settings_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

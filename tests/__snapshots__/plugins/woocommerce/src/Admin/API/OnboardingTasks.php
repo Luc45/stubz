@@ -35,10 +35,8 @@ class OnboardingTasks
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create a product.
      *
@@ -46,10 +44,8 @@ class OnboardingTasks
      * @return WP_Error|boolean
      */
     public function create_products_permission_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create a product.
      *
@@ -57,10 +53,8 @@ class OnboardingTasks
      * @return WP_Error|boolean
      */
     public function create_pages_permission_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage woocommerce.
      *
@@ -68,10 +62,8 @@ class OnboardingTasks
      * @return WP_Error|boolean
      */
     public function get_tasks_permission_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has permission to hide task lists.
      *
@@ -79,10 +71,8 @@ class OnboardingTasks
      * @return WP_Error|boolean
      */
     public function hide_task_list_permission_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage woocommerce.
      *
@@ -92,10 +82,8 @@ class OnboardingTasks
      * @return WP_Error|boolean
      */
     public function snooze_task_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Import sample products from given CSV path.
      *
@@ -103,10 +91,8 @@ class OnboardingTasks
      * @return WP_Error|WP_REST_Response
      */
     public static function import_sample_products_from_csv($csv_file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Import sample products from WooCommerce sample CSV.
      *
@@ -114,10 +100,8 @@ class OnboardingTasks
      * @return WP_Error|WP_REST_Response
      */
     public static function import_sample_products()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates a product from a template name passed in through the template_name param.
      *
@@ -126,10 +110,8 @@ class OnboardingTasks
      * @return WP_REST_Response|WP_Error
      */
     public static function create_product_from_template($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get header mappings from CSV columns.
      *
@@ -138,10 +120,8 @@ class OnboardingTasks
      * @return array Mapped headers.
      */
     public static function get_header_mappings($file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize special column name regex.
      *
@@ -150,10 +130,8 @@ class OnboardingTasks
      * @return string
      */
     public static function sanitize_special_column_name_regex($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a valid cover block with an image, if one exists, or background as a fallback.
      *
@@ -162,10 +140,8 @@ class OnboardingTasks
      * @return string Block content.
      */
     private static function get_homepage_cover_block($image)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a valid media block with an image, if one exists, or a uninitialized media block the user can set.
      *
@@ -175,10 +151,8 @@ class OnboardingTasks
      * @return string Block content.
      */
     private static function get_homepage_media_block($image, $align = 'left')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a homepage template to be inserted into a post. A different template will be used depending on the number of products.
      *
@@ -187,10 +161,8 @@ class OnboardingTasks
      * @return string Template contents.
      */
     private static function get_homepage_template($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the possible industry images from the plugin folder for sideloading. If an image doesn't exist, other.jpg is used a fallback.
      *
@@ -198,10 +170,8 @@ class OnboardingTasks
      * @return array An array of images by industry.
      */
     private static function get_available_homepage_images()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Uploads a number of images to a homepage template, depending on the selected industry from the profile wizard.
      *
@@ -211,30 +181,24 @@ class OnboardingTasks
      * @return array An array of images that have been attached to the post.
      */
     private static function sideload_homepage_images($post_id, $number_of_images)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a homepage from a template.
      *
      * @return WP_Error|array
      */
     public static function create_homepage()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for task lists.
      *
      * @return array
      */
     public function get_task_list_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the onboarding tasks.
      *
@@ -242,10 +206,8 @@ class OnboardingTasks
      * @return WP_REST_Response|WP_Error
      */
     public function get_tasks($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss a single task.
      *
@@ -253,10 +215,8 @@ class OnboardingTasks
      * @return WP_REST_Request|WP_Error
      */
     public function dismiss_task($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Undo dismissal of a single task.
      *
@@ -264,10 +224,8 @@ class OnboardingTasks
      * @return WP_REST_Request|WP_Error
      */
     public function undo_dismiss_task($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Snooze an onboarding task.
      *
@@ -278,10 +236,8 @@ class OnboardingTasks
      * @return WP_REST_Response|WP_Error
      */
     public function snooze_task($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Undo snooze of a single task.
      *
@@ -291,10 +247,8 @@ class OnboardingTasks
      * @return WP_REST_Request|WP_Error
      */
     public function undo_snooze_task($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide a task list.
      *
@@ -303,10 +257,8 @@ class OnboardingTasks
      * @return WP_REST_Response|WP_Error
      */
     public function hide_task_list($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unhide a task list.
      *
@@ -315,10 +267,8 @@ class OnboardingTasks
      * @return WP_REST_Response|WP_Error
      */
     public function unhide_task_list($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Action a single task.
      *
@@ -326,8 +276,6 @@ class OnboardingTasks
      * @return WP_REST_Request|WP_Error
      */
     public function action_task($request)
-    {
-        // stub
-    }
-
+{
+}
 }

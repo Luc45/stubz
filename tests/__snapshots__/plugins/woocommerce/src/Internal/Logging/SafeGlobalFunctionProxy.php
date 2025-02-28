@@ -21,10 +21,8 @@ class SafeGlobalFunctionProxy
      * @throws \Exception If the function is missing and could not be loaded.
      */
     private static function maybe_load_missing_function($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Proxy for trapping all calls on SafeGlobalFunctionProxy.
      * Use this for calling WP and WC global functions safely.
@@ -38,10 +36,8 @@ class SafeGlobalFunctionProxy
      * @return mixed The result of the function call, or null if an error occurs.
      */
     public static function __callStatic($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log wrapper function errors to "local logging" for debugging.
      *
@@ -49,10 +45,7 @@ class SafeGlobalFunctionProxy
      * @param string $error_message The error message.
      * @param array  $context       Additional context for the error.
      */
-    protected static function log_wrapper_error($function_name, $error_message, $context = array (
-))
-    {
-        // stub
-    }
-
+    protected static function log_wrapper_error($function_name, $error_message, $context = array())
+{
+}
 }

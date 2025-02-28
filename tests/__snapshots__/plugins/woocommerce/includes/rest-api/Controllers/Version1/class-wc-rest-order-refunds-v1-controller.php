@@ -33,18 +33,14 @@ class WC_REST_Order_Refunds_V1_Controller
      * Order refunds actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the routes for order refunds.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order refund output for response.
      *
@@ -54,10 +50,8 @@ class WC_REST_Order_Refunds_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function prepare_item_for_response($post, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -66,10 +60,8 @@ class WC_REST_Order_Refunds_V1_Controller
      * @return array Links for the given order refund.
      */
     protected function prepare_links($refund, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query args.
      *
@@ -78,10 +70,8 @@ class WC_REST_Order_Refunds_V1_Controller
      * @return array
      */
     public function query_args($args, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single item.
      *
@@ -89,28 +79,22 @@ class WC_REST_Order_Refunds_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Order's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

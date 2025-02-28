@@ -42,18 +42,14 @@ class CustomerEffortScoreTracks
      * Constructor. Sets up filters to hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add actions that require woocommerce_allow_tracking.
      */
     private function enable_survey_enqueing_if_tracking_is_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a generated script for tracking tags added on edit-tags.php page.
      * CES survey is triggered via direct access to wc/customer-effort-score store
@@ -71,30 +67,24 @@ class CustomerEffortScoreTracks
      * @return string Generated JavaScript to append to page.
      */
     private function get_script_track_edit_php($action, $title, $first_question, $second_question)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current published product count.
      *
      * @return integer The current published product count.
      */
     private function get_product_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current shop order count.
      *
      * @return integer The current shop order count.
      */
     private function get_shop_order_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return whether the action has already been shown.
      *
@@ -103,20 +93,16 @@ class CustomerEffortScoreTracks
      * @return bool Whether the action has already been shown.
      */
     private function has_been_shown($action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the item to the CES tracks queue.
      *
      * @param array $item The item to enqueue.
      */
     private function enqueue_to_ces_tracks($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey on using search dynamically.
      *
@@ -125,10 +111,8 @@ class CustomerEffortScoreTracks
      * @param string $admin_page Value of window.adminpage.
      */
     public function enqueue_ces_survey_for_search($search_area, $page_now, $admin_page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into the post status lifecycle, to detect relevant user actions
      * that we want to survey about.
@@ -138,10 +122,8 @@ class CustomerEffortScoreTracks
      * @param Post   $post The post.
      */
     public function run_on_transition_post_status($new_status, $old_status, $post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe enqueue the CES survey, if product is being added or edited.
      *
@@ -149,34 +131,26 @@ class CustomerEffortScoreTracks
      * @param string $old_status The old status.
      */
     private function maybe_enqueue_ces_survey_for_product($new_status, $old_status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey trigger for a new product.
      */
     private function enqueue_ces_survey_for_new_product()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey trigger for an existing product.
      */
     private function enqueue_ces_survey_for_edited_product()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey trigger for an existing shop order.
      */
     private function enqueue_ces_survey_for_edited_shop_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe clear the CES tracks queue, executed on every page load. If the
      * clear option is set it clears the queue. In practice, this executes a
@@ -184,56 +158,42 @@ class CustomerEffortScoreTracks
      * sets the clear option.
      */
     public function maybe_clear_ces_tracks_queue()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Appends a script to footer to trigger CES on adding product categories.
      */
     public function add_script_track_product_categories()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Appends a script to footer to trigger CES on adding product tags.
      */
     public function add_script_track_product_tags()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe enqueue the CES survey on product import, if step is done.
      */
     public function run_on_product_import()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey trigger for setting changes.
      */
     public function run_on_update_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue the CES survey on adding new product attributes.
      */
     public function run_on_add_product_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine on initiating CES survey on searching for product or orders.
      */
     public function run_on_load_edit_php()
-    {
-        // stub
-    }
-
+{
+}
 }

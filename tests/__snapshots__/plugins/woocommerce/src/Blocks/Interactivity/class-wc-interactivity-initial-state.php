@@ -15,8 +15,7 @@ class WC_Interactivity_Initial_State
      *
      * @var array
      */
-    private static $initial_state = array (
-);
+    private static $initial_state = array();
 
     /**
      * Get state from a given namespace.
@@ -26,10 +25,8 @@ class WC_Interactivity_Initial_State
      * @return array The requested state.
      */
     public static function get_state($namespace)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge data into the state with the given namespace.
      *
@@ -39,24 +36,18 @@ class WC_Interactivity_Initial_State
      * @return void
      */
     public static function merge_state($namespace, $data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the initial state.
      */
     public static function reset()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the initial state.
      */
     public static function render()
-    {
-        // stub
-    }
-
+{
+}
 }

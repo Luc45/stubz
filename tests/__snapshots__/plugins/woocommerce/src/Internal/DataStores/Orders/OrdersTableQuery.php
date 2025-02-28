@@ -16,8 +16,7 @@ class OrdersTableQuery
     const SKIPPED_VALUES = array (
   0 => '',
   1 => 
-  array (
-  ),
+  array(),
   2 => null,
 );
 
@@ -30,80 +29,70 @@ class OrdersTableQuery
      *
      * @var array
      */
-    private $tables = array (
-);
+    private $tables = array();
 
     /**
      * Column mappings for all COT tables.
      *
      * @var array
      */
-    private $mappings = array (
-);
+    private $mappings = array();
 
     /**
      * Query vars after processing and sanitization.
      *
      * @var array
      */
-    private $args = array (
-);
+    private $args = array();
 
     /**
      * Columns to be selected in the SELECT clause.
      *
      * @var array
      */
-    private $fields = array (
-);
+    private $fields = array();
 
     /**
      * Array of table aliases and conditions used to compute the JOIN clause of the query.
      *
      * @var array
      */
-    private $join = array (
-);
+    private $join = array();
 
     /**
      * Array of fields and conditions used to compute the WHERE clause of the query.
      *
      * @var array
      */
-    private $where = array (
-);
+    private $where = array();
 
     /**
      * Field to be used in the GROUP BY clause of the query.
      *
      * @var array
      */
-    private $groupby = array (
-);
+    private $groupby = array();
 
     /**
      * Array of fields used to compute the ORDER BY clause of the query.
      *
      * @var array
      */
-    private $orderby = array (
-);
+    private $orderby = array();
 
     /**
      * Limits used to compute the LIMIT clause of the query.
      *
      * @var array
      */
-    private $limits = array (
-);
+    private $limits = array();
 
     /**
      * Results (order IDs) for the current query.
      *
      * @var array
      */
-    private $orders = array (
-);
+    private $orders = array();
 
     /**
      * Final SQL query to run after processing of args.
@@ -180,32 +169,25 @@ class OrdersTableQuery
      *
      * @param array $args Array of query vars.
      */
-    public function __construct($args = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct($args = array())
+{
+}
     /**
      * Lets the `woocommerce_hpos_pre_query` filter override the query.
      *
      * @return boolean Whether the query was overridden or not.
      */
     private function maybe_override_query(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remaps some legacy and `WP_Query` specific query vars to vars available in the customer order table scheme.
      *
      * @return void
      */
     private function maybe_remap_args(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a `WP_Date_Query` compatible query from a given date.
      * YYYY-MM-DD queries have 'day' precision for backwards compatibility.
@@ -214,10 +196,8 @@ class OrdersTableQuery
      * @return array An array with keys 'year', 'month', 'day' and possibly 'hour', 'minute' and 'second'.
      */
     private function date_to_date_query_arg($date): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns UTC-based date query arguments for a combination of local time dates and a date shorthand operator.
      *
@@ -230,10 +210,8 @@ class OrdersTableQuery
      * @since 8.2.0
      */
     private function local_time_to_gmt_date_query($dates_raw, $operator)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes date-related query args and merges the result into 'date_query'.
      *
@@ -241,10 +219,8 @@ class OrdersTableQuery
      * @throws \Exception When date args are invalid.
      */
     private function process_date_args(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to map posts and gmt based keys to HPOS keys.
      *
@@ -253,40 +229,32 @@ class OrdersTableQuery
      * @return array|mixed Date query argument with modified keys.
      */
     private function map_gmt_and_post_keys_to_hpos_keys($query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure all 'date_query' columns are correctly prefixed and their respective tables are being JOIN'ed.
      *
      * @return void
      */
     private function process_date_query_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes the 'status' query var.
      *
      * @return void
      */
     private function sanitize_status(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parses and sanitizes the 'orderby' query var.
      *
      * @return void
      */
     private function sanitize_order_orderby(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure the order in an ORDER BY statement is either 'ASC' o 'DESC'.
      *
@@ -294,20 +262,16 @@ class OrdersTableQuery
      * @return string The sanitized order.
      */
     private function sanitize_order(string $order): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds the final SQL query to be run.
      *
      * @return void
      */
     private function build_query(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build SQL query for counting total number of results.
      *
@@ -317,10 +281,8 @@ class OrdersTableQuery
      * @param string $groupby Prepared GROUP BY clause.
      */
     private function build_count_query($fields, $join, $where, $groupby)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the table alias for a given table mapping.
      *
@@ -330,10 +292,8 @@ class OrdersTableQuery
      * @since 7.0.0
      */
     public function get_core_mapping_alias(string $mapping_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an SQL JOIN clause that can be used to join the main orders table with another order table.
      *
@@ -343,10 +303,8 @@ class OrdersTableQuery
      * @since 7.0.0
      */
     public function get_core_mapping_join(string $mapping_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * JOINs the main orders table with another table.
      *
@@ -359,10 +317,8 @@ class OrdersTableQuery
      * @throws \Exception When an error occurs, such as trying to re-use an alias with $alias_once = FALSE.
      */
     private function join(string $table, string $alias = '', string $on = '', string $join_type = 'inner', bool $alias_once = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates a properly escaped and sanitized WHERE condition for a given field.
      *
@@ -374,20 +330,16 @@ class OrdersTableQuery
      * @return string The resulting WHERE condition.
      */
     public function where(string $table, string $field, string $operator, $value, string $type): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes fields related to the orders table.
      *
      * @return void
      */
     private function process_orders_table_query_args(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate SQL conditions for the 'customer' query.
      *
@@ -396,50 +348,40 @@ class OrdersTableQuery
      * @return string SQL to be used in a WHERE clause.
      */
     private function generate_customer_query($values, string $relation = 'OR'): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes fields related to the operational data table.
      *
      * @return void
      */
     private function process_operational_data_table_query_args(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes fields related to the addresses table.
      *
      * @return void
      */
     private function process_addresses_table_query_args(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the ORDER BY clause.
      *
      * @return void
      */
     private function process_orderby(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the limits to be used in the LIMIT clause.
      *
      * @return void
      */
     private function process_limit(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a query var is set (i.e. not one of the "skipped values").
      *
@@ -447,20 +389,16 @@ class OrdersTableQuery
      * @return bool TRUE if query var is set.
      */
     public function arg_isset(string $arg_key): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs the SQL query.
      *
      * @return void
      */
     private function run_query(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make some private available for backwards compatibility.
      *
@@ -468,10 +406,8 @@ class OrdersTableQuery
      * @return mixed
      */
     public function __get(string $name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the value of one of the query arguments.
      *
@@ -479,10 +415,8 @@ class OrdersTableQuery
      * @return mixed
      */
     public function get(string $arg_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the name of one of the OrdersTableDatastore tables.
      *
@@ -491,10 +425,8 @@ class OrdersTableQuery
      * @throws \Exception When table ID is not found.
      */
     public function get_table_name(string $table_id = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds table and mapping information about a field or column.
      *
@@ -508,8 +440,6 @@ class OrdersTableQuery
      * }
      */
     public function get_field_mapping_info($field)
-    {
-        // stub
-    }
-
+{
+}
 }

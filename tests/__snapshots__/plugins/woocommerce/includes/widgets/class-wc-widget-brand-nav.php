@@ -17,50 +17,40 @@ class WC_Widget_Brand_Nav
      * @return void
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter out all categories and not display them
      *
      * @param array $cat_args Category arguments.
      */
     public function filter_out_cats($cat_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the currently viewed taxonomy name.
      *
      * @return string
      */
     protected function get_current_taxonomy()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the currently viewed term ID.
      *
      * @return int
      */
     protected function get_current_term_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the currently viewed term slug.
      *
      * @return int
      */
     protected function get_current_term_slug()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Widget function.
      *
@@ -71,10 +61,8 @@ class WC_Widget_Brand_Nav
      * @return void
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update function.
      *
@@ -85,10 +73,8 @@ class WC_Widget_Brand_Nav
      * @return array
      */
     public function update($new_instance, $old_instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Form function.
      *
@@ -98,10 +84,8 @@ class WC_Widget_Brand_Nav
      * @return void
      */
     public function form($instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current page URL for layered nav items.
      *
@@ -109,20 +93,16 @@ class WC_Widget_Brand_Nav
      * @return string
      */
     protected function get_page_base_url($taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the currently selected attributes
      *
      * @return array
      */
     public function get_chosen_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show dropdown layered nav.
      *
@@ -132,10 +112,8 @@ class WC_Widget_Brand_Nav
      * @return bool Will nav display?
      */
     protected function layered_nav_dropdown($terms, $taxonomy, $depth = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show list based layered nav.
      *
@@ -145,10 +123,8 @@ class WC_Widget_Brand_Nav
      * @return bool   Will nav display?
      */
     protected function layered_nav_list($terms, $taxonomy, $depth = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count products within certain terms, taking the main WP query into consideration.
      *
@@ -158,8 +134,6 @@ class WC_Widget_Brand_Nav
      * @return array
      */
     protected function get_filtered_term_product_counts($term_ids, $taxonomy, $query_type = 'and')
-    {
-        // stub
-    }
-
+{
+}
 }

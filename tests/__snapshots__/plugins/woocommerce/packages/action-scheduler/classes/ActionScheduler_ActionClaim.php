@@ -17,8 +17,7 @@ class ActionScheduler_ActionClaim
      *
      * @var int[]
      */
-    private $action_ids = array (
-);
+    private $action_ids = array();
 
     /**
      * Construct.
@@ -27,24 +26,18 @@ class ActionScheduler_ActionClaim
      * @param int[]  $action_ids Action IDs.
      */
     public function __construct($id, array $action_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get claim ID.
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get IDs of claimed actions.
      */
     public function get_actions()
-    {
-        // stub
-    }
-
+{
+}
 }

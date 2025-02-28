@@ -16,30 +16,24 @@ class WC_Tracker
      * Hook into cron event.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Decide whether to send tracking data or not.
      *
      * @param boolean $override Should override?.
      */
     public static function send_tracking_data($override = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the last time tracking data was sent.
      *
      * @return int|bool
      */
     private static function get_last_send_time()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test whether this site is a staging site according to the Jetpack criteria.
      *
@@ -54,120 +48,96 @@ class WC_Tracker
      * @return bool
      */
     private static function is_jetpack_staging_site()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the tracking data.
      *
      * @return array
      */
     public static function get_tracking_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current theme info, theme name and version.
      *
      * @return array
      */
     public static function get_theme_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get WordPress related data.
      *
      * @return array
      */
     private static function get_wordpress_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get server related info.
      *
      * @return array
      */
     private static function get_server_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all plugins grouped into activated or not.
      *
      * @return array
      */
     private static function get_all_plugins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the settings of WooCommerce Payments plugin
      *
      * @return array
      */
     private static function get_wcpay_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check to see if the helper is connected to WooCommerce.com
      *
      * @return string
      */
     private static function get_helper_connected()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get user totals based on user role.
      *
      * @return array
      */
     private static function get_user_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product totals based on product type.
      *
      * @return array
      */
     public static function get_product_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order counts.
      *
      * @return array
      */
     private static function get_order_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Combine all order data.
      *
      * @return array
      */
     private static function get_orders()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order totals.
      *
@@ -177,20 +147,16 @@ class WC_Tracker
      * @return array
      */
     private static function get_order_totals()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get last order date.
      *
      * @return string
      */
     private static function get_order_dates()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extract the group key for an associative array of objects which have unique ids in the key.
      * A 'group_key' property is introduced in the object.
@@ -202,110 +168,88 @@ class WC_Tracker
      * @return array Contains the objects with a group_key property.
      */
     private static function extract_group_key($objects, $default_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order details by gateway.
      *
      * @return array
      */
     private static function get_orders_by_gateway()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get orders origin details.
      *
      * @return array
      */
     private static function get_orders_origins()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get review counts for different statuses.
      *
      * @return array
      */
     private static function get_review_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of product categories.
      *
      * @return int
      */
     private static function get_category_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of product brands.
      *
      * @return int
      */
     private static function get_brands_counts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of all active payment gateways.
      *
      * @return array
      */
     private static function get_active_payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of all active shipping methods.
      *
      * @return array
      */
     private static function get_active_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of slugs for WC features that are enabled on the site.
      *
      * @return string[]
      */
     private static function get_enabled_features()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all options starting with woocommerce_ prefix.
      *
      * @return array
      */
     private static function get_all_woocommerce_options_values()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Look for any template override and return filenames.
      *
      * @return array
      */
     private static function get_all_template_overrides()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Search a specific post for text content.
      *
@@ -314,10 +258,8 @@ class WC_Tracker
      * @return string 'Yes' if post contains $text (otherwise 'No').
      */
     public static function post_contains_text($post_id, $text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tracker data for a specific block type on a woocommerce page.
      *
@@ -328,10 +270,8 @@ class WC_Tracker
      * - block_attributes
      */
     public static function get_block_tracker_data($block_name, $woo_page_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tracker data for a pickup location method.
      *
@@ -340,50 +280,40 @@ class WC_Tracker
      * - pickup_locations_count
      */
     public static function get_pickup_location_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tracker data for additional fields on the checkout page.
      *
      * @return array Array of fields count and names.
      */
     public static function get_checkout_additional_fields_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about the cart & checkout pages.
      *
      * @return array
      */
     public static function get_cart_checkout_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about the Mini Cart Block.
      *
      * @return array
      */
     private static function get_mini_cart_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get info about WooCommerce Mobile App usage
      *
      * @return array
      */
     public static function get_woocommerce_mobile_usage()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map legacy order meta keys to a column name.
      *
@@ -391,10 +321,8 @@ class WC_Tracker
      * @return string Mapped column name.
      */
     private static function map_legacy_meta_key_name($meta_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch main order data.
      *
@@ -403,10 +331,8 @@ class WC_Tracker
      * @return array Found orders indexed by ID.
      */
     private static function get_order_data($sort_order = 'ASC', $limit = 20)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch additional data for a specific set of orders.
      *
@@ -414,10 +340,8 @@ class WC_Tracker
      * @return array Additional data, indexed by order ID.
      */
     private static function get_additional_order_data($order_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch refund data for a specific set of orders.
      *
@@ -425,18 +349,14 @@ class WC_Tracker
      * @return array Refund data, indexed by order ID.
      */
     private static function get_refund_order_data($order_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a snapshot of the first 20 orders and the last 20 orders.
      *
      * @return array
      */
     private static function get_order_snapshot()
-    {
-        // stub
-    }
-
+{
+}
 }

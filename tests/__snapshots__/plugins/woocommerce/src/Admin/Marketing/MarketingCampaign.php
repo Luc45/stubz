@@ -62,68 +62,54 @@ class MarketingCampaign
      * @param Price|null            $sales      The sales of the marketing campaign with the currency.
      */
     public function __construct(string $id, Automattic\WooCommerce\Admin\Marketing\MarketingCampaignType $type, string $title, string $manage_url, Automattic\WooCommerce\Admin\Marketing\Price|null $cost = null, Automattic\WooCommerce\Admin\Marketing\Price|null $sales = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the marketing campaign's unique identifier.
      *
      * @return string
      */
     public function get_id(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the marketing campaign type.
      *
      * @return MarketingCampaignType
      */
     public function get_type(): Automattic\WooCommerce\Admin\Marketing\MarketingCampaignType
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the title of the marketing campaign.
      *
      * @return string
      */
     public function get_title(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the URL to manage the marketing campaign.
      *
      * @return string
      */
     public function get_manage_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the cost of the marketing campaign with the currency.
      *
      * @return Price|null
      */
     public function get_cost(): Automattic\WooCommerce\Admin\Marketing\Price|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the sales of the marketing campaign with the currency.
      *
      * @return Price|null
      */
     public function get_sales(): Automattic\WooCommerce\Admin\Marketing\Price|null
-    {
-        // stub
-    }
-
+{
+}
 }

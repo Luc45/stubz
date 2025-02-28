@@ -9,20 +9,16 @@ class WC_Background_Updater
      * Initiate new background process.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dispatch updater.
      *
      * Updater will still run via cron job if this fails for any reason.
      */
     public function dispatch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle cron healthcheck
      *
@@ -30,28 +26,22 @@ class WC_Background_Updater
      * and data exists in the queue.
      */
     public function handle_cron_healthcheck()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule fallback event.
      */
     protected function schedule_event()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the updater running?
      *
      * @return boolean
      */
     public function is_updating()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Task
      *
@@ -64,10 +54,8 @@ class WC_Background_Updater
      * @return string|bool
      */
     protected function task($callback)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Complete
      *
@@ -75,18 +63,14 @@ class WC_Background_Updater
      * performed, or, call parent::complete().
      */
     protected function complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the batch limit has been exceeded.
      *
      * @return bool
      */
     public function is_memory_exceeded()
-    {
-        // stub
-    }
-
+{
+}
 }

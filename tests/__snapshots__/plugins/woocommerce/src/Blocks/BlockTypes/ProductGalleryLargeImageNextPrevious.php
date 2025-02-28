@@ -18,30 +18,24 @@ class ProductGalleryLargeImageNextPrevious
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Return class suffix
      *
@@ -49,10 +43,8 @@ class ProductGalleryLargeImageNextPrevious
      * @return string
      */
     private function get_class_suffix($context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -62,10 +54,8 @@ class ProductGalleryLargeImageNextPrevious
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the HTML for a next or previous button for the product gallery large image.
      *
@@ -74,10 +64,8 @@ class ProductGalleryLargeImageNextPrevious
      * @return string The HTML for the generated button.
      */
     protected function get_button($button_type, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an HTML button element with an SVG icon for the previous or next button when the buttons are inside the image.
      *
@@ -86,10 +74,8 @@ class ProductGalleryLargeImageNextPrevious
      * @return string The HTML for the button element.
      */
     protected function get_inside_button($button_type, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an HTML button element with an SVG icon for the previous or next button when the buttons are outside the image.
      *
@@ -98,8 +84,6 @@ class ProductGalleryLargeImageNextPrevious
      * @return string The HTML for the button element.
      */
     protected function get_outside_button($button_type, $context)
-    {
-        // stub
-    }
-
+{
+}
 }

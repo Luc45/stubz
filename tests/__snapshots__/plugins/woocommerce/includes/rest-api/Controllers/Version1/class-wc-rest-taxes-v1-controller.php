@@ -26,10 +26,8 @@ class WC_REST_Taxes_V1_Controller
      * Register the routes for taxes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read taxes.
      *
@@ -37,10 +35,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access create taxes.
      *
@@ -49,10 +45,8 @@ class WC_REST_Taxes_V1_Controller
      * @return bool|WP_Error
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a tax.
      *
@@ -60,10 +54,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access update a tax.
      *
@@ -72,10 +64,8 @@ class WC_REST_Taxes_V1_Controller
      * @return bool|WP_Error
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access delete a tax.
      *
@@ -84,10 +74,8 @@ class WC_REST_Taxes_V1_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -96,10 +84,8 @@ class WC_REST_Taxes_V1_Controller
      * @return bool|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all taxes.
      *
@@ -107,10 +93,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Take tax data from the request and return the updated or newly created rate.
      *
@@ -119,10 +103,8 @@ class WC_REST_Taxes_V1_Controller
      * @return object
      */
     protected function create_or_update_tax($request, $current = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single tax.
      *
@@ -130,10 +112,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single tax.
      *
@@ -141,10 +121,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single tax.
      *
@@ -152,10 +130,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single tax.
      *
@@ -163,10 +139,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single tax output for response.
      *
@@ -176,10 +150,8 @@ class WC_REST_Taxes_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($tax, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -187,10 +159,8 @@ class WC_REST_Taxes_V1_Controller
      * @return array Links for the given tax.
      */
     protected function prepare_links($tax)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add tax rate locales to the response array.
      *
@@ -200,28 +170,22 @@ class WC_REST_Taxes_V1_Controller
      * @return array
      */
     protected function add_tax_rate_locales($data, $tax)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Taxes schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,8 +15,6 @@ class EUVATNumber
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

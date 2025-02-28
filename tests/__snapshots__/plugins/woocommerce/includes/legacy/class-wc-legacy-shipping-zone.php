@@ -16,10 +16,8 @@ abstract class WC_Legacy_Shipping_Zone
      * @deprecated 3.0
      */
     public function get_zone_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read a shipping zone by ID.
      * @deprecated 3.0.0 - Init a shipping zone with an ID.
@@ -27,26 +25,20 @@ abstract class WC_Legacy_Shipping_Zone
      * @param int $zone_id
      */
     public function read($zone_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a zone.
      * @deprecated 3.0.0 - Use ::save instead.
      */
     public function update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a zone.
      * @deprecated 3.0.0 - Use ::save instead.
      */
     public function create()
-    {
-        // stub
-    }
-
+{
+}
 }

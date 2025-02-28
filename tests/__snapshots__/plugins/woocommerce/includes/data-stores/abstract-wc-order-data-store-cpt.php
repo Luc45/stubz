@@ -38,8 +38,7 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      *
      * @var string[]
      */
-    protected $internal_data_store_key_getters = array (
-);
+    protected $internal_data_store_key_getters = array();
 
     /**
      * Return internal key getters name.
@@ -47,20 +46,16 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string[]
      */
     public function get_internal_data_store_key_getters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to create a new order in the database.
      *
      * @param WC_Order $order Order object.
      */
     public function create(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an order exists by id.
      *
@@ -70,10 +65,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return bool True if an order exists with the given name.
      */
     public function order_exists($order_id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read an order from the database.
      *
@@ -82,10 +75,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @throws Exception If passed order is invalid.
      */
     public function read(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the properties of an object and log the first error found while doing so.
      *
@@ -93,20 +84,16 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @param array          $props The properties to set.
      */
     private function set_order_props(&$order, array $props)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to update an order in the database.
      *
      * @param WC_Order $order Order object.
      */
     public function update(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete an order from the database.
      *
@@ -115,12 +102,9 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      *
      * @return void
      */
-    public function delete(&$order, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$order, $args = array())
+{
+}
     /**
      * Get the status to save to the post object.
      *
@@ -131,10 +115,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string
      */
     protected function get_post_status($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Excerpt for post.
      *
@@ -142,20 +124,16 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string
      */
     protected function get_post_excerpt($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a title for the new post type.
      *
      * @return string
      */
     protected function get_post_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order key.
      *
@@ -164,10 +142,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string
      */
     protected function get_order_key($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read order data. Can be overridden by child classes to load other props.
      *
@@ -176,10 +152,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @since 3.0.0
      */
     protected function read_order_data(&$order, $post_object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that updates all the post meta for an order based on it's settings in the WC_Order class.
      *
@@ -187,10 +161,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @since 3.0.0
      */
     protected function update_post_meta(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear any caches.
      *
@@ -198,10 +170,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @since 3.0.0
      */
     protected function clear_caches(&$order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read order items of a specific type from the database for this order.
      *
@@ -210,10 +180,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return array
      */
     public function read_items($order, $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the order type of a given item which belongs to WC_Order.
      *
@@ -223,10 +191,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string Order Item type
      */
     public function get_order_item_type($order, $order_item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prime following caches:
      *  1. item-$order_item_id   For individual items.
@@ -237,10 +203,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @param array $query_vars Query vars for the query.
      */
     protected function prime_order_item_caches_for_orders($order_ids, $query_vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove all line items (products, coupons, shipping, taxes) from the order.
      *
@@ -248,10 +212,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @param string   $type Order item type. Default null.
      */
     public function delete_items($order, $type = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get token ids for an order.
      *
@@ -259,10 +221,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return array
      */
     public function get_payment_token_ids($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update token ids for an order.
      *
@@ -270,10 +230,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @param array    $token_ids Payment token ids.
      */
     public function update_payment_token_ids($order, $token_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order's title.
      *
@@ -282,10 +240,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return string Order title.
      */
     public function get_title(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given an initialized order object, update the post/postmeta records.
      *
@@ -294,10 +250,8 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return bool Whether the order was updated.
      */
     public function update_order_from_object($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change the modified date of the post to match the order's modified date if passed.
      *
@@ -309,18 +263,14 @@ abstract class Abstract_WC_Order_Data_Store_CPT
      * @return array Data with updated modified date.
      */
     public function update_post_modified_data($data, $postarr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to update order metadata from initialized order object.
      *
      * @param WC_Abstract_Order $order Order object.
      */
     protected function update_order_meta_from_object($order)
-    {
-        // stub
-    }
-
+{
+}
 }

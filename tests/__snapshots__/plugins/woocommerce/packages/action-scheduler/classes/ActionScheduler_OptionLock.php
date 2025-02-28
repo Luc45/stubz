@@ -25,10 +25,8 @@ class ActionScheduler_OptionLock
      * @bool True if lock value has changed, false if not or if set failed.
      */
     public function set($lock_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If a lock is set, return the timestamp it was set to expiry.
      *
@@ -36,10 +34,8 @@ class ActionScheduler_OptionLock
      * @return bool|int False if no lock is set, otherwise the timestamp for when the lock is set to expire.
      */
     public function get_expiration($lock_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Given the lock string, derives the lock expiration timestamp (or false if it cannot be determined).
      *
@@ -48,10 +44,8 @@ class ActionScheduler_OptionLock
      * @return false|int
      */
     private function get_expiration_from($lock_value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the key to use for storing the lock in the transient
      *
@@ -59,10 +53,8 @@ class ActionScheduler_OptionLock
      * @return string
      */
     protected function get_key($lock_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Supplies the existing lock value, or an empty string if not set.
      *
@@ -71,10 +63,8 @@ class ActionScheduler_OptionLock
      * @return string
      */
     private function get_existing_lock($lock_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Supplies a lock value consisting of a unique value and the current timestamp, which are separated by a pipe
      * character.
@@ -86,8 +76,6 @@ class ActionScheduler_OptionLock
      * @return string
      */
     private function new_lock_value($lock_type)
-    {
-        // stub
-    }
-
+{
+}
 }

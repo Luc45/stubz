@@ -10,43 +10,36 @@ class WC_Frontend_Scripts
      *
      * @var array
      */
-    private static $scripts = array (
-);
+    private static $scripts = array();
 
     /**
      * Contains an array of script handles registered by WC.
      *
      * @var array
      */
-    private static $styles = array (
-);
+    private static $styles = array();
 
     /**
      * Contains an array of script handles localized by WC.
      *
      * @var array
      */
-    private static $wp_localize_scripts = array (
-);
+    private static $wp_localize_scripts = array();
 
     /**
      * Hook in methods.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get styles for the frontend.
      *
      * @return array
      */
     public static function get_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return asset URL.
      *
@@ -54,10 +47,8 @@ class WC_Frontend_Scripts
      * @return string
      */
     private static function get_asset_url($path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a script for use.
      *
@@ -73,10 +64,8 @@ class WC_Frontend_Scripts
 ), $version, $in_footer = array (
   'strategy' => 'defer',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register and enqueue a script for use.
      *
@@ -92,10 +81,8 @@ class WC_Frontend_Scripts
 ), $version, $in_footer = array (
   'strategy' => 'defer',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a style for use.
      *
@@ -107,12 +94,9 @@ class WC_Frontend_Scripts
      * @param  string   $media   The media for which this stylesheet has been defined. Accepts media types like 'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param  boolean  $has_rtl If has RTL version to load too.
      */
-    private static function register_style($handle, $path, $deps = array (
-), $version, $media = 'all', $has_rtl = false)
-    {
-        // stub
-    }
-
+    private static function register_style($handle, $path, $deps = array(), $version, $media = 'all', $has_rtl = false)
+{
+}
     /**
      * Register and enqueue a styles for use.
      *
@@ -124,36 +108,27 @@ class WC_Frontend_Scripts
      * @param  string   $media   The media for which this stylesheet has been defined. Accepts media types like 'all', 'print' and 'screen', or media queries like '(orientation: portrait)' and '(max-width: 640px)'.
      * @param  boolean  $has_rtl If has RTL version to load too.
      */
-    private static function enqueue_style($handle, $path = '', $deps = array (
-), $version, $media = 'all', $has_rtl = false)
-    {
-        // stub
-    }
-
+    private static function enqueue_style($handle, $path = '', $deps = array(), $version, $media = 'all', $has_rtl = false)
+{
+}
     /**
      * Register all WC scripts.
      */
     private static function register_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register all WC styles.
      */
     private static function register_styles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register/queue frontend scripts.
      */
     public static function load_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Localize a WC script once.
      *
@@ -161,10 +136,8 @@ class WC_Frontend_Scripts
      * @param string $handle Script handle the data will be attached to.
      */
     private static function localize_script($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return data for script handles.
      *
@@ -172,16 +145,12 @@ class WC_Frontend_Scripts
      * @return array|bool
      */
     private static function get_script_data($handle)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Localize scripts only when enqueued.
      */
     public static function localize_printed_scripts()
-    {
-        // stub
-    }
-
+{
+}
 }

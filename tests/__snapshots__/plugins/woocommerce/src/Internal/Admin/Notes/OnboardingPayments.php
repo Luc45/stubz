@@ -15,8 +15,6 @@ class OnboardingPayments
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

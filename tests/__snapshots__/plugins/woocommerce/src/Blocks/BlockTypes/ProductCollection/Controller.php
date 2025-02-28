@@ -42,10 +42,8 @@ class Controller
      * - Set up QueryBuilder, Renderer and HandlerRegistry.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add interactivity to the Product Title block within Product Collection.
      * This enables the triggering of a custom event when the product title is clicked.
@@ -56,10 +54,8 @@ class Controller
      * @return string   Modified block content with added interactivity.
      */
     public function add_product_title_click_event_directives($block_content, $block, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verifies if the inner block is compatible with Interactivity API.
      *
@@ -67,10 +63,8 @@ class Controller
      * @return boolean
      */
     private function is_block_compatible($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check inner blocks of Product Collection block if there's one
      * incompatible with the Interactivity API and if so, disable client-side
@@ -80,10 +74,8 @@ class Controller
      * @return string Returns the parsed block, unmodified.
      */
     public function disable_enhanced_pagination($parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -91,12 +83,9 @@ class Controller
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Update the query for the product query block in Editor.
      *
@@ -104,10 +93,8 @@ class Controller
      * @param WP_REST_Request $request Request.
      */
     public function update_rest_query_in_editor($query, $request): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add support for filter blocks:
      * - Price filter block
@@ -119,10 +106,8 @@ class Controller
      * @param array $parsed_block The parsed block.
      */
     public function add_support_for_filter_blocks($pre_render, $parsed_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a custom query based on attributes, filters and global WP_Query.
      *
@@ -133,10 +118,8 @@ class Controller
      * @return array
      */
     public function build_frontend_query($query, $block, $page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extends allowed `collection_params` for the REST API
      *
@@ -148,16 +131,12 @@ class Controller
      * @return array
      */
     public function extend_rest_query_allowed_params($params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers core collections and sets the handler store.
      */
     protected function register_core_collections_and_set_handler_store()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -31,8 +31,7 @@ final class Experimental_Abtest
      *
      * @var array
      */
-    private $tests = array (
-);
+    private $tests = array();
 
     /**
      * ExPlat Anonymous ID.
@@ -71,10 +70,8 @@ final class Experimental_Abtest
      * @param bool   $as_auth_wpcom_user  Request variation as a auth wp user or not.
      */
     public function __construct(string $anon_id, string $platform, bool $consent, bool $as_auth_wpcom_user = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the current user is in the treatment group of the given experiment.
      *
@@ -85,10 +82,8 @@ final class Experimental_Abtest
      * @throws \Exception If there is an error retrieving the variation.
      */
     public static function in_treatment(string $experiment_name, bool $as_auth_wpcom_user = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the current user is in the treatment group of the given experiment.
      *
@@ -100,10 +95,8 @@ final class Experimental_Abtest
      * @return bool True if the user is in the treatment group, false otherwise (including if an exception is thrown).
      */
     public static function in_treatment_handled_exception(string $experiment_name, bool $as_auth_wpcom_user = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the test variation for a provided A/B test.
      *
@@ -112,10 +105,8 @@ final class Experimental_Abtest
      * @throws \Exception If there is an error retrieving the variation and the environment is not production.
      */
     public function get_variation($test_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Perform the request for a experiment assignment of a provided A/B test from WP.com.
      *
@@ -123,10 +114,8 @@ final class Experimental_Abtest
      * @return array|\WP_Error A/B test variation error on failure.
      */
     public function request_assignment($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch and cache the test variation for a provided A/B test from WP.com.
      *
@@ -138,8 +127,6 @@ final class Experimental_Abtest
      * @return array|\WP_Error A/B test variation, or error on failure.
      */
     protected function fetch_variation($test_name)
-    {
-        // stub
-    }
-
+{
+}
 }

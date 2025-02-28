@@ -9,9 +9,7 @@
  */
 function wc_maybe_define_constant($name, $value)
 {
-    // stub
 }
-
 /**
  * Create a new order programmatically.
  *
@@ -20,12 +18,9 @@ function wc_maybe_define_constant($name, $value)
  * @param  array $args Order arguments.
  * @return WC_Order|WP_Error
  */
-function wc_create_order($args = array (
-))
+function wc_create_order($args = array())
 {
-    // stub
 }
-
 /**
  * Update an order. Uses wc_create_order.
  *
@@ -34,9 +29,7 @@ function wc_create_order($args = array (
  */
 function wc_update_order($args)
 {
-    // stub
 }
-
 /**
  * Given a path, this will convert any of the subpaths into their corresponding tokens.
  *
@@ -47,9 +40,7 @@ function wc_update_order($args)
  */
 function wc_tokenize_path($path, $path_tokens)
 {
-    // stub
 }
-
 /**
  * Given a tokenized path, this will expand the tokens to their full path.
  *
@@ -60,9 +51,7 @@ function wc_tokenize_path($path, $path_tokens)
  */
 function wc_untokenize_path($path, $path_tokens)
 {
-    // stub
 }
-
 /**
  * Fetches an array containing all of the configurable path constants to be used in tokenization.
  *
@@ -70,9 +59,7 @@ function wc_untokenize_path($path, $path_tokens)
  */
 function wc_get_path_define_tokens()
 {
-    // stub
 }
-
 /**
  * Get template part (for templates like the shop-loop).
  *
@@ -83,9 +70,7 @@ function wc_get_path_define_tokens()
  */
 function wc_get_template_part($slug, $name = '')
 {
-    // stub
 }
-
 /**
  * Get other templates (e.g. product attributes) passing attributes and including the file.
  *
@@ -94,12 +79,9 @@ function wc_get_template_part($slug, $name = '')
  * @param string $template_path Template path. (default: '').
  * @param string $default_path  Default path. (default: '').
  */
-function wc_get_template($template_name, $args = array (
-), $template_path = '', $default_path = '')
+function wc_get_template($template_name, $args = array(), $template_path = '', $default_path = '')
 {
-    // stub
 }
-
 /**
  * Like wc_get_template, but returns the HTML instead of outputting.
  *
@@ -112,12 +94,9 @@ function wc_get_template($template_name, $args = array (
  *
  * @return string
  */
-function wc_get_template_html($template_name, $args = array (
-), $template_path = '', $default_path = '')
+function wc_get_template_html($template_name, $args = array(), $template_path = '', $default_path = '')
 {
-    // stub
 }
-
 /**
  * Locate a template and return the path for inclusion.
  *
@@ -134,9 +113,7 @@ function wc_get_template_html($template_name, $args = array (
  */
 function wc_locate_template($template_name, $template_path = '', $default_path = '')
 {
-    // stub
 }
-
 /**
  * Add a template to the template cache.
  *
@@ -146,9 +123,7 @@ function wc_locate_template($template_name, $template_path = '', $default_path =
  */
 function wc_set_template_cache($cache_key, $template)
 {
-    // stub
 }
-
 /**
  * Clear the template cache.
  *
@@ -156,9 +131,7 @@ function wc_set_template_cache($cache_key, $template)
  */
 function wc_clear_template_cache()
 {
-    // stub
 }
-
 /**
  * Clear the system status theme info cache.
  *
@@ -166,9 +139,7 @@ function wc_clear_template_cache()
  */
 function wc_clear_system_status_theme_info_cache()
 {
-    // stub
 }
-
 /**
  * Get Base Currency Code.
  *
@@ -176,9 +147,7 @@ function wc_clear_system_status_theme_info_cache()
  */
 function get_woocommerce_currency()
 {
-    // stub
 }
-
 /**
  * Get full list of currency codes.
  *
@@ -188,9 +157,7 @@ function get_woocommerce_currency()
  */
 function get_woocommerce_currencies()
 {
-    // stub
 }
-
 /**
  * Get all available Currency symbols.
  *
@@ -201,9 +168,7 @@ function get_woocommerce_currencies()
  */
 function get_woocommerce_currency_symbols()
 {
-    // stub
 }
-
 /**
  * Get Currency symbol.
  *
@@ -214,9 +179,7 @@ function get_woocommerce_currency_symbols()
  */
 function get_woocommerce_currency_symbol($currency = '')
 {
-    // stub
 }
-
 /**
  * Send HTML emails from WooCommerce.
  *
@@ -230,9 +193,7 @@ function get_woocommerce_currency_symbol($currency = '')
 function wc_mail($to, $subject, $message, $headers = 'Content-Type: text/html
 ', $attachments = '')
 {
-    // stub
 }
-
 /**
  * Return "theme support" values from the current theme, if set.
  *
@@ -243,9 +204,7 @@ function wc_mail($to, $subject, $message, $headers = 'Content-Type: text/html
  */
 function wc_get_theme_support($prop = '', $default = null)
 {
-    // stub
 }
-
 /**
  * Get an image size by name or defined dimensions.
  *
@@ -260,9 +219,7 @@ function wc_get_theme_support($prop = '', $default = null)
  */
 function wc_get_image_size($image_size)
 {
-    // stub
 }
-
 /**
  * Queue some JavaScript code to be output in the footer.
  *
@@ -270,17 +227,13 @@ function wc_get_image_size($image_size)
  */
 function wc_enqueue_js($code)
 {
-    // stub
 }
-
 /**
  * Output any queued javascript code in the footer.
  */
 function wc_print_js()
 {
-    // stub
 }
-
 /**
  * Set a cookie - wrapper for setcookie using WP constants.
  *
@@ -292,9 +245,7 @@ function wc_print_js()
  */
 function wc_setcookie($name, $value, $expire = 0, $secure = false, $httponly = false)
 {
-    // stub
 }
-
 /**
  * Get the URL to the WooCommerce Legacy REST API.
  *
@@ -311,9 +262,7 @@ function wc_setcookie($name, $value, $expire = 0, $secure = false, $httponly = f
  */
 function get_woocommerce_api_url($path)
 {
-    // stub
 }
-
 /**
  * Recursively get page children.
  *
@@ -322,17 +271,13 @@ function get_woocommerce_api_url($path)
  */
 function wc_get_page_children($page_id)
 {
-    // stub
 }
-
 /**
  * Flushes rewrite rules when the shop page (or it's children) gets saved.
  */
 function flush_rewrite_rules_on_shop_page_save()
 {
-    // stub
 }
-
 /**
  * Various rewrite rule fixes.
  *
@@ -342,9 +287,7 @@ function flush_rewrite_rules_on_shop_page_save()
  */
 function wc_fix_rewrite_rules($rules)
 {
-    // stub
 }
-
 /**
  * Prevent product attachment links from breaking when using complex rewrite structures.
  *
@@ -354,9 +297,7 @@ function wc_fix_rewrite_rules($rules)
  */
 function wc_fix_product_attachment_link($link, $post_id)
 {
-    // stub
 }
-
 /**
  * Protect downloads from ms-files.php in multisite.
  *
@@ -365,9 +306,7 @@ function wc_fix_product_attachment_link($link, $post_id)
  */
 function wc_ms_protect_download_rewite_rules($rewrite)
 {
-    // stub
 }
-
 /**
  * Formats a string in the format COUNTRY:STATE into an array.
  *
@@ -377,9 +316,7 @@ function wc_ms_protect_download_rewite_rules($rewrite)
  */
 function wc_format_country_state_string($country_string)
 {
-    // stub
 }
-
 /**
  * Get the store's base location.
  *
@@ -388,9 +325,7 @@ function wc_format_country_state_string($country_string)
  */
 function wc_get_base_location()
 {
-    // stub
 }
-
 /**
  * Uses geolocation to get the customer country and state only if they are valid values.
  *
@@ -403,9 +338,7 @@ function wc_get_customer_geolocation($fallback = array (
   'state' => '',
 ))
 {
-    // stub
 }
-
 /**
  * Get the customer's default location.
  *
@@ -417,9 +350,7 @@ function wc_get_customer_geolocation($fallback = array (
  */
 function wc_get_customer_default_location()
 {
-    // stub
 }
-
 /**
  * Get user agent string.
  *
@@ -428,9 +359,7 @@ function wc_get_customer_default_location()
  */
 function wc_get_user_agent()
 {
-    // stub
 }
-
 /**
  * Generate a rand hash.
  *
@@ -439,9 +368,7 @@ function wc_get_user_agent()
  */
 function wc_rand_hash()
 {
-    // stub
 }
-
 /**
  * WC API - Hash.
  *
@@ -451,9 +378,7 @@ function wc_rand_hash()
  */
 function wc_api_hash($data)
 {
-    // stub
 }
-
 /**
  * Find all possible combinations of values from the input array and return in a logical order.
  *
@@ -463,9 +388,7 @@ function wc_api_hash($data)
  */
 function wc_array_cartesian($input)
 {
-    // stub
 }
-
 /**
  * Run a MySQL transaction query, if supported.
  *
@@ -475,9 +398,7 @@ function wc_array_cartesian($input)
  */
 function wc_transaction_query($type = 'start', $force = false)
 {
-    // stub
 }
-
 /**
  * Gets the url to the cart page.
  *
@@ -488,9 +409,7 @@ function wc_transaction_query($type = 'start', $force = false)
  */
 function wc_get_cart_url()
 {
-    // stub
 }
-
 /**
  * Gets the url to the checkout page.
  *
@@ -500,9 +419,7 @@ function wc_get_cart_url()
  */
 function wc_get_checkout_url()
 {
-    // stub
 }
-
 /**
  * Register a shipping method.
  *
@@ -511,9 +428,7 @@ function wc_get_checkout_url()
  */
 function woocommerce_register_shipping_method($shipping_method)
 {
-    // stub
 }
-
 /**
  * Get the shipping zone matching a given package from the cart.
  *
@@ -524,9 +439,7 @@ function woocommerce_register_shipping_method($shipping_method)
  */
 function wc_get_shipping_zone($package)
 {
-    // stub
 }
-
 /**
  * Get a nice name for credit card providers.
  *
@@ -536,9 +449,7 @@ function wc_get_shipping_zone($package)
  */
 function wc_get_credit_card_type_label($type)
 {
-    // stub
 }
-
 /**
  * Outputs a "back" link so admin screens can easily jump back a page.
  *
@@ -547,9 +458,7 @@ function wc_get_credit_card_type_label($type)
  */
 function wc_back_link($label, $url)
 {
-    // stub
 }
-
 /**
  * Display a WooCommerce help tip.
  *
@@ -561,9 +470,7 @@ function wc_back_link($label, $url)
  */
 function wc_help_tip($tip, $allow_html = false)
 {
-    // stub
 }
-
 /**
  * Return a list of potential postcodes for wildcard searching.
  *
@@ -574,9 +481,7 @@ function wc_help_tip($tip, $allow_html = false)
  */
 function wc_get_wildcard_postcodes($postcode, $country = '')
 {
-    // stub
 }
-
 /**
  * Used by shipping zones and taxes to compare a given $postcode to stored
  * postcodes to find matches for numerical ranges, and wildcards.
@@ -591,9 +496,7 @@ function wc_get_wildcard_postcodes($postcode, $country = '')
  */
 function wc_postcode_location_matcher($postcode, $objects, $object_id_key, $object_compare_key, $country = '')
 {
-    // stub
 }
-
 /**
  * Gets number of shipping methods currently enabled. Used to identify if
  * shipping is configured.
@@ -607,9 +510,7 @@ function wc_postcode_location_matcher($postcode, $objects, $object_id_key, $obje
  */
 function wc_get_shipping_method_count($include_legacy = false, $enabled_only = false)
 {
-    // stub
 }
-
 /**
  * Wrapper for set_time_limit to see if it is enabled.
  *
@@ -618,9 +519,7 @@ function wc_get_shipping_method_count($include_legacy = false, $enabled_only = f
  */
 function wc_set_time_limit($limit = 0)
 {
-    // stub
 }
-
 /**
  * Wrapper for nocache_headers which also disables page caching.
  *
@@ -628,9 +527,7 @@ function wc_set_time_limit($limit = 0)
  */
 function wc_nocache_headers()
 {
-    // stub
 }
-
 /**
  * Used to sort products attributes with uasort.
  *
@@ -641,9 +538,7 @@ function wc_nocache_headers()
  */
 function wc_product_attribute_uasort_comparison($a, $b)
 {
-    // stub
 }
-
 /**
  * Used to sort shipping zone methods with uasort.
  *
@@ -654,9 +549,7 @@ function wc_product_attribute_uasort_comparison($a, $b)
  */
 function wc_shipping_zone_method_order_uasort_comparison($a, $b)
 {
-    // stub
 }
-
 /**
  * User to sort checkout fields based on priority with uasort.
  *
@@ -667,9 +560,7 @@ function wc_shipping_zone_method_order_uasort_comparison($a, $b)
  */
 function wc_checkout_fields_uasort_comparison($a, $b)
 {
-    // stub
 }
-
 /**
  * User to sort two values with ausort.
  *
@@ -680,9 +571,7 @@ function wc_checkout_fields_uasort_comparison($a, $b)
  */
 function wc_uasort_comparison($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort values based on ascii, useful for special chars in strings.
  *
@@ -692,9 +581,7 @@ function wc_uasort_comparison($a, $b)
  */
 function wc_ascii_uasort_comparison($a, $b)
 {
-    // stub
 }
-
 /**
  * Sort array according to current locale rules and maintaining index association.
  * By default tries to use Collator from PHP Internationalization Functions if available.
@@ -708,9 +595,7 @@ function wc_ascii_uasort_comparison($a, $b)
  */
 function wc_asort_by_locale(&$data, $locale = '')
 {
-    // stub
 }
-
 /**
  * Get rounding mode for internal tax calculations.
  *
@@ -719,9 +604,7 @@ function wc_asort_by_locale(&$data, $locale = '')
  */
 function wc_get_tax_rounding_mode()
 {
-    // stub
 }
-
 /**
  * Get rounding precision for internal WC calculations.
  * Will return the value of wc_get_price_decimals increased by 2 decimals, with WC_ROUNDING_PRECISION being the minimum.
@@ -731,9 +614,7 @@ function wc_get_tax_rounding_mode()
  */
 function wc_get_rounding_precision()
 {
-    // stub
 }
-
 /**
  * Add precision to a number by moving the decimal point to the right as many places as indicated by wc_get_price_decimals().
  * Optionally the result is rounded so that the total number of digits equals wc_get_rounding_precision() plus one.
@@ -745,9 +626,7 @@ function wc_get_rounding_precision()
  */
 function wc_add_number_precision(float|null $value, bool $round = true)
 {
-    // stub
 }
-
 /**
  * Remove precision from a number and return a float.
  *
@@ -757,9 +636,7 @@ function wc_add_number_precision(float|null $value, bool $round = true)
  */
 function wc_remove_number_precision($value)
 {
-    // stub
 }
-
 /**
  * Add precision to an array of number and return an array of int.
  *
@@ -770,9 +647,7 @@ function wc_remove_number_precision($value)
  */
 function wc_add_number_precision_deep($value, $round = true)
 {
-    // stub
 }
-
 /**
  * Remove precision from an array of number and return an array of int.
  *
@@ -782,9 +657,7 @@ function wc_add_number_precision_deep($value, $round = true)
  */
 function wc_remove_number_precision_deep($value)
 {
-    // stub
 }
-
 /**
  * Get a shared logger instance.
  *
@@ -797,9 +670,7 @@ function wc_remove_number_precision_deep($value)
  */
 function wc_get_logger()
 {
-    // stub
 }
-
 /**
  * Trigger logging cleanup using the logging class.
  *
@@ -807,9 +678,7 @@ function wc_get_logger()
  */
 function wc_cleanup_logs()
 {
-    // stub
 }
-
 /**
  * Prints human-readable information about a variable.
  *
@@ -825,9 +694,7 @@ function wc_cleanup_logs()
  */
 function wc_print_r($expression, $return = false)
 {
-    // stub
 }
-
 /**
  * Based on wp_list_pluck, this calls a method instead of returning a property.
  *
@@ -840,9 +707,7 @@ function wc_print_r($expression, $return = false)
  */
 function wc_list_pluck($list, $callback_or_field, $index_key = null)
 {
-    // stub
 }
-
 /**
  * Get permalink settings for things like products and taxonomies.
  *
@@ -857,9 +722,7 @@ function wc_list_pluck($list, $callback_or_field, $index_key = null)
  */
 function wc_get_permalink_structure()
 {
-    // stub
 }
-
 /**
  * Switch WooCommerce to site language.
  *
@@ -867,9 +730,7 @@ function wc_get_permalink_structure()
  */
 function wc_switch_to_site_locale()
 {
-    // stub
 }
-
 /**
  * Switch WooCommerce language to original.
  *
@@ -877,9 +738,7 @@ function wc_switch_to_site_locale()
  */
 function wc_restore_locale()
 {
-    // stub
 }
-
 /**
  * Convert plaintext phone number to clickable phone number.
  *
@@ -893,9 +752,7 @@ function wc_restore_locale()
  */
 function wc_make_phone_clickable($phone)
 {
-    // stub
 }
-
 /**
  * Get an item of post data if set, otherwise return a default value.
  *
@@ -906,9 +763,7 @@ function wc_make_phone_clickable($phone)
  */
 function wc_get_post_data_by_key($key, $default = '')
 {
-    // stub
 }
-
 /**
  * Get data if set, otherwise return a default value or null. Prevents notices when data is not set.
  *
@@ -919,9 +774,7 @@ function wc_get_post_data_by_key($key, $default = '')
  */
 function wc_get_var(&$var, $default = null)
 {
-    // stub
 }
-
 /**
  * Read in WooCommerce headers when reading plugin headers.
  *
@@ -931,9 +784,7 @@ function wc_get_var(&$var, $default = null)
  */
 function wc_enable_wc_plugin_headers($headers)
 {
-    // stub
 }
-
 /**
  * Prevent auto-updating the WooCommerce plugin on major releases if there are untested extensions active.
  *
@@ -944,9 +795,7 @@ function wc_enable_wc_plugin_headers($headers)
  */
 function wc_prevent_dangerous_auto_updates($should_update, $plugin)
 {
-    // stub
 }
-
 /**
  * Delete expired transients.
  *
@@ -961,9 +810,7 @@ function wc_prevent_dangerous_auto_updates($should_update, $plugin)
  */
 function wc_delete_expired_transients()
 {
-    // stub
 }
-
 /**
  * Make a URL relative, if possible.
  *
@@ -973,9 +820,7 @@ function wc_delete_expired_transients()
  */
 function wc_get_relative_url($url)
 {
-    // stub
 }
-
 /**
  * See if a resource is remote.
  *
@@ -985,9 +830,7 @@ function wc_get_relative_url($url)
  */
 function wc_is_external_resource($url)
 {
-    // stub
 }
-
 /**
  * See if theme/s is activate or not.
  *
@@ -997,9 +840,7 @@ function wc_is_external_resource($url)
  */
 function wc_is_active_theme($theme)
 {
-    // stub
 }
-
 /**
  * Is the site using a default WP theme?
  *
@@ -1007,9 +848,7 @@ function wc_is_active_theme($theme)
  */
 function wc_is_wp_default_theme_active()
 {
-    // stub
 }
-
 /**
  * Cleans up session data - cron callback.
  *
@@ -1017,9 +856,7 @@ function wc_is_wp_default_theme_active()
  */
 function wc_cleanup_session_data()
 {
-    // stub
 }
-
 /**
  * Convert a decimal (e.g. 3.5) to a fraction (e.g. 7/2).
  * From: https://www.designedbyaturtle.co.uk/2015/converting-a-decimal-to-a-fraction-in-php/
@@ -1029,9 +866,7 @@ function wc_cleanup_session_data()
  */
 function wc_decimal_to_fraction($decimal)
 {
-    // stub
 }
-
 /**
  * Round discount.
  *
@@ -1041,9 +876,7 @@ function wc_decimal_to_fraction($decimal)
  */
 function wc_round_discount($value, $precision)
 {
-    // stub
 }
-
 /**
  * Return the html selected attribute if stringified $value is found in array of stringified $options
  * or if stringified $value is the same as scalar stringified $options.
@@ -1054,9 +887,7 @@ function wc_round_discount($value, $precision)
  */
 function wc_selected($value, $options)
 {
-    // stub
 }
-
 /**
  * Retrieves the MySQL server version. Based on $wpdb.
  *
@@ -1065,9 +896,7 @@ function wc_selected($value, $options)
  */
 function wc_get_server_database_version()
 {
-    // stub
 }
-
 /**
  * Initialize and load the cart functionality.
  *
@@ -1076,9 +905,7 @@ function wc_get_server_database_version()
  */
 function wc_load_cart()
 {
-    // stub
 }
-
 /**
  * Test whether the context of execution comes from async action scheduler.
  *
@@ -1087,9 +914,7 @@ function wc_load_cart()
  */
 function wc_is_running_from_async_action_scheduler()
 {
-    // stub
 }
-
 /**
  * Polyfill for wp_cache_get_multiple for WP versions before 5.5.
  *
@@ -1101,5 +926,4 @@ function wc_is_running_from_async_action_scheduler()
  */
 function wc_cache_get_multiple($keys, $group = '', $force = false)
 {
-    // stub
 }

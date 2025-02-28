@@ -23,8 +23,6 @@ class AdminSuggestionsServiceProvider
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

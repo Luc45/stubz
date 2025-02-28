@@ -69,18 +69,14 @@ class BlockRegistry
      * Get the singleton instance.
      */
     public static function get_instance(): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\BlockRegistry
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Constructor
      */
     protected function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a file path for a given block file.
      *
@@ -88,18 +84,14 @@ class BlockRegistry
      * @param string $dir File directory.
      */
     private function get_file_path($path, $dir)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register all the product blocks.
      */
     private function register_product_blocks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register product related block categories.
      *
@@ -107,10 +99,8 @@ class BlockRegistry
      * @param WP_Block_Editor_Context $editor_context   The current block editor context.
      */
     public function register_categories($block_categories, $editor_context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block name without the "woocommerce/" prefix.
      *
@@ -119,30 +109,24 @@ class BlockRegistry
      * @return string
      */
     private function remove_block_prefix($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Augment the attributes of a block by adding attributes that are used by the product editor.
      *
      * @param array $attributes Block attributes.
      */
     private function augment_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Augment the uses_context of a block by adding attributes that are used by the product editor.
      *
      * @param array $uses_context Block uses_context.
      */
     private function augment_uses_context($uses_context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a single block.
      *
@@ -152,30 +136,24 @@ class BlockRegistry
      * @return WP_Block_Type|false The registered block type on success, or false on failure.
      */
     private function register_block($block_name, $block_dir)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a block is registered.
      *
      * @param string $block_name Block name.
      */
     public function is_registered($block_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unregister a block.
      *
      * @param string $block_name Block name.
      */
     public function unregister($block_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a block type from metadata stored in the block.json file.
      *
@@ -185,8 +163,6 @@ class BlockRegistry
      * @return \WP_Block_Type|false The registered block type on success, or false on failure.
      */
     public function register_block_type_from_metadata($file_or_folder)
-    {
-        // stub
-    }
-
+{
+}
 }

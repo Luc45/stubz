@@ -64,10 +64,8 @@ abstract class GenericController
      * @return \WP_REST_Response
      */
     public function add_pagination_headers($request, $response, int $total, int $page, int $max_pages)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data from `{$this->rest_base}` store, based on the given query vars.
      *
@@ -75,22 +73,17 @@ abstract class GenericController
      * @param array $query_args Query arguments.
      * @return mixed Results from the data store.
      */
-    protected function get_datastore_data($query_args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_datastore_data($query_args = array())
+{
+}
     /**
      * Get the query params definition for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the report data.
      *
@@ -102,10 +95,8 @@ abstract class GenericController
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report data item for serialization.
      *
@@ -122,10 +113,8 @@ abstract class GenericController
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($report_item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maps query arguments from the REST request, to be used to query the datastore.
      *
@@ -137,10 +126,8 @@ abstract class GenericController
      * @return array Simplified array of params.
      */
     protected function prepare_reports_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply a filter for custom orderby enum.
      *
@@ -151,8 +138,6 @@ abstract class GenericController
      * @since 9.4.0
      */
     protected function apply_custom_orderby_filters($orderby_enum)
-    {
-        // stub
-    }
-
+{
+}
 }

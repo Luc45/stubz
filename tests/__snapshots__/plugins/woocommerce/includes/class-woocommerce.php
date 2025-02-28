@@ -108,8 +108,7 @@ final class WooCommerce
      *
      * @var array of WC_Deprecated_Hooks
      */
-    public $deprecated_hook_handlers = array (
-);
+    public $deprecated_hook_handlers = array();
 
     /**
      * Main WooCommerce Instance.
@@ -122,30 +121,24 @@ final class WooCommerce
      * @return WooCommerce - Main instance.
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cloning is forbidden.
      *
      * @since 2.1
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserializing instances of this class is forbidden.
      *
      * @since 2.1
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Autoload inaccessible or non-existing properties on demand.
      *
@@ -153,10 +146,8 @@ final class WooCommerce
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the value of an inaccessible or non-existing property.
      *
@@ -165,28 +156,22 @@ final class WooCommerce
      * @throws Exception Attempt to access a property that's private or protected.
      */
     public function __set(string $key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the Legacy REST API plugin is active (and thus the Legacy REST API is available).
      *
      * @return bool
      */
     public function legacy_rest_api_is_available()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * WooCommerce Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When WP has loaded all plugins, trigger the `woocommerce_loaded` hook.
      *
@@ -197,30 +182,24 @@ final class WooCommerce
      * @since 3.6.0
      */
     public function on_plugins_loaded()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize Jetpack Connection Config.
      *
      * @return void
      */
     public function init_jetpack_connection_config()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into actions and filters.
      *
      * @since 2.3
      */
     private function init_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add woocommerce_inbox_variant for the Remote Inbox Notification.
      *
@@ -230,45 +209,35 @@ final class WooCommerce
      * below will be used instead.
      */
     public function add_woocommerce_inbox_variant()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add woocommerce_remote_variant_assignment used to determine cohort
      * or group assignment for Remote Spec Engines.
      */
     public function add_woocommerce_remote_variant()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensures fatal errors are logged so they can be picked up in the status report.
      *
      * @since 3.2.0
      */
     public function log_errors()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define WC Constants.
      */
     private function define_constants()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register custom tables within $wpdb object.
      */
     private function define_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Define constant if not already set.
      *
@@ -276,10 +245,8 @@ final class WooCommerce
      * @param string|bool $value Constant value.
      */
     private function define($name, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the request is a non-legacy REST API request.
      *
@@ -290,28 +257,22 @@ final class WooCommerce
      * @return bool
      */
     public function is_rest_api_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the request is a store REST API request.
      *
      * @return bool
      */
     public function is_store_api_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load REST API.
      */
     public function load_rest_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * What type of request is this?
      *
@@ -319,52 +280,40 @@ final class WooCommerce
      * @return bool
      */
     private function is_request($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include required core files used in admin and on the frontend.
      */
     public function includes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include classes for theme support.
      *
      * @since 3.3.0
      */
     private function theme_support_includes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include required frontend files.
      */
     public function frontend_includes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Function used to Init WooCommerce Template Functions - This makes them pluggable by plugins and themes.
      */
     public function include_template_functions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init WooCommerce when WordPress Initialises.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load Localisation files.
      *
@@ -375,26 +324,20 @@ final class WooCommerce
      *      - WP_LANG_DIR/plugins/woocommerce-LOCALE.mo
      */
     public function load_plugin_textdomain()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure theme and server variable compatibility and setup image sizes.
      */
     public function setup_environment()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure post thumbnail support is turned on.
      */
     private function add_thumbnail_support()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add WC Image sizes to WP.
      *
@@ -410,50 +353,40 @@ final class WooCommerce
      * @since 2.3
      */
     public function add_image_sizes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the plugin url.
      *
      * @return string
      */
     public function plugin_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the plugin path.
      *
      * @return string
      */
     public function plugin_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template path.
      *
      * @return string
      */
     public function template_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Ajax URL.
      *
      * @return string
      */
     public function ajax_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the WC API URL for a given request.
      *
@@ -462,20 +395,16 @@ final class WooCommerce
      * @return string
      */
     public function api_request_url($request, $ssl = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Load & enqueue active webhooks.
      *
      * @since 2.2
      */
     private function load_webhooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the customer and cart objects and setup customer saving on shutdown.
      *
@@ -485,10 +414,8 @@ final class WooCommerce
      * @return void
      */
     public function initialize_cart()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the session class.
      *
@@ -496,10 +423,8 @@ final class WooCommerce
      * @return void
      */
     public function initialize_session()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Tell bots not to index some WooCommerce-created directories.
      *
@@ -514,18 +439,14 @@ final class WooCommerce
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function robots_txt($output)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tablenames inside WPDB object.
      */
     public function wpdb_table_fix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ran when any plugin is activated.
      *
@@ -533,10 +454,8 @@ final class WooCommerce
      * @param string $filename The filename of the activated plugin.
      */
     public function activated_plugin($filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ran when any plugin is deactivated.
      *
@@ -544,80 +463,64 @@ final class WooCommerce
      * @param string $filename The filename of the deactivated plugin.
      */
     public function deactivated_plugin($filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get queue instance.
      *
      * @return WC_Queue_Interface
      */
     public function queue()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Checkout Class.
      *
      * @return WC_Checkout
      */
     public function checkout()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get gateways class.
      *
      * @return WC_Payment_Gateways
      */
     public function payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping class.
      *
      * @return WC_Shipping
      */
     public function shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Email Class.
      *
      * @return WC_Emails
      */
     public function mailer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if plugin assets are built and minified
      *
      * @return bool
      */
     public function build_dependencies_satisfied()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output a admin notice when build dependencies not met.
      *
      * @return void
      */
     public function build_dependencies_notice()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the WooCommerce Admin actively included in the WooCommerce core?
      * Based on presence of a basic WC Admin function.
@@ -625,10 +528,8 @@ final class WooCommerce
      * @return boolean
      */
     public function is_wc_admin_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Call a user function. This should be used to execute any non-idempotent function, especially
      * those in the `includes` directory or provided by WordPress.
@@ -644,10 +545,8 @@ final class WooCommerce
      * @since 4.4
      */
     public function call_function($function_name, ...$parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Call a static method in a class. This should be used to execute any non-idempotent method in classes
      * from the `includes` directory.
@@ -664,10 +563,8 @@ final class WooCommerce
      * @since 4.4
      */
     public function call_static($class_name, $method_name, ...$parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an instance of a given legacy class.
      * This must not be used to get instances of classes in the `src` directory.
@@ -684,10 +581,8 @@ final class WooCommerce
      * @since 4.4
      */
     public function get_instance_of(string $class_name, ...$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the value of a global.
      *
@@ -695,10 +590,8 @@ final class WooCommerce
      * @return mixed The value of the global.
      */
     public function get_global(string $global_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register WC settings from WP-API to the REST API.
      *
@@ -709,10 +602,8 @@ final class WooCommerce
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function register_wp_admin_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts the WooCommerce slug to the correct slug for the current version.
      * This ensures that when the plugin is installed in a different folder name, the correct slug is used so that dependent plugins can be installed/activated.
@@ -723,10 +614,8 @@ final class WooCommerce
      * @return string
      */
     public function convert_woocommerce_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the remote log handler.
      *
@@ -737,10 +626,8 @@ final class WooCommerce
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function register_remote_log_handler($handlers)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Tracks the history WooCommerce Allow Tracking option.
      * - When the field was first set to allow tracking
@@ -753,8 +640,6 @@ final class WooCommerce
      * @return void
      */
     public function get_tracking_history($old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
 }

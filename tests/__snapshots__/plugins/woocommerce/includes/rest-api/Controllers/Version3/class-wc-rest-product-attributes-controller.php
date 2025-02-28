@@ -23,10 +23,8 @@ class WC_REST_Product_Attributes_Controller
      * @return string The auto-generated slug
      */
     private function generate_unique_slug($attribute_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single attribute.
      *
@@ -34,8 +32,6 @@ class WC_REST_Product_Attributes_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
 }

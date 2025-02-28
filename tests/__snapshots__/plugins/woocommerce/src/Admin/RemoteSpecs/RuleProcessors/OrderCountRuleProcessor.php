@@ -20,10 +20,8 @@ class OrderCountRuleProcessor
      * @param object $orders_provider The orders provider.
      */
     public function __construct($orders_provider = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process the rule.
      *
@@ -33,10 +31,8 @@ class OrderCountRuleProcessor
      * @return bool Whether the rule passes or not.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -45,8 +41,6 @@ class OrderCountRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

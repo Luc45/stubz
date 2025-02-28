@@ -39,20 +39,16 @@ class WC_Payment_Token_CC
      * @return string
      */
     public function get_display_name($deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook prefix
      *
      * @since 3.0.0
      */
     protected function get_hook_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate credit card payment tokens.
      *
@@ -66,10 +62,8 @@ class WC_Payment_Token_CC
      * @return boolean True if the passed data is valid
      */
     public function validate()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the card type (mastercard, visa, ...).
      *
@@ -78,10 +72,8 @@ class WC_Payment_Token_CC
      * @return string Card type
      */
     public function get_card_type($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the card type (mastercard, visa, ...).
      *
@@ -89,10 +81,8 @@ class WC_Payment_Token_CC
      * @param string $type Credit card type (mastercard, visa, ...).
      */
     public function set_card_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the card expiration year (YYYY).
      *
@@ -101,10 +91,8 @@ class WC_Payment_Token_CC
      * @return string Expiration year
      */
     public function get_expiry_year($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the expiration year for the card (YYYY format).
      *
@@ -112,10 +100,8 @@ class WC_Payment_Token_CC
      * @param string $year Credit card expiration year.
      */
     public function set_expiry_year($year)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the card expiration month (MM).
      *
@@ -124,10 +110,8 @@ class WC_Payment_Token_CC
      * @return string Expiration month
      */
     public function get_expiry_month($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the expiration month for the card (formats into MM format).
      *
@@ -135,10 +119,8 @@ class WC_Payment_Token_CC
      * @param string $month Credit card expiration month.
      */
     public function set_expiry_month($month)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the last four digits.
      *
@@ -147,10 +129,8 @@ class WC_Payment_Token_CC
      * @return string Last 4 digits
      */
     public function get_last4($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the last four digits.
      *
@@ -158,8 +138,6 @@ class WC_Payment_Token_CC
      * @param string $last4 Credit card last four digits.
      */
     public function set_last4($last4)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -18,25 +18,20 @@ abstract class WC_Legacy_Cart
   'subtotal_ex_tax' => 0,
   'tax_total' => 0,
   'taxes' => 
-  array (
-  ),
+  array(),
   'shipping_taxes' => 
-  array (
-  ),
+  array(),
   'discount_cart' => 0,
   'discount_cart_tax' => 0,
   'shipping_total' => 0,
   'shipping_tax_total' => 0,
   'coupon_discount_amounts' => 
-  array (
-  ),
+  array(),
   'coupon_discount_tax_amounts' => 
-  array (
-  ),
+  array(),
   'fee_total' => 0,
   'fees' => 
-  array (
-  ),
+  array(),
 );
 
     /**
@@ -45,8 +40,7 @@ abstract class WC_Legacy_Cart
      * @deprecated 3.2.0
      * @var array
      */
-    public $coupon_applied_count = array (
-);
+    public $coupon_applied_count = array();
 
     /**
      * Map legacy variables.
@@ -55,10 +49,8 @@ abstract class WC_Legacy_Cart
      * @param mixed  $value Value to set.
      */
     public function __isset($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic getters.
      *
@@ -68,10 +60,8 @@ abstract class WC_Legacy_Cart
      * @return mixed
      */
     public function __get($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map legacy variables to setters.
      *
@@ -79,63 +69,45 @@ abstract class WC_Legacy_Cart
      * @param mixed  $value Value to set.
      */
     public function __set($name, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Methods moved to session class in 3.2.0.
      */
     public function get_cart_from_session()
-    {
-        // stub
-    }
-
+{
+}
     public function maybe_set_cart_cookies()
-    {
-        // stub
-    }
-
+{
+}
     public function set_session()
-    {
-        // stub
-    }
-
+{
+}
     public function get_cart_for_session()
-    {
-        // stub
-    }
-
+{
+}
     public function persistent_cart_update()
-    {
-        // stub
-    }
-
+{
+}
     public function persistent_cart_destroy()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total of all cart discounts.
      *
      * @return float
      */
     public function get_cart_discount_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total of all cart tax discounts (used for discounts on tax inclusive prices).
      *
      * @return float
      */
     public function get_cart_discount_tax_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renamed for consistency.
      *
@@ -143,30 +115,24 @@ abstract class WC_Legacy_Cart
      * @return bool	True if the coupon is applied, false if it does not exist or cannot be applied.
      */
     public function add_discount($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove taxes.
      *
      * @deprecated 3.2.0 Taxes are never calculated if customer is tax except making this function unused.
      */
     public function remove_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init.
      *
      * @deprecated 3.2.0 Session is loaded via hooks rather than directly.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Function to apply discounts to a product and get the discounted price (before tax is applied).
      *
@@ -177,10 +143,8 @@ abstract class WC_Legacy_Cart
      * @return float price
      */
     public function get_discounted_price($values, $price, $add_totals = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the url to the cart page.
      *
@@ -188,10 +152,8 @@ abstract class WC_Legacy_Cart
      * @return string url to page
      */
     public function get_cart_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the url to the checkout page.
      *
@@ -199,10 +161,8 @@ abstract class WC_Legacy_Cart
      * @return string url to page
      */
     public function get_checkout_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sees if we need a shipping address.
      *
@@ -210,10 +170,8 @@ abstract class WC_Legacy_Cart
      * @return bool
      */
     public function ship_to_billing_address_only()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Coupons enabled function. Filterable.
      *
@@ -221,10 +179,8 @@ abstract class WC_Legacy_Cart
      * @return bool
      */
     public function coupons_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the total (product) discount amount - these are applied before tax.
      *
@@ -232,10 +188,8 @@ abstract class WC_Legacy_Cart
      * @return mixed formatted price or false if there are none.
      */
     public function get_discounts_before_tax()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total of all order discounts (after tax discounts).
      *
@@ -243,10 +197,8 @@ abstract class WC_Legacy_Cart
      * @return int
      */
     public function get_order_discount_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Function to apply cart discounts after tax.
      *
@@ -255,10 +207,8 @@ abstract class WC_Legacy_Cart
      * @param $price
      */
     public function apply_cart_discounts_after_tax($values, $price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Function to apply product discounts after tax.
      *
@@ -268,18 +218,14 @@ abstract class WC_Legacy_Cart
      * @param $price
      */
     public function apply_product_discounts_after_tax($values, $price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the order discount amount - these are applied after tax.
      *
      * @deprecated 2.3.0 Coupons can not be applied after tax.
      */
     public function get_discounts_after_tax()
-    {
-        // stub
-    }
-
+{
+}
 }

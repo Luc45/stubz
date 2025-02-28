@@ -15,10 +15,8 @@ class Segmenter
      * @return array Column => SELECT query mapping.
      */
     protected function get_segment_selections_order_level($lookup_table)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for totals query where the segmenting property is bound to order (e.g. coupon or customer type).
      *
@@ -32,10 +30,8 @@ class Segmenter
      * @return array
      */
     protected function get_order_related_totals_segments($segmenting_select, $segmenting_from, $segmenting_where, $segmenting_groupby, $table_name, $totals_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate segments for intervals query where the segmenting property is bound to order (e.g. coupon or customer type).
      *
@@ -49,10 +45,8 @@ class Segmenter
      * @return array
      */
     protected function get_order_related_intervals_segments($segmenting_select, $segmenting_from, $segmenting_where, $segmenting_groupby, $table_name, $intervals_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return array of segments formatted for REST response.
      *
@@ -64,8 +58,6 @@ class Segmenter
      * @throws \Automattic\WooCommerce\Admin\API\Reports\ParameterException In case of segmenting by variations, when no parent product is specified.
      */
     protected function get_segments($type, $query_params, $table_name)
-    {
-        // stub
-    }
-
+{
+}
 }

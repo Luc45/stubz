@@ -13,7 +13,6 @@ interface ServiceProviderInterface
      * @return boolean
      */
     public function provides(string $service): bool;
-
     /**
      * Use the register method to register items with the container via the
      * protected $this->leagueContainer property or the `getLeagueContainer` method
@@ -22,7 +21,6 @@ interface ServiceProviderInterface
      * @return void
      */
     public function register();
-
     /**
      * Set a custom id for the service provider. This enables
      * registering the same service provider multiple times.
@@ -32,7 +30,6 @@ interface ServiceProviderInterface
      * @return self
      */
     public function setIdentifier(string $id): Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderInterface;
-
     /**
      * The id of the service provider uniquely identifies it, so
      * that we can quickly determine if it has already been registered.
@@ -41,5 +38,4 @@ interface ServiceProviderInterface
      * @return string
      */
     public function getIdentifier(): string;
-
 }

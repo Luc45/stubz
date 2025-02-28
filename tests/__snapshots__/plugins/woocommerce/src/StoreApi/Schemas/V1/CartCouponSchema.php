@@ -22,10 +22,8 @@ class CartCouponSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check given coupon exists.
      *
@@ -33,10 +31,8 @@ class CartCouponSchema
      * @return bool
      */
     public function coupon_exists($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a response from passed coupon code.
      *
@@ -44,8 +40,6 @@ class CartCouponSchema
      * @return array
      */
     public function get_item_response($coupon_code)
-    {
-        // stub
-    }
-
+{
+}
 }

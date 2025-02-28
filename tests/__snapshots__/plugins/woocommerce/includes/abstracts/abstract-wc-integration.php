@@ -39,34 +39,26 @@ abstract class WC_Integration
      * @return string
      */
     public function get_method_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the description for admin screens.
      *
      * @return string
      */
     public function get_method_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the gateway settings screen.
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init settings for gateways.
      */
     public function init_settings()
-    {
-        // stub
-    }
-
+{
+}
 }

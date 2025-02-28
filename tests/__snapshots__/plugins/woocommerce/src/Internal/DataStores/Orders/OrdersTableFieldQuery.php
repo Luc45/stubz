@@ -49,32 +49,28 @@ class OrdersTableFieldQuery
      *
      * @var array
      */
-    private $queries = array (
-);
+    private $queries = array();
 
     /**
      * JOIN clauses to add to the main SQL query.
      *
      * @var array
      */
-    private $join = array (
-);
+    private $join = array();
 
     /**
      * WHERE clauses to add to the main SQL query.
      *
      * @var array
      */
-    private $where = array (
-);
+    private $where = array();
 
     /**
      * Table aliases in use by the field query. Used to keep track of JOINs and optimize when possible.
      *
      * @var array
      */
-    private $table_aliases = array (
-);
+    private $table_aliases = array();
 
     /**
      * Constructor.
@@ -82,10 +78,8 @@ class OrdersTableFieldQuery
      * @param OrdersTableQuery $q The main query being performed.
      */
     public function __construct(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableQuery $q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes the field_query argument.
      *
@@ -94,10 +88,8 @@ class OrdersTableFieldQuery
      * @throws \Exception When field table info is missing.
      */
     private function sanitize_query(array $q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure we use an AND or OR relation. Defaults to AND.
      *
@@ -105,10 +97,8 @@ class OrdersTableFieldQuery
      * @return string
      */
     private function sanitize_relation(string $relation): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Processes field_query entries and generates the necessary table aliases, JOIN statements and WHERE conditions.
      *
@@ -116,10 +106,8 @@ class OrdersTableFieldQuery
      * @return string An SQL WHERE statement.
      */
     private function process(array $q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether a given field_query clause is atomic or not (i.e. not nested).
      *
@@ -127,10 +115,8 @@ class OrdersTableFieldQuery
      * @return boolean TRUE if atomic, FALSE otherwise.
      */
     private function is_atomic($q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds a common table alias that the field_query clause can use, or creates one.
      *
@@ -139,10 +125,8 @@ class OrdersTableFieldQuery
      * @throws \Exception When table info for clause is missing.
      */
     private function find_or_create_table_alias_for_clause($q)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the correct type for a given clause 'type'.
      *
@@ -150,10 +134,8 @@ class OrdersTableFieldQuery
      * @return string MySQL type.
      */
     private function sanitize_cast_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates an SQL WHERE clause for a given field_query atomic clause.
      *
@@ -161,10 +143,8 @@ class OrdersTableFieldQuery
      * @return string An SQL WHERE clause or an empty string if $clause is invalid.
      */
     private function generate_where_for_clause($clause): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns JOIN and WHERE clauses to be appended to the main SQL query.
      *
@@ -174,8 +154,6 @@ class OrdersTableFieldQuery
      * }
      */
     public function get_sql_clauses()
-    {
-        // stub
-    }
-
+{
+}
 }

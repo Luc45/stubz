@@ -12,10 +12,8 @@ class WC_Blocks_Utils
      * @return array Array of blocks as returned by parse_blocks().
      */
     private static function get_all_blocks_from_page($woo_page_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all instances of the specified block on a specific woo page
      * (e.g. `cart` or `checkout` page).
@@ -25,10 +23,8 @@ class WC_Blocks_Utils
      * @return array Array of blocks as returned by parse_blocks().
      */
     public static function get_blocks_from_page($block_name, $woo_page_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given page contains a particular block.
      *
@@ -37,8 +33,6 @@ class WC_Blocks_Utils
      * @return bool Boolean value if the page contains the block or not. Null in case the page does not exist.
      */
     public static function has_block_in_page($page, $block_name)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -17,10 +17,8 @@ trait CheckoutTrait
      * @return \WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For orders which do not require payment, just update status.
      *
@@ -28,10 +26,8 @@ trait CheckoutTrait
      * @param PaymentResult    $payment_result Payment result object.
      */
     private function process_without_payment(WP_REST_Request $request, Automattic\WooCommerce\StoreApi\Payments\PaymentResult $payment_result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fires an action hook instructing active payment gateways to process the payment for an order and provide a result.
      *
@@ -41,10 +37,8 @@ trait CheckoutTrait
      * @param PaymentResult    $payment_result Payment result object.
      */
     private function process_payment(WP_REST_Request $request, Automattic\WooCommerce\StoreApi\Payments\PaymentResult $payment_result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the chosen payment method ID from the request.
      *
@@ -53,10 +47,8 @@ trait CheckoutTrait
      * @return string
      */
     private function get_request_payment_method_id(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets and formats payment request data.
      *
@@ -64,20 +56,16 @@ trait CheckoutTrait
      * @return array
      */
     private function get_request_payment_data(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the current order using the posted values from the request.
      *
      * @param \WP_REST_Request $request Full details about the request.
      */
     private function update_order_from_request(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the chosen payment method title from the request.
      *
@@ -86,10 +74,8 @@ trait CheckoutTrait
      * @return string
      */
     private function get_request_payment_method_title(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Persist additional fields for the order after validating them.
      *
@@ -98,8 +84,6 @@ trait CheckoutTrait
      * @throws RouteException On error.
      */
     private function persist_additional_fields_for_order(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
 }

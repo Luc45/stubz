@@ -26,40 +26,32 @@ class Package
      * @return Package  The Package instance class
      */
     protected static function get_package()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init the package - load the blocks library and define constants.
      *
      * @since 2.5.0 Handled by new NewPackage.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the version of the package.
      *
      * @return string
      */
     public static function get_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the path to the package.
      *
      * @return string
      */
     public static function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an instance of the FeatureGating class.
      *
@@ -67,10 +59,8 @@ class Package
      * @deprecated since 9.6, use wp_get_environment_type() instead.
      */
     public static function feature()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads the dependency injection container for woocommerce blocks.
      *
@@ -79,8 +69,6 @@ class Package
      *                       reconstructed.
      */
     public static function container($reset = false)
-    {
-        // stub
-    }
-
+{
+}
 }

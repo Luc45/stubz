@@ -22,28 +22,22 @@ final class PaymentMethodRegistry
      * @return PaymentMethodTypeInterface[]
      */
     public function get_all_active_registered()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of all registered payment method script handles, but only for active payment methods.
      *
      * @return string[]
      */
     public function get_all_active_payment_method_script_dependencies()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of all registered payment method script data, but only for active payment methods.
      *
      * @return array
      */
     public function get_all_registered_script_data()
-    {
-        // stub
-    }
-
+{
+}
 }

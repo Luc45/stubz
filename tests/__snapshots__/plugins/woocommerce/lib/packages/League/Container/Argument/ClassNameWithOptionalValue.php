@@ -19,21 +19,15 @@ class ClassNameWithOptionalValue
      * @param mixed $optionalValue
      */
     public function __construct(string $className, $optionalValue)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * @inheritDoc
      */
     public function getClassName(): string
-    {
-        // stub
-    }
-
+{
+}
     public function getOptionalValue()
-    {
-        // stub
-    }
-
+{
+}
 }

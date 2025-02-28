@@ -28,10 +28,8 @@ class OnboardingThemes
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to manage themes.
      *
@@ -39,10 +37,8 @@ class OnboardingThemes
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Installs the requested theme.
      *
@@ -50,10 +46,8 @@ class OnboardingThemes
      * @return WP_Error|array Theme installation status.
      */
     public function install_theme($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Activate the requested theme.
      *
@@ -61,10 +55,8 @@ class OnboardingThemes
      * @return WP_Error|array Theme activation status.
      */
     public function activate_theme($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get recommended themes.
      *
@@ -72,28 +64,22 @@ class OnboardingThemes
      * @return WP_Error|array Theme activation status.
      */
     public function get_recommended_themes($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the recommended themes schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_recommended_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

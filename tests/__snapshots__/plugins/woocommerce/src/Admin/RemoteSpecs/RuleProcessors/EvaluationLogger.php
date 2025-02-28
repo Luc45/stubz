@@ -21,8 +21,7 @@ class EvaluationLogger
      *
      * @var array
      */
-    private $results = array (
-);
+    private $results = array();
 
     /**
      * Logger class to use.
@@ -46,10 +45,8 @@ class EvaluationLogger
      * @param \WC_Logger_Interface|null $logger Logger class to use. Default to using the WC logger.
      */
     public function __construct($slug, $source = null, WC_Logger_Interface|null $logger = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add evaluation result of a rule.
      *
@@ -57,16 +54,12 @@ class EvaluationLogger
      * @param boolean $result    Result of a given rule.
      */
     public function add_result($rule_type, $result)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Log the results.
      */
     public function log()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -41,18 +41,14 @@ trait ComponentTrait
      * @return string
      */
     public function get_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return plugin id.
      *
      * @return string
      */
     public function get_plugin_id()
-    {
-        // stub
-    }
-
+{
+}
 }

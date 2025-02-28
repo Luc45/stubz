@@ -24,10 +24,8 @@ class MiniCartContents
      * @return array|string;
      */
     protected function get_block_type_editor_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -36,20 +34,16 @@ class MiniCartContents
      * @return null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the markup for the Mini-Cart Contents block.
      *
@@ -59,10 +53,8 @@ class MiniCartContents
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -71,18 +63,14 @@ class MiniCartContents
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get list of Mini-Cart Contents block & its inner-block types.
      *
      * @return array;
      */
     public static function get_mini_cart_block_types()
-    {
-        // stub
-    }
-
+{
+}
 }

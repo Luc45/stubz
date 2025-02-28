@@ -19,10 +19,8 @@ class PrepareUrl
      * @return mixed|null
      */
     public function transform($value, stdClass|null $arguments = null, $default_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate Transformer arguments.
      *
@@ -31,8 +29,6 @@ class PrepareUrl
      * @return mixed
      */
     public function validate(stdClass|null $arguments = null)
-    {
-        // stub
-    }
-
+{
+}
 }

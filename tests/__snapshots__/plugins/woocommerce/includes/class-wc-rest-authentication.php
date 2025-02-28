@@ -33,28 +33,22 @@ class WC_REST_Authentication
      * @return self
      */
     public static function instance(): self
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize authentication actions.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if is request to our REST API.
      *
      * @return bool
      */
     protected function is_request_to_rest_api()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Authenticate user.
      *
@@ -62,10 +56,8 @@ class WC_REST_Authentication
      * @return int|false
      */
     public function authenticate($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Authenticate the user if authentication wasn't performed during the
      * determine_current_user action.
@@ -78,10 +70,8 @@ class WC_REST_Authentication
      * @return WP_Error|null|bool
      */
     public function authentication_fallback($error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check for authentication error.
      *
@@ -89,30 +79,24 @@ class WC_REST_Authentication
      * @return WP_Error|null|bool
      */
     public function check_authentication_error($error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set authentication error.
      *
      * @param WP_Error $error Authentication error data.
      */
     protected function set_error($error)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get authentication error.
      *
      * @return WP_Error|null.
      */
     protected function get_error()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Basic Authentication.
      *
@@ -124,10 +108,8 @@ class WC_REST_Authentication
      * @return int|bool
      */
     private function perform_basic_authentication()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the Authorization header into parameters.
      *
@@ -138,10 +120,8 @@ class WC_REST_Authentication
      * @return array Map of parameter values.
      */
     public function parse_header($header)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the authorization header.
      *
@@ -155,10 +135,8 @@ class WC_REST_Authentication
      * @return string Authorization header if set.
      */
     public function get_authorization_header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get oAuth parameters from $_GET, $_POST or request header.
      *
@@ -167,10 +145,8 @@ class WC_REST_Authentication
      * @return array|WP_Error
      */
     public function get_oauth_parameters()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Perform OAuth 1.0a "one-legged" (http://oauthbible.com/#oauth-10a-one-legged) authentication for non-SSL requests.
      *
@@ -188,10 +164,8 @@ class WC_REST_Authentication
      * @return int|bool
      */
     private function perform_oauth_authentication()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify that the consumer-provided request signature matches our generated signature,
      * this ensures the consumer has a valid key/secret.
@@ -201,10 +175,8 @@ class WC_REST_Authentication
      * @return true|WP_Error
      */
     private function check_oauth_signature($user, $params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Creates an array of urlencoded strings out of each array key/value pairs.
      *
@@ -213,12 +185,9 @@ class WC_REST_Authentication
      * @param  string $key          Optional Array key to append.
      * @return string               Array of urlencoded strings.
      */
-    private function join_with_equals_sign($params, $query_params = array (
-), $key = '')
-    {
-        // stub
-    }
-
+    private function join_with_equals_sign($params, $query_params = array(), $key = '')
+{
+}
     /**
      * Normalize each parameter by assuming each parameter may have already been
      * encoded, so attempt to decode, and then re-encode according to RFC 3986.
@@ -239,10 +208,8 @@ class WC_REST_Authentication
      * @return array Normalized parameters.
      */
     private function normalize_parameters($parameters)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify that the timestamp and nonce provided with the request are valid. This prevents replay attacks where
      * an attacker could attempt to re-send an intercepted request at a later time.
@@ -256,10 +223,8 @@ class WC_REST_Authentication
      * @return bool|WP_Error
      */
     private function check_oauth_timestamp_and_nonce($user, $timestamp, $nonce)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the user data for the given consumer_key.
      *
@@ -267,10 +232,8 @@ class WC_REST_Authentication
      * @return array
      */
     private function get_user_data_by_consumer_key($consumer_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check that the API keys provided have the proper key-specific permissions to either read or write API resources.
      *
@@ -278,10 +241,8 @@ class WC_REST_Authentication
      * @return bool|WP_Error
      */
     private function check_permissions($method)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the `last_access` field for the API key associated with the current request.
      *
@@ -293,10 +254,8 @@ class WC_REST_Authentication
      * @return void
      */
     private function update_last_access($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the consumer_key and consumer_secret $_GET parameters are NOT provided
      * and the Basic auth headers are either not present or the consumer secret does not match the consumer
@@ -306,10 +265,8 @@ class WC_REST_Authentication
      * @return WP_REST_Response
      */
     public function send_unauthorized_headers($response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check for user permissions and register last access.
      *
@@ -319,8 +276,6 @@ class WC_REST_Authentication
      * @return mixed
      */
     public function check_user_permissions($result, $server, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

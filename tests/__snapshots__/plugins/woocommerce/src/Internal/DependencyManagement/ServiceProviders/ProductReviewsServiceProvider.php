@@ -21,8 +21,6 @@ class ProductReviewsServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -13,7 +13,6 @@ interface WC_Webhook_Data_Store_Interface
      * @return int
      */
     public function get_api_version_number($api_version);
-
     /**
      * Get all webhooks IDs.
      *
@@ -23,5 +22,4 @@ interface WC_Webhook_Data_Store_Interface
      * @return int[]
      */
     public function get_webhooks_ids($status = '');
-
 }

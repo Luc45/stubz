@@ -24,10 +24,8 @@ class Connection
      * @return mixed
      */
     public function fetch_ai_response($token, $prompt, $timeout = 15, $response_format = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch the AI responses in parallel using the given token and prompts.
      *
@@ -39,20 +37,16 @@ class Connection
      * @return array|WP_Error The responses or a WP_Error object.
      */
     public function fetch_ai_responses($token, array $prompts, $timeout = 15, $response_format = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the site ID.
      *
      * @return integer|\WP_Error The site ID or a WP_Error object.
      */
     public function get_site_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch the JWT token.
      *
@@ -61,8 +55,6 @@ class Connection
      * @return string|\WP_Error The JWT token or a WP_Error object.
      */
     public function get_jwt_token($site_id)
-    {
-        // stub
-    }
-
+{
+}
 }

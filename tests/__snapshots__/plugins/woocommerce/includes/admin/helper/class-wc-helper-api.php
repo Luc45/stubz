@@ -22,10 +22,8 @@ class WC_Helper_API
      * The URL can be changed on plugins_loaded before priority 10.
      */
     public static function load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Perform an HTTP request to the Helper API.
      *
@@ -34,12 +32,9 @@ class WC_Helper_API
      *
      * @return array|WP_Error The response from wp_safe_remote_request()
      */
-    public static function request($endpoint, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function request($endpoint, $args = array())
+{
+}
     /**
      * Create signature for a request.
      *
@@ -50,10 +45,8 @@ class WC_Helper_API
      * @return string The signature.
      */
     private static function create_request_signature(string $access_token_secret, string $url, string $method, $body = null): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the access token and signature to the provided URL.
      *
@@ -61,10 +54,8 @@ class WC_Helper_API
      * @return string
      */
     public static function add_auth_parameters(string $url): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds authentication headers to an HTTP request.
      *
@@ -73,10 +64,8 @@ class WC_Helper_API
      * @return bool Were the headers added?
      */
     private static function _authenticate(&$url, &$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper for self::request().
      *
@@ -85,12 +74,9 @@ class WC_Helper_API
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function get($endpoint, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function get($endpoint, $args = array())
+{
+}
     /**
      * Wrapper for self::request().
      *
@@ -99,12 +85,9 @@ class WC_Helper_API
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function post($endpoint, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function post($endpoint, $args = array())
+{
+}
     /**
      * Wrapper for self::request().
      *
@@ -113,12 +96,9 @@ class WC_Helper_API
      *
      * @return array The response object from wp_safe_remote_request().
      */
-    public static function put($endpoint, $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function put($endpoint, $args = array())
+{
+}
     /**
      * Using the API base, form a request URL from a given endpoint.
      *
@@ -128,8 +108,6 @@ class WC_Helper_API
      * @return string The absolute endpoint URL.
      */
     public static function url($endpoint, $query_string = '')
-    {
-        // stub
-    }
-
+{
+}
 }

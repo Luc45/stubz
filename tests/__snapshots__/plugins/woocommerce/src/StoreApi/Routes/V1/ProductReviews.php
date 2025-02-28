@@ -17,30 +17,24 @@ class ProductReviews
      * @return string
      */
     public function get_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path of this rest route.
      *
      * @return string
      */
     public static function get_path_regex()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get method arguments for this REST route.
      *
      * @return array An array of endpoints.
      */
     public function get_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of reviews.
      *
@@ -48,10 +42,8 @@ class ProductReviews
      * @return \WP_REST_Response
      */
     protected function get_route_response(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepends internal property prefix to query parameters to match our response fields.
      *
@@ -59,18 +51,14 @@ class ProductReviews
      * @return string
      */
     protected function normalize_query_param($query_param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of products.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

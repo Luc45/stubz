@@ -11,10 +11,8 @@ class WC_Order_Query
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get orders matching the current query vars.
      *
@@ -23,8 +21,6 @@ class WC_Order_Query
      * @throws Exception When WC_Data_Store validation fails.
      */
     public function get_orders()
-    {
-        // stub
-    }
-
+{
+}
 }

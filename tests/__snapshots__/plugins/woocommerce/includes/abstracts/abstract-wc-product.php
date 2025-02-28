@@ -67,43 +67,34 @@ class WC_Product
   'width' => '',
   'height' => '',
   'upsell_ids' => 
-  array (
-  ),
+  array(),
   'cross_sell_ids' => 
-  array (
-  ),
+  array(),
   'parent_id' => 0,
   'reviews_allowed' => true,
   'purchase_note' => '',
   'attributes' => 
-  array (
-  ),
+  array(),
   'default_attributes' => 
-  array (
-  ),
+  array(),
   'menu_order' => 0,
   'post_password' => '',
   'virtual' => false,
   'downloadable' => false,
   'category_ids' => 
-  array (
-  ),
+  array(),
   'tag_ids' => 
-  array (
-  ),
+  array(),
   'shipping_class_id' => 0,
   'downloads' => 
-  array (
-  ),
+  array(),
   'image_id' => '',
   'gallery_image_ids' => 
-  array (
-  ),
+  array(),
   'download_limit' => -1,
   'download_expiry' => -1,
   'rating_counts' => 
-  array (
-  ),
+  array(),
   'average_rating' => 0,
   'review_count' => 0,
   'cogs_value' => null,
@@ -114,8 +105,7 @@ class WC_Product
      *
      * @var array
      */
-    protected $supports = array (
-);
+    protected $supports = array();
 
     /**
      * Get the product if ID is passed, otherwise the product is new and empty.
@@ -125,10 +115,8 @@ class WC_Product
      * @param int|WC_Product|object $product Product to init.
      */
     public function __construct($product = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get internal type. Should return string and *should be overridden* by child classes.
      *
@@ -138,10 +126,8 @@ class WC_Product
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product name.
      *
@@ -150,10 +136,8 @@ class WC_Product
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product slug.
      *
@@ -162,10 +146,8 @@ class WC_Product
      * @return string
      */
     public function get_slug($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product created date.
      *
@@ -174,10 +156,8 @@ class WC_Product
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_created($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product modified date.
      *
@@ -186,10 +166,8 @@ class WC_Product
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_modified($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product status.
      *
@@ -198,10 +176,8 @@ class WC_Product
      * @return string
      */
     public function get_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the product is featured.
      *
@@ -210,10 +186,8 @@ class WC_Product
      * @return boolean
      */
     public function get_featured($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get catalog visibility.
      *
@@ -222,10 +196,8 @@ class WC_Product
      * @return string
      */
     public function get_catalog_visibility($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product description.
      *
@@ -234,10 +206,8 @@ class WC_Product
      * @return string
      */
     public function get_description($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product short description.
      *
@@ -246,10 +216,8 @@ class WC_Product
      * @return string
      */
     public function get_short_description($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get SKU (Stock-keeping unit).
      *
@@ -257,10 +225,8 @@ class WC_Product
      * @return string
      */
     public function get_sku($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get Unique ID.
      *
@@ -269,10 +235,8 @@ class WC_Product
      * @return string
      */
     public function get_global_unique_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product's active price.
      *
@@ -280,10 +244,8 @@ class WC_Product
      * @return string price
      */
     public function get_price($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product's regular price.
      *
@@ -291,10 +253,8 @@ class WC_Product
      * @return string price
      */
     public function get_regular_price($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product's sale price.
      *
@@ -302,10 +262,8 @@ class WC_Product
      * @return string price
      */
     public function get_sale_price($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date on sale from.
      *
@@ -314,10 +272,8 @@ class WC_Product
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_on_sale_from($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get date on sale to.
      *
@@ -326,10 +282,8 @@ class WC_Product
      * @return WC_DateTime|NULL object if the date is set or null if there is no date.
      */
     public function get_date_on_sale_to($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get number total of sales.
      *
@@ -338,10 +292,8 @@ class WC_Product
      * @return int
      */
     public function get_total_sales($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the tax status.
      *
@@ -349,10 +301,8 @@ class WC_Product
      * @return string
      */
     public function get_tax_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the tax class.
      *
@@ -360,10 +310,8 @@ class WC_Product
      * @return string
      */
     public function get_tax_class($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if product manage stock.
      *
@@ -372,10 +320,8 @@ class WC_Product
      * @return boolean
      */
     public function get_manage_stock($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns number of items available for sale.
      *
@@ -383,10 +329,8 @@ class WC_Product
      * @return int|null
      */
     public function get_stock_quantity($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the stock status.
      *
@@ -395,10 +339,8 @@ class WC_Product
      * @return string
      */
     public function get_stock_status($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get backorders.
      *
@@ -407,10 +349,8 @@ class WC_Product
      * @return string yes no or notify
      */
     public function get_backorders($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get low stock amount.
      *
@@ -419,10 +359,8 @@ class WC_Product
      * @return int|string Returns empty string if value not set
      */
     public function get_low_stock_amount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if should be sold individually.
      *
@@ -431,10 +369,8 @@ class WC_Product
      * @return boolean
      */
     public function get_sold_individually($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product's weight.
      *
@@ -442,10 +378,8 @@ class WC_Product
      * @return string
      */
     public function get_weight($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product length.
      *
@@ -453,10 +387,8 @@ class WC_Product
      * @return string
      */
     public function get_length($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product width.
      *
@@ -464,10 +396,8 @@ class WC_Product
      * @return string
      */
     public function get_width($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product height.
      *
@@ -475,10 +405,8 @@ class WC_Product
      * @return string
      */
     public function get_height($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns formatted dimensions.
      *
@@ -486,10 +414,8 @@ class WC_Product
      * @return string|array
      */
     public function get_dimensions($formatted = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get upsell IDs.
      *
@@ -498,10 +424,8 @@ class WC_Product
      * @return array
      */
     public function get_upsell_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cross sell IDs.
      *
@@ -510,10 +434,8 @@ class WC_Product
      * @return array
      */
     public function get_cross_sell_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get parent ID.
      *
@@ -522,10 +444,8 @@ class WC_Product
      * @return int
      */
     public function get_parent_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if reviews is allowed.
      *
@@ -534,10 +454,8 @@ class WC_Product
      * @return bool
      */
     public function get_reviews_allowed($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get purchase note.
      *
@@ -546,10 +464,8 @@ class WC_Product
      * @return string
      */
     public function get_purchase_note($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns product attributes.
      *
@@ -557,10 +473,8 @@ class WC_Product
      * @return array
      */
     public function get_attributes($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default attributes.
      *
@@ -569,10 +483,8 @@ class WC_Product
      * @return array
      */
     public function get_default_attributes($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get menu order.
      *
@@ -581,10 +493,8 @@ class WC_Product
      * @return int
      */
     public function get_menu_order($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get post password.
      *
@@ -593,10 +503,8 @@ class WC_Product
      * @return int
      */
     public function get_post_password($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get category ids.
      *
@@ -605,10 +513,8 @@ class WC_Product
      * @return array
      */
     public function get_category_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tag ids.
      *
@@ -617,10 +523,8 @@ class WC_Product
      * @return array
      */
     public function get_tag_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get virtual.
      *
@@ -629,10 +533,8 @@ class WC_Product
      * @return bool
      */
     public function get_virtual($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the gallery attachment ids.
      *
@@ -640,10 +542,8 @@ class WC_Product
      * @return array
      */
     public function get_gallery_image_ids($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping class ID.
      *
@@ -652,10 +552,8 @@ class WC_Product
      * @return int
      */
     public function get_shipping_class_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get downloads.
      *
@@ -664,10 +562,8 @@ class WC_Product
      * @return array
      */
     public function get_downloads($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download expiry.
      *
@@ -676,10 +572,8 @@ class WC_Product
      * @return int
      */
     public function get_download_expiry($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get downloadable.
      *
@@ -688,10 +582,8 @@ class WC_Product
      * @return bool
      */
     public function get_downloadable($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get download limit.
      *
@@ -700,10 +592,8 @@ class WC_Product
      * @return int
      */
     public function get_download_limit($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get main image ID.
      *
@@ -712,10 +602,8 @@ class WC_Product
      * @return string
      */
     public function get_image_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rating count.
      *
@@ -723,10 +611,8 @@ class WC_Product
      * @return array of counts
      */
     public function get_rating_counts($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get average rating.
      *
@@ -734,10 +620,8 @@ class WC_Product
      * @return float
      */
     public function get_average_rating($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get review count.
      *
@@ -745,10 +629,8 @@ class WC_Product
      * @return int
      */
     public function get_review_count($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product name.
      *
@@ -756,10 +638,8 @@ class WC_Product
      * @param string $name Product name.
      */
     public function set_name($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product slug.
      *
@@ -767,10 +647,8 @@ class WC_Product
      * @param string $slug Product slug.
      */
     public function set_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product created date.
      *
@@ -778,10 +656,8 @@ class WC_Product
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_created($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product modified date.
      *
@@ -789,10 +665,8 @@ class WC_Product
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_modified($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product status.
      *
@@ -800,10 +674,8 @@ class WC_Product
      * @param string $status Product status.
      */
     public function set_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if the product is featured.
      *
@@ -811,10 +683,8 @@ class WC_Product
      * @param bool|string $featured Whether the product is featured or not.
      */
     public function set_featured($featured)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set catalog visibility.
      *
@@ -823,10 +693,8 @@ class WC_Product
      * @param  string $visibility Options: 'hidden', 'visible', 'search' and 'catalog'.
      */
     public function set_catalog_visibility($visibility)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product description.
      *
@@ -834,10 +702,8 @@ class WC_Product
      * @param string $description Product description.
      */
     public function set_description($description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product short description.
      *
@@ -845,10 +711,8 @@ class WC_Product
      * @param string $short_description Product short description.
      */
     public function set_short_description($short_description)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set SKU.
      *
@@ -857,10 +721,8 @@ class WC_Product
      * @param  string $sku Product SKU.
      */
     public function set_sku($sku)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set global_unique_id
      *
@@ -868,20 +730,16 @@ class WC_Product
      * @param string $global_unique_id Unique ID.
      */
     public function set_global_unique_id($global_unique_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product's active price.
      *
      * @param string $price Price.
      */
     public function set_price($price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product's regular price.
      *
@@ -889,10 +747,8 @@ class WC_Product
      * @param string $price Regular price.
      */
     public function set_regular_price($price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product's sale price.
      *
@@ -900,10 +756,8 @@ class WC_Product
      * @param string $price sale price.
      */
     public function set_sale_price($price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date on sale from.
      *
@@ -911,10 +765,8 @@ class WC_Product
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_on_sale_from($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set date on sale to.
      *
@@ -922,10 +774,8 @@ class WC_Product
      * @param string|integer|null $date UTC timestamp, or ISO 8601 DateTime. If the DateTime string has no timezone or offset, WordPress site timezone will be assumed. Null if their is no date.
      */
     public function set_date_on_sale_to($date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set number total of sales.
      *
@@ -933,10 +783,8 @@ class WC_Product
      * @param int $total Total of sales.
      */
     public function set_total_sales($total)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the tax status.
      *
@@ -945,10 +793,8 @@ class WC_Product
      * @param  string $status Tax status.
      */
     public function set_tax_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the tax class.
      *
@@ -956,20 +802,16 @@ class WC_Product
      * @param string $class Tax class.
      */
     public function set_tax_class($class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of valid tax classes
      *
      * @return array valid tax classes
      */
     protected function get_valid_tax_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if product manage stock.
      *
@@ -977,10 +819,8 @@ class WC_Product
      * @param bool $manage_stock Whether or not manage stock is enabled.
      */
     public function set_manage_stock($manage_stock)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set number of items available for sale.
      *
@@ -988,20 +828,16 @@ class WC_Product
      * @param float|null $quantity Stock quantity.
      */
     public function set_stock_quantity($quantity)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set stock status.
      *
      * @param string $status New status.
      */
     public function set_stock_status($status = 'instock')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set backorders.
      *
@@ -1009,10 +845,8 @@ class WC_Product
      * @param string $backorders Options: 'yes', 'no' or 'notify'.
      */
     public function set_backorders($backorders)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set low stock amount.
      *
@@ -1020,10 +854,8 @@ class WC_Product
      * @since 3.5.0
      */
     public function set_low_stock_amount($amount)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if should be sold individually.
      *
@@ -1031,10 +863,8 @@ class WC_Product
      * @param bool $sold_individually Whether or not product is sold individually.
      */
     public function set_sold_individually($sold_individually)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product's weight.
      *
@@ -1042,10 +872,8 @@ class WC_Product
      * @param float|string $weight Total weight.
      */
     public function set_weight($weight)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product length.
      *
@@ -1053,10 +881,8 @@ class WC_Product
      * @param float|string $length Total length.
      */
     public function set_length($length)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product width.
      *
@@ -1064,10 +890,8 @@ class WC_Product
      * @param float|string $width Total width.
      */
     public function set_width($width)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product height.
      *
@@ -1075,10 +899,8 @@ class WC_Product
      * @param float|string $height Total height.
      */
     public function set_height($height)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set upsell IDs.
      *
@@ -1086,10 +908,8 @@ class WC_Product
      * @param array $upsell_ids IDs from the up-sell products.
      */
     public function set_upsell_ids($upsell_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set crosssell IDs.
      *
@@ -1097,10 +917,8 @@ class WC_Product
      * @param array $cross_sell_ids IDs from the cross-sell products.
      */
     public function set_cross_sell_ids($cross_sell_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set parent ID.
      *
@@ -1108,10 +926,8 @@ class WC_Product
      * @param int $parent_id Product parent ID.
      */
     public function set_parent_id($parent_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if reviews is allowed.
      *
@@ -1119,10 +935,8 @@ class WC_Product
      * @param bool $reviews_allowed Reviews allowed or not.
      */
     public function set_reviews_allowed($reviews_allowed)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set purchase note.
      *
@@ -1130,10 +944,8 @@ class WC_Product
      * @param string $purchase_note Purchase note.
      */
     public function set_purchase_note($purchase_note)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set product attributes.
      *
@@ -1150,10 +962,8 @@ class WC_Product
      * @param array $raw_attributes Array of WC_Product_Attribute objects.
      */
     public function set_attributes($raw_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set default attributes. These will be saved as strings and should map to attribute values.
      *
@@ -1161,10 +971,8 @@ class WC_Product
      * @param array $default_attributes List of default attributes.
      */
     public function set_default_attributes($default_attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set menu order.
      *
@@ -1172,10 +980,8 @@ class WC_Product
      * @param int $menu_order Menu order.
      */
     public function set_menu_order($menu_order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set post password.
      *
@@ -1183,10 +989,8 @@ class WC_Product
      * @param int $post_password Post password.
      */
     public function set_post_password($post_password)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product categories.
      *
@@ -1194,10 +998,8 @@ class WC_Product
      * @param array $term_ids List of terms IDs.
      */
     public function set_category_ids($term_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product tags.
      *
@@ -1205,10 +1007,8 @@ class WC_Product
      * @param array $term_ids List of terms IDs.
      */
     public function set_tag_ids($term_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if the product is virtual.
      *
@@ -1216,10 +1016,8 @@ class WC_Product
      * @param bool|string $virtual Whether product is virtual or not.
      */
     public function set_virtual($virtual)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping class ID.
      *
@@ -1227,10 +1025,8 @@ class WC_Product
      * @param int $id Product shipping class id.
      */
     public function set_shipping_class_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set if the product is downloadable.
      *
@@ -1238,10 +1034,8 @@ class WC_Product
      * @param bool|string $downloadable Whether product is downloadable or not.
      */
     public function set_downloadable($downloadable)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set downloads.
      *
@@ -1252,10 +1046,8 @@ class WC_Product
      * @since 3.0.0
      */
     public function set_downloads($downloads_array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Takes an array of downloadable file representations and converts it into an array of
      * WC_Product_Download objects, indexed by download ID.
@@ -1265,10 +1057,8 @@ class WC_Product
      * @return WC_Product_Download[]
      */
     private function build_downloads_map(array $downloads): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set download limit.
      *
@@ -1276,10 +1066,8 @@ class WC_Product
      * @param int|string $download_limit Product download limit.
      */
     public function set_download_limit($download_limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set download expiry.
      *
@@ -1287,10 +1075,8 @@ class WC_Product
      * @param int|string $download_expiry Product download expiry.
      */
     public function set_download_expiry($download_expiry)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set gallery attachment ids.
      *
@@ -1298,10 +1084,8 @@ class WC_Product
      * @param array $image_ids List of image ids.
      */
     public function set_gallery_image_ids($image_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set main image ID.
      *
@@ -1309,50 +1093,40 @@ class WC_Product
      * @param int|string $image_id Product image id.
      */
     public function set_image_id($image_id = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rating counts. Read only.
      *
      * @param array $counts Product rating counts.
      */
     public function set_rating_counts($counts)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set average rating. Read only.
      *
      * @param float $average Product average rating.
      */
     public function set_average_rating($average)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set review count. Read only.
      *
      * @param int $count Product review count.
      */
     public function set_review_count($count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ensure properties are set correctly before save.
      *
      * @since 3.0.0
      */
     public function validate_props()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save data (either create or update depending on if we are working on an existing product).
      *
@@ -1360,10 +1134,8 @@ class WC_Product
      * @return int
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do any extra processing needed before the actual product save
      * (but after triggering the 'woocommerce_before_..._object_save' action)
@@ -1371,10 +1143,8 @@ class WC_Product
      * @return mixed A state value that will be passed to after_data_store_save_or_update.
      */
     protected function before_data_store_save_or_update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do any extra processing needed after the actual product save
      * (but before triggering the 'woocommerce_after_..._object_save' action)
@@ -1382,10 +1152,8 @@ class WC_Product
      * @param mixed $state The state object that was returned by before_data_store_save_or_update.
      */
     protected function after_data_store_save_or_update($state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the product, set its ID to 0, and return result.
      *
@@ -1393,18 +1161,14 @@ class WC_Product
      * @return bool result
      */
     public function delete($force_delete = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If this is a child product, queue its parent for syncing at the end of the request.
      */
     protected function maybe_defer_product_sync()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a product supports a given feature.
      *
@@ -1415,20 +1179,16 @@ class WC_Product
      * @since  2.5.0
      */
     public function supports($feature)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product post exists.
      *
      * @return bool
      */
     public function exists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks the product type.
      *
@@ -1438,80 +1198,64 @@ class WC_Product
      * @return bool
      */
     public function is_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a product is downloadable.
      *
      * @return bool
      */
     public function is_downloadable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a product is virtual (has no shipping).
      *
      * @return bool
      */
     public function is_virtual()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is featured.
      *
      * @return bool
      */
     public function is_featured()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a product is sold individually (no quantities).
      *
      * @return bool
      */
     public function is_sold_individually()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is visible in the catalog.
      *
      * @return bool
      */
     public function is_visible()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is visible in the catalog (doesn't trigger filters).
      *
      * @return bool
      */
     protected function is_visible_core()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns false if the product cannot be bought.
      *
      * @return bool
      */
     public function is_purchasable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is on sale.
      *
@@ -1519,30 +1263,24 @@ class WC_Product
      * @return bool
      */
     public function is_on_sale($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has dimensions set.
      *
      * @return bool
      */
     public function has_dimensions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has weight set.
      *
      * @return bool
      */
     public function has_weight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product can be purchased.
      * This returns true for 'instock' and 'onbackorder' stock statuses.
@@ -1550,70 +1288,56 @@ class WC_Product
      * @return bool
      */
     public function is_in_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a product needs shipping.
      *
      * @return bool
      */
     public function needs_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is taxable.
      *
      * @return bool
      */
     public function is_taxable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product shipping is taxable.
      *
      * @return bool
      */
     public function is_shipping_taxable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product is stock managed.
      *
      * @return bool
      */
     public function managing_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product can be backordered.
      *
      * @return bool
      */
     public function backorders_allowed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product needs to notify the customer on backorder.
      *
      * @return bool
      */
     public function backorders_require_notification()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a product is on backorder.
      *
@@ -1621,10 +1345,8 @@ class WC_Product
      * @return bool
      */
     public function is_on_backorder($qty_in_cart = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has enough stock for the order.
      *
@@ -1632,30 +1354,24 @@ class WC_Product
      * @return bool
      */
     public function has_enough_stock($quantity)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has any visible attributes.
      *
      * @return boolean
      */
     public function has_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has any child product.
      *
      * @return bool
      */
     public function has_child()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have dimensions?
      *
@@ -1663,10 +1379,8 @@ class WC_Product
      * @return bool
      */
     public function child_has_dimensions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Does a child have a weight?
      *
@@ -1674,10 +1388,8 @@ class WC_Product
      * @return boolean
      */
     public function child_has_weight()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if downloadable product has a file attached.
      *
@@ -1687,10 +1399,8 @@ class WC_Product
      * @return bool Whether downloadable product has a file attached.
      */
     public function has_file($download_id = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the product has additional options that need
      * selecting before adding to cart.
@@ -1699,40 +1409,32 @@ class WC_Product
      * @return boolean
      */
     public function has_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product's title. For products this is the product name.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Product permalink.
      *
      * @return string
      */
     public function get_permalink()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the children IDs if applicable. Overridden by child classes.
      *
      * @return array of IDs
      */
     public function get_children()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the stock level comes from another product ID, this should be modified.
      *
@@ -1740,10 +1442,8 @@ class WC_Product
      * @return int
      */
     public function get_stock_managed_by_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price in html format.
      *
@@ -1752,20 +1452,16 @@ class WC_Product
      * @return string
      */
     public function get_price_html($deprecated = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product name with SKU or ID. Used within admin.
      *
      * @return string Formatted product name
      */
     public function get_formatted_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get min quantity which can be purchased at once.
      *
@@ -1773,10 +1469,8 @@ class WC_Product
      * @return int
      */
     public function get_min_purchase_quantity()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get max quantity which can be purchased at once.
      *
@@ -1784,50 +1478,40 @@ class WC_Product
      * @return int Quantity or -1 if unlimited.
      */
     public function get_max_purchase_quantity()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to url used mainly in loops.
      *
      * @return string
      */
     public function add_to_cart_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text for the single page.
      *
      * @return string
      */
     public function single_add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the aria-describedby description for the add to cart button.
      *
      * @return string
      */
     public function add_to_cart_aria_describedby()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text.
      *
      * @return string
      */
     public function add_to_cart_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the add to cart button text description - used in aria tags.
      *
@@ -1835,10 +1519,8 @@ class WC_Product
      * @return string
      */
     public function add_to_cart_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the main product image.
      *
@@ -1847,22 +1529,17 @@ class WC_Product
      * @param  bool   $placeholder True to return $placeholder if no image is found, or false to return an empty string.
      * @return string
      */
-    public function get_image($size = 'woocommerce_thumbnail', $attr = array (
-), $placeholder = true)
-    {
-        // stub
-    }
-
+    public function get_image($size = 'woocommerce_thumbnail', $attr = array(), $placeholder = true)
+{
+}
     /**
      * Returns the product shipping class SLUG.
      *
      * @return string
      */
     public function get_shipping_class()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a single product attribute as a string.
      *
@@ -1870,10 +1547,8 @@ class WC_Product
      * @return string
      */
     public function get_attribute($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the total amount (COUNT) of ratings, or just the count for one rating e.g. number of 5 star ratings.
      *
@@ -1881,10 +1556,8 @@ class WC_Product
      * @return int
      */
     public function get_rating_count($value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a file by $download_id.
      *
@@ -1892,10 +1565,8 @@ class WC_Product
      * @return array|false if not found
      */
     public function get_file($download_id = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get file download path identified by $download_id.
      *
@@ -1903,10 +1574,8 @@ class WC_Product
      * @return string
      */
     public function get_file_download_path($download_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the suffix to display after prices > 0.
      *
@@ -1915,40 +1584,32 @@ class WC_Product
      * @return string
      */
     public function get_price_suffix($price = '', $qty = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the availability of the product.
      *
      * @return string[]
      */
     public function get_availability()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get availability text based on stock status.
      *
      * @return string
      */
     protected function get_availability_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get availability classname based on stock status.
      *
      * @return string
      */
     protected function get_availability_class()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the defined value of the Cost of Goods Sold for this product.
      *
@@ -1965,10 +1626,8 @@ class WC_Product
      * @param float|null $value The value to set for this product.
      */
     public function set_cogs_value(float|null $value): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust the value of the Cost of Goods Sold before actually setting it.
      *
@@ -1979,10 +1638,8 @@ class WC_Product
      * @return float|null The actual value that will be set for the cost property.
      */
     protected function adjust_cogs_value_before_set(float|null $value): float|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the defined value of the Cost of Goods Sold for this product.
      * See set_cogs_value.
@@ -1992,10 +1649,8 @@ class WC_Product
      * @return float The current value for this product.
      */
     public function get_cogs_value(): float|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the effective value of the Cost of Goods Sold for this product.
      *
@@ -2009,10 +1664,8 @@ class WC_Product
      * @return float The effective value for this product.
      */
     public function get_cogs_effective_value(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to get the effective value of the Cost of Goods Sold for this product.
      * (the final, actual monetary value).
@@ -2024,10 +1677,8 @@ class WC_Product
      * @return float The effective value for this product.
      */
     protected function get_cogs_effective_value_core(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the effective total value of the Cost of Goods Sold for this product.
      * This is the monetary value that will be applied to orders and used for analytics purposes,
@@ -2038,10 +1689,8 @@ class WC_Product
      * @return float The effective total value for this product.
      */
     public function get_cogs_total_value(): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core function to get the effective total value of the Cost of Goods Sold for this product.
      *
@@ -2052,8 +1701,6 @@ class WC_Product
      * @return float The effective total value for this product.
      */
     protected function get_cogs_total_value_core(): float
-    {
-        // stub
-    }
-
+{
+}
 }

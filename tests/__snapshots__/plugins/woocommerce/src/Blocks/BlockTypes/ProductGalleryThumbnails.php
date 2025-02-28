@@ -18,30 +18,24 @@ class ProductGalleryThumbnails
      * It isn't necessary register block assets because it is a server side block.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate the View All markup.
      *
@@ -50,10 +44,8 @@ class ProductGalleryThumbnails
      * @return string
      */
     protected function generate_view_all_html($remaining_thumbnails_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject View All markup into the product thumbnail HTML.
      *
@@ -63,10 +55,8 @@ class ProductGalleryThumbnails
      * @return string
      */
     protected function inject_view_all($thumbnail_html, $view_all_html)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the thumbnails should be limited.
      *
@@ -77,10 +67,8 @@ class ProductGalleryThumbnails
      * @return bool
      */
     protected function should_limit_thumbnails($mode, $thumbnails_count, $number_of_thumbnails)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if View All markup should be displayed.
      *
@@ -92,10 +80,8 @@ class ProductGalleryThumbnails
      * @return bool
      */
     protected function should_display_view_all($mode, $thumbnails_count, $product_gallery_images, $number_of_thumbnails)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -105,8 +91,6 @@ class ProductGalleryThumbnails
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

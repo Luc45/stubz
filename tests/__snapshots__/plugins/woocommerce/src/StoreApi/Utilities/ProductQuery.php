@@ -16,10 +16,8 @@ class ProductQuery
      * @return array
      */
     public function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert the tax_query to a meta_query which is needed to support filtering by attributes for variations.
      *
@@ -27,10 +25,8 @@ class ProductQuery
      * @return array
      */
     public function convert_tax_query_to_meta_query($tax_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get results of query.
      *
@@ -38,10 +34,8 @@ class ProductQuery
      * @return array
      */
     public function get_results($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get objects.
      *
@@ -49,20 +43,16 @@ class ProductQuery
      * @return array
      */
     public function get_objects($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get last modified date for all products.
      *
      * @return int timestamp.
      */
     public function get_last_modified()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional search filters for products.
      *
@@ -71,10 +61,8 @@ class ProductQuery
      * @return array
      */
     public function add_query_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional price filters.
      *
@@ -83,10 +71,8 @@ class ProductQuery
      * @return array
      */
     protected function add_price_filter_clauses($args, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get query for price filters when dealing with displayed taxes.
      *
@@ -96,10 +82,8 @@ class ProductQuery
      * @return string Constructed query.
      */
     protected function get_price_filter_query_for_displayed_taxes($price_filter, $column = 'min_price', $operator = '>=')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If price filters need adjustment to work with displayed taxes, this returns true.
      *
@@ -109,10 +93,8 @@ class ProductQuery
      * @return boolean
      */
     protected function adjust_price_filters_for_displayed_taxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts price filter from subunits to decimal.
      *
@@ -120,10 +102,8 @@ class ProductQuery
      * @return float Price filter in decimal format.
      */
     protected function prepare_price_filter($price_filter)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjusts a price filter based on a tax class and whether or not the amount includes or excludes taxes.
      *
@@ -134,10 +114,8 @@ class ProductQuery
      * @return float
      */
     protected function adjust_price_filter_for_tax_class($price_filter, $tax_class)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -145,8 +123,6 @@ class ProductQuery
      * @return string
      */
     protected function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
 }

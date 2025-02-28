@@ -57,18 +57,14 @@ class File
      * @param string $path The absolute path of the file.
      */
     public function __construct($path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make sure open streams are closed.
      */
     public function __destruct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a path to a log file to determine if it uses the standard filename structure and various properties.
      *
@@ -102,10 +98,8 @@ class File
      * }
      */
     public static function parse_path(string $path): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a public ID for a log file based on its properties.
      *
@@ -120,10 +114,8 @@ class File
      * @return string
      */
     public static function generate_file_id(string $source, int|null $rotation = null, int $created = 0): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a hash to use as the suffix on a log filename.
      *
@@ -132,10 +124,8 @@ class File
      * @return string
      */
     public static function generate_hash(string $file_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the source property of a log file.
      *
@@ -144,20 +134,16 @@ class File
      * @return string
      */
     public static function sanitize_source(string $source): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the log file path and assign various properties to this class instance.
      *
      * @return void
      */
     protected function ingest_path(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the filename structure is in the expected format.
      *
@@ -166,40 +152,32 @@ class File
      * @return bool
      */
     public function has_standard_filename(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the file represented by the class instance is a file and is readable.
      *
      * @return bool
      */
     public function is_readable(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the file represented by the class instance is a file and is writable.
      *
      * @return bool
      */
     public function is_writable(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Open a read-only stream for this file.
      *
      * @return resource|false
      */
     public function get_stream()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Close the stream for this file.
      *
@@ -209,110 +187,88 @@ class File
      * @return bool
      */
     public function close_stream(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the full absolute path of the file.
      *
      * @return string
      */
     public function get_path(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the file, with extension, but without full path.
      *
      * @return string
      */
     public function get_basename(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file's source property.
      *
      * @return string
      */
     public function get_source(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file's rotation property.
      *
      * @return int|null
      */
     public function get_rotation(): int|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file's hash property.
      *
      * @return string
      */
     public function get_hash(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file's public ID.
      *
      * @return string
      */
     public function get_file_id(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the file's created property.
      *
      * @return int
      */
     public function get_created_timestamp(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the time of the last modification of the file, as a Unix timestamp. Or false if the file isn't readable.
      *
      * @return int|false
      */
     public function get_modified_timestamp()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the size of the file in bytes. Or false if the file isn't readable.
      *
      * @return int|false
      */
     public function get_file_size()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create and set permissions on the file.
      *
      * @return bool
      */
     protected function create(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Write content to the file, appending it to the end.
      *
@@ -321,28 +277,22 @@ class File
      * @return bool
      */
     public function write(string $text): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Rename this file with an incremented rotation number.
      *
      * @return bool True if the file was successfully rotated.
      */
     public function rotate(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete the file from the filesystem.
      *
      * @return bool True on success, false on failure.
      */
     public function delete(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

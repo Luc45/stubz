@@ -15,16 +15,12 @@ class ClassName
      * @param string $value
      */
     public function __construct(string $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function getClassName(): string
-    {
-        // stub
-    }
-
+{
+}
 }

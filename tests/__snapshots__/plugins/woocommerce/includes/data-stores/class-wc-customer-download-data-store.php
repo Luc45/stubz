@@ -27,20 +27,16 @@ class WC_Customer_Download_Data_Store
      * @returns int The database id of the created permission, or false if the permission creation failed.
      */
     public function create_from_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create download permission for a user.
      *
      * @param WC_Customer_Download $download WC_Customer_Download object.
      */
     public function create(&$download)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create download permission for a user, from an array of data.
      * Assumes that all the keys in the passed data are valid.
@@ -49,10 +45,8 @@ class WC_Customer_Download_Data_Store
      * @return int The database id of the created permission, or false if the permission creation failed.
      */
     private function insert_new_download_permission($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust a date value to be inserted in the database.
      *
@@ -61,10 +55,8 @@ class WC_Customer_Download_Data_Store
      * @throws Exception The passed value can't be converted to a date.
      */
     private function adjust_date_for_db($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to read a download permission from the database.
      *
@@ -73,42 +65,33 @@ class WC_Customer_Download_Data_Store
      * @throws Exception Throw exception if invalid download is passed.
      */
     public function read(&$download)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to update a download in the database.
      *
      * @param WC_Customer_Download $download WC_Customer_Download object.
      */
     public function update(&$download)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete a download permission from the database.
      *
      * @param WC_Customer_Download $download WC_Customer_Download object.
      * @param array                $args Array of args to pass to the delete method.
      */
-    public function delete(&$download, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$download, $args = array())
+{
+}
     /**
      * Method to delete a download permission from the database by ID.
      *
      * @param int $id permission_id of the download to be deleted.
      */
     public function delete_by_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete download_log related to download permission via $field with value $value.
      *
@@ -118,30 +101,24 @@ class WC_Customer_Download_Data_Store
      * @return void
      */
     private function delete_download_log_by_field_value($field, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete a download permission from the database by order ID.
      *
      * @param int $id Order ID of the downloads that will be deleted.
      */
     public function delete_by_order_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete a download permission from the database by download ID.
      *
      * @param int $id download_id of the downloads that will be deleted.
      */
     public function delete_by_download_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete a download permission from the database by user ID.
      *
@@ -150,10 +127,8 @@ class WC_Customer_Download_Data_Store
      * @return bool True if deleted rows.
      */
     public function delete_by_user_id($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Method to delete a download permission from the database by user email.
      *
@@ -162,10 +137,8 @@ class WC_Customer_Download_Data_Store
      * @return bool True if deleted rows.
      */
     public function delete_by_user_email($email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a download object.
      *
@@ -173,22 +146,17 @@ class WC_Customer_Download_Data_Store
      * @return WC_Customer_Download
      */
     private function get_download($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of download ids by specified args.
      *
      * @param  array $args Arguments to filter downloads. $args['return'] accepts the following values: 'objects' (default), 'ids' or a comma separated list of fields (for example: 'order_id,user_id,user_email').
      * @return array Can be an array of permission_ids, an array of WC_Customer_Download objects or an array of arrays containing specified fields depending on the value of $args['return'].
      */
-    public function get_downloads($args = array (
-))
-    {
-        // stub
-    }
-
+    public function get_downloads($args = array())
+{
+}
     /**
      * Update download ids if the hash changes.
      *
@@ -199,10 +167,8 @@ class WC_Customer_Download_Data_Store
      * @param  string $new_id New download_id.
      */
     public function update_download_id($product_id, $old_id, $new_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a customers downloads.
      *
@@ -210,10 +176,8 @@ class WC_Customer_Download_Data_Store
      * @return array
      */
     public function get_downloads_for_customer($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update user prop for downloads based on order id.
      *
@@ -222,8 +186,6 @@ class WC_Customer_Download_Data_Store
      * @param  string $email Customer email address.
      */
     public function update_user_by_order_id($order_id, $customer_id, $email)
-    {
-        // stub
-    }
-
+{
+}
 }

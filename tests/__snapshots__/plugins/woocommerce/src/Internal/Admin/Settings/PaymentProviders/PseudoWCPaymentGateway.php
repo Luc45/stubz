@@ -70,8 +70,7 @@ class PseudoWCPaymentGateway
      *
      * @var array
      */
-    public array $recommended_payment_methods = array (
-);
+    public array $recommended_payment_methods = array();
 
     /**
      * Whether or not this gateway still requires setup to function.
@@ -128,42 +127,33 @@ class PseudoWCPaymentGateway
      * @param string $id    The gateway ID.
      * @param array  $props Optional. The gateway properties to apply.
      */
-    public function __construct(string $id, array $props = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct(string $id, array $props = array())
+{
+}
     /**
      * Return whether or not this gateway still requires setup to function.
      *
      * @return bool
      */
     public function needs_setup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the gateway settings page URL.
      *
      * @return string The gateway settings page URL.
      */
     public function get_settings_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the gateway onboarding start/continue URL.
      *
      * @return string The gateway onboarding start/continue URL.
      */
     public function get_connection_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the recommended payment methods list.
      *
@@ -172,68 +162,54 @@ class PseudoWCPaymentGateway
      * @return array List of recommended payment methods for the given country.
      */
     public function get_recommended_payment_methods(string $country_code = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway is in test mode.
      *
      * @return bool True if the gateway is in test mode, false otherwise.
      */
     public function is_test_mode(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway is in dev mode.
      *
      * @return bool True if the gateway is in dev mode, false otherwise.
      */
     public function is_dev_mode(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway has an account connected.
      *
      * @return bool True if the gateway has an account connected, false otherwise.
      */
     public function is_account_connected(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway has started onboarding.
      *
      * @return bool True if the gateway has started onboarding, false otherwise.
      */
     public function is_onboarding_started(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway has completed onboarding.
      *
      * @return bool True if the gateway has completed onboarding, false otherwise.
      */
     public function is_onboarding_completed(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway is in test mode onboarding.
      *
      * @return bool True if the gateway is in test mode onboarding, false otherwise.
      */
     public function is_test_mode_onboarding(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

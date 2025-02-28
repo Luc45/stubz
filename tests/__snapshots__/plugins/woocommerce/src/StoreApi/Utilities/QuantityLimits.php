@@ -16,10 +16,8 @@ final class QuantityLimits
      * @return array
      */
     public function get_cart_item_quantity_limits($cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get limits for product add to cart forms.
      *
@@ -27,10 +25,8 @@ final class QuantityLimits
      * @return array
      */
     public function get_add_to_cart_limits(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fix a quantity violation by adjusting it to the nearest valid quantity.
      *
@@ -39,10 +35,8 @@ final class QuantityLimits
      * @return int
      */
     public function normalize_cart_item_quantity(int $quantity, array $cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a number using the closest multiple of another number. Used to enforce step/multiple values.
      *
@@ -52,10 +46,8 @@ final class QuantityLimits
      * @return int
      */
     public function limit_to_multiple(int $number, int $multiple_of, string $rounding_function = 'round')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check that a given quantity is valid according to any limits in place.
      *
@@ -64,10 +56,8 @@ final class QuantityLimits
      * @return \WP_Error|true
      */
     public function validate_cart_item_quantity($quantity, $cart_item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the limit for the total number of a product allowed in the cart.
      *
@@ -78,10 +68,8 @@ final class QuantityLimits
      * @return int
      */
     protected function get_product_quantity_limit(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the remaining stock for a product if it has stock.
      *
@@ -91,10 +79,8 @@ final class QuantityLimits
      * @return integer|null
      */
     protected function get_remaining_stock(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a quantity for a product or cart item by running it through a filter hook.
      *
@@ -104,10 +90,8 @@ final class QuantityLimits
      * @return int
      */
     protected function filter_numeric_value(int $value, string $value_type, $cart_item_or_product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a quantity for a product or cart item by running it through a filter hook.
      *
@@ -117,8 +101,6 @@ final class QuantityLimits
      * @return bool
      */
     protected function filter_boolean_value($value, string $value_type, $cart_item_or_product)
-    {
-        // stub
-    }
-
+{
+}
 }

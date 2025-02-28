@@ -16,10 +16,8 @@ class WooCommerceAdminUpdatedRuleProcessor
      * @return bool Whether the rule passes or not.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -28,8 +26,6 @@ class WooCommerceAdminUpdatedRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

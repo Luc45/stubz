@@ -7,9 +7,7 @@
  */
 function wc_get_coupon_types()
 {
-    // stub
 }
-
 /**
  * Get a coupon type's name.
  *
@@ -18,9 +16,7 @@ function wc_get_coupon_types()
  */
 function wc_get_coupon_type($type = '')
 {
-    // stub
 }
-
 /**
  * Coupon types that apply to individual products. Controls which validation rules will apply.
  *
@@ -29,9 +25,7 @@ function wc_get_coupon_type($type = '')
  */
 function wc_get_product_coupon_types()
 {
-    // stub
 }
-
 /**
  * Coupon types that apply to the cart as a whole. Controls which validation rules will apply.
  *
@@ -40,9 +34,7 @@ function wc_get_product_coupon_types()
  */
 function wc_get_cart_coupon_types()
 {
-    // stub
 }
-
 /**
  * Check if coupons are enabled.
  * Filterable.
@@ -53,9 +45,7 @@ function wc_get_cart_coupon_types()
  */
 function wc_coupons_enabled()
 {
-    // stub
 }
-
 /**
  * Get coupon code by ID.
  *
@@ -65,9 +55,7 @@ function wc_coupons_enabled()
  */
 function wc_get_coupon_code_by_id($id)
 {
-    // stub
 }
-
 /**
  * Get coupon ID by code.
  *
@@ -78,5 +66,4 @@ function wc_get_coupon_code_by_id($id)
  */
 function wc_get_coupon_id_by_code($code, $exclude = 0)
 {
-    // stub
 }

@@ -21,10 +21,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic __get method for backwards compatibility. Maps legacy vars to new getters.
      *
@@ -32,10 +30,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If set, get the default attributes for a variable product.
      *
@@ -43,10 +39,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_variation_default_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the gallery attachment ids.
      *
@@ -54,10 +48,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_gallery_attachment_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set stock level of the product.
      *
@@ -69,10 +61,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return int
      */
     public function set_stock($amount = null, $mode = 'set')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reduce stock level of the product.
      *
@@ -81,10 +71,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return int new stock level
      */
     public function reduce_stock($amount = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increase stock level of the product.
      *
@@ -93,20 +81,16 @@ abstract class WC_Abstract_Legacy_Product
      * @return int new stock level
      */
     public function increase_stock($amount = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the stock status needs changing.
      *
      * @deprecated 3.0.0 Sync is done automatically on read/save, so calling this should not be needed any more.
      */
     public function check_stock_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get and return related products.
      * @deprecated 3.0.0 Use wc_get_related_products instead.
@@ -116,10 +100,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_related($limit = 5)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves related product terms.
      * @deprecated 3.0.0 Use wc_get_product_term_ids instead.
@@ -129,10 +111,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     protected function get_related_terms($term)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Builds the related posts query.
      * @deprecated 3.0.0 Use Product Data Store get_related_products_query instead.
@@ -143,10 +123,8 @@ abstract class WC_Abstract_Legacy_Product
      * @param $limit
      */
     protected function build_related_query($cats_array, $tags_array, $exclude_ids, $limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the child product.
      * @deprecated 3.0.0 Use wc_get_product instead.
@@ -154,10 +132,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return WC_Product|WC_Product|WC_Product_variation
      */
     public function get_child($child_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Functions for getting parts of a price, in html, used by get_price_html.
      *
@@ -165,10 +141,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_price_html_from_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Functions for getting parts of a price, in html, used by get_price_html.
      *
@@ -178,19 +152,15 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_price_html_from_to($from, $to)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Lists a table of attributes for the product page.
      * @deprecated 3.0.0 Use wc_display_product_attributes instead.
      */
     public function list_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price (including tax). Uses customer tax rates. Can work for a specific $qty for more accurate taxes.
      *
@@ -200,10 +170,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_price_including_tax($qty = 1, $price = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price including or excluding tax, based on the 'woocommerce_tax_display_shop' setting.
      *
@@ -213,10 +181,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_display_price($price = '', $qty = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the price (excluding tax) - ignores tax_class filters since the price may *include* tax and thus needs subtracting.
      * Uses store base tax rates. Can work for a specific $qty for more accurate taxes.
@@ -227,10 +193,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_price_excluding_tax($qty = 1, $price = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adjust a products price dynamically.
      *
@@ -238,10 +202,8 @@ abstract class WC_Abstract_Legacy_Product
      * @param mixed $price
      */
     public function adjust_price($price)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product categories.
      *
@@ -252,10 +214,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_categories($sep = ', ', $before = '', $after = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product tags.
      *
@@ -266,10 +226,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_tags($sep = ', ', $before = '', $after = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product's post data.
      *
@@ -277,10 +235,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return WP_Post
      */
     public function get_post_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the parent of the post.
      *
@@ -288,10 +244,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return int
      */
     public function get_parent()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the upsell product ids.
      *
@@ -299,10 +253,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_upsells()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the cross sell product ids.
      *
@@ -310,10 +262,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_cross_sells()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if variable product has default attributes set.
      *
@@ -321,10 +271,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return bool
      */
     public function has_default_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get variation ID.
      *
@@ -332,10 +280,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return int
      */
     public function get_variation_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product variation description.
      *
@@ -343,10 +289,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_variation_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if all variation's attributes are set.
      *
@@ -354,10 +298,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return boolean
      */
     public function has_all_attributes_set()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether or not the variations parent is visible.
      *
@@ -365,10 +307,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return bool
      */
     public function parent_is_visible()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total stock - This is the stock of parent and children combined.
      *
@@ -376,10 +316,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return int
      */
     public function get_total_stock()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted variation data with WC < 2.4 back compat and proper formatting of text-based attribute names.
      *
@@ -390,10 +328,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_formatted_variation_attributes($flat = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync variable product prices with the children lowest/highest prices.
      *
@@ -402,10 +338,8 @@ abstract class WC_Abstract_Legacy_Product
      * @param int $product_id
      */
     public function variable_product_sync($product_id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync the variable product's attributes with the variations.
      *
@@ -413,32 +347,25 @@ abstract class WC_Abstract_Legacy_Product
      * @param bool $children
      */
     public static function sync_attributes($product, $children = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Match a variation to a given set of attributes using a WP_Query.
      * @deprecated 3.0.0 in favour of Product data store's find_matching_product_variation.
      *
      * @param array $match_attributes
      */
-    public function get_matching_variation($match_attributes = array (
-))
-    {
-        // stub
-    }
-
+    public function get_matching_variation($match_attributes = array())
+{
+}
     /**
      * Returns whether or not we are showing dimensions on the product page.
      * @deprecated 3.0.0 Unused.
      * @return bool
      */
     public function enable_dimensions_display()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the product rating in html format.
      *
@@ -447,10 +374,8 @@ abstract class WC_Abstract_Legacy_Product
      * @return string
      */
     public function get_rating_html($rating = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync product rating. Can be called statically.
      *
@@ -458,10 +383,8 @@ abstract class WC_Abstract_Legacy_Product
      * @param  int $post_id
      */
     public static function sync_average_rating($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sync product rating count. Can be called statically.
      *
@@ -469,10 +392,8 @@ abstract class WC_Abstract_Legacy_Product
      * @param  int $post_id
      */
     public static function sync_rating_count($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Same as get_downloads in CRUD.
      *
@@ -480,16 +401,12 @@ abstract class WC_Abstract_Legacy_Product
      * @return array
      */
     public function get_files()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * @deprecated 3.0.0 Sync is taken care of during save - no need to call this directly.
      */
     public function grouped_product_sync()
-    {
-        // stub
-    }
-
+{
+}
 }

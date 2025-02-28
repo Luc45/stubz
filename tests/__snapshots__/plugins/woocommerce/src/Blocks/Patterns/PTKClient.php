@@ -17,10 +17,7 @@ class PTKClient
      * @param array $options Options for fetching patterns.
      * @return array|WP_Error
      */
-    public function fetch_patterns(array $options = array (
-))
-    {
-        // stub
-    }
-
+    public function fetch_patterns(array $options = array())
+{
+}
 }

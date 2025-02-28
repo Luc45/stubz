@@ -16,8 +16,6 @@ class Middleware
      * @return boolean
      */
     public static function is_authorized()
-    {
-        // stub
-    }
-
+{
+}
 }

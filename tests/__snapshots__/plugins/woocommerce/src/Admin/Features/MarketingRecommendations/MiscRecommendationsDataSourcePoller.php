@@ -35,18 +35,14 @@ class MiscRecommendationsDataSourcePoller
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data sources.
      *
      * @return array
      */
     public static function get_data_sources()
-    {
-        // stub
-    }
-
+{
+}
 }

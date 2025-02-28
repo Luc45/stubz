@@ -8,21 +8,15 @@ namespace StrictTypesScenario;
 class Calculator
 {
     public function add(int $a, int $b): int
-    {
-        // stub
-    }
-
+{
+}
     public function divide(float $a, float $b): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * A method that requires string or int as a parameter.
      */
     public function stringify(int|string $value): string
-    {
-        // stub
-    }
-
+{
+}
 }

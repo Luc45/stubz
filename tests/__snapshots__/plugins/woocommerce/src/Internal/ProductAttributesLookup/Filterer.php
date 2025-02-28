@@ -27,21 +27,17 @@ class Filterer
      * @internal
      * @param LookupDataStore $data_store The data store to use.
      */
-    public final function init(Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $data_store)
+{
+}
     /**
      * Checks if the product attribute filtering via lookup table feature is enabled.
      *
      * @return bool
      */
     public function filtering_via_lookup_table_is_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds post clauses for filtering via lookup table.
      * This method should be invoked within a 'posts_clauses' filter.
@@ -52,10 +48,8 @@ class Filterer
      * @return array The updated product query clauses.
      */
     public function filter_by_attribute_post_clauses(array $args, WP_Query $wp_query, array $attributes_to_filter_by)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count products within certain terms, taking the main WP query into consideration,
      * for the WC_Widget_Layered_Nav widget.
@@ -68,10 +62,8 @@ class Filterer
      * @return array
      */
     public function get_filtered_term_product_counts($term_ids, $taxonomy, $query_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query for counting products by terms using the product attributes lookup table.
      *
@@ -82,10 +74,8 @@ class Filterer
      * @return array An array of SQL query parts.
      */
     private function get_product_counts_query_using_lookup_table($tax_query, $meta_query, $taxonomy, $term_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query for counting products by terms NOT using the product attributes lookup table.
      *
@@ -95,10 +85,8 @@ class Filterer
      * @return array An array of SQL query parts.
      */
     private function get_product_counts_query_not_using_lookup_table($tax_query, $meta_query, $term_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Formats a list of term ids as "(id,id,id)".
      *
@@ -106,8 +94,6 @@ class Filterer
      * @return string The formatted list.
      */
     private function get_term_ids_sql($term_ids)
-    {
-        // stub
-    }
-
+{
+}
 }

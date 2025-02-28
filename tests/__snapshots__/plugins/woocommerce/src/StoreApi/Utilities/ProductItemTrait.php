@@ -17,10 +17,8 @@ trait ProductItemTrait
      * @return array
      */
     protected function prepare_product_price_response(WC_Product $product, $tax_display_mode = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format variation data, for example convert slugs such as attribute_pa_size to Size.
      *
@@ -29,8 +27,6 @@ trait ProductItemTrait
      * @return array
      */
     protected function format_variation_data($variation_data, $product)
-    {
-        // stub
-    }
-
+{
+}
 }

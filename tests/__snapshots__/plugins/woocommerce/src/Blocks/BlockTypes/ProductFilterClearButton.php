@@ -20,10 +20,8 @@ final class ProductFilterClearButton
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -32,10 +30,8 @@ final class ProductFilterClearButton
      * @return null
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -45,8 +41,6 @@ final class ProductFilterClearButton
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

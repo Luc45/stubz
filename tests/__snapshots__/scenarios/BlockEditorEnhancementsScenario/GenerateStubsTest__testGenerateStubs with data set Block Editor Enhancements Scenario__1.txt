@@ -8,13 +8,9 @@ namespace BlockEditorEnhancementsScenario\blocks;
 class MyCustomBlock
 {
     public function init(): void
-    {
-        // stub
-    }
-
+{
+}
     public function registerBlockAssets(): void
-    {
-        // stub
-    }
-
+{
+}
 }

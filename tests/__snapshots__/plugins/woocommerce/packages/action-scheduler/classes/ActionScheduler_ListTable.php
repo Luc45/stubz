@@ -19,16 +19,14 @@ class ActionScheduler_ListTable
      *
      * @var array
      */
-    protected $columns = array (
-);
+    protected $columns = array();
 
     /**
      * Actions (name => label).
      *
      * @var array
      */
-    protected $row_actions = array (
-);
+    protected $row_actions = array();
 
     /**
      * The active data stores
@@ -59,8 +57,7 @@ class ActionScheduler_ListTable
      *
      * @var array
      */
-    protected $bulk_actions = array (
-);
+    protected $bulk_actions = array();
 
     /**
      * Flag variable to render our notifications, if any, once.
@@ -84,10 +81,8 @@ class ActionScheduler_ListTable
      * @param ActionScheduler_QueueRunner $runner Runner object.
      */
     public function __construct(ActionScheduler_Store $store, ActionScheduler_Logger $logger, ActionScheduler_QueueRunner $runner)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles setting the items_per_page option for this screen.
      *
@@ -97,10 +92,8 @@ class ActionScheduler_ListTable
      * @return int
      */
     public function set_items_per_page_option($status, $option, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an interval of seconds into a two part human friendly string.
      *
@@ -115,10 +108,8 @@ class ActionScheduler_ListTable
      * @return string A human friendly string representation of the interval.
      */
     private static function human_interval($interval, $periods_to_include = 2)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the recurrence of an action or 'Non-repeating'. The output is human readable.
      *
@@ -127,10 +118,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     protected function get_recurrence($action)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Serializes the argument of an action to render it in a human friendly format.
      *
@@ -139,10 +128,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     public function column_args(array $row)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the logs entries inline. We do so to avoid loading Javascript and other hacks to show it in a modal.
      *
@@ -150,10 +137,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     public function column_log_entries(array $row)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the logs entries inline. We do so to avoid loading Javascript and other hacks to show it in a modal.
      *
@@ -162,10 +147,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     protected function get_log_entry_html(ActionScheduler_LogEntry $log_entry, DateTimezone $timezone)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only display row actions for pending actions.
      *
@@ -175,10 +158,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     protected function maybe_render_actions($row, $column_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders admin notifications
      *
@@ -188,10 +169,8 @@ class ActionScheduler_ListTable
      *  3. Tables are missing.
      */
     public function display_admin_notices()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the scheduled date in a human friendly format.
      *
@@ -200,10 +179,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     public function column_schedule($row)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the scheduled date in a human friendly format.
      *
@@ -211,10 +188,8 @@ class ActionScheduler_ListTable
      * @return string
      */
     protected function get_schedule_display_string(ActionScheduler_Schedule $schedule)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk delete.
      *
@@ -225,10 +200,8 @@ class ActionScheduler_ListTable
      * @param string $ids_sql Inherited and unused.
      */
     protected function bulk_delete(array $ids, $ids_sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Implements the logic behind running an action. ActionScheduler_Abstract_ListTable validates the request and their
      * parameters are valid.
@@ -236,10 +209,8 @@ class ActionScheduler_ListTable
      * @param int $action_id Action ID.
      */
     protected function row_action_cancel($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Implements the logic behind running an action. ActionScheduler_Abstract_ListTable validates the request and their
      * parameters are valid.
@@ -247,18 +218,14 @@ class ActionScheduler_ListTable
      * @param int $action_id Action ID.
      */
     protected function row_action_run($action_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Force the data store schema updates.
      */
     protected function recreate_tables()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Implements the logic behind processing an action once an action link is clicked on the list table.
      *
@@ -266,40 +233,30 @@ class ActionScheduler_ListTable
      * @param string $row_action_type The type of action to perform on the action.
      */
     protected function process_row_action($action_id, $row_action_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritDoc}
      */
     public function prepare_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the available statuses so the user can click to filter.
      */
     protected function display_filter_by_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the text to display in the search box on the list table.
      */
     protected function get_search_box_button_text()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritDoc}
      */
     protected function get_per_page_option_name()
-    {
-        // stub
-    }
-
+{
+}
 }

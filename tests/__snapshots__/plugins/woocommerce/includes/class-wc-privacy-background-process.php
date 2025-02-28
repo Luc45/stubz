@@ -9,10 +9,8 @@ class WC_Privacy_Background_Process
      * Initiate new background process.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Code to execute for each item in the queue
      *
@@ -20,8 +18,6 @@ class WC_Privacy_Background_Process
      * @return bool
      */
     protected function task($item)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -10,17 +10,14 @@ class WC_Structured_Data
      *
      * @var array $_data Array of structured data.
      */
-    private $_data = array (
-);
+    private $_data = array();
 
     /**
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets data.
      *
@@ -29,20 +26,16 @@ class WC_Structured_Data
      * @return bool
      */
     public function set_data($data, $reset = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets data.
      *
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Structures and returns data.
      *
@@ -58,20 +51,16 @@ class WC_Structured_Data
      * @return array
      */
     public function get_structured_data($types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data types for pages.
      *
      * @return array
      */
     protected function get_data_type_for_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes sure email structured data only outputs on non-plain text versions.
      *
@@ -80,10 +69,8 @@ class WC_Structured_Data
      * @param bool     $plain_text    Plain text email (default: false).
      */
     public function output_email_structured_data($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitizes, encodes and outputs structured data.
      *
@@ -91,10 +78,8 @@ class WC_Structured_Data
      * Hooked into `woocommerce_email_order_details` action hook.
      */
     public function output_structured_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates Product structured data.
      *
@@ -103,10 +88,8 @@ class WC_Structured_Data
      * @param WC_Product $product Product data (default: null).
      */
     public function generate_product_data($product = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates Review structured data.
      *
@@ -115,10 +98,8 @@ class WC_Structured_Data
      * @param WP_Comment $comment Comment data.
      */
     public function generate_review_data($comment)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates BreadcrumbList structured data.
      *
@@ -127,20 +108,16 @@ class WC_Structured_Data
      * @param WC_Breadcrumb $breadcrumbs Breadcrumb data.
      */
     public function generate_breadcrumblist_data($breadcrumbs)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates WebSite structured data.
      *
      * Hooked into `woocommerce_before_main_content` action hook.
      */
     public function generate_website_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates Order structured data.
      *
@@ -151,10 +128,8 @@ class WC_Structured_Data
      * @param bool     $plain_text    Plain text email (default: false).
      */
     public function generate_order_data($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a GTIN is valid.
      * A valid GTIN is a string containing 8,12,13 or 14 digits.
@@ -164,10 +139,8 @@ class WC_Structured_Data
      * @return bool True if valid. False otherwise.
      */
     public function is_valid_gtin($gtin)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a GTIN input removing everything except numbers.
      *
@@ -175,8 +148,6 @@ class WC_Structured_Data
      * @return string Empty string if no GTIN is provided or the string with the replacements.
      */
     public function prepare_gtin($gtin)
-    {
-        // stub
-    }
-
+{
+}
 }

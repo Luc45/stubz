@@ -31,10 +31,8 @@ class WC_Order_Item_Fee_Data_Store
      * @param WC_Order_Item_Fee $item Fee order item object.
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $id will be set.
@@ -43,8 +41,6 @@ class WC_Order_Item_Fee_Data_Store
      * @param WC_Order_Item_Fee $item Fee order item object.
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
 }

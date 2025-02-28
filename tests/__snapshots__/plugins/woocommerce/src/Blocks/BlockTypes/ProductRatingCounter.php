@@ -28,10 +28,8 @@ class ProductRatingCounter
      * @return array
      */
     protected function get_block_type_supports()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block's attributes.
      *
@@ -39,10 +37,8 @@ class ProductRatingCounter
      * @return array  Block attributes merged with defaults.
      */
     private function parse_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Overwrite parent method to prevent script registration.
      *
@@ -50,28 +46,22 @@ class ProductRatingCounter
      * phase because we want to load assets only if the block has the content.
      */
     protected function register_block_type_assets()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -81,8 +71,6 @@ class ProductRatingCounter
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

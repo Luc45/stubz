@@ -20,8 +20,6 @@ class MarketplaceServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

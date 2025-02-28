@@ -20,8 +20,6 @@ class AssignDefaultCategoryServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

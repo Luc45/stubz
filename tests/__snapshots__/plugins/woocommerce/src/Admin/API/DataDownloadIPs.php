@@ -30,10 +30,8 @@ class DataDownloadIPs
      * @since 3.5.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the download IPs matching the passed parameters.
      *
@@ -42,10 +40,8 @@ class DataDownloadIPs
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -55,10 +51,8 @@ class DataDownloadIPs
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -66,28 +60,22 @@ class DataDownloadIPs
      * @return array Links for the given object.
      */
     protected function prepare_links($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

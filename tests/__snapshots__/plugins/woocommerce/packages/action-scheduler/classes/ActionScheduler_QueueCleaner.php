@@ -40,20 +40,16 @@ class ActionScheduler_QueueCleaner
      * @param int                        $batch_size The batch size.
      */
     public function __construct(ActionScheduler_Store|null $store = null, $batch_size = 20)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default queue cleaner process used by queue runner.
      *
      * @return array
      */
     public function delete_old_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete selected actions limited by status and date.
      *
@@ -64,10 +60,8 @@ class ActionScheduler_QueueCleaner
      * @return array Actions deleted.
      */
     public function clean_actions(array $statuses_to_purge, DateTime $cutoff_date, $batch_size = null, $context = 'old')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete actions.
      *
@@ -77,10 +71,8 @@ class ActionScheduler_QueueCleaner
      * @return array Deleted action IDs.
      */
     private function delete_actions(array $actions_to_delete, $lifespan = null, $context = 'old')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unclaim pending actions that have not been run within a given time limit.
      *
@@ -90,10 +82,8 @@ class ActionScheduler_QueueCleaner
      * @param int $time_limit The number of seconds to allow a queue to run before unclaiming its pending actions. Default 300 (5 minutes).
      */
     public function reset_timeouts($time_limit = 300)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark actions that have been running for more than a given time limit as failed, based on
      * the assumption some uncatchable and unloggable fatal error occurred during processing.
@@ -104,28 +94,22 @@ class ActionScheduler_QueueCleaner
      * @param int $time_limit The number of seconds to allow an action to run before it is considered to have failed. Default 300 (5 minutes).
      */
     public function mark_failures($time_limit = 300)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do all of the cleaning actions.
      *
      * @param int $time_limit The number of seconds to use as the timeout and failure period. Default 300 (5 minutes).
      */
     public function clean($time_limit = 300)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the batch size for cleaning the queue.
      *
      * @return int
      */
     protected function get_batch_size()
-    {
-        // stub
-    }
-
+{
+}
 }

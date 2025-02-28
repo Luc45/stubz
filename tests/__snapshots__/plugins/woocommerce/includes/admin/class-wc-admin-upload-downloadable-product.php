@@ -9,10 +9,8 @@ class WC_Admin_Upload_Downloadable_Product
      * Add hooks.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change upload dir for downloadable files.
      *
@@ -20,10 +18,8 @@ class WC_Admin_Upload_Downloadable_Product
      * @return array
      */
     public function upload_dir($pathdata)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change filename for WooCommerce uploads and prepend unique chars for security.
      *
@@ -35,10 +31,8 @@ class WC_Admin_Upload_Downloadable_Product
      * @since 4.0
      */
     public function update_filename($full_filename, $ext, $dir)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change filename to append random text.
      *
@@ -48,16 +42,12 @@ class WC_Admin_Upload_Downloadable_Product
      * @return string Modified filename.
      */
     public function unique_filename($full_filename, $ext)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run a filter when uploading a downloadable product.
      */
     public function woocommerce_media_upload_downloadable_product()
-    {
-        // stub
-    }
-
+{
+}
 }

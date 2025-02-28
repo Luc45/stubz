@@ -11,5 +11,4 @@ interface BootableServiceProviderInterface
      * @return void
      */
     public function boot();
-
 }

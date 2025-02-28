@@ -20,20 +20,16 @@ class MobileMessagingHandler
      * @return ?string
      */
     public static function prepare_mobile_message(WC_Order $order, int|null $blog_id, DateTime $now, string $domain): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the closest date of last usage of any mobile app platform.
      *
      * @return ?DateTime
      */
     private static function get_closer_mobile_usage_date(): DateTime|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns last used date of specified mobile app platform.
      *
@@ -43,10 +39,8 @@ class MobileMessagingHandler
      * @return ?DateTime last used date of specified mobile app
      */
     private static function get_last_used_or_null(string $platform, array $mobile_usage): DateTime|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares message with a deep link to mobile payment.
      *
@@ -56,10 +50,8 @@ class MobileMessagingHandler
      * @return string formatted message
      */
     private static function accept_payment_message(int|null $blog_id, $domain): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares message with a deep link to manage order details.
      *
@@ -70,10 +62,8 @@ class MobileMessagingHandler
      * @return string formatted message
      */
     private static function manage_order_message(int $blog_id, int $order_id, string $domain): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares message with a deep link to learn more about mobile app.
      *
@@ -83,10 +73,8 @@ class MobileMessagingHandler
      * @return string formatted message
      */
     private static function no_app_message(int|null $blog_id, string $domain): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepares array of parameters used by WooCommerce.com for tracking.
      *
@@ -97,8 +85,6 @@ class MobileMessagingHandler
      * @return array
      */
     private static function prepare_utm_parameters(string $campaign, int|null $blog_id, string $domain): array
-    {
-        // stub
-    }
-
+{
+}
 }

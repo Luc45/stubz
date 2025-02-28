@@ -59,10 +59,8 @@ class Config
      * Config constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the configured source store.
      *
@@ -70,20 +68,16 @@ class Config
      * @throws \RuntimeException When source store is not configured.
      */
     public function get_source_store()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the configured source store.
      *
      * @param ActionScheduler_Store $store Source store object.
      */
     public function set_source_store(ActionScheduler_Store $store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the configured source logger.
      *
@@ -91,20 +85,16 @@ class Config
      * @throws \RuntimeException When source logger is not configured.
      */
     public function get_source_logger()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the configured source logger.
      *
      * @param ActionScheduler_Logger $logger Logger object.
      */
     public function set_source_logger(ActionScheduler_Logger $logger)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the configured destination store.
      *
@@ -112,20 +102,16 @@ class Config
      * @throws \RuntimeException When destination store is not configured.
      */
     public function get_destination_store()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the configured destination store.
      *
      * @param ActionScheduler_Store $store Action store object.
      */
     public function set_destination_store(ActionScheduler_Store $store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the configured destination logger.
      *
@@ -133,58 +119,46 @@ class Config
      * @throws \RuntimeException When destination logger is not configured.
      */
     public function get_destination_logger()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the configured destination logger.
      *
      * @param ActionScheduler_Logger $logger Logger object.
      */
     public function set_destination_logger(ActionScheduler_Logger $logger)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get flag indicating whether it's a dry run.
      *
      * @return bool
      */
     public function get_dry_run()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set flag indicating whether it's a dry run.
      *
      * @param bool $dry_run Dry run toggle.
      */
     public function set_dry_run($dry_run)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get progress bar object.
      *
      * @return ActionScheduler\WPCLI\ProgressBar
      */
     public function get_progress_bar()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set progress bar object.
      *
      * @param ActionScheduler\WPCLI\ProgressBar $progress_bar Progress bar object.
      */
     public function set_progress_bar(Action_Scheduler\WP_CLI\ProgressBar $progress_bar)
-    {
-        // stub
-    }
-
+{
+}
 }

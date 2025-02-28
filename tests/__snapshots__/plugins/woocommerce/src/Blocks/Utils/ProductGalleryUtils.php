@@ -24,12 +24,9 @@ class ProductGalleryUtils
      * @param bool   $crop_images Whether to crop images.
      * @return array
      */
-    public static function get_product_gallery_images($post_id, $size = 'full', $attributes = array (
-), $wrapper_class = '', $crop_images = false)
-    {
-        // stub
-    }
-
+    public static function get_product_gallery_images($post_id, $size = 'full', $attributes = array(), $wrapper_class = '', $crop_images = false)
+{
+}
     /**
      * Get the product gallery image IDs.
      *
@@ -39,10 +36,8 @@ class ProductGalleryUtils
      * @return array An array of unique image IDs for the product gallery.
      */
     public static function get_product_gallery_image_ids($product, $max_number_of_visible_images = 8, $only_visible = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the intermediate image sizes only when needed.
      *
@@ -51,10 +46,8 @@ class ProductGalleryUtils
      * @return void
      */
     public static function maybe_generate_intermediate_image($attachment_id, $size)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product image placeholder HTML.
      *
@@ -64,8 +57,6 @@ class ProductGalleryUtils
      * @return string
      */
     public static function get_product_image_placeholder_html($size, $attributes, $crop_images)
-    {
-        // stub
-    }
-
+{
+}
 }

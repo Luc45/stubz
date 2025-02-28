@@ -15,8 +15,6 @@ class SanitizationUtils
      * @return mixed       The array, all string keys will have been run through wp_kses.
      */
     public function wp_kses_array(array $array)
-    {
-        // stub
-    }
-
+{
+}
 }

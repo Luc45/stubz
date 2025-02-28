@@ -12,10 +12,8 @@ class WC_CLI_COM_Extension_Command
      * Registers a commands for managing WooCommerce.com extensions.
      */
     public static function register_commands()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Installs one or more plugins from wccom marketplace.
      *
@@ -63,8 +61,6 @@ class WC_CLI_COM_Extension_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public function install($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,5 +16,4 @@ interface WC_Order_Item_Type_Data_Store_Interface
      * @param WC_Order_Item $item Item object.
      */
     public function save_item_data(&$item);
-
 }

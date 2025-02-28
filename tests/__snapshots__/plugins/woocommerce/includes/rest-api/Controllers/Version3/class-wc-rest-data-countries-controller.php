@@ -28,10 +28,8 @@ class WC_REST_Data_Countries_Controller
      * @since 3.5.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of countries and states.
      *
@@ -40,10 +38,8 @@ class WC_REST_Data_Countries_Controller
      * @return array|mixed Response data, ready for insertion into collection data.
      */
     public function get_country($country_code, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of states for all countries.
      *
@@ -52,10 +48,8 @@ class WC_REST_Data_Countries_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of states for a given country.
      *
@@ -64,10 +58,8 @@ class WC_REST_Data_Countries_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -77,10 +69,8 @@ class WC_REST_Data_Countries_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -88,10 +78,8 @@ class WC_REST_Data_Countries_Controller
      * @return array Links for the given country.
      */
     protected function prepare_links($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the location schema, conforming to JSON Schema.
      *
@@ -99,8 +87,6 @@ class WC_REST_Data_Countries_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

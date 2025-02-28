@@ -17,38 +17,30 @@ class ExportWCShipping
      * @return SetWCShipping
      */
     public function export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the step.
      *
      * @return string
      */
     public function get_step_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return label used in the frontend.
      *
      * @return string
      */
     public function get_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return description used in the frontend.
      *
      * @return string
      */
     public function get_description()
-    {
-        // stub
-    }
-
+{
+}
 }

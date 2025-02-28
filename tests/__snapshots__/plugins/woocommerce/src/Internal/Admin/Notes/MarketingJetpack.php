@@ -36,26 +36,20 @@ class MarketingJetpack
      * Maybe add a note on Jetpack Backups for Jetpack sites older than a week without Backups.
      */
     public static function possibly_add_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the note.
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if this blog already has a Jetpack Backups product.
      *
      * @return boolean  Whether or not this blog has backups.
      */
     protected static function has_backups()
-    {
-        // stub
-    }
-
+{
+}
 }

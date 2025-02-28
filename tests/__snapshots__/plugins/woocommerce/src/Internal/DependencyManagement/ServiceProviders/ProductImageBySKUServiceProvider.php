@@ -20,8 +20,6 @@ class ProductImageBySKUServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

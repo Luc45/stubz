@@ -13,10 +13,8 @@ class Autoloader
      * Static-only class.
      */
     private function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Require the autoloader and return the result.
      *
@@ -25,16 +23,12 @@ class Autoloader
      * @return boolean
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the autoloader is missing, add an admin notice.
      */
     protected static function missing_autoloader()
-    {
-        // stub
-    }
-
+{
+}
 }

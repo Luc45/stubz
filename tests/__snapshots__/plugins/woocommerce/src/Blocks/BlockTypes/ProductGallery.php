@@ -26,20 +26,16 @@ class ProductGallery
      * to update the context for dialog rendering.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      *  Register the context
      *
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject the single productcontext into the dialog blocks.
      *
@@ -49,10 +45,8 @@ class ProductGallery
      * @return array The updated block context.
      */
     public function inject_dialog_context($context, $block, $parent_block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Inject dialog into the product gallery HTML.
      *
@@ -62,20 +56,16 @@ class ProductGallery
      * @return string
      */
     protected function inject_dialog($gallery_html, $dialog_html)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the dialog content.
      *
      * @return string
      */
     protected function render_dialog()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -85,8 +75,6 @@ class ProductGallery
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

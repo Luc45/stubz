@@ -24,16 +24,14 @@ class WC_Shipping
      *
      * @var array
      */
-    public $shipping_classes = array (
-);
+    public $shipping_classes = array();
 
     /**
      * Stores packages to ship and to get quotes for.
      *
      * @var array
      */
-    public $packages = array (
-);
+    public $packages = array();
 
     /**
      * The single instance of the class
@@ -52,30 +50,24 @@ class WC_Shipping
      * @return WC_Shipping Main instance
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cloning is forbidden.
      *
      * @since 2.1
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserializing instances of this class is forbidden.
      *
      * @since 2.1
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic getter.
      *
@@ -83,36 +75,28 @@ class WC_Shipping
      * @return mixed
      */
     public function __get($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize shipping.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize shipping.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Shipping methods register themselves by returning their main class name through the woocommerce_shipping_methods filter.
      *
      * @return array
      */
     public function get_shipping_method_class_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads all shipping methods which are hooked in.
      * If a $package is passed, some methods may add themselves conditionally and zones will be used.
@@ -120,12 +104,9 @@ class WC_Shipping
      * @param array $package Package information.
      * @return WC_Shipping_Method[]
      */
-    public function load_shipping_methods($package = array (
-))
-    {
-        // stub
-    }
-
+    public function load_shipping_methods($package = array())
+{
+}
     /**
      * Register a shipping method.
      *
@@ -134,50 +115,39 @@ class WC_Shipping
      * @return bool|void
      */
     public function register_shipping_method($method)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unregister shipping methods.
      */
     public function unregister_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns all registered shipping methods for usage.
      *
      * @return WC_Shipping_Method[]
      */
     public function get_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an array of shipping classes.
      *
      * @return array
      */
     public function get_shipping_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping for (multiple) packages of cart items.
      *
      * @param array $packages multi-dimensional array of cart items to calc shipping for.
      * @return array Array of calculated packages.
      */
-    public function calculate_shipping($packages = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($packages = array())
+{
+}
     /**
      * See if package is shippable.
      *
@@ -187,10 +157,8 @@ class WC_Shipping
      * @return bool
      */
     public function is_package_shippable($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping rates for a package,
      *
@@ -201,40 +169,31 @@ class WC_Shipping
      *
      * @return array|bool
      */
-    public function calculate_shipping_for_package($package = array (
-), $package_key = 0)
-    {
-        // stub
-    }
-
+    public function calculate_shipping_for_package($package = array(), $package_key = 0)
+{
+}
     /**
      * Get packages.
      *
      * @return array
      */
     public function get_packages()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset shipping.
      *
      * Reset the totals for shipping as a whole.
      */
     public function reset_shipping()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deprecated
      *
      * @deprecated 2.6.0 Was previously used to determine sort order of methods, but this is now controlled by zones and thus unused.
      */
     public function sort_shipping_methods()
-    {
-        // stub
-    }
-
+{
+}
 }

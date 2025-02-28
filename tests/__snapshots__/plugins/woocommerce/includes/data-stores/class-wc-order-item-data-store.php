@@ -16,10 +16,8 @@ class WC_Order_Item_Data_Store
      * @return int Order Item ID
      */
     public function add_order_item($order_id, $item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update an order item.
      *
@@ -29,10 +27,8 @@ class WC_Order_Item_Data_Store
      * @return boolean
      */
     public function update_order_item($item_id, $item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an order item.
      *
@@ -40,10 +36,8 @@ class WC_Order_Item_Data_Store
      * @param  int $item_id Item ID.
      */
     public function delete_order_item($item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update term meta.
      *
@@ -55,10 +49,8 @@ class WC_Order_Item_Data_Store
      * @return bool
      */
     public function update_metadata($item_id, $meta_key, $meta_value, $prev_value = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add term meta.
      *
@@ -70,10 +62,8 @@ class WC_Order_Item_Data_Store
      * @return int    New row ID or 0
      */
     public function add_metadata($item_id, $meta_key, $meta_value, $unique = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete term meta.
      *
@@ -85,10 +75,8 @@ class WC_Order_Item_Data_Store
      * @return bool
      */
     public function delete_metadata($item_id, $meta_key, $meta_value = '', $delete_all = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get term meta.
      *
@@ -99,10 +87,8 @@ class WC_Order_Item_Data_Store
      * @return mixed
      */
     public function get_metadata($item_id, $key, $single = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order ID by order item ID.
      *
@@ -111,10 +97,8 @@ class WC_Order_Item_Data_Store
      * @return int
      */
     public function get_order_id_by_order_item_id($item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order item type based on Item ID.
      *
@@ -123,10 +107,8 @@ class WC_Order_Item_Data_Store
      * @return string|null Order item type or null if no order item entry found.
      */
     public function get_order_item_type($item_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear meta cache.
      *
@@ -134,8 +116,6 @@ class WC_Order_Item_Data_Store
      * @param int|null $order_id Order ID. If not set, it will be loaded using the item ID.
      */
     protected function clear_caches($item_id, $order_id)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -12,8 +12,7 @@ class SchemaController
      *
      * @var Schemas\V1\AbstractSchema[]
      */
-    protected $schemas = array (
-);
+    protected $schemas = array();
 
     /**
      * Stores Rest Extending instance
@@ -28,10 +27,8 @@ class SchemaController
      * @param ExtendSchema $extend Rest Extending instance.
      */
     public function __construct(Automattic\WooCommerce\StoreApi\Schemas\ExtendSchema $extend)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a schema class instance.
      *
@@ -42,8 +39,6 @@ class SchemaController
      * @return Schemas\V1\AbstractSchema A new instance of the requested schema.
      */
     public function get($name, $version = 1)
-    {
-        // stub
-    }
-
+{
+}
 }

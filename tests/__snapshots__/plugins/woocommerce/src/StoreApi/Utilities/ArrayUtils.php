@@ -16,10 +16,8 @@ class ArrayUtils
      * @return string a string containing a list of items and a natural language conjuction.
      */
     public static function natural_language_join($array, $enclose_items_with_quotes = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a string contains any of the items in an array.
      *
@@ -29,8 +27,6 @@ class ArrayUtils
      * @return bool true if the string contains any of the items in the array, false otherwise.
      */
     public static function string_contains_array($needle, $haystack)
-    {
-        // stub
-    }
-
+{
+}
 }

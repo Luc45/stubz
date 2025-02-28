@@ -14,41 +14,29 @@ class SqlQuery
      */
     private $sql_clauses = array (
   'select' => 
-  array (
-  ),
+  array(),
   'from' => 
-  array (
-  ),
+  array(),
   'left_join' => 
-  array (
-  ),
+  array(),
   'join' => 
-  array (
-  ),
+  array(),
   'right_join' => 
-  array (
-  ),
+  array(),
   'where' => 
-  array (
-  ),
+  array(),
   'where_time' => 
-  array (
-  ),
+  array(),
   'group_by' => 
-  array (
-  ),
+  array(),
   'having' => 
-  array (
-  ),
+  array(),
   'limit' => 
-  array (
-  ),
+  array(),
   'order_by' => 
-  array (
-  ),
+  array(),
   'union' => 
-  array (
-  ),
+  array(),
 );
 
     /**
@@ -83,10 +71,8 @@ class SqlQuery
      * @param string $context Optional context passed to filters. Default empty string.
      */
     public function __construct($context = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a SQL clause to be included when get_data is called.
      *
@@ -94,10 +80,8 @@ class SqlQuery
      * @param string $clause SQL clause.
      */
     public function add_sql_clause($type, $clause)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get SQL clause by type.
      *
@@ -107,20 +91,16 @@ class SqlQuery
      * @return string SQL clause.
      */
     protected function get_sql_clause($type, $handling = 'unfiltered')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear SQL clauses by type.
      *
      * @param string|array $types Clause type.
      */
     protected function clear_sql_clause($types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replace strings within SQL clauses by type.
      *
@@ -129,26 +109,20 @@ class SqlQuery
      * @param string $replace Replacement string.
      */
     protected function str_replace_clause($type, $search, $replace)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the full SQL statement.
      *
      * @return string
      */
     public function get_query_statement()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reinitialize the clause array.
      */
     public function clear_all_clauses()
-    {
-        // stub
-    }
-
+{
+}
 }

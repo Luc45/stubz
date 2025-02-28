@@ -8,8 +8,6 @@ namespace AjaxHandlersScenario;
 class AjaxMain
 {
     public function init(): void
-    {
-        // stub
-    }
-
+{
+}
 }

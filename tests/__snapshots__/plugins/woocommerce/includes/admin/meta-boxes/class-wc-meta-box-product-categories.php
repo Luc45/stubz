@@ -23,8 +23,6 @@ class WC_Meta_Box_Product_Categories
      * }
      */
     public static function output($post, $box)
-    {
-        // stub
-    }
-
+{
+}
 }

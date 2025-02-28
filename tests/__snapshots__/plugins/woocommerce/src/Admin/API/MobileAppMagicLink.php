@@ -30,18 +30,14 @@ class MobileAppMagicLink
      * @since 7.0.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sends request to generate magic link email.
      *
      * @return \WP_REST_Response|\WP_Error
      */
     public function send_magic_link()
-    {
-        // stub
-    }
-
+{
+}
 }

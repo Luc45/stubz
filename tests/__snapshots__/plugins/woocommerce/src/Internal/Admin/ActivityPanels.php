@@ -18,18 +18,14 @@ class ActivityPanels
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds fields so that we can store activity panel last read and open times.
      *
@@ -37,18 +33,14 @@ class ActivityPanels
      * @return array
      */
     public function add_user_data_fields($user_data_fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add alert count to the component settings.
      *
      * @param array $settings Component settings.
      */
     public function component_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
 }

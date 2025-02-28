@@ -20,18 +20,14 @@ class NewSalesRecord
      * @return floatval
      */
     public static function sum_sales_for_date($date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Possibly add a sales record note.
      */
     public static function possibly_add_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the note with record data.
      *
@@ -43,18 +39,14 @@ class NewSalesRecord
      * @return Note
      */
     public static function get_note_with_record_data($record_date, $record_amt, $yesterday, $total)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the note. This is used for localizing the note.
      *
      * @return Note
      */
     public static function get_note()
-    {
-        // stub
-    }
-
+{
+}
 }

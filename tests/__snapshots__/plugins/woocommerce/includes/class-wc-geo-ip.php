@@ -1191,10 +1191,8 @@ class WC_Geo_IP
      *     emergency|alert|critical|error|warning|notice|info|debug
      */
     public static function log($message, $level = 'info')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Open geoip file.
      *
@@ -1202,30 +1200,24 @@ class WC_Geo_IP
      * @param int    $flags
      */
     public function geoip_open($filename, $flags)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setup segments.
      *
      * @return WC_Geo_IP instance
      */
     private function _setup_segments()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Close geoip file.
      *
      * @return bool
      */
     public function geoip_close()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Common get record.
      *
@@ -1233,10 +1225,8 @@ class WC_Geo_IP
      * @return WC_Geo_IP_Record instance
      */
     private function _common_get_record($seek_country)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get record.
      *
@@ -1244,10 +1234,8 @@ class WC_Geo_IP
      * @return WC_Geo_IP_Record instance
      */
     private function _get_record($ipnum)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Seek country IPv6.
      *
@@ -1255,10 +1243,8 @@ class WC_Geo_IP
      * @return string
      */
     public function _geoip_seek_country_v6($ipnum)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Seek country.
      *
@@ -1266,10 +1252,8 @@ class WC_Geo_IP
      * @return string
      */
     private function _geoip_seek_country($ipnum)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Record by addr.
      *
@@ -1278,10 +1262,8 @@ class WC_Geo_IP
      * @return WC_Geo_IP_Record
      */
     public function geoip_record_by_addr($addr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Country ID by addr IPv6.
      *
@@ -1289,10 +1271,8 @@ class WC_Geo_IP
      * @return int|bool
      */
     public function geoip_country_id_by_addr_v6($addr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Country ID by addr.
      *
@@ -1300,10 +1280,8 @@ class WC_Geo_IP
      * @return int
      */
     public function geoip_country_id_by_addr($addr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Country code by addr IPv6.
      *
@@ -1311,10 +1289,8 @@ class WC_Geo_IP
      * @return string
      */
     public function geoip_country_code_by_addr_v6($addr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Country code by addr.
      *
@@ -1322,10 +1298,8 @@ class WC_Geo_IP
      * @return string
      */
     public function geoip_country_code_by_addr($addr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Encode string.
      *
@@ -1335,12 +1309,9 @@ class WC_Geo_IP
      * @return string
      */
     private function _safe_substr($string, $start, $length)
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * Geo IP Record class.
  */

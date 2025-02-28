@@ -8,9 +8,7 @@
  */
 function woocommerce_wp_text_input($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a hidden input box.
  *
@@ -19,9 +17,7 @@ function woocommerce_wp_text_input($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_hidden_input($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a textarea input box.
  *
@@ -30,9 +26,7 @@ function woocommerce_wp_hidden_input($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_textarea_input($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a checkbox input box.
  *
@@ -41,9 +35,7 @@ function woocommerce_wp_textarea_input($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_checkbox($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a select input box.
  *
@@ -52,9 +44,7 @@ function woocommerce_wp_checkbox($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_select($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a radio input box.
  *
@@ -63,9 +53,7 @@ function woocommerce_wp_select($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_radio($field, WC_Data|null $data = null)
 {
-    // stub
 }
-
 /**
  * Output a note.
  *
@@ -73,5 +61,4 @@ function woocommerce_wp_radio($field, WC_Data|null $data = null)
  */
 function woocommerce_wp_note($field)
 {
-    // stub
 }

@@ -19,11 +19,9 @@ class DownloadPermissionsAdjuster
      *
      * @internal
      */
-    public final function init()
-    {
-        // stub
-    }
-
+    final public function init()
+{
+}
     /**
      * Schedule a download permissions adjustment for a product if necessary.
      * This should be executed whenever a product is saved.
@@ -31,10 +29,8 @@ class DownloadPermissionsAdjuster
      * @param \WC_Product $product The product to schedule a download permission adjustments for.
      */
     public function maybe_schedule_adjust_download_permissions(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create additional download permissions for variations if necessary.
      *
@@ -51,10 +47,8 @@ class DownloadPermissionsAdjuster
      * @param int $product_id The id of the product to check permissions for.
      */
     public function adjust_download_permissions(int $product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the existing downloadable files and download permissions for a given product.
      * The returned value is an array with two keys:
@@ -66,8 +60,6 @@ class DownloadPermissionsAdjuster
      * @return array[] Information about the downloadable files and permissions for the product.
      */
     private function get_download_files_and_permissions(WC_Product $product)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -13,8 +13,6 @@ class DefaultMarketingRecommendations
      * @return array Default specs.
      */
     public static function get_all()
-    {
-        // stub
-    }
-
+{
+}
 }

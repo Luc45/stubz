@@ -13,20 +13,16 @@ class TransientNotices
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all notices in the queue.
      *
      * @return array
      */
     public static function get_queue()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all notices in the queue by a given user ID.
      *
@@ -34,10 +30,8 @@ class TransientNotices
      * @return array
      */
     public static function get_queue_by_user($user_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a notice by ID.
      *
@@ -45,10 +39,8 @@ class TransientNotices
      * @return array|null
      */
     public static function get($notice_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a notice to be shown.
      *
@@ -63,20 +55,16 @@ class TransientNotices
      *    ).
      */
     public static function add($notice)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a notice by ID.
      *
      * @param array $notice_id Notice of ID to remove.
      */
     public static function remove($notice_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Preload options to prime state of the application.
      *
@@ -84,8 +72,6 @@ class TransientNotices
      * @return array
      */
     public function preload_options($options)
-    {
-        // stub
-    }
-
+{
+}
 }

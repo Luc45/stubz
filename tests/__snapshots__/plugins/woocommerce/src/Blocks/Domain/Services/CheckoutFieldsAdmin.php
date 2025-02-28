@@ -20,18 +20,14 @@ class CheckoutFieldsAdmin
      * @param CheckoutFields $checkout_fields_controller Instance of the checkout field controller.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Domain\Services\CheckoutFields $checkout_fields_controller)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize hooks. This is not run Store API requests.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts the shape of a checkout field to match whats needed in the WooCommerce meta boxes.
      *
@@ -40,10 +36,8 @@ class CheckoutFieldsAdmin
      * @return array Formatted field.
      */
     protected function format_field_for_meta_box($field, $key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates a field value for an order.
      *
@@ -52,10 +46,8 @@ class CheckoutFieldsAdmin
      * @param \WC_Order $order The order to update the field for.
      */
     public function update_callback($key, $value, $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Injects address fields in WC admin orders screen.
      *
@@ -65,10 +57,8 @@ class CheckoutFieldsAdmin
      * @return array
      */
     public function admin_address_fields($fields, $order = null, $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Injects contact fields in WC admin orders screen.
      *
@@ -78,10 +68,8 @@ class CheckoutFieldsAdmin
      * @return array
      */
     public function admin_contact_fields($fields, $order = null, $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Injects additional fields in WC admin orders screen.
      *
@@ -91,8 +79,6 @@ class CheckoutFieldsAdmin
      * @return array
      */
     public function admin_order_fields($fields, $order = null, $context = 'edit')
-    {
-        // stub
-    }
-
+{
+}
 }

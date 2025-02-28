@@ -23,26 +23,19 @@ class AdditionalInformation
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Remove core hooks from the thankyou page.
      */
     protected function remove_core_hooks()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Restore core hooks from the thankyou page.
      */
     protected function restore_core_hooks()
-    {
-        // stub
-    }
-
+{
+}
 }

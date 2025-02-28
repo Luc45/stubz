@@ -21,10 +21,8 @@ class BlockTemplateUtils
      * @return string
      */
     private static function get_templates_directory($template_type = 'wp_template')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the path to a block template file.
      * Otherwise, False.
@@ -33,10 +31,8 @@ class BlockTemplateUtils
      * @return string|bool   Path to the template file or false.
      */
     public static function get_block_template_path($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template data from the headers.
      *
@@ -44,10 +40,8 @@ class BlockTemplateUtils
      * @return array              Template data.
      */
     public static function get_template_file_data($file_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template content from the file.
      *
@@ -55,8 +49,6 @@ class BlockTemplateUtils
      * @return string Content.
      */
     public static function get_template_content($file_path)
-    {
-        // stub
-    }
-
+{
+}
 }

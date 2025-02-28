@@ -29,10 +29,8 @@ class Transformer
      * @return array Transformed settings data.
      */
     public function transform(array $raw_settings): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Transform sections within a tab.
      *
@@ -41,10 +39,8 @@ class Transformer
      * @return array Transformed sections.
      */
     private function transform_sections(array $sections): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Transform settings within a section.
      *
@@ -53,10 +49,8 @@ class Transformer
      * @return array Transformed settings.
      */
     private function transform_section_settings(array $settings): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process individual setting.
      *
@@ -64,10 +58,8 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function process_setting(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the start of a new group.
      *
@@ -75,10 +67,8 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function handle_group_start(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the end of a group.
      *
@@ -86,20 +76,16 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function handle_group_end(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush current group to transformed settings.
      *
      * @param array $transformed_settings Transformed settings array.
      */
     private function flush_current_group(array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle checkbox setting and grouping.
      *
@@ -107,20 +93,16 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function handle_checkbox_setting(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Start a new checkbox group.
      *
      * @param array $setting Setting to add.
      */
     private function start_checkbox_group(array $setting): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * End current checkbox group.
      *
@@ -128,10 +110,8 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function end_checkbox_group(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle checkbox within a group.
      *
@@ -139,18 +119,14 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function handle_checkbox_group_item(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Flush current checkbox group to transformed settings.
      */
     private function flush_current_checkbox_group(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add setting to current context (group or root).
      *
@@ -158,26 +134,20 @@ class Transformer
      * @param array $transformed_settings Transformed settings array.
      */
     private function add_setting(array $setting, array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finalize the transformation process.
      *
      * @param array &$transformed_settings Transformed settings array.
      */
     private function finalize_transformation(array &$transformed_settings): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset the state to its initial values.
      */
     public function reset_state(): void
-    {
-        // stub
-    }
-
+{
+}
 }

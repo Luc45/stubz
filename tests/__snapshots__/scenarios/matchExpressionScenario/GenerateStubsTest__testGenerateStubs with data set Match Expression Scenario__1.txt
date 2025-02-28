@@ -8,13 +8,9 @@ namespace MatchExpressionScenario;
 class MatchCalculator
 {
     public function operation(string $operator, int $a, int $b): int
-    {
-        // stub
-    }
-
+{
+}
     public function describe(int|string $value): string
-    {
-        // stub
-    }
-
+{
+}
 }

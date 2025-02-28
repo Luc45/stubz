@@ -14,10 +14,8 @@ trait NoteTraits
      * @return bool Whether or not WooCommerce admin has been active for $seconds.
      */
     private static function wc_admin_active_for($seconds)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Test if WooCommerce Admin has been active within a pre-defined range.
      *
@@ -26,20 +24,16 @@ trait NoteTraits
      * @return bool Whether or not WooCommerce admin has been active within the range.
      */
     private static function is_wc_admin_active_in_date_range($range, $custom_start = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the note has been previously added.
      *
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function note_exists()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if a note can and should be added.
      *
@@ -47,46 +41,36 @@ trait NoteTraits
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function can_be_added()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the note if it passes predefined conditions.
      *
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function possibly_add_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Alias this method for backwards compatibility.
      *
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function add_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Should this note exist? (Default implementation is generous. Override as needed.)
      */
     public static function is_applicable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete this note if it is not applicable, unless has been soft-deleted or actioned already.
      */
     public static function delete_if_not_applicable()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Possibly delete the note, if it exists in the database. Note that this
      * is a hard delete, for where it doesn't make sense to soft delete or
@@ -95,20 +79,16 @@ trait NoteTraits
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function possibly_delete_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the note if it passes predefined conditions.
      *
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function possibly_update_note()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get if the note has been actioned.
      *
@@ -116,10 +96,8 @@ trait NoteTraits
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function has_note_been_actioned()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a note field of note1 if it's different from note2 with getter and setter.
      *
@@ -129,10 +107,8 @@ trait NoteTraits
      * @return bool True if the field was updated.
      */
     private static function update_note_field_if_changed($note1, $note2, $field_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert a value to array if it's a stdClass.
      *
@@ -140,8 +116,6 @@ trait NoteTraits
      * @return mixed
      */
     private static function possibly_convert_object_to_array($obj)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,10 +11,8 @@ class WC_Meta_Box_Product_Images
      * @param WP_Post $post
      */
     public static function output($post)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data.
      *
@@ -22,8 +20,6 @@ class WC_Meta_Box_Product_Images
      * @param WP_Post $post
      */
     public static function save($post_id, $post)
-    {
-        // stub
-    }
-
+{
+}
 }

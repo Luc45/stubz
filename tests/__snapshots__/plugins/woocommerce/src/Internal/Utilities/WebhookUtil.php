@@ -11,10 +11,8 @@ class WebhookUtil
      * Creates a new instance of the class.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whenever a user is deleted, re-assign their webhooks to the new user.
      *
@@ -30,10 +28,8 @@ class WebhookUtil
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function reassign_webhooks_to_new_user_id(int $old_user_id, int|null $new_user_id): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * When users are about to be deleted show an informative text if they have webhooks assigned.
      *
@@ -45,10 +41,8 @@ class WebhookUtil
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function maybe_render_user_with_webhooks_warning(WP_User $current_user, array $userids): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the ids of the webhooks assigned to a given user.
      *
@@ -56,10 +50,8 @@ class WebhookUtil
      * @return int[] Array of webhook ids.
      */
     private function get_webhook_ids_for_user(int $user_id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the count of webhooks that are configured to use the Legacy REST API to compose their payloads.
      *
@@ -68,8 +60,6 @@ class WebhookUtil
      * @return int
      */
     public function get_legacy_webhooks_count(bool $clear_cache = false): int
-    {
-        // stub
-    }
-
+{
+}
 }

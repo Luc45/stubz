@@ -24,20 +24,16 @@ class WC_Integration_MaxMind_Database_Service
      * @param string|null $database_prefix A prefix for the MaxMind database filename.
      */
     public function __construct($database_prefix)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches the path that the database should be stored.
      *
      * @return string The local database path.
      */
     public function get_database_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches the database from the MaxMind service.
      *
@@ -45,10 +41,8 @@ class WC_Integration_MaxMind_Database_Service
      * @return string|WP_Error The path to the database file or an error if invalid.
      */
     public function download_database($license_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetches the ISO country code associated with an IP address.
      *
@@ -56,8 +50,6 @@ class WC_Integration_MaxMind_Database_Service
      * @return string The country code for the IP address, or empty if not found.
      */
     public function get_iso_country_code_for_ip($ip_address)
-    {
-        // stub
-    }
-
+{
+}
 }

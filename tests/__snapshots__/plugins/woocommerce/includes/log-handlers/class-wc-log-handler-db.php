@@ -27,10 +27,8 @@ class WC_Log_Handler_DB
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a log entry to chosen file.
      *
@@ -43,20 +41,16 @@ class WC_Log_Handler_DB
      * @return bool True if write was successful.
      */
     protected static function add($timestamp, $level, $message, $source, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear all logs from the DB.
      *
      * @return bool True if flush was successful.
      */
     public static function flush()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear entries for a chosen handle/source.
      *
@@ -64,10 +58,8 @@ class WC_Log_Handler_DB
      * @return bool
      */
     public function clear($source)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete selected logs from DB.
      *
@@ -76,10 +68,8 @@ class WC_Log_Handler_DB
      * @return bool
      */
     public static function delete($log_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete all logs older than a defined timestamp.
      *
@@ -87,10 +77,8 @@ class WC_Log_Handler_DB
      * @param integer $timestamp Timestamp to delete logs before.
      */
     public static function delete_logs_before_timestamp($timestamp = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get appropriate source based on file name.
      *
@@ -99,8 +87,6 @@ class WC_Log_Handler_DB
      * @return string Text to use as log source. "" (empty string) if none is found.
      */
     protected static function get_log_source()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -34,58 +34,46 @@ class Configuration
      * Configuration constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize the site and user connection and registration.
      *
      * @return bool|\WP_Error
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify if the site should connect to Jetpack.
      *
      * @return bool
      */
     private function should_connect()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize Jetpack's connection feature within the WooCommerce Blocks plugin.
      *
      * @return void
      */
     private function enable_connection_feature()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the site with Jetpack.
      *
      * @return bool|\WP_Error
      */
     private function register_and_connect()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unregister the site with Jetpack.
      *
      * @return void
      */
     private function unregister_site()
-    {
-        // stub
-    }
-
+{
+}
 }

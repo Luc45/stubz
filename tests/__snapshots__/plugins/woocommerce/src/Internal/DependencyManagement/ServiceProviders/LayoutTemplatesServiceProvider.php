@@ -20,8 +20,6 @@ class LayoutTemplatesServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

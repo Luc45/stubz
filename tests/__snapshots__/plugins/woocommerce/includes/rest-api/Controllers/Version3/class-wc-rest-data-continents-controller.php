@@ -28,10 +28,8 @@ class WC_REST_Data_Continents_Controller
      * @since 3.5.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of countries and states for a given continent.
      *
@@ -41,10 +39,8 @@ class WC_REST_Data_Continents_Controller
      * @return array|mixed Response data, ready for insertion into collection data.
      */
     public function get_continent($continent_code, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of states for all continents.
      *
@@ -53,10 +49,8 @@ class WC_REST_Data_Continents_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of locations for a given continent.
      *
@@ -65,10 +59,8 @@ class WC_REST_Data_Continents_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -78,10 +70,8 @@ class WC_REST_Data_Continents_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -89,10 +79,8 @@ class WC_REST_Data_Continents_Controller
      * @return array Links for the given continent.
      */
     protected function prepare_links($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the location schema, conforming to JSON Schema.
      *
@@ -100,8 +88,6 @@ class WC_REST_Data_Continents_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

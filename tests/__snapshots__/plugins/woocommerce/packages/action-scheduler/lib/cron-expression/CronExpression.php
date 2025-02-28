@@ -67,10 +67,8 @@ class CronExpression implements \Stringable
     * @return CronExpression
     */
     public static function factory($expression, CronExpression_FieldFactory|null $fieldFactory = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse a CRON expression
      *
@@ -78,10 +76,8 @@ class CronExpression implements \Stringable
      * @param CronExpression_FieldFactory $fieldFactory Factory to create cron fields
      */
     public function __construct($expression, CronExpression_FieldFactory $fieldFactory)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set or change the CRON expression
      *
@@ -91,10 +87,8 @@ class CronExpression implements \Stringable
      * @throws InvalidArgumentException if not a valid CRON expression
      */
     public function setExpression($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set part of the CRON expression
      *
@@ -105,10 +99,8 @@ class CronExpression implements \Stringable
      * @throws InvalidArgumentException if the value is not valid for the part
      */
     public function setPart($position, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a next run date relative to the current date or a specific date
      *
@@ -126,10 +118,8 @@ class CronExpression implements \Stringable
      * @throws RuntimeException on too many iterations
      */
     public function getNextRunDate($currentTime = 'now', $nth = 0, $allowCurrentDate = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a previous run date relative to the current date or a specific date
      *
@@ -143,10 +133,8 @@ class CronExpression implements \Stringable
      * @see CronExpression::getNextRunDate
      */
     public function getPreviousRunDate($currentTime = 'now', $nth = 0, $allowCurrentDate = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get multiple run dates starting at the current date or a specific date
      *
@@ -159,10 +147,8 @@ class CronExpression implements \Stringable
      * @return array Returns an array of run dates
      */
     public function getMultipleRunDates($total, $currentTime = 'now', $invert = false, $allowCurrentDate = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all or part of the CRON expression
      *
@@ -173,20 +159,16 @@ class CronExpression implements \Stringable
      *      CRON expression, or NULL if the part was specified but not found
      */
     public function getExpression($part = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to output the full expression.
      *
      * @return string Full CRON expression
      */
     public function __toString()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the cron is due to run based on the current date or a
      * specific date.  This method assumes that the current number of
@@ -197,10 +179,8 @@ class CronExpression implements \Stringable
      * @return bool Returns TRUE if the cron is due to run or FALSE if not
      */
     public function isDue($currentTime = 'now')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the next or previous run date of the expression relative to a date
      *
@@ -214,8 +194,6 @@ class CronExpression implements \Stringable
      * @throws RuntimeException on too many iterations
      */
     protected function getRunDate($currentTime = null, $nth = 0, $invert = false, $allowCurrentDate = false)
-    {
-        // stub
-    }
-
+{
+}
 }

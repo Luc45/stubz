@@ -23,18 +23,14 @@ class WC_REST_Product_Categories_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Category schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

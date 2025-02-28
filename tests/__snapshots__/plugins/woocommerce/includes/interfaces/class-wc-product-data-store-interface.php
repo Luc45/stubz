@@ -16,7 +16,6 @@ interface WC_Product_Data_Store_Interface
      * @return array
      */
     public function get_on_sale_products();
-
     /**
      * Returns a list of product IDs ( id as key => parent as value) that are
      * featured. Uses get_posts instead of wc_get_products since we want
@@ -25,7 +24,6 @@ interface WC_Product_Data_Store_Interface
      * @return array
      */
     public function get_featured_product_ids();
-
     /**
      * Check if product sku is found for any other product IDs.
      *
@@ -34,7 +32,6 @@ interface WC_Product_Data_Store_Interface
      * @return bool
      */
     public function is_existing_sku($product_id, $sku);
-
     /**
      * Return product ID based on SKU.
      *
@@ -42,21 +39,18 @@ interface WC_Product_Data_Store_Interface
      * @return int
      */
     public function get_product_id_by_sku($sku);
-
     /**
      * Returns an array of IDs of products that have sales starting soon.
      *
      * @return array
      */
     public function get_starting_sales();
-
     /**
      * Returns an array of IDs of products that have sales which are due to end.
      *
      * @return array
      */
     public function get_ending_sales();
-
     /**
      * Find a matching (enabled) variation within a variable product.
      *
@@ -64,16 +58,13 @@ interface WC_Product_Data_Store_Interface
      * @param array      $match_attributes Array of attributes we want to try to match.
      * @return int Matching variation ID or 0.
      */
-    public function find_matching_product_variation($product, $match_attributes = array (
-));
-
+    public function find_matching_product_variation($product, $match_attributes = array());
     /**
      * Make sure all variations have a sort order set so they can be reordered correctly.
      *
      * @param int $parent_id Parent ID.
      */
     public function sort_all_product_variations($parent_id);
-
     /**
      * Return a list of related products (using data like categories and IDs).
      *
@@ -85,7 +76,6 @@ interface WC_Product_Data_Store_Interface
      * @return array
      */
     public function get_related_products($cats_array, $tags_array, $exclude_ids, $limit, $product_id);
-
     /**
      * Update a product's stock amount directly.
      *
@@ -96,7 +86,6 @@ interface WC_Product_Data_Store_Interface
      * @param string   $operation Either set, increase or decrease.
      */
     public function update_product_stock($product_id_with_stock, $stock_quantity = null, $operation = 'set');
-
     /**
      * Update a product's sale count directly.
      *
@@ -107,7 +96,6 @@ interface WC_Product_Data_Store_Interface
      * @param string   $operation Either set, increase or decrease.
      */
     public function update_product_sales($product_id, $quantity = null, $operation = 'set');
-
     /**
      * Get shipping class ID by slug.
      *
@@ -115,16 +103,13 @@ interface WC_Product_Data_Store_Interface
      * @return int|false
      */
     public function get_shipping_class_id_by_slug($slug);
-
     /**
      * Returns an array of products.
      *
      * @param array $args @see wc_get_products.
      * @return array
      */
-    public function get_products($args = array (
-));
-
+    public function get_products($args = array());
     /**
      * Get the product type based on product ID.
      *
@@ -132,5 +117,4 @@ interface WC_Product_Data_Store_Interface
      * @return bool|string
      */
     public function get_product_type($product_id);
-
 }

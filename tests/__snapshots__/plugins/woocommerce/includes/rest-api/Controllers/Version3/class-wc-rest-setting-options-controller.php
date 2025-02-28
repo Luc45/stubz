@@ -23,10 +23,8 @@ class WC_REST_Setting_Options_Controller
      * @return stdClass|WP_Error
      */
     public function get_setting($group_id, $setting_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for allowed keys for each setting response.
      *
@@ -34,10 +32,8 @@ class WC_REST_Setting_Options_Controller
      * @return boolean
      */
     public function allowed_setting_keys($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all settings in a group.
      *
@@ -45,10 +41,8 @@ class WC_REST_Setting_Options_Controller
      * @return array|WP_Error
      */
     public function get_group_settings($group_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of countries and states for use in the base location setting.
      *
@@ -56,18 +50,14 @@ class WC_REST_Setting_Options_Controller
      * @return array Array of states and countries.
      */
     private function get_countries_and_states()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the settings schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -29,10 +29,8 @@ class WooSubscriptionsNotes
      * Hook all the things.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reacts to changes in the helper option.
      *
@@ -40,64 +38,50 @@ class WooSubscriptionsNotes
      * @param array $value The new value of the option.
      */
     public function update_option_woocommerce_helper_data($old_value, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs on `admin_head` hook. Checks the connection and refreshes subscription notes on relevant pages.
      */
     public function admin_head()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks the connection. Adds a note (as necessary) if there is no connection.
      */
     public function check_connection()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether or not we think the site is currently connected to WooCommerce.com.
      *
      * @return bool
      */
     public function is_connected()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the WooCommerce.com provided site ID for this site.
      *
      * @return int|false
      */
     public function get_connected_site_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of product_ids whose subscriptions are active on this site.
      *
      * @return array
      */
     public function get_subscription_active_product_ids()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clears all connection or subscription notes.
      */
     public function remove_notes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the product_id (if any) associated with a note.
      *
@@ -105,18 +89,14 @@ class WooSubscriptionsNotes
      * @return int|false
      */
     public function get_product_id_from_subscription_note(&$note)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes notes for product_ids no longer active on this site.
      */
     public function prune_inactive_subscription_notes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finds a note for a given product ID, if the note exists at all.
      *
@@ -124,46 +104,36 @@ class WooSubscriptionsNotes
      * @return Note|false
      */
     public function find_note_for_product_id($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes a note for a given product ID, if the note exists at all.
      *
      * @param int $product_id The product ID to search for.
      */
     public function delete_any_note_for_product_id($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds or updates a note for an expiring subscription.
      *
      * @param array $subscription The subscription to work with.
      */
     public function add_or_update_subscription_expiring($subscription)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds a note for an expired subscription, or updates an expiring note to expired.
      *
      * @param array $subscription The subscription to work with.
      */
     public function add_or_update_subscription_expired($subscription)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * For each active subscription on this site, checks the expiration date and creates/updates/deletes notes.
      */
     public function refresh_subscription_notes()
-    {
-        // stub
-    }
-
+{
+}
 }

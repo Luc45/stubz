@@ -27,8 +27,7 @@ class Container
     /**
      * @var ContainerInterface[]
      */
-    protected $delegates = array (
-);
+    protected $delegates = array();
 
     /**
      * Construct.
@@ -38,10 +37,8 @@ class Container
      * @param InflectorAggregateInterface|null       $inflectors
      */
     public function __construct(Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionAggregateInterface|null $definitions = null, Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderAggregateInterface|null $providers = null, Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorAggregateInterface|null $inflectors = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an item to the container.
      *
@@ -52,10 +49,8 @@ class Container
      * @return DefinitionInterface
      */
     public function add(string $id, $concrete = null, bool|null $shared = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Proxy to add with shared as true.
      *
@@ -65,10 +60,8 @@ class Container
      * @return DefinitionInterface
      */
     public function share(string $id, $concrete = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether the container should default to defining shared definitions.
      *
@@ -77,10 +70,8 @@ class Container
      * @return self
      */
     public function defaultToShared(bool $shared = true): Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a definition to extend.
      *
@@ -89,10 +80,8 @@ class Container
      * @return DefinitionInterface
      */
     public function extend(string $id): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a service provider.
      *
@@ -101,26 +90,20 @@ class Container
      * @return self
      */
     public function addServiceProvider($provider): self
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function get($id, bool $new = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function has($id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Allows for manipulation of specific types on resolution.
      *
@@ -130,10 +113,8 @@ class Container
      * @return InflectorInterface
      */
     public function inflector(string $type, callable|null $callback = null): Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delegate a backup container to be checked for services if it
      * cannot be resolved via this container.
@@ -143,8 +124,6 @@ class Container
      * @return self
      */
     public function delegate(Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface $container): self
-    {
-        // stub
-    }
-
+{
+}
 }

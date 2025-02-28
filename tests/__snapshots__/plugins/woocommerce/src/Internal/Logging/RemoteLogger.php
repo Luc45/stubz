@@ -36,10 +36,8 @@ class RemoteLogger
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted log data to be sent to the remote logging service.
      *
@@ -53,12 +51,9 @@ class RemoteLogger
      *
      * @return array Formatted log data ready to be sent to the remote logging service.
      */
-    public function get_formatted_log($level, $message, $context = array (
-))
-    {
-        // stub
-    }
-
+    public function get_formatted_log($level, $message, $context = array())
+{
+}
     /**
      * Determines if remote logging is allowed based on the following conditions:
      *
@@ -70,10 +65,8 @@ class RemoteLogger
      * @return bool
      */
     public function is_remote_logging_allowed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether to handle or ignore log.
      *
@@ -84,10 +77,8 @@ class RemoteLogger
      * @return bool True if the log should be handled.
      */
     protected function should_handle($level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send the log to the remote logging service.
      *
@@ -99,40 +90,32 @@ class RemoteLogger
      * @return bool
      */
     private function log($level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the store is allowed to log based on the variant assignment percentage.
      *
      * @return bool
      */
     private function is_variant_assignment_allowed()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the current WooCommerce version is the latest.
      *
      * @return bool
      */
     private function should_current_version_be_logged()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the current WooCommerce version reliably through a series of fallbacks
      *
      * @return string The current WooCommerce version.
      */
     private function get_wc_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the error exclusively contains third-party stack frames for fatal-errors source context.
      *
@@ -142,20 +125,16 @@ class RemoteLogger
      * @return bool
      */
     protected function is_third_party_error(string $message, array $context): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fetch the new version of WooCommerce from the WordPress API.
      *
      * @return string|null New version if an update is available, null otherwise.
      */
     private function fetch_new_woocommerce_version()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the content to exclude sensitive data.
      *
@@ -177,10 +156,8 @@ class RemoteLogger
      * @return string The sanitized content.
      */
     private function sanitize($content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalize file paths by replacing absolute paths with relative ones.
      *
@@ -189,10 +166,8 @@ class RemoteLogger
      * @return string The content with normalized paths.
      */
     private function normalize_paths(string $content): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the error trace to exclude sensitive data.
      *
@@ -200,10 +175,8 @@ class RemoteLogger
      * @return string The sanitized trace.
      */
     private function sanitize_trace($trace): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Redact potential user data from the content.
      *
@@ -211,10 +184,8 @@ class RemoteLogger
      * @return string The redacted message.
      */
     private function redact_user_data($content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the current environment is development or local.
      *
@@ -223,10 +194,8 @@ class RemoteLogger
      * @return bool
      */
     protected function is_dev_or_local_environment()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize the request URI to only allow certain query parameters.
      *
@@ -234,10 +203,8 @@ class RemoteLogger
      * @return string The sanitized request URI.
      */
     private function sanitize_request_uri($request_uri)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build a URL from its parsed components.
      *
@@ -245,8 +212,6 @@ class RemoteLogger
      * @return string The built URL.
      */
     private function build_url($parsed_url)
-    {
-        // stub
-    }
-
+{
+}
 }

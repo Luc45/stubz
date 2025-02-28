@@ -18,28 +18,22 @@ class ImportSetWCPaymentGateways
      * @return StepProcessorResult
      */
     public function process($schema): Automattic\WooCommerce\Blueprint\StepProcessorResult
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the payment gateways resgietered in WooCommerce
      *
      * @return string
      */
     public function get_wc_payment_gateways()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the class name for the step.
      *
      * @return string
      */
     public function get_step_class(): string
-    {
-        // stub
-    }
-
+{
+}
 }

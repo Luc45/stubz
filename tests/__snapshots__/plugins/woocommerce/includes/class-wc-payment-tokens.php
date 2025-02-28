@@ -20,10 +20,8 @@ class WC_Payment_Tokens
      * @return WC_Payment_Token[]
      */
     public static function get_tokens($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of payment token objects associated with the passed customer ID.
      *
@@ -33,10 +31,8 @@ class WC_Payment_Tokens
      * @return WC_Payment_Token[]  Array of token objects.
      */
     public static function get_customer_tokens($customer_id, $gateway_id = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a customers default token or NULL if there is no default token.
      *
@@ -45,10 +41,8 @@ class WC_Payment_Tokens
      * @return WC_Payment_Token|null
      */
     public static function get_customer_default_token($customer_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of payment token objects associated with the passed order ID.
      *
@@ -57,10 +51,8 @@ class WC_Payment_Tokens
      * @return WC_Payment_Token[] Array of token objects.
      */
     public static function get_order_tokens($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a token object by ID.
      *
@@ -71,10 +63,8 @@ class WC_Payment_Tokens
      * @return null|WC_Payment_Token Returns a valid payment token or null if no token can be found.
      */
     public static function get($token_id, $token_result = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove a payment token from the database by ID.
      *
@@ -82,10 +72,8 @@ class WC_Payment_Tokens
      * @param int $token_id Token ID.
      */
     public static function delete($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loops through all of a users payment tokens and sets is_default to false for all but a specific token.
      *
@@ -94,10 +82,8 @@ class WC_Payment_Tokens
      * @param int $token_id The ID of the token that should be default.
      */
     public static function set_users_default($user_id, $token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns what type (credit card, echeck, etc) of token a token is by ID.
      *
@@ -106,10 +92,8 @@ class WC_Payment_Tokens
      * @return string        Type.
      */
     public static function get_token_type_by_id($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get classname based on token type.
      *
@@ -118,8 +102,6 @@ class WC_Payment_Tokens
      * @return string
      */
     protected static function get_token_classname($type)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,5 +16,4 @@ interface DataStoreInterface
      * @return stdClass|WP_Error
      */
     public function get_data($args);
-
 }

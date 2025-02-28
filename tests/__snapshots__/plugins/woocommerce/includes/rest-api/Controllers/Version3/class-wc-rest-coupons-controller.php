@@ -22,8 +22,6 @@ class WC_REST_Coupons_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
 }

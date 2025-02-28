@@ -25,10 +25,8 @@ class ImportSetWCTaxRates
      * @return StepProcessorResult
      */
     public function process($schema): Automattic\WooCommerce\Blueprint\StepProcessorResult
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a tax rate exists in the database.
      *
@@ -37,10 +35,8 @@ class ImportSetWCTaxRates
      * @return array|null The tax rate row if found, null otherwise.
      */
     protected function exist($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a tax rate to the database.
      *
@@ -48,10 +44,8 @@ class ImportSetWCTaxRates
      * @return int|false The tax rate ID if successfully added, false otherwise.
      */
     protected function add_rate($rate)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add a tax rate location to the database.
      *
@@ -59,18 +53,14 @@ class ImportSetWCTaxRates
      * @global \wpdb $wpdb WordPress database abstraction object.
      */
     public function add_location($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the class name for the step.
      *
      * @return string
      */
     public function get_step_class(): string
-    {
-        // stub
-    }
-
+{
+}
 }

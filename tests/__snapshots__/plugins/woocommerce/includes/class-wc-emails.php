@@ -10,8 +10,7 @@ class WC_Emails
      *
      * @var WC_Email[]
      */
-    public $emails = array (
-);
+    public $emails = array();
 
     /**
      * The single instance of the class
@@ -37,38 +36,30 @@ class WC_Emails
      * @return WC_Emails Main instance
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cloning is forbidden.
      *
      * @since 2.1
      */
     public function __clone()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Unserializing instances of this class is forbidden.
      *
      * @since 2.1
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook in all transactional emails.
      */
     public static function init_transactional_emails()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Queues transactional email so it's not sent in current request if enabled,
      * otherwise falls back to send now.
@@ -76,10 +67,8 @@ class WC_Emails
      * @param mixed ...$args Optional arguments.
      */
     public static function queue_transactional_email(...$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init the mailer instance and call the notifications for the current filter.
      *
@@ -88,12 +77,9 @@ class WC_Emails
      * @param string $filter Filter name.
      * @param array  $args Email args (default: []).
      */
-    public static function send_queued_transactional_email($filter = '', $args = array (
-))
-    {
-        // stub
-    }
-
+    public static function send_queued_transactional_email($filter = '', $args = array())
+{
+}
     /**
      * Init the mailer instance and call the notifications for the current filter.
      *
@@ -101,76 +87,59 @@ class WC_Emails
      *
      * @param array $args Email args (default: []).
      */
-    public static function send_transactional_email($args = array (
-))
-    {
-        // stub
-    }
-
+    public static function send_transactional_email($args = array())
+{
+}
     /**
      * Constructor for the email class hooks in all emails that can be sent.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init email classes.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the email classes - used in admin to load settings.
      *
      * @return WC_Email[]
      */
     public function get_emails()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get from name for email.
      *
      * @return string
      */
     public function get_from_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get from email address.
      *
      * @return string
      */
     public function get_from_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the email header.
      *
      * @param mixed $email_heading Heading for the email.
      */
     public function email_header($email_heading)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the email footer.
      */
     public function email_footer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replace placeholder text in strings.
      *
@@ -179,10 +148,8 @@ class WC_Emails
      * @return string         Email footer text with any replacements done.
      */
     public function replace_placeholders($string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter callback to replace {site_title} in email footer
      *
@@ -192,10 +159,8 @@ class WC_Emails
      * @return string         Email footer text with any replacements done.
      */
     public function email_footer_replace_site_title($string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wraps a message in the woocommerce mail template.
      *
@@ -206,10 +171,8 @@ class WC_Emails
      * @return string
      */
     public function wrap_message($email_heading, $message, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send the email.
      *
@@ -222,20 +185,16 @@ class WC_Emails
      */
     public function send($to, $subject, $message, $headers = 'Content-Type: text/html
 ', $attachments = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare and send the customer invoice email on demand.
      *
      * @param int|WC_Order $order Order instance or ID.
      */
     public function customer_invoice($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Customer new account welcome email.
      *
@@ -243,12 +202,9 @@ class WC_Emails
      * @param array $new_customer_data  New customer data.
      * @param bool  $password_generated If password is generated.
      */
-    public function customer_new_account($customer_id, $new_customer_data = array (
-), $password_generated = false)
-    {
-        // stub
-    }
-
+    public function customer_new_account($customer_id, $new_customer_data = array(), $password_generated = false)
+{
+}
     /**
      * Show the order details table
      *
@@ -258,10 +214,8 @@ class WC_Emails
      * @param string   $email         Email address.
      */
     public function order_details($order, $sent_to_admin = false, $plain_text = false, $email = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show order downloads in a table.
      *
@@ -272,10 +226,8 @@ class WC_Emails
      * @param string   $email         Email address.
      */
     public function order_downloads($order, $sent_to_admin = false, $plain_text = false, $email = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order meta to email templates.
      *
@@ -284,10 +236,8 @@ class WC_Emails
      * @param bool     $plain_text    If is plain text email.
      */
     public function order_meta($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is customer detail field valid?
      *
@@ -295,10 +245,8 @@ class WC_Emails
      * @return boolean
      */
     public function customer_detail_field_is_valid($field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Allows developers to add additional customer details to templates.
      *
@@ -309,10 +257,8 @@ class WC_Emails
      * @param bool     $plain_text    If is plain text email.
      */
     public function customer_details($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the email addresses.
      *
@@ -321,10 +267,8 @@ class WC_Emails
      * @param bool     $plain_text    If is plain text email.
      */
     public function email_addresses($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders any additional fields captured during block-based checkout.
      *
@@ -333,10 +277,8 @@ class WC_Emails
      * @param bool     $plain_text    If this is a plain text email.
      */
     public function additional_checkout_fields($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders any additional address fields captured during block-based checkout.
      *
@@ -346,70 +288,56 @@ class WC_Emails
      * @param bool     $plain_text    If this is a plain text email.
      */
     public function additional_address_fields($address_type, $order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get blog name formatted for emails.
      *
      * @return string
      */
     private function get_blogname()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get store address formatted for emails.
      *
      * @return string
      */
     private function get_store_address()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Force country display, used by WC_Emails::get_store address() method
      *
      * @return bool
      */
     public function get_store_address_force_country_display()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Low stock notification email.
      *
      * @param WC_Product $product Product instance.
      */
     public function low_stock($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * No stock notification email.
      *
      * @param WC_Product $product Product instance.
      */
     public function no_stock($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Backorder notification email.
      *
      * @param array $args Arguments.
      */
     public function backorder($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds Schema.org markup for order in JSON-LD format.
      *
@@ -422,8 +350,6 @@ class WC_Emails
      * @param bool     $plain_text    If is plain text email.
      */
     public function order_schema_markup($order, $sent_to_admin = false, $plain_text = false)
-    {
-        // stub
-    }
-
+{
+}
 }

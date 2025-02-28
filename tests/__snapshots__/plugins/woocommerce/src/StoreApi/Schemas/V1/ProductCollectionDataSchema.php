@@ -22,10 +22,8 @@ class ProductCollectionDataSchema
      * @return array
      */
     public function get_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format data.
      *
@@ -33,8 +31,6 @@ class ProductCollectionDataSchema
      * @return array
      */
     public function get_item_response($data)
-    {
-        // stub
-    }
-
+{
+}
 }

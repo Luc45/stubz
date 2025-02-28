@@ -61,8 +61,7 @@ class URL implements \Stringable
      *
      * @var array
      */
-    private $path_parts = array (
-);
+    private $path_parts = array();
 
     /**
      * The URL.
@@ -79,10 +78,8 @@ class URL implements \Stringable
      * @param string $url The URL (or filepath).
      */
     public function __construct(string $url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Makes all slashes forward slashes, converts filepaths to file:// URLs, and
      * other processing to help with comprehension of filepaths.
@@ -90,39 +87,31 @@ class URL implements \Stringable
      * @throws URLException If the URL is seriously malformed.
      */
     private function preprocess()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Simplifies the path if possible, by resolving directory traversals to the extent possible
      * without touching the filesystem.
      */
     private function process_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the processed URL as a string.
      *
      * @return string
      */
     public function __toString(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns all possible parent URLs for the current URL.
      *
      * @return string[]
      */
     public function get_all_parent_urls(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the parent URL.
      *
@@ -141,10 +130,8 @@ class URL implements \Stringable
      * @return string|false
      */
     public function get_parent_url(int $level = 1)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the processed URL.
      *
@@ -154,12 +141,9 @@ class URL implements \Stringable
      *
      * @return string
      */
-    public function get_url(array $component_overrides = array (
-)): string
-    {
-        // stub
-    }
-
+    public function get_url(array $component_overrides = array()): string
+{
+}
     /**
      * Outputs the path. Especially useful if it was a a regular filepath that was passed in originally.
      *
@@ -168,28 +152,22 @@ class URL implements \Stringable
      * @return string
      */
     public function get_path(string|null $path_override = null): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the URL or filepath was absolute.
      *
      * @return bool True if absolute, else false.
      */
     public function is_absolute(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if the URL or filepath was relative.
      *
      * @return bool True if relative, else false.
      */
     public function is_relative(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -14,8 +14,7 @@ class Formatters
      *
      * @var array
      */
-    private $formatters = array (
-);
+    private $formatters = array();
 
     /**
      * Get a new instance of a formatter class.
@@ -26,10 +25,8 @@ class Formatters
      * @return FormatterInterface Formatter class instance.
      */
     public function __get($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a formatter class for usage.
      *
@@ -37,8 +34,6 @@ class Formatters
      * @param string $class A formatter class name.
      */
     public function register($name, $class)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -70,70 +70,56 @@ class BlockPatterns
      * @param PTKPatternsStore $ptk_patterns_store An instance of PTKPatternsStore.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Domain\Package $package, Automattic\WooCommerce\Blocks\Patterns\PatternRegistry $pattern_registry, Automattic\WooCommerce\Blocks\Patterns\PTKPatternsStore $ptk_patterns_store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the Patterns dictionary.
      *
      * @return array|WP_Error
      */
     private function get_patterns_dictionary()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register block patterns from core.
      *
      * @return void
      */
     public function register_block_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets block pattern data from the cache if available
      *
      * @return array Block pattern data.
      */
     private function get_block_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets block pattern cache.
      *
      * @return array|false Returns an array of patterns if cache is found, otherwise false.
      */
     private function get_pattern_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets block pattern cache.
      *
      * @param array $patterns Block patterns data to set in cache.
      */
     private function set_pattern_cache(array $patterns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register patterns from the Patterns Toolkit.
      *
      * @return void
      */
     public function register_ptk_patterns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse prefixed categories from the PTK patterns into the actual WooCommerce categories.
      *
@@ -141,8 +127,6 @@ class BlockPatterns
      * @return array The parsed patterns.
      */
     private function parse_categories(array $patterns)
-    {
-        // stub
-    }
-
+{
+}
 }

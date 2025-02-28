@@ -193,8 +193,7 @@ class WC_Email
      *
      * @var array
      */
-    public $placeholders = array (
-);
+    public $placeholders = array();
 
     /**
      * Strings to find in subjects/headings.
@@ -202,8 +201,7 @@ class WC_Email
      * @deprecated 3.2.0 in favour of placeholders
      * @var array
      */
-    public $find = array (
-);
+    public $find = array();
 
     /**
      * Strings to replace in subjects/headings.
@@ -211,8 +209,7 @@ class WC_Email
      * @deprecated 3.2.0 in favour of placeholders
      * @var array
      */
-    public $replace = array (
-);
+    public $replace = array();
 
     /**
      * E-mail type: plain, html or multipart.
@@ -225,10 +222,8 @@ class WC_Email
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle multipart mail.
      *
@@ -236,10 +231,8 @@ class WC_Email
      * @return PHPMailer
      */
     public function handle_multipart($mailer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format email string.
      *
@@ -247,26 +240,20 @@ class WC_Email
      * @return string
      */
     public function format_string($string)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the locale to the store locale for customer emails to make sure emails are in the store language.
      */
     public function setup_locale()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Restore the locale to the default locale. Use after finished with setup_locale.
      */
     public function restore_locale()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
@@ -274,10 +261,8 @@ class WC_Email
      * @return string
      */
     public function get_default_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
@@ -285,10 +270,8 @@ class WC_Email
      * @return string
      */
     public function get_default_heading()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default content to show below main email content.
      *
@@ -296,10 +279,8 @@ class WC_Email
      * @return string
      */
     public function get_default_additional_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return content from the additional_content field.
      *
@@ -309,70 +290,56 @@ class WC_Email
      * @return string
      */
     public function get_additional_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email subject.
      *
      * @return string
      */
     public function get_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email heading.
      *
      * @return string
      */
     public function get_heading()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get valid recipients.
      *
      * @return string
      */
     public function get_recipient()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email headers.
      *
      * @return string
      */
     public function get_headers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email attachments.
      *
      * @return array
      */
     public function get_attachments()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return email type.
      *
      * @return string
      */
     public function get_email_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email content type.
      *
@@ -380,30 +347,24 @@ class WC_Email
      * @return string
      */
     public function get_content_type($default_content_type = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the email's title
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the email's description
      *
      * @return string
      */
     public function get_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Proxy to parent's get_option and attempt to localize the result using gettext.
      *
@@ -412,60 +373,48 @@ class WC_Email
      * @return string
      */
     public function get_option($key, $empty_value = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if this email is enabled and will be sent.
      *
      * @return bool
      */
     public function is_enabled()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if this email is manually sent
      *
      * @return bool
      */
     public function is_manual()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks if this email is customer focussed.
      *
      * @return bool
      */
     public function is_customer_email()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get WordPress blog name.
      *
      * @return string
      */
     public function get_blogname()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get email content.
      *
      * @return string
      */
     public function get_content()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply inline styles to dynamic content.
      *
@@ -476,10 +425,8 @@ class WC_Email
      * @return string
      */
     public function style_inline($content)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns CSS styles that should be included with all HTML e-mails, regardless of theme specific customizations.
      *
@@ -488,10 +435,8 @@ class WC_Email
      * @return string
      */
     protected function get_must_use_css_styles(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return if emogrifier library is supported.
      *
@@ -500,30 +445,24 @@ class WC_Email
      * @return bool
      */
     protected function supports_emogrifier()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the email content in plain text format.
      *
      * @return string
      */
     public function get_content_plain()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the email content in HTML format.
      *
      * @return string
      */
     public function get_content_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the from name for outgoing emails.
      *
@@ -531,10 +470,8 @@ class WC_Email
      * @return string
      */
     public function get_from_name($from_name = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the from address for outgoing emails.
      *
@@ -542,10 +479,8 @@ class WC_Email
      * @return string
      */
     public function get_from_address($from_email = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the object for the outgoing email.
      *
@@ -553,10 +488,8 @@ class WC_Email
      * @return void
      */
     public function set_object($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send an email.
      *
@@ -568,36 +501,28 @@ class WC_Email
      * @return bool success
      */
     public function send($to, $subject, $message, $headers, $attachments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Settings Form Fields - these are generic email options most will use.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Email type options.
      *
      * @return array
      */
     public function get_email_type_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Admin Panel Options Processing.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get template.
      *
@@ -605,10 +530,8 @@ class WC_Email
      * @return string
      */
     public function get_template($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save the email templates.
      *
@@ -617,10 +540,8 @@ class WC_Email
      * @param string $template_path Template path.
      */
     protected function save_template($template_code, $template_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the template file in the current theme.
      *
@@ -629,38 +550,30 @@ class WC_Email
      * @return string
      */
     public function get_theme_template_file($template)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Move template action.
      *
      * @param string $template_type Template type.
      */
     protected function move_template_action($template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete template action.
      *
      * @param string $template_type Template type.
      */
     protected function delete_template_action($template_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Admin actions.
      */
     protected function admin_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Admin Options.
      *
@@ -670,18 +583,14 @@ class WC_Email
      * @since 1.0.0
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clears the PhpMailer AltBody field, to prevent that content from leaking across emails.
      */
     private function clear_alt_body_field(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an option or transient for email preview.
      *
@@ -689,8 +598,6 @@ class WC_Email
      * @param mixed  $empty_value Value to use when option is empty.
      */
     private function get_option_or_transient(string $key, $empty_value = null)
-    {
-        // stub
-    }
-
+{
+}
 }

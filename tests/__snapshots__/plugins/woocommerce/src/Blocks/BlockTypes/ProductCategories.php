@@ -34,10 +34,8 @@ class ProductCategories
      * @return array
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the Product Categories List block.
      *
@@ -47,22 +45,17 @@ class ProductCategories
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of classes to apply to this block.
      *
      * @param array $attributes Block attributes. Default empty array.
      * @return string space-separated list of classes.
      */
-    protected function get_container_classes($attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_container_classes($attributes = array())
+{
+}
     /**
      * Get categories (terms) from the db.
      *
@@ -70,10 +63,8 @@ class ProductCategories
      * @return array
      */
     protected function get_categories($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build hierarchical tree of categories.
      *
@@ -82,10 +73,8 @@ class ProductCategories
      * @return array
      */
     protected function build_category_tree($categories, $children_only)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build hierarchical tree of categories by appending children in the tree.
      *
@@ -94,10 +83,8 @@ class ProductCategories
      * @return array
      */
     protected function fill_category_children($categories, $categories_by_parent)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the category list as a dropdown.
      *
@@ -107,10 +94,8 @@ class ProductCategories
      * @return string Rendered output.
      */
     protected function renderDropdown($categories, $attributes, $uid)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render dropdown options list.
      *
@@ -121,10 +106,8 @@ class ProductCategories
      * @return string Rendered output.
      */
     protected function renderDropdownOptions($categories, $attributes, $uid, $depth = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the category list as a list.
      *
@@ -135,10 +118,8 @@ class ProductCategories
      * @return string Rendered output.
      */
     protected function renderList($categories, $attributes, $uid, $depth = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render a list of terms.
      *
@@ -149,10 +130,8 @@ class ProductCategories
      * @return string Rendered output.
      */
     protected function renderListItems($categories, $attributes, $uid, $depth = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the category image html
      *
@@ -162,10 +141,8 @@ class ProductCategories
      * @return string
      */
     public function get_image_html($category, $attributes, $size = 'woocommerce_thumbnail')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the count, if displaying.
      *
@@ -174,8 +151,6 @@ class ProductCategories
      * @return string
      */
     protected function getCount($category, $attributes)
-    {
-        // stub
-    }
-
+{
+}
 }

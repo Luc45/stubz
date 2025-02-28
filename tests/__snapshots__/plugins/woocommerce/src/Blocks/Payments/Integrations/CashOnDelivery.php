@@ -29,66 +29,52 @@ final class CashOnDelivery
      * @param Api $asset_api An instance of Api.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Assets\Api $asset_api)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initializes the payment method type.
      */
     public function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns if this payment method should be active. If false, the scripts will not be enqueued.
      *
      * @return boolean
      */
     public function is_active()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return enable_for_virtual option.
      *
      * @return boolean True if store allows COD payment for orders containing only virtual products.
      */
     private function get_enable_for_virtual()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return enable_for_methods option.
      *
      * @return array Array of shipping methods (string ids) that allow COD. (If empty, all support COD.)
      */
     private function get_enable_for_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of scripts/handles to be registered for this payment method.
      *
      * @return array
      */
     public function get_payment_method_script_handles()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of key=>value pairs of data made available to the payment methods script.
      *
      * @return array
      */
     public function get_payment_method_data()
-    {
-        // stub
-    }
-
+{
+}
 }

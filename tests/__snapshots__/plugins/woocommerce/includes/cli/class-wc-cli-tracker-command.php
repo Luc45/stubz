@@ -12,10 +12,8 @@ class WC_CLI_Tracker_Command
      * Registers a command for showing WooCommerce Tracker snapshot data.
      */
     public static function register_commands()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dump tracker snapshot data to screen.
      *
@@ -35,8 +33,6 @@ class WC_CLI_Tracker_Command
      * @param array $assoc_args WP-CLI associative arguments.
      */
     public static function show_tracker_snapshot($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
 }

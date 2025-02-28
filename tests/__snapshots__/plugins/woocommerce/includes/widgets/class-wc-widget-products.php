@@ -9,10 +9,8 @@ class WC_Widget_Products
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query the products and return them.
      *
@@ -22,10 +20,8 @@ class WC_Widget_Products
      * @return WP_Query
      */
     public function get_products($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output widget.
      *
@@ -35,8 +31,6 @@ class WC_Widget_Products
      * @see WP_Widget
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
 }

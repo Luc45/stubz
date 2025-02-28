@@ -23,40 +23,32 @@ class PostToOrderAddressTableMigrator
      * @param string $type Type of address being migrated; 'billing' or 'shipping'.
      */
     public function __construct($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get schema config for wp_posts and wc_order_address table.
      *
      * @return array Config.
      */
     protected function get_schema_config(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get columns config.
      *
      * @return \string[][] Config.
      */
     protected function get_core_column_mapping(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get meta data config.
      *
      * @return \string[][] Config.
      */
     public function get_meta_column_config(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Additional WHERE clause to only fetch the addresses of the current type.
      *
@@ -64,10 +56,8 @@ class PostToOrderAddressTableMigrator
      * @return string The additional string for the WHERE clause.
      */
     protected function get_additional_where_clause_for_get_data_to_insert_or_update(array $entity_ids): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to generate where clause for fetching data for verification.
      *
@@ -76,8 +66,6 @@ class PostToOrderAddressTableMigrator
      * @return string WHERE clause.
      */
     protected function get_where_clause_for_verification($source_ids)
-    {
-        // stub
-    }
-
+{
+}
 }

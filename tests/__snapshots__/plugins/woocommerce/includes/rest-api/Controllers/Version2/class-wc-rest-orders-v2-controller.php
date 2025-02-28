@@ -41,17 +41,14 @@ class WC_REST_Orders_V2_Controller
      *
      * @var array
      */
-    protected $request = array (
-);
+    protected $request = array();
 
     /**
      * Register the routes for orders.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get object. Return false if object is not of required type.
      *
@@ -60,10 +57,8 @@ class WC_REST_Orders_V2_Controller
      * @return WC_Data|bool
      */
     protected function get_object($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read an item.
      *
@@ -71,10 +66,8 @@ class WC_REST_Orders_V2_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update an item.
      *
@@ -82,10 +75,8 @@ class WC_REST_Orders_V2_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete an item.
      *
@@ -93,10 +84,8 @@ class WC_REST_Orders_V2_Controller
      * @return bool|WP_Error
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Expands an order item to get its data.
      *
@@ -104,10 +93,8 @@ class WC_REST_Orders_V2_Controller
      * @return array
      */
     protected function get_order_item_data($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Merge the `$formatted_meta_data` `display_key` and `display_value` attribute values into the corresponding
      * {@link WC_Meta_Data}. Returns the merged array.
@@ -119,10 +106,8 @@ class WC_REST_Orders_V2_Controller
      * @return array
      */
     private function merge_meta_item_with_formatted_meta_display_attributes($meta_item, $formatted_meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * With HPOS, few internal meta keys such as _billing_address_index, _shipping_address_index are not considered internal anymore (since most internal keys were flattened into dedicated columns).
      *
@@ -133,10 +118,8 @@ class WC_REST_Orders_V2_Controller
      * @return array Filtered order meta data.
      */
     private function filter_internal_meta_keys($meta_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data.
      *
@@ -146,10 +129,8 @@ class WC_REST_Orders_V2_Controller
      * @return array
      */
     protected function get_formatted_item_data($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order output for response.
      *
@@ -159,10 +140,8 @@ class WC_REST_Orders_V2_Controller
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to prepare a single order object for response
      * (doesn't fire hooks, execute rest_ensure_response, or add links).
@@ -173,10 +152,8 @@ class WC_REST_Orders_V2_Controller
      * @since  9.5.0
      */
     protected function prepare_object_for_response_core($order, $request): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -185,10 +162,8 @@ class WC_REST_Orders_V2_Controller
      * @return array                   Links for the given post.
      */
     protected function prepare_links($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -197,10 +172,8 @@ class WC_REST_Orders_V2_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only return writable props from schema.
      *
@@ -208,10 +181,8 @@ class WC_REST_Orders_V2_Controller
      * @return bool
      */
     protected function filter_writable_props($schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order for create or update.
      *
@@ -220,10 +191,8 @@ class WC_REST_Orders_V2_Controller
      * @return WP_Error|WC_Data
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save an object data.
      *
@@ -234,10 +203,8 @@ class WC_REST_Orders_V2_Controller
      * @return WC_Data|WP_Error
      */
     protected function save_object($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update address.
      *
@@ -246,10 +213,8 @@ class WC_REST_Orders_V2_Controller
      * @param string   $type   Type of address; 'billing' or 'shipping'.
      */
     protected function update_address($order, $posted, $type = 'billing')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the product ID from the SKU or posted ID.
      *
@@ -259,10 +224,8 @@ class WC_REST_Orders_V2_Controller
      * @return int
      */
     protected function get_product_id($posted, $action = 'create')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set an item prop if the value was posted.
      *
@@ -271,10 +234,8 @@ class WC_REST_Orders_V2_Controller
      * @param array         $posted Request data.
      */
     protected function maybe_set_item_prop($item, $prop, $posted)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set item props if the values were posted.
      *
@@ -283,10 +244,8 @@ class WC_REST_Orders_V2_Controller
      * @param array         $posted Request data.
      */
     protected function maybe_set_item_props($item, $props, $posted)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maybe set item meta if posted.
      *
@@ -294,10 +253,8 @@ class WC_REST_Orders_V2_Controller
      * @param array         $posted Request data.
      */
     protected function maybe_set_item_meta_data($item, $posted)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update a line item.
      *
@@ -308,10 +265,8 @@ class WC_REST_Orders_V2_Controller
      * @throws WC_REST_Exception Invalid data, server error.
      */
     protected function prepare_line_items($posted, $action = 'create', $item = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update an order shipping method.
      *
@@ -322,10 +277,8 @@ class WC_REST_Orders_V2_Controller
      * @throws WC_REST_Exception Invalid data, server error.
      */
     protected function prepare_shipping_lines($posted, $action = 'create', $item = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update an order fee.
      *
@@ -336,10 +289,8 @@ class WC_REST_Orders_V2_Controller
      * @throws WC_REST_Exception Invalid data, server error.
      */
     protected function prepare_fee_lines($posted, $action = 'create', $item = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create or update an order coupon.
      *
@@ -350,10 +301,8 @@ class WC_REST_Orders_V2_Controller
      * @throws WC_REST_Exception Invalid data, server error.
      */
     protected function prepare_coupon_lines($posted, $action = 'create', $item = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper method to create/update order items.
      * When updating, the item ID provided is checked to ensure it is associated
@@ -365,10 +314,8 @@ class WC_REST_Orders_V2_Controller
      * @throws WC_REST_Exception If item ID is not associated with order.
      */
     protected function set_item($order, $item_type, $posted)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method to check if the resource ID associated with the provided item is null.
      * Items can be deleted by setting the resource ID to null.
@@ -377,40 +324,32 @@ class WC_REST_Orders_V2_Controller
      * @return bool True if the item resource ID is null, false otherwise.
      */
     protected function item_is_null($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order statuses without prefixes.
      *
      * @return array
      */
     protected function get_order_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Order's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get objects.
      *
@@ -418,8 +357,6 @@ class WC_REST_Orders_V2_Controller
      * @return array
      */
     protected function get_objects($query_args)
-    {
-        // stub
-    }
-
+{
+}
 }

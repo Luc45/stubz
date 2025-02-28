@@ -22,10 +22,8 @@ abstract class ActionScheduler_TimezoneHelper
      * @return ActionScheduler_DateTime
      */
     public static function set_local_timezone(DateTime $date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper to retrieve the timezone string for a site until a WP core method exists
      * (see https://core.trac.wordpress.org/ticket/24730).
@@ -41,10 +39,8 @@ abstract class ActionScheduler_TimezoneHelper
      * @return string PHP timezone string for the site or empty if no timezone string is available.
      */
     protected static function get_local_timezone_string($reset = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get timezone offset in seconds.
      *
@@ -52,10 +48,8 @@ abstract class ActionScheduler_TimezoneHelper
      * @return float
      */
     protected static function get_local_timezone_offset()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get local timezone.
      *
@@ -63,8 +57,6 @@ abstract class ActionScheduler_TimezoneHelper
      * @deprecated 2.1.0
      */
     public static function get_local_timezone($reset = false)
-    {
-        // stub
-    }
-
+{
+}
 }

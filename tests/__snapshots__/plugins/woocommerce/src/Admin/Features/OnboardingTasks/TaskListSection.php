@@ -42,8 +42,7 @@ class TaskListSection
      *
      * @var array
      */
-    public $task_names = array (
-);
+    public $task_names = array();
 
     /**
      * Parent task list.
@@ -58,30 +57,23 @@ class TaskListSection
      * @param array         $data Task list data.
      * @param TaskList|null $task_list Parent task list.
      */
-    public function __construct($data = array (
-), $task_list = null)
-    {
-        // stub
-    }
-
+    public function __construct($data = array(), $task_list = null)
+{
+}
     /**
      * Returns if section is complete.
      *
      * @return boolean;
      */
     private function is_complete()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list for use in JSON.
      *
      * @return array
      */
     public function get_json()
-    {
-        // stub
-    }
-
+{
+}
 }

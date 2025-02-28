@@ -8,18 +8,14 @@ namespace IntersectionTypesScenario;
 interface Identifiable
 {
     public function getId(): string;
-
 }
-
 /**
  * Interface that requires a getName() method returning a string.
  */
 interface Nameable
 {
     public function getName(): string;
-
 }
-
 /**
  * A class implementing both Identifiable and Nameable.
  */
@@ -30,26 +26,18 @@ class Person implements \IntersectionTypesScenario\Identifiable, \IntersectionTy
     private string $name;
 
     public function __construct(string $id, string $name)
-    {
-        // stub
-    }
-
-    public function getId(): string
-    {
-        // stub
-    }
-
-    public function getName(): string
-    {
-        // stub
-    }
-
+{
 }
-
+    public function getId(): string
+{
+}
+    public function getName(): string
+{
+}
+}
 /**
  * A function that accepts an object which is both Identifiable AND Nameable (intersection type).
  */
 function IntersectionTypesScenario\describeEntity(IntersectionTypesScenario\Identifiable&IntersectionTypesScenario\Nameable $entity): string
 {
-    // stub
 }

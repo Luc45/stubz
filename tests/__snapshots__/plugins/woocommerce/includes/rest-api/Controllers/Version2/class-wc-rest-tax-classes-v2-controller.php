@@ -19,10 +19,8 @@ class WC_REST_Tax_Classes_V2_Controller
      * Register the routes for tax classes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get one tax class.
      *
@@ -30,8 +28,6 @@ class WC_REST_Tax_Classes_V2_Controller
      * @return array
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -20,8 +20,6 @@ class CostOfGoodsSoldServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

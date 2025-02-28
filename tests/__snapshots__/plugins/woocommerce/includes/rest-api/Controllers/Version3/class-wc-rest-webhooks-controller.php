@@ -22,8 +22,6 @@ class WC_REST_Webhooks_Controller
      * @return string
      */
     protected function get_default_api_version()
-    {
-        // stub
-    }
-
+{
+}
 }

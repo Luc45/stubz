@@ -20,10 +20,8 @@ class ProductFilters
      * @return string[]
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -31,12 +29,9 @@ class ProductFilters
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Include and render the block.
      *
@@ -46,10 +41,8 @@ class ProductFilters
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get SVG icon markup for a given icon name.
      *
@@ -57,10 +50,8 @@ class ProductFilters
      * @return string SVG markup for the icon, or empty string if icon not found.
      */
     private function get_svg_icon(string $name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a unique navigation ID for the block.
      *
@@ -68,10 +59,8 @@ class ProductFilters
      * @return string - Unique navigation ID.
      */
     private function generate_navigation_id($block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse the filter parameters from the URL.
      * For now we only get the global query params from the URL. In the future,
@@ -81,8 +70,6 @@ class ProductFilters
      * @return array Parsed filter params.
      */
     private function get_filter_params($query_id)
-    {
-        // stub
-    }
-
+{
+}
 }

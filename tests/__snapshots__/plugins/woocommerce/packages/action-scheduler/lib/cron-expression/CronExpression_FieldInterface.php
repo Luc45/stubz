@@ -16,7 +16,6 @@ interface CronExpression_FieldInterface
      * @return bool Returns TRUE if satisfied, FALSE otherwise
      */
     public function isSatisfiedBy(DateTime $date, $value);
-
     /**
      * When a CRON expression is not satisfied, this method is used to increment
      * or decrement a DateTime object by the unit of the cron field
@@ -27,7 +26,6 @@ interface CronExpression_FieldInterface
      * @return CronExpression_FieldInterface
      */
     public function increment(DateTime $date, $invert = false);
-
     /**
      * Validates a CRON expression for a given field
      *
@@ -36,5 +34,4 @@ interface CronExpression_FieldInterface
      * @return bool Returns TRUE if valid, FALSE otherwise
      */
     public function validate($value);
-
 }

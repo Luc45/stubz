@@ -93,16 +93,14 @@ class DataStore
      *
      * @var array
      */
-    protected $column_types = array (
-);
+    protected $column_types = array();
 
     /**
      * SQL columns to select in the db query.
      *
      * @var array
      */
-    protected $report_columns = array (
-);
+    protected $report_columns = array();
 
     /**
      * Order by property, used in the cmp function.
@@ -123,8 +121,7 @@ class DataStore
      *
      * @var array
      */
-    private $limit_parameters = array (
-);
+    private $limit_parameters = array();
 
     /**
      * Data store context used to pass to filters.
@@ -175,8 +172,7 @@ class DataStore
      *
      * @var array
      */
-    protected $debug_cache_data = array (
-);
+    protected $debug_cache_data = array();
 
     /**
      * Class constructor.
@@ -184,10 +180,8 @@ class DataStore
      * @override SqlQuery::__construct()
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the data based on args.
      *
@@ -198,10 +192,8 @@ class DataStore
      * @return stdClass|WP_Error
      */
     public function get_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default query arguments to be used by get_data().
      * These defaults are only partially applied when used via REST API, as that has its own defaults.
@@ -209,18 +201,14 @@ class DataStore
      * @return array Query parameters.
      */
     public function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get table name from database class.
      */
     public static function get_db_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the report data based on normalized parameters.
      * Will be called by `get_data` if there is no data in cache.
@@ -230,18 +218,14 @@ class DataStore
      * @return stdClass|WP_Error Data object `{ totals: *, intervals: array, total: int, pages: int, page_no: int }`, or error.
      */
     public function get_noncached_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set table name from database class.
      */
     protected static function set_db_table_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether or not the report should use the caching layer.
      *
@@ -250,10 +234,8 @@ class DataStore
      * @return boolean Whether or not to utilize caching.
      */
     protected function should_use_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns string to be used as cache key for the data.
      *
@@ -261,10 +243,8 @@ class DataStore
      * @return string
      */
     protected function get_cache_key($params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper around Cache::get().
      *
@@ -272,10 +252,8 @@ class DataStore
      * @return mixed
      */
     protected function get_cached_data($cache_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wrapper around Cache::set().
      *
@@ -284,10 +262,8 @@ class DataStore
      * @return bool
      */
     protected function set_cached_data($cache_key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add cache debugging information to an enveloped API response.
      *
@@ -297,10 +273,8 @@ class DataStore
      * @return array
      */
     public function add_debug_cache_to_envelope($envelope, $response)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Compares two report data objects by pre-defined object property and ASC/DESC ordering.
      *
@@ -309,10 +283,8 @@ class DataStore
      * @return string
      */
     private function interval_cmp($a, $b)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sorts intervals according to user's request.
      *
@@ -323,10 +295,8 @@ class DataStore
      * @param string   $direction DESC/ASC.
      */
     protected function sort_intervals(&$data, $sort_by, $direction)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sorts array of arrays based on subarray key $sort_by.
      *
@@ -335,10 +305,8 @@ class DataStore
      * @param string $direction DESC/ASC.
      */
     protected function sort_array(&$arr, $sort_by, $direction)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills in interval gaps from DB with 0-filled objects.
      *
@@ -350,10 +318,8 @@ class DataStore
      * @return stdClass
      */
     protected function fill_in_missing_intervals($db_intervals, $start_datetime, $end_datetime, $time_interval, &$data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts input datetime parameters to local timezone. If there are no inputs from the user in query_args,
      * uses default from $defaults.
@@ -362,10 +328,8 @@ class DataStore
      * @param array $defaults Array of default values.
      */
     protected function normalize_timezones(&$query_args, $defaults)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Removes extra records from intervals so that only requested number of records get returned.
      *
@@ -378,10 +342,8 @@ class DataStore
      * @param string   $order ASC or DESC.
      */
     protected function remove_extra_records(&$data, $page_no, $items_per_page, $db_interval_count, $expected_interval_count, $order_by, $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns expected number of items on the page in case of date ordering.
      *
@@ -392,10 +354,8 @@ class DataStore
      * @return float|int
      */
     protected function expected_intervals_on_page($expected_interval_count, $items_per_page, $page_no)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if there are any intervals that need to be filled in the response.
      *
@@ -410,10 +370,8 @@ class DataStore
      * @return bool
      */
     protected function intervals_missing($expected_interval_count, $db_records, $items_per_page, $page_no, $order, $order_by, $intervals_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the LIMIT query part for Intervals query of the report.
      *
@@ -426,10 +384,8 @@ class DataStore
      * @param string $table_name Name of the db table relevant for the date constraint.
      */
     protected function update_intervals_sql_params(&$query_args, $db_interval_count, $expected_interval_count, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Casts strings returned from the database to appropriate data types for output.
      *
@@ -437,10 +393,8 @@ class DataStore
      * @return array|WP_Error
      */
     protected function cast_numbers($array)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a list of columns selected by the query_args formatted as a comma separated string.
      *
@@ -448,20 +402,16 @@ class DataStore
      * @return string
      */
     protected function selected_columns($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the excluded order statuses used when calculating reports.
      *
      * @return array
      */
     protected static function get_excluded_report_order_statuses()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maps order status provided by the user to the one used in the database.
      *
@@ -469,10 +419,8 @@ class DataStore
      * @return string
      */
     protected static function normalize_order_status($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Normalizes order_by clause to match to SQL query.
      *
@@ -480,10 +428,8 @@ class DataStore
      * @return string
      */
     protected function normalize_order_by($order_by)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates start and end dates for intervals so that they represent intervals' borders, not times when data in db were recorded.
      *
@@ -495,10 +441,8 @@ class DataStore
      * @param array    $intervals Array of intervals extracted from SQL db.
      */
     protected function update_interval_boundary_dates($start_datetime, $end_datetime, $time_interval, &$intervals)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change structure of intervals to form a correct response.
      *
@@ -507,10 +451,8 @@ class DataStore
      * @param array $intervals Time interval, e.g. day, week, month.
      */
     protected function create_interval_subtotals(&$intervals)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills WHERE clause of SQL request with date-related constraints.
      *
@@ -518,10 +460,8 @@ class DataStore
      * @param string $table_name Name of the db table relevant for the date constraint.
      */
     protected function add_time_period_sql_params($query_args, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills LIMIT clause of SQL request based on user supplied parameters.
      *
@@ -529,22 +469,17 @@ class DataStore
      * @return array
      */
     protected function get_limit_sql_params($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills LIMIT parameters of SQL request based on user supplied parameters.
      *
      * @param array $query_args Parameters supplied by the user.
      * @return array
      */
-    protected function get_limit_params($query_args = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_limit_params($query_args = array())
+{
+}
     /**
      * Generates a virtual table given a list of IDs.
      *
@@ -553,12 +488,9 @@ class DataStore
      * @param array $other_values Other values that must be contained in the virtual table.
      * @return array
      */
-    protected function get_ids_table($ids, $id_field, $other_values = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_ids_table($ids, $id_field, $other_values = array())
+{
+}
     /**
      * Returns a comma separated list of the fields in the `query_args`, if there aren't, returns `report_columns` keys.
      *
@@ -566,10 +498,8 @@ class DataStore
      * @return array
      */
     protected function get_fields($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a comma separated list of the field names prepared to be used for a selection after a join with `default_results`.
      *
@@ -578,22 +508,17 @@ class DataStore
      * @param array $outer_selections       Array of fields that are not selected in the inner query.
      * @return string
      */
-    protected function format_join_selections($fields, $default_results_fields, $outer_selections = array (
-))
-    {
-        // stub
-    }
-
+    protected function format_join_selections($fields, $default_results_fields, $outer_selections = array())
+{
+}
     /**
      * Fills ORDER BY clause of SQL request based on user supplied parameters.
      *
      * @param array $query_args Parameters supplied by the user.
      */
     protected function add_order_by_sql_params($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills FROM and WHERE clauses of SQL request for 'Intervals' section of data response based on user supplied parameters.
      *
@@ -601,10 +526,8 @@ class DataStore
      * @param string $table_name Name of the db table relevant for the date constraint.
      */
     protected function add_intervals_sql_params($query_args, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get join and where clauses for refunds based on user supplied parameters.
      *
@@ -612,10 +535,8 @@ class DataStore
      * @return array
      */
     protected function get_refund_subquery($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of products belonging to given categories.
      *
@@ -623,10 +544,8 @@ class DataStore
      * @return array|stdClass
      */
     protected function get_products_by_cat_ids($categories)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get WHERE filter by object ids subquery.
      *
@@ -640,10 +559,8 @@ class DataStore
      * @return string
      */
     protected function get_object_where_filter($select_table, $select_field, $filter_table, $filter_field, $compare, $id_list)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of ids of allowed products, based on query arguments from the user.
      *
@@ -651,10 +568,8 @@ class DataStore
      * @return array
      */
     protected function get_included_products_array($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of allowed products, based on query arguments from the user.
      *
@@ -662,10 +577,8 @@ class DataStore
      * @return string
      */
     protected function get_included_products($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of allowed variations, based on query arguments from the user.
      *
@@ -673,10 +586,8 @@ class DataStore
      * @return string
      */
     protected function get_included_variations($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded variations, based on query arguments from the user.
      *
@@ -684,10 +595,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_variations($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array of ids of disallowed products, based on query arguments from the user.
      *
@@ -695,10 +604,8 @@ class DataStore
      * @return array
      */
     protected function get_excluded_products_array($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded products, based on query arguments from the user.
      *
@@ -706,10 +613,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_products($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included categories, based on query arguments from the user.
      *
@@ -717,10 +622,8 @@ class DataStore
      * @return string
      */
     protected function get_included_categories($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included coupons, based on query arguments from the user.
      *
@@ -729,10 +632,8 @@ class DataStore
      * @return string
      */
     protected function get_included_coupons($query_args, $field = 'coupon_includes')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded coupons, based on query arguments from the user.
      *
@@ -740,10 +641,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_coupons($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included orders, based on query arguments from the user.
      *
@@ -751,10 +650,8 @@ class DataStore
      * @return string
      */
     protected function get_included_orders($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded orders, based on query arguments from the user.
      *
@@ -762,10 +659,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_orders($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included users, based on query arguments from the user.
      *
@@ -773,10 +668,8 @@ class DataStore
      * @return string
      */
     protected function get_included_users($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded users, based on query arguments from the user.
      *
@@ -784,10 +677,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_users($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns order status subquery to be used in WHERE SQL query, based on query arguments from the user.
      *
@@ -796,10 +687,8 @@ class DataStore
      * @return string
      */
     protected function get_status_subquery($query_args, $operator = 'AND')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order status SQL clauses if included in query.
      *
@@ -808,10 +697,8 @@ class DataStore
      * @param SqlQuery $sql_query  Query object.
      */
     protected function add_order_status_clause($query_args, $table_name, &$sql_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order by SQL clause if included in query.
      *
@@ -820,10 +707,8 @@ class DataStore
      * @return string Order by clause.
      */
     protected function add_order_by_clause($query_args, &$sql_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order by order SQL clause.
      *
@@ -831,10 +716,8 @@ class DataStore
      * @param SqlQuery $sql_query  Query object.
      */
     protected function add_orderby_order_clause($query_args, &$sql_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns customer subquery to be used in WHERE SQL query, based on query arguments from the user.
      *
@@ -842,10 +725,8 @@ class DataStore
      * @return string
      */
     protected function get_customer_subquery($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns product attribute subquery elements used in JOIN and WHERE clauses,
      * based on query arguments from the user.
@@ -854,10 +735,8 @@ class DataStore
      * @return array
      */
     protected function get_attribute_subqueries($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns logic operator for WHERE subclause based on 'match' query argument.
      *
@@ -865,10 +744,8 @@ class DataStore
      * @return string
      */
     protected function get_match_operator($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns filtered comma separated ids, based on query arguments from the user.
      *
@@ -878,16 +755,12 @@ class DataStore
      * @return string
      */
     protected function get_filtered_ids($query_args, $field, $separator = ',')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assign report columns once full table name has been assigned.
      */
     protected function assign_report_columns()
-    {
-        // stub
-    }
-
+{
+}
 }

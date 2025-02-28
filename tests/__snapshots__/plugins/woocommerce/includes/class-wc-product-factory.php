@@ -12,12 +12,9 @@ class WC_Product_Factory
      * @param array $deprecated Previously used to pass arguments to the factory, e.g. to force a type.
      * @return WC_Product|bool Product object or false if the product cannot be loaded.
      */
-    public function get_product($product_id = false, $deprecated = array (
-))
-    {
-        // stub
-    }
-
+    public function get_product($product_id = false, $deprecated = array())
+{
+}
     /**
      * Gets a product classname and allows filtering. Returns WC_Product_Simple if the class does not exist.
      *
@@ -27,10 +24,8 @@ class WC_Product_Factory
      * @return string
      */
     public static function get_product_classname($product_id, $product_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product type for a product.
      *
@@ -39,10 +34,8 @@ class WC_Product_Factory
      * @return string|false
      */
     public static function get_product_type($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a WC coding standards compliant class name e.g. WC_Product_Type_Class instead of WC_Product_type-class.
      *
@@ -50,10 +43,8 @@ class WC_Product_Factory
      * @return string|false
      */
     public static function get_classname_from_product_type($product_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product ID depending on what was passed.
      *
@@ -62,8 +53,6 @@ class WC_Product_Factory
      * @return int|bool false on failure
      */
     private function get_product_id($product)
-    {
-        // stub
-    }
-
+{
+}
 }

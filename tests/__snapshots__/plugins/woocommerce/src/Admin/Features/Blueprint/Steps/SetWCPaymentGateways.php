@@ -16,20 +16,16 @@ class SetWCPaymentGateways
      *
      * @var array $payment_gateways Array of payment gateways.
      */
-    protected array $payment_gateways = array (
-);
+    protected array $payment_gateways = array();
 
     /**
      * Constructor.
      *
      * @param array $payment_gateways Optional array of payment gateways.
      */
-    public function __construct(array $payment_gateways = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct(array $payment_gateways = array())
+{
+}
     /**
      * Add a payment gateway.
      *
@@ -39,20 +35,16 @@ class SetWCPaymentGateways
      * @param string $enabled Whether the payment gateway is enabled ('yes' or 'no').
      */
     public function add_payment_gateway($id, $title, $description, $enabled)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the step.
      *
      * @return string
      */
     public static function get_step_name(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the step.
      *
@@ -60,18 +52,14 @@ class SetWCPaymentGateways
      * @return array The schema array.
      */
     public static function get_schema($version = 1): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the JSON array for the step.
      *
      * @return array The JSON array.
      */
     public function prepare_json_array(): array
-    {
-        // stub
-    }
-
+{
+}
 }

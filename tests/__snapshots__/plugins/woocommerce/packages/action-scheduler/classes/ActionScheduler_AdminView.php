@@ -35,28 +35,22 @@ class ActionScheduler_AdminView
      * @codeCoverageIgnore
      */
     public static function instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize.
      *
      * @codeCoverageIgnore
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print system status report.
      */
     public function system_status_report()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers action-scheduler into WooCommerce > System status.
      *
@@ -64,10 +58,8 @@ class ActionScheduler_AdminView
      * @return array $tabs An associative array of tab key => label, including Action Scheduler's tabs
      */
     public function register_system_status_tab(array $tabs)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include Action Scheduler's administration under the Tools menu.
      *
@@ -76,36 +68,28 @@ class ActionScheduler_AdminView
      * System Status page, and for sites where WooCommerce isn't active.
      */
     public function register_menu()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Triggers processing of any pending actions.
      */
     public function process_admin_ui()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the Admin UI
      */
     public function render_admin_ui()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the admin UI object and process any requested actions.
      *
      * @return ActionScheduler_ListTable
      */
     protected function get_list_table()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Action: admin_notices
      *
@@ -114,24 +98,18 @@ class ActionScheduler_AdminView
      * @uses $this->check_pastdue_actions()
      */
     public function maybe_check_pastdue_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check past-due actions, and print notice.
      */
     protected function check_pastdue_actions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Provide more information about the screen and its data in the help tab.
      */
     public function add_help_tabs()
-    {
-        // stub
-    }
-
+{
+}
 }

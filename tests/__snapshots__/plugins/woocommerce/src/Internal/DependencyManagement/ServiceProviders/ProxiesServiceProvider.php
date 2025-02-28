@@ -21,8 +21,6 @@ class ProxiesServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

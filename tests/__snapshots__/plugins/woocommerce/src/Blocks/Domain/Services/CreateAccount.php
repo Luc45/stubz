@@ -20,18 +20,14 @@ class CreateAccount
      * @param Package $package An instance of (Woo Blocks) Package.
      */
     public function __construct(Automattic\WooCommerce\Blocks\Domain\Package $package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init - register handlers for WooCommerce core email hooks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger new account email.
      * This is intended as a replacement to WC_Emails::customer_new_account(),
@@ -41,10 +37,7 @@ class CreateAccount
      * @param int   $customer_id       The ID of the new customer account.
      * @param array $new_customer_data Assoc array of data for the new account.
      */
-    public function customer_new_account($customer_id = 0, array $new_customer_data = array (
-))
-    {
-        // stub
-    }
-
+    public function customer_new_account($customer_id = 0, array $new_customer_data = array())
+{
+}
 }

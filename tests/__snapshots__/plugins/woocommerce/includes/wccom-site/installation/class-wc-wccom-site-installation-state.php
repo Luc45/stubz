@@ -108,10 +108,8 @@ class WC_WCCOM_Site_Installation_State
      * @param string $product_id The product ID.
      */
     protected function __construct($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initiate an existing installation state.
      *
@@ -124,10 +122,8 @@ class WC_WCCOM_Site_Installation_State
      * @return WC_WCCOM_Site_Installation_State The instance.
      */
     public static function initiate_existing($product_id, $idempotency_key, $last_step_name, $last_step_status, $last_step_error, $started_date)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initiate a new installation state.
      *
@@ -136,60 +132,48 @@ class WC_WCCOM_Site_Installation_State
      * @return WC_WCCOM_Site_Installation_State The instance.
      */
     public static function initiate_new($product_id, $idempotency_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product ID.
      *
      * @return string
      */
     public function get_product_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the idempotency key.
      *
      * @return string
      */
     public function get_idempotency_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the timestamp of the installation start.
      *
      * @return int
      */
     public function get_last_step_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the last step status.
      *
      * @return string
      */
     public function get_last_step_status()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the last step error.
      *
      * @return int
      */
     public function get_last_step_error()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initiate a step.
      *
@@ -197,20 +181,16 @@ class WC_WCCOM_Site_Installation_State
      * @return void
      */
     public function initiate_step($step_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Capture a successful installation of a step.
      *
      * @param string $step_name The step name.
      */
     public function complete_step($step_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Capture an installation failure.
      *
@@ -218,158 +198,126 @@ class WC_WCCOM_Site_Installation_State
      * @param string $error_code The error code.
      */
     public function capture_failure($step_name, $error_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product type.
      *
      * @return string
      */
     public function get_product_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product type.
      *
      * @param string $product_type The product type.
      */
     public function set_product_type($product_type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product name.
      *
      * @return string
      */
     public function get_product_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the product name.
      *
      * @param string $product_name The product name.
      */
     public function set_product_name($product_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the download URL.
      *
      * @return string
      */
     public function get_download_url()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the download URL.
      *
      * @param string $download_url The download URL.
      */
     public function set_download_url($download_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path to the downloaded file.
      *
      * @return string
      */
     public function get_download_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the path to the downloaded file.
      *
      * @param string $download_path The path to the downloaded file.
      */
     public function set_download_path($download_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path to the unpacked file.
      *
      * @return string
      */
     public function get_unpacked_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the path to the unpacked file.
      *
      * @param string $unpacked_path The path to the unpacked file.
      */
     public function set_unpacked_path($unpacked_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the path to the installed file.
      *
      * @return string
      */
     public function get_installed_path()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the path to the installed file.
      *
      * @param string $installed_path The path to the installed file.
      */
     public function set_installed_path($installed_path)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the plugin info for the already installed plugin.
      *
      * @return array
      */
     public function get_already_installed_plugin_info()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the plugin info for the already installed plugin.
      *
      * @param array $plugin_info The plugin info.
      */
     public function set_already_installed_plugin_info($plugin_info)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the timestamp of the installation start.
      *
      * @return int
      */
     public function get_started_date()
-    {
-        // stub
-    }
-
+{
+}
 }

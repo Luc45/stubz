@@ -30,32 +30,24 @@ class CronExpression_DayOfMonthField
      * @return DateTime Returns the nearest date
      */
     private static function getNearestWeekday($currentYear, $currentMonth, $targetDay)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function isSatisfiedBy(DateTime $date, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function increment(DateTime $date, $invert = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * {@inheritdoc}
      */
     public function validate($value)
-    {
-        // stub
-    }
-
+{
+}
 }

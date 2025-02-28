@@ -14,18 +14,14 @@ class ReceiptRenderingRestController
      * @return string
      */
     protected function get_rest_api_namespace(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the REST API endpoints handled by this controller.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the GET /orders/id/receipt:
      *
@@ -35,10 +31,8 @@ class ReceiptRenderingRestController
      * @return array|WP_Error
      */
     public function get_order_receipt(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the POST /orders/id/receipt:
      *
@@ -56,10 +50,8 @@ class ReceiptRenderingRestController
      * @return array|WP_Error Request response or an error.
      */
     public function create_order_receipt(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Formats the response for both the GET and POST endpoints.
      *
@@ -67,38 +59,30 @@ class ReceiptRenderingRestController
      * @return array The data for the actual response to be returned.
      */
     private function get_response_for_file(string $filename): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the accepted arguments for the GET request.
      *
      * @return array[] The accepted arguments for the GET request.
      */
     private function get_args_for_get_order_receipt(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for both the GET and the POST requests.
      *
      * @return array[]
      */
     private function get_schema_for_get_and_post_order_receipt(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the accepted arguments for the POST request.
      *
      * @return array[]
      */
     private function get_args_for_create_order_receipt(): array
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -20,10 +20,8 @@ class ProductResultsCount
      * @param string $key Data to get, or default to everything.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -34,8 +32,6 @@ class ProductResultsCount
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

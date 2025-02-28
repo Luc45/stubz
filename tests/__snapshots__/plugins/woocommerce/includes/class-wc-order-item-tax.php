@@ -27,100 +27,80 @@ class WC_Order_Item_Tax
      * @param string $value Name.
      */
     public function set_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set item name.
      *
      * @param string $value Rate code.
      */
     public function set_rate_code($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set item name.
      *
      * @param string $value Label.
      */
     public function set_label($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax rate id.
      *
      * @param int $value Rate ID.
      */
     public function set_rate_id($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set tax total.
      *
      * @param string $value Tax total.
      */
     public function set_tax_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set shipping tax total.
      *
      * @param string $value Shipping tax total.
      */
     public function set_shipping_tax_total($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set compound.
      *
      * @param bool $value If tax is compound.
      */
     public function set_compound($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set rate value.
      *
      * @param float $value tax rate value.
      */
     public function set_rate_percent($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set properties based on passed in tax rate by ID.
      *
      * @param int $tax_rate_id Tax rate ID.
      */
     public function set_rate($tax_rate_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate code/name.
      *
@@ -128,10 +108,8 @@ class WC_Order_Item_Tax
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate code/name.
      *
@@ -139,10 +117,8 @@ class WC_Order_Item_Tax
      * @return string
      */
     public function get_rate_code($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get label.
      *
@@ -150,10 +126,8 @@ class WC_Order_Item_Tax
      * @return string
      */
     public function get_label($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax rate ID.
      *
@@ -161,10 +135,8 @@ class WC_Order_Item_Tax
      * @return int
      */
     public function get_rate_id($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get tax_total
      *
@@ -172,10 +144,8 @@ class WC_Order_Item_Tax
      * @return string
      */
     public function get_tax_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping_tax_total
      *
@@ -183,10 +153,8 @@ class WC_Order_Item_Tax
      * @return string
      */
     public function get_shipping_tax_total($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get compound.
      *
@@ -194,20 +162,16 @@ class WC_Order_Item_Tax
      * @return bool
      */
     public function get_compound($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is this a compound tax rate?
      *
      * @return boolean
      */
     public function is_compound()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rate value
      *
@@ -215,10 +179,8 @@ class WC_Order_Item_Tax
      * @return float
      */
     public function get_rate_percent($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * O for ArrayAccess/Backwards compatibility.
      *
@@ -227,10 +189,8 @@ class WC_Order_Item_Tax
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet for ArrayAccess/Backwards compatibility.
      *
@@ -240,10 +200,8 @@ class WC_Order_Item_Tax
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists for ArrayAccess.
      *
@@ -252,8 +210,6 @@ class WC_Order_Item_Tax
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
 }

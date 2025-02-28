@@ -12,8 +12,7 @@ abstract class AbstractProductGrid
      *
      * @var array
      */
-    protected $attributes = array (
-);
+    protected $attributes = array();
 
     /**
      * InnerBlocks content.
@@ -27,16 +26,14 @@ abstract class AbstractProductGrid
      *
      * @var array
      */
-    protected $query_args = array (
-);
+    protected $query_args = array();
 
     /**
      * Meta query args.
      *
      * @var array
      */
-    protected $meta_query = array (
-);
+    protected $meta_query = array();
 
     /**
      * Get a set of attributes shared across most of the grid blocks.
@@ -44,10 +41,8 @@ abstract class AbstractProductGrid
      * @return array List of block attributes with type and defaults.
      */
     protected function get_block_type_attributes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the dynamic block.
      *
@@ -56,32 +51,25 @@ abstract class AbstractProductGrid
      * @param WP_Block|null $block      Block instance.
      * @return string Rendered block type output.
      */
-    protected function render($attributes = array (
-), $content = '', $block = null)
-    {
-        // stub
-    }
-
+    protected function render($attributes = array(), $content = '', $block = null)
+{
+}
     /**
      * Get the schema for the contentVisibility attribute
      *
      * @return array List of block attributes with type and defaults.
      */
     protected function get_schema_content_visibility()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the orderby attribute.
      *
      * @return array Property definition of `orderby` attribute.
      */
     protected function get_schema_orderby()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the block's attributes.
      *
@@ -89,57 +77,46 @@ abstract class AbstractProductGrid
      * @return array  Block attributes merged with defaults.
      */
     protected function parse_attributes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse query args.
      *
      * @return array
      */
     protected function parse_query_args()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Parse query args.
      *
      * @param array $query_args Query args.
      */
     protected function set_ordering_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set args specific to this block
      *
      * @param array $query_args Query args.
      */
-    protected abstract function set_block_query_args(&$query_args);
-
+    abstract protected function set_block_query_args(&$query_args);
     /**
      * Set categories query args.
      *
      * @param array $query_args Query args.
      */
     protected function set_categories_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set visibility query args.
      *
      * @param array $query_args Query args.
      */
     protected function set_visibility_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set which stock status to use when displaying products.
      *
@@ -147,30 +124,24 @@ abstract class AbstractProductGrid
      * @return void
      */
     protected function set_stock_status_query_args(&$query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Works out the item limit based on rows and columns, or returns default.
      *
      * @return int
      */
     protected function get_products_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the query and return an array of product IDs
      *
      * @return array List of product IDs
      */
     protected function get_products()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve IDs that are not already present in the cache.
      *
@@ -181,10 +152,8 @@ abstract class AbstractProductGrid
      * @return int[] Array of IDs not present in the cache.
      */
     protected function get_non_cached_ids($product_ids, $cache_key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prime query cache of product variation meta data.
      *
@@ -194,20 +163,16 @@ abstract class AbstractProductGrid
      * @param int[] $product_ids Product ids to prime variation cache for.
      */
     protected function prime_product_variations($product_ids)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of classes to apply to this block.
      *
      * @return string space-separated list of classes.
      */
     protected function get_container_classes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render a single products.
      *
@@ -215,10 +180,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function render_product($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product image.
      *
@@ -226,10 +189,8 @@ abstract class AbstractProductGrid
      * @return string
      */
     protected function get_image_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the product title.
      *
@@ -237,10 +198,8 @@ abstract class AbstractProductGrid
      * @return string
      */
     protected function get_title_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the rating icons.
      *
@@ -248,10 +207,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function get_rating_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the price.
      *
@@ -259,10 +216,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function get_price_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the sale badge.
      *
@@ -270,10 +225,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function get_sale_badge_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the button.
      *
@@ -281,10 +234,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function get_button_html($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the "add to cart" button.
      *
@@ -292,10 +243,8 @@ abstract class AbstractProductGrid
      * @return string Rendered product output.
      */
     protected function get_add_to_cart($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -303,20 +252,15 @@ abstract class AbstractProductGrid
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return string[]
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

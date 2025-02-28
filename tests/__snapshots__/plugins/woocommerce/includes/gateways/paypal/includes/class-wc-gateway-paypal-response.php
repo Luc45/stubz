@@ -19,10 +19,8 @@ abstract class WC_Gateway_Paypal_Response
      * @return bool|WC_Order object
      */
     protected function get_paypal_order($raw_custom)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Complete order, add transaction ID and note.
      *
@@ -31,10 +29,8 @@ abstract class WC_Gateway_Paypal_Response
      * @param  string   $note Payment note.
      */
     protected function payment_complete($order, $txn_id = '', $note = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hold order and add note.
      *
@@ -42,8 +38,6 @@ abstract class WC_Gateway_Paypal_Response
      * @param  string   $reason Reason why the payment is on hold.
      */
     protected function payment_on_hold($order, $reason = '')
-    {
-        // stub
-    }
-
+{
+}
 }

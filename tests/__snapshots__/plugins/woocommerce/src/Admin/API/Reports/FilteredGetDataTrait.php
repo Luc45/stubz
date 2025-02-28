@@ -32,8 +32,6 @@ trait FilteredGetDataTrait
      * @return stdClass|WP_Error
      */
     public function get_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
 }

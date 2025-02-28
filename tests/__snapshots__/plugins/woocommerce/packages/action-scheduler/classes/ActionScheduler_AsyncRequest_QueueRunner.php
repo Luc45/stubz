@@ -32,10 +32,8 @@ class ActionScheduler_AsyncRequest_QueueRunner
      * @param ActionScheduler_Store $store Store object.
      */
     public function __construct(ActionScheduler_Store $store)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle async requests
      *
@@ -43,34 +41,26 @@ class ActionScheduler_AsyncRequest_QueueRunner
      * if there are still pending actions after completing a queue in this request.
      */
     protected function handle()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * If the async request runner is needed and allowed to run, dispatch a request.
      */
     public function maybe_dispatch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Only allow async requests when needed.
      *
      * Also allow 3rd party code to disable running actions via async requests.
      */
     protected function allow()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Chaining async requests can crash MySQL. A brief sleep call in PHP prevents that.
      */
     protected function get_sleep_seconds()
-    {
-        // stub
-    }
-
+{
+}
 }

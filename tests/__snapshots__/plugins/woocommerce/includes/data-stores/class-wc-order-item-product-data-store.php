@@ -32,10 +32,8 @@ class WC_Order_Item_Product_Data_Store
      * @param WC_Order_Item_Product $item Product order item object.
      */
     public function read(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Saves an item's data to the database / item meta.
      * Ran after both create and update, so $id will be set.
@@ -44,10 +42,8 @@ class WC_Order_Item_Product_Data_Store
      * @param WC_Order_Item_Product $item Product order item object.
      */
     public function save_item_data(&$item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of download IDs for a specific item from an order.
      *
@@ -57,8 +53,6 @@ class WC_Order_Item_Product_Data_Store
      * @return array
      */
     public function get_download_ids($item, $order)
-    {
-        // stub
-    }
-
+{
+}
 }

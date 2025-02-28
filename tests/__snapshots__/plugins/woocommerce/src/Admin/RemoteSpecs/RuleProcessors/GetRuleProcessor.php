@@ -15,8 +15,6 @@ class GetRuleProcessor
      * @return RuleProcessorInterface The matching processor for the specified rule type, or a FailRuleProcessor if no matching processor is found.
      */
     public static function get_processor($rule_type)
-    {
-        // stub
-    }
-
+{
+}
 }

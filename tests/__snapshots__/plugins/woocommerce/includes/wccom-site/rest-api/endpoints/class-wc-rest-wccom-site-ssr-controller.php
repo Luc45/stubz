@@ -20,10 +20,8 @@ class WC_REST_WCCOM_Site_SSR_Controller
      * @since 7.8.0
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether user has permission to access controller's endpoints.
      *
@@ -32,10 +30,8 @@ class WC_REST_WCCOM_Site_SSR_Controller
      * @return bool
      */
     public function user_has_permission($user): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate SSR data and submit it to WooCommerce.com.
      *
@@ -44,8 +40,6 @@ class WC_REST_WCCOM_Site_SSR_Controller
      * @return WP_REST_Response
      */
     public function handle_ssr_request($request)
-    {
-        // stub
-    }
-
+{
+}
 }

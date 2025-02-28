@@ -28,10 +28,8 @@ class ImageAttachment
      * @param integer $object_id Object ID.
      */
     public function __construct($id = 0, $object_id = 0)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Upload an attachment file.
      *
@@ -39,28 +37,22 @@ class ImageAttachment
      * @param string $src URL to file.
      */
     public function upload_image_from_src($src)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update attachment alt text.
      *
      * @param string $text Text to set.
      */
     public function update_alt_text($text)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update attachment name.
      *
      * @param string $text Text to set.
      */
     public function update_name($text)
-    {
-        // stub
-    }
-
+{
+}
 }

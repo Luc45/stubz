@@ -37,18 +37,14 @@ abstract class AIEndpoint
      * or an array of arrays for multiple methods. Default empty array.
      */
     public function register($args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return schema properties.
      *
      * @return array
      */
     public function get_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

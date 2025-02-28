@@ -31,18 +31,14 @@ class WC_Shipping_Legacy_Local_Delivery
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process and redirect if disabled.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -50,35 +46,26 @@ class WC_Shipping_Legacy_Local_Delivery
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init function.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate_shipping function.
      *
      * @param array $package (default: array()).
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
     /**
      * Init form fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
 }

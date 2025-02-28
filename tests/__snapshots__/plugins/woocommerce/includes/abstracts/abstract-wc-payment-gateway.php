@@ -132,8 +132,7 @@ abstract class WC_Payment_Gateway
      *
      * @var array
      */
-    protected $tokens = array (
-);
+    protected $tokens = array();
 
     /**
      * Returns a users saved tokens for this gateway.
@@ -142,46 +141,36 @@ abstract class WC_Payment_Gateway
      * @return array
      */
     public function get_tokens()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the title for admin screens.
      *
      * @return string
      */
     public function get_method_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the description for admin screens.
      *
      * @return string
      */
     public function get_method_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the gateway settings screen.
      */
     public function admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init settings for gateways.
      */
     public function init_settings()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return whether or not this gateway still requires setup to function.
      *
@@ -192,10 +181,8 @@ abstract class WC_Payment_Gateway
      * @return bool
      */
     public function needs_setup()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the return url (thank you page).
      *
@@ -203,10 +190,8 @@ abstract class WC_Payment_Gateway
      * @return string
      */
     public function get_return_url($order = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a link to the transaction on the 3rd party gateway site (if applicable).
      *
@@ -214,70 +199,56 @@ abstract class WC_Payment_Gateway
      * @return string transaction URL, or empty string.
      */
     public function get_transaction_url($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order total in checkout and pay_for_order.
      *
      * @return float
      */
     protected function get_order_total()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway is available for use.
      *
      * @return bool
      */
     public function is_available()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the gateway has fields on the checkout.
      *
      * @return bool
      */
     public function has_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the gateway's title.
      *
      * @return string
      */
     public function get_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the gateway's description.
      *
      * @return string
      */
     public function get_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the gateway's icon.
      *
      * @return string
      */
     public function get_icon()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the gateway's pay button ID.
      *
@@ -285,20 +256,16 @@ abstract class WC_Payment_Gateway
      * @return string
      */
     public function get_pay_button_id()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set as current gateway.
      *
      * Set this as the current gateway.
      */
     public function set_current()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process Payment.
      *
@@ -314,10 +281,8 @@ abstract class WC_Payment_Gateway
      * @return array
      */
     public function process_payment($order_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process refund.
      *
@@ -330,10 +295,8 @@ abstract class WC_Payment_Gateway
      * @return bool|\WP_Error True or false based on success, or a WP_Error object.
      */
     public function process_refund($order_id, $amount = null, $reason = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate frontend fields.
      *
@@ -342,10 +305,8 @@ abstract class WC_Payment_Gateway
      * @return bool
      */
     public function validate_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default payment fields display. Override this in your gateway to customize displayed fields.
      *
@@ -354,10 +315,8 @@ abstract class WC_Payment_Gateway
      * @since 1.5.7
      */
     public function payment_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a gateway supports a given feature.
      *
@@ -369,10 +328,8 @@ abstract class WC_Payment_Gateway
      * @since 1.5.7
      */
     public function supports($feature)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Can the order be refunded via this gateway?
      *
@@ -382,43 +339,33 @@ abstract class WC_Payment_Gateway
      * @return bool If false, the automatic refund button is hidden in the UI.
      */
     public function can_refund_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core credit card form which gateways can use if needed. Deprecated - inherit WC_Payment_Gateway_CC instead.
      *
      * @param  array $args Arguments.
      * @param  array $fields Fields.
      */
-    public function credit_card_form($args = array (
-), $fields = array (
-))
-    {
-        // stub
-    }
-
+    public function credit_card_form($args = array(), $fields = array())
+{
+}
     /**
      * Enqueues our tokenization script to handle some of the new form options.
      *
      * @since 2.6.0
      */
     public function tokenization_script()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Grab and display our saved payment methods.
      *
      * @since 2.6.0
      */
     public function saved_payment_methods()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets saved payment method HTML from a token.
      *
@@ -427,10 +374,8 @@ abstract class WC_Payment_Gateway
      * @return string Generated payment method HTML
      */
     public function get_saved_payment_method_option_html($token)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Displays a radio button for entering a new payment method (new CC details) instead of using a saved method.
      * Only displayed when a gateway supports tokenization.
@@ -438,20 +383,16 @@ abstract class WC_Payment_Gateway
      * @since 2.6.0
      */
     public function get_new_payment_method_option_html()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs a checkbox for saving a new payment method to the database.
      *
      * @since 2.6.0
      */
     public function save_payment_method_checkbox()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add payment method via account screen. This should be extended by gateway plugins.
      *
@@ -459,8 +400,6 @@ abstract class WC_Payment_Gateway
      * @return array
      */
     public function add_payment_method()
-    {
-        // stub
-    }
-
+{
+}
 }

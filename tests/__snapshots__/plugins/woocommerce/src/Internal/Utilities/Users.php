@@ -18,10 +18,8 @@ class Users
      * @return bool
      */
     public static function is_site_administrator(int $user_id = 0): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the email is valid.
      *
@@ -31,10 +29,8 @@ class Users
      * @return bool
      */
     public static function should_user_verify_order_email($order_id, $supplied_email = null, $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Site-specific method of retrieving the requested user meta.
      *
@@ -51,10 +47,8 @@ class Users
      *               but non-existing user ID is passed.
      */
     public static function get_site_user_meta(int $user_id, string $key = '', bool $single = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Site-specific means of updating user meta.
      *
@@ -71,10 +65,8 @@ class Users
      *                  passed to the function is the same as the one that is already in the database.
      */
     public static function update_site_user_meta(int $user_id, string $meta_key, $meta_value, $prev_value = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Site-specific means of deleting user meta.
      *
@@ -90,8 +82,6 @@ class Users
      * /
      */
     public static function delete_site_user_meta($user_id, $meta_key, $meta_value = '')
-    {
-        // stub
-    }
-
+{
+}
 }

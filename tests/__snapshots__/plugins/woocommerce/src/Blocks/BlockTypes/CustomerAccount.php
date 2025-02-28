@@ -42,10 +42,8 @@ class CustomerAccount
      * Initialize this block type.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for the Block Hooks API to modify the attributes of the hooked block.
      *
@@ -58,10 +56,8 @@ class CustomerAccount
      * @return array|null
      */
     public function modify_hooked_block_attributes($parsed_hooked_block, $hooked_block_type, $relative_position, $parsed_anchor_block, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback for the Block Hooks API to determine if the block should be auto-inserted.
      *
@@ -73,10 +69,8 @@ class CustomerAccount
      * @return array
      */
     protected function should_unhook_block($hooked_blocks, $position, $anchor_block, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -87,10 +81,8 @@ class CustomerAccount
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the icon to render depending on the iconStyle and displayStyle.
      *
@@ -99,20 +91,16 @@ class CustomerAccount
      * @return string Label to render on the block
      */
     private function render_icon($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the label to render depending on the displayStyle.
      *
      * @return string Label to render on the block.
      */
     private function render_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
@@ -121,8 +109,6 @@ class CustomerAccount
      * @return null This block has no frontend script.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
 }

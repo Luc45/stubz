@@ -23,8 +23,6 @@ class ProductFilterPriceSlider
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
 }

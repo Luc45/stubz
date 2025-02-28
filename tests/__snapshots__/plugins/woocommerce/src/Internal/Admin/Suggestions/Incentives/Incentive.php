@@ -29,10 +29,8 @@ abstract class Incentive
      * @param string $suggestion_id The suggestion ID this incentive provider is for.
      */
     public function __construct(string $suggestion_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the details of all the incentives.
      *
@@ -44,10 +42,8 @@ abstract class Incentive
      * @return array The incentives list with details for each incentive.
      */
     public function get_all(string $country_code, string $incentive_type = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an incentive by promo ID.
      *
@@ -60,10 +56,8 @@ abstract class Incentive
      * @return ?array The incentive details. Returns null if there is no incentive available.
      */
     public function get_by_promo_id(string $promo_id, string $country_code, string $incentive_type = ''): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an incentive by ID.
      *
@@ -75,10 +69,8 @@ abstract class Incentive
      * @return ?array The incentive details. Returns null if there is no incentive available.
      */
     public function get_by_id(string $incentive_id, string $country_code): array|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an incentive should be visible.
      *
@@ -89,10 +81,8 @@ abstract class Incentive
      * @return boolean Whether the incentive should be visible.
      */
     public function is_visible(string $id, string $country_code, bool $skip_extension_active_check = false): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss an incentive.
      *
@@ -107,10 +97,8 @@ abstract class Incentive
      *              False if the incentive was already dismissed, or we failed to persist the dismissal data.
      */
     public function dismiss(string $id, string $context = 'all', int|null $timestamp = null): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if an incentive has been manually dismissed.
      *
@@ -121,10 +109,8 @@ abstract class Incentive
      * @return boolean Whether the incentive has been manually dismissed.
      */
     public function is_dismissed(string $id, string $context = ''): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the dismissals (contexts) for an incentive.
      *
@@ -133,20 +119,16 @@ abstract class Incentive
      * @return array The contexts in which the incentive has been dismissed.
      */
     public function get_dismissals(string $id): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all the dismissed incentives grouped by suggestion.
      *
      * @return array The dismissed incentives grouped by suggestion.
      */
     protected function get_all_dismissed_incentives(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save all the dismissed incentives list.
      *
@@ -155,20 +137,16 @@ abstract class Incentive
      * @return bool Whether the dismissed incentives were saved successfully.
      */
     protected function save_all_dismissed_incentives(array $dismissed_incentives): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the current user has the required capabilities to view incentives.
      *
      * @return bool Whether the current user has the required capabilities view incentives.
      */
     protected function user_has_caps(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate an incentive details.
      *
@@ -179,17 +157,14 @@ abstract class Incentive
      * @return bool Whether the incentive data is valid.
      */
     protected function validate_incentive(array $incentive): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the corresponding extension suggestion plugin is active.
      *
      * @return boolean Whether the corresponding extension suggestion plugin is active.
      */
-    protected abstract function is_extension_active(): bool;
-
+    abstract protected function is_extension_active(): bool;
     /**
      * Get eligible incentives.
      *
@@ -197,6 +172,5 @@ abstract class Incentive
      *
      * @return array List of eligible incentives.
      */
-    protected abstract function get_incentives(string $country_code): array;
-
+    abstract protected function get_incentives(string $country_code): array;
 }

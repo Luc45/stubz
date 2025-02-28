@@ -15,10 +15,8 @@ class OnboardingProducts
      * @return array
      */
     public static function get_allowed_product_types()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get dynamic product data from API.
      *
@@ -26,28 +24,22 @@ class OnboardingProducts
      * @return array
      */
     public static function get_product_data($product_types)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the allowed product types with the polled data.
      *
      * @return array
      */
     public static function get_product_types_with_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get relevant purchaseable products for the site.
      *
      * @return array
      */
     public static function get_relevant_products()
-    {
-        // stub
-    }
-
+{
+}
 }

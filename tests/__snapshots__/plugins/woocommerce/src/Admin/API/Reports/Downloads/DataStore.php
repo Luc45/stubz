@@ -59,20 +59,16 @@ class DataStore
      * @override ReportsDataStore::assign_report_columns()
      */
     protected function assign_report_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the database query with parameters used for downloads report.
      *
      * @param array $query_args Query arguments supplied by the user.
      */
     protected function add_sql_query_params($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included ip address, based on query arguments from the user.
      *
@@ -80,10 +76,8 @@ class DataStore
      * @return string
      */
     protected function get_included_ip_addresses($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded ip address, based on query arguments from the user.
      *
@@ -91,10 +85,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_ip_addresses($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns filtered comma separated ids, based on query arguments from the user.
      *
@@ -103,10 +95,8 @@ class DataStore
      * @return string
      */
     protected function get_filtered_ip_addresses($query_args, $field)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of included customers, based on query arguments from the user.
      *
@@ -114,10 +104,8 @@ class DataStore
      * @return string
      */
     protected function get_included_customers($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns comma separated ids of excluded customers, based on query arguments from the user.
      *
@@ -125,10 +113,8 @@ class DataStore
      * @return string
      */
     protected function get_excluded_customers($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets WHERE time clause of SQL request with date-related constraints.
      *
@@ -139,20 +125,16 @@ class DataStore
      * @return string
      */
     protected function add_time_period_sql_params($query_args, $table_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Fills ORDER BY clause of SQL request based on user supplied parameters.
      *
      * @param array $query_args Parameters supplied by the user.
      */
     protected function add_order_by($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default query arguments to be used by get_data().
      * These defaults are only partially applied when used via REST API, as that has its own defaults.
@@ -162,10 +144,8 @@ class DataStore
      * @return array Query parameters.
      */
     public function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the report data based on normalized parameters.
      * Will be called by `get_data` if there is no data in cache.
@@ -177,10 +157,8 @@ class DataStore
      * @return stdClass|WP_Error Data object `{ totals: *, intervals: array, total: int, pages: int, page_no: int }`, or error.
      */
     public function get_noncached_data($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Maps ordering specified by the user to columns in the database/fields in the data.
      *
@@ -190,16 +168,12 @@ class DataStore
      * @return string
      */
     protected function normalize_order_by($order_by)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialize query objects.
      */
     protected function initialize_queries()
-    {
-        // stub
-    }
-
+{
+}
 }

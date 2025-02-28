@@ -27,10 +27,8 @@ class Reviews
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the required capability to access the reviews page and manage product reviews.
      *
@@ -38,10 +36,8 @@ class Reviews
      * @return string
      */
     public static function get_capability(string $context = 'view'): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers the Product Reviews submenu page.
      *
@@ -50,20 +46,16 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_reviews_page(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieves the URL to the product reviews page.
      *
      * @return string
      */
     public static function get_reviews_page_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines whether the current page is the reviews page.
      *
@@ -72,10 +64,8 @@ class Reviews
      * @return bool
      */
     public function is_reviews_page(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads the JavaScript required for inline replies and quick edit.
      *
@@ -84,10 +74,8 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function load_javascript(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determines if the object is a review or a reply to a review.
      *
@@ -95,10 +83,8 @@ class Reviews
      * @return bool
      */
     protected function is_review_or_reply($object): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ajax callback for editing a review.
      *
@@ -115,10 +101,8 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_edit_review(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Ajax callback for replying to a review inline.
      *
@@ -135,10 +119,8 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_reply_to_review(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Displays notices on the Reviews page.
      *
@@ -147,40 +129,32 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function display_notices(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * May display the bulk action admin notice.
      *
      * @return void
      */
     protected function maybe_display_reviews_bulk_action_notice(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the applicable bulk action admin notice messages.
      *
      * @return array
      */
     protected function get_bulk_action_notice_messages(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Counts the number of pending product reviews/replies, and returns the notification bubble if there's more than zero.
      *
      * @return string Empty string if there are no pending reviews, or bubble HTML if there are.
      */
     protected function get_pending_count_bubble(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Highlights Product -> Reviews admin menu item when editing a review or a reply to a review.
      *
@@ -192,20 +166,16 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function edit_review_parent_file($parent_file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a new instance of `ReviewsListTable`, with the screen argument specified.
      *
      * @return ReviewsListTable
      */
     protected function make_reviews_list_table(): Automattic\WooCommerce\Internal\Admin\ProductReviews\ReviewsListTable
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initializes the list table.
      *
@@ -214,18 +184,14 @@ class Reviews
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function load_reviews_screen(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the Reviews page.
      *
      * @return void
      */
     public function render_reviews_list_table(): void
-    {
-        // stub
-    }
-
+{
+}
 }

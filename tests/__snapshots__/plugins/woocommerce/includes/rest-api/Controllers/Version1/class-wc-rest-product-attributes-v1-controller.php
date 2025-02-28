@@ -34,17 +34,14 @@ class WC_REST_Product_Attributes_V1_Controller
      *
      * @var array
      */
-    protected $taxonomies_by_id = array (
-);
+    protected $taxonomies_by_id = array();
 
     /**
      * Register the routes for product attributes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read the attributes.
      *
@@ -52,10 +49,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to create a attribute.
      *
@@ -63,10 +58,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_Error|boolean
      */
     public function create_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to read a attribute.
      *
@@ -74,10 +67,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to update a attribute.
      *
@@ -85,10 +76,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_Error|boolean
      */
     public function update_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access to delete a attribute.
      *
@@ -96,10 +85,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_Error|boolean
      */
     public function delete_item_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a given request has access batch create, update and delete items.
      *
@@ -108,10 +95,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return bool|WP_Error
      */
     public function batch_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all attributes.
      *
@@ -119,10 +104,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return array
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a single attribute.
      *
@@ -130,10 +113,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single attribute.
      *
@@ -141,10 +122,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a single term from a taxonomy.
      *
@@ -152,10 +131,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a single attribute.
      *
@@ -163,10 +140,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single product attribute output for response.
      *
@@ -175,10 +150,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return WP_REST_Response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -186,30 +159,24 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return array Links for the given attribute.
      */
     protected function prepare_links($attribute)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Attribute's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute name.
      *
@@ -217,10 +184,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return string
      */
     protected function get_taxonomy($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get attribute data.
      *
@@ -228,10 +193,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return stdClass|WP_Error
      */
     protected function get_attribute($id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate attribute slug.
      *
@@ -241,10 +204,8 @@ class WC_REST_Product_Attributes_V1_Controller
      * @return bool|WP_Error
      */
     protected function validate_attribute_slug($slug, $new_data = true)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule to flush rewrite rules.
      *
@@ -252,8 +213,6 @@ class WC_REST_Product_Attributes_V1_Controller
      * @since 3.0.0
      */
     protected function flush_rewrite_rules()
-    {
-        // stub
-    }
-
+{
+}
 }

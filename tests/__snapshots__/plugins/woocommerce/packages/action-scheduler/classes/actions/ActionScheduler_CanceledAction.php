@@ -16,10 +16,7 @@ class ActionScheduler_CanceledAction
      * @param null|ActionScheduler_Schedule $schedule Action's schedule.
      * @param string                        $group Action's group.
      */
-    public function __construct($hook, array $args = array (
-), ActionScheduler_Schedule|null $schedule = null, $group = '')
-    {
-        // stub
-    }
-
+    public function __construct($hook, array $args = array(), ActionScheduler_Schedule|null $schedule = null, $group = '')
+{
+}
 }

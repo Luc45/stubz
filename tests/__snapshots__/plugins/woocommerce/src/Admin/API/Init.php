@@ -22,27 +22,21 @@ class Init
      *
      * @return object Instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Bootstrap REST API.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init REST API.
      */
     public function rest_api_init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds data stores.
      *
@@ -51,10 +45,8 @@ class Init
      * @return array
      */
     public static function add_data_stores($data_stores)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the currency symbol (in addition to currency code) to each Order
      * object in REST API responses. For use in formatAmount().
@@ -64,8 +56,6 @@ class Init
      * @returns WP_REST_Response
      */
     public static function add_currency_symbol_to_order_response($response)
-    {
-        // stub
-    }
-
+{
+}
 }

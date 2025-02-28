@@ -23,10 +23,8 @@ final class NumberUtil
      * @return float The value rounded to the given precision as a float, or the supplied default value.
      */
     public static function round($val, int $precision = 0, int $mode = 1): float
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the sum of an array of values using the built-in array_sum function, but sanitize the array values
      * first to ensure they are all floats.
@@ -41,8 +39,6 @@ final class NumberUtil
      * @return float
      */
     public static function array_sum(array $arr): float
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -36,12 +36,9 @@ class WC_Order_Refund_Data_Store_CPT
      * @param WC_Order $order Order object.
      * @param array    $args Array of args to pass to the delete method.
      */
-    public function delete(&$order, $args = array (
-))
-    {
-        // stub
-    }
-
+    public function delete(&$order, $args = array())
+{
+}
     /**
      * Read refund data. Can be overridden by child classes to load other props.
      *
@@ -50,10 +47,8 @@ class WC_Order_Refund_Data_Store_CPT
      * @since 3.0.0
      */
     protected function read_order_data(&$refund, $post_object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper method that updates all the post meta for an order based on it's settings in the WC_Order class.
      *
@@ -62,18 +57,14 @@ class WC_Order_Refund_Data_Store_CPT
      * @since 3.0.0
      */
     protected function update_post_meta(&$refund)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a title for the new post type.
      *
      * @return string
      */
     protected function get_post_title()
-    {
-        // stub
-    }
-
+{
+}
 }

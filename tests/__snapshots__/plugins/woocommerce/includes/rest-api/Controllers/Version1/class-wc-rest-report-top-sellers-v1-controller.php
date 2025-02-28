@@ -29,10 +29,8 @@ class WC_REST_Report_Top_Sellers_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report sales object for serialization.
      *
@@ -41,18 +39,14 @@ class WC_REST_Report_Top_Sellers_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($top_seller, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

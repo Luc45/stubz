@@ -20,16 +20,12 @@ class RemoteInboxNotifications
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
 }

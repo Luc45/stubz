@@ -36,38 +36,30 @@ class StoredUrl
      * @param bool   $enabled Indicates if the approved directory rule is enabled.
      */
     public function __construct(int $id, string $url, bool $enabled)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Supplies the ID of the approved directory.
      *
      * @return int
      */
     public function get_id(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Supplies the approved directory URL.
      *
      * @return string
      */
     public function get_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Indicates if this rule is enabled or not (rules can be temporarily disabled).
      *
      * @return bool
      */
     public function is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

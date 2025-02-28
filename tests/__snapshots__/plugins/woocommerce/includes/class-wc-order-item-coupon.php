@@ -23,50 +23,40 @@ class WC_Order_Item_Coupon
      * @param string $value Coupon code.
      */
     public function set_name($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set code.
      *
      * @param string $value Coupon code.
      */
     public function set_code($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discount amount.
      *
      * @param string $value Discount.
      */
     public function set_discount($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set discounted tax amount.
      *
      * @param string $value Discount tax.
      */
     public function set_discount_tax($value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item type.
      *
      * @return string
      */
     public function get_type()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get order item name.
      *
@@ -74,10 +64,8 @@ class WC_Order_Item_Coupon
      * @return string
      */
     public function get_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get coupon code.
      *
@@ -85,10 +73,8 @@ class WC_Order_Item_Coupon
      * @return string
      */
     public function get_code($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discount amount.
      *
@@ -96,10 +82,8 @@ class WC_Order_Item_Coupon
      * @return string
      */
     public function get_discount($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get discounted tax amount.
      *
@@ -108,10 +92,8 @@ class WC_Order_Item_Coupon
      * @return string
      */
     public function get_discount_tax($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetGet for ArrayAccess/Backwards compatibility.
      *
@@ -121,10 +103,8 @@ class WC_Order_Item_Coupon
      */
     #[ReturnTypeWillChange]
     public function offsetGet($offset)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetSet for ArrayAccess/Backwards compatibility.
      *
@@ -134,10 +114,8 @@ class WC_Order_Item_Coupon
      */
     #[ReturnTypeWillChange]
     public function offsetSet($offset, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * OffsetExists for ArrayAccess.
      *
@@ -146,8 +124,6 @@ class WC_Order_Item_Coupon
      */
     #[ReturnTypeWillChange]
     public function offsetExists($offset)
-    {
-        // stub
-    }
-
+{
+}
 }

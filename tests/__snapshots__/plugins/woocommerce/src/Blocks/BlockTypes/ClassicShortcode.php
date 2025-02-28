@@ -32,22 +32,17 @@ class ClassicShortcode
      * @return string | void Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the list of classes to apply to this block.
      *
      * @param array $attributes Block attributes. Default empty array.
      * @return string space-separated list of classes.
      */
-    protected function get_container_classes($attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function get_container_classes($attributes = array())
+{
+}
     /**
      * Render method for rendering the cart shortcode.
      *
@@ -55,10 +50,8 @@ class ClassicShortcode
      * @return string Rendered block type output.
      */
     protected function render_cart($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render method for rendering the checkout shortcode.
      *
@@ -66,18 +59,14 @@ class ClassicShortcode
      * @return string Rendered block type output.
      */
     protected function render_checkout($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend style handle for this block type.
      *
      * @return null
      */
     protected function get_block_type_style()
-    {
-        // stub
-    }
-
+{
+}
 }

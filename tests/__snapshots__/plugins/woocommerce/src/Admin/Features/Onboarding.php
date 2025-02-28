@@ -27,10 +27,8 @@ class Onboarding
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of allowed industries for the onboarding wizard.
      *
@@ -38,10 +36,8 @@ class Onboarding
      * @return array
      */
     public static function get_allowed_industries()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of allowed product types for the onboarding wizard.
      *
@@ -49,10 +45,8 @@ class Onboarding
      * @return array
      */
     public static function get_allowed_product_types()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a list of themes for the onboarding wizard.
      *
@@ -60,10 +54,8 @@ class Onboarding
      * @return array
      */
     public static function get_themes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get theme data used in onboarding theme browser.
      *
@@ -72,10 +64,8 @@ class Onboarding
      * @return array
      */
     public static function get_theme_data($theme)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of themes that can be installed & activated via the onboarding wizard.
      *
@@ -83,10 +73,8 @@ class Onboarding
      * @return array
      */
     public static function get_allowed_themes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get dynamic product data from API.
      *
@@ -95,8 +83,6 @@ class Onboarding
      * @return array
      */
     public static function get_product_data($product_types)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -17,8 +17,7 @@ abstract class WC_Session
      *
      * @var array $_data Data array.
      */
-    protected $_data = array (
-);
+    protected $_data = array();
 
     /**
      * Dirty when the session needs saving.
@@ -33,18 +32,14 @@ abstract class WC_Session
      * @since 3.3.0
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Cleanup session data. Extended by child classes.
      */
     public function cleanup_sessions()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic get method.
      *
@@ -52,10 +47,8 @@ abstract class WC_Session
      * @return mixed
      */
     public function __get($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic set method.
      *
@@ -63,10 +56,8 @@ abstract class WC_Session
      * @param mixed $value Value to set.
      */
     public function __set($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic isset method.
      *
@@ -74,20 +65,16 @@ abstract class WC_Session
      * @return bool
      */
     public function __isset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Magic unset method.
      *
      * @param mixed $key Key to unset.
      */
     public function __unset($key)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a session variable.
      *
@@ -96,10 +83,8 @@ abstract class WC_Session
      * @return array|string value of session variable
      */
     public function get($key, $default = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a session variable.
      *
@@ -107,18 +92,14 @@ abstract class WC_Session
      * @param mixed  $value Value to set.
      */
     public function set($key, $value)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get customer ID.
      *
      * @return int
      */
     public function get_customer_id()
-    {
-        // stub
-    }
-
+{
+}
 }

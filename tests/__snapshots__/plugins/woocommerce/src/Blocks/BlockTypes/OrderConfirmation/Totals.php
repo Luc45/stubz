@@ -23,12 +23,9 @@ class Totals
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -36,10 +33,8 @@ class Totals
      * @return string
      */
     protected function get_inline_styles(array $attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -48,10 +43,8 @@ class Totals
      * @param \WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render order details table items.
      *
@@ -61,10 +54,8 @@ class Totals
      * @return string
      */
     protected function render_order_details_table_items($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render an item in the order details table.
      *
@@ -75,10 +66,8 @@ class Totals
      * @return string
      */
     protected function render_order_details_table_item($order, $item_id, $item, $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render an item purchase note.
      *
@@ -87,10 +76,8 @@ class Totals
      * @return string
      */
     protected function render_order_details_table_item_purchase_note($order, $product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render order details table totals.
      *
@@ -98,10 +85,8 @@ class Totals
      * @return string
      */
     protected function render_order_details_table_totals($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render customer note.
      *
@@ -109,8 +94,6 @@ class Totals
      * @return string
      */
     protected function render_order_details_customer_note($order)
-    {
-        // stub
-    }
-
+{
+}
 }

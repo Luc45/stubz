@@ -18,26 +18,20 @@ class ActionScheduler_NullSchedule
      * @param null|DateTime $date The date & time to run the action.
      */
     public function __construct(DateTime|null $date = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This schedule has no scheduled DateTime, so we need to override the parent __sleep().
      *
      * @return array
      */
     public function __sleep()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Wakeup.
      */
     public function __wakeup()
-    {
-        // stub
-    }
-
+{
+}
 }

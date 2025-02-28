@@ -21,20 +21,16 @@ class ProductVariations
      * Register the routes for products.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional search filters for variations.
      *
@@ -44,10 +40,8 @@ class ProductVariations
      * @return string
      */
     public static function add_wp_query_filter($where, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join posts meta tables when variation search query is present.
      *
@@ -57,10 +51,8 @@ class ProductVariations
      * @return string
      */
     public static function add_wp_query_join($join, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add product name and sku filtering to the WC API.
      *
@@ -68,10 +60,8 @@ class ProductVariations
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of posts and add the post title filter option to WP_Query.
      *
@@ -79,20 +69,16 @@ class ProductVariations
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Product's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single variation output for response.
      *
@@ -101,8 +87,6 @@ class ProductVariations
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
 }

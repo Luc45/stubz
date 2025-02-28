@@ -17,10 +17,8 @@ class Mollie
      * @return string The settings URL for the payment gateway.
      */
     public function get_settings_url(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if the payment gateway is in test mode.
      *
@@ -29,10 +27,8 @@ class Mollie
      * @return bool True if the payment gateway is in test mode, false otherwise.
      */
     public function is_in_test_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine if at least a Mollie gateway is registered.
      *
@@ -41,10 +37,8 @@ class Mollie
      * @return bool True if at least a Mollie gateway is registered, false otherwise.
      */
     public function is_gateway_registered(array $payment_gateways): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the pseudo Mollie gateway object.
      *
@@ -53,10 +47,8 @@ class Mollie
      * @return PseudoWCPaymentGateway The pseudo gateway object.
      */
     public function get_pseudo_gateway(array $suggestion): Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PseudoWCPaymentGateway
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the URL to the custom settings page for Mollie.
      *
@@ -65,8 +57,6 @@ class Mollie
      * @return string The URL to the custom settings page for Mollie.
      */
     private function get_custom_settings_url(string $section = ''): string
-    {
-        // stub
-    }
-
+{
+}
 }

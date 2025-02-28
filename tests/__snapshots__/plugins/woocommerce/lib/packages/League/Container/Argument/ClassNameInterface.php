@@ -10,5 +10,4 @@ interface ClassNameInterface
      * @return string
      */
     public function getClassName(): string;
-
 }

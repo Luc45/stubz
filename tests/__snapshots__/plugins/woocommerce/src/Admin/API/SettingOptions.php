@@ -24,8 +24,6 @@ class SettingOptions
      * @return array Of WP_Error or WP_REST_Response.
      */
     public function batch_items($request)
-    {
-        // stub
-    }
-
+{
+}
 }

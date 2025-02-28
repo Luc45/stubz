@@ -33,10 +33,8 @@ class WC_REST_Refunds_Controller
      * Register the routes for order refunds.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -45,10 +43,8 @@ class WC_REST_Refunds_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single order output for response.
      *
@@ -60,10 +56,8 @@ class WC_REST_Refunds_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function prepare_object_for_response($refund, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data.
      *
@@ -72,10 +66,8 @@ class WC_REST_Refunds_Controller
      * @return array
      */
     protected function get_formatted_item_data($refund)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -84,10 +76,8 @@ class WC_REST_Refunds_Controller
      * @return array                   Links for the given post.
      */
     protected function prepare_links($refund, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refund schema, conforming to JSON Schema.
      *
@@ -95,8 +85,6 @@ class WC_REST_Refunds_Controller
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

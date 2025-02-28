@@ -47,41 +47,33 @@ class LegacyDataCleanup
      * @param DataSynchronizer          $data_synchronizer Data synchronizer instance.
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing, Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataHandler $legacy_handler, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessingController $batch_processing, Automattic\WooCommerce\Internal\DataStores\Orders\LegacyDataHandler $legacy_handler, Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer)
+{
+}
     /**
      * A user friendly name for this process.
      *
      * @return string Name of the process.
      */
     public function get_name(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * A user friendly description for this process.
      *
      * @return string Description.
      */
     public function get_description(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get total number of pending records that require update.
      *
      * @return int Number of pending records.
      */
     public function get_total_pending_count(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the batch with records that needs to be processed for a given size.
      *
@@ -89,30 +81,24 @@ class LegacyDataCleanup
      * @return array Batch of records.
      */
     public function get_next_batch_to_process(int $size): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process data for current batch.
      *
      * @param array $batch Batch details.
      */
     public function process_batch(array $batch): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Default batch size to use.
      *
      * @return int Default batch size.
      */
     public function get_default_batch_size(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether the cleanup process can be initiated. Legacy data cleanup requires HPOS to be authoritative and
      * compatibility mode to be disabled.
@@ -120,20 +106,16 @@ class LegacyDataCleanup
      * @return boolean TRUE if the cleanup process can be enabled, FALSE otherwise.
      */
     public function can_run()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Whether the user has initiated the cleanup process.
      *
      * @return boolean TRUE if the user has initiated the cleanup process, FALSE otherwise.
      */
     public function is_flag_set()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sets the flag that indicates that the cleanup process should be initiated.
      *
@@ -141,28 +123,22 @@ class LegacyDataCleanup
      * @return boolean Whether the legacy data cleanup was initiated or not.
      */
     public function toggle_flag(bool $enabled): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns an array in format required by 'woocommerce_debug_tools' to register the cleanup tool in WC.
      *
      * @return array Tools entries to register with WC.
      */
     public function get_tools_entries()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks whether there are any orders in need of cleanup and cleanup can run.
      *
      * @return bool TRUE if there are orders in need of cleanup, FALSE otherwise.
      */
     private function orders_pending()
-    {
-        // stub
-    }
-
+{
+}
 }

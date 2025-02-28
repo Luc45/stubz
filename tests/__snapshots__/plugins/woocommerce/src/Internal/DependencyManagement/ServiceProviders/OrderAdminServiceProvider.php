@@ -27,8 +27,6 @@ class OrderAdminServiceProvider
      * @return void
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

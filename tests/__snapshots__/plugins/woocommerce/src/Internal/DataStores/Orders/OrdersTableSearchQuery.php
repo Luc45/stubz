@@ -38,10 +38,8 @@ class OrdersTableSearchQuery
      * @param OrdersTableQuery $query The order query object.
      */
     public function __construct(Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableQuery $query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sanitize search filter param.
      *
@@ -50,10 +48,8 @@ class OrdersTableSearchQuery
      * @return array Array of search filters.
      */
     private function sanitize_search_filters(string $search_filter): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Supplies an array of clauses to be used in an order query.
      *
@@ -66,10 +62,8 @@ class OrdersTableSearchQuery
      * }
      */
     public function get_sql_clauses(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the necessary JOIN clauses for the order search to be performed.
      *
@@ -78,10 +72,8 @@ class OrdersTableSearchQuery
      * @return string
      */
     private function generate_join(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate JOIN clause for a given search filter.
      * Right now we only have the products filter that actually does a JOIN, but in the future we may add more -- for example, custom order fields, payment tokens, and so on. This function makes it easier to add more filters in the future.
@@ -93,10 +85,8 @@ class OrdersTableSearchQuery
      * @return string JOIN clause.
      */
     private function generate_join_for_search_filter($search_filter): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates the necessary WHERE clauses for the order search to be performed.
      *
@@ -105,10 +95,8 @@ class OrdersTableSearchQuery
      * @return string
      */
     private function generate_where(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates WHERE clause for a given search filter. Right now we only have the products and customers filters that actually use WHERE, but in the future we may add more -- for example, custom order fields, payment tokens and so on. This function makes it easier to add more filters in the future.
      *
@@ -117,30 +105,24 @@ class OrdersTableSearchQuery
      * @return string WHERE clause.
      */
     private function generate_where_for_search_filter(string $search_filter): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to generate the WHERE clause for products search. Uses FTS when available.
      *
      * @return string|null WHERE clause for products search.
      */
     private function get_where_for_products()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Helper function to generate the WHERE clause for customers search. Uses FTS when available.
      *
      * @return string|null WHERE clause for customers search.
      */
     private function get_where_for_customers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generates where clause for meta table.
      *
@@ -151,10 +133,8 @@ class OrdersTableSearchQuery
      * @return string The where clause for meta table.
      */
     private function generate_where_for_meta_table(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the order meta field keys to be searched.
      *
@@ -164,8 +144,6 @@ class OrdersTableSearchQuery
      * @return string
      */
     private function get_meta_fields_to_be_searched(): string
-    {
-        // stub
-    }
-
+{
+}
 }

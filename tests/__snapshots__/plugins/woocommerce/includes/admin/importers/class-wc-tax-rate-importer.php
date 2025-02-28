@@ -47,28 +47,22 @@ class WC_Tax_Rate_Importer
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registered callback function for the WordPress Importer.
      *
      * Manages the three separate stages of the CSV import process.
      */
     public function dispatch()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Import is starting.
      */
     private function import_start()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * UTF-8 encode the data if `$enc` value isn't UTF-8.
      *
@@ -77,38 +71,30 @@ class WC_Tax_Rate_Importer
      * @return string
      */
     public function format_data_from_csv($data, $enc)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Import the file if it exists and is valid.
      *
      * @param mixed $file File.
      */
     public function import($file)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs post-import cleanup of files and the cache.
      */
     public function import_end()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the import error message.
      *
      * @param string $message Error message.
      */
     protected function set_import_error_message($message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handles the CSV upload and initial parsing of the file to prepare for.
      * displaying author import options.
@@ -116,44 +102,34 @@ class WC_Tax_Rate_Importer
      * @return bool False if error uploading or invalid file, true otherwise
      */
     public function handle_upload()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output header html.
      */
     public function header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output footer html.
      */
     public function footer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output information about the uploading process.
      */
     public function greet()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Show import error and quit.
      *
      * @param  string $message Error message.
      */
     private function import_error($message = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Added to http_request_timeout filter to force timeout at 60 seconds during import.
      *
@@ -161,8 +137,6 @@ class WC_Tax_Rate_Importer
      * @return int 60
      */
     public function bump_request_timeout($val)
-    {
-        // stub
-    }
-
+{
+}
 }

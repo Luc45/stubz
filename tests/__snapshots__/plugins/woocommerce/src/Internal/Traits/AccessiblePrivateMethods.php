@@ -46,16 +46,14 @@ trait AccessiblePrivateMethods
      *
      * @var array
      */
-    private $_accessible_private_methods = array (
-);
+    private $_accessible_private_methods = array();
 
     /**
      * List of static methods marked as externally accessible.
      *
      * @var array
      */
-    private static $_accessible_static_private_methods = array (
-);
+    private static $_accessible_static_private_methods = array();
 
     /**
      * Register a WordPress action.
@@ -73,10 +71,8 @@ trait AccessiblePrivateMethods
      * @param int             $accepted_args   Optional. The number of arguments the function accepts. Default 1.
      */
     protected static function add_action(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a WordPress filter.
      * If the callback refers to a private or protected instance method in this class, the method is marked as externally accessible.
@@ -93,10 +89,8 @@ trait AccessiblePrivateMethods
      * @param int             $accepted_args   Optional. The number of arguments the function accepts. Default 1.
      */
     protected static function add_filter(string $hook_name, $callback, int $priority = 10, int $accepted_args = 1): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do the required processing to a callback before invoking the WordPress 'add_action' or 'add_filter' function.
      *
@@ -104,10 +98,8 @@ trait AccessiblePrivateMethods
      * @return void
      */
     protected static function process_callback_before_hooking($callback): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a private or protected instance method of this class as externally accessible.
      *
@@ -115,10 +107,8 @@ trait AccessiblePrivateMethods
      * @return bool True if the method has been marked as externally accessible, false if the method doesn't exist.
      */
     protected function mark_method_as_accessible(string $method_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a private or protected static method of this class as externally accessible.
      *
@@ -126,10 +116,8 @@ trait AccessiblePrivateMethods
      * @return bool True if the method has been marked as externally accessible, false if the method doesn't exist.
      */
     protected static function mark_static_method_as_accessible(string $method_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Undefined/inaccessible instance method call handler.
      *
@@ -139,10 +127,8 @@ trait AccessiblePrivateMethods
      * @throws \Error The called instance method doesn't exist or is private/protected and not marked as externally accessible.
      */
     public function __call($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Undefined/inaccessible static method call handler.
      *
@@ -152,8 +138,6 @@ trait AccessiblePrivateMethods
      * @throws \Error The called static method doesn't exist or is private/protected and not marked as externally accessible.
      */
     public static function __callStatic($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
 }

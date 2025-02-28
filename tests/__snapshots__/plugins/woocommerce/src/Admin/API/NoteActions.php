@@ -14,10 +14,8 @@ class NoteActions
      * Register the routes for admin notes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Trigger a note action.
      *
@@ -25,8 +23,6 @@ class NoteActions
      * @return WP_REST_Request|WP_Error
      */
     public function trigger_note_action($request)
-    {
-        // stub
-    }
-
+{
+}
 }

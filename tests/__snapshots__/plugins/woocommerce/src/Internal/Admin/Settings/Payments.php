@@ -33,11 +33,9 @@ class Payments
      *
      * @internal
      */
-    public final function init(Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders $payment_providers, Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions): void
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders $payment_providers, Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $payment_extension_suggestions): void
+{
+}
     /**
      * Get the payment provider details list for the settings page.
      *
@@ -48,10 +46,8 @@ class Payments
      * @throws Exception If there are malformed or invalid suggestions.
      */
     public function get_payment_providers(string $location): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the payment extension suggestions for the given location.
      *
@@ -61,20 +57,16 @@ class Payments
      * @throws Exception If there are malformed or invalid suggestions.
      */
     public function get_payment_extension_suggestions(string $location): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the payment extension suggestions categories details.
      *
      * @return array The payment extension suggestions categories.
      */
     public function get_payment_extension_suggestion_categories(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the business location country code for the Payments settings.
      *
@@ -82,20 +74,16 @@ class Payments
      *                If the user didn't set a location, the WC base location country code is used.
      */
     public function get_country(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the business location country for the Payments settings.
      *
      * @param string $location The country code. This should be a ISO 3166-1 alpha-2 country code.
      */
     public function set_country(string $location): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the payment providers order map.
      *
@@ -104,10 +92,8 @@ class Payments
      * @return bool True if the payment providers ordering was successfully updated, false otherwise.
      */
     public function update_payment_providers_order_map(array $order_map): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide a payment extension suggestion.
      *
@@ -117,10 +103,8 @@ class Payments
      * @throws Exception If the suggestion ID is invalid.
      */
     public function hide_payment_extension_suggestion(string $id): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dismiss a payment extension suggestion incentive.
      *
@@ -134,8 +118,6 @@ class Payments
      * @throws Exception If the incentive could not be dismissed due to an error.
      */
     public function dismiss_extension_suggestion_incentive(string $suggestion_id, string $incentive_id, string $context = 'all'): bool
-    {
-        // stub
-    }
-
+{
+}
 }

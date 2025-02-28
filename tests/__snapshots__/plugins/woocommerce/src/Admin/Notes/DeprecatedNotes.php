@@ -29,12 +29,9 @@ class WC_Admin_Note
      * @param mixed $data Note data, object, or ID.
      */
     public function __construct($data = '')
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * WC_Admin_Notes.
  *
@@ -57,7 +54,6 @@ class WC_Admin_Notes
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Customize_Store_With_Blocks.
  *
@@ -80,7 +76,6 @@ class WC_Admin_Notes_Customize_Store_With_Blocks
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Edit_Products_On_The_Move.
  *
@@ -103,7 +98,6 @@ class WC_Admin_Notes_Edit_Products_On_The_Move
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_EU_VAT_Number.
  *
@@ -126,7 +120,6 @@ class WC_Admin_Notes_EU_VAT_Number
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Facebook_Marketing_Expert.
  *
@@ -149,7 +142,6 @@ class WC_Admin_Notes_Facebook_Marketing_Expert
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_First_Product.
  *
@@ -172,7 +164,6 @@ class WC_Admin_Notes_First_Product
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Giving_Feedback_Notes.
  *
@@ -195,7 +186,6 @@ class WC_Admin_Notes_Giving_Feedback_Notes
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Install_JP_And_WCS_Plugins.
  *
@@ -218,7 +208,6 @@ class WC_Admin_Notes_Install_JP_And_WCS_Plugins
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Launch_Checklist.
  *
@@ -241,7 +230,6 @@ class WC_Admin_Notes_Launch_Checklist
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Migrate_From_Shopify.
  *
@@ -264,7 +252,6 @@ class WC_Admin_Notes_Migrate_From_Shopify
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Mobile_App.
  *
@@ -287,7 +274,6 @@ class WC_Admin_Notes_Mobile_App
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_New_Sales_Record.
  *
@@ -310,7 +296,6 @@ class WC_Admin_Notes_New_Sales_Record
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Onboarding_Email_Marketing.
  *
@@ -333,7 +318,6 @@ class WC_Admin_Notes_Onboarding_Email_Marketing
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Onboarding_Payments.
  *
@@ -356,7 +340,6 @@ class WC_Admin_Notes_Onboarding_Payments
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Online_Clothing_Store.
  *
@@ -379,7 +362,6 @@ class WC_Admin_Notes_Online_Clothing_Store
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Order_Milestones.
  *
@@ -402,7 +384,6 @@ class WC_Admin_Notes_Order_Milestones
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Performance_On_Mobile.
  *
@@ -425,7 +406,6 @@ class WC_Admin_Notes_Performance_On_Mobile
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Personalize_Store.
  *
@@ -448,7 +428,6 @@ class WC_Admin_Notes_Personalize_Store
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Real_Time_Order_Alerts.
  *
@@ -471,7 +450,6 @@ class WC_Admin_Notes_Real_Time_Order_Alerts
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Selling_Online_Courses.
  *
@@ -494,7 +472,6 @@ class WC_Admin_Notes_Selling_Online_Courses
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Tracking_Opt_In.
  *
@@ -517,7 +494,6 @@ class WC_Admin_Notes_Tracking_Opt_In
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_Woo_Subscriptions_Notes.
  *
@@ -540,7 +516,6 @@ class WC_Admin_Notes_Woo_Subscriptions_Notes
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_WooCommerce_Payments.
  *
@@ -563,7 +538,6 @@ class WC_Admin_Notes_WooCommerce_Payments
     protected static $deprecated_in_version = '4.8.0';
 
 }
-
 /**
  * WC_Admin_Notes_WooCommerce_Subscriptions.
  *

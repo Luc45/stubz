@@ -12,16 +12,12 @@ class WC_CLI_Update_Command
      * Registers the update command.
      */
     public static function register_commands()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Runs all pending WooCommerce database updates.
      */
     public static function update()
-    {
-        // stub
-    }
-
+{
+}
 }

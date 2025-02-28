@@ -20,10 +20,8 @@ abstract class WC_Legacy_Payment_Token
      * @param string Payment Token Type (CC, eCheck)
      */
     public function set_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Read a token by ID.
      * @deprecated 3.0.0 - Init a token class with an ID.
@@ -31,26 +29,20 @@ abstract class WC_Legacy_Payment_Token
      * @param int $token_id
      */
     public function read($token_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update a token.
      * @deprecated 3.0.0 - Use ::save instead.
      */
     public function update()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a token.
      * @deprecated 3.0.0 - Use ::save instead.
      */
     public function create()
-    {
-        // stub
-    }
-
+{
+}
 }

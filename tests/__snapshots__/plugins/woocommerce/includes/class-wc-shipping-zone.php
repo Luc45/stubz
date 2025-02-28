@@ -28,8 +28,7 @@ class WC_Shipping_Zone
   'zone_name' => '',
   'zone_order' => 0,
   'zone_locations' => 
-  array (
-  ),
+  array(),
 );
 
     /**
@@ -38,10 +37,8 @@ class WC_Shipping_Zone
      * @param int|object $zone Zone ID to load from the DB or zone object.
      */
     public function __construct($zone = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get zone name.
      *
@@ -49,10 +46,8 @@ class WC_Shipping_Zone
      * @return string
      */
     public function get_zone_name($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get zone order.
      *
@@ -60,10 +55,8 @@ class WC_Shipping_Zone
      * @return int
      */
     public function get_zone_order($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get zone locations.
      *
@@ -71,10 +64,8 @@ class WC_Shipping_Zone
      * @return array of zone objects
      */
     public function get_zone_locations($context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return a text string representing what this zone is for.
      *
@@ -83,10 +74,8 @@ class WC_Shipping_Zone
      * @return string
      */
     public function get_formatted_location($max = 10, $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get shipping methods linked to this zone.
      *
@@ -95,30 +84,24 @@ class WC_Shipping_Zone
      * @return array of objects
      */
     public function get_shipping_methods($enabled_only = false, $context = 'admin')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set zone name.
      *
      * @param string $set Value to set.
      */
     public function set_zone_name($set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set zone order. Value to set.
      *
      * @param int $set Value to set.
      */
     public function set_zone_order($set)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set zone locations.
      *
@@ -126,30 +109,24 @@ class WC_Shipping_Zone
      * @param array $locations Value to set.
      */
     public function set_zone_locations($locations)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save zone data to the database.
      *
      * @return int
      */
     public function save()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a zone name based on location.
      *
      * @return string
      */
     protected function generate_zone_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Location type detection.
      *
@@ -157,10 +134,8 @@ class WC_Shipping_Zone
      * @return boolean
      */
     private function location_is_continent($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Location type detection.
      *
@@ -168,10 +143,8 @@ class WC_Shipping_Zone
      * @return boolean
      */
     private function location_is_country($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Location type detection.
      *
@@ -179,10 +152,8 @@ class WC_Shipping_Zone
      * @return boolean
      */
     private function location_is_state($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Location type detection.
      *
@@ -190,10 +161,8 @@ class WC_Shipping_Zone
      * @return boolean
      */
     private function location_is_postcode($location)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is passed location type valid?
      *
@@ -201,10 +170,8 @@ class WC_Shipping_Zone
      * @return boolean
      */
     public function is_valid_location_type($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add location (state or postcode) to a zone.
      *
@@ -212,10 +179,8 @@ class WC_Shipping_Zone
      * @param string $type state or postcode.
      */
     public function add_location($code, $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear all locations for this zone.
      *
@@ -227,21 +192,16 @@ class WC_Shipping_Zone
   2 => 'country',
   3 => 'continent',
 ))
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set locations.
      *
      * @param array $locations Array of locations.
      */
-    public function set_locations($locations = array (
-))
-    {
-        // stub
-    }
-
+    public function set_locations($locations = array())
+{
+}
     /**
      * Add a shipping method to this zone.
      *
@@ -249,10 +209,8 @@ class WC_Shipping_Zone
      * @return int new instance_id, 0 on failure
      */
     public function add_shipping_method($type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a shipping method from a zone.
      *
@@ -260,8 +218,6 @@ class WC_Shipping_Zone
      * @return True on success, false on failure
      */
     public function delete_shipping_method($instance_id)
-    {
-        // stub
-    }
-
+{
+}
 }

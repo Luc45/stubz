@@ -11,18 +11,14 @@ class BlockTemplate
      * Get the template ID.
      */
     public function get_id(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add an inner block to this template.
      *
      * @param array $block_config The block data.
      */
     public function add_block(array $block_config): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
-    {
-        // stub
-    }
-
+{
+}
 }

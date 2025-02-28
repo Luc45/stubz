@@ -32,38 +32,30 @@ class ActionScheduler_WPCLI_Clean_Command
      * @subcommand clean
      */
     public function clean($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print WP CLI message about how many batches of actions were processed.
      *
      * @param int $batches_processed Number of batches processed.
      */
     protected function print_total_batches(int $batches_processed)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an exception into a WP CLI error.
      *
      * @param Exception $e The error object.
      */
     protected function print_error(Exception $e)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print a success message with the number of completed actions.
      *
      * @param int $actions_deleted Number of deleted actions.
      */
     protected function print_success(int $actions_deleted)
-    {
-        // stub
-    }
-
+{
+}
 }

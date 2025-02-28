@@ -19,10 +19,8 @@ abstract class AbstractInterfaceServiceProvider
      * @return bool
      */
     public function provides(string $alias): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a class in the container and add tags for all the interfaces it implements.
      *
@@ -37,10 +35,8 @@ abstract class AbstractInterfaceServiceProvider
      * @return DefinitionInterface
      */
     protected function add_with_implements_tags(string $id, $concrete = null, bool|null $shared = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a shared class in the container and add tags for all the interfaces it implements.
      *
@@ -50,8 +46,6 @@ abstract class AbstractInterfaceServiceProvider
      * @return DefinitionInterface
      */
     protected function share_with_implements_tags(string $id, $concrete = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
 }

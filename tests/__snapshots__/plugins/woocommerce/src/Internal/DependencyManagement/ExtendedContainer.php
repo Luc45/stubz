@@ -22,8 +22,7 @@ class ExtendedContainer
      *
      * @var array
      */
-    private $original_concretes = array (
-);
+    private $original_concretes = array();
 
     /**
      * Whitelist of classes that we can register using the container
@@ -46,8 +45,7 @@ class ExtendedContainer
      *
      * @var array
      */
-    private array $known_tags = array (
-);
+    private array $known_tags = array();
 
     /**
      * Register a class in the container.
@@ -60,10 +58,8 @@ class ExtendedContainer
      * @throws ContainerException Invalid parameters.
      */
     public function add(string $class_name, $concrete = null, bool|null $shared = null): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Replace an existing registration with a different concrete. See also 'reset_replacement' and 'reset_all_replacements'.
      *
@@ -74,10 +70,8 @@ class ExtendedContainer
      * @throws ContainerException Invalid parameters.
      */
     public function replace(string $class_name, $concrete): Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset a replaced registration back to its original concrete.
      *
@@ -85,26 +79,20 @@ class ExtendedContainer
      * @return bool True if the registration has been reset, false if no replacement had been made for the specified class name.
      */
     public function reset_replacement(string $class_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset all the replaced registrations back to their original concretes.
      */
     public function reset_all_replacements()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset all the cached resolutions, so any further "get" for shared definitions will generate the instance again.
      */
     public function reset_all_resolved()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an instance of a registered class.
      *
@@ -115,10 +103,8 @@ class ExtendedContainer
      * @throws ContainerException Attempt to get an instance of a non-namespaced class.
      */
     public function get($id, bool $new = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets the class from the concrete regardless of type.
      *
@@ -127,10 +113,8 @@ class ExtendedContainer
      * @return string|null The class from the concrete if one is available, null otherwise.
      */
     protected function get_class_from_concrete($concrete)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks to see whether or not a class is allowed to be registered.
      *
@@ -139,10 +123,8 @@ class ExtendedContainer
      * @return bool True if the class is allowed to be registered, false otherwise.
      */
     protected function is_class_allowed(string $class_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a class name corresponds to an anonymous class.
      *
@@ -150,8 +132,6 @@ class ExtendedContainer
      * @return bool True if the name corresponds to an anonymous class.
      */
     protected function is_anonymous_class(string $class_name): bool
-    {
-        // stub
-    }
-
+{
+}
 }

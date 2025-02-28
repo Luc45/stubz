@@ -21,36 +21,28 @@ class WC_Report_Stock
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * No items found text.
      */
     public function no_items()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Don't need this.
      *
      * @param string $position
      */
     public function display_tablenav($position)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Output the report.
      */
     public function output_report()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get column value.
      *
@@ -58,26 +50,20 @@ class WC_Report_Stock
      * @param string $column_name
      */
     public function column_default($item, $column_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get columns.
      *
      * @return array
      */
     public function get_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare customer list items.
      */
     public function prepare_items()
-    {
-        // stub
-    }
-
+{
+}
 }

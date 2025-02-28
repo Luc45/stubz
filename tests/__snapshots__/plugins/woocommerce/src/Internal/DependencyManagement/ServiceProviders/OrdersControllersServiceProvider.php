@@ -22,8 +22,6 @@ class OrdersControllersServiceProvider
      * Register the classes.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
 }

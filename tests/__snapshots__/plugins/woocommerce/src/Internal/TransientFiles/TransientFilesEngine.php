@@ -42,10 +42,8 @@ class TransientFilesEngine
      * Register hooks.
      */
     public function register()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Class initialization, to be executed when the class is resolved by the container.
      *
@@ -53,11 +51,9 @@ class TransientFilesEngine
      *
      * @param LegacyProxy $legacy_proxy The instance of LegacyProxy to use.
      */
-    public final function init(Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
-    {
-        // stub
-    }
-
+    final public function init(Automattic\WooCommerce\Proxies\LegacyProxy $legacy_proxy)
+{
+}
     /**
      * Get the base directory where transient files are stored.
      *
@@ -75,10 +71,8 @@ class TransientFilesEngine
      * @throws Exception The custom base directory (as specified via filter) doesn't exist, or the default base directory can't be created.
      */
     public function get_transient_files_directory(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a transient file.
      *
@@ -89,10 +83,8 @@ class TransientFilesEngine
      * @throws \Exception The directory to store the file doesn't exist and can't be created.
      */
     public function create_transient_file(string $file_contents, $expiration_date): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the full physical path of a transient file given its name.
      *
@@ -100,10 +92,8 @@ class TransientFilesEngine
      * @return string|null The full physical path of the file, or null if the files doesn't exist.
      */
     public function get_transient_file_path(string $filename): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the expiration date of a transient file based on its file name. The actual existence of the file is NOT checked.
      *
@@ -111,10 +101,8 @@ class TransientFilesEngine
      * @return string|null Expiration date formatted as Y-m-d, null if the file name isn't encoding a proper date.
      */
     public static function get_expiration_date(string $filename): string|null
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the public URL of a transient file. The file name is NOT checked for validity or actual existence.
      *
@@ -122,10 +110,8 @@ class TransientFilesEngine
      * @return string The public URL of the file.
      */
     public function get_public_url(string $filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Verify if a file has expired, given its full physical file path.
      *
@@ -140,10 +126,8 @@ class TransientFilesEngine
      * @throws \Exception Thrown by DateTime if a wrong file path is passed.
      */
     public function file_has_expired(string $file_path): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete an existing transient file.
      *
@@ -151,10 +135,8 @@ class TransientFilesEngine
      * @return bool True if the file has been deleted, false otherwise (the file didn't exist).
      */
     public function delete_transient_file(string $filename): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete expired transient files from the filesystem.
      *
@@ -163,37 +145,29 @@ class TransientFilesEngine
      * @throws Exception The base directory for transient files (possibly changed via filter) doesn't exist.
      */
     public function delete_expired_files(int $limit = 1000): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Is the expired files cleanup action currently scheduled?
      *
      * @return bool True if the expired files cleanup action is currently scheduled, false otherwise.
      */
     public function expired_files_cleanup_is_scheduled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Schedule an action that will do one round of expired files cleanup.
      * The action is scheduled to run immediately. If a previous pending action exists, it's unscheduled first.
      */
     public function schedule_expired_files_cleanup(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the scheduled action that does the expired files cleanup, if it's scheduled.
      */
     public function unschedule_expired_files_cleanup(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the expired files cleanup action and schedule a new one.
      *
@@ -210,10 +184,8 @@ class TransientFilesEngine
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_expired_files_cleanup_action(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add the tools to (re)schedule and un-schedule the expired files cleanup actions in the WooCommerce debug tools page.
      *
@@ -223,30 +195,24 @@ class TransientFilesEngine
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_debug_tools_entries(array $tools_array): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a directory if it isn't empty.
      *
      * @param string $directory Full directory path.
      */
     private function delete_directory_if_not_empty(string $directory)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the "init" action, add rewrite rules for the "wc/file" endpoint.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function add_endpoint()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the "query_vars" action, add the "wc-transient-file-name" variable for the "wc/file/transient" endpoint.
      *
@@ -256,10 +222,8 @@ class TransientFilesEngine
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_query_vars($vars)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle the "parse_request" action for the "wc/file/transient" endpoint.
      *
@@ -272,18 +236,14 @@ class TransientFilesEngine
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_parse_request()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core method to serve the contents of a transient file.
      *
      * @param string $file_name Transient file id or filename.
      */
     private function serve_file_contents(string $file_name)
-    {
-        // stub
-    }
-
+{
+}
 }

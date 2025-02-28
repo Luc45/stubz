@@ -12,35 +12,27 @@ class Collection
     /**
      * @var array<int, T>
      */
-    private array $items = array (
-);
+    private array $items = array();
 
     /**
      * @param T $item
      */
     public function add($item): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * @return T|null
      */
     public function getFirst()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * @return array<int, T>
      */
     public function all(): array
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * A sample user class (could be the generic type T).
  */
@@ -49,13 +41,9 @@ class User
     private string $name;
 
     public function __construct(string $name)
-    {
-        // stub
-    }
-
+{
+}
     public function getName(): string
-    {
-        // stub
-    }
-
+{
+}
 }

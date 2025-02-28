@@ -25,10 +25,8 @@ class WC_REST_Data_Currencies_Controller
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get currency information.
      *
@@ -37,10 +35,8 @@ class WC_REST_Data_Currencies_Controller
      * @return array|mixed Response data, ready for insertion into collection data.
      */
     public function get_currency($code, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the list of currencies.
      *
@@ -48,10 +44,8 @@ class WC_REST_Data_Currencies_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return information for a specific currency.
      *
@@ -59,10 +53,8 @@ class WC_REST_Data_Currencies_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return information for the current site currency.
      *
@@ -70,10 +62,8 @@ class WC_REST_Data_Currencies_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function get_current_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -82,10 +72,8 @@ class WC_REST_Data_Currencies_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -93,18 +81,14 @@ class WC_REST_Data_Currencies_Controller
      * @return array Links for the given currency.
      */
     protected function prepare_links($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the currency schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

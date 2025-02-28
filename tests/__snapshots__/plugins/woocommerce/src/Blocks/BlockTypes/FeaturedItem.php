@@ -45,16 +45,14 @@ abstract class FeaturedItem
      * @param array $attributes Block attributes. Default empty array.
      * @return \WP_Term|\WC_Product|null
      */
-    protected abstract function get_item($attributes);
-
+    abstract protected function get_item($attributes);
     /**
      * Returns the name of the featured item.
      *
      * @param \WP_Term|\WC_Product $item Item object.
      * @return string
      */
-    protected abstract function get_item_title($item);
-
+    abstract protected function get_item_title($item);
     /**
      * Returns the featured item image URL.
      *
@@ -62,8 +60,7 @@ abstract class FeaturedItem
      * @param string               $size Image size, defaults to 'full'.
      * @return string
      */
-    protected abstract function get_item_image($item, $size = 'full');
-
+    abstract protected function get_item_image($item, $size = 'full');
     /**
      * Renders the featured item attributes.
      *
@@ -71,8 +68,7 @@ abstract class FeaturedItem
      * @param array                $attributes Block attributes. Default empty array.
      * @return string
      */
-    protected abstract function render_attributes($item, $attributes);
-
+    abstract protected function render_attributes($item, $attributes);
     /**
      * Render the featured item block.
      *
@@ -82,10 +78,8 @@ abstract class FeaturedItem
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the url the item's image
      *
@@ -95,10 +89,8 @@ abstract class FeaturedItem
      * @return string
      */
     private function get_image_url($attributes, $item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the featured image as a div background.
      *
@@ -108,10 +100,8 @@ abstract class FeaturedItem
      * @return string
      */
     private function render_bg_image($attributes, $image_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the styles for the wrapper element (background image, color).
      *
@@ -121,10 +111,8 @@ abstract class FeaturedItem
      * @return string
      */
     public function get_bg_styles($attributes, $image_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the featured image
      *
@@ -135,10 +123,8 @@ abstract class FeaturedItem
      * @return string
      */
     private function render_image($attributes, $item, string $image_url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the styles for the wrapper element (background image, color).
      *
@@ -146,10 +132,8 @@ abstract class FeaturedItem
      * @return string
      */
     public function get_styles($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get class names for the block container.
      *
@@ -157,10 +141,8 @@ abstract class FeaturedItem
      * @return string
      */
     public function get_classes($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the block overlay
      *
@@ -169,10 +151,8 @@ abstract class FeaturedItem
      * @return string
      */
     private function render_overlay($attributes)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns whether the focal point is defined for the block.
      *
@@ -181,10 +161,8 @@ abstract class FeaturedItem
      * @return bool
      */
     private function hasFocalPoint($attributes): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Extra data passed through from server to client for block.
      *
@@ -192,10 +170,7 @@ abstract class FeaturedItem
      *                           Note, this will be empty in the editor context when the block is
      *                           not in the post content on editor load.
      */
-    protected function enqueue_data(array $attributes = array (
-))
-    {
-        // stub
-    }
-
+    protected function enqueue_data(array $attributes = array())
+{
+}
 }

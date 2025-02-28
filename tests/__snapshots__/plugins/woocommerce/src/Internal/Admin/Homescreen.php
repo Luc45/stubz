@@ -20,18 +20,14 @@ class Homescreen
      * Get class instance.
      */
     public static function get_instance()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hook into WooCommerce.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set free shipping in the same country as the store default
      * Flag rate in all other countries when any of the following conditions are true
@@ -44,10 +40,8 @@ class Homescreen
      * @return array
      */
     public function maybe_set_default_shipping_options_on_home($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds fields so that we can store performance indicators, row settings, and chart type settings for users.
      *
@@ -55,45 +49,35 @@ class Homescreen
      * @return array
      */
     public function add_user_data_fields($user_data_fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers home page.
      */
     public function register_page()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the user can access the top-level WooCommerce item.
      *
      * @return bool
      */
     public static function is_admin_user()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Possibly remove the WooCommerce menu item if it was purely used to access wc-admin pages.
      */
     public function possibly_remove_woocommerce_menu()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the WooCommerce menu structure to make our main dashboard/handler
      * the top level link for 'WooCommerce'.
      */
     public function update_link_structure()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Preload options to prime state of the application.
      *
@@ -101,8 +85,6 @@ class Homescreen
      * @return array
      */
     public function preload_options($options)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -38,8 +38,7 @@ abstract class WC_CSV_Exporter
      *
      * @var array
      */
-    protected $row_data = array (
-);
+    protected $row_data = array();
 
     /**
      * Total rows to export.
@@ -53,16 +52,14 @@ abstract class WC_CSV_Exporter
      *
      * @var array
      */
-    protected $column_names = array (
-);
+    protected $column_names = array();
 
     /**
      * List of columns to export, or empty for all.
      *
      * @var array
      */
-    protected $columns_to_export = array (
-);
+    protected $columns_to_export = array();
 
     /**
      * The delimiter parameter sets the field delimiter (one character only).
@@ -74,8 +71,7 @@ abstract class WC_CSV_Exporter
     /**
      * Prepare data that will be exported.
      */
-    public abstract function prepare_data_to_export();
-
+    abstract public function prepare_data_to_export();
     /**
      * Return an array of supported column names and ids.
      *
@@ -83,10 +79,8 @@ abstract class WC_CSV_Exporter
      * @return array
      */
     public function get_column_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set column names.
      *
@@ -94,10 +88,8 @@ abstract class WC_CSV_Exporter
      * @param array $column_names Column names array.
      */
     public function set_column_names($column_names)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return an array of columns to export.
      *
@@ -105,10 +97,8 @@ abstract class WC_CSV_Exporter
      * @return array
      */
     public function get_columns_to_export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the delimiter to use in CSV file
      *
@@ -116,10 +106,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     public function get_delimiter()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set columns to export.
      *
@@ -127,10 +115,8 @@ abstract class WC_CSV_Exporter
      * @param array $columns Columns array.
      */
     public function set_columns_to_export($columns)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if a column is to be exported or not.
      *
@@ -139,10 +125,8 @@ abstract class WC_CSV_Exporter
      * @return boolean
      */
     public function is_column_exporting($column_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return default columns.
      *
@@ -150,50 +134,40 @@ abstract class WC_CSV_Exporter
      * @return array
      */
     public function get_default_column_names()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Do the export.
      *
      * @since 3.1.0
      */
     public function export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the export headers.
      *
      * @since 3.1.0
      */
     public function send_headers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set filename to export to.
      *
      * @param  string $filename Filename to export to.
      */
     public function set_filename($filename)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate and return a filename.
      *
      * @return string
      */
     public function get_filename()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the export content.
      *
@@ -201,10 +175,8 @@ abstract class WC_CSV_Exporter
      * @param string $csv_data All CSV content.
      */
     public function send_content($csv_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get CSV data for this export.
      *
@@ -212,10 +184,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     protected function get_csv_data()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export column headers in CSV format.
      *
@@ -223,10 +193,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     protected function export_column_headers()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get data that will be exported.
      *
@@ -234,10 +202,8 @@ abstract class WC_CSV_Exporter
      * @return array
      */
     protected function get_data_to_export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export rows in CSV format.
      *
@@ -245,10 +211,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     protected function export_rows()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Export rows to an array ready for the CSV.
      *
@@ -258,10 +222,8 @@ abstract class WC_CSV_Exporter
      * @param resource $buffer Output buffer.
      */
     protected function export_row($row_data, $key, $buffer)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get batch limit.
      *
@@ -269,10 +231,8 @@ abstract class WC_CSV_Exporter
      * @return int
      */
     public function get_limit()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set batch limit.
      *
@@ -280,10 +240,8 @@ abstract class WC_CSV_Exporter
      * @param int $limit Limit to export.
      */
     public function set_limit($limit)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get count of records exported.
      *
@@ -291,10 +249,8 @@ abstract class WC_CSV_Exporter
      * @return int
      */
     public function get_total_exported()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Escape a string to be used in a CSV context
      *
@@ -315,10 +271,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     public function escape_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format and escape data ready for the CSV file.
      *
@@ -327,10 +281,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     public function format_data($data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Format term ids to names.
      *
@@ -340,10 +292,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     public function format_term_ids($term_ids, $taxonomy)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Implode CSV cell values using commas by default, and wrapping values
      * which contain the separator.
@@ -353,10 +303,8 @@ abstract class WC_CSV_Exporter
      * @return string
      */
     protected function implode_values($values)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Write to the CSV file.
      *
@@ -365,8 +313,6 @@ abstract class WC_CSV_Exporter
      * @param array    $export_row Row to export.
      */
     protected function fputcsv($buffer, $export_row)
-    {
-        // stub
-    }
-
+{
+}
 }

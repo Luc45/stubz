@@ -29,18 +29,14 @@ class WC_Shipping_Legacy_Free_Shipping
      * Constructor.
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Process and redirect if disabled.
      */
     public function process_admin_options()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return the name of the option in the WP DB.
      *
@@ -48,26 +44,20 @@ class WC_Shipping_Legacy_Free_Shipping
      * @return string
      */
     public function get_option_key()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Init function.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Initialise Gateway Settings Form Fields.
      */
     public function init_form_fields()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if package is available.
      *
@@ -75,19 +65,14 @@ class WC_Shipping_Legacy_Free_Shipping
      * @return bool
      */
     public function is_available($package)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate shipping.
      *
      * @param array $package Package information.
      */
-    public function calculate_shipping($package = array (
-))
-    {
-        // stub
-    }
-
+    public function calculate_shipping($package = array())
+{
+}
 }

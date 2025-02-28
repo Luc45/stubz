@@ -24,18 +24,14 @@ class WC_REST_Order_Refunds_Controller
      * @return WP_Error|WC_Data The prepared item, or WP_Error object on failure.
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the refund schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

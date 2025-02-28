@@ -15,38 +15,30 @@ class ProductCatalogTemplate
      * Initialization method.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the title of the template.
      *
      * @return string
      */
     public function get_template_title()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the description of the template.
      *
      * @return string
      */
     public function get_template_description()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Renders the default block template from Woo Blocks if no theme templates exist.
      */
     public function render_block_template()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the template panel from the Sidebar of the Shop page because
      * the Site Editor handles it.
@@ -58,8 +50,6 @@ class ProductCatalogTemplate
      * @return bool
      */
     public function remove_block_template_support_for_shop_page($is_support)
-    {
-        // stub
-    }
-
+{
+}
 }

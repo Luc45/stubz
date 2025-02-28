@@ -29,8 +29,7 @@ class WC_Eval_Math
      *
      * @var array
      */
-    public static $f = array (
-);
+    public static $f = array();
 
     /**
      * Constants.
@@ -47,8 +46,7 @@ class WC_Eval_Math
      *
      * @var array
      */
-    public static $fb = array (
-);
+    public static $fb = array();
 
     /**
      * Evaluate maths string.
@@ -57,10 +55,8 @@ class WC_Eval_Math
      * @return mixed
      */
     public static function evaluate($expr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert infix to postfix notation.
      *
@@ -69,10 +65,8 @@ class WC_Eval_Math
      * @return array|string
      */
     private static function nfx($expr)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Evaluate postfix notation.
      *
@@ -81,12 +75,9 @@ class WC_Eval_Math
      *
      * @return mixed
      */
-    private static function pfx($tokens, $vars = array (
-))
-    {
-        // stub
-    }
-
+    private static function pfx($tokens, $vars = array())
+{
+}
     /**
      * Trigger an error, but nicely, if need be.
      *
@@ -95,10 +86,8 @@ class WC_Eval_Math
      * @return bool
      */
     private static function trigger($msg)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prints the file name, function name, and
      * line number which called your function
@@ -106,12 +95,9 @@ class WC_Eval_Math
      * it to begin with)
      */
     private static function debugPrintCallingFunction()
-    {
-        // stub
-    }
-
+{
 }
-
+}
 /**
  * Class WC_Eval_Math_Stack.
  */
@@ -122,8 +108,7 @@ class WC_Eval_Math_Stack
      *
      * @var array
      */
-    public $stack = array (
-);
+    public $stack = array();
 
     /**
      * Stack counter.
@@ -138,20 +123,16 @@ class WC_Eval_Math_Stack
      * @param  mixed $val
      */
     public function push($val)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Pop value from stack.
      *
      * @return mixed
      */
     public function pop()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get last value from stack.
      *
@@ -160,8 +141,6 @@ class WC_Eval_Math_Stack
      * @return mixed
      */
     public function last($n = 1)
-    {
-        // stub
-    }
-
+{
+}
 }

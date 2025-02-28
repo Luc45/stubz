@@ -11,10 +11,8 @@ class DeprecatedOptions
      * Initialize.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the values from the correct source when attempting to retrieve deprecated options.
      *
@@ -23,10 +21,8 @@ class DeprecatedOptions
      * @return string
      */
     public static function get_deprecated_options($pre_option, $option)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the new option names when deprecated options are updated.
      * This is a temporary fallback until we can fully remove the old task list components.
@@ -37,8 +33,6 @@ class DeprecatedOptions
      * @return string
      */
     public static function update_deprecated_options($value, $old_value, $option)
-    {
-        // stub
-    }
-
+{
+}
 }

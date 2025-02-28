@@ -14,8 +14,6 @@ class ProductAvailabilityUtils
      * @return string[] The product availability class and text.
      */
     public static function get_product_availability($product)
-    {
-        // stub
-    }
-
+{
+}
 }

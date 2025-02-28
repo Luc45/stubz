@@ -35,20 +35,16 @@ class MailchimpScheduler
      * @param \WC_Logger_Interface|null $logger Logger instance.
      */
     public function __construct(WC_Logger_Interface|null $logger = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Attempt to subscribe store_email to MailChimp.
      *
      * @internal
      */
     public function run()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Make an HTTP request to the API.
      *
@@ -59,20 +55,16 @@ class MailchimpScheduler
      * @return mixed
      */
     public function make_request($store_email, $address)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Reset options.
      *
      * @internal
      */
     public static function reset()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle subscribe API error.
      *
@@ -80,8 +72,6 @@ class MailchimpScheduler
      * @param string $extra_msg  Extra message to log.
      */
     private function handle_request_error($extra_msg = null)
-    {
-        // stub
-    }
-
+{
+}
 }

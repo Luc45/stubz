@@ -35,16 +35,14 @@ class WC_Log_Handler_Email
      *
      * @var array
      */
-    protected $recipients = array (
-);
+    protected $recipients = array();
 
     /**
      * Stores log messages.
      *
      * @var array
      */
-    protected $logs = array (
-);
+    protected $logs = array();
 
     /**
      * Stores integer representation of maximum logged level.
@@ -61,20 +59,16 @@ class WC_Log_Handler_Email
      *           Default 'alert'. One of: emergency|alert|critical|error|warning|notice|info|debug.
      */
     public function __construct($recipients = null, $threshold = 'alert')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set handler severity threshold.
      *
      * @param string $level emergency|alert|critical|error|warning|notice|info|debug.
      */
     public function set_threshold($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine whether handler should handle log.
      *
@@ -82,10 +76,8 @@ class WC_Log_Handler_Email
      * @return bool True if the log should be handled.
      */
     protected function should_handle($level)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle a log entry.
      *
@@ -97,50 +89,40 @@ class WC_Log_Handler_Email
      * @return bool False if value was not handled and true if value was handled.
      */
     public function handle($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Send log email.
      *
      * @return bool True if email is successfully sent otherwise false.
      */
     public function send_log_email()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build subject for log email.
      *
      * @return string subject
      */
     protected function get_subject()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Build body for log email.
      *
      * @return string body
      */
     protected function get_body()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds an email to the list of recipients.
      *
      * @param string $email Email address to add.
      */
     public function add_email($email)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add log message.
      *
@@ -150,16 +132,12 @@ class WC_Log_Handler_Email
      * @param array  $context Additional information for log handlers.
      */
     protected function add_log($timestamp, $level, $message, $context)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Clear log messages.
      */
     protected function clear_logs()
-    {
-        // stub
-    }
-
+{
+}
 }

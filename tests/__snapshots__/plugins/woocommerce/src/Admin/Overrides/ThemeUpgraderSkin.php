@@ -18,18 +18,14 @@ class ThemeUpgraderSkin
      * Hide the skin header display.
      */
     public function header()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide the skin footer display.
      */
     public function footer()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide the skin feedback display.
      *
@@ -37,16 +33,12 @@ class ThemeUpgraderSkin
      * @param mixed  ...$args Optional text replacements.
      */
     public function feedback($string, ...$args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hide the skin after display.
      */
     public function after()
-    {
-        // stub
-    }
-
+{
+}
 }

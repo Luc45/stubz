@@ -64,30 +64,24 @@ class SetWCShipping
      * @param array $local_pickup Local pickup settings.
      */
     public function __construct(array $methods, array $locations, array $zones, array $terms, array $classes, array $local_pickup)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the JSON array for the step.
      *
      * @return array The JSON array.
      */
     public function prepare_json_array(): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the step.
      *
      * @return string
      */
     public static function get_step_name(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema for the step.
      *
@@ -95,8 +89,6 @@ class SetWCShipping
      * @return array The schema array.
      */
     public static function get_schema($version = 1): array
-    {
-        // stub
-    }
-
+{
+}
 }

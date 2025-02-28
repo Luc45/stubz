@@ -16,20 +16,16 @@ class DataStore
      * @return array Array of counts.
      */
     public function get_data($query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get low stock count (products with stock < low stock amount, but greater than no stock amount).
      *
      * @return int Low stock count.
      */
     private function get_low_stock_count()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get count for the passed in stock status.
      *
@@ -37,18 +33,14 @@ class DataStore
      * @return int Count.
      */
     private function get_count($status)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product count for the store.
      *
      * @return int Product count.
      */
     private function get_product_count()
-    {
-        // stub
-    }
-
+{
+}
 }

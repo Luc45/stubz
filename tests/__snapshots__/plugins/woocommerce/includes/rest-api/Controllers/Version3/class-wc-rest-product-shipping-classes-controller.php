@@ -19,10 +19,8 @@ class WC_REST_Product_Shipping_Classes_Controller
      * Register the routes for product reviews.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Callback function for the slug-suggestion endpoint.
      *
@@ -30,8 +28,6 @@ class WC_REST_Product_Shipping_Classes_Controller
      * @return string          The suggested slug.
      */
     public function suggest_slug($request)
-    {
-        // stub
-    }
-
+{
+}
 }

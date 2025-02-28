@@ -21,10 +21,8 @@ class WC_Register_WP_Admin_Settings
      * @param string                    $type   Type of settings to register (email or page).
      */
     public function __construct($object, $type)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register's all of our different notification emails as sub groups
      * of email settings.
@@ -34,10 +32,8 @@ class WC_Register_WP_Admin_Settings
      * @return array
      */
     public function register_email_group($groups)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers all of the setting form fields for emails to each email type's group.
      *
@@ -46,10 +42,8 @@ class WC_Register_WP_Admin_Settings
      * @return array
      */
     public function register_email_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers a setting group, based on admin page ID & label as parent group.
      *
@@ -58,10 +52,8 @@ class WC_Register_WP_Admin_Settings
      * @return array
      */
     public function register_page_group($groups)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Registers settings to a specific group.
      *
@@ -70,10 +62,8 @@ class WC_Register_WP_Admin_Settings
      * @return array
      */
     public function register_page_settings($settings)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register a setting into the format expected for the Settings REST API.
      *
@@ -82,8 +72,6 @@ class WC_Register_WP_Admin_Settings
      * @return array|bool
      */
     public function register_setting($setting)
-    {
-        // stub
-    }
-
+{
+}
 }

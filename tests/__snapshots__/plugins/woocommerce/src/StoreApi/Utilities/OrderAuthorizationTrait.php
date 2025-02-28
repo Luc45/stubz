@@ -18,10 +18,8 @@ trait OrderAuthorizationTrait
      * @return boolean|WP_Error
      */
     public function is_authorized(WP_REST_Request $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a given billing email against an existing order.
      *
@@ -30,8 +28,6 @@ trait OrderAuthorizationTrait
      * @param string  $billing_email Billing email.
      */
     public function validate_billing_email_matches_order($order_id, $billing_email)
-    {
-        // stub
-    }
-
+{
+}
 }

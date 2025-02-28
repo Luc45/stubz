@@ -34,10 +34,8 @@ class RuntimeContainer
      * @param array $initial_resolved_cache Dictionary of class name => instance, to be used as the starting point for the resolved classes cache.
      */
     public function __construct(array $initial_resolved_cache)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an instance of a class.
      *
@@ -60,10 +58,8 @@ class RuntimeContainer
      * @throws \Exception Exception thrown in the constructor or in the 'init' method of one of the resolved classes.
      */
     public function get(string $class_name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Core function to get an instance of a class.
      *
@@ -73,10 +69,8 @@ class RuntimeContainer
      * @throws ContainerException Error when resolving the class to an object instance.
      */
     protected function get_core(string $class_name, array &$resolve_chain)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get an instance of a class using reflection.
      * This method recursively calls 'get_core' (which in turn calls this method) for each of the arguments
@@ -90,10 +84,8 @@ class RuntimeContainer
      * @throws \ReflectionException Something went wrong when using reflection to get information about the class to resolve.
      */
     private function instantiate_class_using_reflection(string $class_name, array &$resolve_chain): object
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Tells if the 'get' method can be used to resolve a given class.
      *
@@ -101,10 +93,8 @@ class RuntimeContainer
      * @return bool True if the class with the supplied name can be resolved with 'get'.
      */
     public function has(string $class_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Checks to see whether a class is allowed to be registered.
      *
@@ -113,10 +103,8 @@ class RuntimeContainer
      * @return bool True if the class is allowed to be registered, false otherwise.
      */
     protected function is_class_allowed(string $class_name): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Tells if this class should be used as the core WooCommerce dependency injection container (or if the old ExtendedContainer should be used instead).
      *
@@ -128,8 +116,6 @@ class RuntimeContainer
      * @return bool True if this class should be used as the core WooCommerce dependency injection container, false if ExtendedContainer should be used instead.
      */
     public static function should_use(): bool
-    {
-        // stub
-    }
-
+{
+}
 }

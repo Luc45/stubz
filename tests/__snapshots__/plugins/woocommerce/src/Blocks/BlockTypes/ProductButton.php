@@ -20,18 +20,14 @@ class ProductButton
      * @param string $key Data to get, or default to everything.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the context.
      */
     protected function get_block_type_uses_context()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Enqueue frontend assets for this block, just in time for rendering.
      *
@@ -40,19 +36,15 @@ class ProductButton
      * @param WP_Block $block    The block object.
      */
     protected function enqueue_assets(array $attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Dequeue the add-to-cart script.
      * The block uses Interactivity API, it isn't necessary enqueue the add-to-cart script.
      */
     public function dequeue_add_to_cart_scripts()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Include and render the block.
      *
@@ -62,10 +54,8 @@ class ProductButton
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the number of items in the cart for a given product id.
      *
@@ -73,26 +63,20 @@ class ProductButton
      * @return number The number of items in the cart.
      */
     private function get_cart_item_quantities_by_product_id($product_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prevent caching on certain pages
      */
     private function prevent_cache()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the view cart link html.
      *
      * @return string The view cart html.
      */
     private function get_view_cart_html()
-    {
-        // stub
-    }
-
+{
+}
 }

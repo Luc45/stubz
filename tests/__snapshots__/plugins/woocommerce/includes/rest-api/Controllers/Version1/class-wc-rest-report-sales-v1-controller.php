@@ -33,10 +33,8 @@ class WC_REST_Report_Sales_V1_Controller
      * Register the routes for sales reports.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read report.
      *
@@ -44,10 +42,8 @@ class WC_REST_Report_Sales_V1_Controller
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get sales reports.
      *
@@ -55,10 +51,8 @@ class WC_REST_Report_Sales_V1_Controller
      * @return array|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a report sales object for serialization.
      *
@@ -67,38 +61,30 @@ class WC_REST_Report_Sales_V1_Controller
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($_, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Setup the report object and parse any date filtering.
      *
      * @param array $filter date filtering
      */
     protected function setup_report($filter)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Report's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -37,16 +37,14 @@ trait OrderAttributionMeta
 );
 
     /** @var array */
-    private $fields = array (
-);
+    private $fields = array();
 
     /**
      * Cached `array_keys( $fields )`.
      *
      * @var array
      * */
-    private $field_names = array (
-);
+    private $field_names = array();
 
     /** @var string */
     private $field_prefix = '';
@@ -59,30 +57,24 @@ trait OrderAttributionMeta
      * @return string The device type.
      */
     protected function get_device_type(array $values): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the fields and the field prefix.
      *
      * @return void
      */
     private function set_fields_and_prefix()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the meta prefix for our fields.
      *
      * @return void
      */
     private function set_field_prefix(): void
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter an order's meta data to only the keys that we care about.
      *
@@ -93,10 +85,8 @@ trait OrderAttributionMeta
      * @return array
      */
     private function filter_meta_data(array $meta): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the field name with the appropriate prefix.
      *
@@ -105,10 +95,8 @@ trait OrderAttributionMeta
      * @return string The prefixed field name.
      */
     private function get_prefixed_field_name($name): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the field name with the meta prefix.
      *
@@ -117,10 +105,8 @@ trait OrderAttributionMeta
      * @return string The prefixed field name.
      */
     private function get_meta_prefixed_field_name(string $name): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Remove the meta prefix from the field name.
      *
@@ -129,10 +115,8 @@ trait OrderAttributionMeta
      * @return string
      */
     private function unprefix_meta_field_name(string $name): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the order object with HPOS compatibility.
      *
@@ -142,10 +126,8 @@ trait OrderAttributionMeta
      * @throws Exception When the order isn't found.
      */
     private function get_hpos_order_object($post_or_order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Map posted, prefixed values to field values.
      * Used for the classic forms.
@@ -154,12 +136,9 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_unprefixed_field_values(array $raw_values = array (
-)): array
-    {
-        // stub
-    }
-
+    private function get_unprefixed_field_values(array $raw_values = array()): array
+{
+}
     /**
      * Map submitted values to meta values.
      *
@@ -167,12 +146,9 @@ trait OrderAttributionMeta
      *
      * @return array
      */
-    private function get_source_values(array $raw_values = array (
-)): array
-    {
-        // stub
-    }
-
+    private function get_source_values(array $raw_values = array()): array
+{
+}
     /**
      * Get the label for the Order origin with placeholder where appropriate. Can be
      * translated (for DB / display) or untranslated (for Tracks).
@@ -184,10 +160,8 @@ trait OrderAttributionMeta
      * @return string
      */
     private function get_origin_label(string $source_type, string $source, bool $translated = true): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the description for the order attribution field.
      *
@@ -196,8 +170,6 @@ trait OrderAttributionMeta
      * @return string
      */
     private function get_field_description(string $field_name): string
-    {
-        // stub
-    }
-
+{
+}
 }

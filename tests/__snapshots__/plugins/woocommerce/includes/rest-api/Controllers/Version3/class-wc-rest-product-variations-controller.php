@@ -20,17 +20,14 @@ class WC_REST_Product_Variations_Controller
      *
      * @var array
      */
-    private $exclude_status = array (
-);
+    private $exclude_status = array();
 
     /**
      * Register the routes for products.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the downloads for a product variation.
      *
@@ -40,10 +37,8 @@ class WC_REST_Product_Variations_Controller
      * @return array
      */
     protected function get_downloads($product, $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single variation output for response.
      *
@@ -52,10 +47,8 @@ class WC_REST_Product_Variations_Controller
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single variation for create or update.
      *
@@ -64,10 +57,8 @@ class WC_REST_Product_Variations_Controller
      * @return WP_Error|WC_Data
      */
     protected function prepare_object_for_database($request, $creating = false)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the image for a product variation.
      *
@@ -76,10 +67,8 @@ class WC_REST_Product_Variations_Controller
      * @return array
      */
     protected function get_image($variation, $context = 'view')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set variation image.
      *
@@ -89,20 +78,16 @@ class WC_REST_Product_Variations_Controller
      * @return WC_Product_Variation
      */
     protected function set_variation_image($variation, $image)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Variation's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -111,10 +96,8 @@ class WC_REST_Product_Variations_Controller
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get objects.
      *
@@ -122,20 +105,16 @@ class WC_REST_Product_Variations_Controller
      * @return array
      */
     protected function get_objects($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections of attachments.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes all unmatched variations (aka duplicates).
      *
@@ -143,10 +122,8 @@ class WC_REST_Product_Variations_Controller
      * @return int        Number of deleted variations.
      */
     private function delete_unmatched_product_variations($product)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate all variations for a given product.
      *
@@ -154,10 +131,8 @@ class WC_REST_Product_Variations_Controller
      * @return WP_Error|WP_REST_Response
      */
     public function generate($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Exclude product variation statuses from the query.
      *
@@ -165,8 +140,6 @@ class WC_REST_Product_Variations_Controller
      * @return string
      */
     public function exclude_product_variation_statuses($where)
-    {
-        // stub
-    }
-
+{
+}
 }

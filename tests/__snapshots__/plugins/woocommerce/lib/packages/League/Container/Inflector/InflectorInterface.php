@@ -10,7 +10,6 @@ interface InflectorInterface
      * @return string
      */
     public function getType(): string;
-
     /**
      * Defines a method to be invoked on the subject object.
      *
@@ -20,7 +19,6 @@ interface InflectorInterface
      * @return self
      */
     public function invokeMethod(string $name, array $args): Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface;
-
     /**
      * Defines multiple methods to be invoked on the subject object.
      *
@@ -29,7 +27,6 @@ interface InflectorInterface
      * @return self
      */
     public function invokeMethods(array $methods): Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface;
-
     /**
      * Defines a property to be set on the subject object.
      *
@@ -39,7 +36,6 @@ interface InflectorInterface
      * @return self
      */
     public function setProperty(string $property, $value): Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface;
-
     /**
      * Defines multiple properties to be set on the subject object.
      *
@@ -48,7 +44,6 @@ interface InflectorInterface
      * @return self
      */
     public function setProperties(array $properties): Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface;
-
     /**
      * Apply inflections to an object.
      *
@@ -57,5 +52,4 @@ interface InflectorInterface
      * @return void
      */
     public function inflect($object);
-
 }

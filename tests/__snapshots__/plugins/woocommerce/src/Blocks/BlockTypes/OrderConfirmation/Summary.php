@@ -23,12 +23,9 @@ class Summary
      * @param string       $content Original block content.
      * @return string
      */
-    protected function render_content($order, $permission = false, $attributes = array (
-), $content = '')
-    {
-        // stub
-    }
-
+    protected function render_content($order, $permission = false, $attributes = array(), $content = '')
+{
+}
     /**
      * Render row in the order summary.
      *
@@ -37,8 +34,6 @@ class Summary
      * @return string
      */
     protected function render_summary_row($name, $value)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -29,28 +29,22 @@ class FeaturePlugin
      * @return void
      */
     protected function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get class instance.
      *
      * @return object Instance.
      */
-    public static final function instance()
-    {
-        // stub
-    }
-
+    final public static function instance()
+{
+}
     /**
      * Init the feature plugin, only if we can detect both Gutenberg and WooCommerce.
      *
      * @deprecated 6.4.0
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
 }

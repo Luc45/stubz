@@ -47,10 +47,8 @@ abstract class WC_REST_Controller
      * @return array
      */
     protected function add_additional_fields_schema($schema)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Compatibility functions for WP 5.5, since custom types are not supported anymore.
      * See @link https://core.trac.wordpress.org/changeset/48306
@@ -60,10 +58,8 @@ abstract class WC_REST_Controller
      * @return array Endpoint arguments.
      */
     public function get_endpoint_args_for_item_schema($method)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Change datatypes `date-time` to string, and `mixed` to composite of all built in types. This is required for maintaining forward compatibility with WP 5.5 since custom post types are not supported anymore.
      *
@@ -75,20 +71,16 @@ abstract class WC_REST_Controller
      * @return mixed Schema with converted datatype.
      */
     protected function adjust_wp_5_5_datatype_compatibility($endpoint_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get normalized rest base.
      *
      * @return string
      */
     protected function get_normalized_rest_base()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check batch limit.
      *
@@ -96,10 +88,8 @@ abstract class WC_REST_Controller
      * @return bool|WP_Error
      */
     protected function check_batch_limit($items)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Bulk create, update and delete items.
      *
@@ -107,10 +97,8 @@ abstract class WC_REST_Controller
      * @return array Of WP_Error or WP_REST_Response.
      */
     public function batch_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a text value for a text based setting.
      *
@@ -120,10 +108,8 @@ abstract class WC_REST_Controller
      * @return string
      */
     public function validate_setting_text_field($value, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate select based settings.
      *
@@ -133,10 +119,8 @@ abstract class WC_REST_Controller
      * @return string|WP_Error
      */
     public function validate_setting_select_field($value, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate multiselect based settings.
      *
@@ -146,10 +130,8 @@ abstract class WC_REST_Controller
      * @return array|WP_Error
      */
     public function validate_setting_multiselect_field($values, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate image_width based settings.
      *
@@ -159,10 +141,8 @@ abstract class WC_REST_Controller
      * @return string|WP_Error
      */
     public function validate_setting_image_width_field($values, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate radio based settings.
      *
@@ -172,10 +152,8 @@ abstract class WC_REST_Controller
      * @return string|WP_Error
      */
     public function validate_setting_radio_field($value, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate checkbox based settings.
      *
@@ -185,10 +163,8 @@ abstract class WC_REST_Controller
      * @return string|WP_Error
      */
     public function validate_setting_checkbox_field($value, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate textarea based settings.
      *
@@ -199,10 +175,8 @@ abstract class WC_REST_Controller
      * @return string
      */
     public function validate_setting_textarea_field($value, $setting)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add meta query.
      *
@@ -212,20 +186,16 @@ abstract class WC_REST_Controller
      * @return array
      */
     protected function add_meta_query($args, $meta_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the batch schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_public_batch_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Gets an array of fields to be included on the response.
      *
@@ -237,10 +207,8 @@ abstract class WC_REST_Controller
      * @return array Fields to be included in the response.
      */
     public function get_fields_for_response($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Limit the contents of the meta_data property based on certain request parameters.
      *
@@ -253,8 +221,6 @@ abstract class WC_REST_Controller
      * @return array
      */
     protected function get_meta_data_for_response($request, $meta_data)
-    {
-        // stub
-    }
-
+{
+}
 }

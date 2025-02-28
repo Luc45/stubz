@@ -13,10 +13,8 @@ class RemovedDeprecated
      * @param string $name The name of the deprecated method.
      */
     private static function handle_deprecated_method_call($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle calls to deprecated methods.
      *
@@ -24,10 +22,8 @@ class RemovedDeprecated
      * @param array  $arguments The arguments passed to the deprecated method.
      */
     public function __call($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Handle static calls to deprecated methods.
      *
@@ -35,8 +31,6 @@ class RemovedDeprecated
      * @param array  $arguments The arguments passed to the deprecated method.
      */
     public static function __callStatic($name, $arguments)
-    {
-        // stub
-    }
-
+{
+}
 }

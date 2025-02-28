@@ -22,8 +22,7 @@ class Products
      *
      * @var array
      */
-    protected $last_order_dates = array (
-);
+    protected $last_order_dates = array();
 
     /**
      * Adds properties that can be embed via ?_embed=1.
@@ -31,20 +30,16 @@ class Products
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add product name and sku filtering to the WC API.
      *
@@ -52,10 +47,8 @@ class Products
      * @return array
      */
     protected function prepare_objects_query($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a collection of posts and add the post title filter option to WP_Query.
      *
@@ -63,10 +56,8 @@ class Products
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether the request is for products low in stock.
      *
@@ -80,10 +71,8 @@ class Products
      * @return boolean Whether the request matches.
      */
     private function is_low_in_stock_request($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Hang onto last order date since it will get removed by wc_get_product().
      *
@@ -91,10 +80,8 @@ class Products
      * @return WC_Data
      */
     public function get_object($object_data)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add `low_stock_amount` property to product data
      *
@@ -103,10 +90,8 @@ class Products
      * @return WP_REST_Response
      */
     public function prepare_object_for_response($object, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional select fields to the query.
      *
@@ -116,10 +101,8 @@ class Products
      * @return string
      */
     public static function add_wp_query_fields($select, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add in conditional search filters for products.
      *
@@ -129,10 +112,8 @@ class Products
      * @return string
      */
     public static function add_wp_query_filter($where, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join posts meta tables when product search or low stock query is present.
      *
@@ -142,10 +123,8 @@ class Products
      * @return string
      */
     public static function add_wp_query_join($join, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Join wc_product_meta_lookup to posts if not already joined.
      *
@@ -154,10 +133,8 @@ class Products
      * @return string
      */
     protected static function append_product_sorting_table_join($sql)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Group by post ID to prevent duplicates.
      *
@@ -167,8 +144,6 @@ class Products
      * @return string
      */
     public static function add_wp_query_group_by($groupby, $wp_query)
-    {
-        // stub
-    }
-
+{
+}
 }

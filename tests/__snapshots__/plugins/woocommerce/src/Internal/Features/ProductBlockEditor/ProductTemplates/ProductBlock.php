@@ -13,8 +13,6 @@ class ProductBlock
      * @param array $block_config The block data.
      */
     public function add_block(array $block_config): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,10 +11,8 @@ final class StoreApi
      * Init and hook in Store API functionality.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Loads the DI container for Store API.
      *
@@ -25,8 +23,6 @@ final class StoreApi
      * @return mixed
      */
     public static function container($reset = false)
-    {
-        // stub
-    }
-
+{
+}
 }

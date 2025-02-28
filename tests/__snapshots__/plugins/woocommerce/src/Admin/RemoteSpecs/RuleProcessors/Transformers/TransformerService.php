@@ -19,10 +19,8 @@ class TransformerService
      * @return TransformerInterface|null
      */
     public static function create_transformer($name)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Apply transformers to the given value.
      *
@@ -35,8 +33,6 @@ class TransformerService
      * @return mixed|null
      */
     public static function apply($target_value, array $transformer_configs, $is_default_set, $default_value)
-    {
-        // stub
-    }
-
+{
+}
 }

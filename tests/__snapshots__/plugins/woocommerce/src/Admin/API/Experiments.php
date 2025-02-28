@@ -27,10 +27,8 @@ class Experiments
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Forward the experiment request to WP.com and return the WP.com response.
      *
@@ -39,8 +37,6 @@ class Experiments
      * @return \WP_Error|\WP_REST_Response
      */
     public function get_assignment($request)
-    {
-        // stub
-    }
-
+{
+}
 }

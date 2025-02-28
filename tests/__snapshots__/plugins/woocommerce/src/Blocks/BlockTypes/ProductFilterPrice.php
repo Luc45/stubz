@@ -25,10 +25,8 @@ final class ProductFilterPrice
      * - Register the block with WordPress.
      */
     protected function initialize()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the active filter items.
      *
@@ -37,10 +35,8 @@ final class ProductFilterPrice
      * @return array Active filters items.
      */
     public function prepare_selected_filters($items, $params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Register the query param keys.
      *
@@ -50,10 +46,8 @@ final class ProductFilterPrice
      * @return array Active filters param keys.
      */
     public function get_filter_query_param_keys($filter_param_keys, $url_param_keys)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -63,18 +57,14 @@ final class ProductFilterPrice
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Retrieve the price filter data for current block.
      *
      * @param WP_Block $block Block instance.
      */
     private function get_filtered_price($block)
-    {
-        // stub
-    }
-
+{
+}
 }

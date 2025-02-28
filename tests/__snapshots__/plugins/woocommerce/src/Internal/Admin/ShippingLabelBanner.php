@@ -22,28 +22,22 @@ class ShippingLabelBanner
      * Constructor
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if WooCommerce Shipping makes sense for this merchant.
      *
      * @return bool
      */
     private function should_show_meta_box()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add metabox to order page.
      */
     public function add_meta_boxes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Count shippable items
      *
@@ -51,20 +45,16 @@ class ShippingLabelBanner
      * @return int
      */
     private function count_shippable_items(WC_Order $order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Adds JS to order page to render shipping banner.
      *
      * @param string $hook current page hook.
      */
     public function add_print_shipping_label_script($hook)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render placeholder metabox.
      *
@@ -72,8 +62,6 @@ class ShippingLabelBanner
      * @param array    $args empty args.
      */
     public function meta_box($post, $args)
-    {
-        // stub
-    }
-
+{
+}
 }

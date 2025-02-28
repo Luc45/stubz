@@ -8,9 +8,7 @@
  */
 function wc_admin_connect_page($options)
 {
-    // stub
 }
-
 /**
  * Register JS-powered WooCommerce Admin Page.
  * Passthrough to PageController::register_page().
@@ -19,9 +17,7 @@ function wc_admin_connect_page($options)
  */
 function wc_admin_register_page($options)
 {
-    // stub
 }
-
 /**
  * Is this page connected to WooCommerce Admin?
  * Passthrough to PageController::is_connected_page().
@@ -30,9 +26,7 @@ function wc_admin_register_page($options)
  */
 function wc_admin_is_connected_page()
 {
-    // stub
 }
-
 /**
  * Is this a WooCommerce Admin Page?
  * Passthrough to PageController::is_registered_page().
@@ -41,9 +35,7 @@ function wc_admin_is_connected_page()
  */
 function wc_admin_is_registered_page()
 {
-    // stub
 }
-
 /**
  * Get breadcrumbs for WooCommerce Admin Page navigation.
  * Passthrough to PageController::get_breadcrumbs().
@@ -52,5 +44,4 @@ function wc_admin_is_registered_page()
  */
 function wc_admin_get_breadcrumbs()
 {
-    // stub
 }

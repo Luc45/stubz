@@ -11,10 +11,8 @@ class WC_Meta_Box_Product_Reviews
      * @param object $comment Comment being shown.
      */
     public static function output($comment)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Save meta box data
      *
@@ -22,8 +20,6 @@ class WC_Meta_Box_Product_Reviews
      * @return mixed
      */
     public static function save($data)
-    {
-        // stub
-    }
-
+{
+}
 }

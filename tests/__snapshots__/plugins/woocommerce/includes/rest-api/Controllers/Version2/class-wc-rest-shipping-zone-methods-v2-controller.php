@@ -12,10 +12,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * Register the routes for Shipping Zone Methods.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get a single Shipping Zone Method.
      *
@@ -23,10 +21,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function get_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get all Shipping Zone Methods.
      *
@@ -34,10 +30,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Create a new shipping zone method instance.
      *
@@ -45,10 +39,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_REST_Request|WP_Error
      */
     public function create_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Delete a shipping method instance.
      *
@@ -56,10 +48,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_Error|boolean
      */
     public function delete_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update A Single Shipping Zone Method.
      *
@@ -67,10 +57,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_REST_Response|WP_Error
      */
     public function update_item($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates settings, order, and enabled status on create.
      *
@@ -81,10 +69,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WC_Shipping_Method
      */
     public function update_fields($instance_id, $method, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the Shipping Zone Method for the REST response.
      *
@@ -93,10 +79,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return WP_REST_Response $response
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return settings associated with this shipping zone method instance.
      *
@@ -105,10 +89,8 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return array
      */
     public function get_settings($item)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare links for the request.
      *
@@ -117,18 +99,14 @@ class WC_REST_Shipping_Zone_Methods_V2_Controller
      * @return array Links for the given Shipping Zone Method.
      */
     protected function prepare_links($zone_id, $instance_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Shipping Zone Methods schema, conforming to JSON Schema
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

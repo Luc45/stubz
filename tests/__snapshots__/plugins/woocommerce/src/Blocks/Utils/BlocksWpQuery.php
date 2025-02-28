@@ -22,10 +22,8 @@ class BlocksWpQuery
      * @param string|array $query URL query string or array of vars.
      */
     public function __construct($query = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get cached posts, if a cache exists.
      *
@@ -43,8 +41,6 @@ class BlocksWpQuery
      * @return WP_Post[]|int[] Array of post objects or post IDs.
      */
     public function get_cached_posts($transient_version = '')
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -15,10 +15,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return string
      */
     protected function get_hook_content($hook, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render the block.
      *
@@ -29,10 +27,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return string | void Rendered block output.
      */
     protected function render($attributes, $content, $block)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * This renders the content of the block within the wrapper. The permission determines what data can be shown under
      * the given context.
@@ -43,9 +39,7 @@ abstract class AbstractOrderConfirmationBlock
      * @param string       $content Original block content.
      * @return string
      */
-    protected abstract function render_content($order, $permission = false, $attributes = array (
-), $content = '');
-
+    abstract protected function render_content($order, $permission = false, $attributes = array(), $content = '');
     /**
      * This is what gets rendered when the order does not exist. Renders nothing by default, but can be overridden by
      * child classes.
@@ -53,20 +47,16 @@ abstract class AbstractOrderConfirmationBlock
      * @return string
      */
     protected function render_content_fallback()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get current order.
      *
      * @return \WC_Order|null
      */
     protected function get_order()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * View mode for order details based on the order, current user, and settings.
      *
@@ -74,20 +64,16 @@ abstract class AbstractOrderConfirmationBlock
      * @return string|false Returns "full" if the user can view all order details. False if they can view no details.
      */
     protected function get_view_order_permissions($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if guest checkout is enabled.
      *
      * @return boolean
      */
     protected function allow_guest_checkout()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Guest users without an active session can provide their email address to view order details. This however can only
      * be permitted if the user also provided the correct order key, and guest checkout is actually enabled.
@@ -96,10 +82,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function email_verification_permitted($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the order was created within the grace period for viewing details.
      *
@@ -107,10 +91,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function is_within_grace_period($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns true if the email has been verified (posted email matches given order email).
      *
@@ -118,10 +100,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function is_email_verified($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if we need to verify the email address before showing the order details.
      *
@@ -129,10 +109,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function email_verification_required($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the order key is valid.
      *
@@ -140,10 +118,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function has_valid_order_key($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the current order came from a guest or a logged in customer.
      *
@@ -151,10 +127,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function is_customer_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * See if the current logged in user ID matches the given order customer ID.
      *
@@ -164,20 +138,16 @@ abstract class AbstractOrderConfirmationBlock
      * @return boolean
      */
     protected function is_current_customer_order($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the frontend script handle for this block type.
      *
      * @param string $key Data to get, or default to everything.
      */
     protected function get_block_type_script($key = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render custom fields for the order.
      *
@@ -185,10 +155,8 @@ abstract class AbstractOrderConfirmationBlock
      * @return string
      */
     protected function render_additional_fields($fields)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Render custom field row.
      *
@@ -196,8 +164,6 @@ abstract class AbstractOrderConfirmationBlock
      * @return string
      */
     protected function render_additional_field($field)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -21,10 +21,8 @@ class ProductCountRuleProcessor
      * @param object $product_query The product query.
      */
     public function __construct($product_query = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Performs a comparison operation against the number of products.
      *
@@ -34,10 +32,8 @@ class ProductCountRuleProcessor
      * @return bool The result of the operation.
      */
     public function process($rule, $stored_state)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validates the rule.
      *
@@ -46,8 +42,6 @@ class ProductCountRuleProcessor
      * @return bool Pass/fail.
      */
     public function validate($rule)
-    {
-        // stub
-    }
-
+{
+}
 }

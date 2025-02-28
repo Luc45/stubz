@@ -28,10 +28,8 @@ class OnboardingProfile
      * Register routes.
      */
     public function register_routes()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to read onboarding profile data.
      *
@@ -39,10 +37,8 @@ class OnboardingProfile
      * @return WP_Error|boolean
      */
     public function get_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check whether a given request has permission to edit onboarding profile data.
      *
@@ -50,10 +46,8 @@ class OnboardingProfile
      * @return WP_Error|boolean
      */
     public function update_items_permissions_check($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return all onboarding profile data.
      *
@@ -61,10 +55,8 @@ class OnboardingProfile
      * @return WP_Error|WP_REST_Response
      */
     public function get_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Filter the industries.
      *
@@ -72,10 +64,8 @@ class OnboardingProfile
      * @return array
      */
     protected function filter_industries($industries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update onboarding profile data.
      *
@@ -83,10 +73,8 @@ class OnboardingProfile
      * @return WP_Error|WP_REST_Response
      */
     public function update_items($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns a default email to be pre-filled in OBW. Prioritizes Jetpack if connected,
      * otherwise will default to WordPress general settings.
@@ -95,10 +83,8 @@ class OnboardingProfile
      * @return WP_Error|WP_REST_Response
      */
     public function get_email_prefill($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Mark a core profiler step as complete.
      *
@@ -106,10 +92,8 @@ class OnboardingProfile
      * @return WP_Error|WP_REST_Response
      */
     public function core_profiler_step_complete($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the onboarding profile progress.
      *
@@ -117,10 +101,8 @@ class OnboardingProfile
      * @return WP_Error|WP_REST_Response
      */
     public function get_profile_progress($request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare objects query.
      *
@@ -128,10 +110,8 @@ class OnboardingProfile
      * @return array
      */
     protected function prepare_objects_query($params)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare the data object for response.
      *
@@ -140,20 +120,16 @@ class OnboardingProfile
      * @return WP_REST_Response $response Response data.
      */
     public function prepare_item_for_response($item, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get onboarding profile properties.
      *
      * @return array
      */
     public static function get_profile_properties()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Optionally validates email if user agreed to marketing or if email is not empty.
      *
@@ -163,28 +139,22 @@ class OnboardingProfile
      * @return true|WP_Error
      */
     public static function rest_validate_marketing_email($value, $request, $param)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the query params for collections.
      *
      * @return array
      */
     public function get_collection_params()
-    {
-        // stub
-    }
-
+{
+}
 }

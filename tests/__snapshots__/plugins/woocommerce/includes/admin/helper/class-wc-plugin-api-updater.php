@@ -9,10 +9,8 @@ class WC_Plugin_Api_Updater
      * Loads the class, runs on init.
      */
     public static function load()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Plugin information callback for Woo extensions.
      *
@@ -23,10 +21,8 @@ class WC_Plugin_Api_Updater
      * @return object An updated $response.
      */
     public static function plugins_api($response, $action, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Theme information callback for Woo themes.
      *
@@ -35,10 +31,8 @@ class WC_Plugin_Api_Updater
      * @param object $args Arguments passed to themes_api().
      */
     public static function themes_api($response, $action, $args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Override the products API to fetch data from the Helper API if it's a Woo product.
      *
@@ -47,8 +41,6 @@ class WC_Plugin_Api_Updater
      * @param object $args Arguments passed to the API.
      */
     public static function override_products_api_response($response, $action, $args)
-    {
-        // stub
-    }
-
+{
+}
 }

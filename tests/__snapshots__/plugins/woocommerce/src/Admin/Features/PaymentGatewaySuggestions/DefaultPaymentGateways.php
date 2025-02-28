@@ -43,20 +43,16 @@ class DefaultPaymentGateways
      * @return array Default specs.
      */
     public static function get_all()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get array of countries supported by WCPay depending on feature flag.
      *
      * @return array Array of countries.
      */
     public static function get_wcpay_countries()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rules that match the store base location to one of the provided countries.
      *
@@ -64,10 +60,8 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_countries($countries)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rules that match the store's selling venues.
      *
@@ -75,20 +69,16 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_selling_venues($selling_venues)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get rules for when selling offline for core profiler.
      *
      * @return object Rules to match.
      */
     public static function get_rules_selling_offline()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default rules for CBD based on given argument.
      *
@@ -96,10 +86,8 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_cbd($should_have)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default rules for the WooPayments plugin being installed and activated.
      *
@@ -108,10 +96,8 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_wcpay_activated($should_be)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get default rules for WooPayments being connected or not.
      *
@@ -122,10 +108,8 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_wcpay_connected($should_be)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get recommendation priority for a given payment gateway by id and country.
      * If country is not supported, return null.
@@ -135,10 +119,8 @@ class DefaultPaymentGateways
      * @return int|null Priority. Priority is 0-indexed, so 0 is the highest priority.
      */
     private static function get_recommendation_priority($gateway_id, $country_code)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default recommendation priority for a payment gateway.
      * This is used when a country is not in the $recommendation_priority_map array.
@@ -147,8 +129,6 @@ class DefaultPaymentGateways
      * @return int Priority.
      */
     private static function get_default_recommendation_priority($id)
-    {
-        // stub
-    }
-
+{
+}
 }

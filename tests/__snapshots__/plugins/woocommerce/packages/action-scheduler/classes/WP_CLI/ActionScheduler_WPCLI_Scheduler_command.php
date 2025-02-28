@@ -16,10 +16,8 @@ class ActionScheduler_WPCLI_Scheduler_command
      * @subcommand fix-schema
      */
     public function fix_schema($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Run the Action Scheduler
      *
@@ -59,10 +57,8 @@ class ActionScheduler_WPCLI_Scheduler_command
      * @subcommand run
      */
     public function run($args, $assoc_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Converts a string of comma-separated values into an array of those same values.
      *
@@ -71,30 +67,24 @@ class ActionScheduler_WPCLI_Scheduler_command
      * @return array
      */
     private function parse_comma_separated_string($string): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print WP CLI message about how many actions are about to be processed.
      *
      * @param int $total Number of actions found.
      */
     protected function print_total_actions($total)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print WP CLI message about how many batches of actions were processed.
      *
      * @param int $batches_completed Number of completed batches.
      */
     protected function print_total_batches($batches_completed)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Convert an exception into a WP CLI error.
      *
@@ -103,18 +93,14 @@ class ActionScheduler_WPCLI_Scheduler_command
      * @throws \WP_CLI\ExitException Under some conditions WP CLI may throw an exception.
      */
     protected function print_error(Exception $e)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Print a success message with the number of completed actions.
      *
      * @param int $actions_completed Number of completed actions.
      */
     protected function print_success($actions_completed)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -11,10 +11,8 @@ class Tracks
      * Initialize the tracks.
      */
     public function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if a URL is a product editor page.
      *
@@ -22,10 +20,8 @@ class Tracks
      * @return boolean
      */
     protected function is_product_editor_page($url)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the product source if we're on the product editor page.
      *
@@ -33,8 +29,6 @@ class Tracks
      * @return string
      */
     public function add_product_source($source)
-    {
-        // stub
-    }
-
+{
+}
 }

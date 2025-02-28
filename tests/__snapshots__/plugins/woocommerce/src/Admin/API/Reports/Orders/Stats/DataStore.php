@@ -67,38 +67,30 @@ class DataStore
      * @override ReportsDataStore::__construct()
      */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Assign report columns once full table name has been assigned.
      *
      * @override ReportsDataStore::assign_report_columns()
      */
     protected function assign_report_columns()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set up all the hooks for maintaining and populating table data.
      */
     public static function init()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Updates the totals and intervals database queries with parameters used for Orders report: categories, coupons and order status.
      *
      * @param array $query_args      Query arguments supplied by the user.
      */
     protected function orders_stats_sql_filter($query_args)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the default query arguments to be used by get_data().
      * These defaults are only partially applied when used via REST API, as that has its own defaults.
@@ -108,10 +100,8 @@ class DataStore
      * @return array Query parameters.
      */
     public function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Returns the report data based on normalized parameters.
      * Will be called by `get_data` if there is no data in cache.
@@ -127,10 +117,8 @@ class DataStore
      * @return stdClass|WP_Error Data object `{ totals: *, intervals: array, total: int, pages: int, page_no: int }`, or error.
      */
     public function get_noncached_stats_data($query_args, $params, &$data, $expected_interval_count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get unique products based on user time query
      *
@@ -140,10 +128,8 @@ class DataStore
      * @return integer Unique product count.
      */
     public function get_unique_product_count($from_clause, $where_time_clause, $where_clause)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get unique coupons based on user time query
      *
@@ -153,10 +139,8 @@ class DataStore
      * @return integer Unique product count.
      */
     public function get_unique_coupon_count($from_clause, $where_time_clause, $where_clause)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add order information to the lookup table when orders are created or modified.
      *
@@ -164,10 +148,8 @@ class DataStore
      * @return int|bool Returns -1 if order won't be processed, or a boolean indicating processing success.
      */
     public static function sync_order($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update the database with stats data.
      *
@@ -175,20 +157,16 @@ class DataStore
      * @return int|bool Returns -1 if order won't be processed, or a boolean indicating processing success.
      */
     public static function update($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Deletes the order stats when an order is deleted.
      *
      * @param int $post_id Post ID.
      */
     public static function delete_order($post_id)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get number of items sold among all orders.
      *
@@ -196,10 +174,8 @@ class DataStore
      * @return int
      */
     protected static function get_num_items_sold($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the net amount from an order without shipping, tax, or refunds.
      *
@@ -207,10 +183,8 @@ class DataStore
      * @return float
      */
     protected static function get_net_total($order)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check to see if an order's customer has made previous orders or not
      *
@@ -219,10 +193,8 @@ class DataStore
      * @return bool
      */
     public static function is_returning_customer($order, $customer_id = null)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set a customer's first order and all others to returning.
      *
@@ -230,8 +202,6 @@ class DataStore
      * @param int $order_id Order ID.
      */
     protected static function set_customer_first_order($customer_id, $order_id)
-    {
-        // stub
-    }
-
+{
+}
 }

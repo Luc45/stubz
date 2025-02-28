@@ -17,10 +17,8 @@ trait CustomAttributeTraits
      * @return WP_Error|object The matching attribute object or WP_Error if not found.
      */
     public function get_custom_attribute_by_slug($slug)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Query custom attributes by name or slug.
      *
@@ -28,8 +26,6 @@ trait CustomAttributeTraits
      * @return array Matching attributes, formatted for response.
      */
     protected function get_custom_attributes($args)
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -23,10 +23,8 @@ class WC_REST_Customers_V2_Controller
      * @return array
      */
     protected function get_formatted_item_data($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get formatted item data, not including orders count nor total spent.
      * This method is needed because v3 API doesn't return those two fields.
@@ -37,10 +35,8 @@ class WC_REST_Customers_V2_Controller
      * @return array
      */
     protected function get_formatted_item_data_core($object)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Prepare a single customer output for response.
      *
@@ -49,10 +45,8 @@ class WC_REST_Customers_V2_Controller
      * @return WP_REST_Response $response  Response data.
      */
     public function prepare_item_for_response($user_data, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update customer meta fields.
      *
@@ -60,18 +54,14 @@ class WC_REST_Customers_V2_Controller
      * @param WP_REST_Request $request  Request data.
      */
     protected function update_customer_meta_fields($customer, $request)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the Customer's schema, conforming to JSON Schema.
      *
      * @return array
      */
     public function get_item_schema()
-    {
-        // stub
-    }
-
+{
+}
 }

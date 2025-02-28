@@ -33,22 +33,17 @@ class ExportWCSettings
      *
      * @param array $setting_pages Optional array of setting pages.
      */
-    public function __construct(array $setting_pages = array (
-))
-    {
-        // stub
-    }
-
+    public function __construct(array $setting_pages = array())
+{
+}
     /**
      * Export WooCommerce settings.
      *
      * @return SetSiteOptions
      */
     public function export()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get information about a settings page.
      *
@@ -56,10 +51,8 @@ class ExportWCSettings
      * @return array
      */
     protected function get_page_info(WC_Settings_Page $page)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get settings for a specific page section.
      *
@@ -69,10 +62,8 @@ class ExportWCSettings
      * @return array
      */
     private function get_page_section_settings($settings, $page, $section = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Add site visibility settings.
      *
@@ -82,48 +73,38 @@ class ExportWCSettings
      * @return array
      */
     public function add_site_visibility_settings(array $options, array $pages, array $option_info)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the name of the step.
      *
      * @return string
      */
     public function get_step_name()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the alias for this exporter.
      *
      * @return string
      */
     public function get_alias()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return label used in the frontend.
      *
      * @return string
      */
     public function get_label()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Return description used in the frontend.
      *
      * @return string
      */
     public function get_description()
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -58,62 +58,48 @@ class ProgressBar
      * @throws \Exception When this is not run within WP CLI.
      */
     public function __construct($message, $count, $interval = 100)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Increment the progress bar ticks.
      */
     public function tick()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the progress bar tick count.
      *
      * @return int
      */
     public function current()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Finish the current progress bar.
      */
     public function finish()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the message used when creating the progress bar.
      *
      * @param string $message The message to be used when the next progress bar is created.
      */
     public function set_message($message)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set the count for a new progress bar.
      *
      * @param integer $count The total number of ticks expected to complete.
      */
     public function set_count($count)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set up the progress bar.
      */
     protected function setup_progress_bar()
-    {
-        // stub
-    }
-
+{
+}
 }

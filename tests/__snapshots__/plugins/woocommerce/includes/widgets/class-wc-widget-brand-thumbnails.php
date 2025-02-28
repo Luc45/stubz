@@ -42,10 +42,8 @@ class WC_Widget_Brand_Thumbnails
 
     /** Constructor */
     public function __construct()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Echoes the widget content.
      *
@@ -56,10 +54,8 @@ class WC_Widget_Brand_Thumbnails
      * @param array $instance The settings for the particular instance of the widget.
      */
     public function widget($args, $instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Update widget instance.
      *
@@ -69,18 +65,14 @@ class WC_Widget_Brand_Thumbnails
      * @see WP_Widget->update
      */
     public function update($new_instance, $old_instance)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Outputs the settings update form.
      *
      * @param array $instance Current settings.
      */
     public function form($instance)
-    {
-        // stub
-    }
-
+{
+}
 }

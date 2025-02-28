@@ -13,12 +13,10 @@ interface ActionScheduler_Schedule
      * @return DateTime|null
      */
     public function next(DateTime|null $after = null);
-
     /**
      * Identify the schedule as (not) recurring.
      *
      * @return bool
      */
     public function is_recurring();
-
 }

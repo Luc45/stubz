@@ -17,10 +17,8 @@ class Query
      * @return array
      */
     protected function get_default_query_vars()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get product data based on the current query vars.
      *
@@ -29,8 +27,6 @@ class Query
      * @return array
      */
     public function get_data()
-    {
-        // stub
-    }
-
+{
+}
 }

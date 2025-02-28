@@ -21,10 +21,8 @@ class PaymentGateway
      * @return array The payment gateway provider details.
      */
     public function get_details(WC_Payment_Gateway $gateway, int $order = 0, string $country_code = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the provider title of the payment gateway.
      *
@@ -37,10 +35,8 @@ class PaymentGateway
      * @return string The provider title of the payment gateway.
      */
     public function get_title(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the provider description of the payment gateway.
      *
@@ -53,10 +49,8 @@ class PaymentGateway
      * @return string The provider description of the payment gateway.
      */
     public function get_description(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the provider icon URL of the payment gateway.
      *
@@ -68,10 +62,8 @@ class PaymentGateway
      * @return string The provider icon URL of the payment gateway.
      */
     public function get_icon(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the provider supports list of the payment gateway.
      *
@@ -80,10 +72,8 @@ class PaymentGateway
      * @return string[] The provider supports list of the payment gateway.
      */
     public function get_supports_list(WC_Payment_Gateway $payment_gateway): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway is enabled.
      *
@@ -92,10 +82,8 @@ class PaymentGateway
      * @return bool True if the payment gateway is enabled, false otherwise.
      */
     public function is_enabled(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway needs setup.
      *
@@ -104,10 +92,8 @@ class PaymentGateway
      * @return bool True if the payment gateway needs setup, false otherwise.
      */
     public function needs_setup(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in test mode.
      *
@@ -119,10 +105,8 @@ class PaymentGateway
      * @return bool True if the payment gateway is in test mode, false otherwise.
      */
     public function is_in_test_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in dev mode.
      *
@@ -134,10 +118,8 @@ class PaymentGateway
      * @return bool True if the payment gateway is in dev mode, false otherwise.
      */
     public function is_in_dev_mode(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway has a payments processor account connected.
      *
@@ -147,10 +129,8 @@ class PaymentGateway
      *              If the payment gateway does not provide the information, it will return true.
      */
     public function is_account_connected(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway has started the onboarding process.
      *
@@ -161,10 +141,8 @@ class PaymentGateway
      *              it will infer it from having a connected account.
      */
     public function is_onboarding_started(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check if the payment gateway has completed the onboarding process.
      *
@@ -175,10 +153,8 @@ class PaymentGateway
      *              it will infer it from having a connected account.
      */
     public function is_onboarding_completed(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try to determine if the payment gateway is in test mode onboarding (aka sandbox or test-drive).
      *
@@ -190,10 +166,8 @@ class PaymentGateway
      * @return bool True if the payment gateway is in test mode onboarding, false otherwise.
      */
     public function is_in_test_mode_onboarding(WC_Payment_Gateway $payment_gateway): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the settings URL for a payment gateway.
      *
@@ -202,10 +176,8 @@ class PaymentGateway
      * @return string The settings URL for the payment gateway.
      */
     public function get_settings_url(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the onboarding URL for the payment gateway.
      *
@@ -218,10 +190,8 @@ class PaymentGateway
      * @return string The onboarding URL for the payment gateway.
      */
     public function get_onboarding_url(WC_Payment_Gateway $payment_gateway, string $return_url = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the source plugin slug of a payment gateway instance.
      *
@@ -230,10 +200,8 @@ class PaymentGateway
      * @return string The plugin slug of the payment gateway.
      */
     public function get_plugin_slug(WC_Payment_Gateway $payment_gateway): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the plugin file of payment gateway, without the .php extension.
      *
@@ -245,10 +213,8 @@ class PaymentGateway
      * @return string The plugin file corresponding to the payment gateway plugin. Does not include the .php extension.
      */
     public function get_plugin_file(WC_Payment_Gateway $payment_gateway, string $plugin_slug = ''): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Try and determine a list of recommended payment methods for a payment gateway.
      *
@@ -265,10 +231,8 @@ class PaymentGateway
      *               Empty array if there are none.
      */
     public function get_recommended_payment_methods(WC_Payment_Gateway $payment_gateway, string $country_code = ''): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a recommended payment method entry.
      *
@@ -277,10 +241,8 @@ class PaymentGateway
      * @return bool True if the recommended payment method entry is valid, false otherwise.
      */
     protected function validate_recommended_payment_method($recommended_pm): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Sort the recommended payment methods.
      *
@@ -290,10 +252,8 @@ class PaymentGateway
      *               List keys are not preserved.
      */
     protected function sort_recommended_payment_methods(array $recommended_pms): array
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Standardize a recommended payment method entry.
      *
@@ -304,8 +264,6 @@ class PaymentGateway
      * @return array The standardized recommended payment method entry.
      */
     protected function standardize_recommended_payment_method(array $recommended_pm, int $order = 0): array
-    {
-        // stub
-    }
-
+{
+}
 }

@@ -16,8 +16,6 @@ class Middleware
      * @throws RouteException If the user is not allowed to make this request.
      */
     public static function is_authorized()
-    {
-        // stub
-    }
-
+{
+}
 }

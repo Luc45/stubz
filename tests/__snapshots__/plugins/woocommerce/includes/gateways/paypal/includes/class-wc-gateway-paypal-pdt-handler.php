@@ -26,20 +26,16 @@ class WC_Gateway_Paypal_PDT_Handler
      * @param string $identity_token Identity token for PDT support.
      */
     public function __construct($sandbox = false, $identity_token = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Set receiver email to enable more strict validation.
      *
      * @param string $receiver_email Email to receive PDT notification from.
      */
     public function set_receiver_email($receiver_email = '')
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Validate a PDT transaction to ensure its authentic.
      *
@@ -47,20 +43,16 @@ class WC_Gateway_Paypal_PDT_Handler
      * @return bool|array False or result array if successful and valid.
      */
     protected function validate_transaction($transaction)
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check Response for PDT, taking the order id from the request.
      *
      * @deprecated 6.4 Use check_response_for_order instead.
      */
     public function check_response()
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Check Response for PDT.
      *
@@ -69,8 +61,6 @@ class WC_Gateway_Paypal_PDT_Handler
      * @param mixed $wc_order_id The order id to check the response against.
      */
     public function check_response_for_order($wc_order_id)
-    {
-        // stub
-    }
-
+{
+}
 }

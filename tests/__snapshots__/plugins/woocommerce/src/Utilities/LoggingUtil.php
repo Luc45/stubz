@@ -13,50 +13,40 @@ final class LoggingUtil
      * @return string
      */
     public static function get_logs_tab_url(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine the current value of the logging_enabled setting.
      *
      * @return bool
      */
     public static function logging_is_enabled(): bool
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine the current value of the default_handler setting.
      *
      * @return string
      */
     public static function get_default_handler(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine the current value of the retention_period_days setting.
      *
      * @return int
      */
     public static function get_retention_period(): int
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Determine the current value of the level_threshold setting.
      *
      * @return string
      */
     public static function get_level_threshold(): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a public ID for a log file based on its properties.
      *
@@ -71,10 +61,8 @@ final class LoggingUtil
      * @return string
      */
     public static function generate_log_file_id(string $source, int|null $rotation = null, int $created = 0): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Generate a hash to use as the suffix on a log filename.
      *
@@ -83,10 +71,8 @@ final class LoggingUtil
      * @return string
      */
     public static function generate_log_file_hash(string $file_id): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Get the directory for storing log files.
      *
@@ -95,18 +81,14 @@ final class LoggingUtil
      * @return string The full directory path, with trailing slash.
      */
     public static function get_log_directory(bool $create_dir = true): string
-    {
-        // stub
-    }
-
+{
+}
     /**
      * Calculate the size, in bytes, of the log directory.
      *
      * @return int
      */
     public static function get_log_directory_size(): int
-    {
-        // stub
-    }
-
+{
+}
 }
