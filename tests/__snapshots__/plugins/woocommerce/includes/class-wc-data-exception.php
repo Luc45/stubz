@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Data exception class.
  */
-class WC_Data_Exception extends \Exception implements \Stringable, \Throwable
+class WC_Data_Exception extends \Exception
 {
     /**
      * Sanitized error code.
@@ -11,14 +10,12 @@ class WC_Data_Exception extends \Exception implements \Stringable, \Throwable
      * @var string
      */
     protected $error_code = null;
-
     /**
      * Error extra data.
      *
      * @var array
      */
     protected $error_data = null;
-
     /**
      * Setup exception.
      *

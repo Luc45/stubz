@@ -14,7 +14,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  * The 'upgrader_process_complete' hook is used to remove the autoinstall information from any plugin that is later
  * upgraded or reinstalled by any means other than the usage of this class.
  */
-class PluginInstaller
+class PluginInstaller implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
      * Flag indicating that a plugin install is in progress, so the upgrader_process_complete hook must be ignored.
@@ -22,7 +22,6 @@ class PluginInstaller
      * @var bool
      */
     private bool $installing_plugin = false;
-
     /**
      * Attach hooks used by the class.
      */

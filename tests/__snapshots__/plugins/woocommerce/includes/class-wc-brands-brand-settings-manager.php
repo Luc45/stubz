@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Brand settings manager.
  *
@@ -17,7 +16,6 @@ class WC_Brands_Brand_Settings_Manager
      * @var array
      */
     private static $brand_settings = array();
-
     /**
      * Set brand settings for a coupon.
      *

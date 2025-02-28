@@ -10,7 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Templates;
 class ProductSearchResultsTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
     const SLUG = 'product-search-results';
-
     /**
      * Initialization method.
      */

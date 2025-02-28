@@ -13,7 +13,6 @@ class ProductGalleryLargeImageNextPrevious extends \Automattic\WooCommerce\Block
      * @var string
      */
     protected $block_name = 'product-gallery-large-image-next-previous';
-
     /**
      * It isn't necessary register block assets because it is a server side block.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * International Delivery - Based on the Flat Rate Shipping Method.
  *

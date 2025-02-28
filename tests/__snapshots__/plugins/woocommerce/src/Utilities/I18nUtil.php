@@ -13,7 +13,6 @@ final class I18nUtil
      * @var array $units
      */
     private static $units = null;
-
     /**
      * Get the translated label for a weight unit of measure.
      *

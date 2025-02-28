@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Formatters;
  *
  * Formats monetary values using store settings.
  */
-class MoneyFormatter
+class MoneyFormatter implements \Automattic\WooCommerce\StoreApi\Formatters\FormatterInterface
 {
     /**
      * Format a given price value and return the result as a string without decimals.

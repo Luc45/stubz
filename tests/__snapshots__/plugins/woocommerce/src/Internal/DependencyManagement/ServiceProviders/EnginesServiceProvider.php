@@ -17,7 +17,6 @@ class EnginesServiceProvider extends \Automattic\WooCommerce\Internal\Dependency
   1 => 'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingEngine',
   2 => 'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingRestController',
 );
-
     /**
      * Register the classes.
      */

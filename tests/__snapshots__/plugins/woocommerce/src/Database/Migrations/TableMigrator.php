@@ -16,7 +16,6 @@ abstract class TableMigrator
      * @var array
      */
     private $errors = null;
-
     /**
      * Clear the error messages list.
      *

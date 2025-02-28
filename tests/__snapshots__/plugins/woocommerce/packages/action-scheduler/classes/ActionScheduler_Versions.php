@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Versions
  */
@@ -11,14 +10,12 @@ class ActionScheduler_Versions
      * @var ActionScheduler_Versions
      */
     private static $instance = null;
-
     /**
      * Versions.
      *
      * @var array<string, callable>
      */
     private $versions = array();
-
     /**
      * Register version's callback.
      *

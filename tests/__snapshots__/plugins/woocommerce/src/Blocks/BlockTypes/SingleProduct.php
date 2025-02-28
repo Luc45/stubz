@@ -13,7 +13,6 @@ class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var string
      */
     protected $block_name = 'single-product';
-
     /**
      * Product ID of the current product to be displayed in the Single Product block.
      * This is used to replace the global post for the Single Product inner blocks.
@@ -21,7 +20,6 @@ class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var int
      */
     protected $product_id = 0;
-
     /**
      * Single Product inner blocks names.
      * This is used to map all the inner blocks for a Single Product block.
@@ -29,7 +27,6 @@ class SingleProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var array
      */
     protected $single_product_inner_blocks_names = array();
-
     /**
      * Initialize the block and Hook into the `render_block_context` filter
      * to update the context with the correct data.

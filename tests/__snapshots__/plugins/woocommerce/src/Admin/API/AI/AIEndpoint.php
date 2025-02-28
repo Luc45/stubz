@@ -15,21 +15,18 @@ abstract class AIEndpoint
      * @var string
      */
     protected $namespace = 'wc-admin';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'ai';
-
     /**
      * Endpoint.
      *
      * @var string
      */
     protected $endpoint = null;
-
     /**
      * Register routes.
      *

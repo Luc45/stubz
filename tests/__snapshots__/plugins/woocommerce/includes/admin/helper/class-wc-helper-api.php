@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Helper_API Class
  *
@@ -13,7 +12,6 @@ class WC_Helper_API
      * @var $api_base
      */
     public static $api_base = null;
-
     /**
      * Load
      *

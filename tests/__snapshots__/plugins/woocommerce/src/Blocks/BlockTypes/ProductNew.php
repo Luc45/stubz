@@ -13,7 +13,6 @@ class ProductNew extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProdu
      * @var string
      */
     protected $block_name = 'product-new';
-
     /**
      * Set args specific to this block
      *

@@ -13,21 +13,18 @@ class ReportCSVExporter extends \WC_CSV_Batch_Exporter
      * @var string
      */
     protected $report_type = null;
-
     /**
      * Parameters for the report query.
      *
      * @var array
      */
     protected $report_args = null;
-
     /**
      * REST controller for the report.
      *
      * @var WC_REST_Reports_Controller
      */
     protected $controller = null;
-
     /**
      * Constructor.
      *

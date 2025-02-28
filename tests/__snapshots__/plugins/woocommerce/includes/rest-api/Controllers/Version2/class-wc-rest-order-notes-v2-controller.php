@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Order Notes controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Order_Notes_V2_Controller extends \WC_REST_Order_Notes_V1_Controll
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Get order notes from an order.
      *

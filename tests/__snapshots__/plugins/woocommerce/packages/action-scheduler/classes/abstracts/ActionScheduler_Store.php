@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Store
  *
@@ -8,31 +7,23 @@
 abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
 {
     const STATUS_COMPLETE = 'complete';
-
     const STATUS_PENDING = 'pending';
-
     const STATUS_RUNNING = 'in-progress';
-
     const STATUS_FAILED = 'failed';
-
     const STATUS_CANCELED = 'canceled';
-
     const DEFAULT_CLASS = 'ActionScheduler_wpPostStore';
-
     /**
      * ActionScheduler_Store instance.
      *
      * @var ActionScheduler_Store
      */
     private static $store = null;
-
     /**
      * Maximum length of args.
      *
      * @var int
      */
     protected static $max_args_length = 191;
-
     /**
      * Save action.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Attribute Terms controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Product_Attribute_Terms_V2_Controller extends \WC_REST_Product_Att
      * @var string
      */
     protected $namespace = 'wc/v2';
-
 }

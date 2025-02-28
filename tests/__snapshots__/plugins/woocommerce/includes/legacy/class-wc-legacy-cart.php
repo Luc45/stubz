@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Legacy cart class.
  */
@@ -33,7 +32,6 @@ abstract class WC_Legacy_Cart
   'fees' => 
   array(),
 );
-
     /**
      * Contains an array of coupon usage counts after they have been applied.
      *
@@ -41,7 +39,6 @@ abstract class WC_Legacy_Cart
      * @var array
      */
     public $coupon_applied_count = array();
-
     /**
      * Map legacy variables.
      *

@@ -8,36 +8,23 @@ namespace Automattic\WooCommerce\Internal\Admin;
 class CustomerEffortScoreTracks
 {
     const CES_TRACKS_QUEUE_OPTION_NAME = 'woocommerce_ces_tracks_queue';
-
     const CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME = 'woocommerce_clear_ces_tracks_queue_for_page';
-
     const SHOWN_FOR_ACTIONS_OPTION_NAME = 'woocommerce_ces_shown_for_actions';
-
     const PRODUCT_ADD_PUBLISH_ACTION_NAME = 'product_add_publish';
-
     const PRODUCT_UPDATE_ACTION_NAME = 'product_update';
-
     const SHOP_ORDER_UPDATE_ACTION_NAME = 'shop_order_update';
-
     const SETTINGS_CHANGE_ACTION_NAME = 'settings_change';
-
     const ADD_PRODUCT_CATEGORIES_ACTION_NAME = 'add_product_categories';
-
     const ADD_PRODUCT_TAGS_ACTION_NAME = 'add_product_tags';
-
     const ADD_PRODUCT_ATTRIBUTES_ACTION_NAME = 'add_product_attributes';
-
     const IMPORT_PRODUCTS_ACTION_NAME = 'import_products';
-
     const SEARCH_ACTION_NAME = 'ces_search';
-
     /**
      * Label for the snackbar that appears when a user submits the survey.
      *
      * @var string
      */
     private $onsubmit_label = null;
-
     /**
      * Constructor. Sets up filters to hook into WooCommerce.
      */

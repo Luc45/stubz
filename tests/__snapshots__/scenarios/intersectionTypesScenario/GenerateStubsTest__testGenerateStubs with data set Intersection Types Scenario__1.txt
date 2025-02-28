@@ -22,9 +22,7 @@ interface Nameable
 class Person implements \IntersectionTypesScenario\Identifiable, \IntersectionTypesScenario\Nameable
 {
     private string $id;
-
     private string $name;
-
     public function __construct(string $id, string $name)
 {
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Coupon Data Store Interface
  *

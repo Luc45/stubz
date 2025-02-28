@@ -13,42 +13,36 @@ abstract class AbstractBlock
      * @var string
      */
     protected $namespace = 'woocommerce';
-
     /**
      * Block name within this namespace.
      *
      * @var string
      */
     protected $block_name = '';
-
     /**
      * Tracks if assets have been enqueued.
      *
      * @var boolean
      */
     protected $enqueued_assets = false;
-
     /**
      * Instance of the asset API.
      *
      * @var AssetApi
      */
     protected $asset_api = null;
-
     /**
      * Instance of the asset data registry.
      *
      * @var AssetDataRegistry
      */
     protected $asset_data_registry = null;
-
     /**
      * Instance of the integration registry.
      *
      * @var IntegrationRegistry
      */
     protected $integration_registry = null;
-
     /**
      * Constructor.
      *

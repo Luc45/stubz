@@ -51,7 +51,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  * Note that this class is NOT {@link https://developer.woocommerce.com/docs/how-to-manage-woocommerce-data-stores/ a CRUD data store}.
  * It does not implement the {@see WC_Object_Data_Store_Interface WC_Object_Data_Store_Interface} nor extend WC_Data & WC_Data_Store_WP classes.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Cache group for the reports.
@@ -59,70 +59,60 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      * @var string
      */
     protected $cache_group = 'reports';
-
     /**
      * Time out for the cache.
      *
      * @var int
      */
     protected $cache_timeout = 3600;
-
     /**
      * Cache identifier.
      *
      * @var string
      */
     protected $cache_key = '';
-
     /**
      * Table used as a data store for this report.
      *
      * @var string
      */
     protected static $table_name = '';
-
     /**
      * Date field name.
      *
      * @var string
      */
     protected $date_column_name = 'date_created';
-
     /**
      * Mapping columns to data type to return correct response types.
      *
      * @var array
      */
     protected $column_types = array();
-
     /**
      * SQL columns to select in the db query.
      *
      * @var array
      */
     protected $report_columns = array();
-
     /**
      * Order by property, used in the cmp function.
      *
      * @var string
      */
     private $order_by = '';
-
     /**
      * Order property, used in the cmp function.
      *
      * @var string
      */
     private $order = '';
-
     /**
      * Query limit parameters.
      *
      * @var array
      */
     private $limit_parameters = array();
-
     /**
      * Data store context used to pass to filters.
      *
@@ -131,49 +121,42 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
      * @var string
      */
     protected $context = 'reports';
-
     /**
      * Subquery object for query nesting.
      *
      * @var SqlQuery
      */
     protected $subquery = null;
-
     /**
      * Totals query object.
      *
      * @var SqlQuery
      */
     protected $total_query = null;
-
     /**
      * Intervals query object.
      *
      * @var SqlQuery
      */
     protected $interval_query = null;
-
     /**
      * Refresh the cache for the current query when true.
      *
      * @var bool
      */
     protected $force_cache_refresh = false;
-
     /**
      * Include debugging information in the returned data when true.
      *
      * @var bool
      */
     protected $debug_cache = true;
-
     /**
      * Debugging information to include in the returned data.
      *
      * @var array
      */
     protected $debug_cache_data = array();
-
     /**
      * Class constructor.
      *

@@ -9,29 +9,22 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
 class Synchronize
 {
     const SYNC_TASK = 'woocommerce_download_dir_sync';
-
     const SYNC_TASK_GROUP = 'woocommerce-db-updates';
-
     const SYNC_TASK_PAGE = 'wc_product_download_dir_sync_page';
-
     const SYNC_TASK_PROGRESS = 'wc_product_download_dir_sync_progress';
-
     const SYNC_TASK_BATCH_SIZE = 20;
-
     /**
      * WC Queue.
      *
      * @var WC_Queue_Interface
      */
     private $queue = null;
-
     /**
      * Register of approved directories.
      *
      * @var Register
      */
     private $register = null;
-
     /**
      * Sets up our checks and controls for downloadable asset URLs, as appropriate for
      * the current approved download directory mode.

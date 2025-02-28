@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Custom Fields controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Product_Custom_Fields_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/custom-fields';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'product';
-
     /**
      * Register the routes for products.
      */

@@ -14,13 +14,9 @@ class BlockTemplateUtils
   'TEMPLATES' => 'templates',
   'TEMPLATE_PARTS' => 'parts',
 );
-
     const TEMPLATES_ROOT_DIR = 'templates';
-
     const PLUGIN_SLUG = 'woocommerce/woocommerce';
-
     const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
-
     /**
      * Returns the template matching the slug
      *

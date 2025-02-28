@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Data Store: Stored in CPT.
  *
  * @version  3.0.0
  */
-class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
+class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT implements \WC_Object_Data_Store_Interface, \WC_Order_Data_Store_Interface
 {
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
@@ -67,7 +66,6 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
   50 => '_order_stock_reduced',
   51 => '_new_order_email_sent',
 );
-
     /**
      * Custom setters for props. Add key here if it has corresponding set_ and get_ method present.
      *
@@ -80,7 +78,6 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
   '_order_stock_reduced' => 'order_stock_reduced',
   '_new_order_email_sent' => 'new_order_email_sent',
 );
-
     /**
      * Method to create a new order in the database.
      *

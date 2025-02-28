@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles deprecation notices and triggering of legacy filter hooks
  */
@@ -52,7 +51,6 @@ class WC_Deprecated_Filter_Hooks extends \WC_Deprecated_Hooks
   'woocommerce_settings_advanced' => 'woocommerce_settings_api',
   'woocommerce_csv_importer_check_import_file_path' => 'woocommerce_product_csv_importer_check_import_file_path',
 );
-
     /**
      * Array of versions on each hook has been deprecated.
      *
@@ -99,7 +97,6 @@ class WC_Deprecated_Filter_Hooks extends \WC_Deprecated_Hooks
   'woocommerce_settings_api' => '3.4.0',
   'woocommerce_product_csv_importer_check_import_file_path' => '6.5.0',
 );
-
     /**
      * Hook into the new hook so we can handle deprecated hooks once fired.
      *

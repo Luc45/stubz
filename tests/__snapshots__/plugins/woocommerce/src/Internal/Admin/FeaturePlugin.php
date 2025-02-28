@@ -16,7 +16,6 @@ class FeaturePlugin
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Constructor
      *

@@ -8,12 +8,10 @@ trait ContainerAwareTrait
      * @var ContainerInterface
      */
     protected $container = null;
-
     /**
      * @var Container
      */
     protected $leagueContainer = null;
-
     /**
      * Set a container.
      *

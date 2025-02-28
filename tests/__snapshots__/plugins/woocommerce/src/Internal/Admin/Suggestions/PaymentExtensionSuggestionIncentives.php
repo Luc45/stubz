@@ -13,14 +13,12 @@ class PaymentExtensionSuggestionIncentives
      * @var array|\class-string[]
      */
     private array $suggestion_incentives_class_map;
-
     /**
      * The instances of the incentives providers.
      *
      * @var Incentive[]
      */
     private array $instances = array();
-
     /**
      * Get the first found incentive details for a specific payment extension suggestion.
      *

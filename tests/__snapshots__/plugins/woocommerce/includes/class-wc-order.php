@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order Class.
  *
@@ -13,7 +12,6 @@ class WC_Order extends \WC_Abstract_Order
      * @var bool|array
      */
     protected $status_transition = false;
-
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -80,7 +78,6 @@ class WC_Order extends \WC_Abstract_Order
   'recorded_sales' => false,
   'recorded_coupon_usage_counts' => false,
 );
-
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
      * With custom tables, some of these are moved from metadata to their own columns, but existing code will still try to add them to metadata. This array is used to keep track of such properties.
@@ -96,7 +93,6 @@ class WC_Order extends \WC_Abstract_Order
   3 => '_order_stock_reduced',
   4 => '_new_order_email_sent',
 );
-
     /**
      * Refunds for an order. Use {@see get_refunds()} instead.
      *
@@ -104,7 +100,6 @@ class WC_Order extends \WC_Abstract_Order
      * @var stdClass|WC_Order[]
      */
     public $refunds = null;
-
     /**
      * When a payment is complete this function is called.
      *

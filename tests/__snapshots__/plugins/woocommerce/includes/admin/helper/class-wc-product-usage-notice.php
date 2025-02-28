@@ -1,32 +1,25 @@
 <?php
-
 /**
  * Product usage notice class.
  */
 class WC_Product_Usage_Notice
 {
     const DISMISSED_COUNT_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_count_';
-
     const DISMISSED_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_dismissed_timestamp_';
-
     const REMIND_LATER_TIMESTAMP_META_PREFIX = '_woocommerce_product_usage_notice_remind_later_timestamp_';
-
     const LAST_DISMISSED_TIMESTAMP_META = '_woocommerce_product_usage_notice_last_dismissed_timestamp';
-
     /**
      * Array of product usage notice rules from helper API.
      *
      * @var array
      */
     private static $product_usage_notice_rules = array();
-
     /**
      * Current product usage notice rule applied to the current admin screen.
      *
      * @var array
      */
     private static $current_notice_rule = array();
-
     /**
      * Loads the class, runs on init.
      *

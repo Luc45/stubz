@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Shortcodes class.
  */

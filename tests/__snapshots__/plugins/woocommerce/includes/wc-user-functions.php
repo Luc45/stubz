@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Prevent any user who cannot 'edit_posts' (subscribers, customers etc) from seeing the admin bar.
  *

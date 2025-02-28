@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Formatters;
  *
  * Formats an array of monetary values by inserting currency data.
  */
-class CurrencyFormatter
+class CurrencyFormatter implements \Automattic\WooCommerce\StoreApi\Formatters\FormatterInterface
 {
     /**
      * Format a given value and return the result.

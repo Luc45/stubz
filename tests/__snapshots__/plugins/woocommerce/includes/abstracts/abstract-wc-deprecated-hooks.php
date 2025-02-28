@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Deprecated_Hooks class maps old actions and filters to new ones. This is the base class for handling those deprecated hooks.
  *
@@ -13,14 +12,12 @@ abstract class WC_Deprecated_Hooks
      * @var array
      */
     protected $deprecated_hooks = array();
-
     /**
      * Array of versions on each hook has been deprecated.
      *
      * @var array
      */
     protected $deprecated_version = array();
-
     /**
      * Constructor.
      */

@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor for sending when the provided plugin is activated and
  * matches the specified version.
  */
-class PluginVersionRuleProcessor
+class PluginVersionRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Plugins provider instance.
@@ -14,7 +14,6 @@ class PluginVersionRuleProcessor
      * @var PluginsProviderInterface
      */
     private $plugins_provider = null;
-
     /**
      * Constructor.
      *

@@ -16,49 +16,42 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @var string
      */
     protected $rest_base = 'reports/performance-indicators';
-
     /**
      * Contains a list of endpoints by report slug.
      *
      * @var array
      */
     protected $endpoints = array();
-
     /**
      * Contains a list of active Jetpack module slugs.
      *
      * @var array
      */
     protected $active_jetpack_modules = null;
-
     /**
      * Contains a list of allowed stats.
      *
      * @var array
      */
     protected $allowed_stats = array();
-
     /**
      * Contains a list of stat labels.
      *
      * @var array
      */
     protected $labels = array();
-
     /**
      * Contains a list of endpoints by url.
      *
      * @var array
      */
     protected $urls = array();
-
     /**
      * Contains a cache of retrieved stats data, grouped by report slug.
      *
      * @var array
      */
     protected $stats_data = array();
-
     /**
      * Constructor.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Process the web hooks at the end of the request.
  *

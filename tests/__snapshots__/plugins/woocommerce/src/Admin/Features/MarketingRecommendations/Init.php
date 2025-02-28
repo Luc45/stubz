@@ -9,9 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
 class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
     const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
-
     const MARKETING_CHANNEL_SUBCATEGORY_SLUG = 'sales-channels';
-
     /**
      * Constructor.
      */

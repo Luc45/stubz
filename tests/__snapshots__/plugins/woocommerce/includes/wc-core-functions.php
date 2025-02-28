@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Define a constant if it is not already defined.
  *

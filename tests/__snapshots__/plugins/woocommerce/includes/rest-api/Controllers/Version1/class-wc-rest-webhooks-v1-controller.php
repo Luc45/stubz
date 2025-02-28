@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Webhooks controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Webhooks_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'webhooks';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_webhook';
-
     /**
      * Register the routes for webhooks.
      */

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Customers\Stats;
 /**
  * API\Reports\Customers\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -20,7 +20,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Data
   'avg_total_spend' => 'floatval',
   'avg_avg_order_value' => 'floatval',
 );
-
     /**
      * Cache identifier.
      *
@@ -29,7 +28,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Data
      * @var string
      */
     protected $cache_key = 'customers_stats';
-
     /**
      * Data store context used to pass to filters.
      *
@@ -38,7 +36,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Data
      * @var string
      */
     protected $context = 'customers_stats';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

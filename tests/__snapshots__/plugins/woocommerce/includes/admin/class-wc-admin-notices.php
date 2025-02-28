@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Notices Class.
  */
@@ -14,7 +13,6 @@ class WC_Admin_Notices
      * @var array
      */
     private static $notices = array();
-
     /**
      * Array of notices - name => callback.
      *
@@ -34,14 +32,12 @@ class WC_Admin_Notices
   'base_tables_missing' => 'base_tables_missing_notice',
   'download_directories_sync_complete' => 'download_directories_sync_complete',
 );
-
     /**
      * Stores a flag indicating if the code is running in a multisite setup.
      *
      * @var bool
      */
     private static bool $is_multisite;
-
     /**
      * Initializes the class.
      */

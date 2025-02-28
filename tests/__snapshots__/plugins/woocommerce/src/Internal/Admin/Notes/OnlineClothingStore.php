@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class OnlineClothingStore
 {
     const NOTE_NAME = 'wc-admin-online-clothing-store';
-
     /**
      * Returns whether the industries includes fashion-apparel-accessories.
      *

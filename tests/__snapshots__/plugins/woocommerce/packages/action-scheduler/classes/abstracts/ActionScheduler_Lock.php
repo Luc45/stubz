@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract class for setting a basic lock to throttle some action.
  *
@@ -13,14 +12,12 @@ abstract class ActionScheduler_Lock
      * @var ActionScheduler_Lock
      */
     private static $locker = null;
-
     /**
      * Duration of lock.
      *
      * @var int
      */
     protected static $lock_duration;
-
     /**
      * Check if a lock is set for a given lock type.
      *

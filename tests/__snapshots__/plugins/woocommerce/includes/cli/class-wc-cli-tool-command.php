@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Hooks up our system status tools to the CLI.
  *

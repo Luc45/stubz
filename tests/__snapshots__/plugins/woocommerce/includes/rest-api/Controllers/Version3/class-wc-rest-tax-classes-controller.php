@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Tax Classes controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Tax_Classes_Controller extends \WC_REST_Tax_Classes_V2_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

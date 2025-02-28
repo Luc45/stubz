@@ -15,14 +15,12 @@ class Price
      * @var string
      */
     protected $value = null;
-
     /**
      * The currency of the price.
      *
      * @var string
      */
     protected $currency = null;
-
     /**
      * Price constructor.
      *

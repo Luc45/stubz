@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Legacy Shipping Zone.
  *

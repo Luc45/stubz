@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Main Command for WooCommerce CLI.
  *
@@ -27,42 +26,36 @@ class WC_CLI_REST_Command
   2 => 'order_note',
   3 => 'shop_order_refund',
 );
-
     /**
      * Name of command/endpoint object.
      *
      * @var string
      */
     private $name = null;
-
     /**
      * Endpoint route.
      *
      * @var string
      */
     private $route = null;
-
     /**
      * Main resource ID.
      *
      * @var int
      */
     private $resource_identifier = null;
-
     /**
      * Schema for command.
      *
      * @var array
      */
     private $schema = null;
-
     /**
      * List of supported IDs and their description (name => desc).
      *
      * @var array
      */
     private $supported_ids = array();
-
     /**
      * Sets up REST Command.
      *

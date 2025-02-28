@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Order item class.
  */
-class WC_Order_Item extends \WC_Data
+class WC_Order_Item extends \WC_Data implements \ArrayAccess
 {
     /**
      * Legacy cart item values.
@@ -12,7 +11,6 @@ class WC_Order_Item extends \WC_Data
      * @var array
      */
     public $legacy_values = null;
-
     /**
      * Legacy cart item keys.
      *
@@ -20,7 +18,6 @@ class WC_Order_Item extends \WC_Data
      * @var string
      */
     public $legacy_cart_item_key = null;
-
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -31,7 +28,6 @@ class WC_Order_Item extends \WC_Data
   'order_id' => 0,
   'name' => '',
 );
-
     /**
      * Stores meta in cache for future reads.
      * A group must be set to to enable caching.
@@ -39,7 +35,6 @@ class WC_Order_Item extends \WC_Data
      * @var string
      */
     protected $cache_group = 'order-items';
-
     /**
      * Meta type. This should match up with
      * the types available at https://developer.wordpress.org/reference/functions/add_metadata/.
@@ -48,14 +43,12 @@ class WC_Order_Item extends \WC_Data
      * @var string
      */
     protected $meta_type = 'order_item';
-
     /**
      * This is the name of this object type.
      *
      * @var string
      */
     protected $object_type = 'order_item';
-
     /**
      * Legacy package key.
      *
@@ -63,7 +56,6 @@ class WC_Order_Item extends \WC_Data
      * @var string
      */
     public $legacy_package_key = null;
-
     /**
      * Constructor.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Geo_IP Class.
  *
@@ -8,122 +7,81 @@
 class WC_Geo_IP
 {
     const GEOIP_COUNTRY_BEGIN = 16776960;
-
     const GEOIP_STATE_BEGIN_REV0 = 16700000;
-
     const GEOIP_STATE_BEGIN_REV1 = 16000000;
-
     const GEOIP_MEMORY_CACHE = 1;
-
     const GEOIP_SHARED_MEMORY = 2;
-
     const STRUCTURE_INFO_MAX_SIZE = 20;
-
     const GEOIP_COUNTRY_EDITION = 1;
-
     const GEOIP_PROXY_EDITION = 8;
-
     const GEOIP_ASNUM_EDITION = 9;
-
     const GEOIP_NETSPEED_EDITION = 10;
-
     const GEOIP_REGION_EDITION_REV0 = 7;
-
     const GEOIP_REGION_EDITION_REV1 = 3;
-
     const GEOIP_CITY_EDITION_REV0 = 6;
-
     const GEOIP_CITY_EDITION_REV1 = 2;
-
     const GEOIP_ORG_EDITION = 5;
-
     const GEOIP_ISP_EDITION = 4;
-
     const SEGMENT_RECORD_LENGTH = 3;
-
     const STANDARD_RECORD_LENGTH = 3;
-
     const ORG_RECORD_LENGTH = 4;
-
     const GEOIP_SHM_KEY = 1329681409;
-
     const GEOIP_DOMAIN_EDITION = 11;
-
     const GEOIP_COUNTRY_EDITION_V6 = 12;
-
     const GEOIP_LOCATIONA_EDITION = 13;
-
     const GEOIP_ACCURACYRADIUS_EDITION = 14;
-
     const GEOIP_CITY_EDITION_REV1_V6 = 30;
-
     const GEOIP_CITY_EDITION_REV0_V6 = 31;
-
     const GEOIP_NETSPEED_EDITION_REV1 = 32;
-
     const GEOIP_NETSPEED_EDITION_REV1_V6 = 33;
-
     const GEOIP_USERTYPE_EDITION = 28;
-
     const GEOIP_USERTYPE_EDITION_V6 = 29;
-
     const GEOIP_ASNUM_EDITION_V6 = 21;
-
     const GEOIP_ISP_EDITION_V6 = 22;
-
     const GEOIP_ORG_EDITION_V6 = 23;
-
     const GEOIP_DOMAIN_EDITION_V6 = 24;
-
     /**
      * Flags.
      *
      * @var int
      */
     public $flags = null;
-
     /**
      * File handler.
      *
      * @var resource
      */
     public $filehandle = null;
-
     /**
      * Memory buffer.
      *
      * @var string
      */
     public $memory_buffer = null;
-
     /**
      * Database type.
      *
      * @var int
      */
     public $databaseType = null;
-
     /**
      * Database segments.
      *
      * @var int
      */
     public $databaseSegments = null;
-
     /**
      * Record length.
      *
      * @var int
      */
     public $record_length = null;
-
     /**
      * Shmid.
      *
      * @var string
      */
     public $shmid = null;
-
     /**
      * Two letters country codes.
      *
@@ -387,7 +345,6 @@ class WC_Geo_IP
   254 => 'SS',
   255 => 'O1',
 );
-
     /**
      * 3 letters country codes.
      *
@@ -651,7 +608,6 @@ class WC_Geo_IP
   254 => 'SSD',
   255 => 'O1',
 );
-
     /**
      * Country names.
      *
@@ -915,7 +871,6 @@ class WC_Geo_IP
   254 => 'South Sudan',
   255 => 'Other',
 );
-
     /**
      * 2 letters continent codes.
      *
@@ -1179,10 +1134,8 @@ class WC_Geo_IP
   254 => 'AF',
   255 => '--',
 );
-
     /** @var WC_Logger Logger instance */
     public static $log = false;
-
     /**
      * Logging method.
      *
@@ -1323,63 +1276,54 @@ class WC_Geo_IP_Record
      * @var string
      */
     public $country_code = null;
-
     /**
      * 3 letters country code.
      *
      * @var string
      */
     public $country_code3 = null;
-
     /**
      * Country name.
      *
      * @var string
      */
     public $country_name = null;
-
     /**
      * Region.
      *
      * @var string
      */
     public $region = null;
-
     /**
      * City.
      *
      * @var string
      */
     public $city = null;
-
     /**
      * Postal code.
      *
      * @var string
      */
     public $postal_code = null;
-
     /**
      * Latitude
      *
      * @var int
      */
     public $latitude = null;
-
     /**
      * Longitude.
      *
      * @var int
      */
     public $longitude = null;
-
     /**
      * Area code.
      *
      * @var int
      */
     public $area_code = null;
-
     /**
      * DMA Code.
      *
@@ -1389,19 +1333,16 @@ class WC_Geo_IP_Record
      * @var float
      */
     public $dma_code = null;
-
     /**
      * Metro code.
      *
      * @var float
      */
     public $metro_code = null;
-
     /**
      * Continent code.
      *
      * @var string
      */
     public $continent_code = null;
-
 }

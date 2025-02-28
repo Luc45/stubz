@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Minutes field.  Allows: * , / -
  *

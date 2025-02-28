@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Returns the url to the lost password endpoint url.
  *

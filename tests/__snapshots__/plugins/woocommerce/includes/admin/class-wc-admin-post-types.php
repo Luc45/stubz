@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Post_Types Class.
  *

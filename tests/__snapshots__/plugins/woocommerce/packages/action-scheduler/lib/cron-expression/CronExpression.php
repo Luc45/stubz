@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CRON expression parser that can determine whether or not a CRON expression is
  * due to run, the next run date and previous run date of a CRON expression.
@@ -13,30 +12,22 @@
  * @author Michael Dowling <mtdowling@gmail.com>
  * @link http://en.wikipedia.org/wiki/Cron
  */
-class CronExpression implements \Stringable
+class CronExpression
 {
     const MINUTE = 0;
-
     const HOUR = 1;
-
     const DAY = 2;
-
     const MONTH = 3;
-
     const WEEKDAY = 4;
-
     const YEAR = 5;
-
     /**
      * @var array CRON expression parts
      */
     private $cronParts = null;
-
     /**
      * @var CronExpression_FieldFactory CRON field factory
      */
     private $fieldFactory = null;
-
     /**
      * @var array Order in which to test of cron parts
      */
@@ -48,7 +39,6 @@ class CronExpression implements \Stringable
   4 => 1,
   5 => 0,
 );
-
     /**
     * Factory method to create a new CronExpression.
     *

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads;
 /**
  * API\Reports\Downloads\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Table used to get the data.
@@ -15,7 +15,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected static $table_name = 'wc_download_log';
-
     /**
      * Cache identifier.
      *
@@ -24,7 +23,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $cache_key = 'downloads';
-
     /**
      * Mapping columns to data type to return correct response types.
      *
@@ -43,7 +41,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
   'user_id' => 'intval',
   'ip_address' => 'strval',
 );
-
     /**
      * Data store context used to pass to filters.
      *
@@ -52,7 +49,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $context = 'downloads';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

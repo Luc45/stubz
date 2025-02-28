@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Shipping Zones class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Shipping_Zones_Controller extends \WC_REST_Shipping_Zones_V2_Contr
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

@@ -15,42 +15,36 @@ class File
      * @var string
      */
     protected $path = null;
-
     /**
      * The source property of the file, derived from the filename.
      *
      * @var string
      */
     protected $source = '';
-
     /**
      * The 0-based increment of the file, if it has been rotated. Derived from the filename. Can only be 0-9.
      *
      * @var int|null
      */
     protected $rotation = null;
-
     /**
      * The date the file was created, as a Unix timestamp, derived from the filename.
      *
      * @var int
      */
     protected $created = 0;
-
     /**
      * The hash property of the file, derived from the filename.
      *
      * @var string
      */
     protected $hash = '';
-
     /**
      * The file's resource handle when it is open.
      *
      * @var resource
      */
     protected $stream = null;
-
     /**
      * Class File
      *

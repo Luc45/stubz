@@ -15,7 +15,6 @@ class MiniCartContents extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstrac
      * @var string
      */
     protected $block_name = 'mini-cart-contents';
-
     /**
      * Get the editor script handle for this block type.
      *

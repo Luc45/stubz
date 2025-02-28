@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Products controller class.
  *
@@ -14,28 +13,24 @@ class WC_REST_Products_V2_Controller extends \WC_REST_CRUD_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'product';
-
     /**
      * If object is hierarchical.
      *
      * @var bool
      */
     protected $hierarchical = true;
-
     /**
      * Initialize product actions.
      */

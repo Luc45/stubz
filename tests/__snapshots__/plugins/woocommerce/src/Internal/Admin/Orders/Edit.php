@@ -13,49 +13,42 @@ class Edit
      * @var string
      */
     private $screen_id = null;
-
     /**
      * Instance of the CustomMetaBox class. Used to render meta box for custom meta.
      *
      * @var CustomMetaBox
      */
     private $custom_meta_box = null;
-
     /**
      * Instance of the TaxonomiesMetaBox class. Used to render meta box for taxonomies.
      *
      * @var TaxonomiesMetaBox
      */
     private $taxonomies_meta_box = null;
-
     /**
      * Instance of WC_Order to be used in metaboxes.
      *
      * @var \WC_Order
      */
     private $order = null;
-
     /**
      * Action name that the form is currently handling. Could be new_order or edit_order.
      *
      * @var string
      */
     private $current_action = null;
-
     /**
      * Message to be displayed to the user. Index of message from the messages array registered when declaring shop_order post type.
      *
      * @var int
      */
     private $message = null;
-
     /**
      * Controller for orders page. Used to determine redirection URLs.
      *
      * @var PageController
      */
     private $orders_page_controller = null;
-
     /**
      * Hooks all meta-boxes for order edit page. This is static since this may be called by post edit form rendering.
      *

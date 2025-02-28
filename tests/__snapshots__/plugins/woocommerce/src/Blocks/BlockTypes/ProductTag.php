@@ -13,7 +13,6 @@ class ProductTag extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProdu
      * @var string
      */
     protected $block_name = 'product-tag';
-
     /**
      * Set args specific to this block.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shortcode checkout class.
  */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Shipping Method Class.
  *
@@ -23,91 +22,78 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
     public $supports = array (
   0 => 'settings',
 );
-
     /**
      * Unique ID for the shipping method - must be set.
      *
      * @var string
      */
     public $id = '';
-
     /**
      * Method title.
      *
      * @var string
      */
     public $method_title = '';
-
     /**
      * Method description.
      *
      * @var string
      */
     public $method_description = '';
-
     /**
      * Yes or no based on whether the method is enabled.
      *
      * @var string
      */
     public $enabled = 'yes';
-
     /**
      * Shipping method title for the frontend.
      *
      * @var string
      */
     public $title = null;
-
     /**
      * This is an array of rates - methods must populate this array to register shipping costs.
      *
      * @var array
      */
     public $rates = array();
-
     /**
      * If 'taxable' tax will be charged for this method (if applicable).
      *
      * @var string
      */
     public $tax_status = 'taxable';
-
     /**
      * Fee for the method (if applicable).
      *
      * @var string
      */
     public $fee = null;
-
     /**
      * Minimum fee for the method (if applicable).
      *
      * @var string
      */
     public $minimum_fee = null;
-
     /**
      * Instance ID if used.
      *
      * @var int
      */
     public $instance_id = 0;
-
     /**
      * Instance form fields.
      *
      * @var array
      */
     public $instance_form_fields = array();
-
     /**
      * Instance settings.
      *
      * @var array
      */
     public $instance_settings = array();
-
     /**
      * Availability - legacy. Used for method Availability.
      * No longer useful for instance based shipping methods.
@@ -116,7 +102,6 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      * @var string
      */
     public $availability = null;
-
     /**
      * Availability countries - legacy. Used for method Availability.
      * No longer useful for instance based shipping methods.
@@ -125,21 +110,18 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      * @var array
      */
     public $countries = array();
-
     /**
      * Shipping method order.
      *
      * @var int
      */
     public $method_order = null;
-
     /**
      * Whether the shipping method has settings or not. Preferably, use {@see has_settings()} instead.
      *
      * @var bool
      */
     public $has_settings = null;
-
     /**
      * When the method supports the settings modal, this is the admin settings HTML.
      * Preferably, use {@see get_admin_options_html()} instead.
@@ -147,7 +129,6 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      * @var string|bool
      */
     public $settings_html = null;
-
     /**
      * Constructor.
      *

@@ -17,7 +17,6 @@ class ClassicTemplatesCompatibility
      * @var AssetDataRegistry
      */
     protected $asset_data_registry = null;
-
     /**
      * Constructor.
      *

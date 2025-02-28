@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Gets text attributes from a string.
  *

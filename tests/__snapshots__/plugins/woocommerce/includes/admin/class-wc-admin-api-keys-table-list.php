@@ -1,5 +1,4 @@
 <?php
-
 /**
  * API Keys table list class.
  */

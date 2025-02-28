@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_WCCOM_Site_Installer Class
  *
@@ -13,7 +12,6 @@ class WC_WCCOM_Site_Installer
      * @var \WP_Upgrader $wp_upgrader
      */
     private static $wp_upgrader = null;
-
     /**
      * Get WP.org plugin's main file.
      *

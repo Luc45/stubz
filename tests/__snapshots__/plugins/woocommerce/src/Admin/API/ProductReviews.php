@@ -16,7 +16,6 @@ class ProductReviews extends \WC_REST_Product_Reviews_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Prepare links for the request.
      *

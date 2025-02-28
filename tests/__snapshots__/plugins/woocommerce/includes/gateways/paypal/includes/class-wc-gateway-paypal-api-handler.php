@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles Refunds and other API requests such as capture.
  *
@@ -13,28 +12,24 @@ class WC_Gateway_Paypal_API_Handler
      * @var string
      */
     public static $api_username = null;
-
     /**
      * API Password
      *
      * @var string
      */
     public static $api_password = null;
-
     /**
      * API Signature
      *
      * @var string
      */
     public static $api_signature = null;
-
     /**
      * Sandbox
      *
      * @var bool
      */
     public static $sandbox = false;
-
     /**
      * Get capture request args.
      * See https://developer.paypal.com/docs/classic/api/merchant/DoCapture_API_Operation_NVP/.

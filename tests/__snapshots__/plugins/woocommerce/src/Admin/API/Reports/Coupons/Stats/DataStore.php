@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats;
 /**
  * API\Reports\Coupons\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -23,7 +23,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
   'coupons_count' => 'intval',
   'orders_count' => 'intval',
 );
-
     /**
      * SQL columns to select in the db query.
      *
@@ -32,7 +31,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      * @var array
      */
     protected $report_columns = null;
-
     /**
      * Data store context used to pass to filters.
      *
@@ -41,7 +39,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      * @var string
      */
     protected $context = 'coupons_stats';
-
     /**
      * Cache identifier.
      *
@@ -50,7 +47,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      * @var string
      */
     protected $cache_key = 'coupons_stats';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

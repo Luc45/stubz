@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Reports Products Totals controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Report_Products_Totals_Controller extends \WC_REST_Reports_Control
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'reports/products/totals';
-
     /**
      * Get reports list.
      *

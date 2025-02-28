@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 
-interface ArgumentResolverInterface
+interface ArgumentResolverInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
 {
     /**
      * Resolve an array of arguments to their concrete implementations.

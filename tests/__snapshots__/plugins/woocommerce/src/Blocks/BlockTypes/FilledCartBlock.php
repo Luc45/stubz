@@ -13,5 +13,4 @@ class FilledCartBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'filled-cart-block';
-
 }

@@ -1,48 +1,28 @@
 <?php
-
 /**
  * Coupon class.
  */
 class WC_Coupon extends \WC_Legacy_Coupon
 {
     const E_WC_COUPON_INVALID_FILTERED = 100;
-
     const E_WC_COUPON_INVALID_REMOVED = 101;
-
     const E_WC_COUPON_NOT_YOURS_REMOVED = 102;
-
     const E_WC_COUPON_ALREADY_APPLIED = 103;
-
     const E_WC_COUPON_ALREADY_APPLIED_INDIV_USE_ONLY = 104;
-
     const E_WC_COUPON_NOT_EXIST = 105;
-
     const E_WC_COUPON_USAGE_LIMIT_REACHED = 106;
-
     const E_WC_COUPON_EXPIRED = 107;
-
     const E_WC_COUPON_MIN_SPEND_LIMIT_NOT_MET = 108;
-
     const E_WC_COUPON_NOT_APPLICABLE = 109;
-
     const E_WC_COUPON_NOT_VALID_SALE_ITEMS = 110;
-
     const E_WC_COUPON_PLEASE_ENTER = 111;
-
     const E_WC_COUPON_MAX_SPEND_LIMIT_MET = 112;
-
     const E_WC_COUPON_EXCLUDED_PRODUCTS = 113;
-
     const E_WC_COUPON_EXCLUDED_CATEGORIES = 114;
-
     const E_WC_COUPON_USAGE_LIMIT_COUPON_STUCK = 115;
-
     const E_WC_COUPON_USAGE_LIMIT_COUPON_STUCK_GUEST = 116;
-
     const WC_COUPON_SUCCESS = 200;
-
     const WC_COUPON_REMOVED = 201;
-
     /**
      * Data array, with defaults.
      *
@@ -81,14 +61,12 @@ class WC_Coupon extends \WC_Legacy_Coupon
   array(),
   'virtual' => false,
 );
-
     /**
      * Cache group.
      *
      * @var string
      */
     protected $cache_group = 'coupons';
-
     /**
      * Error message.
      *
@@ -100,7 +78,6 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @var string
      */
     public $error_message = null;
-
     /**
      * Sorting.
      *
@@ -109,7 +86,6 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @var int
      */
     public $sort = 0;
-
     /**
      * Coupon constructor. Loads coupon data.
      *

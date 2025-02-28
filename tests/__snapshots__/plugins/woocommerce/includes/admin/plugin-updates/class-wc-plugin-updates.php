@@ -1,28 +1,23 @@
 <?php
-
 /**
  * WC_Admin_Plugin_Updates Class.
  */
 class WC_Plugin_Updates
 {
     const VERSION_REQUIRED_HEADER = 'WC requires at least';
-
     const VERSION_TESTED_HEADER = 'WC tested up to';
-
     /**
      * The version for the update to WooCommerce.
      *
      * @var string
      */
     protected $new_version = '';
-
     /**
      * Array of plugins lacking testing with the major version.
      *
      * @var array
      */
     protected $major_untested_plugins = array();
-
     /**
      * Common JS for initializing and managing thickbox-based modals.
      */

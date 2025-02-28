@@ -8,9 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class ProductsBySlug extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const IDENTIFIER = 'products-by-slug';
-
     const SCHEMA_TYPE = 'product';
-
     /**
      * Get the path of this REST route.
      *

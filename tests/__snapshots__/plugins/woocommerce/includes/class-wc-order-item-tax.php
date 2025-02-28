@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item tax.
  */
@@ -20,7 +19,6 @@ class WC_Order_Item_Tax extends \WC_Order_Item
   'shipping_tax_total' => 0,
   'rate_percent' => null,
 );
-
     /**
      * Set order item name.
      *

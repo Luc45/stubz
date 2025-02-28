@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Cart_Fees class.
  *
@@ -13,7 +12,6 @@ final class WC_Cart_Fees
      * @var object[]
      */
     private $fees = array();
-
     /**
      * New fees are made out of these props.
      *
@@ -27,7 +25,6 @@ final class WC_Cart_Fees
   'amount' => 0,
   'total' => 0,
 );
-
     /**
      * Constructor. Reference to the cart.
      *

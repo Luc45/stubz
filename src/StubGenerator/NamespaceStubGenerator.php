@@ -25,7 +25,7 @@ class NamespaceStubGenerator {
 		}
 
 		if ( $namespace === '' ) {
-			return "<?php\n\n" . $buffer . "\n";
+			return "<?php\n" . $buffer . "\n";
 		}
 
 		// Otherwise, replicate the detected namespace

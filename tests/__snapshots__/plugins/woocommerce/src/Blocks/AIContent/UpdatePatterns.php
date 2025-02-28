@@ -20,7 +20,6 @@ class UpdatePatterns
   7 => 'woocommerce-blocks/testimonials-3-columns',
   8 => 'woocommerce-blocks/product-collection-featured-products-5-columns',
 );
-
     /**
      * Generate AI content and assign AI-managed images to Patterns.
      *

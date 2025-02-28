@@ -15,7 +15,6 @@ class Patterns extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
      * @var string
      */
     protected $endpoint = 'patterns';
-
     /**
      * Register routes.
      */

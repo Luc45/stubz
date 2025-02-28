@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_REST_Posts_Controller
  *
@@ -14,28 +13,24 @@ abstract class WC_REST_Posts_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = '';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = '';
-
     /**
      * Controls visibility on frontend.
      *
      * @var string
      */
     protected $public = false;
-
     /**
      * Check if a given request has access to read items.
      *

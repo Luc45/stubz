@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Order Refunds controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Order_Refunds_Controller extends \WC_REST_Order_Refunds_V2_Control
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Prepares one object for create or update operation.
      *

@@ -17,7 +17,6 @@ class OrderMetaBoxServiceProvider extends \Automattic\WooCommerce\Internal\Depen
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\CustomMetaBox',
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\OrderAttribution',
 );
-
     /**
      * Register the classes.
      */

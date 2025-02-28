@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item fee.
  */
@@ -12,7 +11,6 @@ class WC_Order_Item_Fee extends \WC_Order_Item
      * @var object
      */
     public $legacy_fee = '';
-
     /**
      * Legacy fee key.
      *
@@ -20,7 +18,6 @@ class WC_Order_Item_Fee extends \WC_Order_Item
      * @var string
      */
     public $legacy_fee_key = '';
-
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -39,7 +36,6 @@ class WC_Order_Item_Fee extends \WC_Order_Item
     array(),
   ),
 );
-
     /**
      * Get item costs grouped by tax class.
      *

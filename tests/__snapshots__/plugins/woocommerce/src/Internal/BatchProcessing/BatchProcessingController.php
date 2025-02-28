@@ -10,22 +10,16 @@ namespace Automattic\WooCommerce\Internal\BatchProcessing;
 class BatchProcessingController
 {
     const WATCHDOG_ACTION_NAME = 'wc_schedule_pending_batch_processes';
-
     const PROCESS_SINGLE_BATCH_ACTION_NAME = 'wc_run_batch_process';
-
     const ENQUEUED_PROCESSORS_OPTION_NAME = 'wc_pending_batch_processes';
-
     const ACTION_GROUP = 'wc_batch_processes';
-
     const FAILING_PROCESS_MAX_ATTEMPTS_DEFAULT = 5;
-
     /**
      * Instance of WC_Logger class.
      *
      * @var \WC_Logger_Interface
      */
     private $logger = null;
-
     /**
      * BatchProcessingController constructor.
      *

@@ -17,7 +17,6 @@ class ImportExportServiceProvider extends \Automattic\WooCommerce\Internal\Depen
     protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\ImportExport\\CSVUploadHelper',
 );
-
     /**
      * Register the classes.
      */

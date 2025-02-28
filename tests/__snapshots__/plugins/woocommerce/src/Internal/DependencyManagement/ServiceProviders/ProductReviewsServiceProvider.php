@@ -16,7 +16,6 @@ class ProductReviewsServiceProvider extends \Automattic\WooCommerce\Internal\Dep
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\Reviews',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\ReviewsCommentsOverrides',
 );
-
     /**
      * Register the classes.
      */

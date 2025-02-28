@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Caching;
 /**
  * Implementation of CacheEngine that uses the built-in WordPress cache.
  */
-class WPCacheEngine
+class WPCacheEngine implements \Automattic\WooCommerce\Caching\CacheEngine
 {
     /**
      * Retrieves an object cached under a given key.

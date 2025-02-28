@@ -13,21 +13,18 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
 class RuntimeContainer
 {
     const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
-
     /**
      * Cache of classes already resolved.
      *
      * @var array
      */
     protected array $resolved_cache;
-
     /**
      * A copy of the initial resolved classes cache passed to the constructor.
      *
      * @var array
      */
     protected array $initial_resolved_cache;
-
     /**
      * Initializes a new instance of the class.
      *

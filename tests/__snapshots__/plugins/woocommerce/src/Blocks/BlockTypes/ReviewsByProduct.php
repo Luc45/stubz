@@ -13,7 +13,6 @@ class ReviewsByProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstrac
      * @var string
      */
     protected $block_name = 'reviews-by-product';
-
     /**
      * Get the frontend script handle for this block type.
      *

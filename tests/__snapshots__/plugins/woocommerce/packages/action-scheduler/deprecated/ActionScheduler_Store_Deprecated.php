@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Store_Deprecated
  *

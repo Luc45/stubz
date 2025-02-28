@@ -13,5 +13,4 @@ class CheckoutOrderSummaryDiscountBlock extends \Automattic\WooCommerce\Blocks\B
      * @var string
      */
     protected $block_name = 'checkout-order-summary-discount-block';
-
 }

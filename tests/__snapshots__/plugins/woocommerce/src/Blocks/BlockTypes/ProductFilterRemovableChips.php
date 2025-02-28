@@ -13,7 +13,6 @@ final class ProductFilterRemovableChips extends \Automattic\WooCommerce\Blocks\B
      * @var string
      */
     protected $block_name = 'product-filter-removable-chips';
-
     /**
      * Render the block.
      *

@@ -13,7 +13,6 @@ class OnboardingSync
      * @var OnboardingSync instance
      */
     private static $instance = null;
-
     /**
      * Get class instance.
      */

@@ -13,7 +13,6 @@ class AddToCartWithOptionsVariationSelector extends \Automattic\WooCommerce\Bloc
      * @var string
      */
     protected $block_name = 'add-to-cart-with-options-variation-selector';
-
     /**
      * Render variation label.
      *

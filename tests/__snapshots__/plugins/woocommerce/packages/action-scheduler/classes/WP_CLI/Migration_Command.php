@@ -19,7 +19,6 @@ class Migration_Command extends \WP_CLI_Command
      * @var int
      */
     private $total_processed = 0;
-
     /**
      * Register the command with WP-CLI
      */

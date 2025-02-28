@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Runs a deprecated action with notice only if used.
  *

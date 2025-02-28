@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class UnsecuredReportFiles
 {
     const NOTE_NAME = 'wc-admin-remove-unsecured-report-files';
-
     /**
      * Get the note.
      *

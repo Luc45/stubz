@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Widget
  *
@@ -15,35 +14,30 @@ abstract class WC_Widget extends \WP_Widget
      * @var string
      */
     public $widget_cssclass = null;
-
     /**
      * Widget description.
      *
      * @var string
      */
     public $widget_description = null;
-
     /**
      * Widget ID.
      *
      * @var string
      */
     public $widget_id = null;
-
     /**
      * Widget name.
      *
      * @var string
      */
     public $widget_name = null;
-
     /**
      * Settings.
      *
      * @var array
      */
     public $settings = null;
-
     /**
      * Constructor.
      */

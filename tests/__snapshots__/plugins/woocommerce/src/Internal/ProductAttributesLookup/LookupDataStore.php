@@ -8,34 +8,27 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 class LookupDataStore
 {
     const ACTION_NONE = 0;
-
     const ACTION_INSERT = 1;
-
     const ACTION_UPDATE_STOCK = 2;
-
     const ACTION_DELETE = 3;
-
     /**
      * The lookup table name.
      *
      * @var string
      */
     private $lookup_table_name = null;
-
     /**
      * True if the optimized database access setting is enabled AND products are stored as custom post types.
      *
      * @var bool
      */
     private bool $optimized_db_access_is_enabled;
-
     /**
      * Flag indicating if the last lookup table creation operation failed.
      *
      * @var bool
      */
     private bool $last_create_operation_failed = false;
-
     /**
      * LookupDataStore constructor.
      */

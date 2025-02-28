@@ -13,5 +13,4 @@ class CheckoutFieldsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'checkout-fields-block';
-
 }

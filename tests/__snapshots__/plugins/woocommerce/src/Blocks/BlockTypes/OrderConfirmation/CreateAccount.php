@@ -13,7 +13,6 @@ class CreateAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfi
      * @var string
      */
     protected $block_name = 'order-confirmation-create-account';
-
     /**
      * Initialize this block type.
      */

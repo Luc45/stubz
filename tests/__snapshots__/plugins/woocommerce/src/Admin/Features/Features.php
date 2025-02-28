@@ -13,7 +13,6 @@ class Features
      * @var Loader instance
      */
     protected static $instance = null;
-
     /**
      * Optional features
      *
@@ -29,7 +28,6 @@ class Features
     'default' => 'yes',
   ),
 );
-
     /**
      * Beta features
      *
@@ -38,7 +36,6 @@ class Features
     protected static $beta_features = array (
   0 => 'settings',
 );
-
     /**
      * Get class instance.
      */

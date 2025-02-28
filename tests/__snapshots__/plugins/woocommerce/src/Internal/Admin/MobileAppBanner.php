@@ -13,7 +13,6 @@ class MobileAppBanner
      * @var Analytics instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

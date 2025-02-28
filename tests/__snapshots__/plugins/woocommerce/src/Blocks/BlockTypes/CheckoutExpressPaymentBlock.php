@@ -13,21 +13,18 @@ class CheckoutExpressPaymentBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'checkout-express-payment-block';
-
     /**
      * Default styles for the express payment buttons
      *
      * @var boolean
      */
     protected $default_styles = null;
-
     /**
      * Current styles for the express payment buttons
      *
      * @var boolean
      */
     protected $current_styles = null;
-
     /**
      * Initialise the block
      */

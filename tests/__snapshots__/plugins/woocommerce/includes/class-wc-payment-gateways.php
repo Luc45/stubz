@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Payment gateways class.
  */
@@ -11,7 +10,6 @@ class WC_Payment_Gateways
      * @var array
      */
     public $payment_gateways = array();
-
     /**
      * The single instance of the class.
      *
@@ -19,7 +17,6 @@ class WC_Payment_Gateways
      * @since 2.1.0
      */
     protected static $_instance = null;
-
     /**
      * Main WC_Payment_Gateways Instance.
      *

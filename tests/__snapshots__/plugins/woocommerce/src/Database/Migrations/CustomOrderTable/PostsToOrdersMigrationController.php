@@ -11,21 +11,18 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
 class PostsToOrdersMigrationController
 {
     const LOGS_SOURCE_NAME = 'posts-to-orders-migration';
-
     /**
      * Error logger for migration errors.
      *
      * @var \WC_Logger
      */
     private $error_logger = null;
-
     /**
      * Array of objects used to perform the migration.
      *
      * @var \Automattic\WooCommerce\Database\Migrations\TableMigrator[]
      */
     private $all_migrators = null;
-
     /**
      * PostsToOrdersMigrationController constructor.
      */

@@ -13,21 +13,18 @@ class RoutesController
      * @var SchemaController
      */
     protected $schema_controller = null;
-
     /**
      * Stores routes.
      *
      * @var array
      */
     protected $routes = array();
-
     /**
      * Namespace for the API.
      *
      * @var string
      */
     private static $api_namespace = 'wc/store';
-
     /**
      * Constructor.
      *

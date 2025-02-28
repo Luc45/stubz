@@ -17,21 +17,18 @@ class CLIRunner
      * @var CustomOrdersTableController
      */
     private $controller = null;
-
     /**
      * DataSynchronizer instance.
      *
      * @var DataSynchronizer;
      */
     private $synchronizer = null;
-
     /**
      * PostsToOrdersMigrationController instance.
      *
      * @var PostsToOrdersMigrationController
      */
     private $post_to_cot_migrator = null;
-
     /**
      * Init method, invoked by DI container.
      *

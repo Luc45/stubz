@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Session handler class.
  */
@@ -11,35 +10,30 @@ class WC_Session_Handler extends \WC_Session
      * @var string cookie name
      */
     protected $_cookie = null;
-
     /**
      * Stores session expiry.
      *
      * @var string session due to expire timestamp
      */
     protected $_session_expiring = null;
-
     /**
      * Stores session due to expire timestamp.
      *
      * @var string session expiration timestamp
      */
     protected $_session_expiration = null;
-
     /**
      * True when the cookie exists.
      *
      * @var bool Based on whether a cookie exists.
      */
     protected $_has_cookie = false;
-
     /**
      * Table name for session data.
      *
      * @var string Custom session table name
      */
     protected $_table = null;
-
     /**
      * Constructor for the session class.
      */

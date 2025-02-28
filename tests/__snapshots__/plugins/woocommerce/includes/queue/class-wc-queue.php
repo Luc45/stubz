@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Queue
  *
@@ -15,14 +14,12 @@ class WC_Queue
      * @var WC_Queue_Interface|null
      */
     protected static $instance = null;
-
     /**
      * The default queue class to initialize
      *
      * @var string
      */
     protected static $default_cass = 'WC_Action_Queue';
-
     /**
      * Single instance of WC_Queue_Interface
      *

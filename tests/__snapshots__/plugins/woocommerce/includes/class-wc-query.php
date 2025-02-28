@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Query Class.
  */
@@ -11,28 +10,24 @@ class WC_Query
      * @var array
      */
     public $query_vars = array();
-
     /**
      * Reference to the main product query on the page.
      *
      * @var WP_Query
      */
     private static $product_query = null;
-
     /**
      * Stores chosen attributes.
      *
      * @var array
      */
     private static $chosen_attributes = null;
-
     /**
      * The instance of the class that helps filtering with the product attributes lookup table.
      *
      * @var Filterer
      */
     private $filterer = null;
-
     /**
      * Constructor for the query class. Hooks in methods.
      */

@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\Controller
      * @var string
      */
     protected $rest_base = 'reports/(?P<type>[a-z]+)/export';
-
     /**
      * Register routes.
      */

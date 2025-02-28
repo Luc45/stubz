@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Year field.  Allows: * , / -
  *

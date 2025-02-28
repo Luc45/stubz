@@ -13,7 +13,6 @@ class BillingWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConf
      * @var string
      */
     protected $block_name = 'order-confirmation-billing-wrapper';
-
     /**
      * This renders the content of the billing wrapper.
      *

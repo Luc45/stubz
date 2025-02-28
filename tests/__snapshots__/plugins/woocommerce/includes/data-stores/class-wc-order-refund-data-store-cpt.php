@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Refund Data Store: Stored in CPT.
  *
  * @version  3.0.0
  */
-class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
+class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT implements \WC_Object_Data_Store_Interface, \WC_Order_Refund_Data_Store_Interface
 {
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
@@ -29,7 +28,6 @@ class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
   12 => '_prices_include_tax',
   13 => '_payment_tokens',
 );
-
     /**
      * Delete a refund - no trash is supported.
      *

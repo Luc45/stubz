@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that performs a comparison operation against the base
  * location - country.
  */
-class BaseLocationCountryRuleProcessor
+class BaseLocationCountryRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Performs a comparison operation against the base location - country.

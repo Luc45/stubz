@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 
-interface ServiceProviderInterface
+interface ServiceProviderInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
 {
     /**
      * Returns a boolean if checking whether this provider provides a specific

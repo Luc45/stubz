@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product cat list walker class.
  */
@@ -11,7 +10,6 @@ class WC_Product_Cat_List_Walker extends \Walker
      * @var string
      */
     public $tree_type = 'product_cat';
-
     /**
      * DB fields to use.
      *
@@ -22,7 +20,6 @@ class WC_Product_Cat_List_Walker extends \Walker
   'id' => 'term_id',
   'slug' => 'slug',
 );
-
     /**
      * Starts the list before the elements are added.
      *

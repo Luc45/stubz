@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Pointers Class.
  */

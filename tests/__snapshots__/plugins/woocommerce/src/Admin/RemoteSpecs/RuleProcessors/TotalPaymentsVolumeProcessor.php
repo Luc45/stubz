@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 /**
  * Rule processor that passes when a store's payments volume exceeds a provided amount.
  */
-class TotalPaymentsVolumeProcessor
+class TotalPaymentsVolumeProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Compare against the store's total payments volume.

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract class with common Queue Cleaner functionality.
  */

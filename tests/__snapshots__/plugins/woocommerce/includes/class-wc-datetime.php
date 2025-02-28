@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Datetime class.
  */
-class WC_DateTime extends \DateTime implements \DateTimeInterface, \Stringable
+class WC_DateTime extends \DateTime
 {
     /**
      * UTC Offset, if needed. Only used when a timezone is not set. When
@@ -12,7 +11,6 @@ class WC_DateTime extends \DateTime implements \DateTimeInterface, \Stringable
      * @var integer
      */
     protected $utc_offset = 0;
-
     /**
      * Output an ISO 8601 date string in local (WordPress) timezone.
      *

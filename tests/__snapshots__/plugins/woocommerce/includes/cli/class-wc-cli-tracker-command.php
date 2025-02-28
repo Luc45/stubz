@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Allows access to tracker snapshot for transparency and debugging.
  *

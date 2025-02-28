@@ -13,5 +13,4 @@ class ActiveFilters extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var string
      */
     protected $block_name = 'active-filters';
-
 }

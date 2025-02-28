@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shortcode my account class.
  */

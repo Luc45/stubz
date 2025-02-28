@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Webhook class.
  */
@@ -12,7 +11,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
      * @var array
      */
     protected $processed = array();
-
     /**
      * Stores webhook data.
      *
@@ -34,7 +32,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
   'api_version' => 3,
   'pending_delivery' => false,
 );
-
     /**
      * Load webhook data based on how WC_Webhook is called.
      *

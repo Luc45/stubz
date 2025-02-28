@@ -15,14 +15,12 @@ final class CashOnDelivery extends \Automattic\WooCommerce\Blocks\Payments\Integ
      * @var string
      */
     protected $name;
-
     /**
      * An instance of the Asset Api
      *
      * @var Api
      */
     private $asset_api = null;
-
     /**
      * Constructor
      *

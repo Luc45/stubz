@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class Count
+class Count implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers\TransformerInterface
 {
     /**
      *  Count elements in Array or Countable object.

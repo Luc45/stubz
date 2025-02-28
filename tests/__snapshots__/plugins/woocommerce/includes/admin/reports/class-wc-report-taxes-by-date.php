@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Taxes_By_Date
  *

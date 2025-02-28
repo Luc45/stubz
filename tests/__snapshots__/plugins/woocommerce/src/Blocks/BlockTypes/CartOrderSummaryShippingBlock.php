@@ -13,5 +13,4 @@ class CartOrderSummaryShippingBlock extends \Automattic\WooCommerce\Blocks\Block
      * @var string
      */
     protected $block_name = 'cart-order-summary-shipping-block';
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Gateway_Paypal_IPN_Handler class.
  */
@@ -11,7 +10,6 @@ class WC_Gateway_Paypal_IPN_Handler extends \WC_Gateway_Paypal_Response
      * @var string Receiver email address.
      */
     protected $receiver_email = null;
-
     /**
      * Constructor.
      *

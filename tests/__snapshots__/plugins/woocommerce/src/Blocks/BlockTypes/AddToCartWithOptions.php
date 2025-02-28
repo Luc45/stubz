@@ -13,7 +13,6 @@ class AddToCartWithOptions extends \Automattic\WooCommerce\Blocks\BlockTypes\Abs
      * @var string
      */
     protected $block_name = 'add-to-cart-with-options';
-
     /**
      * Initializes the AddToCartWithOptions block and hooks into the `wc_add_to_cart_message_html` filter
      * to prevent displaying the Cart Notice when the block is inside the Single Product block

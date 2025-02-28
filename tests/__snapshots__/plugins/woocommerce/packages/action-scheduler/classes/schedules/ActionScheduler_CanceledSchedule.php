@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_SimpleSchedule
  */
@@ -11,7 +10,6 @@ class ActionScheduler_CanceledSchedule extends \ActionScheduler_SimpleSchedule
      * @var null
      */
     private $timestamp = null;
-
     /**
      * Calculate when the next instance of this schedule would run based on a given date & time.
      *

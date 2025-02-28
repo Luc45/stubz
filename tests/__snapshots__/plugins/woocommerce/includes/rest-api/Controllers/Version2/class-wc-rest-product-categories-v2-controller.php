@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Categories controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Product_Categories_V2_Controller extends \WC_REST_Product_Categori
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Prepare a single product category output for response.
      *

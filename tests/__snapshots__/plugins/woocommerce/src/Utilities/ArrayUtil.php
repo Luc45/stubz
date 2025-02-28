@@ -8,13 +8,9 @@ namespace Automattic\WooCommerce\Utilities;
 class ArrayUtil
 {
     const SELECT_BY_AUTO = 0;
-
     const SELECT_BY_OBJECT_METHOD = 1;
-
     const SELECT_BY_OBJECT_PROPERTY = 2;
-
     const SELECT_BY_ARRAY_KEY = 3;
-
     /**
      * Get a value from an nested array by specifying the entire key hierarchy with '::' as separator.
      *

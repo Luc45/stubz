@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Legacy Abstract Product
  *

@@ -12,11 +12,8 @@ class Register
   0 => 'disabled',
   1 => 'enabled',
 );
-
     const MODE_DISABLED = 'disabled';
-
     const MODE_ENABLED = 'enabled';
-
     /**
      * Name of the option used to store the current mode. See self::MODES for a
      * list of acceptable values for the actual option.
@@ -24,7 +21,6 @@ class Register
      * @var string
      */
     private $mode_option = 'wc_downloads_approved_directories_mode';
-
     /**
      * Sets up the approved directories sub-system.
      *

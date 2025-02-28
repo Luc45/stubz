@@ -67,7 +67,7 @@ namespace Automattic\WooCommerce\Internal;
  *
  * }
  */
-abstract class RestApiControllerBase
+abstract class RestApiControllerBase implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
      * The root namespace for the JSON REST API endpoints.
@@ -75,7 +75,6 @@ abstract class RestApiControllerBase
      * @var string
      */
     protected string $route_namespace = 'wc/v3';
-
     /**
      * Register the hooks used by the class.
      */

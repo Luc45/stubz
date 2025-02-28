@@ -1,9 +1,8 @@
 <?php
-
 /**
  * WC_Product_Importer Class.
  */
-abstract class WC_Product_Importer
+abstract class WC_Product_Importer implements \WC_Importer_Interface
 {
     /**
      * CSV file.
@@ -11,56 +10,48 @@ abstract class WC_Product_Importer
      * @var string
      */
     protected $file = '';
-
     /**
      * The file position after the last read.
      *
      * @var int
      */
     protected $file_position = 0;
-
     /**
      * Importer parameters.
      *
      * @var array
      */
     protected $params = array();
-
     /**
      * Raw keys - CSV raw headers.
      *
      * @var array
      */
     protected $raw_keys = array();
-
     /**
      * Mapped keys - CSV headers.
      *
      * @var array
      */
     protected $mapped_keys = array();
-
     /**
      * Raw data.
      *
      * @var array
      */
     protected $raw_data = array();
-
     /**
      * Raw data.
      *
      * @var array
      */
     protected $file_positions = array();
-
     /**
      * Parsed data.
      *
      * @var array
      */
     protected $parsed_data = array();
-
     /**
      * Start time of current import.
      *
@@ -69,7 +60,6 @@ abstract class WC_Product_Importer
      * @var int
      */
     protected $start_time = 0;
-
     /**
      * Get file raw headers.
      *

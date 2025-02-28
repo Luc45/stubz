@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Brands_Coupons class.
  *
@@ -10,7 +9,6 @@
 class WC_Brands_Coupons
 {
     const E_WC_COUPON_EXCLUDED_BRANDS = 301;
-
     /**
      * Constructor
      */

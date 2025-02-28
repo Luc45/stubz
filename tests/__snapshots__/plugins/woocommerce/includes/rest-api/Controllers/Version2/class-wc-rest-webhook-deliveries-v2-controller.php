@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Webhook Deliveries controller class.
  *
@@ -15,7 +14,6 @@ class WC_REST_Webhook_Deliveries_V2_Controller extends \WC_REST_Webhook_Deliveri
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Prepare a single webhook delivery output for response.
      *

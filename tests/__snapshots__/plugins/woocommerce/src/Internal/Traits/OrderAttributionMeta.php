@@ -35,20 +35,16 @@ trait OrderAttributionMeta
   'session_count' => 'udata.vst',
   'user_agent' => 'udata.uag',
 );
-
     /** @var array */
     private $fields = array();
-
     /**
      * Cached `array_keys( $fields )`.
      *
      * @var array
      * */
     private $field_names = array();
-
     /** @var string */
     private $field_prefix = '';
-
     /**
      * Get the device type based on the other meta fields.
      *

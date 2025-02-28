@@ -32,7 +32,6 @@ final class Container
      * @var RuntimeContainer
      */
     private $container = null;
-
     /**
      * Class constructor.
      */

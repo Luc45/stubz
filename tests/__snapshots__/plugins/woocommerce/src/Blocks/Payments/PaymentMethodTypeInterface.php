@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Blocks\Payments;
 
-interface PaymentMethodTypeInterface
+interface PaymentMethodTypeInterface extends \Automattic\WooCommerce\Blocks\Integrations\IntegrationInterface
 {
     /**
      * Returns if this payment method should be active. If false, the scripts will not be enqueued.

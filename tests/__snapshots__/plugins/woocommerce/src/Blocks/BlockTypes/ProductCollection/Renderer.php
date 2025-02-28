@@ -17,14 +17,12 @@ class Renderer
   'has_results' => false,
   'has_no_results_block' => false,
 );
-
     /**
      * The Block with its attributes before it gets rendered
      *
      * @var array
      */
     protected $parsed_block = null;
-
     /**
      * Constructor.
      */

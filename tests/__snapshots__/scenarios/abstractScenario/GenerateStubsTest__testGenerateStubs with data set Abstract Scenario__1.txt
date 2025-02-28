@@ -7,7 +7,7 @@ namespace AbstractScenario;
  */
 abstract class AbstractEntity
 {
-    public abstract function getType(): string;
+    abstract public function getType(): string;
     public function describe(): string
 {
 }

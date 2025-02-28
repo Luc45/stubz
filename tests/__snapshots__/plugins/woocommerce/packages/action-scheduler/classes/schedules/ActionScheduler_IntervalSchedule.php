@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Class ActionScheduler_IntervalSchedule
  */
-class ActionScheduler_IntervalSchedule extends \ActionScheduler_Abstract_RecurringSchedule
+class ActionScheduler_IntervalSchedule extends \ActionScheduler_Abstract_RecurringSchedule implements \ActionScheduler_Schedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.
@@ -11,14 +10,12 @@ class ActionScheduler_IntervalSchedule extends \ActionScheduler_Abstract_Recurri
      * @var null
      */
     private $start_timestamp = null;
-
     /**
      * Deprecated property @see $this->__wakeup() for details.
      *
      * @var null
      */
     private $interval_in_seconds = null;
-
     /**
      * Calculate when this schedule should start after a given date & time using
      * the number of seconds between recurrences.

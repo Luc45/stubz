@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Importer_Interface class.
  */

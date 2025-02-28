@@ -13,14 +13,12 @@ class AdditionalPayments extends \Automattic\WooCommerce\Admin\Features\Onboardi
      * @var null
      */
     private $is_complete_result = null;
-
     /**
      * Used to cache can_view() method result.
      *
      * @var null
      */
     private $can_view_result = null;
-
     /**
      * ID.
      *

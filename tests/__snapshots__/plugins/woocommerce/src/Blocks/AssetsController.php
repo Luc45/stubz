@@ -16,7 +16,6 @@ final class AssetsController
      * @var AssetApi
      */
     private $api = null;
-
     /**
      * Constructor.
      *

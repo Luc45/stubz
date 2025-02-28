@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Helper_Compat Class
  *

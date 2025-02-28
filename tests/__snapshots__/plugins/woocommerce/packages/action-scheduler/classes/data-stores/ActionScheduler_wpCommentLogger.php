@@ -1,14 +1,11 @@
 <?php
-
 /**
  * Class ActionScheduler_wpCommentLogger
  */
 class ActionScheduler_wpCommentLogger extends \ActionScheduler_Logger
 {
     const AGENT = 'ActionScheduler';
-
     const TYPE = 'action_log';
-
     /**
      * Create log entry.
      *

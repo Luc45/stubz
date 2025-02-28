@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Webhook data store class.
  */
-class WC_Webhook_Data_Store
+class WC_Webhook_Data_Store implements \WC_Webhook_Data_Store_Interface
 {
     /**
      * Create a new webhook in the database.

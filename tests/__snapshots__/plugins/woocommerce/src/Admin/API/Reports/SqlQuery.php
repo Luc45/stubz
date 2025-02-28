@@ -38,7 +38,6 @@ class SqlQuery
   'union' => 
   array(),
 );
-
     /**
      * SQL clause merge filters.
      *
@@ -57,14 +56,12 @@ class SqlQuery
     2 => 'left_join',
   ),
 );
-
     /**
      * Data store context used to pass to filters.
      *
      * @var string
      */
     protected $context = null;
-
     /**
      * Constructor.
      *

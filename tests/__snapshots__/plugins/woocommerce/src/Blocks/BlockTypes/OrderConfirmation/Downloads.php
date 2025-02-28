@@ -13,7 +13,6 @@ class Downloads extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmat
      * @var string
      */
     protected $block_name = 'order-confirmation-downloads';
-
     /**
      * This renders the content of the block within the wrapper.
      *

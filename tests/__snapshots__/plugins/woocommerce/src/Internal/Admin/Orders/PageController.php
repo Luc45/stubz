@@ -13,42 +13,36 @@ class PageController
      * @var string
      */
     private $order_type = '';
-
     /**
      * Instance of the posts redirection controller.
      *
      * @var PostsRedirectionController
      */
     private $redirection_controller = null;
-
     /**
      * Instance of the orders list table.
      *
      * @var ListTable
      */
     private $orders_table = null;
-
     /**
      * Instance of orders edit form.
      *
      * @var Edit
      */
     private $order_edit_form = null;
-
     /**
      * Current action.
      *
      * @var string
      */
     private $current_action = '';
-
     /**
      * Order object to be used in edit/new form.
      *
      * @var \WC_Order
      */
     private $order = null;
-
     /**
      * Verify that user has permission to edit orders.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Local Pickup Shipping Method.
  *
@@ -17,7 +16,6 @@ class WC_Shipping_Legacy_Local_Pickup extends \WC_Shipping_Method
      * @var string
      */
     public $codes = null;
-
     /**
      * Constructor.
      */

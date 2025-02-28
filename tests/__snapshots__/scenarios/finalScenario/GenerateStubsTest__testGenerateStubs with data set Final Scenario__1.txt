@@ -8,14 +8,13 @@ namespace FinalScenario;
 final class ImmutableConfig
 {
     private array $settings = array();
-
     public function __construct(array $initialSettings = array())
 {
 }
     /**
      * A final method cannot be overridden even if the class were extendable.
      */
-    public final function getSetting(string $key): mixed
+    final public function getSetting(string $key): mixed
 {
 }
 }
@@ -24,7 +23,7 @@ final class ImmutableConfig
  */
 class PartialFinal
 {
-    public final function nonOverrideableMethod(): string
+    final public function nonOverrideableMethod(): string
 {
 }
     public function normalMethod(): string

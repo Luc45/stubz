@@ -13,7 +13,6 @@ class FeaturedCategory extends \Automattic\WooCommerce\Blocks\BlockTypes\Feature
      * @var string
      */
     protected $block_name = 'featured-category';
-
     /**
      * Get block attributes.
      *

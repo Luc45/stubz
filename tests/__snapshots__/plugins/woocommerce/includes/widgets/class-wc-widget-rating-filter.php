@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Widget rating filter class.
  */

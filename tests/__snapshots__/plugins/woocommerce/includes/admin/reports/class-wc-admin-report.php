@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Admin Report.
  *
@@ -16,56 +15,48 @@ class WC_Admin_Report
      * @var array
      */
     protected static $transients_to_update = array();
-
     /**
      * The list of transients.
      *
      * @var array
      */
     protected static $cached_results = array();
-
     /**
      * The chart interval.
      *
      * @var int
      */
     public $chart_interval = null;
-
     /**
      * Group by SQL query.
      *
      * @var string
      */
     public $group_by_query = null;
-
     /**
      * The bar width.
      *
      * @var int
      */
     public $barwidth = null;
-
     /**
      * Group chart item by day or month.
      *
      * @var string
      */
     public $chart_groupby = null;
-
     /**
      * The start date of the report.
      *
      * @var int timestamp
      */
     public $start_date = null;
-
     /**
      * The end date of the report.
      *
      * @var int timestamp
      */
     public $end_date = null;
-
     /**
      * Get report totals such as order totals and discount amounts.
      *

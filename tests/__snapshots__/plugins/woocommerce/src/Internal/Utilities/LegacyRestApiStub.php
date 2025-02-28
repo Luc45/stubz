@@ -15,7 +15,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  *
  * See: https://developer.woocommerce.com/2023/10/03/the-legacy-rest-api-will-move-to-a-dedicated-extension-in-woocommerce-9-0/
  */
-class LegacyRestApiStub
+class LegacyRestApiStub implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
      * The instance of RestApiUtil to use.
@@ -23,7 +23,6 @@ class LegacyRestApiStub
      * @var RestApiUtil
      */
     private Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util;
-
     /**
      * Set up the Legacy REST API endpoints stub.
      */

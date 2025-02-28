@@ -13,7 +13,6 @@ class ProductSearch extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var string
      */
     protected $block_name = 'product-search';
-
     /**
      * Get the frontend script handle for this block type.
      *

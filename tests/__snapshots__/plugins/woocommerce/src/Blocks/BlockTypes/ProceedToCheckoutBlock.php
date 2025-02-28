@@ -13,7 +13,6 @@ class ProceedToCheckoutBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\A
      * @var string
      */
     protected $block_name = 'proceed-to-checkout-block';
-
     /**
      * Extra data passed through from server to client for block.
      *

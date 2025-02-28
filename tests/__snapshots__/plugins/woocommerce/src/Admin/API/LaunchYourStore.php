@@ -15,14 +15,12 @@ class LaunchYourStore
      * @var string
      */
     protected $namespace = 'wc-admin';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'launch-your-store';
-
     /**
      * Register routes.
      */

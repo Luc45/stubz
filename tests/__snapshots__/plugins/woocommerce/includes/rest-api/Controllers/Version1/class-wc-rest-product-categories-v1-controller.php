@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Categories controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Product_Categories_V1_Controller extends \WC_REST_Terms_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/categories';
-
     /**
      * Taxonomy.
      *
      * @var string
      */
     protected $taxonomy = 'product_cat';
-
     /**
      * Prepare a single product category output for response.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Flat Rate Shipping Method.
  *
@@ -17,21 +16,18 @@ class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
      * @var string
      */
     protected $fee_cost = '';
-
     /**
      * Shipping method cost.
      *
      * @var string
      */
     public $cost = null;
-
     /**
      * Shipping method type.
      *
      * @var string
      */
     public $type = null;
-
     /**
      * Shipping method options.
      *
@@ -39,7 +35,6 @@ class WC_Shipping_Legacy_Flat_Rate extends \WC_Shipping_Method
      * @var string
      */
     public $options = null;
-
     /**
      * Constructor.
      */

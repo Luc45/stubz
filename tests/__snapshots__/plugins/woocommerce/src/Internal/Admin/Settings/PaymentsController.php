@@ -15,7 +15,6 @@ class PaymentsController
      * @var Payments
      */
     private Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments;
-
     /**
      * Register hooks.
      */

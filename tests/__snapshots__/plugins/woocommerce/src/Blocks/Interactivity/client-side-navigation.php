@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Print client-side navigation meta tag (hard-coded for now).
  */

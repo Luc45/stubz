@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 class Cache
 {
     const VERSION_OPTION = 'woocommerce_reports';
-
     /**
      * Invalidate cache.
      */

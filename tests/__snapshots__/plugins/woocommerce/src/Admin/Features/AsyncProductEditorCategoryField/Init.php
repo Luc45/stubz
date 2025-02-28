@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\AsyncProductEditorCategoryField;
 class Init
 {
     const FEATURE_ID = 'async-product-editor-category-field';
-
     /**
      * Constructor
      */

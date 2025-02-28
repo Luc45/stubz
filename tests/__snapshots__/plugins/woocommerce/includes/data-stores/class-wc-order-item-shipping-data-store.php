@@ -1,9 +1,8 @@
 <?php
-
 /**
  * WC_Order_Item_Shipping_Data_Store class.
  */
-class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
+class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store implements \WC_Object_Data_Store_Interface, \WC_Order_Item_Type_Data_Store_Interface
 {
     /**
      * Data stored in meta keys.
@@ -18,7 +17,6 @@ class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Dat
   3 => 'total_tax',
   4 => 'taxes',
 );
-
     /**
      * Read/populate data properties specific to this order item.
      *

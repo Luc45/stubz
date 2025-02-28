@@ -1,61 +1,52 @@
 <?php
-
 /**
  * WC_Gateway_Paypal Class.
  */
 class WC_Gateway_Paypal extends \WC_Payment_Gateway
 {
     const ID = 'paypal';
-
     /**
      * Whether or not logging is enabled
      *
      * @var bool
      */
     public static $log_enabled = false;
-
     /**
      * Logger instance
      *
      * @var WC_Logger
      */
     public static $log = false;
-
     /**
      * Whether the test mode is enabled.
      *
      * @var bool
      */
     public $testmode = null;
-
     /**
      * Whether the debug mode is enabled.
      *
      * @var bool
      */
     public $debug = null;
-
     /**
      * Email address to send payments to.
      *
      * @var string
      */
     public $email = null;
-
     /**
      * Receiver email.
      *
      * @var string
      */
     public $receiver_email = null;
-
     /**
      * Identity token.
      *
      * @var string
      */
     public $identity_token = null;
-
     /**
      * Constructor for the gateway.
      */

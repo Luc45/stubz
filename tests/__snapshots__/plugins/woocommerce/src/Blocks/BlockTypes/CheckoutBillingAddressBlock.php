@@ -13,5 +13,4 @@ class CheckoutBillingAddressBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'checkout-billing-address-block';
-
 }

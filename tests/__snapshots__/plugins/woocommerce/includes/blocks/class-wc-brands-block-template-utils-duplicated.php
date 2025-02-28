@@ -1,5 +1,4 @@
 <?php
-
 /**
  * BlockTemplateUtils class used for serving block templates from Woo Blocks.
  * IMPORTANT: These methods have been duplicated from Gutenberg/lib/full-site-editing/block-templates.php as those functions are not for public usage.
@@ -16,9 +15,7 @@ class BlockTemplateUtilsDuplicated
   'TEMPLATES' => 'templates',
   'TEMPLATE_PARTS' => 'parts',
 );
-
     const PLUGIN_SLUG = 'woocommerce/woocommerce';
-
     /**
      * Returns an array containing the references of
      * the passed blocks and their inner blocks.

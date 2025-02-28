@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product grouped class.
  */
@@ -14,7 +13,6 @@ class WC_Product_Grouped extends \WC_Product
   'children' => 
   array(),
 );
-
     /**
      * Get internal type.
      *

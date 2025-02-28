@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer download log class.
  */
@@ -11,7 +10,6 @@ class WC_Customer_Download_Log extends \WC_Data
      * @var string
      */
     protected $object_type = 'customer_download_log';
-
     /**
      * Download Log Data array.
      *
@@ -23,7 +21,6 @@ class WC_Customer_Download_Log extends \WC_Data
   'user_id' => null,
   'user_ip_address' => null,
 );
-
     /**
      * Constructor.
      *

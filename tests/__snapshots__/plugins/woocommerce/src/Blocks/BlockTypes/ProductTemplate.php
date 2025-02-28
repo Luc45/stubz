@@ -13,7 +13,6 @@ class ProductTemplate extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'product-template';
-
     /**
      * Initialize this block type.
      *

@@ -50,7 +50,7 @@ class PropertyStubGenerator {
 			Helpers::handleBetterReflectionException( $ex );
 		}
 
-		$out .= ";\n\n";
+		$out .= ";\n";
 
 		return $out;
 	}

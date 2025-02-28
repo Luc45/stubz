@@ -13,7 +13,6 @@ class OrdersScheduler extends \Automattic\WooCommerce\Internal\Admin\Schedulers\
      * @var string
      */
     public static $name = 'orders';
-
     /**
      * Attach order lookup update hooks.
      *

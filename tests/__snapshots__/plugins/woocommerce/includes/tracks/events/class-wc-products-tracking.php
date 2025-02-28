@@ -1,12 +1,10 @@
 <?php
-
 /**
  * This class adds actions to track usage of WooCommerce Products.
  */
 class WC_Products_Tracking
 {
     const TRACKS_SOURCE = 'product-legacy-editor';
-
     /**
      * Init tracking.
      */

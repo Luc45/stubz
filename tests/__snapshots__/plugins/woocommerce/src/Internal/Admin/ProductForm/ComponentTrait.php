@@ -13,28 +13,24 @@ trait ComponentTrait
      * @var string
      */
     protected $id = null;
-
     /**
      * Plugin ID.
      *
      * @var string
      */
     protected $plugin_id = null;
-
     /**
      * Product form component location.
      *
      * @var string
      */
     protected $location = null;
-
     /**
      * Product form component order.
      *
      * @var number
      */
     protected $order = null;
-
     /**
      * Return id.
      *

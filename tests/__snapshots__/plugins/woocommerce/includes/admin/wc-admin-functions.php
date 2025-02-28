@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Get all WooCommerce screen ids.
  *

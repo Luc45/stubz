@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
      * @var string
      */
     protected $rest_base = 'reports/products/stats';
-
     /**
      * Mapping between external parameter name and name used in query class.
      *
@@ -27,7 +26,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
   'products' => 'product_includes',
   'variations' => 'variation_includes',
 );
-
     /**
      * Constructor.
      */

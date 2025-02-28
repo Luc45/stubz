@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Class ActionScheduler_CronSchedule
  */
-class ActionScheduler_CronSchedule extends \ActionScheduler_Abstract_RecurringSchedule
+class ActionScheduler_CronSchedule extends \ActionScheduler_Abstract_RecurringSchedule implements \ActionScheduler_Schedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.
@@ -11,14 +10,12 @@ class ActionScheduler_CronSchedule extends \ActionScheduler_Abstract_RecurringSc
      * @var null
      */
     private $start_timestamp = null;
-
     /**
      * Deprecated property @see $this->__wakeup() for details.
      *
      * @var null
      */
     private $cron = null;
-
     /**
      * Wrapper for parent constructor to accept a cron expression string and map it to a CronExpression for this
      * objects $recurrence property.

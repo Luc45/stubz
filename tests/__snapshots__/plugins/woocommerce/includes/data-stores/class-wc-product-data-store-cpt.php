@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Product Data Store: Stored in CPT.
  *
  * @version  3.0.0
  */
-class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
+class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Interface, \WC_Product_Data_Store_Interface
 {
     /**
      * Data stored in meta keys, but not considered "meta".
@@ -59,7 +58,6 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
   42 => '_edit_lock',
   43 => '_cogs_total_value',
 );
-
     /**
      * Meta data which should exist in the DB, even if empty.
      *
@@ -70,21 +68,18 @@ class WC_Product_Data_Store_CPT extends \WC_Data_Store_WP
     protected $must_exist_meta_keys = array (
   0 => '_tax_class',
 );
-
     /**
      * If we have already saved our extra data, don't do automatic / default handling.
      *
      * @var bool
      */
     protected $extra_data_saved = false;
-
     /**
      * Stores updated props.
      *
      * @var array
      */
     protected $updated_props = array();
-
     /**
      * Method to obtain DB lock on SKU to make sure we only
      * create product with unique SKU for concurrent requests.

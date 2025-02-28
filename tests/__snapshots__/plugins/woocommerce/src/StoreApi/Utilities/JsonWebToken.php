@@ -15,14 +15,12 @@ final class JsonWebToken
      * @var string
      */
     private static $type = 'JWT';
-
     /**
      * JWT algorithm to generate signature.
      *
      * @var string
      */
     private static $algorithm = 'HS256';
-
     /**
      * Generates a token from provided data and secret.
      *

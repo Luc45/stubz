@@ -12,7 +12,6 @@ namespace Automattic\WooCommerce\Blocks\Templates;
 class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplateCompatibility
 {
     const LOOP_ITEM_ID = 'product-loop-item';
-
     /**
      * The data of supported hooks, containing the hook name, the block name,
      * position, and the callbacks.
@@ -20,7 +19,6 @@ class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Block
      * @var array $hook_data The hook data.
      */
     protected $hook_data = null;
-
     /**
      * Update the render block data to inject our custom attribute needed to
      * determine which blocks belong to an inherited Products block.

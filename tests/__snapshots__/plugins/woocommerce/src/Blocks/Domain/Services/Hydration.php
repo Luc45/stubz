@@ -13,14 +13,12 @@ class Hydration
      * @var AssetDataRegistry
      */
     protected $asset_data_registry = null;
-
     /**
      * Cached notices to restore after hydrating the API.
      *
      * @var array
      */
     protected $cached_store_notices = array();
-
     /**
      * Constructor.
      *

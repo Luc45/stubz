@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_StoreSchema
  *
@@ -10,13 +9,9 @@
 class ActionScheduler_StoreSchema extends \ActionScheduler_Abstract_Schema
 {
     const ACTIONS_TABLE = 'actionscheduler_actions';
-
     const CLAIMS_TABLE = 'actionscheduler_claims';
-
     const GROUPS_TABLE = 'actionscheduler_groups';
-
     const DEFAULT_DATE = '0000-00-00 00:00:00';
-
     /**
      * Schema version.
      *
@@ -25,7 +20,6 @@ class ActionScheduler_StoreSchema extends \ActionScheduler_Abstract_Schema
      * @var int
      */
     protected $schema_version = 7;
-
     /**
      * Construct.
      */

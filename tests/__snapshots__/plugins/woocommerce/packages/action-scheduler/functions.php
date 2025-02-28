@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Enqueue an action to run one time, as soon as possible
  *

@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-interface DefinitionInterface
+interface DefinitionInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface
 {
     /**
      * Add a tag to the definition.

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Add mappings for WordPress tables.
  *

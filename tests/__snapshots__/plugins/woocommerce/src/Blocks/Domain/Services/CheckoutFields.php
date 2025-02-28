@@ -8,27 +8,21 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 class CheckoutFields
 {
     const BILLING_FIELDS_PREFIX = '_wc_billing/';
-
     const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
-
     const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
-
     const OTHER_FIELDS_PREFIX = '_wc_other/';
-
     /**
      * Additional checkout fields.
      *
      * @var array
      */
     private $additional_fields = array();
-
     /**
      * Fields locations.
      *
      * @var array
      */
     private $fields_locations = null;
-
     /**
      * Supported field types
      *
@@ -39,7 +33,6 @@ class CheckoutFields
   1 => 'select',
   2 => 'checkbox',
 );
-
     /**
      * Groups of fields to be saved.
      *
@@ -50,14 +43,12 @@ class CheckoutFields
   1 => 'shipping',
   2 => 'other',
 );
-
     /**
      * Instance of the asset data registry.
      *
      * @var AssetDataRegistry
      */
     private $asset_data_registry = null;
-
     /**
      * Sets up core fields.
      *

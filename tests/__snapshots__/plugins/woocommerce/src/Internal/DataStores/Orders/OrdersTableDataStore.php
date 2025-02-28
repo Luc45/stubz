@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * This class is the standard data store to be used when the custom orders table is in use.
  */
-class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
+class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements \WC_Object_Data_Store_Interface, \WC_Order_Data_Store_Interface
 {
     /**
      * Order IDs for which we are checking sync on read in the current request. In WooCommerce, using wc_get_order is a very common pattern, to avoid performance issues, we only sync on read once per request per order. This works because we consider out of sync orders to be an anomaly, so we don't recommend running HPOS with incompatible plugins.
@@ -13,14 +13,12 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
      * @var array
      */
     private static $reading_order_ids = array();
-
     /**
      * Keep track of order IDs that are actively being backfilled. We use this to prevent further read on sync from add_|update_|delete_postmeta etc hooks. If we allow this, then we would end up syncing the same order multiple times as it is being backfilled.
      *
      * @var array
      */
     private static $backfilling_order_ids = array();
-
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
      *
@@ -80,56 +78,48 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
   49 => '_order_stock_reduced',
   50 => '_new_order_email_sent',
 );
-
     /**
      * Meta keys that are considered ephemeral and do not trigger a full save (updating modified date) when changed.
      *
      * @var string[]
      */
     protected $ephemeral_meta_keys;
-
     /**
      * Handles custom metadata in the wc_orders_meta table.
      *
      * @var OrdersTableDataStoreMeta
      */
     protected $data_store_meta = null;
-
     /**
      * The database util object to use.
      *
      * @var DatabaseUtil
      */
     protected $database_util = null;
-
     /**
      * The posts data store object to use.
      *
      * @var \WC_Order_Data_Store_CPT
      */
     private $cpt_data_store = null;
-
     /**
      * Logger object to be used to log events.
      *
      * @var \WC_Logger
      */
     private $error_logger = null;
-
     /**
      * The name of the main orders table.
      *
      * @var string
      */
     private $orders_table_name = null;
-
     /**
      * The instance of the LegacyProxy object to use.
      *
      * @var LegacyProxy
      */
     private $legacy_proxy = null;
-
     /**
      * Table column to WC_Order mapping for wc_orders table.
      *
@@ -222,7 +212,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
     'name' => 'customer_note',
   ),
 );
-
     /**
      * Table column to WC_Order mapping for billing addresses in wc_address table.
      *
@@ -297,7 +286,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
     'name' => 'billing_phone',
   ),
 );
-
     /**
      * Table column to WC_Order mapping for shipping addresses in wc_address table.
      *
@@ -371,7 +359,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
     'name' => 'shipping_phone',
   ),
 );
-
     /**
      * Table column to WC_Order mapping for wc_operational_data table.
      *
@@ -467,14 +454,12 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT
     'name' => 'recorded_sales',
   ),
 );
-
     /**
      * Cache variable to store combined mapping.
      *
      * @var array[][][]
      */
     private $all_order_column_mapping = null;
-
     /**
      * Initialize the object.
      *

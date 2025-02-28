@@ -17,7 +17,6 @@ class SetWCPaymentGateways extends \Automattic\WooCommerce\Blueprint\Steps\Step
      * @var array $payment_gateways Array of payment gateways.
      */
     protected array $payment_gateways = array();
-
     /**
      * Constructor.
      *

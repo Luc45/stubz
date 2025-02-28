@@ -15,42 +15,36 @@ class TaskListSection
      * @var string
      */
     public $id = '';
-
     /**
      * Title.
      *
      * @var string
      */
     public $title = '';
-
     /**
      * Description.
      *
      * @var string
      */
     public $description = '';
-
     /**
      * Image.
      *
      * @var string
      */
     public $image = '';
-
     /**
      * Tasks.
      *
      * @var array
      */
     public $task_names = array();
-
     /**
      * Parent task list.
      *
      * @var TaskList
      */
     protected $task_list = null;
-
     /**
      * Constructor
      *

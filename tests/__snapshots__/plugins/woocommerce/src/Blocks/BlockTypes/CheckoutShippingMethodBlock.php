@@ -13,5 +13,4 @@ class CheckoutShippingMethodBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'checkout-shipping-method-block';
-
 }

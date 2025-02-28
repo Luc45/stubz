@@ -10,7 +10,6 @@ namespace Automattic\WooCommerce\Internal\Font;
 class FontFamily
 {
     const POST_TYPE = 'wp_font_family';
-
     /**
      * Validates a font family.
      *

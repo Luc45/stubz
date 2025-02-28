@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The WooCommerce countries class stores country/state data.
  */
@@ -11,14 +10,12 @@ class WC_Countries
      * @var array
      */
     public $locale = array();
-
     /**
      * List of address formats for locales.
      *
      * @var array
      */
     public $address_formats = array();
-
     /**
      * Cache of geographical regions.
      *
@@ -28,7 +25,6 @@ class WC_Countries
      * @var array
      */
     private $geo_cache = array();
-
     /**
      * Auto-load in-accessible properties on demand.
      *

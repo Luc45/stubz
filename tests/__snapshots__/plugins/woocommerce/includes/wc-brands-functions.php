@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Helper function :: wc_get_brand_thumbnail_url function.
  *

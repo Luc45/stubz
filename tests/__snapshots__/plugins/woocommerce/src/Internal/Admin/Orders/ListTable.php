@@ -13,49 +13,42 @@ class ListTable extends \WP_List_Table
      * @var string
      */
     private $order_type = null;
-
     /**
      * Request vars.
      *
      * @var array
      */
     private $request = array();
-
     /**
      * Contains the arguments to be used in the order query.
      *
      * @var array
      */
     private $order_query_args = array();
-
     /**
      * Tracks if a filter (ie, date or customer filter) has been applied.
      *
      * @var bool
      */
     private $has_filter = false;
-
     /**
      * Page controller instance for this request.
      *
      * @var PageController
      */
     private $page_controller = null;
-
     /**
      * Tracks whether we're currently inside the trash.
      *
      * @var boolean
      */
     private $is_trash = false;
-
     /**
      * Caches order counts by status.
      *
      * @var array
      */
     private $status_count_cache = null;
-
     /**
      * Sets up the admin list table for orders (specifically, for orders managed by the OrdersTableDataStore).
      *

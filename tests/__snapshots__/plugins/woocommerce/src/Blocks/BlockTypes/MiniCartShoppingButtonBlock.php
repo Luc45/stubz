@@ -13,5 +13,4 @@ class MiniCartShoppingButtonBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'mini-cart-shopping-button-block';
-
 }

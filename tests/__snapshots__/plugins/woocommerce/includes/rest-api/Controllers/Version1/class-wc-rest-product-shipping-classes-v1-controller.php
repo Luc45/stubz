@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Shipping Classes controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Product_Shipping_Classes_V1_Controller extends \WC_REST_Terms_Cont
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/shipping_classes';
-
     /**
      * Taxonomy.
      *
      * @var string
      */
     protected $taxonomy = 'product_shipping_class';
-
     /**
      * Prepare a single product shipping class output for response.
      *

@@ -11,9 +11,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class ProductCollectionData extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const IDENTIFIER = 'product-collection-data';
-
     const SCHEMA_TYPE = 'product-collection-data';
-
     /**
      * Get the path of this REST route.
      *

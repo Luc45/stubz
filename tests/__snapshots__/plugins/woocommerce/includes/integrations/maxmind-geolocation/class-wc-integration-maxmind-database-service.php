@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The service class responsible for interacting with MaxMind databases.
  *
@@ -8,16 +7,13 @@
 class WC_Integration_MaxMind_Database_Service
 {
     const DATABASE = 'GeoLite2-Country';
-
     const DATABASE_EXTENSION = '.mmdb';
-
     /**
      * A prefix for the MaxMind database filename.
      *
      * @var string
      */
     private $database_prefix = null;
-
     /**
      * WC_Integration_MaxMind_Database_Service constructor.
      *

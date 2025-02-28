@@ -1,5 +1,4 @@
 <?php
-
 /**
  * System status tools controller.
  *
@@ -14,14 +13,12 @@ class WC_REST_System_Status_Tools_V2_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'system_status/tools';
-
     /**
      * Register the routes for /system_status/tools/*.
      */

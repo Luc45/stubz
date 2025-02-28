@@ -13,14 +13,12 @@ class WCAdminSharedSettings
      * @var string
      */
     private $settings_prefix = 'admin';
-
     /**
      * Class instance.
      *
      * @var WCAdminSharedSettings instance
      */
     protected static $instance = null;
-
     /**
      * Hook into WooCommerce Blocks.
      */

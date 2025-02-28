@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles log entries by sending an email.
  *
@@ -29,28 +28,24 @@ class WC_Log_Handler_Email extends \WC_Log_Handler
      * @var int Integer representation of minimum log level to handle.
      */
     protected $threshold = null;
-
     /**
      * Stores email recipients.
      *
      * @var array
      */
     protected $recipients = array();
-
     /**
      * Stores log messages.
      *
      * @var array
      */
     protected $logs = array();
-
     /**
      * Stores integer representation of maximum logged level.
      *
      * @var int
      */
     protected $max_severity = null;
-
     /**
      * Constructor for log handler.
      *

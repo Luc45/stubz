@@ -15,14 +15,12 @@ class Api
      * @var PaymentMethodRegistry
      */
     private $payment_method_registry = null;
-
     /**
      * Reference to the AssetDataRegistry instance.
      *
      * @var AssetDataRegistry
      */
     private $asset_registry = null;
-
     /**
      * Constructor
      *

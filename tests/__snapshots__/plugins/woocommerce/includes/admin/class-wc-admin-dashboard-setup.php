@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Dashboard_Setup Class.
  */
@@ -9,24 +8,20 @@ class WC_Admin_Dashboard_Setup
      * Check for task list initialization.
      */
     private $initalized = false;
-
     /**
      * The task list.
      */
     private $task_list = null;
-
     /**
      * The tasks.
      */
     private $tasks = null;
-
     /**
      * # of completed tasks.
      *
      * @var int
      */
     private $completed_tasks_count = 0;
-
     /**
      * WC_Admin_Dashboard_Setup constructor.
      */

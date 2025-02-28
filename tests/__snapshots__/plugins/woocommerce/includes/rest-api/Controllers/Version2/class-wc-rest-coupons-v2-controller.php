@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Coupons controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Coupons_V2_Controller extends \WC_REST_CRUD_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'coupons';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_coupon';
-
     /**
      * Register the routes for coupons.
      */

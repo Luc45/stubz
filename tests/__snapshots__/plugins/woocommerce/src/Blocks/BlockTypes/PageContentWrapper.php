@@ -15,7 +15,6 @@ class PageContentWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstr
      * @var string
      */
     protected $block_name = 'page-content-wrapper';
-
     /**
      * It isn't necessary to register block assets.
      *

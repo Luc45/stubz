@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Twenty_Twenty_Three class.
  */

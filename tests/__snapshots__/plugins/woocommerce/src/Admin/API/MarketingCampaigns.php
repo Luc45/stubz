@@ -17,14 +17,12 @@ class MarketingCampaigns extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc-admin';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'marketing/campaigns';
-
     /**
      * Register routes.
      */

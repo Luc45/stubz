@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Products controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Products_V1_Controller extends \WC_REST_Posts_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'product';
-
     /**
      * Initialize product actions.
      */

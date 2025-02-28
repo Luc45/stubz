@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Order Refunds controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Refunds_Controller extends \WC_REST_Order_Refunds_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'refunds';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_order_refund';
-
     /**
      * Register the routes for order refunds.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Shipping_Zone class.
  */
@@ -11,14 +10,12 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      * @var int|null
      */
     protected $id = null;
-
     /**
      * This is the name of this object type.
      *
      * @var string
      */
     protected $object_type = 'shipping_zone';
-
     /**
      * Zone Data.
      *
@@ -30,7 +27,6 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
   'zone_locations' => 
   array(),
 );
-
     /**
      * Constructor for zones.
      *

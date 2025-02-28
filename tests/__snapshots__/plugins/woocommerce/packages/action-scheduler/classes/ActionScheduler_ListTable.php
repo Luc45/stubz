@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Implements the admin view of the actions.
  *
@@ -13,42 +12,36 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      * @var string
      */
     protected $package = 'action-scheduler';
-
     /**
      * Columns to show (name => label).
      *
      * @var array
      */
     protected $columns = array();
-
     /**
      * Actions (name => label).
      *
      * @var array
      */
     protected $row_actions = array();
-
     /**
      * The active data stores
      *
      * @var ActionScheduler_Store
      */
     protected $store = null;
-
     /**
      * A logger to use for getting action logs to display
      *
      * @var ActionScheduler_Logger
      */
     protected $logger = null;
-
     /**
      * A ActionScheduler_QueueRunner runner instance (or child class)
      *
      * @var ActionScheduler_QueueRunner
      */
     protected $runner = null;
-
     /**
      * Bulk actions. The key of the array is the method name of the implementation.
      * Example: bulk_<key>(array $ids, string $sql_in).
@@ -58,21 +51,18 @@ class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
      * @var array
      */
     protected $bulk_actions = array();
-
     /**
      * Flag variable to render our notifications, if any, once.
      *
      * @var bool
      */
     protected static $did_notification = false;
-
     /**
      * Array of seconds for common time periods, like week or month, alongside an internationalised string representation, i.e. "Day" or "Days"
      *
      * @var array
      */
     private static $time_periods = null;
-
     /**
      * Sets the current data store object into `store->action` and initialises the object.
      *

@@ -13,7 +13,6 @@ class ProductReviews extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
      * @var string
      */
     protected $block_name = 'product-reviews';
-
     /**
      * It isn't necessary register block assets because it is a server side block.
      */

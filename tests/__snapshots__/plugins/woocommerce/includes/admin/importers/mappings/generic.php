@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Add generic mappings.
  *

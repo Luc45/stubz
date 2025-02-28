@@ -8,63 +8,44 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 class PaymentProviders
 {
     const TYPE_GATEWAY = 'gateway';
-
     const TYPE_OFFLINE_PM = 'offline_pm';
-
     const TYPE_OFFLINE_PMS_GROUP = 'offline_pms_group';
-
     const TYPE_SUGGESTION = 'suggestion';
-
     const EXTENSION_NOT_INSTALLED = 'not_installed';
-
     const EXTENSION_INSTALLED = 'installed';
-
     const EXTENSION_ACTIVE = 'active';
-
     const EXTENSION_TYPE_WPORG = 'wporg';
-
     const PROVIDERS_ORDER_OPTION = 'woocommerce_gateway_order';
-
     const SUGGESTION_ORDERING_PREFIX = '_wc_pes_';
-
     const OFFLINE_METHODS_ORDERING_GROUP = '_wc_offline_payment_methods_group';
-
     const CATEGORY_EXPRESS_CHECKOUT = 'express_checkout';
-
     const CATEGORY_BNPL = 'bnpl';
-
     const CATEGORY_CRYPTO = 'crypto';
-
     const CATEGORY_PSP = 'psp';
-
     /**
      * The map of gateway IDs to their respective provider classes.
      *
      * @var \class-string[]
      */
     private array $payment_gateways_providers_class_map;
-
     /**
      * The instances of the payment providers.
      *
      * @var PaymentGateway[]
      */
     private array $instances = array();
-
     /**
      * The memoized payment gateways to avoid computing the list multiple times during a request.
      *
      * @var array|null
      */
     private array|null $payment_gateways_memo = null;
-
     /**
      * The payment extension suggestions service.
      *
      * @var ExtensionSuggestions
      */
     private Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $extension_suggestions;
-
     /**
      * Initialize the class instance.
      *

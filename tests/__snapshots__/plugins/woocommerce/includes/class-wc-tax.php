@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Performs tax calculations and loads tax rates
  *
@@ -13,14 +12,12 @@ class WC_Tax
      * @var int
      */
     public static $precision = null;
-
     /**
      * Round at subtotal.
      *
      * @var bool
      */
     public static $round_at_subtotal = false;
-
     /**
      * Load options.
      */

@@ -16,7 +16,6 @@ final class ProductsLowInStock extends \WC_REST_Products_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Register routes.
      */

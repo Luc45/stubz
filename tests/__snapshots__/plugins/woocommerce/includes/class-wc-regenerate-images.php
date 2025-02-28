@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Regenerate Images Class
  */
@@ -11,14 +10,12 @@ class WC_Regenerate_Images
      * @var WC_Regenerate_Images_Request
      */
     protected static $background_process = null;
-
     /**
      * Stores size being generated on the fly.
      *
      * @var string
      */
     protected static $regenerate_size = null;
-
     /**
      * Init function
      */

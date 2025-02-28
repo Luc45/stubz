@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 
-interface ServiceProviderAggregateInterface
+interface ServiceProviderAggregateInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface, \IteratorAggregate
 {
     /**
      * Add a service provider to the aggregate.

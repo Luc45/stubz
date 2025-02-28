@@ -13,14 +13,12 @@ class IntegrationRegistry
      * @var string
      */
     protected $registry_identifier = '';
-
     /**
      * Registered integrations, as `$name => $instance` pairs.
      *
      * @var IntegrationInterface[]
      */
     protected $registered_integrations = array();
-
     /**
      * Initializes all registered integrations.
      *

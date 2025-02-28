@@ -1,11 +1,10 @@
 <?php
-
 /**
  * Abstract CRON expression field
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-abstract class CronExpression_AbstractField
+abstract class CronExpression_AbstractField implements \CronExpression_FieldInterface
 {
     /**
      * Check to see if a field is satisfied by a value

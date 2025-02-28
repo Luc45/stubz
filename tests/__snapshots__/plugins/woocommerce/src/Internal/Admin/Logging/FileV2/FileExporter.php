@@ -13,14 +13,12 @@ class FileExporter
      * @var string
      */
     private $path = null;
-
     /**
      * A name of the file to send to the browser rather than the filename part of the path.
      *
      * @var string
      */
     private $alternate_filename = null;
-
     /**
      * Class FileExporter.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * System status controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_System_Status_Controller extends \WC_REST_System_Status_V2_Control
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

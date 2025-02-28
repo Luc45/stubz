@@ -13,7 +13,6 @@ class Tax extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
      * @var null
      */
     private $is_complete_result = null;
-
     /**
      * Constructor
      *

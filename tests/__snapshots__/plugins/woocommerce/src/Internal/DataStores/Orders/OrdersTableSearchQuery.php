@@ -15,21 +15,18 @@ class OrdersTableSearchQuery
      * @var OrdersTableQuery
      */
     private $query = null;
-
     /**
      * Holds the search term to be used in the WHERE clauses.
      *
      * @var string
      */
     private $search_term = null;
-
     /**
      * Limits the search to a specific field.
      *
      * @var string[]
      */
     private $search_filters = null;
-
     /**
      * Creates the JOIN and WHERE clauses needed to execute a search of orders.
      *

@@ -17,28 +17,24 @@ class Package
      * @var string
      */
     private $version = null;
-
     /**
      * Holds the main path to the blocks plugin directory.
      *
      * @var string
      */
     private $path = null;
-
     /**
      * Holds locally the plugin_dir_url to avoid recomputing it.
      *
      * @var string
      */
     private $plugin_dir_url = null;
-
     /**
      * Holds the feature gating class instance.
      *
      * @var FeatureGating
      */
     private $feature_gating = null;
-
     /**
      * Constructor
      *

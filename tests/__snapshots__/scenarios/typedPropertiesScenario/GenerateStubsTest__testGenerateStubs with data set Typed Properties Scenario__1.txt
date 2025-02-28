@@ -8,11 +8,8 @@ namespace TypedPropertiesScenario;
 class UserProfile
 {
     public string $username;
-
     public int $age;
-
     public bool $isActive;
-
     public function __construct(string $username, int $age, bool $isActive = true)
 {
 }

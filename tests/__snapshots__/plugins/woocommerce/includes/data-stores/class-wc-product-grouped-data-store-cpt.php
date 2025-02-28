@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Grouped Product Data Store: Stored in CPT.
  *
  * @version  3.0.0
  */
-class WC_Product_Grouped_Data_Store_CPT extends \WC_Product_Data_Store_CPT
+class WC_Product_Grouped_Data_Store_CPT extends \WC_Product_Data_Store_CPT implements \WC_Object_Data_Store_Interface
 {
     /**
      * Helper method that updates all the post meta for a grouped product.

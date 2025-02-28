@@ -13,7 +13,6 @@ class ProductGalleryLargeImage extends \Automattic\WooCommerce\Blocks\BlockTypes
      * @var string
      */
     protected $block_name = 'product-gallery-large-image';
-
     /**
      * Get the frontend style handle for this block type.
      *

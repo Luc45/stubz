@@ -13,7 +13,6 @@ class ProductImageGallery extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'product-image-gallery';
-
     /**
      * It isn't necessary register block assets because it is a server side block.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item coupon class.
  */
@@ -16,7 +15,6 @@ class WC_Order_Item_Coupon extends \WC_Order_Item
   'discount' => 0,
   'discount_tax' => 0,
 );
-
     /**
      * Set order item name.
      *

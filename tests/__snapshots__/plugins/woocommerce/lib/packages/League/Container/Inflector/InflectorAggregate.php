@@ -2,13 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Inflector;
 
-class InflectorAggregate
+class InflectorAggregate implements \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorAggregateInterface
 {
     /**
      * @var Inflector[]
      */
     protected $inflectors = array();
-
     /**
      * {@inheritdoc}
      */

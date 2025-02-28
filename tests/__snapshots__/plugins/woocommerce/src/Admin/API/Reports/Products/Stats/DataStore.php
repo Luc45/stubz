@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Products\Stats;
 /**
  * API\Reports\Products\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -24,7 +24,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataS
   'products_count' => 'intval',
   'variations_count' => 'intval',
 );
-
     /**
      * Cache identifier.
      *
@@ -33,7 +32,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataS
      * @var string
      */
     protected $cache_key = 'products_stats';
-
     /**
      * Data store context used to pass to filters.
      *
@@ -42,7 +40,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataS
      * @var string
      */
     protected $context = 'products_stats';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

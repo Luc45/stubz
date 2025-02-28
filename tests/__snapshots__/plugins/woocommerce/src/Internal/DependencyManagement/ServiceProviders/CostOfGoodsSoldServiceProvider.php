@@ -15,7 +15,6 @@ class CostOfGoodsSoldServiceProvider extends \Automattic\WooCommerce\Internal\De
     protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\CostOfGoodsSold\\CostOfGoodsSoldController',
 );
-
     /**
      * Register the classes.
      */

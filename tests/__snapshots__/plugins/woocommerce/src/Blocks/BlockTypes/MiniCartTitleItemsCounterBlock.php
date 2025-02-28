@@ -13,5 +13,4 @@ class MiniCartTitleItemsCounterBlock extends \Automattic\WooCommerce\Blocks\Bloc
      * @var string
      */
     protected $block_name = 'mini-cart-title-items-counter-block';
-
 }

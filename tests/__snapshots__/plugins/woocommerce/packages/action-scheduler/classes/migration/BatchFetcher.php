@@ -19,7 +19,6 @@ class BatchFetcher
      * @var ActionScheduler_Store
      */
     private $store = null;
-
     /**
      * BatchFetcher constructor.
      *

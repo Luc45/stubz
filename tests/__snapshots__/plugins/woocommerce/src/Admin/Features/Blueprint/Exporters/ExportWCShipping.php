@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Exporters
  */
-class ExportWCShipping
+class ExportWCShipping implements \Automattic\WooCommerce\Blueprint\Exporters\StepExporter
 {
     /**
      * Export WooCommerce shipping settings.

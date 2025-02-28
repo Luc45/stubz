@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Assets Class.
  */

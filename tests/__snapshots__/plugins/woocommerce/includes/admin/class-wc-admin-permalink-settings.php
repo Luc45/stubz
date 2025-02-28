@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Permalink_Settings Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Permalink_Settings
      * @var array
      */
     private $permalinks = array();
-
     /**
      * Hook in tabs.
      */

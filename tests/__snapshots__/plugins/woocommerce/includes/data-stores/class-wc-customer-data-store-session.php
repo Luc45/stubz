@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Customer Data Store which stores the data in session.
  *
@@ -7,7 +6,7 @@
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP
+class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP implements \WC_Customer_Data_Store_Interface, \WC_Object_Data_Store_Interface
 {
     /**
      * Keys which are also stored in a session (so we can make sure they get updated...)
@@ -44,7 +43,6 @@ class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP
   26 => 'calculated_shipping',
   27 => 'meta_data',
 );
-
     /**
      * Update the session. Note, this does not persist the data to the DB.
      *

@@ -10,7 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Templates;
 class ComingSoonTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
     const SLUG = 'coming-soon';
-
     /**
      * Returns the title of the template.
      *

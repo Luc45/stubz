@@ -13,7 +13,6 @@ class DownloadPermissionsAdjuster
      * @var WC_Data_Store
      */
     private $downloads_data_store = null;
-
     /**
      * Class initialization, to be executed when the class is resolved by the container.
      *

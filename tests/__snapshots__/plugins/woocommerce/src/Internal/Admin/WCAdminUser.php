@@ -13,7 +13,6 @@ class WCAdminUser
      * @var WCAdminUser instance
      */
     protected static $instance = null;
-
     /**
      * Constructor.
      */

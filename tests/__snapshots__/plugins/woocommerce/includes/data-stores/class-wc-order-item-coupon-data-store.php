@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Item Coupon Data Store
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Coupon_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
+class WC_Order_Item_Coupon_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store implements \WC_Object_Data_Store_Interface, \WC_Order_Item_Type_Data_Store_Interface
 {
     /**
      * Data stored in meta keys.
@@ -17,7 +16,6 @@ class WC_Order_Item_Coupon_Data_Store extends \Abstract_WC_Order_Item_Type_Data_
   0 => 'discount_amount',
   1 => 'discount_amount_tax',
 );
-
     /**
      * Read/populate data properties specific to this order item.
      *

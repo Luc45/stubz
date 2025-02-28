@@ -16,7 +16,6 @@ class Init
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      *

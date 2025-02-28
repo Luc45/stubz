@@ -13,5 +13,4 @@ class EmptyCartBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractI
      * @var string
      */
     protected $block_name = 'empty-cart-block';
-
 }

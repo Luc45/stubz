@@ -16,7 +16,6 @@ class Taxes extends \WC_REST_Taxes_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Get the query params for collections.
      *

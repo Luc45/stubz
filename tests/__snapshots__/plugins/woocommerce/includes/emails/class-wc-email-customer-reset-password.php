@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer Reset Password.
  *
@@ -18,28 +17,24 @@ class WC_Email_Customer_Reset_Password extends \WC_Email
      * @var integer
      */
     public $user_id = null;
-
     /**
      * User login name.
      *
      * @var string
      */
     public $user_login = null;
-
     /**
      * User email.
      *
      * @var string
      */
     public $user_email = null;
-
     /**
      * Reset key.
      *
      * @var string
      */
     public $reset_key = null;
-
     /**
      * Constructor.
      */

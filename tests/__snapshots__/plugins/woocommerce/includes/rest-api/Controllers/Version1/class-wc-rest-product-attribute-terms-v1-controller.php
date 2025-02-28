@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Attribute Terms controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Product_Attribute_Terms_V1_Controller extends \WC_REST_Terms_Contr
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/attributes/(?P<attribute_id>[\\d]+)/terms';
-
     /**
      * Register the routes for terms.
      */

@@ -5,31 +5,21 @@ namespace EnumExample;
 enum UserStatus
 {
     case ACTIVE = 'active';
-
     case INACTIVE = 'inactive';
-
     case BANNED = 'banned';
-
     public readonly string $name;
-
     public readonly string $value;
-
     public static function cases(): array
-{
-}
-
+    {
+    }
     public static function from(string|int $value): static
-{
-}
-
+    {
+    }
     public static function tryFrom(string|int $value): ?static
-{
-}
-
+    {
+    }
     public readonly string $name;
-
     public readonly string $value;
-
     public function label(): string
 {
 }
@@ -46,9 +36,7 @@ enum UserStatus
 class User
 {
     public string $name;
-
     public EnumExample\UserStatus $status;
-
     public function __construct(string $name, EnumExample\UserStatus $status)
 {
 }

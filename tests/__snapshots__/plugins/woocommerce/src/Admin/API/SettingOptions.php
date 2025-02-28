@@ -16,7 +16,6 @@ class SettingOptions extends \WC_REST_Setting_Options_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Invalidates API cache when updating settings options.
      *

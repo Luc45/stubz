@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Background_Process class.
  */

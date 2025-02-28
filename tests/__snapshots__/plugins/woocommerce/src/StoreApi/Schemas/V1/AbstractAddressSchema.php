@@ -15,7 +15,6 @@ abstract class AbstractAddressSchema extends \Automattic\WooCommerce\StoreApi\Sc
      * @var CheckoutFields
      */
     protected $additional_fields_controller = null;
-
     /**
      * Constructor.
      *

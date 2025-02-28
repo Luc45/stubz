@@ -16,7 +16,6 @@ class ProductVariations extends \WC_REST_Product_Variations_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Register the routes for products.
      */

@@ -13,7 +13,6 @@ class MatchImageBySKU
      * @var string
      */
     private $setting_name = 'woocommerce_product_match_featured_image_by_sku';
-
     /**
      * MatchImageBySKU constructor.
      */

@@ -13,7 +13,6 @@ class EvaluateSuggestion
      * @var array
      */
     protected static $memo = array();
-
     /**
      * Evaluates the spec and returns the suggestion.
      *

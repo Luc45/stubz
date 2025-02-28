@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Layered Navigation Widget for brands WC 2.6 version
  *

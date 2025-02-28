@@ -1,9 +1,8 @@
 <?php
-
 /**
  * WC_Logger class.
  */
-class WC_Logger
+class WC_Logger implements \WC_Logger_Interface
 {
     /**
      * Stores registered log handlers.
@@ -11,14 +10,12 @@ class WC_Logger
      * @var array
      */
     protected $handlers = null;
-
     /**
      * Minimum log level this handler will process.
      *
      * @var int Integer representation of minimum log level to handle.
      */
     protected $threshold = null;
-
     /**
      * Constructor for the logger.
      *

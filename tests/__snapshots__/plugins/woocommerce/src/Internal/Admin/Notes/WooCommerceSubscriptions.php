@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class WooCommerceSubscriptions
 {
     const NOTE_NAME = 'wc-admin-woocommerce-subscriptions';
-
     /**
      * Get the note.
      *

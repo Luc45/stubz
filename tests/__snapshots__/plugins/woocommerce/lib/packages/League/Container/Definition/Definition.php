@@ -2,43 +2,36 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-class Definition
+class Definition implements \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverInterface, \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionInterface
 {
     /**
      * @var string
      */
     protected $alias = null;
-
     /**
      * @var mixed
      */
     protected $concrete = null;
-
     /**
      * @var boolean
      */
     protected $shared = false;
-
     /**
      * @var array
      */
     protected $tags = array();
-
     /**
      * @var array
      */
     protected $arguments = array();
-
     /**
      * @var array
      */
     protected $methods = array();
-
     /**
      * @var mixed
      */
     protected $resolved = null;
-
     /**
      * Constructor.
      *

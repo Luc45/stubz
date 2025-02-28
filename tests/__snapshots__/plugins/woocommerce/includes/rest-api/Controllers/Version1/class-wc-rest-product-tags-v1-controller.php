@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Tags controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Product_Tags_V1_Controller extends \WC_REST_Terms_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/tags';
-
     /**
      * Taxonomy.
      *
      * @var string
      */
     protected $taxonomy = 'product_tag';
-
     /**
      * Prepare a single product tag output for response.
      *

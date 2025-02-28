@@ -15,21 +15,18 @@ class Bootstrap
      * @var Container
      */
     private $container = null;
-
     /**
      * Holds the Package instance
      *
      * @var Package
      */
     private $package = null;
-
     /**
      * Holds the Migration instance
      *
      * @var Migration
      */
     private $migration = null;
-
     /**
      * Constructor
      *

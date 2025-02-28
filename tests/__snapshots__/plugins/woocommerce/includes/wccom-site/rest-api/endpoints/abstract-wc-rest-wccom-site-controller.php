@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API WCCOM Site Base REST API Controller Astract Class.
  *
@@ -13,7 +12,6 @@ abstract class WC_REST_WCCOM_Site_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wccom-site/v3';
-
     /**
      * Check whether user has permission to access controller's endpoints.
      *

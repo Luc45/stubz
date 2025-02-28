@@ -13,21 +13,18 @@ final class SessionHandler extends \WC_Session
      * @var string
      */
     protected $token = null;
-
     /**
      * Table name for session data.
      *
      * @var string Custom session table name
      */
     protected $table = null;
-
     /**
      * Expiration timestamp.
      *
      * @var int
      */
     protected $session_expiration = null;
-
     /**
      * Constructor for the session class.
      */

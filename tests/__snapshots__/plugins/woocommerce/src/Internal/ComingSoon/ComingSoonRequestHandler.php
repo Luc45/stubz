@@ -14,7 +14,6 @@ class ComingSoonRequestHandler
      * @var ComingSoonHelper
      */
     private $coming_soon_helper = null;
-
     /**
      * Sets up the hook.
      *

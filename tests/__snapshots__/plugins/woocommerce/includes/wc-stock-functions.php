@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Update a product's stock amount.
  *

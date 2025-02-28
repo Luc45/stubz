@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTempla
 /**
  * Interface for subsection containers, which contain sub-sections and blocks.
  */
-interface SubsectionInterface
+interface SubsectionInterface extends \Automattic\WooCommerce\Admin\BlockTemplates\BlockContainerInterface
 {
     /**
      * Adds a new block to the sub-section.

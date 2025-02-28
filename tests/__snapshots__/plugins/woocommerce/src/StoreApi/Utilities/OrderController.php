@@ -14,7 +14,6 @@ class OrderController
      * @var CheckoutFields
      */
     private Automattic\WooCommerce\Blocks\Domain\Services\CheckoutFields $additional_fields_controller;
-
     /**
      * Constructor.
      */

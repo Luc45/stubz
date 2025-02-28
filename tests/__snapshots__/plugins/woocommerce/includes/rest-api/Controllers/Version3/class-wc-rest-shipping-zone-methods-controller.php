@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Shipping Zone Methods class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Shipping_Zone_Methods_Controller extends \WC_REST_Shipping_Zone_Me
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Get the settings schema, conforming to JSON Schema.
      *

@@ -12,7 +12,6 @@ class StyleAttributesUtils
   'style' => '',
   'value' => '',
 );
-
     /**
      * If color value is in preset format, convert it to a CSS var. Else return same value
      * For example:

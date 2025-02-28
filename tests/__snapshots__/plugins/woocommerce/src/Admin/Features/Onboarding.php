@@ -15,14 +15,12 @@ class Onboarding extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
      * @var string
      */
     protected static $facade_over_classname = 'Automattic\\WooCommerce\\Admin\\Features\\Onboarding';
-
     /**
      * The version that this class was deprecated in.
      *
      * @var string
      */
     protected static $deprecated_in_version = '6.3.0';
-
     /**
      * Hook into WooCommerce.
      */

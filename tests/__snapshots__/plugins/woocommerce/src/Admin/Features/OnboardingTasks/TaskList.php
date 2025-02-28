@@ -8,74 +8,62 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
 class TaskList
 {
     const HIDDEN_OPTION = 'woocommerce_task_list_hidden_lists';
-
     const COMPLETED_OPTION = 'woocommerce_task_list_completed_lists';
-
     const REMINDER_BAR_HIDDEN_OPTION = 'woocommerce_task_list_reminder_bar_hidden';
-
     /**
      * ID.
      *
      * @var string
      */
     public $id = '';
-
     /**
      * ID.
      *
      * @var string
      */
     public $hidden_id = '';
-
     /**
      * ID.
      *
      * @var boolean
      */
     public $display_progress_header = false;
-
     /**
      * Title.
      *
      * @var string
      */
     public $title = '';
-
     /**
      * Tasks.
      *
      * @var array
      */
     public $tasks = array();
-
     /**
      * Sort keys.
      *
      * @var array
      */
     public $sort_by = array();
-
     /**
      * Event prefix.
      *
      * @var string|null
      */
     public $event_prefix = null;
-
     /**
      * Task list visibility.
      *
      * @var boolean
      */
     public $visible = true;
-
     /**
      * Array of custom options.
      *
      * @var array
      */
     public $options = array();
-
     /**
      * Array of TaskListSection.
      *
@@ -84,7 +72,6 @@ class TaskList
      * @var array
      */
     private $sections = array();
-
     /**
      * Key value map of task class and id used for sections.
      *
@@ -93,7 +80,6 @@ class TaskList
      * @var array
      */
     public $task_class_id_map = array();
-
     /**
      * Constructor
      *

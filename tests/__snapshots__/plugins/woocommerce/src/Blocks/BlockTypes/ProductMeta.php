@@ -13,7 +13,6 @@ class ProductMeta extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      * @var string
      */
     protected $block_name = 'product-meta';
-
     /**
      * Get the editor script data for this block type.
      *

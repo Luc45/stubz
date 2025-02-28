@@ -13,21 +13,18 @@ class StoredUrl
      * @var int
      */
     private $id = null;
-
     /**
      * The approved directory URL.
      *
      * @var string
      */
     private $url = null;
-
     /**
      * If the individual rule is enabled or disabled.
      *
      * @var bool
      */
     private $enabled = null;
-
     /**
      * Sets up the approved directory rule.
      *

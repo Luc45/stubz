@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Cash on Delivery Gateway.
  *
@@ -13,28 +12,24 @@
 class WC_Gateway_COD extends \WC_Payment_Gateway
 {
     const ID = 'cod';
-
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *
      * @var string
      */
     public $instructions = null;
-
     /**
      * Enable for shipping methods.
      *
      * @var array
      */
     public $enable_for_methods = null;
-
     /**
      * Enable for virtual products.
      *
      * @var bool
      */
     public $enable_for_virtual = null;
-
     /**
      * Constructor for the gateway.
      */

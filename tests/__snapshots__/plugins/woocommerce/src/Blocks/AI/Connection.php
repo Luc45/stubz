@@ -10,9 +10,7 @@ namespace Automattic\WooCommerce\Blocks\AI;
 class Connection
 {
     const TEXT_COMPLETION_API_URL = 'https://public-api.wordpress.com/wpcom/v2/text-completion';
-
     const MODEL = 'gpt-3.5-turbo-1106';
-
     /**
      * The post request.
      *

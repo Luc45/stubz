@@ -1,12 +1,10 @@
 <?php
-
 /**
  * Auth class.
  */
 class WC_Auth
 {
     const VERSION = 1;
-
     /**
      * Setup class.
      *

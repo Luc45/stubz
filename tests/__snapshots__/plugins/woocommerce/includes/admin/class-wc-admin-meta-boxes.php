@@ -1,26 +1,22 @@
 <?php
-
 /**
  * WC_Admin_Meta_Boxes.
  */
 class WC_Admin_Meta_Boxes
 {
     const ERROR_STORE = 'woocommerce_meta_box_errors';
-
     /**
      * Is meta boxes saved once?
      *
      * @var boolean
      */
     private static $saved_meta_boxes = false;
-
     /**
      * Meta box error messages.
      *
      * @var array
      */
     public static $meta_box_errors = array();
-
     /**
      * Constructor.
      */

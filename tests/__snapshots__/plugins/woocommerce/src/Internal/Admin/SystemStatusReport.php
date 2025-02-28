@@ -13,7 +13,6 @@ class SystemStatusReport
      * @var SystemStatus instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

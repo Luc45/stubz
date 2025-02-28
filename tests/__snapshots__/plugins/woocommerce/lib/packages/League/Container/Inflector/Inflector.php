@@ -2,28 +2,24 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Inflector;
 
-class Inflector
+class Inflector implements \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverInterface, \Automattic\WooCommerce\Vendor\League\Container\Inflector\InflectorInterface
 {
     /**
      * @var string
      */
     protected $type = null;
-
     /**
      * @var callable|null
      */
     protected $callback = null;
-
     /**
      * @var array
      */
     protected $methods = array();
-
     /**
      * @var array
      */
     protected $properties = array();
-
     /**
      * Construct.
      *

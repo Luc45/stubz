@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class OrderFeeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'order-fee';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'order_fee';
-
     /**
      * Cart schema properties.
      *

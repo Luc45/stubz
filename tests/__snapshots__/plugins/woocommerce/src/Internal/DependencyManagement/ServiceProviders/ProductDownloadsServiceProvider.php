@@ -18,7 +18,6 @@ class ProductDownloadsServiceProvider extends \Automattic\WooCommerce\Internal\D
   2 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\SyncUI',
   3 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\UI',
 );
-
     /**
      * Register the classes.
      */

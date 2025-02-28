@@ -13,7 +13,6 @@ class ShippingWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCon
      * @var string
      */
     protected $block_name = 'order-confirmation-shipping-wrapper';
-
     /**
      * This renders the content of the shipping wrapper.
      *

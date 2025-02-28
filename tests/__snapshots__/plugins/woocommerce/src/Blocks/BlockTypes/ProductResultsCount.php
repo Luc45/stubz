@@ -13,7 +13,6 @@ class ProductResultsCount extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'product-results-count';
-
     /**
      * Get the frontend script handle for this block type.
      *

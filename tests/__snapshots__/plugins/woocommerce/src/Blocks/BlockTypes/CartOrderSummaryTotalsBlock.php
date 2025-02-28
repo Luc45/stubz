@@ -13,5 +13,4 @@ class CartOrderSummaryTotalsBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'cart-order-summary-totals-block';
-
 }

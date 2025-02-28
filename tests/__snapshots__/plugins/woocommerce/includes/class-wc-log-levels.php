@@ -1,26 +1,17 @@
 <?php
-
 /**
  * Log levels class.
  */
 abstract class WC_Log_Levels
 {
     const EMERGENCY = 'emergency';
-
     const ALERT = 'alert';
-
     const CRITICAL = 'critical';
-
     const ERROR = 'error';
-
     const WARNING = 'warning';
-
     const NOTICE = 'notice';
-
     const INFO = 'info';
-
     const DEBUG = 'debug';
-
     /**
      * Level strings mapped to integer severity.
      *
@@ -36,7 +27,6 @@ abstract class WC_Log_Levels
   'info' => 200,
   'debug' => 100,
 );
-
     /**
      * Severity integers mapped to level strings.
      *
@@ -54,7 +44,6 @@ abstract class WC_Log_Levels
   200 => 'info',
   100 => 'debug',
 );
-
     /**
      * Validate a level string.
      *

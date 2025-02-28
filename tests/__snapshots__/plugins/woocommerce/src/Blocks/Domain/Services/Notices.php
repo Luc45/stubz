@@ -15,7 +15,6 @@ class Notices
      * @var Package
      */
     private $package = null;
-
     /**
      * Templates used for notices.
      *
@@ -26,7 +25,6 @@ class Notices
   1 => 'notices/notice.php',
   2 => 'notices/success.php',
 );
-
     /**
      * Constructor
      *

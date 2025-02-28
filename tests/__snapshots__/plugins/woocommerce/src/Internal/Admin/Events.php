@@ -13,7 +13,6 @@ class Events
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Array of note class to be added or updated.
      *
@@ -45,7 +44,6 @@ class Events
   22 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooCommercePayments',
   23 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooCommerceSubscriptions',
 );
-
     /**
      * The other note classes that are added in other places.
      *
@@ -58,7 +56,6 @@ class Events
   3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\UnsecuredReportFiles',
   4 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooSubscriptionsNotes',
 );
-
     /**
      * Constructor
      *

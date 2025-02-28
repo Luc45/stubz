@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Allows to interact with extensions from WCCOM marketplace via CLI.
  *

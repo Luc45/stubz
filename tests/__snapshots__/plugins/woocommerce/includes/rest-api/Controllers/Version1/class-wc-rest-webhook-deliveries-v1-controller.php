@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Webhook Deliveries controller class.
  *
@@ -15,14 +14,12 @@ class WC_REST_Webhook_Deliveries_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'webhooks/(?P<webhook_id>[\\d]+)/deliveries';
-
     /**
      * Register the routes for webhook deliveries.
      */

@@ -15,14 +15,12 @@ final class BankTransfer extends \Automattic\WooCommerce\Blocks\Payments\Integra
      * @var string
      */
     protected $name;
-
     /**
      * An instance of the Asset Api
      *
      * @var Api
      */
     private $asset_api = null;
-
     /**
      * Constructor
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Cancelled Order Email.
  *

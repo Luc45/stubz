@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract class that is intended to be extended by
  * specific privacy class. It handles the display
@@ -17,35 +16,30 @@ abstract class WC_Abstract_Privacy
      * @var string
      */
     public $name = null;
-
     /**
      * This is a list of exporters.
      *
      * @var array
      */
     protected $exporters = array();
-
     /**
      * This is a list of erasers.
      *
      * @var array
      */
     protected $erasers = array();
-
     /**
      * This is a priority for the wp_privacy_personal_data_exporters filter
      *
      * @var int
      */
     protected $export_priority = null;
-
     /**
      * This is a priority for the wp_privacy_personal_data_erasers filter
      *
      * @var int
      */
     protected $erase_priority = null;
-
     /**
      * WC_Abstract_Privacy Constructor.
      *

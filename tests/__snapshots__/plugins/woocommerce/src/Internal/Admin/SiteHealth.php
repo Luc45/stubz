@@ -13,7 +13,6 @@ class SiteHealth
      * @var SiteHealth instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

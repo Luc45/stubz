@@ -13,14 +13,12 @@ class OrderStatusRestController extends \Automattic\WooCommerce\Internal\RestApi
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'orders/statuses';
-
     /**
      * Get the WooCommerce REST API namespace for the class.
      *

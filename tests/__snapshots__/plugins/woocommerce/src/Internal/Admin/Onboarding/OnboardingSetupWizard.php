@@ -13,7 +13,6 @@ class OnboardingSetupWizard
      * @var OnboardingSetupWizard instance
      */
     private static $instance = null;
-
     /**
      * Get class instance.
      */

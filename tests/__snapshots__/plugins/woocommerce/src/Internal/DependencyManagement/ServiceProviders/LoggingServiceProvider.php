@@ -18,7 +18,6 @@ class LoggingServiceProvider extends \Automattic\WooCommerce\Internal\Dependency
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\Settings',
   3 => 'Automattic\\WooCommerce\\Internal\\Logging\\RemoteLogger',
 );
-
     /**
      * Registers services provided by this class.
      *

@@ -13,14 +13,12 @@ class Translations
      * @var Translations instance
      */
     protected static $instance = null;
-
     /**
      * Plugin domain.
      *
      * @var string
      */
     private static $plugin_domain = 'woocommerce';
-
     /**
      * Get class instance.
      */

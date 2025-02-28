@@ -13,5 +13,4 @@ class CartTotalsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'cart-totals-block';
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Reviews Controller Class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Product_Reviews_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/reviews';
-
     /**
      * Register the routes for product reviews.
      */

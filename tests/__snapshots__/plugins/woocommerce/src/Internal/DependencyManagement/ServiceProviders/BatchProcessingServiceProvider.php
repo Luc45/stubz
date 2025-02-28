@@ -18,7 +18,6 @@ class BatchProcessingServiceProvider extends \Automattic\WooCommerce\Internal\De
   0 => 'Automattic\\WooCommerce\\Internal\\BatchProcessing\\BatchProcessingController',
   1 => 'Automattic\\WooCommerce\\Internal\\OrderCouponDataMigrator',
 );
-
     /**
      * Use the register method to register items with the container via the
      * protected $this->leagueContainer property or the `getLeagueContainer` method

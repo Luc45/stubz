@@ -13,7 +13,6 @@ class CreateAccount
      * @var Package
      */
     private $package = null;
-
     /**
      * Constructor.
      *

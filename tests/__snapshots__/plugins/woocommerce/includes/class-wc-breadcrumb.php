@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Breadcrumb class.
  */
@@ -11,7 +10,6 @@ class WC_Breadcrumb
      * @var array
      */
     protected $crumbs = array();
-
     /**
      * Add a crumb so we don't get lost.
      *

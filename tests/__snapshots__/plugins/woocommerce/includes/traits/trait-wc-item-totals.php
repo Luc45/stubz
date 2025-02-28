@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Trait WC_Item_Totals.
  *

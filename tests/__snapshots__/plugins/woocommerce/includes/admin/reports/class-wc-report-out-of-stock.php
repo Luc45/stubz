@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Out_Of_Stock class.
  */

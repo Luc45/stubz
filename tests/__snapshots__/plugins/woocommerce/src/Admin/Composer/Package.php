@@ -8,21 +8,18 @@ namespace Automattic\WooCommerce\Admin\Composer;
 class Package
 {
     const VERSION = '3.3.0';
-
     /**
      * Package active.
      *
      * @var bool
      */
     private static $package_active = false;
-
     /**
      * Active version
      *
      * @var bool
      */
     private static $active_version = null;
-
     /**
      * Init the package.
      *

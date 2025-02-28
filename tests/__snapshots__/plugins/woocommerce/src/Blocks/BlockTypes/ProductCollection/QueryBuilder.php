@@ -14,7 +14,6 @@ class QueryBuilder
      * @var array
      */
     protected $valid_query_vars = null;
-
     /**
      * Orderby options not natively supported by WordPress REST API
      *
@@ -29,21 +28,18 @@ class QueryBuilder
   5 => 'menu_order',
   6 => 'random',
 );
-
     /**
      * All the query args related to the filter by attributes block.
      *
      * @var array
      */
     protected $attributes_filter_query_args = array();
-
     /**
      * Collection handler store.
      *
      * @var array
      */
     protected $collection_handler_store = array();
-
     /**
      * Constructor.
      */

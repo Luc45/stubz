@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_NullSchedule
  */
@@ -11,7 +10,6 @@ class ActionScheduler_NullSchedule extends \ActionScheduler_SimpleSchedule
      * @var DateTime|null
      */
     protected $scheduled_date = null;
-
     /**
      * Make the $date param optional and default to null.
      *

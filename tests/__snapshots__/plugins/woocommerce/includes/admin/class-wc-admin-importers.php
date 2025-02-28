@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Importers Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Importers
      * @var string[]
      */
     protected $importers = array();
-
     /**
      * Constructor.
      */

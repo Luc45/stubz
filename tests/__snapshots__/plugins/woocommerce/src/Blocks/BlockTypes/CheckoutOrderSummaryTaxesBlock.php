@@ -13,5 +13,4 @@ class CheckoutOrderSummaryTaxesBlock extends \Automattic\WooCommerce\Blocks\Bloc
      * @var string
      */
     protected $block_name = 'checkout-order-summary-taxes-block';
-
 }

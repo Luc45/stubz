@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class PaymentsMoreInfoNeeded
 {
     const NOTE_NAME = 'wc-admin-payments-more-info-needed';
-
     /**
      * Should this note exist?
      */

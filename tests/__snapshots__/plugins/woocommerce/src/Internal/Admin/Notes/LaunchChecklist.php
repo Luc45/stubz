@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class LaunchChecklist
 {
     const NOTE_NAME = 'wc-admin-launch-checklist';
-
     /**
      * Get the note.
      *

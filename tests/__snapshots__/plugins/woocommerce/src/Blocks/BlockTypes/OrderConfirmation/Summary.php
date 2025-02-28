@@ -13,7 +13,6 @@ class Summary extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmatio
      * @var string
      */
     protected $block_name = 'order-confirmation-summary';
-
     /**
      * This renders the content of the block within the wrapper.
      *

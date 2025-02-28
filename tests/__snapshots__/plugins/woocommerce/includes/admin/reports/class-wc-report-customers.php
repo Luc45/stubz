@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Customers
  *
@@ -14,14 +13,12 @@ class WC_Report_Customers extends \WC_Admin_Report
      * @var array
      */
     public $chart_colours = array();
-
     /**
      * Customers.
      *
      * @var array
      */
     public $customers = array();
-
     /**
      * Get the legend for the main chart sidebar.
      *

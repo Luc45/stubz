@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
  *
  * @since 8.5.0
  */
-class OrderAttributionBlocksController
+class OrderAttributionBlocksController implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
      * Instance of the features controller.
@@ -15,21 +15,18 @@ class OrderAttributionBlocksController
      * @var FeaturesController
      */
     private $features_controller = null;
-
     /**
      * ExtendSchema instance.
      *
      * @var ExtendSchema
      */
     private $extend_schema = null;
-
     /**
      * Instance of the order attribution controller.
      *
      * @var OrderAttributionController
      */
     private $order_attribution_controller = null;
-
     /**
      * Bind dependencies on init.
      *

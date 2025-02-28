@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Reports controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Reports_V2_Controller extends \WC_REST_Reports_V1_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
 }

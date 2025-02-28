@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Payment Token Data Store Interface
  *

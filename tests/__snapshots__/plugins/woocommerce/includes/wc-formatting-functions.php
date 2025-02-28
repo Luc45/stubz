@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Converts a string (e.g. 'yes' or 'no') to a bool.
  *

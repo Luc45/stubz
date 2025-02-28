@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Settings_API class.
  */
@@ -11,42 +10,36 @@ abstract class WC_Settings_API
      * @var string
      */
     public $plugin_id = 'woocommerce_';
-
     /**
      * ID of the class extending the settings API. Used in option names.
      *
      * @var string
      */
     public $id = '';
-
     /**
      * Validation errors.
      *
      * @var array of strings
      */
     public $errors = array();
-
     /**
      * Setting values.
      *
      * @var array
      */
     public $settings = array();
-
     /**
      * Form option fields.
      *
      * @var array
      */
     public $form_fields = array();
-
     /**
      * The posted settings data. When empty, $_POST data will be used.
      *
      * @var array
      */
     protected $data = array();
-
     /**
      * Get the form fields after they are initialized.
      *

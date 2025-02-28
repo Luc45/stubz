@@ -12,7 +12,6 @@ namespace Automattic\WooCommerce\Blocks\Templates;
 abstract class AbstractTemplate
 {
     const SLUG = '';
-
     /**
      * Initialization method.
      */

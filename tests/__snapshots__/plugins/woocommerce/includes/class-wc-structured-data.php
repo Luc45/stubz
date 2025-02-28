@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Structured data class.
  */
@@ -11,7 +10,6 @@ class WC_Structured_Data
      * @var array $_data Array of structured data.
      */
     private $_data = array();
-
     /**
      * Constructor.
      */

@@ -1,80 +1,49 @@
 <?php
-
 /**
  * WC_Settings_Page.
  */
 abstract class WC_Settings_Page
 {
     const TYPE_TITLE = 'title';
-
     const TYPE_INFO = 'info';
-
     const TYPE_SECTIONEND = 'sectionend';
-
     const TYPE_TEXT = 'text';
-
     const TYPE_PASSWORD = 'password';
-
     const TYPE_DATETIME = 'datetime';
-
     const TYPE_DATETIME_LOCAL = 'datetime-local';
-
     const TYPE_DATE = 'date';
-
     const TYPE_MONTH = 'month';
-
     const TYPE_TIME = 'time';
-
     const TYPE_WEEK = 'week';
-
     const TYPE_NUMBER = 'number';
-
     const TYPE_EMAIL = 'email';
-
     const TYPE_URL = 'url';
-
     const TYPE_TEL = 'tel';
-
     const TYPE_COLOR = 'color';
-
     const TYPE_TEXTAREA = 'textarea';
-
     const TYPE_SELECT = 'select';
-
     const TYPE_MULTISELECT = 'multiselect';
-
     const TYPE_RADIO = 'radio';
-
     const TYPE_CHECKBOX = 'checkbox';
-
     const TYPE_IMAGE_WIDTH = 'image_width';
-
     const TYPE_SINGLE_SELECT_PAGE = 'single_select_page';
-
     const TYPE_SINGLE_SELECT_PAGE_WITH_SEARCH = 'single_select_page_with_search';
-
     const TYPE_SINGLE_SELECT_COUNTRY = 'single_select_country';
-
     const TYPE_MULTI_SELECT_COUNTRIES = 'multi_select_countries';
-
     const TYPE_RELATIVE_DATE_SELECTOR = 'relative_date_selector';
-
     const TYPE_SLOTFILL_PLACEHOLDER = 'slotfill_placeholder';
-
     /**
      * Setting page id.
      *
      * @var string
      */
     protected $id = '';
-
     /**
      * Setting page icon.
      *
      * @var string
      */
     public $icon = 'settings';
-
     /**
      * Settings field types which are known.
      *
@@ -110,28 +79,24 @@ abstract class WC_Settings_Page
   26 => 'relative_date_selector',
   27 => 'slotfill_placeholder',
 );
-
     /**
      * Setting page label.
      *
      * @var string
      */
     protected $label = '';
-
     /**
      * Setting page is modern.
      *
      * @var bool
      */
     protected $is_modern = false;
-
     /**
      * Whether the output method has been called.
      *
      * @var bool
      */
     private $output_called = false;
-
     /**
      * Constructor.
      */

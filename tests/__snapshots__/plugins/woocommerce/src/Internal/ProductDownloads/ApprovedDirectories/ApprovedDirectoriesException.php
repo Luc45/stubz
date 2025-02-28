@@ -6,10 +6,8 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  * Encapsulates a problem encountered while an operation relating to approved directories
  * was performed.
  */
-class ApprovedDirectoriesException extends \Exception implements \Stringable, \Throwable
+class ApprovedDirectoriesException extends \Exception
 {
     const INVALID_URL = 1;
-
     const DB_ERROR = 2;
-
 }

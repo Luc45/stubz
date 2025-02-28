@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Inflector;
 
-interface InflectorAggregateInterface
+interface InflectorAggregateInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface, \IteratorAggregate
 {
     /**
      * Add an inflector to the aggregate.

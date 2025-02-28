@@ -13,14 +13,12 @@ class TimeInterval
      * @var string
      */
     public static $iso_datetime_format = 'Y-m-d\\TH:i:s';
-
     /**
      * Format string for use in SQL queries.
      *
      * @var string
      */
     public static $sql_datetime_format = 'Y-m-d H:i:s';
-
     /**
      * Converts local datetime to GMT/UTC time.
      *

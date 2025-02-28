@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Customer Data Store.
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store extends \WC_Data_Store_WP
+class WC_Customer_Data_Store extends \WC_Data_Store_WP implements \WC_Customer_Data_Store_Interface, \WC_Object_Data_Store_Interface
 {
     /**
      * Data stored in meta keys, but not considered "meta".
@@ -59,14 +58,12 @@ class WC_Customer_Data_Store extends \WC_Data_Store_WP
   42 => '_last_order',
   43 => '_woocommerce_tracks_anon_id',
 );
-
     /**
      * Internal meta type used to store user data.
      *
      * @var string
      */
     protected $meta_type = 'user';
-
     /**
      * Callback to remove unwanted meta data.
      *

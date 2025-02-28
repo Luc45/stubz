@@ -13,7 +13,6 @@ class ProductTopRated extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'product-top-rated';
-
     /**
      * Force orderby to rating.
      *

@@ -34,7 +34,6 @@ class HtmlSanitizer
     ),
   ),
 );
-
     /**
      * Sanitizes a chunk of HTML, by following the same rules as `wp_kses_post()` but also allowing
      * the style element to be supplied.

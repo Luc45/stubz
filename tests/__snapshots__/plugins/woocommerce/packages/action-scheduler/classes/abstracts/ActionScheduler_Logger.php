@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Logger
  *
@@ -13,7 +12,6 @@ abstract class ActionScheduler_Logger
      * @var null|self
      */
     private static $logger = null;
-
     /**
      * Get instance.
      *

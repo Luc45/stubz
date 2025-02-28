@@ -13,14 +13,12 @@ class PickupLocation extends \WC_Shipping_Method
      * @var array
      */
     protected $pickup_locations = array();
-
     /**
      * Cost
      *
      * @var string
      */
     protected $cost = '';
-
     /**
      * Constructor.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Data continents controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Data_Continents_Controller extends \WC_REST_Data_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'data/continents';
-
     /**
      * Register routes.
      *

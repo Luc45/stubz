@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Item Data Store: Misc Order Item Data functions.
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Data_Store
+class WC_Order_Item_Data_Store implements \WC_Order_Item_Data_Store_Interface
 {
     /**
      * Add an order item to an order.

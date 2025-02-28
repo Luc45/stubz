@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Credit Card Payment Token.
  *
@@ -18,7 +17,6 @@ class WC_Payment_Token_CC extends \WC_Payment_Token
      * @var string
      */
     protected $type = 'CC';
-
     /**
      * Stores Credit Card payment token data.
      *
@@ -30,7 +28,6 @@ class WC_Payment_Token_CC extends \WC_Payment_Token
   'expiry_month' => '',
   'card_type' => '',
 );
-
     /**
      * Get type to display to user.
      *

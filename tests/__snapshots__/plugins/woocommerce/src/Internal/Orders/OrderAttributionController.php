@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Orders;
  *
  * @since 8.5.0
  */
-class OrderAttributionController
+class OrderAttributionController implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
      * The WPConsentAPI integration instance.
@@ -15,35 +15,30 @@ class OrderAttributionController
      * @var WPConsentAPI
      */
     private $consent = null;
-
     /**
      * The FeatureController instance.
      *
      * @var FeaturesController
      */
     private $feature_controller = null;
-
     /**
      * WooCommerce logger class instance.
      *
      * @var WC_Logger_Interface
      */
     private $logger = null;
-
     /**
      * The LegacyProxy instance.
      *
      * @var LegacyProxy
      */
     private $proxy = null;
-
     /**
      *  Whether the `stamp_checkout_html_element` method has been called.
      *
      * @var bool
      */
     private static $is_stamp_checkout_html_called = false;
-
     /**
      * Initialization method.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Customer Download Data Store Interface.
  *

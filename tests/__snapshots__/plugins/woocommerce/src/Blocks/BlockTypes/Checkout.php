@@ -15,14 +15,12 @@ class Checkout extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'checkout';
-
     /**
      * Chunks build folder.
      *
      * @var string
      */
     protected $chunks_folder = 'checkout-blocks';
-
     /**
      * Initialize this block type.
      *

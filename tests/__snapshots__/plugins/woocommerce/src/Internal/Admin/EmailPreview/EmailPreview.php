@@ -8,14 +8,11 @@ namespace Automattic\WooCommerce\Internal\Admin\EmailPreview;
 class EmailPreview
 {
     const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
-
     const DEFAULT_EMAIL_ID = 'customer_processing_order';
-
     const USER_OBJECT_EMAILS = array (
   0 => 'WC_Email_Customer_New_Account',
   1 => 'WC_Email_Customer_Reset_Password',
 );
-
     /**
      * All fields IDs that can customize email styles in Settings.
      *
@@ -32,42 +29,36 @@ class EmailPreview
   7 => 'woocommerce_email_header_image',
   8 => 'woocommerce_email_text_color',
 );
-
     /**
      * All fields IDs that can customize specific email content in Settings.
      *
      * @var array
      */
     private static array $email_content_settings_ids = array();
-
     /**
      * Whether the email settings IDs are initialized.
      *
      * @var bool
      */
     private static bool $email_settings_ids_initialized = false;
-
     /**
      * The email type to preview.
      *
      * @var string|null
      */
     private string|null $email_type = null;
-
     /**
      * The email object.
      *
      * @var WC_Email|null
      */
     private WC_Email|null $email = null;
-
     /**
      * The single instance of the class.
      *
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      *

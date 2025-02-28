@@ -15,7 +15,6 @@ class WPConsentAPI
      * @var string
      */
     public static $consent_category = 'marketing';
-
     /**
      * Register the consent API.
      *

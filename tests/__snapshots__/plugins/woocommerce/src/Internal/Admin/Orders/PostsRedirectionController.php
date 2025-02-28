@@ -14,7 +14,6 @@ class PostsRedirectionController
      * @var PageController
      */
     private $page_controller = null;
-
     /**
      * Constructor.
      *

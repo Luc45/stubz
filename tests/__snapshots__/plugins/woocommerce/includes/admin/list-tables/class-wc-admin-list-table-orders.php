@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_List_Table_Orders Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_List_Table_Orders extends \WC_Admin_List_Table
      * @var string
      */
     protected $list_table_type = 'shop_order';
-
     /**
      * The data store-agnostic list table implementation (introduced to support custom order tables),
      * which we use here to render columns.
@@ -19,7 +17,6 @@ class WC_Admin_List_Table_Orders extends \WC_Admin_List_Table
      * @var ListTable $orders_list_table
      */
     private $orders_list_table = null;
-
     /**
      * Constructor.
      */

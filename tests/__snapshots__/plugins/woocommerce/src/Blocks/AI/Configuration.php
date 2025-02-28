@@ -15,21 +15,18 @@ class Configuration
      * @var string
      */
     private $consent_option_name = 'woocommerce_blocks_allow_ai_connection';
-
     /**
      * The Jetpack connection manager.
      *
      * @var Manager
      */
     private $manager = null;
-
     /**
      * The Jetpack configuration.
      *
      * @var Config
      */
     private $config = null;
-
     /**
      * Configuration constructor.
      */

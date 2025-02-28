@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Shipping Classes controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Product_Shipping_Classes_Controller extends \WC_REST_Product_Shipp
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Register the routes for product reviews.
      */

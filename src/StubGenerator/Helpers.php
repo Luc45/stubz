@@ -15,6 +15,9 @@ class Helpers {
 	public static function toPhpLiteral( mixed $value ): string {
 		$value = var_export( $value, true );
 
+		// array(\n) => array()
+		$value = preg_replace('/array \(\s*\)/', 'array()', $value);
+
 		$value = str_replace( 'NULL', 'null', $value );
 
 		return $value;

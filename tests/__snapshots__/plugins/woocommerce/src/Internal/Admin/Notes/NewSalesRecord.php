@@ -8,11 +8,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class NewSalesRecord
 {
     const NOTE_NAME = 'wc-admin-new-sales-record';
-
     const RECORD_DATE_OPTION_KEY = 'woocommerce_sales_record_date';
-
     const RECORD_AMOUNT_OPTION_KEY = 'woocommerce_sales_record_amount';
-
     /**
      * Returns the total of yesterday's sales.
      *

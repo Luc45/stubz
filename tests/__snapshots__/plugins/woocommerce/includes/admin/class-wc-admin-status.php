@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Status Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Status
      * @var WC_Admin_Log_Table_List
      */
     private static $db_log_list_table = null;
-
     /**
      * Handles output of the reports page in admin.
      */

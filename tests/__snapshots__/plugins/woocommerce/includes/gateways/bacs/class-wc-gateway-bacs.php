@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Bank Transfer Payment Gateway.
  *
@@ -13,28 +12,24 @@
 class WC_Gateway_BACS extends \WC_Payment_Gateway
 {
     const ID = 'bacs';
-
     /**
      * Array of locales
      *
      * @var array
      */
     public $locale = null;
-
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *
      * @var string
      */
     public $instructions = null;
-
     /**
      * Account details.
      *
      * @var array
      */
     public $account_details = null;
-
     /**
      * Constructor for the gateway.
      */

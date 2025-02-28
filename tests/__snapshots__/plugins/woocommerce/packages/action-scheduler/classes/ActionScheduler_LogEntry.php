@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_LogEntry
  */
@@ -11,21 +10,18 @@ class ActionScheduler_LogEntry
      * @var int $action_id
      */
     protected $action_id = '';
-
     /**
      * Log entry's message.
      *
      * @var string $message
      */
     protected $message = '';
-
     /**
      * Log entry's date.
      *
      * @var Datetime $date
      */
     protected $date = null;
-
     /**
      * Constructor
      *

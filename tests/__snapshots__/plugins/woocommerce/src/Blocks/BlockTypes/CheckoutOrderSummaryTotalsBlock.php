@@ -13,5 +13,4 @@ class CheckoutOrderSummaryTotalsBlock extends \Automattic\WooCommerce\Blocks\Blo
      * @var string
      */
     protected $block_name = 'checkout-order-summary-totals-block';
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * ActionScheduler_AsyncRequest_QueueRunner class.
  */
@@ -11,21 +10,18 @@ class ActionScheduler_AsyncRequest_QueueRunner extends \WP_Async_Request
      * @var ActionScheduler_Store
      */
     protected $store = null;
-
     /**
      * Prefix for ajax hooks
      *
      * @var string
      */
     protected $prefix = 'as';
-
     /**
      * Action for ajax hooks
      *
      * @var string
      */
     protected $action = 'async_request_queue_runner';
-
     /**
      * Initiate new async request.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Widget top rated products class.
  */

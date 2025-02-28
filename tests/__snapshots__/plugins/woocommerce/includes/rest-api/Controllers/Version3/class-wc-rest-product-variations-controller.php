@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API variations controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Product_Variations_Controller extends \WC_REST_Product_Variations_
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Product statuses to exclude from the query.
      *
      * @var array
      */
     private $exclude_status = array();
-
     /**
      * Register the routes for products.
      */

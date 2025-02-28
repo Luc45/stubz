@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class ArrayFlatten
+class ArrayFlatten implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers\TransformerInterface
 {
     /**
      * Search a given value in the array.

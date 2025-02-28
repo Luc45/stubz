@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Order Item Data Store Interface
  *

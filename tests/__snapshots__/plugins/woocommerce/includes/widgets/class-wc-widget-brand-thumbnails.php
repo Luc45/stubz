@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Brand Thumbnails Widget
  *
@@ -18,28 +17,24 @@ class WC_Widget_Brand_Thumbnails extends \WP_Widget
      * @var string
      */
     public $woo_widget_cssclass = null;
-
     /**
      * Widget description.
      *
      * @var string
      */
     public $woo_widget_description = null;
-
     /**
      * Widget id base.
      *
      * @var string
      */
     public $woo_widget_idbase = null;
-
     /**
      * Widget name.
      *
      * @var string
      */
     public $woo_widget_name = null;
-
     /** Constructor */
     public function __construct()
 {

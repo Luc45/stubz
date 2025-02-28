@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Replace a page title with the endpoint title.
  *

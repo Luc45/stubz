@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product external class.
  */
@@ -14,7 +13,6 @@ class WC_Product_External extends \WC_Product
   'product_url' => '',
   'button_text' => '',
 );
-
     /**
      * Get internal type.
      *

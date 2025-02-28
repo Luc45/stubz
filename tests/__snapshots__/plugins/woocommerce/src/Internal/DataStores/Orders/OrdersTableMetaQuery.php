@@ -23,7 +23,6 @@ class OrdersTableMetaQuery
   9 => 'REGEXP',
   10 => 'NOT REGEXP',
 );
-
     const NUMERIC_OPERATORS = array (
   0 => '>',
   1 => '>=',
@@ -32,58 +31,49 @@ class OrdersTableMetaQuery
   4 => 'BETWEEN',
   5 => 'NOT BETWEEN',
 );
-
     const ALIAS_PREFIX = 'meta';
-
     /**
      * Name of the main orders table.
      *
      * @var string
      */
     private $meta_table = '';
-
     /**
      * Name of the metadata table.
      *
      * @var string
      */
     private $orders_table = '';
-
     /**
      * Sanitized `meta_query`.
      *
      * @var array
      */
     private $queries = array();
-
     /**
      * Flat list of clauses by name.
      *
      * @var array
      */
     private $flattened_clauses = array();
-
     /**
      * JOIN clauses to add to the main SQL query.
      *
      * @var array
      */
     private $join = array();
-
     /**
      * WHERE clauses to add to the main SQL query.
      *
      * @var array
      */
     private $where = array();
-
     /**
      * Table aliases in use by the meta query. Used to optimize JOINs when possible.
      *
      * @var array
      */
     private $table_aliases = array();
-
     /**
      * Constructor.
      *

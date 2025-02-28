@@ -13,7 +13,6 @@ class TimeUtil
      * @var DateTimeZone
      */
     private static DateTimeZone $utc_date_time_zone;
-
     /**
      * Class constructor.
      */

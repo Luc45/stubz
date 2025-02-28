@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Tax Classes controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Tax_Classes_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'taxes/classes';
-
     /**
      * Register the routes for tax classes.
      */

@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class ErrorSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'error';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'error';
-
     /**
      * Product schema properties.
      *

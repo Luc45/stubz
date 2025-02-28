@@ -23,14 +23,12 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
 class MiscRecommendationsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
     const ID = 'misc_recommendations';
-
     /**
      * Class instance.
      *
      * @var MiscRecommendationsDataSourcePoller instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

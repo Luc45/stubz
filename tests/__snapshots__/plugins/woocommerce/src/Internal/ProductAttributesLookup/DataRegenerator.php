@@ -23,28 +23,24 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 class DataRegenerator
 {
     const PRODUCTS_PER_GENERATION_STEP = 100;
-
     /**
      * The data store to use.
      *
      * @var LookupDataStore
      */
     private $data_store = null;
-
     /**
      * The lookup table name.
      *
      * @var string
      */
     private $lookup_table_name = null;
-
     /**
      * Flag indicating if the last regeneration step failed.
      *
      * @var bool
      */
     private $last_regeneration_step_failed = null;
-
     /**
      * DataRegenerator constructor.
      */

@@ -8,23 +8,19 @@ namespace Automattic\WooCommerce\Admin;
 class PageController
 {
     const APP_ENTRY_POINT = 'wc-admin';
-
     const PAGE_ROOT = 'wc-admin';
-
     /**
      * Singleton instance of self.
      *
      * @var PageController
      */
     private static $instance = false;
-
     /**
      * Current page ID (or false if not registered with this controller).
      *
      * @var string
      */
     private $current_page = null;
-
     /**
      * Registered pages
      * Contains information (breadcrumbs, menu info) about JS powered pages and classic WooCommerce pages.
@@ -32,7 +28,6 @@ class PageController
      * @var array
      */
     private $pages = array();
-
     /**
      * We want a single instance of this class so we can accurately track registered menus and pages.
      */

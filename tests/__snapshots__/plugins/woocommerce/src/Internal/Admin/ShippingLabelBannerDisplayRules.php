@@ -13,21 +13,18 @@ class ShippingLabelBannerDisplayRules
      * @var bool
      */
     private $dotcom_connected = null;
-
     /**
      * Whether installed plugins are incompatible with the banner.
      *
      * @var bool
      */
     private $no_incompatible_plugins_installed = null;
-
     /**
      * Holds the installed WooCommerce Shipping & Tax version.
      *
      * @var string
      */
     private $wcs_version = null;
-
     /**
      * Supported countries by USPS, see: https://webpmt.usps.gov/pmt010.cfm
      *
@@ -44,7 +41,6 @@ class ShippingLabelBannerDisplayRules
   7 => 'FM',
   8 => 'MH',
 );
-
     /**
      * Array of supported currency codes.
      *
@@ -53,7 +49,6 @@ class ShippingLabelBannerDisplayRules
     private $supported_currencies = array (
   0 => 'USD',
 );
-
     /**
      * Constructor.
      *

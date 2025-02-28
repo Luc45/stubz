@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  * Provides an easy method of assessing URLs, including filepaths (which will be silently
  * converted to a file:// URL if provided).
  */
-class URL implements \Stringable
+class URL
 {
     /**
      * Components of the URL being assessed.
@@ -27,14 +27,12 @@ class URL implements \Stringable
   'scheme' => null,
   'user' => null,
 );
-
     /**
      * If the URL (or filepath) is absolute.
      *
      * @var bool
      */
     private $is_absolute = null;
-
     /**
      * If the URL (or filepath) represents a directory other than the root directory.
      *
@@ -45,7 +43,6 @@ class URL implements \Stringable
      * @var bool
      */
     private $is_non_root_directory = null;
-
     /**
      * The components of the URL's path.
      *
@@ -62,14 +59,12 @@ class URL implements \Stringable
      * @var array
      */
     private $path_parts = array();
-
     /**
      * The URL.
      *
      * @var string
      */
     private $url = null;
-
     /**
      * Creates and processes the provided URL (or filepath).
      *

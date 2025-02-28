@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments\Integrations;
  *
  * @since 2.6.0
  */
-abstract class AbstractPaymentMethodType
+abstract class AbstractPaymentMethodType implements \Automattic\WooCommerce\Blocks\Payments\PaymentMethodTypeInterface
 {
     /**
      * Payment method name defined by payment methods extending this class.
@@ -15,14 +15,12 @@ abstract class AbstractPaymentMethodType
      * @var string
      */
     protected $name = '';
-
     /**
      * Settings from the WP options table
      *
      * @var array
      */
     protected $settings = array();
-
     /**
      * Get a setting from the settings array if set.
      *

@@ -16,7 +16,6 @@ class EmailPreviewServiceProvider extends \Automattic\WooCommerce\Internal\Depen
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreview',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreviewRestController',
 );
-
     /**
      * Register the classes.
      */

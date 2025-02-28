@@ -1,9 +1,8 @@
 <?php
-
 /**
  * WCCOM Site Installer Error Class
  */
-class WC_REST_WCCOM_Site_Installer_Error extends \Exception implements \Stringable, \Throwable
+class WC_REST_WCCOM_Site_Installer_Error extends \Exception
 {
     /**
      * Constructor for the Installer Error class.

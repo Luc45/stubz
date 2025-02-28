@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Block configuration used to specify blocks in BlockTemplate.
  */
-class AbstractBlock
+class AbstractBlock implements \Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
 {
     /**
      * The block name.
@@ -13,70 +13,60 @@ class AbstractBlock
      * @var string
      */
     private $name = null;
-
     /**
      * The block ID.
      *
      * @var string
      */
     private $id = null;
-
     /**
      * The block order.
      *
      * @var int
      */
     private $order = 10000;
-
     /**
      * The block attributes.
      *
      * @var array
      */
     private $attributes = array();
-
     /**
      * The block hide conditions.
      *
      * @var array
      */
     private $hide_conditions = array();
-
     /**
      * The block hide conditions counter.
      *
      * @var int
      */
     private $hide_conditions_counter = 0;
-
     /**
      * The block disable conditions.
      *
      * @var array
      */
     private $disable_conditions = array();
-
     /**
      * The block disable conditions counter.
      *
      * @var int
      */
     private $disable_conditions_counter = 0;
-
     /**
      * The block template that this block belongs to.
      *
      * @var BlockTemplate
      */
     private $root_template = null;
-
     /**
      * The parent container.
      *
      * @var ContainerInterface
      */
     private $parent = null;
-
     /**
      * Block constructor.
      *

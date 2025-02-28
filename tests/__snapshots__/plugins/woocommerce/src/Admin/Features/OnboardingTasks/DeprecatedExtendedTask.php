@@ -13,70 +13,60 @@ class DeprecatedExtendedTask extends \Automattic\WooCommerce\Admin\Features\Onbo
      * @var string
      */
     public $id = '';
-
     /**
      * Additional info.
      *
      * @var string|null
      */
     public $additional_info = '';
-
     /**
      * Content.
      *
      * @var string
      */
     public $content = '';
-
     /**
      * Whether the task is complete or not.
      *
      * @var boolean
      */
     public $is_complete = false;
-
     /**
      * Snoozeable.
      *
      * @var boolean
      */
     public $is_snoozeable = false;
-
     /**
      * Dismissable.
      *
      * @var boolean
      */
     public $is_dismissable = false;
-
     /**
      * Whether the store is capable of viewing the task.
      *
      * @var bool
      */
     public $can_view = true;
-
     /**
      * Level.
      *
      * @var int
      */
     public $level = 3;
-
     /**
      * Time.
      *
      * @var string|null
      */
     public $time = null;
-
     /**
      * Title.
      *
      * @var string
      */
     public $title = '';
-
     /**
      * Constructor.
      *

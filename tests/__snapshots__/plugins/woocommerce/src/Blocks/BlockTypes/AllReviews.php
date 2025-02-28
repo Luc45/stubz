@@ -13,7 +13,6 @@ class AllReviews extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'all-reviews';
-
     /**
      * Get the frontend script handle for this block type.
      *

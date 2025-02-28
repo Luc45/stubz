@@ -15,7 +15,6 @@ class Formatters
      * @var array
      */
     private $formatters = array();
-
     /**
      * Get a new instance of a formatter class.
      *

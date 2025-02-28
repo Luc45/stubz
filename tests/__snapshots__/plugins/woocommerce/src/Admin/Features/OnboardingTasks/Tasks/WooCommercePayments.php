@@ -13,7 +13,6 @@ class WooCommercePayments extends \Automattic\WooCommerce\Admin\Features\Onboard
      * @var null
      */
     private $is_complete_result = null;
-
     /**
      * ID.
      *

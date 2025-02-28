@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Most_Stocked.
  */

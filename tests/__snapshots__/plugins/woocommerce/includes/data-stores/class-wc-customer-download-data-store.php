@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Customer Download Data Store.
  *
  * @version  3.0.0
  */
-class WC_Customer_Download_Data_Store
+class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Store_Interface
 {
     const DOWNLOAD_PERMISSION_DB_FIELDS = array (
   0 => 'download_id',
@@ -19,7 +18,6 @@ class WC_Customer_Download_Data_Store
   8 => 'download_count',
   9 => 'access_expires',
 );
-
     /**
      * Create download permission for a user, from an array of data.
      *

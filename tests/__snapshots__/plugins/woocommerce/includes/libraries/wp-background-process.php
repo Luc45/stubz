@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract WP_Background_Process class.
  */
@@ -14,7 +13,6 @@ abstract class WP_Background_Process extends \WP_Async_Request
      * @access protected
      */
     protected $action = 'background_process';
-
     /**
      * Start time of current process.
      *
@@ -24,7 +22,6 @@ abstract class WP_Background_Process extends \WP_Async_Request
      * @access protected
      */
     protected $start_time = 0;
-
     /**
      * Cron_hook_identifier
      *
@@ -32,7 +29,6 @@ abstract class WP_Background_Process extends \WP_Async_Request
      * @access protected
      */
     protected $cron_hook_identifier = null;
-
     /**
      * Cron_interval_identifier
      *
@@ -40,7 +36,6 @@ abstract class WP_Background_Process extends \WP_Async_Request
      * @access protected
      */
     protected $cron_interval_identifier = null;
-
     /**
      * Initiate new background process
      */

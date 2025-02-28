@@ -1,12 +1,10 @@
 <?php
-
 /**
  * Download handler class.
  */
 class WC_Download_Handler
 {
     const TRACK_DOWNLOAD_CALLBACK = 'track_partial_download';
-
     /**
      * Hook in methods.
      */

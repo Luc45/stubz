@@ -13,21 +13,18 @@ class PageController
      * @var FileController
      */
     private $file_controller = null;
-
     /**
      * Instance of Settings.
      *
      * @var Settings
      */
     private $settings = null;
-
     /**
      * Instance of FileListTable or SearchListTable.
      *
      * @var FileListTable|SearchListTable
      */
     private $list_table = null;
-
     /**
      * Initialize dependencies.
      *

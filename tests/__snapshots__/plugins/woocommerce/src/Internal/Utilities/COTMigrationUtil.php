@@ -13,14 +13,12 @@ class COTMigrationUtil
      * @var CustomOrdersTableController
      */
     private $table_controller = null;
-
     /**
      * Data synchronizer.
      *
      * @var DataSynchronizer
      */
     private $data_synchronizer = null;
-
     /**
      * Initialize method, invoked by the DI container.
      *

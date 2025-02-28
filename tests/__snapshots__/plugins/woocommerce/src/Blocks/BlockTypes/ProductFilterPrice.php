@@ -8,16 +8,13 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 final class ProductFilterPrice extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const MIN_PRICE_QUERY_VAR = 'min_price';
-
     const MAX_PRICE_QUERY_VAR = 'max_price';
-
     /**
      * Block name.
      *
      * @var string
      */
     protected $block_name = 'product-filter-price';
-
     /**
      * Initialize this block type.
      *

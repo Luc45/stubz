@@ -13,7 +13,6 @@ class Coupons
      * @var Coupons instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

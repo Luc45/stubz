@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item meta class.
  */
@@ -11,28 +10,24 @@ class WC_Order_Item_Meta
      * @var bool
      */
     private $legacy = false;
-
     /**
      * Order item
      *
      * @var array|null
      */
     private $item = null;
-
     /**
      * Post meta data
      *
      * @var array|null
      */
     public $meta = null;
-
     /**
      * Product object.
      *
      * @var WC_Product|null
      */
     public $product = null;
-
     /**
      * Constructor.
      *

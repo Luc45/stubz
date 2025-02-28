@@ -17,42 +17,36 @@ class SetWCShipping extends \Automattic\WooCommerce\Blueprint\Steps\Step
      * @var array $methods Shipping methods.
      */
     private array $methods;
-
     /**
      * Shipping locations.
      *
      * @var array $locations Shipping locations.
      */
     private array $locations;
-
     /**
      * Shipping zones.
      *
      * @var array $zones Shipping zones.
      */
     private array $zones;
-
     /**
      * Shipping terms.
      *
      * @var array $terms Shipping terms.
      */
     private array $terms;
-
     /**
      * Shipping classes.
      *
      * @var array $classes Shipping classes.
      */
     private array $classes;
-
     /**
      * Local pickup settings.
      *
      * @var array $local_pickup Local pickup settings.
      */
     private array $local_pickup;
-
     /**
      * Constructor.
      *

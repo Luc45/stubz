@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC API to WC CLI Bridge.
  *
@@ -33,7 +32,6 @@ class WC_CLI_Runner
   8 => 'reports/sales',
   9 => 'reports/top_sellers',
 );
-
     /**
      * The version of the REST API we should target to
      * generate commands.
@@ -41,7 +39,6 @@ class WC_CLI_Runner
      * @var string
      */
     private static $target_rest_version = 'v2';
-
     /**
      * Register's all endpoints as commands once WP and WC have all loaded.
      */

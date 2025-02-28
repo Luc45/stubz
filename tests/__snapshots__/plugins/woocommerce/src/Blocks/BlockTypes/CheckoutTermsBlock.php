@@ -13,5 +13,4 @@ class CheckoutTermsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstr
      * @var string
      */
     protected $block_name = 'checkout-terms-block';
-
 }

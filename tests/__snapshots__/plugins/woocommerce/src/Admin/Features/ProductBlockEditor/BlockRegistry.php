@@ -8,9 +8,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 class BlockRegistry
 {
     const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
-
     const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
-
     const GENERIC_BLOCKS = array (
   0 => 'woocommerce/conditional',
   1 => 'woocommerce/product-checkbox-field',
@@ -32,7 +30,6 @@ class BlockRegistry
   17 => 'woocommerce/product-select-field',
   18 => 'woocommerce/product-notice-field',
 );
-
     const PRODUCT_FIELDS_BLOCKS = array (
   0 => 'woocommerce/product-catalog-visibility-field',
   1 => 'woocommerce/product-custom-fields',
@@ -57,14 +54,12 @@ class BlockRegistry
   20 => 'woocommerce/product-has-variations-notice',
   21 => 'woocommerce/product-single-variation-notice',
 );
-
     /**
      * Singleton instance.
      *
      * @var BlockRegistry
      */
     private static $instance = null;
-
     /**
      * Get the singleton instance.
      */

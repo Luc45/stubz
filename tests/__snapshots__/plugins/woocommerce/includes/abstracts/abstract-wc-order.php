@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Abstract_Order class.
  */
@@ -30,7 +29,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
   'total' => 0,
   'total_tax' => 0,
 );
-
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
      * With custom tables, some of these are moved from metadata to their own columns, but existing code will still try to add them to metadata. This array is used to keep track of such properties.
@@ -42,7 +40,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
     protected $legacy_datastore_props = array (
   0 => '_recorded_coupon_usage_counts',
 );
-
     /**
      * Order items will be stored here, sometimes before they persist in the DB.
      *
@@ -50,7 +47,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @var array
      */
     protected $items = array();
-
     /**
      * Order items that need deleting are stored here.
      *
@@ -58,7 +54,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @var array
      */
     protected $items_to_delete = array();
-
     /**
      * Stores meta in cache for future reads.
      *
@@ -67,21 +62,18 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @var string
      */
     protected $cache_group = 'orders';
-
     /**
      * Which data store to load.
      *
      * @var string
      */
     protected $data_store_name = 'order';
-
     /**
      * This is the name of this object type.
      *
      * @var string
      */
     protected $object_type = 'order';
-
     /**
      * Mappings of order item types to groups.
      *
@@ -94,7 +86,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
   'fee' => 'fee_lines',
   'coupon' => 'coupon_lines',
 );
-
     /**
      * Get the order if ID is passed, otherwise the order is new and empty.
      * This class should NOT be instantiated, but the wc_get_order function or new WC_Order_Factory

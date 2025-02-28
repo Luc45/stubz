@@ -16,7 +16,6 @@ class PaymentInfo
   5 => 'mastercard',
   6 => 'visa',
 );
-
     /**
      * Get info about the card used for payment on an order.
      *

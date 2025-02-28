@@ -17,7 +17,6 @@ class OrdersProvider
   1 => 'processing',
   2 => 'completed',
 );
-
     /**
      * Returns the number of orders.
      *

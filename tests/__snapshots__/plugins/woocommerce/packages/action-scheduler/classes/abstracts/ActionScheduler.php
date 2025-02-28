@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler
  *
@@ -13,21 +12,18 @@ abstract class ActionScheduler
      * @var string
      */
     private static $plugin_file = '';
-
     /**
      * ActionScheduler_ActionFactory instance.
      *
      * @var ActionScheduler_ActionFactory
      */
     private static $factory = null;
-
     /**
      * Data store is initialized.
      *
      * @var bool
      */
     private static $data_store_initialized = false;
-
     /**
      * Factory.
      */

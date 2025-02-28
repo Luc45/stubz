@@ -13,7 +13,6 @@ class OnboardingMailchimp
      * @var OnboardingMailchimp instance
      */
     private static $instance = null;
-
     /**
      * Get class instance.
      */

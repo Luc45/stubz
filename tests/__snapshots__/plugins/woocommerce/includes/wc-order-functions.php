@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Standard way of retrieving orders based on certain parameters.
  *

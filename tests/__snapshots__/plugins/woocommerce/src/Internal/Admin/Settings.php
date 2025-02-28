@@ -13,7 +13,6 @@ class Settings
      * @var Settings instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

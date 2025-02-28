@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Allows to interact with extensions from WCCOM marketplace via CLI.
  *
@@ -9,7 +8,6 @@
 class WC_CLI_COM_Command
 {
     const APPLICATION_PASSWORD_SECTION_URL = 'https://woocommerce.com/my-account/#application-passwords';
-
     /**
      * Registers a commands for managing WooCommerce.com extensions.
      */

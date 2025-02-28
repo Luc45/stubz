@@ -13,7 +13,6 @@ class OrderRefund extends \WC_Order_Refund
      * @var int
      */
     public $customer_id = null;
-
     /**
      * Add filter(s) required to hook this class to substitute WC_Order_Refund.
      */

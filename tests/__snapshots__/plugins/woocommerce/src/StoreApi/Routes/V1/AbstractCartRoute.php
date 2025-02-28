@@ -8,56 +8,48 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 abstract class AbstractCartRoute extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const SCHEMA_TYPE = 'cart';
-
     /**
      * Schema class instance.
      *
      * @var CartSchema
      */
     protected $schema = null;
-
     /**
      * Schema class for the cart.
      *
      * @var CartSchema
      */
     protected $cart_schema = null;
-
     /**
      * Schema class for the cart item.
      *
      * @var CartItemSchema
      */
     protected $cart_item_schema = null;
-
     /**
      * Cart controller class instance.
      *
      * @var CartController
      */
     protected $cart_controller = null;
-
     /**
      * Order controller class instance.
      *
      * @var OrderController
      */
     protected $order_controller = null;
-
     /**
      * Additional fields controller class instance.
      *
      * @var CheckoutFields
      */
     protected $additional_fields_controller = null;
-
     /**
      * True when this route has been requested with a valid cart token.
      *
      * @var bool|null
      */
     protected $has_cart_token = null;
-
     /**
      * Constructor.
      *

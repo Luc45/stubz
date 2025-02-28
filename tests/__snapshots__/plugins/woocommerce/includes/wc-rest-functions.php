@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Parses and formats a date for ISO8601/RFC3339.
  *

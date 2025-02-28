@@ -13,7 +13,6 @@ class AdditionalFieldsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\
      * @var string
      */
     protected $block_name = 'order-confirmation-additional-fields-wrapper';
-
     /**
      * This renders the content of the downloads wrapper.
      *

@@ -13,5 +13,4 @@ class CheckoutOrderSummaryCartItemsBlock extends \Automattic\WooCommerce\Blocks\
      * @var string
      */
     protected $block_name = 'checkout-order-summary-cart-items-block';
-
 }

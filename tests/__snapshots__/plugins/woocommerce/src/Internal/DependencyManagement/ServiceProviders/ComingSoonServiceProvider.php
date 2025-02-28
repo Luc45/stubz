@@ -18,7 +18,6 @@ class ComingSoonServiceProvider extends \Automattic\WooCommerce\Internal\Depende
   2 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonHelper',
   3 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonRequestHandler',
 );
-
     /**
      * Register the classes.
      */

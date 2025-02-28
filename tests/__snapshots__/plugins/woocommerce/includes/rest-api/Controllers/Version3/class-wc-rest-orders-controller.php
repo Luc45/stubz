@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Orders controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Orders_Controller extends \WC_REST_Orders_V2_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Calculate coupons.
      *

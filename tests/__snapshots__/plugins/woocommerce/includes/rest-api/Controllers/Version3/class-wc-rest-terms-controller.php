@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Terms controller class.
  */
@@ -11,21 +10,18 @@ abstract class WC_REST_Terms_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $rest_base = '';
-
     /**
      * Taxonomy.
      *
      * @var string
      */
     protected $taxonomy = '';
-
     /**
      * Cached taxonomies by attribute id.
      *
      * @var array
      */
     protected $taxonomies_by_id = array();
-
     /**
      * Register the routes for terms.
      */

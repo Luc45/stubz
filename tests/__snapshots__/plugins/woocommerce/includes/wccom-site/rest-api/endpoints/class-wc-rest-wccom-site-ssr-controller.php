@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API WCCOM System Status Report Controller Class.
  *
@@ -13,7 +12,6 @@ class WC_REST_WCCOM_Site_SSR_Controller extends \WC_REST_WCCOM_Site_Controller
      * @var string
      */
     protected $rest_base = 'ssr';
-
     /**
      * Register the routes for SSR Controller.
      *

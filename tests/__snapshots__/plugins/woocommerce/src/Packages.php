@@ -16,7 +16,6 @@ class Packages
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
     protected static $packages = array();
-
     /**
      * Array of package names and their main package classes.
      *
@@ -36,7 +35,6 @@ class Packages
   'woocommerce-admin' => '\\Automattic\\WooCommerce\\Admin\\Composer\\Package',
   'woocommerce-gutenberg-products-block' => '\\Automattic\\WooCommerce\\Blocks\\Package',
 );
-
     /**
      * Similar to $base_packages, but
      * the packages included in this array can be deactivated via the 'woocommerce_merged_packages' filter.
@@ -46,7 +44,6 @@ class Packages
     protected static $merged_packages = array (
   'woocommerce-brands' => '\\Automattic\\WooCommerce\\Internal\\Brands',
 );
-
     /**
      * Static-only class.
      */

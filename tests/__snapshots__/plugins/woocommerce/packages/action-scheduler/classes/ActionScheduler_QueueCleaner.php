@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_QueueCleaner
  */
@@ -11,28 +10,24 @@ class ActionScheduler_QueueCleaner
      * @var int
      */
     protected $batch_size = null;
-
     /**
      * ActionScheduler_Store instance.
      *
      * @var ActionScheduler_Store
      */
     private $store = null;
-
     /**
      * 31 days in seconds.
      *
      * @var int
      */
     private $month_in_seconds = 2678400;
-
     /**
      * Default list of statuses purged by the cleaner process.
      *
      * @var string[]
      */
     private $default_statuses_to_purge;
-
     /**
      * ActionScheduler_QueueCleaner constructor.
      *

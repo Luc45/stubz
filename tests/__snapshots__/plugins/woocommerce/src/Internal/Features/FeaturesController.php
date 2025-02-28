@@ -12,44 +12,37 @@ namespace Automattic\WooCommerce\Internal\Features;
 class FeaturesController
 {
     const FEATURE_ENABLED_CHANGED_ACTION = 'woocommerce_feature_enabled_changed';
-
     const PLUGINS_COMPATIBLE_BY_DEFAULT_OPTION = 'woocommerce_plugins_are_compatible_with_features_by_default';
-
     /**
      * The existing feature definitions.
      *
      * @var array[]
      */
     private $features = array();
-
     /**
      * The registered compatibility info for WooCommerce plugins, with plugin names as keys.
      *
      * @var array
      */
     private $compatibility_info_by_plugin = array();
-
     /**
      * The registered compatibility info for WooCommerce plugins, with feature ids as keys.
      *
      * @var array
      */
     private $compatibility_info_by_feature = array();
-
     /**
      * The LegacyProxy instance to use.
      *
      * @var LegacyProxy
      */
     private $proxy = null;
-
     /**
      * The PluginUtil instance to use.
      *
      * @var PluginUtil
      */
     private $plugin_util = null;
-
     /**
      * Flag indicating that features will be enableable from the settings page
      * even when they are incompatible with active plugins.
@@ -57,7 +50,6 @@ class FeaturesController
      * @var bool
      */
     private $force_allow_enabling_features = false;
-
     /**
      * Flag indicating that plugins will be activable from the plugins page
      * even when they are incompatible with enabled features.
@@ -65,14 +57,12 @@ class FeaturesController
      * @var bool
      */
     private $force_allow_enabling_plugins = false;
-
     /**
      * List of plugins excluded from feature compatibility warnings in UI.
      *
      * @var string[]
      */
     private $plugins_excluded_from_compatibility_ui = null;
-
     /**
      * Creates a new instance of the class.
      */

@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 class StockFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
-
     /**
      * Block name.
      *
      * @var string
      */
     protected $block_name = 'stock-filter';
-
     /**
      * Extra data passed through from server to client for block.
      *

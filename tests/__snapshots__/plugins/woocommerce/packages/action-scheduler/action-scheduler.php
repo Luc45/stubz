@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Registers this version of Action Scheduler.
  */

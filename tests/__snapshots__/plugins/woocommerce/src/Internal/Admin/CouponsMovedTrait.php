@@ -13,14 +13,12 @@ trait CouponsMovedTrait
      * @var string
      */
     protected static $query_key = 'legacy_coupon_menu';
-
     /**
      * The key for storing an option in the DB.
      *
      * @var string
      */
     protected static $option_key = 'wc_admin_show_legacy_coupon_menu';
-
     /**
      * Get the URL for the legacy coupon management.
      *

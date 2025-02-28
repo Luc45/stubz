@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item product class.
  */
@@ -12,7 +11,6 @@ class WC_Order_Item_Product extends \WC_Order_Item
      * @var array
      */
     public $legacy_values = null;
-
     /**
      * Legacy cart item key.
      *
@@ -20,7 +18,6 @@ class WC_Order_Item_Product extends \WC_Order_Item
      * @var string
      */
     public $legacy_cart_item_key = null;
-
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.
      *
@@ -44,7 +41,6 @@ class WC_Order_Item_Product extends \WC_Order_Item
     array(),
   ),
 );
-
     /**
      * Set quantity.
      *

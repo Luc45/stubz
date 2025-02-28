@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Geolite integration class.
  *
@@ -13,14 +12,12 @@ class WC_Geolite_Integration
      * @var string
      */
     private $database = '';
-
     /**
      * Logger instance.
      *
      * @var WC_Logger
      */
     private $log = null;
-
     /**
      * Constructor.
      *

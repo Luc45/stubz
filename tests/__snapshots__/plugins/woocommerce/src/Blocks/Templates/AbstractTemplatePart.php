@@ -17,5 +17,4 @@ abstract class AbstractTemplatePart extends \Automattic\WooCommerce\Blocks\Templ
      * @var string
      */
     public $template_area = null;
-
 }

@@ -13,7 +13,6 @@ class Breadcrumbs extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      * @var string
      */
     protected $block_name = 'breadcrumbs';
-
     /**
      * Render the block.
      *

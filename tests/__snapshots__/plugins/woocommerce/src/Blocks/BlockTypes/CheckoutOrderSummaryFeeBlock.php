@@ -13,5 +13,4 @@ class CheckoutOrderSummaryFeeBlock extends \Automattic\WooCommerce\Blocks\BlockT
      * @var string
      */
     protected $block_name = 'checkout-order-summary-fee-block';
-
 }

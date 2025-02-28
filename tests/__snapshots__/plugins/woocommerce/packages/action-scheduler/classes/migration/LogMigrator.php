@@ -19,14 +19,12 @@ class LogMigrator
      * @var ActionScheduler_Logger
      */
     private $source = null;
-
     /**
      * Destination logger instance.
      *
      * @var ActionScheduler_Logger
      */
     private $destination = null;
-
     /**
      * ActionMigrator constructor.
      *

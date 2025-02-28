@@ -13,5 +13,4 @@ class CartCrossSellsProductsBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'cart-cross-sells-products-block';
-
 }

@@ -15,7 +15,6 @@ class AssignDefaultCategoryServiceProvider extends \Automattic\WooCommerce\Inter
     protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\AssignDefaultCategory',
 );
-
     /**
      * Register the classes.
      */

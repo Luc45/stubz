@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Form_Handler class.
  */

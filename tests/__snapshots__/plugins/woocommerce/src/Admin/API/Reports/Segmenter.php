@@ -13,28 +13,24 @@ class Segmenter
      * @var array|bool
      */
     protected $all_segment_ids = false;
-
     /**
      * Array of all segment labels.
      *
      * @var array
      */
     protected $segment_labels = array();
-
     /**
      * Query arguments supplied by the user for data store.
      *
      * @var array
      */
     protected $query_args = '';
-
     /**
      * SQL definition for each column.
      *
      * @var array
      */
     protected $report_columns = array();
-
     /**
      * Constructor.
      *

@@ -13,7 +13,6 @@ class ProductBestSellers extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstr
      * @var string
      */
     protected $block_name = 'product-best-sellers';
-
     /**
      * Set args specific to this block
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Customers controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Customer_Downloads_V2_Controller extends \WC_REST_Customer_Downloa
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Prepare a single download output for response.
      *

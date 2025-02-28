@@ -19,42 +19,36 @@ class Config
      * @var ActionScheduler_Store
      */
     private $source_store = null;
-
     /**
      * Source logger instance.
      *
      * @var ActionScheduler_Logger
      */
     private $source_logger = null;
-
     /**
      * Destination store instance.
      *
      * @var ActionScheduler_Store
      */
     private $destination_store = null;
-
     /**
      * Destination logger instance.
      *
      * @var ActionScheduler_Logger
      */
     private $destination_logger = null;
-
     /**
      * Progress bar object.
      *
      * @var Action_Scheduler\WP_CLI\ProgressBar
      */
     private $progress_bar = null;
-
     /**
      * Flag indicating a dryrun.
      *
      * @var bool
      */
     private $dry_run = false;
-
     /**
      * Config constructor.
      */

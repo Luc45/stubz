@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Item Data Store
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
+abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Interface
 {
     /**
      * Meta type. This should match up with
@@ -15,7 +14,6 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
      * @var string
      */
     protected $meta_type = 'order_item';
-
     /**
      * This only needs set if you are using a custom metadata type (for example payment tokens.
      * This should be the name of the field your table uses for associating meta with objects.
@@ -24,21 +22,18 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
      * @var string
      */
     protected $object_id_field_for_meta = 'order_item_id';
-
     /**
      * Indicates if the Cost of Goods Sold feature is enabled.
      *
      * @var bool
      */
     private bool $cogs_is_enabled;
-
     /**
      * The instance of WC_Order_Item_Data_Store to use for COGS related operations.
      *
      * @var WC_Order_Item_Data_Store
      */
     private WC_Data_Store $order_item_data_store;
-
     /**
      * Class constructor.
      */

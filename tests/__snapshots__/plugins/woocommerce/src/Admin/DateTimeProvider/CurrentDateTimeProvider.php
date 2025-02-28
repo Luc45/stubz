@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\DateTimeProvider;
  *
  * Uses the current DateTime.
  */
-class CurrentDateTimeProvider
+class CurrentDateTimeProvider implements \Automattic\WooCommerce\Admin\DateTimeProvider\DateTimeProviderInterface
 {
     /**
      * Returns the current DateTime.

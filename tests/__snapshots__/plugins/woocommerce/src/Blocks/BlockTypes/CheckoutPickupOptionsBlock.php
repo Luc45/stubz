@@ -13,5 +13,4 @@ class CheckoutPickupOptionsBlock extends \Automattic\WooCommerce\Blocks\BlockTyp
      * @var string
      */
     protected $block_name = 'checkout-pickup-options-block';
-
 }

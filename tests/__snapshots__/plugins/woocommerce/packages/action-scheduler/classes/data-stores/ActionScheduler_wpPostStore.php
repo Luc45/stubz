@@ -1,18 +1,13 @@
 <?php
-
 /**
  * Class ActionScheduler_wpPostStore
  */
 class ActionScheduler_wpPostStore extends \ActionScheduler_Store
 {
     const POST_TYPE = 'scheduled-action';
-
     const GROUP_TAXONOMY = 'action-group';
-
     const SCHEDULE_META_KEY = '_action_manager_schedule';
-
     const DEPENDENCIES_MET = 'as-post-store-dependencies-met';
-
     /**
      * Used to share information about the before_date property of claims internally.
      *
@@ -22,14 +17,12 @@ class ActionScheduler_wpPostStore extends \ActionScheduler_Store
      * @var DateTime|null
      */
     private $claim_before_date = null;
-
     /**
      * Local Timezone.
      *
      * @var DateTimeZone
      */
     protected $local_timezone = null;
-
     /**
      * Save action.
      *

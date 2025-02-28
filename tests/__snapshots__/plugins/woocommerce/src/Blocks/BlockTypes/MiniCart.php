@@ -15,35 +15,30 @@ class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'mini-cart';
-
     /**
      * Chunks build folder.
      *
      * @var string
      */
     protected $chunks_folder = 'mini-cart-contents-block';
-
     /**
      * Array of scripts that will be lazy loaded when interacting with the block.
      *
      * @var string[]
      */
     protected $scripts_to_lazy_load = array();
-
     /**
      *  Inc Tax label.
      *
      * @var string
      */
     protected $tax_label = '';
-
     /**
      *  Visibility of price including tax.
      *
      * @var string
      */
     protected $display_cart_prices_including_tax = false;
-
     /**
      * Block Hook API placements.
      *
@@ -58,7 +53,6 @@ class MiniCart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
     'version' => '8.4.0',
   ),
 );
-
     /**
      * Constructor.
      *

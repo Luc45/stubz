@@ -13,7 +13,6 @@ class CatalogSorting extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
      * @var string
      */
     protected $block_name = 'catalog-sorting';
-
     /**
      * Render the block.
      *

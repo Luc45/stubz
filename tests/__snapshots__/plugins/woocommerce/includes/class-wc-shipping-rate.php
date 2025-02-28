@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shipping rate class.
  */
@@ -24,7 +23,6 @@ class WC_Shipping_Rate
   'description' => '',
   'delivery_time' => '',
 );
-
     /**
      * Stores meta data for this rate.
      *
@@ -32,7 +30,6 @@ class WC_Shipping_Rate
      * @var   array
      */
     protected $meta_data = array();
-
     /**
      * Constructor.
      *

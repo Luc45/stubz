@@ -13,5 +13,4 @@ class MiniCartProductsTableBlock extends \Automattic\WooCommerce\Blocks\BlockTyp
      * @var string
      */
     protected $block_name = 'mini-cart-products-table-block';
-
 }

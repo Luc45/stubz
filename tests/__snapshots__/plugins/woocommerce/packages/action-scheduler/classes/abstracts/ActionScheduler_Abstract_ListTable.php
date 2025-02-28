@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Action Scheduler Abstract List Table class
  *
@@ -25,21 +24,18 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var string
      */
     protected $table_name = null;
-
     /**
      * Package name, used to get options from WP_List_Table::get_items_per_page.
      *
      * @var string
      */
     protected $package = null;
-
     /**
      * How many items do we render per page?
      *
      * @var int
      */
     protected $items_per_page = 10;
-
     /**
      * Enables search in this table listing. If this array
      * is empty it means the listing is not searchable.
@@ -47,7 +43,6 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var array
      */
     protected $search_by = array();
-
     /**
      * Columns to show in the table listing. It is a key => value pair. The
      * key must much the table column name and the value is the label, which is
@@ -56,7 +51,6 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var array
      */
     protected $columns = array();
-
     /**
      * Defines the row-actions. It expects an array where the key
      * is the column name and the value is an array of actions.
@@ -68,14 +62,12 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var array
      */
     protected $row_actions = array();
-
     /**
      * The Primary key of our table
      *
      * @var string
      */
     protected $ID = 'ID';
-
     /**
      * Enables sorting, it expects an array
      * of columns (the column names are the values)
@@ -83,35 +75,30 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var array
      */
     protected $sort_by = array();
-
     /**
      * The default sort order
      *
      * @var string
      */
     protected $filter_by = array();
-
     /**
      * The status name => count combinations for this table's items. Used to display status filters.
      *
      * @var array
      */
     protected $status_counts = array();
-
     /**
      * Notices to display when loading the table. Array of arrays of form array( 'class' => {updated|error}, 'message' => 'This is the notice text display.' ).
      *
      * @var array
      */
     protected $admin_notices = array();
-
     /**
      * Localised string displayed in the <h1> element above the able.
      *
      * @var string
      */
     protected $table_header = null;
-
     /**
      * Enables bulk actions. It must be an array where the key is the action name
      * and the value is the label (which is translated automatically). It is important
@@ -126,7 +113,6 @@ abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
      * @var array
      */
     protected $bulk_actions = array();
-
     /**
      * Makes translation easier, it basically just wraps
      * `_x` with some default (the package name).

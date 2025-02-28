@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Revenue\Stats;
  * @internal
  * @extends GenericStatsController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsController
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsController implements \Automattic\WooCommerce\Admin\API\Reports\ExportableInterface
 {
     /**
      * Route base.
@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
      * @var string
      */
     protected $rest_base = 'reports/revenue/stats';
-
     /**
      * Maps query arguments from the REST request.
      *

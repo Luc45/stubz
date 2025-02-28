@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CRON field factory implementing a flyweight factory
  *
@@ -12,7 +11,6 @@ class CronExpression_FieldFactory
      * @var array Cache of instantiated fields
      */
     private $fields = array();
-
     /**
      * Get an instance of a field object for a cron expression position
      *

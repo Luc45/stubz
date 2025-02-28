@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Report Top Sellers controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Report_Top_Sellers_V1_Controller extends \WC_REST_Report_Sales_V1_
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'reports/top_sellers';
-
     /**
      * Get sales reports.
      *

@@ -15,7 +15,6 @@ class Images extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
      * @var string
      */
     protected $endpoint = 'images';
-
     /**
      * Register routes.
      */

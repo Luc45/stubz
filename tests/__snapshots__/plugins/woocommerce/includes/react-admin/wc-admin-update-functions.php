@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Update order stats `status` index length.
  * See: https://github.com/woocommerce/woocommerce-admin/issues/2969.

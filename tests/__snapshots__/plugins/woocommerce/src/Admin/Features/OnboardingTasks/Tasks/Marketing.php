@@ -13,7 +13,6 @@ class Marketing extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\T
      * @var null
      */
     private $is_complete_result = null;
-
     /**
      * ID.
      *

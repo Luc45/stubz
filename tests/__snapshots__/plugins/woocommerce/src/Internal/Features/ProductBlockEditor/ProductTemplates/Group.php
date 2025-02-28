@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Class for Group block.
  */
-class Group extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\ProductBlock
+class Group extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\ProductBlock implements \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\GroupInterface
 {
     /**
      * Group Block constructor.

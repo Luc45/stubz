@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Widget recent reviews class.
  */

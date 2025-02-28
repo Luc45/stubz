@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_wcSystemStatus
  */
@@ -11,7 +10,6 @@ class ActionScheduler_wcSystemStatus
      * @var ActionScheduler_Store
      */
     protected $store = null;
-
     /**
      * Constructor method for ActionScheduler_wcSystemStatus.
      *

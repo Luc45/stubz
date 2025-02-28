@@ -11,7 +11,6 @@ namespace Automattic\WooCommerce\Blocks;
 class InboxNotifications
 {
     const SURFACE_CART_CHECKOUT_NOTE_NAME = 'surface_cart_checkout';
-
     /**
      * Deletes the note.
      */

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class ArrayKeys
+class ArrayKeys implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers\TransformerInterface
 {
     /**
      * Search array value by one of its key.

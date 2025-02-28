@@ -10,14 +10,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class BillingAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractAddressSchema
 {
     const IDENTIFIER = 'billing-address';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'billing_address';
-
     /**
      * Term properties.
      *

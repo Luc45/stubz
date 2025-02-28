@@ -11,7 +11,6 @@ class Counter
      * A static property holding the counter value.
      */
     private static int $count = 0;
-
     /**
      * Increments the static counter.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Commands for Action Scheduler.
  */

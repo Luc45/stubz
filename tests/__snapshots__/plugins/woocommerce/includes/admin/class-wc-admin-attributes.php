@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Attributes Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Attributes
      * @var int
      */
     private static $edited_attribute_id = null;
-
     /**
      * Handles output of the attributes page in admin.
      *

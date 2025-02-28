@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Shipping Zones base class.
  *
@@ -14,14 +13,12 @@ abstract class WC_REST_Shipping_Zones_Controller_Base extends \WC_REST_Controlle
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'shipping/zones';
-
     /**
      * Retrieve a Shipping Zone by it's ID.
      *

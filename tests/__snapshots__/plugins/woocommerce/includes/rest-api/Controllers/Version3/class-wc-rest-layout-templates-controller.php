@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Layout Templates controller class.
  */
@@ -11,14 +10,12 @@ class WC_REST_Layout_Templates_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'layout-templates';
-
     /**
      * Register the routes for template layouts.
      */

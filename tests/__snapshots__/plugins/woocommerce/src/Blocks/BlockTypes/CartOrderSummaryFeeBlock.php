@@ -13,5 +13,4 @@ class CartOrderSummaryFeeBlock extends \Automattic\WooCommerce\Blocks\BlockTypes
      * @var string
      */
     protected $block_name = 'cart-order-summary-fee-block';
-
 }

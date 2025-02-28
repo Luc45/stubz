@@ -13,14 +13,12 @@ class UI
      * @var Register
      */
     private $register = null;
-
     /**
      * The WP_List_Table instance used to display approved directories.
      *
      * @var Table
      */
     private $table = null;
-
     /**
      * Sets up UI controls for product download URLs.
      *

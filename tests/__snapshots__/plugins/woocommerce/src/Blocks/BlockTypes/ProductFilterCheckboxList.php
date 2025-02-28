@@ -13,7 +13,6 @@ final class ProductFilterCheckboxList extends \Automattic\WooCommerce\Blocks\Blo
      * @var string
      */
     protected $block_name = 'product-filter-checkbox-list';
-
     /**
      * Render the block.
      *

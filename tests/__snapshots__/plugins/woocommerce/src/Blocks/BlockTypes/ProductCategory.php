@@ -13,7 +13,6 @@ class ProductCategory extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'product-category';
-
     /**
      * Set args specific to this block
      *

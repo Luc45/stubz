@@ -18,14 +18,12 @@ namespace Automattic\WooCommerce\Caching;
 abstract class ObjectCache
 {
     const DEFAULT_EXPIRATION = -1;
-
     /**
      * This needs to be set in each derived class.
      *
      * @var string
      */
     private $object_type = null;
-
     /**
      * Default value for the duration of the objects in the cache, in seconds
      * (may not be used depending on the cache engine used WordPress cache implementation).
@@ -33,21 +31,18 @@ abstract class ObjectCache
      * @var int
      */
     protected $default_expiration;
-
     /**
      * Temporarily used when retrieving data in 'get'.
      *
      * @var array
      */
     private $last_cached_data = null;
-
     /**
      * The cache engine to use.
      *
      * @var ?CacheEngine
      */
     private $cache_engine = null;
-
     /**
      * Gets an identifier for the types of objects cached by this class.
      * This identifier will be used to compose the keys passed to the cache engine.

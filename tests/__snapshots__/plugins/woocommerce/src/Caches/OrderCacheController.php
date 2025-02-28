@@ -13,21 +13,18 @@ class OrderCacheController
      * @var OrderCache
      */
     private $order_cache = null;
-
     /**
      * The orders cache to use.
      *
      * @var FeaturesController
      */
     private $features_controller = null;
-
     /**
      * The backup value of the cache usage enable status, stored while the cache is temporarily disabled.
      *
      * @var null|bool
      */
     private $orders_cache_usage_backup = null;
-
     /**
      * Class initialization, invoked by the DI container.
      *

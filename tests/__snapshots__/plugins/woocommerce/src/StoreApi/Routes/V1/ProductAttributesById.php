@@ -8,9 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class ProductAttributesById extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const IDENTIFIER = 'product-attributes-by-id';
-
     const SCHEMA_TYPE = 'product-attribute';
-
     /**
      * Get the path of this REST route.
      *

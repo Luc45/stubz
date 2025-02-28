@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_DBStore
  *
@@ -18,21 +17,18 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      * @var DateTime|null
      */
     private $claim_before_date = null;
-
     /**
      * Maximum length of args.
      *
      * @var int
      */
     protected static $max_args_length = 8000;
-
     /**
      * Maximum length of index.
      *
      * @var int
      */
     protected static $max_index_length = 191;
-
     /**
      * List of claim filters.
      *
@@ -43,7 +39,6 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
   'hooks' => '',
   'exclude-groups' => '',
 );
-
     /**
      * Initialize the data store
      *

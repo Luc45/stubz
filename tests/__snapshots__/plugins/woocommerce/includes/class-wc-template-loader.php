@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Template loader class.
  */
@@ -11,21 +10,18 @@ class WC_Template_Loader
      * @var integer
      */
     private static $shop_page_id = 0;
-
     /**
      * Store whether we're processing a product inside the_content filter.
      *
      * @var boolean
      */
     private static $in_content_filter = false;
-
     /**
      * Is WooCommerce support defined?
      *
      * @var boolean
      */
     private static $theme_support = false;
-
     /**
      * Hook in methods.
      */

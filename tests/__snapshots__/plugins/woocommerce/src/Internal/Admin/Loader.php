@@ -13,21 +13,18 @@ class Loader
      * @var Loader instance
      */
     protected static $instance = null;
-
     /**
      * An array of classes to load from the includes folder.
      *
      * @var array
      */
     protected static $classes = array();
-
     /**
      * WordPress capability required to use analytics features.
      *
      * @var string
      */
     protected static $required_capability = null;
-
     /**
      * An array of dependencies that have been preloaded (to avoid duplicates).
      *
@@ -39,7 +36,6 @@ class Loader
   'style' => 
   array(),
 );
-
     /**
      * Get class instance.
      */

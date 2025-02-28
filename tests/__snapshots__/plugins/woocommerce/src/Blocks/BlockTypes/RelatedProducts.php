@@ -13,14 +13,12 @@ class RelatedProducts extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @var string
      */
     protected $block_name = 'related-products';
-
     /**
      * The Block with its attributes before it gets rendered
      *
      * @var array
      */
     protected $parsed_block = null;
-
     /**
      * Initialize this block type.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Change get terms defaults for attributes to order by the sorting setting, or default to menu_order for sortable taxonomies.
  *

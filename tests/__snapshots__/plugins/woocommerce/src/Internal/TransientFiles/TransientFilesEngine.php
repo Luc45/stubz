@@ -25,19 +25,16 @@ namespace Automattic\WooCommerce\Internal\TransientFiles;
  * available in the WooCommerce tools page. The action runs once per day but this can be customized
  * via a dedicated hook.
  */
-class TransientFilesEngine
+class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     const CLEANUP_ACTION_NAME = 'woocommerce_expired_transient_files_cleanup';
-
     const CLEANUP_ACTION_GROUP = 'wc_batch_processes';
-
     /**
      * The instance of LegacyProxy to use.
      *
      * @var LegacyProxy
      */
     private $legacy_proxy = null;
-
     /**
      * Register hooks.
      */

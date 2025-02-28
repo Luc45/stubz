@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class InstallJPAndWCSPlugins
 {
     const NOTE_NAME = 'wc-admin-install-jp-and-wcs-plugins';
-
     /**
      * Constructor.
      */

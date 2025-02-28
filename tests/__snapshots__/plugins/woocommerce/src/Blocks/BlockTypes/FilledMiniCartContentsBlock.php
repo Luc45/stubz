@@ -13,5 +13,4 @@ class FilledMiniCartContentsBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var string
      */
     protected $block_name = 'filled-mini-cart-contents-block';
-
 }

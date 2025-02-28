@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Standard way of retrieving products based on certain parameters.
  *

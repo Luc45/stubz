@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
  *
  * This exception is thrown if any items are out of stock after each product on a draft order has been stock checked.
  */
-class InvalidStockLevelsInCartException extends \Exception implements \Stringable, \Throwable
+class InvalidStockLevelsInCartException extends \Exception
 {
     /**
      * Sanitized error code.
@@ -15,21 +15,18 @@ class InvalidStockLevelsInCartException extends \Exception implements \Stringabl
      * @var string
      */
     public $error_code = null;
-
     /**
      * Additional error data.
      *
      * @var array
      */
     public $additional_data = array();
-
     /**
      * All errors to display to the user.
      *
      * @var WP_Error
      */
     public $error = null;
-
     /**
      * Setup exception.
      *

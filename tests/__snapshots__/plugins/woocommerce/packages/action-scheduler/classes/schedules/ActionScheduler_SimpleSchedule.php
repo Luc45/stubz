@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_SimpleSchedule
  */
@@ -11,7 +10,6 @@ class ActionScheduler_SimpleSchedule extends \ActionScheduler_Abstract_Schedule
      * @var null|DateTime
      */
     private $timestamp = null;
-
     /**
      * Calculate when this schedule should start after a given date & time using
      * the number of seconds between recurrences.

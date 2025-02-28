@@ -8,70 +8,60 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class CartSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'cart';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'cart';
-
     /**
      * Item schema instance.
      *
      * @var CartItemSchema
      */
     public $item_schema = null;
-
     /**
      * Coupon schema instance.
      *
      * @var CartCouponSchema
      */
     public $coupon_schema = null;
-
     /**
      * Product item schema instance representing cross-sell items.
      *
      * @var ProductSchema
      */
     public $cross_sells_item_schema = null;
-
     /**
      * Fee schema instance.
      *
      * @var CartFeeSchema
      */
     public $fee_schema = null;
-
     /**
      * Shipping rates schema instance.
      *
      * @var CartShippingRateSchema
      */
     public $shipping_rate_schema = null;
-
     /**
      * Shipping address schema instance.
      *
      * @var ShippingAddressSchema
      */
     public $shipping_address_schema = null;
-
     /**
      * Billing address schema instance.
      *
      * @var BillingAddressSchema
      */
     public $billing_address_schema = null;
-
     /**
      * Error schema instance.
      *
      * @var ErrorSchema
      */
     public $error_schema = null;
-
     /**
      * Constructor.
      *

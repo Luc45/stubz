@@ -13,5 +13,4 @@ class CheckoutAdditionalInformationBlock extends \Automattic\WooCommerce\Blocks\
      * @var string
      */
     protected $block_name = 'checkout-additional-information-block';
-
 }

@@ -13,7 +13,6 @@ class TotalsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfi
      * @var string
      */
     protected $block_name = 'order-confirmation-totals-wrapper';
-
     /**
      * This renders the content of the totals wrapper.
      *

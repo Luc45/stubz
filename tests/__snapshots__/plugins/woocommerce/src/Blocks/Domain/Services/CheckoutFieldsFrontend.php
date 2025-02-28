@@ -13,7 +13,6 @@ class CheckoutFieldsFrontend
      * @var CheckoutFields
      */
     private $checkout_fields_controller = null;
-
     /**
      * Sets up core fields.
      *

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Formatters;
 /**
  * Default Formatter.
  */
-class DefaultFormatter
+class DefaultFormatter implements \Automattic\WooCommerce\StoreApi\Formatters\FormatterInterface
 {
     /**
      * Format a given value and return the result.

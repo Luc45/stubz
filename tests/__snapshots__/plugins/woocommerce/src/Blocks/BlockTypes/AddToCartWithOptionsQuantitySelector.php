@@ -13,7 +13,6 @@ class AddToCartWithOptionsQuantitySelector extends \Automattic\WooCommerce\Block
      * @var string
      */
     protected $block_name = 'add-to-cart-with-options-quantity-selector';
-
     /**
      * Get the block's attributes.
      *

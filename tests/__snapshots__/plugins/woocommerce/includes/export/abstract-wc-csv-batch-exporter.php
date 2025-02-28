@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_CSV_Exporter Class.
  */
@@ -11,7 +10,6 @@ abstract class WC_CSV_Batch_Exporter extends \WC_CSV_Exporter
      * @var integer
      */
     protected $page = 1;
-
     /**
      * Constructor.
      */

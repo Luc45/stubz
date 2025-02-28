@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Free Shipping Method.
  *
@@ -17,14 +16,12 @@ class WC_Shipping_Free_Shipping extends \WC_Shipping_Method
      * @var integer
      */
     public $min_amount = 0;
-
     /**
      * Requires option.
      *
      * @var string
      */
     public $requires = '';
-
     /**
      * Ignore discounts.
      *
@@ -33,7 +30,6 @@ class WC_Shipping_Free_Shipping extends \WC_Shipping_Method
      * @var string
      */
     public $ignore_discounts = null;
-
     /**
      * Constructor.
      *

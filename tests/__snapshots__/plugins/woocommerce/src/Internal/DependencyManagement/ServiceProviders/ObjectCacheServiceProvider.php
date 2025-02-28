@@ -15,7 +15,6 @@ class ObjectCacheServiceProvider extends \Automattic\WooCommerce\Internal\Depend
     protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Caching\\WPCacheEngine',
 );
-
     /**
      * Register the classes.
      */

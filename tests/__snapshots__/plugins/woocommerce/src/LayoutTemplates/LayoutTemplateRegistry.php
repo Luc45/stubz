@@ -13,21 +13,18 @@ final class LayoutTemplateRegistry
      * @var LayoutTemplateRegistry|null
      */
     private static $instance = null;
-
     /**
      * Layout templates info.
      *
      * @var array
      */
     protected $layout_templates_info = array();
-
     /**
      * Layout template instances.
      *
      * @var array
      */
     protected $layout_template_instances = array();
-
     /**
      * Get the instance of the class.
      */

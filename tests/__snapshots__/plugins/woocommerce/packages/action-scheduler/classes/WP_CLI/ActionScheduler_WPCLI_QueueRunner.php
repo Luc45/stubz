@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WP CLI Queue runner.
  *
@@ -13,21 +12,18 @@ class ActionScheduler_WPCLI_QueueRunner extends \ActionScheduler_Abstract_QueueR
      * @var array
      */
     protected $actions = null;
-
     /**
      * ActionScheduler_ActionClaim instance.
      *
      * @var ActionScheduler_ActionClaim
      */
     protected $claim = null;
-
     /**
      * Progress bar instance.
      *
      * @var \cli\progress\Bar
      */
     protected $progress_bar = null;
-
     /**
      * ActionScheduler_WPCLI_QueueRunner constructor.
      *

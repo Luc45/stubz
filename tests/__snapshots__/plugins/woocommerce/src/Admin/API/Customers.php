@@ -16,7 +16,6 @@ class Customers extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Cont
      * @var string
      */
     protected $rest_base = 'customers';
-
     /**
      * Register the routes for customers.
      */

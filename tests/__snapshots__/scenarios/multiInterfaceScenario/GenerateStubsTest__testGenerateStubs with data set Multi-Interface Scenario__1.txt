@@ -19,14 +19,14 @@ interface TwoInterface
 /**
  * CombinedInterface extends both OneInterface and TwoInterface.
  */
-interface CombinedInterface
+interface CombinedInterface extends \MultiInterface\OneInterface, \MultiInterface\TwoInterface
 {
     public function combined(): bool;
 }
 /**
  * A class implementing all methods from CombinedInterface (and thus from both OneInterface & TwoInterface).
  */
-class CombinedImplementation implements \MultiInterface\CombinedInterface, \MultiInterface\OneInterface, \MultiInterface\TwoInterface
+class CombinedImplementation implements \MultiInterface\CombinedInterface
 {
     public function one(): void
 {

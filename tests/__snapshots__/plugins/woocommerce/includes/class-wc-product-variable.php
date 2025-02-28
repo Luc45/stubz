@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Variable product class.
  */
@@ -11,21 +10,18 @@ class WC_Product_Variable extends \WC_Product
      * @var array
      */
     protected $children = null;
-
     /**
      * Array of visible children variation IDs. Determined by children.
      *
      * @var array
      */
     protected $visible_children = null;
-
     /**
      * Array of variation attributes IDs. Determined by children.
      *
      * @var array
      */
     protected $variation_attributes = null;
-
     /**
      * Get internal type.
      *

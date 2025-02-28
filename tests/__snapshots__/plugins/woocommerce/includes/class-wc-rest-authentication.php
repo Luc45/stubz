@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API authentication class.
  */
@@ -11,21 +10,18 @@ class WC_REST_Authentication
      * @var WP_Error
      */
     protected $error = null;
-
     /**
      * Logged in user data.
      *
      * @var stdClass
      */
     protected $user = null;
-
     /**
      * Current auth method.
      *
      * @var string
      */
     protected $auth_method = '';
-
     /**
      * Provides access to the global WC_REST_Authentication instance.
      *

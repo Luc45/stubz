@@ -13,7 +13,6 @@ final class ProductFilterActive extends \Automattic\WooCommerce\Blocks\BlockType
      * @var string
      */
     protected $block_name = 'product-filter-active';
-
     /**
      * Render the block.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Brands class.
  *
@@ -15,7 +14,6 @@ class WC_Brands
      * @var mixed|null
      */
     public $template_url = null;
-
     /**
      * __construct function.
      */

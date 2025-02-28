@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Register WP admin settings class.
  */
@@ -12,7 +11,6 @@ class WC_Register_WP_Admin_Settings
      * @var WC_Register_WP_Admin_Settings
      */
     protected $object = null;
-
     /**
      * Hooks into the settings API and starts registering our settings.
      *

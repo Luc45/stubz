@@ -10,14 +10,12 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 final class ProductFilterRating extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const RATING_FILTER_QUERY_VAR = 'rating_filter';
-
     /**
      * Block name.
      *
      * @var string
      */
     protected $block_name = 'product-filter-rating';
-
     /**
      * Initialize this block type.
      *

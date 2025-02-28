@@ -16,7 +16,6 @@ class ProductAttributeTerms extends \WC_REST_Product_Attribute_Terms_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Register the routes for custom product attributes.
      */

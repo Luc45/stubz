@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Email Class
  *
@@ -18,28 +17,24 @@ class WC_Email extends \WC_Settings_API
      * @var String
      */
     public $id = null;
-
     /**
      * Email method title.
      *
      * @var string
      */
     public $title = null;
-
     /**
      * 'yes' if the method is enabled.
      *
      * @var string yes, no
      */
     public $enabled = null;
-
     /**
      * Description for the email.
      *
      * @var string
      */
     public $description = null;
-
     /**
      * Default heading.
      *
@@ -49,7 +44,6 @@ class WC_Email extends \WC_Settings_API
      * @var string
      */
     public $heading = '';
-
     /**
      * Default subject.
      *
@@ -59,77 +53,66 @@ class WC_Email extends \WC_Settings_API
      * @var string
      */
     public $subject = '';
-
     /**
      * Plain text template path.
      *
      * @var string
      */
     public $template_plain = null;
-
     /**
      * HTML template path.
      *
      * @var string
      */
     public $template_html = null;
-
     /**
      * Template path.
      *
      * @var string
      */
     public $template_base = null;
-
     /**
      * Recipients for the email.
      *
      * @var string
      */
     public $recipient = null;
-
     /**
      * Object this email is for, for example a customer, product, or email.
      *
      * @var object|bool
      */
     public $object = null;
-
     /**
      * Mime boundary (for multipart emails).
      *
      * @var string
      */
     public $mime_boundary = null;
-
     /**
      * Mime boundary header (for multipart emails).
      *
      * @var string
      */
     public $mime_boundary_header = null;
-
     /**
      * True when email is being sent.
      *
      * @var bool
      */
     public $sending = null;
-
     /**
      * True when the email notification is sent manually only.
      *
      * @var bool
      */
     protected $manual = false;
-
     /**
      * True when the email notification is sent to customers.
      *
      * @var bool
      */
     protected $customer_email = false;
-
     /**
      *  List of preg* regular expression patterns to search for,
      *  used in conjunction with $plain_replace.
@@ -159,7 +142,6 @@ class WC_Email extends \WC_Settings_API
   17 => '/&[^&\\s;]+;/i',
   18 => '/[ ]{2,}/',
 );
-
     /**
      *  List of pattern replacements corresponding to patterns searched.
      *
@@ -187,14 +169,12 @@ class WC_Email extends \WC_Settings_API
   17 => '',
   18 => ' ',
 );
-
     /**
      * Strings to find/replace in subjects/headings.
      *
      * @var array
      */
     public $placeholders = array();
-
     /**
      * Strings to find in subjects/headings.
      *
@@ -202,7 +182,6 @@ class WC_Email extends \WC_Settings_API
      * @var array
      */
     public $find = array();
-
     /**
      * Strings to replace in subjects/headings.
      *
@@ -210,14 +189,12 @@ class WC_Email extends \WC_Settings_API
      * @var array
      */
     public $replace = array();
-
     /**
      * E-mail type: plain, html or multipart.
      *
      * @var string
      */
     public $email_type = null;
-
     /**
      * Constructor.
      */

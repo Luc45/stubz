@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class ProductTags extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractTermsRoute
 {
     const IDENTIFIER = 'product-tags';
-
     /**
      * Get the path of this REST route.
      *

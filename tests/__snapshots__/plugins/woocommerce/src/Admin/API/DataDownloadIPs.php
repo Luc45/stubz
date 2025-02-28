@@ -16,14 +16,12 @@ class DataDownloadIPs extends \WC_REST_Data_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'data/download-ips';
-
     /**
      * Register routes.
      *

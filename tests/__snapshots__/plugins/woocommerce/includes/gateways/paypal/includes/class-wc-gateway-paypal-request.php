@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Generates requests to send to PayPal.
  */
@@ -11,28 +10,24 @@ class WC_Gateway_Paypal_Request
      * @var array
      */
     protected $line_items = array();
-
     /**
      * Pointer to gateway making the request.
      *
      * @var WC_Gateway_Paypal
      */
     protected $gateway = null;
-
     /**
      * Endpoint for requests from PayPal.
      *
      * @var string
      */
     protected $notify_url = null;
-
     /**
      * Endpoint for requests to PayPal.
      *
      * @var string
      */
     protected $endpoint = null;
-
     /**
      * Constructor.
      *

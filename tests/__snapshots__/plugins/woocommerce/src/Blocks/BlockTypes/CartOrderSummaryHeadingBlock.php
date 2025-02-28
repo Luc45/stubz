@@ -13,5 +13,4 @@ class CartOrderSummaryHeadingBlock extends \Automattic\WooCommerce\Blocks\BlockT
      * @var string
      */
     protected $block_name = 'cart-order-summary-heading-block';
-
 }

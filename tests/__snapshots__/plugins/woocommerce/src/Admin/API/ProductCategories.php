@@ -16,5 +16,4 @@ class ProductCategories extends \WC_REST_Product_Categories_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
 }

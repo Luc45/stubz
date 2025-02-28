@@ -28,7 +28,6 @@ class Migration
     1 => 'wc_blocks_update_1120_rename_cart_template',
   ),
 );
-
     /**
      * Runs all the necessary migrations.
      *
@@ -57,5 +56,4 @@ class Migration
 }
 }
 const WP_POST_REVISIONS = false;
-
 const WP_POST_REVISIONS = false;

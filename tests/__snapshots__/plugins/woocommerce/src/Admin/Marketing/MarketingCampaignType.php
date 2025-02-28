@@ -15,42 +15,36 @@ class MarketingCampaignType
      * @var string
      */
     protected $id = null;
-
     /**
      * The marketing channel that this campaign type belongs to.
      *
      * @var MarketingChannelInterface
      */
     protected $channel = null;
-
     /**
      * Name of the marketing campaign type.
      *
      * @var string
      */
     protected $name = null;
-
     /**
      * Description of the marketing campaign type.
      *
      * @var string
      */
     protected $description = null;
-
     /**
      * The URL to the create campaign page.
      *
      * @var string
      */
     protected $create_url = null;
-
     /**
      * The URL to an image/icon for the campaign type.
      *
      * @var string
      */
     protected $icon_url = null;
-
     /**
      * MarketingCampaignType constructor.
      *

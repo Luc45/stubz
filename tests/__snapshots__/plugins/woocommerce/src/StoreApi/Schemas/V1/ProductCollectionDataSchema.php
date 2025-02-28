@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class ProductCollectionDataSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'product-collection-data';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'product-collection-data';
-
     /**
      * Product collection data schema properties.
      *

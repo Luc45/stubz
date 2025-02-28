@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class SellingOnlineCourses
 {
     const NOTE_NAME = 'wc-admin-selling-online-courses';
-
     /**
      * Attach hooks.
      */

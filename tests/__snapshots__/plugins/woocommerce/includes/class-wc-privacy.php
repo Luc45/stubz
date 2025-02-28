@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Privacy Class.
  */
@@ -11,7 +10,6 @@ class WC_Privacy extends \WC_Abstract_Privacy
      * @var WC_Privacy_Background_Process
      */
     protected static $background_process = null;
-
     /**
      * Init - hook into events.
      */

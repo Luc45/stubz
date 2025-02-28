@@ -53,7 +53,6 @@ class UpdateProducts
     'price' => 115,
   ),
 );
-
     /**
      * Generate AI content and assign AI-managed images to Products.
      *

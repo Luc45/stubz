@@ -1,12 +1,11 @@
 <?php
-
 /**
  * Abstract WC Log Handler Class
  *
  * @version        1.0.0
  * @package        WooCommerce\Abstracts
  */
-abstract class WC_Log_Handler
+abstract class WC_Log_Handler implements \WC_Log_Handler_Interface
 {
     /**
      * Formats a timestamp for use in log messages.

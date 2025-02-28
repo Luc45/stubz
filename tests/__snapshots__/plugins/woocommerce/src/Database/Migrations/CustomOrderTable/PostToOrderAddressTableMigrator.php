@@ -16,7 +16,6 @@ class PostToOrderAddressTableMigrator extends \Automattic\WooCommerce\Database\M
      * @var $type
      */
     protected $type = null;
-
     /**
      * PostToOrderAddressTableMigrator constructor.
      *

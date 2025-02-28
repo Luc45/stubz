@@ -18,7 +18,6 @@ class MarketingServiceProvider extends \Automattic\WooCommerce\Internal\Dependen
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Marketing\\MarketingSpecs',
   1 => 'Automattic\\WooCommerce\\Admin\\Marketing\\MarketingChannels',
 );
-
     /**
      * Register the classes.
      */

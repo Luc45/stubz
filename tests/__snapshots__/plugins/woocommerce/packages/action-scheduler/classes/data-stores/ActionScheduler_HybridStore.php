@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_HybridStore
  *
@@ -10,28 +9,24 @@
 class ActionScheduler_HybridStore extends \ActionScheduler_Store
 {
     const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
-
     /**
      * Primary store instance.
      *
      * @var ActionScheduler_Store
      */
     private $primary_store = null;
-
     /**
      * Secondary store instance.
      *
      * @var ActionScheduler_Store
      */
     private $secondary_store = null;
-
     /**
      * Runner instance.
      *
      * @var Action_Scheduler\Migration\Runner
      */
     private $migration_runner = null;
-
     /**
      * The dividing line between IDs of actions created
      * by the primary and secondary stores.
@@ -46,7 +41,6 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      * might be requested.
      */
     private $demarkation_id = 0;
-
     /**
      * ActionScheduler_HybridStore constructor.
      *

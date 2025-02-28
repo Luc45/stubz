@@ -8,28 +8,24 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 class Init
 {
     const EDITOR_CONTEXT_NAME = 'woocommerce/edit-product';
-
     /**
      * Supported product types.
      *
      * @var array
      */
     private $supported_product_types;
-
     /**
      * Registered product templates.
      *
      * @var array
      */
     private $product_templates = array();
-
     /**
      * Redirection controller.
      *
      * @var RedirectionController
      */
     private $redirection_controller = null;
-
     /**
      * Constructor
      */

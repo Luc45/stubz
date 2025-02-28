@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_WPCommentCleaner
  *
@@ -13,7 +12,6 @@ class ActionScheduler_WPCommentCleaner
      * @var string
      */
     protected static $cleanup_hook = 'action_scheduler/cleanup_wp_comment_logs';
-
     /**
      * An instance of the ActionScheduler_wpCommentLogger class to interact with the comments table.
      *
@@ -22,14 +20,12 @@ class ActionScheduler_WPCommentCleaner
      * @var ActionScheduler_wpCommentLogger
      */
     protected static $wp_comment_logger = null;
-
     /**
      * The key used to store the cached value of whether there are logs in the WP comment table.
      *
      * @var string
      */
     protected static $has_logs_option_key = 'as_has_wp_comment_logs';
-
     /**
      * Initialize the class and attach callbacks.
      */

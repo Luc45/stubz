@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Customers controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Customer_Downloads_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'customers/(?P<customer_id>[\\d]+)/downloads';
-
     /**
      * Register the routes for customers.
      */

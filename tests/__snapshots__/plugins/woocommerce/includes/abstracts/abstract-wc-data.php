@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract WC Data Class
  *
@@ -8,7 +7,7 @@
  * @version  2.6.0
  * @package  WooCommerce\Abstracts
  */
-abstract class WC_Data implements \Stringable
+abstract class WC_Data
 {
     /**
      * ID for this object.
@@ -17,7 +16,6 @@ abstract class WC_Data implements \Stringable
      * @var int
      */
     protected $id = 0;
-
     /**
      * Core data for this object. Name value pairs (name + default value).
      *
@@ -25,7 +23,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $data = array();
-
     /**
      * Core data changes for this object.
      *
@@ -33,7 +30,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $changes = array();
-
     /**
      * This is false until the object is read from the DB.
      *
@@ -41,7 +37,6 @@ abstract class WC_Data implements \Stringable
      * @var bool
      */
     protected $object_read = false;
-
     /**
      * This is the name of this object type.
      *
@@ -49,7 +44,6 @@ abstract class WC_Data implements \Stringable
      * @var string
      */
     protected $object_type = 'data';
-
     /**
      * Extra data for this object. Name value pairs (name + default value).
      * Used as a standard way for sub classes (like product types) to add
@@ -59,7 +53,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $extra_data = array();
-
     /**
      * Set to _data on construct so we can track and reset data if needed.
      *
@@ -67,7 +60,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $default_data = array();
-
     /**
      * Contains a reference to the data store for this class.
      *
@@ -75,7 +67,6 @@ abstract class WC_Data implements \Stringable
      * @var object
      */
     protected $data_store = null;
-
     /**
      * Stores meta in cache for future reads.
      * A group must be set to to enable caching.
@@ -84,7 +75,6 @@ abstract class WC_Data implements \Stringable
      * @var string
      */
     protected $cache_group = '';
-
     /**
      * Stores additional meta data.
      *
@@ -92,7 +82,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $meta_data = null;
-
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
      * With custom tables, some of these are moved from metadata to their own columns, but existing code will still try to add them to metadata. This array is used to keep track of such properties.
@@ -102,7 +91,6 @@ abstract class WC_Data implements \Stringable
      * @var array
      */
     protected $legacy_datastore_props = array();
-
     /**
      * Default constructor.
      *

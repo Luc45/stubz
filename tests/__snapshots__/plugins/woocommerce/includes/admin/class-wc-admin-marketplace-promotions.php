@@ -1,23 +1,18 @@
 <?php
-
 /**
  * WC_Admin_Marketplace_Promotions class.
  */
 class WC_Admin_Marketplace_Promotions
 {
     const CRON_NAME = 'woocommerce_marketplace_cron_fetch_promotions';
-
     const TRANSIENT_NAME = 'woocommerce_marketplace_promotions_v2';
-
     const PROMOTIONS_API_URL = 'https://woocommerce.com/wp-json/wccom-extensions/3.0/promotions';
-
     /**
      * The user's locale, for example en_US.
      *
      * @var string
      */
     public static string $locale;
-
     /**
      * On all admin pages, try go get Marketplace promotions every day.
      * Shows notice and adds menu badge to WooCommerce Extensions item

@@ -13,7 +13,6 @@ class ProductsByAttribute extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'products-by-attribute';
-
     /**
      * Set args specific to this block
      *

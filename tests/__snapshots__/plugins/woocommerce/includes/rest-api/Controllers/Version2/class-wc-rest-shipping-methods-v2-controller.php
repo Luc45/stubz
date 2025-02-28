@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shipping methods controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Shipping_Methods_V2_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'shipping_methods';
-
     /**
      * Register the route for /shipping_methods and /shipping_methods/<method>
      */

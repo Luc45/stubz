@@ -8,11 +8,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class OrderMilestones
 {
     const NOTE_NAME = 'wc-admin-orders-milestone';
-
     const LAST_ORDER_MILESTONE_OPTION_KEY = 'woocommerce_admin_last_orders_milestone';
-
     const PROCESS_ORDERS_MILESTONE_HOOK = 'wc_admin_process_orders_milestone';
-
     /**
      * Allowed order statuses for calculating milestones.
      *
@@ -23,14 +20,12 @@ class OrderMilestones
   1 => 'processing',
   2 => 'completed',
 );
-
     /**
      * Orders count cache.
      *
      * @var int
      */
     protected $orders_count = null;
-
     /**
      * Further order milestone thresholds.
      *
@@ -48,7 +43,6 @@ class OrderMilestones
   8 => 500000,
   9 => 1000000,
 );
-
     /**
      * Delay hook attachment until after the WC post types have been registered.
      *

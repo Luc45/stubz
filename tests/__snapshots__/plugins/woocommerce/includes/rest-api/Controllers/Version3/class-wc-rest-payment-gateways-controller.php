@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Payment gateways controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Payment_Gateways_Controller extends \WC_REST_Payment_Gateways_V2_C
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Prepare a payment gateway for response.
      *

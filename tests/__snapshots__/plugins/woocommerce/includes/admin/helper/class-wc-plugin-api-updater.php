@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class WC_Plugin_Api_Updater
  */

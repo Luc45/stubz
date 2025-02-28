@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Merge data into the state with the given namespace.
  *

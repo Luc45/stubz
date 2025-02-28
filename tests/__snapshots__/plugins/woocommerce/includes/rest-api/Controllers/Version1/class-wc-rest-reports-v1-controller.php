@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Reports controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Reports_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'reports';
-
     /**
      * Register the routes for reports.
      */

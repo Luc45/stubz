@@ -1,16 +1,12 @@
 <?php
-
 /**
  * WC_Install Class.
  */
 class WC_Install
 {
     const NEWLY_INSTALLED_OPTION = 'woocommerce_newly_installed';
-
     const INITIAL_INSTALLED_VERSION = 'woocommerce_initial_installed_version';
-
     const STORE_ID_OPTION = 'woocommerce_store_id';
-
     /**
      * DB updates and callbacks that need to be run per version.
      *
@@ -310,7 +306,6 @@ class WC_Install
     0 => 'wc_update_961_migrate_default_email_base_color',
   ),
 );
-
     /**
      * Hook in tabs.
      */

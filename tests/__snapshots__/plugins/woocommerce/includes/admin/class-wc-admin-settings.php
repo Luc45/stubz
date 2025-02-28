@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Settings Class.
  */
@@ -11,21 +10,18 @@ class WC_Admin_Settings
      * @var array
      */
     private static $settings = array();
-
     /**
      * Error messages.
      *
      * @var array
      */
     private static $errors = array();
-
     /**
      * Update messages.
      *
      * @var array
      */
     private static $messages = array();
-
     /**
      * Include the settings page classes.
      */

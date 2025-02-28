@@ -29,49 +29,42 @@ class OrdersTableFieldQuery
   15 => 'BETWEEN',
   16 => 'NOT BETWEEN',
 );
-
     /**
      * The original query object.
      *
      * @var OrdersTableQuery
      */
     private $query = null;
-
     /**
      * Determines whether the field query should produce no results due to an invalid argument.
      *
      * @var boolean
      */
     private $force_no_results = false;
-
     /**
      * Holds a sanitized version of the `field_query`.
      *
      * @var array
      */
     private $queries = array();
-
     /**
      * JOIN clauses to add to the main SQL query.
      *
      * @var array
      */
     private $join = array();
-
     /**
      * WHERE clauses to add to the main SQL query.
      *
      * @var array
      */
     private $where = array();
-
     /**
      * Table aliases in use by the field query. Used to keep track of JOINs and optimize when possible.
      *
      * @var array
      */
     private $table_aliases = array();
-
     /**
      * Constructor.
      *

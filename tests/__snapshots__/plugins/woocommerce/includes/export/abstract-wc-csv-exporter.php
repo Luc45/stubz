@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_CSV_Exporter Class.
  */
@@ -11,63 +10,54 @@ abstract class WC_CSV_Exporter
      * @var string
      */
     protected $export_type = '';
-
     /**
      * Filename to export to.
      *
      * @var string
      */
     protected $filename = 'wc-export.csv';
-
     /**
      * Batch limit.
      *
      * @var integer
      */
     protected $limit = 50;
-
     /**
      * Number exported.
      *
      * @var integer
      */
     protected $exported_row_count = 0;
-
     /**
      * Raw data to export.
      *
      * @var array
      */
     protected $row_data = array();
-
     /**
      * Total rows to export.
      *
      * @var integer
      */
     protected $total_rows = 0;
-
     /**
      * Columns ids and names.
      *
      * @var array
      */
     protected $column_names = array();
-
     /**
      * List of columns to export, or empty for all.
      *
      * @var array
      */
     protected $columns_to_export = array();
-
     /**
      * The delimiter parameter sets the field delimiter (one character only).
      *
      * @var string
      */
     protected $delimiter = ',';
-
     /**
      * Prepare data that will be exported.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_WCCOM_Site_Installation_Manager class
  */
@@ -12,21 +11,18 @@ class WC_WCCOM_Site_Installation_Manager
   3 => 'move_product',
   4 => 'activate_product',
 );
-
     /**
      * The product ID.
      *
      * @var int
      */
     protected $product_id = null;
-
     /**
      * The idempotency key.
      *
      * @var string
      */
     protected $idempotency_key = null;
-
     /**
      * Constructor.
      *

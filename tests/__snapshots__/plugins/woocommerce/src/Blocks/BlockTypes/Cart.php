@@ -15,14 +15,12 @@ class Cart extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'cart';
-
     /**
      * Chunks build folder.
      *
      * @var string
      */
     protected $chunks_folder = 'cart-blocks';
-
     /**
      * Initialize this block type.
      *

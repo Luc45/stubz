@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Order Notes controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Order_Notes_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'orders/(?P<order_id>[\\d]+)/notes';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_order';
-
     /**
      * Register the routes for order notes.
      */

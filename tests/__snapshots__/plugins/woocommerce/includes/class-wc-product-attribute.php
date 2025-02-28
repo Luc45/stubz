@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product attribute class.
  */
@@ -20,7 +19,6 @@ class WC_Product_Attribute implements \ArrayAccess
   'visible' => false,
   'variation' => false,
 );
-
     /**
      * Return if this attribute is a taxonomy.
      *

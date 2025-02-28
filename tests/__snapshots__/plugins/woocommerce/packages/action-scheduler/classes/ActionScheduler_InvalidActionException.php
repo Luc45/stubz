@@ -1,5 +1,4 @@
 <?php
-
 /**
  * InvalidAction Exception.
  *
@@ -7,7 +6,7 @@
  *
  * @package ActionScheduler
  */
-class ActionScheduler_InvalidActionException extends \InvalidArgumentException
+class ActionScheduler_InvalidActionException extends \InvalidArgumentException implements \ActionScheduler_Exception
 {
     /**
      * Create a new exception when the action's schedule cannot be fetched.

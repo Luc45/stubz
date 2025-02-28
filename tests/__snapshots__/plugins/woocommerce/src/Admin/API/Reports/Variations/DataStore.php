@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Variations;
 /**
  * API\Reports\Variations\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Table used to get the data.
@@ -15,7 +15,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected static $table_name = 'wc_order_product_lookup';
-
     /**
      * Cache identifier.
      *
@@ -24,7 +23,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $cache_key = 'variations';
-
     /**
      * Mapping columns to data type to return correct response types.
      *
@@ -46,7 +44,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
   'permalink' => 'strval',
   'sku' => 'strval',
 );
-
     /**
      * Extended product attributes to include in the data.
      *
@@ -62,7 +59,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
   6 => 'low_stock_amount',
   7 => 'sku',
 );
-
     /**
      * Data store context used to pass to filters.
      *
@@ -71,7 +67,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $context = 'variations';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

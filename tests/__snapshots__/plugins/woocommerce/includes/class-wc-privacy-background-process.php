@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Privacy_Background_Process class.
  */

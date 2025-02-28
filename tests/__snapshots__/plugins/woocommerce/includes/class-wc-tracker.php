@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Tracker Class
  */
@@ -11,7 +10,6 @@ class WC_Tracker
      * @var string
      */
     private static $api_url = 'https://tracking.woocommerce.com/v1/';
-
     /**
      * Hook into cron event.
      */

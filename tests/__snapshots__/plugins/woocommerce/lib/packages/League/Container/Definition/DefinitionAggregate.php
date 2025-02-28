@@ -2,13 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-class DefinitionAggregate
+class DefinitionAggregate implements \Automattic\WooCommerce\Vendor\League\Container\Definition\DefinitionAggregateInterface
 {
     /**
      * @var DefinitionInterface[]
      */
     protected $definitions = array();
-
     /**
      * Construct.
      *

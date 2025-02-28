@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads;
  * @internal
  * @extends Automattic\WooCommerce\Admin\API\Reports\GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController implements \Automattic\WooCommerce\Admin\API\Reports\ExportableInterface
 {
     /**
      * Route base.
@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @var string
      */
     protected $rest_base = 'reports/downloads';
-
     /**
      * Get data from `'downloads'` GenericQuery.
      *

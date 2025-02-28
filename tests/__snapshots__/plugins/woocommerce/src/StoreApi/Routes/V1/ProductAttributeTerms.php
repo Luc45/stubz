@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class ProductAttributeTerms extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractTermsRoute
 {
     const IDENTIFIER = 'product-attribute-terms';
-
     /**
      * Get the path of this REST route.
      *

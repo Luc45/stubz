@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Data store class.
  */
@@ -11,7 +10,6 @@ class WC_Data_Store
      * @var WC_Data_Store
      */
     private $instance = null;
-
     /**
      * Contains an array of default WC supported data stores.
      * Format of object name => class name.
@@ -45,21 +43,18 @@ class WC_Data_Store
   'shipping-zone' => 'WC_Shipping_Zone_Data_Store',
   'webhook' => 'WC_Webhook_Data_Store',
 );
-
     /**
      * Contains the name of the current data store's class name.
      *
      * @var string
      */
     private $current_class_name = '';
-
     /**
      * The object type this store works with.
      *
      * @var string
      */
     private $object_type = '';
-
     /**
      * Tells WC_Data_Store which object (coupon, product, order, etc)
      * store we want to work with.

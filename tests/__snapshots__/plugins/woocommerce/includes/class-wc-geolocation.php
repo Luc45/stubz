@@ -1,16 +1,12 @@
 <?php
-
 /**
  * WC_Geolocation Class.
  */
 class WC_Geolocation
 {
     const GEOLITE_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz';
-
     const GEOLITE_IPV6_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz';
-
     const GEOLITE2_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz';
-
     /**
      * API endpoints for looking up user IP address.
      *
@@ -22,7 +18,6 @@ class WC_Geolocation
   'ident' => 'http://ident.me',
   'tnedi' => 'http://tnedi.me',
 );
-
     /**
      * API endpoints for geolocating an IP address
      *
@@ -32,7 +27,6 @@ class WC_Geolocation
   'ipinfo.io' => 'https://ipinfo.io/%s/json',
   'ip-api.com' => 'http://ip-api.com/json/%s',
 );
-
     /**
      * Check if geolocation is enabled.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Integrations class.
  */
@@ -11,7 +10,6 @@ class WC_Integrations
      * @var array
      */
     public $integrations = array();
-
     /**
      * Initialize integrations.
      */

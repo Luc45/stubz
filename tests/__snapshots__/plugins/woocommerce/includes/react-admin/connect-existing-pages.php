@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Returns core WC pages to connect to WC-Admin.
  *

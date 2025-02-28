@@ -19,7 +19,6 @@ abstract class AbstractDependencyType
      * @var mixed
      */
     private $callable_or_value = null;
-
     /**
      * Constructor
      *

@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class OrderCouponSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'order-coupon';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'order_coupon';
-
     /**
      * Cart schema properties.
      *

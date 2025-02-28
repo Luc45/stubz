@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This class adds actions to track usage of the WooCommerce Onboarding Wizard.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Setup_Wizard_Tracking
      * @var array
      */
     private $steps = array();
-
     /**
      * Init tracking.
      *

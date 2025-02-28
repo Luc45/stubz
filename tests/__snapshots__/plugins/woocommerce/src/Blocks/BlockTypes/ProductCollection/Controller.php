@@ -13,28 +13,24 @@ class Controller extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'product-collection';
-
     /**
      * Instance of HandlerRegistry.
      *
      * @var HandlerRegistry
      */
     protected $collection_handler_registry = null;
-
     /**
      * Instance of QueryBuilder.
      *
      * @var QueryBuilder
      */
     protected $query_builder = null;
-
     /**
      * Instance of Renderer.
      *
      * @var Renderer
      */
     protected $renderer = null;
-
     /**
      * Initialize this block type.
      *

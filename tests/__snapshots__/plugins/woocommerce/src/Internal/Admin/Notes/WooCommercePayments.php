@@ -8,11 +8,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class WooCommercePayments
 {
     const NOTE_NAME = 'wc-admin-woocommerce-payments';
-
     const PLUGIN_SLUG = 'woocommerce-payments';
-
     const PLUGIN_FILE = 'woocommerce-payments/woocommerce-payments.php';
-
     /**
      * Attach hooks.
      */

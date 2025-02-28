@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Network Orders controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Network_Orders_Controller extends \WC_REST_Network_Orders_V2_Contr
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

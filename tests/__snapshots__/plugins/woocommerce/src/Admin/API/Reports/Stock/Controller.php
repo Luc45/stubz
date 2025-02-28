@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Stock;
  * @internal
  * @extends GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController implements \Automattic\WooCommerce\Admin\API\Reports\ExportableInterface
 {
     /**
      * Route base.
@@ -16,14 +16,12 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @var string
      */
     protected $rest_base = 'reports/stock';
-
     /**
      * Registered stock status options.
      *
      * @var array
      */
     protected $status_options = null;
-
     /**
      * Constructor.
      */

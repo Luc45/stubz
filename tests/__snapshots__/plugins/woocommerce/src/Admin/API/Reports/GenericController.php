@@ -52,7 +52,6 @@ abstract class GenericController extends \WC_REST_Reports_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Add pagination headers and links.
      *

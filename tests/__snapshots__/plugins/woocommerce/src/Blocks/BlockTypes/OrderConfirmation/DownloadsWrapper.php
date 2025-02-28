@@ -13,7 +13,6 @@ class DownloadsWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCo
      * @var string
      */
     protected $block_name = 'order-confirmation-downloads-wrapper';
-
     /**
      * See if the store has a downloadable product. This controls if we bother to show a preview in the editor.
      *

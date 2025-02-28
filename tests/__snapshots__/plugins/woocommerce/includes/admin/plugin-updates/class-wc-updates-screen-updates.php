@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class WC_Updates_Screen_Updates
  */

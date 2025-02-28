@@ -13,14 +13,12 @@ class SchemaController
      * @var Schemas\V1\AbstractSchema[]
      */
     protected $schemas = array();
-
     /**
      * Stores Rest Extending instance
      *
      * @var ExtendSchema
      */
     private $extend = null;
-
     /**
      * Constructor.
      *

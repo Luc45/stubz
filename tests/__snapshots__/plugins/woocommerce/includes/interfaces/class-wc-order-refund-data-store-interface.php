@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Order Refund Data Store Interface
  *

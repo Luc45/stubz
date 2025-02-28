@@ -8,9 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class CartCoupons extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'cart-coupons';
-
     const SCHEMA_TYPE = 'cart-coupon';
-
     /**
      * Get the path of this REST route.
      *

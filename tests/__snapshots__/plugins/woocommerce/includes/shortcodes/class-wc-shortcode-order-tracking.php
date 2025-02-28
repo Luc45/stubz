@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shortcode order tracking class.
  */

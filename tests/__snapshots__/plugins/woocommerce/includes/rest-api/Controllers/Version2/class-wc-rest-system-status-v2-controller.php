@@ -1,5 +1,4 @@
 <?php
-
 /**
  * System status controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_System_Status_V2_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'system_status';
-
     /**
      * Register cache cleaner
      *

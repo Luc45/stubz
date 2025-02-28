@@ -13,14 +13,12 @@ class CLIRunner
      * @var DataRegenerator
      */
     private Automattic\WooCommerce\Internal\ProductAttributesLookup\DataRegenerator $data_regenerator;
-
     /**
      * The instance of DataRegenerator to use.
      *
      * @var LookupDataStore
      */
     private Automattic\WooCommerce\Internal\ProductAttributesLookup\LookupDataStore $lookup_data_store;
-
     /**
      * Creates a new instance of the class.
      *

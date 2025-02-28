@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Emails class.
  */
@@ -11,21 +10,18 @@ class WC_Emails
      * @var WC_Email[]
      */
     public $emails = array();
-
     /**
      * The single instance of the class
      *
      * @var WC_Emails
      */
     protected static $_instance = null;
-
     /**
      * Background emailer class.
      *
      * @var WC_Background_Emailer
      */
     protected static $background_emailer = null;
-
     /**
      * Main WC_Emails Instance.
      *

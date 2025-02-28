@@ -13,19 +13,16 @@ class CartExpressPaymentBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\
      * @var string
      */
     protected $block_name = 'cart-express-payment-block';
-
     /**
      * Uniform default_styles for the express payment buttons
      *
      * @var boolean
      */
     protected $default_styles = null;
-
     /**
      * Current styles for the express payment buttons
      *
      * @var boolean
      */
     protected $current_styles = null;
-
 }

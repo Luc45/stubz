@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Shop_Customizer class.
  */

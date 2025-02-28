@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Add a item to an order (for example a line item).
  *

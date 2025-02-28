@@ -13,7 +13,6 @@ class CustomersScheduler extends \Automattic\WooCommerce\Internal\Admin\Schedule
      * @var string
      */
     public static $name = 'customers';
-
     /**
      * Attach customer lookup update hooks.
      *

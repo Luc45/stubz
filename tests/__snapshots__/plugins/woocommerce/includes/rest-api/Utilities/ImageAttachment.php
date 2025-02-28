@@ -13,14 +13,12 @@ class ImageAttachment
      * @var integer
      */
     public $id = 0;
-
     /**
      * Object attached to.
      *
      * @var integer
      */
     public $object_id = 0;
-
     /**
      * Constructor.
      *

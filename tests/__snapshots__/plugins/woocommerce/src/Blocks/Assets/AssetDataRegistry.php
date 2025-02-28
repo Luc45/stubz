@@ -19,14 +19,12 @@ class AssetDataRegistry
      * @var array
      */
     private $data = array();
-
     /**
      * Contains preloaded API data.
      *
      * @var array
      */
     private $preloaded_api_requests = array();
-
     /**
      * Lazy data is an array of closures that will be invoked just before
      * asset data is generated for the enqueued script.
@@ -34,21 +32,18 @@ class AssetDataRegistry
      * @var array
      */
     private $lazy_data = array();
-
     /**
      * Asset handle for registered data.
      *
      * @var string
      */
     private $handle = 'wc-settings';
-
     /**
      * Asset API interface for various asset registration.
      *
      * @var API
      */
     private $api = null;
-
     /**
      * Constructor
      *

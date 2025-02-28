@@ -13,5 +13,4 @@ class EmptyMiniCartContentsBlock extends \Automattic\WooCommerce\Blocks\BlockTyp
      * @var string
      */
     protected $block_name = 'empty-mini-cart-contents-block';
-
 }

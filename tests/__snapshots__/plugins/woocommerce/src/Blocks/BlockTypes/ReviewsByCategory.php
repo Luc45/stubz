@@ -13,7 +13,6 @@ class ReviewsByCategory extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      * @var string
      */
     protected $block_name = 'reviews-by-category';
-
     /**
      * Get the frontend script handle for this block type.
      *

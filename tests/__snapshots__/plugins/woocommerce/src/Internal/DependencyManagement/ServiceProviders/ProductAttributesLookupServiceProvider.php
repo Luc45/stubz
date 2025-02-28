@@ -18,7 +18,6 @@ class ProductAttributesLookupServiceProvider extends \Automattic\WooCommerce\Int
   2 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\LookupDataStore',
   3 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\CLIRunner',
 );
-
     /**
      * Register the classes.
      */

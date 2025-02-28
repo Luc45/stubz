@@ -8,16 +8,13 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'checkout';
-
     const SCHEMA_TYPE = 'checkout';
-
     /**
      * Holds the current order being processed.
      *
      * @var \WC_Order
      */
     private $order = null;
-
     /**
      * Get the path of this REST route.
      *

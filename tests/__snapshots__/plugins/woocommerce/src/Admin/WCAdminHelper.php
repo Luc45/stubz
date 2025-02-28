@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Admin;
 class WCAdminHelper
 {
     const WC_ADMIN_TIMESTAMP_OPTION = 'woocommerce_admin_install_timestamp';
-
     /**
      * Get the number of seconds that the store has been active.
      *

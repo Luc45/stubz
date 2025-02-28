@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract class with common Queue Cleaner functionality.
  */
@@ -11,21 +10,18 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
      * @var ActionScheduler_QueueCleaner
      */
     protected $cleaner = null;
-
     /**
      * ActionScheduler_FatalErrorMonitor instance.
      *
      * @var ActionScheduler_FatalErrorMonitor
      */
     protected $monitor = null;
-
     /**
      * ActionScheduler_Store instance.
      *
      * @var ActionScheduler_Store
      */
     protected $store = null;
-
     /**
      * The created time.
      *
@@ -35,7 +31,6 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
      * @var int
      */
     private $created_time = null;
-
     /**
      * ActionScheduler_Abstract_QueueRunner constructor.
      *

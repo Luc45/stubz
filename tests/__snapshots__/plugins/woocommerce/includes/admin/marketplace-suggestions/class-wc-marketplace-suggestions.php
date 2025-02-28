@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Marketplace suggestions core behaviour.
  */

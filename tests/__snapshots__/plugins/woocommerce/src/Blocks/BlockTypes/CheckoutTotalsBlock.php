@@ -13,5 +13,4 @@ class CheckoutTotalsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'checkout-totals-block';
-
 }

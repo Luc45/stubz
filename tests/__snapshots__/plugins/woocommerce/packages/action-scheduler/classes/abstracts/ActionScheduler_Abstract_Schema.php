@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Abstract_Schema
  *
@@ -17,21 +16,18 @@ abstract class ActionScheduler_Abstract_Schema
      * @var int
      */
     protected $schema_version = 1;
-
     /**
      * Schema version stored in database.
      *
      * @var string
      */
     protected $db_version = null;
-
     /**
      * Names of tables that will be registered by this class.
      *
      * @var array
      */
     protected $tables = array();
-
     /**
      * Can optionally be used by concrete classes to carry out additional initialization work
      * as needed.

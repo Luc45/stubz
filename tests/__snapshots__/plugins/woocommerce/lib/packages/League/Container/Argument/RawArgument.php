@@ -2,13 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 
-class RawArgument
+class RawArgument implements \Automattic\WooCommerce\Vendor\League\Container\Argument\RawArgumentInterface
 {
     /**
      * @var mixed
      */
     protected $value = null;
-
     /**
      * Construct.
      *

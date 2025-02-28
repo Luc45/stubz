@@ -15,21 +15,18 @@ class ShippingController
      * @var AssetApi
      */
     protected $asset_api = null;
-
     /**
      * Instance of the asset data registry.
      *
      * @var AssetDataRegistry
      */
     protected $asset_data_registry = null;
-
     /**
      * Whether local pickup is enabled.
      *
      * @var bool
      */
     private $local_pickup_enabled = null;
-
     /**
      * Constructor.
      *

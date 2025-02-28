@@ -1,9 +1,8 @@
 <?php
-
 /**
  * Customer download class.
  */
-class WC_Customer_Download extends \WC_Data
+class WC_Customer_Download extends \WC_Data implements \ArrayAccess
 {
     /**
      * This is the name of this object type.
@@ -11,7 +10,6 @@ class WC_Customer_Download extends \WC_Data
      * @var string
      */
     protected $object_type = 'customer_download';
-
     /**
      * Download Data array.
      *
@@ -30,7 +28,6 @@ class WC_Customer_Download extends \WC_Data
   'access_expires' => null,
   'download_count' => 0,
 );
-
     /**
      * Constructor.
      *

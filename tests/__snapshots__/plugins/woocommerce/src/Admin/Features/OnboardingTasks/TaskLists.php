@@ -20,28 +20,24 @@ class TaskLists
   9 => 'ReviewShippingOptions',
   10 => 'GetMobileApp',
 );
-
     /**
      * Class instance.
      *
      * @var TaskLists instance
      */
     protected static $instance = null;
-
     /**
      * An array of all registered lists.
      *
      * @var array
      */
     protected static $lists = array();
-
     /**
      * Boolean value to indicate if default tasks have been added.
      *
      * @var boolean
      */
     protected static $default_tasks_loaded = false;
-
     /**
      * Get class instance.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Returns the main instance of WC.
  *

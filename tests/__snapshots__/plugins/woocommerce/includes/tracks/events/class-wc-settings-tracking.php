@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This class adds actions to track usage of WooCommerce Settings.
  */
@@ -11,42 +10,36 @@ class WC_Settings_Tracking
      * @var array
      */
     protected $allowed_options = array();
-
     /**
      * WooCommerce settings that have been updated (and will be tracked).
      *
      * @var array
      */
     protected $updated_options = array();
-
     /**
      * List of option names that are dropdown menus.
      *
      * @var array
      */
     protected $dropdown_menu_options = array();
-
     /**
      * List of options that have been modified.
      *
      * @var array
      */
     protected $modified_options = array();
-
     /**
      * List of options that have been deleted.
      *
      * @var array
      */
     protected $deleted_options = array();
-
     /**
      * List of options that have been added.
      *
      * @var array
      */
     protected $added_options = array();
-
     /**
      * Toggled options.
      *
@@ -58,7 +51,6 @@ class WC_Settings_Tracking
   'disabled' => 
   array(),
 );
-
     /**
      * Init tracking.
      */

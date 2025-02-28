@@ -13,7 +13,6 @@ class CartLink extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'cart-link';
-
     /**
      * Render the block.
      *

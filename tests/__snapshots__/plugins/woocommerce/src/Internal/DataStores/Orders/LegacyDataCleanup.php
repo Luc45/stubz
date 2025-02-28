@@ -5,40 +5,34 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * This class handles the background process in charge of cleaning up legacy data for orders when HPOS is authoritative.
  */
-class LegacyDataCleanup
+class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface
 {
     const OPTION_NAME = 'woocommerce_hpos_legacy_data_cleanup_in_progress';
-
     const BATCH_SIZE = 25;
-
     /**
      * The batch processing controller to use.
      *
      * @var BatchProcessingController
      */
     private $batch_processing = null;
-
     /**
      * The legacy handler to use for the actual cleanup.
      *
      * @var LegacyHandler
      */
     private $legacy_handler = null;
-
     /**
      * The data synchronizer object to use.
      *
      * @var DataSynchronizer
      */
     private $data_synchronizer = null;
-
     /**
      * Logger object to be used to log events.
      *
      * @var \WC_Logger
      */
     private $error_logger = null;
-
     /**
      * Class initialization, invoked by the DI container.
      *

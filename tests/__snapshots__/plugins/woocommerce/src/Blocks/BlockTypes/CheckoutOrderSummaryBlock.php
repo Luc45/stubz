@@ -13,7 +13,6 @@ class CheckoutOrderSummaryBlock extends \Automattic\WooCommerce\Blocks\BlockType
      * @var string
      */
     protected $block_name = 'checkout-order-summary-block';
-
     /**
      * Get the contents of the given inner block.
      *

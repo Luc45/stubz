@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that performs a comparison operation against a value in the
  * onboarding profile.
  */
-class OnboardingProfileRuleProcessor
+class OnboardingProfileRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Performs a comparison operation against a value in the onboarding

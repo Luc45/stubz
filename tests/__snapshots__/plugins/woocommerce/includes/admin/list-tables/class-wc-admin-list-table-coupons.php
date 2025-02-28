@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_List_Table_Coupons Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_List_Table_Coupons extends \WC_Admin_List_Table
      * @var string
      */
     protected $list_table_type = 'shop_coupon';
-
     /**
      * Constructor.
      */

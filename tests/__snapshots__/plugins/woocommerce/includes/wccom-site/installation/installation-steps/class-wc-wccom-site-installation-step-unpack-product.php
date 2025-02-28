@@ -1,9 +1,8 @@
 <?php
-
 /**
  * WC_WCCOM_Site_Installation_Step_Unpack_Product class
  */
-class WC_WCCOM_Site_Installation_Step_Unpack_Product
+class WC_WCCOM_Site_Installation_Step_Unpack_Product implements \WC_WCCOM_Site_Installation_Step
 {
     /**
      * The current installation state.
@@ -11,7 +10,6 @@ class WC_WCCOM_Site_Installation_Step_Unpack_Product
      * @var WC_WCCOM_Site_Installation_State
      */
     protected $state = null;
-
     /**
      * Constructor.
      *

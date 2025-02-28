@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Sales_By_Category
  *
@@ -14,28 +13,24 @@ class WC_Report_Sales_By_Category extends \WC_Admin_Report
      * @var array
      */
     public $chart_colours = array();
-
     /**
      * Categories ids.
      *
      * @var array
      */
     public $show_categories = array();
-
     /**
      * Item sales.
      *
      * @var array
      */
     private $item_sales = array();
-
     /**
      * Item sales and times.
      *
      * @var array
      */
     private $item_sales_and_times = array();
-
     /**
      * Constructor.
      */

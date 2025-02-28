@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders;
 /**
  * API\Reports\Orders\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Table used to get the data.
@@ -15,7 +15,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected static $table_name = 'wc_order_stats';
-
     /**
      * Cache identifier.
      *
@@ -24,7 +23,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $cache_key = 'orders';
-
     /**
      * Mapping columns to data type to return correct response types.
      *
@@ -44,7 +42,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
   'num_items_sold' => 'intval',
   'customer_type' => 'strval',
 );
-
     /**
      * Data store context used to pass to filters.
      *
@@ -53,7 +50,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $context = 'orders';
-
     /**
      * Dynamically sets the date column name based on configuration
      *

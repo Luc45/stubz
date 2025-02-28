@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Importers
  */
-class ImportSetWCTaxRates
+class ImportSetWCTaxRates implements \Automattic\WooCommerce\Blueprint\StepProcessor
 {
     /**
      * The result of the step processing.
@@ -17,7 +17,6 @@ class ImportSetWCTaxRates
      * @var StepProcessorResult $result The result of the step processing.
      */
     private Automattic\WooCommerce\Blueprint\StepProcessorResult $result;
-
     /**
      * Process the import of WooCommerce tax rates.
      *

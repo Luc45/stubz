@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Exporters Class.
  */
@@ -11,7 +10,6 @@ class WC_Admin_Exporters
      * @var string[]
      */
     protected $exporters = array();
-
     /**
      * Constructor.
      */

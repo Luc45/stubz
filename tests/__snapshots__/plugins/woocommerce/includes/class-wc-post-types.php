@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Post types Class.
  */

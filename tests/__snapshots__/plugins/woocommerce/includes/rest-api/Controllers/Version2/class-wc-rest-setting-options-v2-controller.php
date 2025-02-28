@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Setting Options controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Setting_Options_V2_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'settings/(?P<group_id>[\\w-]+)';
-
     /**
      * Register routes.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Post data class.
  */
@@ -11,7 +10,6 @@ class WC_Post_Data
      * @var object
      */
     private static $editing_term = null;
-
     /**
      * Hook in methods.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Webhooks table list class.
  */

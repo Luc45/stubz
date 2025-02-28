@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Checkout class.
  */
@@ -11,28 +10,24 @@ class WC_Checkout
      * @var WC_Checkout|null
      */
     protected static $instance = null;
-
     /**
      * Checkout fields are stored here.
      *
      * @var array|null
      */
     protected $fields = null;
-
     /**
      * Holds posted data for backwards compatibility.
      *
      * @var array
      */
     protected $legacy_posted_data = array();
-
     /**
      * Caches customer object. @see get_value.
      *
      * @var WC_Customer
      */
     private $logged_in_customer = null;
-
     /**
      * Gets the main WC_Checkout Instance.
      *

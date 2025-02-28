@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Data Store Interface
  *

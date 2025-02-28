@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Settings_General.
  */
@@ -11,7 +10,6 @@ class WC_Settings_General extends \WC_Settings_Page
      * @var string
      */
     public $icon = 'cog';
-
     /**
      * Constructor.
      */

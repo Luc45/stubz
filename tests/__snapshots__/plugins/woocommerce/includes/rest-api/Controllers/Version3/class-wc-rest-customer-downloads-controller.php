@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Customers controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Customer_Downloads_Controller extends \WC_REST_Customer_Downloads_
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

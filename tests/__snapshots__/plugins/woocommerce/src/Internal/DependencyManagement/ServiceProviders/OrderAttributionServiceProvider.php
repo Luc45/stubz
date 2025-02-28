@@ -19,7 +19,6 @@ class OrderAttributionServiceProvider extends \Automattic\WooCommerce\Internal\D
   1 => 'Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionBlocksController',
   2 => 'Automattic\\WooCommerce\\Internal\\Integrations\\WPConsentAPI',
 );
-
     /**
      * Register the classes.
      */

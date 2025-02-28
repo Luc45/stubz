@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer On-hold Order Email.
  *

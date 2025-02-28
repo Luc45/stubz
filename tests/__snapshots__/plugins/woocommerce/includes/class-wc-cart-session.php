@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Cart_Session class.
  *
@@ -14,7 +13,6 @@ final class WC_Cart_Session
      * @var WC_Cart
      */
     protected $cart = null;
-
     /**
      * Sets up the items provided, and calculate totals.
      *

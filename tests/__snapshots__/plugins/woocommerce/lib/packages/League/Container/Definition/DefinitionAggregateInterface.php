@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Definition;
 
-interface DefinitionAggregateInterface
+interface DefinitionAggregateInterface extends \Automattic\WooCommerce\Vendor\League\Container\ContainerAwareInterface, \IteratorAggregate
 {
     /**
      * Add a definition to the aggregate.

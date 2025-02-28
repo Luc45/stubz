@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Helper_Options Class
  *
@@ -13,7 +12,6 @@ class WC_Helper_Options
      * @var string
      */
     private static $option_name = 'woocommerce_helper_data';
-
     /**
      * Update an option by key
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Hours field.  Allows: * , / -
  *

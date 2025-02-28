@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Tax Rates importer - import tax rates and local tax rates into WooCommerce.
  *
@@ -14,35 +13,30 @@ class WC_Tax_Rate_Importer extends \WP_Importer
      * @var int
      */
     public $id = null;
-
     /**
      * The current file url.
      *
      * @var string
      */
     public $file_url = null;
-
     /**
      * The current import page.
      *
      * @var string
      */
     public $import_page = null;
-
     /**
      * The current delimiter.
      *
      * @var string
      */
     public $delimiter = null;
-
     /**
      * Error message for import.
      *
      * @var string
      */
     public $import_error_message = null;
-
     /**
      * Constructor.
      */

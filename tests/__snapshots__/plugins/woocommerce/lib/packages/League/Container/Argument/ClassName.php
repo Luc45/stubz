@@ -2,13 +2,12 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 
-class ClassName
+class ClassName implements \Automattic\WooCommerce\Vendor\League\Container\Argument\ClassNameInterface
 {
     /**
      * @var string
      */
     protected $value = null;
-
     /**
      * Construct.
      *

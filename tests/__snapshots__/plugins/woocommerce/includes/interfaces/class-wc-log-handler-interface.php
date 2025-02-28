@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Log Handler Interface
  *

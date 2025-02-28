@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Get the count of notices added, either for all notices (default) or for one.
  * particular notice type specified by $notice_type.

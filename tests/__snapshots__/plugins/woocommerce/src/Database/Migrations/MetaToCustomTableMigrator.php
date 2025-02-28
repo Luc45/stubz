@@ -16,21 +16,18 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
      * @var array
      */
     protected $schema_config = null;
-
     /**
      * Meta config, see __construct for detailed config.
      *
      * @var array
      */
     protected $meta_column_mapping = null;
-
     /**
      * Column mapping from source table to destination custom table. See __construct for detailed config.
      *
      * @var array
      */
     protected $core_column_mapping = null;
-
     /**
      * MetaToCustomTableMigrator constructor.
      */

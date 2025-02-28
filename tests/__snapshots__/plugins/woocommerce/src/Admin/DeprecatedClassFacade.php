@@ -13,28 +13,24 @@ class DeprecatedClassFacade
      * @var object
      */
     protected $instance = null;
-
     /**
      * The name of the non-deprecated class that this facade covers.
      *
      * @var string
      */
     protected static $facade_over_classname = '';
-
     /**
      * The version that this class was deprecated in.
      *
      * @var string
      */
     protected static $deprecated_in_version = '';
-
     /**
      * Static array of logged messages.
      *
      * @var array
      */
     private static $logged_messages = array();
-
     /**
      * Constructor.
      */

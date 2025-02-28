@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Variations\Stats;
 /**
  * API\Reports\Variations\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -20,7 +20,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\Dat
   'orders_count' => 'intval',
   'variations_count' => 'intval',
 );
-
     /**
      * Cache identifier.
      *
@@ -29,7 +28,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\Dat
      * @var string
      */
     protected $cache_key = 'variations_stats';
-
     /**
      * Data store context used to pass to filters.
      *
@@ -38,7 +36,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\Dat
      * @var string
      */
     protected $context = 'variations_stats';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

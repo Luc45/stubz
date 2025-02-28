@@ -13,7 +13,6 @@ class CustomMetaBox
      * @var string
      */
     private $update_nonce = null;
-
     /**
      * Helper method to get formatted meta data array with proper keys. This can be directly fed to `list_meta()` method.
      *

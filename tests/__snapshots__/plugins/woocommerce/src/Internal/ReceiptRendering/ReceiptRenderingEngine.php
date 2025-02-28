@@ -15,19 +15,12 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
 class ReceiptRenderingEngine
 {
     const FONT_SIZE = 12;
-
     const LINE_HEIGHT = 18.0;
-
     const ICON_HEIGHT = 18.0;
-
     const ICON_WIDTH = 24.0;
-
     const MARGIN = 16;
-
     const TITLE_FONT_SIZE = 24;
-
     const FOOTER_FONT_SIZE = 10;
-
     const KNOWN_CARD_TYPES = array (
   0 => 'amex',
   1 => 'diners',
@@ -37,23 +30,19 @@ class ReceiptRenderingEngine
   5 => 'mastercard',
   6 => 'visa',
 );
-
     const RECEIPT_FILE_NAME_META_KEY = '_receipt_file_name';
-
     /**
      * The instance of TransientFilesEngine to use.
      *
      * @var TransientFilesEngine
      */
     private $transient_files_engine = null;
-
     /**
      * The instance of LegacyProxy to use.
      *
      * @var LegacyProxy
      */
     private $legacy_proxy = null;
-
     /**
      * Initializes the class.
      *

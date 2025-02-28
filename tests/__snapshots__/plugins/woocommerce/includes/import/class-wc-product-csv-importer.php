@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Product_CSV_Importer Class.
  */
@@ -11,7 +10,6 @@ class WC_Product_CSV_Importer extends \WC_Product_Importer
      * @var integer
      */
     protected $parsing_raw_data_index = 0;
-
     /**
      * Initialize importer.
      *

@@ -13,7 +13,6 @@ class AdditionalInformation extends \Automattic\WooCommerce\Blocks\BlockTypes\Or
      * @var string
      */
     protected $block_name = 'order-confirmation-additional-information';
-
     /**
      * This renders the content of the block within the wrapper.
      *

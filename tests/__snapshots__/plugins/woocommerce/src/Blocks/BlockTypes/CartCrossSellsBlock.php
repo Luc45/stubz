@@ -13,5 +13,4 @@ class CartCrossSellsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'cart-cross-sells-block';
-
 }

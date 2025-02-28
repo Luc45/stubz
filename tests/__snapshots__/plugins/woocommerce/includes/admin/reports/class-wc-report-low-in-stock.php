@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Low stock report class.
  */

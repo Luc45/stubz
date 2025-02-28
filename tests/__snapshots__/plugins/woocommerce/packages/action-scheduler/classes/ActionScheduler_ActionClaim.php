@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_ActionClaim
  */
@@ -11,14 +10,12 @@ class ActionScheduler_ActionClaim
      * @var string
      */
     private $id = '';
-
     /**
      * Claimed action IDs.
      *
      * @var int[]
      */
     private $action_ids = array();
-
     /**
      * Construct.
      *

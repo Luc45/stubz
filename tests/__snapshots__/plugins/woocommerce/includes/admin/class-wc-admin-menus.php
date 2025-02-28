@@ -1,12 +1,10 @@
 <?php
-
 /**
  * WC_Admin_Menus Class.
  */
 class WC_Admin_Menus
 {
     const HIDE_CSS_CLASS = 'hide-if-js';
-
     /**
      * Hook in tabs.
      */

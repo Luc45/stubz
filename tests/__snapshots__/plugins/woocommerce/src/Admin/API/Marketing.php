@@ -16,14 +16,12 @@ class Marketing extends \WC_REST_Data_Controller
      * @var string
      */
     protected $namespace = 'wc-admin';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'marketing';
-
     /**
      * Register routes.
      */

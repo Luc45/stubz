@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This class adds actions to track usage of WooCommerce.
  */

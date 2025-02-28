@@ -24,7 +24,6 @@ class UtilsClassesServiceProvider extends \Automattic\WooCommerce\Internal\Depen
   8 => 'Automattic\\WooCommerce\\Internal\\Utilities\\PluginInstaller',
   9 => 'Automattic\\WooCommerce\\Internal\\Utilities\\LegacyRestApiStub',
 );
-
     /**
      * Register the classes.
      */

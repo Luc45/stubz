@@ -13,7 +13,6 @@ class Server
      * @var array
      */
     protected $controllers = array();
-
     /**
      * Hook into WordPress ready to init the REST API as needed.
      */

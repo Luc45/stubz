@@ -12,7 +12,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class MarketingJetpack
 {
     const NOTE_NAME = 'wc-admin-marketing-jetpack-backup';
-
     const BACKUP_IDS = array (
   0 => 2010,
   1 => 2011,
@@ -31,7 +30,6 @@ class MarketingJetpack
   14 => 2001,
   15 => 2004,
 );
-
     /**
      * Maybe add a note on Jetpack Backups for Jetpack sites older than a week without Backups.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Shipping Zone Data Store Interface.
  *

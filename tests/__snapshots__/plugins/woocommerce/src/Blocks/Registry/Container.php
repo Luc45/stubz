@@ -17,7 +17,6 @@ class Container
      * @var AbstractDependencyType[]
      */
     private $registry = array();
-
     /**
      * Public api for adding a factory to the container.
      *

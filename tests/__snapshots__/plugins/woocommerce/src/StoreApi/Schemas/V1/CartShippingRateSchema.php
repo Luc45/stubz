@@ -8,14 +8,12 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class CartShippingRateSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'cart-shipping-rate';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'cart-shipping-rate';
-
     /**
      * Cart schema properties.
      *

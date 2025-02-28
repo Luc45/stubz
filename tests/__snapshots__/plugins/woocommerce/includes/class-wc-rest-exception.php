@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_REST_Exception class.
  */

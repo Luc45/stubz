@@ -13,95 +13,75 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class CustomOrdersTableController
 {
     const SYNC_QUERY_ARG = 'wc_hpos_sync_now';
-
     const STOP_SYNC_QUERY_ARG = 'wc_hpos_stop_sync';
-
     const CUSTOM_ORDERS_TABLE_USAGE_ENABLED_OPTION = 'woocommerce_custom_orders_table_enabled';
-
     const USE_DB_TRANSACTIONS_OPTION = 'woocommerce_use_db_transactions_for_custom_orders_table_data_sync';
-
     const DB_TRANSACTIONS_ISOLATION_LEVEL_OPTION = 'woocommerce_db_transactions_isolation_level_for_custom_orders_table_data_sync';
-
     const DEFAULT_DB_TRANSACTIONS_ISOLATION_LEVEL = 'READ UNCOMMITTED';
-
     const HPOS_FTS_INDEX_OPTION = 'woocommerce_hpos_fts_index_enabled';
-
     const HPOS_FTS_ADDRESS_INDEX_CREATED_OPTION = 'woocommerce_hpos_address_fts_index_created';
-
     const HPOS_FTS_ORDER_ITEM_INDEX_CREATED_OPTION = 'woocommerce_hpos_order_item_fts_index_created';
-
     const HPOS_DATASTORE_CACHING_ENABLED_OPTION = 'woocommerce_hpos_datastore_caching_enabled';
-
     /**
      * The data store object to use.
      *
      * @var OrdersTableDataStore
      */
     private $data_store = null;
-
     /**
      * Refunds data store object to use.
      *
      * @var OrdersTableRefundDataStore
      */
     private $refund_data_store = null;
-
     /**
      * The data synchronizer object to use.
      *
      * @var DataSynchronizer
      */
     private $data_synchronizer = null;
-
     /**
      * The data cleanup instance to use.
      *
      * @var LegacyDataCleanup
      */
     private $data_cleanup = null;
-
     /**
      * The batch processing controller to use.
      *
      * @var BatchProcessingController
      */
     private $batch_processing_controller = null;
-
     /**
      * The features controller to use.
      *
      * @var FeaturesController
      */
     private $features_controller = null;
-
     /**
      * The orders cache object to use.
      *
      * @var OrderCache
      */
     private $order_cache = null;
-
     /**
      * The orders cache controller object to use.
      *
      * @var OrderCacheController
      */
     private $order_cache_controller = null;
-
     /**
      * The plugin util object to use.
      *
      * @var PluginUtil
      */
     private $plugin_util = null;
-
     /**
      * The db util object to use.
      *
      * @var DatabaseUtil;
      */
     private $db_util = null;
-
     /**
      * Class constructor.
      */

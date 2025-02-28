@@ -43,7 +43,7 @@ class FunctionStubGenerator {
 			Helpers::handleBetterReflectionException( $ex );
 		}
 
-		$buf .= "\n{\n    // stub\n}\n\n";
+		$buf .= "\n{\n}\n";
 
 		return $buf;
 	}

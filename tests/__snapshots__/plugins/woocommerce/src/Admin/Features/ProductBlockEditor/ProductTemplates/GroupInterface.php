@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTempla
 /**
  * Interface for group containers, which contain sections and blocks.
  */
-interface GroupInterface
+interface GroupInterface extends \Automattic\WooCommerce\Admin\BlockTemplates\BlockContainerInterface
 {
     /**
      * Adds a new section to the group

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Autoloader class.
  */
@@ -11,7 +10,6 @@ class WC_Autoloader
      * @var string
      */
     private $include_path = '';
-
     /**
      * The Constructor.
      */

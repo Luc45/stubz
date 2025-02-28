@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Integration MaxMind Geolocation
  *
@@ -13,7 +12,6 @@ class WC_Integration_MaxMind_Geolocation extends \WC_Integration
      * @var WC_Integration_MaxMind_Database_Service
      */
     private $database_service = null;
-
     /**
      * Initialize the integration.
      */

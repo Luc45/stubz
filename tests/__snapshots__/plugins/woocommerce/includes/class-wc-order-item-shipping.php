@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order item shipping class.
  */
@@ -24,7 +23,6 @@ class WC_Order_Item_Shipping extends \WC_Order_Item
   ),
   'tax_status' => 'taxable',
 );
-
     /**
      * Calculate item taxes.
      *

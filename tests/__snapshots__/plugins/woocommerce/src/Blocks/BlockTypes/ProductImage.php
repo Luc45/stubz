@@ -13,14 +13,12 @@ class ProductImage extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      * @var string
      */
     protected $block_name = 'product-image';
-
     /**
      * API version name.
      *
      * @var string
      */
     protected $api_version = '3';
-
     /**
      * Get block supports. Shared with the frontend.
      * IMPORTANT: If you change anything here, make sure to update the JS file too.

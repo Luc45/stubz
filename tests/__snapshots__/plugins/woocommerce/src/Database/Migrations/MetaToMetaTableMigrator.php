@@ -16,7 +16,6 @@ abstract class MetaToMetaTableMigrator extends \Automattic\WooCommerce\Database\
      * @var array
      */
     private $schema_config = null;
-
     /**
      * Returns config for the migration.
      *

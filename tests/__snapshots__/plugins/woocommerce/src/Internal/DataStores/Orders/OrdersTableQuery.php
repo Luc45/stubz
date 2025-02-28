@@ -19,151 +19,128 @@ class OrdersTableQuery
   array(),
   2 => null,
 );
-
     const REGEX_SHORTHAND_DATES = '/([^.<>]*)(>=|<=|>|<|\\.\\.\\.)([^.<>]+)/';
-
     const MYSQL_MAX_UNSIGNED_BIGINT = '18446744073709551615';
-
     /**
      * Names of all COT tables (orders, addresses, operational_data, meta) in the form 'table_id' => 'table name'.
      *
      * @var array
      */
     private $tables = array();
-
     /**
      * Column mappings for all COT tables.
      *
      * @var array
      */
     private $mappings = array();
-
     /**
      * Query vars after processing and sanitization.
      *
      * @var array
      */
     private $args = array();
-
     /**
      * Columns to be selected in the SELECT clause.
      *
      * @var array
      */
     private $fields = array();
-
     /**
      * Array of table aliases and conditions used to compute the JOIN clause of the query.
      *
      * @var array
      */
     private $join = array();
-
     /**
      * Array of fields and conditions used to compute the WHERE clause of the query.
      *
      * @var array
      */
     private $where = array();
-
     /**
      * Field to be used in the GROUP BY clause of the query.
      *
      * @var array
      */
     private $groupby = array();
-
     /**
      * Array of fields used to compute the ORDER BY clause of the query.
      *
      * @var array
      */
     private $orderby = array();
-
     /**
      * Limits used to compute the LIMIT clause of the query.
      *
      * @var array
      */
     private $limits = array();
-
     /**
      * Results (order IDs) for the current query.
      *
      * @var array
      */
     private $orders = array();
-
     /**
      * Final SQL query to run after processing of args.
      *
      * @var string
      */
     private $sql = '';
-
     /**
      * Final SQL query to count results after processing of args.
      *
      * @var string
      */
     private $count_sql = '';
-
     /**
      * The number of pages (when pagination is enabled).
      *
      * @var int
      */
     private $max_num_pages = 0;
-
     /**
      * The number of orders found.
      *
      * @var int
      */
     private $found_orders = 0;
-
     /**
      * Field query parser.
      *
      * @var OrdersTableFieldQuery
      */
     private $field_query = null;
-
     /**
      * Meta query parser.
      *
      * @var OrdersTableMetaQuery
      */
     private $meta_query = null;
-
     /**
      * Search query parser.
      *
      * @var OrdersTableSearchQuery?
      */
     private $search_query = null;
-
     /**
      * Date query parser.
      *
      * @var WP_Date_Query
      */
     private $date_query = null;
-
     /**
      * Instance of the OrdersTableDataStore class.
      *
      * @var OrdersTableDataStore
      */
     private $order_datastore = null;
-
     /**
      * Whether to run filters to modify the query or not.
      *
      * @var boolean
      */
     private $suppress_filters = false;
-
     /**
      * Sets up and runs the query after processing arguments.
      *

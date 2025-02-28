@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Customers controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Customers_V2_Controller extends \WC_REST_Customers_V1_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Get formatted item data.
      *

@@ -8,21 +8,18 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class CartExtensionsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'cart-extensions';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'cart-extensions';
-
     /**
      * Cart schema instance.
      *
      * @var CartSchema
      */
     public $cart_schema = null;
-
     /**
      * Constructor.
      *

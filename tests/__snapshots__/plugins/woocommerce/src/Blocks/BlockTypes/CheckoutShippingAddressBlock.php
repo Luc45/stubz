@@ -13,5 +13,4 @@ class CheckoutShippingAddressBlock extends \Automattic\WooCommerce\Blocks\BlockT
      * @var string
      */
     protected $block_name = 'checkout-shipping-address-block';
-
 }

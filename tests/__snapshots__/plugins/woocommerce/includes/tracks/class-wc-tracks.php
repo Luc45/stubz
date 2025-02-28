@@ -1,12 +1,10 @@
 <?php
-
 /**
  * WC_Tracks class.
  */
 class WC_Tracks
 {
     const PREFIX = 'wcadmin_';
-
     /**
      * Get total product counts.
      *

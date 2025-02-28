@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Cart class.
  */
@@ -11,28 +10,24 @@ class WC_Cart extends \WC_Legacy_Cart
      * @var array
      */
     public $cart_contents = array();
-
     /**
      * Contains an array of removed cart items so we can restore them if needed.
      *
      * @var array
      */
     public $removed_cart_contents = array();
-
     /**
      * Contains an array of coupon codes applied to the cart.
      *
      * @var array
      */
     public $applied_coupons = array();
-
     /**
      * This stores the chosen shipping methods for the cart item packages.
      *
      * @var array
      */
     protected $shipping_methods = null;
-
     /**
      * Total defaults used to reset.
      *
@@ -58,28 +53,24 @@ class WC_Cart extends \WC_Legacy_Cart
   'total' => 0,
   'total_tax' => 0,
 );
-
     /**
      * Store calculated totals.
      *
      * @var array
      */
     protected $totals = array();
-
     /**
      * Reference to the cart session handling class.
      *
      * @var WC_Cart_Session
      */
     protected $session = null;
-
     /**
      * Reference to the cart fees API class.
      *
      * @var WC_Cart_Fees
      */
     protected $fees_api = null;
-
     /**
      * Constructor for the cart class. Loads options and hooks in the init method.
      */

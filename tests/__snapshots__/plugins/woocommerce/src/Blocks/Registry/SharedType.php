@@ -15,7 +15,6 @@ class SharedType extends \Automattic\WooCommerce\Blocks\Registry\AbstractDepende
      * @var mixed
      */
     private $shared_instance = null;
-
     /**
      * Returns the internal stored and shared value after initial generation.
      *

@@ -10,21 +10,18 @@ namespace Automattic\WooCommerce\Internal\Admin;
 class WcPayWelcomePage
 {
     const INCENTIVE_TYPE = 'welcome_page';
-
     /**
      * The suggestion incentives instance.
      *
      * @var PaymentExtensionSuggestionIncentives
      */
     private Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestionIncentives $suggestion_incentives;
-
     /**
      * Class instance.
      *
      * @var ?WcPayWelcomePage
      */
     protected static Automattic\WooCommerce\Internal\Admin\WcPayWelcomePage|null $instance = null;
-
     /**
      * Get class instance.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handle PDT Responses from PayPal.
  */
@@ -11,14 +10,12 @@ class WC_Gateway_Paypal_PDT_Handler extends \WC_Gateway_Paypal_Response
      * @var string
      */
     protected $identity_token = null;
-
     /**
      * Receiver email address to validate.
      *
      * @var string Receiver email address.
      */
     protected $receiver_email = null;
-
     /**
      * Constructor.
      *

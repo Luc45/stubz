@@ -8,21 +8,18 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class ProductReviewSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'product-review';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'product_review';
-
     /**
      * Image attachment schema instance.
      *
      * @var ImageAttachmentSchema
      */
     protected $image_attachment_schema = null;
-
     /**
      * Constructor.
      *

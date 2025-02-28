@@ -13,7 +13,6 @@ class OnboardingHelper
      * @var OnboardingHelper instance
      */
     private static $instance = null;
-
     /**
      * Get class instance.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order details email.
  *

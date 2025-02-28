@@ -13,7 +13,6 @@ class ProductFilterPriceSlider extends \Automattic\WooCommerce\Blocks\BlockTypes
      * @var string
      */
     protected $block_name = 'product-filter-price-slider';
-
     /**
      * Render the block.
      *

@@ -13,7 +13,6 @@ class ProductGalleryPager extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'product-gallery-pager';
-
     /**
      * It isn't necessary register block assets because it is a server side block.
      */

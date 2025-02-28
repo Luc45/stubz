@@ -15,7 +15,6 @@ class ProductFormsController
     private $product_form_templates = array (
   0 => 'simple',
 );
-
     /**
      * Set up the product forms controller.
      */

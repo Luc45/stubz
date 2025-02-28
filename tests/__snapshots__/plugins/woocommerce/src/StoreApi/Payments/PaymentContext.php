@@ -13,21 +13,18 @@ class PaymentContext
      * @var string
      */
     protected $payment_method = '';
-
     /**
      * Order object for the order being paid.
      *
      * @var \WC_Order
      */
     protected $order = null;
-
     /**
      * Holds data to send to the payment gateway to support payment.
      *
      * @var array Key value pairs.
      */
     protected $payment_data = array();
-
     /**
      * Magic getter for protected properties.
      *

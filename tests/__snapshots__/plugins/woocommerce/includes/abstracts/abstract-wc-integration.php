@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract Integration Class
  *
@@ -18,21 +17,18 @@ abstract class WC_Integration extends \WC_Settings_API
      * @var string
      */
     public $enabled = 'yes';
-
     /**
      * Integration title.
      *
      * @var string
      */
     public $method_title = '';
-
     /**
      * Integration description.
      *
      * @var string
      */
     public $method_description = '';
-
     /**
      * Return the title for admin screens.
      *

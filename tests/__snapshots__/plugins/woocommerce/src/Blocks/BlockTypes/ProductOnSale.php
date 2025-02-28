@@ -13,7 +13,6 @@ class ProductOnSale extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractPr
      * @var string
      */
     protected $block_name = 'product-on-sale';
-
     /**
      * Set args specific to this block
      *

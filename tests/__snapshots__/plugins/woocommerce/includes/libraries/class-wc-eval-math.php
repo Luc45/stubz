@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class WC_Eval_Math. Supports basic math only (removed eval function).
  *
@@ -13,7 +12,6 @@ class WC_Eval_Math
      * @var string
      */
     public static $last_error = null;
-
     /**
      * Variables (and constants).
      *
@@ -23,14 +21,12 @@ class WC_Eval_Math
   'e' => 2.71,
   'pi' => 3.14,
 );
-
     /**
      * User-defined functions.
      *
      * @var array
      */
     public static $f = array();
-
     /**
      * Constants.
      *
@@ -40,14 +36,12 @@ class WC_Eval_Math
   0 => 'e',
   1 => 'pi',
 );
-
     /**
      * Built-in functions.
      *
      * @var array
      */
     public static $fb = array();
-
     /**
      * Evaluate maths string.
      *
@@ -109,14 +103,12 @@ class WC_Eval_Math_Stack
      * @var array
      */
     public $stack = array();
-
     /**
      * Stack counter.
      *
      * @var integer
      */
     public $count = 0;
-
     /**
      * Push value into stack.
      *

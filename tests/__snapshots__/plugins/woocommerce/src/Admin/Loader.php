@@ -15,14 +15,12 @@ class Loader extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
      * @var string
      */
     protected static $facade_over_classname = 'Automattic\\WooCommerce\\Internal\\Admin\\Loader';
-
     /**
      * The version that this class was deprecated in.
      *
      * @var string
      */
     protected static $deprecated_in_version = '6.3.0';
-
     /**
      * Returns if a specific wc-admin feature is enabled.
      *

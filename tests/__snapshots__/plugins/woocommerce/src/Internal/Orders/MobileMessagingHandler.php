@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Orders;
 class MobileMessagingHandler
 {
     const OPEN_ORDER_INTERVAL_DAYS = 30;
-
     /**
      * Prepares mobile messaging with a deep link.
      *

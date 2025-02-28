@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Shipping class.
  */
@@ -11,28 +10,24 @@ class WC_Shipping
      * @var bool
      */
     public $enabled = false;
-
     /**
      * Stores methods loaded into woocommerce.
      *
      * @var array|null
      */
     public $shipping_methods = null;
-
     /**
      * Stores the shipping classes.
      *
      * @var array
      */
     public $shipping_classes = array();
-
     /**
      * Stores packages to ship and to get quotes for.
      *
      * @var array
      */
     public $packages = array();
-
     /**
      * The single instance of the class
      *
@@ -40,7 +35,6 @@ class WC_Shipping
      * @since 2.1
      */
     protected static $_instance = null;
-
     /**
      * Main WC_Shipping Instance.
      *

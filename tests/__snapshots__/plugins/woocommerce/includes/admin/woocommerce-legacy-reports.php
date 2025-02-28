@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Initialize the WooCommerce legacy reports.
  */

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers;
  *
  * @package Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers
  */
-class DotNotation
+class DotNotation implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\Transformers\TransformerInterface
 {
     /**
      * Find given path from the given value.

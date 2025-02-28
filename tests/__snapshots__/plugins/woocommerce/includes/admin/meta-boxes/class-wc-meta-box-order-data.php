@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Meta_Box_Order_Data Class.
  */
@@ -11,14 +10,12 @@ class WC_Meta_Box_Order_Data
      * @var array
      */
     protected static $billing_fields = array();
-
     /**
      * Shipping fields.
      *
      * @var array
      */
     protected static $shipping_fields = array();
-
     /**
      * Get billing fields for the meta box.
      *

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Block template class.
  */
-abstract class AbstractBlockTemplate
+abstract class AbstractBlockTemplate implements \Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
 {
     /**
      * The block cache.
@@ -13,7 +13,6 @@ abstract class AbstractBlockTemplate
      * @var BlockInterface[]
      */
     private $block_cache = array();
-
     /**
      * Get the template ID.
      */

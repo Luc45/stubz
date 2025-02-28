@@ -16,14 +16,12 @@ class Leaderboards extends \WC_REST_Data_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'leaderboards';
-
     /**
      * Register routes.
      */

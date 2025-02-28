@@ -195,44 +195,35 @@ namespace Automattic\WooCommerce\Vendor\Detection;
 class MobileDetect
 {
     const VER = '([\\w._\\+]+)';
-
     const VERSION = '3.74.3';
-
     const VERSION_TYPE_STRING = 'text';
-
     const VERSION_TYPE_FLOAT = 'float';
-
     /**
      * A cache for resolved matches
      * @var array
      */
     protected array $cache = array();
-
     /**
      * The User-Agent HTTP header is stored in here.
      * @var string|null
      */
     protected string|null $userAgent = null;
-
     /**
      * HTTP headers in the PHP-flavor. So HTTP_USER_AGENT and SERVER_SOFTWARE.
      * @var array
      */
     protected array $httpHeaders = array();
-
     /**
      * CloudFront headers. E.g. CloudFront-Is-Desktop-Viewer, CloudFront-Is-Mobile-Viewer & CloudFront-Is-Tablet-Viewer.
      * @var array
      */
     protected array $cloudfrontHeaders = array();
-
     /**
      * The matching Regex.
      * This is good for debug.
      * @var string|null
      */
     protected string|null $matchingRegex = null;
-
     /**
      * The matches extracted from the regex expression.
      * This is good for debug.
@@ -240,7 +231,6 @@ class MobileDetect
      * @var array|null
      */
     protected array|null $matchesArray = null;
-
     /**
      * HTTP headers that trigger the 'isMobile' detection
      * to be true.
@@ -278,7 +268,6 @@ class MobileDetect
     ),
   ),
 );
-
     /**
      * List of mobile devices (phones).
      *
@@ -314,7 +303,6 @@ class MobileDetect
   'OnePlus' => 'ONEPLUS',
   'GenericPhone' => 'Tapatalk|PDA;|SAGEM|\\bmmp\\b|pocket|\\bpsp\\b|symbian|Smartphone|smartfon|treo|up.browser|up.link|vodafone|\\bwap\\b|nokia|Series40|Series60|S60|SonyEricsson|N900|MAUI.*WAP.*Browser',
 );
-
     /**
      * List of tablet devices.
      *
@@ -441,7 +429,6 @@ class MobileDetect
   'TelstraTablet' => 'T-Hub2',
   'GenericTablet' => 'Android.*\\b97D\\b|Tablet(?!.*PC)|BNTV250A|MID-WCDMA|LogicPD Zoom2|\\bA7EB\\b|CatNova8|A1_07|CT704|CT1002|\\bM721\\b|rk30sdk|\\bEVOTAB\\b|M758A|ET904|ALUMIUM10|Smartfren Tab|Endeavour 1010|Tablet-PC-4|Tagi Tab|\\bM6pro\\b|CT1020W|arc 10HD|\\bTP750\\b|\\bQTAQZ3\\b|WVT101|TM1088|KT107',
 );
-
     /**
      * List of mobile Operating Systems.
      *
@@ -464,7 +451,6 @@ class MobileDetect
   'badaOS' => '\\bBada\\b',
   'BREWOS' => 'BREW',
 );
-
     /**
      * List of mobile User Agents.
      *
@@ -498,7 +484,6 @@ class MobileDetect
   'GenericBrowser' => 'NokiaBrowser|OviBrowser|OneBrowser|TwonkyBeamBrowser|SEMC.*Browser|FlyFlow|Minimo|NetFront|Novarra-Vision|MQQBrowser|MicroMessenger',
   'PaleMoon' => 'Android.*PaleMoon|Mobile.*PaleMoon',
 );
-
     /**
      * All possible HTTP headers that represent the
      * User-Agent string.
@@ -515,7 +500,6 @@ class MobileDetect
   6 => 'HTTP_DEVICE_STOCK_UA',
   7 => 'HTTP_X_UCBROWSER_DEVICE_UA',
 );
-
     /**
      * The individual segments that could exist in a User-Agent string. VER refers to the regular
      * expression defined in the constant self::VER.
@@ -621,7 +605,6 @@ class MobileDetect
     1 => 'hpwOS/[VER];',
   ),
 );
-
     /**
      * Construct an instance of this class.
      *

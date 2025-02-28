@@ -19,21 +19,18 @@ class ActionMigrator
      * @var ActionScheduler_Store
      */
     private $source = null;
-
     /**
      * Destination store instance.
      *
      * @var ActionScheduler_Store
      */
     private $destination = null;
-
     /**
      * LogMigrator instance.
      *
      * @var LogMigrator
      */
     private $log_migrator = null;
-
     /**
      * ActionMigrator constructor.
      *

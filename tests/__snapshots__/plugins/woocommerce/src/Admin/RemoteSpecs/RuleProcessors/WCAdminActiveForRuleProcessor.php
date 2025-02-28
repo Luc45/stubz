@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor for publishing if wc-admin has been active for at least the
  * given number of seconds.
  */
-class WCAdminActiveForRuleProcessor
+class WCAdminActiveForRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Provides the amount of time wcadmin has been active for.
@@ -14,7 +14,6 @@ class WCAdminActiveForRuleProcessor
      * @var WCAdminActiveForProvider
      */
     protected $wcadmin_active_for_provider = null;
-
     /**
      * Constructor
      *

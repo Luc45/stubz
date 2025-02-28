@@ -13,7 +13,6 @@ class OnboardingJetpack
      * @var OnboardingJetpack instance
      */
     private static $instance = null;
-
     /**
      * Get class instance.
      */

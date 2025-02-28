@@ -15,7 +15,6 @@ class BusinessDescription extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoin
      * @var string
      */
     protected $endpoint = 'business-description';
-
     /**
      * Register routes.
      */

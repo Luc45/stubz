@@ -2,7 +2,7 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\ServiceProvider;
 
-interface BootableServiceProviderInterface
+interface BootableServiceProviderInterface extends \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\ServiceProviderInterface
 {
     /**
      * Method will be invoked on registration of a service provider implementing

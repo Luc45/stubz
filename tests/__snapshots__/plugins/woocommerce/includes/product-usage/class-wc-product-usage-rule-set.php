@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Product_Usage_Rule_Set.
  */
@@ -11,7 +10,6 @@ class WC_Product_Usage_Rule_Set
      * @var array|null $rules
      */
     protected $rules = null;
-
     /**
      * Constructor
      *

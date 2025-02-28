@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Attributes controller class.
  *
@@ -14,28 +13,24 @@ class WC_REST_Product_Attributes_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'products/attributes';
-
     /**
      * Attribute name.
      *
      * @var string
      */
     protected $attribute = '';
-
     /**
      * Cached taxonomies by attribute id.
      *
      * @var array
      */
     protected $taxonomies_by_id = array();
-
     /**
      * Register the routes for product attributes.
      */

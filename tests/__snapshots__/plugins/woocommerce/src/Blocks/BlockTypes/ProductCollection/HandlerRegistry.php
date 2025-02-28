@@ -14,7 +14,6 @@ class HandlerRegistry
      * @var array
      */
     protected $collection_handler_store = array();
-
     /**
      * Register handlers for a collection.
      *

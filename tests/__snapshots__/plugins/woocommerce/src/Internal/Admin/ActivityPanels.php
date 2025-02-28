@@ -13,7 +13,6 @@ class ActivityPanels
      * @var ActivityPanels instance
      */
     protected static $instance = null;
-
     /**
      * Get class instance.
      */

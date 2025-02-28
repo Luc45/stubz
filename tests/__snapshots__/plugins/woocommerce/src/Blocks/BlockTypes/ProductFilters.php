@@ -13,7 +13,6 @@ class ProductFilters extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
      * @var string
      */
     protected $block_name = 'product-filters';
-
     /**
      * Register the context.
      *

@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Variations;
  * @internal
  * @extends GenericController
  */
-class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController implements \Automattic\WooCommerce\Admin\API\Reports\ExportableInterface
 {
     /**
      * Route base.
@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @var string
      */
     protected $rest_base = 'reports/variations';
-
     /**
      * Mapping between external parameter name and name used in query class.
      *
@@ -26,7 +25,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
   'variations' => 'variation_includes',
   'products' => 'product_includes',
 );
-
     /**
      * Get data from `'variations'` GenericQuery.
      *

@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class EditProductsOnTheMove
 {
     const NOTE_NAME = 'wc-admin-edit-products-on-the-move';
-
     /**
      * Get the note.
      *

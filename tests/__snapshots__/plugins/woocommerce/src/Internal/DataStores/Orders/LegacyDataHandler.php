@@ -13,21 +13,18 @@ class LegacyDataHandler
      * @var OrdersTableDataStore
      */
     private Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store;
-
     /**
      * Instance of the DataSynchronizer class.
      *
      * @var DataSynchronizer
      */
     private Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer;
-
     /**
      * Instance of the PostsToOrdersMigrationController.
      *
      * @var PostsToOrdersMigrationController
      */
     private Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator;
-
     /**
      * Class initialization, invoked by the DI container.
      *

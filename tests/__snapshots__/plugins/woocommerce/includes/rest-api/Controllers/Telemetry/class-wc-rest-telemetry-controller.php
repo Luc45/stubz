@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Telemetry controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Telemetry_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc-telemetry';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'tracker';
-
     /**
      * Register the route for /tracker
      */

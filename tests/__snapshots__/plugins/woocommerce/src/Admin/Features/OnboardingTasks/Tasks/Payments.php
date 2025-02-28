@@ -13,7 +13,6 @@ class Payments extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Ta
      * @var null
      */
     private $is_complete_result = null;
-
     /**
      * ID.
      *

@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Order Item Fee Data Store
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Fee_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
+class WC_Order_Item_Fee_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store implements \WC_Object_Data_Store_Interface, \WC_Order_Item_Type_Data_Store_Interface
 {
     /**
      * Data stored in meta keys.
@@ -23,7 +22,6 @@ class WC_Order_Item_Fee_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Sto
   6 => '_line_tax',
   7 => '_line_tax_data',
 );
-
     /**
      * Read/populate data properties specific to this order item.
      *

@@ -36,7 +36,6 @@ class DefaultPaymentGateways
   'zipmoney' => 10,
   'payoneer-checkout' => 11,
 );
-
     /**
      * Get default specs.
      *

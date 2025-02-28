@@ -13,7 +13,6 @@ class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      * @var string
      */
     protected $block_name = 'product-categories';
-
     /**
      * Default attribute values, should match what's set in JS `registerBlockType`.
      *
@@ -27,7 +26,6 @@ class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
   'isHierarchical' => true,
   'showChildrenOnly' => false,
 );
-
     /**
      * Get block attributes.
      *

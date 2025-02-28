@@ -13,35 +13,30 @@ class FormFactory
      * @var Form instance
      */
     protected static $instance = null;
-
     /**
      * Store form fields.
      *
      * @var array
      */
     protected static $form_fields = array();
-
     /**
      * Store form cards.
      *
      * @var array
      */
     protected static $form_subsections = array();
-
     /**
      * Store form sections.
      *
      * @var array
      */
     protected static $form_sections = array();
-
     /**
      * Store form tabs.
      *
      * @var array
      */
     protected static $form_tabs = array();
-
     /**
      * Get class instance.
      */

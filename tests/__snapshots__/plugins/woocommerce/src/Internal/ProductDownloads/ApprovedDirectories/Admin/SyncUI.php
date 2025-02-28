@@ -14,7 +14,6 @@ class SyncUI
      * @var Register
      */
     private $register = null;
-
     /**
      * Sets up UI controls for product download URLs.
      *

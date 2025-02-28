@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Coupon Data Store: Custom Post Type.
  *
  * @version  3.0.0
  */
-class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
+class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_Data_Store_Interface, \WC_Object_Data_Store_Interface
 {
     /**
      * Internal meta type used to store coupon data.
@@ -14,7 +13,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
      * @var string
      */
     protected $meta_type = 'post';
-
     /**
      * Data stored in meta keys, but not considered "meta" for a coupon.
      *
@@ -44,7 +42,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
   19 => '_edit_lock',
   20 => '_edit_last',
 );
-
     /**
      * The updated coupon properties
      *
@@ -52,7 +49,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
      * @var array
      */
     protected $updated_props = array();
-
     /**
      * Method to create a new coupon in the database.
      *

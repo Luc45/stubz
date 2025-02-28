@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WCCOM Site Installer Error Codes Class
  *
@@ -8,59 +7,32 @@
 class WC_REST_WCCOM_Site_Installer_Error_Codes
 {
     const NOT_AUTHENTICATED = 'not_authenticated';
-
     const NO_ACCESS_TOKEN = 'no_access_token';
-
     const NO_SIGNATURE = 'no_signature';
-
     const SITE_NOT_CONNECTED = 'site_not_connnected';
-
     const INVALID_TOKEN = 'invalid_token';
-
     const REQUEST_VERIFICATION_FAILED = 'request_verification_failed';
-
     const USER_NOT_FOUND = 'user_not_found';
-
     const NO_PERMISSION = 'forbidden';
-
     const IDEMPOTENCY_KEY_MISMATCH = 'idempotency_key_mismatch';
-
     const NO_INITIATED_INSTALLATION_FOUND = 'no_initiated_installation_found';
-
     const ALL_INSTALLATION_STEPS_RUN = 'all_installation_steps_run';
-
     const REQUESTED_STEP_ALREADY_RUN = 'requested_step_already_run';
-
     const PLUGIN_ALREADY_INSTALLED = 'plugin_already_installed';
-
     const INSTALLATION_ALREADY_RUNNING = 'installation_already_running';
-
     const INSTALLATION_FAILED = 'installation_failed';
-
     const FILESYSTEM_REQUIREMENTS_NOT_MET = 'filesystem_requirements_not_met';
-
     const FAILED_GETTING_PRODUCT_INFO = 'product_info_failed';
-
     const INVALID_PRODUCT_INFO_RESPONSE = 'invalid_product_info_response';
-
     const WCCOM_PRODUCT_MISSING_SUBSCRIPTION = 'wccom_product_missing_subscription';
-
     const WCCOM_PRODUCT_MISSING_PACKAGE = 'wccom_product_missing_package';
-
     const WPORG_PRODUCT_MISSING_DOWNLOAD_LINK = 'wporg_product_missing_download_link';
-
     const MISSING_DOWNLOAD_PATH = 'missing_download_path';
-
     const MISSING_UNPACKED_PATH = 'missing_unpacked_path';
-
     const UNKNOWN_FILENAME = 'unknown_filename';
-
     const PLUGIN_ACTIVATION_ERROR = 'plugin_activation_error';
-
     const UNEXPECTED_ERROR = 'unexpected_error';
-
     const FAILED_TO_RESET_INSTALLATION_STATE = 'failed_to_reset_installation_state';
-
     const ERROR_MESSAGES = array (
   'not_authenticated' => 'Authentication required',
   'no_access_token' => 'No access token provided',
@@ -89,7 +61,6 @@ class WC_REST_WCCOM_Site_Installer_Error_Codes
   'unexpected_error' => 'Unexpected error',
   'failed_to_reset_installation_state' => 'Failed to reset installation state',
 );
-
     const HTTP_CODES = array (
   'not_authenticated' => 401,
   'no_access_token' => 400,
@@ -105,5 +76,4 @@ class WC_REST_WCCOM_Site_Installer_Error_Codes
   'requested_step_already_run' => 400,
   'unexpected_error' => 500,
 );
-
 }

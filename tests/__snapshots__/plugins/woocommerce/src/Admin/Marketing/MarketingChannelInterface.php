@@ -10,13 +10,9 @@ namespace Automattic\WooCommerce\Admin\Marketing;
 interface MarketingChannelInterface
 {
     const PRODUCT_LISTINGS_NOT_APPLICABLE = 'not-applicable';
-
     const PRODUCT_LISTINGS_SYNC_IN_PROGRESS = 'sync-in-progress';
-
     const PRODUCT_LISTINGS_SYNC_FAILED = 'sync-failed';
-
     const PRODUCT_LISTINGS_SYNCED = 'synced';
-
     /**
      * Returns the unique identifier string for the marketing channel extension, also known as the plugin slug.
      *

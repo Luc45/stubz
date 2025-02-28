@@ -20,7 +20,6 @@ class MigrationHelper
   'date_epoch' => '%s',
   'bool' => '%d',
 );
-
     /**
      * Helper method to escape backtick in various schema fields.
      *

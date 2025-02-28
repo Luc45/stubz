@@ -18,7 +18,6 @@ class COTMigrationServiceProvider extends \Automattic\WooCommerce\Internal\Depen
   0 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\PostsToOrdersMigrationController',
   1 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\CLIRunner',
 );
-
     /**
      * Use the register method to register items with the container via the
      * protected $this->leagueContainer property or the `getLeagueContainer` method

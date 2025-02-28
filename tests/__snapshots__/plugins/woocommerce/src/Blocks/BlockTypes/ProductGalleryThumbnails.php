@@ -13,7 +13,6 @@ class ProductGalleryThumbnails extends \Automattic\WooCommerce\Blocks\BlockTypes
      * @var string
      */
     protected $block_name = 'product-gallery-thumbnails';
-
     /**
      * It isn't necessary register block assets because it is a server side block.
      */

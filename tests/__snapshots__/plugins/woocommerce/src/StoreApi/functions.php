@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Register endpoint data under a specified namespace.
  *

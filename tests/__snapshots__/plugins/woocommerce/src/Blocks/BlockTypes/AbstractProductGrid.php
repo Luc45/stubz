@@ -13,28 +13,24 @@ abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockT
      * @var array
      */
     protected $attributes = array();
-
     /**
      * InnerBlocks content.
      *
      * @var string
      */
     protected $content = '';
-
     /**
      * Query args.
      *
      * @var array
      */
     protected $query_args = array();
-
     /**
      * Meta query args.
      *
      * @var array
      */
     protected $meta_query = array();
-
     /**
      * Get a set of attributes shared across most of the grid blocks.
      *

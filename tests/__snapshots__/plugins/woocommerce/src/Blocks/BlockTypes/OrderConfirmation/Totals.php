@@ -13,7 +13,6 @@ class Totals extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation
      * @var string
      */
     protected $block_name = 'order-confirmation-totals';
-
     /**
      * This renders the content of the block within the wrapper.
      *

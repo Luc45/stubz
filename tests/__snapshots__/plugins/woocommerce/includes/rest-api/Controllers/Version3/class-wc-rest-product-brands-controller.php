@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Brands controller class.
  *
@@ -14,12 +13,10 @@ class WC_REST_Product_Brands_Controller extends \WC_REST_Product_Categories_Cont
      * @var string
      */
     protected $rest_base = 'products/brands';
-
     /**
      * Taxonomy.
      *
      * @var string
      */
     protected $taxonomy = 'product_brand';
-
 }

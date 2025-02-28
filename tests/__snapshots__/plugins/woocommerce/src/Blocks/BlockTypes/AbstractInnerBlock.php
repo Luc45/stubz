@@ -13,7 +13,6 @@ abstract class AbstractInnerBlock extends \Automattic\WooCommerce\Blocks\BlockTy
      * @var boolean
      */
     protected $is_lazy_loaded = true;
-
     /**
      * Registers the block type with WordPress using the metadata file.
      *

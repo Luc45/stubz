@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
 /**
  * ExportWCPaymentGateways class
  */
-class ExportWCPaymentGateways
+class ExportWCPaymentGateways implements \Automattic\WooCommerce\Blueprint\Exporters\StepExporter
 {
     /**
      * Payment gateway IDs to exclude from export
@@ -15,7 +15,6 @@ class ExportWCPaymentGateways
     protected array $exclude_ids = array (
   0 => 'pre_install_woocommerce_payments_promotion',
 );
-
     /**
      * Export the step
      *

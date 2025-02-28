@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Tracks_Footer_Pixel class.
  */
@@ -11,14 +10,12 @@ class WC_Tracks_Footer_Pixel
      * @var WC_Tracks_Footer_Pixel
      */
     protected static $instance = null;
-
     /**
      * Events to send to Tracks.
      *
      * @var array
      */
     protected $events = array();
-
     /**
      * Instantiate the singleton.
      *

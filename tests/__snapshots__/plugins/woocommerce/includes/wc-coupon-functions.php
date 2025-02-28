@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Get coupon types.
  *

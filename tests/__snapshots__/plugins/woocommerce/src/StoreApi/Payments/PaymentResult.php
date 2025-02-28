@@ -18,28 +18,24 @@ class PaymentResult
   2 => 'pending',
   3 => 'error',
 );
-
     /**
      * Current payment status.
      *
      * @var string
      */
     protected $status = '';
-
     /**
      * Array of details about the payment.
      *
      * @var string
      */
     protected $payment_details = array();
-
     /**
      * Redirect URL for checkout.
      *
      * @var string
      */
     protected $redirect_url = '';
-
     /**
      * Constructor.
      *

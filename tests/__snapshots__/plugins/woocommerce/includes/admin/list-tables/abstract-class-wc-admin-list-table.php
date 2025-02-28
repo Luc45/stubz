@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_List_Table Class.
  */
@@ -11,14 +10,12 @@ abstract class WC_Admin_List_Table
      * @var string
      */
     protected $list_table_type = '';
-
     /**
      * Object being shown on the row.
      *
      * @var object|null
      */
     protected $object = null;
-
     /**
      * Constructor.
      */

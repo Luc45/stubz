@@ -20,42 +20,36 @@ class PseudoWCPaymentGateway extends \WC_Payment_Gateway
      * @var string
      */
     public $id = '';
-
     /**
      * Gateway title.
      *
      * @var string
      */
     public $title = '';
-
     /**
      * Gateway description.
      *
      * @var string
      */
     public $description = '';
-
     /**
      * Gateway method title.
      *
      * @var string
      */
     public $method_title = '';
-
     /**
      * Gateway method description.
      *
      * @var string
      */
     public $method_description = '';
-
     /**
      * Corresponding gateway plugin slug.
      *
      * @var string
      */
     public string $plugin_slug = 'generic-plugin-slug';
-
     /**
      * Corresponding gateway plugin file.
      *
@@ -64,63 +58,54 @@ class PseudoWCPaymentGateway extends \WC_Payment_Gateway
      * @var string
      */
     public string $plugin_file = 'generic-plugin-slug/generic-plugin-file';
-
     /**
      * The recommended payment methods list.
      *
      * @var array
      */
     public array $recommended_payment_methods = array();
-
     /**
      * Whether or not this gateway still requires setup to function.
      *
      * @var bool
      */
     public bool $needs_setup = false;
-
     /**
      * The test mode.
      *
      * @var bool
      */
     public bool $test_mode = false;
-
     /**
      * The dev mode.
      *
      * @var bool
      */
     public bool $dev_mode = false;
-
     /**
      * The account connected flag.
      *
      * @var bool
      */
     public bool $account_connected = false;
-
     /**
      * The onboarding started flag.
      *
      * @var bool
      */
     public bool $onboarding_started = false;
-
     /**
      * The onboarding completed flag.
      *
      * @var bool
      */
     public bool $onboarding_completed = false;
-
     /**
      * The test mode onboarding flag.
      *
      * @var bool
      */
     public bool $test_mode_onboarding = false;
-
     /**
      * Constructor.
      *

@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class OnboardingPayments
 {
     const NOTE_NAME = 'wc-admin-onboarding-payments-reminder';
-
     /**
      * Get the note.
      *

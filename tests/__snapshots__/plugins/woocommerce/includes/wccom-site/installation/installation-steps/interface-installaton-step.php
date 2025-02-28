@@ -1,5 +1,4 @@
 <?php
-
 interface WC_WCCOM_Site_Installation_Step
 {
     /**

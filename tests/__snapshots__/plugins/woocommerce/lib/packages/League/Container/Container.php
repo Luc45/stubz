@@ -2,33 +2,28 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container;
 
-class Container
+class Container implements \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
 {
     /**
      * @var boolean
      */
     protected $defaultToShared = false;
-
     /**
      * @var DefinitionAggregateInterface
      */
     protected $definitions = null;
-
     /**
      * @var ServiceProviderAggregateInterface
      */
     protected $providers = null;
-
     /**
      * @var InflectorAggregateInterface
      */
     protected $inflectors = null;
-
     /**
      * @var ContainerInterface[]
      */
     protected $delegates = array();
-
     /**
      * Construct.
      *

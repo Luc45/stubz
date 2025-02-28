@@ -1,11 +1,10 @@
 <?php
-
 /**
  * Abstract Order Data Store: Stored in CPT.
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
+abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Abstract_Order_Data_Store_Interface, \WC_Object_Data_Store_Interface
 {
     /**
      * Internal meta type used to store order data.
@@ -13,7 +12,6 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
      * @var string
      */
     protected $meta_type = 'post';
-
     /**
      * Data stored in meta keys, but not considered "meta" for an order.
      *
@@ -32,14 +30,12 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
   8 => '_prices_include_tax',
   9 => '_payment_tokens',
 );
-
     /**
      * Custom setters for props. Add key here if it has corresponding set_ and get_ method present.
      *
      * @var string[]
      */
     protected $internal_data_store_key_getters = array();
-
     /**
      * Return internal key getters name.
      *

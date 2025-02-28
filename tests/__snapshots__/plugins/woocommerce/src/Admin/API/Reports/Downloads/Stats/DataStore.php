@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats;
 /**
  * API\Reports\Downloads\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Mapping columns to data type to return correct response types.
@@ -17,7 +17,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\Data
     protected $column_types = array (
   'download_count' => 'intval',
 );
-
     /**
      * Cache identifier.
      *
@@ -26,7 +25,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\Data
      * @var string
      */
     protected $cache_key = 'downloads_stats';
-
     /**
      * Data store context used to pass to filters.
      *
@@ -35,7 +33,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\Data
      * @var string
      */
     protected $context = 'downloads_stats';
-
     /**
      * Assign report columns once full table name has been assigned.
      *

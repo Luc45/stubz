@@ -8,93 +8,68 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  * - Providing entry points for creating and deleting the required database tables.
  * - Synchronizing changes between the custom orders tables and the posts table whenever changes in orders happen.
  */
-class DataSynchronizer
+class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface
 {
     const ORDERS_DATA_SYNC_ENABLED_OPTION = 'woocommerce_custom_orders_table_data_sync_enabled';
-
     const PLACEHOLDER_ORDER_POST_TYPE = 'shop_order_placehold';
-
     const DELETED_RECORD_META_KEY = '_deleted_from';
-
     const DELETED_FROM_POSTS_META_VALUE = 'posts_table';
-
     const DELETED_FROM_ORDERS_META_VALUE = 'orders_table';
-
     const ORDERS_TABLE_CREATED = 'woocommerce_custom_orders_table_created';
-
     const ORDERS_SYNC_BATCH_SIZE = 250;
-
     const ID_TYPE_MISSING_IN_ORDERS_TABLE = 0;
-
     const ID_TYPE_MISSING_IN_POSTS_TABLE = 1;
-
     const ID_TYPE_DIFFERENT_UPDATE_DATE = 2;
-
     const ID_TYPE_DELETED_FROM_ORDERS_TABLE = 3;
-
     const ID_TYPE_DELETED_FROM_POSTS_TABLE = 4;
-
     const BACKGROUND_SYNC_MODE_OPTION = 'woocommerce_custom_orders_table_background_sync_mode';
-
     const BACKGROUND_SYNC_INTERVAL_OPTION = 'woocommerce_custom_orders_table_background_sync_interval';
-
     const BACKGROUND_SYNC_MODE_INTERVAL = 'interval';
-
     const BACKGROUND_SYNC_MODE_CONTINUOUS = 'continuous';
-
     const BACKGROUND_SYNC_MODE_OFF = 'off';
-
     const BACKGROUND_SYNC_EVENT_HOOK = 'woocommerce_custom_orders_table_background_sync';
-
     /**
      * The data store object to use.
      *
      * @var OrdersTableDataStore
      */
     private $data_store = null;
-
     /**
      * The database util object to use.
      *
      * @var DatabaseUtil
      */
     private $database_util = null;
-
     /**
      * The posts to COT migrator to use.
      *
      * @var PostsToOrdersMigrationController
      */
     private $posts_to_cot_migrator = null;
-
     /**
      * Logger object to be used to log events.
      *
      * @var \WC_Logger
      */
     private $error_logger = null;
-
     /**
      * The instance of the LegacyProxy object to use.
      *
      * @var LegacyProxy
      */
     private $legacy_proxy = null;
-
     /**
      * The order cache controller.
      *
      * @var OrderCacheController
      */
     private $order_cache_controller = null;
-
     /**
      * The batch processing controller.
      *
      * @var BatchProcessingController
      */
     private $batch_processing_controller = null;
-
     /**
      * Class constructor.
      */

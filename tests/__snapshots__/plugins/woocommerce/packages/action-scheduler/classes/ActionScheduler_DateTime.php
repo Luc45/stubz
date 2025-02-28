@@ -1,11 +1,10 @@
 <?php
-
 /**
  * ActionScheduler DateTime class.
  *
  * This is a custom extension to DateTime that
  */
-class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
+class ActionScheduler_DateTime extends \DateTime
 {
     /**
      * UTC offset.
@@ -16,7 +15,6 @@ class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
      * @var int
      */
     protected $utcOffset = 0;
-
     /**
      * Get the unix timestamp of the current object.
      *

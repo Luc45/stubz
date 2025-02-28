@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Cart_Totals class.
  *
@@ -14,7 +13,6 @@ final class WC_Cart_Totals
      * @var WC_Cart
      */
     protected $cart = null;
-
     /**
      * Reference to customer object.
      *
@@ -22,7 +20,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $customer = null;
-
     /**
      * Line items to calculate.
      *
@@ -30,7 +27,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $items = array();
-
     /**
      * Fees to calculate.
      *
@@ -38,7 +34,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $fees = array();
-
     /**
      * Shipping costs.
      *
@@ -46,7 +41,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $shipping = array();
-
     /**
      * Applied coupon objects.
      *
@@ -54,7 +48,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $coupons = array();
-
     /**
      * Item/coupon discount totals.
      *
@@ -62,7 +55,6 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $coupon_discount_totals = array();
-
     /**
      * Item/coupon discount tax totals.
      *
@@ -70,14 +62,12 @@ final class WC_Cart_Totals
      * @var array
      */
     protected $coupon_discount_tax_totals = array();
-
     /**
      * Should taxes be calculated?
      *
      * @var boolean
      */
     protected $calculate_tax = true;
-
     /**
      * Stores totals.
      *
@@ -96,14 +86,12 @@ final class WC_Cart_Totals
   'shipping_tax_total' => 0,
   'discounts_total' => 0,
 );
-
     /**
      * Cache of tax rates for a given tax class.
      *
      * @var array
      */
     protected $item_tax_rates = null;
-
     /**
      * Sets up the items provided, and calculate totals.
      *

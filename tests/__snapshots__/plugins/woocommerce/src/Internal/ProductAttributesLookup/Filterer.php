@@ -13,14 +13,12 @@ class Filterer
      * @var LookupDataStore
      */
     private $data_store = null;
-
     /**
      * The name of the product attributes lookup table.
      *
      * @var string
      */
     private $lookup_table_name = null;
-
     /**
      * Class initialization, invoked by the DI container.
      *

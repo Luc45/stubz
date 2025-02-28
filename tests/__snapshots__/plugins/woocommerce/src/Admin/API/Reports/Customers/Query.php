@@ -15,7 +15,6 @@ class Query extends \Automattic\WooCommerce\Admin\API\Reports\GenericQuery
      * @var string
      */
     protected $name = 'customers';
-
     /**
      * Valid fields for Customers report.
      *

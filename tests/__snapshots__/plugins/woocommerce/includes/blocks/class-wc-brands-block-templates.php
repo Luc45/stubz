@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Utils for compatibility with WooCommerce Full Site Editor Blocks
  *

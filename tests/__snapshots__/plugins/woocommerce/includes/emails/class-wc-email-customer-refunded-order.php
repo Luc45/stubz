@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer Refunded Order Email.
  *
@@ -18,14 +17,12 @@ class WC_Email_Customer_Refunded_Order extends \WC_Email
      * @var WC_Order|bool
      */
     public $refund = null;
-
     /**
      * Is the order partial refunded?
      *
      * @var bool
      */
     public $partial_refund = null;
-
     /**
      * Constructor.
      */

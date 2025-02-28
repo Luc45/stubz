@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Stock\Stats;
 /**
  * API\Reports\Stock\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     /**
      * Get stock counts for the whole store.

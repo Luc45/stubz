@@ -13,7 +13,6 @@ class TaxonomiesMetaBox
      * @var OrdersTableDataStore
      */
     private $orders_table_data_store = null;
-
     /**
      * Dependency injection init method.
      *

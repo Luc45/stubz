@@ -13,14 +13,12 @@ class ProductGallery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
      * @var string
      */
     protected $block_name = 'product-gallery';
-
     /**
      * Used to preserve the context for dialog rendering.
      *
      * @var array
      */
     protected $dialog_context = null;
-
     /**
      * Initialize the block and Hook into the `render_block_context` filter
      * to update the context for dialog rendering.

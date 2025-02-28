@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Cheque Payment Gateway.
  *
@@ -13,14 +12,12 @@
 class WC_Gateway_Cheque extends \WC_Payment_Gateway
 {
     const ID = 'cheque';
-
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *
      * @var string
      */
     public $instructions = null;
-
     /**
      * Constructor for the gateway.
      */

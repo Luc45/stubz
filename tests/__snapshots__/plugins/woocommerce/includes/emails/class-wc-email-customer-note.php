@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer Note Order Email.
  *
@@ -18,7 +17,6 @@ class WC_Email_Customer_Note extends \WC_Email
      * @var string
      */
     public $customer_note = null;
-
     /**
      * Constructor.
      */

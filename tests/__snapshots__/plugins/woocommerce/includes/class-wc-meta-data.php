@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Meta data class.
  */
@@ -12,7 +11,6 @@ class WC_Meta_Data implements \JsonSerializable
      * @var array
      */
     protected $current_data = null;
-
     /**
      * Metadata data
      *
@@ -20,7 +18,6 @@ class WC_Meta_Data implements \JsonSerializable
      * @var array
      */
     protected $data = null;
-
     /**
      * Constructor.
      *

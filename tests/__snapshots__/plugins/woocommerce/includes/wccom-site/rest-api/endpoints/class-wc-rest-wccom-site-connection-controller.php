@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API WC_REST_WCCOM_Site_Connection_Controller Class.
  *
@@ -13,7 +12,6 @@ class WC_REST_WCCOM_Site_Connection_Controller extends \WC_REST_WCCOM_Site_Contr
      * @var string
      */
     protected $rest_base = 'connection';
-
     /**
      * Register the routes for Site Connection Controller.
      *

@@ -13,14 +13,12 @@ class Transformer
      * @var array|null
      */
     private array|null $current_group = null;
-
     /**
      * Current checkbox group being processed.
      *
      * @var array|null
      */
     private array|null $current_checkbox_group = null;
-
     /**
      * Transform settings data.
      *

@@ -13,7 +13,6 @@ final class ProductFilterClearButton extends \Automattic\WooCommerce\Blocks\Bloc
      * @var string
      */
     protected $block_name = 'product-filter-clear-button';
-
     /**
      * Get the frontend style handle for this block type.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Product_CSV_Exporter Class.
  */
@@ -11,28 +10,24 @@ class WC_Product_CSV_Exporter extends \WC_CSV_Batch_Exporter
      * @var string
      */
     protected $export_type = 'product';
-
     /**
      * Should meta be exported?
      *
      * @var boolean
      */
     protected $enable_meta_export = false;
-
     /**
      * Which product types are being exported.
      *
      * @var array
      */
     protected $product_types_to_export = array();
-
     /**
      * Products belonging to what category should be exported.
      *
      * @var string
      */
     protected $product_category_to_export = array();
-
     /**
      * Constructor.
      */

@@ -1,12 +1,10 @@
 <?php
-
 /**
  * WC_Customer_Download_Log_Data_Store class.
  */
-class WC_Customer_Download_Log_Data_Store
+class WC_Customer_Download_Log_Data_Store implements \WC_Customer_Download_Log_Data_Store_Interface
 {
     const WC_DOWNLOAD_LOG_TABLE = 'wc_download_log';
-
     /**
      * Get the table name for download logs.
      *

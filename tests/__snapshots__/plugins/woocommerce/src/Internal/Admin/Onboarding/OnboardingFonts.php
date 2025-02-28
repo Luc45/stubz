@@ -10,7 +10,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingFonts
 {
     const SOURCE_LOGGER = 'font_loader';
-
     const FONT_FAMILIES_TO_INSTALL = array (
   'inter' => 
   array (
@@ -163,7 +162,6 @@ class OnboardingFonts
     ),
   ),
 );
-
     /**
      * Initialize the class.
      *

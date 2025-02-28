@@ -14,7 +14,6 @@ class RuleEvaluator
      * @var GetRuleProcessor
      */
     private $get_rule_processor = null;
-
     /**
      * Constructor.
      *

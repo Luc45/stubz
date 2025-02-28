@@ -34,19 +34,35 @@ class ClassStubGenerator {
 		$parentName = $class->getParentClassName();
 
 		// If not interface/trait/enum => handle extends/implements
-		if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-			// If we know the parent's name, tack on "extends"
+		if ( $class->isInterface() ) {
+			// If this is an interface, gather *parent* interfaces via getInterfaceClassNames()
+			$parentInterfaces = [];
+			try {
+				$ifaceNames = $class->getInterfaceClassNames();
+				sort( $ifaceNames ); // Sort for consistent ordering
+				foreach ( $ifaceNames as $iname ) {
+					$parentInterfaces[] = '\\' . ltrim( $iname, '\\' );
+				}
+			} catch ( Throwable $ex ) {
+				Helpers::handleBetterReflectionException( $ex );
+			}
+
+			if ( ! empty( $parentInterfaces ) ) {
+				$buf .= ' extends ' . implode( ', ', $parentInterfaces );
+			}
+		} elseif ( ! $class->isTrait() && ! $class->isEnum() ) {
+			// If it's a class (abstract, final, or normal)
 			if ( $parentName ) {
 				$buf .= ' extends \\' . ltrim( $parentName, '\\' );
 			}
 
-			// Interfaces
+			// Then gather interfaces via getInterfaceClassNames() for "implements"
 			$interfaces = [];
 			try {
-				$ifaceRefs = $class->getInterfaces();
-				ksort( $ifaceRefs );
-				foreach ( $ifaceRefs as $iRef ) {
-					$interfaces[] = '\\' . ltrim( $iRef->getName(), '\\' );
+				$ifaceNames = $class->getInterfaceClassNames();
+				sort( $ifaceNames );
+				foreach ( $ifaceNames as $iname ) {
+					$interfaces[] = '\\' . ltrim( $iname, '\\' );
 				}
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
@@ -70,26 +86,26 @@ class ClassStubGenerator {
 				foreach ( $cases as $case ) {
 					try {
 						$val = Helpers::toPhpLiteral( $case->getValue() );
-						$buf .= "    case {$case->getName()} = {$val};\n\n";
+						$buf .= "    case {$case->getName()} = {$val};\n";
 					} catch ( Throwable $ex ) {
 						Helpers::handleBetterReflectionException( $ex );
 					}
 				}
 
 				// The typical lines the snapshot expects:
-				$buf .= "    public readonly string \$name;\n\n";
-				$buf .= "    public readonly string \$value;\n\n"; // your test expects 'string' specifically
-				$buf .= "    public static function cases(): array\n    {\n    }\n\n";
-				$buf .= "    public static function from(string|int \$value): static\n    {\n    }\n\n";
-				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n    }\n\n";
+				$buf .= "    public readonly string \$name;\n";
+				$buf .= "    public readonly string \$value;\n"; // your test expects 'string' specifically
+				$buf .= "    public static function cases(): array\n    {\n    }\n";
+				$buf .= "    public static function from(string|int \$value): static\n    {\n    }\n";
+				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n    }\n";
 			} else {
 				// "Pure" enum => produce `case X;`, no "= value"
 				foreach ( $cases as $case ) {
-					$buf .= "    case {$case->getName()};\n\n";
+					$buf .= "    case {$case->getName()};\n";
 				}
 				// Minimal set for pure enums
-				$buf .= "    public readonly string \$name;\n\n";
-				$buf .= "    public static function cases(): array\n    {\n    }\n\n";
+				$buf .= "    public readonly string \$name;\n";
+				$buf .= "    public static function cases(): array\n    {\n    }\n";
 			}
 		}
 
@@ -99,7 +115,7 @@ class ClassStubGenerator {
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
 			try {
 				$val = Helpers::toPhpLiteral( $refConst->getValue() );
-				$buf .= "    const {$constName} = {$val};\n\n";
+				$buf .= "    const {$constName} = {$val};\n";
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
 			}

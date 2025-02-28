@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Paymenga gateways controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Payment_Gateways_V2_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'payment_gateways';
-
     /**
      * Register the route for /payment_gateways and /payment_gateways/<id>
      */

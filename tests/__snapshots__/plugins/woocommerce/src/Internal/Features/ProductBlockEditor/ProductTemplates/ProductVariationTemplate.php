@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Product Variation Template.
  */
-class ProductVariationTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate
+class ProductVariationTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate implements \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\ProductFormTemplateInterface
 {
     const GROUP_IDS = array (
   'GENERAL' => 'general',
@@ -13,9 +13,7 @@ class ProductVariationTemplate extends \Automattic\WooCommerce\Internal\Features
   'INVENTORY' => 'inventory',
   'SHIPPING' => 'shipping',
 );
-
     const SINGLE_VARIATION_NOTICE_DISMISSED_OPTION = 'woocommerce_single_variation_notice_dismissed';
-
     /**
      * ProductVariationTemplate constructor.
      */

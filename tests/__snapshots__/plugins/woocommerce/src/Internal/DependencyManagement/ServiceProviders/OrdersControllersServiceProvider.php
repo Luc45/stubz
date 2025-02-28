@@ -17,7 +17,6 @@ class OrdersControllersServiceProvider extends \Automattic\WooCommerce\Internal\
   1 => 'Automattic\\WooCommerce\\Internal\\Orders\\TaxesController',
   2 => 'Automattic\\WooCommerce\\Internal\\Orders\\OrderActionsRestController',
 );
-
     /**
      * Register the classes.
      */

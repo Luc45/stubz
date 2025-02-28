@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Orders controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Orders_V1_Controller extends \WC_REST_Posts_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'orders';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_order';
-
     /**
      * Initialize orders actions.
      */

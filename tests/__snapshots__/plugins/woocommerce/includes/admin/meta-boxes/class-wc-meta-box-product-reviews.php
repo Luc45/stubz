@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Meta_Box_Product_Reviews
  */

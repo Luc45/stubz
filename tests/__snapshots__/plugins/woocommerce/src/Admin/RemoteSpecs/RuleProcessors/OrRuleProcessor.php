@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that performs an OR operation on the rule's left and right
  * operands.
  */
-class OrRuleProcessor
+class OrRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Rule evaluator to use.
@@ -14,7 +14,6 @@ class OrRuleProcessor
      * @var RuleEvaluator
      */
     private $rule_evaluator = null;
-
     /**
      * Constructor.
      *

@@ -13,9 +13,7 @@ class Settings
   'retention_period_days' => 30,
   'level_threshold' => 'none',
 );
-
     const PREFIX = 'woocommerce_logs_';
-
     /**
      * Class Settings.
      */

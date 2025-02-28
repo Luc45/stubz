@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 class ChoosingTheme
 {
     const NOTE_NAME = 'wc-admin-choosing-a-theme';
-
     /**
      * Get the note.
      *

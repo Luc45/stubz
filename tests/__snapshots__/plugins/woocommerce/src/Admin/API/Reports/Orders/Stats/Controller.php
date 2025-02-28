@@ -16,7 +16,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
      * @var string
      */
     protected $rest_base = 'reports/orders/stats';
-
     /**
      * Get data from Orders\Stats\Query.
      *

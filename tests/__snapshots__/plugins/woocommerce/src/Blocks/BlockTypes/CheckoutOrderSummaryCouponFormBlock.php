@@ -13,5 +13,4 @@ class CheckoutOrderSummaryCouponFormBlock extends \Automattic\WooCommerce\Blocks
      * @var string
      */
     protected $block_name = 'checkout-order-summary-coupon-form-block';
-
 }

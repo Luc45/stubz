@@ -13,5 +13,4 @@ class MiniCartFooterBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abst
      * @var string
      */
     protected $block_name = 'mini-cart-footer-block';
-
 }

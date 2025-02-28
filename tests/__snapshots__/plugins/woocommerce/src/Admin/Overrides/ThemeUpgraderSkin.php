@@ -13,7 +13,6 @@ class ThemeUpgraderSkin extends \Theme_Upgrader_Skin
      * @var array
      */
     public $api = null;
-
     /**
      * Hide the skin header display.
      */

@@ -10,7 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Templates;
 class OrderConfirmationTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
     const SLUG = 'order-confirmation';
-
     /**
      * Initialization method.
      */

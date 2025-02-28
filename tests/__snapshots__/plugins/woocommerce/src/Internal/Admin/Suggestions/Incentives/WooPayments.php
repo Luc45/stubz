@@ -13,28 +13,24 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      * @var string
      */
     protected string $cache_transient_name;
-
     /**
      * The transient name used to store the value for if store has orders.
      *
      * @var string
      */
     protected string $store_has_orders_transient_name;
-
     /**
      * The option name used to store the value for if store had WooPayments in use.
      *
      * @var string
      */
     protected string $store_had_woopayments_option_name;
-
     /**
      * The memoized incentives to avoid fetching multiple times during a request.
      *
      * @var array|null
      */
     private array|null $incentives_memo = null;
-
     /**
      * Constructor.
      *

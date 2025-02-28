@@ -15,14 +15,12 @@ class FeaturePlugin extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
      * @var string
      */
     protected static $facade_over_classname = 'Automattic\\WooCommerce\\Internal\\Admin\\FeaturePlugin';
-
     /**
      * The version that this class was deprecated in.
      *
      * @var string
      */
     protected static $deprecated_in_version = '6.4.0';
-
     /**
      * Constructor
      *

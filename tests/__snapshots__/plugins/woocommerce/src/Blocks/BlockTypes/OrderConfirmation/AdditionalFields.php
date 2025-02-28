@@ -13,7 +13,6 @@ class AdditionalFields extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCo
      * @var string
      */
     protected $block_name = 'order-confirmation-additional-fields';
-
     /**
      * This renders the content of the block within the wrapper.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles deprecation notices and triggering of legacy action hooks.
  */
@@ -48,7 +47,6 @@ class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
     1 => 'woocommerce_settings_account_page_options_after',
   ),
 );
-
     /**
      * Array of versions on each hook has been deprecated.
      *
@@ -77,7 +75,6 @@ class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
   'woocommerce_settings_checkout_page_options_after' => '3.4.0',
   'woocommerce_settings_account_page_options_after' => '3.4.0',
 );
-
     /**
      * Hook into the new hook so we can handle deprecated hooks once fired.
      *

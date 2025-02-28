@@ -1,11 +1,10 @@
 <?php
-
 /**
  * WC Payment Token Data Store: Custom Table.
  *
  * @version  3.0.0
  */
-class WC_Payment_Token_Data_Store extends \WC_Data_Store_WP
+class WC_Payment_Token_Data_Store extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Interface, \WC_Payment_Token_Data_Store_Interface
 {
     /**
      * Meta type. Payment tokens are a new object type.
@@ -13,14 +12,12 @@ class WC_Payment_Token_Data_Store extends \WC_Data_Store_WP
      * @var string
      */
     protected $meta_type = 'payment_token';
-
     /**
      * If we have already saved our extra data, don't do automatic / default handling.
      *
      * @var bool
      */
     protected $extra_data_saved = false;
-
     /**
      * Create a new payment token in the database.
      *

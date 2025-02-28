@@ -10,18 +10,15 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
 class PTKPatternsStore
 {
     const TRANSIENT_NAME = 'ptk_patterns';
-
     const CATEGORY_MAPPING = array (
   'testimonials' => 'reviews',
 );
-
     /**
      * PatternsToolkit instance.
      *
      * @var PTKClient $ptk_client
      */
     private Automattic\WooCommerce\Blocks\Patterns\PTKClient $ptk_client;
-
     /**
      * Constructor for the class.
      *

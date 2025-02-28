@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Action
  */
@@ -11,28 +10,24 @@ class ActionScheduler_Action
      * @var string
      */
     protected $hook = '';
-
     /**
      * Action's args.
      *
      * @var array<string, mixed>
      */
     protected $args = array();
-
     /**
      * Action's schedule.
      *
      * @var ActionScheduler_Schedule
      */
     protected $schedule = null;
-
     /**
      * Action's group.
      *
      * @var string
      */
     protected $group = '';
-
     /**
      * Priorities are conceptually similar to those used for regular WordPress actions.
      * Like those, a lower priority takes precedence over a higher priority and the default
@@ -45,7 +40,6 @@ class ActionScheduler_Action
      * @var int
      */
     protected $priority = 10;
-
     /**
      * Construct.
      *

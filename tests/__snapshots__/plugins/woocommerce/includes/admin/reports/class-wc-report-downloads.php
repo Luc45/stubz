@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Downloads.
  */
@@ -11,7 +10,6 @@ class WC_Report_Downloads extends \WP_List_Table
      * @var int
      */
     protected $max_items = null;
-
     /**
      * Constructor.
      */

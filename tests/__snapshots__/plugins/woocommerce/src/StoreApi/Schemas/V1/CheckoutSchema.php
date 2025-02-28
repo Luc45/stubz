@@ -8,42 +8,36 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class CheckoutSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'checkout';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'checkout';
-
     /**
      * Billing address schema instance.
      *
      * @var BillingAddressSchema
      */
     protected $billing_address_schema = null;
-
     /**
      * Shipping address schema instance.
      *
      * @var ShippingAddressSchema
      */
     protected $shipping_address_schema = null;
-
     /**
      * Image Attachment schema instance.
      *
      * @var ImageAttachmentSchema
      */
     protected $image_attachment_schema = null;
-
     /**
      * Additional fields controller.
      *
      * @var CheckoutFields
      */
     protected $additional_fields_controller = null;
-
     /**
      * Constructor.
      *

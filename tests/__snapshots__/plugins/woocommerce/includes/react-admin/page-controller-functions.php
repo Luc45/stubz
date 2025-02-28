@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Connect an existing page to WooCommerce Admin.
  * Passthrough to PageController::connect_page().

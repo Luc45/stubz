@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Exporters
  */
-class ExportWCSettings
+class ExportWCSettings implements \Automattic\WooCommerce\Blueprint\Exporters\HasAlias, \Automattic\WooCommerce\Blueprint\Exporters\StepExporter
 {
     /**
      * Array of WC_Settings_Page objects.
@@ -17,7 +17,6 @@ class ExportWCSettings
      * @var WC_Settings_Page[]
      */
     private array $setting_pages;
-
     /**
      * Array of page IDs to exclude from export.
      *
@@ -27,7 +26,6 @@ class ExportWCSettings
   0 => 'integration',
   1 => 'site-visibility',
 );
-
     /**
      * Constructor.
      *

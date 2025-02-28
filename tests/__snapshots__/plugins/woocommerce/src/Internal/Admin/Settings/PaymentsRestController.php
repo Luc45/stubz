@@ -13,21 +13,18 @@ class PaymentsRestController extends \Automattic\WooCommerce\Internal\RestApiCon
      * @var string
      */
     protected string $route_namespace = 'wc-admin';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected string $rest_base = 'settings/payments';
-
     /**
      * The payments settings page service.
      *
      * @var Payments
      */
     private Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments;
-
     /**
      * Get the WooCommerce REST API namespace for the class.
      *

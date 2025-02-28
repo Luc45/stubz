@@ -10,18 +10,14 @@ namespace Automattic\WooCommerce\Admin\API\AI;
 class StoreTitle extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
 {
     const STORE_TITLE_OPTION_NAME = 'blogname';
-
     const AI_STORE_TITLE_OPTION_NAME = 'ai_generated_site_title';
-
     const DEFAULT_TITLE = 'Site Title';
-
     /**
      * Endpoint.
      *
      * @var string
      */
     protected $endpoint = 'store-title';
-
     /**
      * Register routes.
      */

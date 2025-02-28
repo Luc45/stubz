@@ -13,5 +13,4 @@ class CartLineItemsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstr
      * @var string
      */
     protected $block_name = 'cart-line-items-block';
-
 }

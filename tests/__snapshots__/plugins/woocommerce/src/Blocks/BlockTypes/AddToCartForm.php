@@ -13,7 +13,6 @@ class AddToCartForm extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var string
      */
     protected $block_name = 'add-to-cart-form';
-
     /**
      * Initializes the AddToCartForm block and hooks into the `wc_add_to_cart_message_html` filter
      * to prevent displaying the Cart Notice when the block is inside the Single Product block

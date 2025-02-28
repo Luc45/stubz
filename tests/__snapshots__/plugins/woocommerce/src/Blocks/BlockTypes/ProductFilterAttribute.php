@@ -13,7 +13,6 @@ final class ProductFilterAttribute extends \Automattic\WooCommerce\Blocks\BlockT
      * @var string
      */
     protected $block_name = 'product-filter-attribute';
-
     /**
      * Initialize this block type.
      *

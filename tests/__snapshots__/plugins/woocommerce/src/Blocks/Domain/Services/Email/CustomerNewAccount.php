@@ -20,28 +20,24 @@ class CustomerNewAccount extends \WC_Email
      * @var string
      */
     public $user_login = null;
-
     /**
      * User email.
      *
      * @var string
      */
     public $user_email = null;
-
     /**
      * Magic link to set initial password.
      *
      * @var string
      */
     public $set_password_url = null;
-
     /**
      * Override (force) default template path
      *
      * @var string
      */
     public $default_template_path = null;
-
     /**
      * Constructor.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Order refund class.
  */
@@ -11,14 +10,12 @@ class WC_Order_Refund extends \WC_Abstract_Order
      * @var string
      */
     protected $data_store_name = 'order-refund';
-
     /**
      * This is the name of this object type.
      *
      * @var string
      */
     protected $object_type = 'order_refund';
-
     /**
      * Stores product data.
      *
@@ -30,7 +27,6 @@ class WC_Order_Refund extends \WC_Abstract_Order
   'refunded_by' => 0,
   'refunded_payment' => false,
 );
-
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
      * With custom tables, some of these are moved from metadata to their own columns, but existing code will still try to add them to metadata. This array is used to keep track of such properties.
@@ -45,7 +41,6 @@ class WC_Order_Refund extends \WC_Abstract_Order
   2 => '_refunded_by',
   3 => '_refunded_payment',
 );
-
     /**
      * Get internal type (post type.)
      *

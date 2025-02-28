@@ -10,28 +10,24 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 abstract class AbstractSchema
 {
     const EXTENDING_KEY = 'extensions';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'Schema';
-
     /**
      * Rest extend instance.
      *
      * @var ExtendSchema
      */
     protected $extend = null;
-
     /**
      * Schema Controller instance.
      *
      * @var SchemaController
      */
     protected $controller = null;
-
     /**
      * Constructor.
      *

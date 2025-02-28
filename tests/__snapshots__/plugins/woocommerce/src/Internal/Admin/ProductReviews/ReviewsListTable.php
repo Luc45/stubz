@@ -13,28 +13,24 @@ class ReviewsListTable extends \WP_List_Table
      * @var bool
      */
     private $current_user_can_edit_review = false;
-
     /**
      * Memoization flag to determine if the current user can moderate reviews.
      *
      * @var bool
      */
     private $current_user_can_moderate_reviews = null;
-
     /**
      * Current rating of reviews to display.
      *
      * @var int
      */
     private $current_reviews_rating = 0;
-
     /**
      * Current product the reviews should be displayed for.
      *
      * @var WC_Product|null Product or null for all products.
      */
     private $current_product_for_reviews = null;
-
     /**
      * Constructor.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Attributes controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Product_Attributes_Controller extends \WC_REST_Product_Attributes_
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Generates a unique slug for a given attribute name. We do this so that we can 
      * create more than one attribute with the same name.

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_Abstract_RecurringSchedule
  */
@@ -16,14 +15,12 @@ abstract class ActionScheduler_Abstract_RecurringSchedule extends \ActionSchedul
      * @var DateTime
      */
     private $first_date = null;
-
     /**
      * Timestamp equivalent of @see $this->first_date
      *
      * @var int
      */
     protected $first_timestamp = null;
-
     /**
      * The recurrence between each time an action is run using this schedule.
      * Used to calculate the start date & time. Can be a number of seconds, in the
@@ -33,7 +30,6 @@ abstract class ActionScheduler_Abstract_RecurringSchedule extends \ActionSchedul
      * @var mixed
      */
     protected $recurrence = null;
-
     /**
      * Construct.
      *

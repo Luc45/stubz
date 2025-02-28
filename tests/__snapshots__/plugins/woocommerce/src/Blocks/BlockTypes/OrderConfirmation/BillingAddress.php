@@ -13,7 +13,6 @@ class BillingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConf
      * @var string
      */
     protected $block_name = 'order-confirmation-billing-address';
-
     /**
      * This renders the content of the block within the wrapper.
      *

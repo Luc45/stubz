@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Free Shipping Method.
  *
@@ -17,14 +16,12 @@ class WC_Shipping_Legacy_Free_Shipping extends \WC_Shipping_Method
      * @var float
      */
     public $min_amount = null;
-
     /**
      * Requires option.
      *
      * @var string
      */
     public $requires = null;
-
     /**
      * Constructor.
      */

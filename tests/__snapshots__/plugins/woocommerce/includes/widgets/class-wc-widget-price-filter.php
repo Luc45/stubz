@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Widget price filter class.
  */

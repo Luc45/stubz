@@ -8,23 +8,19 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 class Payments
 {
     const USER_PAYMENTS_NOX_PROFILE_KEY = 'woocommerce_payments_nox_profile';
-
     const SUGGESTIONS_CONTEXT = 'wc_settings_payments';
-
     /**
      * The payment providers service.
      *
      * @var PaymentProviders
      */
     private Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders $providers;
-
     /**
      * The payment extension suggestions service.
      *
      * @var ExtensionSuggestions
      */
     private Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $extension_suggestions;
-
     /**
      * Initialize the class instance.
      *

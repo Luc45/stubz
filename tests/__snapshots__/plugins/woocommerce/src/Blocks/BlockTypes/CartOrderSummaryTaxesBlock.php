@@ -13,5 +13,4 @@ class CartOrderSummaryTaxesBlock extends \Automattic\WooCommerce\Blocks\BlockTyp
      * @var string
      */
     protected $block_name = 'cart-order-summary-taxes-block';
-
 }

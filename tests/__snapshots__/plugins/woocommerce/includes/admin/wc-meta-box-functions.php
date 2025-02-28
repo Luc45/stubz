@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Output a text input box.
  *

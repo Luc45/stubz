@@ -15,7 +15,6 @@ class Query extends \Automattic\WooCommerce\Admin\API\Reports\GenericQuery
      * @var string
      */
     protected $name = 'orders-stats';
-
     /**
      * Valid fields for Orders report.
      *

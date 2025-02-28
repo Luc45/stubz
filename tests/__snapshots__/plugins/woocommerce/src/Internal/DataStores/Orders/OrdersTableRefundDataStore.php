@@ -18,7 +18,6 @@ class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataSt
   2 => '_refunded_by',
   3 => '_refunded_payment',
 );
-
     /**
      * We do not have and use all the getters and setters from OrderTableDataStore, so we only select the props we actually need.
      *
@@ -69,7 +68,6 @@ class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataSt
     'name' => 'discount_total',
   ),
 );
-
     /**
      * Delete a refund order from database.
      *

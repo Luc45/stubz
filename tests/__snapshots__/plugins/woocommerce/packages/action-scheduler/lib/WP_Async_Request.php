@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract WP_Async_Request class.
  *
@@ -15,7 +14,6 @@ abstract class WP_Async_Request
      * @var string
      */
     protected $prefix = 'wp';
-
     /**
      * Action
      *
@@ -24,14 +22,12 @@ abstract class WP_Async_Request
      * @var string
      */
     protected $action = 'async_request';
-
     /**
      * Identifier
      *
      * @var mixed
      */
     protected $identifier = null;
-
     /**
      * Data
      *
@@ -40,7 +36,6 @@ abstract class WP_Async_Request
      * @var array
      */
     protected $data = array();
-
     /**
      * Initiate new async request
      */

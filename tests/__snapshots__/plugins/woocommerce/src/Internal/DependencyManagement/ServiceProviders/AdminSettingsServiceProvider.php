@@ -18,7 +18,6 @@ class AdminSettingsServiceProvider extends \Automattic\WooCommerce\Internal\Depe
   2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsController',
   3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentProviders',
 );
-
     /**
      * Registers services provided by this class.
      */

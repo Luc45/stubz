@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Product Tags controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Product_Tags_Controller extends \WC_REST_Product_Tags_V2_Controlle
      * @var string
      */
     protected $namespace = 'wc/v3';
-
 }

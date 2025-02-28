@@ -13,14 +13,12 @@ class CategoryLookup
      * @var array
      */
     protected $edited_product_cats = array();
-
     /**
      * The single instance of the class.
      *
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Constructor
      *

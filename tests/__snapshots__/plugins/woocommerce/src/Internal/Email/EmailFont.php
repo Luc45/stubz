@@ -26,5 +26,4 @@ class EmailFont
   'Trebuchet MS' => '\'Trebuchet MS\', \'Lucida Grande\', \'Lucida Sans Unicode\', \'Lucida Sans\', Tahoma, sans-serif',
   'Verdana' => 'Verdana, Geneva, sans-serif',
 );
-
 }

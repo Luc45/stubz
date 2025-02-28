@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Report Top Sellers controller class.
  *
@@ -14,5 +13,4 @@ class WC_REST_Report_Top_Sellers_V2_Controller extends \WC_REST_Report_Top_Selle
      * @var string
      */
     protected $namespace = 'wc/v2';
-
 }

@@ -18,7 +18,6 @@ class FeatureGating extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
      * @var string
      */
     protected static $deprecated_in_version = '9.6.0';
-
     /**
      * Constructor
      *

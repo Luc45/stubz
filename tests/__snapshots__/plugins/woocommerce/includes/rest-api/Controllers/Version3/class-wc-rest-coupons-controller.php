@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Coupons controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Coupons_Controller extends \WC_REST_Coupons_V2_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Prepare objects query.
      *

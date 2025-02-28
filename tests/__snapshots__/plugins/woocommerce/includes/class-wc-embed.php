@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Embed Class which handles any WooCommerce Products that are embedded on this site or another site.
  */

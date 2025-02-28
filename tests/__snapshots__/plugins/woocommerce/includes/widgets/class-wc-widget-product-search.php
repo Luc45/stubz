@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Widget product search class.
  */

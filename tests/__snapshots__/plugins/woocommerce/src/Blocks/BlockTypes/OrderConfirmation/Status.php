@@ -13,7 +13,6 @@ class Status extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation
      * @var string
      */
     protected $block_name = 'order-confirmation-status';
-
     /**
      * This block uses a custom render method so that the email verification form can be appended to the block. This does
      * not inherit styles from the parent block.

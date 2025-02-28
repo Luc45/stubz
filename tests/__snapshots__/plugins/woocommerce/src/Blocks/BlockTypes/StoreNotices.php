@@ -13,7 +13,6 @@ class StoreNotices extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      * @var string
      */
     protected $block_name = 'store-notices';
-
     /**
      * Render the block.
      *

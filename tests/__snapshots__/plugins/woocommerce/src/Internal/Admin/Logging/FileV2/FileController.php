@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 class FileController
 {
     const MAX_FILE_ROTATIONS = 10;
-
     const DEFAULTS_GET_FILES = array (
   'date_end' => 0,
   'date_filter' => '',
@@ -19,20 +18,14 @@ class FileController
   'per_page' => 20,
   'source' => '',
 );
-
     const DEFAULTS_SEARCH_WITHIN_FILES = array (
   'offset' => 0,
   'per_page' => 50,
 );
-
     const SEARCH_MAX_FILES = 100;
-
     const SEARCH_MAX_RESULTS = 200;
-
     const CACHE_GROUP = 'log-files';
-
     const SEARCH_CACHE_KEY = 'logs_previous_search';
-
     /**
      * Get the file size limit that determines when to rotate a file.
      *

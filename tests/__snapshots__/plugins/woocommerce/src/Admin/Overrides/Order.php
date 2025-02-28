@@ -13,14 +13,12 @@ class Order extends \WC_Order
      * @var void|array
      */
     protected $refunded_line_items = null;
-
     /**
      * Caches the customer ID.
      *
      * @var int
      */
     public $customer_id = null;
-
     /**
      * Get only core class data in array format.
      *

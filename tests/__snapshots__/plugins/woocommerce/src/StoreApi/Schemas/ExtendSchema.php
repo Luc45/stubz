@@ -20,35 +20,30 @@ final class ExtendSchema
      * @var string[]
      */
     private $endpoints;
-
     /**
      * Holds the formatters class instance.
      *
      * @var Formatters
      */
     private $formatters = null;
-
     /**
      * Data to be extended
      *
      * @var array
      */
     private $extend_data = array();
-
     /**
      * Data to be extended
      *
      * @var array
      */
     private $callback_methods = array();
-
     /**
      * Array of payment requirements
      *
      * @var array
      */
     private $payment_requirements = array();
-
     /**
      * Constructor
      *

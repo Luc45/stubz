@@ -8,13 +8,8 @@ namespace Automattic\WooCommerce\Enums;
 final class ProductType
 {
     const SIMPLE = 'simple';
-
     const VARIABLE = 'variable';
-
     const GROUPED = 'grouped';
-
     const EXTERNAL = 'external';
-
     const VARIATION = 'variation';
-
 }

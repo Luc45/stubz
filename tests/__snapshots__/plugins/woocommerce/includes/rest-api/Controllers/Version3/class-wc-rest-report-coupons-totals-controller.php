@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Reports Coupons Totals controller class.
  *
@@ -14,14 +13,12 @@ class WC_REST_Report_Coupons_Totals_Controller extends \WC_REST_Reports_Controll
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'reports/coupons/totals';
-
     /**
      * Get reports list.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Allows updates via CLI.
  *

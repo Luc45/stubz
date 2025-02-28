@@ -13,7 +13,6 @@ trait BlockContainerTrait
      * @var BlockInterface[]
      */
     private $inner_blocks = array();
-
     /**
      * Add a block to the block container.
      *

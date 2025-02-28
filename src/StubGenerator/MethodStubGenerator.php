@@ -12,7 +12,7 @@ class MethodStubGenerator {
 	 * Generate a method stub.
 	 */
 	public function generateMethodStub( ReflectionMethod $method ): string {
-		$buf       = '';
+		$buf = '';
 
 		$doc = $method->getDocComment();
 		if ( $doc !== null ) {
@@ -25,43 +25,58 @@ class MethodStubGenerator {
 			$buf .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 		}
 
-		if ( $method->isPrivate() ) {
-			$buf .= '    private ';
-		} elseif ( $method->isProtected() ) {
-			$buf .= '    protected ';
-		} else {
-			$buf .= '    public ';
-		}
-		if ( $method->isStatic() ) {
-			$buf .= 'static ';
-		}
-		if ( $method->isFinal() && ! $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
-			$buf .= 'final ';
-		}
+		// --- NEW ORDER STARTS HERE ---
+		$buf .= '    ';
+
+		// 1) abstract if needed
 		if ( $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
 			$buf .= 'abstract ';
 		}
 
-		$buf    .= 'function ' . $method->getName() . '(';
+		// 2) final if needed
+		if ( $method->isFinal() && ! $method->isAbstract() && ! $method->getDeclaringClass()->isInterface() ) {
+			$buf .= 'final ';
+		}
+
+		// 3) visibility
+		if ( $method->isPrivate() ) {
+			$buf .= 'private ';
+		} elseif ( $method->isProtected() ) {
+			$buf .= 'protected ';
+		} else {
+			$buf .= 'public ';
+		}
+
+		// 4) static if needed
+		if ( $method->isStatic() ) {
+			$buf .= 'static ';
+		}
+
+		// 5) now the function keyword + method name
+		$buf .= 'function ' . $method->getName() . '(';
+
+		// handle parameters
 		$params = [];
 		foreach ( $method->getParameters() as $pm ) {
 			$params[] = ( new ParameterStubGenerator() )->generateParameterStub( $pm );
 		}
 		$buf .= implode( ', ', $params ) . ')';
 
+		// optionally add return type
 		try {
 			$ret = $method->getReturnType();
 			if ( $ret !== null ) {
 				$buf .= ': ' . (string) $ret;
 			}
-		} catch ( Throwable $ex ) {
+		} catch ( \Throwable $ex ) {
 			Helpers::handleBetterReflectionException( $ex );
 		}
 
+		// finalize
 		if ( $method->isAbstract() || $method->getDeclaringClass()->isInterface() ) {
-			$buf .= ";\n\n";
+			$buf .= ";\n";
 		} else {
-			$buf .= "\n    {\n        // stub\n    }\n\n";
+			$buf .= "\n{\n}\n";
 		}
 
 		return $buf;

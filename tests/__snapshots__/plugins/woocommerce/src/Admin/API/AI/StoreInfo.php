@@ -15,7 +15,6 @@ class StoreInfo extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
      * @var string
      */
     protected $endpoint = 'store-info';
-
     /**
      * Register routes.
      */

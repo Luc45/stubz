@@ -15,7 +15,6 @@ class MarketplaceServiceProvider extends \Automattic\WooCommerce\Internal\Depend
     protected $provides = array (
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Marketplace',
 );
-
     /**
      * Register the classes.
      */

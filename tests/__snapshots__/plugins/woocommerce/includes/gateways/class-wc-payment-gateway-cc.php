@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Credit Card Payment Gateway
  *

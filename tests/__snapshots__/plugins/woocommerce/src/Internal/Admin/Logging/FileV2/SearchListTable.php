@@ -8,21 +8,18 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 class SearchListTable extends \WP_List_Table
 {
     const PER_PAGE_USER_OPTION_KEY = 'woocommerce_logging_search_results_per_page';
-
     /**
      * Instance of FileController.
      *
      * @var FileController
      */
     private $file_controller = null;
-
     /**
      * Instance of PageController.
      *
      * @var PageController
      */
     private $page_controller = null;
-
     /**
      * SearchListTable class.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product categories widget class.
  *
@@ -13,14 +12,12 @@ class WC_Widget_Product_Categories extends \WC_Widget
      * @var array
      */
     public $cat_ancestors = null;
-
     /**
      * Current Category.
      *
      * @var bool
      */
     public $current_cat = null;
-
     /**
      * Constructor.
      */

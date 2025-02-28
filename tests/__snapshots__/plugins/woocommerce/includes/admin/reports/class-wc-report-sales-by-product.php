@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Sales_By_Product
  *
@@ -14,21 +13,18 @@ class WC_Report_Sales_By_Product extends \WC_Admin_Report
      * @var array
      */
     public $chart_colours = array();
-
     /**
      * Product ids.
      *
      * @var array
      */
     public $product_ids = array();
-
     /**
      * Product ids with titles.
      *
      * @var array
      */
     public $product_ids_titles = array();
-
     /**
      * Constructor.
      */

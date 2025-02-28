@@ -13,7 +13,6 @@ class FeaturedProduct extends \Automattic\WooCommerce\Blocks\BlockTypes\Featured
      * @var string
      */
     protected $block_name = 'featured-product';
-
     /**
      * Returns the featured product.
      *

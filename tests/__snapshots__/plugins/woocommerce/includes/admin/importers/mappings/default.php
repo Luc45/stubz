@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Importer current locale.
  *

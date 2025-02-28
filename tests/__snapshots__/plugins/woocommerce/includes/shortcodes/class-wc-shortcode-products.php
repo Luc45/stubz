@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Products shortcode class.
  */
@@ -12,7 +11,6 @@ class WC_Shortcode_Products
      * @var   string
      */
     protected $type = 'products';
-
     /**
      * Attributes.
      *
@@ -20,7 +18,6 @@ class WC_Shortcode_Products
      * @var   array
      */
     protected $attributes = array();
-
     /**
      * Query args.
      *
@@ -28,7 +25,6 @@ class WC_Shortcode_Products
      * @var   array
      */
     protected $query_args = array();
-
     /**
      * Set custom visibility.
      *
@@ -36,7 +32,6 @@ class WC_Shortcode_Products
      * @var   bool
      */
     protected $custom_visibility = false;
-
     /**
      * Initialize shortcode.
      *

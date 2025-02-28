@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer class.
  */
@@ -48,28 +47,24 @@ class WC_Customer extends \WC_Legacy_Customer
   ),
   'is_paying_customer' => false,
 );
-
     /**
      * Stores a password if this needs to be changed. Write-only and hidden from _data.
      *
      * @var string
      */
     protected $password = '';
-
     /**
      * Stores if user is VAT exempt for this session.
      *
      * @var string
      */
     protected $is_vat_exempt = false;
-
     /**
      * Stores if user has calculated shipping in this session.
      *
      * @var string
      */
     protected $calculated_shipping = false;
-
     /**
      * This is the name of this object type.
      *
@@ -77,7 +72,6 @@ class WC_Customer extends \WC_Legacy_Customer
      * @var string
      */
     protected $object_type = 'customer';
-
     /**
      * Load customer data based on how WC_Customer is called.
      *

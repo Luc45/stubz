@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Session
  */
@@ -11,21 +10,18 @@ abstract class WC_Session
      * @var int $_customer_id Customer ID.
      */
     protected $_customer_id = null;
-
     /**
      * Session Data.
      *
      * @var array $_data Data array.
      */
     protected $_data = array();
-
     /**
      * Dirty when the session needs saving.
      *
      * @var bool $_dirty When something changes
      */
     protected $_dirty = false;
-
     /**
      * Init hooks and session data. Extended by child classes.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Register a checkout field.
  *

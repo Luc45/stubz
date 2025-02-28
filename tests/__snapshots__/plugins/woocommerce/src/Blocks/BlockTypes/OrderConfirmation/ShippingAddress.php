@@ -13,7 +13,6 @@ class ShippingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderCon
      * @var string
      */
     protected $block_name = 'order-confirmation-shipping-address';
-
     /**
      * This renders the content of the block within the wrapper.
      *

@@ -21,35 +21,30 @@ class Controller
      * @var self
      */
     private static $instance = null;
-
     /**
      * Scheduler instance.
      *
      * @var Action_Scheduler\Migration\Scheduler
      */
     private $migration_scheduler = null;
-
     /**
      * Class name of the store object.
      *
      * @var string
      */
     private $store_classname = null;
-
     /**
      * Class name of the logger object.
      *
      * @var string
      */
     private $logger_classname = null;
-
     /**
      * Flag to indicate migrating custom store.
      *
      * @var bool
      */
     private $migrate_custom_store = null;
-
     /**
      * Controller constructor.
      *

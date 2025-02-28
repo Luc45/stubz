@@ -13,14 +13,12 @@ class WCAdminAssets
      * @var WCAdminAssets instance
      */
     protected static $instance = null;
-
     /**
      * An array of dependencies that have been preloaded (to avoid duplicates).
      *
      * @var array
      */
     protected $preloaded_dependencies = null;
-
     /**
      * Get class instance.
      */

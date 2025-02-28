@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Admin_Taxonomies class.
  */
@@ -11,14 +10,12 @@ class WC_Admin_Taxonomies
      * @var WC_Admin_Taxonomies instance
      */
     protected static $instance = false;
-
     /**
      * Default category ID.
      *
      * @var int
      */
     private $default_cat_id = 0;
-
     /**
      * Get class instance
      */

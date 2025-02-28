@@ -16,7 +16,6 @@ class PostMetaToOrderMetaMigrator extends \Automattic\WooCommerce\Database\Migra
      * @var array
      */
     private $excluded_columns = null;
-
     /**
      * PostMetaToOrderMetaMigrator constructor.
      *

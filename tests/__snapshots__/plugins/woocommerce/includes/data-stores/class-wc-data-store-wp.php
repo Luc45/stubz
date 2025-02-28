@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Data_Store_WP class.
  */
@@ -13,7 +12,6 @@ class WC_Data_Store_WP
      * @var string
      */
     protected $meta_type = 'post';
-
     /**
      * This only needs set if you are using a custom metadata type (for example payment tokens.
      * This should be the name of the field your table uses for associating meta with objects.
@@ -22,7 +20,6 @@ class WC_Data_Store_WP
      * @var string
      */
     protected $object_id_field_for_meta = '';
-
     /**
      * Data stored in meta keys, but not considered "meta" for an object.
      *
@@ -31,7 +28,6 @@ class WC_Data_Store_WP
      * @var array
      */
     protected $internal_meta_keys = array();
-
     /**
      * Meta data which should exist in the DB, even if empty.
      *
@@ -40,7 +36,6 @@ class WC_Data_Store_WP
      * @var array
      */
     protected $must_exist_meta_keys = array();
-
     /**
      * Get and store terms from a taxonomy.
      *

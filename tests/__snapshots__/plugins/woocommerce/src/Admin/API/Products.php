@@ -16,14 +16,12 @@ class Products extends \WC_REST_Products_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Local cache of last order dates by ID.
      *
      * @var array
      */
     protected $last_order_dates = array();
-
     /**
      * Adds properties that can be embed via ?_embed=1.
      *

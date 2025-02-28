@@ -15,42 +15,36 @@ class MarketingCampaign
      * @var string
      */
     protected $id = null;
-
     /**
      * The marketing campaign type.
      *
      * @var MarketingCampaignType
      */
     protected $type = null;
-
     /**
      * Title of the marketing campaign.
      *
      * @var string
      */
     protected $title = null;
-
     /**
      * The URL to the channel's campaign management page.
      *
      * @var string
      */
     protected $manage_url = null;
-
     /**
      * The cost of the marketing campaign with the currency.
      *
      * @var Price
      */
     protected $cost = null;
-
     /**
      * The sales of the marketing campaign with the currency.
      *
      * @var Price
      */
     protected $sales = null;
-
     /**
      * MarketingCampaign constructor.
      *

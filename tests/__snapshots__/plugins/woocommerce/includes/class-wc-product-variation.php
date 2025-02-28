@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product variation class.
  */
@@ -11,7 +10,6 @@ class WC_Product_Variation extends \WC_Product_Simple
      * @var string
      */
     protected $post_type = 'product_variation';
-
     /**
      * Parent data.
      *
@@ -32,7 +30,6 @@ class WC_Product_Variation extends \WC_Product_Simple
   'image_id' => '',
   'purchase_note' => '',
 );
-
     /**
      * Override the default constructor to set custom defaults.
      *

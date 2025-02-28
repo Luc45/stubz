@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_WCCOM_Site_Installation_State_Storage class
  */

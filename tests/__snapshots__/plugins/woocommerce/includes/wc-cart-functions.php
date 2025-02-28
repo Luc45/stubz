@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Prevent password protected products being added to the cart.
  *

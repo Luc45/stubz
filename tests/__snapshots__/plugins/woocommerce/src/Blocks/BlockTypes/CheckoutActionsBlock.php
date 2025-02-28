@@ -13,7 +13,6 @@ class CheckoutActionsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abs
      * @var string
      */
     protected $block_name = 'checkout-actions-block';
-
     /**
      * Initialize this block type.
      *

@@ -13,7 +13,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @var string
      */
     protected $block_name = null;
-
     /**
      * Default attribute values.
      *
@@ -22,7 +21,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
     protected $defaults = array (
   'align' => 'none',
 );
-
     /**
      * Global style enabled for this block.
      *
@@ -38,7 +36,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
   6 => 'text_color',
   7 => 'extra_classes',
 );
-
     /**
      * Returns the featured item.
      *

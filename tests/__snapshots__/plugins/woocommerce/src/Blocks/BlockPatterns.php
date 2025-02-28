@@ -33,35 +33,30 @@ class BlockPatterns
   0 => '_woo_',
   1 => '_dotcom_imported_',
 );
-
     /**
      * Path to the patterns' directory.
      *
      * @var string $patterns_path
      */
     private string $patterns_path;
-
     /**
      * PatternRegistry instance.
      *
      * @var PatternRegistry $pattern_registry
      */
     private Automattic\WooCommerce\Blocks\Patterns\PatternRegistry $pattern_registry;
-
     /**
      * Patterns dictionary
      *
      * @var array|WP_Error
      */
     private $dictionary = null;
-
     /**
      * PTKPatternsStore instance.
      *
      * @var PTKPatternsStore $ptk_patterns_store
      */
     private Automattic\WooCommerce\Blocks\Patterns\PTKPatternsStore $ptk_patterns_store;
-
     /**
      * Constructor for class
      *

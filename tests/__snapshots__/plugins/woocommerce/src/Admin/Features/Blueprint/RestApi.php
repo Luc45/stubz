@@ -17,7 +17,6 @@ class RestApi
      * @var string
      */
     protected $namespace = 'wc-admin';
-
     /**
      * Register routes.
      *

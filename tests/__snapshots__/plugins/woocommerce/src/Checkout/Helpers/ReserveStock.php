@@ -13,7 +13,6 @@ final class ReserveStock
      * @var boolean
      */
     private $enabled = true;
-
     /**
      * Constructor
      */

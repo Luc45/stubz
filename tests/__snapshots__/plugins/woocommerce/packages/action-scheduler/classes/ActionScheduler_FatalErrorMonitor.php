@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Class ActionScheduler_FatalErrorMonitor
  */
@@ -11,21 +10,18 @@ class ActionScheduler_FatalErrorMonitor
      * @var ActionScheduler_ActionClaim
      */
     private $claim = null;
-
     /**
      * ActionScheduler_Store instance.
      *
      * @var ActionScheduler_Store
      */
     private $store = null;
-
     /**
      * Current action's ID.
      *
      * @var int
      */
     private $action_id = 0;
-
     /**
      * Construct.
      *

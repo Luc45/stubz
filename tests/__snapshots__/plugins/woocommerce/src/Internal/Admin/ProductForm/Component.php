@@ -13,14 +13,12 @@ abstract class Component
      * @var array
      */
     protected $additional_args = null;
-
     /**
      * Array of required arguments.
      *
      * @var array
      */
     protected $required_arguments = array();
-
     /**
      * Constructor
      *

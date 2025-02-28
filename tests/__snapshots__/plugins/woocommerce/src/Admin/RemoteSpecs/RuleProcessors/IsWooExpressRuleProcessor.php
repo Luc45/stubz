@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that passes (or fails) when the site is on a Woo Express plan.
  * You may optionally pass a plan name to target a specific Woo Express plan.
  */
-class IsWooExpressRuleProcessor
+class IsWooExpressRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Passes (or fails) based on whether the site is a Woo Express plan.

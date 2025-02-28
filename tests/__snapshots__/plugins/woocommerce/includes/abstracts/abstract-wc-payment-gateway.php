@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Payment Gateway class.
  *
@@ -18,77 +17,66 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      * @var string
      */
     public $order_button_text = null;
-
     /**
      * Yes or no based on whether the method is enabled.
      *
      * @var string
      */
     public $enabled = 'yes';
-
     /**
      * Payment method title for the frontend.
      *
      * @var string
      */
     public $title = null;
-
     /**
      * Payment method description for the frontend.
      *
      * @var string
      */
     public $description = null;
-
     /**
      * Chosen payment method id.
      *
      * @var bool
      */
     public $chosen = null;
-
     /**
      * Gateway title.
      *
      * @var string
      */
     public $method_title = '';
-
     /**
      * Gateway description.
      *
      * @var string
      */
     public $method_description = '';
-
     /**
      * True if the gateway shows fields on the checkout.
      *
      * @var bool
      */
     public $has_fields = null;
-
     /**
      * Countries this gateway is allowed for.
      *
      * @var array
      */
     public $countries = null;
-
     /**
      * Available for all counties or specific.
      *
      * @var string
      */
     public $availability = null;
-
     /**
      * Icon for the gateway.
      *
      * @var string
      */
     public $icon = null;
-
     /**
      * Supported features such as 'default_credit_card_form', 'refunds'.
      *
@@ -97,21 +85,18 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
     public $supports = array (
   0 => 'products',
 );
-
     /**
      * Maximum transaction amount, zero does not define a maximum.
      *
      * @var int
      */
     public $max_amount = 0;
-
     /**
      * Optional URL to view a transaction.
      *
      * @var string
      */
     public $view_transaction_url = '';
-
     /**
      * Optional label to show for "new payment method" in the payment
      * method/token selection radio selection.
@@ -119,21 +104,18 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      * @var string
      */
     public $new_method_label = '';
-
     /**
      * Pay button ID if supported.
      *
      * @var string
      */
     public $pay_button_id = '';
-
     /**
      * Contains a users saved tokens for this gateway.
      *
      * @var array
      */
     protected $tokens = array();
-
     /**
      * Returns a users saved tokens for this gateway.
      *

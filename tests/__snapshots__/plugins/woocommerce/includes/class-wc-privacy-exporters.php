@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Privacy_Exporters Class.
  */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Webhooks controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Webhooks_Controller extends \WC_REST_Webhooks_V2_Controller
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Get the default REST API version.
      *

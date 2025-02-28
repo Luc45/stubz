@@ -8,19 +8,12 @@ namespace Automattic\WooCommerce\Admin;
 class PluginsHelper
 {
     const WOO_SUBSCRIPTION_PAGE_URL = 'https://woocommerce.com/my-account/my-subscriptions/';
-
     const WOO_CART_PAGE_URL = 'https://woocommerce.com/cart/';
-
     const WOO_ADD_PAYMENT_METHOD_URL = 'https://woocommerce.com/my-account/add-payment-method/';
-
     const DISMISS_EXPIRED_SUBS_NOTICE = 'woo_subscription_expired_notice_dismiss';
-
     const DISMISS_EXPIRING_SUBS_NOTICE = 'woo_subscription_expiring_notice_dismiss';
-
     const DISMISS_MISSING_SUBS_NOTICE = 'woo_subscription_missing_notice_dismiss';
-
     const DISMISS_DISCONNECT_NOTICE = 'woo_disconnect_notice_dismiss';
-
     /**
      * Subscription notices in Woo screens are shown in clear priority order, first
      * expired, and if those don't exist, expiring, and finally if none of those exist,
@@ -29,7 +22,6 @@ class PluginsHelper
      * @var bool
      */
     public static $subscription_usage_notices_already_shown = false;
-
     /**
      * Initialize hooks.
      */

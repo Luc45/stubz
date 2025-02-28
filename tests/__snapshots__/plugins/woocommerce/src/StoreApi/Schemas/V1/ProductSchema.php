@@ -8,21 +8,18 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 class ProductSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'product';
-
     /**
      * The schema item name.
      *
      * @var string
      */
     protected $title = 'product';
-
     /**
      * Image attachment schema instance.
      *
      * @var ImageAttachmentSchema
      */
     protected $image_attachment_schema = null;
-
     /**
      * Constructor.
      *

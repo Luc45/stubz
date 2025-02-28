@@ -13,5 +13,4 @@ class CartOrderSummaryCouponFormBlock extends \Automattic\WooCommerce\Blocks\Blo
      * @var string
      */
     protected $block_name = 'cart-order-summary-coupon-form-block';
-
 }

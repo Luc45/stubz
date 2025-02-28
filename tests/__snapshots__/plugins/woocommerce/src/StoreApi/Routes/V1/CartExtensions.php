@@ -8,9 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 class CartExtensions extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'cart-extensions';
-
     const SCHEMA_TYPE = 'cart-extensions';
-
     /**
      * Get the path of this REST route.
      *

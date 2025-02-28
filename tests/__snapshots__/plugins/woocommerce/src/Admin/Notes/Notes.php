@@ -8,7 +8,6 @@ namespace Automattic\WooCommerce\Admin\Notes;
 class Notes
 {
     const UNSNOOZE_HOOK = 'wc_admin_unsnooze_admin_notes';
-
     /**
      * Hook appropriate actions.
      */

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * New Order Email.
  *

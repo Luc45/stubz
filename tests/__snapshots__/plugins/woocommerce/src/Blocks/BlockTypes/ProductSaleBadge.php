@@ -13,14 +13,12 @@ class ProductSaleBadge extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstrac
      * @var string
      */
     protected $block_name = 'product-sale-badge';
-
     /**
      * API version name.
      *
      * @var string
      */
     protected $api_version = '3';
-
     /**
      * Get block attributes.
      *

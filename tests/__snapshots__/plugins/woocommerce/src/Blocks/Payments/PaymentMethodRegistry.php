@@ -15,7 +15,6 @@ final class PaymentMethodRegistry extends \Automattic\WooCommerce\Blocks\Integra
      * @var string
      */
     protected $registry_identifier = 'payment_method_type';
-
     /**
      * Retrieves all registered payment methods that are also active.
      *

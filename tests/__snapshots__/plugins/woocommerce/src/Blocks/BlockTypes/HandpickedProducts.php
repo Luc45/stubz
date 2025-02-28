@@ -13,7 +13,6 @@ class HandpickedProducts extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstr
      * @var string
      */
     protected $block_name = 'handpicked-products';
-
     /**
      * Set args specific to this block
      *

@@ -10,37 +10,31 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs;
 abstract class DataSourcePoller
 {
     const FILTER_NAME = 'data_source_poller_data_sources';
-
     const FILTER_NAME_SPECS = 'data_source_poller_specs';
-
     /**
      * Id of DataSourcePoller.
      *
      * @var string
      */
     protected $id = array();
-
     /**
      * Default data sources array.
      *
      * @var array
      */
     protected $data_sources = array();
-
     /**
      * Default args.
      *
      * @var array
      */
     protected $args = array();
-
     /**
      * The logger instance.
      *
      * @var WC_Logger|null
      */
     protected static $logger = null;
-
     /**
      * Get class instance.
      */

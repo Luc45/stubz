@@ -16,7 +16,6 @@ class Coupons extends \WC_REST_Coupons_Controller
      * @var string
      */
     protected $namespace = 'wc-analytics';
-
     /**
      * Get the query params for collections.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract Product Class
  *
@@ -16,21 +15,18 @@ class WC_Product extends \WC_Abstract_Legacy_Product
      * @var string
      */
     protected $object_type = 'product';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'product';
-
     /**
      * Cache group.
      *
      * @var string
      */
     protected $cache_group = 'products';
-
     /**
      * Stores product data.
      *
@@ -99,14 +95,12 @@ class WC_Product extends \WC_Abstract_Legacy_Product
   'review_count' => 0,
   'cogs_value' => null,
 );
-
     /**
      * Supported features such as 'ajax_add_to_cart'.
      *
      * @var array
      */
     protected $supports = array();
-
     /**
      * Get the product if ID is passed, otherwise the product is new and empty.
      * This class should NOT be instantiated, but the wc_get_product() function

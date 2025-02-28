@@ -2,20 +2,18 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container;
 
-class ReflectionContainer
+class ReflectionContainer implements \Automattic\WooCommerce\Vendor\League\Container\Argument\ArgumentResolverInterface, \Automattic\WooCommerce\Vendor\Psr\Container\ContainerInterface
 {
     /**
      * @var boolean
      */
     protected $cacheResolutions = false;
-
     /**
      * Cache of resolutions.
      *
      * @var array
      */
     protected $cache = array();
-
     /**
      * {@inheritdoc}
      *

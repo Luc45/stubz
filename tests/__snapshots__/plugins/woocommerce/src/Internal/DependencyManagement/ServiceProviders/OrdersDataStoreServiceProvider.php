@@ -24,7 +24,6 @@ class OrdersDataStoreServiceProvider extends \Automattic\WooCommerce\Internal\De
   8 => 'Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\LegacyDataHandler',
   9 => 'Automattic\\WooCommerce\\Internal\\DataStores\\Orders\\LegacyDataCleanup',
 );
-
     /**
      * Register the classes.
      */

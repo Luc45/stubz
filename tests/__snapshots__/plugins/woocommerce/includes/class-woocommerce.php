@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Main WooCommerce Class.
  *
@@ -13,7 +12,6 @@ final class WooCommerce
      * @var string
      */
     public $version = '9.7.0';
-
     /**
      * WooCommerce Schema version.
      *
@@ -22,7 +20,6 @@ final class WooCommerce
      * @var string
      */
     public $db_version = '920';
-
     /**
      * The single instance of the class.
      *
@@ -30,21 +27,18 @@ final class WooCommerce
      * @since 2.1
      */
     protected static $_instance = null;
-
     /**
      * Session instance.
      *
      * @var WC_Session|WC_Session_Handler
      */
     public $session = null;
-
     /**
      * Query instance.
      *
      * @var WC_Query
      */
     public $query = null;
-
     /**
      * API instance
      *
@@ -53,63 +47,54 @@ final class WooCommerce
      * @var WC_API
      */
     private $api = null;
-
     /**
      * Product factory instance.
      *
      * @var WC_Product_Factory
      */
     public $product_factory = null;
-
     /**
      * Countries instance.
      *
      * @var WC_Countries
      */
     public $countries = null;
-
     /**
      * Integrations instance.
      *
      * @var WC_Integrations
      */
     public $integrations = null;
-
     /**
      * Cart instance.
      *
      * @var WC_Cart
      */
     public $cart = null;
-
     /**
      * Customer instance.
      *
      * @var WC_Customer
      */
     public $customer = null;
-
     /**
      * Order factory instance.
      *
      * @var WC_Order_Factory
      */
     public $order_factory = null;
-
     /**
      * Structured data instance.
      *
      * @var WC_Structured_Data
      */
     public $structured_data = null;
-
     /**
      * Array of deprecated hook handlers.
      *
      * @var array of WC_Deprecated_Hooks
      */
     public $deprecated_hook_handlers = array();
-
     /**
      * Main WooCommerce Instance.
      *

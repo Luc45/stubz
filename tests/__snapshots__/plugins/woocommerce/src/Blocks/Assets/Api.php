@@ -17,56 +17,48 @@ class Api
      * @var string
      */
     public $wc_version = null;
-
     /**
      * Stores inline scripts already enqueued.
      *
      * @var array
      */
     private $inline_scripts = array();
-
     /**
      * Determines if caching is enabled for script data.
      *
      * @var boolean
      */
     private $disable_cache = false;
-
     /**
      * Stores loaded script data for the current request
      *
      * @var array|null
      */
     private $script_data = null;
-
     /**
      * Tracks whether script_data was modified during the current request.
      *
      * @var boolean
      */
     private $script_data_modified = false;
-
     /**
      * Stores the hash for the script data, made up of the site url, plugin version and package path.
      *
      * @var string
      */
     private $script_data_hash = null;
-
     /**
      * Stores the transient key used to cache the script data. This will change if the site is accessed via HTTPS or HTTP.
      *
      * @var string
      */
     private $script_data_transient_key = 'woocommerce_blocks_asset_api_script_data';
-
     /**
      * Reference to the Package instance
      *
      * @var Package
      */
     private $package = null;
-
     /**
      * Constructor for class
      *

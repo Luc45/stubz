@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Helper Class
  *
@@ -13,7 +12,6 @@ class WC_Helper
      * @var $log
      */
     public static $log = null;
-
     /**
      * Get an absolute path to the requested helper view.
      *

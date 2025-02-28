@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product importer controller - handles file upload and forms in admin.
  *
@@ -14,56 +13,48 @@ class WC_Product_CSV_Importer_Controller
      * @var string
      */
     protected $file = '';
-
     /**
      * The current import step.
      *
      * @var string
      */
     protected $step = '';
-
     /**
      * Progress steps.
      *
      * @var array
      */
     protected $steps = array();
-
     /**
      * Errors.
      *
      * @var array
      */
     protected $errors = array();
-
     /**
      * The current delimiter for the file being read.
      *
      * @var string
      */
     protected $delimiter = ',';
-
     /**
      * Whether to use previous mapping selections.
      *
      * @var bool
      */
     protected $map_preferences = false;
-
     /**
      * Whether to skip existing products.
      *
      * @var bool
      */
     protected $update_existing = false;
-
     /**
      * The character encoding to use to interpret the input file, or empty string for autodetect.
      *
      * @var string
      */
     protected $character_encoding = 'UTF-8';
-
     /**
      * Get importer instance.
      *

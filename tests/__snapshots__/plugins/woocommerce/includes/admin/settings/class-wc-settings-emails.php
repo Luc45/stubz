@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Settings_Emails.
  */
@@ -11,7 +10,6 @@ class WC_Settings_Emails extends \WC_Settings_Page
      * @var string
      */
     public $icon = 'atSymbol';
-
     /**
      * Constructor.
      */

@@ -32,35 +32,30 @@ final class Experimental_Abtest
      * @var array
      */
     private $tests = array();
-
     /**
      * ExPlat Anonymous ID.
      *
      * @var string
      */
     private $anon_id = null;
-
     /**
      * ExPlat Platform name.
      *
      * @var string
      */
     private $platform = 'woocommerce';
-
     /**
      * Whether trcking consent is given.
      *
      * @var bool
      */
     private $consent = false;
-
     /**
      * Request variation as a auth wpcom user or not.
      *
      * @var boolean
      */
     private $as_auth_wpcom_user = false;
-
     /**
      * Constructor.
      *

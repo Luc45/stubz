@@ -15,7 +15,6 @@ class BlockTemplatesRegistry
      * @var AbstractTemplate[]|AbstractTemplatePart[]
      */
     private $templates = array();
-
     /**
      * Initialization method.
      */

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Exporters;
 /**
  * ExportWCCoreProfilerOptions class
  */
-class ExportWCCoreProfilerOptions
+class ExportWCCoreProfilerOptions implements \Automattic\WooCommerce\Blueprint\Exporters\HasAlias, \Automattic\WooCommerce\Blueprint\Exporters\StepExporter
 {
     /**
      * Export the step

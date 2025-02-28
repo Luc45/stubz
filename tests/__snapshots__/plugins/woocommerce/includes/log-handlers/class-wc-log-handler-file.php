@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles log entries by writing to a file.
  *
@@ -15,14 +14,12 @@ class WC_Log_Handler_File extends \WC_Log_Handler
      * @var array
      */
     protected $handles = array();
-
     /**
      * File size limit for log files in bytes.
      *
      * @var int
      */
     protected $log_size_limit = null;
-
     /**
      * Cache logs that could not be written.
      *
@@ -32,7 +29,6 @@ class WC_Log_Handler_File extends \WC_Log_Handler
      * @var array
      */
     protected $cached_logs = array();
-
     /**
      * Constructor for the logger.
      *

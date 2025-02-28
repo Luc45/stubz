@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce eCheck Payment Token.
  *
@@ -18,7 +17,6 @@ class WC_Payment_Token_ECheck extends \WC_Payment_Token
      * @var string
      */
     protected $type = 'eCheck';
-
     /**
      * Stores eCheck payment token data.
      *
@@ -27,7 +25,6 @@ class WC_Payment_Token_ECheck extends \WC_Payment_Token
     protected $extra_data = array (
   'last4' => '',
 );
-
     /**
      * Get type to display to user.
      *

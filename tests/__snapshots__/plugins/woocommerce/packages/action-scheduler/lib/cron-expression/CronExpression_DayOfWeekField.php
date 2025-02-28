@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Day of week field.  Allows: * / , - ? L #
  *

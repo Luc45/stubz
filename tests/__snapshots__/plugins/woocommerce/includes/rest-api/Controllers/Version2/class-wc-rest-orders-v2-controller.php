@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Orders controller class.
  *
@@ -14,35 +13,30 @@ class WC_REST_Orders_V2_Controller extends \WC_REST_CRUD_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'orders';
-
     /**
      * Post type.
      *
      * @var string
      */
     protected $post_type = 'shop_order';
-
     /**
      * If object is hierarchical.
      *
      * @var bool
      */
     protected $hierarchical = true;
-
     /**
      * Stores the request.
      *
      * @var array
      */
     protected $request = array();
-
     /**
      * Register the routes for orders.
      */

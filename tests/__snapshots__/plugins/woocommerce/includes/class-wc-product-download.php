@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Product download class.
  */
@@ -17,7 +16,6 @@ class WC_Product_Download implements \ArrayAccess
   'file' => '',
   'enabled' => true,
 );
-
     /**
      * Returns all data for this object.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Sales_By_Date
  */
@@ -11,14 +10,12 @@ class WC_Report_Sales_By_Date extends \WC_Admin_Report
      * @var array
      */
     public $chart_colours = array();
-
     /**
      * The report data.
      *
      * @var stdClass
      */
     private $report_data = null;
-
     /**
      * Get report data.
      *

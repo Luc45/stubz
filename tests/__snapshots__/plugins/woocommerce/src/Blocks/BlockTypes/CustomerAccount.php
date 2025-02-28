@@ -8,20 +8,15 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const TEXT_ONLY = 'text_only';
-
     const ICON_ONLY = 'icon_only';
-
     const DISPLAY_ALT = 'alt';
-
     const DISPLAY_LINE = 'line';
-
     /**
      * Block name.
      *
      * @var string
      */
     protected $block_name = 'customer-account';
-
     /**
      * Block Hook API placements.
      *
@@ -37,7 +32,6 @@ class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
     'version' => '8.4.0',
   ),
 );
-
     /**
      * Initialize this block type.
      */

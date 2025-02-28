@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Customer_List.
  *

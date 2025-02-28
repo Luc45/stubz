@@ -13,5 +13,4 @@ class CheckoutPaymentBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\Abs
      * @var string
      */
     protected $block_name = 'checkout-payment-block';
-
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Setting Options controller class.
  *
@@ -14,7 +13,6 @@ class WC_REST_Setting_Options_Controller extends \WC_REST_Setting_Options_V2_Con
      * @var string
      */
     protected $namespace = 'wc/v3';
-
     /**
      * Get setting data.
      *

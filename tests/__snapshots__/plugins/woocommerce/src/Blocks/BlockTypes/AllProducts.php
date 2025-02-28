@@ -13,7 +13,6 @@ class AllProducts extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBloc
      * @var string
      */
     protected $block_name = 'all-products';
-
     /**
      * Extra data passed through from server to client for block.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Shipping Zones class.
  *

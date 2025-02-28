@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Payment Token.
  *
@@ -25,7 +24,6 @@ abstract class WC_Payment_Token extends \WC_Legacy_Payment_Token
   'user_id' => 0,
   'type' => '',
 );
-
     /**
      * Token Type (CC, eCheck, or a custom type added by an extension).
      * Set by child classes.
@@ -33,7 +31,6 @@ abstract class WC_Payment_Token extends \WC_Legacy_Payment_Token
      * @var string
      */
     protected $type = '';
-
     /**
      * Initialize a payment token.
      *

@@ -13,14 +13,12 @@ trait SchedulerTraits
      * @var string|null
      */
     public static $group = 'wc-admin-data';
-
     /**
      * Queue instance.
      *
      * @var WC_Queue_Interface
      */
     protected static $queue = null;
-
     /**
      * Add all actions as hooks.
      */

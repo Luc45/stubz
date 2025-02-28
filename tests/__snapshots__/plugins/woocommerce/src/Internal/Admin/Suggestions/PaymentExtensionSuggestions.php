@@ -8,79 +8,42 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions;
 class PaymentExtensionSuggestions
 {
     const AIRWALLEX = 'airwallex';
-
     const ANTOM = 'antom';
-
     const MERCADO_PAGO = 'mercado_pago';
-
     const MOLLIE = 'mollie';
-
     const PAYFAST = 'payfast';
-
     const PAYMOB = 'paymob';
-
     const PAYPAL_FULL_STACK = 'paypal_full_stack';
-
     const PAYPAL_WALLET = 'paypal_wallet';
-
     const PAYONEER = 'payoneer';
-
     const PAYSTACK = 'paystack';
-
     const PAYU_INDIA = 'payu_india';
-
     const RAZORPAY = 'razorpay';
-
     const SQUARE_IN_PERSON = 'square_in_person';
-
     const STRIPE = 'stripe';
-
     const TILOPAY = 'tilopay';
-
     const VIVA_WALLET = 'viva_wallet';
-
     const WOOPAYMENTS = 'woopayments';
-
     const AMAZON_PAY = 'amazon_pay';
-
     const AFFIRM = 'affirm';
-
     const AFTERPAY = 'afterpay';
-
     const CLEARPAY = 'clearpay';
-
     const KLARNA = 'klarna';
-
     const HELIOPAY = 'heliopay';
-
     const TYPE_PSP = 'psp';
-
     const TYPE_APM = 'apm';
-
     const TYPE_EXPRESS_CHECKOUT = 'express_checkout';
-
     const TYPE_BNPL = 'bnpl';
-
     const TYPE_CRYPTO = 'crypto';
-
     const PLUGIN_TYPE_WPORG = 'wporg';
-
     const LINK_TYPE_PRICING = 'pricing';
-
     const LINK_TYPE_ABOUT = 'about';
-
     const LINK_TYPE_TERMS = 'terms';
-
     const LINK_TYPE_DOCS = 'documentation';
-
     const LINK_TYPE_SUPPORT = 'support';
-
     const TAG_PREFERRED = 'preferred';
-
     const TAG_MADE_IN_WOO = 'made_in_woo';
-
     const TAG_RECOMMENDED = 'recommended';
-
     /**
      * The payment extension list for each country.
      *
@@ -2182,21 +2145,18 @@ class PaymentExtensionSuggestions
   'YE' => 
   array(),
 );
-
     /**
      * The context to incentive type map.
      *
      * @var array|string[]
      */
     private array $context_to_incentive_type_map;
-
     /**
      * The suggestion incentives provider.
      *
      * @var PaymentExtensionSuggestionIncentives
      */
     private Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestionIncentives $suggestion_incentives;
-
     /**
      * Initialize the class instance.
      *

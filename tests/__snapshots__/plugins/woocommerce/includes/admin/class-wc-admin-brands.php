@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Brands_Admin class.
  */
@@ -11,21 +10,18 @@ class WC_Brands_Admin
      * @var array
      */
     public $settings_tabs = null;
-
     /**
      * Settings form fields (Deprecated).
      *
      * @var array
      */
     private $settings = null;
-
     /**
      * Admin fields.
      *
      * @var array
      */
     public $fields = array();
-
     /**
      * __construct function.
      */

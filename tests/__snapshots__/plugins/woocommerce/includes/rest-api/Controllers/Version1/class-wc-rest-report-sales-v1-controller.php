@@ -1,5 +1,4 @@
 <?php
-
 /**
  * REST API Report Sales controller class.
  *
@@ -14,21 +13,18 @@ class WC_REST_Report_Sales_V1_Controller extends \WC_REST_Controller
      * @var string
      */
     protected $namespace = 'wc/v1';
-
     /**
      * Route base.
      *
      * @var string
      */
     protected $rest_base = 'reports/sales';
-
     /**
      * Report instance.
      *
      * @var WC_Admin_Report
      */
     protected $report = null;
-
     /**
      * Register the routes for sales reports.
      */

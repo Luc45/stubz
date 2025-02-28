@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_REST_CRUD_Controller class.
  *
@@ -13,14 +12,12 @@ abstract class WC_REST_CRUD_Controller extends \WC_REST_Posts_Controller
      * @var string
      */
     protected $namespace = 'wc/v2';
-
     /**
      * If object is hierarchical.
      *
      * @var bool
      */
     protected $hierarchical = false;
-
     /**
      * Get object.
      *

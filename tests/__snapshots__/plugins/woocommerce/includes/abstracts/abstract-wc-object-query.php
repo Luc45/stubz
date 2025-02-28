@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Abstract WC Object Query Class
  *
@@ -16,7 +15,6 @@ abstract class WC_Object_Query
      * @var array
      */
     protected $query_vars = array();
-
     /**
      * Create a new query.
      *

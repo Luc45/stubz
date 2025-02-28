@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Failed Order Email.
  *

@@ -13,7 +13,6 @@ class NoResults extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'product-collection-no-results';
-
     /**
      * Render the block.
      *

@@ -13,5 +13,4 @@ class CheckoutOrderNoteBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\A
      * @var string
      */
     protected $block_name = 'checkout-order-note-block';
-
 }

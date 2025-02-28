@@ -13,7 +13,6 @@ class FilterWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      * @var string
      */
     protected $block_name = 'filter-wrapper';
-
     /**
      * Get the frontend style handle for this block type.
      *

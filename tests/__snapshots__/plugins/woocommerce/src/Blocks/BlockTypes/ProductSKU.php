@@ -13,14 +13,12 @@ class ProductSKU extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
      * @var string
      */
     protected $block_name = 'product-sku';
-
     /**
      * API version name.
      *
      * @var string
      */
     protected $api_version = '3';
-
     /**
      * Overwrite parent method to prevent script registration.
      *

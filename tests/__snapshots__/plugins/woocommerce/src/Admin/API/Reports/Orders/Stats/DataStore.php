@@ -5,10 +5,9 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders\Stats;
 /**
  * API\Reports\Orders\Stats\DataStore.
  */
-class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
     const CRON_EVENT = 'wc_order_stats_update';
-
     /**
      * Table used to get the data.
      *
@@ -17,7 +16,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected static $table_name = 'wc_order_stats';
-
     /**
      * Cache identifier.
      *
@@ -26,7 +24,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $cache_key = 'orders_stats';
-
     /**
      * Type for each column to cast values correctly later.
      *
@@ -51,7 +48,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
   'products' => 'intval',
   'segment_id' => 'intval',
 );
-
     /**
      * Data store context used to pass to filters.
      *
@@ -60,7 +56,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
      * @var string
      */
     protected $context = 'orders_stats';
-
     /**
      * Dynamically sets the date column name based on configuration
      *

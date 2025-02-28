@@ -13,7 +13,6 @@ class RedirectionController
      * @var array
      */
     private $product_templates = array();
-
     /**
      * Set up the hooks used for redirection.
      */

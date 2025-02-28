@@ -10,9 +10,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
 class PatternRegistry
 {
     const SLUG_REGEX = '/^[A-z0-9\\/_-]+$/';
-
     const COMMA_SEPARATED_REGEX = '/[\\s,]+/';
-
     /**
      * Returns pattern slugs with their localized labels for categorization.
      *

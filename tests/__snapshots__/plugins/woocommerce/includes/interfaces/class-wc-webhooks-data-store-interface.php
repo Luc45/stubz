@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WooCommerce Webhook data store interface.
  */

@@ -16,7 +16,6 @@ class AdminSuggestionsServiceProvider extends \Automattic\WooCommerce\Internal\D
   0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestions',
   1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestionIncentives',
 );
-
     /**
      * Registers services provided by this class.
      *

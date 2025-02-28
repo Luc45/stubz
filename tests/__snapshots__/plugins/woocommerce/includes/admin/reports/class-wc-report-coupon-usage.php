@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC_Report_Coupon_Usage
  *
@@ -14,14 +13,12 @@ class WC_Report_Coupon_Usage extends \WC_Admin_Report
      * @var array
      */
     public $chart_colours = array();
-
     /**
      * Coupon codes.
      *
      * @var array
      */
     public $coupon_codes = array();
-
     /**
      * Constructor.
      */

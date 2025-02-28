@@ -1,107 +1,90 @@
 <?php
-
 /**
  * WC_WCCOM_Site_Installation_State class
  */
 class WC_WCCOM_Site_Installation_State
 {
     const STEP_STATUS_IN_PROGRESS = 'in-progress';
-
     const STEP_STATUS_FAILED = 'failed';
-
     const STEP_STATUS_COMPLETED = 'completed';
-
     /**
      * The product ID.
      *
      * @var string
      */
     protected $product_id = null;
-
     /**
      * The idempotency key.
      *
      * @var string
      */
     protected $idempotency_key = null;
-
     /**
      * The last step name.
      *
      * @var string
      */
     protected $last_step_name = null;
-
     /**
      * The last step status.
      *
      * @var string
      */
     protected $last_step_status = null;
-
     /**
      * The last step error.
      *
      * @var string
      */
     protected $last_step_error = null;
-
     /**
      * The product type.
      *
      * @var string
      */
     protected $product_type = null;
-
     /**
      * The product name.
      *
      * @var string
      */
     protected $product_name = null;
-
     /**
      * The product slug.
      *
      * @var string
      */
     protected $download_url = null;
-
     /**
      * The path to the downloaded file.
      *
      * @var string
      */
     protected $download_path = null;
-
     /**
      * The path to the unpacked file.
      *
      * @var string
      */
     protected $unpacked_path = null;
-
     /**
      * The path to the installed file.
      *
      * @var string
      */
     protected $installed_path = null;
-
     /**
      * The plugin info for the already installed plugin.
      *
      * @var array
      */
     protected $already_installed_plugin_info = null;
-
     /**
      * The timestamp of the installation start.
      *
      * @var int
      */
     protected $started_date = null;
-
     /**
      * Constructor.
      *

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * WC Action Queue
  *
@@ -7,7 +6,7 @@
  *
  * @version 3.5.0
  */
-class WC_Action_Queue
+class WC_Action_Queue implements \WC_Queue_Interface
 {
     /**
      * Enqueue an action to run one time, as soon as possible

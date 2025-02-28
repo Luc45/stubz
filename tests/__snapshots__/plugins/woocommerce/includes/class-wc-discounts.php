@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Discounts class.
  */
@@ -12,21 +11,18 @@ class WC_Discounts
      * @var WC_Cart|WC_Order
      */
     protected $object = null;
-
     /**
      * An array of items to discount.
      *
      * @var array
      */
     protected $items = array();
-
     /**
      * An array of discounts which have been applied to items.
      *
      * @var array[] Code => Item Key => Value
      */
     protected $discounts = array();
-
     /**
      * WC_Discounts Constructor.
      *

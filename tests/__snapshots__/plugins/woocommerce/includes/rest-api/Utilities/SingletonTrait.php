@@ -13,7 +13,6 @@ trait SingletonTrait
      * @var object
      */
     protected static $instance = null;
-
     /**
      * Constructor
      *

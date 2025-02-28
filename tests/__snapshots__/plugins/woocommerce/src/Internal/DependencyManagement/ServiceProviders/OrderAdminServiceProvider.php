@@ -20,7 +20,6 @@ class OrderAdminServiceProvider extends \Automattic\WooCommerce\Internal\Depende
   4 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\EditLock',
   5 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\TaxonomiesMetaBox',
 );
-
     /**
      * Registers services provided by this class.
      *

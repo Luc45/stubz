@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Customer Processing Order Email.
  *

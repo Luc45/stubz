@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  * Rule processor that passes (or fails) when the site is on the eCommerce
  * plan.
  */
-class IsEcommerceRuleProcessor
+class IsEcommerceRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
      * Passes (or fails) based on whether the site is on the eCommerce plan or

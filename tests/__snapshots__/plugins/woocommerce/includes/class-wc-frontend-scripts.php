@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Frontend scripts class.
  */
@@ -11,21 +10,18 @@ class WC_Frontend_Scripts
      * @var array
      */
     private static $scripts = array();
-
     /**
      * Contains an array of script handles registered by WC.
      *
      * @var array
      */
     private static $styles = array();
-
     /**
      * Contains an array of script handles localized by WC.
      *
      * @var array
      */
     private static $wp_localize_scripts = array();
-
     /**
      * Hook in methods.
      */

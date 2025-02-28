@@ -16,7 +16,6 @@ class ProxiesServiceProvider extends \Automattic\WooCommerce\Internal\Dependency
   0 => 'Automattic\\WooCommerce\\Proxies\\LegacyProxy',
   1 => 'Automattic\\WooCommerce\\Proxies\\ActionsProxy',
 );
-
     /**
      * Register the classes.
      */

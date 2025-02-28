@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Handles Responses.
  */
@@ -11,7 +10,6 @@ abstract class WC_Gateway_Paypal_Response
      * @var bool
      */
     protected $sandbox = false;
-
     /**
      * Get the order from the PayPal 'Custom' variable.
      *

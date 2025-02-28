@@ -13,5 +13,4 @@ class CartAcceptedPaymentMethodsBlock extends \Automattic\WooCommerce\Blocks\Blo
      * @var string
      */
     protected $block_name = 'cart-accepted-payment-methods-block';
-
 }
