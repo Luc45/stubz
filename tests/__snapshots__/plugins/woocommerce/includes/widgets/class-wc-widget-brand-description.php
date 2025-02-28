@@ -10,7 +10,7 @@
  * @package WooCommerce\Widgets
  * @version 9.4.0
  */
-class WC_Widget_Brand_Description
+class WC_Widget_Brand_Description extends \WP_Widget
 {
     /**
      * Widget class.

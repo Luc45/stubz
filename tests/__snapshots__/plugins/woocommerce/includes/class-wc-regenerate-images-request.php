@@ -3,7 +3,7 @@
 /**
  * Class that extends WC_Background_Process to process image regeneration in the background.
  */
-class WC_Regenerate_Images_Request
+class WC_Regenerate_Images_Request extends \WC_Background_Process
 {
     /**
      * Stores the attachment ID being processed.

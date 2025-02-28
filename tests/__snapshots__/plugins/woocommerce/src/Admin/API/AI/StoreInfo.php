@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-class StoreInfo
+class StoreInfo extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
 {
     /**
      * Endpoint.

@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
  * Remote Payment Methods engine.
  * This goes through the specs and gets eligible payment methods.
  */
-class Init
+class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
     /**
      * Constructor.

@@ -7,7 +7,7 @@
  *
  * @package ActionScheduler
  */
-class ActionScheduler_InvalidActionException
+class ActionScheduler_InvalidActionException extends \InvalidArgumentException
 {
     /**
      * Create a new exception when the action's schedule cannot be fetched.

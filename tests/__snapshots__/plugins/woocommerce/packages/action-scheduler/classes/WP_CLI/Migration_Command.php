@@ -11,7 +11,7 @@ namespace Action_Scheduler\WP_CLI;
  *
  * @codeCoverageIgnore
  */
-class Migration_Command
+class Migration_Command extends \WP_CLI_Command
 {
     /**
      * Number of actions migrated.

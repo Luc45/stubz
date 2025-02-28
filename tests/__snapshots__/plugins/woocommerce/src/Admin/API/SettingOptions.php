@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Setting_Options_Controller
  */
-class SettingOptions
+class SettingOptions extends \WC_REST_Setting_Options_Controller
 {
     /**
      * Endpoint namespace.

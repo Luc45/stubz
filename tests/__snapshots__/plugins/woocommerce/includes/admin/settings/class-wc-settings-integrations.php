@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Integrations.
  */
-class WC_Settings_Integrations
+class WC_Settings_Integrations extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

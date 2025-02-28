@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
 /**
  * EmailNotification Class.
  */
-class EmailNotification
+class EmailNotification extends \WC_Email
 {
     /**
      * Constructor.

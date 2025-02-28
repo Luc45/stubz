@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Products.
  */
-class WC_Settings_Products
+class WC_Settings_Products extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

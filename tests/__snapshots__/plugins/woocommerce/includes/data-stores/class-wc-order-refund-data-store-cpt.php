@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Order_Refund_Data_Store_CPT
+class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT
 {
     /**
      * Data stored in meta keys, but not considered "meta" for an order.

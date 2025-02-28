@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * StoreNotices class.
  */
-class StoreNotices
+class StoreNotices extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Block name.

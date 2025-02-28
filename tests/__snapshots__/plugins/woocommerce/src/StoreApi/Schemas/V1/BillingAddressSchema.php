@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  *
  * Provides a generic billing address schema for composition in other schemas.
  */
-class BillingAddressSchema
+class BillingAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractAddressSchema
 {
     const IDENTIFIER = 'billing-address';
 

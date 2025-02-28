@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin;
  *
  * @deprecated since 6.3.0, use WooCommerce\Internal\Admin\Loader.
  */
-class Loader
+class Loader extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
 {
     /**
      * The name of the non-deprecated class that this facade covers.

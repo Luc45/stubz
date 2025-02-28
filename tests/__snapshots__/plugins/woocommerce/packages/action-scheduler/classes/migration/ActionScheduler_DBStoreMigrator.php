@@ -7,7 +7,7 @@
  *
  * @since 3.0.0
  */
-class ActionScheduler_DBStoreMigrator
+class ActionScheduler_DBStoreMigrator extends \ActionScheduler_DBStore
 {
     /**
      * Save an action with optional last attempt date.

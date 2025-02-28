@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @package Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders
  */
-class COTMigrationServiceProvider
+class COTMigrationServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * Services provided by this provider.

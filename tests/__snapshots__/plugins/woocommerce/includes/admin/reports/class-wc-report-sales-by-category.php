@@ -6,7 +6,7 @@
  * @package     WooCommerce\Admin\Reports
  * @version     2.1.0
  */
-class WC_Report_Sales_By_Category
+class WC_Report_Sales_By_Category extends \WC_Admin_Report
 {
     /**
      * Chart colors.

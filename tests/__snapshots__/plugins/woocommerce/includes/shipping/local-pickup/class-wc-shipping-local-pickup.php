@@ -9,7 +9,7 @@
  * @version     2.6.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Local_Pickup
+class WC_Shipping_Local_Pickup extends \WC_Shipping_Method
 {
     /**
      * Shipping method cost.

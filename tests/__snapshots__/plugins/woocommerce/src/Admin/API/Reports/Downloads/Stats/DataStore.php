@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Downloads\Stats;
 /**
  * API\Reports\Downloads\Stats\DataStore.
  */
-class DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\DataStore
 {
     /**
      * Mapping columns to data type to return correct response types.

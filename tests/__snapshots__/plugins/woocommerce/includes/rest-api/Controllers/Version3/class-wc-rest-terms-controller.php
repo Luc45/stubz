@@ -3,7 +3,7 @@
 /**
  * Terms controller class.
  */
-abstract class WC_REST_Terms_Controller
+abstract class WC_REST_Terms_Controller extends \WC_REST_Controller
 {
     /**
      * Route base.

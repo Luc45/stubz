@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * AdditionalInformation class.
  */
-class AdditionalInformation
+class AdditionalInformation extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
 {
     /**
      * Block name.

@@ -3,7 +3,7 @@
 /**
  * WC_CSV_Exporter Class.
  */
-abstract class WC_CSV_Batch_Exporter
+abstract class WC_CSV_Batch_Exporter extends \WC_CSV_Exporter
 {
     /**
      * Page being exported

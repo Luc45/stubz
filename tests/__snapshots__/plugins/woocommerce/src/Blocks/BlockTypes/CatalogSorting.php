@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CatalogSorting class.
  */
-class CatalogSorting
+class CatalogSorting extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Block name.

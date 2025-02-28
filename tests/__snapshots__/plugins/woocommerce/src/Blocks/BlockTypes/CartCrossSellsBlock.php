@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CartCrossSellsBlock class.
  */
-class CartCrossSellsBlock
+class CartCrossSellsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
 {
     /**
      * Block name.

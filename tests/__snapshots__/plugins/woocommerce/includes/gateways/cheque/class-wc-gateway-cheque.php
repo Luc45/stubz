@@ -10,7 +10,7 @@
  * @version     2.1.0
  * @package     WooCommerce\Classes\Payment
  */
-class WC_Gateway_Cheque
+class WC_Gateway_Cheque extends \WC_Payment_Gateway
 {
     const ID = 'cheque';
 

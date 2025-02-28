@@ -5,7 +5,7 @@
  *
  * @extends WC_REST_Controller
  */
-abstract class WC_REST_WCCOM_Site_Controller
+abstract class WC_REST_WCCOM_Site_Controller extends \WC_REST_Controller
 {
     /**
      * Endpoint namespace.

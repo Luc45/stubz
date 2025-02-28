@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  *
  * Provides a generic address schema for composition in other schemas.
  */
-abstract class AbstractAddressSchema
+abstract class AbstractAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     /**
      * Additional fields controller.

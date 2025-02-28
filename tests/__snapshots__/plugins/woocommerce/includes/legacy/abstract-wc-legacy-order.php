@@ -11,7 +11,7 @@
  * @category	Abstract Class
  * @author	  WooThemes
  */
-abstract class WC_Abstract_Legacy_Order
+abstract class WC_Abstract_Legacy_Order extends \WC_Data
 {
     /**
      * Add coupon code to the order.

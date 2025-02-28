@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * OrderCouponSchema class.
  */
-class OrderCouponSchema
+class OrderCouponSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'order-coupon';
 

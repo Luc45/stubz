@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for layout templates.
  */
-class LayoutTemplatesServiceProvider
+class LayoutTemplatesServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CheckoutOrderSummarySubtotalBlock class.
  */
-class CheckoutOrderSummarySubtotalBlock
+class CheckoutOrderSummarySubtotalBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
 {
     /**
      * Block name.

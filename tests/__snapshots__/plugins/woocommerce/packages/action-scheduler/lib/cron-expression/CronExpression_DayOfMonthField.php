@@ -18,7 +18,7 @@
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_DayOfMonthField
+class CronExpression_DayOfMonthField extends \CronExpression_AbstractField
 {
     /**
      * Get the nearest day of the week for a given day in a month

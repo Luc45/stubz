@@ -5,7 +5,7 @@
  *
  * @codeCoverageIgnore
  */
-abstract class ActionScheduler_Store
+abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
 {
     const STATUS_COMPLETE = 'complete';
 

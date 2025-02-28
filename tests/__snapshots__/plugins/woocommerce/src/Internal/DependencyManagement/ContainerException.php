@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  * Class ContainerException.
  * Used to signal error conditions related to the dependency injection container.
  */
-class ContainerException implements \Stringable, \Throwable
+class ContainerException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Create a new instance of the class.

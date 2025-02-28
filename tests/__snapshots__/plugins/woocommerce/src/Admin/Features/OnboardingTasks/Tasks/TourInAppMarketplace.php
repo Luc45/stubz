@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Tour In-App Marketplace task
  */
-class TourInAppMarketplace
+class TourInAppMarketplace extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * ID.

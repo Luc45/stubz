@@ -5,7 +5,7 @@
  *
  * @extends WC_REST_WCCOM_Site_Status_Controller
  */
-class WC_REST_WCCOM_Site_Status_Controller
+class WC_REST_WCCOM_Site_Status_Controller extends \WC_REST_WCCOM_Site_Controller
 {
     /**
      * Route base.

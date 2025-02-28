@@ -51,7 +51,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  * Note that this class is NOT {@link https://developer.woocommerce.com/docs/how-to-manage-woocommerce-data-stores/ a CRUD data store}.
  * It does not implement the {@see WC_Object_Data_Store_Interface WC_Object_Data_Store_Interface} nor extend WC_Data & WC_Data_Store_WP classes.
  */
-class DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery
 {
     /**
      * Cache group for the reports.

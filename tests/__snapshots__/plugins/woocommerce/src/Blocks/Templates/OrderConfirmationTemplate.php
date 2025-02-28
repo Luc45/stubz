@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class OrderConfirmationTemplate
+class OrderConfirmationTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
     const SLUG = 'order-confirmation';
 

@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Accounts.
  */
-class WC_Settings_Accounts
+class WC_Settings_Accounts extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

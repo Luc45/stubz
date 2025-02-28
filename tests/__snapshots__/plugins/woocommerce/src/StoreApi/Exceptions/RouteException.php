@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
 /**
  * RouteException class.
  */
-class RouteException implements \Stringable, \Throwable
+class RouteException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.

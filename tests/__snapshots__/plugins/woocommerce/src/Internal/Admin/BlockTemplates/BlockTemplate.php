@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 /**
  * Block template class.
  */
-class BlockTemplate
+class BlockTemplate extends \Automattic\WooCommerce\Internal\Admin\BlockTemplates\AbstractBlockTemplate
 {
     /**
      * Get the template ID.

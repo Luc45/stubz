@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations;
  *
  * @package Automattic\WooCommerce\Database\Migrations
  */
-abstract class MetaToCustomTableMigrator
+abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Database\Migrations\TableMigrator
 {
     /**
      * Config for tables being migrated and migrated from. See __construct() for detailed config.

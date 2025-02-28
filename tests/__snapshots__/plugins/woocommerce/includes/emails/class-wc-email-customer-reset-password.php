@@ -10,7 +10,7 @@
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Customer_Reset_Password
+class WC_Email_Customer_Reset_Password extends \WC_Email
 {
     /**
      * User ID.

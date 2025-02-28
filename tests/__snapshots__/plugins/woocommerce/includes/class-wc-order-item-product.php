@@ -3,7 +3,7 @@
 /**
  * Order item product class.
  */
-class WC_Order_Item_Product
+class WC_Order_Item_Product extends \WC_Order_Item
 {
     /**
      * Legacy values.

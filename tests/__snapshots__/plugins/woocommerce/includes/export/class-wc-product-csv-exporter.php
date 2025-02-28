@@ -3,7 +3,7 @@
 /**
  * WC_Product_CSV_Exporter Class.
  */
-class WC_Product_CSV_Exporter
+class WC_Product_CSV_Exporter extends \WC_CSV_Batch_Exporter
 {
     /**
      * Type of export used in filter names.

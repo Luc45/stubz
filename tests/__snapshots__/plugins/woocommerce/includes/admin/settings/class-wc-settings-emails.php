@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Emails.
  */
-class WC_Settings_Emails
+class WC_Settings_Emails extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

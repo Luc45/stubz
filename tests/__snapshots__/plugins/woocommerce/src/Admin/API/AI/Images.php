@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  *
  * @internal
  */
-class Images
+class Images extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
 {
     /**
      * Endpoint.

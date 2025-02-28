@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CartAcceptedPaymentMethodsBlock class.
  */
-class CartAcceptedPaymentMethodsBlock
+class CartAcceptedPaymentMethodsBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
 {
     /**
      * Block name.

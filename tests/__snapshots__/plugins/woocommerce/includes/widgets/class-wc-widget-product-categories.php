@@ -5,7 +5,7 @@
  *
  * @extends WC_Widget
  */
-class WC_Widget_Product_Categories
+class WC_Widget_Product_Categories extends \WC_Widget
 {
     /**
      * Category ancestors.

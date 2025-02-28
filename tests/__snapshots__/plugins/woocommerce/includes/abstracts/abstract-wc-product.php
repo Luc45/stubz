@@ -8,7 +8,7 @@
  * @version 3.0.0
  * @package WooCommerce\Abstracts
  */
-class WC_Product
+class WC_Product extends \WC_Abstract_Legacy_Product
 {
     /**
      * This is the name of this object type.

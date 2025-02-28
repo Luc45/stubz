@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Data_Store_CPT
+abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP
 {
     /**
      * Internal meta type used to store order data.

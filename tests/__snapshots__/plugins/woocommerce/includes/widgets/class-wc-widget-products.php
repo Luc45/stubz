@@ -3,7 +3,7 @@
 /**
  * Widget products.
  */
-class WC_Widget_Products
+class WC_Widget_Products extends \WC_Widget
 {
     /**
      * Constructor.

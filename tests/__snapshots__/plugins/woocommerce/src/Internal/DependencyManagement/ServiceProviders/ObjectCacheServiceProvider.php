@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the object cache mechanism.
  */
-class ObjectCacheServiceProvider
+class ObjectCacheServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

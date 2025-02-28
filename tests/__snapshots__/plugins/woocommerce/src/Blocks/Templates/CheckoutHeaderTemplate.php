@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class CheckoutHeaderTemplate
+class CheckoutHeaderTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplatePart
 {
     const SLUG = 'checkout-header';
 

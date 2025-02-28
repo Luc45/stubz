@@ -8,7 +8,7 @@
  * @category Class
  * @author   WooThemes
  */
-abstract class WC_Legacy_Shipping_Zone
+abstract class WC_Legacy_Shipping_Zone extends \WC_Data
 {
     /**
      * Get zone ID

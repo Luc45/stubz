@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ProductCategoryTemplate
+class ProductCategoryTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
     const SLUG = 'taxonomy-product_cat';
 

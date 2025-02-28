@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Taxes_V2_Controller
  */
-class WC_REST_Taxes_Controller
+class WC_REST_Taxes_Controller extends \WC_REST_Taxes_V2_Controller
 {
     /**
      * Endpoint namespace.

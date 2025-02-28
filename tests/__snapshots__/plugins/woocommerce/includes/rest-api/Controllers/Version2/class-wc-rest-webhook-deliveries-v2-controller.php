@@ -7,7 +7,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Webhook_Deliveries_V1_Controller
  */
-class WC_REST_Webhook_Deliveries_V2_Controller
+class WC_REST_Webhook_Deliveries_V2_Controller extends \WC_REST_Webhook_Deliveries_V1_Controller
 {
     /**
      * Endpoint namespace.

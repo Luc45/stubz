@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Payment_Gateways_React.
  */
-class WC_Settings_Payment_Gateways_React
+class WC_Settings_Payment_Gateways_React extends \WC_Settings_Page
 {
     /**
      * Get the whitelist of sections to render using React.

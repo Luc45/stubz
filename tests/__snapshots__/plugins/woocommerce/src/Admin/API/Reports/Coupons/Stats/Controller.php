@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Coupons\Stats;
  * @internal
  * @extends GenericStatsController
  */
-class Controller
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsController
 {
     /**
      * Route base.

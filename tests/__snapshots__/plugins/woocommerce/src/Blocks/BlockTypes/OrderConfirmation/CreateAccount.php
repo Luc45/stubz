@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * CreateAccount class.
  */
-class CreateAccount
+class CreateAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
 {
     /**
      * Block name.

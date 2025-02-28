@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * CustomerAccount class.
  */
-class CustomerAccount
+class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const TEXT_ONLY = 'text_only';
 

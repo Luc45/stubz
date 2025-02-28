@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Coupons;
  *
  * @deprecated 9.3.0 Coupons\Query class is deprecated. Please use `GenericQuery`, \WC_Object_Query`, or use `DataStore` directly.
  */
-class Query
+class Query extends \Automattic\WooCommerce\Admin\API\Reports\Query
 {
     /**
      * Valid fields for Products report.

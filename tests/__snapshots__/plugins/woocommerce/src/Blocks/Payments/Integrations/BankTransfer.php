@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments\Integrations;
  *
  * @since 3.0.0
  */
-final class BankTransfer
+final class BankTransfer extends \Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType
 {
     /**
      * Payment method name/id/slug (matches id in WC_Gateway_BACS in core).

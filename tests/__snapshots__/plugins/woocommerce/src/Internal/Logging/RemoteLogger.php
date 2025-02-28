@@ -13,7 +13,7 @@ namespace Automattic\WooCommerce\Internal\Logging;
  * @since 9.2.0
  * @package WooCommerce\Classes
  */
-class RemoteLogger
+class RemoteLogger extends \WC_Log_Handler
 {
     const LOG_ENDPOINT = 'https://public-api.wordpress.com/rest/v1.1/logstash';
 

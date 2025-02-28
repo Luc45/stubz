@@ -3,7 +3,7 @@
 /**
  * WC_Shipping_Flat_Rate class.
  */
-class WC_Shipping_Flat_Rate
+class WC_Shipping_Flat_Rate extends \WC_Shipping_Method
 {
     /**
      * Cost passed to [fee] shortcode.

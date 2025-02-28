@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ArchiveProductTemplatesCompatibility
+class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplateCompatibility
 {
     const LOOP_ITEM_ID = 'product-loop-item';
 

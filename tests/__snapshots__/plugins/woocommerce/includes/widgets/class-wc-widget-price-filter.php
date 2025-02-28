@@ -3,7 +3,7 @@
 /**
  * Widget price filter class.
  */
-class WC_Widget_Price_Filter
+class WC_Widget_Price_Filter extends \WC_Widget
 {
     /**
      * Constructor.

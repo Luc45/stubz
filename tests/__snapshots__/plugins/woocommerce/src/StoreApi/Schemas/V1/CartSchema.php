@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * CartSchema class.
  */
-class CartSchema
+class CartSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'cart';
 

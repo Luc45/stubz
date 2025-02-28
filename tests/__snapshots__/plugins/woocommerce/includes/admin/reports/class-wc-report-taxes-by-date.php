@@ -8,7 +8,7 @@
  * @package     WooCommerce\Admin\Reports
  * @version     2.1.0
  */
-class WC_Report_Taxes_By_Date
+class WC_Report_Taxes_By_Date extends \WC_Admin_Report
 {
     /**
      * Get the legend for the main chart sidebar.

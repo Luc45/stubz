@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Payment_Gateways.
  */
-class WC_Settings_Payment_Gateways
+class WC_Settings_Payment_Gateways extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

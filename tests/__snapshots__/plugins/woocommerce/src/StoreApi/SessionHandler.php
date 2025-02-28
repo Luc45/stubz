@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi;
 /**
  * SessionHandler class
  */
-final class SessionHandler
+final class SessionHandler extends \WC_Session
 {
     /**
      * Token from HTTP headers.

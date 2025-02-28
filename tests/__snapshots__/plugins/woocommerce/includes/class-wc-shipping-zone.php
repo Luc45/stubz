@@ -3,7 +3,7 @@
 /**
  * WC_Shipping_Zone class.
  */
-class WC_Shipping_Zone
+class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
 {
     /**
      * Zone ID

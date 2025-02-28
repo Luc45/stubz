@@ -3,7 +3,7 @@
 /**
  * Order item fee.
  */
-class WC_Order_Item_Fee
+class WC_Order_Item_Fee extends \WC_Order_Item
 {
     /**
      * Legacy fee data.

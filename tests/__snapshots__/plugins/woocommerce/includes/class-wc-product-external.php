@@ -3,7 +3,7 @@
 /**
  * Product external class.
  */
-class WC_Product_External
+class WC_Product_External extends \WC_Product
 {
     /**
      * Stores product data.

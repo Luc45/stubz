@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Class for Subsection block.
  */
-class Subsection
+class Subsection extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\ProductBlock
 {
     /**
      * Subsection Block constructor.

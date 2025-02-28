@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the Mollie payment gateway provider.
  */
-class Mollie
+class Mollie extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
     /**
      * Get the settings URL for a payment gateway.

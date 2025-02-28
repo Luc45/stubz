@@ -5,7 +5,7 @@
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_AdminView
+class ActionScheduler_AdminView extends \ActionScheduler_AdminView_Deprecated
 {
     /**
      * Instance.

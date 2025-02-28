@@ -8,7 +8,7 @@
  *
  * @since 3.0.0
  */
-class ActionScheduler_OptionLock
+class ActionScheduler_OptionLock extends \ActionScheduler_Lock
 {
     /**
      * Set a lock using options for a given amount of time (60 seconds by default).

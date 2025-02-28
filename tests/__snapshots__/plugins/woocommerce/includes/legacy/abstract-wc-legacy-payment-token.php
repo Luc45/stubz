@@ -12,7 +12,7 @@
  * @category Class
  * @author   WooCommerce
  */
-abstract class WC_Legacy_Payment_Token
+abstract class WC_Legacy_Payment_Token extends \WC_Data
 {
     /**
      * Sets the type of this payment token (CC, eCheck, or something else).

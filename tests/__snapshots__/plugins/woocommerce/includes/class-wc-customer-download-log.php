@@ -3,7 +3,7 @@
 /**
  * Customer download log class.
  */
-class WC_Customer_Download_Log
+class WC_Customer_Download_Log extends \WC_Data
 {
     /**
      * This is the name of this object type.

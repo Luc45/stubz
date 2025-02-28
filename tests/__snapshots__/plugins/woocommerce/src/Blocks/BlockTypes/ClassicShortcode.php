@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class ClassicShortcode
+class ClassicShortcode extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
 {
     /**
      * Block name.

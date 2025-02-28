@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Shipping_Zone_Data_Store
+class WC_Shipping_Zone_Data_Store extends \WC_Data_Store_WP
 {
     /**
      * Method to create a new shipping zone.

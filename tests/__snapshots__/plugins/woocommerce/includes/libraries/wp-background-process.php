@@ -3,7 +3,7 @@
 /**
  * Abstract WP_Background_Process class.
  */
-abstract class WP_Background_Process
+abstract class WP_Background_Process extends \WP_Async_Request
 {
     /**
      * Action

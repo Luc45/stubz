@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
 /**
  * Admin list table for orders as managed by the OrdersTableDataStore.
  */
-class ListTable
+class ListTable extends \WP_List_Table
 {
     /**
      * Order type.

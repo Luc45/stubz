@@ -3,7 +3,7 @@
 /**
  * Simple product class.
  */
-class WC_Product_Simple
+class WC_Product_Simple extends \WC_Product
 {
     /**
      * Initialize simple product.

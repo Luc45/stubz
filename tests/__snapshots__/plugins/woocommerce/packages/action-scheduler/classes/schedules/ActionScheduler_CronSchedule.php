@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_CronSchedule
  */
-class ActionScheduler_CronSchedule
+class ActionScheduler_CronSchedule extends \ActionScheduler_Abstract_RecurringSchedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.

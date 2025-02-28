@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * ReportCSVEmail Class.
  */
-class ReportCSVEmail
+class ReportCSVEmail extends \WC_Email
 {
     /**
      * Report labels.

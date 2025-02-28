@@ -3,7 +3,7 @@
 /**
  * WC_Product_CSV_Importer Class.
  */
-class WC_Product_CSV_Importer
+class WC_Product_CSV_Importer extends \WC_Product_Importer
 {
     /**
      * Tracks current row being parsed.

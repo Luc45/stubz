@@ -3,7 +3,7 @@
 /**
  * WC_Gateway_Paypal Class.
  */
-class WC_Gateway_Paypal
+class WC_Gateway_Paypal extends \WC_Payment_Gateway
 {
     const ID = 'paypal';
 

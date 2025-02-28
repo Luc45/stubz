@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Registry;
  *
  * @since 2.5.0
  */
-class FactoryType
+class FactoryType extends \Automattic\WooCommerce\Blocks\Registry\AbstractDependencyType
 {
     /**
      * Invokes and returns the value from the stored internal callback.

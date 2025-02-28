@@ -3,7 +3,7 @@
 /**
  * Commands for Action Scheduler.
  */
-class ActionScheduler_WPCLI_Clean_Command
+class ActionScheduler_WPCLI_Clean_Command extends \WP_CLI_Command
 {
     /**
      * Run the Action Scheduler Queue Cleaner

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Steps;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Steps
  */
-class SetWCTaxRates
+class SetWCTaxRates extends \Automattic\WooCommerce\Blueprint\Steps\Step
 {
     /**
      * Tax rates.

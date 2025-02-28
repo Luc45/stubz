@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * Product Filter: Clear Button Block.
  */
-final class ProductFilterClearButton
+final class ProductFilterClearButton extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Block name.

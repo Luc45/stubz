@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  *
  * @internal
  */
-class AtomicBlock
+class AtomicBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Get the editor script data for this block type.

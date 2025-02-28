@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Data_Countries_Controller
  */
-class DataCountries
+class DataCountries extends \WC_REST_Data_Countries_Controller
 {
     /**
      * Endpoint namespace.

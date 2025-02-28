@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @since x.x.x
  */
-class MarketingServiceProvider
+class MarketingServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Product_Tags_V2_Controller
  */
-class WC_REST_Product_Tags_Controller
+class WC_REST_Product_Tags_Controller extends \WC_REST_Product_Tags_V2_Controller
 {
     /**
      * Endpoint namespace.

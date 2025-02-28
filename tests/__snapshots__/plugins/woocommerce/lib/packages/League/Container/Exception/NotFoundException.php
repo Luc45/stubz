@@ -2,6 +2,6 @@
 
 namespace Automattic\WooCommerce\Vendor\League\Container\Exception;
 
-class NotFoundException
+class NotFoundException extends \InvalidArgumentException
 {
 }

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Order class.
  */
-class Order
+class Order extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const IDENTIFIER = 'order';
 

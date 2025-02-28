@@ -7,7 +7,7 @@
  * @version        1.0.0
  * @package        WooCommerce\Classes\Log_Handlers
  */
-class WC_Log_Handler_File
+class WC_Log_Handler_File extends \WC_Log_Handler
 {
     /**
      * Stores open file handles.

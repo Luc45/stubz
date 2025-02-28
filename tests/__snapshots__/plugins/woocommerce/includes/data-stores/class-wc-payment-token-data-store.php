@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Payment_Token_Data_Store
+class WC_Payment_Token_Data_Store extends \WC_Data_Store_WP
 {
     /**
      * Meta type. Payment tokens are a new object type.

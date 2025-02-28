@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
 /**
  * Controller class.
  */
-class Controller
+class Controller extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Block name.

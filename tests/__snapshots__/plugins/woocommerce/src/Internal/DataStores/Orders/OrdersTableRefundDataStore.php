@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * Class OrdersTableRefundDataStore.
  */
-class OrdersTableRefundDataStore
+class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore
 {
     /**
      * Data stored in meta keys, but not considered "meta" for refund.

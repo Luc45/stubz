@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * Checkout class.
  */
-class Checkout
+class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'checkout';
 

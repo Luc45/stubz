@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store
+class WC_Customer_Data_Store extends \WC_Data_Store_WP
 {
     /**
      * Data stored in meta keys, but not considered "meta".

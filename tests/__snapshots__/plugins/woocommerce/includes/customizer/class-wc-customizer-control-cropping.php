@@ -3,7 +3,7 @@
 /**
  * WC_Customizer_Control_Cropping class.
  */
-class WC_Customizer_Control_Cropping
+class WC_Customizer_Control_Cropping extends \WP_Customize_Control
 {
     /**
      * Declare the control type.

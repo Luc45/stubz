@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AttributeFilter class.
  */
-class AttributeFilter
+class AttributeFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const FILTER_QUERY_VAR_PREFIX = 'filter_';
 

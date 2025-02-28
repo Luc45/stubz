@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
 /**
  * Handles the Product Reviews page.
  */
-class ReviewsListTable
+class ReviewsListTable extends \WP_List_Table
 {
     /**
      * Memoization flag to determine if the current user can edit the current review.

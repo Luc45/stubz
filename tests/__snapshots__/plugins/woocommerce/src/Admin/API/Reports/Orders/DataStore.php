@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders;
 /**
  * API\Reports\Orders\DataStore.
  */
-class DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
 {
     /**
      * Table used to get the data.

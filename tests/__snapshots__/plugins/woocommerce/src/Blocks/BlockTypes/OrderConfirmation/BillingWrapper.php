@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * BillingWrapper class.
  */
-class BillingWrapper
+class BillingWrapper extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
 {
     /**
      * Block name.

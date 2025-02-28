@@ -3,7 +3,7 @@
 /**
  * Order item tax.
  */
-class WC_Order_Item_Tax
+class WC_Order_Item_Tax extends \WC_Order_Item
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.

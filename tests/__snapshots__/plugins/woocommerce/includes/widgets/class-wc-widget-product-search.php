@@ -3,7 +3,7 @@
 /**
  * Widget product search class.
  */
-class WC_Widget_Product_Search
+class WC_Widget_Product_Search extends \WC_Widget
 {
     /**
      * Constructor.

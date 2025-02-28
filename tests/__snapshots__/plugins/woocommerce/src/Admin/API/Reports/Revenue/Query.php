@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Revenue;
  *  - `woocommerce_analytics_revenue_*` filters
  * So, for backward compatibility, we cannot use GenericQuery.
  */
-class Query
+class Query extends \WC_Object_Query
 {
     /**
      * Valid fields for Revenue report.

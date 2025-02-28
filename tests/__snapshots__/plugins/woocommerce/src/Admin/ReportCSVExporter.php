@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin;
 /**
  * ReportCSVExporter Class.
  */
-class ReportCSVExporter
+class ReportCSVExporter extends \WC_CSV_Batch_Exporter
 {
     /**
      * Type of report being exported.

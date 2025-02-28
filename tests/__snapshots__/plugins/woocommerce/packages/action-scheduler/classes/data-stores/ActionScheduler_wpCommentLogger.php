@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_wpCommentLogger
  */
-class ActionScheduler_wpCommentLogger
+class ActionScheduler_wpCommentLogger extends \ActionScheduler_Logger
 {
     const AGENT = 'ActionScheduler';
 

@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Shipping_Zone_Locations_V2_Controller
  */
-class WC_REST_Shipping_Zone_Locations_Controller
+class WC_REST_Shipping_Zone_Locations_Controller extends \WC_REST_Shipping_Zone_Locations_V2_Controller
 {
     /**
      * Endpoint namespace.

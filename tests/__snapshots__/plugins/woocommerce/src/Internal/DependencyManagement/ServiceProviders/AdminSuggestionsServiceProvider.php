@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the suggestions controller classes in the Automattic\WooCommerce\Internal\Admin\Suggestions namespace.
  */
-class AdminSuggestionsServiceProvider
+class AdminSuggestionsServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * List services provided by this class.

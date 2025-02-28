@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_Abstract_Schedule
  */
-abstract class ActionScheduler_Abstract_Schedule
+abstract class ActionScheduler_Abstract_Schedule extends \ActionScheduler_Schedule_Deprecated
 {
     /**
      * The date & time the schedule is set to run.

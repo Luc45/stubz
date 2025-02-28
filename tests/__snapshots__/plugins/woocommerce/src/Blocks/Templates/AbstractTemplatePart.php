@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-abstract class AbstractTemplatePart
+abstract class AbstractTemplatePart extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
     /**
      * The template part area where the template part belongs.

@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  *
  * Supports the same parameters as /products, but returns a different response.
  */
-class ProductCollectionData
+class ProductCollectionData extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
     const IDENTIFIER = 'product-collection-data';
 

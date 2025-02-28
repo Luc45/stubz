@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * ShippingAddress class.
  */
-class ShippingAddress
+class ShippingAddress extends \Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation\AbstractOrderConfirmationBlock
 {
     /**
      * Block name.

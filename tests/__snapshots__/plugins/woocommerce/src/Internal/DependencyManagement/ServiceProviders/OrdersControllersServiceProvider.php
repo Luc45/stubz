@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the orders controller classes in the Automattic\WooCommerce\Internal\Orders namespace.
  */
-class OrdersControllersServiceProvider
+class OrdersControllersServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

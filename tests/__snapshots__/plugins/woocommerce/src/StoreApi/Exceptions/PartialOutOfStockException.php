@@ -7,6 +7,6 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
  *
  * This exception is thrown when an item in a draft order has a quantity greater than what is available in stock.
  */
-class PartialOutOfStockException
+class PartialOutOfStockException extends \Automattic\WooCommerce\StoreApi\Exceptions\StockAvailabilityException
 {
 }

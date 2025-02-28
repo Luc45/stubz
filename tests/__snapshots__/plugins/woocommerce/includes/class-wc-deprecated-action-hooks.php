@@ -3,7 +3,7 @@
 /**
  * Handles deprecation notices and triggering of legacy action hooks.
  */
-class WC_Deprecated_Action_Hooks
+class WC_Deprecated_Action_Hooks extends \WC_Deprecated_Hooks
 {
     /**
      * Array of deprecated hooks we need to handle. Format of 'new' => 'old'.

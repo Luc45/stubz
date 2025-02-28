@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Checkout\Helpers;
 /**
  * ReserveStockException class.
  */
-class ReserveStockException implements \Stringable, \Throwable
+class ReserveStockException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Sanitized error code.

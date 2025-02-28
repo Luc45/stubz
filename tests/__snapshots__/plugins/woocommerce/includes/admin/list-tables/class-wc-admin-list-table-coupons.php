@@ -3,7 +3,7 @@
 /**
  * WC_Admin_List_Table_Coupons Class.
  */
-class WC_Admin_List_Table_Coupons
+class WC_Admin_List_Table_Coupons extends \WC_Admin_List_Table
 {
     /**
      * Post type.

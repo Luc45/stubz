@@ -5,7 +5,7 @@
  *
  * @since 3.9.0
  */
-class WC_Integration_MaxMind_Geolocation
+class WC_Integration_MaxMind_Geolocation extends \WC_Integration
 {
     /**
      * The service responsible for interacting with the MaxMind database.

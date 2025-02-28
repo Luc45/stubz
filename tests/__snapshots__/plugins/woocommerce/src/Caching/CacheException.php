@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Caching;
 /**
  * Exception thrown by classes derived from ObjectCache.
  */
-class CacheException implements \Stringable, \Throwable
+class CacheException extends \Exception implements \Stringable, \Throwable
 {
     /**
      * Error messages.

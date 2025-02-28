@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * ProductTags class.
  */
-class ProductTags
+class ProductTags extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractTermsRoute
 {
     const IDENTIFIER = 'product-tags';
 

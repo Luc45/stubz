@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * PriceFilter class.
  */
-class PriceFilter
+class PriceFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const MIN_PRICE_QUERY_VAR = 'min_price';
 

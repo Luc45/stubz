@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Shipping;
 /**
  * Local Pickup Shipping Method.
  */
-class PickupLocation
+class PickupLocation extends \WC_Shipping_Method
 {
     /**
      * Pickup locations.

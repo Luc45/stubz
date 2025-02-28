@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Product_Categories_Controller
  */
-class ProductCategories
+class ProductCategories extends \WC_REST_Product_Categories_Controller
 {
     /**
      * Endpoint namespace.

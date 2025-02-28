@@ -3,7 +3,7 @@
 /**
  * WC_Admin_List_Table_Products Class.
  */
-class WC_Admin_List_Table_Products
+class WC_Admin_List_Table_Products extends \WC_Admin_List_Table
 {
     /**
      * Post type.

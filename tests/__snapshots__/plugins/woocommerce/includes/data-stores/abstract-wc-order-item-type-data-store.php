@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-abstract class Abstract_WC_Order_Item_Type_Data_Store
+abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP
 {
     /**
      * Meta type. This should match up with

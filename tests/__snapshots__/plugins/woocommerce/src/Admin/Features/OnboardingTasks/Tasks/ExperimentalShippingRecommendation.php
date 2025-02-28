@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Shipping Task
  */
-class ExperimentalShippingRecommendation
+class ExperimentalShippingRecommendation extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * ID.

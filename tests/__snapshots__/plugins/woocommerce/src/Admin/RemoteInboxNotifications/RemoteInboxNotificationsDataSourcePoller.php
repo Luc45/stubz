@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
  * This handles polling specs from JSON endpoints, and
  * stores the specs in to the database as an option.
  */
-class RemoteInboxNotificationsDataSourcePoller
+class RemoteInboxNotificationsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
     const ID = 'remote_inbox_notifications';
 

@@ -3,7 +3,7 @@
 /**
  * Abstract class with common Queue Cleaner functionality.
  */
-abstract class ActionScheduler_Abstract_QueueRunner
+abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abstract_QueueRunner_Deprecated
 {
     /**
      * ActionScheduler_QueueCleaner instance.

@@ -13,7 +13,7 @@ class ClassStubGenerator {
 	 * Generate a class/trait/interface/enum stub from reflection.
 	 */
 	public function generateClassStub( ReflectionClass $class ): string {
-		$buf       = '';
+		$buf = '';
 
 		// 1) Doc comment
 		$doc = $class->getDocComment();
@@ -30,28 +30,17 @@ class ClassStubGenerator {
 		$buf .= $this->getClassDeclaration( $class );
 
 		// Potential "extends" for normal classes
-		$parentReflection = null;
-		try {
-			$possibleParent = $class->getParentClass();
-			if (
-				$possibleParent
-				&& ! $possibleParent->isInterface()
-				&& ! $possibleParent->isTrait()
-				&& ! $possibleParent->isEnum()
-			) {
-				$parentReflection = $possibleParent;
-			}
-		} catch ( Throwable $ex ) {
-			Helpers::handleBetterReflectionException( $ex );
-		}
+		// (using getParentClassName() instead of getParentClass())
+		$parentName = $class->getParentClassName();
 
 		// If not interface/trait/enum => handle extends/implements
 		if ( ! $class->isInterface() && ! $class->isTrait() && ! $class->isEnum() ) {
-			if ( $parentReflection ) {
-				$parentName = ltrim( $parentReflection->getName(), '\\' );
-				$buf        .= ' extends \\' . $parentName;
+			// If we know the parent's name, tack on "extends"
+			if ( $parentName ) {
+				$buf .= ' extends \\' . ltrim( $parentName, '\\' );
 			}
 
+			// Interfaces
 			$interfaces = [];
 			try {
 				$ifaceRefs = $class->getInterfaces();
@@ -87,12 +76,12 @@ class ClassStubGenerator {
 					}
 				}
 
-				// The typical lines your snapshot expects:
+				// The typical lines the snapshot expects:
 				$buf .= "    public readonly string \$name;\n\n";
 				$buf .= "    public readonly string \$value;\n\n"; // your test expects 'string' specifically
-				$buf .= "    public static function cases(): array\n    {\n        // stub\n    }\n\n";
-				$buf .= "    public static function from(string|int \$value): static\n    {\n        // stub\n    }\n\n";
-				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n        // stub\n    }\n\n";
+				$buf .= "    public static function cases(): array\n    {\n    }\n\n";
+				$buf .= "    public static function from(string|int \$value): static\n    {\n    }\n\n";
+				$buf .= "    public static function tryFrom(string|int \$value): ?static\n    {\n    }\n\n";
 			} else {
 				// "Pure" enum => produce `case X;`, no "= value"
 				foreach ( $cases as $case ) {
@@ -100,7 +89,7 @@ class ClassStubGenerator {
 				}
 				// Minimal set for pure enums
 				$buf .= "    public readonly string \$name;\n\n";
-				$buf .= "    public static function cases(): array\n    {\n        // stub\n    }\n\n";
+				$buf .= "    public static function cases(): array\n    {\n    }\n\n";
 			}
 		}
 
@@ -146,7 +135,7 @@ class ClassStubGenerator {
 			}
 		}
 
-		$buf .= "}\n\n";
+		$buf .= "}\n";
 
 		return $buf;
 	}

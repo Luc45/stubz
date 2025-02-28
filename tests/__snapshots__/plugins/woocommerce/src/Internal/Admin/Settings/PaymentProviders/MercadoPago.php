@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the MercadoPago payment gateway provider.
  */
-class MercadoPago
+class MercadoPago extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
     /**
      * Get the provider title of the payment gateway.

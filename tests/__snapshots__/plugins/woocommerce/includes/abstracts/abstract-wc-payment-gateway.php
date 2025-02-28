@@ -10,7 +10,7 @@
  * @version     2.1.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Payment_Gateway
+abstract class WC_Payment_Gateway extends \WC_Settings_API
 {
     /**
      * Set if the place order button should be renamed on selection.

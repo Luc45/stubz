@@ -3,7 +3,7 @@
 /**
  * Widget recently viewed.
  */
-class WC_Widget_Recently_Viewed
+class WC_Widget_Recently_Viewed extends \WC_Widget
 {
     /**
      * Constructor.

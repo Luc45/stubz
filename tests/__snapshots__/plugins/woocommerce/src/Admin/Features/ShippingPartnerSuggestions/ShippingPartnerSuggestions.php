@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\ShippingPartnerSuggestions;
 /**
  * Class ShippingPartnerSuggestions
  */
-class ShippingPartnerSuggestions
+class ShippingPartnerSuggestions extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
     /**
      * Go through the specs and run them.

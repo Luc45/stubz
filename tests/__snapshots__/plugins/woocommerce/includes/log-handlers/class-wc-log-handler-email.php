@@ -21,7 +21,7 @@
  * @version        1.0.0
  * @package        WooCommerce\Classes\Log_Handlers
  */
-class WC_Log_Handler_Email
+class WC_Log_Handler_Email extends \WC_Log_Handler
 {
     /**
      * Minimum log level this handler will process.

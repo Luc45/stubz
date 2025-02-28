@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * FeaturedItem class.
  */
-abstract class FeaturedItem
+abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
 {
     /**
      * Block name.

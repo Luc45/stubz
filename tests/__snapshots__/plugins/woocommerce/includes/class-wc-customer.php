@@ -3,7 +3,7 @@
 /**
  * Customer class.
  */
-class WC_Customer
+class WC_Customer extends \WC_Legacy_Customer
 {
     /**
      * Stores customer data.

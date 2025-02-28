@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * @internal
  */
-class PseudoWCPaymentGateway
+class PseudoWCPaymentGateway extends \WC_Payment_Gateway
 {
     /**
      * Gateway ID.

@@ -3,7 +3,7 @@
 /**
  * Legacy Webhook class.
  */
-abstract class WC_Legacy_Webhook
+abstract class WC_Legacy_Webhook extends \WC_Data
 {
     /**
      * Magic __isset method for backwards compatibility. Legacy properties which could be accessed directly in the past.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class CheckoutTemplate
+class CheckoutTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
     const SLUG = 'page-checkout';
 

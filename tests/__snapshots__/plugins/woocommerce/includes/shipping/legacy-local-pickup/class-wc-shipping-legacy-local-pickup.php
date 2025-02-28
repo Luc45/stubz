@@ -9,7 +9,7 @@
  * @version     2.3.0
  * @package     WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Legacy_Local_Pickup
+class WC_Shipping_Legacy_Local_Pickup extends \WC_Shipping_Method
 {
     /**
      * Allowed post/zip codes for the shipping method.

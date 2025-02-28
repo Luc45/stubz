@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Review Shipping Options Task
  */
-class ReviewShippingOptions
+class ReviewShippingOptions extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * ID.

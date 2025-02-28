@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * CartShippingRateSchema class.
  */
-class CartShippingRateSchema
+class CartShippingRateSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
     const IDENTIFIER = 'cart-shipping-rate';
 

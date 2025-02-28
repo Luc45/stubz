@@ -3,7 +3,7 @@
 /**
  * ActionScheduler_AsyncRequest_QueueRunner class.
  */
-class ActionScheduler_AsyncRequest_QueueRunner
+class ActionScheduler_AsyncRequest_QueueRunner extends \WP_Async_Request
 {
     /**
      * Data store for querying actions

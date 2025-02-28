@@ -3,7 +3,7 @@
 /**
  * Commands for Action Scheduler.
  */
-class ActionScheduler_WPCLI_Scheduler_command
+class ActionScheduler_WPCLI_Scheduler_command extends \WP_CLI_Command
 {
     /**
      * Force tables schema creation for Action Scheduler

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * PriceFilter class.
  */
-class RatingFilter
+class RatingFilter extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     const RATING_QUERY_VAR = 'rating_filter';
 

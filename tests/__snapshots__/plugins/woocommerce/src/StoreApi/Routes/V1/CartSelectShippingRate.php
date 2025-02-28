@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
 /**
  * CartSelectShippingRate class.
  */
-class CartSelectShippingRate
+class CartSelectShippingRate extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'cart-select-shipping-rate';
 

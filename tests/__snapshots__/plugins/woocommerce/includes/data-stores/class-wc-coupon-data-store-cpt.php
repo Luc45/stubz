@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Coupon_Data_Store_CPT
+class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP
 {
     /**
      * Internal meta type used to store coupon data.

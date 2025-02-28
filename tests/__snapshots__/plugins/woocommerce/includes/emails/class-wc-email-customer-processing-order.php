@@ -10,7 +10,7 @@
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Customer_Processing_Order
+class WC_Email_Customer_Processing_Order extends \WC_Email
 {
     /**
      * Constructor.

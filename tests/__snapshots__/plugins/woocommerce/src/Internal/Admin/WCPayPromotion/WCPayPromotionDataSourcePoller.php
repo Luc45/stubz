@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\WCPayPromotion;
 /**
  * Specs data source poller class for WooPayments Promotion.
  */
-class WCPayPromotionDataSourcePoller
+class WCPayPromotionDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
     const ID = 'payment_method_promotion';
 

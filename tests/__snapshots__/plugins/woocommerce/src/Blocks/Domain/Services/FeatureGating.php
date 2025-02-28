@@ -10,7 +10,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  *
  * @deprecated since 9.6.0, use wp_get_environment_type() instead.
  */
-class FeatureGating
+class FeatureGating extends \Automattic\WooCommerce\Admin\DeprecatedClassFacade
 {
     /**
      * The version that this class was deprecated in.

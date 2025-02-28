@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Coupons_Controller
  */
-class Coupons
+class Coupons extends \WC_REST_Coupons_Controller
 {
     /**
      * Endpoint namespace.

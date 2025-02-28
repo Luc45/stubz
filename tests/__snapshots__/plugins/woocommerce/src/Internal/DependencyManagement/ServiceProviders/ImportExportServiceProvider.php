@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @since 9.3.0
  */
-class ImportExportServiceProvider
+class ImportExportServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

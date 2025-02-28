@@ -10,7 +10,7 @@
  * @since       2.6.0
  * @package     WooCommerce\PaymentTokens
  */
-class WC_Payment_Token_CC
+class WC_Payment_Token_CC extends \WC_Payment_Token
 {
     /**
      * Token Type String.

@@ -84,7 +84,7 @@ class WC_Gateway_Paypal_API_Handler
  *
  * @since 3.0.0
  */
-class WC_Gateway_Paypal_Refund
+class WC_Gateway_Paypal_Refund extends \WC_Gateway_Paypal_API_Handler
 {
     /**
      * Get refund request args. Proxy to WC_Gateway_Paypal_API_Handler::get_refund_request().

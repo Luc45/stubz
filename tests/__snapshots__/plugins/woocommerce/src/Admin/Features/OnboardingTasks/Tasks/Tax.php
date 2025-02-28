@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Tax Task
  */
-class Tax
+class Tax extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * Used to cache is_complete() method result.

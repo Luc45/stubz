@@ -5,7 +5,7 @@
  *
  * @codeCoverageIgnore
  */
-class ActionScheduler_ListTable
+class ActionScheduler_ListTable extends \ActionScheduler_Abstract_ListTable
 {
     /**
      * The package name.

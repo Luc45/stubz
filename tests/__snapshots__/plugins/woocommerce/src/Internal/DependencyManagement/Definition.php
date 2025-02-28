@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
 /**
  * An extension of the definition class that replaces constructor injection with method injection.
  */
-class Definition
+class Definition extends \Automattic\WooCommerce\Vendor\League\Container\Definition\Definition
 {
     const INJECTION_METHOD = 'init';
 

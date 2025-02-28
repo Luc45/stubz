@@ -3,7 +3,7 @@
 /**
  * WC_Order_Item_Shipping_Data_Store class.
  */
-class WC_Order_Item_Shipping_Data_Store
+class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
 {
     /**
      * Data stored in meta keys.

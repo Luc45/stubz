@@ -3,7 +3,7 @@
 /**
  * WC_Privacy_Background_Process class.
  */
-class WC_Privacy_Background_Process
+class WC_Privacy_Background_Process extends \WC_Background_Process
 {
     /**
      * Initiate new background process.

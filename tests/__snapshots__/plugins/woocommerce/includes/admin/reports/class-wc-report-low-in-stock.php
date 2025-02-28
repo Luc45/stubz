@@ -3,7 +3,7 @@
 /**
  * Low stock report class.
  */
-class WC_Report_Low_In_Stock
+class WC_Report_Low_In_Stock extends \WC_Report_Stock
 {
     /**
      * No items found text.

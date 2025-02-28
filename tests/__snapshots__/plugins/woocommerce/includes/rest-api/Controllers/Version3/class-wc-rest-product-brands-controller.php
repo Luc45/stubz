@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Product_Categories_Controller
  */
-class WC_REST_Product_Brands_Controller
+class WC_REST_Product_Brands_Controller extends \WC_REST_Product_Categories_Controller
 {
     /**
      * Route base.

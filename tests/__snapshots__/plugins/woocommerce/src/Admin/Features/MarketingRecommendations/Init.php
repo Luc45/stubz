@@ -6,7 +6,7 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
  * Marketing Recommendations engine.
  * This goes through the specs and gets marketing recommendations.
  */
-class Init
+class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
     const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
 

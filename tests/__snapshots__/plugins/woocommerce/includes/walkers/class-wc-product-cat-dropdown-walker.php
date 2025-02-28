@@ -3,7 +3,7 @@
 /**
  * Product category dropdown walker class.
  */
-class WC_Product_Cat_Dropdown_Walker
+class WC_Product_Cat_Dropdown_Walker extends \Walker
 {
     /**
      * What the class handles.

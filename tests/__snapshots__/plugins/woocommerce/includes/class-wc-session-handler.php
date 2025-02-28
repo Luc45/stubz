@@ -3,7 +3,7 @@
 /**
  * Session handler class.
  */
-class WC_Session_Handler
+class WC_Session_Handler extends \WC_Session
 {
     /**
      * Cookie name used for the session.

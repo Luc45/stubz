@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the WooPayments payment gateway provider.
  */
-class WooPayments
+class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
     const PREFIX = 'woocommerce_admin_settings_payments__woopayments__';
 

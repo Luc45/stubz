@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin;
  *
  * @deprecated since 8.8.0
  */
-abstract class DataSourcePoller
+abstract class DataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
     /**
      * Log a deprecation to the error log.

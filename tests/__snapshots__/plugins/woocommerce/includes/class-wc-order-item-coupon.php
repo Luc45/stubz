@@ -3,7 +3,7 @@
 /**
  * Order item coupon class.
  */
-class WC_Order_Item_Coupon
+class WC_Order_Item_Coupon extends \WC_Order_Item
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.

@@ -3,7 +3,7 @@
 /**
  * WC_Abstract_Order class.
  */
-abstract class WC_Abstract_Order
+abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
 {
     /**
      * Order Data array. This is the core order data exposed in APIs since 3.0.0.

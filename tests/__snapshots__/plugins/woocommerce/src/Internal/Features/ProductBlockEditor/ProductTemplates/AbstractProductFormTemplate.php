@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Block template class.
  */
-abstract class AbstractProductFormTemplate
+abstract class AbstractProductFormTemplate extends \Automattic\WooCommerce\Internal\Admin\BlockTemplates\AbstractBlockTemplate
 {
     /**
      * Get the template area.

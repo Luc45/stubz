@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
 /**
  * CheckoutOrderSchema class.
  */
-class CheckoutOrderSchema
+class CheckoutOrderSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\CheckoutSchema
 {
     const IDENTIFIER = 'checkout-order';
 

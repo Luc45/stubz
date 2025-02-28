@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @package Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders
  */
-class BatchProcessingServiceProvider
+class BatchProcessingServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
 {
     /**
      * Services provided by this provider.

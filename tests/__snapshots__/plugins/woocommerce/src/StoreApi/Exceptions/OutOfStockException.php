@@ -7,6 +7,6 @@ namespace Automattic\WooCommerce\StoreApi\Exceptions;
  *
  * This exception is thrown when an item in a draft order is out of stock completely.
  */
-class OutOfStockException
+class OutOfStockException extends \Automattic\WooCommerce\StoreApi\Exceptions\StockAvailabilityException
 {
 }

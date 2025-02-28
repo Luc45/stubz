@@ -7,7 +7,7 @@
  *
  * @since 3.0.0
  */
-class ActionScheduler_DBLogger
+class ActionScheduler_DBLogger extends \ActionScheduler_Logger
 {
     /**
      * Add a record to an action log.

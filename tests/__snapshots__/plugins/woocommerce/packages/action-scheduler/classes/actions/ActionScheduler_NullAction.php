@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_NullAction
  */
-class ActionScheduler_NullAction
+class ActionScheduler_NullAction extends \ActionScheduler_Action
 {
     /**
      * Construct.

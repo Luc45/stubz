@@ -7,7 +7,7 @@
  *
  * @version  3.0.0
  */
-class WC_Customer_Data_Store_Session
+class WC_Customer_Data_Store_Session extends \WC_Data_Store_WP
 {
     /**
      * Keys which are also stored in a session (so we can make sure they get updated...)

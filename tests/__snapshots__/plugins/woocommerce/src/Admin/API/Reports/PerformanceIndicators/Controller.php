@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\PerformanceIndicators;
  * @internal
  * @extends GenericController
  */
-class Controller
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
 {
     /**
      * Route base.

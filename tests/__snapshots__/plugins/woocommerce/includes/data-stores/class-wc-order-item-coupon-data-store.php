@@ -5,7 +5,7 @@
  *
  * @version  3.0.0
  */
-class WC_Order_Item_Coupon_Data_Store
+class WC_Order_Item_Coupon_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Store
 {
     /**
      * Data stored in meta keys.

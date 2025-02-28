@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
 /**
  * Note class.
  */
-class Note
+class Note extends \WC_Data
 {
     const E_WC_ADMIN_NOTE_ERROR = 'error';
 

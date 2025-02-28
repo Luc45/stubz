@@ -10,7 +10,7 @@
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Settings_API
  */
-class WC_Email
+class WC_Email extends \WC_Settings_API
 {
     /**
      * Email method ID.

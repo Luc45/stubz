@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ProductCatalogTemplate
+class ProductCatalogTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
     const SLUG = 'archive-product';
 

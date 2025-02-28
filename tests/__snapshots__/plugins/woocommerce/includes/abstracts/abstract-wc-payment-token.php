@@ -11,7 +11,7 @@
  * @since       2.6.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Payment_Token
+abstract class WC_Payment_Token extends \WC_Legacy_Payment_Token
 {
     /**
      * Token Data (stored in the payment_tokens table).

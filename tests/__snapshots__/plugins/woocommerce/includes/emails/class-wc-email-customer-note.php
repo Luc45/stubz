@@ -10,7 +10,7 @@
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Customer_Note
+class WC_Email_Customer_Note extends \WC_Email
 {
     /**
      * Customer note.

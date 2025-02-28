@@ -9,7 +9,7 @@
  * @version 2.4.0
  * @package WooCommerce\Classes\Shipping
  */
-class WC_Shipping_Legacy_Free_Shipping
+class WC_Shipping_Legacy_Free_Shipping extends \WC_Shipping_Method
 {
     /**
      * Min amount to be valid.

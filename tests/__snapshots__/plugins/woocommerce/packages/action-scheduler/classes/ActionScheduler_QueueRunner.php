@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_QueueRunner
  */
-class ActionScheduler_QueueRunner
+class ActionScheduler_QueueRunner extends \ActionScheduler_Abstract_QueueRunner
 {
     const WP_CRON_HOOK = 'action_scheduler_run_queue';
 

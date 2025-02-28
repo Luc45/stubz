@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * ProductTag class.
  */
-class ProductTag
+class ProductTag extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractProductGrid
 {
     /**
      * Block name.

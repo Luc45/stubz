@@ -3,7 +3,7 @@
 /**
  * WC_Report_Most_Stocked.
  */
-class WC_Report_Most_Stocked
+class WC_Report_Most_Stocked extends \WC_Report_Stock
 {
     /**
      * Get Products matching stock criteria.

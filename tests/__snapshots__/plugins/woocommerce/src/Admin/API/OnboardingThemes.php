@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Data_Controller
  */
-class OnboardingThemes
+class OnboardingThemes extends \WC_REST_Data_Controller
 {
     /**
      * Endpoint namespace.

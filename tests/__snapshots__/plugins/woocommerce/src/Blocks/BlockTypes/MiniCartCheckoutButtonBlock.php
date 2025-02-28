@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * MiniCartCheckoutButtonBlock class.
  */
-class MiniCartCheckoutButtonBlock
+class MiniCartCheckoutButtonBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractInnerBlock
 {
     /**
      * Block name.

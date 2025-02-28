@@ -9,7 +9,7 @@
  * @version     3.0.0
  * @package     WooCommerce\Abstracts
  */
-abstract class WC_Shipping_Method
+abstract class WC_Shipping_Method extends \WC_Settings_API
 {
     /**
      * Features this method supports. Possible features used by core:

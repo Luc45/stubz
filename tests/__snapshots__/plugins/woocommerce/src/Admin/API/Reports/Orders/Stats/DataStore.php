@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders\Stats;
 /**
  * API\Reports\Orders\Stats\DataStore.
  */
-class DataStore
+class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore
 {
     const CRON_EVENT = 'wc_order_stats_update';
 

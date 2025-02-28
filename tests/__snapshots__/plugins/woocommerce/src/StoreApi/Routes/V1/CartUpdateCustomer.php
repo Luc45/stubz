@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  *
  * Updates the customer billing and shipping addresses, recalculates the cart totals, and returns an updated cart.
  */
-class CartUpdateCustomer
+class CartUpdateCustomer extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
     const IDENTIFIER = 'cart-update-customer';
 

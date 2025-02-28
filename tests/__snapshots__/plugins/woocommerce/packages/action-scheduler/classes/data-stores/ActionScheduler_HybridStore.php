@@ -7,7 +7,7 @@
  *
  * @since 3.0.0
  */
-class ActionScheduler_HybridStore
+class ActionScheduler_HybridStore extends \ActionScheduler_Store
 {
     const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
 

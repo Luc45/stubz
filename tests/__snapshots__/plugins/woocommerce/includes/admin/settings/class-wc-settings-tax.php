@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Tax.
  */
-class WC_Settings_Tax
+class WC_Settings_Tax extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

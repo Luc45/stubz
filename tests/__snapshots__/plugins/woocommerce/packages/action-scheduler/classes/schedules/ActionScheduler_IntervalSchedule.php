@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_IntervalSchedule
  */
-class ActionScheduler_IntervalSchedule
+class ActionScheduler_IntervalSchedule extends \ActionScheduler_Abstract_RecurringSchedule
 {
     /**
      * Deprecated property @see $this->__wakeup() for details.

@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Product Variation Template.
  */
-class ProductVariationTemplate
+class ProductVariationTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate
 {
     const GROUP_IDS = array (
   'GENERAL' => 'general',

@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Categories;
  * @internal
  * @extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
  */
-class Controller
+class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericController
 {
     /**
      * Route base.

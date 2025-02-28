@@ -15,7 +15,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  * Note that `AbstractInterfaceServiceProvider` likely serves as a better base class for service providers
  * tasked with registering classes that implement interfaces.
  */
-abstract class AbstractServiceProvider
+abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\League\Container\ServiceProvider\AbstractServiceProvider
 {
     /**
      * Register a class in the container and use reflection to guess the injection method arguments.

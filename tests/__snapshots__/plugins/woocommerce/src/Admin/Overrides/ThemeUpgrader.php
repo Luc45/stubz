@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Overrides;
 /**
  * Admin\Overrides\ThemeUpgrader Class.
  */
-class ThemeUpgrader
+class ThemeUpgrader extends \Theme_Upgrader
 {
     /**
      * Install a theme package.

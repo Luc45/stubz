@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the non-static utils classes in the Automattic\WooCommerce\src namespace.
  */
-class UtilsClassesServiceProvider
+class UtilsClassesServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

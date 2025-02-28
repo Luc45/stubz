@@ -10,7 +10,7 @@
  * @version     2.1.0
  * @package     WooCommerce\Classes\Payment
  */
-class WC_Gateway_COD
+class WC_Gateway_COD extends \WC_Payment_Gateway
 {
     const ID = 'cod';
 

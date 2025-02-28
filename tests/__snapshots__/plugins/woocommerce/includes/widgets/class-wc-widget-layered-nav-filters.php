@@ -3,7 +3,7 @@
 /**
  * Widget layered nav filters.
  */
-class WC_Widget_Layered_Nav_Filters
+class WC_Widget_Layered_Nav_Filters extends \WC_Widget
 {
     /**
      * Constructor.

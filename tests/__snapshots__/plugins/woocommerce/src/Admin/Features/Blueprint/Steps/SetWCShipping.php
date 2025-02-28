@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Steps;
  *
  * @package Automattic\WooCommerce\Admin\Features\Blueprint\Steps
  */
-class SetWCShipping
+class SetWCShipping extends \Automattic\WooCommerce\Blueprint\Steps\Step
 {
     /**
      * Shipping methods.

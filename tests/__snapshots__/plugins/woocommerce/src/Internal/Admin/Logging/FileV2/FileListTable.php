@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 /**
  * FileListTable class.
  */
-class FileListTable
+class FileListTable extends \WP_List_Table
 {
     const PER_PAGE_USER_OPTION_KEY = 'woocommerce_logging_file_list_per_page';
 

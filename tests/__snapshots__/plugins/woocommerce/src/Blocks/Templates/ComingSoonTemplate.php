@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ComingSoonTemplate
+class ComingSoonTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
     const SLUG = 'coming-soon';
 

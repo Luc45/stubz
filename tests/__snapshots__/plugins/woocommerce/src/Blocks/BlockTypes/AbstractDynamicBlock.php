@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AbstractDynamicBlock class.
  */
-abstract class AbstractDynamicBlock
+abstract class AbstractDynamicBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Get the frontend script handle for this block type.

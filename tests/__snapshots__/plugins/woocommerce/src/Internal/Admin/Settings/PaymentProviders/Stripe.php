@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the Stripe payment gateway provider.
  */
-class Stripe
+class Stripe extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
     /**
      * Check if the payment gateway has a payments processor account connected.

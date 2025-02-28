@@ -3,7 +3,7 @@
 /**
  * Order refund class.
  */
-class WC_Order_Refund
+class WC_Order_Refund extends \WC_Abstract_Order
 {
     /**
      * Which data store to load.

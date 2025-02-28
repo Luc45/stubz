@@ -7,7 +7,7 @@
  *
  * Creates a custom table for storing action logs
  */
-class ActionScheduler_LoggerSchema
+class ActionScheduler_LoggerSchema extends \ActionScheduler_Abstract_Schema
 {
     const LOG_TABLE = 'actionscheduler_logs';
 

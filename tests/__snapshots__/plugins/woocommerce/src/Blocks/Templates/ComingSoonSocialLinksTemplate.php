@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  *
  * @internal
  */
-class ComingSoonSocialLinksTemplate
+class ComingSoonSocialLinksTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplatePart
 {
     const SLUG = 'coming-soon-social-links';
 

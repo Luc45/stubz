@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  *
  * This class handles all the custom logic for the AmazonPay payment gateway provider.
  */
-class AmazonPay
+class AmazonPay extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
     /**
      * Try to determine if the payment gateway is in test mode.

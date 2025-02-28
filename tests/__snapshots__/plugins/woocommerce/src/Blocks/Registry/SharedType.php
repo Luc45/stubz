@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Registry;
  *
  * @since 2.5.0
  */
-class SharedType
+class SharedType extends \Automattic\WooCommerce\Blocks\Registry\AbstractDependencyType
 {
     /**
      * Holds a cached instance of the value stored (or returned) internally.

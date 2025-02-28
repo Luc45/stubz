@@ -10,7 +10,7 @@
  * @package     WooCommerce\Classes\Emails
  * @extends     WC_Email
  */
-class WC_Email_Customer_New_Account
+class WC_Email_Customer_New_Account extends \WC_Email
 {
     /**
      * User login name.

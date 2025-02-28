@@ -17,7 +17,7 @@
  * @codeCoverageIgnore
  * @since  2.0.0
  */
-abstract class ActionScheduler_Abstract_ListTable
+abstract class ActionScheduler_Abstract_ListTable extends \WP_List_Table
 {
     /**
      * The table name

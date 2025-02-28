@@ -3,7 +3,7 @@
 /**
  * Product variation class.
  */
-class WC_Product_Variation
+class WC_Product_Variation extends \WC_Product_Simple
 {
     /**
      * Post type.

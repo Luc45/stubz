@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\OrderConfirmation;
 /**
  * AbstractOrderConfirmationBlock class.
  */
-abstract class AbstractOrderConfirmationBlock
+abstract class AbstractOrderConfirmationBlock extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Get the content from a hook and return it.

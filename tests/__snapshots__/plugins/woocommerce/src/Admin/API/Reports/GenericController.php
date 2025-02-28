@@ -44,7 +44,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @extends WC_REST_Reports_Controller
  */
-abstract class GenericController
+abstract class GenericController extends \WC_REST_Reports_Controller
 {
     /**
      * Endpoint namespace.

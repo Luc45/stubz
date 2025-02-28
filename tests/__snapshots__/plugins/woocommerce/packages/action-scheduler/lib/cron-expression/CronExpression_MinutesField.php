@@ -5,7 +5,7 @@
  *
  * @author Michael Dowling <mtdowling@gmail.com>
  */
-class CronExpression_MinutesField
+class CronExpression_MinutesField extends \CronExpression_AbstractField
 {
     /**
      * {@inheritdoc}

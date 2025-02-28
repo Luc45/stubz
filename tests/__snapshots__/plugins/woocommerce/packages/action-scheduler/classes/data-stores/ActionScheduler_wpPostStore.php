@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_wpPostStore
  */
-class ActionScheduler_wpPostStore
+class ActionScheduler_wpPostStore extends \ActionScheduler_Store
 {
     const POST_TYPE = 'scheduled-action';
 

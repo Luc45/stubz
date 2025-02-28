@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 /**
  * Launch Your Store Task
  */
-class LaunchYourStore
+class LaunchYourStore extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * Constructor

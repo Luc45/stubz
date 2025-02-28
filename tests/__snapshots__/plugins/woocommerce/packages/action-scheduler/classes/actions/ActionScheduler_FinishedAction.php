@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_FinishedAction
  */
-class ActionScheduler_FinishedAction
+class ActionScheduler_FinishedAction extends \ActionScheduler_Action
 {
     /**
      * Execute action.

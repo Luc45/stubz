@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Product_Attribute_Terms_V2_Controller
  */
-class WC_REST_Product_Attribute_Terms_Controller
+class WC_REST_Product_Attribute_Terms_Controller extends \WC_REST_Product_Attribute_Terms_V2_Controller
 {
     /**
      * Endpoint namespace.

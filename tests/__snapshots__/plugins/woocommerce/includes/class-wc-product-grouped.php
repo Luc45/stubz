@@ -3,7 +3,7 @@
 /**
  * Product grouped class.
  */
-class WC_Product_Grouped
+class WC_Product_Grouped extends \WC_Product
 {
     /**
      * Stores product data.

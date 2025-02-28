@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
 /**
  * WC Admin Note Data Store (Custom Tables)
  */
-class DataStore
+class DataStore extends \WC_Data_Store_WP
 {
     const WC_ADMIN_NOTE_OPER_GLOBAL = 'global';
 

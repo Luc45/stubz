@@ -3,7 +3,7 @@
 /**
  * WC_Background_Process class.
  */
-abstract class WC_Background_Process
+abstract class WC_Background_Process extends \WP_Background_Process
 {
     /**
      * Is queue empty.

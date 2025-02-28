@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Payments;
  *
  * @since 2.6.0
  */
-final class PaymentMethodRegistry
+final class PaymentMethodRegistry extends \Automattic\WooCommerce\Blocks\Integrations\IntegrationRegistry
 {
     /**
      * Integration identifier is used to construct hook names and is given when the integration registry is initialized.

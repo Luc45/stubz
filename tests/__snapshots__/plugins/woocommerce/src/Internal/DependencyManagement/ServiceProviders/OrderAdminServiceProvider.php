@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * OrderAdminServiceProvider class.
  */
-class OrderAdminServiceProvider
+class OrderAdminServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * List services provided by this class.

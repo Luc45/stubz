@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * AbstractProductGrid class.
  */
-abstract class AbstractProductGrid
+abstract class AbstractProductGrid extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
 {
     /**
      * Attributes.

@@ -3,7 +3,7 @@
 /**
  * Coupon class.
  */
-class WC_Coupon
+class WC_Coupon extends \WC_Legacy_Coupon
 {
     const E_WC_COUPON_INVALID_FILTERED = 100;
 

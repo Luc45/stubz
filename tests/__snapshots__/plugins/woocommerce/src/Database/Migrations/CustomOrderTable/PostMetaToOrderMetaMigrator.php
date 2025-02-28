@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
  *
  * @package Automattic\WooCommerce\Database\Migrations\CustomOrderTable
  */
-class PostMetaToOrderMetaMigrator
+class PostMetaToOrderMetaMigrator extends \Automattic\WooCommerce\Database\Migrations\MetaToMetaTableMigrator
 {
     /**
      * List of meta keys to exclude from migration.

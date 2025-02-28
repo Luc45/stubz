@@ -9,7 +9,7 @@ namespace Action_Scheduler\Migration;
  *
  * @codeCoverageIgnore
  */
-class DryRun_LogMigrator
+class DryRun_LogMigrator extends \Action_Scheduler\Migration\LogMigrator
 {
     /**
      * Simulate migrating an action log.

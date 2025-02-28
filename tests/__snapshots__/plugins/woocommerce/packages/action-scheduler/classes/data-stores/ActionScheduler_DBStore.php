@@ -7,7 +7,7 @@
  *
  * @since 3.0.0
  */
-class ActionScheduler_DBStore
+class ActionScheduler_DBStore extends \ActionScheduler_Store
 {
     /**
      * Used to share information about the before_date property of claims internally.

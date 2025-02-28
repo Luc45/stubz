@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the RestockRefundedItemsAdjuster class.
  */
-class RestockRefundedItemsAdjusterServiceProvider
+class RestockRefundedItemsAdjusterServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\AbstractServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

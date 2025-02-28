@@ -5,7 +5,7 @@
  *
  * These are regular WooCommerce orders, which extend the abstract order class.
  */
-class WC_Order
+class WC_Order extends \WC_Abstract_Order
 {
     /**
      * Stores data about status changes so relevant hooks can be fired.

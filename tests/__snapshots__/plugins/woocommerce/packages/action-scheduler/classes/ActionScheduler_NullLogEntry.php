@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_NullLogEntry
  */
-class ActionScheduler_NullLogEntry
+class ActionScheduler_NullLogEntry extends \ActionScheduler_LogEntry
 {
     /**
      * Construct.

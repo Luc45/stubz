@@ -6,7 +6,7 @@
  * @version 6.8
  * @package WooCommerce
  */
-class WC_CLI_COM_Extension_Command
+class WC_CLI_COM_Extension_Command extends \Plugin_Command
 {
     /**
      * Registers a commands for managing WooCommerce.com extensions.

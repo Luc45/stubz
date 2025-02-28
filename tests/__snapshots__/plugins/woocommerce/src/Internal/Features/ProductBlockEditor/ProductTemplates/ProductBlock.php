@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
 /**
  * Class for Product block.
  */
-class ProductBlock
+class ProductBlock extends \Automattic\WooCommerce\Internal\Admin\BlockTemplates\AbstractBlock
 {
     /**
      * Adds block to the section block.

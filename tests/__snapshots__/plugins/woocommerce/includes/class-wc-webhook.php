@@ -3,7 +3,7 @@
 /**
  * Webhook class.
  */
-class WC_Webhook
+class WC_Webhook extends \WC_Legacy_Webhook
 {
     /**
      * Store which object IDs this webhook has processed (ie scheduled to be delivered)

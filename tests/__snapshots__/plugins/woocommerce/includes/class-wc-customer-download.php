@@ -3,7 +3,7 @@
 /**
  * Customer download class.
  */
-class WC_Customer_Download
+class WC_Customer_Download extends \WC_Data
 {
     /**
      * This is the name of this object type.

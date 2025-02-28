@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Reports_Controller
  */
-class WC_REST_Report_Coupons_Totals_Controller
+class WC_REST_Report_Coupons_Totals_Controller extends \WC_REST_Reports_Controller
 {
     /**
      * Endpoint namespace.

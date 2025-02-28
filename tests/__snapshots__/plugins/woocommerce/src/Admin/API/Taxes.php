@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\API;
  * @internal
  * @extends WC_REST_Taxes_Controller
  */
-class Taxes
+class Taxes extends \WC_REST_Taxes_Controller
 {
     /**
      * Endpoint namespace.

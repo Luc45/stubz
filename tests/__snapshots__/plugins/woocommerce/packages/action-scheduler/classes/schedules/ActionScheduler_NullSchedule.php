@@ -3,7 +3,7 @@
 /**
  * Class ActionScheduler_NullSchedule
  */
-class ActionScheduler_NullSchedule
+class ActionScheduler_NullSchedule extends \ActionScheduler_SimpleSchedule
 {
     /**
      * DateTime instance.

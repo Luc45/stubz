@@ -3,7 +3,7 @@
 /**
  * Datetime class.
  */
-class WC_DateTime implements \DateTimeInterface, \Stringable
+class WC_DateTime extends \DateTime implements \DateTimeInterface, \Stringable
 {
     /**
      * UTC Offset, if needed. Only used when a timezone is not set. When

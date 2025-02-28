@@ -3,7 +3,7 @@
 /**
  * Product cat list walker class.
  */
-class WC_Product_Cat_List_Walker
+class WC_Product_Cat_List_Walker extends \Walker
 {
     /**
      * What the class handles.

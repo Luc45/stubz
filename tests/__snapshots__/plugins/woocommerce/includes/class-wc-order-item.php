@@ -3,7 +3,7 @@
 /**
  * Order item class.
  */
-class WC_Order_Item
+class WC_Order_Item extends \WC_Data
 {
     /**
      * Legacy cart item values.

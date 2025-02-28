@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
  *
  * @since 8.5.0
  */
-class OrderAttributionServiceProvider
+class OrderAttributionServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

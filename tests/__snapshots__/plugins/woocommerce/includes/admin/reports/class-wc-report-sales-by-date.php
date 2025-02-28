@@ -3,7 +3,7 @@
 /**
  * WC_Report_Sales_By_Date
  */
-class WC_Report_Sales_By_Date
+class WC_Report_Sales_By_Date extends \WC_Admin_Report
 {
     /**
      * Chart colors.

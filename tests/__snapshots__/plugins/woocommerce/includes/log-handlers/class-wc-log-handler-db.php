@@ -7,7 +7,7 @@
  * @version        1.0.0
  * @package        WooCommerce\Classes\Log_Handlers
  */
-class WC_Log_Handler_DB
+class WC_Log_Handler_DB extends \WC_Log_Handler
 {
     /**
      * Handle a log entry.

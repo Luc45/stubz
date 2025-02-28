@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
 /**
  * Block type for variation selector in add to cart with options.
  */
-class AddToCartWithOptionsVariationSelector
+class AddToCartWithOptionsVariationSelector extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
     /**
      * Block name.

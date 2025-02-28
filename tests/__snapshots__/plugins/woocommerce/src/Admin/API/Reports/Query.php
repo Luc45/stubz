@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  *
  * @deprecated 9.3.0 Query class is deprecated. Please use `GenericQuery`, \WC_Object_Query`, or use `DataStore` directly.
  */
-abstract class Query
+abstract class Query extends \WC_Object_Query
 {
     /**
      * Create a new query.

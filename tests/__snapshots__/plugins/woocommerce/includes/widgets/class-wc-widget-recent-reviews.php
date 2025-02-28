@@ -3,7 +3,7 @@
 /**
  * Widget recent reviews class.
  */
-class WC_Widget_Recent_Reviews
+class WC_Widget_Recent_Reviews extends \WC_Widget
 {
     /**
      * Constructor.

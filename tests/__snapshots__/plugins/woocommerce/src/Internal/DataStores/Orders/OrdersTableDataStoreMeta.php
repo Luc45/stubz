@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 /**
  * Mimics a WP metadata (i.e. add_metadata(), get_metadata() and friends) implementation using a custom table.
  */
-class OrdersTableDataStoreMeta
+class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStores\CustomMetaDataStore
 {
     /**
      * Returns the cache group to store cached data in.

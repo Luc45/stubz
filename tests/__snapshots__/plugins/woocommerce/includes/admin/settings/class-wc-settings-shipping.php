@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Shipping.
  */
-class WC_Settings_Shipping
+class WC_Settings_Shipping extends \WC_Settings_Page
 {
     /**
      * Setting page icon.

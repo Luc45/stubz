@@ -5,7 +5,7 @@
  *
  * @extends WC_REST_Posts_Controller
  */
-abstract class WC_REST_CRUD_Controller
+abstract class WC_REST_CRUD_Controller extends \WC_REST_Posts_Controller
 {
     /**
      * Endpoint namespace.

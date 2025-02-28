@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
  *
  * @internal
  */
-class CustomizeStore
+class CustomizeStore extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * Constructor

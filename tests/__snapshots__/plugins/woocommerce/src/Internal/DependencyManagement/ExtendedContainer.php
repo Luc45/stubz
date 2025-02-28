@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  *
  * NOTE: This class will be removed in WooCommerce 10.0.
  */
-class ExtendedContainer
+class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\Container
 {
     /**
      * The root namespace of all WooCommerce classes in the `src` directory.

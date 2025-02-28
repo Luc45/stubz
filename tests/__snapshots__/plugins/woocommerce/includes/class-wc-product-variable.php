@@ -3,7 +3,7 @@
 /**
  * Variable product class.
  */
-class WC_Product_Variable
+class WC_Product_Variable extends \WC_Product
 {
     /**
      * Array of children variation IDs. Determined by children.

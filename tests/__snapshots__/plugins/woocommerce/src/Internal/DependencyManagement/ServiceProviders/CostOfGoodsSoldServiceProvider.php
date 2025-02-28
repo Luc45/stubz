@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders;
 /**
  * Service provider for the Cost of Goods Sold feature.
  */
-class CostOfGoodsSoldServiceProvider
+class CostOfGoodsSoldServiceProvider extends \Automattic\WooCommerce\Internal\DependencyManagement\ServiceProviders\AbstractInterfaceServiceProvider
 {
     /**
      * The classes/interfaces that are serviced by this service provider.

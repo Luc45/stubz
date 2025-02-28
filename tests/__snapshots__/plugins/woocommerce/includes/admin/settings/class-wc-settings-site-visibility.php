@@ -3,7 +3,7 @@
 /**
  * WC_Settings_Advanced.
  */
-class WC_Settings_Site_Visibility
+class WC_Settings_Site_Visibility extends \WC_Settings_Page
 {
     /**
      * Constructor.

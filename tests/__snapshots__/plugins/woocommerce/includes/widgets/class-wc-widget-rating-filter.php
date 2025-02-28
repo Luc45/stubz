@@ -3,7 +3,7 @@
 /**
  * Widget rating filter class.
  */
-class WC_Widget_Rating_Filter
+class WC_Widget_Rating_Filter extends \WC_Widget
 {
     /**
      * Constructor.

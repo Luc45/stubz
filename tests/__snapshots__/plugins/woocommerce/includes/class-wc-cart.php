@@ -3,7 +3,7 @@
 /**
  * WC_Cart class.
  */
-class WC_Cart
+class WC_Cart extends \WC_Legacy_Cart
 {
     /**
      * Contains an array of cart items.

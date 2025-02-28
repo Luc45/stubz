@@ -3,7 +3,7 @@
 /**
  * Handles deprecation notices and triggering of legacy filter hooks
  */
-class WC_Deprecated_Filter_Hooks
+class WC_Deprecated_Filter_Hooks extends \WC_Deprecated_Hooks
 {
     /**
      * Array of deprecated hooks we need to handle.

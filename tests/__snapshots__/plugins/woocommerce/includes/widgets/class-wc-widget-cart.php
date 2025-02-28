@@ -3,7 +3,7 @@
 /**
  * Widget cart class.
  */
-class WC_Widget_Cart
+class WC_Widget_Cart extends \WC_Widget
 {
     /**
      * Constructor.

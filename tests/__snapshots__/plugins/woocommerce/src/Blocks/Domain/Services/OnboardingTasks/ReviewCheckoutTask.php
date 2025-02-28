@@ -5,7 +5,7 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services\OnboardingTasks;
 /**
  * Review the cart/checkout Task
  */
-class ReviewCheckoutTask
+class ReviewCheckoutTask extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
      * ID.

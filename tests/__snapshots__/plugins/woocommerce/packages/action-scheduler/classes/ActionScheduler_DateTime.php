@@ -5,7 +5,7 @@
  *
  * This is a custom extension to DateTime that
  */
-class ActionScheduler_DateTime implements \DateTimeInterface
+class ActionScheduler_DateTime extends \DateTime implements \DateTimeInterface
 {
     /**
      * UTC offset.

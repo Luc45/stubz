@@ -3,7 +3,7 @@
 /**
  * WC_Background_Emailer Class.
  */
-class WC_Background_Emailer
+class WC_Background_Emailer extends \WC_Background_Process
 {
     /**
      * Initiate new background process.

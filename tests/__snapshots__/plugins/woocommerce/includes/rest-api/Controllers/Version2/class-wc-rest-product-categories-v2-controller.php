@@ -6,7 +6,7 @@
  * @package WooCommerce\RestApi
  * @extends WC_REST_Product_Categories_V1_Controller
  */
-class WC_REST_Product_Categories_V2_Controller
+class WC_REST_Product_Categories_V2_Controller extends \WC_REST_Product_Categories_V1_Controller
 {
     /**
      * Endpoint namespace.
