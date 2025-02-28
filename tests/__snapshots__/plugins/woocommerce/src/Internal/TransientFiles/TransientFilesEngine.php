@@ -27,8 +27,6 @@ namespace Automattic\WooCommerce\Internal\TransientFiles;
  */
 class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
-    private const CLEANUP_ACTION_NAME = 'woocommerce_expired_transient_files_cleanup';
-    private const CLEANUP_ACTION_GROUP = 'wc_batch_processes';
     /**
      * Register hooks.
      */

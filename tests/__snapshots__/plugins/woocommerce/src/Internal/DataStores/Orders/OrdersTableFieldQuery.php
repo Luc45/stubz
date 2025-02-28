@@ -10,25 +10,6 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class OrdersTableFieldQuery
 {
-    private const VALID_COMPARISON_OPERATORS = array (
-  0 => '=',
-  1 => '!=',
-  2 => 'LIKE',
-  3 => 'NOT LIKE',
-  4 => 'IN',
-  5 => 'NOT IN',
-  6 => 'EXISTS',
-  7 => 'NOT EXISTS',
-  8 => 'RLIKE',
-  9 => 'REGEXP',
-  10 => 'NOT REGEXP',
-  11 => '>',
-  12 => '>=',
-  13 => '<',
-  14 => '<=',
-  15 => 'BETWEEN',
-  16 => 'NOT BETWEEN',
-);
     /**
      * Constructor.
      *

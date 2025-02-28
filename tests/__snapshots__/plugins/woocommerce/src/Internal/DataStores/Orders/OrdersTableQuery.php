@@ -20,7 +20,6 @@ class OrdersTableQuery
   2 => null,
 );
     public const REGEX_SHORTHAND_DATES = '/([^.<>]*)(>=|<=|>|<|\\.\\.\\.)([^.<>]+)/';
-    private const MYSQL_MAX_UNSIGNED_BIGINT = '18446744073709551615';
     /**
      * Sets up and runs the query after processing arguments.
      *

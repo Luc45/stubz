@@ -7,7 +7,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  */
 class FileController
 {
-    private const MAX_FILE_ROTATIONS = 10;
     public const DEFAULTS_GET_FILES = array (
   'date_end' => 0,
   'date_filter' => '',
@@ -24,8 +23,6 @@ class FileController
 );
     public const SEARCH_MAX_FILES = 100;
     public const SEARCH_MAX_RESULTS = 200;
-    private const CACHE_GROUP = 'log-files';
-    private const SEARCH_CACHE_KEY = 'logs_previous_search';
     /**
      * Write a log entry to the appropriate file, after rotating the file if necessary.
      *

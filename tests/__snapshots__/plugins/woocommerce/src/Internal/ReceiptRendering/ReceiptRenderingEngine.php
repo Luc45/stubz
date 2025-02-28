@@ -14,22 +14,6 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
  */
 class ReceiptRenderingEngine
 {
-    private const FONT_SIZE = 12;
-    private const LINE_HEIGHT = 18.0;
-    private const ICON_HEIGHT = 18.0;
-    private const ICON_WIDTH = 24.0;
-    private const MARGIN = 16;
-    private const TITLE_FONT_SIZE = 24;
-    private const FOOTER_FONT_SIZE = 10;
-    private const KNOWN_CARD_TYPES = array (
-  0 => 'amex',
-  1 => 'diners',
-  2 => 'discover',
-  3 => 'interac',
-  4 => 'jcb',
-  5 => 'mastercard',
-  6 => 'visa',
-);
     public const RECEIPT_FILE_NAME_META_KEY = '_receipt_file_name';
     /**
      * Initializes the class.

@@ -7,13 +7,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
  */
 class Settings
 {
-    private const DEFAULTS = array (
-  'logging_enabled' => true,
-  'default_handler' => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\LogHandlerFileV2',
-  'retention_period_days' => 30,
-  'level_threshold' => 'none',
-);
-    private const PREFIX = 'woocommerce_logs_';
     /**
      * Class Settings.
      */

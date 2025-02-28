@@ -8,10 +8,6 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  */
 class Register
 {
-    private const MODES = array (
-  0 => 'disabled',
-  1 => 'enabled',
-);
     public const MODE_DISABLED = 'disabled';
     public const MODE_ENABLED = 'enabled';
     /**

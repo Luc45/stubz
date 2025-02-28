@@ -12,8 +12,6 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class CustomOrdersTableController
 {
-    private const SYNC_QUERY_ARG = 'wc_hpos_sync_now';
-    private const STOP_SYNC_QUERY_ARG = 'wc_hpos_stop_sync';
     public const CUSTOM_ORDERS_TABLE_USAGE_ENABLED_OPTION = 'woocommerce_custom_orders_table_enabled';
     public const USE_DB_TRANSACTIONS_OPTION = 'woocommerce_use_db_transactions_for_custom_orders_table_data_sync';
     public const DB_TRANSACTIONS_ISOLATION_LEVEL_OPTION = 'woocommerce_db_transactions_isolation_level_for_custom_orders_table_data_sync';

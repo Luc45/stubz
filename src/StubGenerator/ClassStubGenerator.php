@@ -120,6 +120,10 @@ class ClassStubGenerator {
 				$visibility = 'protected';
 			}
 
+			if ( $refConst->isPrivate() ) {
+				continue;
+			}
+
 			try {
 				$val = Helpers::toPhpLiteral( $refConst->getValue() );
 				$buf .= "    {$visibility} const {$constName} = {$val};\n";

@@ -7,8 +7,6 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class ShippingLabelBanner
 {
-    private const MIN_COMPATIBLE_WCST_VERSION = '2.7.0';
-    private const MIN_COMPATIBLE_WCSHIPPING_VERSION = '1.1.0';
     /**
      * Constructor
      */

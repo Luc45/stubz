@@ -10,28 +10,6 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class OrdersTableMetaQuery
 {
-    private const NON_NUMERIC_OPERATORS = array (
-  0 => '=',
-  1 => '!=',
-  2 => 'LIKE',
-  3 => 'NOT LIKE',
-  4 => 'IN',
-  5 => 'NOT IN',
-  6 => 'EXISTS',
-  7 => 'NOT EXISTS',
-  8 => 'RLIKE',
-  9 => 'REGEXP',
-  10 => 'NOT REGEXP',
-);
-    private const NUMERIC_OPERATORS = array (
-  0 => '>',
-  1 => '>=',
-  2 => '<',
-  3 => '<=',
-  4 => 'BETWEEN',
-  5 => 'NOT BETWEEN',
-);
-    private const ALIAS_PREFIX = 'meta';
     /**
      * Constructor.
      *

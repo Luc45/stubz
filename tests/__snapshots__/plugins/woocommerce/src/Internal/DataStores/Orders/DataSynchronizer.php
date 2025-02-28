@@ -16,7 +16,6 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
     public const DELETED_FROM_POSTS_META_VALUE = 'posts_table';
     public const DELETED_FROM_ORDERS_META_VALUE = 'orders_table';
     public const ORDERS_TABLE_CREATED = 'woocommerce_custom_orders_table_created';
-    private const ORDERS_SYNC_BATCH_SIZE = 250;
     public const ID_TYPE_MISSING_IN_ORDERS_TABLE = 0;
     public const ID_TYPE_MISSING_IN_POSTS_TABLE = 1;
     public const ID_TYPE_DIFFERENT_UPDATE_DATE = 2;
