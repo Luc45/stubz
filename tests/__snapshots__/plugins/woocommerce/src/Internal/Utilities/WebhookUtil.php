@@ -44,15 +44,6 @@ class WebhookUtil
 {
 }
     /**
-     * Get the ids of the webhooks assigned to a given user.
-     *
-     * @param int $user_id User id.
-     * @return int[] Array of webhook ids.
-     */
-    private function get_webhook_ids_for_user(int $user_id): array
-{
-}
-    /**
      * Gets the count of webhooks that are configured to use the Legacy REST API to compose their payloads.
      *
      * @param bool $clear_cache If true, the previously cached value of the count will be discarded if it exists.

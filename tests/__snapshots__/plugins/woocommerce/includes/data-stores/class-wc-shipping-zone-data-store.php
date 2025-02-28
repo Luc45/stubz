@@ -126,25 +126,4 @@ class WC_Shipping_Zone_Data_Store extends \WC_Data_Store_WP implements \WC_Objec
     public function get_zone_id_by_instance_id($id)
 {
 }
-    /**
-     * Read location data from the database.
-     *
-     * @param WC_Shipping_Zone $zone Shipping zone object.
-     */
-    private function read_zone_locations(&$zone)
-{
-}
-    /**
-     * Save locations to the DB.
-     * This function clears old locations, then re-inserts new if any changes are found.
-     *
-     * @since 3.0.0
-     *
-     * @param WC_Shipping_Zone $zone Shipping zone object.
-     *
-     * @return bool|void
-     */
-    private function save_locations(&$zone)
-{
-}
 }

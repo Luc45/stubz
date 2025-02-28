@@ -8,24 +8,6 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class LegacyDataHandler
 {
     /**
-     * Instance of the HPOS datastore.
-     *
-     * @var OrdersTableDataStore
-     */
-    private Automattic\WooCommerce\Internal\DataStores\Orders\OrdersTableDataStore $data_store;
-    /**
-     * Instance of the DataSynchronizer class.
-     *
-     * @var DataSynchronizer
-     */
-    private Automattic\WooCommerce\Internal\DataStores\Orders\DataSynchronizer $data_synchronizer;
-    /**
-     * Instance of the PostsToOrdersMigrationController.
-     *
-     * @var PostsToOrdersMigrationController
-     */
-    private Automattic\WooCommerce\Database\Migrations\CustomOrderTable\PostsToOrdersMigrationController $posts_to_cot_migrator;
-    /**
      * Class initialization, invoked by the DI container.
      *
      * @param OrdersTableDataStore             $data_store            HPOS datastore instance to use.
@@ -57,17 +39,6 @@ class LegacyDataHandler
 {
 }
     /**
-     * Builds a SQL statement to either count or obtain IDs for orders in need of cleanup.
-     *
-     * @param array   $order_ids If provided, the query will only include orders in this set of order IDs or ID ranges (like "10-100").
-     * @param string  $result    Use 'count' to build a query that returns a count. Otherwise, the query will return order IDs.
-     * @param integer $limit     If provided, the query will be limited to this number of results. Does not apply when $result is 'count'.
-     * @return string SQL query.
-     */
-    private function build_sql_query_for_cleanup(array $order_ids = array(), string $result = 'ids', int $limit = 0): string
-{
-}
-    /**
      * Performs a cleanup of post data for a given order and also converts the post to the placeholder type in the backup table.
      *
      * @param int  $order_id    Order ID.
@@ -76,16 +47,6 @@ class LegacyDataHandler
      * @throws \Exception When an error occurs.
      */
     public function cleanup_post_data(int $order_id, bool $skip_checks = false): void
-{
-}
-    /**
-     * Checks whether an HPOS-backed order is newer than the corresponding post.
-     *
-     * @param \WC_Abstract_Order $order An HPOS order.
-     * @return bool TRUE if the order is up to date with the corresponding post.
-     * @throws \Exception When the order is not an HPOS order.
-     */
-    private function is_order_newer_than_post(WC_Abstract_Order $order): bool
 {
 }
     /**
@@ -126,47 +87,6 @@ class LegacyDataHandler
      * @throws \Exception When an error occurs.
      */
     public function backfill_order_to_datastore(int $order_id, string $source_data_store, string $destination_data_store, array $fields = array())
-{
-}
-    /**
-     * Returns all metadata in an order object as an array.
-     *
-     * @param \WC_Order $order Order instance.
-     * @return array Array of metadata grouped by meta key.
-     */
-    private function order_meta_to_array(WC_Order &$order): array
-{
-}
-    /**
-     * Returns names of all order base properties supported by HPOS.
-     *
-     * @return string[] Property names.
-     */
-    private function get_order_base_props(): array
-{
-}
-    /**
-     * Filters a set of HPOS row updates to those matching a specific set of order properties.
-     * Called via the `woocommerce_orders_table_datastore_db_rows_for_order` filter in `backfill_order_to_datastore`.
-     *
-     * @param array    $rows  Details for the db update.
-     * @param string[] $props Order property names.
-     * @return array
-     * @see OrdersTableDataStore::get_db_rows_for_order()
-     */
-    private function limit_hpos_update_to_props(array $rows, array $props)
-{
-}
-    /**
-     * Validates meta_keys and property names for a partial order backfill.
-     *
-     * @param array              $fields An array possibly having entries with index 'meta_keys' and/or 'props',
-     *                                   corresponding to an array of order meta keys and/or order properties.
-     * @param \WC_Abstract_Order $order  The order being validated.
-     * @throws \Exception When a validation error occurs.
-     * @return void
-     */
-    private function validate_backfill_fields(array $fields, WC_Abstract_Order $order)
 {
 }
 }

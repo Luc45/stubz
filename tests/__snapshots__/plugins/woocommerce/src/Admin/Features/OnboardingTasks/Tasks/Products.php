@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
  */
 class Products extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
-    const PRODUCT_COUNT_TRANSIENT_NAME = 'woocommerce_product_task_product_count_transient';
+    public const PRODUCT_COUNT_TRANSIENT_NAME = 'woocommerce_product_task_product_count_transient';
     /**
      * Constructor
      *
@@ -102,15 +102,6 @@ class Products extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Ta
      * @return bool
      */
     public static function has_products()
-{
-}
-    /**
-     * Count the number of user created products.
-     * Generated products have the _headstart_post meta key.
-     *
-     * @return int The number of user created products.
-     */
-    private static function count_user_products()
 {
 }
 }

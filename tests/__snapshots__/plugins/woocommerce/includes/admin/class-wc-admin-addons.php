@@ -97,45 +97,6 @@ class WC_Admin_Addons
 {
 }
     /**
-     * Retrieves the locale data from a transient.
-     *
-     * Transient value is an array of locale data in the following format:
-     * array(
-     *    'en_US' => ...,
-     *    'fr_FR' => ...,
-     * )
-     *
-     * If the transient does not exist, does not have a value, or has expired,
-     * then the return value will be false.
-     *
-     * @param string $transient Transient name. Expected to not be SQL-escaped.
-     * @param string $locale  Locale to retrieve.
-     * @return mixed Value of transient.
-     */
-    private static function get_locale_data_from_transient($transient, $locale)
-{
-}
-    /**
-     * Sets the locale data in a transient.
-     *
-     * Transient value is an array of locale data in the following format:
-     * array(
-     *    'en_US' => ...,
-     *    'fr_FR' => ...,
-     * )
-     *
-     * @param string $transient  Transient name. Expected to not be SQL-escaped.
-     *                           Must be 172 characters or fewer in length.
-     * @param mixed  $value      Transient value. Must be serializable if non-scalar.
-     *                           Expected to not be SQL-escaped.
-     * @param string $locale  Locale to set.
-     * @param int    $expiration Optional. Time until expiration in seconds. Default 0 (no expiration).
-     * @return bool True if the value was set, false otherwise.
-     */
-    private static function set_locale_data_in_transient($transient, $value, $locale, $expiration = 0)
-{
-}
-    /**
      * Make wp_safe_remote_get request to WooCommerce.com endpoint.
      * Optionally pass user auth token, locale or country.
      *

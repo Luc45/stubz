@@ -116,22 +116,4 @@ class CustomizeStore extends \Automattic\WooCommerce\Admin\Features\OnboardingTa
     public function possibly_remove_unwanted_ui_elements()
 {
 }
-    /**
-     * Checks if the post has custom global styles stored (if it is different from the default global styles).
-     *
-     * @param WP_Post $post The post object.
-     * @return bool
-     */
-    private function has_custom_global_styles(WP_Post $post)
-{
-}
-    /**
-     * Checks if the post is a template or a template part.
-     *
-     * @param WP_Post $post The post object.
-     * @return bool Whether the post is a template or a template part.
-     */
-    private function has_custom_template(WP_Post $post)
-{
-}
 }

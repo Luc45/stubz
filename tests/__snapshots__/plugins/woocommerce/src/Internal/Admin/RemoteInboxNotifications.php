@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class RemoteInboxNotifications
 {
-    const TOGGLE_OPTION_NAME = 'woocommerce_show_marketplace_suggestions';
+    public const TOGGLE_OPTION_NAME = 'woocommerce_show_marketplace_suggestions';
     /**
      * Class instance.
      *

@@ -55,27 +55,4 @@ class ProductButton extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
     protected function render($attributes, $content, $block)
 {
 }
-    /**
-     * Get the number of items in the cart for a given product id.
-     *
-     * @param number $product_id The product id.
-     * @return number The number of items in the cart.
-     */
-    private function get_cart_item_quantities_by_product_id($product_id)
-{
-}
-    /**
-     * Prevent caching on certain pages
-     */
-    private function prevent_cache()
-{
-}
-    /**
-     * Get the view cart link html.
-     *
-     * @return string The view cart html.
-     */
-    private function get_view_cart_html()
-{
-}
 }

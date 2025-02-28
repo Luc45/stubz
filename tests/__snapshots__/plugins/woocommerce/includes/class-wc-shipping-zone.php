@@ -124,42 +124,6 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
 {
 }
     /**
-     * Location type detection.
-     *
-     * @param  object $location Location to check.
-     * @return boolean
-     */
-    private function location_is_continent($location)
-{
-}
-    /**
-     * Location type detection.
-     *
-     * @param  object $location Location to check.
-     * @return boolean
-     */
-    private function location_is_country($location)
-{
-}
-    /**
-     * Location type detection.
-     *
-     * @param  object $location Location to check.
-     * @return boolean
-     */
-    private function location_is_state($location)
-{
-}
-    /**
-     * Location type detection.
-     *
-     * @param  object $location Location to check.
-     * @return boolean
-     */
-    private function location_is_postcode($location)
-{
-}
-    /**
      * Is passed location type valid?
      *
      * @param  string $type Type to check.

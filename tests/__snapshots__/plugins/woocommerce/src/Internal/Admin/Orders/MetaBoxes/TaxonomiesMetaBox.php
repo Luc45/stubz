@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders\MetaBoxes;
 class TaxonomiesMetaBox
 {
     /**
-     * Order Table data store class.
-     *
-     * @var OrdersTableDataStore
-     */
-    private $orders_table_data_store = null;
-    /**
      * Dependency injection init method.
      *
      * @param OrdersTableDataStore $orders_table_data_store Order Table data store class.
@@ -43,16 +37,6 @@ class TaxonomiesMetaBox
      * @param array|null         $taxonomy_input Taxonomy input passed from input.
      */
     public function save_taxonomies(WC_Abstract_Order $order, $taxonomy_input)
-{
-}
-    /**
-     * Sanitize taxonomy input by calling sanitize callbacks for each registered taxonomy.
-     *
-     * @param array|null $taxonomy_data Nonce verified taxonomy input.
-     *
-     * @return array Sanitized taxonomy input.
-     */
-    private function sanitize_tax_input($taxonomy_data): array
 {
 }
     /**

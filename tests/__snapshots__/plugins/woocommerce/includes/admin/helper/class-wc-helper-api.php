@@ -34,34 +34,12 @@ class WC_Helper_API
 {
 }
     /**
-     * Create signature for a request.
-     *
-     * @param string $access_token_secret The access token secret.
-     * @param string $url The URL to add the access token and signature to.
-     * @param string $method The request method.
-     * @param array  $body The body of the request.
-     * @return string The signature.
-     */
-    private static function create_request_signature(string $access_token_secret, string $url, string $method, $body = null): string
-{
-}
-    /**
      * Add the access token and signature to the provided URL.
      *
      * @param string $url The URL to add the access token and signature to.
      * @return string
      */
     public static function add_auth_parameters(string $url): string
-{
-}
-    /**
-     * Adds authentication headers to an HTTP request.
-     *
-     * @param string $url The request URI.
-     * @param array  $args By-ref, the args that will be passed to wp_remote_request().
-     * @return bool Were the headers added?
-     */
-    private static function _authenticate(&$url, &$args)
 {
 }
     /**

@@ -14,31 +14,12 @@
  */
 class CronExpression
 {
-    const MINUTE = 0;
-    const HOUR = 1;
-    const DAY = 2;
-    const MONTH = 3;
-    const WEEKDAY = 4;
-    const YEAR = 5;
-    /**
-     * @var array CRON expression parts
-     */
-    private $cronParts = null;
-    /**
-     * @var CronExpression_FieldFactory CRON field factory
-     */
-    private $fieldFactory = null;
-    /**
-     * @var array Order in which to test of cron parts
-     */
-    private static $order = array (
-  0 => 5,
-  1 => 3,
-  2 => 2,
-  3 => 4,
-  4 => 1,
-  5 => 0,
-);
+    public const MINUTE = 0;
+    public const HOUR = 1;
+    public const DAY = 2;
+    public const MONTH = 3;
+    public const WEEKDAY = 4;
+    public const YEAR = 5;
     /**
     * Factory method to create a new CronExpression.
     *

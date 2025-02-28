@@ -11,7 +11,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplateCompatibility
 {
-    const LOOP_ITEM_ID = 'product-loop-item';
+    public const LOOP_ITEM_ID = 'product-loop-item';
     /**
      * The data of supported hooks, containing the hook name, the block name,
      * position, and the callbacks.
@@ -70,101 +70,6 @@ class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Block
      * - permanently_removed_actions is an array of functions that we do not want to re-add after they have been removed to avoid duplicate content with the Products block and its inner blocks.
      */
     protected function set_hook_data()
-{
-}
-    /**
-     * Check if current page is a product archive template.
-     */
-    private function is_archive_template()
-{
-}
-    /**
-     * Loop through inner blocks recursively to find the Products blocks that
-     * inherits query from template.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function inner_blocks_walker(&$block)
-{
-}
-    /**
-     * Restore default hooks except the ones that are not supposed to be re-added.
-     */
-    private function restore_default_hooks()
-{
-}
-    /**
-     * Check whether block is within the product-query namespace.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function is_block_within_namespace($block)
-{
-}
-    /**
-     * Check whether block has isInherited attribute assigned.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function is_block_inherited($block)
-{
-}
-    /**
-     * The core/post-template has two different block names:
-     * - core/post-template when the wrapper is rendered.
-     * - core/null when the loop item is rendered.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function is_null_post_template($block)
-{
-}
-    /**
-     * Check whether block is a Post template.
-     *
-     * @param string $block_name Block name.
-     */
-    private function is_post_template($block_name)
-{
-}
-    /**
-     * Check whether block is a Product Template.
-     *
-     * @param string $block_name Block name.
-     */
-    private function is_product_template($block_name)
-{
-}
-    /**
-     * Check if block is either a Post template or a Product Template
-     *
-     * @param string $block_name Block name.
-     */
-    private function is_post_or_product_template($block_name)
-{
-}
-    /**
-     * Check if the block is a Products block that inherits query from template.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function is_products_block_with_inherit_query($block)
-{
-}
-    /**
-     * Check if the block is a Product Collection block that inherits query from template.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function is_product_collection_block_with_inherit_query($block)
-{
-}
-    /**
-     * Recursively inject the custom attribute to all nested blocks.
-     *
-     * @param array $block Parsed block data.
-     */
-    private function inject_attribute(&$block)
 {
 }
 }

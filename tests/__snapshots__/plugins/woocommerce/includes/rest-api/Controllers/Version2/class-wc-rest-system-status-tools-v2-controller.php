@@ -132,14 +132,4 @@ class WC_REST_System_Status_Tools_V2_Controller extends \WC_REST_Controller
     public function execute_tool($tool)
 {
 }
-    /**
-     * Get a printable name for a callback.
-     *
-     * @param mixed  $callback The callback to get a name for.
-     * @param string $default The default name, to be returned when the callback is an inline function.
-     * @return string A printable name for the callback.
-     */
-    private function get_printable_callback_name($callback, $default)
-{
-}
 }

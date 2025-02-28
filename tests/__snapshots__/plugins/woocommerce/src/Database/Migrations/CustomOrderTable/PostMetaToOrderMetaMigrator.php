@@ -11,12 +11,6 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
 class PostMetaToOrderMetaMigrator extends \Automattic\WooCommerce\Database\Migrations\MetaToMetaTableMigrator
 {
     /**
-     * List of meta keys to exclude from migration.
-     *
-     * @var array
-     */
-    private $excluded_columns = null;
-    /**
      * PostMetaToOrderMetaMigrator constructor.
      *
      * @param array $excluded_columns List of meta keys to exclude from migration.

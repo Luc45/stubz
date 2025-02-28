@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
  */
 class PaymentGatewaySuggestionsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
-    const ID = 'payment_gateway_suggestions';
-    const DATA_SOURCES = array();
+    public const ID = 'payment_gateway_suggestions';
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *

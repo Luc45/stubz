@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin;
 class WCAdminSharedSettings
 {
     /**
-     * Settings prefix used for the window.wcSettings object.
-     *
-     * @var string
-     */
-    private $settings_prefix = 'admin';
-    /**
      * Class instance.
      *
      * @var WCAdminSharedSettings instance

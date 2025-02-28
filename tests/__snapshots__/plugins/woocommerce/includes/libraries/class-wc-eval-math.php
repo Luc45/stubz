@@ -51,46 +51,6 @@ class WC_Eval_Math
     public static function evaluate($expr)
 {
 }
-    /**
-     * Convert infix to postfix notation.
-     *
-     * @param  string $expr
-     *
-     * @return array|string
-     */
-    private static function nfx($expr)
-{
-}
-    /**
-     * Evaluate postfix notation.
-     *
-     * @param  mixed $tokens
-     * @param  array $vars
-     *
-     * @return mixed
-     */
-    private static function pfx($tokens, $vars = array())
-{
-}
-    /**
-     * Trigger an error, but nicely, if need be.
-     *
-     * @param  string $msg
-     *
-     * @return bool
-     */
-    private static function trigger($msg)
-{
-}
-    /**
-     * Prints the file name, function name, and
-     * line number which called your function
-     * (not this function, then one that  called
-     * it to begin with)
-     */
-    private static function debugPrintCallingFunction()
-{
-}
 }
 /**
  * Class WC_Eval_Math_Stack.

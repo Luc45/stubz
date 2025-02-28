@@ -34,32 +34,6 @@ abstract class AbstractServiceProvider extends \Automattic\WooCommerce\Vendor\Le
 {
 }
     /**
-     * Gets the class of a parameter.
-     *
-     * This method is a replacement for ReflectionParameter::getClass,
-     * which is deprecated as of PHP 8.
-     *
-     * @param \ReflectionParameter $parameter The parameter to get the class for.
-     *
-     * @return \ReflectionClass|null The class of the parameter, or null if it hasn't any.
-     */
-    private function get_class(ReflectionParameter $parameter)
-{
-}
-    /**
-     * Check if a combination of class name and concrete is valid for registration.
-     * Also return the class injection method if the concrete is either a class name or null (then use the supplied class name).
-     *
-     * @param string $class_name The class name to check.
-     * @param mixed  $concrete   The concrete to check.
-     *
-     * @return \ReflectionFunctionAbstract|null A reflection instance for the $class_name injection method or $concrete injection method or callable; null otherwise.
-     * @throws ContainerException Class has a private injection method, can't reflect class, or the concrete is invalid.
-     */
-    private function reflect_class_or_callable(string $class_name, $concrete)
-{
-}
-    /**
      * Register a class in the container and use reflection to guess the injection method arguments.
      * The class is registered as shared, so `get` on the container always returns the same instance.
      *

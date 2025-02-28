@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 class Tax extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
-     * Used to cache is_complete() method result.
-     *
-     * @var null
-     */
-    private $is_complete_result = null;
-    /**
      * Constructor
      *
      * @param TaskList $task_list Parent task list.
@@ -97,14 +91,6 @@ class Tax extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
      * @return array
      */
     public static function get_automated_support_countries()
-{
-}
-    /**
-     * Get an array of countries that support Stripe tax.
-     *
-     * @return array
-     */
-    private static function get_stripe_tax_support_countries()
 {
 }
 }

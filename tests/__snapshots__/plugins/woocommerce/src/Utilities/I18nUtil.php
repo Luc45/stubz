@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Utilities;
 final class I18nUtil
 {
     /**
-     * A cache for the i18n units data.
-     *
-     * @var array $units
-     */
-    private static $units = null;
-    /**
      * Get the translated label for a weight unit of measure.
      *
      * This will return the original input string if it isn't found in the units array. This way a custom unit of

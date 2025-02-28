@@ -9,15 +9,6 @@
 class ActionScheduler_DBStore extends \ActionScheduler_Store
 {
     /**
-     * Used to share information about the before_date property of claims internally.
-     *
-     * This is used in preference to passing the same information as a method param
-     * for backwards-compatibility reasons.
-     *
-     * @var DateTime|null
-     */
-    private $claim_before_date = null;
-    /**
      * Maximum length of args.
      *
      * @var int
@@ -69,52 +60,6 @@ class ActionScheduler_DBStore extends \ActionScheduler_Store
      * @throws RuntimeException     Throws exception when saving the action fails.
      */
     public function save_action(ActionScheduler_Action $action, DateTime|null $scheduled_date = null)
-{
-}
-    /**
-     * Save an action.
-     *
-     * @param ActionScheduler_Action $action Action object.
-     * @param ?DateTime              $date Optional schedule date. Default null.
-     * @param bool                   $unique Whether the action should be unique.
-     *
-     * @return int Action ID.
-     * @throws \RuntimeException     Throws exception when saving the action fails.
-     */
-    private function save_action_to_db(ActionScheduler_Action $action, DateTime|null $date = null, $unique = false)
-{
-}
-    /**
-     * Helper function to build insert query.
-     *
-     * @param array $data Row data for action.
-     * @param bool  $unique Whether the action should be unique.
-     *
-     * @return string Insert query.
-     */
-    private function build_insert_sql(array $data, $unique)
-{
-}
-    /**
-     * Helper method to build where clause for action insert statement.
-     *
-     * @param array  $data Row data for action.
-     * @param string $table_name Action table name.
-     * @param bool   $unique Where action should be unique.
-     *
-     * @return string Where clause to be used with insert.
-     */
-    private function build_where_clause_for_insert($data, $table_name, $unique)
-{
-}
-    /**
-     * Helper method to get $wpdb->prepare placeholder for a given column name.
-     *
-     * @param string $column_name Name of column in actions table.
-     *
-     * @return string Placeholder to use for given column.
-     */
-    private function get_placeholder_for_column($column_name)
 {
 }
     /**

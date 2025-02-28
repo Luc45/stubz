@@ -5,12 +5,6 @@
 class WC_Admin_Status
 {
     /**
-     * An instance of the DB log handler list table.
-     *
-     * @var WC_Admin_Log_Table_List
-     */
-    private static $db_log_list_table = null;
-    /**
      * Handles output of the reports page in admin.
      */
     public static function output()
@@ -111,39 +105,6 @@ class WC_Admin_Status
      * @return WC_Admin_Log_Table_List
      */
     public static function get_db_log_list_table()
-{
-}
-    /**
-     * Clear DB log table.
-     *
-     * @since 3.0.0
-     */
-    private static function flush_db_logs()
-{
-}
-    /**
-     * Bulk DB log table actions.
-     *
-     * @since 3.0.0
-     */
-    private static function log_table_bulk_actions()
-{
-}
-    /**
-     * Prints table info if a base table is not present.
-     */
-    private static function output_tables_info()
-{
-}
-    /**
-     * Prints the information about plugins for the system status report.
-     * Used for both active and inactive plugins sections.
-     *
-     * @param array $plugins List of plugins to display.
-     * @param array $untested_plugins List of plugins that haven't been tested with the current WooCommerce version.
-     * @return void
-     */
-    private static function output_plugins_info($plugins, $untested_plugins)
 {
 }
 }

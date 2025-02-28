@@ -16,12 +16,6 @@ final class PayPal extends \Automattic\WooCommerce\Blocks\Payments\Integrations\
      */
     protected $name;
     /**
-     * An instance of the Asset Api
-     *
-     * @var Api
-     */
-    private $asset_api = null;
-    /**
      * Constructor
      *
      * @param Api $asset_api An instance of Api.

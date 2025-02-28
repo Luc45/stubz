@@ -78,28 +78,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
 {
 }
     /**
-     * Returns the url the item's image
-     *
-     * @param array                $attributes Block attributes. Default empty array.
-     * @param \WP_Term|\WC_Product $item       Item object.
-     *
-     * @return string
-     */
-    private function get_image_url($attributes, $item)
-{
-}
-    /**
-     * Renders the featured image as a div background.
-     *
-     * @param array  $attributes Block attributes. Default empty array.
-     * @param string $image_url  Item image url.
-     *
-     * @return string
-     */
-    private function render_bg_image($attributes, $image_url)
-{
-}
-    /**
      * Get the styles for the wrapper element (background image, color).
      *
      * @param array  $attributes Block attributes. Default empty array.
@@ -108,18 +86,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @return string
      */
     public function get_bg_styles($attributes, $image_url)
-{
-}
-    /**
-     * Renders the featured image
-     *
-     * @param array                $attributes Block attributes. Default empty array.
-     * @param \WC_Product|\WP_Term $item       Item object.
-     * @param string               $image_url  Item image url.
-     *
-     * @return string
-     */
-    private function render_image($attributes, $item, string $image_url)
 {
 }
     /**
@@ -138,26 +104,6 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      * @return string
      */
     public function get_classes($attributes)
-{
-}
-    /**
-     * Renders the block overlay
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     *
-     * @return string
-     */
-    private function render_overlay($attributes)
-{
-}
-    /**
-     * Returns whether the focal point is defined for the block.
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     *
-     * @return bool
-     */
-    private function hasFocalPoint($attributes): bool
 {
 }
     /**

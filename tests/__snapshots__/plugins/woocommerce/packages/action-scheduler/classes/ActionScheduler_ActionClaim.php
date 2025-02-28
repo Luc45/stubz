@@ -5,18 +5,6 @@
 class ActionScheduler_ActionClaim
 {
     /**
-     * Claim ID.
-     *
-     * @var string
-     */
-    private $id = '';
-    /**
-     * Claimed action IDs.
-     *
-     * @var int[]
-     */
-    private $action_ids = array();
-    /**
      * Construct.
      *
      * @param string $id Claim ID.

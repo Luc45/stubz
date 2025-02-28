@@ -68,38 +68,6 @@ class WC_Payment_Gateways
 {
 }
     /**
-     * Callback for when a gateway settings option was added or updated.
-     *
-     * @param WC_Payment_Gateway $gateway   The gateway for which the option was added or updated.
-     * @param mixed              $value     New value.
-     * @param string             $option    Option name.
-     * @param mixed              $old_value Old value. `null` when called via add_option_ hook.
-     * @since 8.5.0
-     */
-    private function payment_gateway_settings_option_changed($gateway, $value, $option, $old_value = null)
-{
-}
-    /**
-     * Email the site admin when a payment gateway has been enabled.
-     *
-     * @param WC_Payment_Gateway $gateway The gateway that was enabled.
-     * @return bool Whether the email was sent or not.
-     * @since 8.5.0
-     */
-    private function notify_admin_payment_gateway_enabled($gateway)
-{
-}
-    /**
-     * Determines from changes in settings if a gateway was enabled.
-     *
-     * @param array $value New value.
-     * @param array $old_value Old value.
-     * @return bool Whether the gateway was enabled or not.
-     */
-    private function was_gateway_enabled($value, $old_value = null)
-{
-}
-    /**
      * Get gateways.
      *
      * @return array

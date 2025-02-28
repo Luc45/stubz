@@ -71,26 +71,4 @@ class AmazonPay extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentP
     public function is_in_test_mode_onboarding(WC_Payment_Gateway $payment_gateway): bool
 {
 }
-    /**
-     * Check if the AmazonPay payment gateway is in sandbox mode.
-     *
-     * For AmazonPay, there are two different environments: sandbox and production.
-     *
-     * @return ?bool True if the payment gateway is in sandbox mode, false otherwise.
-     *               Null if the environment could not be determined.
-     */
-    private function is_amazon_pay_in_sandbox_mode(): bool|null
-{
-}
-    /**
-     * Check if the AmazonPay payment gateway is onboarded.
-     *
-     * For AmazonPay, there are two different environments: sandbox and production.
-     *
-     * @return ?bool True if the payment gateway is onboarded, false otherwise.
-     *               Null if we failed to determine the onboarding status.
-     */
-    private function is_amazon_pay_onboarded(): bool|null
-{
-}
 }

@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 class RedirectionController
 {
     /**
-     * Registered product templates.
-     *
-     * @var array
-     */
-    private $product_templates = array();
-    /**
      * Set up the hooks used for redirection.
      */
     public function __construct()

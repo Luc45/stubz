@@ -82,12 +82,6 @@ class FeaturePlugin
 {
 }
     /**
-     * Prevent cloning.
-     */
-    private function __clone()
-{
-}
-    /**
      * Prevent unserializing.
      */
     public function __wakeup()

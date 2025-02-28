@@ -44,14 +44,4 @@ class WC_Product_Factory
     public static function get_classname_from_product_type($product_type)
 {
 }
-    /**
-     * Get the product ID depending on what was passed.
-     *
-     * @since  3.0.0
-     * @param  WC_Product|WP_Post|int|bool $product Product instance, post instance, numeric or false to use global $post.
-     * @return int|bool false on failure
-     */
-    private function get_product_id($product)
-{
-}
 }

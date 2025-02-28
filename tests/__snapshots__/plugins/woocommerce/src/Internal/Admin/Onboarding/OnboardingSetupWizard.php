@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingSetupWizard
 {
     /**
-     * Class instance.
-     *
-     * @var OnboardingSetupWizard instance
-     */
-    private static $instance = null;
-    /**
      * Get class instance.
      */
     final public static function instance()
@@ -23,16 +17,6 @@ class OnboardingSetupWizard
      * Add onboarding actions.
      */
     public function init()
-{
-}
-    /**
-     * Test whether the context of execution comes from async action scheduler.
-     * Note: this is a polyfill for wc_is_running_from_async_action_scheduler()
-     *       which was introduced in WC 4.0.
-     *
-     * @return bool
-     */
-    private function is_running_from_async_action_scheduler()
 {
 }
     /**
@@ -53,41 +37,9 @@ class OnboardingSetupWizard
 {
 }
     /**
-     * Returns true if the profiler should be displayed (not completed and not skipped).
-     *
-     * @return bool
-     */
-    private function should_show()
-{
-}
-    /**
      * Redirect to the profiler on homepage if completion is needed.
      */
     public function redirect_to_profiler()
-{
-}
-    /**
-     * Check if the current page is the profile wizard.
-     *
-     * @return bool
-     */
-    private function is_setup_wizard()
-{
-}
-    /**
-     * Check if the current page is the homepage.
-     *
-     * @return bool
-     */
-    private function is_homepage()
-{
-}
-    /**
-     * Determine if the current page is one of the WC Admin pages.
-     *
-     * @return bool
-     */
-    private function is_woocommerce_page()
 {
 }
     /**

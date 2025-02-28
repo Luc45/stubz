@@ -14,54 +14,6 @@ namespace Action_Scheduler\Migration;
 class Runner
 {
     /**
-     * Source store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $source_store = null;
-    /**
-     * Destination store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $destination_store = null;
-    /**
-     * Source logger instance.
-     *
-     * @var ActionScheduler_Logger
-     */
-    private $source_logger = null;
-    /**
-     * Destination logger instance.
-     *
-     * @var ActionScheduler_Logger
-     */
-    private $destination_logger = null;
-    /**
-     * Batch fetcher instance.
-     *
-     * @var BatchFetcher
-     */
-    private $batch_fetcher = null;
-    /**
-     * Action migrator instance.
-     *
-     * @var ActionMigrator
-     */
-    private $action_migrator = null;
-    /**
-     * Log migrator instance.
-     *
-     * @var LogMigrator
-     */
-    private $log_migrator = null;
-    /**
-     * Progress bar instance.
-     *
-     * @var ProgressBar
-     */
-    private $progress_bar = null;
-    /**
      * Runner constructor.
      *
      * @param Config $config Migration configuration object.

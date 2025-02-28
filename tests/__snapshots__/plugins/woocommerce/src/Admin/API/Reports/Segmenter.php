@@ -173,16 +173,6 @@ class Segmenter
 {
 }
     /**
-     * Compares two report data objects by pre-defined object property and ASC/DESC ordering.
-     *
-     * @param stdClass $a Object a.
-     * @param stdClass $b Object b.
-     * @return string
-     */
-    private function segment_cmp($a, $b)
-{
-}
-    /**
      * Adds zeroes for segments not present in the data selection.
      *
      * @param array $segments Array of segments from the database for given data points.

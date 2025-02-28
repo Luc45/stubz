@@ -18,29 +18,4 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore impl
     public function get_data($query)
 {
 }
-    /**
-     * Get low stock count (products with stock < low stock amount, but greater than no stock amount).
-     *
-     * @return int Low stock count.
-     */
-    private function get_low_stock_count()
-{
-}
-    /**
-     * Get count for the passed in stock status.
-     *
-     * @param  string $status Status slug.
-     * @return int Count.
-     */
-    private function get_count($status)
-{
-}
-    /**
-     * Get product count for the store.
-     *
-     * @return int Product count.
-     */
-    private function get_product_count()
-{
-}
 }

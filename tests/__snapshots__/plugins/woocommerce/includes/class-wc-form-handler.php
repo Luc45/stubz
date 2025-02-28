@@ -92,37 +92,6 @@ class WC_Form_Handler
 {
 }
     /**
-     * Handle adding simple products to the cart.
-     *
-     * @since 2.4.6 Split from add_to_cart_action.
-     * @param int $product_id Product ID to add to the cart.
-     * @return bool success or not
-     */
-    private static function add_to_cart_handler_simple($product_id)
-{
-}
-    /**
-     * Handle adding grouped products to the cart.
-     *
-     * @since 2.4.6 Split from add_to_cart_action.
-     * @param int $product_id Product ID to add to the cart.
-     * @return bool success or not
-     */
-    private static function add_to_cart_handler_grouped($product_id)
-{
-}
-    /**
-     * Handle adding variable products to the cart.
-     *
-     * @since 2.4.6 Split from add_to_cart_action.
-     * @throws Exception If add to cart fails.
-     * @param int $product_id Product ID to add to the cart.
-     * @return bool success or not
-     */
-    private static function add_to_cart_handler_variable($product_id)
-{
-}
-    /**
      * Process the login form.
      *
      * @throws Exception On login error.

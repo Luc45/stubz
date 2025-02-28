@@ -6,7 +6,7 @@
  */
 class WC_WCCOM_Site
 {
-    const AUTH_ERROR_FILTER_NAME = 'wccom_auth_error';
+    public const AUTH_ERROR_FILTER_NAME = 'wccom_auth_error';
     /**
      * Load the WCCOM site class.
      *

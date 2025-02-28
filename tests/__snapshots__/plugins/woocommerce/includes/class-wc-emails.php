@@ -287,22 +287,6 @@ class WC_Emails
 {
 }
     /**
-     * Get blog name formatted for emails.
-     *
-     * @return string
-     */
-    private function get_blogname()
-{
-}
-    /**
-     * Get store address formatted for emails.
-     *
-     * @return string
-     */
-    private function get_store_address()
-{
-}
-    /**
      * Force country display, used by WC_Emails::get_store address() method
      *
      * @return bool

@@ -9,7 +9,6 @@ class Product
 {
     public string $name;
     public float $price;
-    private int $stock;
     public function __construct(string $name, float $price, int $stock = 0)
 {
 }

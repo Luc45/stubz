@@ -8,39 +8,7 @@
  */
 class ActionScheduler_HybridStore extends \ActionScheduler_Store
 {
-    const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
-    /**
-     * Primary store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $primary_store = null;
-    /**
-     * Secondary store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $secondary_store = null;
-    /**
-     * Runner instance.
-     *
-     * @var Action_Scheduler\Migration\Runner
-     */
-    private $migration_runner = null;
-    /**
-     * The dividing line between IDs of actions created
-     * by the primary and secondary stores.
-     *
-     * @var int
-     *
-     * Methods that accept an action ID will compare the ID against
-     * this to determine which store will contain that ID. In almost
-     * all cases, the ID should come from the primary store, but if
-     * client code is bypassing the API functions and fetching IDs
-     * from elsewhere, then there is a chance that an unmigrated ID
-     * might be requested.
-     */
-    private $demarkation_id = 0;
+    public const DEMARKATION_OPTION = 'action_scheduler_hybrid_store_demarkation';
     /**
      * ActionScheduler_HybridStore constructor.
      *
@@ -69,19 +37,6 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      * @codeCoverageIgnore
      */
     public function set_autoincrement($table_name, $table_suffix)
-{
-}
-    /**
-     * Store the demarkation id in WP options.
-     *
-     * @param int $id The ID to set as the demarkation point between the two stores
-     *                Leave null to use the next ID from the WP posts table.
-     *
-     * @return int The new ID.
-     *
-     * @codeCoverageIgnore
-     */
-    private function set_demarkation_id($id = null)
 {
 }
     /**
@@ -132,14 +87,6 @@ class ActionScheduler_HybridStore extends \ActionScheduler_Store
      * @return ActionScheduler_ActionClaim
      */
     public function stake_claim($max_actions = 10, DateTime|null $before_date = null, $hooks = array(), $group = '')
-{
-}
-    /**
-     * Migrate a list of actions to the table data store.
-     *
-     * @param array $action_ids List of action IDs.
-     */
-    private function migrate($action_ids)
 {
 }
     /**

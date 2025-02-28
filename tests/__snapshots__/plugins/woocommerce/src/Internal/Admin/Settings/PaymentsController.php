@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
 class PaymentsController
 {
     /**
-     * The payment service.
-     *
-     * @var Payments
-     */
-    private Automattic\WooCommerce\Internal\Admin\Settings\Payments $payments;
-    /**
      * Register hooks.
      */
     public function register()
@@ -73,30 +67,6 @@ class PaymentsController
      * @return array The updated list of allowed promo note IDs.
      */
     public function add_allowed_promo_notes(array $promo_notes = array()): array
-{
-}
-    /**
-     * Check if the store has any enabled gateways (including offline payment methods).
-     *
-     * @return bool True if the store has any enabled gateways, false otherwise.
-     */
-    private function store_has_enabled_gateways(): bool
-{
-}
-    /**
-     * Check if the store has any payment providers that have an active incentive.
-     *
-     * @return bool True if the store has providers with an active incentive.
-     */
-    private function store_has_providers_with_incentive(): bool
-{
-}
-    /**
-     * Check if the WooPayments plugin is active.
-     *
-     * @return boolean
-     */
-    private function is_woopayments_active(): bool
 {
 }
 }

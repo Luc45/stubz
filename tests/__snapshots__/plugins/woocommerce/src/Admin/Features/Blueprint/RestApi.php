@@ -74,36 +74,6 @@ class RestApi
 {
 }
     /**
-     * Convert step list from the frontend to the backend format.
-     *
-     * From:
-     * {
-     *  "settings": ["setWCSettings", "setWCShippingZones", "setWCShippingMethods", "setWCShippingRates"],
-     *  "plugins": ["akismet/akismet.php],
-     *  "themes": ["approach],
-     * }
-     *
-     * To:
-     *
-     * ["setWCSettings", "setWCShippingZones", "setWCShippingMethods", "setWCShippingRates", "installPlugin", "installTheme"]
-     *
-     * @param array $steps steps payload from the frontend.
-     *
-     * @return array
-     */
-    private function steps_payload_to_blueprint_steps($steps)
-{
-}
-    /**
-     * Get list of settings that will be overridden by the import.
-     *
-     * @param array $requested_steps List of steps from the import schema.
-     * @return array List of settings that will be overridden.
-     */
-    private function get_settings_to_overwrite(array $requested_steps): array
-{
-}
-    /**
      * Get the schema for the queue endpoint.
      *
      * @return array

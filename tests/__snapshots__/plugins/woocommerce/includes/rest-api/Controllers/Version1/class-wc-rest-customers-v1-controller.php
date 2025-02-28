@@ -35,14 +35,6 @@ class WC_REST_Customers_V1_Controller extends \WC_REST_Controller
 {
 }
     /**
-     * Returns list of allowed roles for the REST API.
-     *
-     * @return array $roles Allowed roles to be updated via the REST API.
-     */
-    private function allowed_roles(): array
-{
-}
-    /**
      * Check if a given request has access create customers.
      *
      * @param  WP_REST_Request $request Full details about the request.

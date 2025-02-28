@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Marketplace
 {
-    const MARKETPLACE_TAB_SLUG = 'woo';
+    public const MARKETPLACE_TAB_SLUG = 'woo';
     /**
      * Class initialization, to be executed when the class is resolved by the container.
      *

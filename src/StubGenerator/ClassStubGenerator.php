@@ -113,9 +113,16 @@ class ClassStubGenerator {
 		// 5) Class constants
 		// ---------------------------------------------------------------------
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
+			$visibility = 'public';
+			if ( $refConst->isPrivate() ) {
+				$visibility = 'private';
+			} elseif ( $refConst->isProtected() ) {
+				$visibility = 'protected';
+			}
+
 			try {
 				$val = Helpers::toPhpLiteral( $refConst->getValue() );
-				$buf .= "    const {$constName} = {$val};\n";
+				$buf .= "    {$visibility} const {$constName} = {$val};\n";
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
 			}
@@ -131,7 +138,7 @@ class ClassStubGenerator {
 			$props = [];
 		}
 		foreach ( $props as $prop ) {
-			if ( $prop->getDeclaringClass()->getName() === $class->getName() ) {
+			if ( $prop->getDeclaringClass()->getName() === $class->getName() && ! $prop->isPrivate() ) {
 				$buf .= ( new PropertyStubGenerator() )->generatePropertyStub( $prop );
 			}
 		}
@@ -146,7 +153,7 @@ class ClassStubGenerator {
 			$methods = [];
 		}
 		foreach ( $methods as $method ) {
-			if ( $method->getDeclaringClass()->getName() === $class->getName() ) {
+			if ( $method->getDeclaringClass()->getName() === $class->getName() && ! $method->isPrivate() ) {
 				$buf .= ( new MethodStubGenerator() )->generateMethodStub( $method );
 			}
 		}

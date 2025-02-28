@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\Admin\Marketing;
 class MarketingChannels
 {
     /**
-     * The registered marketing channels.
-     *
-     * @var MarketingChannelInterface[]
-     */
-    private $registered_channels = array();
-    /**
      * Registers a marketing channel.
      *
      * @param MarketingChannelInterface $channel The marketing channel to register.

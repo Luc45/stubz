@@ -229,17 +229,4 @@ class WC_Comments
     public static function validate_product_review_verified_owners($comment_post_id)
 {
 }
-    /**
-     * Determines if a comment is of the default type.
-     *
-     * Prior to WordPress 5.5, '' was the default comment type.
-     * As of 5.5, the default type is 'comment'.
-     *
-     * @since 4.3.0
-     * @param string $comment_type Comment type.
-     * @return bool
-     */
-    private static function is_default_comment_type($comment_type)
-{
-}
 }

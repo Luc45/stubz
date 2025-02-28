@@ -7,38 +7,14 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
  */
 class LookupDataStore
 {
-    const ACTION_NONE = 0;
-    const ACTION_INSERT = 1;
-    const ACTION_UPDATE_STOCK = 2;
-    const ACTION_DELETE = 3;
-    /**
-     * The lookup table name.
-     *
-     * @var string
-     */
-    private $lookup_table_name = null;
-    /**
-     * True if the optimized database access setting is enabled AND products are stored as custom post types.
-     *
-     * @var bool
-     */
-    private bool $optimized_db_access_is_enabled;
-    /**
-     * Flag indicating if the last lookup table creation operation failed.
-     *
-     * @var bool
-     */
-    private bool $last_create_operation_failed = false;
+    public const ACTION_NONE = 0;
+    public const ACTION_INSERT = 1;
+    public const ACTION_UPDATE_STOCK = 2;
+    public const ACTION_DELETE = 3;
     /**
      * LookupDataStore constructor.
      */
     public function __construct()
-{
-}
-    /**
-     * Initialize the hooks used by the class.
-     */
-    private function init_hooks()
 {
 }
     /**
@@ -85,19 +61,6 @@ class LookupDataStore
 {
 }
     /**
-     * Schedule an update of the product attributes lookup table for a given product.
-     * If an update for the same action is already scheduled, nothing is done.
-     *
-     * If the 'woocommerce_attribute_lookup_direct_update' option is set to 'yes',
-     * the update is done directly, without scheduling.
-     *
-     * @param int $product_id The product id to schedule the update for.
-     * @param int $action The action to perform, one of the ACTION_ constants.
-     */
-    private function maybe_schedule_update(int $product_id, int $action)
-{
-}
-    /**
      * Perform an update of the lookup table for a specific product.
      *
      * @param int $product_id The product id to perform the update for.
@@ -106,23 +69,6 @@ class LookupDataStore
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function run_update_callback(int $product_id, int $action)
-{
-}
-    /**
-     * Determine the type of action to perform depending on the received changeset.
-     *
-     * @param array|null $changeset The changeset received by on_product_changed.
-     * @return int One of the ACTION_ constants.
-     */
-    private function get_update_action($changeset)
-{
-}
-    /**
-     * Update the stock status of the lookup table entries for a given product.
-     *
-     * @param \WC_Product $product The product to update the entries for.
-     */
-    private function update_stock_status_for(WC_Product $product)
 {
 }
     /**
@@ -144,149 +90,6 @@ class LookupDataStore
      * @param bool           $use_optimized_db_access Use direct database access for data retrieval if possible.
      */
     public function create_data_for_product($product, $use_optimized_db_access = false)
-{
-}
-    /**
-     * Create lookup table data for a given product.
-     *
-     * @param \WC_Product $product The product to create the data for.
-     */
-    private function create_data_for(WC_Product $product)
-{
-}
-    /**
-     * Delete all the lookup table entries for a given product,
-     * if it's a variable product information for variations is deleted too.
-     *
-     * @param int $product_id Simple product id, or main/parent product id for variable products.
-     */
-    private function delete_data_for(int $product_id)
-{
-}
-    /**
-     * Create lookup table entries for a simple (non variable) product.
-     * Assumes that no entries exist yet.
-     *
-     * @param \WC_Product $product The product to create the entries for.
-     */
-    private function create_data_for_simple_product(WC_Product $product)
-{
-}
-    /**
-     * Create lookup table entries for a variable product.
-     * Assumes that no entries exist yet.
-     *
-     * @param \WC_Product_Variable $product The product to create the entries for.
-     */
-    private function create_data_for_variable_product(WC_Product_Variable $product)
-{
-}
-    /**
-     * Create all the necessary lookup data for a given variation.
-     *
-     * @param \WC_Product_Variation $variation The variation to create entries for.
-     * @throws \Exception Can't retrieve the details of the parent product.
-     */
-    private function create_data_for_variation(WC_Product_Variation $variation)
-{
-}
-    /**
-     * Create lookup table entries for a given variation, corresponding to a given taxonomy and a set of term ids.
-     *
-     * @param \WC_Product_Variation $variation The variation to create entries for.
-     * @param string                $taxonomy The taxonomy to create the entries for.
-     * @param int                   $main_product_id The parent product id.
-     * @param array                 $term_ids The term ids to create entries for.
-     * @param array                 $term_ids_by_slug_cache A dictionary of term ids by term slug, as returned by 'get_term_ids_by_slug_cache'.
-     */
-    private function insert_lookup_table_data_for_variation(WC_Product_Variation $variation, string $taxonomy, int $main_product_id, array $term_ids, array $term_ids_by_slug_cache)
-{
-}
-    /**
-     * Get a cache of term ids by slug for a set of taxonomies, with this format:
-     *
-     * [
-     *   'taxonomy' => [
-     *     'slug_1' => id_1,
-     *     'slug_2' => id_2,
-     *     ...
-     *   ], ...
-     * ]
-     *
-     * @param array $taxonomies List of taxonomies to build the cache for.
-     * @return array A dictionary of taxonomies => dictionary of term slug => term id.
-     */
-    private function get_term_ids_by_slug_cache($taxonomies)
-{
-}
-    /**
-     * Get the id of the term that defines a variation for a given taxonomy,
-     * or null if there's no such defining id (for variations having "Any <taxonomy>" as the definition)
-     *
-     * @param \WC_Product_Variation $variation The variation to get the defining term id for.
-     * @param string                $taxonomy The taxonomy to get the defining term id for.
-     * @param array                 $term_ids_by_slug_cache A term ids by slug as generated by get_term_ids_by_slug_cache.
-     * @return int|null The term id, or null if there's no defining id for that taxonomy in that variation.
-     */
-    private function get_variation_definition_term_id(WC_Product_Variation $variation, string $taxonomy, array $term_ids_by_slug_cache)
-{
-}
-    /**
-     * Get the variations of a given variable product.
-     *
-     * @param \WC_Product_Variable $product The product to get the variations for.
-     * @return array An array of WC_Product_Variation objects.
-     */
-    private function get_variations_of(WC_Product_Variable $product)
-{
-}
-    /**
-     * Check if a given product is a variable product.
-     *
-     * @param \WC_Product $product The product to check.
-     * @return bool True if it's a variable product, false otherwise.
-     */
-    private function is_variable_product(WC_Product $product)
-{
-}
-    /**
-     * Check if a given product is a variation.
-     *
-     * @param \WC_Product $product The product to check.
-     * @return bool True if it's a variation, false otherwise.
-     */
-    private function is_variation(WC_Product $product)
-{
-}
-    /**
-     * Return the list of taxonomies used for variations on a product together with
-     * the associated term ids, with the following format:
-     *
-     * [
-     *   'taxonomy_name' =>
-     *   [
-     *     'term_ids' => [id, id, ...],
-     *     'used_for_variations' => true|false
-     *   ], ...
-     * ]
-     *
-     * @param \WC_Product $product The product to get the attribute taxonomies for.
-     * @return array Information about the attribute taxonomies of the product.
-     */
-    private function get_attribute_taxonomies(WC_Product $product)
-{
-}
-    /**
-     * Insert one entry in the lookup table.
-     *
-     * @param int    $product_id The product id.
-     * @param int    $product_or_parent_id The product id for non-variable products, the main/parent product id for variations.
-     * @param string $taxonomy Taxonomy name.
-     * @param int    $term_id Term id.
-     * @param bool   $is_variation_attribute True if the taxonomy corresponds to an attribute used to define variations.
-     * @param bool   $has_stock True if the product is in stock.
-     */
-    private function insert_lookup_table_data(int $product_id, int $product_or_parent_id, string $taxonomy, int $term_id, bool $is_variation_attribute, bool $has_stock)
 {
 }
     /**
@@ -380,25 +183,6 @@ class LookupDataStore
      * @return bool True if the optimized database access setting is enabled.
      */
     public function optimized_data_access_is_enabled()
-{
-}
-    /**
-     * Create the lookup table data for a product or variation using optimized database access.
-     * For variable products entries are created for the main product and for all the variations.
-     *
-     * @param int $product_id Product or variation id.
-     */
-    private function create_data_for_product_cpt(int $product_id)
-{
-}
-    /**
-     * Core version of create_data_for_product_cpt (doesn't catch exceptions).
-     *
-     * @param int $product_id Product or variation id.
-     * @return void
-     * @throws \WC_Data_Exception Wrongly serialized attribute data found, or INSERT statement failed.
-     */
-    private function create_data_for_product_cpt_core(int $product_id)
 {
 }
 }

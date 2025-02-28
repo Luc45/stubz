@@ -5,12 +5,6 @@
 class ActionScheduler_CanceledSchedule extends \ActionScheduler_SimpleSchedule
 {
     /**
-     * Deprecated property @see $this->__wakeup() for details.
-     *
-     * @var null
-     */
-    private $timestamp = null;
-    /**
      * Calculate when the next instance of this schedule would run based on a given date & time.
      *
      * @param DateTime $after Timestamp.

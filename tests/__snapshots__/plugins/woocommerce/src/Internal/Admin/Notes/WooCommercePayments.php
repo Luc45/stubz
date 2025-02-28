@@ -7,9 +7,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class WooCommercePayments
 {
-    const NOTE_NAME = 'wc-admin-woocommerce-payments';
-    const PLUGIN_SLUG = 'woocommerce-payments';
-    const PLUGIN_FILE = 'woocommerce-payments/woocommerce-payments.php';
+    public const NOTE_NAME = 'wc-admin-woocommerce-payments';
+    public const PLUGIN_SLUG = 'woocommerce-payments';
+    public const PLUGIN_FILE = 'woocommerce-payments/woocommerce-payments.php';
     /**
      * Attach hooks.
      */
@@ -34,14 +34,6 @@ class WooCommercePayments
      * Check if the WooCommerce Payments plugin is active or installed.
      */
     protected static function is_installed()
-{
-}
-    /**
-     * Install and activate WooCommerce Payments.
-     *
-     * @return boolean Whether the plugin was successfully activated.
-     */
-    private function install_and_activate_wcpay()
 {
 }
     /**

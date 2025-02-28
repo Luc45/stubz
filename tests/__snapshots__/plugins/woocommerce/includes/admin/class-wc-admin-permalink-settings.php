@@ -5,12 +5,6 @@
 class WC_Admin_Permalink_Settings
 {
     /**
-     * Permalink settings.
-     *
-     * @var array
-     */
-    private $permalinks = array();
-    /**
      * Hook in tabs.
      */
     public function __construct()

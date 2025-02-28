@@ -7,24 +7,6 @@
 abstract class ActionScheduler
 {
     /**
-     * Plugin file path.
-     *
-     * @var string
-     */
-    private static $plugin_file = '';
-    /**
-     * ActionScheduler_ActionFactory instance.
-     *
-     * @var ActionScheduler_ActionFactory
-     */
-    private static $factory = null;
-    /**
-     * Data store is initialized.
-     *
-     * @var bool
-     */
-    private static $data_store_initialized = false;
-    /**
      * Factory.
      */
     public static function factory()
@@ -152,12 +134,6 @@ abstract class ActionScheduler
      * Wakeup.
      */
     final public function __wakeup()
-{
-}
-    /**
-     * Construct.
-     */
-    final private function __construct()
 {
 }
     /**

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class ProductAttributeTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
-    const SLUG = 'taxonomy-product_attribute';
+    public const SLUG = 'taxonomy-product_attribute';
     /**
      * The template used as a fallback if that one is customized.
      *

@@ -90,31 +90,6 @@ class WC_REST_Orders_V2_Controller extends \WC_REST_CRUD_Controller
 {
 }
     /**
-     * Merge the `$formatted_meta_data` `display_key` and `display_value` attribute values into the corresponding
-     * {@link WC_Meta_Data}. Returns the merged array.
-     *
-     * @param WC_Meta_Data $meta_item           An object from {@link WC_Order_Item::get_meta_data()}.
-     * @param array        $formatted_meta_data An object result from {@link WC_Order_Item::get_all_formatted_meta_data}.
-     * The keys are the IDs of {@link WC_Meta_Data}.
-     *
-     * @return array
-     */
-    private function merge_meta_item_with_formatted_meta_display_attributes($meta_item, $formatted_meta_data)
-{
-}
-    /**
-     * With HPOS, few internal meta keys such as _billing_address_index, _shipping_address_index are not considered internal anymore (since most internal keys were flattened into dedicated columns).
-     *
-     * This function helps in filtering out any remaining internal meta keys with HPOS is enabled.
-     *
-     * @param array $meta_data Order meta data.
-     *
-     * @return array Filtered order meta data.
-     */
-    private function filter_internal_meta_keys($meta_data)
-{
-}
-    /**
      * Get formatted item data.
      *
      * @since 3.0.0

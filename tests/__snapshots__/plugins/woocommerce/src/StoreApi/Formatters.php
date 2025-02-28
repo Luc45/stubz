@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\StoreApi;
 class Formatters
 {
     /**
-     * Holds an array of formatter class instances.
-     *
-     * @var array
-     */
-    private $formatters = array();
-    /**
      * Get a new instance of a formatter class.
      *
      * @throws Exception An Exception is thrown if a non-existing formatter is used and the user is admin.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class OrderSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
-    const IDENTIFIER = 'order';
+    public const IDENTIFIER = 'order';
     /**
      * The schema item name.
      *

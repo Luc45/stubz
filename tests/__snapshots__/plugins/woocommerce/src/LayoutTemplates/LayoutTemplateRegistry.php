@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\LayoutTemplates;
 final class LayoutTemplateRegistry
 {
     /**
-     * Class instance.
-     *
-     * @var LayoutTemplateRegistry|null
-     */
-    private static $instance = null;
-    /**
      * Layout templates info.
      *
      * @var array
@@ -66,22 +60,6 @@ final class LayoutTemplateRegistry
      * @param array $query_params Query params.
      */
     public function instantiate_layout_templates(array $query_params = array()): array
-{
-}
-    /**
-     * Instantiate a single layout template and return it.
-     *
-     * @param array $layout_template_info Layout template info.
-     */
-    private function get_layout_template_instance($layout_template_info): Automattic\WooCommerce\Admin\BlockTemplates\BlockTemplateInterface
-{
-}
-    /**
-     * Get matching layout templates info.
-     *
-     * @param array $query_params Query params.
-     */
-    private function get_matching_layout_templates_info(array $query_params = array()): array
 {
 }
 }

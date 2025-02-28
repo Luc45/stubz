@@ -11,7 +11,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
  */
 class EditLock
 {
-    const META_KEY_NAME = '_edit_lock';
+    public const META_KEY_NAME = '_edit_lock';
     /**
      * Obtains lock information for a given order. If the lock has expired or it's assigned to an invalid user,
      * the order is no longer considered locked.

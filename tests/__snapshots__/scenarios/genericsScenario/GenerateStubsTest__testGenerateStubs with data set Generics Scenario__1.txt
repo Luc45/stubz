@@ -10,10 +10,6 @@ namespace GenericsScenario;
 class Collection
 {
     /**
-     * @var array<int, T>
-     */
-    private array $items = array();
-    /**
      * @param T $item
      */
     public function add($item): void
@@ -37,7 +33,6 @@ class Collection
  */
 class User
 {
-    private string $name;
     public function __construct(string $name)
 {
 }

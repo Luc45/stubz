@@ -50,45 +50,4 @@ class ProductGalleryLargeImage extends \Automattic\WooCommerce\Blocks\BlockTypes
     protected function render($attributes, $content, $block)
 {
 }
-    /**
-     * Get the main images html code. The first element of the array contains the HTML of the first image that is visible, the second element contains the HTML of the other images that are hidden.
-     *
-     * @param array $context The block context.
-     * @param int   $product_id The product id.
-     *
-     * @return array
-     */
-    private function get_main_images_html($context, $product_id)
-{
-}
-    /**
-     * Get directives for the block.
-     *
-     * @param array $block_context The block context.
-     *
-     * @return array
-     */
-    private function get_directives($block_context)
-{
-}
-    /**
-     * Get directives for zoom.
-     *
-     * @param array $block_context The block context.
-     *
-     * @return array
-     */
-    private function get_zoom_directives($block_context)
-{
-}
-    /**
-     * Get directives for opening the dialog.
-     *
-     * @param array $block_context The block context.
-     *
-     * @return array
-     */
-    private function get_open_dialog_directives($block_context)
-{
-}
 }

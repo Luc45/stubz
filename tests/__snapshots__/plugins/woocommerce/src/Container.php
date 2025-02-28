@@ -27,12 +27,6 @@ namespace Automattic\WooCommerce;
 final class Container
 {
     /**
-     * The underlying container.
-     *
-     * @var RuntimeContainer
-     */
-    private $container = null;
-    /**
      * Class constructor.
      */
     public function __construct()
@@ -66,14 +60,6 @@ final class Container
      * @return bool
      */
     public function has(string $id): bool
-{
-}
-    /**
-     * The list of service provider classes to register.
-     *
-     * @var string[]
-     */
-    private function get_service_providers(): array
 {
 }
 }

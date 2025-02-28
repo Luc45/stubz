@@ -27,36 +27,6 @@ class WC_CLI_REST_Command
   3 => 'shop_order_refund',
 );
     /**
-     * Name of command/endpoint object.
-     *
-     * @var string
-     */
-    private $name = null;
-    /**
-     * Endpoint route.
-     *
-     * @var string
-     */
-    private $route = null;
-    /**
-     * Main resource ID.
-     *
-     * @var int
-     */
-    private $resource_identifier = null;
-    /**
-     * Schema for command.
-     *
-     * @var array
-     */
-    private $schema = null;
-    /**
-     * List of supported IDs and their description (name => desc).
-     *
-     * @var array
-     */
-    private $supported_ids = array();
-    /**
      * Sets up REST Command.
      *
      * @param string $name   Name of endpoint object (comes from schema).
@@ -138,52 +108,12 @@ class WC_CLI_REST_Command
 {
 }
     /**
-     * Do a REST Request
-     *
-     * @param string $method Request method. Examples: 'POST', 'PUT', 'DELETE' or 'GET'.
-     * @param string $route Resource route.
-     * @param array  $assoc_args Associative arguments passed to the originating WP-CLI command.
-     *
-     * @return array
-     */
-    private function do_request($method, $route, $assoc_args)
-{
-}
-    /**
      * Get Formatter object based on supplied parameters.
      *
      * @param array $assoc_args Parameters passed to command. Determines formatting.
      * @return \WP_CLI\Formatter
      */
     protected function get_formatter(&$assoc_args)
-{
-}
-    /**
-     * Get a list of fields present in a given context
-     *
-     * @param string $context Scope under which the request is made. Determines fields present in response.
-     * @return array
-     */
-    private function get_context_fields($context)
-{
-}
-    /**
-     * Get the route for this resource
-     *
-     * @param  array $args Positional arguments passed to the originating WP-CLI command.
-     * @return string
-     */
-    private function get_filled_route($args = array())
-{
-}
-    /**
-     * Reduce an item to specific fields.
-     *
-     * @param  array $item Item to reduce.
-     * @param  array $fields Fields to keep.
-     * @return array
-     */
-    private static function limit_item_to_fields($item, $fields)
 {
 }
     /**

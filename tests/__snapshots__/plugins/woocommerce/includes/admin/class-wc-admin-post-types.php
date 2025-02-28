@@ -50,14 +50,6 @@ class WC_Admin_Post_Types
 {
 }
     /**
-     * Shows a warning when editing a password-protected coupon.
-     *
-     * @since 9.2.0
-     */
-    private function maybe_display_warning_for_password_protected_coupon()
-{
-}
-    /**
      * Custom bulk edit - form.
      *
      * @param string $column_name Column being shown.
@@ -94,15 +86,6 @@ class WC_Admin_Post_Types
      * @return int
      */
     public function bulk_and_quick_edit_save_post($post_id, $post)
-{
-}
-    /**
-     * Quick edit.
-     *
-     * @param int        $post_id Post ID being saved.
-     * @param WC_Product $product Product object.
-     */
-    private function quick_edit_save($post_id, $product)
 {
 }
     /**
@@ -200,26 +183,6 @@ class WC_Admin_Post_Types
      * @param WP_Post $post        The current post object.
      */
     public function add_display_post_states($post_states, $post)
-{
-}
-    /**
-     * Apply product type constraints to stock status.
-     *
-     * @param WC_Product  $product The product whose stock status will be adjusted.
-     * @param string|null $stock_status The stock status to use for adjustment, or null if no new stock status has been supplied in the request.
-     * @return WC_Product The supplied product, or the synced product if it was a variable product.
-     */
-    private function maybe_update_stock_status($product, $stock_status)
-{
-}
-    /**
-     * Set the new regular or sale price if requested.
-     *
-     * @param WC_Product $product The product to set the new price for.
-     * @param string     $price_type 'regular' or 'sale'.
-     * @return bool true if a new price has been set, false otherwise.
-     */
-    private function set_new_price($product, $price_type)
 {
 }
     /**

@@ -10,25 +10,6 @@ namespace Automattic\WooCommerce\Blocks;
 class Migration
 {
     /**
-     * DB updates and callbacks that need to be run per version.
-     *
-     * Please note that these functions are invoked when WooCommerce Blocks is updated from a previous version,
-     * but NOT when WooCommerce Blocks is newly installed.
-     *
-     * @var array
-     */
-    private $db_upgrades = array (
-  '10.3.0' => 
-  array (
-    0 => 'wc_blocks_update_1030_blockified_product_grid_block',
-  ),
-  '11.2.0' => 
-  array (
-    0 => 'wc_blocks_update_1120_rename_checkout_template',
-    1 => 'wc_blocks_update_1120_rename_cart_template',
-  ),
-);
-    /**
      * Runs all the necessary migrations.
      *
      * @var array

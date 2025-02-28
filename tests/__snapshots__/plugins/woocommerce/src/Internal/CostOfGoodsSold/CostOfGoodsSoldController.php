@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\CostOfGoodsSold;
 class CostOfGoodsSoldController implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
-     * The instance of FeaturesController to use.
-     *
-     * @var FeaturesController
-     */
-    private Automattic\WooCommerce\Internal\Features\FeaturesController $features_controller;
-    /**
      * Register hooks.
      */
     public function register()

@@ -7,18 +7,6 @@
 class WC_Geolite_Integration
 {
     /**
-     * MaxMind GeoLite2 database path.
-     *
-     * @var string
-     */
-    private $database = '';
-    /**
-     * Logger instance.
-     *
-     * @var WC_Logger
-     */
-    private $log = null;
-    /**
      * Constructor.
      *
      * @param string $database MaxMind GeoLite2 database path.
@@ -35,19 +23,6 @@ class WC_Geolite_Integration
      * @deprecated 3.9.0
      */
     public function get_country_iso($ip_address)
-{
-}
-    /**
-     * Logging method.
-     *
-     * @param string $message Log message.
-     * @param string $level   Log level.
-     *                        Available options: 'emergency', 'alert',
-     *                        'critical', 'error', 'warning', 'notice',
-     *                        'info' and 'debug'.
-     *                        Defaults to 'info'.
-     */
-    private function log($message, $level = 'info')
 {
 }
 }

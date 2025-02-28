@@ -4,7 +4,7 @@
  */
 class WC_Customer_Download_Log_Data_Store implements \WC_Customer_Download_Log_Data_Store_Interface
 {
-    const WC_DOWNLOAD_LOG_TABLE = 'wc_download_log';
+    public const WC_DOWNLOAD_LOG_TABLE = 'wc_download_log';
     /**
      * Get the table name for download logs.
      *
@@ -36,15 +36,6 @@ class WC_Customer_Download_Log_Data_Store implements \WC_Customer_Download_Log_D
      * @param WC_Customer_Download_Log $download_log Download log object.
      */
     public function update(&$download_log)
-{
-}
-    /**
-     * Get a download log object.
-     *
-     * @param  array $data From the DB.
-     * @return WC_Customer_Download_Log
-     */
-    private function get_download_log($data)
 {
 }
     /**

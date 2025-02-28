@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingSync
 {
     /**
-     * Class instance.
-     *
-     * @var OnboardingSync instance
-     */
-    private static $instance = null;
-    /**
      * Get class instance.
      */
     final public static function instance()
@@ -23,12 +17,6 @@ class OnboardingSync
      * Init.
      */
     public function init()
-{
-}
-    /**
-     * Send profile data to WooCommerce.com.
-     */
-    private function send_profile_data()
 {
 }
     /**

@@ -8,19 +8,6 @@ namespace Automattic\WooCommerce\Database\Migrations;
 class MigrationHelper
 {
     /**
-     * Placeholders that we will use in building $wpdb queries.
-     *
-     * @var string[]
-     */
-    private static $wpdb_placeholder_for_type = array (
-  'int' => '%d',
-  'decimal' => '%f',
-  'string' => '%s',
-  'date' => '%s',
-  'date_epoch' => '%s',
-  'bool' => '%d',
-);
-    /**
      * Helper method to escape backtick in various schema fields.
      *
      * @param array $schema_config Schema config.
@@ -69,58 +56,6 @@ class MigrationHelper
      * @return bool True if there are more records that need to be migrated, false otherwise.
      */
     public static function migrate_country_states(string $country_code, array $old_to_new_states_mapping): bool
-{
-}
-    /**
-     * Migrate state codes in all the required places in the database (except orders).
-     *
-     * @param string $country_code The country that has the states for which the migration is needed.
-     * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
-     * @return void
-     */
-    private static function migrate_country_states_for_misc_data(string $country_code, array $old_to_new_states_mapping): void
-{
-}
-    /**
-     * Migrate state codes in the shipping locations table.
-     *
-     * @param string $country_code The country that has the states for which the migration is needed.
-     * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
-     * @return void
-     */
-    private static function migrate_country_states_for_shipping_locations(string $country_code, array $old_to_new_states_mapping): void
-{
-}
-    /**
-     * Migrate the state code for the store location.
-     *
-     * @param string $country_code The country that has the states for which the migration is needed.
-     * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
-     * @return void
-     */
-    private static function migrate_country_states_for_store_location(string $country_code, array $old_to_new_states_mapping): void
-{
-}
-    /**
-     * Migrate state codes for orders in the orders table and in the posts table.
-     * It will migrate only N*2*(number of states) records, being N equal to 100 by default
-     * but this number can be modified via the woocommerce_migrate_country_states_for_orders_batch_size filter.
-     *
-     * @param string $country_code The country that has the states for which the migration is needed.
-     * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
-     * @return bool True if there are more records that need to be migrated, false otherwise.
-     */
-    private static function migrate_country_states_for_orders(string $country_code, array $old_to_new_states_mapping): bool
-{
-}
-    /**
-     * Migrate state codes in the tax rates table.
-     *
-     * @param string $country_code The country that has the states for which the migration is needed.
-     * @param array  $old_to_new_states_mapping An associative array where keys are the old state codes and values are the new state codes.
-     * @return void
-     */
-    private static function migrate_country_states_for_tax_rates(string $country_code, array $old_to_new_states_mapping): void
 {
 }
 }

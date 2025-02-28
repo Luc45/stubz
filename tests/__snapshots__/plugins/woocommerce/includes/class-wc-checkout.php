@@ -23,12 +23,6 @@ class WC_Checkout
      */
     protected $legacy_posted_data = array();
     /**
-     * Caches customer object. @see get_value.
-     *
-     * @var WC_Customer
-     */
-    private $logged_in_customer = null;
-    /**
      * Gets the main WC_Checkout Instance.
      *
      * @since 2.1

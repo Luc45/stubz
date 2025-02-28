@@ -54,12 +54,4 @@ class WC_REST_Layout_Templates_Controller extends \WC_REST_Controller
     public function get_item($request)
 {
 }
-    /**
-     * Get layout templates.
-     *
-     * @param array $query_params Query params.
-     */
-    private function get_layout_templates(array $query_params): array
-{
-}
 }

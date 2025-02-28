@@ -4,7 +4,7 @@
  */
 class WC_Products_Tracking
 {
-    const TRACKS_SOURCE = 'product-legacy-editor';
+    public const TRACKS_SOURCE = 'product-legacy-editor';
     /**
      * Init tracking.
      */
@@ -40,34 +40,6 @@ class WC_Products_Tracking
      * @param WP_Post $post The post, not used.
      */
     public function track_product_updated_client_side($post)
-{
-}
-    /**
-     * Get the IDs of the possible product type options.
-     *
-     * @return array
-     */
-    private static function get_possible_product_type_options_ids()
-{
-}
-    /**
-     * Get the product type options for a product.
-     *
-     * @param int $post_id The ID of the product.
-     *
-     * @return array
-     */
-    private static function get_product_type_options($post_id)
-{
-}
-    /**
-     * Get a comma-separated string of the product type options that are enabled.
-     *
-     * @param array $product_type_options The product type options.
-     *
-     * @return string
-     */
-    private static function get_product_type_options_string($product_type_options)
 {
 }
     /**
@@ -137,14 +109,6 @@ class WC_Products_Tracking
      * @param string $hook Page hook.
      */
     public function possibly_add_tag_tracking_scripts($hook)
-{
-}
-    /**
-     * Check if the current process is importing products.
-     *
-     * @return bool True if importing, false otherwise.
-     */
-    private function is_importing()
 {
 }
 }

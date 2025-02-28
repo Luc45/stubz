@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class CartTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractPageTemplate
 {
-    const SLUG = 'page-cart';
+    public const SLUG = 'page-cart';
     /**
      * Initialization method.
      */

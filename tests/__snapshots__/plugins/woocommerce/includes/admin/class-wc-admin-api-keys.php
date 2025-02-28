@@ -21,14 +21,6 @@ class WC_Admin_API_Keys
 {
 }
     /**
-     * Check if is API Keys settings page.
-     *
-     * @return bool
-     */
-    private function is_api_keys_settings_page()
-{
-}
-    /**
      * Page output.
      */
     public static function page_output()
@@ -41,21 +33,6 @@ class WC_Admin_API_Keys
 {
 }
     /**
-     * Table list output.
-     */
-    private static function table_list_output()
-{
-}
-    /**
-     * Get key data.
-     *
-     * @param  int $key_id API Key ID.
-     * @return array
-     */
-    private static function get_key_data($key_id)
-{
-}
-    /**
      * API Keys admin actions.
      */
     public function actions()
@@ -65,35 +42,6 @@ class WC_Admin_API_Keys
      * Notices.
      */
     public static function notices()
-{
-}
-    /**
-     * Revoke key.
-     */
-    private function revoke_key()
-{
-}
-    /**
-     * Bulk actions.
-     */
-    private function bulk_actions()
-{
-}
-    /**
-     * Bulk revoke key.
-     *
-     * @param array $keys API Keys.
-     */
-    private function bulk_revoke_key($keys)
-{
-}
-    /**
-     * Remove key.
-     *
-     * @param  int $key_id API Key ID.
-     * @return bool
-     */
-    private function remove_key($key_id)
 {
 }
 }

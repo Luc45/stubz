@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  */
 class HtmlSanitizer
 {
-    const LOW_HTML_BALANCED_TAGS_NO_LINKS = array (
+    public const LOW_HTML_BALANCED_TAGS_NO_LINKS = array (
   'pre_processors' => 
   array (
     0 => 'stripslashes',
@@ -88,21 +88,6 @@ class HtmlSanitizer
     ),
   ),
 )): string
-{
-}
-    /**
-     * Applies callbacks used to process the string before and after wp_kses().
-     *
-     * If a callback is invalid we will short-circuit and return an empty string, on the grounds that it is better to
-     * output nothing than risky HTML. We also call the problem out via _doing_it_wrong() to highlight the problem (and
-     * increase the chances of this being caught during development).
-     *
-     * @param callable[] $callbacks The callbacks used to mutate the string.
-     * @param string     $string    The string being processed.
-     *
-     * @return string
-     */
-    private function apply_string_callbacks(array $callbacks, string $string): string
 {
 }
 }

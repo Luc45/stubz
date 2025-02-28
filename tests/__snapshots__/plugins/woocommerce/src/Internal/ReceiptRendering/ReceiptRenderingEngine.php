@@ -14,14 +14,14 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
  */
 class ReceiptRenderingEngine
 {
-    const FONT_SIZE = 12;
-    const LINE_HEIGHT = 18.0;
-    const ICON_HEIGHT = 18.0;
-    const ICON_WIDTH = 24.0;
-    const MARGIN = 16;
-    const TITLE_FONT_SIZE = 24;
-    const FOOTER_FONT_SIZE = 10;
-    const KNOWN_CARD_TYPES = array (
+    private const FONT_SIZE = 12;
+    private const LINE_HEIGHT = 18.0;
+    private const ICON_HEIGHT = 18.0;
+    private const ICON_WIDTH = 24.0;
+    private const MARGIN = 16;
+    private const TITLE_FONT_SIZE = 24;
+    private const FOOTER_FONT_SIZE = 10;
+    private const KNOWN_CARD_TYPES = array (
   0 => 'amex',
   1 => 'diners',
   2 => 'discover',
@@ -30,19 +30,7 @@ class ReceiptRenderingEngine
   5 => 'mastercard',
   6 => 'visa',
 );
-    const RECEIPT_FILE_NAME_META_KEY = '_receipt_file_name';
-    /**
-     * The instance of TransientFilesEngine to use.
-     *
-     * @var TransientFilesEngine
-     */
-    private $transient_files_engine = null;
-    /**
-     * The instance of LegacyProxy to use.
-     *
-     * @var LegacyProxy
-     */
-    private $legacy_proxy = null;
+    public const RECEIPT_FILE_NAME_META_KEY = '_receipt_file_name';
     /**
      * Initializes the class.
      *
@@ -85,32 +73,6 @@ class ReceiptRenderingEngine
      * @throws Exception Thrown if a wrong file path is passed.
      */
     public function get_existing_receipt($order): string|null
-{
-}
-    /**
-     * Get the order data that the receipt template will use.
-     *
-     * @param WC_Abstract_Order $order The order to get the data from.
-     * @return array The order data as an associative array.
-     */
-    private function get_order_data(WC_Abstract_Order $order): array
-{
-}
-    /**
-     * Get the order data related to WooCommerce Payments.
-     *
-     * It will return null if any of these is true:
-     *
-     * - Payment method is not "woocommerce_payments".
-     * - WooCommerce Payments is not installed.
-     * - No intent id is stored for the order.
-     * - Retrieving the payment information from Stripe API (providing the intent id) fails.
-     * - The received data set doesn't contain the expected information.
-     *
-     * @param WC_Abstract_Order $order The order to get the data from.
-     * @return array|null An array of payment information for the order, or null if not available.
-     */
-    private function get_woo_pay_data(WC_Abstract_Order $order): array|null
 {
 }
 }

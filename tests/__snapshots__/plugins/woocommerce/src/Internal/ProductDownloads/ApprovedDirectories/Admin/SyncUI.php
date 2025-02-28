@@ -9,12 +9,6 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories\A
 class SyncUI
 {
     /**
-     * The active register of approved directories.
-     *
-     * @var Register
-     */
-    private $register = null;
-    /**
      * Sets up UI controls for product download URLs.
      *
      * @internal
@@ -58,12 +52,6 @@ class SyncUI
      * If a migration is in progress, this will attempt to cancel it.
      */
     public function cancel_sync()
-{
-}
-    /**
-     * Makes sure the user has appropriate permissions and that we have a valid nonce.
-     */
-    private function security_check()
 {
 }
 }

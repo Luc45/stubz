@@ -78,29 +78,6 @@ class CartController
 {
 }
     /**
-     * Generates the error message for out of stock products and adds product names to it.
-     *
-     * @param string $singular The message to use when only one product is in the list.
-     * @param string $plural The message to use when more than one product is in the list.
-     * @param array  $items The list of cart items whose names should be inserted into the message.
-     * @returns string The translated and correctly pluralised message.
-     */
-    private function add_product_names_to_message($singular, $plural, $items)
-{
-}
-    /**
-     * Takes a string describing the type of stock extension, whether there is a single product or multiple products
-     * causing this exception and returns an appropriate error message.
-     *
-     * @param string $exception_type     The type of exception encountered.
-     * @param string $singular_or_plural Whether to get the error message for a single product or multiple.
-     *
-     * @return string
-     */
-    private function get_error_message_for_stock_exception_type($exception_type, $singular_or_plural)
-{
-}
-    /**
      * Validate cart and check for errors.
      *
      * @throws InvalidCartException Exception if invalid data is detected in the cart.
@@ -122,19 +99,6 @@ class CartController
      * @throws InvalidCartException Exception if invalid data is detected due to insufficient stock levels.
      */
     public function validate_cart_items()
-{
-}
-    /**
-     * This method will take arrays of exceptions relating to stock, and will convert them to a WP_Error object.
-     *
-     * @param TooManyInCartException[]     $too_many_in_cart_products     Array of TooManyInCartExceptions.
-     * @param NotPurchasableException[]    $not_purchasable_products      Array of NotPurchasableExceptions.
-     * @param PartialOutOfStockException[] $partial_out_of_stock_products Array of PartialOutOfStockExceptions.
-     * @param OutOfStockException[]        $out_of_stock_products         Array of OutOfStockExceptions.
-     *
-     * @return WP_Error  The WP_Error object returned. Will have errors if any exceptions were in the args. It will be empty if they do not.
-     */
-    private function stock_exceptions_to_wp_errors($too_many_in_cart_products, $not_purchasable_products, $partial_out_of_stock_products, $out_of_stock_products)
 {
 }
     /**

@@ -49,14 +49,4 @@ class Mollie extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProv
     public function get_pseudo_gateway(array $suggestion): Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PseudoWCPaymentGateway
 {
 }
-    /**
-     * Get the URL to the custom settings page for Mollie.
-     *
-     * @param string $section Optional. The section to navigate to.
-     *
-     * @return string The URL to the custom settings page for Mollie.
-     */
-    private function get_custom_settings_url(string $section = ''): string
-{
-}
 }

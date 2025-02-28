@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class CheckoutSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
-    const IDENTIFIER = 'checkout';
+    public const IDENTIFIER = 'checkout';
     /**
      * The schema item name.
      *

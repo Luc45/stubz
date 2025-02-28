@@ -7,7 +7,6 @@ namespace FinalScenario;
  */
 final class ImmutableConfig
 {
-    private array $settings = array();
     public function __construct(array $initialSettings = array())
 {
 }

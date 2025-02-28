@@ -7,12 +7,12 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class WooSubscriptionsNotes
 {
-    const LAST_REFRESH_OPTION_KEY = 'woocommerce_admin-wc-helper-last-refresh';
-    const NOTE_NAME = 'wc-admin-wc-helper-connection';
-    const CONNECTION_NOTE_NAME = 'wc-admin-wc-helper-connection';
-    const SUBSCRIPTION_NOTE_NAME = 'wc-admin-wc-helper-subscription';
-    const NOTIFY_WHEN_DAYS_LEFT = 60;
-    const BUMP_THRESHOLDS = array (
+    public const LAST_REFRESH_OPTION_KEY = 'woocommerce_admin-wc-helper-last-refresh';
+    public const NOTE_NAME = 'wc-admin-wc-helper-connection';
+    public const CONNECTION_NOTE_NAME = 'wc-admin-wc-helper-connection';
+    public const SUBSCRIPTION_NOTE_NAME = 'wc-admin-wc-helper-subscription';
+    public const NOTIFY_WHEN_DAYS_LEFT = 60;
+    public const BUMP_THRESHOLDS = array (
   0 => 60,
   1 => 45,
   2 => 20,

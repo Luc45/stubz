@@ -29,15 +29,6 @@ class ProductRatingCounter extends \Automattic\WooCommerce\Blocks\BlockTypes\Abs
 {
 }
     /**
-     * Get the block's attributes.
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     * @return array  Block attributes merged with defaults.
-     */
-    private function parse_attributes($attributes)
-{
-}
-    /**
      * Overwrite parent method to prevent script registration.
      *
      * It is necessary to register and enqueues assets during the render

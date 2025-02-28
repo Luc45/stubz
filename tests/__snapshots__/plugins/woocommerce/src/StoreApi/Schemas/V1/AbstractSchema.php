@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 abstract class AbstractSchema
 {
-    const EXTENDING_KEY = 'extensions';
+    public const EXTENDING_KEY = 'extensions';
     /**
      * The schema item name.
      *

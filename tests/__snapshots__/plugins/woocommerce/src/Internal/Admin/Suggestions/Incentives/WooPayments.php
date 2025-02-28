@@ -26,12 +26,6 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      */
     protected string $store_had_woopayments_option_name;
     /**
-     * The memoized incentives to avoid fetching multiple times during a request.
-     *
-     * @var array|null
-     */
-    private array|null $incentives_memo = null;
-    /**
      * Constructor.
      *
      * @param string $suggestion_id The suggestion ID.
@@ -81,44 +75,6 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Suggestions\Inc
      * @return array List of eligible incentives.
      */
     protected function get_incentives(string $country_code): array
-{
-}
-    /**
-     * Check if the WooPayments payment gateway is active and set up or was at some point,
-     * or there are orders processed with it, at some moment.
-     *
-     * @return boolean Whether the store has WooPayments.
-     */
-    private function has_wcpay(): bool
-{
-}
-    /**
-     * Check if there is meaningful data in the WooPayments account cache.
-     *
-     * @return boolean
-     */
-    private function has_wcpay_account_data(): bool
-{
-}
-    /**
-     * Check if the store has any paid orders.
-     *
-     * Currently, we look at the past 90 days and only consider orders
-     * with status `wc-completed`, `wc-processing`, or `wc-refunded`.
-     *
-     * @return boolean Whether the store has any paid orders.
-     */
-    private function has_orders(): bool
-{
-}
-    /**
-     * Generate a hash from the store context data.
-     *
-     * @param array $context The store context data.
-     *
-     * @return string The context hash.
-     */
-    private function generate_context_hash(array $context): string
 {
 }
 }

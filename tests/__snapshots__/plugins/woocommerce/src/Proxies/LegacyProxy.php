@@ -31,14 +31,6 @@ class LegacyProxy
 {
 }
     /**
-     * Get an instance of a class implementing WC_Queue_Interface.
-     *
-     * @return \WC_Queue_Interface The instance.
-     */
-    private function get_instance_of_wc_queue_interface()
-{
-}
-    /**
      * Call a user function. This should be used to execute any non-idempotent function, especially
      * those in the `includes` directory or provided by WordPress.
      *

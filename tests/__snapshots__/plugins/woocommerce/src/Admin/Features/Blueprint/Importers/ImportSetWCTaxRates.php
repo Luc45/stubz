@@ -12,12 +12,6 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Importers;
 class ImportSetWCTaxRates implements \Automattic\WooCommerce\Blueprint\StepProcessor
 {
     /**
-     * The result of the step processing.
-     *
-     * @var StepProcessorResult $result The result of the step processing.
-     */
-    private Automattic\WooCommerce\Blueprint\StepProcessorResult $result;
-    /**
      * Process the import of WooCommerce tax rates.
      *
      * @param object $schema The schema object containing import details.

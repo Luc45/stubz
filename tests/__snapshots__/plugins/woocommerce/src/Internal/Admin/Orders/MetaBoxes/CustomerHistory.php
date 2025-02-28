@@ -19,14 +19,4 @@ class CustomerHistory
     public function output(WC_Order $order): void
 {
 }
-    /**
-     * Get the order history for the customer (data matches Customers report).
-     *
-     * @param int $customer_report_id The reports customer ID (not necessarily User ID).
-     *
-     * @return array|null Order count, total spend, and average spend per order.
-     */
-    private function get_customer_history($customer_report_id): array|null
-{
-}
 }

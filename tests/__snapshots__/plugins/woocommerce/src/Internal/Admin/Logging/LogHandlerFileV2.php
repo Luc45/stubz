@@ -8,18 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
 class LogHandlerFileV2 extends \WC_Log_Handler
 {
     /**
-     * Instance of the FileController class.
-     *
-     * @var FileController
-     */
-    private $file_controller = null;
-    /**
-     * Instance of the Settings class.
-     *
-     * @var Settings
-     */
-    private $settings = null;
-    /**
      * LogHandlerFileV2 class.
      */
     public function __construct()

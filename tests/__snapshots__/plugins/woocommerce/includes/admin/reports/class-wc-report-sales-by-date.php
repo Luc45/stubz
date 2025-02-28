@@ -11,23 +11,11 @@ class WC_Report_Sales_By_Date extends \WC_Admin_Report
      */
     public $chart_colours = array();
     /**
-     * The report data.
-     *
-     * @var stdClass
-     */
-    private $report_data = null;
-    /**
      * Get report data.
      *
      * @return stdClass
      */
     public function get_report_data()
-{
-}
-    /**
-     * Get all data needed for this report and store in the class.
-     */
-    private function query_report_data()
 {
 }
     /**
@@ -48,16 +36,6 @@ class WC_Report_Sales_By_Date extends \WC_Admin_Report
      * Output an export link.
      */
     public function get_export_button()
-{
-}
-    /**
-     * Round our totals correctly.
-     *
-     * @param array|string $amount Chart total.
-     *
-     * @return array|string
-     */
-    private function round_chart_totals($amount)
 {
 }
     /**

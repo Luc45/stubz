@@ -19,18 +19,6 @@ class OptionRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\R
 {
 }
     /**
-     * Retrieves the option value and handles logging if necessary.
-     *
-     * @param object $rule         The specific rule being processed.
-     * @param mixed  $default_value      The default value.
-     * @param bool   $is_contains  Indicates whether the operation is "contains".
-     *
-     * @return mixed The option value.
-     */
-    private function get_option_value($rule, $default_value, $is_contains)
-{
-}
-    /**
      * Validates the rule.
      *
      * @param object $rule The rule to validate.

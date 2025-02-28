@@ -13,8 +13,8 @@ namespace Action_Scheduler\Migration;
  */
 class Scheduler
 {
-    const HOOK = 'action_scheduler/migration_hook';
-    const GROUP = 'action-scheduler-migration';
+    public const HOOK = 'action_scheduler/migration_hook';
+    public const GROUP = 'action-scheduler-migration';
     /**
      * Set up the callback for the scheduled job.
      */
@@ -61,30 +61,6 @@ class Scheduler
      * Remove the scheduled migration action.
      */
     public function unschedule_migration()
-{
-}
-    /**
-     * Get migration batch schedule interval.
-     *
-     * @return int Seconds between migration runs. Defaults to 0 seconds to allow chaining migration via Async Runners.
-     */
-    private function get_schedule_interval()
-{
-}
-    /**
-     * Get migration batch size.
-     *
-     * @return int Number of actions to migrate in each batch. Defaults to 250.
-     */
-    private function get_batch_size()
-{
-}
-    /**
-     * Get migration runner object.
-     *
-     * @return Runner
-     */
-    private function get_migration_runner()
 {
 }
 }

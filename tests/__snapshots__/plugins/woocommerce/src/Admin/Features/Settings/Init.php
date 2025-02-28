@@ -54,14 +54,4 @@ class Init
     public static function add_component_settings($settings)
 {
 }
-    /**
-     * Retrieve the script URLs from the provided script handles.
-     * This will also filter out scripts from WordPress core since they only need to be loaded once.
-     *
-     * @param array $script_handles Array of script handles.
-     * @return array Array of script URLs.
-     */
-    private static function get_script_urls($script_handles)
-{
-}
 }

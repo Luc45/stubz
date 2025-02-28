@@ -45,12 +45,6 @@ class Packages
   'woocommerce-brands' => '\\Automattic\\WooCommerce\\Internal\\Brands',
 );
     /**
-     * Static-only class.
-     */
-    private function __construct()
-{
-}
-    /**
      * Init the package loader.
      *
      * @since 3.7.0

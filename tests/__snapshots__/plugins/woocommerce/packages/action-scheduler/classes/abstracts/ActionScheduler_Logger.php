@@ -7,12 +7,6 @@
 abstract class ActionScheduler_Logger
 {
     /**
-     * Instance.
-     *
-     * @var null|self
-     */
-    private static $logger = null;
-    /**
      * Get instance.
      *
      * @return ActionScheduler_Logger

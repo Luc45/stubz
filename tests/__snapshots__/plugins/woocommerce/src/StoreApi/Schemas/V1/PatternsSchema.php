@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class PatternsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
-    const IDENTIFIER = 'patterns';
+    public const IDENTIFIER = 'patterns';
     /**
      * The schema item name.
      *

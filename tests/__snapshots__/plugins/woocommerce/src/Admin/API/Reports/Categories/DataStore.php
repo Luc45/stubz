@@ -24,18 +24,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore impl
      */
     protected $cache_key = 'categories';
     /**
-     * Order by setting used for sorting categories data.
-     *
-     * @var string
-     */
-    private $order_by = '';
-    /**
-     * Order setting used for sorting categories data.
-     *
-     * @var string
-     */
-    private $order = '';
-    /**
      * Mapping columns to data type to return correct response types.
      *
      * @override ReportsDataStore::$column_types

@@ -4,7 +4,7 @@
  */
 class WC_Auth
 {
-    const VERSION = 1;
+    public const VERSION = 1;
     /**
      * Setup class.
      *
@@ -124,16 +124,6 @@ class WC_Auth
      * @param string $route Route.
      */
     protected function auth_endpoint($route)
-{
-}
-    /**
-     * Maybe delete key.
-     *
-     * @since 2.4.0
-     *
-     * @param array $key Key.
-     */
-    private function maybe_delete_key($key)
 {
 }
 }

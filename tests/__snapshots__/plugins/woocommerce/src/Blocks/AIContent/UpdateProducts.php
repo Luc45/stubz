@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  */
 class UpdateProducts
 {
-    const DUMMY_PRODUCTS = array (
+    public const DUMMY_PRODUCTS = array (
   0 => 
   array (
     'title' => 'Vintage Typewriter',
@@ -145,18 +145,6 @@ class UpdateProducts
 {
 }
     /**
-     * Upload the image for the product.
-     *
-     * @param int    $product_id The product ID.
-     * @param string $image_src The image source.
-     * @param string $image_alt The image alt.
-     *
-     * @return int|string|WP_Error
-     */
-    private function product_image_upload($product_id, $image_src, $image_alt)
-{
-}
-    /**
      * Assigns the default content for the products.
      *
      * @param array $dummy_products_to_update The dummy products to update.
@@ -185,20 +173,6 @@ class UpdateProducts
      * Reset the products content.
      */
     public function reset_products_content()
-{
-}
-    /**
-     * Update the product with the new content.
-     *
-     * @param \WC_Product         $product The product.
-     * @param int|string|WP_Error $product_image_id The product image ID.
-     * @param string              $product_title The product title.
-     * @param string              $product_description The product description.
-     * @param int                 $product_price The product price.
-     *
-     * @return int|\WP_Error
-     */
-    private function product_update($product, $product_image_id, $product_title, $product_description, $product_price)
 {
 }
 }

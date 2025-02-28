@@ -130,57 +130,6 @@ class OnboardingTasks extends \WC_REST_Data_Controller
 {
 }
     /**
-     * Returns a valid cover block with an image, if one exists, or background as a fallback.
-     *
-     * @internal
-     * @param  array $image Image to use for the cover block. Should contain a media ID and image URL.
-     * @return string Block content.
-     */
-    private static function get_homepage_cover_block($image)
-{
-}
-    /**
-     * Returns a valid media block with an image, if one exists, or a uninitialized media block the user can set.
-     *
-     * @internal
-     * @param  array  $image Image to use for the cover block. Should contain a media ID and image URL.
-     * @param  string $align If the image should be aligned to the left or right.
-     * @return string Block content.
-     */
-    private static function get_homepage_media_block($image, $align = 'left')
-{
-}
-    /**
-     * Returns a homepage template to be inserted into a post. A different template will be used depending on the number of products.
-     *
-     * @internal
-     * @param int $post_id ID of the homepage template.
-     * @return string Template contents.
-     */
-    private static function get_homepage_template($post_id)
-{
-}
-    /**
-     * Gets the possible industry images from the plugin folder for sideloading. If an image doesn't exist, other.jpg is used a fallback.
-     *
-     * @internal
-     * @return array An array of images by industry.
-     */
-    private static function get_available_homepage_images()
-{
-}
-    /**
-     * Uploads a number of images to a homepage template, depending on the selected industry from the profile wizard.
-     *
-     * @internal
-     * @param  int $post_id ID of the homepage template.
-     * @param  int $number_of_images The number of images that should be sideloaded (depending on how many media slots are in the template).
-     * @return array An array of images that have been attached to the post.
-     */
-    private static function sideload_homepage_images($post_id, $number_of_images)
-{
-}
-    /**
      * Create a homepage from a template.
      *
      * @return WP_Error|array

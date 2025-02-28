@@ -14,12 +14,6 @@ namespace Action_Scheduler\Migration;
 class BatchFetcher
 {
     /**
-     * Store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $store = null;
-    /**
      * BatchFetcher constructor.
      *
      * @param ActionScheduler_Store $source_store Source store object.
@@ -35,16 +29,6 @@ class BatchFetcher
      * @return int[] A list of action IDs
      */
     public function fetch($count = 10)
-{
-}
-    /**
-     * Generate a list of prioritized of action search parameters.
-     *
-     * @param int $count Number of actions to find.
-     *
-     * @return array
-     */
-    private function get_query_strategies($count)
 {
 }
 }

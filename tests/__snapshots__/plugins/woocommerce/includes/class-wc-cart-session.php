@@ -65,22 +65,6 @@ final class WC_Cart_Session
 {
 }
     /**
-     * Remove duplicate cookies from the response.
-     */
-    private function dedupe_cookies()
-{
-}
-    /**
-     * Find a cookie by name in an array of cookies.
-     *
-     * @param  string $cookie_name Name of the cookie to find.
-     * @param  array  $cookies     Array of cookies to search.
-     * @return mixed               Key of the cookie if found, false if not.
-     */
-    private function find_cookie_by_name($cookie_name, $cookies)
-{
-}
-    /**
      * Sets the php session data for the cart and coupons.
      */
     public function set_session()
@@ -104,36 +88,6 @@ final class WC_Cart_Session
      * Delete the persistent cart permanently.
      */
     public function persistent_cart_destroy()
-{
-}
-    /**
-     * Set cart hash cookie and items in cart if not already set.
-     *
-     * @param bool $set Should cookies be set (true) or unset.
-     */
-    private function set_cart_cookies($set = true)
-{
-}
-    /**
-     * Get the persistent cart from the database.
-     *
-     * @since  3.5.0
-     * @return array
-     */
-    private function get_saved_cart()
-{
-}
-    /**
-     * Get a cart from an order, if user has permission.
-     *
-     * @since  3.5.0
-     *
-     * @param int   $order_id Order ID to try to load.
-     * @param array $cart Current cart array.
-     *
-     * @return array
-     */
-    private function populate_cart_from_order($order_id, $cart)
 {
 }
 }

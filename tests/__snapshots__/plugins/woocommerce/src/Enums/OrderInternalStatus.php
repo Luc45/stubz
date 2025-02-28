@@ -8,11 +8,11 @@ namespace Automattic\WooCommerce\Enums;
  */
 final class OrderInternalStatus
 {
-    const PENDING = 'wc-pending';
-    const PROCESSING = 'wc-processing';
-    const ON_HOLD = 'wc-on-hold';
-    const COMPLETED = 'wc-completed';
-    const CANCELLED = 'wc-cancelled';
-    const REFUNDED = 'wc-refunded';
-    const FAILED = 'wc-failed';
+    public const PENDING = 'wc-pending';
+    public const PROCESSING = 'wc-processing';
+    public const ON_HOLD = 'wc-on-hold';
+    public const COMPLETED = 'wc-completed';
+    public const CANCELLED = 'wc-cancelled';
+    public const REFUNDED = 'wc-refunded';
+    public const FAILED = 'wc-failed';
 }

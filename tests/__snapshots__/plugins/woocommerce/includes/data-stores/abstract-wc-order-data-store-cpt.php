@@ -74,15 +74,6 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP implem
 {
 }
     /**
-     * Set the properties of an object and log the first error found while doing so.
-     *
-     * @param $order WC_Order $order Order object.
-     * @param array          $props The properties to set.
-     */
-    private function set_order_props(&$order, array $props)
-{
-}
-    /**
      * Method to update an order in the database.
      *
      * @param WC_Order $order Order object.

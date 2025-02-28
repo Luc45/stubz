@@ -7,18 +7,6 @@
 class ActionScheduler_AdminView extends \ActionScheduler_AdminView_Deprecated
 {
     /**
-     * Instance.
-     *
-     * @var null|self
-     */
-    private static $admin_view = null;
-    /**
-     * Screen ID.
-     *
-     * @var string
-     */
-    private static $screen_id = 'tools_page_action-scheduler';
-    /**
      * ActionScheduler_ListTable instance.
      *
      * @var ActionScheduler_ListTable

@@ -18,12 +18,6 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 class LegacyRestApiStub implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
-     * The instance of RestApiUtil to use.
-     *
-     * @var RestApiUtil
-     */
-    private Automattic\WooCommerce\Utilities\RestApiUtil $rest_api_util;
-    /**
      * Set up the Legacy REST API endpoints stub.
      */
     public function register()
@@ -70,12 +64,6 @@ class LegacyRestApiStub implements \Automattic\WooCommerce\Internal\RegisterHook
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public static function parse_legacy_rest_api_request()
-{
-}
-    /**
-     * Process a "wc-api" variable if present in the query, by triggering the appropriate hooks.
-     */
-    private static function maybe_process_wc_api_query_var()
 {
 }
     /**

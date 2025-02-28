@@ -38,14 +38,6 @@ class ShippingPartnerSuggestions extends \WC_REST_Data_Controller
 {
 }
     /**
-     * Check if suggestions should be shown in the settings screen.
-     *
-     * @return bool
-     */
-    private function should_display()
-{
-}
-    /**
      * Return suggested shipping partners.
      *
      * @param WP_REST_Request $request Full details about the request.

@@ -12,12 +12,6 @@ namespace Automattic\WooCommerce\Admin;
 abstract class DataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
     /**
-     * Log a deprecation to the error log.
-     */
-    private static function log_deprecation()
-{
-}
-    /**
      * Constructor.
      *
      * @param string $id id of DataSourcePoller.

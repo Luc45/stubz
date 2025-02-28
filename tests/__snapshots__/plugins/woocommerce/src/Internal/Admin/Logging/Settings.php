@@ -7,13 +7,13 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
  */
 class Settings
 {
-    const DEFAULTS = array (
+    private const DEFAULTS = array (
   'logging_enabled' => true,
   'default_handler' => 'Automattic\\WooCommerce\\Internal\\Admin\\Logging\\LogHandlerFileV2',
   'retention_period_days' => 30,
   'level_threshold' => 'none',
 );
-    const PREFIX = 'woocommerce_logs_';
+    private const PREFIX = 'woocommerce_logs_';
     /**
      * Class Settings.
      */
@@ -31,54 +31,6 @@ class Settings
      * @return string The full directory path, with trailing slash.
      */
     public static function get_log_directory(bool $create_dir = true): string
-{
-}
-    /**
-     * The definitions used by WC_Admin_Settings to render and save settings controls.
-     *
-     * @return array
-     */
-    private function get_settings_definitions(): array
-{
-}
-    /**
-     * The definition for the default_handler setting.
-     *
-     * @return array
-     */
-    private function get_default_handler_setting_definition(): array
-{
-}
-    /**
-     * The definition for the retention_period_days setting.
-     *
-     * @return array
-     */
-    private function get_retention_period_days_setting_definition(): array
-{
-}
-    /**
-     * The definition for the level_threshold setting.
-     *
-     * @return array
-     */
-    private function get_level_threshold_setting_definition(): array
-{
-}
-    /**
-     * The definitions used by WC_Admin_Settings to render settings related to filesystem log handlers.
-     *
-     * @return array
-     */
-    private function get_filesystem_settings_definitions(): array
-{
-}
-    /**
-     * The definitions used by WC_Admin_Settings to render settings related to database log handlers.
-     *
-     * @return array
-     */
-    private function get_database_settings_definitions(): array
 {
 }
     /**

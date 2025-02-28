@@ -7,14 +7,8 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRoute
 {
-    const IDENTIFIER = 'checkout';
-    const SCHEMA_TYPE = 'checkout';
-    /**
-     * Holds the current order being processed.
-     *
-     * @var \WC_Order
-     */
-    private $order = null;
+    public const IDENTIFIER = 'checkout';
+    public const SCHEMA_TYPE = 'checkout';
     /**
      * Get the path of this REST route.
      *
@@ -117,78 +111,6 @@ class Checkout extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractCartRo
      * @return \WP_Error WP Error object.
      */
     protected function get_route_error_response_from_object($error_object, $http_status_code = 500, $additional_data = array())
-{
-}
-    /**
-     * Adds additional data to the \WP_Error object.
-     *
-     * @param \WP_Error $error The error object to add the cart to.
-     * @param array     $data The data to add to the error object.
-     * @param int       $http_status_code The HTTP status code this error should return.
-     * @param bool      $include_cart Whether the cart should be included in the error data.
-     * @returns \WP_Error The \WP_Error with the cart added.
-     */
-    private function add_data_to_error_object($error, $data, $http_status_code, bool $include_cart = false)
-{
-}
-    /**
-     * Create or update a draft order based on the cart.
-     *
-     * @param \WP_REST_Request $request Full details about the request.
-     * @throws RouteException On error.
-     */
-    private function create_or_update_draft_order(WP_REST_Request $request)
-{
-}
-    /**
-     * Updates the current customer session using data from the request (e.g. address data).
-     *
-     * Address session data is synced to the order itself later on by OrderController::update_order_from_cart()
-     *
-     * @param \WP_REST_Request $request Full details about the request.
-     */
-    private function update_customer_from_request(WP_REST_Request $request)
-{
-}
-    /**
-     * Gets the chosen payment method from the request.
-     *
-     * @throws RouteException On error.
-     * @param \WP_REST_Request $request Request object.
-     * @return \WC_Payment_Gateway|null
-     */
-    private function get_request_payment_method(WP_REST_Request $request)
-{
-}
-    /**
-     * Order processing relating to customer account.
-     *
-     * Creates a customer account as needed (based on request & store settings) and  updates the order with the new customer ID.
-     * Updates the order with user details (e.g. address).
-     *
-     * @throws RouteException API error object with error details.
-     * @param \WP_REST_Request $request Request object.
-     */
-    private function process_customer(WP_REST_Request $request)
-{
-}
-    /**
-     * Check request options and store (shop) config to determine if a user account should be created as part of order
-     * processing.
-     *
-     * @param \WP_REST_Request $request The current request object being handled.
-     * @return boolean True if a new user account should be created.
-     */
-    private function should_create_customer_account(WP_REST_Request $request)
-{
-}
-    /**
-     * This validates if the order can be placed regarding settings in WooCommerce > Settings > Accounts & Privacy
-     * If registration during checkout is disabled, guest checkout is disabled and the user is not logged in, prevent checkout.
-     *
-     * @throws RouteException If user cannot place order.
-     */
-    private function validate_user_can_place_order()
 {
 }
 }

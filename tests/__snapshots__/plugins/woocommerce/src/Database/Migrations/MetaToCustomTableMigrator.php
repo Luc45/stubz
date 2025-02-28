@@ -94,59 +94,6 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
      */
     abstract protected function get_meta_column_config(): array;
     /**
-     * Generate SQL for data insertion.
-     *
-     * @param array $batch Data to generate queries for. Will be 'data' array returned by `$this->fetch_data_for_migration_for_ids()` method.
-     *
-     * @return string Generated queries for insertion for this batch, would be of the form:
-     * INSERT IGNORE INTO $table_name ($columns) values
-     *  ($value for row 1)
-     *  ($value for row 2)
-     * ...
-     */
-    private function generate_insert_sql_for_batch(array $batch): string
-{
-}
-    /**
-     * Generate SQL for data updating.
-     *
-     * @param array $batch Data to generate queries for. Will be `data` array returned by fetch_data_for_migration_for_ids() method.
-     *
-     * @param array $entity_row_mapping Maps rows to update data with their original IDs. Will be returned by `generate_update_sql_for_batch`.
-     *
-     * @return string Generated queries for batch update. Would be of the form:
-     * INSERT INTO $table ( $columns ) VALUES
-     *  ($value for row 1)
-     *  ($value for row 2)
-     * ...
-     * ON DUPLICATE KEY UPDATE
-     * $column1 = VALUES($column1)
-     * $column2 = VALUES($column2)
-     * ...
-     */
-    private function generate_update_sql_for_batch(array $batch, array $entity_row_mapping): string
-{
-}
-    /**
-     * Generate schema for primary ID column of destination table.
-     *
-     * @return array[] Schema for primary ID column.
-     */
-    private function get_destination_table_primary_id_schema(): array
-{
-}
-    /**
-     * Generate values and columns clauses to be used in INSERT and INSERT..ON DUPLICATE KEY UPDATE statements.
-     *
-     * @param array $columns_schema Columns config for destination table.
-     * @param array $batch Actual data to migrate as returned by `data` in `fetch_data_for_migration_for_ids` method.
-     *
-     * @return array SQL clause for values, columns placeholders, and columns.
-     */
-    private function generate_column_clauses(array $columns_schema, array $batch): array
-{
-}
-    /**
      * Return data to be migrated for a batch of entities.
      *
      * @param array $entity_ids Ids of entities to migrate.
@@ -177,42 +124,6 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
 {
 }
     /**
-     * Process batch for insertion into destination table.
-     *
-     * @param array $batch Data to insert, will be of the form as returned by `data` in `fetch_data_for_migration_for_ids`.
-     */
-    private function process_insert_batch(array $batch): void
-{
-}
-    /**
-     * Process batch for update into destination table.
-     *
-     * @param array $batch Data to insert, will be of the form as returned by `data` in `fetch_data_for_migration_for_ids`.
-     * @param array $ids_mapping Maps rows to update data with their original IDs.
-     */
-    private function process_update_batch(array $batch, array $ids_mapping): void
-{
-}
-    /**
-     * Fetch data for migration.
-     *
-     * @param array $entity_ids Entity IDs to fetch data for.
-     *
-     * @return array[] Data along with errors (if any), will of the form:
-     * array(
-     *  'data' => array(
-     *      'id_1' => array( 'column1' => value1, 'column2' => value2, ...),
-     *      ...,
-     *   ),
-     *  'errors' => array(
-     *      'id_1' => array( 'column1' => error1, 'column2' => value2, ...),
-     *      ...,
-     * )
-     */
-    private function fetch_data_for_migration_for_ids(array $entity_ids): array
-{
-}
-    /**
      * Fetch id mappings for records that are already inserted in the destination table.
      *
      * @param array $entity_ids List of entity IDs to verify.
@@ -240,68 +151,6 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
 {
 }
     /**
-     * Helper method to build query used to fetch data from core source table.
-     *
-     * @param array $entity_ids List of entity IDs to fetch.
-     *
-     * @return string Query that can be used to fetch data.
-     */
-    private function build_entity_table_query(array $entity_ids): string
-{
-}
-    /**
-     * Helper method to build query that will be used to fetch data from source meta table.
-     *
-     * @param array $entity_ids List of IDs to fetch metadata for.
-     *
-     * @return string Query for fetching meta data.
-     */
-    private function build_meta_data_query(array $entity_ids): string
-{
-}
-    /**
-     * Helper function to validate and combine data before we try to insert.
-     *
-     * @param array $entity_data Data from source table.
-     * @param array $meta_data Data from meta table.
-     *
-     * @return array[] Validated and combined data with errors.
-     */
-    private function process_and_sanitize_data(array $entity_data, array $meta_data): array
-{
-}
-    /**
-     * Helper method to sanitize core source table.
-     *
-     * @param array $sanitized_entity_data Array containing sanitized data for insertion.
-     * @param array $error_records Error records.
-     * @param array $entity_data Original source data.
-     */
-    private function process_and_sanitize_entity_data(array &$sanitized_entity_data, array &$error_records, array $entity_data): void
-{
-}
-    /**
-     * Helper method to sanitize soure meta data.
-     *
-     * @param array $sanitized_entity_data Array containing sanitized data for insertion.
-     * @param array $error_records Error records.
-     * @param array $meta_data Original source data.
-     */
-    private function processs_and_sanitize_meta_data(array &$sanitized_entity_data, array &$error_records, array $meta_data): void
-{
-}
-    /**
-     * Validate and transform data so that we catch as many errors as possible before inserting.
-     *
-     * @param mixed  $value Actual data value.
-     * @param string $type Type of data, could be decimal, int, date, string.
-     *
-     * @return float|int|mixed|string|\WP_Error
-     */
-    private function validate_data($value, string $type)
-{
-}
-    /**
      * Verify whether data was migrated properly for given IDs.
      *
      * @param array $source_ids List of source IDs.
@@ -322,28 +171,6 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
 {
 }
     /**
-     * Fill source metadata for given IDs for verification. This will return filled data in following format:
-     * [
-     *    {
-     *      $source_table_$source_column: $value,
-     *      ...,
-     *      $destination_table_$destination_column: $value,
-     *      ...
-     *      meta_source_{$destination_column_name1}: $meta_value,
-     *      ...
-     *    },
-     *   ...
-     * ]
-     *
-     * @param array $results    Entity data from both source and destination table.
-     * @param array $source_ids List of source IDs.
-     *
-     * @return array Filled $results param with source metadata.
-     */
-    private function fill_source_metadata($results, $source_ids)
-{
-}
-    /**
      * Helper function to generate where clause for fetching data for verification.
      *
      * @param array $source_ids Array of IDs from source table.
@@ -361,51 +188,6 @@ abstract class MetaToCustomTableMigrator extends \Automattic\WooCommerce\Databas
      * @return array Array of failed IDs if any, along with columns/meta_key names.
      */
     protected function verify_data($collected_data)
-{
-}
-    /**
-     * Helper method to verify and compare core columns.
-     *
-     * @param array $row        Both migrated and source data for a single row.
-     * @param array $failed_ids Array of failed IDs.
-     *
-     * @return array Array of failed IDs if any, along with columns/meta_key names.
-     */
-    private function verify_entity_columns($row, $failed_ids)
-{
-}
-    /**
-     * Helper method to verify meta columns.
-     *
-     * @param array $row        Both migrated and source data for a single row.
-     * @param array $failed_ids Array of failed IDs.
-     *
-     * @return array Array of failed IDs if any, along with columns/meta_key names.
-     */
-    private function verify_meta_columns($row, $failed_ids)
-{
-}
-    /**
-     * Helper method to pre-process rows to make sure we parse the correct type.
-     *
-     * @param array  $row Both migrated and source data for a single row.
-     * @param array  $schema Column schema.
-     * @param string $alias Name of source column.
-     * @param string $destination_alias Name of destination column.
-     *
-     * @return array Processed row.
-     */
-    private function pre_process_row($row, $schema, $alias, $destination_alias)
-{
-}
-    /**
-     * Helper method to get default value of a type.
-     *
-     * @param string $type Type.
-     *
-     * @return mixed Default value.
-     */
-    private function get_type_defaults($type)
 {
 }
 }

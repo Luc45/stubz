@@ -14,12 +14,6 @@ class Translations
      */
     protected static $instance = null;
     /**
-     * Plugin domain.
-     *
-     * @var string
-     */
-    private static $plugin_domain = 'woocommerce';
-    /**
      * Get class instance.
      */
     public static function get_instance()
@@ -30,71 +24,6 @@ class Translations
      * Hooks added here should be removed in `wc_admin_initialize` via the feature plugin.
      */
     public function __construct()
-{
-}
-    /**
-     * Generate a filename to cache translations from JS chunks.
-     *
-     * @param string $domain Text domain.
-     * @param string $locale Locale being retrieved.
-     * @return string Filename.
-     */
-    private function get_combined_translation_filename($domain, $locale)
-{
-}
-    /**
-     * Combines data from translation chunk files based on officially downloaded file format.
-     *
-     * @param array $json_i18n_filenames List of JSON chunk files.
-     * @return array Combined translation chunk data.
-     */
-    private function combine_official_translation_chunks($json_i18n_filenames)
-{
-}
-    /**
-     * Combines data from translation chunk files based on user-generated file formats,
-     * such as wp-cli tool or Loco Translate plugin.
-     *
-     * @param array $json_i18n_filenames List of JSON chunk files.
-     * @return array Combined translation chunk data.
-     */
-    private function combine_user_translation_chunks($json_i18n_filenames)
-{
-}
-    /**
-     * Find and combine translation chunk files.
-     *
-     * Only targets files that aren't represented by a registered script (e.g. not passed to wp_register_script()).
-     *
-     * @param string $lang_dir Path to language files.
-     * @param string $domain Text domain.
-     * @param string $locale Locale being retrieved.
-     * @return array Combined translation chunk data.
-     */
-    private function get_translation_chunk_data($lang_dir, $domain, $locale)
-{
-}
-    /**
-     * Combine and save translations for a specific locale.
-     *
-     * Note that this assumes \WP_Filesystem is already initialized with write access.
-     *
-     * @param string $language_dir Path to language files.
-     * @param string $plugin_domain Text domain.
-     * @param string $locale Locale being retrieved.
-     */
-    private function build_and_save_translations($language_dir, $plugin_domain, $locale)
-{
-}
-    /**
-     * Combine translation chunks when plugin is activated.
-     *
-     * This function combines JSON translation data auto-extracted by GlotPress
-     * from Webpack-generated JS chunks into a single file. This is necessary
-     * since the JS chunks are not known to WordPress via wp_register_script()
-     * and wp_set_script_translations().
-     */
-    private function generate_translation_strings()
 {
 }
     /**

@@ -75,26 +75,6 @@ class OrdersTableDataStoreMeta extends \Automattic\WooCommerce\Internal\DataStor
 {
 }
     /**
-     * Retrieve raw object meta from cache for the given a set of IDs.
-     *
-     * @param int[] $object_ids List of object IDs.
-     *
-     * @return \stdClass[][] An array, keyed by the object IDs, containing arrays of raw meta data for each object.
-     */
-    private function get_meta_data_for_object_ids_from_cache(array $object_ids): array
-{
-}
-    /**
-     * Store the raw meta data for a set of objects in cache.
-     *
-     * @param \stdClass[][] $meta_data An array, keyed by the object IDs, containing arrays of raw meta data for each object.
-     *
-     * @return void
-     */
-    private function set_meta_data_for_objects_in_cache(array $meta_data)
-{
-}
-    /**
      * Delete cached meta data for the given object_ids.
      *
      * @internal This method should only be used by internally and in cases where the CRUD operations of this datastore

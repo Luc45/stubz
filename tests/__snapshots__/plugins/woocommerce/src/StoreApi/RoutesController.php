@@ -20,12 +20,6 @@ class RoutesController
      */
     protected $routes = array();
     /**
-     * Namespace for the API.
-     *
-     * @var string
-     */
-    private static $api_namespace = 'wc/store';
-    /**
      * Constructor.
      *
      * @param SchemaController $schema_controller Schema controller class passed to each route.

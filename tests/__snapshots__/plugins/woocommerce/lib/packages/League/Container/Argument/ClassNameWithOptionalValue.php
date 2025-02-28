@@ -5,14 +5,6 @@ namespace Automattic\WooCommerce\Vendor\League\Container\Argument;
 class ClassNameWithOptionalValue implements \Automattic\WooCommerce\Vendor\League\Container\Argument\ClassNameInterface
 {
     /**
-     * @var string
-     */
-    private $className = null;
-    /**
-     * @var mixed
-     */
-    private $optionalValue = null;
-    /**
      * @param string $className
      * @param mixed $optionalValue
      */

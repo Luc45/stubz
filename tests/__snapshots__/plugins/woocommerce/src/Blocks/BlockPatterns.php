@@ -29,34 +29,10 @@ namespace Automattic\WooCommerce\Blocks;
  */
 class BlockPatterns
 {
-    const CATEGORIES_PREFIXES = array (
+    public const CATEGORIES_PREFIXES = array (
   0 => '_woo_',
   1 => '_dotcom_imported_',
 );
-    /**
-     * Path to the patterns' directory.
-     *
-     * @var string $patterns_path
-     */
-    private string $patterns_path;
-    /**
-     * PatternRegistry instance.
-     *
-     * @var PatternRegistry $pattern_registry
-     */
-    private Automattic\WooCommerce\Blocks\Patterns\PatternRegistry $pattern_registry;
-    /**
-     * Patterns dictionary
-     *
-     * @var array|WP_Error
-     */
-    private $dictionary = null;
-    /**
-     * PTKPatternsStore instance.
-     *
-     * @var PTKPatternsStore $ptk_patterns_store
-     */
-    private Automattic\WooCommerce\Blocks\Patterns\PTKPatternsStore $ptk_patterns_store;
     /**
      * Constructor for class
      *
@@ -68,14 +44,6 @@ class BlockPatterns
 {
 }
     /**
-     * Returns the Patterns dictionary.
-     *
-     * @return array|WP_Error
-     */
-    private function get_patterns_dictionary()
-{
-}
-    /**
      * Register block patterns from core.
      *
      * @return void
@@ -84,44 +52,11 @@ class BlockPatterns
 {
 }
     /**
-     * Gets block pattern data from the cache if available
-     *
-     * @return array Block pattern data.
-     */
-    private function get_block_patterns()
-{
-}
-    /**
-     * Gets block pattern cache.
-     *
-     * @return array|false Returns an array of patterns if cache is found, otherwise false.
-     */
-    private function get_pattern_cache()
-{
-}
-    /**
-     * Sets block pattern cache.
-     *
-     * @param array $patterns Block patterns data to set in cache.
-     */
-    private function set_pattern_cache(array $patterns)
-{
-}
-    /**
      * Register patterns from the Patterns Toolkit.
      *
      * @return void
      */
     public function register_ptk_patterns()
-{
-}
-    /**
-     * Parse prefixed categories from the PTK patterns into the actual WooCommerce categories.
-     *
-     * @param array $patterns The patterns to parse.
-     * @return array The parsed patterns.
-     */
-    private function parse_categories(array $patterns)
 {
 }
 }

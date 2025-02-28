@@ -40,13 +40,4 @@ class CheckoutExpressPaymentBlock extends \Automattic\WooCommerce\Blocks\BlockTy
     public function sync_express_payment_attrs($post_id, $post)
 {
 }
-    /**
-     * Update the express payment attributes in the other page (Cart or Checkout).
-     *
-     * @param string $cart_or_checkout The page to update.
-     * @param array  $updated_attrs     The updated attributes.
-     */
-    private function update_other_page_with_express_payment_attrs($cart_or_checkout, $updated_attrs)
-{
-}
 }

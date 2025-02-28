@@ -7,10 +7,10 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  */
 class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
-    const TEXT_ONLY = 'text_only';
-    const ICON_ONLY = 'icon_only';
-    const DISPLAY_ALT = 'alt';
-    const DISPLAY_LINE = 'line';
+    public const TEXT_ONLY = 'text_only';
+    public const ICON_ONLY = 'icon_only';
+    public const DISPLAY_ALT = 'alt';
+    public const DISPLAY_LINE = 'line';
     /**
      * Block name.
      *
@@ -75,24 +75,6 @@ class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      * @return string Rendered block output.
      */
     protected function render($attributes, $content, $block)
-{
-}
-    /**
-     * Gets the icon to render depending on the iconStyle and displayStyle.
-     *
-     * @param array $attributes Block attributes.
-     *
-     * @return string Label to render on the block
-     */
-    private function render_icon($attributes)
-{
-}
-    /**
-     * Gets the label to render depending on the displayStyle.
-     *
-     * @return string Label to render on the block.
-     */
-    private function render_label()
 {
 }
     /**

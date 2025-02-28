@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class RealTimeOrderAlerts
 {
-    const NOTE_NAME = 'wc-admin-real-time-order-alerts';
+    public const NOTE_NAME = 'wc-admin-real-time-order-alerts';
     /**
      * Get the note.
      *

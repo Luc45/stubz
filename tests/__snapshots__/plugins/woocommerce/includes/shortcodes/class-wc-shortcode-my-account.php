@@ -23,23 +23,6 @@ class WC_Shortcode_My_Account
 {
 }
     /**
-     * Add notices to the my account page.
-     *
-     * Historically a filter has existed to render a message above the my account page content while the user is
-     * logged out. See `woocommerce_my_account_message`.
-     */
-    private static function my_account_add_notices()
-{
-}
-    /**
-     * My account page.
-     *
-     * @param array $atts Shortcode attributes.
-     */
-    private static function my_account($atts)
-{
-}
-    /**
      * View order page.
      *
      * @param int $order_id Order ID.

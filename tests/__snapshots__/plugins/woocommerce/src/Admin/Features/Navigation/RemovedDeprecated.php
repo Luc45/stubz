@@ -8,14 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\Navigation;
 class RemovedDeprecated
 {
     /**
-     * Handle deprecated method calls.
-     *
-     * @param string $name The name of the deprecated method.
-     */
-    private static function handle_deprecated_method_call($name)
-{
-}
-    /**
      * Handle calls to deprecated methods.
      *
      * @param string $name The name of the deprecated method.

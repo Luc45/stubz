@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\Blocks;
 class BlockTemplatesRegistry
 {
     /**
-     * The array of registered templates.
-     *
-     * @var AbstractTemplate[]|AbstractTemplatePart[]
-     */
-    private $templates = array();
-    /**
      * Initialization method.
      */
     public function init()

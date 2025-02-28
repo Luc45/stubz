@@ -12,29 +12,11 @@
  */
 class ActionScheduler_DataController
 {
-    const DATASTORE_CLASS = 'ActionScheduler_DBStore';
-    const LOGGER_CLASS = 'ActionScheduler_DBLogger';
-    const STATUS_FLAG = 'action_scheduler_migration_status';
-    const STATUS_COMPLETE = 'complete';
-    const MIN_PHP_VERSION = '5.5';
-    /**
-     * Instance.
-     *
-     * @var ActionScheduler_DataController
-     */
-    private static $instance = null;
-    /**
-     * Sleep time in seconds.
-     *
-     * @var int
-     */
-    private static $sleep_time = 0;
-    /**
-     * Tick count required for freeing memory.
-     *
-     * @var int
-     */
-    private static $free_ticks = 50;
+    public const DATASTORE_CLASS = 'ActionScheduler_DBStore';
+    public const LOGGER_CLASS = 'ActionScheduler_DBLogger';
+    public const STATUS_FLAG = 'action_scheduler_migration_status';
+    public const STATUS_COMPLETE = 'complete';
+    public const MIN_PHP_VERSION = '5.5';
     /**
      * Get a flag indicating whether the migration environment dependencies are met.
      *

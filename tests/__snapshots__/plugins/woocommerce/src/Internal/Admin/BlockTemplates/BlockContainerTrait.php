@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\BlockTemplates;
 trait BlockContainerTrait
 {
     /**
-     * The inner blocks.
-     *
-     * @var BlockInterface[]
-     */
-    private $inner_blocks = array();
-    /**
      * Add a block to the block container.
      *
      * @param BlockInterface $block The block.
@@ -24,14 +18,6 @@ trait BlockContainerTrait
      * @throws \UnexpectedValueException If the block container's root template is not the same as the block's root template.
      */
     protected function add_inner_block(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block): Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface
-{
-}
-    /**
-     * Checks if a block is a descendant of the block container.
-     *
-     * @param BlockInterface $block The block.
-     */
-    private function is_block_descendant(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block): bool
 {
 }
     /**
@@ -68,71 +54,9 @@ trait BlockContainerTrait
 {
 }
     /**
-     * Get the inner blocks sorted by order.
-     */
-    private function get_inner_blocks_sorted_by_order(): array
-{
-}
-    /**
      * Get the inner blocks as a formatted template.
      */
     public function get_formatted_template(): array
-{
-}
-    /**
-     * Do the `woocommerce_block_template_after_add_block` action.
-     * Handle exceptions thrown by the action.
-     *
-     * @param BlockInterface $block The block.
-     */
-    private function do_after_add_block_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block)
-{
-}
-    /**
-     * Do the `woocommerce_block_template_area_{template_area}_after_add_block_{block_id}` action.
-     * Handle exceptions thrown by the action.
-     *
-     * @param BlockInterface $block The block.
-     */
-    private function do_after_add_specific_block_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block)
-{
-}
-    /**
-     * Do the `woocommerce_block_after_add_block_error` action.
-     *
-     * @param BlockInterface $block The block.
-     * @param string         $action The action that threw the exception.
-     * @param \Exception     $e The exception.
-     */
-    private function do_after_add_block_error_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, string $action, Exception $e)
-{
-}
-    /**
-     * Do the `woocommerce_block_template_after_remove_block` action.
-     * Handle exceptions thrown by the action.
-     *
-     * @param BlockInterface $block The block.
-     */
-    private function do_after_remove_block_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block)
-{
-}
-    /**
-     * Do the `woocommerce_block_template_area_{template_area}_after_remove_block_{block_id}` action.
-     * Handle exceptions thrown by the action.
-     *
-     * @param BlockInterface $block The block.
-     */
-    private function do_after_remove_specific_block_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block)
-{
-}
-    /**
-     * Do the `woocommerce_block_after_remove_block_error` action.
-     *
-     * @param BlockInterface $block The block.
-     * @param string         $action The action that threw the exception.
-     * @param \Exception     $e The exception.
-     */
-    private function do_after_remove_block_error_action(Automattic\WooCommerce\Admin\BlockTemplates\BlockInterface $block, string $action, Exception $e)
 {
 }
 }

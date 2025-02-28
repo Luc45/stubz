@@ -10,18 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Payments;
 class Api
 {
     /**
-     * Reference to the PaymentMethodRegistry instance.
-     *
-     * @var PaymentMethodRegistry
-     */
-    private $payment_method_registry = null;
-    /**
-     * Reference to the AssetDataRegistry instance.
-     *
-     * @var AssetDataRegistry
-     */
-    private $asset_registry = null;
-    /**
      * Constructor
      *
      * @param PaymentMethodRegistry $payment_method_registry An instance of Payment Method Registry.
@@ -44,15 +32,6 @@ class Api
      * @return array
      */
     public function add_payment_method_script_dependencies($dependencies, $handle)
-{
-}
-    /**
-     * Returns true if the payment gateway is enabled.
-     *
-     * @param object $gateway Payment gateway.
-     * @return boolean
-     */
-    private function is_payment_gateway_enabled($gateway)
 {
 }
     /**

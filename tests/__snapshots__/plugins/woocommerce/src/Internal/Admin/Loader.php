@@ -50,20 +50,6 @@ class Loader
 {
 }
     /**
-     * Returns breadcrumbs for the current page.
-     */
-    private static function get_embed_breadcrumbs()
-{
-}
-    /**
-     * Outputs breadcrumbs via PHP for the initial load of an embedded page.
-     *
-     * @param array $section Section to create breadcrumb from.
-     */
-    private static function output_heading($section)
-{
-}
-    /**
      * Set up a div for the header embed to render into.
      * The initial contents here are meant as a place loader for when the PHP page initially loads.
      */

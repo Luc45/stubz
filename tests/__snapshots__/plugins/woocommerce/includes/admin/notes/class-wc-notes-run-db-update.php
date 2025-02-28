@@ -4,7 +4,7 @@
  */
 class WC_Notes_Run_Db_Update
 {
-    const NOTE_NAME = 'wc-update-db-reminder';
+    public const NOTE_NAME = 'wc-update-db-reminder';
     /**
      * Attach hooks.
      */
@@ -12,65 +12,9 @@ class WC_Notes_Run_Db_Update
 {
 }
     /**
-     * Get current notice id from the database.
-     *
-     * Retrieves the first notice of this type.
-     *
-     * @return int|void Note id or null in case no note was found.
-     */
-    private static function get_current_notice()
-{
-}
-    /**
      * Set this notice to an actioned one, so that it's no longer displayed.
      */
     public static function set_notice_actioned()
-{
-}
-    /**
-     * Check whether the note is up to date for a fresh display.
-     *
-     * The check tests if
-     *  - actions are set up for the first 'Update database' notice, and
-     *  - URL for note's action is equal to the given URL (to check for potential nonce update).
-     *
-     * @param Note               $note            Note to check.
-     * @param string             $update_url      URL to check the note against.
-     * @param array<int, string> $current_actions List of actions to check for.
-     * @return bool
-     */
-    private static function note_up_to_date($note, $update_url, $current_actions)
-{
-}
-    /**
-     * Create and set up the first (out of 3) 'Database update needed' notice and store it in the database.
-     *
-     * If a $note_id is given, the method updates the note instead of creating a new one.
-     *
-     * @param integer $note_id Note db record to update.
-     * @return int Created/Updated note id
-     */
-    private static function update_needed_notice($note_id = null)
-{
-}
-    /**
-     * Update the existing note with $note_id with information about the db upgrade being in progress.
-     *
-     * This is the second out of 3 notices displayed to the user.
-     *
-     * @param int $note_id Note id to update.
-     */
-    private static function update_in_progress_notice($note_id)
-{
-}
-    /**
-     * Update the existing note with $note_id with information that db upgrade is done.
-     *
-     * This is the last notice (3 out of 3 notices) displayed to the user.
-     *
-     * @param int $note_id Note id to update.
-     */
-    private static function update_done_notice($note_id)
 {
 }
     /**

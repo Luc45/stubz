@@ -24,31 +24,6 @@ class OrderActionsRestController extends \Automattic\WooCommerce\Internal\RestAp
 {
 }
     /**
-     * Permission check for REST API endpoint.
-     *
-     * @param WP_REST_Request $request The request for which the permission is checked.
-     * @return bool|WP_Error True if the current user has the capability, otherwise a WP_Error object.
-     */
-    private function check_permissions(WP_REST_Request $request)
-{
-}
-    /**
-     * Get the accepted arguments for the POST request.
-     *
-     * @return array[]
-     */
-    private function get_args_for_order_actions(): array
-{
-}
-    /**
-     * Get the schema for both the GET and the POST requests.
-     *
-     * @return array[]
-     */
-    private function get_schema_for_order_actions(): array
-{
-}
-    /**
      * Handle the POST /orders/{id}/actions/send_order_details.
      *
      * @param WP_REST_Request $request The received request.

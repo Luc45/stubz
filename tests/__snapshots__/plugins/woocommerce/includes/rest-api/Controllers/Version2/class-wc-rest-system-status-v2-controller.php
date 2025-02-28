@@ -91,18 +91,6 @@ class WC_REST_System_Status_V2_Controller extends \WC_REST_Controller
 {
 }
     /**
-     * Check if field item exists.
-     *
-     * @since 3.9.0
-     * @param string $section Fields section.
-     * @param array  $items List of items to check for.
-     * @param array  $fields List of fields to be included on the response.
-     * @return bool
-     */
-    private function check_if_field_item_exists($section, $items, $fields)
-{
-}
-    /**
      * Get array of environment information. Includes thing like software
      * versions, and various server settings.
      *

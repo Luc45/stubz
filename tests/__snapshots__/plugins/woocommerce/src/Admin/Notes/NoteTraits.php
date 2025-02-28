@@ -8,25 +8,6 @@ namespace Automattic\WooCommerce\Admin\Notes;
 trait NoteTraits
 {
     /**
-     * Test how long WooCommerce Admin has been active.
-     *
-     * @param int $seconds Time in seconds to check.
-     * @return bool Whether or not WooCommerce admin has been active for $seconds.
-     */
-    private static function wc_admin_active_for($seconds)
-{
-}
-    /**
-     * Test if WooCommerce Admin has been active within a pre-defined range.
-     *
-     * @param string $range range available in WC_ADMIN_STORE_AGE_RANGES.
-     * @param int    $custom_start custom start in range.
-     * @return bool Whether or not WooCommerce admin has been active within the range.
-     */
-    private static function is_wc_admin_active_in_date_range($range, $custom_start = null)
-{
-}
-    /**
      * Check if the note has been previously added.
      *
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
@@ -96,26 +77,6 @@ trait NoteTraits
      * @throws NotesUnavailableException Throws exception when notes are unavailable.
      */
     public static function has_note_been_actioned()
-{
-}
-    /**
-     * Update a note field of note1 if it's different from note2 with getter and setter.
-     *
-     * @param Note   $note1 Note to update.
-     * @param Note   $note2 Note to compare against.
-     * @param string $field_name Field to update.
-     * @return bool True if the field was updated.
-     */
-    private static function update_note_field_if_changed($note1, $note2, $field_name)
-{
-}
-    /**
-     * Convert a value to array if it's a stdClass.
-     *
-     * @param mixed $obj variable to convert.
-     * @return mixed
-     */
-    private static function possibly_convert_object_to_array($obj)
 {
 }
 }

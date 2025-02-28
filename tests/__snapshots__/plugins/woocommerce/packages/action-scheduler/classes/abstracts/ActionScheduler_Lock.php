@@ -7,12 +7,6 @@
 abstract class ActionScheduler_Lock
 {
     /**
-     * Instance.
-     *
-     * @var ActionScheduler_Lock
-     */
-    private static $locker = null;
-    /**
      * Duration of lock.
      *
      * @var int

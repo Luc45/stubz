@@ -5,15 +5,6 @@
 class WC_Blocks_Utils
 {
     /**
-     * Get blocks from a woocommerce page.
-     *
-     * @param string $woo_page_name A woocommerce page e.g. `checkout` or `cart`.
-     * @return array Array of blocks as returned by parse_blocks().
-     */
-    private static function get_all_blocks_from_page($woo_page_name)
-{
-}
-    /**
      * Get all instances of the specified block on a specific woo page
      * (e.g. `cart` or `checkout` page).
      *

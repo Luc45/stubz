@@ -1055,12 +1055,6 @@ class WC_Cart extends \WC_Legacy_Cart
 {
 }
     /**
-     * Reset cart totals to the defaults. Useful before running calculations.
-     */
-    private function reset_totals()
-{
-}
-    /**
      * Returns 'incl' if tax should be included in cart, otherwise returns 'excl'.
      *
      * @return string

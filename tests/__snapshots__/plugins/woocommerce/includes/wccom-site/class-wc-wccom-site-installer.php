@@ -7,12 +7,6 @@
 class WC_WCCOM_Site_Installer
 {
     /**
-     * An instance of the WP_Upgrader class to be used for installation.
-     *
-     * @var \WP_Upgrader $wp_upgrader
-     */
-    private static $wp_upgrader = null;
-    /**
      * Get WP.org plugin's main file.
      *
      * @since 3.7.0

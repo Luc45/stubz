@@ -15,36 +15,6 @@ namespace Automattic\WooCommerce\StoreApi\Schemas;
 final class ExtendSchema
 {
     /**
-     * List of Store API schema that is allowed to be extended by extensions.
-     *
-     * @var string[]
-     */
-    private $endpoints;
-    /**
-     * Holds the formatters class instance.
-     *
-     * @var Formatters
-     */
-    private $formatters = null;
-    /**
-     * Data to be extended
-     *
-     * @var array
-     */
-    private $extend_data = array();
-    /**
-     * Data to be extended
-     *
-     * @var array
-     */
-    private $callback_methods = array();
-    /**
-     * Array of payment requirements
-     *
-     * @var array
-     */
-    private $payment_requirements = array();
-    /**
      * Constructor
      *
      * @param Formatters $formatters An instance of the formatters class.
@@ -152,26 +122,6 @@ final class ExtendSchema
     public function get_payment_requirements(array $requirements = array (
   0 => 'products',
 ))
-{
-}
-    /**
-     * Throws error and/or silently logs it.
-     *
-     * @param string|\Throwable $exception_or_error Error message or \Exception.
-     * @throws \Exception An error to throw if we have debug enabled and user is admin.
-     */
-    private function throw_exception($exception_or_error)
-{
-}
-    /**
-     * Format schema for an extension.
-     *
-     * @param string $namespace Error message or \Exception.
-     * @param array  $schema An error to throw if we have debug enabled and user is admin.
-     * @param string $schema_type How should data be shaped.
-     * @return array Formatted schema.
-     */
-    private function format_extensions_properties($namespace, $schema, $schema_type)
 {
 }
 }

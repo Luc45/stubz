@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  */
 class FileController
 {
-    const MAX_FILE_ROTATIONS = 10;
-    const DEFAULTS_GET_FILES = array (
+    private const MAX_FILE_ROTATIONS = 10;
+    public const DEFAULTS_GET_FILES = array (
   'date_end' => 0,
   'date_filter' => '',
   'date_start' => 0,
@@ -18,22 +18,14 @@ class FileController
   'per_page' => 20,
   'source' => '',
 );
-    const DEFAULTS_SEARCH_WITHIN_FILES = array (
+    public const DEFAULTS_SEARCH_WITHIN_FILES = array (
   'offset' => 0,
   'per_page' => 50,
 );
-    const SEARCH_MAX_FILES = 100;
-    const SEARCH_MAX_RESULTS = 200;
-    const CACHE_GROUP = 'log-files';
-    const SEARCH_CACHE_KEY = 'logs_previous_search';
-    /**
-     * Get the file size limit that determines when to rotate a file.
-     *
-     * @return int
-     */
-    private function get_file_size_limit(): int
-{
-}
+    public const SEARCH_MAX_FILES = 100;
+    public const SEARCH_MAX_RESULTS = 200;
+    private const CACHE_GROUP = 'log-files';
+    private const SEARCH_CACHE_KEY = 'logs_previous_search';
     /**
      * Write a log entry to the appropriate file, after rotating the file if necessary.
      *
@@ -44,27 +36,6 @@ class FileController
      * @return bool True if the contents were successfully written to the file.
      */
     public function write_to_file(string $source, string $text, int|null $time = null): bool
-{
-}
-    /**
-     * Generate the full name of a file based on source and date values.
-     *
-     * @param string $source The source property of a log entry, which determines the filename.
-     * @param int    $time   The time of the log entry as a Unix timestamp.
-     *
-     * @return string
-     */
-    private function generate_filename(string $source, int $time): string
-{
-}
-    /**
-     * Get all the rotations of a file and increment them, so that they overwrite the previous file with that rotation.
-     *
-     * @param string $file_id A file ID (file basename without the hash).
-     *
-     * @return bool True if the file and all its rotations were successfully rotated.
-     */
-    private function rotate_file($file_id): bool
 {
 }
     /**
@@ -118,16 +89,6 @@ class FileController
      *                         key for the iteration of the file that hasn't been rotated (if it exists).
      */
     public function get_file_rotations(string $file_id)
-{
-}
-    /**
-     * Helper method to get an array of File instances.
-     *
-     * @param array $paths An array of absolute file paths.
-     *
-     * @return File[]
-     */
-    private function convert_paths_to_objects(array $paths): array
 {
 }
     /**

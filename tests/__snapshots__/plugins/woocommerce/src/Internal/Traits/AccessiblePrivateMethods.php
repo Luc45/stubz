@@ -42,18 +42,6 @@ namespace Automattic\WooCommerce\Internal\Traits;
 trait AccessiblePrivateMethods
 {
     /**
-     * List of instance methods marked as externally accessible.
-     *
-     * @var array
-     */
-    private $_accessible_private_methods = array();
-    /**
-     * List of static methods marked as externally accessible.
-     *
-     * @var array
-     */
-    private static $_accessible_static_private_methods = array();
-    /**
      * Register a WordPress action.
      * If the callback refers to a private or protected instance method in this class, the method is marked as externally accessible.
      *

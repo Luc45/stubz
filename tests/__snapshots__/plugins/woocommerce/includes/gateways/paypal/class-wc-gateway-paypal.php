@@ -4,7 +4,7 @@
  */
 class WC_Gateway_Paypal extends \WC_Payment_Gateway
 {
-    const ID = 'paypal';
+    public const ID = 'paypal';
     /**
      * Whether or not logging is enabled
      *

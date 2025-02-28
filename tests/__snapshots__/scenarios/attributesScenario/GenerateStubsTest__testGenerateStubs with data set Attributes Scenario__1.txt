@@ -8,7 +8,6 @@ namespace AttributesScenario;
 #[Attribute(5)]
 class MyCustomAttribute
 {
-    private string $description;
     public function __construct(string $description)
 {
 }

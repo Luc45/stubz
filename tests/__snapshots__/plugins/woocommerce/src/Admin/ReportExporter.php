@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Admin;
  */
 class ReportExporter
 {
-    const EXPORT_STATUS_OPTION = 'woocommerce_admin_report_export_status';
-    const DOWNLOAD_EXPORT_ACTION = 'woocommerce_admin_download_report_csv';
+    public const EXPORT_STATUS_OPTION = 'woocommerce_admin_report_export_status';
+    public const DOWNLOAD_EXPORT_ACTION = 'woocommerce_admin_download_report_csv';
     /**
      * Slug to identify the scheduler.
      *

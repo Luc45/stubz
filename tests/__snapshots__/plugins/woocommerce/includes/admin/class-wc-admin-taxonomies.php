@@ -11,12 +11,6 @@ class WC_Admin_Taxonomies
      */
     protected static $instance = false;
     /**
-     * Default category ID.
-     *
-     * @var int
-     */
-    private $default_cat_id = 0;
-    /**
      * Get class instance
      */
     public static function get_instance()

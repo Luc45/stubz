@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class Patterns extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
-    const IDENTIFIER = 'patterns';
-    const SCHEMA_TYPE = 'patterns';
+    public const IDENTIFIER = 'patterns';
+    public const SCHEMA_TYPE = 'patterns';
     /**
      * Get the path of this REST route.
      *

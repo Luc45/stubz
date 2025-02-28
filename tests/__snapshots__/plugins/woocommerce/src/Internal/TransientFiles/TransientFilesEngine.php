@@ -27,14 +27,8 @@ namespace Automattic\WooCommerce\Internal\TransientFiles;
  */
 class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
-    const CLEANUP_ACTION_NAME = 'woocommerce_expired_transient_files_cleanup';
-    const CLEANUP_ACTION_GROUP = 'wc_batch_processes';
-    /**
-     * The instance of LegacyProxy to use.
-     *
-     * @var LegacyProxy
-     */
-    private $legacy_proxy = null;
+    private const CLEANUP_ACTION_NAME = 'woocommerce_expired_transient_files_cleanup';
+    private const CLEANUP_ACTION_GROUP = 'wc_batch_processes';
     /**
      * Register hooks.
      */
@@ -195,14 +189,6 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
 {
 }
     /**
-     * Delete a directory if it isn't empty.
-     *
-     * @param string $directory Full directory path.
-     */
-    private function delete_directory_if_not_empty(string $directory)
-{
-}
-    /**
      * Handle the "init" action, add rewrite rules for the "wc/file" endpoint.
      *
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
@@ -233,14 +219,6 @@ class TransientFilesEngine implements \Automattic\WooCommerce\Internal\RegisterH
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function handle_parse_request()
-{
-}
-    /**
-     * Core method to serve the contents of a transient file.
-     *
-     * @param string $file_name Transient file id or filename.
-     */
-    private function serve_file_contents(string $file_name)
 {
 }
 }

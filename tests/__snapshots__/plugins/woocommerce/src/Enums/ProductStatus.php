@@ -7,11 +7,11 @@ namespace Automattic\WooCommerce\Enums;
  */
 final class ProductStatus
 {
-    const AUTO_DRAFT = 'auto-draft';
-    const DRAFT = 'draft';
-    const PENDING = 'pending';
-    const PRIVATE = 'private';
-    const PUBLISH = 'publish';
-    const TRASH = 'trash';
-    const FUTURE = 'future';
+    public const AUTO_DRAFT = 'auto-draft';
+    public const DRAFT = 'draft';
+    public const PENDING = 'pending';
+    public const PRIVATE = 'private';
+    public const PUBLISH = 'publish';
+    public const TRASH = 'trash';
+    public const FUTURE = 'future';
 }

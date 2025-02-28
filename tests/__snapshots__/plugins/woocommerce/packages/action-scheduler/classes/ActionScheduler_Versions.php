@@ -5,18 +5,6 @@
 class ActionScheduler_Versions
 {
     /**
-     * ActionScheduler_Versions instance.
-     *
-     * @var ActionScheduler_Versions
-     */
-    private static $instance = null;
-    /**
-     * Versions.
-     *
-     * @var array<string, callable>
-     */
-    private $versions = array();
-    /**
      * Register version's callback.
      *
      * @param string   $version_string          Action Scheduler version.

@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
  */
 class RemoteFreeExtensionsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
-    const ID = 'remote_free_extensions';
-    const DATA_SOURCES = array();
+    public const ID = 'remote_free_extensions';
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *

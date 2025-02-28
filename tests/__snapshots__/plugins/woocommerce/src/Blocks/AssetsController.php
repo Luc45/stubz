@@ -11,12 +11,6 @@ namespace Automattic\WooCommerce\Blocks;
 final class AssetsController
 {
     /**
-     * Asset API interface for various asset registration.
-     *
-     * @var AssetApi
-     */
-    private $api = null;
-    /**
      * Constructor.
      *
      * @param AssetApi $asset_api  Asset API interface for various asset registration.
@@ -52,66 +46,6 @@ final class AssetsController
      * @return array URLs to print for resource hints.
      */
     public function add_resource_hints($urls, $relation_type)
-{
-}
-    /**
-     * Get resource hints during prefetch requests.
-     *
-     * @return array Array of URLs.
-     */
-    private function get_prefetch_resource_hints()
-{
-}
-    /**
-     * Get resource hints during prerender requests.
-     *
-     * @return array Array of URLs.
-     */
-    private function get_prerender_resource_hints()
-{
-}
-    /**
-     * Get the block asset resource hints in the cache or null if not found.
-     *
-     * @return array|null Array of resource hints.
-     */
-    private function get_block_asset_resource_hints_cache()
-{
-}
-    /**
-     * Set the block asset resource hints in the cache.
-     *
-     * @param string $filename File name.
-     * @param array  $data Array of resource hints.
-     */
-    private function set_block_asset_resource_hints_cache($filename, $data)
-{
-}
-    /**
-     * Get resource hint for a block by name.
-     *
-     * @param string $filename Block filename.
-     * @return array
-     */
-    private function get_block_asset_resource_hints($filename = '')
-{
-}
-    /**
-     * Get the src of all script dependencies (handles).
-     *
-     * @param array $dependencies Array of dependency handles.
-     * @return string[] Array of src strings.
-     */
-    private function get_script_dependency_src_array(array $dependencies)
-{
-}
-    /**
-     * Returns an absolute url to relative links for WordPress core scripts.
-     *
-     * @param string $src Original src that can be relative.
-     * @return string Correct full path string.
-     */
-    private function get_absolute_url($src)
 {
 }
     /**

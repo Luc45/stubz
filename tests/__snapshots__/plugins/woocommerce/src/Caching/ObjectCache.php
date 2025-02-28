@@ -17,13 +17,7 @@ namespace Automattic\WooCommerce\Caching;
  */
 abstract class ObjectCache
 {
-    const DEFAULT_EXPIRATION = -1;
-    /**
-     * This needs to be set in each derived class.
-     *
-     * @var string
-     */
-    private $object_type = null;
+    public const DEFAULT_EXPIRATION = -1;
     /**
      * Default value for the duration of the objects in the cache, in seconds
      * (may not be used depending on the cache engine used WordPress cache implementation).
@@ -31,18 +25,6 @@ abstract class ObjectCache
      * @var int
      */
     protected $default_expiration;
-    /**
-     * Temporarily used when retrieving data in 'get'.
-     *
-     * @var array
-     */
-    private $last_cached_data = null;
-    /**
-     * The cache engine to use.
-     *
-     * @var ?CacheEngine
-     */
-    private $cache_engine = null;
     /**
      * Gets an identifier for the types of objects cached by this class.
      * This identifier will be used to compose the keys passed to the cache engine.
@@ -68,14 +50,6 @@ abstract class ObjectCache
 {
 }
     /**
-     * Get the cache engine to use and cache it internally.
-     *
-     * @return CacheEngine
-     */
-    private function get_cache_engine(): Automattic\WooCommerce\Caching\CacheEngine
-{
-}
-    /**
      * Add an object to the cache, or update an already cached object.
      *
      * @param object|array    $object The object to be cached.
@@ -97,29 +71,6 @@ abstract class ObjectCache
      * @throws CacheException Invalid parameter, or null id was passed and get_object_id returns null too.
      */
     public function update_if_cached($object, $id = null, int $expiration = -1): bool
-{
-}
-    /**
-     * Get the id from an object if the id itself is null.
-     *
-     * @param object|array    $object The object to get the id from.
-     * @param int|string|null $id An object id or null.
-     *
-     * @return int|string|null Passed $id if it wasn't null, otherwise id obtained from $object using get_object_id.
-     *
-     * @throws CacheException Passed $id is null and get_object_id returned null too.
-     */
-    private function get_id_from_object_if_null($object, $id)
-{
-}
-    /**
-     * Check if the given expiration time value is valid, throw an exception if not.
-     *
-     * @param int $expiration Expiration time to check.
-     * @return void
-     * @throws CacheException Expiration time is negative or higher than MAX_EXPIRATION.
-     */
-    private function verify_expiration_value(int $expiration): void
 {
 }
     /**

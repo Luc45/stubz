@@ -8,7 +8,7 @@
  */
 class ActionScheduler_LoggerSchema extends \ActionScheduler_Abstract_Schema
 {
-    const LOG_TABLE = 'actionscheduler_logs';
+    public const LOG_TABLE = 'actionscheduler_logs';
     /**
      * Schema version.
      *

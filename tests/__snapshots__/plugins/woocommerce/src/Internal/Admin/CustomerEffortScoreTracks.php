@@ -7,87 +7,22 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class CustomerEffortScoreTracks
 {
-    const CES_TRACKS_QUEUE_OPTION_NAME = 'woocommerce_ces_tracks_queue';
-    const CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME = 'woocommerce_clear_ces_tracks_queue_for_page';
-    const SHOWN_FOR_ACTIONS_OPTION_NAME = 'woocommerce_ces_shown_for_actions';
-    const PRODUCT_ADD_PUBLISH_ACTION_NAME = 'product_add_publish';
-    const PRODUCT_UPDATE_ACTION_NAME = 'product_update';
-    const SHOP_ORDER_UPDATE_ACTION_NAME = 'shop_order_update';
-    const SETTINGS_CHANGE_ACTION_NAME = 'settings_change';
-    const ADD_PRODUCT_CATEGORIES_ACTION_NAME = 'add_product_categories';
-    const ADD_PRODUCT_TAGS_ACTION_NAME = 'add_product_tags';
-    const ADD_PRODUCT_ATTRIBUTES_ACTION_NAME = 'add_product_attributes';
-    const IMPORT_PRODUCTS_ACTION_NAME = 'import_products';
-    const SEARCH_ACTION_NAME = 'ces_search';
-    /**
-     * Label for the snackbar that appears when a user submits the survey.
-     *
-     * @var string
-     */
-    private $onsubmit_label = null;
+    public const CES_TRACKS_QUEUE_OPTION_NAME = 'woocommerce_ces_tracks_queue';
+    public const CLEAR_CES_TRACKS_QUEUE_FOR_PAGE_OPTION_NAME = 'woocommerce_clear_ces_tracks_queue_for_page';
+    public const SHOWN_FOR_ACTIONS_OPTION_NAME = 'woocommerce_ces_shown_for_actions';
+    public const PRODUCT_ADD_PUBLISH_ACTION_NAME = 'product_add_publish';
+    public const PRODUCT_UPDATE_ACTION_NAME = 'product_update';
+    public const SHOP_ORDER_UPDATE_ACTION_NAME = 'shop_order_update';
+    public const SETTINGS_CHANGE_ACTION_NAME = 'settings_change';
+    public const ADD_PRODUCT_CATEGORIES_ACTION_NAME = 'add_product_categories';
+    public const ADD_PRODUCT_TAGS_ACTION_NAME = 'add_product_tags';
+    public const ADD_PRODUCT_ATTRIBUTES_ACTION_NAME = 'add_product_attributes';
+    public const IMPORT_PRODUCTS_ACTION_NAME = 'import_products';
+    public const SEARCH_ACTION_NAME = 'ces_search';
     /**
      * Constructor. Sets up filters to hook into WooCommerce.
      */
     public function __construct()
-{
-}
-    /**
-     * Add actions that require woocommerce_allow_tracking.
-     */
-    private function enable_survey_enqueing_if_tracking_is_enabled()
-{
-}
-    /**
-     * Returns a generated script for tracking tags added on edit-tags.php page.
-     * CES survey is triggered via direct access to wc/customer-effort-score store
-     * via wp.data.dispatch method.
-     *
-     * Due to lack of options to directly hook ourselves into the ajax post request
-     * initiated by edit-tags.php page, we infer a successful request by observing
-     * an increase of the number of rows in tags table
-     *
-     * @param string $action Action name for the survey.
-     * @param string $title Title for the snackbar.
-     * @param string $first_question The text for the first question.
-     * @param string $second_question The text for the second question.
-     *
-     * @return string Generated JavaScript to append to page.
-     */
-    private function get_script_track_edit_php($action, $title, $first_question, $second_question)
-{
-}
-    /**
-     * Get the current published product count.
-     *
-     * @return integer The current published product count.
-     */
-    private function get_product_count()
-{
-}
-    /**
-     * Get the current shop order count.
-     *
-     * @return integer The current shop order count.
-     */
-    private function get_shop_order_count()
-{
-}
-    /**
-     * Return whether the action has already been shown.
-     *
-     * @param string $action The action to check.
-     *
-     * @return bool Whether the action has already been shown.
-     */
-    private function has_been_shown($action)
-{
-}
-    /**
-     * Enqueue the item to the CES tracks queue.
-     *
-     * @param array $item The item to enqueue.
-     */
-    private function enqueue_to_ces_tracks($item)
 {
 }
     /**
@@ -109,33 +44,6 @@ class CustomerEffortScoreTracks
      * @param Post   $post The post.
      */
     public function run_on_transition_post_status($new_status, $old_status, $post)
-{
-}
-    /**
-     * Maybe enqueue the CES survey, if product is being added or edited.
-     *
-     * @param string $new_status The new status.
-     * @param string $old_status The old status.
-     */
-    private function maybe_enqueue_ces_survey_for_product($new_status, $old_status)
-{
-}
-    /**
-     * Enqueue the CES survey trigger for a new product.
-     */
-    private function enqueue_ces_survey_for_new_product()
-{
-}
-    /**
-     * Enqueue the CES survey trigger for an existing product.
-     */
-    private function enqueue_ces_survey_for_edited_product()
-{
-}
-    /**
-     * Enqueue the CES survey trigger for an existing shop order.
-     */
-    private function enqueue_ces_survey_for_edited_shop_order()
 {
 }
     /**

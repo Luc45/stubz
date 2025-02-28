@@ -17,16 +17,6 @@ class SpecRunner
 {
 }
     /**
-     * Get the URL for an action.
-     *
-     * @param object $action The action.
-     *
-     * @return string The URL for the action.
-     */
-    private static function get_url($action)
-{
-}
-    /**
      * Get the locale for the WordPress locale, or fall back to the en_US
      * locale.
      *

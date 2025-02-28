@@ -41,14 +41,4 @@ class EvaluateSuggestion
     public static function reset_memo()
 {
 }
-    /**
-     * Returns a memoization key for the given specs.
-     *
-     * @param array $specs The specs to generate a key for.
-     *
-     * @return string The memoization key.
-     */
-    private static function get_memo_key($specs)
-{
-}
 }

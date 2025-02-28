@@ -23,15 +23,6 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
      */
     protected $store = null;
     /**
-     * The created time.
-     *
-     * Represents when the queue runner was constructed and used when calculating how long a PHP request has been running.
-     * For this reason it should be as close as possible to the PHP request start time.
-     *
-     * @var int
-     */
-    private $created_time = null;
-    /**
      * ActionScheduler_Abstract_QueueRunner constructor.
      *
      * @param ActionScheduler_Store|null             $store Store object.
@@ -53,36 +44,12 @@ abstract class ActionScheduler_Abstract_QueueRunner extends \ActionScheduler_Abs
 {
 }
     /**
-     * Marks actions as either having failed execution or failed validation, as appropriate.
-     *
-     * @param int       $action_id    Action ID.
-     * @param Exception $e            Exception instance.
-     * @param string    $context      Execution context.
-     * @param bool      $valid_action If the action is valid.
-     *
-     * @return void
-     */
-    private function handle_action_error($action_id, $e, $context, $valid_action)
-{
-}
-    /**
      * Schedule the next instance of the action if necessary.
      *
      * @param ActionScheduler_Action $action Action.
      * @param int                    $action_id Action ID.
      */
     protected function schedule_next_instance(ActionScheduler_Action $action, $action_id)
-{
-}
-    /**
-     * Determine if the specified recurring action has been consistently failing.
-     *
-     * @param ActionScheduler_Action $action    The recurring action to be rescheduled.
-     * @param int                    $action_id The ID of the recurring action.
-     *
-     * @return bool
-     */
-    private function recurring_action_is_consistently_failing(ActionScheduler_Action $action, $action_id)
 {
 }
     /**

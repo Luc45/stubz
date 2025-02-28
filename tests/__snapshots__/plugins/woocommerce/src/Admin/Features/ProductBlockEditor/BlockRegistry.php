@@ -7,9 +7,9 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  */
 class BlockRegistry
 {
-    const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
-    const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
-    const GENERIC_BLOCKS = array (
+    public const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
+    public const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
+    public const GENERIC_BLOCKS = array (
   0 => 'woocommerce/conditional',
   1 => 'woocommerce/product-checkbox-field',
   2 => 'woocommerce/product-collapsible',
@@ -30,7 +30,7 @@ class BlockRegistry
   17 => 'woocommerce/product-select-field',
   18 => 'woocommerce/product-notice-field',
 );
-    const PRODUCT_FIELDS_BLOCKS = array (
+    public const PRODUCT_FIELDS_BLOCKS = array (
   0 => 'woocommerce/product-catalog-visibility-field',
   1 => 'woocommerce/product-custom-fields',
   2 => 'woocommerce/product-custom-fields-toggle-field',
@@ -55,12 +55,6 @@ class BlockRegistry
   21 => 'woocommerce/product-single-variation-notice',
 );
     /**
-     * Singleton instance.
-     *
-     * @var BlockRegistry
-     */
-    private static $instance = null;
-    /**
      * Get the singleton instance.
      */
     public static function get_instance(): Automattic\WooCommerce\Admin\Features\ProductBlockEditor\BlockRegistry
@@ -73,64 +67,12 @@ class BlockRegistry
 {
 }
     /**
-     * Get a file path for a given block file.
-     *
-     * @param string $path File path.
-     * @param string $dir File directory.
-     */
-    private function get_file_path($path, $dir)
-{
-}
-    /**
-     * Register all the product blocks.
-     */
-    private function register_product_blocks()
-{
-}
-    /**
      * Register product related block categories.
      *
      * @param array[]                 $block_categories Array of categories for block types.
      * @param WP_Block_Editor_Context $editor_context   The current block editor context.
      */
     public function register_categories($block_categories, $editor_context)
-{
-}
-    /**
-     * Get the block name without the "woocommerce/" prefix.
-     *
-     * @param string $block_name Block name.
-     *
-     * @return string
-     */
-    private function remove_block_prefix($block_name)
-{
-}
-    /**
-     * Augment the attributes of a block by adding attributes that are used by the product editor.
-     *
-     * @param array $attributes Block attributes.
-     */
-    private function augment_attributes($attributes)
-{
-}
-    /**
-     * Augment the uses_context of a block by adding attributes that are used by the product editor.
-     *
-     * @param array $uses_context Block uses_context.
-     */
-    private function augment_uses_context($uses_context)
-{
-}
-    /**
-     * Register a single block.
-     *
-     * @param string $block_name Block name.
-     * @param string $block_dir Block directory.
-     *
-     * @return WP_Block_Type|false The registered block type on success, or false on failure.
-     */
-    private function register_block($block_name, $block_dir)
 {
 }
     /**

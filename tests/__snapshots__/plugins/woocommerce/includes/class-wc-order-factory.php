@@ -45,14 +45,6 @@ class WC_Order_Factory
 {
 }
     /**
-     * Try to determine the current order ID based on available global state.
-     *
-     * @return false|int
-     */
-    private static function get_global_order_id()
-{
-}
-    /**
      * Gets the class name bunch of order instances should have based on their IDs.
      *
      * @param array $order_ids Order IDs to get the class name for.
@@ -60,16 +52,6 @@ class WC_Order_Factory
      * @return array Array of order_id => class_name.
      */
     public static function get_class_names_for_order_ids($order_ids)
-{
-}
-    /**
-     * Gets the class name an order instance should have based on its ID.
-     *
-     * @since 6.9.0
-     * @param int $order_id The order ID.
-     * @return string The class name or FALSE if the class does not exist.
-     */
-    private static function get_class_name_for_order_id($order_id)
 {
 }
 }

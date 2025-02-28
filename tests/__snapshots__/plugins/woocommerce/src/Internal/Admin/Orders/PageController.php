@@ -8,67 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Orders;
 class PageController
 {
     /**
-     * The order type.
-     *
-     * @var string
-     */
-    private $order_type = '';
-    /**
-     * Instance of the posts redirection controller.
-     *
-     * @var PostsRedirectionController
-     */
-    private $redirection_controller = null;
-    /**
-     * Instance of the orders list table.
-     *
-     * @var ListTable
-     */
-    private $orders_table = null;
-    /**
-     * Instance of orders edit form.
-     *
-     * @var Edit
-     */
-    private $order_edit_form = null;
-    /**
-     * Current action.
-     *
-     * @var string
-     */
-    private $current_action = '';
-    /**
-     * Order object to be used in edit/new form.
-     *
-     * @var \WC_Order
-     */
-    private $order = null;
-    /**
-     * Verify that user has permission to edit orders.
-     *
-     * @return void
-     */
-    private function verify_edit_permission()
-{
-}
-    /**
-     * Verify that user has permission to create order.
-     *
-     * @return void
-     */
-    private function verify_create_permission()
-{
-}
-    /**
-     * Claims the lock for the order being edited/created (unless it belongs to someone else).
-     * Also handles the 'claim-lock' action which allows taking over the order forcefully.
-     *
-     * @return void
-     */
-    private function handle_edit_lock()
-{
-}
-    /**
      * Sets up the page controller, including registering the menu item.
      *
      * @return void
@@ -97,22 +36,6 @@ class PageController
 {
 }
     /**
-     * Determines the order type for the current screen.
-     *
-     * @return void
-     */
-    private function set_order_type()
-{
-}
-    /**
-     * Sets the current action based on querystring arguments. Defaults to 'list_orders'.
-     *
-     * @return void
-     */
-    private function set_action(): void
-{
-}
-    /**
      * Registers the "Orders" menu.
      *
      * @return void
@@ -126,47 +49,6 @@ class PageController
      * @return void
      */
     public function output(): void
-{
-}
-    /**
-     * Handles initialization of the orders list table.
-     *
-     * @return void
-     */
-    private function setup_action_list_orders(): void
-{
-}
-    /**
-     * Perform a redirect to remove the `_wp_http_referer` and `_wpnonce` strings if present in the URL (see also
-     * wp-admin/edit.php where a similar process takes place), otherwise the size of this field builds to an
-     * unmanageable length over time.
-     */
-    private function strip_http_referer(): void
-{
-}
-    /**
-     * Prepares the order edit form for creating or editing an order.
-     *
-     * @see \Automattic\WooCommerce\Internal\Admin\Orders\Edit.
-     * @since 8.1.0
-     */
-    private function prepare_order_edit_form(): void
-{
-}
-    /**
-     * Handles initialization of the orders edit form.
-     *
-     * @return void
-     */
-    private function setup_action_edit_order(): void
-{
-}
-    /**
-     * Handles initialization of the orders edit form with a new order.
-     *
-     * @return void
-     */
-    private function setup_action_new_order(): void
 {
 }
     /**

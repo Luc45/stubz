@@ -57,21 +57,6 @@ class Products extends \WC_REST_Products_Controller
 {
 }
     /**
-     * Check whether the request is for products low in stock.
-     *
-     * It matches requests with parameters:
-     *
-     * low_in_stock = true
-     * page = 1
-     * fields[0] = id
-     *
-     * @param string $request WP REST API request.
-     * @return boolean Whether the request matches.
-     */
-    private function is_low_in_stock_request($request)
-{
-}
-    /**
      * Hang onto last order date since it will get removed by wc_get_product().
      *
      * @param stdClass $object_data Single row from query results.

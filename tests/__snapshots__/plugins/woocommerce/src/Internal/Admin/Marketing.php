@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Marketing
 {
-    const SUBMENU_NAME_KEY = 0;
-    const SUBMENU_LOCATION_KEY = 2;
+    public const SUBMENU_NAME_KEY = 0;
+    public const SUBMENU_LOCATION_KEY = 2;
     /**
      * Class instance.
      *

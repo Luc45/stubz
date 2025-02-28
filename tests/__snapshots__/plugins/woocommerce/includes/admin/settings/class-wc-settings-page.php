@@ -4,34 +4,34 @@
  */
 abstract class WC_Settings_Page
 {
-    const TYPE_TITLE = 'title';
-    const TYPE_INFO = 'info';
-    const TYPE_SECTIONEND = 'sectionend';
-    const TYPE_TEXT = 'text';
-    const TYPE_PASSWORD = 'password';
-    const TYPE_DATETIME = 'datetime';
-    const TYPE_DATETIME_LOCAL = 'datetime-local';
-    const TYPE_DATE = 'date';
-    const TYPE_MONTH = 'month';
-    const TYPE_TIME = 'time';
-    const TYPE_WEEK = 'week';
-    const TYPE_NUMBER = 'number';
-    const TYPE_EMAIL = 'email';
-    const TYPE_URL = 'url';
-    const TYPE_TEL = 'tel';
-    const TYPE_COLOR = 'color';
-    const TYPE_TEXTAREA = 'textarea';
-    const TYPE_SELECT = 'select';
-    const TYPE_MULTISELECT = 'multiselect';
-    const TYPE_RADIO = 'radio';
-    const TYPE_CHECKBOX = 'checkbox';
-    const TYPE_IMAGE_WIDTH = 'image_width';
-    const TYPE_SINGLE_SELECT_PAGE = 'single_select_page';
-    const TYPE_SINGLE_SELECT_PAGE_WITH_SEARCH = 'single_select_page_with_search';
-    const TYPE_SINGLE_SELECT_COUNTRY = 'single_select_country';
-    const TYPE_MULTI_SELECT_COUNTRIES = 'multi_select_countries';
-    const TYPE_RELATIVE_DATE_SELECTOR = 'relative_date_selector';
-    const TYPE_SLOTFILL_PLACEHOLDER = 'slotfill_placeholder';
+    public const TYPE_TITLE = 'title';
+    public const TYPE_INFO = 'info';
+    public const TYPE_SECTIONEND = 'sectionend';
+    public const TYPE_TEXT = 'text';
+    public const TYPE_PASSWORD = 'password';
+    public const TYPE_DATETIME = 'datetime';
+    public const TYPE_DATETIME_LOCAL = 'datetime-local';
+    public const TYPE_DATE = 'date';
+    public const TYPE_MONTH = 'month';
+    public const TYPE_TIME = 'time';
+    public const TYPE_WEEK = 'week';
+    public const TYPE_NUMBER = 'number';
+    public const TYPE_EMAIL = 'email';
+    public const TYPE_URL = 'url';
+    public const TYPE_TEL = 'tel';
+    public const TYPE_COLOR = 'color';
+    public const TYPE_TEXTAREA = 'textarea';
+    public const TYPE_SELECT = 'select';
+    public const TYPE_MULTISELECT = 'multiselect';
+    public const TYPE_RADIO = 'radio';
+    public const TYPE_CHECKBOX = 'checkbox';
+    public const TYPE_IMAGE_WIDTH = 'image_width';
+    public const TYPE_SINGLE_SELECT_PAGE = 'single_select_page';
+    public const TYPE_SINGLE_SELECT_PAGE_WITH_SEARCH = 'single_select_page_with_search';
+    public const TYPE_SINGLE_SELECT_COUNTRY = 'single_select_country';
+    public const TYPE_MULTI_SELECT_COUNTRIES = 'multi_select_countries';
+    public const TYPE_RELATIVE_DATE_SELECTOR = 'relative_date_selector';
+    public const TYPE_SLOTFILL_PLACEHOLDER = 'slotfill_placeholder';
     /**
      * Setting page id.
      *
@@ -91,12 +91,6 @@ abstract class WC_Settings_Page
      * @var bool
      */
     protected $is_modern = false;
-    /**
-     * Whether the output method has been called.
-     *
-     * @var bool
-     */
-    private $output_called = false;
     /**
      * Constructor.
      */

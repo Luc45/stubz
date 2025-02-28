@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class MobileApp
 {
-    const NOTE_NAME = 'wc-admin-mobile-app';
+    public const NOTE_NAME = 'wc-admin-mobile-app';
     /**
      * Get the note.
      *

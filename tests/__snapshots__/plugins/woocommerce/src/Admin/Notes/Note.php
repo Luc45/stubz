@@ -7,18 +7,18 @@ namespace Automattic\WooCommerce\Admin\Notes;
  */
 class Note extends \WC_Data
 {
-    const E_WC_ADMIN_NOTE_ERROR = 'error';
-    const E_WC_ADMIN_NOTE_WARNING = 'warning';
-    const E_WC_ADMIN_NOTE_UPDATE = 'update';
-    const E_WC_ADMIN_NOTE_INFORMATIONAL = 'info';
-    const E_WC_ADMIN_NOTE_MARKETING = 'marketing';
-    const E_WC_ADMIN_NOTE_SURVEY = 'survey';
-    const E_WC_ADMIN_NOTE_EMAIL = 'email';
-    const E_WC_ADMIN_NOTE_PENDING = 'pending';
-    const E_WC_ADMIN_NOTE_UNACTIONED = 'unactioned';
-    const E_WC_ADMIN_NOTE_ACTIONED = 'actioned';
-    const E_WC_ADMIN_NOTE_SNOOZED = 'snoozed';
-    const E_WC_ADMIN_NOTE_SENT = 'sent';
+    public const E_WC_ADMIN_NOTE_ERROR = 'error';
+    public const E_WC_ADMIN_NOTE_WARNING = 'warning';
+    public const E_WC_ADMIN_NOTE_UPDATE = 'update';
+    public const E_WC_ADMIN_NOTE_INFORMATIONAL = 'info';
+    public const E_WC_ADMIN_NOTE_MARKETING = 'marketing';
+    public const E_WC_ADMIN_NOTE_SURVEY = 'survey';
+    public const E_WC_ADMIN_NOTE_EMAIL = 'email';
+    public const E_WC_ADMIN_NOTE_PENDING = 'pending';
+    public const E_WC_ADMIN_NOTE_UNACTIONED = 'unactioned';
+    public const E_WC_ADMIN_NOTE_ACTIONED = 'actioned';
+    public const E_WC_ADMIN_NOTE_SNOOZED = 'snoozed';
+    public const E_WC_ADMIN_NOTE_SENT = 'sent';
     /**
      * This is the name of this object type.
      *

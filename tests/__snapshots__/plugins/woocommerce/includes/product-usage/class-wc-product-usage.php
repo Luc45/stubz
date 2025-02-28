@@ -29,14 +29,4 @@ class WC_Product_Usage
     public static function get_rules_for_product(int $product_id): WC_Product_Usage_Rule_Set|null
 {
 }
-    /**
-     * Get the product usage rule for a product.
-     *
-     * @param int $product_id product id to get feature restriction rules.
-     * @return array|null
-     * @since 9.3.0
-     */
-    private static function get_product_usage_restriction_rule(int $product_id): array|null
-{
-}
 }

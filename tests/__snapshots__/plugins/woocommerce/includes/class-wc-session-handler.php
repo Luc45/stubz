@@ -57,14 +57,6 @@ class WC_Session_Handler extends \WC_Session
 {
 }
     /**
-     * Checks if session cookie is expired, or belongs to a logged out user.
-     *
-     * @return bool Whether session cookie is valid.
-     */
-    private function is_session_cookie_valid()
-{
-}
-    /**
      * Hooks into the wp action to maybe set the session cookie if the user is on a certain page e.g. a checkout endpoint.
      *
      * Certain gateways may rely on sessions and this ensures a session is present even if the customer does not have a
@@ -119,16 +111,6 @@ class WC_Session_Handler extends \WC_Session
 {
 }
     /**
-     * Checks if this is an auto-generated customer ID.
-     *
-     * @param string|int $customer_id Customer ID to check.
-     *
-     * @return bool Whether customer ID is randomly generated.
-     */
-    private function is_customer_guest($customer_id)
-{
-}
-    /**
      * Get session unique ID for requests if session is initialized or user ID if logged in.
      * Introduced to help with unit tests.
      *
@@ -154,14 +136,6 @@ class WC_Session_Handler extends \WC_Session
      * @return array
      */
     public function get_session_data()
-{
-}
-    /**
-     * Gets a cache prefix. This is used in session names so the entire cache can be invalidated with 1 function call.
-     *
-     * @return string
-     */
-    private function get_cache_prefix()
 {
 }
     /**

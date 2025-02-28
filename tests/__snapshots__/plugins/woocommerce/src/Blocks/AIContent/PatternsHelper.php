@@ -57,15 +57,4 @@ class PatternsHelper
     public static function get_patterns_dictionary($pattern_slug = null)
 {
 }
-    /**
-     * Searches for a pattern by slug in a given dictionary.
-     *
-     * @param array  $patterns_dictionary The patterns' dictionary.
-     * @param string $slug The slug to search for.
-     *
-     * @return array|null Returns the pattern if found, otherwise null.
-     */
-    private static function find_pattern_by_slug($patterns_dictionary, $slug)
-{
-}
 }

@@ -7,12 +7,12 @@ namespace Automattic\WooCommerce\Admin\BlockTemplates;
  */
 interface BlockInterface
 {
-    const NAME_KEY = 'blockName';
-    const ID_KEY = 'id';
-    const ORDER_KEY = 'order';
-    const ATTRIBUTES_KEY = 'attributes';
-    const HIDE_CONDITIONS_KEY = 'hideConditions';
-    const DISABLE_CONDITIONS_KEY = 'disableConditions';
+    public const NAME_KEY = 'blockName';
+    public const ID_KEY = 'id';
+    public const ORDER_KEY = 'order';
+    public const ATTRIBUTES_KEY = 'attributes';
+    public const HIDE_CONDITIONS_KEY = 'hideConditions';
+    public const DISABLE_CONDITIONS_KEY = 'disableConditions';
     /**
      * Get the block name.
      */

@@ -9,8 +9,8 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
  */
 class RemoteInboxNotificationsEngine extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
-    const STORED_STATE_OPTION_NAME = 'wc_remote_inbox_notifications_stored_state';
-    const WCA_UPDATED_OPTION_NAME = 'wc_remote_inbox_notifications_wca_updated';
+    public const STORED_STATE_OPTION_NAME = 'wc_remote_inbox_notifications_stored_state';
+    public const WCA_UPDATED_OPTION_NAME = 'wc_remote_inbox_notifications_wca_updated';
     /**
      * Initialize the engine.
      * phpcs:disable WooCommerce.Functions.InternalInjectionMethod.MissingFinal

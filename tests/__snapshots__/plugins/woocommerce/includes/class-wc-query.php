@@ -11,24 +11,6 @@ class WC_Query
      */
     public $query_vars = array();
     /**
-     * Reference to the main product query on the page.
-     *
-     * @var WP_Query
-     */
-    private static $product_query = null;
-    /**
-     * Stores chosen attributes.
-     *
-     * @var array
-     */
-    private static $chosen_attributes = null;
-    /**
-     * The instance of the class that helps filtering with the product attributes lookup table.
-     *
-     * @var Filterer
-     */
-    private $filterer = null;
-    /**
      * Constructor for the query class. Hooks in methods.
      */
     public function __construct()
@@ -109,43 +91,6 @@ class WC_Query
      * Parse the request and look for query vars - endpoints may not be supported.
      */
     public function parse_request()
-{
-}
-    /**
-     * Are we currently on the front page?
-     *
-     * @param WP_Query $q Query instance.
-     * @return bool
-     */
-    private function is_showing_page_on_front($q)
-{
-}
-    /**
-     * Is the front page a page we define?
-     *
-     * @param int $page_id Page ID.
-     * @return bool
-     */
-    private function page_on_front_is($page_id)
-{
-}
-    /**
-     * Returns a copy of `$query` with all query vars that are allowed on the front page stripped.
-     * Used when the shop page is also the front page.
-     *
-     * @param array $query The unfiltered array.
-     * @return array The filtered query vars.
-     */
-    private function filter_out_valid_front_page_query_vars($query)
-{
-}
-    /**
-     * Checks whether a query var is allowed on the front page or not.
-     *
-     * @param string $query_var Query var name.
-     * @return boolean TRUE when query var is allowed on the front page. FALSE otherwise.
-     */
-    private function is_query_var_valid_on_front_page($query_var)
 {
 }
     /**
@@ -321,15 +266,6 @@ class WC_Query
      * @return array
      */
     public function order_by_rating_post_clauses($args)
-{
-}
-    /**
-     * Join wc_product_meta_lookup to posts if not already joined.
-     *
-     * @param string $sql SQL join.
-     * @return string
-     */
-    private function append_product_sorting_table_join($sql)
 {
 }
     /**

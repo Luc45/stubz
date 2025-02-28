@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class AddFirstProduct
 {
-    const NOTE_NAME = 'wc-admin-add-first-product-note';
+    public const NOTE_NAME = 'wc-admin-add-first-product-note';
     /**
      * Get the note.
      *

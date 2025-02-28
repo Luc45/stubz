@@ -664,41 +664,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
 {
 }
     /**
-     * Hold coupon if a global usage limit is defined.
-     *
-     * @param WC_Coupon $coupon Coupon object.
-     *
-     * @return string    Meta key which indicates held coupon.
-     * @throws Exception When can't be held.
-     */
-    private function hold_coupon($coupon)
-{
-}
-    /**
-     * Hold coupon if usage limit per customer is defined.
-     *
-     * @param WC_Coupon $coupon              Coupon object.
-     * @param array     $user_ids_and_emails Array of user Id and emails to check for usage limit.
-     * @param string    $user_alias          User ID or email to use to record current usage.
-     *
-     * @return string    Meta key which indicates held coupon.
-     * @throws Exception When coupon can't be held.
-     */
-    private function hold_coupon_for_users($coupon, $user_ids_and_emails, $user_alias)
-{
-}
-    /**
-     * Helper method to get all aliases for current user and provide billing email.
-     *
-     * @param string $billing_email Billing email provided in form.
-     *
-     * @return array     Array of all aliases.
-     * @throws Exception When validation fails.
-     */
-    private function get_billing_and_current_user_aliases($billing_email)
-{
-}
-    /**
      * Apply a coupon to the order and recalculate totals.
      *
      * @since 3.2.0
@@ -735,18 +700,6 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @since 3.2.0
      */
     public function recalculate_coupons()
-{
-}
-    /**
-     * Get a coupon object populated from order line item metadata, to be used when reapplying coupons
-     * if the original coupon no longer exists.
-     *
-     * @since 8.7.0
-     *
-     * @param WC_Order_Item_Coupon $coupon_item The order item corresponding to the coupon to reapply.
-     * @returns WC_Coupon Coupon object populated from order line item metadata, or empty if no such metadata exists (should never happen).
-     */
-    private function get_temporary_coupon(WC_Order_Item_Coupon $coupon_item): WC_Coupon
 {
 }
     /**

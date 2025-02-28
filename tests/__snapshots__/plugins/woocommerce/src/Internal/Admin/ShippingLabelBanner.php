@@ -7,14 +7,8 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class ShippingLabelBanner
 {
-    const MIN_COMPATIBLE_WCST_VERSION = '2.7.0';
-    const MIN_COMPATIBLE_WCSHIPPING_VERSION = '1.1.0';
-    /**
-     * Singleton for the display rules class
-     *
-     * @var ShippingLabelBannerDisplayRules
-     */
-    private $shipping_label_banner_display_rules = null;
+    private const MIN_COMPATIBLE_WCST_VERSION = '2.7.0';
+    private const MIN_COMPATIBLE_WCSHIPPING_VERSION = '1.1.0';
     /**
      * Constructor
      */
@@ -22,26 +16,9 @@ class ShippingLabelBanner
 {
 }
     /**
-     * Check if WooCommerce Shipping makes sense for this merchant.
-     *
-     * @return bool
-     */
-    private function should_show_meta_box()
-{
-}
-    /**
      * Add metabox to order page.
      */
     public function add_meta_boxes()
-{
-}
-    /**
-     * Count shippable items
-     *
-     * @param \WC_Order $order Current order.
-     * @return int
-     */
-    private function count_shippable_items(WC_Order $order)
 {
 }
     /**

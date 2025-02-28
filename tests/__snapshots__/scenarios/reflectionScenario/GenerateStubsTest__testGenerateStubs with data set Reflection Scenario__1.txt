@@ -13,9 +13,6 @@ class DemoClass
     protected function hiddenMethod(): string
 {
 }
-    private function secretMethod(): string
-{
-}
 }
 /**
  * A class that inspects DemoClass via reflection.

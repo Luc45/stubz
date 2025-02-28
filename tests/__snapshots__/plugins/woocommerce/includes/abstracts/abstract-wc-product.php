@@ -1043,17 +1043,6 @@ class WC_Product extends \WC_Abstract_Legacy_Product
 {
 }
     /**
-     * Takes an array of downloadable file representations and converts it into an array of
-     * WC_Product_Download objects, indexed by download ID.
-     *
-     * @param array[]|WC_Product_Download[] $downloads Download data to be re-mapped.
-     *
-     * @return WC_Product_Download[]
-     */
-    private function build_downloads_map(array $downloads): array
-{
-}
-    /**
      * Set download limit.
      *
      * @since 3.0.0

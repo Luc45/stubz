@@ -36,45 +36,12 @@ class ActionScheduler_OptionLock extends \ActionScheduler_Lock
 {
 }
     /**
-     * Given the lock string, derives the lock expiration timestamp (or false if it cannot be determined).
-     *
-     * @param string $lock_value String containing a timestamp, or pipe-separated combination of unique value and timestamp.
-     *
-     * @return false|int
-     */
-    private function get_expiration_from($lock_value)
-{
-}
-    /**
      * Get the key to use for storing the lock in the transient
      *
      * @param string $lock_type A string to identify different lock types.
      * @return string
      */
     protected function get_key($lock_type)
-{
-}
-    /**
-     * Supplies the existing lock value, or an empty string if not set.
-     *
-     * @param string $lock_type A string to identify different lock types.
-     *
-     * @return string
-     */
-    private function get_existing_lock($lock_type)
-{
-}
-    /**
-     * Supplies a lock value consisting of a unique value and the current timestamp, which are separated by a pipe
-     * character.
-     *
-     * Example: (string) "649de012e6b262.09774912|1688068114"
-     *
-     * @param string $lock_type A string to identify different lock types.
-     *
-     * @return string
-     */
-    private function new_lock_value($lock_type)
 {
 }
 }

@@ -63,18 +63,6 @@ class OrderCouponDataMigrator implements \Automattic\WooCommerce\Internal\BatchP
 {
 }
     /**
-     * Convert one verbose 'coupon_data' entry into a simplified 'coupon_info' entry.
-     *
-     * The existing database row is updated in place, both the 'meta_key' and the 'meta_value' columns.
-     *
-     * @param int    $meta_id Value of 'meta_id' of the row being converted.
-     * @param string $meta_value Value of 'meta_value' of the row being converted.
-     * @throws Exception Database error.
-     */
-    private function convert_item(int $meta_id, string $meta_value)
-{
-}
-    /**
      * Default (preferred) batch size to pass to 'get_next_batch_to_process'.
      *
      * @return int Default batch size.

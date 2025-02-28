@@ -51,13 +51,4 @@ class HandlerRegistry
     public function unregister_collection_handlers($collection_name)
 {
 }
-    /**
-     * Get product IDs from an order.
-     *
-     * @param int $order_id The order ID.
-     * @return array<int> The product IDs.
-     */
-    private function get_product_ids_from_order($order_id)
-{
-}
 }

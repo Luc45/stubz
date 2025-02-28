@@ -8,7 +8,7 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
  */
 class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
-    const RECOMMENDED_PAYMENT_PLUGINS_DISMISS_OPTION = 'woocommerce_setting_payments_recommendations_hidden';
+    public const RECOMMENDED_PAYMENT_PLUGINS_DISMISS_OPTION = 'woocommerce_setting_payments_recommendations_hidden';
     /**
      * Constructor.
      */

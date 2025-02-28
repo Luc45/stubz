@@ -17,15 +17,6 @@ class WC_Countries
      */
     public $address_formats = array();
     /**
-     * Cache of geographical regions.
-     *
-     * Only to be used by the get_* and load_* methods, as other methods may expect the regions to be
-     * loaded on demand.
-     *
-     * @var array
-     */
-    private $geo_cache = array();
-    /**
      * Auto-load in-accessible properties on demand.
      *
      * @param  mixed $key Key.
@@ -288,15 +279,6 @@ class WC_Countries
      * @return string
      */
     public function get_formatted_address($args = array(), $separator = '<br/>')
-{
-}
-    /**
-     * Trim white space and commas off a line.
-     *
-     * @param  string $line Line.
-     * @return string
-     */
-    private function trim_formatted_address_line($line)
 {
 }
     /**

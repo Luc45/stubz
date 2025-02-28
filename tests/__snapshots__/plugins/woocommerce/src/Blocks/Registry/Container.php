@@ -12,12 +12,6 @@ namespace Automattic\WooCommerce\Blocks\Registry;
 class Container
 {
     /**
-     * A map of Dependency Type objects used to resolve dependencies.
-     *
-     * @var AbstractDependencyType[]
-     */
-    private $registry = array();
-    /**
      * Public api for adding a factory to the container.
      *
      * Factory dependencies will have the instantiation callback invoked

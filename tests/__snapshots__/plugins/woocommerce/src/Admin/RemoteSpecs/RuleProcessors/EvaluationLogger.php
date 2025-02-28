@@ -10,30 +10,6 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 class EvaluationLogger
 {
     /**
-     * Slug of the spec.
-     *
-     * @var string
-     */
-    private $slug = null;
-    /**
-     * Results of rules in the given spec.
-     *
-     * @var array
-     */
-    private $results = array();
-    /**
-     * Logger class to use.
-     *
-     * @var \WC_Logger_Interface|null
-     */
-    private $logger = null;
-    /**
-     * Logger source.
-     *
-     * @var string Logger source.
-     */
-    private $source = '';
-    /**
      * EvaluationLogger constructor.
      *
      * @param string                    $slug   Slug/ID of a spec that is being evaluated.

@@ -58,15 +58,6 @@ class WC_REST_Setting_Options_V2_Controller extends \WC_REST_Controller
 {
 }
     /**
-     * Returns a list of countries and states for use in the base location setting.
-     *
-     * @since  3.0.7
-     * @return array Array of states and countries.
-     */
-    private function get_countries_and_states()
-{
-}
-    /**
      * Get setting data.
      *
      * @since  3.0.0

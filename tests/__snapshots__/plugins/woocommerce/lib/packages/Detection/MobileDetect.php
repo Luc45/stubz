@@ -194,10 +194,10 @@ namespace Automattic\WooCommerce\Vendor\Detection;
  */
 class MobileDetect
 {
-    const VER = '([\\w._\\+]+)';
-    const VERSION = '3.74.3';
-    const VERSION_TYPE_STRING = 'text';
-    const VERSION_TYPE_FLOAT = 'float';
+    public const VER = '([\\w._\\+]+)';
+    public const VERSION = '3.74.3';
+    public const VERSION_TYPE_STRING = 'text';
+    public const VERSION_TYPE_FLOAT = 'float';
     /**
      * A cache for resolved matches
      * @var array
@@ -686,13 +686,6 @@ class MobileDetect
      * @return array
      */
     public function getCfHeaders(): array
-{
-}
-    /**
-     * @param string $userAgent
-     * @return string
-     */
-    private function prepareUserAgent(string $userAgent): string
 {
 }
     /**

@@ -53,15 +53,6 @@ class Controller extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
 }
     /**
-     * Verifies if the inner block is compatible with Interactivity API.
-     *
-     * @param string $block_name Name of the block to verify.
-     * @return boolean
-     */
-    private function is_block_compatible($block_name)
-{
-}
-    /**
      * Check inner blocks of Product Collection block if there's one
      * incompatible with the Interactivity API and if so, disable client-side
      * navigation.

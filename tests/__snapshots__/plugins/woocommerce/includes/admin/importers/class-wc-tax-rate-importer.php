@@ -52,12 +52,6 @@ class WC_Tax_Rate_Importer extends \WP_Importer
 {
 }
     /**
-     * Import is starting.
-     */
-    private function import_start()
-{
-}
-    /**
      * UTF-8 encode the data if `$enc` value isn't UTF-8.
      *
      * @param mixed  $data Data.
@@ -114,14 +108,6 @@ class WC_Tax_Rate_Importer extends \WP_Importer
      * Output information about the uploading process.
      */
     public function greet()
-{
-}
-    /**
-     * Show import error and quit.
-     *
-     * @param  string $message Error message.
-     */
-    private function import_error($message = '')
 {
 }
     /**

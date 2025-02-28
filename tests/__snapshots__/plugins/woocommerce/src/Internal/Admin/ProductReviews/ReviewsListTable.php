@@ -8,30 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
 class ReviewsListTable extends \WP_List_Table
 {
     /**
-     * Memoization flag to determine if the current user can edit the current review.
-     *
-     * @var bool
-     */
-    private $current_user_can_edit_review = false;
-    /**
-     * Memoization flag to determine if the current user can moderate reviews.
-     *
-     * @var bool
-     */
-    private $current_user_can_moderate_reviews = null;
-    /**
-     * Current rating of reviews to display.
-     *
-     * @var int
-     */
-    private $current_reviews_rating = 0;
-    /**
-     * Current product the reviews should be displayed for.
-     *
-     * @var WC_Product|null Product or null for all products.
-     */
-    private $current_product_for_reviews = null;
-    /**
      * Constructor.
      *
      * @param array|string $args Array or string of arguments.
@@ -327,15 +303,6 @@ class ReviewsListTable extends \WP_List_Table
 {
 }
     /**
-     * Gets the in-reply-to-review text.
-     *
-     * @param WP_Comment|mixed $reply Reply to review.
-     * @return string
-     */
-    private function get_in_reply_to_review_text($reply): string
-{
-}
-    /**
      * Renders the author column.
      *
      * @see WP_Comments_List_Table::column_author() for consistency.
@@ -344,23 +311,6 @@ class ReviewsListTable extends \WP_List_Table
      * @return void
      */
     protected function column_author($item): void
-{
-}
-    /**
-     * Gets the item author URL.
-     *
-     * @return string
-     */
-    private function get_item_author_url(): string
-{
-}
-    /**
-     * Gets the item author URL for display.
-     *
-     * @param string $author_url The review or reply author URL (raw).
-     * @return string
-     */
-    private function get_item_author_url_for_display($author_url): string
 {
 }
     /**

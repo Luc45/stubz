@@ -9,12 +9,6 @@ namespace Automattic\WooCommerce\Internal\ComingSoon;
 class ComingSoonRequestHandler
 {
     /**
-     * Coming soon helper.
-     *
-     * @var ComingSoonHelper
-     */
-    private $coming_soon_helper = null;
-    /**
      * Sets up the hook.
      *
      * @internal
@@ -33,16 +27,6 @@ class ComingSoonRequestHandler
      * @return string The path to the 'coming soon' template or any empty string to prevent further template loading in FSE themes.
      */
     public function handle_template_include($template)
-{
-}
-    /**
-     * Determines whether the coming soon screen should be shown.
-     *
-     * @param \WP $wp Current WordPress environment instance.
-     *
-     * @return bool
-     */
-    private function should_show_coming_soon(WP &$wp)
 {
 }
     /**

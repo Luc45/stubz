@@ -73,25 +73,4 @@ class RelatedProducts extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
     public function render_block(string $content, array $block)
 {
 }
-    /**
-     * Determines whether the block is a related products block.
-     *
-     * @param array $parsed_block The parsed block.
-     * @param array $rendered_block The rendered block.
-     *
-     * @return bool Whether the block is a related products block.
-     */
-    private function is_related_products_block($parsed_block, $rendered_block = null)
-{
-}
-    /**
-     * Get related products ids.
-     * The logic is copied from the core function woocommerce_related_products. https://github.com/woocommerce/woocommerce/blob/ca49caabcba84ce9f60a03c6d3534ec14b350b80/plugins/woocommerce/includes/wc-template-functions.php/#L2039-L2074
-     *
-     * @param number $product_per_page Products per page.
-     * @return array Products ids.
-     */
-    private function get_related_products_ids($product_per_page = 5)
-{
-}
 }

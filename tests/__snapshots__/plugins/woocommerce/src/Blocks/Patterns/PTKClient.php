@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  */
 class PTKClient
 {
-    const PATTERNS_TOOLKIT_URL = 'https://public-api.wordpress.com/rest/v1/ptk/patterns/';
+    public const PATTERNS_TOOLKIT_URL = 'https://public-api.wordpress.com/rest/v1/ptk/patterns/';
     /**
      * Fetch the WooCommerce patterns from the Patterns Toolkit (PTK) API.
      *

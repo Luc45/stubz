@@ -47,14 +47,6 @@ class Notes extends \WC_REST_CRUD_Controller
 {
 }
     /**
-     * Checks if user is in tasklist experiment.
-     *
-     * @return bool Whether remote inbox notifications are enabled.
-     */
-    private function is_tasklist_experiment_assigned_treatment()
-{
-}
-    /**
      * Prepare objects query.
      *
      * @param  WP_REST_Request $request Full details about the request.
@@ -162,19 +154,6 @@ class Notes extends \WC_REST_CRUD_Controller
      * @return string A fully formed URL.
      */
     public function prepare_query_for_response($query)
-{
-}
-    /**
-     * Maybe add a nonce to a URL.
-     *
-     * @link https://codex.wordpress.org/WordPress_Nonces
-     *
-     * @param string $url The URL needing a nonce.
-     * @param string $action The nonce action.
-     * @param string $name The nonce name.
-     * @return string A fully formed URL.
-     */
-    private function maybe_add_nonce_to_url(string $url, string $action = '', string $name = ''): string
 {
 }
     /**

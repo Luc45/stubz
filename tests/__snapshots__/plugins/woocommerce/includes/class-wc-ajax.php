@@ -27,14 +27,6 @@ class WC_AJAX
 {
 }
     /**
-     * Send headers for WC Ajax Requests.
-     *
-     * @since 2.5.0
-     */
-    private static function wc_ajax_headers()
-{
-}
-    /**
      * Check for WC Ajax request and fire action.
      */
     public static function do_wc_ajax()
@@ -74,12 +66,6 @@ class WC_AJAX
      * AJAX receive updated cart_totals div.
      */
     public static function get_cart_totals()
-{
-}
-    /**
-     * Session has expired.
-     */
-    private static function update_order_review_expired()
 {
 }
     /**
@@ -167,24 +153,6 @@ class WC_AJAX
 {
 }
     /**
-     * Create product with attributes from POST data.
-     *
-     * @param  array $data Attribute data.
-     * @return mixed Product class.
-     */
-    private static function create_product_with_attributes($data)
-{
-}
-    /**
-     * Create all product variations from existing attributes.
-     *
-     * @param mixed $product Product class.
-     * @returns int Number of variations created.
-     */
-    private static function create_all_product_variations($product)
-{
-}
-    /**
      * Add variation via ajax function.
      */
     public static function add_variation()
@@ -220,19 +188,6 @@ class WC_AJAX
      * @throws Exception If order is invalid.
      */
     public static function add_order_item()
-{
-}
-    /**
-     * Add order item via AJAX. This is refactored for better unit testing.
-     *
-     * @param int          $order_id     ID of order to add items to.
-     * @param string|array $items        Existing items in order. Empty string if no items to add.
-     * @param array        $items_to_add Array of items to add.
-     *
-     * @return array     Fragments to render and notes HTML.
-     * @throws Exception When unable to add item.
-     */
-    private static function maybe_add_order_item($order_id, $items, $items_to_add)
 {
 }
     /**
@@ -437,291 +392,6 @@ class WC_AJAX
 {
 }
     /**
-     * Bulk action - Toggle Enabled.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_toggle_enabled($variations, $data)
-{
-}
-    /**
-     * Bulk action - Toggle Downloadable Checkbox.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_toggle_downloadable($variations, $data)
-{
-}
-    /**
-     * Bulk action - Toggle Virtual Checkbox.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_toggle_virtual($variations, $data)
-{
-}
-    /**
-     * Bulk action - Toggle Manage Stock Checkbox.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_toggle_manage_stock($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Regular Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_regular_price($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Sale Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_sale_price($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Stock Status as In Stock.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_stock_status_instock($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Stock Status as Out of Stock.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_stock_status_outofstock($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Stock Status as On Backorder.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_stock_status_onbackorder($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Stock.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_stock($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Low Stock Amount.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_low_stock_amount($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Weight.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_weight($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Length.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_length($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Width.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_width($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Height.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_height($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Download Limit.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_download_limit($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Download Expiry.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_download_expiry($variations, $data)
-{
-}
-    /**
-     * Bulk action - Delete all.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_delete_all($variations, $data)
-{
-}
-    /**
-     * Bulk action - Sale Schedule.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_sale_schedule($variations, $data)
-{
-}
-    /**
-     * Bulk action - Increase Regular Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_regular_price_increase($variations, $data)
-{
-}
-    /**
-     * Bulk action - Decrease Regular Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_regular_price_decrease($variations, $data)
-{
-}
-    /**
-     * Bulk action - Increase Sale Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_sale_price_increase($variations, $data)
-{
-}
-    /**
-     * Bulk action - Decrease Sale Prices.
-     *
-     * @param array $variations List of variations.
-     * @param array $data Data to set.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_action_variable_sale_price_decrease($variations, $data)
-{
-}
-    /**
-     * Bulk action - Set Price.
-     *
-     * @param array  $variations List of variations.
-     * @param string $field price being adjusted _regular_price or _sale_price.
-     * @param string $operator + or -.
-     * @param string $value Price or Percent.
-     *
-     * @used-by bulk_edit_variations
-     */
-    private static function variation_bulk_adjust_price($variations, $field, $operator, $value)
-{
-}
-    /**
-     * Bulk set convenience function.
-     *
-     * @param array  $variations List of variations.
-     * @param string $field Field to set.
-     * @param string $value to set.
-     */
-    private static function variation_bulk_set($variations, $field, $value)
-{
-}
-    /**
-     * Bulk toggle convenience function.
-     *
-     * @param array  $variations List of variations.
-     * @param string $field Field to toggle.
-     */
-    private static function variation_bulk_toggle($variations, $field)
-{
-}
-    /**
      * Bulk edit variations via AJAX.
      *
      * @uses WC_AJAX::variation_bulk_set()
@@ -798,42 +468,6 @@ class WC_AJAX
      * @since 3.4.0
      */
     public static function toggle_gateway_enabled()
-{
-}
-    /**
-     * Reimplementation of WP core's `wp_ajax_add_meta` method to support order custom meta updates with custom tables.
-     */
-    private static function order_add_meta()
-{
-}
-    /**
-     * Reimplementation of WP core's `wp_ajax_delete_meta` method to support order custom meta updates with custom tables.
-     *
-     * @return void
-     */
-    private static function order_delete_meta(): void
-{
-}
-    /**
-     * Hooked to 'heartbeat_received' on the edit order page to refresh the lock on an order being edited by the current user.
-     *
-     * @param array $response The heartbeat response to be sent.
-     * @param array $data     Data sent through the heartbeat.
-     * @return array Response to be sent.
-     */
-    private static function order_refresh_lock($response, $data)
-{
-}
-    /**
-     * Hooked to 'heartbeat_received' on the orders screen to refresh the locked status of orders in the list table.
-     *
-     * @since 7.8.0
-     *
-     * @param array $response The heartbeat response to be sent.
-     * @param array $data     Data sent through the heartbeat.
-     * @return array Response to be sent.
-     */
-    private static function check_locked_orders($response, $data)
 {
 }
 }

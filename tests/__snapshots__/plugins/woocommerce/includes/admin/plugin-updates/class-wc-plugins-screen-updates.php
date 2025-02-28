@@ -35,16 +35,6 @@ class WC_Plugins_Screen_Updates extends \WC_Plugin_Updates
 {
 }
     /**
-     * Parse update notice from readme file.
-     *
-     * @param  string $content WooCommerce readme file content.
-     * @param  string $new_version WooCommerce new version.
-     * @return string
-     */
-    private function parse_update_notice($content, $new_version)
-{
-}
-    /**
      * JS for the modal window on the plugins screen.
      */
     public function plugin_screen_modal_js()

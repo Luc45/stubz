@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Survey
 {
-    const SURVEY_URL = 'https://automattic.survey.fm';
+    public const SURVEY_URL = 'https://automattic.survey.fm';
     /**
      * Get a survey's URL from a path.
      *

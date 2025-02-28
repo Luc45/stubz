@@ -59,47 +59,4 @@ class RestApiParameterUtil
     public static function adjust_create_refund_request_parameters(WP_REST_Request &$request)
 {
 }
-    /**
-     * Calculate the "amount" parameter for the request based on the amounts found in line items.
-     * This will ONLY be possible if ALL of the following is true:
-     *
-     * - "line_items" in the request is a non-empty array.
-     * - All line items have a "refund_total" field with a numeric value.
-     * - All values inside "refund_tax" in all line items are a numeric value.
-     *
-     * The request is assumed to be in internal format already.
-     *
-     * @param \WP_REST_Request $request The request to maybe calculate the total amount for.
-     * @return number|null The calculated amount, or null if it can't be calculated.
-     */
-    private static function calculate_refund_amount_from_line_items($request)
-{
-}
-    /**
-     * Convert the line items of a refund request to internal format (see adjust_create_refund_request_parameters).
-     *
-     * @param array $line_items The line items to convert.
-     * @return array The converted line items.
-     */
-    private static function adjust_line_items_for_create_refund_request($line_items)
-{
-}
-    /**
-     * Adjust the taxes array from a line item in a refund request, see adjust_create_refund_parameters.
-     *
-     * @param array $taxes_array The array to adjust.
-     * @return array The adjusted array.
-     */
-    private static function adjust_taxes_for_create_refund_request_line_item($taxes_array)
-{
-}
-    /**
-     * Is an array sequential or associative?
-     *
-     * @param array $the_array The array to check.
-     * @return bool True if the array is associative, false if it's sequential.
-     */
-    private static function is_associative(array $the_array)
-{
-}
 }

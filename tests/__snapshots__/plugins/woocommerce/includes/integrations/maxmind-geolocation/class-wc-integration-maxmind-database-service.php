@@ -6,14 +6,8 @@
  */
 class WC_Integration_MaxMind_Database_Service
 {
-    const DATABASE = 'GeoLite2-Country';
-    const DATABASE_EXTENSION = '.mmdb';
-    /**
-     * A prefix for the MaxMind database filename.
-     *
-     * @var string
-     */
-    private $database_prefix = null;
+    public const DATABASE = 'GeoLite2-Country';
+    public const DATABASE_EXTENSION = '.mmdb';
     /**
      * WC_Integration_MaxMind_Database_Service constructor.
      *

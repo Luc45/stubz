@@ -25,15 +25,6 @@ class FilesystemUtil
 {
 }
     /**
-     * Check if a constant exists and is not null.
-     *
-     * @param string $name Constant name.
-     * @return bool True if the constant exists and its value is not null.
-     */
-    private static function constant_exists(string $name): bool
-{
-}
-    /**
      * Recursively creates a directory (if it doesn't exist) and adds an empty index.html and a .htaccess to prevent
      * directory listing.
      *

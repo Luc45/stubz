@@ -53,14 +53,6 @@ class ImportSetWCShipping implements \Automattic\WooCommerce\Blueprint\StepProce
 {
 }
     /**
-     * Add local pickup settings.
-     *
-     * @param object $local_pickup The local pickup settings.
-     */
-    private function add_local_pickup($local_pickup)
-{
-}
-    /**
      * Get the class name for the step.
      *
      * @return string

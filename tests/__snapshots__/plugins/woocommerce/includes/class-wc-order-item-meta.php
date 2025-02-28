@@ -5,18 +5,6 @@
 class WC_Order_Item_Meta
 {
     /**
-     * For handling backwards compatibility.
-     *
-     * @var bool
-     */
-    private $legacy = false;
-    /**
-     * Order item
-     *
-     * @var array|null
-     */
-    private $item = null;
-    /**
      * Post meta data
      *
      * @var array|null

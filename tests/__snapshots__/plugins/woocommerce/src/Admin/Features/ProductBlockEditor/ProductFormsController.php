@@ -8,14 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 class ProductFormsController
 {
     /**
-     * Product form templates.
-     *
-     * @var array
-     */
-    private $product_form_templates = array (
-  0 => 'simple',
-);
-    /**
      * Set up the product forms controller.
      */
     public function init()

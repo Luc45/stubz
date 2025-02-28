@@ -14,12 +14,6 @@ class SchemaController
      */
     protected $schemas = array();
     /**
-     * Stores Rest Extending instance
-     *
-     * @var ExtendSchema
-     */
-    private $extend = null;
-    /**
      * Constructor.
      *
      * @param ExtendSchema $extend Rest Extending instance.

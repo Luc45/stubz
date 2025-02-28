@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions\Incentives;
  */
 abstract class Incentive
 {
-    const PREFIX = 'woocommerce_admin_pes_incentive_';
+    public const PREFIX = 'woocommerce_admin_pes_incentive_';
     /**
      * The user meta name for storing dismissed incentives.
      *

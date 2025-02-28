@@ -11,7 +11,7 @@
  */
 class WC_Gateway_COD extends \WC_Payment_Gateway
 {
-    const ID = 'cod';
+    public const ID = 'cod';
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *
@@ -54,33 +54,6 @@ class WC_Gateway_COD extends \WC_Payment_Gateway
      * @return bool
      */
     public function is_available()
-{
-}
-    /**
-     * Checks to see whether or not the admin settings are being accessed by the current request.
-     *
-     * @return bool
-     */
-    private function is_accessing_settings()
-{
-}
-    /**
-     * Loads all of the shipping method options for the enable_for_methods field.
-     *
-     * @return array
-     */
-    private function load_shipping_method_options()
-{
-}
-    /**
-     * Indicates whether a rate exists in an array of canonically-formatted rate IDs that activates this gateway.
-     *
-     * @since  3.4.0
-     *
-     * @param array $rate_ids Rate ids to check.
-     * @return array
-     */
-    private function get_matching_rates($rate_ids)
 {
 }
     /**

@@ -11,39 +11,6 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
 class ExtendedContainer extends \Automattic\WooCommerce\Vendor\League\Container\Container
 {
     /**
-     * The root namespace of all WooCommerce classes in the `src` directory.
-     *
-     * @var string
-     */
-    private $woocommerce_namespace = 'Automattic\\WooCommerce\\';
-    /**
-     * Holds the original registrations so that 'reset_replacement' can work, keys are class names and values are the original concretes.
-     *
-     * @var array
-     */
-    private $original_concretes = array();
-    /**
-     * Whitelist of classes that we can register using the container
-     * despite not belonging to the WooCommerce root namespace.
-     *
-     * In general we allow only the registration of classes in the
-     * WooCommerce root namespace to prevent registering 3rd party code
-     * (which doesn't really belong to this container) or old classes
-     * (which may be eventually deprecated, also the LegacyProxy
-     * should be used for those).
-     *
-     * @var string[]
-     */
-    private $registration_whitelist = array (
-  0 => 'Automattic\\WooCommerce\\Container',
-);
-    /**
-     * A list of tags that have already been fully resolved, see 'get' for details.
-     *
-     * @var array
-     */
-    private array $known_tags = array();
-    /**
      * Register a class in the container.
      *
      * @param string    $class_name Class name.

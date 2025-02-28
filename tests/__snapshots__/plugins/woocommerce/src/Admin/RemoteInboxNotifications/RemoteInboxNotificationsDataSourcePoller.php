@@ -9,8 +9,8 @@ namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
  */
 class RemoteInboxNotificationsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
-    const ID = 'remote_inbox_notifications';
-    const DATA_SOURCES = array();
+    public const ID = 'remote_inbox_notifications';
+    public const DATA_SOURCES = array();
     /**
      * Class instance.
      *
@@ -32,17 +32,6 @@ class RemoteInboxNotificationsDataSourcePoller extends \Automattic\WooCommerce\A
      * @return bool The result of the validation.
      */
     protected function validate_spec($spec, $url)
-{
-}
-    /**
-     * Validate the action.
-     *
-     * @param object $action The action to validate.
-     * @param string $url    The url of the feed containing the action (for error reporting).
-     *
-     * @return bool The result of the validation.
-     */
-    private function validate_action($action, $url)
 {
 }
     /**

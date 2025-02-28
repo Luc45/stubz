@@ -9,63 +9,6 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 class URL
 {
     /**
-     * Components of the URL being assessed.
-     *
-     * The keys match those potentially returned by the parse_url() function, except
-     * that they are always defined and 'drive' (Windows drive letter) has been added.
-     *
-     * @var string|null[]
-     */
-    private $components = array (
-  'drive' => null,
-  'fragment' => null,
-  'host' => null,
-  'pass' => null,
-  'path' => null,
-  'port' => null,
-  'query' => null,
-  'scheme' => null,
-  'user' => null,
-);
-    /**
-     * If the URL (or filepath) is absolute.
-     *
-     * @var bool
-     */
-    private $is_absolute = null;
-    /**
-     * If the URL (or filepath) represents a directory other than the root directory.
-     *
-     * This is useful at different points in the process, when deciding whether to re-apply
-     * a trailing slash at the end of processing or when we need to calculate how many
-     * directory traversals are needed to form a (grand-)parent URL.
-     *
-     * @var bool
-     */
-    private $is_non_root_directory = null;
-    /**
-     * The components of the URL's path.
-     *
-     * For instance, in the case of "file:///srv/www/wp.site" (noting that a file URL has
-     * no host component) this would contain:
-     *
-     *     [ "srv", "www", "wp.site" ]
-     *
-     * In the case of a non-file URL such as "https://example.com/foo/bar/baz" (noting the
-     * host is not part of the path) it would contain:
-     *
-     *    [ "foo", "bar", "baz" ]
-     *
-     * @var array
-     */
-    private $path_parts = array();
-    /**
-     * The URL.
-     *
-     * @var string
-     */
-    private $url = null;
-    /**
      * Creates and processes the provided URL (or filepath).
      *
      * @throws URLException If the URL (or filepath) is seriously malformed.
@@ -73,22 +16,6 @@ class URL
      * @param string $url The URL (or filepath).
      */
     public function __construct(string $url)
-{
-}
-    /**
-     * Makes all slashes forward slashes, converts filepaths to file:// URLs, and
-     * other processing to help with comprehension of filepaths.
-     *
-     * @throws URLException If the URL is seriously malformed.
-     */
-    private function preprocess()
-{
-}
-    /**
-     * Simplifies the path if possible, by resolving directory traversals to the extent possible
-     * without touching the filesystem.
-     */
-    private function process_path()
 {
 }
     /**

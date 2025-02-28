@@ -4,19 +4,10 @@
  */
 class ActionScheduler_wpPostStore extends \ActionScheduler_Store
 {
-    const POST_TYPE = 'scheduled-action';
-    const GROUP_TAXONOMY = 'action-group';
-    const SCHEDULE_META_KEY = '_action_manager_schedule';
-    const DEPENDENCIES_MET = 'as-post-store-dependencies-met';
-    /**
-     * Used to share information about the before_date property of claims internally.
-     *
-     * This is used in preference to passing the same information as a method param
-     * for backwards-compatibility reasons.
-     *
-     * @var DateTime|null
-     */
-    private $claim_before_date = null;
+    public const POST_TYPE = 'scheduled-action';
+    public const GROUP_TAXONOMY = 'action-group';
+    public const SCHEDULE_META_KEY = '_action_manager_schedule';
+    public const DEPENDENCIES_MET = 'as-post-store-dependencies-met';
     /**
      * Local Timezone.
      *
@@ -367,17 +358,6 @@ class ActionScheduler_wpPostStore extends \ActionScheduler_Store
      * @throws InvalidArgumentException When the action ID is invalid.
      */
     public function get_status($action_id)
-{
-}
-    /**
-     * Get post column
-     *
-     * @param string $action_id Action ID.
-     * @param string $column_name Column Name.
-     *
-     * @return string|null
-     */
-    private function get_post_column($action_id, $column_name)
 {
 }
     /**

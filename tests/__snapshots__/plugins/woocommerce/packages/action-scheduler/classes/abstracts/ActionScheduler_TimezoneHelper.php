@@ -5,12 +5,6 @@
 abstract class ActionScheduler_TimezoneHelper
 {
     /**
-     * DateTimeZone object.
-     *
-     * @var null|DateTimeZone
-     */
-    private static $local_timezone = null;
-    /**
      * Set a DateTime's timezone to the WordPress site's timezone, or a UTC offset
      * if no timezone string is available.
      *

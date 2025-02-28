@@ -14,12 +14,6 @@ class WC_REST_Product_Variations_Controller extends \WC_REST_Product_Variations_
      */
     protected $namespace = 'wc/v3';
     /**
-     * Product statuses to exclude from the query.
-     *
-     * @var array
-     */
-    private $exclude_status = array();
-    /**
      * Register the routes for products.
      */
     public function register_routes()
@@ -110,15 +104,6 @@ class WC_REST_Product_Variations_Controller extends \WC_REST_Product_Variations_
      * @return array
      */
     public function get_collection_params()
-{
-}
-    /**
-     * Deletes all unmatched variations (aka duplicates).
-     *
-     * @param  WC_Product $product Variable product.
-     * @return int        Number of deleted variations.
-     */
-    private function delete_unmatched_product_variations($product)
 {
 }
     /**

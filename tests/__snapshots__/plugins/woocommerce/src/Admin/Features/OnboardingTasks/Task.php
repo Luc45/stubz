@@ -7,11 +7,11 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
  */
 abstract class Task
 {
-    const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
-    const SNOOZED_OPTION = 'woocommerce_task_list_remind_me_later_tasks';
-    const ACTIONED_OPTION = 'woocommerce_task_list_tracked_completed_actions';
-    const COMPLETED_OPTION = 'woocommerce_task_list_tracked_completed_tasks';
-    const ACTIVE_TASK_TRANSIENT = 'wc_onboarding_active_task';
+    public const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
+    public const SNOOZED_OPTION = 'woocommerce_task_list_remind_me_later_tasks';
+    public const ACTIONED_OPTION = 'woocommerce_task_list_tracked_completed_actions';
+    public const COMPLETED_OPTION = 'woocommerce_task_list_tracked_completed_tasks';
+    public const ACTIVE_TASK_TRANSIENT = 'wc_onboarding_active_task';
     /**
      * Parent task list.
      *

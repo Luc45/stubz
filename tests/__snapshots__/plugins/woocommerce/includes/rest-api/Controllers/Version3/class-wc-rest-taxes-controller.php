@@ -50,13 +50,4 @@ class WC_REST_Taxes_Controller extends \WC_REST_Taxes_V2_Controller
     public function update_item($request)
 {
 }
-    /**
-     * Convert array "cities" and "postcodes" parameters
-     * into semicolon-separated strings "city" and "postcode".
-     *
-     * @param WP_REST_Request $request The request to adjust.
-     */
-    private function adjust_cities_and_postcodes(&$request)
-{
-}
 }

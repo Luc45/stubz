@@ -70,14 +70,6 @@ class OnboardingPlugins extends \WC_REST_Data_Controller
 {
 }
     /**
-     * Return a locale string for wpcom.
-     *
-     * @return string
-     */
-    private function get_wpcom_locale()
-{
-}
-    /**
      * Check whether the current user has permission to install plugins
      *
      * @return WP_Error|boolean

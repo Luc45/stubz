@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
 class WooCommercePayments extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
     /**
-     * Used to cache is_complete() method result.
-     *
-     * @var null
-     */
-    private $is_complete_result = null;
-    /**
      * ID.
      *
      * @return string
@@ -142,14 +136,6 @@ class WooCommercePayments extends \Automattic\WooCommerce\Admin\Features\Onboard
      * @return bool True if the store location is in a WooPayments supported country, false otherwise.
      */
     public static function is_supported()
-{
-}
-    /**
-     * Get the WooPayments gateway.
-     *
-     * @return \WC_Payments|null
-     */
-    private static function get_gateway()
 {
 }
     /**

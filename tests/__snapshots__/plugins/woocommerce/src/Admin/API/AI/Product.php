@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  */
 class Product extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
 {
-    const AI_CONTENT_GENERATED = 'ai_content_generated';
+    public const AI_CONTENT_GENERATED = 'ai_content_generated';
     /**
      * Endpoint.
      *

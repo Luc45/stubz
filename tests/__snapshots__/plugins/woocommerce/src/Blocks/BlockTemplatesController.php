@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks;
  */
 class BlockTemplatesController
 {
-    const TEMPLATES_ROOT_DIR = 'templates';
+    public const TEMPLATES_ROOT_DIR = 'templates';
     /**
      * Initialization method.
      */

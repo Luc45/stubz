@@ -7,12 +7,6 @@
 class WC_Integration_MaxMind_Geolocation extends \WC_Integration
 {
     /**
-     * The service responsible for interacting with the MaxMind database.
-     *
-     * @var WC_Integration_MaxMind_Database_Service
-     */
-    private $database_service = null;
-    /**
      * Initialize the integration.
      */
     public function __construct()
@@ -65,26 +59,6 @@ class WC_Integration_MaxMind_Geolocation extends \WC_Integration
      * @return array Geolocation including country code, state, city and postcode based on an IP address.
      */
     public function get_geolocation($data, $ip_address)
-{
-}
-    /**
-     * Fetches the prefix for the MaxMind database file.
-     *
-     * @return string
-     */
-    private function get_database_prefix()
-{
-}
-    /**
-     * Add missing license key notice.
-     */
-    private function add_missing_license_key_notice()
-{
-}
-    /**
-     * Remove missing license key notice.
-     */
-    private function remove_missing_license_key_notice()
 {
 }
     /**

@@ -87,32 +87,6 @@ class WC_Product_Download implements \ArrayAccess
 {
 }
     /**
-     * Confirms that the download exists within an approved directory.
-     *
-     * If it is not within an approved directory but the current user has sufficient
-     * capabilities, then the method will try to add the download's directory to the
-     * approved directory list.
-     *
-     * @throws Exception If the download is not in an approved directory.
-     *
-     * @param bool $auto_add_to_approved_directory_list If the download is not already in the approved directory list, automatically add it if possible.
-     */
-    private function approved_directory_checks(bool $auto_add_to_approved_directory_list = true)
-{
-}
-    /**
-     * Convenience method, allows us to re-use the same exception messaging from different areas.
-     *
-     * @throws Exception
-     *
-     * @param string $download_file
-     *
-     * @return void
-     */
-    private function raise_invalid_file_exception(string $download_file): void
-{
-}
-    /**
      * Set ID.
      *
      * @param string $value Download ID.

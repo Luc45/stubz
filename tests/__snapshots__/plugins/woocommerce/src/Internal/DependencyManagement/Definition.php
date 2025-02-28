@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  */
 class Definition extends \Automattic\WooCommerce\Vendor\League\Container\Definition\Definition
 {
-    const INJECTION_METHOD = 'init';
+    public const INJECTION_METHOD = 'init';
     /**
      * Resolve a class using method injection instead of constructor injection.
      *
@@ -26,18 +26,6 @@ class Definition extends \Automattic\WooCommerce\Vendor\League\Container\Definit
      * @return object
      */
     protected function invokeMethods($instance)
-{
-}
-    /**
-     * Invoke the 'init' method on a resolved object.
-     *
-     * Constructor injection causes backwards compatibility problems
-     * so we will rely on method injection via an internal method.
-     *
-     * @param object $instance The resolved object.
-     * @return void
-     */
-    private function invokeInit($instance)
 {
 }
     /**

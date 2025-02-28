@@ -7,19 +7,7 @@ namespace Automattic\WooCommerce\Admin\Composer;
  */
 class Package
 {
-    const VERSION = '3.3.0';
-    /**
-     * Package active.
-     *
-     * @var bool
-     */
-    private static $package_active = false;
-    /**
-     * Active version
-     *
-     * @var bool
-     */
-    private static $active_version = null;
+    public const VERSION = '3.3.0';
     /**
      * Init the package.
      *
@@ -58,12 +46,6 @@ class Package
      * @return string
      */
     public static function get_path()
-{
-}
-    /**
-     * Checks if notes have been initialized.
-     */
-    private static function is_notes_initialized()
 {
 }
 }

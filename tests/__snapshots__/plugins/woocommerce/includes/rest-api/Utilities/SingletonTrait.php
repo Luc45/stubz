@@ -30,12 +30,6 @@ trait SingletonTrait
 {
 }
     /**
-     * Prevent cloning.
-     */
-    private function __clone()
-{
-}
-    /**
      * Prevent unserializing.
      */
     final public function __wakeup()

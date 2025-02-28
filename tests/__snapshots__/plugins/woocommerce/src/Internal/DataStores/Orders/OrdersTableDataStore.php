@@ -8,18 +8,6 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements \WC_Object_Data_Store_Interface, \WC_Order_Data_Store_Interface
 {
     /**
-     * Order IDs for which we are checking sync on read in the current request. In WooCommerce, using wc_get_order is a very common pattern, to avoid performance issues, we only sync on read once per request per order. This works because we consider out of sync orders to be an anomaly, so we don't recommend running HPOS with incompatible plugins.
-     *
-     * @var array
-     */
-    private static $reading_order_ids = array();
-    /**
-     * Keep track of order IDs that are actively being backfilled. We use this to prevent further read on sync from add_|update_|delete_postmeta etc hooks. If we allow this, then we would end up syncing the same order multiple times as it is being backfilled.
-     *
-     * @var array
-     */
-    private static $backfilling_order_ids = array();
-    /**
      * Data stored in meta keys, but not considered "meta" for an order.
      *
      * @since 7.0.0
@@ -96,30 +84,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @var DatabaseUtil
      */
     protected $database_util = null;
-    /**
-     * The posts data store object to use.
-     *
-     * @var \WC_Order_Data_Store_CPT
-     */
-    private $cpt_data_store = null;
-    /**
-     * Logger object to be used to log events.
-     *
-     * @var \WC_Logger
-     */
-    private $error_logger = null;
-    /**
-     * The name of the main orders table.
-     *
-     * @var string
-     */
-    private $orders_table_name = null;
-    /**
-     * The instance of the LegacyProxy object to use.
-     *
-     * @var LegacyProxy
-     */
-    private $legacy_proxy = null;
     /**
      * Table column to WC_Order mapping for wc_orders table.
      *
@@ -455,12 +419,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
   ),
 );
     /**
-     * Cache variable to store combined mapping.
-     *
-     * @var array[][][]
-     */
-    private $all_order_column_mapping = null;
-    /**
      * Initialize the object.
      *
      * @internal
@@ -532,14 +490,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * The group name to use when caching order object data.
-     *
-     * @return string
-     */
-    private function get_cache_group(): string
-{
-}
-    /**
      * Delete cached order data for the given object_ids.
      *
      * @param array $order_ids The IDs of the orders to remove cache.
@@ -562,32 +512,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @return bool Whether the cache as fully invalidated.
      */
     public function clear_all_cached_data(): bool
-{
-}
-    /**
-     * Helper function to get alias for order table, this is used in select query.
-     *
-     * @return string Alias.
-     */
-    private function get_order_table_alias(): string
-{
-}
-    /**
-     * Helper function to get alias for op table, this is used in select query.
-     *
-     * @return string Alias.
-     */
-    private function get_op_table_alias(): string
-{
-}
-    /**
-     * Helper function to get alias for address table, this is used in select query.
-     *
-     * @param string $type Type of address; 'billing' or 'shipping'.
-     *
-     * @return string Alias.
-     */
-    private function get_address_table_alias(string $type): string
 {
 }
     /**
@@ -621,16 +545,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @return bool Whether the order was updated.
      */
     public function update_order_from_object($order)
-{
-}
-    /**
-     * Helper method to persist a DB row to database. Uses insert_or_update when possible.
-     *
-     * @param array $update Data containing atleast `table`, `data` and `format` keys, but also preferably `where` and `where_format` to use `insert_or_update`.
-     *
-     * @return bool|int Number of rows affected, boolean false on error.
-     */
-    private function persist_db_row($update)
 {
 }
     /**
@@ -921,24 +835,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * Read the Cost of Goods Sold value for a given order from the database, if available, and apply it to the order.
-     *
-     * @param \WC_Abstract_Order $order The order to get the COGS value for.
-     */
-    private function read_cogs_data(WC_Abstract_Order $order)
-{
-}
-    /**
-     * Helper method to check whether to sync the order.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     *
-     * @return bool Whether the order should be synced.
-     */
-    private function should_sync_order(WC_Abstract_Order $order): bool
-{
-}
-    /**
      * Helper method to initialize order object from DB data.
      *
      * @param \WC_Abstract_Order $order Order object.
@@ -967,103 +863,12 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * Sync order to/from posts tables if we are able to detect difference between order and posts but the sync is enabled.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     * @param \WC_Abstract_Order $post_order Order object initialized from post.
-     *
-     * @return void
-     * @throws \Exception If passed an invalid order.
-     */
-    private function maybe_sync_order(WC_Abstract_Order &$order, WC_Abstract_Order $post_order)
-{
-}
-    /**
-     * Get the post type order representation.
-     *
-     * @param \WP_Post $post Post object.
-     *
-     * @return \WC_Order Order object.
-     */
-    private function get_cpt_order($post)
-{
-}
-    /**
-     * Helper function to get posts data for an order in bullk. We use to this to compute posts object in bulk so that we can compare it with COT data.
-     *
-     * @param array $orders    List of orders mapped by $order_id.
-     *
-     * @return array List of posts.
-     */
-    private function get_post_orders_for_ids(array $orders): array
-{
-}
-    /**
-     * Computes whether post has been updated after last order. Tries to do it as efficiently as possible.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     * @param \WC_Abstract_Order $post_order Order object read from posts table.
-     *
-     * @return bool True if post is different than order.
-     */
-    private function is_post_different_from_order($order, $post_order): bool
-{
-}
-    /**
-     * Migrate meta data from post to order.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     * @param \WC_Abstract_Order $post_order Order object read from posts table.
-     *
-     * @return array List of meta data that was migrated.
-     */
-    private function migrate_meta_data_from_post_order(WC_Abstract_Order &$order, WC_Abstract_Order $post_order)
-{
-}
-    /**
-     * Helper function to compute diff between metadata of post and cot data for an order.
-     *
-     * Also provides an option to sync the metadata as well, since we are already computing the diff.
-     *
-     * @param \WC_Abstract_Order $order1 Order object read from posts.
-     * @param \WC_Abstract_Order $order2 Order object read from COT.
-     * @param bool               $sync   Whether to also sync the meta data.
-     *
-     * @return array Difference between post and COT meta data.
-     */
-    private function get_diff_meta_data_between_orders(WC_Abstract_Order &$order1, WC_Abstract_Order $order2, $sync = false): array
-{
-}
-    /**
-     * Migrate post record from a given order object.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     * @param \WC_Abstract_Order $post_order Order object read from posts.
-     *
-     * @return void
-     */
-    private function migrate_post_record(WC_Abstract_Order &$order, WC_Abstract_Order $post_order): void
-{
-}
-    /**
      * Sets order properties based on a row from the database.
      *
      * @param \WC_Abstract_Order $order      The order object.
      * @param object             $order_data A row of order data from the database.
      */
     protected function set_order_props_from_data(&$order, $order_data)
-{
-}
-    /**
-     * Set order prop if a setter exists in either the order object or in the data store.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     * @param string             $prop_name Property name.
-     * @param mixed              $prop_value Property value.
-     *
-     * @return bool True if the property was set, false otherwise.
-     */
-    private function set_order_prop(WC_Abstract_Order $order, string $prop_name, $prop_value)
 {
 }
     /**
@@ -1077,121 +882,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * Retrieve raw order data from the database for the given a set of IDs.
-     *
-     * @param int[] $ids List of order IDs.
-     *
-     * @return \stdClass[] Keyed array of objects containing raw order data keyed by the order IDs.
-     */
-    private function get_order_data_for_ids_from_db(array $ids): array
-{
-}
-    /**
-     * Retrieve raw order data from cache for the given a set of IDs.
-     *
-     * @param int[] $ids List of order IDs.
-     *
-     * @return \stdClass[] Keyed array of objects containing raw order data keyed by the order IDs.
-     */
-    private function get_order_data_for_ids_from_cache(array $ids): array
-{
-}
-    /**
-     * Store the raw data for a set of orders in cache.
-     *
-     * @param \stdClass[][] $order_data An array of raw order records to set in cache keyed by the order IDs.
-     *
-     * @return void
-     */
-    private function set_order_data_in_cache(array $order_data)
-{
-}
-    /**
-     * Helper method to generate combined select statement.
-     *
-     * @return string Select SQL statement to fetch order.
-     */
-    private function get_order_table_select_statement()
-{
-}
-    /**
-     * Helper function to generate select statement for fetching metadata in bulk.
-     *
-     * @return string Select SQL statement to fetch order metadata.
-     */
-    private function get_order_meta_select_statement()
-{
-}
-    /**
-     * Helper method to generate join query for billing addresses in wc_address table.
-     *
-     * @param string $order_table_alias Alias for order table to use in join.
-     * @param string $address_table_alias Alias for address table to use in join.
-     *
-     * @return array Select and join statements for billing address table.
-     */
-    private function join_billing_address_table_to_order_query($order_table_alias, $address_table_alias)
-{
-}
-    /**
-     * Helper method to generate join query for shipping addresses in wc_address table.
-     *
-     * @param string $order_table_alias Alias for order table to use in join.
-     * @param string $address_table_alias Alias for address table to use in join.
-     *
-     * @return array Select and join statements for shipping address table.
-     */
-    private function join_shipping_address_table_to_order_query($order_table_alias, $address_table_alias)
-{
-}
-    /**
-     * Helper method to generate join and select query for address table.
-     *
-     * @param string $address_type Type of address; 'billing' or 'shipping'.
-     * @param string $order_table_alias Alias of order table to use.
-     * @param string $address_table_alias Alias for address table to use.
-     *
-     * @return array Select and join statements for address table.
-     */
-    private function join_address_table_order_query($address_type, $order_table_alias, $address_table_alias)
-{
-}
-    /**
-     * Helper method to join order operational data table.
-     *
-     * @param string $order_table_alias Alias to use for order table.
-     * @param string $operational_table_alias Alias to use for operational data table.
-     *
-     * @return array Select and join queries for operational data table.
-     */
-    private function join_operational_data_table_to_order_query($order_table_alias, $operational_table_alias)
-{
-}
-    /**
-     * Helper method to generate join and select clauses.
-     *
-     * @param string  $order_table_alias Alias for order table.
-     * @param string  $table Table to join.
-     * @param string  $table_alias Alias for table to join.
-     * @param array[] $column_props_map Column to prop map for table to join.
-     *
-     * @return array Select and join queries.
-     */
-    private function generate_select_and_join_clauses($order_table_alias, $table, $table_alias, $column_props_map)
-{
-}
-    /**
-     * Helper method to generate select clause for props.
-     *
-     * @param string  $table_alias Alias for table.
-     * @param array[] $props Props to column mapping for table.
-     *
-     * @return string Select clause.
-     */
-    private function generate_select_clause_for_props($table_alias, $props)
-{
-}
-    /**
      * Persists order changes to the database.
      *
      * @param \WC_Abstract_Order $order            The order.
@@ -1202,14 +892,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @since 6.8.0
      */
     protected function persist_order_to_db(&$order, bool $force_all_fields = false)
-{
-}
-    /**
-     * Save the Cost of Goods Sold value of a given order to the database.
-     *
-     * @param WC_Abstract_Order $order The order to save the COGS value for.
-     */
-    private function save_cogs_data(WC_Abstract_Order $order)
 {
 }
     /**
@@ -1305,17 +987,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * Set the parent id of child orders to the parent order's parent if the post type
-     * for the order is hierarchical, just delete the child orders otherwise.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     *
-     * @return void
-     */
-    private function upshift_or_delete_child_orders($order): void
-{
-}
-    /**
      * Trashes an order.
      *
      * @param  WC_Order $order The order object.
@@ -1402,24 +1073,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
 {
 }
     /**
-     * Helper method to check whether to backfill post record.
-     *
-     * @return bool
-     */
-    private function should_backfill_post_record()
-{
-}
-    /**
-     * Helper function to decide whether to backfill post record.
-     *
-     * @param \WC_Abstract_Order $order Order object.
-     *
-     * @return void
-     */
-    private function maybe_backfill_post_record($order)
-{
-}
-    /**
      * Helper method that updates post meta based on an order object.
      * Mostly used for backwards compatibility purposes in this datastore.
      *
@@ -1428,17 +1081,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @since 7.0.0
      */
     public function update_order_meta(&$order)
-{
-}
-    /**
-     * Helper function to update billing and shipping address metadata.
-     *
-     * @param \WC_Abstract_Order $order Order Object.
-     * @param array              $changes Array of changes.
-     *
-     * @return void
-     */
-    private function update_address_index_meta($order, $changes)
 {
 }
     /**
@@ -1555,21 +1197,6 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @return bool True if changes were applied, false otherwise.
      */
     protected function after_meta_change(&$order, $meta)
-{
-}
-    /**
-     * Helper function to check whether the modified date needs to be updated after a meta save.
-     *
-     * This method prevents order->save() call multiple times in the same request after any meta update by checking if:
-     * 1. Order modified date is already the current date, no updates needed in this case.
-     * 2. If there are changes already queued for order object, then we don't need to update the modified date as it will be updated ina subsequent save() call.
-     *
-     * @param WC_Order           $order Order object.
-     * @param \WC_Meta_Data|null $meta  Metadata object.
-     *
-     * @return bool Whether the modified date needs to be updated.
-     */
-    private function should_save_after_meta_change($order, $meta = null)
 {
 }
 }

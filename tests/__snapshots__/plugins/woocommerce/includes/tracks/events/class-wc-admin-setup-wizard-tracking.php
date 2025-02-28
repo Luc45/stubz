@@ -5,12 +5,6 @@
 class WC_Admin_Setup_Wizard_Tracking
 {
     /**
-     * Steps for the setup wizard
-     *
-     * @var array
-     */
-    private $steps = array();
-    /**
      * Init tracking.
      *
      * @deprecated 4.6.0

@@ -10,24 +10,6 @@ namespace Automattic\WooCommerce\Internal\Orders;
 class OrderAttributionBlocksController implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
-     * Instance of the features controller.
-     *
-     * @var FeaturesController
-     */
-    private $features_controller = null;
-    /**
-     * ExtendSchema instance.
-     *
-     * @var ExtendSchema
-     */
-    private $extend_schema = null;
-    /**
-     * Instance of the order attribution controller.
-     *
-     * @var OrderAttributionController
-     */
-    private $order_attribution_controller = null;
-    /**
      * Bind dependencies on init.
      *
      * @internal
@@ -51,22 +33,6 @@ class OrderAttributionBlocksController implements \Automattic\WooCommerce\Intern
      * Hook into WordPress on init.
      */
     public function on_init()
-{
-}
-    /**
-     * Extend the Store API.
-     *
-     * @return void
-     */
-    private function extend_api()
-{
-}
-    /**
-     * Get the schema callback.
-     *
-     * @return callable
-     */
-    private function get_schema_callback()
 {
 }
 }

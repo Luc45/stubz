@@ -84,31 +84,6 @@ final class ProductsLowInStock extends \WC_REST_Products_Controller
 {
 }
     /**
-     * Return a query string for low in stock products.
-     * The query string includes the following replacement strings:
-     * - :selects
-     * - :postmeta_join
-     * - :postmeta_wheres
-     * - :orderAndLimit
-     *
-     * @param array $replacements  of replacement strings.
-     *
-     * @return string
-     */
-    private function get_base_query($replacements = array())
-{
-}
-    /**
-     * Add sitewide stock query string to base query string.
-     *
-     * @param string $query Base query string.
-     *
-     * @return string
-     */
-    private function add_sitewide_stock_query_str($query)
-{
-}
-    /**
      * Generate a query.
      *
      * @param bool $sitewide_only generates a query for sitewide low stock threshold only query.

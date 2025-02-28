@@ -8,19 +8,12 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  */
 class Register
 {
-    const MODES = array (
+    private const MODES = array (
   0 => 'disabled',
   1 => 'enabled',
 );
-    const MODE_DISABLED = 'disabled';
-    const MODE_ENABLED = 'enabled';
-    /**
-     * Name of the option used to store the current mode. See self::MODES for a
-     * list of acceptable values for the actual option.
-     *
-     * @var string
-     */
-    private $mode_option = 'wc_downloads_approved_directories_mode';
+    public const MODE_DISABLED = 'disabled';
+    public const MODE_ENABLED = 'enabled';
     /**
      * Sets up the approved directories sub-system.
      *
@@ -139,35 +132,6 @@ class Register
      * @return bool
      */
     public function is_valid_path(string $download_url): bool
-{
-}
-    /**
-     * Used when a URL string is prepared before potentially adding it to the database.
-     *
-     * It will be normalized and trailing-slashed; a length check will also be performed.
-     *
-     * @throws ApprovedDirectoriesException If the operation could not be performed.
-     * @throws URLException                 If the URL was invalid.
-     *
-     * @param string $url The string URL to be normalized and trailing-slashed.
-     *
-     * @return string
-     */
-    private function prepare_url_for_upsert(string $url): string
-{
-}
-    /**
-     * Normalizes the provided URL, by trimming whitespace per normal PHP conventions
-     * and removing any trailing slashes. If it lacks a scheme, the file scheme is
-     * assumed and prepended.
-     *
-     * @throws URLException If the URL is badly formed.
-     *
-     * @param string $url The URL to be normalized.
-     *
-     * @return string
-     */
-    private function normalize_url(string $url): string
 {
 }
     /**

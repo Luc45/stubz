@@ -60,12 +60,4 @@ class Utils
     public static function parse_frontend_location_context()
 {
 }
-    /**
-     * Remove falsy item from array, recursively.
-     *
-     * @param array $array The input array to filter.
-     */
-    private static function remove_empty_array_recursive($array)
-{
-}
 }

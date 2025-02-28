@@ -9,8 +9,8 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
  */
 class OnboardingFonts
 {
-    const SOURCE_LOGGER = 'font_loader';
-    const FONT_FAMILIES_TO_INSTALL = array (
+    public const SOURCE_LOGGER = 'font_loader';
+    public const FONT_FAMILIES_TO_INSTALL = array (
   'inter' => 
   array (
     'fontFamily' => 'Inter',
@@ -186,46 +186,6 @@ class OnboardingFonts
      * @return void
      */
     public static function install_fonts()
-{
-}
-    /**
-     * Install font families.
-     *
-     * @param array $slug_font_families_to_install Font families to install.
-     * @param array $font_collection Font collection.
-     * @return array
-     */
-    private static function install_font_families($slug_font_families_to_install, $font_collection)
-{
-}
-    /**
-     * Install font faces.
-     *
-     * @param array $slug_font_families_to_install Font families to install.
-     * @param array $installed_font_families Installed font families.
-     * @param array $font_faces_from_collection Font faces from collection.
-     */
-    private static function install_font_faces($slug_font_families_to_install, $installed_font_families, $font_faces_from_collection)
-{
-}
-    /**
-     * Get font faces data from font collection.
-     *
-     * @param array $slug_font_families_to_install Font families to install.
-     * @param array $font_collection Font collection.
-     * @return array
-     */
-    private static function get_font_faces_data_from_font_collection($slug_font_families_to_install, $font_collection)
-{
-}
-    /**
-     * Get font family by slug from font collection.
-     *
-     * @param string $slug Font slug.
-     * @param array  $font_families_collection Font families collection.
-     * @return array|null
-     */
-    private static function get_font_family_by_slug_from_font_collection($slug, $font_families_collection)
 {
 }
 }

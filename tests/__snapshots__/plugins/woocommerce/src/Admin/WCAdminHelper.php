@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin;
  */
 class WCAdminHelper
 {
-    const WC_ADMIN_TIMESTAMP_OPTION = 'woocommerce_admin_install_timestamp';
+    public const WC_ADMIN_TIMESTAMP_OPTION = 'woocommerce_admin_install_timestamp';
     /**
      * Get the number of seconds that the store has been active.
      *
@@ -67,21 +67,6 @@ class WCAdminHelper
      * @return bool Whether or not the URL is a store page.
      */
     public static function is_store_page($url = '')
-{
-}
-    /**
-     * Get normalized URL path.
-     * 1. Only keep the path and query string (if any).
-     * 2. Remove wp home path from the URL path if WP is installed in a subdirectory.
-     * 3. Remove leading and trailing slashes.
-     *
-     * For example:
-     *
-     * - https://example.com/wordpress/shop/uncategorized/test/?add-to-cart=123 => shop/uncategorized/test/?add-to-cart=123
-     *
-     * @param string $url URL to normalize.
-     */
-    private static function get_normalized_url_path($url)
 {
 }
 }

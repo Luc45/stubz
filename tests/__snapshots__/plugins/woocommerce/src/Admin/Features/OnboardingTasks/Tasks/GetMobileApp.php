@@ -59,22 +59,6 @@ class GetMobileApp extends \Automattic\WooCommerce\Admin\Features\OnboardingTask
 {
 }
     /**
-     * Determines if site has any users connected to WordPress.com via JetPack
-     *
-     * @return bool
-     */
-    private static function is_jetpack_connected()
-{
-}
-    /**
-     * Determines if the current user is connected to Jetpack.
-     *
-     * @return bool
-     */
-    private static function is_current_user_connected()
-{
-}
-    /**
      * Action URL.
      *
      * @return string

@@ -7,12 +7,6 @@
 class WC_Helper_Options
 {
     /**
-     * The option name used to store the helper data.
-     *
-     * @var string
-     */
-    private static $option_name = 'woocommerce_helper_data';
-    /**
      * Update an option by key
      *
      * All helper options are grouped in a single options entry. This method

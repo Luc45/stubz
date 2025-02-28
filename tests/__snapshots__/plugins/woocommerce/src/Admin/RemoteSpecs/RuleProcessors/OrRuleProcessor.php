@@ -9,12 +9,6 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 class OrRuleProcessor implements \Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleProcessorInterface
 {
     /**
-     * Rule evaluator to use.
-     *
-     * @var RuleEvaluator
-     */
-    private $rule_evaluator = null;
-    /**
      * Constructor.
      *
      * @param RuleEvaluator $rule_evaluator The rule evaluator to use.

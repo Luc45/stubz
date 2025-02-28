@@ -54,35 +54,6 @@ abstract class ActionScheduler_Abstract_Schema
      */
     abstract protected function get_table_definition($table);
     /**
-     * Determine if the database schema is out of date
-     * by comparing the integer found in $this->schema_version
-     * with the option set in the WordPress options table
-     *
-     * @return bool
-     */
-    private function schema_update_required()
-{
-}
-    /**
-     * Update the option in WordPress to indicate that
-     * our schema is now up to date
-     *
-     * @return void
-     */
-    private function mark_schema_update_complete()
-{
-}
-    /**
-     * Update the schema for the given table
-     *
-     * @param string $table The name of the table to update.
-     *
-     * @return void
-     */
-    private function update_table($table)
-{
-}
-    /**
      * Get full table name.
      *
      * @param string $table Table name.

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class CartItemSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\ItemSchema
 {
-    const IDENTIFIER = 'cart-item';
+    public const IDENTIFIER = 'cart-item';
     /**
      * The schema item name.
      *

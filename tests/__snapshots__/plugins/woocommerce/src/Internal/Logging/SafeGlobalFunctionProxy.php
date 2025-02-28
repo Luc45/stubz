@@ -13,17 +13,6 @@ namespace Automattic\WooCommerce\Internal\Logging;
 class SafeGlobalFunctionProxy
 {
     /**
-     * Load missing function if we know where to find it.
-     * Modify this file to add more functions to the map.
-     *
-     * @param string $name The name of the function to load.
-     * @return void
-     * @throws \Exception If the function is missing and could not be loaded.
-     */
-    private static function maybe_load_missing_function($name)
-{
-}
-    /**
      * Proxy for trapping all calls on SafeGlobalFunctionProxy.
      * Use this for calling WP and WC global functions safely.
      * Example usage:

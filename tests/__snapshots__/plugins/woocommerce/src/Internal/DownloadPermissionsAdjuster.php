@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal;
 class DownloadPermissionsAdjuster
 {
     /**
-     * The downloads data store to use.
-     *
-     * @var WC_Data_Store
-     */
-    private $downloads_data_store = null;
-    /**
      * Class initialization, to be executed when the class is resolved by the container.
      *
      * @internal
@@ -46,19 +40,6 @@ class DownloadPermissionsAdjuster
      * @param int $product_id The id of the product to check permissions for.
      */
     public function adjust_download_permissions(int $product_id)
-{
-}
-    /**
-     * Get the existing downloadable files and download permissions for a given product.
-     * The returned value is an array with two keys:
-     *
-     * - download_ids_by_file_url: an associative array of file url => download_id.
-     * - permission_data_by_file_order_user: an associative array where key is "file_url:customer_id:order_id" and value is the full permission data set.
-     *
-     * @param \WC_Product $product The product to get the downloadable files and permissions for.
-     * @return array[] Information about the downloadable files and permissions for the product.
-     */
-    private function get_download_files_and_permissions(WC_Product $product)
 {
 }
 }

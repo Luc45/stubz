@@ -33,12 +33,6 @@ class WC_Settings_Emails extends \WC_Settings_Page
 {
 }
     /**
-     * Get default colors for emails.
-     */
-    private function get_email_default_colors()
-{
-}
-    /**
      * Get custom fonts for emails.
      */
     public function get_custom_fonts()
@@ -83,15 +77,6 @@ class WC_Settings_Emails extends \WC_Settings_Page
      * @param object $email The email object to run the method on.
      */
     public function email_preview_single($email)
-{
-}
-    /**
-     * Deletes transient with email settings used for live preview. This is to
-     * prevent conflicts where the preview would show values from previous session.
-     *
-     * @param string|null $email_id Email ID.
-     */
-    private function delete_transient_email_settings(string|null $email_id)
 {
 }
     /**

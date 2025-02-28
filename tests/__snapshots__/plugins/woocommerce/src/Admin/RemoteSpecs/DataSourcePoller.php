@@ -9,8 +9,8 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs;
  */
 abstract class DataSourcePoller
 {
-    const FILTER_NAME = 'data_source_poller_data_sources';
-    const FILTER_NAME_SPECS = 'data_source_poller_specs';
+    public const FILTER_NAME = 'data_source_poller_data_sources';
+    public const FILTER_NAME_SPECS = 'data_source_poller_specs';
     /**
      * Id of DataSourcePoller.
      *

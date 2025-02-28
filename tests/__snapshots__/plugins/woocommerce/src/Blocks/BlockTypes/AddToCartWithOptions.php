@@ -28,15 +28,6 @@ class AddToCartWithOptions extends \Automattic\WooCommerce\Blocks\BlockTypes\Abs
 {
 }
     /**
-     * Get the block's attributes.
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     * @return array  Block attributes merged with defaults.
-     */
-    private function parse_attributes($attributes)
-{
-}
-    /**
      * Extra data passed through from server to client for block.
      *
      * @param array $attributes  Any attributes that currently are available from the block.

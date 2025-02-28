@@ -8,10 +8,6 @@
 class CronExpression_FieldFactory
 {
     /**
-     * @var array Cache of instantiated fields
-     */
-    private $fields = array();
-    /**
      * Get an instance of a field object for a cron expression position
      *
      * @param int $position CRON expression position value to retrieve

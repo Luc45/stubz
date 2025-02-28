@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingMailchimp
 {
     /**
-     * Class instance.
-     *
-     * @var OnboardingMailchimp instance
-     */
-    private static $instance = null;
-    /**
      * Get class instance.
      */
     final public static function instance()

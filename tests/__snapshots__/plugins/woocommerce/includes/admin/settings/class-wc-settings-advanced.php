@@ -69,12 +69,6 @@ class WC_Settings_Advanced extends \WC_Settings_Page
 {
 }
     /**
-     * Notices.
-     */
-    private function notices()
-{
-}
-    /**
      * Output the settings.
      */
     public function output()

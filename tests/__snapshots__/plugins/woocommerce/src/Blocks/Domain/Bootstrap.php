@@ -10,24 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Domain;
 class Bootstrap
 {
     /**
-     * Holds the Dependency Injection Container
-     *
-     * @var Container
-     */
-    private $container = null;
-    /**
-     * Holds the Package instance
-     *
-     * @var Package
-     */
-    private $package = null;
-    /**
-     * Holds the Migration instance
-     *
-     * @var Migration
-     */
-    private $migration = null;
-    /**
      * Constructor
      *
      * @param Container $container  The Dependency Injection Container.

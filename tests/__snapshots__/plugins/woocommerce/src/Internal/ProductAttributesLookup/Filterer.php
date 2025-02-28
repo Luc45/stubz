@@ -8,18 +8,6 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
 class Filterer
 {
     /**
-     * The product attributes lookup data store to use.
-     *
-     * @var LookupDataStore
-     */
-    private $data_store = null;
-    /**
-     * The name of the product attributes lookup table.
-     *
-     * @var string
-     */
-    private $lookup_table_name = null;
-    /**
      * Class initialization, invoked by the DI container.
      *
      * @internal
@@ -60,38 +48,6 @@ class Filterer
      * @return array
      */
     public function get_filtered_term_product_counts($term_ids, $taxonomy, $query_type)
-{
-}
-    /**
-     * Get the query for counting products by terms using the product attributes lookup table.
-     *
-     * @param \WP_Tax_Query  $tax_query The current main tax query.
-     * @param \WP_Meta_Query $meta_query The current main meta query.
-     * @param string         $taxonomy The attribute name to get the term counts for.
-     * @param string         $term_ids The term ids to include in the search.
-     * @return array An array of SQL query parts.
-     */
-    private function get_product_counts_query_using_lookup_table($tax_query, $meta_query, $taxonomy, $term_ids)
-{
-}
-    /**
-     * Get the query for counting products by terms NOT using the product attributes lookup table.
-     *
-     * @param \WP_Tax_Query  $tax_query The current main tax query.
-     * @param \WP_Meta_Query $meta_query The current main meta query.
-     * @param string         $term_ids The term ids to include in the search.
-     * @return array An array of SQL query parts.
-     */
-    private function get_product_counts_query_not_using_lookup_table($tax_query, $meta_query, $term_ids)
-{
-}
-    /**
-     * Formats a list of term ids as "(id,id,id)".
-     *
-     * @param array $term_ids The list of terms to format.
-     * @return string The formatted list.
-     */
-    private function get_term_ids_sql($term_ids)
 {
 }
 }

@@ -4,39 +4,9 @@
  */
 class WC_Geolocation
 {
-    const GEOLITE_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz';
-    const GEOLITE_IPV6_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz';
-    const GEOLITE2_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz';
-    /**
-     * API endpoints for looking up user IP address.
-     *
-     * @var array
-     */
-    private static $ip_lookup_apis = array (
-  'ipify' => 'http://api.ipify.org/',
-  'ipecho' => 'http://ipecho.net/plain',
-  'ident' => 'http://ident.me',
-  'tnedi' => 'http://tnedi.me',
-);
-    /**
-     * API endpoints for geolocating an IP address
-     *
-     * @var array
-     */
-    private static $geoip_apis = array (
-  'ipinfo.io' => 'https://ipinfo.io/%s/json',
-  'ip-api.com' => 'http://ip-api.com/json/%s',
-);
-    /**
-     * Check if geolocation is enabled.
-     *
-     * @since 3.4.0
-     * @param string $current_settings Current geolocation settings.
-     * @return bool
-     */
-    private static function is_geolocation_enabled($current_settings)
-{
-}
+    public const GEOLITE_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz';
+    public const GEOLITE_IPV6_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz';
+    public const GEOLITE2_DB = 'http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz';
     /**
      * Get current user IP Address.
      *
@@ -83,30 +53,6 @@ class WC_Geolocation
      * Extract files with PharData. Tool built into PHP since 5.3.
      */
     public static function update_database()
-{
-}
-    /**
-     * Fetches the country code from the request headers, if one is available.
-     *
-     * @since 3.9.0
-     * @return string The country code pulled from the headers, or empty string if one was not found.
-     */
-    private static function get_country_code_from_headers()
-{
-}
-    /**
-     * Use APIs to Geolocate the user.
-     *
-     * Geolocation APIs can be added through the use of the woocommerce_geolocation_geoip_apis filter.
-     * Provide a name=>value pair for service-slug=>endpoint.
-     *
-     * If APIs are defined, one will be chosen at random to fulfil the request. After completing, the result
-     * will be cached in a transient.
-     *
-     * @param  string $ip_address IP address.
-     * @return string
-     */
-    private static function geolocate_via_api($ip_address)
 {
 }
     /**

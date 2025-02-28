@@ -93,15 +93,6 @@ class WC_REST_Orders_Controller extends \WC_REST_Orders_V2_Controller
 {
 }
     /**
-     * Add the Cost of Goods Sold related fields to the schema.
-     *
-     * @param array $schema The original schema.
-     * @return array The updated schema.
-     */
-    private function add_cogs_related_schema(array $schema): array
-{
-}
-    /**
      * Get the query params for collections.
      *
      * @return array

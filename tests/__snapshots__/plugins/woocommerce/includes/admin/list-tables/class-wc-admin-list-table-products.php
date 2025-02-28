@@ -273,15 +273,6 @@ class WC_Admin_List_Table_Products extends \WC_Admin_List_Table
 {
 }
     /**
-     * Join wc_product_meta_lookup to posts if not already joined.
-     *
-     * @param string $sql SQL join.
-     * @return string
-     */
-    private function append_product_sorting_table_join($sql)
-{
-}
-    /**
      * Modifies post query so that it includes parent products whose variations have particular shipping class assigned.
      *
      * @param array    $pieces   Array of SELECT statement pieces (from, where, etc).

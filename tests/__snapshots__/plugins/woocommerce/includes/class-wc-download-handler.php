@@ -4,7 +4,7 @@
  */
 class WC_Download_Handler
 {
-    const TRACK_DOWNLOAD_CALLBACK = 'track_partial_download';
+    public const TRACK_DOWNLOAD_CALLBACK = 'track_partial_download';
     /**
      * Hook in methods.
      */
@@ -15,38 +15,6 @@ class WC_Download_Handler
      * Check if we need to download a file and check validity.
      */
     public static function download_product()
-{
-}
-    /**
-     * Check if an order is valid for downloading from.
-     *
-     * @param WC_Customer_Download $download Download instance.
-     */
-    private static function check_order_is_valid($download)
-{
-}
-    /**
-     * Check if there are downloads remaining.
-     *
-     * @param WC_Customer_Download $download Download instance.
-     */
-    private static function check_downloads_remaining($download)
-{
-}
-    /**
-     * Check if the download has expired.
-     *
-     * @param WC_Customer_Download $download Download instance.
-     */
-    private static function check_download_expiry($download)
-{
-}
-    /**
-     * Check if a download requires the user to login first.
-     *
-     * @param WC_Customer_Download $download Download instance.
-     */
-    private static function check_download_login_required($download)
 {
 }
     /**
@@ -122,50 +90,6 @@ class WC_Download_Handler
 {
 }
     /**
-     * Get content type of a download.
-     *
-     * @param  string $file_path File path.
-     * @return string
-     */
-    private static function get_download_content_type($file_path)
-{
-}
-    /**
-     * Set headers for the download.
-     *
-     * @param string $file_path      File path.
-     * @param string $filename       File name.
-     * @param array  $download_range Array containing info about range download request (see {@see get_download_range} for structure).
-     */
-    private static function download_headers($file_path, $filename, $download_range = array())
-{
-}
-    /**
-     * Check and set certain server config variables to ensure downloads work as intended.
-     */
-    private static function check_server_config()
-{
-}
-    /**
-     * Clean all output buffers.
-     *
-     * Can prevent errors, for example: transfer closed with 3 bytes remaining to read.
-     */
-    private static function clean_buffers()
-{
-}
-    /**
-     *
-     * Get selected content disposition
-     *
-     * Defaults to attachment if `woocommerce_downloads_deliver_inline` setting is not selected.
-     *
-     * @return string Content disposition value.
-     */
-    private static function get_content_disposition(): string
-{
-}
-    /**
      * Read file chunked.
      *
      * Reads file in chunks so big downloads are possible without changing PHP.INI - http://codeigniter.com/wiki/Download_helper_for_large_files/.
@@ -187,16 +111,6 @@ class WC_Download_Handler
      * @return array
      */
     public static function ie_nocache_headers_fix($headers)
-{
-}
-    /**
-     * Die with an error message if the download fails.
-     *
-     * @param string  $message Error message.
-     * @param string  $title   Error title.
-     * @param integer $status  Error status.
-     */
-    private static function download_error($message, $title = '', $status = 404)
 {
 }
     /**

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class ProductCategorySchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\TermSchema
 {
-    const IDENTIFIER = 'product-category';
+    public const IDENTIFIER = 'product-category';
     /**
      * The schema item name.
      *

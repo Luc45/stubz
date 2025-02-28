@@ -34,17 +34,6 @@ class Orders extends \WC_REST_Orders_Controller
 {
 }
     /**
-     * Helper method to allow searching by partial order number.
-     *
-     * @param int   $number Partial order number match.
-     * @param array $args List of arguments for the request.
-     *
-     * @return array Modified args with partial order search included.
-     */
-    private function search_partial_order_number($number, $args)
-{
-}
-    /**
      * Get product IDs, names, and quantity from order ID.
      *
      * @param array $order_id ID of order.

@@ -8,18 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Suggestions;
 class PaymentExtensionSuggestionIncentives
 {
     /**
-     * The map of suggestion IDs to their respective incentives provider classes.
-     *
-     * @var array|\class-string[]
-     */
-    private array $suggestion_incentives_class_map;
-    /**
-     * The instances of the incentives providers.
-     *
-     * @var Incentive[]
-     */
-    private array $instances = array();
-    /**
      * Get the first found incentive details for a specific payment extension suggestion.
      *
      * @param string $suggestion_id         The suggestion ID.

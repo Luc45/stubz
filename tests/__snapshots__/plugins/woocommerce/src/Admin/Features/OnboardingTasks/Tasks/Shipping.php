@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks\Tasks;
  */
 class Shipping extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Task
 {
-    const ZONE_COUNT_TRANSIENT_NAME = 'woocommerce_shipping_task_zone_count_transient';
+    public const ZONE_COUNT_TRANSIENT_NAME = 'woocommerce_shipping_task_zone_count_transient';
     /**
      * Constructor
      *
@@ -93,14 +93,6 @@ class Shipping extends \Automattic\WooCommerce\Admin\Features\OnboardingTasks\Ta
      * to refresh the cache.
      */
     public static function delete_zone_count_transient()
-{
-}
-    /**
-     * Check if the store sells digital products only.
-     *
-     * @return bool
-     */
-    private static function is_selling_digital_type_only()
 {
 }
 }

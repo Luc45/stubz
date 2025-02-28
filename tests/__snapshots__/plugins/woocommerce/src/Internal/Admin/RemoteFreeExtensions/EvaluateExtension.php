@@ -8,15 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\RemoteFreeExtensions;
 class EvaluateExtension
 {
     /**
-     * Evaluates the extension and returns it.
-     *
-     * @param object $extension The extension to evaluate.
-     * @return object The evaluated extension.
-     */
-    private static function evaluate($extension)
-{
-}
-    /**
      * Evaluates the specs and returns the bundles with visible extensions.
      *
      * @param array $specs extensions spec array.

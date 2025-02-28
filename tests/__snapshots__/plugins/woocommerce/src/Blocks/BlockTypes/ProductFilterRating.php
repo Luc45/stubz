@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  */
 final class ProductFilterRating extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
-    const RATING_FILTER_QUERY_VAR = 'rating_filter';
+    public const RATING_FILTER_QUERY_VAR = 'rating_filter';
     /**
      * Block name.
      *
@@ -55,24 +55,6 @@ final class ProductFilterRating extends \Automattic\WooCommerce\Blocks\BlockType
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-{
-}
-    /**
-     * Render the rating label.
-     *
-     * @param int    $rating The rating to render.
-     * @param string $count_label The count label to render.
-     * @return string|false
-     */
-    private function render_rating_label($rating, $count_label)
-{
-}
-    /**
-     * Retrieve the rating filter data for current block.
-     *
-     * @param WP_Block $block Block instance.
-     */
-    private function get_rating_counts($block)
 {
 }
 }

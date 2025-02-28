@@ -191,16 +191,6 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT implemen
 {
 }
     /**
-     * Generate meta query for wc_get_orders.
-     *
-     * @param  array  $values List of customers ids or emails.
-     * @param  string $relation 'or' or 'and' relation used to build the WP meta_query.
-     * @return array
-     */
-    private function get_orders_generate_customer_meta_query($values, $relation = 'or')
-{
-}
-    /**
      * Get unpaid orders after a certain date,
      *
      * @param  int $date Timestamp.
@@ -425,42 +415,12 @@ class WC_Order_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT implemen
 {
 }
     /**
-     * Compile order response and set caches as needed for order ids.
-     *
-     * @param array    $order_ids  List of order IDS to compile.
-     * @param array    $query_vars Original query arguments.
-     * @param WP_Query $query      Query object.
-     *
-     * @return array Orders.
-     */
-    private function compile_orders($order_ids, $query_vars, $query)
-{
-}
-    /**
      * Helper method to prime caches for orders. Call this if you are going to be fetching orders in a loop.
      *
      * @param array $order_ids List of order IDS to prime caches for.
      * @param array $query_vars Original query arguments.
      */
     public function prime_caches_for_orders($order_ids, $query_vars)
-{
-}
-    /**
-     * Prime refund cache for orders.
-     *
-     * @param array $order_ids  Order Ids to prime cache for.
-     * @param array $query_vars Query vars for the query.
-     */
-    private function prime_refund_caches_for_order($order_ids, $query_vars)
-{
-}
-    /**
-     * Prime cache for raw meta data for orders in bulk. Difference between this and WP built-in metadata is that this method also fetches `meta_id` field which we use and cache it.
-     *
-     * @param array $order_ids  Order Ids to prime cache for.
-     * @param array $query_vars Query vars for the query.
-     */
-    private function prime_raw_meta_cache_for_orders($order_ids, $query_vars)
 {
 }
     /**

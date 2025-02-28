@@ -562,19 +562,4 @@ class WC_Email extends \WC_Settings_API
     public function admin_options()
 {
 }
-    /**
-     * Clears the PhpMailer AltBody field, to prevent that content from leaking across emails.
-     */
-    private function clear_alt_body_field(): void
-{
-}
-    /**
-     * Get an option or transient for email preview.
-     *
-     * @param string $key Option key.
-     * @param mixed  $empty_value Value to use when option is empty.
-     */
-    private function get_option_or_transient(string $key, $empty_value = null)
-{
-}
 }

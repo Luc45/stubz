@@ -75,25 +75,6 @@ class WC_Settings_Tax extends \WC_Settings_Page
 {
 }
     /**
-     * Get tax class being edited.
-     *
-     * @return string
-     */
-    private static function get_current_tax_class()
-{
-}
-    /**
-     * Get a posted tax rate.
-     *
-     * @param string $key   Key of tax rate in the post data array.
-     * @param int    $order Position/order of rate.
-     * @param string $class Tax class for rate.
-     * @return array
-     */
-    private function get_posted_tax_rate($key, $order, $class)
-{
-}
-    /**
      * Save tax rates.
      */
     public function save_tax_rates()

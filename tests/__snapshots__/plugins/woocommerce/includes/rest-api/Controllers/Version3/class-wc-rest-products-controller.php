@@ -14,26 +14,6 @@ class WC_REST_Products_Controller extends \WC_REST_Products_V2_Controller
      */
     protected $namespace = 'wc/v3';
     /**
-     * A string to inject into a query to do a partial match SKU search.
-     *
-     * See prepare_objects_query()
-     *
-     * @var string
-     */
-    private $search_sku_in_product_lookup_table = '';
-    /**
-     * Suggested product ids.
-     *
-     * @var array
-     */
-    private $suggested_products_ids = array();
-    /**
-     * Product statuses to exclude from the query.
-     *
-     * @var array
-     */
-    private $exclude_status = array();
-    /**
      * Register the routes for products.
      */
     public function register_routes()

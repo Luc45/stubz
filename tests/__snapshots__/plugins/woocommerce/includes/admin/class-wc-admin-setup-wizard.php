@@ -5,39 +5,6 @@
 class WC_Admin_Setup_Wizard
 {
     /**
-     * Current step
-     *
-     * @var string
-     */
-    private $step = '';
-    /**
-     * Steps for the setup wizard
-     *
-     * @var array
-     */
-    private $steps = array();
-    /**
-     * Actions to be executed after the HTTP response has completed
-     *
-     * @var array
-     */
-    private $deferred_actions = array();
-    /**
-     * Tweets user can optionally send after install
-     *
-     * @var array
-     */
-    private $tweets = array (
-  0 => 'Someone give me woo-t, I just set up a new store with #WordPress and @WooCommerce!',
-  1 => 'Someone give me high five, I just set up a new store with #WordPress and @WooCommerce!',
-);
-    /**
-     * The version of WordPress required to run the WooCommerce Admin plugin
-     *
-     * @var string
-     */
-    private $wc_admin_plugin_minimum_wordpress_version = '5.3';
-    /**
      * Hook in tabs.
      *
      * @deprecated 4.6.0

@@ -40,14 +40,6 @@ class GoogleAnalytics
 {
 }
     /**
-     * Get settings from the GA integration extension.
-     *
-     * @return array
-     */
-    private function get_google_analytics_settings()
-{
-}
-    /**
      * Add async to script tags with defined handles.
      *
      * @param string $tag HTML for the script tag.

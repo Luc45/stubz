@@ -5,12 +5,6 @@
 abstract class ActionScheduler_Abstract_Schedule extends \ActionScheduler_Schedule_Deprecated
 {
     /**
-     * The date & time the schedule is set to run.
-     *
-     * @var DateTime
-     */
-    private $scheduled_date = null;
-    /**
      * Timestamp equivalent of @see $this->scheduled_date
      *
      * @var int

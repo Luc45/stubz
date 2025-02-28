@@ -10,12 +10,6 @@
 class WC_Interactivity_Initial_State
 {
     /**
-     * Map of initial state by namespace.
-     *
-     * @var array
-     */
-    private static $initial_state = array();
-    /**
      * Get state from a given namespace.
      *
      * @param string $namespace Namespace.

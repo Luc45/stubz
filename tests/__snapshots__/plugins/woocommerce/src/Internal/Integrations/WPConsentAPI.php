@@ -39,12 +39,4 @@ class WPConsentAPI
     protected function is_wp_consent_api_active()
 {
 }
-    /**
-     * Enqueue JS for integration with WP Consent Level API
-     *
-     * @return void
-     */
-    private function enqueue_consent_api_scripts()
-{
-}
 }

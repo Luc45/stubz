@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
  */
 class Reviews
 {
-    const MENU_SLUG = 'product-reviews';
+    public const MENU_SLUG = 'product-reviews';
     /**
      * Reviews page hook name.
      *

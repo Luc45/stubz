@@ -14,24 +14,6 @@ namespace Action_Scheduler\Migration;
 class ActionMigrator
 {
     /**
-     * Source store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $source = null;
-    /**
-     * Destination store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $destination = null;
-    /**
-     * LogMigrator instance.
-     *
-     * @var LogMigrator
-     */
-    private $log_migrator = null;
-    /**
      * ActionMigrator constructor.
      *
      * @param \ActionScheduler_Store $source_store Source store object.

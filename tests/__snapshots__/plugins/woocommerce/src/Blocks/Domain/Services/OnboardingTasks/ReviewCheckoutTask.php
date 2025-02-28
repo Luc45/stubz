@@ -56,30 +56,6 @@ class ReviewCheckoutTask extends \Automattic\WooCommerce\Admin\Features\Onboardi
 {
 }
     /**
-     * Check if the store uses blocks on the cart or checkout page.
-     *
-     * @return boolean
-     */
-    private function has_cart_block()
-{
-}
-    /**
-     * Check if the store uses blocks on the cart or checkout page.
-     *
-     * @return boolean
-     */
-    private function has_checkout_block()
-{
-}
-    /**
-     * Check if the store uses blocks on the cart or checkout page.
-     *
-     * @return boolean
-     */
-    private function has_cart_or_checkout_block()
-{
-}
-    /**
      * Task visibility.
      *
      * @return bool

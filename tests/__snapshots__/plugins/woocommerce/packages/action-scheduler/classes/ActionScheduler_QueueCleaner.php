@@ -11,24 +11,6 @@ class ActionScheduler_QueueCleaner
      */
     protected $batch_size = null;
     /**
-     * ActionScheduler_Store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private $store = null;
-    /**
-     * 31 days in seconds.
-     *
-     * @var int
-     */
-    private $month_in_seconds = 2678400;
-    /**
-     * Default list of statuses purged by the cleaner process.
-     *
-     * @var string[]
-     */
-    private $default_statuses_to_purge;
-    /**
      * ActionScheduler_QueueCleaner constructor.
      *
      * @param ActionScheduler_Store|null $store      The store instance.
@@ -55,17 +37,6 @@ class ActionScheduler_QueueCleaner
      * @return array Actions deleted.
      */
     public function clean_actions(array $statuses_to_purge, DateTime $cutoff_date, $batch_size = null, $context = 'old')
-{
-}
-    /**
-     * Delete actions.
-     *
-     * @param int[]  $actions_to_delete List of action IDs to delete.
-     * @param int    $lifespan Minimum scheduled age in seconds of the actions being deleted.
-     * @param string $context Context of the delete request.
-     * @return array Deleted action IDs.
-     */
-    private function delete_actions(array $actions_to_delete, $lifespan = null, $context = 'old')
 {
 }
     /**

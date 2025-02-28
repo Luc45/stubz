@@ -7,25 +7,6 @@
 final class WC_Cart_Fees
 {
     /**
-     * An array of fee objects.
-     *
-     * @var object[]
-     */
-    private $fees = array();
-    /**
-     * New fees are made out of these props.
-     *
-     * @var array
-     */
-    private $default_fee_props = array (
-  'id' => '',
-  'name' => '',
-  'tax_class' => '',
-  'taxable' => false,
-  'amount' => 0,
-  'total' => 0,
-);
-    /**
      * Constructor. Reference to the cart.
      *
      * @param null $deprecated Deprecated since WooCommerce 8.2.0.
@@ -83,15 +64,6 @@ final class WC_Cart_Fees
      * @return int
      */
     protected function sort_fees_callback($a, $b)
-{
-}
-    /**
-     * Generate a unique ID for the fee being added.
-     *
-     * @param string $fee Fee object.
-     * @return string fee key.
-     */
-    private function generate_id($fee)
 {
 }
 }

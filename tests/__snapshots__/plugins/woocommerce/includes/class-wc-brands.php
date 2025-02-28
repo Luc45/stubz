@@ -164,17 +164,6 @@ class WC_Brands
 {
 }
     /**
-     * Get the first letter of the brand name, returning lowercase and without accents.
-     *
-     * @param string $name
-     *
-     * @return string
-     * @since  9.4.0
-     */
-    private function get_brand_name_first_character($name)
-{
-}
-    /**
      * Displays brand thumbnails.
      *
      * @param mixed $atts
@@ -327,16 +316,6 @@ class WC_Brands
      * @param int $product_id
      */
     public function duplicate_add_product_brand_terms($product_id)
-{
-}
-    /**
-     * Remove terms with empty products.
-     *
-     * @param WP_Term[] $terms The terms array that needs to be removed of empty products.
-     *
-     * @return WP_Term[]
-     */
-    private function remove_terms_with_empty_products($terms)
 {
 }
     /**

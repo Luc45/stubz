@@ -74,40 +74,12 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
 {
 }
     /**
-     * Get analytics report data and endpoints.
-     */
-    private function get_analytics_report_data()
-{
-}
-    /**
-     * Get active Jetpack modules.
-     *
-     * @return array List of active Jetpack module slugs.
-     */
-    private function get_active_jetpack_modules()
-{
-}
-    /**
      * Set active Jetpack modules.
      *
      * @internal
      * @param array $modules List of active Jetpack module slugs.
      */
     public function set_active_jetpack_modules($modules)
-{
-}
-    /**
-     * Get active Jetpack modules and endpoints.
-     */
-    private function get_jetpack_modules_data()
-{
-}
-    /**
-     * Get information such as allowed stats, stat labels, and endpoint data from stats reports.
-     *
-     * @return WP_Error|True
-     */
-    private function get_indicator_data()
 {
 }
     /**
@@ -129,16 +101,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @return order
      */
     public function sort($a, $b)
-{
-}
-    /**
-     * Get report stats data, avoiding duplicate requests for stats that use the same endpoint.
-     *
-     * @param string $report Report slug to request data for.
-     * @param array  $query_args Report query args.
-     * @return WP_REST_Response|WP_Error Report stats data.
-     */
-    private function get_stats_data($report, $query_args)
 {
 }
     /**
@@ -167,16 +129,6 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      * @return array
      */
     protected function prepare_links($object)
-{
-}
-    /**
-     * Returns the endpoint part of a stat request (prefix) and the actual stat total we want.
-     * To allow extensions to namespace (example: fue/emails/sent), we break on the last forward slash.
-     *
-     * @param string $full_stat A stat request string like orders/avg_order_value or fue/emails/sent.
-     * @return array Containing the prefix (endpoint) and suffix (stat).
-     */
-    private function get_stats_parts($full_stat)
 {
 }
     /**

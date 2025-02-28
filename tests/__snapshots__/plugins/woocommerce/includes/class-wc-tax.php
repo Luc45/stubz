@@ -111,44 +111,6 @@ class WC_Tax
 {
 }
     /**
-     * Does the sort comparison. Compares (in this order):
-     * - Priority
-     * - Country
-     * - State
-     * - Number of postcodes
-     * - Number of cities
-     * - ID
-     *
-     * @param object $rate1 First rate to compare.
-     * @param object $rate2 Second rate to compare.
-     * @return int
-     */
-    private static function sort_rates_callback($rate1, $rate2)
-{
-}
-    /**
-     * Logical sort order for tax rates based on the following in order of priority.
-     *
-     * @param  array $rates Rates to be sorted.
-     * @return array
-     */
-    private static function sort_rates($rates)
-{
-}
-    /**
-     * Loop through a set of tax rates and get the matching rates (1 per priority).
-     *
-     * @param  string $country Country code to match against.
-     * @param  string $state State code to match against.
-     * @param  string $postcode Postcode to match against.
-     * @param  string $city City to match against.
-     * @param  string $tax_class Tax class to match against.
-     * @return array
-     */
-    private static function get_matched_tax_rates($country, $state, $postcode, $city, $tax_class)
-{
-}
-    /**
      * Get the customer tax location based on their status and the current page.
      *
      * Used by get_rates(), get_shipping_rates().
@@ -325,75 +287,12 @@ class WC_Tax
 {
 }
     /**
-     * Format the city.
-     *
-     * @param  string $city Value to format.
-     * @return string
-     */
-    private static function format_tax_rate_city($city)
-{
-}
-    /**
-     * Format the state.
-     *
-     * @param  string $state Value to format.
-     * @return string
-     */
-    private static function format_tax_rate_state($state)
-{
-}
-    /**
-     * Format the country.
-     *
-     * @param  string $country Value to format.
-     * @return string
-     */
-    private static function format_tax_rate_country($country)
-{
-}
-    /**
-     * Format the tax rate name.
-     *
-     * @param  string $name Value to format.
-     * @return string
-     */
-    private static function format_tax_rate_name($name)
-{
-}
-    /**
-     * Format the rate.
-     *
-     * @param  float $rate Value to format.
-     * @return string
-     */
-    private static function format_tax_rate($rate)
-{
-}
-    /**
-     * Format the priority.
-     *
-     * @param  string $priority Value to format.
-     * @return int
-     */
-    private static function format_tax_rate_priority($priority)
-{
-}
-    /**
      * Format the class.
      *
      * @param  string $class Value to format.
      * @return string
      */
     public static function format_tax_rate_class($class)
-{
-}
-    /**
-     * Prepare and format tax rate for DB insertion.
-     *
-     * @param  array $tax_rate Tax rate to format.
-     * @return array
-     */
-    private static function prepare_tax_rate($tax_rate)
 {
 }
     /**
@@ -471,20 +370,6 @@ class WC_Tax
      * @param string $cities Cities to set.
      */
     public static function _update_tax_rate_cities($tax_rate_id, $cities)
-{
-}
-    /**
-     * Updates locations (postcode and city).
-     *
-     * Internal use only.
-     *
-     * @since 2.3.0
-     *
-     * @param int    $tax_rate_id Tax rate ID to update.
-     * @param array  $values Values to set.
-     * @param string $type Location type.
-     */
-    private static function update_tax_rate_locations($tax_rate_id, $values, $type)
 {
 }
     /**

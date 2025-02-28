@@ -7,20 +7,11 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  */
 class BlockTemplateUtils
 {
-    const TEMPLATES_ROOT_DIR = 'templates';
-    const DIRECTORY_NAMES = array (
+    public const TEMPLATES_ROOT_DIR = 'templates';
+    public const DIRECTORY_NAMES = array (
   'TEMPLATES' => 'product-form',
   'TEMPLATE_PARTS' => 'product-form/parts',
 );
-    /**
-     * Gets the directory where templates of a specific template type can be found.
-     *
-     * @param string $template_type wp_template or wp_template_part.
-     * @return string
-     */
-    private static function get_templates_directory($template_type = 'wp_template')
-{
-}
     /**
      * Return the path to a block template file.
      * Otherwise, False.

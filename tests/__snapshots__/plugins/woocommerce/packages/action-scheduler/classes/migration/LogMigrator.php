@@ -14,18 +14,6 @@ namespace Action_Scheduler\Migration;
 class LogMigrator
 {
     /**
-     * Source logger instance.
-     *
-     * @var ActionScheduler_Logger
-     */
-    private $source = null;
-    /**
-     * Destination logger instance.
-     *
-     * @var ActionScheduler_Logger
-     */
-    private $destination = null;
-    /**
      * ActionMigrator constructor.
      *
      * @param ActionScheduler_Logger $source_logger Source logger object.

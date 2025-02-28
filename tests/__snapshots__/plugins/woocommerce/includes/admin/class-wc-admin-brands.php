@@ -11,12 +11,6 @@ class WC_Brands_Admin
      */
     public $settings_tabs = null;
     /**
-     * Settings form fields (Deprecated).
-     *
-     * @var array
-     */
-    private $settings = null;
-    /**
      * Admin fields.
      *
      * @var array

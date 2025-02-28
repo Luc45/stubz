@@ -59,16 +59,6 @@ class ActionScheduler_WPCLI_Scheduler_command extends \WP_CLI_Command
 {
 }
     /**
-     * Converts a string of comma-separated values into an array of those same values.
-     *
-     * @param string $string The string of one or more comma separated values.
-     *
-     * @return array
-     */
-    private function parse_comma_separated_string($string): array
-{
-}
-    /**
      * Print WP CLI message about how many actions are about to be processed.
      *
      * @param int $total Number of actions found.

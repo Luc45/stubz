@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Schedulers;
  */
 abstract class ImportScheduler implements \Automattic\WooCommerce\Internal\Admin\Schedulers\ImportInterface
 {
-    const IMPORT_STATS_OPTION = 'woocommerce_admin_import_stats';
+    public const IMPORT_STATS_OPTION = 'woocommerce_admin_import_stats';
     /**
      * Returns true if an import is in progress.
      *

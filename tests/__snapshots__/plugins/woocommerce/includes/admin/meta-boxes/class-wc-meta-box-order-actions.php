@@ -13,16 +13,6 @@ class WC_Meta_Box_Order_Actions
 {
 }
     /**
-     * Forms a trash/delete order URL.
-     *
-     * @param int $order_id The order ID for which we want a trash/delete URL.
-     *
-     * @return string
-     */
-    private static function get_trash_or_delete_order_link(int $order_id): string
-{
-}
-    /**
      * Save meta box data.
      *
      * @param int     $post_id Post ID.
@@ -40,18 +30,6 @@ class WC_Meta_Box_Order_Actions
      * @return string
      */
     public static function set_email_sent_message($location)
-{
-}
-    /**
-     * Get the available order actions for a given order.
-     *
-     * @since 5.8.0
-     *
-     * @param WC_Order|null $order The order object or null if no order is available.
-     *
-     * @return array
-     */
-    private static function get_available_order_actions_for_order($order)
 {
 }
 }

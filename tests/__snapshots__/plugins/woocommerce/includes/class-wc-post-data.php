@@ -5,12 +5,6 @@
 class WC_Post_Data
 {
     /**
-     * Editing term.
-     *
-     * @var object
-     */
-    private static $editing_term = null;
-    /**
      * Hook in methods.
      */
     public static function init()
@@ -158,23 +152,6 @@ class WC_Post_Data
      * @param mixed $id Post ID.
      */
     public static function untrash_post($id)
-{
-}
-    /**
-     * Clear global unique id if it's not unique.
-     *
-     * @param mixed $id Post ID.
-     */
-    private static function clear_global_unique_id_if_necessary($id)
-{
-}
-    /**
-     * Get the post type for a given post.
-     *
-     * @param int $id The post id.
-     * @return string The post type.
-     */
-    private static function get_post_type($id)
 {
 }
     /**

@@ -11,7 +11,7 @@
  */
 class WC_Gateway_Cheque extends \WC_Payment_Gateway
 {
-    const ID = 'cheque';
+    public const ID = 'cheque';
     /**
      * Gateway instructions that will be added to the thank you page and emails.
      *

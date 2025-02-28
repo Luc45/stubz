@@ -10,66 +10,24 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface
 {
-    const ORDERS_DATA_SYNC_ENABLED_OPTION = 'woocommerce_custom_orders_table_data_sync_enabled';
-    const PLACEHOLDER_ORDER_POST_TYPE = 'shop_order_placehold';
-    const DELETED_RECORD_META_KEY = '_deleted_from';
-    const DELETED_FROM_POSTS_META_VALUE = 'posts_table';
-    const DELETED_FROM_ORDERS_META_VALUE = 'orders_table';
-    const ORDERS_TABLE_CREATED = 'woocommerce_custom_orders_table_created';
-    const ORDERS_SYNC_BATCH_SIZE = 250;
-    const ID_TYPE_MISSING_IN_ORDERS_TABLE = 0;
-    const ID_TYPE_MISSING_IN_POSTS_TABLE = 1;
-    const ID_TYPE_DIFFERENT_UPDATE_DATE = 2;
-    const ID_TYPE_DELETED_FROM_ORDERS_TABLE = 3;
-    const ID_TYPE_DELETED_FROM_POSTS_TABLE = 4;
-    const BACKGROUND_SYNC_MODE_OPTION = 'woocommerce_custom_orders_table_background_sync_mode';
-    const BACKGROUND_SYNC_INTERVAL_OPTION = 'woocommerce_custom_orders_table_background_sync_interval';
-    const BACKGROUND_SYNC_MODE_INTERVAL = 'interval';
-    const BACKGROUND_SYNC_MODE_CONTINUOUS = 'continuous';
-    const BACKGROUND_SYNC_MODE_OFF = 'off';
-    const BACKGROUND_SYNC_EVENT_HOOK = 'woocommerce_custom_orders_table_background_sync';
-    /**
-     * The data store object to use.
-     *
-     * @var OrdersTableDataStore
-     */
-    private $data_store = null;
-    /**
-     * The database util object to use.
-     *
-     * @var DatabaseUtil
-     */
-    private $database_util = null;
-    /**
-     * The posts to COT migrator to use.
-     *
-     * @var PostsToOrdersMigrationController
-     */
-    private $posts_to_cot_migrator = null;
-    /**
-     * Logger object to be used to log events.
-     *
-     * @var \WC_Logger
-     */
-    private $error_logger = null;
-    /**
-     * The instance of the LegacyProxy object to use.
-     *
-     * @var LegacyProxy
-     */
-    private $legacy_proxy = null;
-    /**
-     * The order cache controller.
-     *
-     * @var OrderCacheController
-     */
-    private $order_cache_controller = null;
-    /**
-     * The batch processing controller.
-     *
-     * @var BatchProcessingController
-     */
-    private $batch_processing_controller = null;
+    public const ORDERS_DATA_SYNC_ENABLED_OPTION = 'woocommerce_custom_orders_table_data_sync_enabled';
+    public const PLACEHOLDER_ORDER_POST_TYPE = 'shop_order_placehold';
+    public const DELETED_RECORD_META_KEY = '_deleted_from';
+    public const DELETED_FROM_POSTS_META_VALUE = 'posts_table';
+    public const DELETED_FROM_ORDERS_META_VALUE = 'orders_table';
+    public const ORDERS_TABLE_CREATED = 'woocommerce_custom_orders_table_created';
+    private const ORDERS_SYNC_BATCH_SIZE = 250;
+    public const ID_TYPE_MISSING_IN_ORDERS_TABLE = 0;
+    public const ID_TYPE_MISSING_IN_POSTS_TABLE = 1;
+    public const ID_TYPE_DIFFERENT_UPDATE_DATE = 2;
+    public const ID_TYPE_DELETED_FROM_ORDERS_TABLE = 3;
+    public const ID_TYPE_DELETED_FROM_POSTS_TABLE = 4;
+    public const BACKGROUND_SYNC_MODE_OPTION = 'woocommerce_custom_orders_table_background_sync_mode';
+    public const BACKGROUND_SYNC_INTERVAL_OPTION = 'woocommerce_custom_orders_table_background_sync_interval';
+    public const BACKGROUND_SYNC_MODE_INTERVAL = 'interval';
+    public const BACKGROUND_SYNC_MODE_CONTINUOUS = 'continuous';
+    public const BACKGROUND_SYNC_MODE_OFF = 'off';
+    public const BACKGROUND_SYNC_EVENT_HOOK = 'woocommerce_custom_orders_table_background_sync';
     /**
      * Class constructor.
      */
@@ -202,22 +160,6 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
 {
 }
     /**
-     * Schedule an event to run background sync when the mode is set to interval.
-     *
-     * @return void
-     */
-    private function schedule_background_sync()
-{
-}
-    /**
-     * Remove any pending background sync events.
-     *
-     * @return void
-     */
-    private function unschedule_background_sync()
-{
-}
-    /**
      * Callback to check for pending syncs and enqueue the background data sync processor when in interval mode.
      *
      * @return void
@@ -269,14 +211,6 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
 {
 }
     /**
-     * Get the meta value for order deletion records based on which table is currently authoritative.
-     *
-     * @return string self::DELETED_FROM_ORDERS_META_VALUE if the orders table is authoritative, self::DELETED_FROM_POSTS_META_VALUE otherwise.
-     */
-    private function get_current_deletion_record_meta_value()
-{
-}
-    /**
      * Is the custom orders table the authoritative data source for orders currently?
      *
      * @return bool Whether the custom orders table the authoritative data source for orders currently.
@@ -304,16 +238,6 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
 {
 }
     /**
-     * Get the ids of the orders that are marked as deleted in the orders meta table.
-     *
-     * @param bool $deleted_from_orders_table True to get the ids of the orders deleted from the orders table, false o get the ids of the orders deleted from the posts table.
-     * @param int  $limit The maximum count of orders to return.
-     * @return array An array of order ids.
-     */
-    private function get_deleted_order_ids(bool $deleted_from_orders_table, int $limit)
-{
-}
-    /**
      * Cleanup all the synchronization status information,
      * because the process has been disabled by the user via settings,
      * or because there's nothing left to synchronize.
@@ -327,17 +251,6 @@ class DataSynchronizer implements \Automattic\WooCommerce\Internal\BatchProcessi
      * @param array $batch Batch details.
      */
     public function process_batch(array $batch): void
-{
-}
-    /**
-     * Take a batch of order ids pending synchronization and process those that were deleted, ignoring the others
-     * (which will be orders that were created or modified) and returning the ids of the orders actually processed.
-     *
-     * @param array $batch Array of ids of order pending synchronization.
-     * @param bool  $custom_orders_table_is_authoritative True if the custom orders table is currently authoritative.
-     * @return array Order ids that have been actually processed.
-     */
-    private function process_deleted_orders(array $batch, bool $custom_orders_table_is_authoritative): array
 {
 }
     /**

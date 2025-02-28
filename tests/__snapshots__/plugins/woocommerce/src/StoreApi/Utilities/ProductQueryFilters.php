@@ -26,18 +26,6 @@ class ProductQueryFilters
 {
 }
     /**
-     * Generate calculate query by stock status.
-     *
-     * @param string $status status to calculate.
-     * @param string $product_query_sql product query for current filter state.
-     * @param array  $stock_status_options available stock status options.
-     *
-     * @return false|string
-     */
-    private function generate_stock_status_count_query($status, $product_query_sql, $stock_status_options)
-{
-}
-    /**
      * Get attribute counts for the current products.
      *
      * @param \WP_REST_Request $request The request object.

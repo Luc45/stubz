@@ -89,33 +89,4 @@ class WC_Webhook_Data_Store implements \WC_Webhook_Data_Store_Interface
     public function get_count_webhooks_by_status()
 {
 }
-    /**
-     * Check if a given string is in known statuses, based on return value of @see wc_get_webhook_statuses().
-     *
-     * @since  3.6.0
-     * @throws InvalidArgumentException If $status is not empty and not in the known wc_get_webhook_statuses() keys.
-     * @param  string $status Status to check.
-     */
-    private function validate_status($status)
-{
-}
-    /**
-     * Get the transient key used to cache a set of webhook IDs, optionally filtered by status.
-     *
-     * @since  3.6.0
-     * @param  string $status Optional - status of cache key.
-     * @return string
-     */
-    private function get_transient_key($status = '')
-{
-}
-    /**
-     * Delete the transients used to cache a set of webhook IDs, optionally filtered by status.
-     *
-     * @since 3.6.0
-     * @param string $status Optional - status of cache to delete, or 'all' to delete all caches.
-     */
-    private function delete_transients($status = '')
-{
-}
 }

@@ -84,39 +84,6 @@ class WCAdminAssets
 {
 }
     /**
-     * Render a preload link tag for a dependency, optionally
-     * checked against a provided allowlist.
-     *
-     * See: https://macarthur.me/posts/preloading-javascript-in-wordpress
-     *
-     * @param WP_Dependency $dependency The WP_Dependency being preloaded.
-     * @param string        $type Dependency type - 'script' or 'style'.
-     * @param array         $allowlist Optional. List of allowed dependency handles.
-     */
-    private function maybe_output_preload_link_tag($dependency, $type, $allowlist = array())
-{
-}
-    /**
-     * Output a preload link tag for dependencies (and their sub dependencies)
-     * with an optional allowlist.
-     *
-     * See: https://macarthur.me/posts/preloading-javascript-in-wordpress
-     *
-     * @param string $type Dependency type - 'script' or 'style'.
-     * @param array  $allowlist Optional. List of allowed dependency handles.
-     */
-    private function output_header_preload_tags_for_type($type, $allowlist = array())
-{
-}
-    /**
-     * Output preload link tags for all enqueued stylesheets and scripts.
-     *
-     * See: https://macarthur.me/posts/preloading-javascript-in-wordpress
-     */
-    private function output_header_preload_tags()
-{
-}
-    /**
      * Loads the required scripts on the correct pages.
      */
     public function enqueue_assets()

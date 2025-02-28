@@ -14,12 +14,6 @@ namespace Action_Scheduler\WP_CLI;
 class Migration_Command extends \WP_CLI_Command
 {
     /**
-     * Number of actions migrated.
-     *
-     * @var int
-     */
-    private $total_processed = 0;
-    /**
      * Register the command with WP-CLI
      */
     public function register()
@@ -34,22 +28,6 @@ class Migration_Command extends \WP_CLI_Command
      * @return void
      */
     public function migrate($positional_args, $assoc_args)
-{
-}
-    /**
-     * Build the config object used to create the Runner
-     *
-     * @param array $args Optional arguments.
-     *
-     * @return ActionScheduler\Migration\Config
-     */
-    private function get_migration_config($args)
-{
-}
-    /**
-     * Hook command line logging into migration actions.
-     */
-    private function init_logging()
 {
 }
 }

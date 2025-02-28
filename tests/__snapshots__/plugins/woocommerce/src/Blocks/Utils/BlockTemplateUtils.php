@@ -8,15 +8,15 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  */
 class BlockTemplateUtils
 {
-    const DIRECTORY_NAMES = array (
+    public const DIRECTORY_NAMES = array (
   'DEPRECATED_TEMPLATES' => 'block-templates',
   'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
   'TEMPLATES' => 'templates',
   'TEMPLATE_PARTS' => 'parts',
 );
-    const TEMPLATES_ROOT_DIR = 'templates';
-    const PLUGIN_SLUG = 'woocommerce/woocommerce';
-    const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
+    public const TEMPLATES_ROOT_DIR = 'templates';
+    public const PLUGIN_SLUG = 'woocommerce/woocommerce';
+    public const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
     /**
      * Returns the template matching the slug
      *

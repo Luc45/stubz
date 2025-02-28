@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes;
  */
 final class ProductFilterStatus extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
-    const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
+    public const STOCK_STATUS_QUERY_VAR = 'filter_stock_status';
     /**
      * Block name.
      *
@@ -63,14 +63,6 @@ final class ProductFilterStatus extends \Automattic\WooCommerce\Blocks\BlockType
      * @return string Rendered block type output.
      */
     protected function render($attributes, $content, $block)
-{
-}
-    /**
-     * Retrieve the status filter data for current block.
-     *
-     * @param WP_Block $block Block instance.
-     */
-    private function get_stock_status_counts($block)
 {
 }
 }

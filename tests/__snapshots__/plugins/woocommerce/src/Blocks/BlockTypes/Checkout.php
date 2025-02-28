@@ -117,15 +117,6 @@ class Checkout extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlock
 {
 }
     /**
-     * Recurse through the blocks to find the shipping methods block, then get the value of the localPickupText attribute from it.
-     *
-     * @param array $blocks The block(s) to search for the local pickup text.
-     * @return null|string  The local pickup text if found, otherwise void.
-     */
-    private function find_local_pickup_text_in_checkout_block($blocks)
-{
-}
-    /**
      * Extra data passed through from server to client for block.
      *
      * @param array $attributes  Any attributes that currently are available from the block.

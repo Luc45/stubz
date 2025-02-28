@@ -20,15 +20,6 @@ class WC_Product_CSV_Importer extends \WC_Product_Importer
 {
 }
     /**
-     * Convert a string from the input encoding to UTF-8.
-     *
-     * @param string $value The string to convert.
-     * @return string The converted string.
-     */
-    private function adjust_character_encoding($value)
-{
-}
-    /**
      * Read file.
      */
     protected function read_file()

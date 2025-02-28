@@ -199,16 +199,6 @@ class WC_Product_Variable extends \WC_Product
 {
 }
     /**
-     * Check if a given variation is currently available.
-     *
-     * @param WC_Product_Variation $variation Variation to check.
-     *
-     * @return bool True if the variation is available, false otherwise.
-     */
-    private function variation_is_available(WC_Product_Variation $variation)
-{
-}
-    /**
      * Returns an array of data for a variation. Used in the add to cart form.
      *
      * @since  2.4.0

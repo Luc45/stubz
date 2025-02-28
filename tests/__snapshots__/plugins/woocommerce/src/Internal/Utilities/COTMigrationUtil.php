@@ -8,18 +8,6 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 class COTMigrationUtil
 {
     /**
-     * Custom order table controller.
-     *
-     * @var CustomOrdersTableController
-     */
-    private $table_controller = null;
-    /**
-     * Data synchronizer.
-     *
-     * @var DataSynchronizer
-     */
-    private $data_synchronizer = null;
-    /**
      * Initialize method, invoked by the DI container.
      *
      * @internal Automatically called by the container.
@@ -39,14 +27,6 @@ class COTMigrationUtil
      * @return string
      */
     public function get_order_admin_screen(): string
-{
-}
-    /**
-     * Helper function to get whether custom order tables are enabled or not.
-     *
-     * @return bool
-     */
-    private function custom_orders_table_usage_is_enabled(): bool
 {
 }
     /**

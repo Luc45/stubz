@@ -7,10 +7,10 @@ namespace Automattic\WooCommerce\Utilities;
  */
 class ArrayUtil
 {
-    const SELECT_BY_AUTO = 0;
-    const SELECT_BY_OBJECT_METHOD = 1;
-    const SELECT_BY_OBJECT_PROPERTY = 2;
-    const SELECT_BY_ARRAY_KEY = 3;
+    public const SELECT_BY_AUTO = 0;
+    public const SELECT_BY_OBJECT_METHOD = 1;
+    public const SELECT_BY_OBJECT_PROPERTY = 2;
+    public const SELECT_BY_ARRAY_KEY = 3;
     /**
      * Get a value from an nested array by specifying the entire key hierarchy with '::' as separator.
      *
@@ -70,17 +70,6 @@ class ArrayUtil
 {
 }
     /**
-     * Helper function to generate a callback which can be executed on an array to select a value from each item.
-     *
-     * @param string $selector_name Field/property/method name to select.
-     * @param int    $selector_type Selector type.
-     *
-     * @return \Closure Callback to select the value.
-     */
-    private static function get_selector_callback(string $selector_name, int $selector_type = 0): Closure
-{
-}
-    /**
      * Select one single value from all the items in an array of either arrays or objects based on a selector.
      * For arrays, the selector is a key name; for objects, the selector can be either a method name or a property name.
      *
@@ -126,19 +115,6 @@ class ArrayUtil
      * @return array The difference between the two arrays.
      */
     public static function deep_assoc_array_diff(array $array1, array $array2, bool $strict = true): array
-{
-}
-    /**
-     * Helper method to compare to compute difference between two arrays. Comparison is done recursively.
-     *
-     * @param array $array1 First array.
-     * @param array $array2 Second array.
-     * @param bool  $compare Whether to compare the arrays. If true, then function will return false on first difference, in order to be slightly more efficient.
-     * @param bool  $strict Whether to do string comparison.
-     *
-     * @return array|bool The difference between the two arrays, or if array are same, depending upon $compare param.
-     */
-    private static function deep_compute_or_compare_array_diff(array $array1, array $array2, bool $compare, bool $strict = true)
 {
 }
     /**

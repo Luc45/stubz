@@ -38,29 +38,6 @@ class Hydration
 {
 }
     /**
-     * Helper method to generate GET response from a controller. Also fires the `rest_request_after_callbacks` for backward compatibility.
-     *
-     * @param string $controller_class Controller class FQN that will respond to the request.
-     * @param string $path             Request path regex.
-     *
-     * @return false|mixed|null Response
-     */
-    private function get_response_from_controller($controller_class, $path)
-{
-}
-    /**
-     * Inspired from WP core's `match_request_to_handler`, this matches a given path from available route regexes.
-     * However, unlike WP core, this does not check against query params, request method etc.
-     *
-     * @param string $path The path to match.
-     * @param array  $available_routes Available routes in { $regex1 => $contoller_class1, ... } format.
-     *
-     * @return string|null
-     */
-    private function match_route_to_handler($path, $available_routes)
-{
-}
-    /**
      * Disable the nonce check temporarily.
      */
     protected function disable_nonce_check()

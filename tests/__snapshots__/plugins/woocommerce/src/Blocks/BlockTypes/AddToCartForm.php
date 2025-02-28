@@ -28,15 +28,6 @@ class AddToCartForm extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
 {
 }
     /**
-     * Get the block's attributes.
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     * @return array  Block attributes merged with defaults.
-     */
-    private function parse_attributes($attributes)
-{
-}
-    /**
      * Enqueue assets specific to this block.
      * We enqueue frontend scripts only if the quantitySelectorStyle is set to 'stepper'.
      *
@@ -55,26 +46,6 @@ class AddToCartForm extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBl
      *                           not in the post content on editor load.
      */
     protected function enqueue_data(array $attributes = array())
-{
-}
-    /**
-     * Add increment and decrement buttons to the quantity input field.
-     *
-     * @param string $product_html add-to-cart form HTML.
-     * @param string $product_name Product name.
-     * @return stringa add-to-cart form HTML with increment and decrement buttons.
-     */
-    private function add_steppers($product_html, $product_name)
-{
-}
-    /**
-     * Add classes to the Add to Cart form input needed for the stepper style.
-     *
-     * @param string $product_html The Add to Cart form HTML.
-     *
-     * @return string The Add to Cart form HTML with classes added.
-     */
-    private function add_stepper_classes_to_add_to_cart_form_input($product_html)
 {
 }
     /**

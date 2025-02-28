@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Utilities;
 class TimeUtil
 {
     /**
-     * Instance of a DateTimeZone object representing UTC.
-     *
-     * @var DateTimeZone
-     */
-    private static DateTimeZone $utc_date_time_zone;
-    /**
      * Class constructor.
      */
     public function __construct()

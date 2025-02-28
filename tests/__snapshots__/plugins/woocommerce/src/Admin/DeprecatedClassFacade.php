@@ -26,23 +26,9 @@ class DeprecatedClassFacade
      */
     protected static $deprecated_in_version = '';
     /**
-     * Static array of logged messages.
-     *
-     * @var array
-     */
-    private static $logged_messages = array();
-    /**
      * Constructor.
      */
     public function __construct()
-{
-}
-    /**
-     * Log a deprecation to the error log.
-     *
-     * @param string $function The name of the deprecated function being called.
-     */
-    private static function log_deprecation($function)
 {
 }
     /**

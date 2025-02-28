@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders;
  */
 class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
-    const PREFIX = 'woocommerce_admin_settings_payments__woopayments__';
+    public const PREFIX = 'woocommerce_admin_settings_payments__woopayments__';
     /**
      * Check if the payment gateway needs setup.
      *
@@ -71,27 +71,6 @@ class WooPayments extends \Automattic\WooCommerce\Internal\Admin\Settings\Paymen
      * @return string The onboarding URL for the payment gateway.
      */
     public function get_onboarding_url(WC_Payment_Gateway $payment_gateway, string $return_url = ''): string
-{
-}
-    /**
-     * Check if the store has any paid orders.
-     *
-     * Currently, we look at the past 90 days and only consider orders
-     * with status `wc-completed`, `wc-processing`, or `wc-refunded`.
-     *
-     * @return boolean Whether the store has any paid orders.
-     */
-    private function has_orders(): bool
-{
-}
-    /**
-     * Check if the store has any other enabled ecommerce gateways.
-     *
-     * We exclude offline payment methods from this check.
-     *
-     * @return bool True if the store has any enabled ecommerce gateways, false otherwise.
-     */
-    private function has_enabled_other_ecommerce_gateways(): bool
 {
 }
 }

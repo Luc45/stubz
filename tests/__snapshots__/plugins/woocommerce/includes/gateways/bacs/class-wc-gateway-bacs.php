@@ -11,7 +11,7 @@
  */
 class WC_Gateway_BACS extends \WC_Payment_Gateway
 {
-    const ID = 'bacs';
+    public const ID = 'bacs';
     /**
      * Array of locales
      *
@@ -72,14 +72,6 @@ class WC_Gateway_BACS extends \WC_Payment_Gateway
      * @param bool     $plain_text Email format: plain text or HTML.
      */
     public function email_instructions($order, $sent_to_admin, $plain_text = false)
-{
-}
-    /**
-     * Get bank details and place into a list format.
-     *
-     * @param int $order_id Order ID.
-     */
-    private function bank_details($order_id = '')
 {
 }
     /**

@@ -94,19 +94,6 @@ class WC_REST_Authentication
 {
 }
     /**
-     * Basic Authentication.
-     *
-     * SSL-encrypted requests are not subject to sniffing or man-in-the-middle
-     * attacks, so the request can be authenticated by simply looking up the user
-     * associated with the given consumer key and confirming the consumer secret
-     * provided is valid.
-     *
-     * @return int|bool
-     */
-    private function perform_basic_authentication()
-{
-}
-    /**
      * Parse the Authorization header into parameters.
      *
      * @since 3.0.0
@@ -141,115 +128,6 @@ class WC_REST_Authentication
      * @return array|WP_Error
      */
     public function get_oauth_parameters()
-{
-}
-    /**
-     * Perform OAuth 1.0a "one-legged" (http://oauthbible.com/#oauth-10a-one-legged) authentication for non-SSL requests.
-     *
-     * This is required so API credentials cannot be sniffed or intercepted when making API requests over plain HTTP.
-     *
-     * This follows the spec for simple OAuth 1.0a authentication (RFC 5849) as closely as possible, with two exceptions:
-     *
-     * 1) There is no token associated with request/responses, only consumer keys/secrets are used.
-     *
-     * 2) The OAuth parameters are included as part of the request query string instead of part of the Authorization header,
-     *    This is because there is no cross-OS function within PHP to get the raw Authorization header.
-     *
-     * @link http://tools.ietf.org/html/rfc5849 for the full spec.
-     *
-     * @return int|bool
-     */
-    private function perform_oauth_authentication()
-{
-}
-    /**
-     * Verify that the consumer-provided request signature matches our generated signature,
-     * this ensures the consumer has a valid key/secret.
-     *
-     * @param stdClass $user   User data.
-     * @param array    $params The request parameters.
-     * @return true|WP_Error
-     */
-    private function check_oauth_signature($user, $params)
-{
-}
-    /**
-     * Creates an array of urlencoded strings out of each array key/value pairs.
-     *
-     * @param  array  $params       Array of parameters to convert.
-     * @param  array  $query_params Array to extend.
-     * @param  string $key          Optional Array key to append.
-     * @return string               Array of urlencoded strings.
-     */
-    private function join_with_equals_sign($params, $query_params = array(), $key = '')
-{
-}
-    /**
-     * Normalize each parameter by assuming each parameter may have already been
-     * encoded, so attempt to decode, and then re-encode according to RFC 3986.
-     *
-     * Note both the key and value is normalized so a filter param like:
-     *
-     * 'filter[period]' => 'week'
-     *
-     * is encoded to:
-     *
-     * 'filter%255Bperiod%255D' => 'week'
-     *
-     * This conforms to the OAuth 1.0a spec which indicates the entire query string
-     * should be URL encoded.
-     *
-     * @see rawurlencode()
-     * @param array $parameters Un-normalized parameters.
-     * @return array Normalized parameters.
-     */
-    private function normalize_parameters($parameters)
-{
-}
-    /**
-     * Verify that the timestamp and nonce provided with the request are valid. This prevents replay attacks where
-     * an attacker could attempt to re-send an intercepted request at a later time.
-     *
-     * - A timestamp is valid if it is within 15 minutes of now.
-     * - A nonce is valid if it has not been used within the last 15 minutes.
-     *
-     * @param stdClass $user      User data.
-     * @param int      $timestamp The unix timestamp for when the request was made.
-     * @param string   $nonce     A unique (for the given user) 32 alphanumeric string, consumer-generated.
-     * @return bool|WP_Error
-     */
-    private function check_oauth_timestamp_and_nonce($user, $timestamp, $nonce)
-{
-}
-    /**
-     * Return the user data for the given consumer_key.
-     *
-     * @param string $consumer_key Consumer key.
-     * @return array
-     */
-    private function get_user_data_by_consumer_key($consumer_key)
-{
-}
-    /**
-     * Check that the API keys provided have the proper key-specific permissions to either read or write API resources.
-     *
-     * @param string $method Request method.
-     * @return bool|WP_Error
-     */
-    private function check_permissions($method)
-{
-}
-    /**
-     * Updates the `last_access` field for the API key associated with the current request.
-     *
-     * This method tries to disambiguate 'primary' API requests from any programmatic REST
-     * API requests made internally.
-     *
-     * @param WP_REST_Request $request The request currently being processed.
-     *
-     * @return void
-     */
-    private function update_last_access($request)
 {
 }
     /**

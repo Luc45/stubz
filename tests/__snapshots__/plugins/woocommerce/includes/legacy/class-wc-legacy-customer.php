@@ -35,16 +35,6 @@ abstract class WC_Legacy_Customer extends \WC_Data
 {
 }
     /**
-     * Address and shipping_address are aliased, so we want to get the 'real' key name.
-     * For all other keys, we can just return it.
-     * @since 3.0.0
-     * @param  string $key
-     * @return string
-     */
-    private function filter_legacy_key($key)
-{
-}
-    /**
      * Sets session data for the location.
      *
      * @param string $country

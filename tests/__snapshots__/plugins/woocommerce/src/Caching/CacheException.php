@@ -8,24 +8,6 @@ namespace Automattic\WooCommerce\Caching;
 class CacheException extends \Exception
 {
     /**
-     * Error messages.
-     *
-     * @var array
-     */
-    private $errors = null;
-    /**
-     * The object that threw the exception.
-     *
-     * @var ObjectCache
-     */
-    private $thrower = null;
-    /**
-     * The id of the cached object, if available.
-     *
-     * @var int|string|null
-     */
-    private $cached_id = null;
-    /**
      * Creates a new instance of the class.
      *
      * @param string          $message The exception message.

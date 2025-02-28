@@ -36,15 +36,6 @@ class ProductGalleryLargeImageNextPrevious extends \Automattic\WooCommerce\Block
 {
 }
     /**
-     *  Return class suffix
-     *
-     * @param array $context Block context.
-     * @return string
-     */
-    private function get_class_suffix($context)
-{
-}
-    /**
      * Include and render the block.
      *
      * @param array    $attributes Block attributes. Default empty array.

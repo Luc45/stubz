@@ -71,20 +71,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
 {
 }
     /**
-     * Get a metadata value that is stored as either a string consisting of a comma-separated list of values
-     * or as a serialized array.
-     *
-     * WooCommerce always stores the coupon product ids as a comma-separated string, but it seems that
-     * some plugins mistakenly change these to an array.
-     *
-     * @param int    $coupon_id The coupon id.
-     * @param string $meta_key The meta key to get.
-     * @return array The metadata value as an array, with empty values removed.
-     */
-    private function get_coupon_meta_as_array($coupon_id, string $meta_key)
-{
-}
-    /**
      * Updates a coupon in the database.
      *
      * @since 3.0.0
@@ -105,15 +91,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
 {
 }
     /**
-     * Helper method that updates all the post meta for a coupon based on it's settings in the WC_Coupon class.
-     *
-     * @param WC_Coupon $coupon Coupon object.
-     * @since 3.0.0
-     */
-    private function update_post_meta(&$coupon)
-{
-}
-    /**
      * Increase usage count for current coupon.
      *
      * @since 3.0.0
@@ -126,16 +103,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
 {
 }
     /**
-     * Helper function to add a `_used_by` record to track coupons used by the user.
-     *
-     * @param WC_Coupon $coupon           Coupon object.
-     * @param string    $used_by          Either user ID or billing email.
-     * @param string    $coupon_held_key (Optional) Update meta key to `_used_by` instead of adding a new record.
-     */
-    private function add_coupon_used_by($coupon, $used_by, $coupon_held_key)
-{
-}
-    /**
      * Decrease usage count for current coupon.
      *
      * @since 3.0.0
@@ -144,17 +111,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
      * @return int New usage count.
      */
     public function decrease_usage_count(&$coupon, $used_by = '')
-{
-}
-    /**
-     * Increase or decrease the usage count for a coupon by 1.
-     *
-     * @since 3.0.0
-     * @param WC_Coupon $coupon Coupon object.
-     * @param string    $operation 'increase' or 'decrease'.
-     * @return int New usage count
-     */
-    private function update_usage_count_meta(&$coupon, $operation = 'increase')
 {
 }
     /**
@@ -201,16 +157,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
 {
 }
     /**
-     * Get held time for resources before cancelling the order.
-     * It will use `woocommerce_coupon_hold_minutes` filter to get the value, defaulting to `woocommerce_hold_stock_minutes` option if set, with a 1-minute minimum if set to 0.
-     * Note that the filter `woocommerce_coupon_hold_minutes` only support minutes because it's getting used elsewhere as well, however this function returns in seconds.
-     *
-     * @return int
-     */
-    private function get_tentative_held_time()
-{
-}
-    /**
      * Check and records coupon usage tentatively for short period of time so that counts validation is correct. Returns early if there is no limit defined for the coupon.
      *
      * @param WC_Coupon $coupon Coupon object.
@@ -218,16 +164,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
      * @return bool|int|string|null Returns meta key if coupon was held, null if returned early.
      */
     public function check_and_hold_coupon($coupon)
-{
-}
-    /**
-     * Generate query to calculate tentative usages for the coupon.
-     *
-     * @param int $coupon_id Coupon ID to get tentative usage query for.
-     *
-     * @return string Query for tentative usages.
-     */
-    private function get_tentative_usage_query($coupon_id)
 {
 }
     /**
@@ -240,27 +176,6 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
      * @return null|false|int
      */
     public function check_and_hold_coupon_for_user($coupon, $user_aliases, $user_alias)
-{
-}
-    /**
-     * Generate query to calculate tentative usages for the coupon by the user.
-     *
-     * @param int   $coupon_id    Coupon ID.
-     * @param array $user_aliases List of user aliases to check for usages.
-     *
-     * @return string Tentative usages query.
-     */
-    private function get_tentative_usage_query_for_user($coupon_id, $user_aliases)
-{
-}
-    /**
-     * This function clears coupon data from the WP cache after certain operations which, for performance reasons,
-     * are done via SQL queries.
-     *
-     * @param \WC_Coupon $coupon The coupon object.
-     * @return void
-     */
-    private function refresh_coupon_data(&$coupon)
 {
 }
     /**

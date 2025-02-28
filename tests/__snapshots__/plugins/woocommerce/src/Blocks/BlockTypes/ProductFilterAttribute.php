@@ -73,24 +73,6 @@ final class ProductFilterAttribute extends \Automattic\WooCommerce\Blocks\BlockT
 {
 }
     /**
-     * Retrieve the attribute count for current block.
-     *
-     * @param WP_Block $block      Block instance.
-     * @param string   $slug       Attribute slug.
-     * @param string   $query_type Query type, accept 'and' or 'or'.
-     */
-    private function get_attribute_counts($block, $slug, $query_type)
-{
-}
-    /**
-     * Get the attribute if with most term but closest to 30 terms.
-     *
-     * @return object
-     */
-    private function get_default_product_attribute()
-{
-}
-    /**
      * Register pattern for default product attribute.
      */
     public function register_block_patterns()

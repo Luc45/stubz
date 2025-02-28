@@ -42,33 +42,4 @@ class ProductFilters extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractB
     protected function render($attributes, $content, $block)
 {
 }
-    /**
-     * Get SVG icon markup for a given icon name.
-     *
-     * @param string $name The name of the icon to retrieve.
-     * @return string SVG markup for the icon, or empty string if icon not found.
-     */
-    private function get_svg_icon(string $name)
-{
-}
-    /**
-     * Generate a unique navigation ID for the block.
-     *
-     * @param mixed $block - Block instance.
-     * @return string - Unique navigation ID.
-     */
-    private function generate_navigation_id($block)
-{
-}
-    /**
-     * Parse the filter parameters from the URL.
-     * For now we only get the global query params from the URL. In the future,
-     * we should get the query params based on $query_id.
-     *
-     * @param int $query_id Query ID.
-     * @return array Parsed filter params.
-     */
-    private function get_filter_params($query_id)
-{
-}
 }

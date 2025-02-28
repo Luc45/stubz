@@ -14,18 +14,6 @@ class Init
 {
 }
     /**
-     * Returns true if we are on a JS powered admin page.
-     */
-    private static function is_product_data_view_page()
-{
-}
-    /**
-     * Checks for data views support.
-     */
-    private function has_data_views_support()
-{
-}
-    /**
      * Enqueue styles needed for the rich text editor.
      */
     public function enqueue_styles()

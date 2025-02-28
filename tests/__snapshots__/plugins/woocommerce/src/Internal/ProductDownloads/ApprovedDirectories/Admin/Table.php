@@ -14,12 +14,6 @@ class Table extends \WP_List_Table
 {
 }
     /**
-     * Sets up an items-per-page control.
-     */
-    private function items_per_page()
-{
-}
-    /**
      * Saves the items-per-page setting.
      *
      * @param mixed  $default The default value.

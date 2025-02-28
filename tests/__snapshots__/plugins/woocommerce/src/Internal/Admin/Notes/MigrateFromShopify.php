@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class MigrateFromShopify
 {
-    const NOTE_NAME = 'wc-admin-migrate-from-shopify';
+    public const NOTE_NAME = 'wc-admin-migrate-from-shopify';
     /**
      * Get the note.
      *

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Homescreen
 {
-    const MENU_SLUG = 'wc-admin';
+    public const MENU_SLUG = 'wc-admin';
     /**
      * Class instance.
      *

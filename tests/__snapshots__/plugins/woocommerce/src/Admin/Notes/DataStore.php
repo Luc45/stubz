@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
  */
 class DataStore extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Interface
 {
-    const WC_ADMIN_NOTE_OPER_GLOBAL = 'global';
+    public const WC_ADMIN_NOTE_OPER_GLOBAL = 'global';
     /**
      * Method to create a new note in the database.
      *
@@ -43,25 +43,6 @@ class DataStore extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Inter
 {
 }
     /**
-     * Read actions from the database.
-     *
-     * @param Note $note Admin note.
-     */
-    private function read_actions(&$note)
-{
-}
-    /**
-     * Save actions to the database.
-     * This function clears old actions, then re-inserts new if any changes are found.
-     *
-     * @param Note $note Note object.
-     *
-     * @return bool|void
-     */
-    private function save_actions(&$note)
-{
-}
-    /**
      * Return an ordered list of notes.
      *
      * @param array  $args Query arguments.
@@ -90,17 +71,6 @@ class DataStore extends \WC_Data_Store_WP implements \WC_Object_Data_Store_Inter
      * @return string Count of objects with given type, status and context.
      */
     public function get_notes_count($type = array(), $status = array(), $context)
-{
-}
-    /**
-     * Parses the query arguments passed in as arrays and escapes the values.
-     *
-     * @param array      $args the query arguments.
-     * @param string     $key the key of the specific argument.
-     * @param array|null $allowed_types optional allowed_types if only a specific set is allowed.
-     * @return array the escaped array of argument values.
-     */
-    private function get_escaped_arguments_array_by_key($args = array(), $key = '', $allowed_types = null)
 {
 }
     /**

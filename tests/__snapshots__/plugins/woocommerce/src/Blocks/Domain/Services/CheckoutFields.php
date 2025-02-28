@@ -7,32 +7,10 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  */
 class CheckoutFields
 {
-    const BILLING_FIELDS_PREFIX = '_wc_billing/';
-    const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
-    const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
-    const OTHER_FIELDS_PREFIX = '_wc_other/';
-    /**
-     * Additional checkout fields.
-     *
-     * @var array
-     */
-    private $additional_fields = array();
-    /**
-     * Fields locations.
-     *
-     * @var array
-     */
-    private $fields_locations = null;
-    /**
-     * Supported field types
-     *
-     * @var array
-     */
-    private $supported_field_types = array (
-  0 => 'text',
-  1 => 'select',
-  2 => 'checkbox',
-);
+    public const BILLING_FIELDS_PREFIX = '_wc_billing/';
+    public const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
+    public const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
+    public const OTHER_FIELDS_PREFIX = '_wc_other/';
     /**
      * Groups of fields to be saved.
      *
@@ -43,12 +21,6 @@ class CheckoutFields
   1 => 'shipping',
   2 => 'other',
 );
-    /**
-     * Instance of the asset data registry.
-     *
-     * @var AssetDataRegistry
-     */
-    private $asset_data_registry = null;
     /**
      * Sets up core fields.
      *
@@ -118,48 +90,6 @@ class CheckoutFields
      * @internal
      */
     public function deregister_checkout_field($field_id)
-{
-}
-    /**
-     * Validates the "base" options (id, label, location) and shows warnings if they're not supplied.
-     *
-     * @param array $options The options supplied during field registration.
-     * @return bool false if an error was encountered, true otherwise.
-     */
-    private function validate_options(&$options)
-{
-}
-    /**
-     * Processes the options for a select field and returns the new field_options array.
-     *
-     * @param array $field_data  The field data array to be updated.
-     * @param array $options     The options supplied during field registration.
-     *
-     * @return array|false The updated $field_data array or false if an error was encountered.
-     */
-    private function process_select_field($field_data, $options)
-{
-}
-    /**
-     * Processes the options for a checkbox field and returns the new field_options array.
-     *
-     * @param array $field_data  The field data array to be updated.
-     * @param array $options     The options supplied during field registration.
-     *
-     * @return array|false The updated $field_data array or false if an error was encountered.
-     */
-    private function process_checkbox_field($field_data, $options)
-{
-}
-    /**
-     * Processes the attributes supplied during field registration.
-     *
-     * @param array $id         The field ID.
-     * @param array $attributes The attributes supplied during field registration.
-     *
-     * @return array The processed attributes.
-     */
-    private function register_field_attributes($id, $attributes)
 {
 }
     /**
@@ -351,19 +281,6 @@ class CheckoutFields
      * @return void
      */
     public function persist_field_for_customer(string $key, $value, WC_Customer $customer, string $group = 'other')
-{
-}
-    /**
-     * Sets a field value in an array meta, supporting routing things to billing, shipping, or additional fields, based on a prefix for the key.
-     *
-     * @param string               $key The field key.
-     * @param mixed                $value The field value.
-     * @param WC_Customer|WC_Order $wc_object The object to set the field value for.
-     * @param string               $group The group to set the field value for (shipping|billing|other).
-     *
-     * @return void
-     */
-    private function set_array_meta(string $key, $value, WC_Data $wc_object, string $group)
 {
 }
     /**

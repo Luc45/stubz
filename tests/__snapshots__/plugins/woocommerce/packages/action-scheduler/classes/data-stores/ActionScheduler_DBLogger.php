@@ -31,16 +31,6 @@ class ActionScheduler_DBLogger extends \ActionScheduler_Logger
 {
 }
     /**
-     * Create an action log entry from a database record.
-     *
-     * @param object $record Log entry database record object.
-     *
-     * @return ActionScheduler_LogEntry
-     */
-    private function create_entry_from_db_record($record)
-{
-}
-    /**
      * Retrieve an action's log entries from the database.
      *
      * @param int $action_id Action ID.

@@ -62,27 +62,11 @@ class WC_Shop_Customizer
 {
 }
     /**
-     * Store notice section.
-     *
-     * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-     */
-    private function add_store_notice_section($wp_customize)
-{
-}
-    /**
      * Product catalog section.
      *
      * @param WP_Customize_Manager $wp_customize Theme Customizer object.
      */
     public function add_product_catalog_section($wp_customize)
-{
-}
-    /**
-     * Product images section.
-     *
-     * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-     */
-    private function add_product_images_section($wp_customize)
 {
 }
     /**
@@ -116,14 +100,6 @@ class WC_Shop_Customizer
      * @return bool
      */
     public function has_terms_and_conditions_page_id()
-{
-}
-    /**
-     * Weather or not the checkout page contains the Checkout block.
-     *
-     * @return bool
-     */
-    private function has_block_checkout()
 {
 }
 }

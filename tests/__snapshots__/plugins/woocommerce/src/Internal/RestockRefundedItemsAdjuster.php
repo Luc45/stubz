@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal;
 class RestockRefundedItemsAdjuster
 {
     /**
-     * The order factory to use.
-     *
-     * @var WC_Order_Factory
-     */
-    private $order_factory = null;
-    /**
      * Class initialization, to be executed when the class is resolved by the container.
      *
      * @internal

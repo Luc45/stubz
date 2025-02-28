@@ -7,7 +7,6 @@ namespace MagicMethodsScenario;
  */
 class MagicBox
 {
-    private array $properties = array();
     public function __get(string $name): mixed
 {
 }

@@ -5,24 +5,6 @@
 class WC_Template_Loader
 {
     /**
-     * Store the shop page ID.
-     *
-     * @var integer
-     */
-    private static $shop_page_id = 0;
-    /**
-     * Store whether we're processing a product inside the_content filter.
-     *
-     * @var boolean
-     */
-    private static $in_content_filter = false;
-    /**
-     * Is WooCommerce support defined?
-     *
-     * @var boolean
-     */
-    private static $theme_support = false;
-    /**
      * Hook in methods.
      */
     public static function init()
@@ -47,54 +29,6 @@ class WC_Template_Loader
 {
 }
     /**
-     * Checks whether a block template for a given taxonomy exists.
-     *
-     * **Note:** This checks both the `templates` and `block-templates` directories
-     * as both conventions should be supported.
-     *
-     * @param object $taxonomy Object taxonomy to check.
-     * @return boolean
-     */
-    private static function taxonomy_has_block_template($taxonomy): bool
-{
-}
-    /**
-     * Checks whether a block template with that name exists.
-     *
-     * **Note: ** This checks both the `templates` and `block-templates` directories
-     * as both conventions should be supported.
-     *
-     * @since  5.5.0
-     * @param string $template_name Template to check.
-     * @return boolean
-     */
-    private static function has_block_template($template_name)
-{
-}
-    /**
-     * Get the default filename for a template except if a block template with
-     * the same name exists.
-     *
-     * @since  3.0.0
-     * @since  5.5.0 If a block template with the same name exists, return an
-     * empty string.
-     * @since  6.3.0 It checks custom product taxonomies
-     * @return string
-     */
-    private static function get_template_loader_default_file()
-{
-}
-    /**
-     * Get an array of filenames to search for a given template.
-     *
-     * @since  3.0.0
-     * @param  string $default_file The default file name.
-     * @return string[]
-     */
-    private static function get_template_loader_files($default_file)
-{
-}
-    /**
      * Load comments template.
      *
      * @param string $template template to load.
@@ -109,40 +43,6 @@ class WC_Template_Loader
      * @since 3.3.0
      */
     public static function unsupported_theme_init()
-{
-}
-    /**
-     * Hook in methods to enhance the unsupported theme experience on the Shop page.
-     *
-     * @since 3.3.0
-     */
-    private static function unsupported_theme_shop_page_init()
-{
-}
-    /**
-     * Hook in methods to enhance the unsupported theme experience on Product pages.
-     *
-     * @since 3.3.0
-     */
-    private static function unsupported_theme_product_page_init()
-{
-}
-    /**
-     * Add theme support for Product page gallery.
-     *
-     * @since x.x.x
-     */
-    private static function add_support_for_product_page_gallery()
-{
-}
-    /**
-     * Enhance the unsupported theme experience on Product Category and Attribute pages by rendering
-     * those pages using the single template and shortcode-based content. To do this we make a dummy
-     * post and set a shortcode as the post content. This approach is adapted from bbPress.
-     *
-     * @since 3.3.0
-     */
-    private static function unsupported_theme_tax_archive_init()
 {
 }
     /**
@@ -163,15 +63,6 @@ class WC_Template_Loader
      * @return string
      */
     public static function force_single_template_filter($template)
-{
-}
-    /**
-     * Get information about the current shop page view.
-     *
-     * @since 3.3.0
-     * @return array
-     */
-    private static function get_current_shop_view_args()
 {
 }
     /**

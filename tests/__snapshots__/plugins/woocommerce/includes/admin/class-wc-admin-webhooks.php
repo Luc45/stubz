@@ -21,31 +21,11 @@ class WC_Admin_Webhooks
 {
 }
     /**
-     * Check if is webhook settings page.
-     *
-     * @return bool
-     */
-    private function is_webhook_settings_page()
-{
-}
-    /**
-     * Save method.
-     */
-    private function save()
-{
-}
-    /**
      * Bulk delete.
      *
      * @param array $webhooks List of webhooks IDs.
      */
     public static function bulk_delete($webhooks)
-{
-}
-    /**
-     * Delete webhook.
-     */
-    private function delete()
 {
 }
     /**
@@ -70,19 +50,6 @@ class WC_Admin_Webhooks
      * Add screen option.
      */
     public function screen_option()
-{
-}
-    /**
-     * Table list output.
-     */
-    private static function table_list_output()
-{
-}
-    /**
-     * Display a warning message if the Legacy REST API extension is not installed
-     * and there are webhooks configured to use the legacy payload format.
-     */
-    private static function maybe_display_legacy_rest_api_warning()
 {
 }
     /**

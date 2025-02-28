@@ -148,40 +148,4 @@ class FormFactory
 ))
 {
 }
-    /**
-     * Returns list of registered items.
-     *
-     * @param string $type Form component type.
-     * @return array List of registered items.
-     */
-    private static function get_item_list($type)
-{
-}
-    /**
-     * Returns list of registered items.
-     *
-     * @param string       $type Form component type.
-     * @param class-string $class_name Class of component type.
-     * @param array        $sort_by key and order to sort by.
-     * @return array       list of registered items.
-     */
-    private static function get_items($type, $class_name, $sort_by = array (
-  'key' => 'order',
-  'order' => 'asc',
-))
-{
-}
-    /**
-     * Creates a new item.
-     *
-     * @param string       $type Form component type.
-     * @param class-string $class_name Class of component type.
-     * @param string       $id Item id.
-     * @param string       $plugin_id Plugin id.
-     * @param array        $args additional arguments for item.
-     * @return Field|Card|Section|Tab|WP_Error New product form item or WP_Error.
-     */
-    private static function create_item($type, $class_name, $id, $plugin_id, $args)
-{
-}
 }

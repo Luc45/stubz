@@ -40,14 +40,6 @@ final class WooCommerce
      */
     public $query = null;
     /**
-     * API instance
-     *
-     * @deprecated 9.0.0 The Legacy REST API has been removed from WooCommerce core. Now this property points to a RestApiUtil instance, unless the Legacy REST API plugin is installed.
-     *
-     * @var WC_API
-     */
-    private $api = null;
-    /**
      * Product factory instance.
      *
      * @var WC_Product_Factory
@@ -178,14 +170,6 @@ final class WooCommerce
 {
 }
     /**
-     * Hook into actions and filters.
-     *
-     * @since 2.3
-     */
-    private function init_hooks()
-{
-}
-    /**
      * Add woocommerce_inbox_variant for the Remote Inbox Notification.
      *
      * P2 post can be found at https://wp.me/paJDYF-1uJ.
@@ -209,27 +193,6 @@ final class WooCommerce
      * @since 3.2.0
      */
     public function log_errors()
-{
-}
-    /**
-     * Define WC Constants.
-     */
-    private function define_constants()
-{
-}
-    /**
-     * Register custom tables within $wpdb object.
-     */
-    private function define_tables()
-{
-}
-    /**
-     * Define constant if not already set.
-     *
-     * @param string      $name  Constant name.
-     * @param string|bool $value Constant value.
-     */
-    private function define($name, $value)
 {
 }
     /**
@@ -259,26 +222,9 @@ final class WooCommerce
 {
 }
     /**
-     * What type of request is this?
-     *
-     * @param  string $type admin, ajax, cron or frontend.
-     * @return bool
-     */
-    private function is_request($type)
-{
-}
-    /**
      * Include required core files used in admin and on the frontend.
      */
     public function includes()
-{
-}
-    /**
-     * Include classes for theme support.
-     *
-     * @since 3.3.0
-     */
-    private function theme_support_includes()
 {
 }
     /**
@@ -315,12 +261,6 @@ final class WooCommerce
      * Ensure theme and server variable compatibility and setup image sizes.
      */
     public function setup_environment()
-{
-}
-    /**
-     * Ensure post thumbnail support is turned on.
-     */
-    private function add_thumbnail_support()
 {
 }
     /**
@@ -380,14 +320,6 @@ final class WooCommerce
      * @return string
      */
     public function api_request_url($request, $ssl = null)
-{
-}
-    /**
-     * Load & enqueue active webhooks.
-     *
-     * @since 2.2
-     */
-    private function load_webhooks()
 {
 }
     /**

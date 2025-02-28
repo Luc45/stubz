@@ -115,23 +115,6 @@ class WC_Customer_Data_Store extends \WC_Data_Store_WP implements \WC_Customer_D
 {
 }
     /**
-     * Helper method that updates all the meta for a customer. Used for update & create.
-     *
-     * @since 3.0.0
-     * @param WC_Customer $customer Customer object.
-     */
-    private function update_user_meta($customer)
-{
-}
-    /**
-     * Check if the usage of the custom orders table is enabled.
-     *
-     * @return bool
-     */
-    private function is_cot_in_use(): bool
-{
-}
-    /**
      * Gets the customers last order.
      *
      * @since 3.0.0

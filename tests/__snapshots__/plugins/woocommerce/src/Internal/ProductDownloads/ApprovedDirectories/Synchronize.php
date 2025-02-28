@@ -8,23 +8,11 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  */
 class Synchronize
 {
-    const SYNC_TASK = 'woocommerce_download_dir_sync';
-    const SYNC_TASK_GROUP = 'woocommerce-db-updates';
-    const SYNC_TASK_PAGE = 'wc_product_download_dir_sync_page';
-    const SYNC_TASK_PROGRESS = 'wc_product_download_dir_sync_progress';
-    const SYNC_TASK_BATCH_SIZE = 20;
-    /**
-     * WC Queue.
-     *
-     * @var WC_Queue_Interface
-     */
-    private $queue = null;
-    /**
-     * Register of approved directories.
-     *
-     * @var Register
-     */
-    private $register = null;
+    public const SYNC_TASK = 'woocommerce_download_dir_sync';
+    public const SYNC_TASK_GROUP = 'woocommerce-db-updates';
+    public const SYNC_TASK_PAGE = 'wc_product_download_dir_sync_page';
+    public const SYNC_TASK_PROGRESS = 'wc_product_download_dir_sync_progress';
+    public const SYNC_TASK_BATCH_SIZE = 20;
     /**
      * Sets up our checks and controls for downloadable asset URLs, as appropriate for
      * the current approved download directory mode.
@@ -80,28 +68,6 @@ class Synchronize
      * Stops/cancels the current synchronization task.
      */
     public function stop()
-{
-}
-    /**
-     * Queries for the next batch of downloadable products, applying logic to ensure we only fetch those that actually
-     * have downloadable files (a downloadable product can be created that does not have downloadable files and/or
-     * downloadable files can be removed from existing downloadable products).
-     *
-     * @return array
-     */
-    private function get_next_set_of_downloadable_products(): array
-{
-}
-    /**
-     * Processes an individual downloadable product, adding the parent paths for any downloadable files to the
-     * Approved Download Directories list.
-     *
-     * Any such paths will be added with the disabled flag set, because we want a site administrator to review
-     * and approve first.
-     *
-     * @param WC_Product $product The product we wish to examine for downloadable file paths.
-     */
-    private function process_product(WC_Product $product)
 {
 }
     /**

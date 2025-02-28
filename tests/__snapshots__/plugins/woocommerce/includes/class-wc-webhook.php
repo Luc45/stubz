@@ -61,85 +61,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
 {
 }
     /**
-     * Helper to check if the webhook should be delivered, as some hooks.
-     * (like `wp_trash_post`) will fire for every post type, not just ours.
-     *
-     * @since  2.2.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if webhook should be delivered, false otherwise.
-     */
-    private function should_deliver($arg)
-{
-}
-    /**
-     * Returns if webhook is active.
-     *
-     * @since  3.6.0
-     * @return bool  True if validation passes.
-     */
-    private function is_active()
-{
-}
-    /**
-     * Returns if topic is valid.
-     *
-     * @since  3.6.0
-     * @return bool  True if validation passes.
-     */
-    private function is_valid_topic()
-{
-}
-    /**
-     * Validates the criteria for certain actions.
-     *
-     * @since  3.6.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if validation passes.
-     */
-    private function is_valid_action($arg)
-{
-}
-    /**
-     * Validates post actions.
-     *
-     * @since  3.6.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if validation passes.
-     */
-    private function is_valid_post_action($arg)
-{
-}
-    /**
-     * Validates user actions.
-     *
-     * @since  3.6.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if validation passes.
-     */
-    private function is_valid_user_action($arg)
-{
-}
-    /**
-     * Validates WC processing actions.
-     *
-     * @since  3.6.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if validation passes.
-     */
-    private function is_valid_processing_action($arg)
-{
-}
-    /**
-     * Checks the resource for this webhook is valid e.g. valid post status.
-     *
-     * @since  3.6.0
-     * @param  mixed $arg First hook argument.
-     * @return bool       True if validation passes.
-     */
-    private function is_valid_resource($arg)
-{
-}
-    /**
      * Checks if the specified resource has already been queued for delivery within the current request.
      *
      * Helps avoid duplication of data being sent for topics that have more than one hook defined.
@@ -158,18 +79,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
      * @param mixed $arg First hook argument.
      */
     public function deliver($arg)
-{
-}
-    /**
-     * Get WP API integration payload.
-     *
-     * @since  3.0.0
-     * @param  string $resource    Resource type.
-     * @param  int    $resource_id Resource ID.
-     * @param  string $event       Event type.
-     * @return array
-     */
-    private function get_wp_api_payload($resource, $resource_id, $event)
 {
 }
     /**
@@ -215,16 +124,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
      * @param float          $duration    Request duration.
      */
     public function log_delivery($delivery_id, $request, $response, $duration)
-{
-}
-    /**
-     * Track consecutive delivery failures and automatically disable the webhook.
-     * if more than 5 consecutive failures occur. A failure is defined as a.
-     * non-2xx response.
-     *
-     * @since 2.2.0
-     */
-    private function failed_delivery()
 {
 }
     /**
@@ -491,16 +390,6 @@ class WC_Webhook extends \WC_Legacy_Webhook
      * @param bool $failure_count Total of failures.
      */
     public function set_failure_count($failure_count)
-{
-}
-    /**
-     * Get the associated hook names for a topic.
-     *
-     * @since  2.2.0
-     * @param  string $topic Topic name.
-     * @return array
-     */
-    private function get_topic_hooks($topic)
 {
 }
     /**

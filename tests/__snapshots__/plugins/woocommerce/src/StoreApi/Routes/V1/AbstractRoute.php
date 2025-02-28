@@ -7,8 +7,8 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 abstract class AbstractRoute implements \Automattic\WooCommerce\StoreApi\Routes\RouteInterface
 {
-    const SCHEMA_TYPE = '';
-    const SCHEMA_VERSION = 1;
+    public const SCHEMA_TYPE = '';
+    public const SCHEMA_VERSION = 1;
     /**
      * Schema class instance.
      *

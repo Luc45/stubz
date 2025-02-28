@@ -8,24 +8,6 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
 class StoredUrl
 {
     /**
-     * The approved directory ID.
-     *
-     * @var int
-     */
-    private $id = null;
-    /**
-     * The approved directory URL.
-     *
-     * @var string
-     */
-    private $url = null;
-    /**
-     * If the individual rule is enabled or disabled.
-     *
-     * @var bool
-     */
-    private $enabled = null;
-    /**
      * Sets up the approved directory rule.
      *
      * @param int    $id      The approved directory ID.

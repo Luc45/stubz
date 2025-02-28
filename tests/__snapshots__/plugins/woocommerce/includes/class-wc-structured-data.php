@@ -5,12 +5,6 @@
 class WC_Structured_Data
 {
     /**
-     * Stores the structured data.
-     *
-     * @var array $_data Array of structured data.
-     */
-    private $_data = array();
-    /**
      * Constructor.
      */
     public function __construct()

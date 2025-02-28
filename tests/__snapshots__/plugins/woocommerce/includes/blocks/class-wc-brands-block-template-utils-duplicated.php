@@ -9,13 +9,13 @@
  */
 class BlockTemplateUtilsDuplicated
 {
-    const DIRECTORY_NAMES = array (
+    protected const DIRECTORY_NAMES = array (
   'DEPRECATED_TEMPLATES' => 'block-templates',
   'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
   'TEMPLATES' => 'templates',
   'TEMPLATE_PARTS' => 'parts',
 );
-    const PLUGIN_SLUG = 'woocommerce/woocommerce';
+    protected const PLUGIN_SLUG = 'woocommerce/woocommerce';
     /**
      * Returns an array containing the references of
      * the passed blocks and their inner blocks.

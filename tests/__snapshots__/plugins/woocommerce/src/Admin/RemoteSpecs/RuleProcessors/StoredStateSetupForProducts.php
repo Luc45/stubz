@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
  */
 class StoredStateSetupForProducts
 {
-    const ASYNC_RUN_REMOTE_NOTIFICATIONS_ACTION_NAME = 'woocommerce_admin/stored_state_setup_for_products/async/run_remote_notifications';
+    public const ASYNC_RUN_REMOTE_NOTIFICATIONS_ACTION_NAME = 'woocommerce_admin/stored_state_setup_for_products/async/run_remote_notifications';
     /**
      * Initialize the class via the admin_init hook.
      */
@@ -41,14 +41,6 @@ class StoredStateSetupForProducts
 {
 }
     /**
-     * Are there products query.
-     *
-     * @return bool
-     */
-    private static function are_there_products()
-{
-}
-    /**
      * Runs on product importer steps.
      */
     public static function run_on_product_importer()
@@ -63,13 +55,6 @@ class StoredStateSetupForProducts
      * @param Post   $post       The post.
      */
     public static function run_on_transition_post_status($new_status, $old_status, $post)
-{
-}
-    /**
-     * Enqueues an async action (using action-scheduler) to run remote
-     * notifications.
-     */
-    private static function update_stored_state_and_possibly_run_remote_notifications()
 {
 }
 }

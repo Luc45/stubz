@@ -7,9 +7,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class OrderMilestones
 {
-    const NOTE_NAME = 'wc-admin-orders-milestone';
-    const LAST_ORDER_MILESTONE_OPTION_KEY = 'woocommerce_admin_last_orders_milestone';
-    const PROCESS_ORDERS_MILESTONE_HOOK = 'wc_admin_process_orders_milestone';
+    public const NOTE_NAME = 'wc-admin-orders-milestone';
+    public const LAST_ORDER_MILESTONE_OPTION_KEY = 'woocommerce_admin_last_orders_milestone';
+    public const PROCESS_ORDERS_MILESTONE_HOOK = 'wc_admin_process_orders_milestone';
     /**
      * Allowed order statuses for calculating milestones.
      *

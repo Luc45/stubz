@@ -9,16 +9,10 @@ namespace Automattic\WooCommerce\Blocks\Patterns;
  */
 class PTKPatternsStore
 {
-    const TRANSIENT_NAME = 'ptk_patterns';
-    const CATEGORY_MAPPING = array (
+    public const TRANSIENT_NAME = 'ptk_patterns';
+    public const CATEGORY_MAPPING = array (
   'testimonials' => 'reviews',
 );
-    /**
-     * PatternsToolkit instance.
-     *
-     * @var PTKClient $ptk_client
-     */
-    private Automattic\WooCommerce\Blocks\Patterns\PTKClient $ptk_client;
     /**
      * Constructor for the class.
      *
@@ -38,37 +32,11 @@ class PTKPatternsStore
 {
 }
     /**
-     * Schedule an async action to fetch the PTK patterns when the scheduler is initialized.
-     *
-     * @return void
-     */
-    private function schedule_fetch_patterns()
-{
-}
-    /**
-     * Schedule an action if it's not already pending.
-     *
-     * @param string $action The action name to schedule.
-     * @return void
-     */
-    private function schedule_action_if_not_pending($action)
-{
-}
-    /**
      * Get the patterns from the Patterns Toolkit cache.
      *
      * @return array
      */
     public function get_patterns()
-{
-}
-    /**
-     * Filter the patterns that have external dependencies.
-     *
-     * @param array $patterns The patterns to filter.
-     * @return array
-     */
-    private function filter_patterns(array $patterns)
 {
 }
     /**
@@ -96,33 +64,6 @@ class PTKPatternsStore
      * @return void
      */
     public function fetch_patterns()
-{
-}
-    /**
-     * Check if the user allowed tracking.
-     *
-     * @return bool
-     */
-    private function allowed_tracking_is_enabled(): bool
-{
-}
-    /**
-     * Change the categories of the patterns to match the ones used in the CYS flow
-     *
-     * @param array $patterns The patterns to map categories for.
-     * @return array The patterns with the categories mapped.
-     */
-    private function map_categories(array $patterns)
-{
-}
-    /**
-     * Check if the pattern has external dependencies.
-     *
-     * @param array $pattern The pattern to check.
-     *
-     * @return bool
-     */
-    private function has_external_dependencies($pattern)
 {
 }
 }

@@ -7,45 +7,21 @@ namespace Automattic\WooCommerce\Internal\Admin\Settings;
  */
 class PaymentProviders
 {
-    const TYPE_GATEWAY = 'gateway';
-    const TYPE_OFFLINE_PM = 'offline_pm';
-    const TYPE_OFFLINE_PMS_GROUP = 'offline_pms_group';
-    const TYPE_SUGGESTION = 'suggestion';
-    const EXTENSION_NOT_INSTALLED = 'not_installed';
-    const EXTENSION_INSTALLED = 'installed';
-    const EXTENSION_ACTIVE = 'active';
-    const EXTENSION_TYPE_WPORG = 'wporg';
-    const PROVIDERS_ORDER_OPTION = 'woocommerce_gateway_order';
-    const SUGGESTION_ORDERING_PREFIX = '_wc_pes_';
-    const OFFLINE_METHODS_ORDERING_GROUP = '_wc_offline_payment_methods_group';
-    const CATEGORY_EXPRESS_CHECKOUT = 'express_checkout';
-    const CATEGORY_BNPL = 'bnpl';
-    const CATEGORY_CRYPTO = 'crypto';
-    const CATEGORY_PSP = 'psp';
-    /**
-     * The map of gateway IDs to their respective provider classes.
-     *
-     * @var \class-string[]
-     */
-    private array $payment_gateways_providers_class_map;
-    /**
-     * The instances of the payment providers.
-     *
-     * @var PaymentGateway[]
-     */
-    private array $instances = array();
-    /**
-     * The memoized payment gateways to avoid computing the list multiple times during a request.
-     *
-     * @var array|null
-     */
-    private array|null $payment_gateways_memo = null;
-    /**
-     * The payment extension suggestions service.
-     *
-     * @var ExtensionSuggestions
-     */
-    private Automattic\WooCommerce\Internal\Admin\Suggestions\PaymentExtensionSuggestions $extension_suggestions;
+    public const TYPE_GATEWAY = 'gateway';
+    public const TYPE_OFFLINE_PM = 'offline_pm';
+    public const TYPE_OFFLINE_PMS_GROUP = 'offline_pms_group';
+    public const TYPE_SUGGESTION = 'suggestion';
+    public const EXTENSION_NOT_INSTALLED = 'not_installed';
+    public const EXTENSION_INSTALLED = 'installed';
+    public const EXTENSION_ACTIVE = 'active';
+    public const EXTENSION_TYPE_WPORG = 'wporg';
+    public const PROVIDERS_ORDER_OPTION = 'woocommerce_gateway_order';
+    public const SUGGESTION_ORDERING_PREFIX = '_wc_pes_';
+    public const OFFLINE_METHODS_ORDERING_GROUP = '_wc_offline_payment_methods_group';
+    public const CATEGORY_EXPRESS_CHECKOUT = 'express_checkout';
+    public const CATEGORY_BNPL = 'bnpl';
+    public const CATEGORY_CRYPTO = 'crypto';
+    public const CATEGORY_PSP = 'psp';
     /**
      * Initialize the class instance.
      *
@@ -275,93 +251,6 @@ class PaymentProviders
      * @return void
      */
     public function reset_memo(): void
-{
-}
-    /**
-     * Handle payment gateways with non-standard registration behavior.
-     *
-     * @param array $payment_gateways The payment gateways list.
-     *
-     * @return array The payment gateways list with the necessary adjustments.
-     */
-    private function handle_non_standard_registration_for_payment_gateways(array $payment_gateways): array
-{
-}
-    /**
-     * Add the pseudo Mollie gateway to the payment gateways list if necessary.
-     *
-     * @param array $payment_gateways The payment gateways list.
-     *
-     * @return array The payment gateways list with the pseudo Mollie gateway added if necessary.
-     */
-    private function maybe_add_pseudo_mollie_gateway(array $payment_gateways): array
-{
-}
-    /**
-     * Enhance the payment gateway details with additional information from other sources.
-     *
-     * @param array              $gateway_details The gateway details to enhance.
-     * @param WC_Payment_Gateway $payment_gateway The payment gateway object.
-     * @param string             $country_code    The country code for which the details are being enhanced.
-     *                                            This should be a ISO 3166-1 alpha-2 country code.
-     *
-     * @return array The enhanced gateway details.
-     */
-    private function enhance_payment_gateway_details(array $gateway_details, WC_Payment_Gateway $payment_gateway, string $country_code): array
-{
-}
-    /**
-     * Check if the store has any enabled ecommerce gateways.
-     *
-     * We exclude offline payment methods from this check.
-     *
-     * @return bool True if the store has any enabled ecommerce gateways, false otherwise.
-     */
-    private function has_enabled_ecommerce_gateways(): bool
-{
-}
-    /**
-     * Enhance a payment extension suggestion with additional information.
-     *
-     * @param array $extension The extension suggestion.
-     *
-     * @return array The enhanced payment extension suggestion.
-     */
-    private function enhance_extension_suggestion(array $extension): array
-{
-}
-    /**
-     * Check if a payment extension suggestion has been hidden by the user.
-     *
-     * @param array $extension The extension suggestion.
-     *
-     * @return bool True if the extension suggestion is hidden, false otherwise.
-     */
-    private function is_payment_extension_suggestion_hidden(array $extension): bool
-{
-}
-    /**
-     * Apply order mappings to a base payment providers order map.
-     *
-     * @param array $base_map     The base order map.
-     * @param array $new_mappings The order mappings to apply.
-     *                            This can be a full or partial list of the base one,
-     *                            but it can also contain (only) new provider IDs and their orders.
-     *
-     * @return array The updated base order map, normalized.
-     */
-    private function payment_providers_order_map_apply_mappings(array $base_map, array $new_mappings): array
-{
-}
-    /**
-     * Get the payment gateway provider instance.
-     *
-     * @param string $gateway_id The gateway ID.
-     *
-     * @return PaymentGateway The payment gateway provider instance.
-     *                        Will return the general provider of no specific provider is found.
-     */
-    private function get_gateway_provider_instance(string $gateway_id): Automattic\WooCommerce\Internal\Admin\Settings\PaymentProviders\PaymentGateway
 {
 }
 }

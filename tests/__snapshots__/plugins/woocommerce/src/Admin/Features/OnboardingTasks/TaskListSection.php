@@ -55,14 +55,6 @@ class TaskListSection
 {
 }
     /**
-     * Returns if section is complete.
-     *
-     * @return boolean;
-     */
-    private function is_complete()
-{
-}
-    /**
      * Get the list for use in JSON.
      *
      * @return array

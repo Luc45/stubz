@@ -8,21 +8,9 @@ namespace Automattic\WooCommerce\Internal\ProductImage;
 class MatchImageBySKU
 {
     /**
-     * The name of the setting for this feature.
-     *
-     * @var string
-     */
-    private $setting_name = 'woocommerce_product_match_featured_image_by_sku';
-    /**
      * MatchImageBySKU constructor.
      */
     public function __construct()
-{
-}
-    /**
-     * Initialize the hooks used by the class.
-     */
-    private function init_hooks()
 {
 }
     /**

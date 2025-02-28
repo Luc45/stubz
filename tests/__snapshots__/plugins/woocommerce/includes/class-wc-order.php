@@ -1231,18 +1231,6 @@ class WC_Order extends \WC_Abstract_Order
 {
 }
     /**
-     * Add an order note for status transition
-     *
-     * @since 3.9.0
-     * @uses self::add_order_note()
-     * @param string $note          Note to be added giving status transition from and to details.
-     * @param bool   $transition    Details of the status transition.
-     * @return int                  Comment ID.
-     */
-    private function add_status_transition_note($note, $transition)
-{
-}
-    /**
      * List order notes (public) for the customer.
      *
      * @return array

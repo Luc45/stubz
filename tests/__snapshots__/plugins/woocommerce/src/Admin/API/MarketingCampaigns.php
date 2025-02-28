@@ -50,23 +50,6 @@ class MarketingCampaigns extends \WC_REST_Controller
 {
 }
     /**
-     * Get formatted price based on Price type.
-     *
-     * This uses plugins/woocommerce/i18n/currency-info.php and plugins/woocommerce/i18n/locale-info.php to get option object based on $price->currency.
-     *
-     * Example:
-     *
-     * - When $price->currency is 'USD' and $price->value is '1000', it should return '$1000.00'.
-     * - When $price->currency is 'JPY' and $price->value is '1000', it should return '¥1,000'.
-     * - When $price->currency is 'AED' and $price->value is '1000', it should return '5.000,00 د.إ'.
-     *
-     * @param Price $price Price object.
-     * @return String formatted price.
-     */
-    private function get_formatted_price($price)
-{
-}
-    /**
      * Prepares the item for the REST response.
      *
      * @param MarketingCampaign $item    WordPress representation of the item.

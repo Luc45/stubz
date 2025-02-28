@@ -11,12 +11,6 @@
 class WC_Brands_Brand_Settings_Manager
 {
     /**
-     * Brand settings for a coupon.
-     *
-     * @var array
-     */
-    private static $brand_settings = array();
-    /**
      * Set brand settings for a coupon.
      *
      * @param WC_Coupon $coupon Coupon object.

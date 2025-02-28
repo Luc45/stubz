@@ -5,17 +5,6 @@
 abstract class ActionScheduler_Abstract_RecurringSchedule extends \ActionScheduler_Abstract_Schedule
 {
     /**
-     * The date & time the first instance of this schedule was setup to run (which may not be this instance).
-     *
-     * Schedule objects are attached to an action object. Each schedule stores the run date for that
-     * object as the start date - @see $this->start - and logic to calculate the next run date after
-     * that - @see $this->calculate_next(). The $first_date property also keeps a record of when the very
-     * first instance of this chain of schedules ran.
-     *
-     * @var DateTime
-     */
-    private $first_date = null;
-    /**
      * Timestamp equivalent of @see $this->first_date
      *
      * @var int

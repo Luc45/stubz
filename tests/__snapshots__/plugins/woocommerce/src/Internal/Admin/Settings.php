@@ -35,14 +35,6 @@ class Settings
 {
 }
     /**
-     * Get all order statuses present in analytics tables that aren't registered.
-     *
-     * @return array Unregistered order statuses.
-     */
-    private function get_unregistered_order_statuses()
-{
-}
-    /**
      * Return an object defining the currency options for the site's current currency
      *
      * @return  array  Settings for the current currency {
@@ -89,15 +81,6 @@ class Settings
      * @return array
      */
     public function add_settings($settings)
-{
-}
-    /**
-     * Gets custom settings used for WC Admin.
-     *
-     * @param array $settings Array of settings to merge into.
-     * @return array
-     */
-    private function get_custom_settings($settings)
 {
 }
 }

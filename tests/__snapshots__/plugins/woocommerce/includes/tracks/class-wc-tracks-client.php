@@ -4,9 +4,9 @@
  */
 class WC_Tracks_Client
 {
-    const PIXEL = 'https://pixel.wp.com/t.gif';
-    const BROWSER_TYPE = 'php-agent';
-    const USER_AGENT_SLUG = 'tracks-client';
+    public const PIXEL = 'https://pixel.wp.com/t.gif';
+    public const BROWSER_TYPE = 'php-agent';
+    public const USER_AGENT_SLUG = 'tracks-client';
     /**
      * Initialize tracks client class
      *

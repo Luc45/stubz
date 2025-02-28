@@ -4,7 +4,7 @@
  */
 class WC_Notes_Refund_Returns
 {
-    const NOTE_NAME = 'wc-refund-returns-page';
+    public const NOTE_NAME = 'wc-refund-returns-page';
     /**
      * Attach hooks.
      */

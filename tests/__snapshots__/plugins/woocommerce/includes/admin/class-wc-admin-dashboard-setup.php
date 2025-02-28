@@ -5,24 +5,6 @@
 class WC_Admin_Dashboard_Setup
 {
     /**
-     * Check for task list initialization.
-     */
-    private $initalized = false;
-    /**
-     * The task list.
-     */
-    private $task_list = null;
-    /**
-     * The tasks.
-     */
-    private $tasks = null;
-    /**
-     * # of completed tasks.
-     *
-     * @var int
-     */
-    private $completed_tasks_count = 0;
-    /**
      * WC_Admin_Dashboard_Setup constructor.
      */
     public function __construct()
@@ -71,14 +53,6 @@ class WC_Admin_Dashboard_Setup
      * @return integer
      */
     public function get_completed_tasks_count()
-{
-}
-    /**
-     * Get the next task.
-     *
-     * @return array|null
-     */
-    private function get_next_task()
 {
 }
     /**

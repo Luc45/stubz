@@ -70,16 +70,6 @@ class WC_Admin_Webhooks_Table_List extends \WP_List_Table
 {
 }
     /**
-     * Get the status label for webhooks.
-     *
-     * @param string $status_name Status name.
-     * @param int    $amount      Amount of webhooks.
-     * @return array
-     */
-    private function get_status_label($status_name, $amount)
-{
-}
-    /**
      * Table list views.
      *
      * @return array
@@ -133,15 +123,6 @@ class WC_Admin_Webhooks_Table_List extends \WP_List_Table
      * @return int Count of existing webhooks are configured to use the legacy payload format.
      */
     public function get_legacy_api_webhooks_count()
-{
-}
-    /**
-     * Check if a given webhook is configured to use the legacy payload format.
-     *
-     * @param WC_Webhook $webhook Webhook object.
-     * @return bool True if the webhook is configured to use the legacy payload format.
-     */
-    private function uses_legacy_rest_api($webhook)
 {
 }
 }

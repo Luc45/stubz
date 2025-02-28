@@ -78,28 +78,9 @@ class WC_Helper
 {
 }
     /**
-     * Filter an array of subscriptions by $filter.
-     *
-     * @param array  $subscriptions The subscriptions array, passed by ref.
-     * @param string $filter The filter.
-     */
-    private static function _filter(&$subscriptions, $filter)
-{
-}
-    /**
      * Enqueue admin scripts and styles.
      */
     public static function admin_enqueue_scripts()
-{
-}
-    /**
-     * Various success/error notices.
-     *
-     * Runs during admin page render, so no headers/redirects here.
-     *
-     * @return array Array pairs of message/type strings with notices.
-     */
-    private static function _get_return_notices()
 {
 }
     /**
@@ -111,54 +92,9 @@ class WC_Helper
 {
 }
     /**
-     * Maybe redirect to the new Marketplace installer.
-     */
-    private static function maybe_redirect_to_new_marketplace_installer()
-{
-}
-    /**
-     * Get helper redirect URL.
-     *
-     * @param array $args Query args.
-     * @return string
-     */
-    private static function get_helper_redirect_url($args = array())
-{
-}
-    /**
-     * Initiate a new OAuth connection.
-     */
-    private static function _helper_auth_connect()
-{
-}
-    /**
-     * Return from WooCommerce.com OAuth flow.
-     */
-    private static function _helper_auth_return()
-{
-}
-    /**
-     * Disconnect from WooCommerce.com, clear OAuth tokens.
-     */
-    private static function _helper_auth_disconnect()
-{
-}
-    /**
-     * User hit the Refresh button, clear all caches.
-     */
-    private static function _helper_auth_refresh()
-{
-}
-    /**
      * Flush helper authentication cache.
      */
     public static function refresh_helper_subscriptions()
-{
-}
-    /**
-     * Active a product subscription.
-     */
-    private static function _helper_subscription_activate()
 {
 }
     /**
@@ -169,12 +105,6 @@ class WC_Helper
      * @return bool True if activated, false otherwise.
      */
     public static function activate_helper_subscription($product_key)
-{
-}
-    /**
-     * Deactivate a product subscription.
-     */
-    private static function helper_subscription_deactivate()
 {
 }
     /**
@@ -195,22 +125,6 @@ class WC_Helper
      * @return string
      */
     public static function get_subscription_install_url($product_key, $product_slug)
-{
-}
-    /**
-     * Deactivate a plugin.
-     */
-    private static function _helper_plugin_deactivate()
-{
-}
-    /**
-     * Get a local plugin/theme entry from product_id.
-     *
-     * @param int $product_id The product id.
-     *
-     * @return array|bool The array containing the local plugin/theme data or false.
-     */
-    private static function _get_local_from_product_id($product_id)
 {
 }
     /**
@@ -252,20 +166,6 @@ class WC_Helper
      * @return array Array of state_name => (bool) state
      */
     public static function get_product_subscription_state($product_id)
-{
-}
-    /**
-     * Get a subscription entry from product_id. If multiple subscriptions are
-     * found with the same product id and $single is set to true, will return the
-     * first one in the list, so you can use this method to get things like extension
-     * name, version, etc.
-     *
-     * @param int  $product_id The product id.
-     * @param bool $single Whether to return a single subscription or all matching a product id.
-     *
-     * @return array|bool The array containing sub data or false.
-     */
-    private static function _get_subscriptions_from_product_id($product_id, $single = true)
 {
 }
     /**
@@ -417,22 +317,6 @@ class WC_Helper
 {
 }
     /**
-     * Get an update notice if one or more Woo extensions has an update available.
-     *
-     * @return string|null The update notice or null if everything is up to date.
-     */
-    private static function _get_extensions_update_notice()
-{
-}
-    /**
-     * Whether WooCommerce has an update available.
-     *
-     * @return bool True if a Woo core update is available.
-     */
-    private static function _woo_core_update_available()
-{
-}
-    /**
      * Flush subscriptions cache.
      */
     public static function _flush_subscriptions_cache()
@@ -448,12 +332,6 @@ class WC_Helper
      * Flush auth cache.
      */
     public static function _flush_authentication_cache()
-{
-}
-    /**
-     * Flush updates cache.
-     */
-    private static function _flush_updates_cache()
 {
 }
     /**

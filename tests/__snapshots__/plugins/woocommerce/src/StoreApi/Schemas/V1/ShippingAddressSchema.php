@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class ShippingAddressSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractAddressSchema
 {
-    const IDENTIFIER = 'shipping-address';
+    public const IDENTIFIER = 'shipping-address';
     /**
      * The schema item name.
      *

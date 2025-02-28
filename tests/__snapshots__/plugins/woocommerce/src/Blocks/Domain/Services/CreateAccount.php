@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 class CreateAccount
 {
     /**
-     * Reference to the Package instance
-     *
-     * @var Package
-     */
-    private $package = null;
-    /**
      * Constructor.
      *
      * @param Package $package An instance of (Woo Blocks) Package.

@@ -8,35 +8,6 @@ namespace Automattic\WooCommerce\Admin\Features\PaymentGatewaySuggestions;
 class DefaultPaymentGateways
 {
     /**
-     * This is the default priority for countries that are not in the $recommendation_priority_map.
-     * Priority is used to determine which payment gateway to recommend first.
-     * The lower the number, the higher the priority.
-     *
-     * @var array
-     */
-    private static $recommendation_priority = array (
-  'woocommerce_payments' => 1,
-  'woocommerce_payments:with-in-person-payments' => 1,
-  'woocommerce_payments:without-in-person-payments' => 1,
-  'stripe' => 2,
-  'woo-mercado-pago-custom' => 3,
-  'ppcp-gateway' => 4,
-  'mollie_wc_gateway_banktransfer' => 5,
-  'razorpay' => 5,
-  'payfast' => 5,
-  'payubiz' => 6,
-  'square_credit_card' => 6,
-  'klarna_payments' => 6,
-  'kco' => 6,
-  'paystack' => 6,
-  'eway' => 7,
-  'amazon_payments_advanced' => 7,
-  'affirm' => 8,
-  'afterpay' => 9,
-  'zipmoney' => 10,
-  'payoneer-checkout' => 11,
-);
-    /**
      * Get default specs.
      *
      * @return array Default specs.
@@ -107,27 +78,6 @@ class DefaultPaymentGateways
      * @return object Rules to match.
      */
     public static function get_rules_for_wcpay_connected($should_be)
-{
-}
-    /**
-     * Get recommendation priority for a given payment gateway by id and country.
-     * If country is not supported, return null.
-     *
-     * @param string $gateway_id Payment gateway id.
-     * @param string $country_code Store country code.
-     * @return int|null Priority. Priority is 0-indexed, so 0 is the highest priority.
-     */
-    private static function get_recommendation_priority($gateway_id, $country_code)
-{
-}
-    /**
-     * Get the default recommendation priority for a payment gateway.
-     * This is used when a country is not in the $recommendation_priority_map array.
-     *
-     * @param string $id Payment gateway id.
-     * @return int Priority.
-     */
-    private static function get_default_recommendation_priority($id)
 {
 }
 }

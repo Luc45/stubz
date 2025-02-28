@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class PaymentsRemindMeLater
 {
-    const NOTE_NAME = 'wc-admin-payments-remind-me-later';
+    public const NOTE_NAME = 'wc-admin-payments-remind-me-later';
     /**
      * Should this note exist?
      */

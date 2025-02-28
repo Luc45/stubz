@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Notes;
  */
 class Notes
 {
-    const UNSNOOZE_HOOK = 'wc_admin_unsnooze_admin_notes';
+    public const UNSNOOZE_HOOK = 'wc_admin_unsnooze_admin_notes';
     /**
      * Hook appropriate actions.
      */
@@ -159,15 +159,6 @@ class Notes
      * @param array  $params The params to send to the event recording.
      */
     public static function record_tracks_event_with_user($user_id, $event_name, $params)
-{
-}
-    /**
-     * Record tracks event without using cookies.
-     *
-     * @param string $event_name Name of the event to record.
-     * @param array  $params The params to send to the event recording.
-     */
-    private static function record_tracks_event_without_cookies($event_name, $params)
 {
 }
     /**

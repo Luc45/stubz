@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Admin\Features;
  */
 class LaunchYourStore
 {
-    const BANNER_DISMISS_USER_META_KEY = 'coming_soon_banner_dismissed';
+    public const BANNER_DISMISS_USER_META_KEY = 'coming_soon_banner_dismissed';
     /**
      * Constructor.
      */
@@ -40,14 +40,6 @@ class LaunchYourStore
      * @return mixed
      */
     public function preload_settings($settings)
-{
-}
-    /**
-     * User must be an admin or editor.
-     *
-     * @return bool
-     */
-    private function is_manager_or_admin()
 {
 }
     /**
@@ -86,14 +78,6 @@ class LaunchYourStore
      * @param object $user user object.
      */
     public function reset_woocommerce_coming_soon_banner_dismissed($user_login, $user)
-{
-}
-    /**
-     * Check if the Mailpoet is connected.
-     *
-     * @return bool true if Mailpoet is fully connected, meaning the API key is valid and approved.
-     */
-    private function is_mailpoet_connected()
 {
 }
     /**

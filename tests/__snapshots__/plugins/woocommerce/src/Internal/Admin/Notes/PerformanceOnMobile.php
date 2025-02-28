@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class PerformanceOnMobile
 {
-    const NOTE_NAME = 'wc-admin-performance-on-mobile';
+    public const NOTE_NAME = 'wc-admin-performance-on-mobile';
     /**
      * Get the note.
      *

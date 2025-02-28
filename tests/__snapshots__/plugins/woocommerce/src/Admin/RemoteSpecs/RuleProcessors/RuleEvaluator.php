@@ -9,12 +9,6 @@ namespace Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors;
 class RuleEvaluator
 {
     /**
-     * GetRuleProcessor to use.
-     *
-     * @var GetRuleProcessor
-     */
-    private $get_rule_processor = null;
-    /**
      * Constructor.
      *
      * @param GetRuleProcessor $get_rule_processor The GetRuleProcessor to use.

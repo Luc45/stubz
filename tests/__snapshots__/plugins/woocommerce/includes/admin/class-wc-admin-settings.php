@@ -5,24 +5,6 @@
 class WC_Admin_Settings
 {
     /**
-     * Setting pages.
-     *
-     * @var array
-     */
-    private static $settings = array();
-    /**
-     * Error messages.
-     *
-     * @var array
-     */
-    private static $errors = array();
-    /**
-     * Update messages.
-     *
-     * @var array
-     */
-    private static $messages = array();
-    /**
      * Include the settings page classes.
      */
     public static function get_settings_pages()

@@ -4,7 +4,7 @@
  */
 class WC_WCCOM_Site_Installation_Manager
 {
-    const STEPS = array (
+    public const STEPS = array (
   0 => 'get_product_info',
   1 => 'download_product',
   2 => 'unpack_product',

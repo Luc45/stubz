@@ -177,21 +177,4 @@ class Features
     public static function add_admin_body_classes($admin_body_class = '')
 {
 }
-    /**
-     * Alias internal features classes to make them backward compatible.
-     * We've moved our feature classes to src-internal as part of merging this
-     * repository with WooCommerce Core to form a monorepo.
-     * See https://wp.me/p90Yrv-2HY for details.
-     */
-    private function register_internal_class_aliases()
-{
-}
-    /**
-     * Check if we're in an admin context where features should be loaded.
-     *
-     * @return boolean
-     */
-    private static function should_load_features()
-{
-}
 }

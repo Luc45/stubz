@@ -5,40 +5,6 @@
 class WC_Admin_Notices
 {
     /**
-     * Local notices cache.
-     *
-     * DON'T manipulate this field directly!
-     * Always use get_notices and set_notices instead.
-     *
-     * @var array
-     */
-    private static $notices = array();
-    /**
-     * Array of notices - name => callback.
-     *
-     * @var array
-     */
-    private static $core_notices = array (
-  'update' => 'update_notice',
-  'template_files' => 'template_file_check_notice',
-  'legacy_shipping' => 'legacy_shipping_notice',
-  'no_shipping_methods' => 'no_shipping_methods_notice',
-  'regenerating_thumbnails' => 'regenerating_thumbnails_notice',
-  'regenerating_lookup_table' => 'regenerating_lookup_table_notice',
-  'no_secure_connection' => 'secure_connection_notice',
-  'maxmind_license_key' => 'maxmind_missing_license_key_notice',
-  'redirect_download_method' => 'redirect_download_method_notice',
-  'uploads_directory_is_unprotected' => 'uploads_directory_is_unprotected_notice',
-  'base_tables_missing' => 'base_tables_missing_notice',
-  'download_directories_sync_complete' => 'download_directories_sync_complete',
-);
-    /**
-     * Stores a flag indicating if the code is running in a multisite setup.
-     *
-     * @var bool
-     */
-    private static bool $is_multisite;
-    /**
      * Initializes the class.
      */
     public static function init()
@@ -69,14 +35,6 @@ class WC_Admin_Notices
 {
 }
     /**
-     * Set the locally cached notices array for the current site.
-     *
-     * @param array $notices New value for the locally cached notices array.
-     */
-    private static function set_notices(array $notices)
-{
-}
-    /**
      * Remove all notices from the locally cached notices array.
      */
     public static function remove_all_notices()
@@ -86,13 +44,6 @@ class WC_Admin_Notices
      * Reset notices for themes when switched or a new version of WC is installed.
      */
     public static function reset_admin_notices()
-{
-}
-    /**
-     * Add an admin notice about unsupported webhooks with Legacy API payload if at least one of these exist
-     * and the Legacy REST API plugin is not installed.
-     */
-    private static function maybe_add_legacy_api_removal_notice()
 {
 }
     /**
@@ -148,14 +99,6 @@ class WC_Admin_Notices
      * Hide a notice if the GET variable is set.
      */
     public static function hide_notices()
-{
-}
-    /**
-     * Hide a single notice.
-     *
-     * @param string $name Notice name.
-     */
-    private static function hide_notice($name)
 {
 }
     /**

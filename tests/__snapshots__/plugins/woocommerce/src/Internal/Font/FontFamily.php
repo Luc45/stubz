@@ -9,16 +9,7 @@ namespace Automattic\WooCommerce\Internal\Font;
  */
 class FontFamily
 {
-    const POST_TYPE = 'wp_font_family';
-    /**
-     * Validates a font family.
-     *
-     * @param array $font_family The font family settings.
-     * @return \WP_Error|null The error if the font family is invalid, null otherwise.
-     */
-    private static function validate_font_family($font_family)
-{
-}
+    public const POST_TYPE = 'wp_font_family';
     /**
      * Registers the font family post type.
      *

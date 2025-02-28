@@ -17,12 +17,6 @@ namespace Automattic\WooCommerce\Internal\Utilities;
 class PluginInstaller implements \Automattic\WooCommerce\Internal\RegisterHooksInterface
 {
     /**
-     * Flag indicating that a plugin install is in progress, so the upgrader_process_complete hook must be ignored.
-     *
-     * @var bool
-     */
-    private bool $installing_plugin = false;
-    /**
      * Attach hooks used by the class.
      */
     public function register()
@@ -66,26 +60,6 @@ class PluginInstaller implements \Automattic\WooCommerce\Internal\RegisterHooksI
      * @throws \InvalidArgumentException Source doesn't start with 'https://downloads.wordpress.org/', or installer name is 'WooCommerce' but caller is not WooCommerce core code.
      */
     public function install_plugin(string $plugin_url, array $metadata = array()): array
-{
-}
-    /**
-     * Core version of 'install_plugin' (it doesn't handle the $installing_plugin flag).
-     *
-     * @param string $plugin_url URL or file path of the plugin to install.
-     * @param array  $metadata Metadata to store if the installation succeeds.
-     * @return array Information about the installation result.
-     * @throws \InvalidArgumentException Source doesn't start with 'https://downloads.wordpress.org/', or installer name is 'WooCommerce' but caller is not WooCommerce core code.
-     */
-    private function install_plugin_core(string $plugin_url, array $metadata): array
-{
-}
-    /**
-     * Check if WooCommerce is installed and active in the current blog.
-     * This is useful for multisite installs when a blog other than the one running this code is selected with 'switch_to_blog'.
-     *
-     * @return bool True if WooCommerce is installed and active in the current blog, false otherwise.
-     */
-    private static function woocommerce_is_active_in_current_site(): bool
 {
 }
     /**

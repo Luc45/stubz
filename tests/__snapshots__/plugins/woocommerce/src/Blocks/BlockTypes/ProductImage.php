@@ -41,47 +41,6 @@ class ProductImage extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
 {
 }
     /**
-     * Get the block's attributes.
-     *
-     * @param array $attributes Block attributes. Default empty array.
-     * @return array  Block attributes merged with defaults.
-     */
-    private function parse_attributes($attributes)
-{
-}
-    /**
-     * Render on Sale Badge.
-     *
-     * @param \WC_Product $product Product object.
-     * @param array       $attributes Attributes.
-     * @return string
-     */
-    private function render_on_sale_badge($product, $attributes)
-{
-}
-    /**
-     * Render anchor.
-     *
-     * @param \WC_Product $product       Product object.
-     * @param string      $on_sale_badge Return value from $render_image.
-     * @param string      $product_image Return value from $render_on_sale_badge.
-     * @param array       $attributes    Attributes.
-     * @return string
-     */
-    private function render_anchor($product, $on_sale_badge, $product_image, $attributes)
-{
-}
-    /**
-     * Render Image.
-     *
-     * @param \WC_Product $product Product object.
-     * @param array       $attributes Parsed attributes.
-     * @return string
-     */
-    private function render_image($product, $attributes)
-{
-}
-    /**
      * Extra data passed through from server to client for block.
      *
      * @param array $attributes  Any attributes that currently are available from the block.

@@ -6,7 +6,7 @@
  */
 class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Store_Interface
 {
-    const DOWNLOAD_PERMISSION_DB_FIELDS = array (
+    public const DOWNLOAD_PERMISSION_DB_FIELDS = array (
   0 => 'download_id',
   1 => 'product_id',
   2 => 'user_id',
@@ -33,26 +33,6 @@ class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Stor
      * @param WC_Customer_Download $download WC_Customer_Download object.
      */
     public function create(&$download)
-{
-}
-    /**
-     * Create download permission for a user, from an array of data.
-     * Assumes that all the keys in the passed data are valid.
-     *
-     * @param array $data Data to create the permission for.
-     * @return int The database id of the created permission, or false if the permission creation failed.
-     */
-    private function insert_new_download_permission($data)
-{
-}
-    /**
-     * Adjust a date value to be inserted in the database.
-     *
-     * @param mixed $date The date value. Can be a WC_DateTime, a timestamp, or anything else that "date" recognizes.
-     * @return string The date converted to 'Y-m-d' format.
-     * @throws Exception The passed value can't be converted to a date.
-     */
-    private function adjust_date_for_db($date)
 {
 }
     /**
@@ -91,17 +71,6 @@ class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Stor
 {
 }
     /**
-     * Delete download_log related to download permission via $field with value $value.
-     *
-     * @param string           $field Field used to query download permission table with.
-     * @param string|int|float $value Value to filter the field by.
-     *
-     * @return void
-     */
-    private function delete_download_log_by_field_value($field, $value)
-{
-}
-    /**
      * Method to delete a download permission from the database by order ID.
      *
      * @param int $id Order ID of the downloads that will be deleted.
@@ -135,15 +104,6 @@ class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Stor
      * @return bool True if deleted rows.
      */
     public function delete_by_user_email($email)
-{
-}
-    /**
-     * Get a download object.
-     *
-     * @param  array $data From the DB.
-     * @return WC_Customer_Download
-     */
-    private function get_download($data)
 {
 }
     /**

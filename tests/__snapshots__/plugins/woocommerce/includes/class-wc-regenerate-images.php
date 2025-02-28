@@ -85,15 +85,6 @@ class WC_Regenerate_Images
 {
 }
     /**
-     * Get full size image dimensions.
-     *
-     * @param int $attachment_id Attachment ID of image.
-     * @return array Width and height. Empty array if the dimensions cannot be found.
-     */
-    private static function get_full_size_image_dimensions($attachment_id)
-{
-}
-    /**
      * Ensure we are dealing with the correct image attachment
      *
      * @param int|WP_Post $attachment Attachment object or ID.
@@ -109,40 +100,6 @@ class WC_Regenerate_Images
      * @return array
      */
     public static function adjust_intermediate_image_sizes($sizes)
-{
-}
-    /**
-     * Generate the thumbnail filename and dimensions for a given file.
-     *
-     * @param string $fullsizepath Path to full size image.
-     * @param int    $thumbnail_width  The width of the thumbnail.
-     * @param int    $thumbnail_height The height of the thumbnail.
-     * @param bool   $crop             Whether to crop or not.
-     * @return array|false An array of the filename, thumbnail width, and thumbnail height, or false on failure to resize such as the thumbnail being larger than the fullsize image.
-     */
-    private static function get_image($fullsizepath, $thumbnail_width, $thumbnail_height, $crop)
-{
-}
-    /**
-     * Regenerate the image according to the required size
-     *
-     * @param int    $attachment_id Attachment ID.
-     * @param array  $image Original Image.
-     * @param string $size Size to return for new URL.
-     * @param bool   $icon If icon or not.
-     * @return string
-     */
-    private static function resize_and_return_image($attachment_id, $image, $size, $icon)
-{
-}
-    /**
-     * Image downsize, without this classes filtering on the results.
-     *
-     * @param int    $attachment_id Attachment ID.
-     * @param string $size Size to downsize to.
-     * @return string New image URL.
-     */
-    private static function unfiltered_image_downsize($attachment_id, $size)
 {
 }
     /**

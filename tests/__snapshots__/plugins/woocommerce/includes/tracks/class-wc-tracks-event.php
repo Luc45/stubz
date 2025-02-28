@@ -5,8 +5,8 @@
 #[AllowDynamicProperties]
 class WC_Tracks_Event
 {
-    const EVENT_NAME_REGEX = '/^(([a-z0-9]+)_){1}([a-z0-9_]+)$/';
-    const PROP_NAME_REGEX = '/^[a-z_][a-z0-9_]*$/';
+    public const EVENT_NAME_REGEX = '/^(([a-z0-9]+)_){1}([a-z0-9_]+)$/';
+    public const PROP_NAME_REGEX = '/^[a-z_][a-z0-9_]*$/';
     /**
      * Error message as WP_Error.
      *

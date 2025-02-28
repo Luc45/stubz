@@ -96,24 +96,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery imple
      */
     protected $report_columns = array();
     /**
-     * Order by property, used in the cmp function.
-     *
-     * @var string
-     */
-    private $order_by = '';
-    /**
-     * Order property, used in the cmp function.
-     *
-     * @var string
-     */
-    private $order = '';
-    /**
-     * Query limit parameters.
-     *
-     * @var array
-     */
-    private $limit_parameters = array();
-    /**
      * Data store context used to pass to filters.
      *
      * @override SqlQuery
@@ -256,16 +238,6 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\SqlQuery imple
      * @return array
      */
     public function add_debug_cache_to_envelope($envelope, $response)
-{
-}
-    /**
-     * Compares two report data objects by pre-defined object property and ASC/DESC ordering.
-     *
-     * @param stdClass $a Object a.
-     * @param stdClass $b Object b.
-     * @return string
-     */
-    private function interval_cmp($a, $b)
 {
 }
     /**

@@ -9,15 +9,6 @@ namespace Automattic\WooCommerce\Blocks\BlockTypes\ProductCollection;
 class Renderer
 {
     /**
-     * The render state of the product collection block.
-     *
-     * @var array
-     */
-    private $render_state = array (
-  'has_results' => false,
-  'has_no_results_block' => false,
-);
-    /**
      * The Block with its attributes before it gets rendered
      *
      * @var array
@@ -49,20 +40,6 @@ class Renderer
 {
 }
     /**
-     * Check if the block should be prevented from rendering.
-     *
-     * @return bool
-     */
-    private function should_prevent_render()
-{
-}
-    /**
-     * Reset the render state.
-     */
-    private function reset_render_state()
-{
-}
-    /**
      * Enhances the Product Collection block with client-side pagination.
      *
      * This function identifies Product Collection blocks and adds necessary data attributes
@@ -77,71 +54,12 @@ class Renderer
 {
 }
     /**
-     * Check if next tag is a PC block.
-     *
-     * @param WP_HTML_Tag_processor $p Initial tag processor.
-     *
-     * @return bool Answer if PC block is available.
-     */
-    private function is_next_tag_product_collection($p)
-{
-}
-    /**
-     * Set PC block namespace for Interactivity API.
-     *
-     * @param WP_HTML_Tag_processor $p Initial tag processor.
-     */
-    private function set_product_collection_namespace($p)
-{
-}
-    /**
      * Get the styles for the list element (fixed width).
      *
      * @param string $fixed_width Fixed width value.
      * @return string
      */
     protected function get_list_styles($fixed_width)
-{
-}
-    /**
-     * Set the style attribute for fixed width.
-     *
-     * @param WP_HTML_Tag_Processor $p          The HTML tag processor.
-     * @param string                $fixed_width The fixed width value.
-     */
-    private function set_fixed_width_style($p, $fixed_width)
-{
-}
-    /**
-     * Handle block dimensions if width type is set to 'fixed'.
-     *
-     * @param WP_HTML_Tag_Processor $p     The HTML tag processor.
-     * @param array                 $block The block details.
-     */
-    private function handle_block_dimensions($p, $block)
-{
-}
-    /**
-     * Attach the init directive to Product Collection block to call
-     * the onRender callback.
-     *
-     * @param string $block_content The HTML content of the block.
-     * @param string $collection Collection type.
-     *
-     * @return string Updated HTML content.
-     */
-    private function add_rendering_callback($block_content, $collection)
-{
-}
-    /**
-     * Attach all the Interactivity API directives responsible
-     * for client-side navigation.
-     *
-     * @param string $block_content The HTML content of the block.
-     *
-     * @return string Updated HTML content.
-     */
-    private function enable_client_side_navigation($block_content)
 {
 }
     /**
@@ -153,25 +71,6 @@ class Renderer
      * @param \WP_Block $instance      The block instance.
      */
     public function add_navigation_link_directives($block_content, $block, $instance)
-{
-}
-    /**
-     * Process pagination links within the block content.
-     *
-     * @param string $block_content The block content.
-     * @return string The updated block content.
-     */
-    private function process_pagination_links($block_content)
-{
-}
-    /**
-     * Sets up data attributes required for interactivity and client-side navigation.
-     *
-     * @param \WP_HTML_Tag_Processor $processor The HTML tag processor.
-     * @param string                 $class_name The class name of the anchor tags.
-     * @param string                 $key_prefix The prefix for the data-wc-key attribute.
-     */
-    private function update_pagination_anchors($processor, $class_name, $key_prefix)
 {
 }
     /**
@@ -201,17 +100,6 @@ class Renderer
      * }
      */
     public function provide_location_context_for_inner_blocks($context)
-{
-}
-    /**
-     * Get the global location context.
-     * Serve as a runtime cache for the location context.
-     *
-     * @see ProductCollectionUtils::parse_frontend_location_context()
-     *
-     * @return array The location context.
-     */
-    private function get_location_context()
 {
 }
 }

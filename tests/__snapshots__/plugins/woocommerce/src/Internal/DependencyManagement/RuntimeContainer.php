@@ -12,7 +12,7 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  */
 class RuntimeContainer
 {
-    const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
+    public const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
     /**
      * Cache of classes already resolved.
      *
@@ -66,21 +66,6 @@ class RuntimeContainer
      * @throws ContainerException Error when resolving the class to an object instance.
      */
     protected function get_core(string $class_name, array &$resolve_chain)
-{
-}
-    /**
-     * Get an instance of a class using reflection.
-     * This method recursively calls 'get_core' (which in turn calls this method) for each of the arguments
-     * in the 'init' method of the resolved class (if the method is public and non-static).
-     *
-     * @param string $class_name The name of the class to resolve.
-     * @param array  $resolve_chain Classes already resolved in this resolution chain. Passed between recursive calls to the method in order to detect a recursive resolution condition.
-     * @return object The resolved object.
-     *
-     * @throws ContainerException The 'init' method has invalid arguments.
-     * @throws \ReflectionException Something went wrong when using reflection to get information about the class to resolve.
-     */
-    private function instantiate_class_using_reflection(string $class_name, array &$resolve_chain): object
 {
 }
     /**

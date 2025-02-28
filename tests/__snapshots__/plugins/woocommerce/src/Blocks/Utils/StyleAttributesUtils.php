@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  */
 class StyleAttributesUtils
 {
-    const EMPTY_STYLE = array (
+    public const EMPTY_STYLE = array (
   'class' => '',
   'style' => '',
   'value' => '',

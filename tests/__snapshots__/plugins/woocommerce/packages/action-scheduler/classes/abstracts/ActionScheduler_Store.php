@@ -6,18 +6,12 @@
  */
 abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
 {
-    const STATUS_COMPLETE = 'complete';
-    const STATUS_PENDING = 'pending';
-    const STATUS_RUNNING = 'in-progress';
-    const STATUS_FAILED = 'failed';
-    const STATUS_CANCELED = 'canceled';
-    const DEFAULT_CLASS = 'ActionScheduler_wpPostStore';
-    /**
-     * ActionScheduler_Store instance.
-     *
-     * @var ActionScheduler_Store
-     */
-    private static $store = null;
+    public const STATUS_COMPLETE = 'complete';
+    public const STATUS_PENDING = 'pending';
+    public const STATUS_RUNNING = 'in-progress';
+    public const STATUS_FAILED = 'failed';
+    public const STATUS_CANCELED = 'canceled';
+    public const DEFAULT_CLASS = 'ActionScheduler_wpPostStore';
     /**
      * Maximum length of args.
      *
@@ -286,18 +280,6 @@ abstract class ActionScheduler_Store extends \ActionScheduler_Store_Deprecated
      * @return void
      */
     public function cancel_actions_by_group($group)
-{
-}
-    /**
-     * Cancel a set of action IDs.
-     *
-     * @since 3.0.0
-     *
-     * @param int[] $action_ids List of action IDs.
-     *
-     * @return void
-     */
-    private function bulk_cancel_actions($action_ids)
 {
 }
     /**

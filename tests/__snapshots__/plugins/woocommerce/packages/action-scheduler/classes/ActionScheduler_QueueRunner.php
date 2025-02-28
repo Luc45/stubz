@@ -4,26 +4,14 @@
  */
 class ActionScheduler_QueueRunner extends \ActionScheduler_Abstract_QueueRunner
 {
-    const WP_CRON_HOOK = 'action_scheduler_run_queue';
-    const WP_CRON_SCHEDULE = 'every_minute';
+    public const WP_CRON_HOOK = 'action_scheduler_run_queue';
+    public const WP_CRON_SCHEDULE = 'every_minute';
     /**
      * ActionScheduler_AsyncRequest_QueueRunner instance.
      *
      * @var ActionScheduler_AsyncRequest_QueueRunner
      */
     protected $async_request = null;
-    /**
-     * ActionScheduler_QueueRunner instance.
-     *
-     * @var ActionScheduler_QueueRunner
-     */
-    private static $runner = null;
-    /**
-     * Number of processed actions.
-     *
-     * @var int
-     */
-    private $processed_actions_count = 0;
     /**
      * Get instance.
      *

@@ -7,52 +7,12 @@ namespace Automattic\WooCommerce\Internal\Admin\EmailPreview;
  */
 class EmailPreview
 {
-    const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
-    const DEFAULT_EMAIL_ID = 'customer_processing_order';
-    const USER_OBJECT_EMAILS = array (
+    public const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
+    public const DEFAULT_EMAIL_ID = 'customer_processing_order';
+    public const USER_OBJECT_EMAILS = array (
   0 => 'WC_Email_Customer_New_Account',
   1 => 'WC_Email_Customer_Reset_Password',
 );
-    /**
-     * All fields IDs that can customize email styles in Settings.
-     *
-     * @var array
-     */
-    private static array $email_style_settings_ids = array (
-  0 => 'woocommerce_email_background_color',
-  1 => 'woocommerce_email_base_color',
-  2 => 'woocommerce_email_body_background_color',
-  3 => 'woocommerce_email_font_family',
-  4 => 'woocommerce_email_footer_text',
-  5 => 'woocommerce_email_footer_text_color',
-  6 => 'woocommerce_email_header_alignment',
-  7 => 'woocommerce_email_header_image',
-  8 => 'woocommerce_email_text_color',
-);
-    /**
-     * All fields IDs that can customize specific email content in Settings.
-     *
-     * @var array
-     */
-    private static array $email_content_settings_ids = array();
-    /**
-     * Whether the email settings IDs are initialized.
-     *
-     * @var bool
-     */
-    private static bool $email_settings_ids_initialized = false;
-    /**
-     * The email type to preview.
-     *
-     * @var string|null
-     */
-    private string|null $email_type = null;
-    /**
-     * The email object.
-     *
-     * @var WC_Email|null
-     */
-    private WC_Email|null $email = null;
     /**
      * The single instance of the class.
      *
@@ -130,76 +90,6 @@ class EmailPreview
      * @return WC_Product
      */
     public function get_dummy_product_when_not_set($product)
-{
-}
-    /**
-     * Get HTML of the legacy preview email.
-     *
-     * @return string
-     */
-    private function render_legacy_preview_email()
-{
-}
-    /**
-     * Render HTML content of the preview email.
-     *
-     * @return string
-     */
-    private function render_preview_email()
-{
-}
-    /**
-     * Get a dummy order object without the need to create in the database.
-     *
-     * @return WC_Order
-     */
-    private function get_dummy_order()
-{
-}
-    /**
-     * Get a dummy product. Also used with `woocommerce_order_item_product` filter
-     * when email templates tries to get the product from the database.
-     *
-     * @return WC_Product
-     */
-    private function get_dummy_product()
-{
-}
-    /**
-     * Get a dummy product variation.
-     *
-     * @return WC_Product_Variation
-     */
-    private function get_dummy_product_variation()
-{
-}
-    /**
-     * Get a dummy address.
-     *
-     * @return array
-     */
-    private function get_dummy_address()
-{
-}
-    /**
-     * Get the placeholders for the email preview.
-     *
-     * @param WC_Order|WP_User $email_object The object to render email with.
-     * @return array
-     */
-    private function get_placeholders($email_object)
-{
-}
-    /**
-     * Set up filters for email preview.
-     */
-    private function set_up_filters()
-{
-}
-    /**
-     * Clean up filters after email preview.
-     */
-    private function clean_up_filters()
 {
 }
     /**

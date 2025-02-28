@@ -14,49 +14,6 @@ class Events
      */
     protected static $instance = null;
     /**
-     * Array of note class to be added or updated.
-     *
-     * @var array
-     */
-    private static $note_classes_to_added_or_updated = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\AddFirstProduct',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\ChoosingTheme',
-  2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\CustomizeStoreWithBlocks',
-  3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\CustomizingProductCatalog',
-  4 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\EditProductsOnTheMove',
-  5 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\EUVATNumber',
-  6 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\FirstProduct',
-  7 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\LaunchChecklist',
-  8 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\MagentoMigration',
-  9 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\ManageOrdersOnTheGo',
-  10 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\MarketingJetpack',
-  11 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\MigrateFromShopify',
-  12 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\MobileApp',
-  13 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\NewSalesRecord',
-  14 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\OnboardingPayments',
-  15 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\OnlineClothingStore',
-  16 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\PaymentsMoreInfoNeeded',
-  17 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\PaymentsRemindMeLater',
-  18 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\PerformanceOnMobile',
-  19 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\PersonalizeStore',
-  20 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\RealTimeOrderAlerts',
-  21 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\TrackingOptIn',
-  22 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooCommercePayments',
-  23 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooCommerceSubscriptions',
-);
-    /**
-     * The other note classes that are added in other places.
-     *
-     * @var array
-     */
-    private static $other_note_classes = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\InstallJPAndWCSPlugins',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\OrderMilestones',
-  2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\SellingOnlineCourses',
-  3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\UnsecuredReportFiles',
-  4 => 'Automattic\\WooCommerce\\Internal\\Admin\\Notes\\WooSubscriptionsNotes',
-);
-    /**
      * Constructor
      *
      * @return void

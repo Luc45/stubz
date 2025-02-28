@@ -12,18 +12,6 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint\Steps;
 class SetWCTaxRates extends \Automattic\WooCommerce\Blueprint\Steps\Step
 {
     /**
-     * Tax rates.
-     *
-     * @var array $rates Tax rates.
-     */
-    private array $rates;
-    /**
-     * Tax rate locations.
-     *
-     * @var array $locations Tax rate locations.
-     */
-    private array $locations;
-    /**
      * Constructor.
      *
      * @param array $rates Tax rates.

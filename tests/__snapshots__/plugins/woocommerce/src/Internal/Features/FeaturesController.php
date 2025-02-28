@@ -11,58 +11,8 @@ namespace Automattic\WooCommerce\Internal\Features;
  */
 class FeaturesController
 {
-    const FEATURE_ENABLED_CHANGED_ACTION = 'woocommerce_feature_enabled_changed';
-    const PLUGINS_COMPATIBLE_BY_DEFAULT_OPTION = 'woocommerce_plugins_are_compatible_with_features_by_default';
-    /**
-     * The existing feature definitions.
-     *
-     * @var array[]
-     */
-    private $features = array();
-    /**
-     * The registered compatibility info for WooCommerce plugins, with plugin names as keys.
-     *
-     * @var array
-     */
-    private $compatibility_info_by_plugin = array();
-    /**
-     * The registered compatibility info for WooCommerce plugins, with feature ids as keys.
-     *
-     * @var array
-     */
-    private $compatibility_info_by_feature = array();
-    /**
-     * The LegacyProxy instance to use.
-     *
-     * @var LegacyProxy
-     */
-    private $proxy = null;
-    /**
-     * The PluginUtil instance to use.
-     *
-     * @var PluginUtil
-     */
-    private $plugin_util = null;
-    /**
-     * Flag indicating that features will be enableable from the settings page
-     * even when they are incompatible with active plugins.
-     *
-     * @var bool
-     */
-    private $force_allow_enabling_features = false;
-    /**
-     * Flag indicating that plugins will be activable from the plugins page
-     * even when they are incompatible with enabled features.
-     *
-     * @var bool
-     */
-    private $force_allow_enabling_plugins = false;
-    /**
-     * List of plugins excluded from feature compatibility warnings in UI.
-     *
-     * @var string[]
-     */
-    private $plugins_excluded_from_compatibility_ui = null;
+    public const FEATURE_ENABLED_CHANGED_ACTION = 'woocommerce_feature_enabled_changed';
+    public const PLUGINS_COMPATIBLE_BY_DEFAULT_OPTION = 'woocommerce_plugins_are_compatible_with_features_by_default';
     /**
      * Creates a new instance of the class.
      */
@@ -107,14 +57,6 @@ class FeaturesController
      * @return void
      */
     public function add_feature_definition($slug, $name, array $args = array())
-{
-}
-    /**
-     * Generate and cache the feature definitions.
-     *
-     * @return array[]
-     */
-    private function get_feature_definitions()
 {
 }
     /**
@@ -167,15 +109,6 @@ class FeaturesController
 {
 }
     /**
-     * Check if a given feature is enabled by default.
-     *
-     * @param string $feature_id Unique feature id.
-     * @return boolean TRUE if the feature is enabled by default, FALSE otherwise.
-     */
-    private function feature_is_enabled_by_default(string $feature_id): bool
-{
-}
-    /**
      * Change the enabled/disabled status of a feature.
      *
      * @param string $feature_id Unique feature id.
@@ -204,15 +137,6 @@ class FeaturesController
 {
 }
     /**
-     * Check whether a feature exists with a given id.
-     *
-     * @param string $feature_id The feature id to check.
-     * @return bool True if the feature exists.
-     */
-    private function feature_exists(string $feature_id): bool
-{
-}
-    /**
      * Get the ids of the features that a certain plugin has declared compatibility for.
      *
      * This method can't be called before the 'woocommerce_init' hook is fired.
@@ -232,16 +156,6 @@ class FeaturesController
      * @return array An array having a 'compatible', an 'incompatible' and an 'uncertain' key, each holding an array of plugin names.
      */
     public function get_compatible_plugins_for_feature(string $feature_id, bool $active_only = false): array
-{
-}
-    /**
-     * Check if the 'woocommerce_init' has run or is running, do a 'wc_doing_it_wrong' if not.
-     *
-     * @param string|null $function_name Name of the invoking method, if not null, 'wc_doing_it_wrong' will be invoked if 'woocommerce_init' has not run and is not running.
-     *
-     * @return bool True if 'woocommerce_init' has run or is running, false otherwise.
-     */
-    private function verify_did_woocommerce_init(string|null $function_name = null): bool
 {
 }
     /**
@@ -352,16 +266,6 @@ class FeaturesController
 {
 }
     /**
-     * Get the parameters to display the setting enable/disable UI for a given feature.
-     *
-     * @param string $feature_id The feature id.
-     * @param array  $feature The feature parameters, as returned by get_features.
-     * @return array The parameters to add to the settings array.
-     */
-    private function get_setting_for_feature(string $feature_id, array $feature): array
-{
-}
-    /**
      * Handle the plugin deactivation hook.
      *
      * @param string $plugin_name Name of the plugin that has been deactivated.
@@ -402,22 +306,6 @@ class FeaturesController
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function display_notices_in_plugins_page(): void
-{
-}
-    /**
-     * Shows a warning when there are any incompatibility between active plugins and enabled features.
-     * The warning is shown in on any admin screen except the plugins screen itself, since
-     * there's already a "You are viewing plugins that are incompatible" notice.
-     */
-    private function maybe_display_feature_incompatibility_warning(): void
-{
-}
-    /**
-     * Shows a "You are viewing the plugins that are incompatible with the X feature"
-     * if we are in the plugins page and the query string of the current request
-     * looks like '?plugin_status=incompatible_with_feature&feature_id=<feature id>'.
-     */
-    private function maybe_display_current_feature_filter_description(): bool
 {
 }
     /**

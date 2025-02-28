@@ -14,12 +14,6 @@ namespace Automattic\WooCommerce\Blocks\Registry;
 abstract class AbstractDependencyType
 {
     /**
-     * Holds a callable or value provided for this type.
-     *
-     * @var mixed
-     */
-    private $callable_or_value = null;
-    /**
      * Constructor
      *
      * @param mixed $callable_or_value  A callable or value for the dependency

@@ -4,7 +4,7 @@
  */
 class WC_Tracks
 {
-    const PREFIX = 'wcadmin_';
+    public const PREFIX = 'wcadmin_';
     /**
      * Get total product counts.
      *

@@ -9,7 +9,7 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class SingleProductTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
-    const SLUG = 'single-product';
+    public const SLUG = 'single-product';
     /**
      * Initialization method.
      */
@@ -45,16 +45,6 @@ class SingleProductTemplate extends \Automattic\WooCommerce\Blocks\Templates\Abs
      * @return array
      */
     public function update_single_product_content($query_result)
-{
-}
-    /**
-     * Replace the first single product template block with the password form. Remove all other single product template blocks.
-     *
-     * @param array   $parsed_blocks Array of parsed block objects.
-     * @param boolean $is_already_replaced If the password form has already been added.
-     * @return array Parsed blocks
-     */
-    private static function replace_first_single_product_template_block_with_password_form($parsed_blocks, $is_already_replaced)
 {
 }
     /**

@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingJetpack
 {
     /**
-     * Class instance.
-     *
-     * @var OnboardingJetpack instance
-     */
-    private static $instance = null;
-    /**
      * Get class instance.
      */
     final public static function instance()

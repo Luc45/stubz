@@ -8,12 +8,6 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 class CheckoutFieldsFrontend
 {
     /**
-     * Checkout field controller.
-     *
-     * @var CheckoutFields
-     */
-    private $checkout_fields_controller = null;
-    /**
      * Sets up core fields.
      *
      * @param CheckoutFields $checkout_fields_controller Instance of the checkout field controller.

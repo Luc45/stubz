@@ -8,30 +8,6 @@ namespace Automattic\WooCommerce\Utilities;
 class PluginUtil
 {
     /**
-     * The LegacyProxy instance to use.
-     *
-     * @var LegacyProxy
-     */
-    private $proxy = null;
-    /**
-     * The cached list of WooCommerce aware plugin ids.
-     *
-     * @var null|array
-     */
-    private $woocommerce_aware_plugins = null;
-    /**
-     * The cached list of enabled WooCommerce aware plugin ids.
-     *
-     * @var null|array
-     */
-    private $woocommerce_aware_active_plugins = null;
-    /**
-     * List of plugins excluded from feature compatibility warnings in UI.
-     *
-     * @var string[]
-     */
-    private $plugins_excluded_from_compatibility_ui = null;
-    /**
      * Creates a new instance of the class.
      */
     public function __construct()

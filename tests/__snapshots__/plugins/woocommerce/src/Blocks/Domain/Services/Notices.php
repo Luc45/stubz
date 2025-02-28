@@ -10,22 +10,6 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
 class Notices
 {
     /**
-     * Holds the Package instance
-     *
-     * @var Package
-     */
-    private $package = null;
-    /**
-     * Templates used for notices.
-     *
-     * @var array
-     */
-    private $notice_templates = array (
-  0 => 'notices/error.php',
-  1 => 'notices/notice.php',
-  2 => 'notices/success.php',
-);
-    /**
      * Constructor
      *
      * @param Package $package An instance of the package class.

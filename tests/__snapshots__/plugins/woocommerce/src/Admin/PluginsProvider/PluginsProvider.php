@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\Admin\PluginsProvider;
 class PluginsProvider implements \Automattic\WooCommerce\Admin\PluginsProvider\PluginsProviderInterface
 {
     /**
-     * The deactivated plugin slug.
-     *
-     * @var string
-     */
-    private static $deactivated_plugin_slug = '';
-    /**
      * Get an array of active plugin slugs.
      *
      * @return array

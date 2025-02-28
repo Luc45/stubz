@@ -16,12 +16,6 @@ final class CashOnDelivery extends \Automattic\WooCommerce\Blocks\Payments\Integ
      */
     protected $name;
     /**
-     * An instance of the Asset Api
-     *
-     * @var Api
-     */
-    private $asset_api = null;
-    /**
      * Constructor
      *
      * @param Api $asset_api An instance of Api.
@@ -41,22 +35,6 @@ final class CashOnDelivery extends \Automattic\WooCommerce\Blocks\Payments\Integ
      * @return boolean
      */
     public function is_active()
-{
-}
-    /**
-     * Return enable_for_virtual option.
-     *
-     * @return boolean True if store allows COD payment for orders containing only virtual products.
-     */
-    private function get_enable_for_virtual()
-{
-}
-    /**
-     * Return enable_for_methods option.
-     *
-     * @return array Array of shipping methods (string ids) that allow COD. (If empty, all support COD.)
-     */
-    private function get_enable_for_methods()
 {
 }
     /**

@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class CustomizeStoreWithBlocks
 {
-    const NOTE_NAME = 'wc-admin-customize-store-with-blocks';
+    public const NOTE_NAME = 'wc-admin-customize-store-with-blocks';
     /**
      * Get the note.
      *

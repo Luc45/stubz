@@ -8,7 +8,7 @@
  */
 class WC_Brands_Coupons
 {
-    const E_WC_COUPON_EXCLUDED_BRANDS = 301;
+    public const E_WC_COUPON_EXCLUDED_BRANDS = 301;
     /**
      * Constructor
      */
@@ -57,35 +57,6 @@ class WC_Brands_Coupons
      * @return string
      */
     public function brand_exclusion_error($err, $err_code)
-{
-}
-    /**
-     * Get a list of brands that are assigned to a specific product
-     *
-     * @param  int $product_id Product id.
-     * @return array brands
-     */
-    private function get_product_brands($product_id)
-{
-}
-    /**
-     * Set brand settings as properties on coupon object. These properties are
-     * lists of included product brand IDs and list of excluded brand IDs.
-     *
-     * @param WC_Coupon $coupon Coupon object.
-     *
-     * @return void
-     */
-    private function set_brand_settings_on_coupon($coupon)
-{
-}
-    /**
-     * Returns the product (or variant) ID.
-     *
-     * @param  WC_Product $product WC Product Object.
-     * @return int Product ID
-     */
-    private function get_product_id($product)
 {
 }
 }

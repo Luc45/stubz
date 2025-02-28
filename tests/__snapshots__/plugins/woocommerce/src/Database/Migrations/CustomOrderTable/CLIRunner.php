@@ -12,24 +12,6 @@ namespace Automattic\WooCommerce\Database\Migrations\CustomOrderTable;
 class CLIRunner
 {
     /**
-     * CustomOrdersTableController instance.
-     *
-     * @var CustomOrdersTableController
-     */
-    private $controller = null;
-    /**
-     * DataSynchronizer instance.
-     *
-     * @var DataSynchronizer;
-     */
-    private $synchronizer = null;
-    /**
-     * PostsToOrdersMigrationController instance.
-     *
-     * @var PostsToOrdersMigrationController
-     */
-    private $post_to_cot_migrator = null;
-    /**
      * Init method, invoked by DI container.
      *
      * @param CustomOrdersTableController      $controller Instance.
@@ -45,22 +27,6 @@ class CLIRunner
      * Registers commands for CLI.
      */
     public function register_commands()
-{
-}
-    /**
-     * Check if the COT feature is enabled.
-     *
-     * @param bool $log Optionally log a error message.
-     *
-     * @return bool Whether the COT feature is enabled.
-     */
-    private function is_enabled($log = true): bool
-{
-}
-    /**
-     * Free some in-memory usage.
-     */
-    private function free_in_memory_usage()
 {
 }
     /**
@@ -173,40 +139,6 @@ class CLIRunner
      * @param array $assoc_args Associative arguments (options) passed to the command.
      */
     public function verify_cot_data($args = array(), $assoc_args = array())
-{
-}
-    /**
-     * Helper method to get count for orders needing verification.
-     *
-     * @param int   $order_id_start Order ID to start from.
-     * @param int   $order_id_end Order ID to end at.
-     * @param array $order_types List of order types to verify.
-     * @param bool  $log Whether to also log an error message.
-     *
-     * @return int Order count.
-     */
-    private function get_verify_order_count(int $order_id_start, int $order_id_end, array $order_types, bool $log = true): int
-{
-}
-    /**
-     * Verify meta data as part of verifying the order object.
-     *
-     * @param array $order_ids Order IDs.
-     * @param array $failed_ids Array for storing failed IDs.
-     *
-     * @return array Failed IDs with meta details.
-     */
-    private function verify_meta_data(array $order_ids, array $failed_ids): array
-{
-}
-    /**
-     * Helper method to normalize response from meta queries into order_id > meta_key > meta_values.
-     *
-     * @param array $data Data fetched from meta queries.
-     *
-     * @return array Normalized data.
-     */
-    private function normalize_raw_meta_data(array $data): array
 {
 }
     /**
@@ -407,32 +339,6 @@ class CLIRunner
 {
 }
     /**
-     * Get the printable names for a set of plugins given their file names.
-     *
-     * @param array $plugins The plugin file names.
-     * @param bool  $display_filenames True to simply return the sorted list of plugin file names.
-     * @return array A sorted array of plugin names or file names.
-     */
-    private function get_printable_plugin_names(array $plugins, bool $display_filenames): array
-{
-}
-    /**
-     * Print a list of plugin names.
-     *
-     * @param array $plugins The names to print.
-     */
-    private function print_plugin_names(array $plugins): void
-{
-}
-    /**
-     * Show a log message using the WP_CLI text colorization feature.
-     *
-     * @param string $text Text to show.
-     */
-    private function log(string $text)
-{
-}
-    /**
      * Enables compatibility mode, which keeps the HPOS and posts datastore in sync.
      *
      * @since 9.1.0
@@ -446,16 +352,6 @@ class CLIRunner
      * @since 9.1.0
      */
     public function disable_compat_mode(): void
-{
-}
-    /**
-     * Toggles compatibility mode on or off.
-     *
-     * @since 9.1.0
-     *
-     * @param bool $enabled TRUE to enable compatibility mode, FALSE to disable.
-     */
-    private function toggle_compat_mode(bool $enabled): void
 {
 }
 }

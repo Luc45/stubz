@@ -10,12 +10,6 @@ namespace Automattic\WooCommerce\Admin\Features\Blueprint;
 class Init
 {
     /**
-     * Array of initialized exporters.
-     *
-     * @var StepExporter[]
-     */
-    private array $initialized_exporters = array();
-    /**
      * Init constructor.
      */
     public function __construct()

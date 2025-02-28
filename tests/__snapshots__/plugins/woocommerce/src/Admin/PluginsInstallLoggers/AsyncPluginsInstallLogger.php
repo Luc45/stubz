@@ -8,35 +8,11 @@ namespace Automattic\WooCommerce\Admin\PluginsInstallLoggers;
 class AsyncPluginsInstallLogger implements \Automattic\WooCommerce\Admin\PluginsInstallLoggers\PluginsInstallLogger
 {
     /**
-     * Variable to store logs.
-     *
-     * @var string $option_name option name to store logs.
-     */
-    private $option_name = null;
-    /**
      * Constructor.
      *
      * @param string $option_name option name.
      */
     public function __construct(string $option_name)
-{
-}
-    /**
-     * Update the option.
-     *
-     * @param array $data New data.
-     *
-     * @return bool
-     */
-    private function update(array $data)
-{
-}
-    /**
-     * Retrieve the option.
-     *
-     * @return false|mixed|void
-     */
-    private function get()
 {
 }
     /**
@@ -90,9 +66,6 @@ class AsyncPluginsInstallLogger implements \Automattic\WooCommerce\Admin\Plugins
     public function complete($data = array())
 {
 }
-    private function get_plugin_track_key($id)
-{
-}
     /**
      * Returns time frame for a given time in milliseconds.
      *
@@ -101,9 +74,6 @@ class AsyncPluginsInstallLogger implements \Automattic\WooCommerce\Admin\Plugins
      * @return string - Time frame.
      */
     public function get_timeframe($timeInMs)
-{
-}
-    private function track($data)
 {
 }
 }

@@ -22,25 +22,7 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
  */
 class DataRegenerator
 {
-    const PRODUCTS_PER_GENERATION_STEP = 100;
-    /**
-     * The data store to use.
-     *
-     * @var LookupDataStore
-     */
-    private $data_store = null;
-    /**
-     * The lookup table name.
-     *
-     * @var string
-     */
-    private $lookup_table_name = null;
-    /**
-     * Flag indicating if the last regeneration step failed.
-     *
-     * @var bool
-     */
-    private $last_regeneration_step_failed = null;
+    public const PRODUCTS_PER_GENERATION_STEP = 100;
     /**
      * DataRegenerator constructor.
      */
@@ -83,34 +65,9 @@ class DataRegenerator
 {
 }
     /**
-     * Delete all the existing data related to the lookup table, optionally including the table itself.
-     *
-     * @param bool $truncate_table True to truncate the lookup table too.
-     */
-    private function delete_all_attributes_lookup_data(bool $truncate_table)
-{
-}
-    /**
      * Delete all the data from the lookup table.
      */
     public function truncate_lookup_table()
-{
-}
-    /**
-     * Create the lookup table and initialize the options that will be temporarily used
-     * while the regeneration is in progress.
-     *
-     * @return int Id of the last product id that will be processed.
-     */
-    private function initialize_table_and_data(): int
-{
-}
-    /**
-     * Get the highest existing product id.
-     *
-     * @return int|null Highest existing product id, or null if no products exist at all.
-     */
-    private function get_last_existing_product_id(): int|null
 {
 }
     /**
@@ -120,12 +77,6 @@ class DataRegenerator
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function run_regeneration_step_callback()
-{
-}
-    /**
-     * Enqueue one regeneration step in action scheduler.
-     */
-    private function enqueue_regeneration_step_run()
 {
 }
     /**
@@ -156,23 +107,6 @@ class DataRegenerator
      * @internal For exclusive usage of WooCommerce core, backwards compatibility not guaranteed.
      */
     public function add_initiate_regeneration_entry_to_tools_array(array $tools_array)
-{
-}
-    /**
-     * Callback to initiate the regeneration process from the Status - Tools page.
-     *
-     * @throws \Exception The regeneration is already in progress.
-     */
-    private function initiate_regeneration_from_tools_page()
-{
-}
-    /**
-     * Enable or disable the actual lookup table usage.
-     *
-     * @param bool $enable True to enable, false to disable.
-     * @throws \Exception A lookup table regeneration is currently in progress.
-     */
-    private function enable_or_disable_lookup_table_usage($enable)
 {
 }
     /**
@@ -215,14 +149,6 @@ class DataRegenerator
      * @throws \Exception The lookup table doesn't exist, or a regeneration process is already in place or hasn't been aborted.
      */
     public function resume_regeneration(bool $verify_nonce)
-{
-}
-    /**
-     * Verify the validity of the nonce received when executing a tool from the Status - Tools page.
-     *
-     * @throws \Exception Missing or invalid nonce received.
-     */
-    private function verify_tool_execution_nonce()
 {
 }
     /**

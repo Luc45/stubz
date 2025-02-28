@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\Internal\Admin\ProductReviews;
  */
 class ReviewsCommentsOverrides
 {
-    const REVIEWS_MOVED_NOTICE_ID = 'product_reviews_moved';
+    public const REVIEWS_MOVED_NOTICE_ID = 'product_reviews_moved';
     /**
      * Constructor.
      */

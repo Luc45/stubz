@@ -7,7 +7,7 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class OrderFeeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
-    const IDENTIFIER = 'order-fee';
+    public const IDENTIFIER = 'order-fee';
     /**
      * The schema item name.
      *

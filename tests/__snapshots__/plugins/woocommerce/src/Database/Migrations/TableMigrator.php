@@ -11,12 +11,6 @@ namespace Automattic\WooCommerce\Database\Migrations;
 abstract class TableMigrator
 {
     /**
-     * An array of cumulated error messages.
-     *
-     * @var array
-     */
-    private $errors = null;
-    /**
      * Clear the error messages list.
      *
      * @return void

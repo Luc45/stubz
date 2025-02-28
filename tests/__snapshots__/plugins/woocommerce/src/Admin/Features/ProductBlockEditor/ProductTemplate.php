@@ -11,54 +11,6 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
 class ProductTemplate
 {
     /**
-     * The template id.
-     *
-     * @var string
-     */
-    private $id = null;
-    /**
-     * The template title.
-     *
-     * @var string
-     */
-    private $title = null;
-    /**
-     * The product data.
-     *
-     * @var array
-     */
-    private $product_data = null;
-    /**
-     * The template order.
-     *
-     * @var Integer
-     */
-    private $order = 999;
-    /**
-     * The layout template id.
-     *
-     * @var string
-     */
-    private $layout_template_id = null;
-    /**
-     * The template description.
-     *
-     * @var string
-     */
-    private $description = null;
-    /**
-     * The template icon.
-     *
-     * @var string
-     */
-    private $icon = null;
-    /**
-     * If the template is directly selectable through the UI.
-     *
-     * @var boolean
-     */
-    private $is_selectable_by_user = true;
-    /**
      * ProductTemplate constructor
      *
      * @param array $data The data.

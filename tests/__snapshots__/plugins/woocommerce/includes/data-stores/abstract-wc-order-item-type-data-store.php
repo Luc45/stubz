@@ -23,18 +23,6 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP 
      */
     protected $object_id_field_for_meta = 'order_item_id';
     /**
-     * Indicates if the Cost of Goods Sold feature is enabled.
-     *
-     * @var bool
-     */
-    private bool $cogs_is_enabled;
-    /**
-     * The instance of WC_Order_Item_Data_Store to use for COGS related operations.
-     *
-     * @var WC_Order_Item_Data_Store
-     */
-    private WC_Data_Store $order_item_data_store;
-    /**
      * Class constructor.
      */
     public function __construct()
@@ -95,14 +83,6 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends \WC_Data_Store_WP 
      * @param WC_Order_Item $item Order item object.
      */
     public function clear_cache(&$item)
-{
-}
-    /**
-     * Persist the Cost of Goods Sold related data to the database.
-     *
-     * @param WC_Order_Item $item The order item for which the data will be persisted.
-     */
-    private function save_cogs_data(WC_Order_Item $item)
 {
 }
 }

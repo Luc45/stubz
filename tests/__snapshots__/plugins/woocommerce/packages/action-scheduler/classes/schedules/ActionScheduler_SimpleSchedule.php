@@ -5,12 +5,6 @@
 class ActionScheduler_SimpleSchedule extends \ActionScheduler_Abstract_Schedule
 {
     /**
-     * Deprecated property @see $this->__wakeup() for details.
-     *
-     * @var null|DateTime
-     */
-    private $timestamp = null;
-    /**
      * Calculate when this schedule should start after a given date & time using
      * the number of seconds between recurrences.
      *

@@ -8,55 +8,6 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
 class SqlQuery
 {
     /**
-     * List of SQL clauses.
-     *
-     * @var array
-     */
-    private $sql_clauses = array (
-  'select' => 
-  array(),
-  'from' => 
-  array(),
-  'left_join' => 
-  array(),
-  'join' => 
-  array(),
-  'right_join' => 
-  array(),
-  'where' => 
-  array(),
-  'where_time' => 
-  array(),
-  'group_by' => 
-  array(),
-  'having' => 
-  array(),
-  'limit' => 
-  array(),
-  'order_by' => 
-  array(),
-  'union' => 
-  array(),
-);
-    /**
-     * SQL clause merge filters.
-     *
-     * @var array
-     */
-    private $sql_filters = array (
-  'where' => 
-  array (
-    0 => 'where',
-    1 => 'where_time',
-  ),
-  'join' => 
-  array (
-    0 => 'right_join',
-    1 => 'join',
-    2 => 'left_join',
-  ),
-);
-    /**
      * Data store context used to pass to filters.
      *
      * @var string

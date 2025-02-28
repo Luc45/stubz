@@ -52,37 +52,4 @@ class ReceiptRenderingRestController extends \Automattic\WooCommerce\Internal\Re
     public function create_order_receipt(WP_REST_Request $request)
 {
 }
-    /**
-     * Formats the response for both the GET and POST endpoints.
-     *
-     * @param string $filename The filename to return the information for.
-     * @return array The data for the actual response to be returned.
-     */
-    private function get_response_for_file(string $filename): array
-{
-}
-    /**
-     * Get the accepted arguments for the GET request.
-     *
-     * @return array[] The accepted arguments for the GET request.
-     */
-    private function get_args_for_get_order_receipt(): array
-{
-}
-    /**
-     * Get the schema for both the GET and the POST requests.
-     *
-     * @return array[]
-     */
-    private function get_schema_for_get_and_post_order_receipt(): array
-{
-}
-    /**
-     * Get the accepted arguments for the POST request.
-     *
-     * @return array[]
-     */
-    private function get_args_for_create_order_receipt(): array
-{
-}
 }
