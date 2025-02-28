@@ -9,6 +9,9 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class WcPayWelcomePage
 {
+    /**
+     * The incentive type for the WooPayments welcome page.
+     */
     public const INCENTIVE_TYPE = 'welcome_page';
     /**
      * Class instance.

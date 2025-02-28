@@ -4,8 +4,17 @@
  */
 class WC_Tracks_Client
 {
+    /**
+     * Pixel URL.
+     */
     public const PIXEL = 'https://pixel.wp.com/t.gif';
+    /**
+     * Browser type.
+     */
     public const BROWSER_TYPE = 'php-agent';
+    /**
+     * User agent.
+     */
     public const USER_AGENT_SLUG = 'tracks-client';
     /**
      * Initialize tracks client class

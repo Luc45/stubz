@@ -10,6 +10,12 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
 class OnboardingFonts
 {
     public const SOURCE_LOGGER = 'font_loader';
+    /**
+     * Font families to install.
+     * PHP version of https://github.com/woocommerce/woocommerce/blob/45923dc5f38150c717210ae9db10045cd9582331/plugins/woocommerce-admin/client/customize-store/assembler-hub/sidebar/global-styles/font-pairing-variations/constants.ts/#L13-L74
+     *
+     * @var array
+     */
     public const FONT_FAMILIES_TO_INSTALL = array(
 'inter' => array(
 'fontFamily' => 'Inter',

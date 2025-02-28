@@ -9,6 +9,9 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  */
 class UpdateProducts
 {
+    /**
+     * The dummy products.
+     */
     public const DUMMY_PRODUCTS = array(
 array(
 'title' => 'Vintage Typewriter',

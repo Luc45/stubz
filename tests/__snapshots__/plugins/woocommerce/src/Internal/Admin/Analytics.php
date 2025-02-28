@@ -7,7 +7,13 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Analytics
 {
+    /**
+     * Option name used to toggle this feature.
+     */
     public const TOGGLE_OPTION_NAME = 'woocommerce_analytics_enabled';
+    /**
+     * Clear cache tool identifier.
+     */
     public const CACHE_TOOL_ID = 'clear_woocommerce_analytics_cache';
     /**
      * Class instance.

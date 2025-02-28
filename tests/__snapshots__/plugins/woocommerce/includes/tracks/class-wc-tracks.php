@@ -4,6 +4,9 @@
  */
 class WC_Tracks
 {
+    /**
+     * Tracks event name prefix.
+     */
     public const PREFIX = 'wcadmin_';
     /**
      * Get total product counts.

@@ -11,6 +11,21 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class OrdersTableMetaQuery
 {
     /**
+     * List of non-numeric SQL operators used for comparisons in meta queries.
+     *
+     * @var array
+     */
+    /**
+     * List of numeric SQL operators used for comparisons in meta queries.
+     *
+     * @var array
+     */
+    /**
+     * Prefix used when generating aliases for the metadata table.
+     *
+     * @var string
+     */
+    /**
      * Constructor.
      *
      * @param OrdersTableQuery $q The main query being performed.

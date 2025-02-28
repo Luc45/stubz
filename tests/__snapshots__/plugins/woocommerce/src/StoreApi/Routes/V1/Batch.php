@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class Batch extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute implements \Automattic\WooCommerce\StoreApi\Routes\RouteInterface
 {
+    /**
+     * The route identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'batch';
+    /**
+     * The schema item identifier.
+     *
+     * @var string
+     */
     public const SCHEMA_TYPE = 'batch';
     /**
      * Get the path of this REST route.

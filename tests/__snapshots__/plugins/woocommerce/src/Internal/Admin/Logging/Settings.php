@@ -8,6 +8,16 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging;
 class Settings
 {
     /**
+     * Default values for logging settings.
+     *
+     * @const array
+     */
+    /**
+     * The prefix for settings keys used in the options table.
+     *
+     * @const string
+     */
+    /**
      * Class Settings.
      */
     public function __construct()

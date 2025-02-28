@@ -8,6 +8,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
 class FileExporter
 {
     /**
+     * The number of bytes per read while streaming the file.
+     *
+     * @const int
+     */
+    /**
      * Class FileExporter.
      *
      * @param string $path               The absolute path of the file.

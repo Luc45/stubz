@@ -4,8 +4,23 @@
  */
 class WC_Install
 {
+    /**
+     * Option name used to track new installations of WooCommerce.
+     *
+     * @var string
+     */
     public const NEWLY_INSTALLED_OPTION = 'woocommerce_newly_installed';
+    /**
+     * Option name used to track new installation versions of WooCommerce.
+     *
+     * @var string
+     */
     public const INITIAL_INSTALLED_VERSION = 'woocommerce_initial_installed_version';
+    /**
+     * Option name used to uniquely identify installations of WooCommerce.
+     *
+     * @var string
+     */
     public const STORE_ID_OPTION = 'woocommerce_store_id';
     /**
      * Hook in tabs.

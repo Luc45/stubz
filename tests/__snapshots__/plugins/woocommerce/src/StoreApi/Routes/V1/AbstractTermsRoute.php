@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 abstract class AbstractTermsRoute extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
+    /**
+     * The routes schema.
+     *
+     * @var string
+     */
     public const SCHEMA_TYPE = 'term';
     /**
      * Get the query params for collections of attributes.

@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class CheckoutHeaderTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplatePart
 {
+    /**
+     * The slug of the template.
+     *
+     * @var string
+     */
     public const SLUG = 'checkout-header';
     /**
      * The template part area where the template part belongs.

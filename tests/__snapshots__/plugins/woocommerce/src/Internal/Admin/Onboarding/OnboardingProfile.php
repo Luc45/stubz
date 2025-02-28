@@ -7,7 +7,13 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
  */
 class OnboardingProfile
 {
+    /**
+     * Profile data option name.
+     */
     public const DATA_OPTION = 'woocommerce_onboarding_profile';
+    /**
+     * Option for storing the onboarding profile progress.
+     */
     public const PROGRESS_OPTION = 'woocommerce_onboarding_profile_progress';
     /**
      * Add onboarding actions.

@@ -7,8 +7,17 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
  */
 class TaskList
 {
+    /**
+     * Option name hidden task lists.
+     */
     public const HIDDEN_OPTION = 'woocommerce_task_list_hidden_lists';
+    /**
+     * Option name of completed task lists.
+     */
     public const COMPLETED_OPTION = 'woocommerce_task_list_completed_lists';
+    /**
+     * Option name of hidden reminder bar.
+     */
     public const REMINDER_BAR_HIDDEN_OPTION = 'woocommerce_task_list_reminder_bar_hidden';
     /**
      * ID.

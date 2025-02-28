@@ -11,7 +11,13 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class MarketingJetpack
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-marketing-jetpack-backup';
+    /**
+     * Product IDs that include Backup.
+     */
     public const BACKUP_IDS = array(
 2010,
 2011,

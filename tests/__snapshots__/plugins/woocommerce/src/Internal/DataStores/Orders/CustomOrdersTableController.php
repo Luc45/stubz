@@ -12,8 +12,17 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class CustomOrdersTableController
 {
+    /**
+     * The name of the option for enabling the usage of the custom orders tables
+     */
     public const CUSTOM_ORDERS_TABLE_USAGE_ENABLED_OPTION = 'woocommerce_custom_orders_table_enabled';
+    /**
+     * The name of the option that tells whether database transactions are to be used or not for data synchronization.
+     */
     public const USE_DB_TRANSACTIONS_OPTION = 'woocommerce_use_db_transactions_for_custom_orders_table_data_sync';
+    /**
+     * The name of the option to store the transaction isolation level to use when database transactions are enabled.
+     */
     public const DB_TRANSACTIONS_ISOLATION_LEVEL_OPTION = 'woocommerce_db_transactions_isolation_level_for_custom_orders_table_data_sync';
     public const DEFAULT_DB_TRANSACTIONS_ISOLATION_LEVEL = 'READ UNCOMMITTED';
     public const HPOS_FTS_INDEX_OPTION = 'woocommerce_hpos_fts_index_enabled';

@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\ProductAttributesLookup;
  */
 class LookupDataStore
 {
+    /**
+     * Types of updates to perform depending on the current changest
+     */
     public const ACTION_NONE = 0;
     public const ACTION_INSERT = 1;
     public const ACTION_UPDATE_STOCK = 2;

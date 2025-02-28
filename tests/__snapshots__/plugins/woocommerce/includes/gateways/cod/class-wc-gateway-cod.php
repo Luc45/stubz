@@ -11,6 +11,11 @@
  */
 class WC_Gateway_COD extends \WC_Payment_Gateway
 {
+    /**
+     * Unique ID for this gateway.
+     *
+     * @var string
+     */
     public const ID = 'cod';
     /**
      * Gateway instructions that will be added to the thank you page and emails.

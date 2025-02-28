@@ -4,6 +4,11 @@
  */
 abstract class WC_Settings_Page
 {
+    /**
+     * Setting field types.
+     *
+     * @var string
+     */
     public const TYPE_TITLE = 'title';
     public const TYPE_INFO = 'info';
     public const TYPE_SECTIONEND = 'sectionend';

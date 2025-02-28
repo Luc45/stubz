@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Admin\API\Reports;
  */
 class Cache
 {
+    /**
+     * Cache version. Used to invalidate all cached values.
+     */
     public const VERSION_OPTION = 'woocommerce_reports';
     /**
      * Invalidate cache.

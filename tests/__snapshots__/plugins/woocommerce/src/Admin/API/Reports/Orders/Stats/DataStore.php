@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Admin\API\Reports\Orders\Stats;
  */
 class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore implements \Automattic\WooCommerce\Admin\API\Reports\DataStoreInterface
 {
+    /**
+     * Cron event name.
+     */
     public const CRON_EVENT = 'wc_order_stats_update';
     /**
      * Table used to get the data.

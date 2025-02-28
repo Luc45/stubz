@@ -8,7 +8,17 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
  */
 class Init extends \Automattic\WooCommerce\Admin\RemoteSpecs\RemoteSpecsEngine
 {
+    /**
+     * Slug of the category specifying marketing extensions on the WooCommerce.com store.
+     *
+     * @var string
+     */
     public const MARKETING_EXTENSION_CATEGORY_SLUG = 'marketing';
+    /**
+     * Slug of the subcategory specifying marketing channels on the WooCommerce.com store.
+     *
+     * @var string
+     */
     public const MARKETING_CHANNEL_SUBCATEGORY_SLUG = 'sales-channels';
     /**
      * Constructor.

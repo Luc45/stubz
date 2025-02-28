@@ -13,12 +13,23 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class OrdersTableQuery
 {
+    /**
+     * Values to ignore when parsing query arguments.
+     */
     public const SKIPPED_VALUES = array(
 '',
 array(),
 null
 );
+    /**
+     * Regex used to catch "shorthand" comparisons in date-related query args.
+     */
     public const REGEX_SHORTHAND_DATES = '/([^.<>]*)(>=|<=|>|<|\\.\\.\\.)([^.<>]+)/';
+    /**
+     * Highest possible unsigned bigint value (unsigned bigints being the type of the `id` column).
+     *
+     * This is deliberately held as a string, rather than a numeric type, for inclusion within queries.
+     */
     /**
      * Sets up and runs the query after processing arguments.
      *

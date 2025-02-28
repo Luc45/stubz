@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class LaunchChecklist
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-launch-checklist';
     /**
      * Get the note.

@@ -7,10 +7,33 @@ namespace Automattic\WooCommerce\StoreApi\Utilities;
  */
 class RateLimits extends \WC_Rate_Limiter
 {
+    /**
+     * Cache group.
+     */
     public const CACHE_GROUP = 'store_api_rate_limit';
+    /**
+     * Rate limiting enabled default value.
+     *
+     * @var boolean
+     */
     public const ENABLED = false;
+    /**
+     * Proxy support enabled default value.
+     *
+     * @var boolean
+     */
     public const PROXY_SUPPORT = false;
+    /**
+     * Default amount of max requests allowed for the defined timeframe.
+     *
+     * @var int
+     */
     public const LIMIT = 25;
+    /**
+     * Default time in seconds before rate limits are reset.
+     *
+     * @var int
+     */
     public const SECONDS = 10;
     /**
      * Gets a cache prefix.

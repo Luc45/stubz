@@ -11,6 +11,9 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class ArchiveProductTemplatesCompatibility extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplateCompatibility
 {
+    /**
+     * The custom ID of the loop item block as the replacement of the core/null block.
+     */
     public const LOOP_ITEM_ID = 'product-loop-item';
     /**
      * The data of supported hooks, containing the hook name, the block name,

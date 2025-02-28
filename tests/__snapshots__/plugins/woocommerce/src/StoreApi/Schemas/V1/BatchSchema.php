@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class BatchSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
+    /**
+     * The schema item identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'batch';
     /**
      * The schema item name.

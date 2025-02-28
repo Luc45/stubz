@@ -13,6 +13,9 @@ class BatchProcessingController
     public const PROCESS_SINGLE_BATCH_ACTION_NAME = 'wc_run_batch_process';
     public const ENQUEUED_PROCESSORS_OPTION_NAME = 'wc_pending_batch_processes';
     public const ACTION_GROUP = 'wc_batch_processes';
+    /**
+     * Maximum number of failures per processor before it gets dequeued.
+     */
     public const FAILING_PROCESS_MAX_ATTEMPTS_DEFAULT = 5;
     /**
      * BatchProcessingController constructor.

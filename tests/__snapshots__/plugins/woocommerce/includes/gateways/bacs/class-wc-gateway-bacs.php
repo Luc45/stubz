@@ -11,6 +11,11 @@
  */
 class WC_Gateway_BACS extends \WC_Payment_Gateway
 {
+    /**
+     * Unique ID for this gateway.
+     *
+     * @var string
+     */
     public const ID = 'bacs';
     /**
      * Array of locales

@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Admin;
  */
 class PageController
 {
+    /**
+     * App entry point.
+     */
     public const APP_ENTRY_POINT = 'wc-admin';
     public const PAGE_ROOT = 'wc-admin';
     /**

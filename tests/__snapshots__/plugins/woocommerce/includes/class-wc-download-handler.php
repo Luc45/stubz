@@ -4,6 +4,9 @@
  */
 class WC_Download_Handler
 {
+    /**
+     * The hook used for deferred tracking of partial download attempts.
+     */
     public const TRACK_DOWNLOAD_CALLBACK = 'track_partial_download';
     /**
      * Hook in methods.

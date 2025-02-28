@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\Internal\Admin\EmailPreview;
  */
 class EmailPreviewRestController extends \Automattic\WooCommerce\Internal\RestApiControllerBase
 {
+    /**
+     * Email preview nonce.
+     *
+     * @var string
+     */
     public const NONCE_KEY = 'email-preview-nonce';
     /**
      * The root namespace for the JSON REST API endpoints.

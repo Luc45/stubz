@@ -11,6 +11,11 @@
  */
 class WC_Gateway_Cheque extends \WC_Payment_Gateway
 {
+    /**
+     * Unique ID for this gateway.
+     *
+     * @var string
+     */
     public const ID = 'cheque';
     /**
      * Gateway instructions that will be added to the thank you page and emails.

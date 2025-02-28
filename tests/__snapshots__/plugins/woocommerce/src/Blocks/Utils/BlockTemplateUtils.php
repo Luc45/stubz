@@ -8,6 +8,20 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  */
 class BlockTemplateUtils
 {
+    /**
+     * Directory names for block templates
+     *
+     * Directory names conventions for block templates have changed with Gutenberg 12.1.0,
+     * however, for backwards-compatibility, we also keep the older conventions, prefixed
+     * with `DEPRECATED_`.
+     *
+     * @var array {
+     *     @var string DEPRECATED_TEMPLATES  Old directory name of the block templates directory.
+     *     @var string DEPRECATED_TEMPLATE_PARTS  Old directory name of the block template parts directory.
+     *     @var string TEMPLATES_DIR_NAME  Directory name of the block templates directory.
+     *     @var string TEMPLATE_PARTS_DIR_NAME  Directory name of the block template parts directory.
+     * }
+     */
     public const DIRECTORY_NAMES = array(
 'DEPRECATED_TEMPLATES' => 'block-templates',
 'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
@@ -15,7 +29,22 @@ class BlockTemplateUtils
 'TEMPLATE_PARTS' => 'parts'
 );
     public const TEMPLATES_ROOT_DIR = 'templates';
+    /**
+     * WooCommerce plugin slug
+     *
+     * This is used to save templates to the DB which are stored against this value in the wp_terms table.
+     *
+     * @var string
+     */
     public const PLUGIN_SLUG = 'woocommerce/woocommerce';
+    /**
+     * Deprecated WooCommerce plugin slug
+     *
+     * For supporting users who have customized templates under the incorrect plugin slug during the first release.
+     * More context found here: https://github.com/woocommerce/woocommerce-gutenberg-products-block/issues/5423.
+     *
+     * @var string
+     */
     public const DEPRECATED_PLUGIN_SLUG = 'woocommerce';
     /**
      * Returns the template matching the slug

@@ -17,7 +17,13 @@ namespace Automattic\WooCommerce\Caching;
  */
 abstract class ObjectCache
 {
+    /**
+     * Expiration value to be passed to 'set' to use the value of $default_expiration.
+     */
     public const DEFAULT_EXPIRATION = -1;
+    /**
+     * Maximum expiration time value, in seconds, that can be passed to 'set'.
+     */
     public const MAX_EXPIRATION = MONTH_IN_SECONDS;
     /**
      * Default value for the duration of the objects in the cache, in seconds

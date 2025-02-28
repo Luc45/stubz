@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class ProductTagTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplate
 {
+    /**
+     * The slug of the template.
+     *
+     * @var string
+     */
     public const SLUG = 'taxonomy-product_tag';
     /**
      * The template used as a fallback if that one is customized.

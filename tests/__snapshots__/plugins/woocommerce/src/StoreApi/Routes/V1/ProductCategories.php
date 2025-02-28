@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class ProductCategories extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractTermsRoute
 {
+    /**
+     * The route identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'product-categories';
+    /**
+     * The routes schema.
+     *
+     * @var string
+     */
     public const SCHEMA_TYPE = 'product-category';
     /**
      * Get the path of this REST route.

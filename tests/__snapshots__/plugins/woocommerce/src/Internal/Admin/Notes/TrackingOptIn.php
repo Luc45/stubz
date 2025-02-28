@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class TrackingOptIn
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-usage-tracking-opt-in';
     /**
      * Attach hooks.

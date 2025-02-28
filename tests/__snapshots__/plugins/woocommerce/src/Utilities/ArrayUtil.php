@@ -7,9 +7,21 @@ namespace Automattic\WooCommerce\Utilities;
  */
 class ArrayUtil
 {
+    /**
+     * Automatic selector type for the 'select' method.
+     */
     public const SELECT_BY_AUTO = 0;
+    /**
+     * Object method selector type for the 'select' method.
+     */
     public const SELECT_BY_OBJECT_METHOD = 1;
+    /**
+     * Object property selector type for the 'select' method.
+     */
     public const SELECT_BY_OBJECT_PROPERTY = 2;
+    /**
+     * Array key selector type for the 'select' method.
+     */
     public const SELECT_BY_ARRAY_KEY = 3;
     /**
      * Get a value from an nested array by specifying the entire key hierarchy with '::' as separator.

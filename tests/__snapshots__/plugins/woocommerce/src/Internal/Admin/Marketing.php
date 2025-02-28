@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\Internal\Admin;
  */
 class Marketing
 {
+    /**
+     * Constant representing the key for the submenu name value in the global $submenu array.
+     *
+     * @var int
+     */
     public const SUBMENU_NAME_KEY = 0;
+    /**
+     * Constant representing the key for the submenu location value in the global $submenu array.
+     *
+     * @var int
+     */
     public const SUBMENU_LOCATION_KEY = 2;
     /**
      * Class instance.

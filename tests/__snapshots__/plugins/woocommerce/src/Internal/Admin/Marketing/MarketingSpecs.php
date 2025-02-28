@@ -10,6 +10,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Marketing;
  */
 class MarketingSpecs
 {
+    /**
+     * Name of knowledge base post transient.
+     *
+     * @var string
+     */
     public const KNOWLEDGE_BASE_TRANSIENT = 'wc_marketing_knowledge_base';
     /**
      * Load knowledge base posts from WooCommerce.com

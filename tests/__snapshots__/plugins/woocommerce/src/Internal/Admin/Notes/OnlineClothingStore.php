@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class OnlineClothingStore
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-online-clothing-store';
     /**
      * Get the note.

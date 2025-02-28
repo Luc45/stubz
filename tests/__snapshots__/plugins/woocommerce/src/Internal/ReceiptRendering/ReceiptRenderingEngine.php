@@ -14,6 +14,13 @@ namespace Automattic\WooCommerce\Internal\ReceiptRendering;
  */
 class ReceiptRenderingEngine
 {
+    /**
+     * This array must contain all the names of the files in the CardIcons directory (without extension),
+     * except 'unknown'.
+     */
+    /**
+     * Order meta key that stores the file name of the last generated receipt.
+     */
     public const RECEIPT_FILE_NAME_META_KEY = '_receipt_file_name';
     /**
      * Initializes the class.

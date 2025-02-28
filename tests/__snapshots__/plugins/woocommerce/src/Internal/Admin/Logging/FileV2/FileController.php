@@ -7,6 +7,18 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  */
 class FileController
 {
+    /**
+     * The maximum number of rotations for a file before they start getting overwritten.
+     *
+     * This number should not go above 10, or it will cause issues with the glob patterns.
+     *
+     * const int
+     */
+    /**
+     * Default values for arguments for the get_files method.
+     *
+     * @const array
+     */
     public const DEFAULTS_GET_FILES = array(
 'date_end' => 0,
 'date_filter' => '',
@@ -17,12 +29,37 @@ class FileController
 'per_page' => 20,
 'source' => ''
 );
+    /**
+     * Default values for arguments for the search_within_files method.
+     *
+     * @const array
+     */
     public const DEFAULTS_SEARCH_WITHIN_FILES = array(
 'offset' => 0,
 'per_page' => 50
 );
+    /**
+     * The maximum number of files that can be searched at one time.
+     *
+     * @const int
+     */
     public const SEARCH_MAX_FILES = 100;
+    /**
+     * The maximum number of search results that can be returned at one time.
+     *
+     * @const int
+     */
     public const SEARCH_MAX_RESULTS = 200;
+    /**
+     * The cache group name to use for caching operations.
+     *
+     * @const string
+     */
+    /**
+     * A cache key for storing and retrieving the results of the last logs search.
+     *
+     * @const string
+     */
     /**
      * Write a log entry to the appropriate file, after rotating the file if necessary.
      *

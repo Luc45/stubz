@@ -7,7 +7,15 @@ namespace Automattic\WooCommerce\Admin\Features\MarketingRecommendations;
  */
 class MarketingRecommendationsDataSourcePoller extends \Automattic\WooCommerce\Admin\RemoteSpecs\DataSourcePoller
 {
+    /**
+     * Data Source Poller ID.
+     */
     public const ID = 'marketing_recommendations';
+    /**
+     * Default data sources array.
+     *
+     * @deprecated since 9.5.0. Use get_data_sources() instead.
+     */
     public const DATA_SOURCES = array();
     /**
      * Class instance.

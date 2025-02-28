@@ -9,6 +9,9 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class CustomizingProductCatalog
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-customizing-product-catalog';
     /**
      * Get the note.

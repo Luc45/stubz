@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1;
  */
 class ProductAttributeSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
+    /**
+     * The schema item identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'product-attribute';
     /**
      * The schema item name.

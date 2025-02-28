@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class Order extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
+    /**
+     * The route identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'order';
+    /**
+     * The schema item identifier.
+     *
+     * @var string
+     */
     public const SCHEMA_TYPE = 'order';
     /**
      * Order controller class instance.

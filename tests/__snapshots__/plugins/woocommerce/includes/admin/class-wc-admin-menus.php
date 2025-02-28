@@ -4,6 +4,11 @@
  */
 class WC_Admin_Menus
 {
+    /**
+     * The CSS classes used to hide the submenu items in navigation.
+     *
+     * @var string
+     */
     public const HIDE_CSS_CLASS = 'hide-if-js';
     /**
      * Hook in tabs.

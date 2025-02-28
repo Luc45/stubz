@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class ComingSoonSocialLinksTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplatePart
 {
+    /**
+     * The slug of the template.
+     *
+     * @var string
+     */
     public const SLUG = 'coming-soon-social-links';
     /**
      * The template part area where the template part belongs.

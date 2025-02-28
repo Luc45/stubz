@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 class MiniCartTemplate extends \Automattic\WooCommerce\Blocks\Templates\AbstractTemplatePart
 {
+    /**
+     * The slug of the template.
+     *
+     * @var string
+     */
     public const SLUG = 'mini-cart';
     /**
      * The template part area where the template part belongs.

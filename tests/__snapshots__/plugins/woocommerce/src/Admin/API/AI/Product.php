@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\Admin\API\AI;
  */
 class Product extends \Automattic\WooCommerce\Admin\API\AI\AIEndpoint
 {
+    /**
+     * The endpoint response option name.
+     *
+     * @var string
+     */
     public const AI_CONTENT_GENERATED = 'ai_content_generated';
     /**
      * Endpoint.

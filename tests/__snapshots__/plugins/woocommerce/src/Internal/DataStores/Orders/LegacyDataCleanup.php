@@ -7,7 +7,15 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class LegacyDataCleanup implements \Automattic\WooCommerce\Internal\BatchProcessing\BatchProcessorInterface
 {
+    /**
+     * Option name for this feature.
+     *
+     * @deprecated 9.1.0
+     */
     public const OPTION_NAME = 'woocommerce_hpos_legacy_data_cleanup_in_progress';
+    /**
+     * The default number of orders to process per batch.
+     */
     /**
      * Class initialization, invoked by the DI container.
      *

@@ -7,12 +7,33 @@ namespace Automattic\WooCommerce\Admin;
  */
 class PluginsHelper
 {
+    /**
+     * The URL for the WooCommerce subscription page.
+     */
     public const WOO_SUBSCRIPTION_PAGE_URL = 'https://woocommerce.com/my-account/my-subscriptions/';
+    /**
+     * The URL for the WooCommerce.com cart page.
+     */
     public const WOO_CART_PAGE_URL = 'https://woocommerce.com/cart/';
+    /**
+     * The URL for the WooCommerce.com add payment method page.
+     */
     public const WOO_ADD_PAYMENT_METHOD_URL = 'https://woocommerce.com/my-account/add-payment-method/';
+    /**
+     * Meta key for dismissing expired subscription notices.
+     */
     public const DISMISS_EXPIRED_SUBS_NOTICE = 'woo_subscription_expired_notice_dismiss';
+    /**
+     * Meta key for dismissing expiring subscription notices
+     */
     public const DISMISS_EXPIRING_SUBS_NOTICE = 'woo_subscription_expiring_notice_dismiss';
+    /**
+     * Meta key for dismissing missing subscription notices
+     */
     public const DISMISS_MISSING_SUBS_NOTICE = 'woo_subscription_missing_notice_dismiss';
+    /**
+     * Meta key for dismissing disconnected notice
+     */
     public const DISMISS_DISCONNECT_NOTICE = 'woo_disconnect_notice_dismiss';
     /**
      * Subscription notices in Woo screens are shown in clear priority order, first

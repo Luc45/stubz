@@ -7,8 +7,17 @@ namespace Automattic\WooCommerce\Internal\Admin\Notes;
  */
 class WooCommercePayments
 {
+    /**
+     * Name of the note for use in the database.
+     */
     public const NOTE_NAME = 'wc-admin-woocommerce-payments';
+    /**
+     * Name of the note for use in the database.
+     */
     public const PLUGIN_SLUG = 'woocommerce-payments';
+    /**
+     * Name of the note for use in the database.
+     */
     public const PLUGIN_FILE = 'woocommerce-payments/woocommerce-payments.php';
     /**
      * Attach hooks.

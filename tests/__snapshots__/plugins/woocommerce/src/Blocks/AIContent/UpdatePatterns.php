@@ -9,6 +9,9 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  */
 class UpdatePatterns
 {
+    /**
+     * All patterns that are actively in use in the Assembler.
+     */
     public const WC_PATTERNS_IN_THE_ASSEMBLER = array(
 'woocommerce-blocks/featured-category-triple',
 'woocommerce-blocks/hero-product-3-split',

@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Onboarding;
  */
 class OnboardingProducts
 {
+    /**
+     * Name of product data transient.
+     *
+     * @var string
+     */
     public const PRODUCT_DATA_TRANSIENT = 'wc_onboarding_product_data';
     /**
      * Get a list of allowed product types for the onboarding wizard.

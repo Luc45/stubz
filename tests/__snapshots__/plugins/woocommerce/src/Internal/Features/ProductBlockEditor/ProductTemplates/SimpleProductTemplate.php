@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTem
  */
 class SimpleProductTemplate extends \Automattic\WooCommerce\Internal\Features\ProductBlockEditor\ProductTemplates\AbstractProductFormTemplate implements \Automattic\WooCommerce\Admin\Features\ProductBlockEditor\ProductTemplates\ProductFormTemplateInterface
 {
+    /**
+     * The context name used to identify the editor.
+     */
     public const GROUP_IDS = array(
 'GENERAL' => 'general',
 'ORGANIZATION' => 'organization',

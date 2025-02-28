@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  */
 class Definition extends \Automattic\WooCommerce\Vendor\League\Container\Definition\Definition
 {
+    /**
+     * The standard method that we use for dependency injection.
+     */
     public const INJECTION_METHOD = 'init';
     /**
      * Resolve a class using method injection instead of constructor injection.

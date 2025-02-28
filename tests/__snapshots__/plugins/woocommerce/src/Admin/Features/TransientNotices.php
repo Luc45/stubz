@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Admin\Features;
  */
 class TransientNotices
 {
+    /**
+     * Option name for the queue.
+     */
     public const QUEUE_OPTION = 'woocommerce_admin_transient_notices_queue';
     /**
      * Constructor

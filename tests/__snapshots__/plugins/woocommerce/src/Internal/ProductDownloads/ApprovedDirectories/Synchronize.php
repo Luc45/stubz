@@ -8,10 +8,28 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  */
 class Synchronize
 {
+    /**
+     * Scheduled action hook used to facilitate scanning the product catalog for downloadable products.
+     */
     public const SYNC_TASK = 'woocommerce_download_dir_sync';
+    /**
+     * The group under which synchronization tasks run (our standard 'woocommerce-db-updates' group).
+     */
     public const SYNC_TASK_GROUP = 'woocommerce-db-updates';
+    /**
+     * Used to track progress throughout the sync process.
+     */
     public const SYNC_TASK_PAGE = 'wc_product_download_dir_sync_page';
+    /**
+     * Used to record an estimation of progress on the current synchronization process. 0 means 0%,
+     * 100 means 100%.
+     *
+     * @param int
+     */
     public const SYNC_TASK_PROGRESS = 'wc_product_download_dir_sync_progress';
+    /**
+     * Number of downloadable products to be processed in each atomic sync task.
+     */
     public const SYNC_TASK_BATCH_SIZE = 20;
     /**
      * Sets up our checks and controls for downloadable asset URLs, as appropriate for

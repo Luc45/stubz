@@ -4,6 +4,9 @@
  */
 class WC_Products_Tracking
 {
+    /**
+     * Tracks source.
+     */
     public const TRACKS_SOURCE = 'product-legacy-editor';
     /**
      * Init tracking.

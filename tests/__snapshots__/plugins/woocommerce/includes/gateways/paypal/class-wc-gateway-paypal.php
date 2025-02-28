@@ -4,6 +4,11 @@
  */
 class WC_Gateway_Paypal extends \WC_Payment_Gateway
 {
+    /**
+     * Unique ID for this gateway.
+     *
+     * @var string
+     */
     public const ID = 'paypal';
     /**
      * Whether or not logging is enabled

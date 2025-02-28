@@ -7,9 +7,30 @@ namespace Automattic\WooCommerce\Blocks\Domain\Services;
  */
 class CheckoutFields
 {
+    /**
+     * Billing fields meta key.
+     *
+     * @var string
+     */
     public const BILLING_FIELDS_PREFIX = '_wc_billing/';
+    /**
+     * Shipping fields meta key.
+     *
+     * @var string
+     */
     public const SHIPPING_FIELDS_PREFIX = '_wc_shipping/';
+    /**
+     * Additional fields meta key.
+     *
+     * @var string
+     * @deprecated 8.9.0 Use OTHER_FIELDS_PREFIX instead.
+     */
     public const ADDITIONAL_FIELDS_PREFIX = '_wc_additional/';
+    /**
+     * Other fields meta key.
+     *
+     * @var string
+     */
     public const OTHER_FIELDS_PREFIX = '_wc_other/';
     /**
      * Groups of fields to be saved.

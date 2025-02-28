@@ -6,6 +6,9 @@
  */
 class WC_Customer_Download_Data_Store implements \WC_Customer_Download_Data_Store_Interface
 {
+    /**
+     * Names of the database fields for the download permissions table.
+     */
     public const DOWNLOAD_PERMISSION_DB_FIELDS = array(
 'download_id',
 'product_id',

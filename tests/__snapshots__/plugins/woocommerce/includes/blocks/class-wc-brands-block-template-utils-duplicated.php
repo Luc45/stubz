@@ -9,12 +9,33 @@
  */
 class BlockTemplateUtilsDuplicated
 {
+    /**
+     * Directory names for block templates
+     *
+     * Directory names conventions for block templates have changed with Gutenberg 12.1.0,
+     * however, for backwards-compatibility, we also keep the older conventions, prefixed
+     * with `DEPRECATED_`.
+     *
+     * @var array {
+     *     @var string DEPRECATED_TEMPLATES  Old directory name of the block templates directory.
+     *     @var string DEPRECATED_TEMPLATE_PARTS  Old directory name of the block template parts directory.
+     *     @var string TEMPLATES_DIR_NAME  Directory name of the block templates directory.
+     *     @var string TEMPLATE_PARTS_DIR_NAME  Directory name of the block template parts directory.
+     * }
+     */
     protected const DIRECTORY_NAMES = array(
 'DEPRECATED_TEMPLATES' => 'block-templates',
 'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
 'TEMPLATES' => 'templates',
 'TEMPLATE_PARTS' => 'parts'
 );
+    /**
+     * WooCommerce plugin slug
+     *
+     * This is used to save templates to the DB which are stored against this value in the wp_terms table.
+     *
+     * @var string
+     */
     protected const PLUGIN_SLUG = 'woocommerce/woocommerce';
     /**
      * Returns an array containing the references of

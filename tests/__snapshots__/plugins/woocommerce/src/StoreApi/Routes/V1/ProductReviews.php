@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\StoreApi\Routes\V1;
  */
 class ProductReviews extends \Automattic\WooCommerce\StoreApi\Routes\V1\AbstractRoute
 {
+    /**
+     * The route identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'product-reviews';
+    /**
+     * The routes schema.
+     *
+     * @var string
+     */
     public const SCHEMA_TYPE = 'product-review';
     /**
      * Get the path of this REST route.

@@ -4,6 +4,11 @@
  */
 class WC_Admin_Meta_Boxes
 {
+    /**
+     * Name of the option used to store errors to be displayed at the next suitable opportunity.
+     *
+     * @since 6.5.0
+     */
     public const ERROR_STORE = 'woocommerce_meta_box_errors';
     /**
      * Meta box error messages.

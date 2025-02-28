@@ -11,6 +11,11 @@ namespace Automattic\WooCommerce\Blocks\Templates;
  */
 abstract class AbstractTemplate
 {
+    /**
+     * The slug of the template.
+     *
+     * @var string
+     */
     public const SLUG = '';
     /**
      * Initialization method.

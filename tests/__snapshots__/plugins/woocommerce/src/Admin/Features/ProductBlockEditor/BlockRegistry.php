@@ -7,8 +7,17 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  */
 class BlockRegistry
 {
+    /**
+     * Generic blocks directory.
+     */
     public const GENERIC_BLOCKS_DIR = 'product-editor/blocks/generic';
+    /**
+     * Product fields blocks directory.
+     */
     public const PRODUCT_FIELDS_BLOCKS_DIR = 'product-editor/blocks/product-fields';
+    /**
+     * Array of all available generic blocks.
+     */
     public const GENERIC_BLOCKS = array(
 'woocommerce/conditional',
 'woocommerce/product-checkbox-field',
@@ -30,6 +39,9 @@ class BlockRegistry
 'woocommerce/product-select-field',
 'woocommerce/product-notice-field'
 );
+    /**
+     * Array of all available product fields blocks.
+     */
     public const PRODUCT_FIELDS_BLOCKS = array(
 'woocommerce/product-catalog-visibility-field',
 'woocommerce/product-custom-fields',

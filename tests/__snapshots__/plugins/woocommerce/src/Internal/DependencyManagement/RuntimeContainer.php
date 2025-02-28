@@ -12,6 +12,11 @@ namespace Automattic\WooCommerce\Internal\DependencyManagement;
  */
 class RuntimeContainer
 {
+    /**
+     * The root namespace of all WooCommerce classes in the `src` directory.
+     *
+     * @var string
+     */
     public const WOOCOMMERCE_NAMESPACE = 'Automattic\\WooCommerce\\';
     /**
      * Cache of classes already resolved.

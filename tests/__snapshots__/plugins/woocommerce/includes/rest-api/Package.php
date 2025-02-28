@@ -9,6 +9,12 @@ namespace Automattic\WooCommerce\RestApi;
  */
 class Package
 {
+    /**
+     * Version.
+     *
+     * @deprecated since 4.5.0. This tracks WooCommerce version now.
+     * @var string
+     */
     public const VERSION = WC_VERSION;
     /**
      * Init the package - load the REST API Server class.

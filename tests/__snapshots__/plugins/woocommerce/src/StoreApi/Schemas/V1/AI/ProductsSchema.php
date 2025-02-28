@@ -9,6 +9,11 @@ namespace Automattic\WooCommerce\StoreApi\Schemas\V1\AI;
  */
 class ProductsSchema extends \Automattic\WooCommerce\StoreApi\Schemas\V1\AbstractSchema
 {
+    /**
+     * The schema item identifier.
+     *
+     * @var string
+     */
     public const IDENTIFIER = 'ai/products';
     /**
      * The schema item name.

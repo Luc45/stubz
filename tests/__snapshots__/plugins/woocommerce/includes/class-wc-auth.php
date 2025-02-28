@@ -4,6 +4,11 @@
  */
 class WC_Auth
 {
+    /**
+     * Version.
+     *
+     * @var int
+     */
     public const VERSION = 1;
     /**
      * Setup class.

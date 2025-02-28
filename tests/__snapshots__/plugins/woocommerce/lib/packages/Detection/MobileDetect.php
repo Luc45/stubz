@@ -194,9 +194,23 @@ namespace Automattic\WooCommerce\Vendor\Detection;
  */
 class MobileDetect
 {
+    /**
+     * A frequently used regular expression to extract version #s.
+     *
+     * @deprecated since version 2.6.9
+     */
     public const VER = '([\\w._\\+]+)';
+    /**
+     * Stores the version number of the current release.
+     */
     public const VERSION = '3.74.3';
+    /**
+     * A type for the version() method indicating a string return value.
+     */
     public const VERSION_TYPE_STRING = 'text';
+    /**
+     * A type for the version() method indicating a float return value.
+     */
     public const VERSION_TYPE_FLOAT = 'float';
     /**
      * A cache for resolved matches

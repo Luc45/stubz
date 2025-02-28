@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\Admin\Composer;
  */
 class Package
 {
+    /**
+     * Version.
+     *
+     * @var string
+     */
     public const VERSION = '3.3.0';
     /**
      * Init the package.

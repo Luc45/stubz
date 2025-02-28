@@ -7,10 +7,37 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
  */
 abstract class Task
 {
+    /**
+     * Name of the dismiss option.
+     *
+     * @var string
+     */
     public const DISMISSED_OPTION = 'woocommerce_task_list_dismissed_tasks';
+    /**
+     * Name of the snooze option.
+     *
+     * @var string
+     *
+     * @deprecated 7.2.0
+     */
     public const SNOOZED_OPTION = 'woocommerce_task_list_remind_me_later_tasks';
+    /**
+     * Name of the actioned option.
+     *
+     * @var string
+     */
     public const ACTIONED_OPTION = 'woocommerce_task_list_tracked_completed_actions';
+    /**
+     * Option name of completed tasks.
+     *
+     * @var string
+     */
     public const COMPLETED_OPTION = 'woocommerce_task_list_tracked_completed_tasks';
+    /**
+     * Name of the active task transient.
+     *
+     * @var string
+     */
     public const ACTIVE_TASK_TRANSIENT = 'wc_onboarding_active_task';
     /**
      * Parent task list.

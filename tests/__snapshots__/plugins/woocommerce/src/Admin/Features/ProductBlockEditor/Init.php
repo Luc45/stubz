@@ -7,6 +7,9 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  */
 class Init
 {
+    /**
+     * The context name used to identify the editor.
+     */
     public const EDITOR_CONTEXT_NAME = 'woocommerce/edit-product';
     /**
      * Constructor

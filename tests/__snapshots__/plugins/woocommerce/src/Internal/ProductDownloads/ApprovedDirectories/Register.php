@@ -8,6 +8,9 @@ namespace Automattic\WooCommerce\Internal\ProductDownloads\ApprovedDirectories;
  */
 class Register
 {
+    /**
+     * Used to indicate the current mode.
+     */
     public const MODE_DISABLED = 'disabled';
     public const MODE_ENABLED = 'enabled';
     /**

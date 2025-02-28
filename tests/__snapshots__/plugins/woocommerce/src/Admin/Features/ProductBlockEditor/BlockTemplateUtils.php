@@ -7,7 +7,17 @@ namespace Automattic\WooCommerce\Admin\Features\ProductBlockEditor;
  */
 class BlockTemplateUtils
 {
+    /**
+     * Directory which contains all templates
+     *
+     * @var string
+     */
     public const TEMPLATES_ROOT_DIR = 'templates';
+    /**
+     * Directory names.
+     *
+     * @var array
+     */
     public const DIRECTORY_NAMES = array(
 'TEMPLATES' => 'product-form',
 'TEMPLATE_PARTS' => 'product-form/parts'

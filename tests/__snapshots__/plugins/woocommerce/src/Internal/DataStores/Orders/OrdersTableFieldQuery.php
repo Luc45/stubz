@@ -11,6 +11,11 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
 class OrdersTableFieldQuery
 {
     /**
+     * List of valid SQL operators to use as field_query 'compare' values.
+     *
+     * @var array
+     */
+    /**
      * Constructor.
      *
      * @param OrdersTableQuery $q The main query being performed.

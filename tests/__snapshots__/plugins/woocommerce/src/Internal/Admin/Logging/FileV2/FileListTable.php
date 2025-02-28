@@ -7,6 +7,11 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  */
 class FileListTable extends \WP_List_Table
 {
+    /**
+     * The user option key for saving the preferred number of files displayed per page.
+     *
+     * @const string
+     */
     public const PER_PAGE_USER_OPTION_KEY = 'woocommerce_logging_file_list_per_page';
     /**
      * FileListTable class.
