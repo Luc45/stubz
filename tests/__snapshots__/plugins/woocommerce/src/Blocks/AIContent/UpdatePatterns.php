@@ -9,16 +9,16 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  */
 class UpdatePatterns
 {
-    public const WC_PATTERNS_IN_THE_ASSEMBLER = array (
-  0 => 'woocommerce-blocks/featured-category-triple',
-  1 => 'woocommerce-blocks/hero-product-3-split',
-  2 => 'woocommerce-blocks/hero-product-chessboard',
-  3 => 'woocommerce-blocks/hero-product-split',
-  4 => 'woocommerce-blocks/product-collection-4-columns',
-  5 => 'woocommerce-blocks/product-collection-5-columns',
-  6 => 'woocommerce-blocks/social-follow-us-in-social-media',
-  7 => 'woocommerce-blocks/testimonials-3-columns',
-  8 => 'woocommerce-blocks/product-collection-featured-products-5-columns',
+    public const WC_PATTERNS_IN_THE_ASSEMBLER = array(
+'woocommerce-blocks/featured-category-triple',
+'woocommerce-blocks/hero-product-3-split',
+'woocommerce-blocks/hero-product-chessboard',
+'woocommerce-blocks/hero-product-split',
+'woocommerce-blocks/product-collection-4-columns',
+'woocommerce-blocks/product-collection-5-columns',
+'woocommerce-blocks/social-follow-us-in-social-media',
+'woocommerce-blocks/testimonials-3-columns',
+'woocommerce-blocks/product-collection-featured-products-5-columns'
 );
     /**
      * Generate AI content and assign AI-managed images to Patterns.

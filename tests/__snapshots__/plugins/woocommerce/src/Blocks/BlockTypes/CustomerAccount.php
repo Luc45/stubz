@@ -22,15 +22,14 @@ class CustomerAccount extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstract
      *
      * @var array
      */
-    protected $hooked_block_placements = array (
-  0 => 
-  array (
-    'position' => 'after',
-    'anchor' => 'core/navigation',
-    'area' => 'header',
-    'callback' => 'should_unhook_block',
-    'version' => '8.4.0',
-  ),
+    protected $hooked_block_placements = array(
+array(
+'position' => 'after',
+'anchor' => 'core/navigation',
+'area' => 'header',
+'callback' => 'should_unhook_block',
+'version' => '8.4.0'
+)
 );
     /**
      * Initialize this block type.

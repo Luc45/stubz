@@ -12,10 +12,10 @@ class EnginesServiceProvider extends \Automattic\WooCommerce\Internal\Dependency
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\TransientFiles\\TransientFilesEngine',
-  1 => 'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingEngine',
-  2 => 'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingRestController',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\TransientFiles\\TransientFilesEngine',
+'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingEngine',
+'Automattic\\WooCommerce\\Internal\\ReceiptRendering\\ReceiptRenderingRestController'
 );
     /**
      * Register the classes.

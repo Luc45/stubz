@@ -12,10 +12,10 @@ class OrderMetaBoxServiceProvider extends \Automattic\WooCommerce\Internal\Depen
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\CustomerHistory',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\CustomMetaBox',
-  2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\OrderAttribution',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\CustomerHistory',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\CustomMetaBox',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\OrderAttribution'
 );
     /**
      * Register the classes.

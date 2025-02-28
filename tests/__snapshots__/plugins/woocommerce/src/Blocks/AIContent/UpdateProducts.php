@@ -9,49 +9,43 @@ namespace Automattic\WooCommerce\Blocks\AIContent;
  */
 class UpdateProducts
 {
-    public const DUMMY_PRODUCTS = array (
-  0 => 
-  array (
-    'title' => 'Vintage Typewriter',
-    'image' => 'assets/images/pattern-placeholders/writing-typing-keyboard-technology-white-vintage.jpg',
-    'description' => 'A hit spy novel or a love letter? Anything you type using this vintage typewriter from the 20s is bound to make a mark.',
-    'price' => 90,
-  ),
-  1 => 
-  array (
-    'title' => 'Leather-Clad Leisure Chair',
-    'image' => 'assets/images/pattern-placeholders/table-wood-house-chair-floor-window.jpg',
-    'description' => 'Sit back and relax in this comfy designer chair. High-grain leather and steel frame add luxury to your your leisure.',
-    'price' => 249,
-  ),
-  2 => 
-  array (
-    'title' => 'Black and White',
-    'image' => 'assets/images/pattern-placeholders/white-black-black-and-white-photograph-monochrome-photography.jpg',
-    'description' => 'This 24" x 30" high-quality print just exudes summer. Hang it on the wall and forget about the world outside.',
-    'price' => 115,
-  ),
-  3 => 
-  array (
-    'title' => '3-Speed Bike',
-    'image' => 'assets/images/pattern-placeholders/road-sport-vintage-wheel-retro-old.jpg',
-    'description' => 'Zoom through the streets on this premium 3-speed bike. Manufactured and assembled in Germany in the 80s.',
-    'price' => 115,
-  ),
-  4 => 
-  array (
-    'title' => 'Hi-Fi Headphones',
-    'image' => 'assets/images/pattern-placeholders/man-person-music-black-and-white-white-photography.jpg',
-    'description' => 'Experience your favorite songs in a new way with these premium hi-fi headphones.',
-    'price' => 125,
-  ),
-  5 => 
-  array (
-    'title' => 'Retro Glass Jug (330 ml)',
-    'image' => 'assets/images/pattern-placeholders/drinkware-liquid-tableware-dishware-bottle-fluid.jpg',
-    'description' => 'Thick glass and a classic silhouette make this jug a must-have for any retro-inspired kitchen.',
-    'price' => 115,
-  ),
+    public const DUMMY_PRODUCTS = array(
+array(
+'title' => 'Vintage Typewriter',
+'image' => 'assets/images/pattern-placeholders/writing-typing-keyboard-technology-white-vintage.jpg',
+'description' => 'A hit spy novel or a love letter? Anything you type using this vintage typewriter from the 20s is bound to make a mark.',
+'price' => 90
+),
+array(
+'title' => 'Leather-Clad Leisure Chair',
+'image' => 'assets/images/pattern-placeholders/table-wood-house-chair-floor-window.jpg',
+'description' => 'Sit back and relax in this comfy designer chair. High-grain leather and steel frame add luxury to your your leisure.',
+'price' => 249
+),
+array(
+'title' => 'Black and White',
+'image' => 'assets/images/pattern-placeholders/white-black-black-and-white-photograph-monochrome-photography.jpg',
+'description' => 'This 24" x 30" high-quality print just exudes summer. Hang it on the wall and forget about the world outside.',
+'price' => 115
+),
+array(
+'title' => '3-Speed Bike',
+'image' => 'assets/images/pattern-placeholders/road-sport-vintage-wheel-retro-old.jpg',
+'description' => 'Zoom through the streets on this premium 3-speed bike. Manufactured and assembled in Germany in the 80s.',
+'price' => 115
+),
+array(
+'title' => 'Hi-Fi Headphones',
+'image' => 'assets/images/pattern-placeholders/man-person-music-black-and-white-white-photography.jpg',
+'description' => 'Experience your favorite songs in a new way with these premium hi-fi headphones.',
+'price' => 125
+),
+array(
+'title' => 'Retro Glass Jug (330 ml)',
+'image' => 'assets/images/pattern-placeholders/drinkware-liquid-tableware-dishware-bottle-fluid.jpg',
+'description' => 'Thick glass and a classic silhouette make this jug a must-have for any retro-inspired kitchen.',
+'price' => 115
+)
 );
     /**
      * Generate AI content and assign AI-managed images to Products.

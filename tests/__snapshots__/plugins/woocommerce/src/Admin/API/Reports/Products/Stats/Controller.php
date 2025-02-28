@@ -21,10 +21,10 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericStatsC
      *
      * @var array
      */
-    protected $param_mapping = array (
-  'categories' => 'category_includes',
-  'products' => 'product_includes',
-  'variations' => 'variation_includes',
+    protected $param_mapping = array(
+'categories' => 'category_includes',
+'products' => 'product_includes',
+'variations' => 'variation_includes'
 );
     /**
      * Constructor.

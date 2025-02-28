@@ -10,12 +10,12 @@ class WC_Order_Item_Shipping_Data_Store extends \Abstract_WC_Order_Item_Type_Dat
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => 'method_id',
-  1 => 'instance_id',
-  2 => 'cost',
-  3 => 'total_tax',
-  4 => 'taxes',
+    protected $internal_meta_keys = array(
+'method_id',
+'instance_id',
+'cost',
+'total_tax',
+'taxes'
 );
     /**
      * Read/populate data properties specific to this order item.

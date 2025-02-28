@@ -13,58 +13,58 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      * @since 7.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => '_customer_user',
-  1 => '_order_key',
-  2 => '_order_currency',
-  3 => '_billing_first_name',
-  4 => '_billing_last_name',
-  5 => '_billing_company',
-  6 => '_billing_address_1',
-  7 => '_billing_address_2',
-  8 => '_billing_city',
-  9 => '_billing_state',
-  10 => '_billing_postcode',
-  11 => '_billing_country',
-  12 => '_billing_email',
-  13 => '_billing_phone',
-  14 => '_shipping_first_name',
-  15 => '_shipping_last_name',
-  16 => '_shipping_company',
-  17 => '_shipping_address_1',
-  18 => '_shipping_address_2',
-  19 => '_shipping_city',
-  20 => '_shipping_state',
-  21 => '_shipping_postcode',
-  22 => '_shipping_country',
-  23 => '_shipping_phone',
-  24 => '_completed_date',
-  25 => '_paid_date',
-  26 => '_edit_last',
-  27 => '_cart_discount',
-  28 => '_cart_discount_tax',
-  29 => '_order_shipping',
-  30 => '_order_shipping_tax',
-  31 => '_order_tax',
-  32 => '_order_total',
-  33 => '_payment_method',
-  34 => '_payment_method_title',
-  35 => '_transaction_id',
-  36 => '_customer_ip_address',
-  37 => '_customer_user_agent',
-  38 => '_created_via',
-  39 => '_order_version',
-  40 => '_prices_include_tax',
-  41 => '_date_completed',
-  42 => '_date_paid',
-  43 => '_payment_tokens',
-  44 => '_billing_address_index',
-  45 => '_shipping_address_index',
-  46 => '_recorded_sales',
-  47 => '_recorded_coupon_usage_counts',
-  48 => '_download_permissions_granted',
-  49 => '_order_stock_reduced',
-  50 => '_new_order_email_sent',
+    protected $internal_meta_keys = array(
+'_customer_user',
+'_order_key',
+'_order_currency',
+'_billing_first_name',
+'_billing_last_name',
+'_billing_company',
+'_billing_address_1',
+'_billing_address_2',
+'_billing_city',
+'_billing_state',
+'_billing_postcode',
+'_billing_country',
+'_billing_email',
+'_billing_phone',
+'_shipping_first_name',
+'_shipping_last_name',
+'_shipping_company',
+'_shipping_address_1',
+'_shipping_address_2',
+'_shipping_city',
+'_shipping_state',
+'_shipping_postcode',
+'_shipping_country',
+'_shipping_phone',
+'_completed_date',
+'_paid_date',
+'_edit_last',
+'_cart_discount',
+'_cart_discount_tax',
+'_order_shipping',
+'_order_shipping_tax',
+'_order_tax',
+'_order_total',
+'_payment_method',
+'_payment_method_title',
+'_transaction_id',
+'_customer_ip_address',
+'_customer_user_agent',
+'_created_via',
+'_order_version',
+'_prices_include_tax',
+'_date_completed',
+'_date_paid',
+'_payment_tokens',
+'_billing_address_index',
+'_shipping_address_index',
+'_recorded_sales',
+'_recorded_coupon_usage_counts',
+'_download_permissions_granted',
+'_order_stock_reduced',
+'_new_order_email_sent'
 );
     /**
      * Meta keys that are considered ephemeral and do not trigger a full save (updating modified date) when changed.
@@ -89,334 +89,271 @@ class OrdersTableDataStore extends \Abstract_WC_Order_Data_Store_CPT implements 
      *
      * @var \string[][]
      */
-    protected $order_column_mapping = array (
-  'id' => 
-  array (
-    'type' => 'int',
-    'name' => 'id',
-  ),
-  'status' => 
-  array (
-    'type' => 'string',
-    'name' => 'status',
-  ),
-  'type' => 
-  array (
-    'type' => 'string',
-    'name' => 'type',
-  ),
-  'currency' => 
-  array (
-    'type' => 'string',
-    'name' => 'currency',
-  ),
-  'tax_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'cart_tax',
-  ),
-  'total_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'total',
-  ),
-  'customer_id' => 
-  array (
-    'type' => 'int',
-    'name' => 'customer_id',
-  ),
-  'billing_email' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_email',
-  ),
-  'date_created_gmt' => 
-  array (
-    'type' => 'date',
-    'name' => 'date_created',
-  ),
-  'date_updated_gmt' => 
-  array (
-    'type' => 'date',
-    'name' => 'date_modified',
-  ),
-  'parent_order_id' => 
-  array (
-    'type' => 'int',
-    'name' => 'parent_id',
-  ),
-  'payment_method' => 
-  array (
-    'type' => 'string',
-    'name' => 'payment_method',
-  ),
-  'payment_method_title' => 
-  array (
-    'type' => 'string',
-    'name' => 'payment_method_title',
-  ),
-  'ip_address' => 
-  array (
-    'type' => 'string',
-    'name' => 'customer_ip_address',
-  ),
-  'transaction_id' => 
-  array (
-    'type' => 'string',
-    'name' => 'transaction_id',
-  ),
-  'user_agent' => 
-  array (
-    'type' => 'string',
-    'name' => 'customer_user_agent',
-  ),
-  'customer_note' => 
-  array (
-    'type' => 'string',
-    'name' => 'customer_note',
-  ),
+    protected $order_column_mapping = array(
+'id' => array(
+'type' => 'int',
+'name' => 'id'
+),
+'status' => array(
+'type' => 'string',
+'name' => 'status'
+),
+'type' => array(
+'type' => 'string',
+'name' => 'type'
+),
+'currency' => array(
+'type' => 'string',
+'name' => 'currency'
+),
+'tax_amount' => array(
+'type' => 'decimal',
+'name' => 'cart_tax'
+),
+'total_amount' => array(
+'type' => 'decimal',
+'name' => 'total'
+),
+'customer_id' => array(
+'type' => 'int',
+'name' => 'customer_id'
+),
+'billing_email' => array(
+'type' => 'string',
+'name' => 'billing_email'
+),
+'date_created_gmt' => array(
+'type' => 'date',
+'name' => 'date_created'
+),
+'date_updated_gmt' => array(
+'type' => 'date',
+'name' => 'date_modified'
+),
+'parent_order_id' => array(
+'type' => 'int',
+'name' => 'parent_id'
+),
+'payment_method' => array(
+'type' => 'string',
+'name' => 'payment_method'
+),
+'payment_method_title' => array(
+'type' => 'string',
+'name' => 'payment_method_title'
+),
+'ip_address' => array(
+'type' => 'string',
+'name' => 'customer_ip_address'
+),
+'transaction_id' => array(
+'type' => 'string',
+'name' => 'transaction_id'
+),
+'user_agent' => array(
+'type' => 'string',
+'name' => 'customer_user_agent'
+),
+'customer_note' => array(
+'type' => 'string',
+'name' => 'customer_note'
+)
 );
     /**
      * Table column to WC_Order mapping for billing addresses in wc_address table.
      *
      * @var \string[][]
      */
-    protected $billing_address_column_mapping = array (
-  'id' => 
-  array (
-    'type' => 'int',
-  ),
-  'order_id' => 
-  array (
-    'type' => 'int',
-  ),
-  'address_type' => 
-  array (
-    'type' => 'string',
-  ),
-  'first_name' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_first_name',
-  ),
-  'last_name' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_last_name',
-  ),
-  'company' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_company',
-  ),
-  'address_1' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_address_1',
-  ),
-  'address_2' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_address_2',
-  ),
-  'city' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_city',
-  ),
-  'state' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_state',
-  ),
-  'postcode' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_postcode',
-  ),
-  'country' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_country',
-  ),
-  'email' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_email',
-  ),
-  'phone' => 
-  array (
-    'type' => 'string',
-    'name' => 'billing_phone',
-  ),
+    protected $billing_address_column_mapping = array(
+'id' => array(
+'type' => 'int'
+),
+'order_id' => array(
+'type' => 'int'
+),
+'address_type' => array(
+'type' => 'string'
+),
+'first_name' => array(
+'type' => 'string',
+'name' => 'billing_first_name'
+),
+'last_name' => array(
+'type' => 'string',
+'name' => 'billing_last_name'
+),
+'company' => array(
+'type' => 'string',
+'name' => 'billing_company'
+),
+'address_1' => array(
+'type' => 'string',
+'name' => 'billing_address_1'
+),
+'address_2' => array(
+'type' => 'string',
+'name' => 'billing_address_2'
+),
+'city' => array(
+'type' => 'string',
+'name' => 'billing_city'
+),
+'state' => array(
+'type' => 'string',
+'name' => 'billing_state'
+),
+'postcode' => array(
+'type' => 'string',
+'name' => 'billing_postcode'
+),
+'country' => array(
+'type' => 'string',
+'name' => 'billing_country'
+),
+'email' => array(
+'type' => 'string',
+'name' => 'billing_email'
+),
+'phone' => array(
+'type' => 'string',
+'name' => 'billing_phone'
+)
 );
     /**
      * Table column to WC_Order mapping for shipping addresses in wc_address table.
      *
      * @var \string[][]
      */
-    protected $shipping_address_column_mapping = array (
-  'id' => 
-  array (
-    'type' => 'int',
-  ),
-  'order_id' => 
-  array (
-    'type' => 'int',
-  ),
-  'address_type' => 
-  array (
-    'type' => 'string',
-  ),
-  'first_name' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_first_name',
-  ),
-  'last_name' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_last_name',
-  ),
-  'company' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_company',
-  ),
-  'address_1' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_address_1',
-  ),
-  'address_2' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_address_2',
-  ),
-  'city' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_city',
-  ),
-  'state' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_state',
-  ),
-  'postcode' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_postcode',
-  ),
-  'country' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_country',
-  ),
-  'email' => 
-  array (
-    'type' => 'string',
-  ),
-  'phone' => 
-  array (
-    'type' => 'string',
-    'name' => 'shipping_phone',
-  ),
+    protected $shipping_address_column_mapping = array(
+'id' => array(
+'type' => 'int'
+),
+'order_id' => array(
+'type' => 'int'
+),
+'address_type' => array(
+'type' => 'string'
+),
+'first_name' => array(
+'type' => 'string',
+'name' => 'shipping_first_name'
+),
+'last_name' => array(
+'type' => 'string',
+'name' => 'shipping_last_name'
+),
+'company' => array(
+'type' => 'string',
+'name' => 'shipping_company'
+),
+'address_1' => array(
+'type' => 'string',
+'name' => 'shipping_address_1'
+),
+'address_2' => array(
+'type' => 'string',
+'name' => 'shipping_address_2'
+),
+'city' => array(
+'type' => 'string',
+'name' => 'shipping_city'
+),
+'state' => array(
+'type' => 'string',
+'name' => 'shipping_state'
+),
+'postcode' => array(
+'type' => 'string',
+'name' => 'shipping_postcode'
+),
+'country' => array(
+'type' => 'string',
+'name' => 'shipping_country'
+),
+'email' => array(
+'type' => 'string'
+),
+'phone' => array(
+'type' => 'string',
+'name' => 'shipping_phone'
+)
 );
     /**
      * Table column to WC_Order mapping for wc_operational_data table.
      *
      * @var \string[][]
      */
-    protected $operational_data_column_mapping = array (
-  'id' => 
-  array (
-    'type' => 'int',
-  ),
-  'order_id' => 
-  array (
-    'type' => 'int',
-  ),
-  'created_via' => 
-  array (
-    'type' => 'string',
-    'name' => 'created_via',
-  ),
-  'woocommerce_version' => 
-  array (
-    'type' => 'string',
-    'name' => 'version',
-  ),
-  'prices_include_tax' => 
-  array (
-    'type' => 'bool',
-    'name' => 'prices_include_tax',
-  ),
-  'coupon_usages_are_counted' => 
-  array (
-    'type' => 'bool',
-    'name' => 'recorded_coupon_usage_counts',
-  ),
-  'download_permission_granted' => 
-  array (
-    'type' => 'bool',
-    'name' => 'download_permissions_granted',
-  ),
-  'cart_hash' => 
-  array (
-    'type' => 'string',
-    'name' => 'cart_hash',
-  ),
-  'new_order_email_sent' => 
-  array (
-    'type' => 'bool',
-    'name' => 'new_order_email_sent',
-  ),
-  'order_key' => 
-  array (
-    'type' => 'string',
-    'name' => 'order_key',
-  ),
-  'order_stock_reduced' => 
-  array (
-    'type' => 'bool',
-    'name' => 'order_stock_reduced',
-  ),
-  'date_paid_gmt' => 
-  array (
-    'type' => 'date',
-    'name' => 'date_paid',
-  ),
-  'date_completed_gmt' => 
-  array (
-    'type' => 'date',
-    'name' => 'date_completed',
-  ),
-  'shipping_tax_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'shipping_tax',
-  ),
-  'shipping_total_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'shipping_total',
-  ),
-  'discount_tax_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'discount_tax',
-  ),
-  'discount_total_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'discount_total',
-  ),
-  'recorded_sales' => 
-  array (
-    'type' => 'bool',
-    'name' => 'recorded_sales',
-  ),
+    protected $operational_data_column_mapping = array(
+'id' => array(
+'type' => 'int'
+),
+'order_id' => array(
+'type' => 'int'
+),
+'created_via' => array(
+'type' => 'string',
+'name' => 'created_via'
+),
+'woocommerce_version' => array(
+'type' => 'string',
+'name' => 'version'
+),
+'prices_include_tax' => array(
+'type' => 'bool',
+'name' => 'prices_include_tax'
+),
+'coupon_usages_are_counted' => array(
+'type' => 'bool',
+'name' => 'recorded_coupon_usage_counts'
+),
+'download_permission_granted' => array(
+'type' => 'bool',
+'name' => 'download_permissions_granted'
+),
+'cart_hash' => array(
+'type' => 'string',
+'name' => 'cart_hash'
+),
+'new_order_email_sent' => array(
+'type' => 'bool',
+'name' => 'new_order_email_sent'
+),
+'order_key' => array(
+'type' => 'string',
+'name' => 'order_key'
+),
+'order_stock_reduced' => array(
+'type' => 'bool',
+'name' => 'order_stock_reduced'
+),
+'date_paid_gmt' => array(
+'type' => 'date',
+'name' => 'date_paid'
+),
+'date_completed_gmt' => array(
+'type' => 'date',
+'name' => 'date_completed'
+),
+'shipping_tax_amount' => array(
+'type' => 'decimal',
+'name' => 'shipping_tax'
+),
+'shipping_total_amount' => array(
+'type' => 'decimal',
+'name' => 'shipping_total'
+),
+'discount_tax_amount' => array(
+'type' => 'decimal',
+'name' => 'discount_tax'
+),
+'discount_total_amount' => array(
+'type' => 'decimal',
+'name' => 'discount_total'
+),
+'recorded_sales' => array(
+'type' => 'bool',
+'name' => 'recorded_sales'
+)
 );
     /**
      * Initialize the object.

@@ -12,9 +12,9 @@ class ProxiesServiceProvider extends \Automattic\WooCommerce\Internal\Dependency
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Proxies\\LegacyProxy',
-  1 => 'Automattic\\WooCommerce\\Proxies\\ActionsProxy',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Proxies\\LegacyProxy',
+'Automattic\\WooCommerce\\Proxies\\ActionsProxy'
 );
     /**
      * Register the classes.

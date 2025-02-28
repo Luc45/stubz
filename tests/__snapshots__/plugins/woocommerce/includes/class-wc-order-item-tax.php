@@ -10,14 +10,14 @@ class WC_Order_Item_Tax extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array (
-  'rate_code' => '',
-  'rate_id' => 0,
-  'label' => '',
-  'compound' => false,
-  'tax_total' => 0,
-  'shipping_tax_total' => 0,
-  'rate_percent' => null,
+    protected $extra_data = array(
+'rate_code' => '',
+'rate_id' => 0,
+'label' => '',
+'compound' => false,
+'tax_total' => 0,
+'shipping_tax_total' => 0,
+'rate_percent' => null
 );
     /**
      * Set order item name.

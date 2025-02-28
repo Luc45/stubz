@@ -19,8 +19,8 @@ abstract class WC_Shipping_Method extends \WC_Settings_API
      *
      * @var array
      */
-    public $supports = array (
-  0 => 'settings',
+    public $supports = array(
+'settings'
 );
     /**
      * Unique ID for the shipping method - must be set.

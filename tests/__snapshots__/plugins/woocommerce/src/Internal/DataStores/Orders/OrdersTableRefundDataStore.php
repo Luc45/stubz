@@ -12,61 +12,52 @@ class OrdersTableRefundDataStore extends \Automattic\WooCommerce\Internal\DataSt
      *
      * @var string[]
      */
-    protected $internal_meta_keys = array (
-  0 => '_refund_amount',
-  1 => '_refund_reason',
-  2 => '_refunded_by',
-  3 => '_refunded_payment',
+    protected $internal_meta_keys = array(
+'_refund_amount',
+'_refund_reason',
+'_refunded_by',
+'_refunded_payment'
 );
     /**
      * We do not have and use all the getters and setters from OrderTableDataStore, so we only select the props we actually need.
      *
      * @var \string[][]
      */
-    protected $operational_data_column_mapping = array (
-  'id' => 
-  array (
-    'type' => 'int',
-  ),
-  'order_id' => 
-  array (
-    'type' => 'int',
-  ),
-  'woocommerce_version' => 
-  array (
-    'type' => 'string',
-    'name' => 'version',
-  ),
-  'prices_include_tax' => 
-  array (
-    'type' => 'bool',
-    'name' => 'prices_include_tax',
-  ),
-  'coupon_usages_are_counted' => 
-  array (
-    'type' => 'bool',
-    'name' => 'recorded_coupon_usage_counts',
-  ),
-  'shipping_tax_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'shipping_tax',
-  ),
-  'shipping_total_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'shipping_total',
-  ),
-  'discount_tax_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'discount_tax',
-  ),
-  'discount_total_amount' => 
-  array (
-    'type' => 'decimal',
-    'name' => 'discount_total',
-  ),
+    protected $operational_data_column_mapping = array(
+'id' => array(
+'type' => 'int'
+),
+'order_id' => array(
+'type' => 'int'
+),
+'woocommerce_version' => array(
+'type' => 'string',
+'name' => 'version'
+),
+'prices_include_tax' => array(
+'type' => 'bool',
+'name' => 'prices_include_tax'
+),
+'coupon_usages_are_counted' => array(
+'type' => 'bool',
+'name' => 'recorded_coupon_usage_counts'
+),
+'shipping_tax_amount' => array(
+'type' => 'decimal',
+'name' => 'shipping_tax'
+),
+'shipping_total_amount' => array(
+'type' => 'decimal',
+'name' => 'shipping_total'
+),
+'discount_tax_amount' => array(
+'type' => 'decimal',
+'name' => 'discount_tax'
+),
+'discount_total_amount' => array(
+'type' => 'decimal',
+'name' => 'discount_total'
+)
 );
     /**
      * Delete a refund order from database.

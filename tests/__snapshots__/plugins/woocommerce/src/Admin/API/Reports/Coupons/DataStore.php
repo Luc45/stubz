@@ -30,10 +30,10 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore impl
      *
      * @var array
      */
-    protected $column_types = array (
-  'coupon_id' => 'intval',
-  'amount' => 'floatval',
-  'orders_count' => 'intval',
+    protected $column_types = array(
+'coupon_id' => 'intval',
+'amount' => 'floatval',
+'orders_count' => 'intval'
 );
     /**
      * Data store context used to pass to filters.

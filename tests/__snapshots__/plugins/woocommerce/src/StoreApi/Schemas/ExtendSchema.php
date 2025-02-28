@@ -119,8 +119,8 @@ final class ExtendSchema
      * @return array Returns a list of payment requirements.
      * @throws \Exception If a registered callback throws an error, or silently logs it.
      */
-    public function get_payment_requirements(array $requirements = array (
-  0 => 'products',
+    public function get_payment_requirements(array $requirements = array(
+'products'
 ))
 {
 }

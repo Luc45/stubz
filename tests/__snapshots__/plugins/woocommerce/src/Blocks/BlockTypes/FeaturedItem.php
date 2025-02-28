@@ -18,23 +18,23 @@ abstract class FeaturedItem extends \Automattic\WooCommerce\Blocks\BlockTypes\Ab
      *
      * @var array
      */
-    protected $defaults = array (
-  'align' => 'none',
+    protected $defaults = array(
+'align' => 'none'
 );
     /**
      * Global style enabled for this block.
      *
      * @var array
      */
-    protected $global_style_wrapper = array (
-  0 => 'background_color',
-  1 => 'border_color',
-  2 => 'border_radius',
-  3 => 'border_width',
-  4 => 'font_size',
-  5 => 'padding',
-  6 => 'text_color',
-  7 => 'extra_classes',
+    protected $global_style_wrapper = array(
+'background_color',
+'border_color',
+'border_radius',
+'border_width',
+'font_size',
+'padding',
+'text_color',
+'extra_classes'
 );
     /**
      * Returns the featured item.

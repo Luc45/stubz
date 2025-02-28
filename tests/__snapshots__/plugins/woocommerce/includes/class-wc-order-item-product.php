@@ -24,22 +24,19 @@ class WC_Order_Item_Product extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array (
-  'product_id' => 0,
-  'variation_id' => 0,
-  'quantity' => 1,
-  'tax_class' => '',
-  'subtotal' => 0,
-  'subtotal_tax' => 0,
-  'total' => 0,
-  'total_tax' => 0,
-  'taxes' => 
-  array (
-    'subtotal' => 
-    array(),
-    'total' => 
-    array(),
-  ),
+    protected $extra_data = array(
+'product_id' => 0,
+'variation_id' => 0,
+'quantity' => 1,
+'tax_class' => '',
+'subtotal' => 0,
+'subtotal_tax' => 0,
+'total' => 0,
+'total_tax' => 0,
+'taxes' => array(
+'subtotal' => array(),
+'total' => array()
+)
 );
     /**
      * Set quantity.

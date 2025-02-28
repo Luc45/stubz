@@ -13,14 +13,40 @@ use Roave\BetterReflection\NodeCompiler\Exception\UnableToCompileNode;
  */
 class Helpers {
 	public static function toPhpLiteral( mixed $value ): string {
-		$value = var_export( $value, true );
+		// Handle non-array values
+		if ( ! is_array( $value ) ) {
+			if ( $value === null ) {
+				return 'null';
+			}
+			$exported = var_export( $value, true );
 
-		// array(\n) => array()
-		$value = preg_replace('/array \(\s*\)/', 'array()', $value);
+			return str_replace( 'NULL', 'null', $exported );
+		}
 
-		$value = str_replace( 'NULL', 'null', $value );
+		// If the array is empty
+		if ( empty( $value ) ) {
+			return 'array()';
+		}
 
-		return $value;
+		// Check if keys are [0..n] with no gaps
+		$isSequential = array_keys( $value ) === range( 0, count( $value ) - 1 );
+
+		// Build the array lines
+		$lines = [];
+		foreach ( $value as $k => $v ) {
+			$valStr = self::toPhpLiteral( $v );
+			if ( $isSequential ) {
+				// omit the key for sequential arrays
+				$lines[] = $valStr;
+			} else {
+				// show key => value
+				$keyStr  = var_export( $k, true );
+				$lines[] = "{$keyStr} => {$valStr}";
+			}
+		}
+
+		// Always multiline, no indentation
+		return "array(\n" . implode( ",\n", $lines ) . "\n)";
 	}
 
 	/**

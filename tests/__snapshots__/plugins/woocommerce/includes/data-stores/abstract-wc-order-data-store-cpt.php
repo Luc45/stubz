@@ -18,17 +18,17 @@ abstract class Abstract_WC_Order_Data_Store_CPT extends \WC_Data_Store_WP implem
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => '_order_currency',
-  1 => '_cart_discount',
-  2 => '_cart_discount_tax',
-  3 => '_order_shipping',
-  4 => '_order_shipping_tax',
-  5 => '_order_tax',
-  6 => '_order_total',
-  7 => '_order_version',
-  8 => '_prices_include_tax',
-  9 => '_payment_tokens',
+    protected $internal_meta_keys = array(
+'_order_currency',
+'_cart_discount',
+'_cart_discount_tax',
+'_order_shipping',
+'_order_shipping_tax',
+'_order_tax',
+'_order_total',
+'_order_version',
+'_prices_include_tax',
+'_payment_tokens'
 );
     /**
      * Custom setters for props. Add key here if it has corresponding set_ and get_ method present.

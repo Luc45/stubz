@@ -9,9 +9,9 @@ class EmailPreview
 {
     public const DEFAULT_EMAIL_TYPE = 'WC_Email_Customer_Processing_Order';
     public const DEFAULT_EMAIL_ID = 'customer_processing_order';
-    public const USER_OBJECT_EMAILS = array (
-  0 => 'WC_Email_Customer_New_Account',
-  1 => 'WC_Email_Customer_Reset_Password',
+    public const USER_OBJECT_EMAILS = array(
+'WC_Email_Customer_New_Account',
+'WC_Email_Customer_Reset_Password'
 );
     /**
      * The single instance of the class.

@@ -10,14 +10,13 @@ class WC_Product_Attribute implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'id' => 0,
-  'name' => '',
-  'options' => 
-  array(),
-  'position' => 0,
-  'visible' => false,
-  'variation' => false,
+    protected $data = array(
+'id' => 0,
+'name' => '',
+'options' => array(),
+'position' => 0,
+'visible' => false,
+'variation' => false
 );
     /**
      * Return if this attribute is a taxonomy.

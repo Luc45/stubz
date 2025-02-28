@@ -16,21 +16,21 @@ class WC_Webhook extends \WC_Legacy_Webhook
      *
      * @var array
      */
-    protected $data = array (
-  'date_created' => null,
-  'date_modified' => null,
-  'status' => 'disabled',
-  'delivery_url' => '',
-  'secret' => '',
-  'name' => '',
-  'topic' => '',
-  'hooks' => '',
-  'resource' => '',
-  'event' => '',
-  'failure_count' => 0,
-  'user_id' => 0,
-  'api_version' => 3,
-  'pending_delivery' => false,
+    protected $data = array(
+'date_created' => null,
+'date_modified' => null,
+'status' => 'disabled',
+'delivery_url' => '',
+'secret' => '',
+'name' => '',
+'topic' => '',
+'hooks' => '',
+'resource' => '',
+'event' => '',
+'failure_count' => 0,
+'user_id' => 0,
+'api_version' => 3,
+'pending_delivery' => false
 );
     /**
      * Load webhook data based on how WC_Webhook is called.

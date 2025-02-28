@@ -18,13 +18,13 @@ class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\Abstra
      *
      * @var array
      */
-    protected $defaults = array (
-  'hasCount' => true,
-  'hasImage' => false,
-  'hasEmpty' => false,
-  'isDropdown' => false,
-  'isHierarchical' => true,
-  'showChildrenOnly' => false,
+    protected $defaults = array(
+'hasCount' => true,
+'hasImage' => false,
+'hasEmpty' => false,
+'isDropdown' => false,
+'isHierarchical' => true,
+'showChildrenOnly' => false
 );
     /**
      * Get block attributes.

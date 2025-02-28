@@ -18,23 +18,21 @@ class Features
      *
      * @var array
      */
-    protected static $optional_features = array (
-  'analytics' => 
-  array (
-    'default' => 'yes',
-  ),
-  'remote-inbox-notifications' => 
-  array (
-    'default' => 'yes',
-  ),
+    protected static $optional_features = array(
+'analytics' => array(
+'default' => 'yes'
+),
+'remote-inbox-notifications' => array(
+'default' => 'yes'
+)
 );
     /**
      * Beta features
      *
      * @var array
      */
-    protected static $beta_features = array (
-  0 => 'settings',
+    protected static $beta_features = array(
+'settings'
 );
     /**
      * Get class instance.

@@ -9,43 +9,41 @@ class WC_Customer extends \WC_Legacy_Customer
      *
      * @var array
      */
-    protected $data = array (
-  'date_created' => null,
-  'date_modified' => null,
-  'email' => '',
-  'first_name' => '',
-  'last_name' => '',
-  'display_name' => '',
-  'role' => 'customer',
-  'username' => '',
-  'billing' => 
-  array (
-    'first_name' => '',
-    'last_name' => '',
-    'company' => '',
-    'address_1' => '',
-    'address_2' => '',
-    'city' => '',
-    'postcode' => '',
-    'country' => '',
-    'state' => '',
-    'email' => '',
-    'phone' => '',
-  ),
-  'shipping' => 
-  array (
-    'first_name' => '',
-    'last_name' => '',
-    'company' => '',
-    'address_1' => '',
-    'address_2' => '',
-    'city' => '',
-    'postcode' => '',
-    'country' => '',
-    'state' => '',
-    'phone' => '',
-  ),
-  'is_paying_customer' => false,
+    protected $data = array(
+'date_created' => null,
+'date_modified' => null,
+'email' => '',
+'first_name' => '',
+'last_name' => '',
+'display_name' => '',
+'role' => 'customer',
+'username' => '',
+'billing' => array(
+'first_name' => '',
+'last_name' => '',
+'company' => '',
+'address_1' => '',
+'address_2' => '',
+'city' => '',
+'postcode' => '',
+'country' => '',
+'state' => '',
+'email' => '',
+'phone' => ''
+),
+'shipping' => array(
+'first_name' => '',
+'last_name' => '',
+'company' => '',
+'address_1' => '',
+'address_2' => '',
+'city' => '',
+'postcode' => '',
+'country' => '',
+'state' => '',
+'phone' => ''
+),
+'is_paying_customer' => false
 );
     /**
      * Stores a password if this needs to be changed. Write-only and hidden from _data.

@@ -12,11 +12,11 @@ class ProductAttributesLookupServiceProvider extends \Automattic\WooCommerce\Int
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\DataRegenerator',
-  1 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\Filterer',
-  2 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\LookupDataStore',
-  3 => 'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\CLIRunner',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\DataRegenerator',
+'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\Filterer',
+'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\LookupDataStore',
+'Automattic\\WooCommerce\\Internal\\ProductAttributesLookup\\CLIRunner'
 );
     /**
      * Register the classes.

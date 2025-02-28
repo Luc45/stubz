@@ -12,9 +12,9 @@ class EmailPreviewServiceProvider extends \Automattic\WooCommerce\Internal\Depen
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreview',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreviewRestController',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreview',
+'Automattic\\WooCommerce\\Internal\\Admin\\EmailPreview\\EmailPreviewRestController'
 );
     /**
      * Register the classes.

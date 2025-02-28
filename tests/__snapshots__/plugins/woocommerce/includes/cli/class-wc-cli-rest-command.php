@@ -20,11 +20,11 @@ class WC_CLI_REST_Command
      *
      * @var array
      */
-    protected $routes_with_parent_id = array (
-  0 => 'customer_download',
-  1 => 'product_review',
-  2 => 'order_note',
-  3 => 'shop_order_refund',
+    protected $routes_with_parent_id = array(
+'customer_download',
+'product_review',
+'order_note',
+'shop_order_refund'
 );
     /**
      * Sets up REST Command.

@@ -14,9 +14,9 @@ class COTMigrationServiceProvider extends \Automattic\WooCommerce\Internal\Depen
      *
      * @var string[]
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\PostsToOrdersMigrationController',
-  1 => 'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\CLIRunner',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\PostsToOrdersMigrationController',
+'Automattic\\WooCommerce\\Database\\Migrations\\CustomOrderTable\\CLIRunner'
 );
     /**
      * Use the register method to register items with the container via the

@@ -18,65 +18,63 @@ class WC_Order extends \WC_Abstract_Order
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'parent_id' => 0,
-  'status' => '',
-  'currency' => '',
-  'version' => '',
-  'prices_include_tax' => false,
-  'date_created' => null,
-  'date_modified' => null,
-  'discount_total' => 0,
-  'discount_tax' => 0,
-  'shipping_total' => 0,
-  'shipping_tax' => 0,
-  'cart_tax' => 0,
-  'total' => 0,
-  'total_tax' => 0,
-  'customer_id' => 0,
-  'order_key' => '',
-  'billing' => 
-  array (
-    'first_name' => '',
-    'last_name' => '',
-    'company' => '',
-    'address_1' => '',
-    'address_2' => '',
-    'city' => '',
-    'state' => '',
-    'postcode' => '',
-    'country' => '',
-    'email' => '',
-    'phone' => '',
-  ),
-  'shipping' => 
-  array (
-    'first_name' => '',
-    'last_name' => '',
-    'company' => '',
-    'address_1' => '',
-    'address_2' => '',
-    'city' => '',
-    'state' => '',
-    'postcode' => '',
-    'country' => '',
-    'phone' => '',
-  ),
-  'payment_method' => '',
-  'payment_method_title' => '',
-  'transaction_id' => '',
-  'customer_ip_address' => '',
-  'customer_user_agent' => '',
-  'created_via' => '',
-  'customer_note' => '',
-  'date_completed' => null,
-  'date_paid' => null,
-  'cart_hash' => '',
-  'order_stock_reduced' => false,
-  'download_permissions_granted' => false,
-  'new_order_email_sent' => false,
-  'recorded_sales' => false,
-  'recorded_coupon_usage_counts' => false,
+    protected $data = array(
+'parent_id' => 0,
+'status' => '',
+'currency' => '',
+'version' => '',
+'prices_include_tax' => false,
+'date_created' => null,
+'date_modified' => null,
+'discount_total' => 0,
+'discount_tax' => 0,
+'shipping_total' => 0,
+'shipping_tax' => 0,
+'cart_tax' => 0,
+'total' => 0,
+'total_tax' => 0,
+'customer_id' => 0,
+'order_key' => '',
+'billing' => array(
+'first_name' => '',
+'last_name' => '',
+'company' => '',
+'address_1' => '',
+'address_2' => '',
+'city' => '',
+'state' => '',
+'postcode' => '',
+'country' => '',
+'email' => '',
+'phone' => ''
+),
+'shipping' => array(
+'first_name' => '',
+'last_name' => '',
+'company' => '',
+'address_1' => '',
+'address_2' => '',
+'city' => '',
+'state' => '',
+'postcode' => '',
+'country' => '',
+'phone' => ''
+),
+'payment_method' => '',
+'payment_method_title' => '',
+'transaction_id' => '',
+'customer_ip_address' => '',
+'customer_user_agent' => '',
+'created_via' => '',
+'customer_note' => '',
+'date_completed' => null,
+'date_paid' => null,
+'cart_hash' => '',
+'order_stock_reduced' => false,
+'download_permissions_granted' => false,
+'new_order_email_sent' => false,
+'recorded_sales' => false,
+'recorded_coupon_usage_counts' => false
 );
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
@@ -86,12 +84,12 @@ class WC_Order extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array (
-  0 => '_recorded_sales',
-  1 => '_recorded_coupon_usage_counts',
-  2 => '_download_permissions_granted',
-  3 => '_order_stock_reduced',
-  4 => '_new_order_email_sent',
+    protected $legacy_datastore_props = array(
+'_recorded_sales',
+'_recorded_coupon_usage_counts',
+'_download_permissions_granted',
+'_order_stock_reduced',
+'_new_order_email_sent'
 );
     /**
      * Refunds for an order. Use {@see get_refunds()} instead.

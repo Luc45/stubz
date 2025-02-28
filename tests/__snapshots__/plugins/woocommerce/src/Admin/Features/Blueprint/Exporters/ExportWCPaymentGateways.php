@@ -12,8 +12,8 @@ class ExportWCPaymentGateways implements \Automattic\WooCommerce\Blueprint\Expor
      *
      * @var array|string[] Payment gateway IDs to exclude from export
      */
-    protected array $exclude_ids = array (
-  0 => 'pre_install_woocommerce_payments_promotion',
+    protected array $exclude_ids = array(
+'pre_install_woocommerce_payments_promotion'
 );
     /**
      * Export the step

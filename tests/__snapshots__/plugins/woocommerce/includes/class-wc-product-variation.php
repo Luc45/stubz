@@ -15,20 +15,20 @@ class WC_Product_Variation extends \WC_Product_Simple
      *
      * @var array
      */
-    protected $parent_data = array (
-  'title' => '',
-  'sku' => '',
-  'manage_stock' => '',
-  'backorders' => '',
-  'stock_quantity' => '',
-  'weight' => '',
-  'length' => '',
-  'width' => '',
-  'height' => '',
-  'tax_class' => '',
-  'shipping_class_id' => '',
-  'image_id' => '',
-  'purchase_note' => '',
+    protected $parent_data = array(
+'title' => '',
+'sku' => '',
+'manage_stock' => '',
+'backorders' => '',
+'stock_quantity' => '',
+'weight' => '',
+'length' => '',
+'width' => '',
+'height' => '',
+'tax_class' => '',
+'shipping_class_id' => '',
+'image_id' => '',
+'purchase_note' => ''
 );
     /**
      * Override the default constructor to set custom defaults.

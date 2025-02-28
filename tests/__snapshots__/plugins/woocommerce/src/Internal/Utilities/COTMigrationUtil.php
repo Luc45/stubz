@@ -79,8 +79,8 @@ class COTMigrationUtil
      *
      * @return bool Whether the passed param is an order.
      */
-    public function is_order($order_id, array $types = array (
-  0 => 'shop_order',
+    public function is_order($order_id, array $types = array(
+'shop_order'
 )): bool
 {
 }

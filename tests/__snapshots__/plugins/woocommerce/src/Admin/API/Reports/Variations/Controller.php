@@ -21,9 +21,9 @@ class Controller extends \Automattic\WooCommerce\Admin\API\Reports\GenericContro
      *
      * @var array
      */
-    protected $param_mapping = array (
-  'variations' => 'variation_includes',
-  'products' => 'product_includes',
+    protected $param_mapping = array(
+'variations' => 'variation_includes',
+'products' => 'product_includes'
 );
     /**
      * Get data from `'variations'` GenericQuery.

@@ -12,21 +12,21 @@ class WC_Order_Refund_Data_Store_CPT extends \Abstract_WC_Order_Data_Store_CPT i
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => '_order_currency',
-  1 => '_cart_discount',
-  2 => '_refund_amount',
-  3 => '_refunded_by',
-  4 => '_refunded_payment',
-  5 => '_refund_reason',
-  6 => '_cart_discount_tax',
-  7 => '_order_shipping',
-  8 => '_order_shipping_tax',
-  9 => '_order_tax',
-  10 => '_order_total',
-  11 => '_order_version',
-  12 => '_prices_include_tax',
-  13 => '_payment_tokens',
+    protected $internal_meta_keys = array(
+'_order_currency',
+'_cart_discount',
+'_refund_amount',
+'_refunded_by',
+'_refunded_payment',
+'_refund_reason',
+'_cart_discount_tax',
+'_order_shipping',
+'_order_shipping_tax',
+'_order_tax',
+'_order_total',
+'_order_version',
+'_prices_include_tax',
+'_payment_tokens'
 );
     /**
      * Delete a refund - no trash is supported.

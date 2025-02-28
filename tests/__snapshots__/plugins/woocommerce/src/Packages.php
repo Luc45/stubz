@@ -31,9 +31,9 @@ class Packages
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $base_packages = array (
-  'woocommerce-admin' => '\\Automattic\\WooCommerce\\Admin\\Composer\\Package',
-  'woocommerce-gutenberg-products-block' => '\\Automattic\\WooCommerce\\Blocks\\Package',
+    protected static $base_packages = array(
+'woocommerce-admin' => '\\Automattic\\WooCommerce\\Admin\\Composer\\Package',
+'woocommerce-gutenberg-products-block' => '\\Automattic\\WooCommerce\\Blocks\\Package'
 );
     /**
      * Similar to $base_packages, but
@@ -41,8 +41,8 @@ class Packages
      *
      * @var array Key is the package name/directory, value is the main package class which handles init.
      */
-    protected static $merged_packages = array (
-  'woocommerce-brands' => '\\Automattic\\WooCommerce\\Internal\\Brands',
+    protected static $merged_packages = array(
+'woocommerce-brands' => '\\Automattic\\WooCommerce\\Internal\\Brands'
 );
     /**
      * Init the package loader.

@@ -9,11 +9,11 @@
  */
 class BlockTemplateUtilsDuplicated
 {
-    protected const DIRECTORY_NAMES = array (
-  'DEPRECATED_TEMPLATES' => 'block-templates',
-  'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
-  'TEMPLATES' => 'templates',
-  'TEMPLATE_PARTS' => 'parts',
+    protected const DIRECTORY_NAMES = array(
+'DEPRECATED_TEMPLATES' => 'block-templates',
+'DEPRECATED_TEMPLATE_PARTS' => 'block-template-parts',
+'TEMPLATES' => 'templates',
+'TEMPLATE_PARTS' => 'parts'
 );
     protected const PLUGIN_SLUG = 'woocommerce/woocommerce';
     /**

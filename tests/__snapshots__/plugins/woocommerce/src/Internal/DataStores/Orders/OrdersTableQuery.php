@@ -13,11 +13,10 @@ namespace Automattic\WooCommerce\Internal\DataStores\Orders;
  */
 class OrdersTableQuery
 {
-    public const SKIPPED_VALUES = array (
-  0 => '',
-  1 => 
-  array(),
-  2 => null,
+    public const SKIPPED_VALUES = array(
+'',
+array(),
+null
 );
     public const REGEX_SHORTHAND_DATES = '/([^.<>]*)(>=|<=|>|<|\\.\\.\\.)([^.<>]+)/';
     /**

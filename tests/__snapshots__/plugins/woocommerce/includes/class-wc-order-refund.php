@@ -21,11 +21,11 @@ class WC_Order_Refund extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $extra_data = array (
-  'amount' => '',
-  'reason' => '',
-  'refunded_by' => 0,
-  'refunded_payment' => false,
+    protected $extra_data = array(
+'amount' => '',
+'reason' => '',
+'refunded_by' => 0,
+'refunded_payment' => false
 );
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
@@ -35,11 +35,11 @@ class WC_Order_Refund extends \WC_Abstract_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array (
-  0 => '_refund_amount',
-  1 => '_refund_reason',
-  2 => '_refunded_by',
-  3 => '_refunded_payment',
+    protected $legacy_datastore_props = array(
+'_refund_amount',
+'_refund_reason',
+'_refunded_by',
+'_refunded_payment'
 );
     /**
      * Get internal type (post type.)

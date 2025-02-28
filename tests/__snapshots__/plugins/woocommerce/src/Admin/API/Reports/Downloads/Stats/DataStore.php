@@ -14,8 +14,8 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Downloads\Data
      *
      * @var array
      */
-    protected $column_types = array (
-  'download_count' => 'intval',
+    protected $column_types = array(
+'download_count' => 'intval'
 );
     /**
      * Cache identifier.

@@ -13,21 +13,21 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'parent_id' => 0,
-  'status' => '',
-  'currency' => '',
-  'version' => '',
-  'prices_include_tax' => false,
-  'date_created' => null,
-  'date_modified' => null,
-  'discount_total' => 0,
-  'discount_tax' => 0,
-  'shipping_total' => 0,
-  'shipping_tax' => 0,
-  'cart_tax' => 0,
-  'total' => 0,
-  'total_tax' => 0,
+    protected $data = array(
+'parent_id' => 0,
+'status' => '',
+'currency' => '',
+'version' => '',
+'prices_include_tax' => false,
+'date_created' => null,
+'date_modified' => null,
+'discount_total' => 0,
+'discount_tax' => 0,
+'shipping_total' => 0,
+'shipping_tax' => 0,
+'cart_tax' => 0,
+'total' => 0,
+'total_tax' => 0
 );
     /**
      * List of properties that were earlier managed by data store. However, since DataStore is a not a stored entity in itself, they used to store data in metadata of the data object.
@@ -37,8 +37,8 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @var array
      */
-    protected $legacy_datastore_props = array (
-  0 => '_recorded_coupon_usage_counts',
+    protected $legacy_datastore_props = array(
+'_recorded_coupon_usage_counts'
 );
     /**
      * Order items will be stored here, sometimes before they persist in the DB.
@@ -79,12 +79,12 @@ abstract class WC_Abstract_Order extends \WC_Abstract_Legacy_Order
      *
      * @var array
      */
-    protected array $item_types_to_group = array (
-  'line_item' => 'line_items',
-  'tax' => 'tax_lines',
-  'shipping' => 'shipping_lines',
-  'fee' => 'fee_lines',
-  'coupon' => 'coupon_lines',
+    protected array $item_types_to_group = array(
+'line_item' => 'line_items',
+'tax' => 'tax_lines',
+'shipping' => 'shipping_lines',
+'fee' => 'fee_lines',
+'coupon' => 'coupon_lines'
 );
     /**
      * Get the order if ID is passed, otherwise the order is new and empty.

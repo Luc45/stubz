@@ -45,11 +45,9 @@ class WC_Settings_Tracking
      *
      * @var array
      */
-    protected $toggled_options = array (
-  'enabled' => 
-  array(),
-  'disabled' => 
-  array(),
+    protected $toggled_options = array(
+'enabled' => array(),
+'disabled' => array()
 );
     /**
      * Init tracking.

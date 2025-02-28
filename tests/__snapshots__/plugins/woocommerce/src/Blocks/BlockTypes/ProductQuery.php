@@ -24,9 +24,9 @@ class ProductQuery extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractBlo
      *
      * @var array
      */
-    protected $custom_order_opts = array (
-  0 => 'popularity',
-  1 => 'rating',
+    protected $custom_order_opts = array(
+'popularity',
+'rating'
 );
     /**
      * All the query args related to the filter by attributes block.

@@ -14,9 +14,9 @@ class MarketingServiceProvider extends \Automattic\WooCommerce\Internal\Dependen
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Marketing\\MarketingSpecs',
-  1 => 'Automattic\\WooCommerce\\Admin\\Marketing\\MarketingChannels',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\Marketing\\MarketingSpecs',
+'Automattic\\WooCommerce\\Admin\\Marketing\\MarketingChannels'
 );
     /**
      * Register the classes.

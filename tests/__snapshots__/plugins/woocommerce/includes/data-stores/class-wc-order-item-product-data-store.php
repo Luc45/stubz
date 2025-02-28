@@ -12,16 +12,16 @@ class WC_Order_Item_Product_Data_Store extends \Abstract_WC_Order_Item_Type_Data
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => '_product_id',
-  1 => '_variation_id',
-  2 => '_qty',
-  3 => '_tax_class',
-  4 => '_line_subtotal',
-  5 => '_line_subtotal_tax',
-  6 => '_line_total',
-  7 => '_line_tax',
-  8 => '_line_tax_data',
+    protected $internal_meta_keys = array(
+'_product_id',
+'_variation_id',
+'_qty',
+'_tax_class',
+'_line_subtotal',
+'_line_subtotal_tax',
+'_line_total',
+'_line_tax',
+'_line_tax_data'
 );
     /**
      * Read/populate data properties specific to this order item.

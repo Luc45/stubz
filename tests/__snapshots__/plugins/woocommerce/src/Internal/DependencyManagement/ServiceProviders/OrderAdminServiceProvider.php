@@ -12,13 +12,13 @@ class OrderAdminServiceProvider extends \Automattic\WooCommerce\Internal\Depende
      *
      * @var string[]
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\COTRedirectionController',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\PageController',
-  2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\Edit',
-  3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\ListTable',
-  4 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\EditLock',
-  5 => 'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\TaxonomiesMetaBox',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\COTRedirectionController',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\PageController',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\Edit',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\ListTable',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\EditLock',
+'Automattic\\WooCommerce\\Internal\\Admin\\Orders\\MetaBoxes\\TaxonomiesMetaBox'
 );
     /**
      * Registers services provided by this class.

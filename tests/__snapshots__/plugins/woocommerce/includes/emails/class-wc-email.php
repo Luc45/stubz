@@ -121,26 +121,26 @@ class WC_Email extends \WC_Settings_API
      *  @var array $plain_search
      *  @see $plain_replace
      */
-    public $plain_search = array (
-  0 => '//',
-  1 => '/&(nbsp|#0*160);/i',
-  2 => '/&(quot|rdquo|ldquo|#0*8220|#0*8221|#0*147|#0*148);/i',
-  3 => '/&(apos|rsquo|lsquo|#0*8216|#0*8217);/i',
-  4 => '/&gt;/i',
-  5 => '/&lt;/i',
-  6 => '/&#0*38;/i',
-  7 => '/&amp;/i',
-  8 => '/&(copy|#0*169);/i',
-  9 => '/&(trade|#0*8482|#0*153);/i',
-  10 => '/&(reg|#0*174);/i',
-  11 => '/&(mdash|#0*151|#0*8212);/i',
-  12 => '/&(ndash|minus|#0*8211|#0*8722);/i',
-  13 => '/&(bull|#0*149|#0*8226);/i',
-  14 => '/&(pound|#0*163);/i',
-  15 => '/&(euro|#0*8364);/i',
-  16 => '/&(dollar|#0*36);/i',
-  17 => '/&[^&\\s;]+;/i',
-  18 => '/[ ]{2,}/',
+    public $plain_search = array(
+'//',
+'/&(nbsp|#0*160);/i',
+'/&(quot|rdquo|ldquo|#0*8220|#0*8221|#0*147|#0*148);/i',
+'/&(apos|rsquo|lsquo|#0*8216|#0*8217);/i',
+'/&gt;/i',
+'/&lt;/i',
+'/&#0*38;/i',
+'/&amp;/i',
+'/&(copy|#0*169);/i',
+'/&(trade|#0*8482|#0*153);/i',
+'/&(reg|#0*174);/i',
+'/&(mdash|#0*151|#0*8212);/i',
+'/&(ndash|minus|#0*8211|#0*8722);/i',
+'/&(bull|#0*149|#0*8226);/i',
+'/&(pound|#0*163);/i',
+'/&(euro|#0*8364);/i',
+'/&(dollar|#0*36);/i',
+'/&[^&\\s;]+;/i',
+'/[ ]{2,}/'
 );
     /**
      *  List of pattern replacements corresponding to patterns searched.
@@ -148,26 +148,26 @@ class WC_Email extends \WC_Settings_API
      *  @var array $plain_replace
      *  @see $plain_search
      */
-    public $plain_replace = array (
-  0 => '',
-  1 => ' ',
-  2 => '"',
-  3 => '\'',
-  4 => '>',
-  5 => '<',
-  6 => '&',
-  7 => '&',
-  8 => '(c)',
-  9 => '(tm)',
-  10 => '(R)',
-  11 => '--',
-  12 => '-',
-  13 => '*',
-  14 => '£',
-  15 => 'EUR',
-  16 => '$',
-  17 => '',
-  18 => ' ',
+    public $plain_replace = array(
+'',
+' ',
+'"',
+'\'',
+'>',
+'<',
+'&',
+'&',
+'(c)',
+'(tm)',
+'(R)',
+'--',
+'-',
+'*',
+'£',
+'EUR',
+'$',
+'',
+' '
 );
     /**
      * Strings to find/replace in subjects/headings.

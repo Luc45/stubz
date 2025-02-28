@@ -33,25 +33,22 @@ class WC_Cart extends \WC_Legacy_Cart
      *
      * @var array
      */
-    protected $default_totals = array (
-  'subtotal' => 0,
-  'subtotal_tax' => 0,
-  'shipping_total' => 0,
-  'shipping_tax' => 0,
-  'shipping_taxes' => 
-  array(),
-  'discount_total' => 0,
-  'discount_tax' => 0,
-  'cart_contents_total' => 0,
-  'cart_contents_tax' => 0,
-  'cart_contents_taxes' => 
-  array(),
-  'fee_total' => 0,
-  'fee_tax' => 0,
-  'fee_taxes' => 
-  array(),
-  'total' => 0,
-  'total_tax' => 0,
+    protected $default_totals = array(
+'subtotal' => 0,
+'subtotal_tax' => 0,
+'shipping_total' => 0,
+'shipping_tax' => 0,
+'shipping_taxes' => array(),
+'discount_total' => 0,
+'discount_tax' => 0,
+'cart_contents_total' => 0,
+'cart_contents_tax' => 0,
+'cart_contents_taxes' => array(),
+'fee_total' => 0,
+'fee_tax' => 0,
+'fee_taxes' => array(),
+'total' => 0,
+'total_tax' => 0
 );
     /**
      * Store calculated totals.

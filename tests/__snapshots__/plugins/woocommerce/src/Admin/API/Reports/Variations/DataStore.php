@@ -30,34 +30,34 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore impl
      *
      * @var array
      */
-    protected $column_types = array (
-  'date_start' => 'strval',
-  'date_end' => 'strval',
-  'product_id' => 'intval',
-  'variation_id' => 'intval',
-  'items_sold' => 'intval',
-  'net_revenue' => 'floatval',
-  'orders_count' => 'intval',
-  'name' => 'strval',
-  'price' => 'floatval',
-  'image' => 'strval',
-  'permalink' => 'strval',
-  'sku' => 'strval',
+    protected $column_types = array(
+'date_start' => 'strval',
+'date_end' => 'strval',
+'product_id' => 'intval',
+'variation_id' => 'intval',
+'items_sold' => 'intval',
+'net_revenue' => 'floatval',
+'orders_count' => 'intval',
+'name' => 'strval',
+'price' => 'floatval',
+'image' => 'strval',
+'permalink' => 'strval',
+'sku' => 'strval'
 );
     /**
      * Extended product attributes to include in the data.
      *
      * @var array
      */
-    protected $extended_attributes = array (
-  0 => 'name',
-  1 => 'price',
-  2 => 'image',
-  3 => 'permalink',
-  4 => 'stock_status',
-  5 => 'stock_quantity',
-  6 => 'low_stock_amount',
-  7 => 'sku',
+    protected $extended_attributes = array(
+'name',
+'price',
+'image',
+'permalink',
+'stock_status',
+'stock_quantity',
+'low_stock_amount',
+'sku'
 );
     /**
      * Data store context used to pass to filters.

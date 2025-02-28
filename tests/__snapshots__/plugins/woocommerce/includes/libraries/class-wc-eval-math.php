@@ -17,9 +17,9 @@ class WC_Eval_Math
      *
      * @var array
      */
-    public static $v = array (
-  'e' => 2.71,
-  'pi' => 3.14,
+    public static $v = array(
+'e' => 2.71,
+'pi' => 3.14
 );
     /**
      * User-defined functions.
@@ -32,9 +32,9 @@ class WC_Eval_Math
      *
      * @var array
      */
-    public static $vb = array (
-  0 => 'e',
-  1 => 'pi',
+    public static $vb = array(
+'e',
+'pi'
 );
     /**
      * Built-in functions.

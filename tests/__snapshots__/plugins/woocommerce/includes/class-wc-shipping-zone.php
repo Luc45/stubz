@@ -21,11 +21,10 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      *
      * @var array
      */
-    protected $data = array (
-  'zone_name' => '',
-  'zone_order' => 0,
-  'zone_locations' => 
-  array(),
+    protected $data = array(
+'zone_name' => '',
+'zone_order' => 0,
+'zone_locations' => array()
 );
     /**
      * Constructor for zones.
@@ -146,11 +145,11 @@ class WC_Shipping_Zone extends \WC_Legacy_Shipping_Zone
      *
      * @param array|string $types of location to clear.
      */
-    public function clear_locations($types = array (
-  0 => 'postcode',
-  1 => 'state',
-  2 => 'country',
-  3 => 'continent',
+    public function clear_locations($types = array(
+'postcode',
+'state',
+'country',
+'continent'
 ))
 {
 }

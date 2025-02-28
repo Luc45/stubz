@@ -17,15 +17,15 @@ abstract class WC_Log_Levels
      *
      * @var array
      */
-    protected static $level_to_severity = array (
-  'emergency' => 800,
-  'alert' => 700,
-  'critical' => 600,
-  'error' => 500,
-  'warning' => 400,
-  'notice' => 300,
-  'info' => 200,
-  'debug' => 100,
+    protected static $level_to_severity = array(
+'emergency' => 800,
+'alert' => 700,
+'critical' => 600,
+'error' => 500,
+'warning' => 400,
+'notice' => 300,
+'info' => 200,
+'debug' => 100
 );
     /**
      * Severity integers mapped to level strings.
@@ -34,15 +34,15 @@ abstract class WC_Log_Levels
      *
      * @var array
      */
-    protected static $severity_to_level = array (
-  800 => 'emergency',
-  700 => 'alert',
-  600 => 'critical',
-  500 => 'error',
-  400 => 'warning',
-  300 => 'notice',
-  200 => 'info',
-  100 => 'debug',
+    protected static $severity_to_level = array(
+800 => 'emergency',
+700 => 'alert',
+600 => 'critical',
+500 => 'error',
+400 => 'warning',
+300 => 'notice',
+200 => 'info',
+100 => 'debug'
 );
     /**
      * Validate a level string.

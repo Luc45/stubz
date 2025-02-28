@@ -12,8 +12,8 @@ class ProductImageBySKUServiceProvider extends \Automattic\WooCommerce\Internal\
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\ProductImage\\MatchImageBySKU',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\ProductImage\\MatchImageBySKU'
 );
     /**
      * Register the classes.

@@ -12,8 +12,8 @@ class FeaturesServiceProvider extends \Automattic\WooCommerce\Internal\Dependenc
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Features\\FeaturesController',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Features\\FeaturesController'
 );
     /**
      * Register the classes.

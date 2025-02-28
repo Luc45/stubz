@@ -14,9 +14,9 @@ class BatchProcessingServiceProvider extends \Automattic\WooCommerce\Internal\De
      *
      * @var string[]
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\BatchProcessing\\BatchProcessingController',
-  1 => 'Automattic\\WooCommerce\\Internal\\OrderCouponDataMigrator',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\BatchProcessing\\BatchProcessingController',
+'Automattic\\WooCommerce\\Internal\\OrderCouponDataMigrator'
 );
     /**
      * Use the register method to register items with the container via the

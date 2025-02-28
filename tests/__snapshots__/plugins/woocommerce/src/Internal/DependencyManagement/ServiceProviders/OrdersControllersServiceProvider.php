@@ -12,10 +12,10 @@ class OrdersControllersServiceProvider extends \Automattic\WooCommerce\Internal\
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Orders\\CouponsController',
-  1 => 'Automattic\\WooCommerce\\Internal\\Orders\\TaxesController',
-  2 => 'Automattic\\WooCommerce\\Internal\\Orders\\OrderActionsRestController',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Orders\\CouponsController',
+'Automattic\\WooCommerce\\Internal\\Orders\\TaxesController',
+'Automattic\\WooCommerce\\Internal\\Orders\\OrderActionsRestController'
 );
     /**
      * Register the classes.

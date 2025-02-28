@@ -7,10 +7,10 @@ namespace Automattic\WooCommerce\Blocks\Utils;
  */
 class StyleAttributesUtils
 {
-    public const EMPTY_STYLE = array (
-  'class' => '',
-  'style' => '',
-  'value' => '',
+    public const EMPTY_STYLE = array(
+'class' => '',
+'style' => '',
+'value' => ''
 );
     /**
      * If color value is in preset format, convert it to a CSS var. Else return same value

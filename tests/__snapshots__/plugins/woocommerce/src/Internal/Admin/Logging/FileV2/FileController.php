@@ -7,19 +7,19 @@ namespace Automattic\WooCommerce\Internal\Admin\Logging\FileV2;
  */
 class FileController
 {
-    public const DEFAULTS_GET_FILES = array (
-  'date_end' => 0,
-  'date_filter' => '',
-  'date_start' => 0,
-  'offset' => 0,
-  'order' => 'desc',
-  'orderby' => 'modified',
-  'per_page' => 20,
-  'source' => '',
+    public const DEFAULTS_GET_FILES = array(
+'date_end' => 0,
+'date_filter' => '',
+'date_start' => 0,
+'offset' => 0,
+'order' => 'desc',
+'orderby' => 'modified',
+'per_page' => 20,
+'source' => ''
 );
-    public const DEFAULTS_SEARCH_WITHIN_FILES = array (
-  'offset' => 0,
-  'per_page' => 50,
+    public const DEFAULTS_SEARCH_WITHIN_FILES = array(
+'offset' => 0,
+'per_page' => 50
 );
     public const SEARCH_MAX_FILES = 100;
     public const SEARCH_MAX_RESULTS = 200;

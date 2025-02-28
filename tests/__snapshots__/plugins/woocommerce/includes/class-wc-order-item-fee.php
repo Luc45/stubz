@@ -24,17 +24,15 @@ class WC_Order_Item_Fee extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array (
-  'tax_class' => '',
-  'tax_status' => 'taxable',
-  'amount' => '',
-  'total' => '',
-  'total_tax' => '',
-  'taxes' => 
-  array (
-    'total' => 
-    array(),
-  ),
+    protected $extra_data = array(
+'tax_class' => '',
+'tax_status' => 'taxable',
+'amount' => '',
+'total' => '',
+'total_tax' => '',
+'taxes' => array(
+'total' => array()
+)
 );
     /**
      * Get item costs grouped by tax class.

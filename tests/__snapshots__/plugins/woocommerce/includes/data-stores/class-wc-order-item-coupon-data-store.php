@@ -12,9 +12,9 @@ class WC_Order_Item_Coupon_Data_Store extends \Abstract_WC_Order_Item_Type_Data_
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => 'discount_amount',
-  1 => 'discount_amount_tax',
+    protected $internal_meta_keys = array(
+'discount_amount',
+'discount_amount_tax'
 );
     /**
      * Read/populate data properties specific to this order item.

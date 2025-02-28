@@ -82,8 +82,8 @@ abstract class WC_Payment_Gateway extends \WC_Settings_API
      *
      * @var array
      */
-    public $supports = array (
-  0 => 'products',
+    public $supports = array(
+'products'
 );
     /**
      * Maximum transaction amount, zero does not define a maximum.

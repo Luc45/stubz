@@ -12,11 +12,11 @@ class ComingSoonServiceProvider extends \Automattic\WooCommerce\Internal\Depende
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonAdminBarBadge',
-  1 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonCacheInvalidator',
-  2 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonHelper',
-  3 => 'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonRequestHandler',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonAdminBarBadge',
+'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonCacheInvalidator',
+'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonHelper',
+'Automattic\\WooCommerce\\Internal\\ComingSoon\\ComingSoonRequestHandler'
 );
     /**
      * Register the classes.

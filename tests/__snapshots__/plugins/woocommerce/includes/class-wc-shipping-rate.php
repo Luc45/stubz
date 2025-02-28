@@ -11,17 +11,16 @@ class WC_Shipping_Rate
      * @since 9.2.0 Added description and delivery_time.
      * @var   array
      */
-    protected $data = array (
-  'id' => '',
-  'method_id' => '',
-  'instance_id' => 0,
-  'label' => '',
-  'cost' => 0,
-  'taxes' => 
-  array(),
-  'tax_status' => 'taxable',
-  'description' => '',
-  'delivery_time' => '',
+    protected $data = array(
+'id' => '',
+'method_id' => '',
+'instance_id' => 0,
+'label' => '',
+'cost' => 0,
+'taxes' => array(),
+'tax_status' => 'taxable',
+'description' => '',
+'delivery_time' => ''
 );
     /**
      * Stores meta data for this rate.

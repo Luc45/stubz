@@ -19,28 +19,28 @@ class WC_Coupon_Data_Store_CPT extends \WC_Data_Store_WP implements \WC_Coupon_D
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => 'discount_type',
-  1 => 'coupon_amount',
-  2 => 'expiry_date',
-  3 => 'date_expires',
-  4 => 'usage_count',
-  5 => 'individual_use',
-  6 => 'product_ids',
-  7 => 'exclude_product_ids',
-  8 => 'usage_limit',
-  9 => 'usage_limit_per_user',
-  10 => 'limit_usage_to_x_items',
-  11 => 'free_shipping',
-  12 => 'product_categories',
-  13 => 'exclude_product_categories',
-  14 => 'exclude_sale_items',
-  15 => 'minimum_amount',
-  16 => 'maximum_amount',
-  17 => 'customer_email',
-  18 => '_used_by',
-  19 => '_edit_lock',
-  20 => '_edit_last',
+    protected $internal_meta_keys = array(
+'discount_type',
+'coupon_amount',
+'expiry_date',
+'date_expires',
+'usage_count',
+'individual_use',
+'product_ids',
+'exclude_product_ids',
+'usage_limit',
+'usage_limit_per_user',
+'limit_usage_to_x_items',
+'free_shipping',
+'product_categories',
+'exclude_product_categories',
+'exclude_sale_items',
+'minimum_amount',
+'maximum_amount',
+'customer_email',
+'_used_by',
+'_edit_lock',
+'_edit_last'
 );
     /**
      * The updated coupon properties

@@ -332,9 +332,9 @@ function wc_get_base_location()
  * @param array $fallback Fallback location.
  * @return array
  */
-function wc_get_customer_geolocation($fallback = array (
-  'country' => '',
-  'state' => '',
+function wc_get_customer_geolocation($fallback = array(
+'country' => '',
+'state' => ''
 ))
 {
 }

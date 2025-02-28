@@ -16,17 +16,17 @@ class WC_Customer_Download extends \WC_Data implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'download_id' => '',
-  'product_id' => 0,
-  'user_id' => 0,
-  'user_email' => '',
-  'order_id' => 0,
-  'order_key' => '',
-  'downloads_remaining' => '',
-  'access_granted' => null,
-  'access_expires' => null,
-  'download_count' => 0,
+    protected $data = array(
+'download_id' => '',
+'product_id' => 0,
+'user_id' => 0,
+'user_email' => '',
+'order_id' => 0,
+'order_key' => '',
+'downloads_remaining' => '',
+'access_granted' => null,
+'access_expires' => null,
+'download_count' => 0
 );
     /**
      * Constructor.

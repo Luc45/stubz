@@ -106,9 +106,9 @@ class FormFactory
      * @param array $sort_by key and order to sort by.
      * @return array list of registered fields.
      */
-    public static function get_fields($sort_by = array (
-  'key' => 'order',
-  'order' => 'asc',
+    public static function get_fields($sort_by = array(
+'key' => 'order',
+'order' => 'asc'
 ))
 {
 }
@@ -118,9 +118,9 @@ class FormFactory
      * @param array $sort_by key and order to sort by.
      * @return array list of registered cards.
      */
-    public static function get_subsections($sort_by = array (
-  'key' => 'order',
-  'order' => 'asc',
+    public static function get_subsections($sort_by = array(
+'key' => 'order',
+'order' => 'asc'
 ))
 {
 }
@@ -130,9 +130,9 @@ class FormFactory
      * @param array $sort_by key and order to sort by.
      * @return array list of registered sections.
      */
-    public static function get_sections($sort_by = array (
-  'key' => 'order',
-  'order' => 'asc',
+    public static function get_sections($sort_by = array(
+'key' => 'order',
+'order' => 'asc'
 ))
 {
 }
@@ -142,9 +142,9 @@ class FormFactory
      * @param array $sort_by key and order to sort by.
      * @return array list of registered tabs.
      */
-    public static function get_tabs($sort_by = array (
-  'key' => 'order',
-  'order' => 'asc',
+    public static function get_tabs($sort_by = array(
+'key' => 'order',
+'order' => 'asc'
 ))
 {
 }

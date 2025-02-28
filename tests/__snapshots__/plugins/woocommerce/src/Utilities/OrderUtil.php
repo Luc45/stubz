@@ -89,8 +89,8 @@ final class OrderUtil
      *
      * @return bool Whether the passed param is an order.
      */
-    public static function is_order($order_id, $types = array (
-  0 => 'shop_order',
+    public static function is_order($order_id, $types = array(
+'shop_order'
 ))
 {
 }

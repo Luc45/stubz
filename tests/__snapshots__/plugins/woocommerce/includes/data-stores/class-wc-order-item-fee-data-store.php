@@ -12,15 +12,15 @@ class WC_Order_Item_Fee_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Sto
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => '_fee_amount',
-  1 => '_tax_class',
-  2 => '_tax_status',
-  3 => '_line_subtotal',
-  4 => '_line_subtotal_tax',
-  5 => '_line_total',
-  6 => '_line_tax',
-  7 => '_line_tax_data',
+    protected $internal_meta_keys = array(
+'_fee_amount',
+'_tax_class',
+'_tax_status',
+'_line_subtotal',
+'_line_subtotal_tax',
+'_line_total',
+'_line_tax',
+'_line_tax_data'
 );
     /**
      * Read/populate data properties specific to this order item.

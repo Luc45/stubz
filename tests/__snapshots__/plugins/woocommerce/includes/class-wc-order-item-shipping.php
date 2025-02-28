@@ -10,18 +10,16 @@ class WC_Order_Item_Shipping extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array (
-  'method_title' => '',
-  'method_id' => '',
-  'instance_id' => '',
-  'total' => 0,
-  'total_tax' => 0,
-  'taxes' => 
-  array (
-    'total' => 
-    array(),
-  ),
-  'tax_status' => 'taxable',
+    protected $extra_data = array(
+'method_title' => '',
+'method_id' => '',
+'instance_id' => '',
+'total' => 0,
+'total_tax' => 0,
+'taxes' => array(
+'total' => array()
+),
+'tax_status' => 'taxable'
 );
     /**
      * Calculate item taxes.

@@ -9,9 +9,8 @@ class WC_Product_Grouped extends \WC_Product
      *
      * @var array
      */
-    protected $extra_data = array (
-  'children' => 
-  array(),
+    protected $extra_data = array(
+'children' => array()
 );
     /**
      * Get internal type.

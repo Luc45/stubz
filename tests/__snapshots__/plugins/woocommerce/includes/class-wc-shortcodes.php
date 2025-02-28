@@ -19,10 +19,10 @@ class WC_Shortcodes
      *
      * @return string
      */
-    public static function shortcode_wrapper($function, $atts = array(), $wrapper = array (
-  'class' => 'woocommerce',
-  'before' => null,
-  'after' => null,
+    public static function shortcode_wrapper($function, $atts = array(), $wrapper = array(
+'class' => 'woocommerce',
+'before' => null,
+'after' => null
 ))
 {
 }

@@ -14,10 +14,10 @@ class OrderAttributionServiceProvider extends \Automattic\WooCommerce\Internal\D
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionController',
-  1 => 'Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionBlocksController',
-  2 => 'Automattic\\WooCommerce\\Internal\\Integrations\\WPConsentAPI',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionController',
+'Automattic\\WooCommerce\\Internal\\Orders\\OrderAttributionBlocksController',
+'Automattic\\WooCommerce\\Internal\\Integrations\\WPConsentAPI'
 );
     /**
      * Register the classes.

@@ -7,18 +7,18 @@ namespace Automattic\WooCommerce\Admin\Features\OnboardingTasks;
  */
 class TaskLists
 {
-    public const DEFAULT_TASKS = array (
-  0 => 'StoreDetails',
-  1 => 'Products',
-  2 => 'WooCommercePayments',
-  3 => 'Payments',
-  4 => 'Tax',
-  5 => 'Shipping',
-  6 => 'Marketing',
-  7 => 'Appearance',
-  8 => 'AdditionalPayments',
-  9 => 'ReviewShippingOptions',
-  10 => 'GetMobileApp',
+    public const DEFAULT_TASKS = array(
+'StoreDetails',
+'Products',
+'WooCommercePayments',
+'Payments',
+'Tax',
+'Shipping',
+'Marketing',
+'Appearance',
+'AdditionalPayments',
+'ReviewShippingOptions',
+'GetMobileApp'
 );
     /**
      * Class instance.

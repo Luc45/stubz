@@ -12,17 +12,17 @@ class UtilsClassesServiceProvider extends \Automattic\WooCommerce\Internal\Depen
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Utilities\\DatabaseUtil',
-  1 => 'Automattic\\WooCommerce\\Internal\\Utilities\\HtmlSanitizer',
-  2 => 'Automattic\\WooCommerce\\Utilities\\OrderUtil',
-  3 => 'Automattic\\WooCommerce\\Utilities\\PluginUtil',
-  4 => 'Automattic\\WooCommerce\\Internal\\Utilities\\COTMigrationUtil',
-  5 => 'Automattic\\WooCommerce\\Internal\\Utilities\\WebhookUtil',
-  6 => 'Automattic\\WooCommerce\\Utilities\\RestApiUtil',
-  7 => 'Automattic\\WooCommerce\\Utilities\\TimeUtil',
-  8 => 'Automattic\\WooCommerce\\Internal\\Utilities\\PluginInstaller',
-  9 => 'Automattic\\WooCommerce\\Internal\\Utilities\\LegacyRestApiStub',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Utilities\\DatabaseUtil',
+'Automattic\\WooCommerce\\Internal\\Utilities\\HtmlSanitizer',
+'Automattic\\WooCommerce\\Utilities\\OrderUtil',
+'Automattic\\WooCommerce\\Utilities\\PluginUtil',
+'Automattic\\WooCommerce\\Internal\\Utilities\\COTMigrationUtil',
+'Automattic\\WooCommerce\\Internal\\Utilities\\WebhookUtil',
+'Automattic\\WooCommerce\\Utilities\\RestApiUtil',
+'Automattic\\WooCommerce\\Utilities\\TimeUtil',
+'Automattic\\WooCommerce\\Internal\\Utilities\\PluginInstaller',
+'Automattic\\WooCommerce\\Internal\\Utilities\\LegacyRestApiStub'
 );
     /**
      * Register the classes.

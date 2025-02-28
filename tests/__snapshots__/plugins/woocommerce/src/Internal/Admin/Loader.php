@@ -30,11 +30,9 @@ class Loader
      *
      * @var array
      */
-    protected $preloaded_dependencies = array (
-  'script' => 
-  array(),
-  'style' => 
-  array(),
+    protected $preloaded_dependencies = array(
+'script' => array(),
+'style' => array()
 );
     /**
      * Get class instance.

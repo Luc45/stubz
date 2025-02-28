@@ -14,11 +14,11 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Customers\Data
      *
      * @var array
      */
-    protected $column_types = array (
-  'customers_count' => 'intval',
-  'avg_orders_count' => 'floatval',
-  'avg_total_spend' => 'floatval',
-  'avg_avg_order_value' => 'floatval',
+    protected $column_types = array(
+'customers_count' => 'intval',
+'avg_orders_count' => 'floatval',
+'avg_total_spend' => 'floatval',
+'avg_avg_order_value' => 'floatval'
 );
     /**
      * Cache identifier.

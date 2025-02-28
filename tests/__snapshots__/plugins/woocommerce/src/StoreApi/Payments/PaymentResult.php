@@ -12,11 +12,11 @@ class PaymentResult
      *
      * @var array
      */
-    protected $valid_statuses = array (
-  0 => 'success',
-  1 => 'failure',
-  2 => 'pending',
-  3 => 'error',
+    protected $valid_statuses = array(
+'success',
+'failure',
+'pending',
+'error'
 );
     /**
      * Current payment status.

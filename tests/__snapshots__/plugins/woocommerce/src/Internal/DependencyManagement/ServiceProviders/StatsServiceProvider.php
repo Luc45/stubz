@@ -12,8 +12,8 @@ class StatsServiceProvider extends \Automattic\WooCommerce\Internal\DependencyMa
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\McStats',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\McStats'
 );
     /**
      * Register the classes.

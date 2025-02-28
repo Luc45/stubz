@@ -12,8 +12,8 @@ class RestockRefundedItemsAdjusterServiceProvider extends \Automattic\WooCommerc
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\RestockRefundedItemsAdjuster',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\RestockRefundedItemsAdjuster'
 );
     /**
      * Register the classes.

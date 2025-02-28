@@ -12,12 +12,12 @@ class WooSubscriptionsNotes
     public const CONNECTION_NOTE_NAME = 'wc-admin-wc-helper-connection';
     public const SUBSCRIPTION_NOTE_NAME = 'wc-admin-wc-helper-subscription';
     public const NOTIFY_WHEN_DAYS_LEFT = 60;
-    public const BUMP_THRESHOLDS = array (
-  0 => 60,
-  1 => 45,
-  2 => 20,
-  3 => 7,
-  4 => 1,
+    public const BUMP_THRESHOLDS = array(
+60,
+45,
+20,
+7,
+1
 );
     /**
      * Hook all the things.

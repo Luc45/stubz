@@ -15,10 +15,10 @@ class OrderMilestones
      *
      * @var array
      */
-    protected $allowed_statuses = array (
-  0 => 'pending',
-  1 => 'processing',
-  2 => 'completed',
+    protected $allowed_statuses = array(
+'pending',
+'processing',
+'completed'
 );
     /**
      * Orders count cache.
@@ -31,17 +31,17 @@ class OrderMilestones
      *
      * @var array
      */
-    protected $milestones = array (
-  0 => 1,
-  1 => 10,
-  2 => 100,
-  3 => 250,
-  4 => 500,
-  5 => 1000,
-  6 => 5000,
-  7 => 10000,
-  8 => 500000,
-  9 => 1000000,
+    protected $milestones = array(
+1,
+10,
+100,
+250,
+500,
+1000,
+5000,
+10000,
+500000,
+1000000
 );
     /**
      * Delay hook attachment until after the WC post types have been registered.

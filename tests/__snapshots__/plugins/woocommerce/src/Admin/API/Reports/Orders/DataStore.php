@@ -30,17 +30,17 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\DataStore impl
      *
      * @var array
      */
-    protected $column_types = array (
-  'order_id' => 'intval',
-  'parent_id' => 'intval',
-  'date_created' => 'strval',
-  'date_created_gmt' => 'strval',
-  'status' => 'strval',
-  'customer_id' => 'intval',
-  'net_total' => 'floatval',
-  'total_sales' => 'floatval',
-  'num_items_sold' => 'intval',
-  'customer_type' => 'strval',
+    protected $column_types = array(
+'order_id' => 'intval',
+'parent_id' => 'intval',
+'date_created' => 'strval',
+'date_created_gmt' => 'strval',
+'status' => 'strval',
+'customer_id' => 'intval',
+'net_total' => 'floatval',
+'total_sales' => 'floatval',
+'num_items_sold' => 'intval',
+'customer_type' => 'strval'
 );
     /**
      * Data store context used to pass to filters.

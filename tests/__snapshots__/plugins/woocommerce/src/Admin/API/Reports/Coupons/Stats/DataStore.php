@@ -14,14 +14,14 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Coupons\DataSt
      *
      * @var array
      */
-    protected $column_types = array (
-  'date_start' => 'strval',
-  'date_end' => 'strval',
-  'date_start_gmt' => 'strval',
-  'date_end_gmt' => 'strval',
-  'amount' => 'floatval',
-  'coupons_count' => 'intval',
-  'orders_count' => 'intval',
+    protected $column_types = array(
+'date_start' => 'strval',
+'date_end' => 'strval',
+'date_start_gmt' => 'strval',
+'date_end_gmt' => 'strval',
+'amount' => 'floatval',
+'coupons_count' => 'intval',
+'orders_count' => 'intval'
 );
     /**
      * SQL columns to select in the db query.

@@ -14,11 +14,11 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Variations\Dat
      *
      * @var array
      */
-    protected $column_types = array (
-  'items_sold' => 'intval',
-  'net_revenue' => 'floatval',
-  'orders_count' => 'intval',
-  'variations_count' => 'intval',
+    protected $column_types = array(
+'items_sold' => 'intval',
+'net_revenue' => 'floatval',
+'orders_count' => 'intval',
+'variations_count' => 'intval'
 );
     /**
      * Cache identifier.

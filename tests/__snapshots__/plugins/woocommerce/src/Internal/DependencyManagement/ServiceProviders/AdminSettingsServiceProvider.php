@@ -12,11 +12,11 @@ class AdminSettingsServiceProvider extends \Automattic\WooCommerce\Internal\Depe
      *
      * @var string[]
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsRestController',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\Payments',
-  2 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsController',
-  3 => 'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentProviders',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsRestController',
+'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\Payments',
+'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentsController',
+'Automattic\\WooCommerce\\Internal\\Admin\\Settings\\PaymentProviders'
 );
     /**
      * Registers services provided by this class.

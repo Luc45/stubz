@@ -10,27 +10,22 @@ abstract class WC_Legacy_Cart
      *
      * @deprecated 3.2.0
      */
-    public $cart_session_data = array (
-  'cart_contents_total' => 0,
-  'total' => 0,
-  'subtotal' => 0,
-  'subtotal_ex_tax' => 0,
-  'tax_total' => 0,
-  'taxes' => 
-  array(),
-  'shipping_taxes' => 
-  array(),
-  'discount_cart' => 0,
-  'discount_cart_tax' => 0,
-  'shipping_total' => 0,
-  'shipping_tax_total' => 0,
-  'coupon_discount_amounts' => 
-  array(),
-  'coupon_discount_tax_amounts' => 
-  array(),
-  'fee_total' => 0,
-  'fees' => 
-  array(),
+    public $cart_session_data = array(
+'cart_contents_total' => 0,
+'total' => 0,
+'subtotal' => 0,
+'subtotal_ex_tax' => 0,
+'tax_total' => 0,
+'taxes' => array(),
+'shipping_taxes' => array(),
+'discount_cart' => 0,
+'discount_cart_tax' => 0,
+'shipping_total' => 0,
+'shipping_tax_total' => 0,
+'coupon_discount_amounts' => array(),
+'coupon_discount_tax_amounts' => array(),
+'fee_total' => 0,
+'fees' => array()
 );
     /**
      * Contains an array of coupon usage counts after they have been applied.

@@ -12,13 +12,13 @@ class WC_Order_Item_Tax_Data_Store extends \Abstract_WC_Order_Item_Type_Data_Sto
      * @since 3.0.0
      * @var array
      */
-    protected $internal_meta_keys = array (
-  0 => 'rate_id',
-  1 => 'label',
-  2 => 'compound',
-  3 => 'tax_amount',
-  4 => 'shipping_tax_amount',
-  5 => 'rate_percent',
+    protected $internal_meta_keys = array(
+'rate_id',
+'label',
+'compound',
+'tax_amount',
+'shipping_tax_amount',
+'rate_percent'
 );
     /**
      * Read/populate data properties specific to this order item.

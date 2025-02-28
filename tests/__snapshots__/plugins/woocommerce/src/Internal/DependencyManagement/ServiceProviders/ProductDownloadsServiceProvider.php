@@ -12,11 +12,11 @@ class ProductDownloadsServiceProvider extends \Automattic\WooCommerce\Internal\D
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Register',
-  1 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Synchronize',
-  2 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\SyncUI',
-  3 => 'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\UI',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Register',
+'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Synchronize',
+'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\SyncUI',
+'Automattic\\WooCommerce\\Internal\\ProductDownloads\\ApprovedDirectories\\Admin\\UI'
 );
     /**
      * Register the classes.

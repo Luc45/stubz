@@ -12,8 +12,8 @@ class LayoutTemplatesServiceProvider extends \Automattic\WooCommerce\Internal\De
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\LayoutTemplates\\LayoutTemplateRegistry',
+    protected $provides = array(
+'Automattic\\WooCommerce\\LayoutTemplates\\LayoutTemplateRegistry'
 );
     /**
      * Register the classes.

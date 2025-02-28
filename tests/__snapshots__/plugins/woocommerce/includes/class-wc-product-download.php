@@ -10,11 +10,11 @@ class WC_Product_Download implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'id' => '',
-  'name' => '',
-  'file' => '',
-  'enabled' => true,
+    protected $data = array(
+'id' => '',
+'name' => '',
+'file' => '',
+'enabled' => true
 );
     /**
      * Returns all data for this object.

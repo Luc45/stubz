@@ -16,10 +16,10 @@ class CheckoutFields
      *
      * @var array
      */
-    protected $groups = array (
-  0 => 'billing',
-  1 => 'shipping',
-  2 => 'other',
+    protected $groups = array(
+'billing',
+'shipping',
+'other'
 );
     /**
      * Sets up core fields.

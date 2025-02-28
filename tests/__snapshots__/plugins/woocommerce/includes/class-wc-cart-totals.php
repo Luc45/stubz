@@ -74,17 +74,17 @@ final class WC_Cart_Totals
      * @since 3.2.0
      * @var array
      */
-    protected $totals = array (
-  'fees_total' => 0,
-  'fees_total_tax' => 0,
-  'items_subtotal' => 0,
-  'items_subtotal_tax' => 0,
-  'items_total' => 0,
-  'items_total_tax' => 0,
-  'total' => 0,
-  'shipping_total' => 0,
-  'shipping_tax_total' => 0,
-  'discounts_total' => 0,
+    protected $totals = array(
+'fees_total' => 0,
+'fees_total_tax' => 0,
+'items_subtotal' => 0,
+'items_subtotal_tax' => 0,
+'items_total' => 0,
+'items_total_tax' => 0,
+'total' => 0,
+'shipping_total' => 0,
+'shipping_tax_total' => 0,
+'discounts_total' => 0
 );
     /**
      * Cache of tax rates for a given tax class.
@@ -305,10 +305,10 @@ final class WC_Cart_Totals
      * @param  array|string $types    Types to merge and return. Defaults to all.
      * @return array
      */
-    protected function get_merged_taxes($in_cents = false, $types = array (
-  0 => 'items',
-  1 => 'fees',
-  2 => 'shipping',
+    protected function get_merged_taxes($in_cents = false, $types = array(
+'items',
+'fees',
+'shipping'
 ))
 {
 }

@@ -19,14 +19,14 @@ class QueryBuilder
      *
      * @var array
      */
-    protected $custom_order_opts = array (
-  0 => 'popularity',
-  1 => 'rating',
-  2 => 'post__in',
-  3 => 'price',
-  4 => 'sales',
-  5 => 'menu_order',
-  6 => 'random',
+    protected $custom_order_opts = array(
+'popularity',
+'rating',
+'post__in',
+'price',
+'sales',
+'menu_order',
+'random'
 );
     /**
      * All the query args related to the filter by attributes block.

@@ -12,9 +12,9 @@ class AdminSuggestionsServiceProvider extends \Automattic\WooCommerce\Internal\D
      *
      * @var string[]
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestions',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestionIncentives',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestions',
+'Automattic\\WooCommerce\\Internal\\Admin\\Suggestions\\PaymentExtensionSuggestionIncentives'
 );
     /**
      * Registers services provided by this class.

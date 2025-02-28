@@ -14,15 +14,15 @@ class DataStore extends \Automattic\WooCommerce\Admin\API\Reports\Products\DataS
      *
      * @var array
      */
-    protected $column_types = array (
-  'date_start' => 'strval',
-  'date_end' => 'strval',
-  'product_id' => 'intval',
-  'items_sold' => 'intval',
-  'net_revenue' => 'floatval',
-  'orders_count' => 'intval',
-  'products_count' => 'intval',
-  'variations_count' => 'intval',
+    protected $column_types = array(
+'date_start' => 'strval',
+'date_end' => 'strval',
+'product_id' => 'intval',
+'items_sold' => 'intval',
+'net_revenue' => 'floatval',
+'orders_count' => 'intval',
+'products_count' => 'intval',
+'variations_count' => 'intval'
 );
     /**
      * Cache identifier.

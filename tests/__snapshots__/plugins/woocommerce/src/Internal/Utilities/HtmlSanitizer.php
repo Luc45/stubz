@@ -7,32 +7,27 @@ namespace Automattic\WooCommerce\Internal\Utilities;
  */
 class HtmlSanitizer
 {
-    public const LOW_HTML_BALANCED_TAGS_NO_LINKS = array (
-  'pre_processors' => 
-  array (
-    0 => 'stripslashes',
-    1 => 'force_balance_tags',
-  ),
-  'wp_kses_rules' => 
-  array (
-    'br' => true,
-    'img' => 
-    array (
-      'alt' => true,
-      'class' => true,
-      'src' => true,
-      'title' => true,
-    ),
-    'p' => 
-    array (
-      'class' => true,
-    ),
-    'span' => 
-    array (
-      'class' => true,
-      'title' => true,
-    ),
-  ),
+    public const LOW_HTML_BALANCED_TAGS_NO_LINKS = array(
+'pre_processors' => array(
+'stripslashes',
+'force_balance_tags'
+),
+'wp_kses_rules' => array(
+'br' => true,
+'img' => array(
+'alt' => true,
+'class' => true,
+'src' => true,
+'title' => true
+),
+'p' => array(
+'class' => true
+),
+'span' => array(
+'class' => true,
+'title' => true
+)
+)
 );
     /**
      * Sanitizes a chunk of HTML, by following the same rules as `wp_kses_post()` but also allowing
@@ -61,32 +56,27 @@ class HtmlSanitizer
      *
      * @return string
      */
-    public function sanitize(string $html, array $sanitizer_rules = array (
-  'pre_processors' => 
-  array (
-    0 => 'stripslashes',
-    1 => 'force_balance_tags',
-  ),
-  'wp_kses_rules' => 
-  array (
-    'br' => true,
-    'img' => 
-    array (
-      'alt' => true,
-      'class' => true,
-      'src' => true,
-      'title' => true,
-    ),
-    'p' => 
-    array (
-      'class' => true,
-    ),
-    'span' => 
-    array (
-      'class' => true,
-      'title' => true,
-    ),
-  ),
+    public function sanitize(string $html, array $sanitizer_rules = array(
+'pre_processors' => array(
+'stripslashes',
+'force_balance_tags'
+),
+'wp_kses_rules' => array(
+'br' => true,
+'img' => array(
+'alt' => true,
+'class' => true,
+'src' => true,
+'title' => true
+),
+'p' => array(
+'class' => true
+),
+'span' => array(
+'class' => true,
+'title' => true
+)
+)
 )): string
 {
 }

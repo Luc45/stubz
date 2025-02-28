@@ -24,9 +24,9 @@ class WC_Order_Item extends \WC_Data implements \ArrayAccess
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'order_id' => 0,
-  'name' => '',
+    protected $data = array(
+'order_id' => 0,
+'name' => ''
 );
     /**
      * Stores meta in cache for future reads.

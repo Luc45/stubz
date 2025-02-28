@@ -12,8 +12,8 @@ class OptionSanitizerServiceProvider extends \Automattic\WooCommerce\Internal\De
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Settings\\OptionSanitizer',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Settings\\OptionSanitizer'
 );
     /**
      * Register the classes.

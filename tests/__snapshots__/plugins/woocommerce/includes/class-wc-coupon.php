@@ -29,37 +29,31 @@ class WC_Coupon extends \WC_Legacy_Coupon
      * @since 3.0.0
      * @var array
      */
-    protected $data = array (
-  'code' => '',
-  'amount' => 0,
-  'status' => null,
-  'date_created' => null,
-  'date_modified' => null,
-  'date_expires' => null,
-  'discount_type' => 'fixed_cart',
-  'description' => '',
-  'usage_count' => 0,
-  'individual_use' => false,
-  'product_ids' => 
-  array(),
-  'excluded_product_ids' => 
-  array(),
-  'usage_limit' => 0,
-  'usage_limit_per_user' => 0,
-  'limit_usage_to_x_items' => null,
-  'free_shipping' => false,
-  'product_categories' => 
-  array(),
-  'excluded_product_categories' => 
-  array(),
-  'exclude_sale_items' => false,
-  'minimum_amount' => '',
-  'maximum_amount' => '',
-  'email_restrictions' => 
-  array(),
-  'used_by' => 
-  array(),
-  'virtual' => false,
+    protected $data = array(
+'code' => '',
+'amount' => 0,
+'status' => null,
+'date_created' => null,
+'date_modified' => null,
+'date_expires' => null,
+'discount_type' => 'fixed_cart',
+'description' => '',
+'usage_count' => 0,
+'individual_use' => false,
+'product_ids' => array(),
+'excluded_product_ids' => array(),
+'usage_limit' => 0,
+'usage_limit_per_user' => 0,
+'limit_usage_to_x_items' => null,
+'free_shipping' => false,
+'product_categories' => array(),
+'excluded_product_categories' => array(),
+'exclude_sale_items' => false,
+'minimum_amount' => '',
+'maximum_amount' => '',
+'email_restrictions' => array(),
+'used_by' => array(),
+'virtual' => false
 );
     /**
      * Cache group.

@@ -12,8 +12,8 @@ class DownloadPermissionsAdjusterServiceProvider extends \Automattic\WooCommerce
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\DownloadPermissionsAdjuster',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\DownloadPermissionsAdjuster'
 );
     /**
      * Register the classes.

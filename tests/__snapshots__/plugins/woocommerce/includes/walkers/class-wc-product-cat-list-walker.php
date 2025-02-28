@@ -15,10 +15,10 @@ class WC_Product_Cat_List_Walker extends \Walker
      *
      * @var array
      */
-    public $db_fields = array (
-  'parent' => 'parent',
-  'id' => 'term_id',
-  'slug' => 'slug',
+    public $db_fields = array(
+'parent' => 'parent',
+'id' => 'term_id',
+'slug' => 'slug'
 );
     /**
      * Starts the list before the elements are added.

@@ -10,10 +10,10 @@ class WC_Order_Item_Coupon extends \WC_Order_Item
      * @since 3.0.0
      * @var array
      */
-    protected $extra_data = array (
-  'code' => '',
-  'discount' => 0,
-  'discount_tax' => 0,
+    protected $extra_data = array(
+'code' => '',
+'discount' => 0,
+'discount_tax' => 0
 );
     /**
      * Set order item name.

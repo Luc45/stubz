@@ -12,9 +12,9 @@ class ProductReviewsServiceProvider extends \Automattic\WooCommerce\Internal\Dep
      *
      * @var array
      */
-    protected $provides = array (
-  0 => 'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\Reviews',
-  1 => 'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\ReviewsCommentsOverrides',
+    protected $provides = array(
+'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\Reviews',
+'Automattic\\WooCommerce\\Internal\\Admin\\ProductReviews\\ReviewsCommentsOverrides'
 );
     /**
      * Register the classes.

@@ -4,12 +4,12 @@
  */
 class WC_WCCOM_Site_Installation_Manager
 {
-    public const STEPS = array (
-  0 => 'get_product_info',
-  1 => 'download_product',
-  2 => 'unpack_product',
-  3 => 'move_product',
-  4 => 'activate_product',
+    public const STEPS = array(
+'get_product_info',
+'download_product',
+'unpack_product',
+'move_product',
+'activate_product'
 );
     /**
      * The product ID.
