@@ -6,3 +6,13 @@ vendor/
 .reflection-cache/
 
 tests/.phpunit.result.cache
+
+tests/comparisons/stubz/woocommerce/
+
+tests/comparisons/.comparator-file-cache.json
+
+tests/comparisons/.comparator-changes-cache.json
+
+tests/comparisons/.php-cs-fixer.cache
+
+tests/comparisons/stubz-code.txt
