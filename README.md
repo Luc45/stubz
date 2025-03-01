@@ -125,7 +125,3 @@ Then run Stubz:
 ```bash
 ./vendor/bin/stubz --finder finder.php ./src-stubs
 ```
-
-## License
-
-Stubz is open-source software licensed under the [MIT license](LICENSE).
