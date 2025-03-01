@@ -163,6 +163,22 @@ class Worker {
 		int $totalChunks,
 		bool $verbose
 	): int {
+		$sourceDirAbs = '';
+		if ( is_file( $sourceDir ) ) {
+			// Single-file mode: store the directory portion
+			$sourceDirAbs = dirname( realpath( $sourceDir ) ?: $sourceDir );
+		} elseif ( is_dir( $sourceDir ) ) {
+			// Directory mode: just realpath it
+			$abs = realpath( $sourceDir );
+			if ( $abs !== false ) {
+				$sourceDirAbs = rtrim( $abs, DIRECTORY_SEPARATOR );
+			}
+		}
+		// If still empty, fallback to the original $sourceDir as is
+		if ( ! $sourceDirAbs ) {
+			$sourceDirAbs = rtrim( $sourceDir, DIRECTORY_SEPARATOR );
+		}
+
 		/** @var callable(string):string $fileStubber */
 		$fileStubber = require __DIR__ . '/file-stubber.php';
 
@@ -198,7 +214,7 @@ class Worker {
 					continue;
 				}
 
-				$relativePath = ltrim( str_replace( $sourceDir, '', $realpath ), DIRECTORY_SEPARATOR );
+				$relativePath = ltrim( str_replace( $sourceDirAbs, '', $realpath ), DIRECTORY_SEPARATOR );
 				$targetPath   = $outputDir . DIRECTORY_SEPARATOR . $relativePath;
 
 				if ( ! is_dir( dirname( $targetPath ) ) ) {
