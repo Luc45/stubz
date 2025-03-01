@@ -25,6 +25,6 @@
         "ext-posix": "For running in parallel."
     },
     "bin": [
-        "stubz.php"
+        "bin/stubz"
     ]
 }

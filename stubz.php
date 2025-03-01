@@ -1,16 +1,4 @@
-#!/usr/bin/env php
 <?php
-
-declare( strict_types=1 );
-
-/**
- * stubz.php
- *
- * Minimal CLI entry point. All command line parsing and validation
- * remain here, while the Stubz class does the actual work.
- */
-
-// Include Composer's autoload
 require_once __DIR__ . '/vendor/autoload.php';
 
 /**
@@ -19,11 +7,10 @@ require_once __DIR__ . '/vendor/autoload.php';
  * @param array<int,string> $argv
  */
 ( static function ( array $argv ): void {
-
 	// 1) Parse and validate the CLI arguments
 	$options = parseCommandLine( $argv );
 
-	// 2) Run the stubbing logic using the Stubz class
+	// 2) Run the stubbing logic using the Stubz class.
 	$stubz = new \Stubz\Stubz();
 	$stubz->generateStubs( $options );
 
