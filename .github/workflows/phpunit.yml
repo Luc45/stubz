@@ -17,6 +17,7 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
+          extensions: pcntl
           php-version: ${{ matrix.php-version }}
 
       - name: Cache Composer
