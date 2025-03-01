@@ -12,10 +12,12 @@ use Roave\BetterReflection\Reflection\ReflectionEnum;
 use Throwable;
 
 class ClassStubGenerator {
-	/**
-	 * Generate a class/trait/interface/enum stub from reflection.
-	 */
 	public function generateClassStub( ReflectionClass $class ): string {
+		// Skip entirely if anonymous
+		if ( $class->isAnonymous() || str_contains( $class->getName(), '@anonymous' ) ) {
+			return '';
+		}
+
 		$buf = '';
 
 		$doc = $class->getDocComment();
@@ -91,31 +93,22 @@ class ClassStubGenerator {
 		}
 
 		foreach ( $class->getImmediateConstants() as $constName => $refConst ) {
-			// 1. Print doc comments if they exist (from Code B)
 			$constDoc = $refConst->getDocComment();
 			if ( $constDoc !== null ) {
 				foreach ( explode( "\n", $constDoc ) as $line ) {
 					$buf .= "    {$line}\n";
 				}
 			}
-
-			// 2. Print attributes if they exist (from Code B)
 			foreach ( $refConst->getAttributes() as $attr ) {
 				$buf .= '    ' . ( new AttributeStubGenerator() )->generateAttributeLine( $attr ) . "\n";
 			}
-
-			// 3. Skip private constants (from both A and B)
 			if ( $refConst->isPrivate() ) {
 				continue;
 			}
-
-			// 4. Determine visibility (from both A and B)
 			$visibility = 'public';
 			if ( $refConst->isProtected() ) {
 				$visibility = 'protected';
 			}
-
-			// 5. Determine the constant’s value (from Code A, with its special cases)
 			try {
 				$astNode = $refConst->getValueExpression();
 				if ( $astNode instanceof File ) {
@@ -123,14 +116,10 @@ class ClassStubGenerator {
 				} elseif ( $astNode instanceof Dir ) {
 					$val = '__DIR__';
 				} elseif ( $astNode instanceof ConstFetch ) {
-					// Might reference a global constant
 					$val = $astNode->name->toString();
 				} else {
-					// Generic case: convert the value to PHP literal
 					$val = Helpers::toPhpLiteral( $refConst->getValue() );
 				}
-
-				// 6. Output the constant declaration
 				$buf .= "    {$visibility} const {$constName} = {$val};\n";
 			} catch ( Throwable $ex ) {
 				Helpers::handleBetterReflectionException( $ex );
