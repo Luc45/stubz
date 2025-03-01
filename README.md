@@ -1,158 +1,118 @@
-# Stubz
+# Stubz for WordPress Plugins
 
-**Stubz** is a command-line utility that generates **PHP stub files** from your existing codebase.  
-Stubs can be used for static analysis, code hinting, or any scenario where you need a lightweight  
-representation of classes, traits, interfaces, functions, and constants—without including the  
-original implementation logic.
+**Stubz** is a command-line utility designed to generate **PHP stub files** specifically tailored for WordPress plugins,
+although it supports any PHP codebase. PHP stubs simplify static analysis by providing a lightweight representation of
+your plugin's classes, traits, interfaces, functions, and constants, excluding implementation logic.
 
-Stubz relies on [**Roave/BetterReflection**](https://github.com/Roave/BetterReflection) to parse your  
-PHP code (and optionally PHP’s built-in classes) and generate these stubs. It preserves modern  
-PHP features such as **final** methods, **readonly** properties, **enums**, and **attributes**.
+Stubz was initially developed to support the **Quality Insights Toolkit (QIT)** at **Automattic**, helping to enhance
+the reliability and accuracy of static code analysis within WordPress plugin ecosystems.
 
----
+WordPress operates as an **event-driven framework**, meaning many plugins define classes and functions within event
+callbacks (hooks). A common pattern in WordPress plugins that trips static code analysis involves defining classes
+inside action callbacks. For example:
+
+```php
+add_action('plugins_loaded', function() {
+    class MyPluginMainClass {
+        // class logic
+    }
+});
+```
+
+In static analysis tools like PHPStan, there's no guarantee the `plugins_loaded` action will ever be invoked. As a
+result, the tool fails to recognize dynamically defined classes, producing false positives or "class not found" errors.
+
+Stubz resolves this issue by **"flattening" the code definitions**. It moves class, function, and constant definitions
+out of callbacks, making them readily discoverable for static analysis.
+
+## Recommended Usage with PHPStan
+
+PHPStan differentiates between two important concepts:
+
+- **Scan:** PHPStan scans files to discover classes, functions, constants, and other code structures.
+- **Analyse:** PHPStan analyses the scanned files for potential errors, type mismatches, incorrect method calls, and
+  other code quality issues.
+
+To leverage Stubz effectively, configure PHPStan to:
+
+- **Analyse** your plugin's actual source code for code quality:
+
+```bash
+./vendor/bin/phpstan analyse ./src
+```
+
+- **Scan** the generated stubs to ensure dynamically defined entities are recognized:
+
+```neon
+parameters:
+    scanDirectories:
+        - ./src-stubs
+```
+
+This configuration ensures accurate static analysis while eliminating common WordPress-specific false positives.
 
 ## Features
 
-- **Generates stubs** for classes, interfaces, traits, enums, functions, and constants.  
-- Supports **complex, nested** code structures.  
-- Handles **modern PHP features**:
-  - Final & abstract classes and methods
-  - Readonly properties (PHP 8.1+)
-  - Enums (PHP 8.1+), including `case`s
-  - Attributes (PHP 8+), with reflection on arguments
-  - Intersection & union types, typed properties, constructor promotion, etc.
-- **Exclude** directories or files using `--exclude <dir>` multiple times.
-- **Finder mode** with `--finder <file.php>` to define custom logic (e.g., Symfony Finder queries).
-- **Minimal file-based caching** for faster repeated runs:
-  - `NO_STUB_CACHE=1` to fully disable caching
-  - `STUB_CACHE_DIR=/some/path` to set a custom cache location
-- **Colored console output** (if your terminal supports it).
-- **Snapshot-friendly** for testing: stub files can be compared to an expected baseline.
-
----
+- **Generates stubs** for classes, interfaces, traits, enums, functions, and constants.
+- Supports complex, nested WordPress-specific patterns.
+- Handles modern PHP features including:
+    - Final & abstract classes and methods
+    - Readonly properties (PHP 8.1+)
+    - Enums (PHP 8.1+), including `case`s
+    - Attributes (PHP 8+), with reflection on arguments
+    - Intersection & union types, typed properties, constructor promotion
+- **Exclude** specific directories/files using `--exclude <dir>`.
+- **Custom Finder mode** (`--finder <file.php>`) for advanced queries.
 
 ## Requirements
 
 - **PHP 8.2** or later
-- Composer dependencies (`roave/better-reflection`, `symfony/finder`).
+- Composer dependencies (`roave/better-reflection`, `symfony/finder`)
 
----
+## Quick Start Guide
 
-## Installation
-
-1. Add Stubz to your project:
+1. Install Stubz using Composer:
 
    ```bash
    composer require lucasbustamante/stubz --dev
    ```
 
-2. After installation, **Composer** will place a symlink to `stubz.php` in your  
-   `vendor/bin` directory as **`stubz`**. You can now run Stubz via:
+2. Generate stubs for your plugin:
 
    ```bash
-   ./vendor/bin/stubz [options...]
+   ./vendor/bin/stubz ./src ./src-stubs
    ```
 
-   Or, if you prefer, call the script directly:
+### Excluding Directories
 
-   ```bash
-   php vendor/lucasbustamante/stubz/stubz.php [options...]
-   ```
-
----
-
-## How Stubs Are Generated
-
-Unlike some tools that produce **one massive stub file**, Stubz creates **per-file** stubs
-preserving your **original directory structure**. That means if you have:
-
-```
-src/
-  MyClass.php
-  Utils/Helper.php
-```
-
-Stubz will generate a parallel folder structure in your output directory:
-
-```
-/tmp/stubs/src/
-  MyClass.php
-  Utils/Helper.php
-```
-
-Each `.php` file has the **same name** but contains **stub** definitions—class signatures,  
-functions, constants, docblocks, etc.—instead of full implementations. This layout
-makes it easy to navigate or "point" static analysis tools to the same structure as
-your original code, but with the bodies replaced by minimal stub code.
-
----
-
-## Usage
-
-### 1) Basic Directory Mode
-
-Generate stubs from a source directory (`<sourceDir>`) into an output directory (`<outputDir>`):
+Exclude directories like vendor, tests, or build artifacts:
 
 ```bash
-./vendor/bin/stubz [--exclude <dir>]... <sourceDir> <outputDir>
+./vendor/bin/stubz --exclude vendor --exclude tests ./src ./src-stubs
 ```
 
-- **Example**:
+### Using a Custom Finder
 
-  ```bash
-  ./vendor/bin/stubz src /tmp/stubs
-  ```
-
-- **Excluding** directories or files by name:
-
-  ```bash
-  ./vendor/bin/stubz \
-    --exclude vendor \
-    --exclude tests \
-    src \
-    /tmp/stubs
-  ```
-
-  You can repeat `--exclude` any number of times. Any directory whose basename matches these strings will be skipped.
-
-### 2) Finder Mode
-
-Instead of scanning a directory directly, you can **provide a custom Finder** script:
-
-```bash
-./vendor/bin/stubz --finder <finder-file.php> <outputDir>
-```
-
-- `<finder-file.php>` must **return** a [`Symfony\Component\Finder\Finder`](https://symfony.com/doc/current/components/finder.html) instance.
-- You **cannot** combine `--finder` and `--exclude`. If both are provided, Stubz will exit with an error.
-
-**Example** `myFinder.php`:
+For more complex inclusion/exclusion logic, create a `finder.php`:
 
 ```php
 use Symfony\Component\Finder\Finder;
 
 $finder = Finder::create()
     ->files()
-    ->in(__DIR__ . '/blocks')
+    ->in(__DIR__ . '/src')
     ->name('*.php')
-    ->exclude('experimental');
+    ->exclude('tests');
 
 return $finder;
 ```
 
-Then run:
+Then run Stubz:
 
 ```bash
-./vendor/bin/stubz --finder myFinder.php /tmp/stubs
+./vendor/bin/stubz --finder finder.php ./src-stubs
 ```
-
-Stubz will parse exactly what the Finder instance returns—no excludes are allowed in this mode.
-
----
-
----
 
 ## License
 
 Stubz is open-source software licensed under the [MIT license](LICENSE).
-``
