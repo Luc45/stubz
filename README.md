@@ -1,3 +1,6 @@
+[![PHPStan - Level 10](https://github.com/Luc45/stubz/actions/workflows/phpstan.yml/badge.svg)](https://github.com/Luc45/stubz/actions/workflows/phpstan.yml)
+[![PHPUnit](https://github.com/Luc45/stubz/actions/workflows/phpunit.yml/badge.svg)](https://github.com/Luc45/stubz/actions/workflows/phpunit.yml)
+
 # Stubz for WordPress Plugins
 
 **Stubz** is a command-line utility designed to generate **PHP stub files** specifically tailored for WordPress plugins,
