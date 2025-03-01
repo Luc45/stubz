@@ -25,7 +25,17 @@ result, the tool fails to recognize dynamically defined classes, producing false
 Stubz resolves this issue by **"flattening" the code definitions**. It moves class, function, and constant definitions
 out of callbacks, making them readily discoverable for static analysis.
 
-## Recommended Usage with PHPStan
+## Recommended Usage
+
+### Using QIT (WooCommerce Marketplace Extensions)
+
+For WooCommerce extensions distributed via the WooCommerce.com Marketplace, the recommended approach is to use the
+[PHPStan Managed Tests provided by QIT](https://qit.woo.com/docs/managed-tests/phpstan). QIT's managed PHPStan tests automatically
+leverage Stubz, greatly simplifying your workflow.
+
+### Using PHPStan Directly (General Plugins)
+
+If you're working with general WordPress plugins, you can manually configure PHPStan to work with Stubz as follows:
 
 PHPStan differentiates between two important concepts:
 
@@ -33,15 +43,15 @@ PHPStan differentiates between two important concepts:
 - **Analyse:** PHPStan analyses the scanned files for potential errors, type mismatches, incorrect method calls, and
   other code quality issues.
 
-To leverage Stubz effectively, configure PHPStan to:
+Configure PHPStan manually by:
 
-- **Analyse** your plugin's actual source code for code quality:
+- **Analysing** your plugin's actual source code for code quality:
 
 ```bash
 ./vendor/bin/phpstan analyse ./src
 ```
 
-- **Scan** the generated stubs to ensure dynamically defined entities are recognized:
+- **Scanning** the generated stubs to ensure dynamically defined entities are recognized:
 
 ```neon
 parameters:
