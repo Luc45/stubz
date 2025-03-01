@@ -1,5 +1,15 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+
+if ( isset( $_composer_autoload_path ) ) {
+	// Running as vendor/bin in Composer 2.2+.
+	require_once $_composer_autoload_path;
+} elseif ( file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
+	// Running as vendor/bin in Composer 2.1 or less.
+	require_once __DIR__ . '/../vendor/autoload.php';
+} else {
+	// Running directly.
+	require_once __DIR__ . '/vendor/autoload.php';
+}
 
 /**
  * Immediately invoked function to encapsulate CLI logic.
