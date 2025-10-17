@@ -75,17 +75,25 @@ class RuntimeConstantExtractor {
 		}
 
 		$code = file_get_contents( $filePath );
+		if ( $code === false ) {
+			return [];
+		}
+
 		$parser = ( new ParserFactory )->createForHostVersion();
 
 		try {
 			$ast = $parser->parse( $code );
+			if ( $ast === null ) {
+				return [];
+			}
 		} catch ( \Exception $e ) {
 			// If we can't parse, return empty
 			return [];
 		}
 
 		$visitor = new class extends NodeVisitorAbstract {
-			public $constants = [];
+			/** @var array<string, string> */
+			public array $constants = [];
 
 			public function enterNode( Node $node ) {
 				// Look for define() function calls
@@ -111,7 +119,20 @@ class RuntimeConstantExtractor {
 				return null;
 			}
 
-			private function extractDefineCall( $node ) {
+			/**
+			 * @param Node\Expr\FuncCall|Node\Expr\MethodCall $node
+			 * @return void
+			 */
+			private function extractDefineCall( $node ): void {
+				if ( ! isset( $node->args[0] ) || ! isset( $node->args[1] ) ) {
+					return;
+				}
+
+				// Check that args are not VariadicPlaceholder
+				if ( ! $node->args[0] instanceof Node\Arg || ! $node->args[1] instanceof Node\Arg ) {
+					return;
+				}
+
 				$nameArg = $node->args[0]->value;
 				$valueArg = $node->args[1]->value;
 
@@ -160,6 +181,7 @@ class RuntimeConstantExtractor {
 		$traverser->addVisitor( $visitor );
 		$traverser->traverse( $ast );
 
+		/** @var array<string, string> $constants */
 		$constants = $visitor->constants;
 
 		// Add known constants with proper values if they were found but couldn't be evaluated
