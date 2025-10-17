@@ -11,6 +11,7 @@ use Stubz\StubGenerator\ClassStubGenerator;
 use Stubz\StubGenerator\FunctionStubGenerator;
 use Stubz\StubGenerator\ConstantStubGenerator;
 use Stubz\StubGenerator\NamespaceStubGenerator;
+use Stubz\StubGenerator\RuntimeConstantExtractor;
 
 /**
  * This file returns a closure that, given a single file path + reference array,
@@ -63,6 +64,7 @@ return static function ( string $filePath ): string {
 	$funcGen          = new FunctionStubGenerator();
 	$constGen         = new ConstantStubGenerator();
 	$namespaceStubGen = new NamespaceStubGenerator();
+	$runtimeExtractor = new RuntimeConstantExtractor();
 
 	// 4) Generate stubs for each symbol
 	foreach ( $allClasses as $classRef ) {
@@ -78,8 +80,18 @@ return static function ( string $filePath ): string {
 		$namespaceStubGen->addStub( $stub );
 	}
 
+	// 4.5) Extract and add runtime constants (e.g., from define() calls)
+	$runtimeConstants = $runtimeExtractor->extractConstants( $filePath );
+	if ( ! empty( $runtimeConstants ) ) {
+		$runtimeStub = $runtimeExtractor->generateConstantsStub( $runtimeConstants );
+		if ( $runtimeStub ) {
+			// Add runtime constants to the stub buffer
+			$namespaceStubGen->addStub( $runtimeStub );
+		}
+	}
+
 	// 5) If no stubs found, return empty
-	if ( empty( $allClasses ) && empty( $allFunctions ) && empty( $allConstants ) ) {
+	if ( empty( $allClasses ) && empty( $allFunctions ) && empty( $allConstants ) && empty( $runtimeConstants ) ) {
 		return '';
 	}
 
