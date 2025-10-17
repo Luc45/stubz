@@ -560,3 +560,20 @@ final class WooCommerce
 {
 }
 }
+define('WC_ABSPATH', '');
+define('WC_PLUGIN_BASENAME', '');
+define('WC_VERSION', '0.0.0');
+define('WOOCOMMERCE_VERSION', '0.0.0');
+define('WC_ROUNDING_PRECISION', 6);
+define('WC_DISCOUNT_ROUNDING_MODE', 2);
+define('WC_TAX_ROUNDING_MODE', 1);
+define('WC_DELIMITER', '|');
+define('WC_SESSION_CACHE_GROUP', 'wc_session_id');
+define('WC_TEMPLATE_DEBUG_MODE', false);
+define('WC_LOG_DIR_CUSTOM', true);
+define('WC_LOG_DIR', '');
+define('WC_NOTICE_MIN_PHP_VERSION', '7.2');
+define('WC_NOTICE_MIN_WP_VERSION', '5.2');
+define('WC_PHP_MIN_REQUIREMENTS_NOTICE', 'wp_php_min_requirements_7.2_5.2');
+define('WC_SSR_PLUGIN_UPDATE_RELEASE_VERSION_TYPE', 'none');
+define('WC_TEMPLATE_PATH', '');

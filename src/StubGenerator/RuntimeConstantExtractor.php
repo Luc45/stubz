@@ -67,9 +67,10 @@ class RuntimeConstantExtractor {
 	 * Extract runtime constants from a PHP file
 	 *
 	 * @param string $filePath Path to the PHP file
+	 * @param array<string> $excludeConstants Constants to exclude (already found by BetterReflection)
 	 * @return array<string, string> Array of constant name => value pairs
 	 */
-	public function extractConstants( string $filePath ): array {
+	public function extractConstants( string $filePath, array $excludeConstants = [] ): array {
 		if ( ! file_exists( $filePath ) ) {
 			return [];
 		}
@@ -183,6 +184,11 @@ class RuntimeConstantExtractor {
 
 		/** @var array<string, string> $constants */
 		$constants = $visitor->constants;
+
+		// Remove constants that were already found by BetterReflection
+		foreach ( $excludeConstants as $excludeName ) {
+			unset( $constants[ $excludeName ] );
+		}
 
 		// Add known constants with proper values if they were found but couldn't be evaluated
 		foreach ( $constants as $name => $value ) {

@@ -190,6 +190,32 @@ class WooCommerce {
 	}
 
 	/**
+	 * Test excluding already-found constants
+	 */
+	public function testExcludeAlreadyFoundConstants() {
+		$testFile = $this->createTempFile( "<?php
+define('CONSTANT_A', 'value_a');
+define('CONSTANT_B', 'value_b');
+define('CONSTANT_C', 'value_c');
+" );
+
+		// Extract all constants
+		$allConstants = $this->extractor->extractConstants( $testFile );
+		$this->assertCount( 3, $allConstants );
+
+		// Extract with exclusions
+		$excludeList = ['CONSTANT_A', 'CONSTANT_C'];
+		$filteredConstants = $this->extractor->extractConstants( $testFile, $excludeList );
+
+		$this->assertCount( 1, $filteredConstants );
+		$this->assertArrayHasKey( 'CONSTANT_B', $filteredConstants );
+		$this->assertArrayNotHasKey( 'CONSTANT_A', $filteredConstants );
+		$this->assertArrayNotHasKey( 'CONSTANT_C', $filteredConstants );
+
+		unlink( $testFile );
+	}
+
+	/**
 	 * Test extraction from actual WooCommerce file
 	 * @group woocommerce
 	 */

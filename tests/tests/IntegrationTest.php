@@ -61,9 +61,9 @@ define("GLOBAL_TEST_NUMBER", 42);
 		$this->assertStringContainsString( "define('TEST_ENABLED', true)", $stub );
 		$this->assertStringContainsString( "define('TEST_TIMEOUT', 30)", $stub );
 
-		// Verify global define() constants are extracted
-		$this->assertStringContainsString( "define('GLOBAL_TEST_CONSTANT', 'test_value')", $stub );
-		$this->assertStringContainsString( "define('GLOBAL_TEST_NUMBER', 42)", $stub );
+		// Global define() constants at file level are found by BetterReflection as const
+		$this->assertStringContainsString( "const GLOBAL_TEST_CONSTANT = 'test_value';", $stub );
+		$this->assertStringContainsString( "const GLOBAL_TEST_NUMBER = 42;", $stub );
 
 		// Clean up
 		unlink( $testFile );

@@ -89,3 +89,9 @@ class FeaturePlugin
 }
 }
 const WC_ADMIN_VERSION_NUMBER = '3.3.0';
+define('WC_ADMIN_APP', 'wc-admin-app');
+define('WC_ADMIN_ABSPATH', '');
+define('WC_ADMIN_DIST_JS_FOLDER', 'assets/client/admin/');
+define('WC_ADMIN_DIST_CSS_FOLDER', 'assets/client/admin/');
+define('WC_ADMIN_PLUGIN_FILE', '');
+define('WC_ADMIN_IMAGES_FOLDER_URL', '');

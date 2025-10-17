@@ -75,13 +75,17 @@ return static function ( string $filePath ): string {
 		$stub = $funcGen->generateFunctionStub( $fnRef );
 		$namespaceStubGen->addStub( $stub );
 	}
+	// Track constants already found by BetterReflection
+	$foundConstants = [];
 	foreach ( $allConstants as $cstRef ) {
 		$stub = $constGen->generateConstantStub( $cstRef );
 		$namespaceStubGen->addStub( $stub );
+		$foundConstants[] = $cstRef->getName();
 	}
 
 	// 4.5) Extract and add runtime constants (e.g., from define() calls)
-	$runtimeConstants = $runtimeExtractor->extractConstants( $filePath );
+	// But exclude those already found by BetterReflection
+	$runtimeConstants = $runtimeExtractor->extractConstants( $filePath, $foundConstants );
 	if ( ! empty( $runtimeConstants ) ) {
 		$runtimeStub = $runtimeExtractor->generateConstantsStub( $runtimeConstants );
 		if ( $runtimeStub ) {

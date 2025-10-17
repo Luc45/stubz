@@ -6,7 +6,3 @@ const MY_PLUGIN_FILE = __FILE__;
 const MY_PLUGIN_VERSION = '1.2.3';
 const MY_PLUGIN_DEBUG = true;
 const MY_PLUGIN_TIMEOUT = 30;
-define('MY_PLUGIN_FILE', '');
-define('MY_PLUGIN_VERSION', '1.2.3');
-define('MY_PLUGIN_DEBUG', true);
-define('MY_PLUGIN_TIMEOUT', 30);
