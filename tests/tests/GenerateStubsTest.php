@@ -53,6 +53,7 @@ class GenerateStubsTest extends TestCase {
 			'Readonly Properties Scenario'            => [ 'readonlyPropertiesScenario', [ 'finder' => null, 'exclude' => [] ] ],
 			'Named Arguments Scenario'                => [ 'namedArgumentsScenario', [ 'finder' => null, 'exclude' => [] ] ],
 			'Reflection Scenario'                     => [ 'reflectionScenario', [ 'finder' => null, 'exclude' => [] ] ],
+			'Runtime Constants Scenario'              => [ 'runtimeConstantsScenario', [ 'finder' => null, 'exclude' => [] ] ],
 			'WooCommerce Integration Scenario'        => [
 				'WooCommerceIntegrationScenario',
 				[

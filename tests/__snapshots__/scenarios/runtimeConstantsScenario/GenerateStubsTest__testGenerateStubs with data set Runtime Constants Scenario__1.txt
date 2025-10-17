@@ -1,0 +1,43 @@
+<?php
+/**
+ * Main Plugin Class with WooCommerce-style runtime constants
+ */
+class MyPlugin
+{
+    /**
+     * Plugin version
+     *
+     * @var string
+     */
+    public $version = '1.2.3';
+    /**
+     * Initialize the plugin
+     */
+    public function init()
+{
+}
+    /**
+     * Get a setting value
+     *
+     * @param string $key Setting key
+     * @return mixed|null Setting value or null
+     */
+    public function get_setting($key)
+{
+}
+}
+define('MY_PLUGIN_NAME', 'Test Plugin');
+define('MY_PLUGIN_SLUG', 'test-plugin');
+define('MY_PLUGIN_PREFIX', 'tp_');
+define('MY_PLUGIN_CACHE_TIME', 3600);
+define('MY_PLUGIN_MAX_RETRIES', 3);
+define('MY_PLUGIN_DECIMAL_PLACES', 2);
+define('MY_PLUGIN_ENABLE_CACHE', true);
+define('MY_PLUGIN_ENABLE_DEBUG', false);
+define('MY_PLUGIN_DIR', '');
+define('MY_PLUGIN_URL', '');
+define('MY_PLUGIN_BASENAME', '');
+define('MY_PLUGIN_CURRENT_VERSION', '');
+define('MY_PLUGIN_ASSETS_DIR', '');
+define('MY_PLUGIN_UPLOAD_DIR', '');
+define('MY_PLUGIN_TEMP_DIR', '');
